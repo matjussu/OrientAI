@@ -210,3 +210,49 @@ def test_collect_parcoursup_fiches_backward_compat_default_domains():
     sig = inspect.signature(collect_parcoursup_fiches)
     assert "domains" in sig.parameters
     assert sig.parameters["domains"].default is None
+
+
+# === C1 (2026-06-09) — cascade domaine pour ré-ingestion élargie ===
+# Les ~6000 formations hors taxonomie keyword reçoivent un domaine via cascade :
+#   1. keyword sur le NOM (comme filter_domain)
+#   2. sinon mapping form_lib_voe_acc -> domaine thématique (validé Jarvis)
+#   3. sinon "autre" (mieux vaut autre qu'un faux domaine)
+
+
+def _cascade_row(nom, form_lib=""):
+    return pd.Series({"lib_for_voe_ins": nom, "form_lib_voe_acc": form_lib})
+
+
+def test_cascade_step1_keyword_on_name_wins():
+    from src.collect.parcoursup import domaine_cascade
+    # le nom porte un keyword -> thématique, même si form_lib mapperait "autre"
+    assert domaine_cascade(_cascade_row("BTS Cybersécurité des réseaux", "BTS - Services")) == "cyber"
+
+
+def test_cascade_step2_form_lib_mapping_when_name_has_no_keyword():
+    from src.collect.parcoursup import domaine_cascade
+    assert domaine_cascade(_cascade_row("Formation XYZ", "D.E secteur social")) == "sante"
+    assert domaine_cascade(_cascade_row("Formation XYZ", "BTS - Agricole")) == "agriculture"
+    assert domaine_cascade(_cascade_row("Formation XYZ", "Licence - STAPS")) == "sport"
+
+
+def test_cascade_step2_whitespace_normalized():
+    from src.collect.parcoursup import domaine_cascade
+    # données réelles : doubles espaces sur certains libellés
+    assert domaine_cascade(
+        _cascade_row("Formation XYZ", "Formations  des écoles d'ingénieurs")
+    ) == "ingenierie_industrielle"
+
+
+def test_cascade_step3_autre_for_broad_or_multidomain_labels():
+    from src.collect.parcoursup import domaine_cascade
+    assert domaine_cascade(_cascade_row("Formation XYZ", "BTS - Services")) == "autre"
+    assert domaine_cascade(_cascade_row("Formation XYZ", "Licence - Droit-économie-gestion")) == "autre"
+    assert domaine_cascade(_cascade_row("Formation XYZ", "Mise à niveau")) == "autre"
+    assert domaine_cascade(_cascade_row("Formation XYZ", "")) == "autre"
+
+
+def test_cascade_mapping_targets_are_valid_domains():
+    from src.collect.parcoursup import FORM_LIB_VOE_ACC_TO_DOMAINE, EXTENDED_DOMAINS
+    for dom in set(FORM_LIB_VOE_ACC_TO_DOMAINE.values()):
+        assert dom in EXTENDED_DOMAINS, f"cible de mapping inconnue: {dom}"

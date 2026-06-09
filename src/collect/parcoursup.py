@@ -1,3 +1,4 @@
+import re
 from pathlib import Path
 import pandas as pd
 from src.collect.niveau import infer_niveau
@@ -160,6 +161,83 @@ PCT_ACC_DEBUTPP_COLUMN = "pct_acc_debutpp" # % acceptés dès début phase princ
 FILI_COLUMN = "fili"                       # code filière officiel Parcoursup (classification structurée)
 LIB_GRP1_COLUMN = "lib_grp1"               # groupe de formations — famille cohérente
 SELECT_FORM_COLUMN = "select_form"         # code sélectivité formation officiel Parcoursup
+FORM_LIB_VOE_ACC_COLUMN = "form_lib_voe_acc"  # libellé type+champ ("BTS - Services", "D.E secteur social")
+
+
+# === C1 (2026-06-09) — cascade domaine pour ré-ingestion élargie ===
+# Mapping form_lib_voe_acc -> domaine thématique (validé Jarvis). Fallback de la
+# cascade quand le nom ne matche aucun keyword. Tout libellé ABSENT de cette
+# table (type trop large type "BTS - Services", multi-domaine type
+# "Droit-économie-gestion") -> "autre" : mieux vaut "autre" qu'un faux domaine.
+# Clés normalisées (whitespace collapsé + lowercase) — les données réelles ont
+# des doubles espaces sur certains libellés.
+FORM_LIB_VOE_ACC_TO_DOMAINE = {
+    # — thématique clair —
+    "formations des écoles d'ingénieurs": "ingenierie_industrielle",
+    "c.m.i - cursus master en ingénierie": "ingenierie_industrielle",
+    "formation des écoles de commerce et de management": "eco_gestion",
+    "classe préparatoire économique et commerciale": "eco_gestion",
+    "licence - sciences humaines et sociales": "sciences_humaines",
+    "lp - sciences humaines et sociales": "sciences_humaines",
+    "sciences politiques": "sciences_humaines",
+    "d.e secteur social": "sante",
+    "d.e secteur sanitaire": "sante",
+    "bts - agricole": "agriculture",
+    "licence - staps": "sport",
+    "bpjeps": "sport",
+    "dn made": "lettres_arts",
+    "diplôme national d'art": "lettres_arts",
+    "formation des écoles supérieures d'art": "lettres_arts",
+    "formation des écoles supérieures de cuisine": "tourisme_hotellerie",
+    # — jugement (validé Jarvis) —
+    "licence - sciences - technologies - santé": "sciences_fondamentales",
+    "lp - sciences - technologies - santé": "sciences_fondamentales",
+    "cupge - sciences, technologie, santé": "sciences_fondamentales",
+    "classe préparatoire scientifique": "sciences_fondamentales",
+    "licence - arts-lettres-langues": "lettres_arts",
+    "classe préparatoire littéraire": "lettres_arts",
+    "formations des écoles vétérinaires": "sante",
+}
+
+
+def _norm_ws(s) -> str:
+    """Collapse whitespace + lowercase pour le lookup du mapping form_lib_voe_acc."""
+    if s is None:
+        return ""
+    return re.sub(r"\s+", " ", str(s)).strip().lower()
+
+
+def _domaine_from_name(nom) -> str | None:
+    """Step 1 cascade : 1er domaine EXTENDED dont un keyword matche le NOM.
+
+    Même logique regex que `filter_domain` (case-insensitive, alternation des
+    keywords), itérée dans l'ordre EXTENDED_DOMAINS = first-wins (cohérent avec
+    la classification des fiches déjà ingérées)."""
+    n = str(nom or "")
+    if not n:
+        return None
+    for domain in EXTENDED_DOMAINS:
+        pattern = "|".join(DOMAIN_KEYWORDS[domain])
+        if re.search(pattern, n, flags=re.IGNORECASE):
+            return domain
+    return None
+
+
+def domaine_cascade(row: pd.Series) -> str:
+    """Assigne un domaine à une formation Parcoursup hors taxonomie keyword (C1).
+
+    Cascade :
+      1. keyword sur le NOM (filter_domain par-ligne) -> domaine thématique ;
+      2. sinon mapping form_lib_voe_acc -> domaine thématique (validé Jarvis) ;
+      3. sinon "autre" (mieux vaut "autre" qu'un faux domaine).
+    """
+    d = _domaine_from_name(row.get(FORMATION_COLUMN))
+    if d:
+        return d
+    d = FORM_LIB_VOE_ACC_TO_DOMAINE.get(_norm_ws(row.get(FORM_LIB_VOE_ACC_COLUMN)))
+    if d:
+        return d
+    return "autre"
 
 
 def load_parcoursup(path: str | Path) -> pd.DataFrame:
@@ -363,3 +441,35 @@ def collect_parcoursup_all_sectors(path: str | Path) -> list[dict]:
     (vs 1.4k avec les 3 domaines legacy).
     """
     return collect_parcoursup_fiches(path, domains=EXTENDED_DOMAINS)
+
+
+def collect_parcoursup_all_cascade(path: str | Path) -> list[dict]:
+    """Ingestion ÉLARGIE C1 (2026-06-09) : TOUTES les formations du CSV Parcoursup,
+    pas seulement celles dont le nom matche la taxonomie keyword.
+
+    Contraste avec `collect_parcoursup_fiches` (filtre par DOMAIN_KEYWORDS, ~8k
+    fiches) : ici on prend chaque ligne et on assigne le domaine par CASCADE
+    (`domaine_cascade` : keyword nom -> mapping form_lib_voe_acc -> "autre").
+    Comble les ~6000 formations hors taxonomie (BTS, D.E social/sanitaire, etc.).
+
+    Dédup par `cod_aff_form` (un id Parcoursup = une fiche). Conserve
+    `form_lib_voe_acc` en métadonnée (info type/champ, même si domaine="autre").
+
+    NB : la dédup CROSS-SOURCE (vs ONISEP/MonMaster) n'est PAS faite ici — elle
+    est gérée en aval par run_merge_v3 (fuzzy-merge + dedup exact). Cette fonction
+    ne fait que produire les fiches Parcoursup ; le merge canonique dédoublonne.
+    """
+    df = load_parcoursup(path)
+    all_fiches: list[dict] = []
+    seen_codes: set[str] = set()
+    for _, row in df.iterrows():
+        fiche = extract_fiche(row)
+        cod = fiche.get("cod_aff_form")
+        if cod and cod in seen_codes:
+            continue
+        if cod:
+            seen_codes.add(cod)
+        fiche["domaine"] = domaine_cascade(row)
+        fiche[FORM_LIB_VOE_ACC_COLUMN] = _clean_str(row.get(FORM_LIB_VOE_ACC_COLUMN))
+        all_fiches.append(fiche)
+    return all_fiches
