@@ -254,9 +254,14 @@ def filter_domain(df: pd.DataFrame, domain: str, name_column: str) -> pd.DataFra
 
 def _safe_float(val) -> float | None:
     try:
-        return float(val)
+        f = float(val)
     except (ValueError, TypeError):
         return None
+    # NaN / inf : cellules CSV vides lues par pandas -> ne PAS laisser fuiter
+    # (JSON invalide + violerait la borne [0,100] du contrat data / GE).
+    if f != f or f in (float("inf"), float("-inf")):
+        return None
+    return f
 
 
 def _safe_int(val) -> int | None:

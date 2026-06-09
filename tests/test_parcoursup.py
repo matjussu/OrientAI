@@ -256,3 +256,20 @@ def test_cascade_mapping_targets_are_valid_domains():
     from src.collect.parcoursup import FORM_LIB_VOE_ACC_TO_DOMAINE, EXTENDED_DOMAINS
     for dom in set(FORM_LIB_VOE_ACC_TO_DOMAINE.values()):
         assert dom in EXTENDED_DOMAINS, f"cible de mapping inconnue: {dom}"
+
+
+def test_extract_fiche_nan_taux_becomes_none():
+    """C1 garde-fou GE : un taux NaN (cellule CSV vide lue par pandas) ne doit
+    PAS fuiter en NaN dans le corpus (JSON invalide + viole la borne [0,100])."""
+    row = _vague_a_row()
+    row["taux_acces_ens"] = float("nan")
+    fiche = extract_fiche(row)
+    assert fiche["taux_acces_parcoursup_2025"] is None
+
+
+def test_safe_float_filters_nan_inf():
+    from src.collect.parcoursup import _safe_float
+    assert _safe_float(float("nan")) is None
+    assert _safe_float(float("inf")) is None
+    assert _safe_float(float("-inf")) is None
+    assert _safe_float(42.0) == 42.0
