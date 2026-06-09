@@ -1,3 +1,5 @@
+> PERIME (snapshot date). Chiffres superseded par audit_empirique_2026-06-09 : region manquante reelle 45,9% (pas 41,5%), corpus 47220 fiches. Conserve comme historique.
+
 # Audit Phase 0 v5 — Gate 1 (2026-05-08)
 
 > Phase C.3 du plan corpus v5 (ADR-057). Vérifie que `formations_v5.json`

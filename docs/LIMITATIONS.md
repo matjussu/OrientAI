@@ -102,7 +102,7 @@ Audit v7 daté du 2026-05-08 (`docs/AUDIT_PHASE_0_V7_2026-05-08.md`) — corpus 
 
 | Limite | Cause | Mitigation |
 |---|---|---|
-| **41,5% des fiches sans région** | RNCP nationaux + ONISEP descriptifs + LBA offres distantes : structurellement nationaux | Flag `retrieval_eligible=false` exclut 38% du retrieval (Vague 1.C, runtime `pipeline.py:679`) |
+| **45,9% des fiches sans région** (mesure réelle 2026-06-09 ; ancien 41,5% corrigé) | RNCP nationaux + ONISEP descriptifs + LBA offres distantes : structurellement nationaux | Flag `retrieval_eligible=false` exclut 38% du retrieval (Vague 1.C, runtime `pipeline.py:679`) |
 | **20,9% des fiches sans niveau** | Mêmes sources, idem | Inférence partielle depuis `duree`/`type_diplome` Stage 5 |
 | **33% sans URL vérifiable v7** | Sources hétérogènes (audit Phase 0 mesure `url`/`url_parcoursup`/`url_onisep`/`lien_form_psup`) | `url_canonical` v7 (Vague 3.8) couvre ~80% via cascade fallback ONISEP search — exposé dans réponses |
 | **MonMaster `statut` Public/Privé `null`** | Ambiguïté ministérielle, décision Matteo 2026-05-08 (drop 1.B) | L'utilisateur peut filtrer manuellement, ou poser la sous-question |
