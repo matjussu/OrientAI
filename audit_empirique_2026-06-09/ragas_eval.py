@@ -24,6 +24,7 @@ from src.config import load_config
 
 from datasets import Dataset
 from ragas import evaluate
+from ragas.run_config import RunConfig
 from ragas.metrics import faithfulness, answer_relevancy
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings import LangchainEmbeddingsWrapper
@@ -77,7 +78,11 @@ def main():
     if _ctx_prec is not None:
         metrics.append(_ctx_prec)
 
-    result = evaluate(dataset, metrics=metrics, llm=llm, embeddings=emb)
+    # Concurrence basse + timeout long + retry/backoff : elimine la cause des
+    # 228 TimeoutError du 1er run (saturation API Mistral). Complet, pas degrade.
+    run_config = RunConfig(max_workers=2, timeout=600, max_retries=8, max_wait=90)
+    result = evaluate(dataset, metrics=metrics, llm=llm, embeddings=emb,
+                      run_config=run_config)
     df = result.to_pandas()
 
     agg = {}

@@ -1,0 +1,48 @@
+{
+  "n_fiches": 47220,
+  "results": [
+    {
+      "expectation": "ExpectColumnValuesToNotBeNull",
+      "column": "source",
+      "tier": "hard",
+      "success": true,
+      "unexpected_percent": 0.0
+    },
+    {
+      "expectation": "ExpectColumnValuesToBeInSet",
+      "column": "source",
+      "tier": "hard",
+      "success": true,
+      "unexpected_percent": 0.0
+    },
+    {
+      "expectation": "ExpectColumnValuesToBeInSet",
+      "column": "retrieval_eligible",
+      "tier": "hard",
+      "success": true,
+      "unexpected_percent": 0.0
+    },
+    {
+      "expectation": "ExpectColumnValuesToBeBetween",
+      "column": "taux_acces",
+      "tier": "hard",
+      "success": true,
+      "unexpected_percent": 0.0
+    },
+    {
+      "expectation": "ExpectColumnValuesToBeInSet",
+      "column": "ville_nonempty",
+      "tier": "target",
+      "success": false,
+      "unexpected_percent": 66.57772130453198
+    },
+    {
+      "expectation": "ExpectColumnValuesToBeInSet",
+      "column": "region_present",
+      "tier": "target",
+      "success": false,
+      "unexpected_percent": 50.487081745023296
+    }
+  ],
+  "hard_failures": 0
+}

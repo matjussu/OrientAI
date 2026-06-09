@@ -30,7 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from metrics import compute_metrics  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
-BASELINE = Path(__file__).resolve().parent / "baseline" / "baseline_metrics.json"
+BASELINE = Path(__file__).resolve().parent / "baseline" / "baseline_full_metrics.json"
 GROUND_TOLERANCE = 0.03
 
 

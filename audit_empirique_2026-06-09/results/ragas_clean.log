@@ -1,0 +1,12 @@
+/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:28: DeprecationWarning: Importing faithfulness from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import faithfulness
+  from ragas.metrics import faithfulness, answer_relevancy
+/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:28: DeprecationWarning: Importing answer_relevancy from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import answer_relevancy
+  from ragas.metrics import faithfulness, answer_relevancy
+/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:35: DeprecationWarning: Importing LLMContextPrecisionWithoutReference from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import LLMContextPrecisionWithoutReference
+  from ragas.metrics import LLMContextPrecisionWithoutReference
+/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:73: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; llm = llm_factory('gpt-4o-mini', client=OpenAI(api_key='...'))
+  llm = LangchainLLMWrapper(ChatMistralAI(
+/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:75: DeprecationWarning: LangchainEmbeddingsWrapper is deprecated and will be removed in a future version. Use the modern embedding providers instead: embedding_factory('openai', model='text-embedding-3-small', client=openai_client) or from ragas.embeddings import OpenAIEmbeddings, GoogleEmbeddings, HuggingFaceEmbeddings
+  emb = LangchainEmbeddingsWrapper(MistralAIEmbeddings(api_key=cfg.mistral_api_key))
+gradeable rows for Ragas: 386
+Evaluating:   0%|          | 0/1158 [00:00<?, ?it/s]Evaluating:   0%|          | 1/1158 [00:10<3:24:43, 10.62s/it]Evaluating:   0%|          | 2/1158 [00:30<5:04:50, 15.82s/it]Evaluating:   0%|          | 3/1158 [00:40<4:18:09, 13.41s/it]
