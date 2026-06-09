@@ -7,15 +7,19 @@ les champs typés en JSON tabulaire explicite. Le LLM voit alors clairement
 
 ## 2 modes de fiches
 
-Le corpus formations.json contient ~48k fiches de 2 natures :
+Le corpus formations.json contient 47 220 fiches de 2 natures (vérifié
+2026-06-09 contre data/processed/formations.json) :
 
-1. **Parcoursup riches** (~21.5%, 10 536 fiches) : ont `taux_acces_parcoursup_2025`,
-   `nombre_places`, `admission` (nested avec historique 2023-2025), `profil_admis`,
-   `selectivite_code`, `debouches`. C'est le sous-corpus "or" pour les chiffres.
+1. **Parcoursup riches** (17.3%, 8 191 fiches) : ont `taux_acces_parcoursup_2025`,
+   `nombre_places`, `admission` (nested avec historique 2023-2025), `profil_admis`
+   (schéma mentions au bac), `selectivite_code`, `debouches`. Sous-corpus "or".
+   MonMaster (7 573, 16%) ajoute la sélectivité master : `taux_admission` (ratio
+   0-1), `capacite`, `rang_dernier_appele`, `alternance`, `profil_admis` (schéma
+   origine de diplôme, distinct du schéma Parcoursup) — exposés via Bloc A.
 
-2. **Multi-corpus / MonMaster / RNCP** (~78.5%, ~38k fiches) : ont `nom`,
-   `etablissement`, `niveau`, parfois `insertion_pro` (90% du corpus total a
-   ce champ), souvent un `text` libre ou `detail` mais pas les stats Parcoursup.
+2. **Multi-corpus / RNCP / ONISEP / etc.** (~67%, ~31k fiches) : ont `nom`,
+   `etablissement`, `niveau`, ~31% ont `insertion_pro`, souvent un `text` libre
+   ou `detail` mais pas les stats Parcoursup.
 
 `fiche_to_fact_card()` gère les 2 cas : extrait ce qui est disponible,
 laisse `None` ailleurs. Le LLM décide de citer ou de dire "info non disponible".
@@ -250,6 +254,16 @@ class FactChiffres:
     insertion_pro_granularite: str | None = None
     # Taille échantillon InserSup (transparence statistique).
     nombre_sortants: int | None = None
+    # Bloc A (2026-06-09) — sélectivité MASTER (MonMaster), présente dans les
+    # fiches mais non exposée -> faux-refus sur "quel taux d'admission en master".
+    # taux_admission est NORMALISÉ en % (le brut est un ratio 0-1, cf
+    # _norm_taux_admission) pour rester cohérent avec taux_acces_parcoursup_2025.
+    taux_admission: float | None = None        # % 0-100
+    capacite: int | None = None                # places offertes (master)
+    nombre_candidats: int | None = None        # candidats phase principale
+    nombre_admis: int | None = None            # acceptés au total
+    rang_dernier_appele: int | None = None     # rang du dernier appelé
+    alternance_possible: bool | None = None    # alternance offerte (bool, ≠ None)
 
 
 @dataclass
@@ -275,6 +289,9 @@ class FactCard:
     annee_donnees: int | None = None  # session Parcoursup ex 2025
     text_libre: str | None = None  # detail / text pour fiches non-Parcoursup
     domain: str | None = None  # "formation" | "metier" | "apec_region" | etc.
+    # Bloc A (2026-06-09) — champs qualitatifs présents-non-exposés :
+    tendance_acces: str | None = None  # évolution du taux d'accès (depuis trends)
+    profil_admis: str | None = None    # résumé source-aware (mentions OU origine)
     # ADR-055 — provenance avec tier de confiance, exposée au LLM via JSON.
     # None si la source de la fiche est inconnue ou hors liste blanche.
     provenance: FactProvenance | None = None
@@ -327,6 +344,108 @@ def _safe_str(value: Any) -> str | None:
     if not s or s.lower() in ("none", "null", "n/a", "nan", "non renseigné", "non renseignee"):
         return None
     return s
+
+
+def _safe_bool(value: Any) -> bool | None:
+    """Convertit en bool ou None. Indispensable car `_safe_int(False)` vaut 0
+    (isinstance(False, int) est True en Python) : on perdrait False -> 0 falsy."""
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        v = value.strip().lower()
+        if v in ("true", "oui", "1"):
+            return True
+        if v in ("false", "non", "0"):
+            return False
+    return None
+
+
+def _norm_taux_admission(value: Any) -> float | None:
+    """Normalise le taux d'admission MonMaster (ratio 0-1) en pourcentage 0-100.
+
+    Bloc A — piège data : `taux_admission` est un ratio (ex 0.1935), alors que
+    `taux_acces_parcoursup_2025` déjà exposé est un % (ex 52.0). Sans ×100 le LLM
+    citerait « 0,19 % d'admission ». On normalise au format % cohérent avec le
+    reste de la FactCard. Une valeur >1 est supposée déjà en %, on la laisse.
+    """
+    ratio = _safe_float(value)
+    if ratio is None:
+        return None
+    if 0 <= ratio <= 1:
+        return round(ratio * 100, 1)
+    return round(ratio, 1)
+
+
+def _fmt_pct(value: Any) -> str | None:
+    """Formate un pourcentage factuel : entier si rond, sinon 1 décimale."""
+    v = _safe_float(value)
+    if v is None:
+        return None
+    return f"{v:.0f}%" if v == int(v) else f"{v:.1f}%"
+
+
+def _summarize_profil_admis(profil: Any) -> str | None:
+    """Résume `profil_admis` en une phrase factuelle, SOURCE-AWARE.
+
+    Bloc A — piège data : `profil_admis` est un dict imbriqué de schéma DIFFÉRENT
+    selon la source :
+      - Parcoursup : `mentions_pct` / `bac_type_pct` / `boursiers_pct`...
+        = mentions AU BAC des admis + type de bac.
+      - MonMaster : `pct_lg3` / `pct_but3` / `pct_master`...
+        = ORIGINE (diplôme antérieur) des admis, PAS des mentions au bac.
+    Confondre les deux serait un contresens factuel. On détecte le schéma par
+    présence de clés et on étiquette correctement. Aucune inférence individuelle
+    (conforme au non-pronostic) : on ne fait que restituer des proportions.
+    """
+    if not isinstance(profil, dict) or not profil:
+        return None
+
+    # Schéma Parcoursup — mentions au bac
+    if "mentions_pct" in profil or "bac_type_pct" in profil:
+        parts: list[str] = []
+        mentions = profil.get("mentions_pct")
+        if isinstance(mentions, dict):
+            labels = {"tb": "très bien", "b": "bien", "ab": "assez bien", "sans": "sans mention"}
+            items = [f"{labels.get(k, k)} {_fmt_pct(v)}"
+                     for k, v in mentions.items() if _fmt_pct(v) is not None]
+            if items:
+                parts.append("mentions au bac : " + ", ".join(items))
+        bac = profil.get("bac_type_pct")
+        if isinstance(bac, dict):
+            labels = {"general": "général", "techno": "technologique", "pro": "professionnel"}
+            items = [f"{labels.get(k, k)} {_fmt_pct(v)}"
+                     for k, v in bac.items() if _fmt_pct(v) is not None]
+            if items:
+                parts.append("type de bac : " + ", ".join(items))
+        bours = _fmt_pct(profil.get("boursiers_pct"))
+        if bours:
+            parts.append(f"boursiers {bours}")
+        femmes = _fmt_pct(profil.get("femmes_pct"))
+        if femmes:
+            parts.append(f"femmes {femmes}")
+        return "Profil des admis (" + " ; ".join(parts) + ")" if parts else None
+
+    # Schéma MonMaster — origine (diplôme antérieur) des admis
+    if any(k in profil for k in ("pct_lg3", "pct_lp3", "pct_but3", "pct_master")):
+        labels = [
+            ("pct_lg3", "licence générale"),
+            ("pct_lp3", "licence pro"),
+            ("pct_but3", "BUT"),
+            ("pct_master", "master"),
+            ("pct_autre", "autre diplôme"),
+        ]
+        items = [f"{lib} {_fmt_pct(profil.get(k))}"
+                 for k, lib in labels if _fmt_pct(profil.get(k)) is not None]
+        if not items:
+            return None
+        out = "Origine des admis : " + ", ".join(items)
+        femmes = _fmt_pct(profil.get("pct_femme"))
+        if femmes:
+            out += f" ; femmes {femmes}"
+        return out
+
+    # Schéma inconnu : on ne risque aucun contresens.
+    return None
 
 
 def _extract_debouches_libelles(debouches: Any) -> list[str]:
@@ -558,6 +677,13 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
         frais_annuels=_safe_float(fiche.get("frais_annuels")),
         propositions_totales=_safe_int(fiche.get("propositions_totales")),
         pct_acceptes_debut_pp=_safe_float(fiche.get("pct_acceptes_debut_pp")),
+        # Bloc A — sélectivité master (MonMaster). taux_admission normalisé ×100.
+        taux_admission=_norm_taux_admission(fiche.get("taux_admission")),
+        capacite=_safe_int(fiche.get("capacite")),
+        nombre_candidats=_safe_int(fiche.get("n_candidats_pp")),
+        nombre_admis=_safe_int(fiche.get("n_acceptes_total")),
+        rang_dernier_appele=_safe_int(fiche.get("rang_dernier_appele")),
+        alternance_possible=_safe_bool(fiche.get("alternance")),
     )
     # CHIFFRES INSERTION PRO (90% du corpus, sous insertion_pro nested)
     ip = fiche.get("insertion_pro")
@@ -573,6 +699,14 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
         chiffres.part_poursuite_etudes = _safe_float(ip.get("part_poursuite_etudes"))
         chiffres.taux_cdi = _safe_float(ip.get("taux_cdi"))
         chiffres.salaire_median_embauche = _safe_int(ip.get("salaire_median_embauche"))
+
+    # Bloc A — tendance d'accès : phrase pré-calculée dans trends.taux_acces.
+    tendance_acces = None
+    trends = fiche.get("trends")
+    if isinstance(trends, dict):
+        ta = trends.get("taux_acces")
+        if isinstance(ta, dict):
+            tendance_acces = _safe_str(ta.get("interpretation"))
 
     return FactCard(
         id=fact_id,
@@ -590,6 +724,8 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
         annee_donnees=_pick_annee(fiche),
         text_libre=_pick_text_libre(fiche),
         domain=_safe_str(fiche.get("domain")) or _safe_str(fiche.get("domaine")),
+        tendance_acces=tendance_acces,
+        profil_admis=_summarize_profil_admis(fiche.get("profil_admis")),
         provenance=_infer_provenance(fiche),
     )
 

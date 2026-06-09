@@ -534,3 +534,138 @@ class TestSourceToTierMapping:
                     "dares", "apec", "crous", "france_travail"]
         for src in required:
             assert src in SOURCE_TO_TIER, f"source critique manquante : {src}"
+
+
+# ─────────────── Bloc A (2026-06-09) — champs présents-non-exposés ───────────────
+#
+# Généralisation d'A2 : des champs factuels EXISTENT dans les fiches mais ne sont
+# pas mappés à la FactCard, donc le générateur ne peut pas les citer (faux-refus).
+# C0 a inventorié ces champs ; la re-vérification data a montré 3 pièges :
+#   1. taux_admission (monmaster) = ratio 0-1, PAS un % 0-100 -> normaliser ×100
+#   2. profil_admis = dict imbriqué POLYSÉMIQUE (schéma monmaster ≠ parcoursup)
+#   3. mention = polysémique (spécialité master sur monmaster) -> EXCLU de Bloc A
+
+
+def fiche_monmaster_bloc_a() -> dict:
+    """MonMaster réelle (schéma observé dans formations.json 2026-06-09)."""
+    return {
+        "source": "monmaster",
+        "phase": "master",
+        "nom": "MEEF Acoustique et musicologie",
+        "etablissement": "Sorbonne Université",
+        "ville": "PARIS",
+        "niveau": "bac+5",
+        "taux_admission": 0.1935483870967742,   # ratio 0-1 (≈ 19,4 %)
+        "capacite": 12,
+        "n_candidats_pp": 62,
+        "n_acceptes_total": 12,
+        "rang_dernier_appele": 20,
+        "alternance": False,                      # bool valide (≠ None)
+        "profil_admis": {                         # schéma MonMaster = origine parcours
+            "pct_lg3": 50.0, "pct_lp3": 0.0, "pct_but3": 16.7,
+            "pct_master": 0.0, "pct_autre": 8.3, "pct_femme": 0.0,
+            "pct_etab": 16.7, "pct_lieu_acad": 16.7,
+        },
+        "mention": "ACOUSTIQUE ET MUSICOLOGIE",   # NOM de spécialité, PAS une stat
+    }
+
+
+def fiche_parcoursup_bloc_a() -> dict:
+    """Parcoursup réelle avec trends + profil_admis (schéma observé)."""
+    return {
+        "source": "parcoursup",
+        "nom": "BUT Informatique",
+        "etablissement": "IUT Lyon 1",
+        "ville": "Villeurbanne",
+        "niveau": "bac+3",
+        "taux_acces_parcoursup_2025": 43.0,
+        "trends": {
+            "taux_acces": {
+                "direction": "stable", "delta_pp": 6.0,
+                "start_year": 2023, "end_year": 2025,
+                "start_value": 37.0, "end_value": 43.0,
+                "interpretation": "taux d'accès stable 2023→2025 (37% → 43%)",
+            },
+            "places": {"direction": "stable", "delta": 0, "interpretation": None},
+        },
+        "profil_admis": {                         # schéma Parcoursup = mentions au bac
+            "mentions_pct": {"tb": 10.0, "b": 21.0, "ab": 44.0, "sans": 26.0},
+            "bac_type_pct": {"general": 85.0, "techno": 15.0, "pro": 0.0},
+            "boursiers_pct": 16.0, "femmes_pct": 49.0,
+            "neobacheliers_pct": 95.0,
+        },
+    }
+
+
+class TestFicheToFactCardBlocA:
+    """Mappings Bloc A : taux_admission, sélectivité master, alternance,
+    tendance d'accès, profil_admis source-aware. mention reste exclue."""
+
+    # --- taux_admission : ratio 0-1 -> % 0-100 ---
+    def test_taux_admission_normalise_en_pourcent(self):
+        card = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1")
+        # 0.1935… -> 19.4 (et SURTOUT pas 0.19, sinon le LLM cite « 0,19 % »)
+        assert card.chiffres.taux_admission == 19.4
+
+    def test_taux_admission_un_devient_cent(self):
+        f = fiche_monmaster_bloc_a(); f["taux_admission"] = 1.0
+        assert fiche_to_fact_card(f, "S1").chiffres.taux_admission == 100.0
+
+    def test_taux_admission_absent_reste_none(self):
+        f = fiche_monmaster_bloc_a(); del f["taux_admission"]
+        assert fiche_to_fact_card(f, "S1").chiffres.taux_admission is None
+
+    # --- scalaires de sélectivité master ---
+    def test_selectivite_scalaires_master(self):
+        c = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1").chiffres
+        assert c.capacite == 12
+        assert c.nombre_candidats == 62
+        assert c.nombre_admis == 12
+        assert c.rang_dernier_appele == 20
+
+    # --- alternance booléen (False doit être préservé, ≠ None) ---
+    def test_alternance_false_preservee(self):
+        card = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1")
+        assert card.chiffres.alternance_possible is False
+
+    def test_alternance_true(self):
+        f = fiche_monmaster_bloc_a(); f["alternance"] = True
+        assert fiche_to_fact_card(f, "S1").chiffres.alternance_possible is True
+
+    def test_alternance_absente_reste_none(self):
+        f = fiche_monmaster_bloc_a(); del f["alternance"]
+        assert fiche_to_fact_card(f, "S1").chiffres.alternance_possible is None
+
+    # --- tendance d'accès depuis trends.taux_acces.interpretation ---
+    def test_tendance_acces_depuis_trends(self):
+        card = fiche_to_fact_card(fiche_parcoursup_bloc_a(), "S1")
+        assert card.tendance_acces == "taux d'accès stable 2023→2025 (37% → 43%)"
+
+    def test_tendance_acces_absente_reste_none(self):
+        card = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1")
+        assert card.tendance_acces is None
+
+    # --- profil_admis SOURCE-AWARE (2 schémas distincts) ---
+    def test_profil_admis_parcoursup_mentions(self):
+        p = fiche_to_fact_card(fiche_parcoursup_bloc_a(), "S1").profil_admis
+        assert p is not None
+        assert "mention" in p.lower()        # schéma parcoursup = mentions au bac
+        assert "44" in p                     # AB 44 %
+        assert "boursier" in p.lower() and "16" in p
+
+    def test_profil_admis_monmaster_origine(self):
+        p = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1").profil_admis
+        assert p is not None
+        assert "origine" in p.lower()        # schéma monmaster = origine parcours
+        assert "50" in p                     # 50 % L3 générale
+        assert "mention" not in p.lower()    # NE PAS inventer des mentions au bac
+
+    def test_profil_admis_schema_inconnu_reste_none(self):
+        f = fiche_monmaster_bloc_a(); f["profil_admis"] = {"clef_inconnue": 42}
+        assert fiche_to_fact_card(f, "S1").profil_admis is None
+
+    # --- mention EXCLUE de Bloc A (garde anti-contresens factuel) ---
+    def test_mention_non_exposee(self):
+        d = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1").to_dict()
+        assert "mention" not in d
+        assert "mention" not in d.get("chiffres", {})

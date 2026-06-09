@@ -78,6 +78,12 @@ _FICHE_KEEP = (
     "nombre_places", "propositions_totales", "pct_acceptes_debut_pp",
     "insertion_pro", "profil_admis", "debouches", "salaire", "annee",
     "source", "url_canonical", "rncp",
+    # Bloc A (2026-06-09) — champs exposés par fact_card mais qui manquaient au
+    # contexte du juge : sans eux, un « taux d'admission 29,5 % » cité par le
+    # générateur (et pourtant grounded dans la fiche) était faussement flaggé
+    # comme hallucination. Validation de l'instrument avant de mesurer Bloc A.
+    "taux_admission", "capacite", "n_candidats_pp", "n_acceptes_total",
+    "rang_dernier_appele", "alternance", "trends",
 )
 
 
