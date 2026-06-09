@@ -122,7 +122,9 @@ def main():
     if not os.environ.get("MISTRAL_API_KEY"):
         raise SystemExit("MISTRAL_API_KEY manquant (ni env ni .env)")
 
-    questions = json.loads(Path(args.eval_set).read_text())
+    raw = json.loads(Path(args.eval_set).read_text())
+    # accepte une liste plate OU le format versionne {version, n, items:[...]}
+    questions = raw["items"] if isinstance(raw, dict) and "items" in raw else raw
     if args.limit:
         questions = questions[: args.limit]
 
