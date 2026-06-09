@@ -227,6 +227,16 @@ class FactChiffres:
     frais_annuels: float | None = None
     taux_emploi_3ans: float | None = None
     taux_emploi_6ans: float | None = None
+    # A2 (2026-06-09) — insertion court-terme InserSup/InserJeunes. Ces champs
+    # EXISTENT dans insertion_pro du corpus mais n'etaient pas exposes a la
+    # FactCard -> le generateur refusait a tort "pas d'info sur l'insertion a
+    # 6 mois" alors que la donnee etait presente (faux refus, audit 2026-06-09).
+    taux_emploi_6m: float | None = None
+    taux_emploi_12m: float | None = None
+    taux_emploi_18m: float | None = None
+    taux_emploi_24m: float | None = None
+    part_emploi_6m: float | None = None
+    part_poursuite_etudes: float | None = None
     taux_cdi: float | None = None
     salaire_median_embauche: int | None = None
     pct_acceptes_debut_pp: float | None = None
@@ -554,6 +564,13 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
     if isinstance(ip, dict):
         chiffres.taux_emploi_3ans = _safe_float(ip.get("taux_emploi_3ans"))
         chiffres.taux_emploi_6ans = _safe_float(ip.get("taux_emploi_6ans"))
+        # A2 — exposer l'insertion court-terme presente dans le corpus
+        chiffres.taux_emploi_6m = _safe_float(ip.get("taux_emploi_6m"))
+        chiffres.taux_emploi_12m = _safe_float(ip.get("taux_emploi_12m"))
+        chiffres.taux_emploi_18m = _safe_float(ip.get("taux_emploi_18m"))
+        chiffres.taux_emploi_24m = _safe_float(ip.get("taux_emploi_24m"))
+        chiffres.part_emploi_6m = _safe_float(ip.get("part_emploi_6m"))
+        chiffres.part_poursuite_etudes = _safe_float(ip.get("part_poursuite_etudes"))
         chiffres.taux_cdi = _safe_float(ip.get("taux_cdi"))
         chiffres.salaire_median_embauche = _safe_int(ip.get("salaire_median_embauche"))
 
