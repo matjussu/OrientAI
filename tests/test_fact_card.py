@@ -669,3 +669,135 @@ class TestFicheToFactCardBlocA:
         d = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1").to_dict()
         assert "mention" not in d
         assert "mention" not in d.get("chiffres", {})
+
+
+# ─────────────── C2a — voies_acces -> dispositifs reconversion ───────────────
+#
+# Généralisation d'A2/Bloc A : `voies_acces` (vocabulaire RNCP fermé de 6 valeurs,
+# 10072 fiches rncp + rncp_blocs) encode les dispositifs de reconversion (VAE,
+# formation continue, alternance) mais n'est PAS exposé à la FactCard -> le
+# générateur refuse à tort les questions reconversion alors que la donnée existe.
+# Champ de citation pur (zéro re-embed). Mapping déterministe, source-aware.
+#
+# Garde-fous (audit data réelle 2026-06-09 + consigne Jarvis) :
+#   1. "Par expérience" = la voie VAE (libellé France Compétences standard) -> SÛR.
+#   2. PAS d'éligibilité CPF / financement déduite de voies_acces (c'est C2b, différé).
+#   3. "sous statut d'élève ou d'étudiant" = voie INITIALE, NON reconversion -> non mappé.
+#   4. "Par candidature individuelle" = pas un dispositif de reconversion -> non mappé.
+#   5. Apostrophe typographique U+2019 dans la data ("d'apprentissage") -> normaliser.
+
+# Les 6 chaînes EXACTES observées dans formations.json (apostrophes U+2019 préservées).
+VA_VAE = "Par expérience"
+VA_FC = "Après un parcours de formation continue"
+VA_PRO = "En contrat de professionnalisation"
+VA_APP = "En contrat d’apprentissage"                       # U+2019
+VA_INIT = "Après un parcours de formation sous statut d’élève ou d’étudiant"  # U+2019 x2
+VA_CAND = "Par candidature individuelle"
+
+
+def fiche_rncp_voies_acces(voies: list[str]) -> dict:
+    """Fiche RNCP réelle (schéma observé) avec une liste voies_acces donnée."""
+    return {
+        "source": "rncp",
+        "nom": "Accompagnant éducatif et social",
+        "niveau": "bac",
+        "voies_acces": list(voies),
+    }
+
+
+class TestFicheToFactCardVoiesAccesC2a:
+    """C2a : mapping voies_acces -> dispositifs_reconversion (citation, source-aware)."""
+
+    # --- VAE depuis "Par expérience" (mapping le plus important : 9834 fiches) ---
+    def test_vae_depuis_par_experience(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_VAE]), "S1")
+        d = card.dispositifs_reconversion
+        assert d is not None
+        assert "VAE" in d
+        assert "expérience" in d.lower()
+
+    # --- formation continue ---
+    def test_formation_continue(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_FC]), "S1")
+        assert card.dispositifs_reconversion is not None
+        assert "formation continue" in card.dispositifs_reconversion.lower()
+
+    # --- alternance : apprentissage + contrat pro regroupés ---
+    def test_alternance_groupee(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_APP, VA_PRO]), "S1")
+        d = card.dispositifs_reconversion
+        assert d is not None
+        assert "alternance" in d.lower()
+        assert "apprentissage" in d.lower()
+        assert "professionnalisation" in d.lower()
+
+    # --- piège Unicode : apostrophe typographique U+2019 doit matcher ---
+    def test_apostrophe_typographique_matchee(self):
+        # VA_APP contient bien U+2019, pas l'apostrophe droite
+        assert "’" in VA_APP
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_APP]), "S1")
+        assert card.dispositifs_reconversion is not None
+        assert "alternance" in card.dispositifs_reconversion.lower()
+
+    # --- les 6 valeurs réelles : 3 dispositifs présents, ordre reconversion-first ---
+    def test_complet_ordre_reconversion(self):
+        toutes = [VA_VAE, VA_FC, VA_PRO, VA_APP, VA_INIT, VA_CAND]
+        d = fiche_to_fact_card(fiche_rncp_voies_acces(toutes), "S1").dispositifs_reconversion
+        assert d is not None
+        assert "VAE" in d
+        assert "formation continue" in d.lower()
+        assert "alternance" in d.lower()
+        # ordre : VAE avant alternance (reconversion-first)
+        assert d.index("VAE") < d.lower().index("alternance")
+
+    # --- voie INITIALE seule (statut élève/étudiant) = NON reconversion -> None ---
+    def test_statut_eleve_etudiant_seul_non_mappe(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_INIT]), "S1")
+        assert card.dispositifs_reconversion is None
+
+    # --- candidature individuelle seule = pas un dispositif reconversion -> None ---
+    def test_candidature_individuelle_seule_non_mappe(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_CAND]), "S1")
+        assert card.dispositifs_reconversion is None
+
+    # --- voies initiales mélangées : seules les reconversion remontent ---
+    def test_init_et_cand_ignorees_si_vae_present(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_INIT, VA_CAND, VA_VAE]), "S1")
+        d = card.dispositifs_reconversion
+        assert d is not None
+        assert "VAE" in d
+        # la voie initiale ne doit PAS apparaître comme dispositif reconversion
+        assert "initial" not in d.lower()
+        assert "statut" not in d.lower()
+
+    # --- absence / vide -> None ---
+    def test_voies_acces_absente_reste_none(self):
+        f = fiche_rncp_voies_acces([VA_VAE]); del f["voies_acces"]
+        assert fiche_to_fact_card(f, "S1").dispositifs_reconversion is None
+
+    def test_voies_acces_liste_vide_reste_none(self):
+        assert fiche_to_fact_card(fiche_rncp_voies_acces([]), "S1").dispositifs_reconversion is None
+
+    # --- valeur inconnue (hors vocab fermé) seule -> None (ne rien inventer) ---
+    def test_valeur_inconnue_seule_reste_none(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces(["Par téléportation"]), "S1")
+        assert card.dispositifs_reconversion is None
+
+    # --- garde-fou : JAMAIS de claim CPF/financement depuis voies_acces (C2b différé) ---
+    def test_pas_de_claim_cpf_ni_financement(self):
+        toutes = [VA_VAE, VA_FC, VA_PRO, VA_APP, VA_INIT, VA_CAND]
+        d = fiche_to_fact_card(fiche_rncp_voies_acces(toutes), "S1").dispositifs_reconversion
+        assert d is not None
+        low = d.lower()
+        assert "cpf" not in low
+        assert "financ" not in low
+        assert "éligible" not in low and "eligible" not in low
+
+    # --- sérialisation to_dict ---
+    def test_present_dans_to_dict(self):
+        d = fiche_to_fact_card(fiche_rncp_voies_acces([VA_VAE]), "S1").to_dict()
+        assert "dispositifs_reconversion" in d
+
+    def test_absent_de_to_dict_si_none(self):
+        d = fiche_to_fact_card(fiche_rncp_voies_acces([VA_INIT]), "S1").to_dict()
+        assert "dispositifs_reconversion" not in d

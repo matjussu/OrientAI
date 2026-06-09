@@ -84,6 +84,11 @@ _FICHE_KEEP = (
     # comme hallucination. Validation de l'instrument avant de mesurer Bloc A.
     "taux_admission", "capacite", "n_candidats_pp", "n_acceptes_total",
     "rang_dernier_appele", "alternance", "trends",
+    # C2a (2026-06-09) — voies_acces fonde la citation dispositifs_reconversion
+    # (VAE/formation continue/alternance). Sans ce champ au contexte du juge, une
+    # citation pourtant grounded serait faussement flaggée hallucination (même
+    # piège d'instrument que taux_admission ci-dessus). Validation avant mesure.
+    "voies_acces",
 )
 
 

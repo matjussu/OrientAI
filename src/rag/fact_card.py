@@ -292,6 +292,10 @@ class FactCard:
     # Bloc A (2026-06-09) — champs qualitatifs présents-non-exposés :
     tendance_acces: str | None = None  # évolution du taux d'accès (depuis trends)
     profil_admis: str | None = None    # résumé source-aware (mentions OU origine)
+    # C2a (2026-06-09) — dispositifs de reconversion depuis voies_acces (RNCP).
+    # Résumé source-aware des voies reconversion (VAE, formation continue,
+    # alternance). None si aucune voie reconversion (ex : voie initiale seule).
+    dispositifs_reconversion: str | None = None
     # ADR-055 — provenance avec tier de confiance, exposée au LLM via JSON.
     # None si la source de la fiche est inconnue ou hors liste blanche.
     provenance: FactProvenance | None = None
@@ -446,6 +450,60 @@ def _summarize_profil_admis(profil: Any) -> str | None:
 
     # Schéma inconnu : on ne risque aucun contresens.
     return None
+
+
+def _summarize_voies_acces(voies: Any) -> str | None:
+    """Résume `voies_acces` (RNCP) en dispositifs de RECONVERSION, source-aware.
+
+    C2a — `voies_acces` est un vocabulaire RNCP FERMÉ de 6 valeurs (vérifié sur
+    formations.json 2026-06-09, 10072 fiches rncp/rncp_blocs). On ne mappe QUE
+    les voies de reconversion adulte ; on ignore les voies initiales.
+
+    Mapping (vocabulaire contrôlé, déterministe — pas de NLP) :
+      - "Par expérience"                         -> VAE (libellé France Compétences)
+      - "Après un parcours de formation continue"-> formation continue
+      - "En contrat d'apprentissage"             -> alternance (apprentissage)
+      - "En contrat de professionnalisation"     -> alternance (contrat pro)
+
+    NON mappées (ne sont PAS des dispositifs de reconversion, consigne Jarvis) :
+      - "...sous statut d'élève ou d'étudiant"   = voie INITIALE
+      - "Par candidature individuelle"
+
+    Garde-fous (leçon A2/Bloc A) :
+      - aucune éligibilité CPF / financement déduite ici (c'est C2b, différé) ;
+      - apostrophe typographique U+2019 normalisée (sinon match silencieux raté) ;
+      - None si aucune voie reconversion -> "info non disponible" côté LLM.
+    """
+    if not isinstance(voies, list) or not voies:
+        return None
+
+    # Normalise apostrophe typographique U+2019 -> droite pour matcher le vocab.
+    normalized = {
+        str(v).replace("’", "'").strip().lower()
+        for v in voies if isinstance(v, str)
+    }
+
+    vae = "par expérience" in normalized
+    formation_continue = "après un parcours de formation continue" in normalized
+    apprentissage = "en contrat d'apprentissage" in normalized
+    contrat_pro = "en contrat de professionnalisation" in normalized
+
+    parts: list[str] = []
+    if vae:
+        parts.append("VAE (validation des acquis de l'expérience)")
+    if formation_continue:
+        parts.append("formation continue")
+    alt_formes = []
+    if apprentissage:
+        alt_formes.append("apprentissage")
+    if contrat_pro:
+        alt_formes.append("contrat de professionnalisation")
+    if alt_formes:
+        parts.append("alternance (" + ", ".join(alt_formes) + ")")
+
+    if not parts:
+        return None
+    return "Dispositifs de reconversion (certification RNCP) : " + ", ".join(parts)
 
 
 def _extract_debouches_libelles(debouches: Any) -> list[str]:
@@ -726,6 +784,7 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
         domain=_safe_str(fiche.get("domain")) or _safe_str(fiche.get("domaine")),
         tendance_acces=tendance_acces,
         profil_admis=_summarize_profil_admis(fiche.get("profil_admis")),
+        dispositifs_reconversion=_summarize_voies_acces(fiche.get("voies_acces")),
         provenance=_infer_provenance(fiche),
     )
 

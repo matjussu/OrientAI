@@ -1,0 +1,202 @@
+{
+  "version": "c2a-reconversion-2026-06-09",
+  "n": 28,
+  "items": [
+    {
+      "id": "reconv-001",
+      "category": "reconversion_adulte",
+      "expectation": "CPF/reconversion adulte",
+      "question": "Je travaille depuis 8 ans dans la vente, comment me reconvertir dans l'informatique avec mon CPF ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-002",
+      "category": "reconversion_adulte",
+      "expectation": "VAE: explication/pistes",
+      "question": "C'est quoi une VAE et comment l'utiliser pour valider mon expérience ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-003",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion adulte finançable",
+      "question": "Je veux devenir développeur à 35 ans sans diplôme, quelles formations finançables ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-004",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion sensible: pistes adultes",
+      "question": "Après un burn-out je veux me reconvertir dans le paramédical, par où commencer ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-005",
+      "category": "reconversion_adulte",
+      "expectation": "financement reconversion (France Travail)",
+      "question": "Comment financer une formation de reconversion quand on est demandeur d'emploi ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-006",
+      "category": "reconversion_adulte",
+      "expectation": "AFEST: explication",
+      "question": "C'est quoi l'AFEST et est-ce que ça me concerne pour une reconversion en entreprise ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-007",
+      "category": "reconversion_adulte",
+      "expectation": "formation continue salarié",
+      "question": "Je suis en poste et je veux une formation continue le soir en gestion, ça existe ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-001-v1",
+      "category": "reconversion_adulte",
+      "expectation": "CPF/reconversion adulte",
+      "question": "Dis-moi : Je travaille depuis 8 ans dans la vente, comment me reconvertir dans l'informatique avec mon CPF ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-002-v1",
+      "category": "reconversion_adulte",
+      "expectation": "VAE: explication/pistes",
+      "question": "Dis-moi : C'est quoi une VAE et comment l'utiliser pour valider mon expérience ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-003-v1",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion adulte finançable",
+      "question": "Dis-moi : Je veux devenir développeur à 35 ans sans diplôme, quelles formations finançables ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-004-v1",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion sensible: pistes adultes",
+      "question": "Dis-moi : Après un burn-out je veux me reconvertir dans le paramédical, par où commencer ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-005-v1",
+      "category": "reconversion_adulte",
+      "expectation": "financement reconversion (France Travail)",
+      "question": "Dis-moi : Comment financer une formation de reconversion quand on est demandeur d'emploi ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-006-v1",
+      "category": "reconversion_adulte",
+      "expectation": "AFEST: explication",
+      "question": "Dis-moi : C'est quoi l'AFEST et est-ce que ça me concerne pour une reconversion en entreprise ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-007-v1",
+      "category": "reconversion_adulte",
+      "expectation": "formation continue salarié",
+      "question": "Dis-moi : Je suis en poste et je veux une formation continue le soir en gestion, ça existe ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-001-v2",
+      "category": "reconversion_adulte",
+      "expectation": "CPF/reconversion adulte",
+      "question": "J'aimerais savoir, je travaille depuis 8 ans dans la vente, comment me reconvertir dans l'informatique avec mon CPF ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-002-v2",
+      "category": "reconversion_adulte",
+      "expectation": "VAE: explication/pistes",
+      "question": "J'aimerais savoir, c'est quoi une VAE et comment l'utiliser pour valider mon expérience ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-003-v2",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion adulte finançable",
+      "question": "J'aimerais savoir, je veux devenir développeur à 35 ans sans diplôme, quelles formations finançables ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-004-v2",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion sensible: pistes adultes",
+      "question": "J'aimerais savoir, après un burn-out je veux me reconvertir dans le paramédical, par où commencer ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-005-v2",
+      "category": "reconversion_adulte",
+      "expectation": "financement reconversion (France Travail)",
+      "question": "J'aimerais savoir, comment financer une formation de reconversion quand on est demandeur d'emploi ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-006-v2",
+      "category": "reconversion_adulte",
+      "expectation": "AFEST: explication",
+      "question": "J'aimerais savoir, c'est quoi l'AFEST et est-ce que ça me concerne pour une reconversion en entreprise ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-007-v2",
+      "category": "reconversion_adulte",
+      "expectation": "formation continue salarié",
+      "question": "J'aimerais savoir, je suis en poste et je veux une formation continue le soir en gestion, ça existe ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-001-v3",
+      "category": "reconversion_adulte",
+      "expectation": "CPF/reconversion adulte",
+      "question": "Peux-tu m'aider : je travaille depuis 8 ans dans la vente, comment me reconvertir dans l'informatique avec mon CPF ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-002-v3",
+      "category": "reconversion_adulte",
+      "expectation": "VAE: explication/pistes",
+      "question": "Peux-tu m'aider : c'est quoi une VAE et comment l'utiliser pour valider mon expérience ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-003-v3",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion adulte finançable",
+      "question": "Peux-tu m'aider : je veux devenir développeur à 35 ans sans diplôme, quelles formations finançables ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-004-v3",
+      "category": "reconversion_adulte",
+      "expectation": "reconversion sensible: pistes adultes",
+      "question": "Peux-tu m'aider : après un burn-out je veux me reconvertir dans le paramédical, par où commencer ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-005-v3",
+      "category": "reconversion_adulte",
+      "expectation": "financement reconversion (France Travail)",
+      "question": "Peux-tu m'aider : comment financer une formation de reconversion quand on est demandeur d'emploi ?",
+      "_c2a_voie_dacces": false
+    },
+    {
+      "id": "reconv-006-v3",
+      "category": "reconversion_adulte",
+      "expectation": "AFEST: explication",
+      "question": "Peux-tu m'aider : c'est quoi l'AFEST et est-ce que ça me concerne pour une reconversion en entreprise ?",
+      "_c2a_voie_dacces": true
+    },
+    {
+      "id": "reconv-007-v3",
+      "category": "reconversion_adulte",
+      "expectation": "formation continue salarié",
+      "question": "Peux-tu m'aider : je suis en poste et je veux une formation continue le soir en gestion, ça existe ?",
+      "_c2a_voie_dacces": true
+    }
+  ]
+}
