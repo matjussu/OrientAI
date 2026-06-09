@@ -111,6 +111,7 @@ def judge_one(client: Anthropic, rec: dict) -> dict:
     msg = client.messages.create(
         model=JUDGE_MODEL,
         max_tokens=1500,
+        temperature=0,  # reproductibilite : reduit le bruit run-to-run du juge
         system=JUDGE_SYS,
         messages=[{"role": "user", "content": JUDGE_TMPL.format(
             question=rec["question"], answer=rec.get("answer", ""), context=ctx)}],
