@@ -221,12 +221,33 @@ académique et professionnelle française post-bac.
 Catégorise la question en EXACTEMENT UNE de ces 3 catégories : `in_scope`, \
 `out_of_scope`, `urgent`. Tu réponds UNIQUEMENT en JSON.
 
-## RÈGLE PRIORITAIRE
+## RÈGLE PRIORITAIRE (calibrée — détresse VITALE, pas stress d'orientation)
 
-Si tu détectes le moindre signal de **détresse psychologique** (mal-être, \
-idéations négatives, isolement émotionnel, expressions de désespoir, même \
-indirectes), classe **urgent**. **AUCUNE EXCEPTION** : un signal détresse \
-prime sur tout autre indice. Mieux flagger en trop que rater.
+Si tu détectes un signal de **détresse psychologique GRAVE** menaçant la \
+sécurité ou la santé de la personne (idéations suicidaires, envie d'en finir, \
+violences subies, désespoir profond et GLOBAL sur la vie, auto-dévalorisation \
+sévère hors contexte scolaire), classe **urgent**. La détresse vitale prime \
+sur tout autre indice.
+
+**Distinction cruciale** : le STRESS, l'ANGOISSE ou l'INDÉCISION liés au CHOIX \
+d'orientation ne sont PAS de la détresse vitale — c'est le coeur de métier de \
+l'outil. Un élève stressé par son orientation a besoin d'AIDE À L'ORIENTATION \
+(in_scope), pas du 3114. Ne classe `urgent` que si la souffrance dépasse \
+clairement le cadre scolaire/orientation et touche la sécurité de la personne. \
+En cas de doute entre "stress d'orientation" et "détresse vitale", regarde si \
+la personne demande de l'aide pour CHOISIR (-> in_scope) ou exprime un mal-être \
+qui dépasse les études (-> urgent).
+
+## NE PAS classer `urgent` (stress / indécision NORMALE d'orientation)
+
+Ces formulations sont `in_scope` (ou `out_of_scope` si médical), JAMAIS urgent :
+- "je sais pas quoi faire après le bac, aide-moi" -> in_scope (indécision normale)
+- "je suis stressé·e / ça m'angoisse de pas savoir quoi choisir" -> in_scope
+- "j'ai peur de me tromper de voie / de faire le mauvais choix" -> in_scope
+- "je panique pour Parcoursup / mes voeux" -> in_scope
+- "comment gérer mon anxiété/stress avant le bac" -> out_of_scope (médical), PAS urgent
+Le stress face à une décision d'orientation est attendu et légitime : il appelle \
+de l'accompagnement à l'orientation, pas une réponse de crise.
 
 ## CONTEXTE CONVERSATIONNEL
 
@@ -319,6 +340,15 @@ Question : "Je suis nul·le en cours, je sers à rien"
 
 Question : "Je suis nul en maths, est-ce que je peux quand même faire ingénieur ?"
 → {"label": "in_scope", "reason": "auto-évaluation contextualisée à projet orientation"}
+
+Question : "je sais pas quoi faire après le bac aide moi"
+→ {"label": "in_scope", "reason": "indécision d'orientation normale, pas de détresse vitale"}
+
+Question : "je suis hyper stressé et ça m'angoisse de pas savoir quoi choisir comme orientation, aide moi"
+→ {"label": "in_scope", "reason": "stress lié au choix d'orientation = coeur de métier, pas urgent"}
+
+Question : "Quel médicament pour calmer mon anxiété avant le bac ?"
+→ {"label": "out_of_scope", "reason": "demande médicale hors orientation, mais PAS détresse vitale"}
 
 Question : "Bonjour, ça va ?"
 → {"label": "out_of_scope", "reason": "salutation sans question d'orientation"}
@@ -484,6 +514,7 @@ class ScopeClassifier:
                 messages=classifier_messages,
                 response_format={"type": "json_object"},
                 timeout_ms=self.timeout_ms,
+                temperature=0.0,  # A1 déterminisme : même question -> même verdict
             )
             text = resp.choices[0].message.content or ""
         except Exception as e:
