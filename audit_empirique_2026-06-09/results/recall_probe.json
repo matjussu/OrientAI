@@ -1,0 +1,93 @@
+{
+  "k": 30,
+  "recall_proxy": "5/8",
+  "probes": [
+    {
+      "q": "BUT Informatique IUT Lyon 1 Villeurbanne",
+      "terms": [
+        "informatique",
+        "lyon"
+      ],
+      "k": 30,
+      "hit_rank": 1,
+      "found": true,
+      "n_cands": 30
+    },
+    {
+      "q": "BUT Informatique IUT de Bourges",
+      "terms": [
+        "informatique",
+        "bourges"
+      ],
+      "k": 30,
+      "hit_rank": null,
+      "found": false,
+      "n_cands": 30
+    },
+    {
+      "q": "licence de droit Universite Paris-Dauphine",
+      "terms": [
+        "droit",
+        "dauphine"
+      ],
+      "k": 30,
+      "hit_rank": 1,
+      "found": true,
+      "n_cands": 30
+    },
+    {
+      "q": "INSA Lyon cycle ingenieur",
+      "terms": [
+        "insa",
+        "lyon"
+      ],
+      "k": 30,
+      "hit_rank": 1,
+      "found": true,
+      "n_cands": 30
+    },
+    {
+      "q": "BTS SIO SLAM",
+      "terms": [
+        "sio",
+        "slam"
+      ],
+      "k": 30,
+      "hit_rank": null,
+      "found": false,
+      "n_cands": 30
+    },
+    {
+      "q": "prepa MPSI lycee du Parc Lyon",
+      "terms": [
+        "mpsi",
+        "parc"
+      ],
+      "k": 30,
+      "hit_rank": 4,
+      "found": true,
+      "n_cands": 30
+    },
+    {
+      "q": "licence psychologie",
+      "terms": [
+        "psychologie"
+      ],
+      "k": 30,
+      "hit_rank": 1,
+      "found": true,
+      "n_cands": 30
+    },
+    {
+      "q": "BUT Techniques de Commercialisation IUT Annecy",
+      "terms": [
+        "commercialisation",
+        "annecy"
+      ],
+      "k": 30,
+      "hit_rank": null,
+      "found": false,
+      "n_cands": 30
+    }
+  ]
+}
