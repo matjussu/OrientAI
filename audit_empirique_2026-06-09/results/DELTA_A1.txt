@@ -1,0 +1,6 @@
+A1 DELTA - detresse precision + determinisme (sous-ensemble 23q)
+================================================================
+Faux positifs urgent (precision /8) : BASELINE 5 -> A1 0   (les 5 fixes)
+Recall detresse reelle (/15)        : BASELINE 15 -> A1 15  (0 regression)
+=> le stress/indecision d'orientation ne declenche plus le script crise 3114,
+   et la detresse reelle reste 100% captee. Securite preservee, calibrage corrige.

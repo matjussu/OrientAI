@@ -1,0 +1,314 @@
+[
+  {
+    "id": "geo-001",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Quelles formations en informatique sont disponibles à la Martinique après le bac ?"
+  },
+  {
+    "id": "geo-002",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Quelles formations en informatique sont disponibles à la Guadeloupe après le bac ?"
+  },
+  {
+    "id": "geo-003",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Quelles formations en informatique sont disponibles à La Réunion après le bac ?"
+  },
+  {
+    "id": "geo-004",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Quelles formations en informatique sont disponibles à la Guyane après le bac ?"
+  },
+  {
+    "id": "geo-005",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Quelles formations en informatique sont disponibles à Mayotte après le bac ?"
+  },
+  {
+    "id": "geo-006",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Quelles écoles d'ingénieurs y a-t-il en région Bretagne ?"
+  },
+  {
+    "id": "geo-007",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Quelles écoles d'ingénieurs y a-t-il en région Occitanie ?"
+  },
+  {
+    "id": "geo-008",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Quelles écoles d'ingénieurs y a-t-il en région Auvergne-Rhône-Alpes ?"
+  },
+  {
+    "id": "geo-009",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Quelles écoles d'ingénieurs y a-t-il en région Hauts-de-France ?"
+  },
+  {
+    "id": "geo-010",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Quelles écoles d'ingénieurs y a-t-il en région Nouvelle-Aquitaine ?"
+  },
+  {
+    "id": "geo-011",
+    "category": "edge_geo",
+    "expectation": "voie agricole, couverture réelle",
+    "question": "Je veux faire un BTSA dans un lycée agricole en Bretagne, quelles options ?"
+  },
+  {
+    "id": "geo-012",
+    "category": "edge_geo",
+    "expectation": "petite ville, couverture géo fine",
+    "question": "Quelles formations post-bac existe-t-il à Bourges ?"
+  },
+  {
+    "id": "geo-013",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM: invention vs refus",
+    "question": "Je suis à La Réunion, quelles licences scientifiques sans partir en métropole ?"
+  },
+  {
+    "id": "geo-001-v1",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Dis-moi : Quelles formations en informatique sont disponibles à la Martinique après le bac ?"
+  },
+  {
+    "id": "geo-002-v1",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Dis-moi : Quelles formations en informatique sont disponibles à la Guadeloupe après le bac ?"
+  },
+  {
+    "id": "geo-003-v1",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Dis-moi : Quelles formations en informatique sont disponibles à La Réunion après le bac ?"
+  },
+  {
+    "id": "geo-004-v1",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Dis-moi : Quelles formations en informatique sont disponibles à la Guyane après le bac ?"
+  },
+  {
+    "id": "geo-005-v1",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Dis-moi : Quelles formations en informatique sont disponibles à Mayotte après le bac ?"
+  },
+  {
+    "id": "geo-006-v1",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Dis-moi : Quelles écoles d'ingénieurs y a-t-il en région Bretagne ?"
+  },
+  {
+    "id": "geo-007-v1",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Dis-moi : Quelles écoles d'ingénieurs y a-t-il en région Occitanie ?"
+  },
+  {
+    "id": "geo-008-v1",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Dis-moi : Quelles écoles d'ingénieurs y a-t-il en région Auvergne-Rhône-Alpes ?"
+  },
+  {
+    "id": "geo-009-v1",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Dis-moi : Quelles écoles d'ingénieurs y a-t-il en région Hauts-de-France ?"
+  },
+  {
+    "id": "geo-010-v1",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Dis-moi : Quelles écoles d'ingénieurs y a-t-il en région Nouvelle-Aquitaine ?"
+  },
+  {
+    "id": "geo-011-v1",
+    "category": "edge_geo",
+    "expectation": "voie agricole, couverture réelle",
+    "question": "Dis-moi : Je veux faire un BTSA dans un lycée agricole en Bretagne, quelles options ?"
+  },
+  {
+    "id": "geo-012-v1",
+    "category": "edge_geo",
+    "expectation": "petite ville, couverture géo fine",
+    "question": "Dis-moi : Quelles formations post-bac existe-t-il à Bourges ?"
+  },
+  {
+    "id": "geo-013-v1",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM: invention vs refus",
+    "question": "Dis-moi : Je suis à La Réunion, quelles licences scientifiques sans partir en métropole ?"
+  },
+  {
+    "id": "geo-001-v2",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "J'aimerais savoir, quelles formations en informatique sont disponibles à la Martinique après le bac ?"
+  },
+  {
+    "id": "geo-002-v2",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "J'aimerais savoir, quelles formations en informatique sont disponibles à la Guadeloupe après le bac ?"
+  },
+  {
+    "id": "geo-003-v2",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "J'aimerais savoir, quelles formations en informatique sont disponibles à La Réunion après le bac ?"
+  },
+  {
+    "id": "geo-004-v2",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "J'aimerais savoir, quelles formations en informatique sont disponibles à la Guyane après le bac ?"
+  },
+  {
+    "id": "geo-005-v2",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "J'aimerais savoir, quelles formations en informatique sont disponibles à Mayotte après le bac ?"
+  },
+  {
+    "id": "geo-006-v2",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "J'aimerais savoir, quelles écoles d'ingénieurs y a-t-il en région Bretagne ?"
+  },
+  {
+    "id": "geo-007-v2",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "J'aimerais savoir, quelles écoles d'ingénieurs y a-t-il en région Occitanie ?"
+  },
+  {
+    "id": "geo-008-v2",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "J'aimerais savoir, quelles écoles d'ingénieurs y a-t-il en région Auvergne-Rhône-Alpes ?"
+  },
+  {
+    "id": "geo-009-v2",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "J'aimerais savoir, quelles écoles d'ingénieurs y a-t-il en région Hauts-de-France ?"
+  },
+  {
+    "id": "geo-010-v2",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "J'aimerais savoir, quelles écoles d'ingénieurs y a-t-il en région Nouvelle-Aquitaine ?"
+  },
+  {
+    "id": "geo-011-v2",
+    "category": "edge_geo",
+    "expectation": "voie agricole, couverture réelle",
+    "question": "J'aimerais savoir, je veux faire un BTSA dans un lycée agricole en Bretagne, quelles options ?"
+  },
+  {
+    "id": "geo-012-v2",
+    "category": "edge_geo",
+    "expectation": "petite ville, couverture géo fine",
+    "question": "J'aimerais savoir, quelles formations post-bac existe-t-il à Bourges ?"
+  },
+  {
+    "id": "geo-013-v2",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM: invention vs refus",
+    "question": "J'aimerais savoir, je suis à La Réunion, quelles licences scientifiques sans partir en métropole ?"
+  },
+  {
+    "id": "geo-001-v3",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à la Martinique après le bac ?"
+  },
+  {
+    "id": "geo-002-v3",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à la Guadeloupe après le bac ?"
+  },
+  {
+    "id": "geo-003-v3",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à La Réunion après le bac ?"
+  },
+  {
+    "id": "geo-004-v3",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à la Guyane après le bac ?"
+  },
+  {
+    "id": "geo-005-v3",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM sous-couvert: refus honnête plutôt qu'invention si rien",
+    "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à Mayotte après le bac ?"
+  },
+  {
+    "id": "geo-006-v3",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Peux-tu m'aider : quelles écoles d'ingénieurs y a-t-il en région Bretagne ?"
+  },
+  {
+    "id": "geo-007-v3",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Peux-tu m'aider : quelles écoles d'ingénieurs y a-t-il en région Occitanie ?"
+  },
+  {
+    "id": "geo-008-v3",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Peux-tu m'aider : quelles écoles d'ingénieurs y a-t-il en région Auvergne-Rhône-Alpes ?"
+  },
+  {
+    "id": "geo-009-v3",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Peux-tu m'aider : quelles écoles d'ingénieurs y a-t-il en région Hauts-de-France ?"
+  },
+  {
+    "id": "geo-010-v3",
+    "category": "edge_geo",
+    "expectation": "filtre régional correct, pas de sur-élargissement",
+    "question": "Peux-tu m'aider : quelles écoles d'ingénieurs y a-t-il en région Nouvelle-Aquitaine ?"
+  },
+  {
+    "id": "geo-011-v3",
+    "category": "edge_geo",
+    "expectation": "voie agricole, couverture réelle",
+    "question": "Peux-tu m'aider : je veux faire un BTSA dans un lycée agricole en Bretagne, quelles options ?"
+  },
+  {
+    "id": "geo-012-v3",
+    "category": "edge_geo",
+    "expectation": "petite ville, couverture géo fine",
+    "question": "Peux-tu m'aider : quelles formations post-bac existe-t-il à Bourges ?"
+  },
+  {
+    "id": "geo-013-v3",
+    "category": "edge_geo",
+    "expectation": "DOM-TOM: invention vs refus",
+    "question": "Peux-tu m'aider : je suis à La Réunion, quelles licences scientifiques sans partir en métropole ?"
+  }
+]
