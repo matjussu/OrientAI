@@ -107,3 +107,6 @@ data/textualized/*
 # NB : `_archive_rewrite_phase3v2_pre_pivot/` est délibérément TRACKÉ
 # (traçabilité du pivot 2026-05-08 vers v4.1 strict, cf
 # `docs/SESSION_HANDOFF_2026-05-08_VERROUILLAGE.md` Phase A4). Ne pas l'ignorer.
+
+# artefacts runtime audit (volatils)
+audit_empirique_2026-06-09/results/*.log

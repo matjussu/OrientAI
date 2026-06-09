@@ -1,441 +1,0 @@
-/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:27: DeprecationWarning: Importing faithfulness from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import faithfulness
-  from ragas.metrics import faithfulness, answer_relevancy
-/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:27: DeprecationWarning: Importing answer_relevancy from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import answer_relevancy
-  from ragas.metrics import faithfulness, answer_relevancy
-/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:34: DeprecationWarning: Importing LLMContextPrecisionWithoutReference from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import LLMContextPrecisionWithoutReference
-  from ragas.metrics import LLMContextPrecisionWithoutReference
-/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:72: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; llm = llm_factory('gpt-4o-mini', client=OpenAI(api_key='...'))
-  llm = LangchainLLMWrapper(ChatMistralAI(
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-/home/matteo_linux/projets/OrientIA/audit_empirique_2026-06-09/ragas_eval.py:74: DeprecationWarning: LangchainEmbeddingsWrapper is deprecated and will be removed in a future version. Use the modern embedding providers instead: embedding_factory('openai', model='text-embedding-3-small', client=openai_client) or from ragas.embeddings import OpenAIEmbeddings, GoogleEmbeddings, HuggingFaceEmbeddings
-  emb = LangchainEmbeddingsWrapper(MistralAIEmbeddings(api_key=cfg.mistral_api_key))
-gradeable rows for Ragas: 386
-Evaluating:   0%|          | 0/1158 [00:00<?, ?it/s]Evaluating:   0%|          | 1/1158 [00:24<7:45:30, 24.14s/it]Evaluating:   0%|          | 2/1158 [00:36<5:27:41, 17.01s/it]Evaluating:   0%|          | 3/1158 [00:45<4:20:26, 13.53s/it]Evaluating:   1%|          | 7/1158 [00:57<1:54:32,  5.97s/it]Evaluating:   1%|          | 8/1158 [01:15<2:41:04,  8.40s/it]Evaluating:   1%|          | 9/1158 [01:25<2:47:32,  8.75s/it]Evaluating:   1%|          | 11/1158 [01:27<1:49:06,  5.71s/it]Evaluating:   1%|          | 12/1158 [01:29<1:33:18,  4.88s/it]Evaluating:   1%|          | 13/1158 [02:21<5:08:47, 16.18s/it]Evaluating:   1%|▏         | 16/1158 [02:58<4:30:58, 14.24s/it]Evaluating:   1%|▏         | 17/1158 [03:05<4:03:43, 12.82s/it]Exception raised in Job[1]: TimeoutError()
-Exception raised in Job[4]: TimeoutError()
-Exception raised in Job[13]: TimeoutError()
-Exception raised in Job[8]: TimeoutError()
-Exception raised in Job[7]: TimeoutError()
-Exception raised in Job[10]: TimeoutError()
-Evaluating:   2%|▏         | 18/1158 [03:05<3:11:07, 10.06s/it]Evaluating:   2%|▏         | 24/1158 [03:31<1:59:22,  6.32s/it]Exception raised in Job[16]: TimeoutError()
-Evaluating:   2%|▏         | 26/1158 [03:54<2:22:42,  7.56s/it]Exception raised in Job[19]: TimeoutError()
-Exception raised in Job[20]: TimeoutError()
-Evaluating:   3%|▎         | 29/1158 [03:58<1:41:28,  5.39s/it]Evaluating:   3%|▎         | 30/1158 [04:01<1:35:35,  5.08s/it]Exception raised in Job[22]: TimeoutError()
-Evaluating:   3%|▎         | 31/1158 [04:14<1:59:57,  6.39s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[25]: TimeoutError()
-Evaluating:   3%|▎         | 33/1158 [04:30<2:08:43,  6.87s/it]Evaluating:   3%|▎         | 34/1158 [05:01<3:34:46, 11.46s/it]Evaluating:   3%|▎         | 36/1158 [05:12<2:56:25,  9.43s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:   3%|▎         | 38/1158 [05:22<2:28:12,  7.94s/it]Exception raised in Job[28]: TimeoutError()
-Evaluating:   3%|▎         | 39/1158 [05:35<2:44:51,  8.84s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Evaluating:   4%|▎         | 41/1158 [05:44<2:17:07,  7.37s/it]Exception raised in Job[31]: TimeoutError()
-Evaluating:   4%|▎         | 42/1158 [06:04<3:04:21,  9.91s/it]Evaluating:   4%|▎         | 43/1158 [06:11<2:49:05,  9.10s/it]Exception raised in Job[34]: TimeoutError()
-Exception raised in Job[32]: TimeoutError()
-Exception raised in Job[37]: TimeoutError()
-Evaluating:   4%|▍         | 47/1158 [06:18<1:32:44,  5.01s/it]Evaluating:   4%|▍         | 48/1158 [06:37<2:16:45,  7.39s/it]Exception raised in Job[40]: TimeoutError()
-Evaluating:   4%|▍         | 50/1158 [06:51<2:12:38,  7.18s/it]Evaluating:   4%|▍         | 51/1158 [07:07<2:43:07,  8.84s/it]Exception raised in Job[43]: TimeoutError()
-Evaluating:   5%|▍         | 54/1158 [07:13<1:47:28,  5.84s/it]Exception raised in Job[46]: TimeoutError()
-Evaluating:   5%|▍         | 55/1158 [07:16<1:40:12,  5.45s/it]Evaluating:   5%|▍         | 56/1158 [07:42<2:54:02,  9.48s/it]Evaluating:   5%|▍         | 57/1158 [08:05<3:48:29, 12.45s/it]Exception raised in Job[49]: TimeoutError()
-Evaluating:   5%|▌         | 59/1158 [08:11<2:41:50,  8.84s/it]Exception raised in Job[52]: TimeoutError()
-Evaluating:   5%|▌         | 60/1158 [08:37<3:49:58, 12.57s/it]Exception raised in Job[55]: TimeoutError()
-Evaluating:   5%|▌         | 61/1158 [08:40<3:09:12, 10.35s/it]Exception raised in Job[56]: TimeoutError()
-Evaluating:   5%|▌         | 62/1158 [08:44<2:40:00,  8.76s/it]Evaluating:   5%|▌         | 63/1158 [09:04<3:31:08, 11.57s/it]Evaluating:   6%|▌         | 64/1158 [09:10<3:04:34, 10.12s/it]Exception raised in Job[58]: TimeoutError()
-Exception raised in Job[61]: TimeoutError()
-Evaluating:   6%|▌         | 65/1158 [09:14<2:30:59,  8.29s/it]Exception raised in Job[62]: TimeoutError()
-Evaluating:   6%|▌         | 67/1158 [09:33<2:40:06,  8.80s/it]Evaluating:   6%|▌         | 68/1158 [09:39<2:31:10,  8.32s/it]Evaluating:   6%|▌         | 69/1158 [10:02<3:35:06, 11.85s/it]Exception raised in Job[64]: TimeoutError()
-Exception raised in Job[65]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:   6%|▌         | 72/1158 [10:08<2:03:28,  6.82s/it]Exception raised in Job[67]: TimeoutError()
-Evaluating:   6%|▋         | 73/1158 [10:18<2:12:32,  7.33s/it]Exception raised in Job[70]: TimeoutError()
-Evaluating:   6%|▋         | 74/1158 [10:20<1:51:57,  6.20s/it]Exception raised in Job[68]: TimeoutError()
-Evaluating:   6%|▋         | 75/1158 [10:29<2:05:43,  6.97s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Exception raised in Job[71]: TimeoutError()
-Evaluating:   7%|▋         | 76/1158 [10:46<2:48:30,  9.34s/it]Evaluating:   7%|▋         | 77/1158 [10:55<2:48:31,  9.35s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Exception raised in Job[74]: TimeoutError()
-Evaluating:   7%|▋         | 79/1158 [11:18<3:04:50, 10.28s/it]Exception raised in Job[73]: TimeoutError()
-Evaluating:   7%|▋         | 80/1158 [11:22<2:37:07,  8.75s/it]Evaluating:   7%|▋         | 81/1158 [11:44<3:36:21, 12.05s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[77]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:   7%|▋         | 82/1158 [12:03<4:10:48, 13.99s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:   7%|▋         | 83/1158 [12:09<3:32:29, 11.86s/it]Exception raised in Job[79]: TimeoutError()
-Evaluating:   7%|▋         | 84/1158 [12:19<3:23:02, 11.34s/it]Exception raised in Job[80]: TimeoutError()
-Exception raised in Job[76]: TimeoutError()
-Evaluating:   7%|▋         | 86/1158 [12:23<2:06:52,  7.10s/it]Evaluating:   8%|▊         | 87/1158 [12:52<3:41:28, 12.41s/it]Exception raised in Job[82]: TimeoutError()
-Exception raised in Job[83]: TimeoutError()
-Exception raised in Job[85]: TimeoutError()
-Evaluating:   8%|▊         | 90/1158 [13:05<2:29:36,  8.40s/it]Exception raised in Job[86]: TimeoutError()
-Evaluating:   8%|▊         | 92/1158 [13:21<2:25:39,  8.20s/it]Exception raised in Job[88]: TimeoutError()
-Exception raised in Job[89]: TimeoutError()
-Evaluating:   8%|▊         | 94/1158 [13:28<1:58:19,  6.67s/it]Evaluating:   8%|▊         | 95/1158 [13:57<3:10:56, 10.78s/it]Exception raised in Job[91]: TimeoutError()
-Exception raised in Job[92]: TimeoutError()
-Evaluating:   8%|▊         | 97/1158 [14:01<2:17:53,  7.80s/it]Evaluating:   8%|▊         | 98/1158 [14:23<3:06:08, 10.54s/it]Exception raised in Job[94]: TimeoutError()
-Evaluating:   9%|▊         | 100/1158 [14:29<2:19:00,  7.88s/it]Exception raised in Job[95]: TimeoutError()
-Evaluating:   9%|▉         | 102/1158 [14:58<2:59:22, 10.19s/it]Evaluating:   9%|▉         | 103/1158 [15:17<3:29:53, 11.94s/it]Exception raised in Job[97]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Exception raised in Job[98]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Exception raised in Job[100]: TimeoutError()
-Evaluating:   9%|▉         | 106/1158 [15:24<2:11:04,  7.48s/it]Exception raised in Job[101]: TimeoutError()
-Evaluating:   9%|▉         | 107/1158 [15:27<1:57:41,  6.72s/it]Exception raised in Job[103]: TimeoutError()
-Evaluating:   9%|▉         | 108/1158 [16:00<3:29:31, 11.97s/it]Exception raised in Job[104]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:   9%|▉         | 110/1158 [16:09<2:41:14,  9.23s/it]Exception raised in Job[106]: TimeoutError()
-Exception raised in Job[109]: TimeoutError()
-Evaluating:  10%|▉         | 113/1158 [16:37<2:43:16,  9.37s/it]Exception raised in Job[107]: TimeoutError()
-Evaluating:  10%|▉         | 115/1158 [17:10<3:18:27, 11.42s/it]Exception raised in Job[112]: TimeoutError()
-Exception raised in Job[110]: TimeoutError()
-Exception raised in Job[115]: TimeoutError()
-Exception raised in Job[113]: TimeoutError()
-Exception raised in Job[116]: TimeoutError()
-Evaluating:  10%|█         | 119/1158 [17:37<2:40:12,  9.25s/it]Evaluating:  11%|█         | 122/1158 [17:43<1:58:58,  6.89s/it]Evaluating:  11%|█         | 123/1158 [18:12<2:51:05,  9.92s/it]Exception raised in Job[118]: TimeoutError()
-Evaluating:  11%|█         | 124/1158 [18:26<3:02:18, 10.58s/it]Exception raised in Job[119]: TimeoutError()
-Evaluating:  11%|█         | 125/1158 [18:42<3:18:11, 11.51s/it]Exception raised in Job[121]: TimeoutError()
-Exception raised in Job[122]: TimeoutError()
-Evaluating:  11%|█         | 128/1158 [18:48<2:05:28,  7.31s/it]Exception raised in Job[124]: TimeoutError()
-Evaluating:  11%|█         | 129/1158 [19:14<3:00:56, 10.55s/it]Exception raised in Job[125]: TimeoutError()
-Exception raised in Job[127]: TimeoutError()
-Evaluating:  11%|█▏        | 132/1158 [19:20<1:58:20,  6.92s/it]Exception raised in Job[128]: TimeoutError()
-Evaluating:  11%|█▏        | 133/1158 [19:49<3:03:01, 10.71s/it]Evaluating:  12%|█▏        | 134/1158 [19:53<2:37:55,  9.25s/it]Exception raised in Job[130]: TimeoutError()
-Exception raised in Job[133]: TimeoutError()
-Evaluating:  12%|█▏        | 135/1158 [20:22<3:51:36, 13.58s/it]Exception raised in Job[131]: TimeoutError()
-Evaluating:  12%|█▏        | 138/1158 [20:28<2:16:58,  8.06s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[136]: TimeoutError()
-Evaluating:  12%|█▏        | 140/1158 [20:54<2:43:25,  9.63s/it]Exception raised in Job[137]: TimeoutError()
-Exception raised in Job[134]: TimeoutError()
-Evaluating:  12%|█▏        | 143/1158 [21:33<3:06:10, 11.01s/it]Exception raised in Job[139]: TimeoutError()
-Evaluating:  13%|█▎        | 145/1158 [21:37<2:23:12,  8.48s/it]Exception raised in Job[143]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[140]: TimeoutError()
-Evaluating:  13%|█▎        | 146/1158 [21:56<2:51:27, 10.17s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Exception raised in Job[142]: TimeoutError()
-Evaluating:  13%|█▎        | 149/1158 [21:59<1:47:14,  6.38s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[145]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Exception raised in Job[146]: TimeoutError()
-Evaluating:  13%|█▎        | 150/1158 [22:25<2:42:32,  9.67s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Evaluating:  13%|█▎        | 152/1158 [23:01<3:25:11, 12.24s/it]Exception raised in Job[148]: TimeoutError()
-Exception raised in Job[149]: TimeoutError()
-Evaluating:  13%|█▎        | 155/1158 [23:27<3:00:05, 10.77s/it]Exception raised in Job[151]: TimeoutError()
-Exception raised in Job[152]: TimeoutError()
-Evaluating:  14%|█▎        | 158/1158 [23:30<2:00:09,  7.21s/it]Exception raised in Job[154]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  14%|█▎        | 159/1158 [23:49<2:29:52,  9.00s/it]Evaluating:  14%|█▍        | 160/1158 [23:55<2:21:46,  8.52s/it]Exception raised in Job[155]: TimeoutError()
-Evaluating:  14%|█▍        | 161/1158 [23:59<2:03:58,  7.46s/it]Exception raised in Job[157]: TimeoutError()
-Evaluating:  14%|█▍        | 162/1158 [24:11<2:22:03,  8.56s/it]Evaluating:  14%|█▍        | 163/1158 [24:30<3:04:14, 11.11s/it]Exception raised in Job[160]: TimeoutError()
-Exception raised in Job[158]: TimeoutError()
-Evaluating:  14%|█▍        | 165/1158 [24:45<2:40:27,  9.70s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Exception raised in Job[163]: TimeoutError()
-Evaluating:  14%|█▍        | 167/1158 [25:12<3:00:46, 10.95s/it]Exception raised in Job[161]: TimeoutError()
-Exception raised in Job[164]: TimeoutError()
-Exception raised in Job[166]: TimeoutError()
-Evaluating:  15%|█▍        | 170/1158 [25:38<2:43:50,  9.95s/it]Evaluating:  15%|█▍        | 171/1158 [25:41<2:24:22,  8.78s/it]Evaluating:  15%|█▍        | 172/1158 [26:10<3:29:58, 12.78s/it]Exception raised in Job[169]: TimeoutError()
-Exception raised in Job[167]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  15%|█▌        | 175/1158 [26:23<2:25:54,  8.91s/it]Exception raised in Job[170]: TimeoutError()
-Evaluating:  15%|█▌        | 176/1158 [26:30<2:19:11,  8.50s/it]Exception raised in Job[172]: TimeoutError()
-Exception raised in Job[173]: TimeoutError()
-Evaluating:  15%|█▌        | 178/1158 [26:34<1:44:07,  6.37s/it]Evaluating:  15%|█▌        | 179/1158 [26:56<2:32:33,  9.35s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[175]: TimeoutError()
-Evaluating:  16%|█▌        | 180/1158 [26:59<2:10:51,  8.03s/it]Exception raised in Job[176]: TimeoutError()
-Evaluating:  16%|█▌        | 181/1158 [27:02<1:52:01,  6.88s/it]Evaluating:  16%|█▌        | 182/1158 [27:18<2:29:55,  9.22s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Evaluating:  16%|█▌        | 183/1158 [27:25<2:21:37,  8.72s/it]Exception raised in Job[179]: TimeoutError()
-Evaluating:  16%|█▌        | 184/1158 [27:35<2:25:07,  8.94s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  16%|█▌        | 185/1158 [27:54<3:12:41, 11.88s/it]Exception raised in Job[181]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Exception raised in Job[178]: TimeoutError()
-Evaluating:  16%|█▌        | 187/1158 [28:05<2:23:55,  8.89s/it]Exception raised in Job[182]: TimeoutError()
-Exception raised in Job[184]: TimeoutError()
-Evaluating:  16%|█▌        | 188/1158 [28:18<2:40:53,  9.95s/it]Evaluating:  16%|█▋        | 190/1158 [28:37<2:36:37,  9.71s/it]Exception raised in Job[185]: TimeoutError()
-Evaluating:  16%|█▋        | 191/1158 [28:47<2:37:56,  9.80s/it]Evaluating:  17%|█▋        | 192/1158 [29:03<3:00:46, 11.23s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Exception raised in Job[187]: TimeoutError()
-Evaluating:  17%|█▋        | 193/1158 [29:23<3:37:10, 13.50s/it]Exception raised in Job[188]: TimeoutError()
-Evaluating:  17%|█▋        | 194/1158 [29:23<2:41:50, 10.07s/it]Exception raised in Job[190]: TimeoutError()
-Evaluating:  17%|█▋        | 195/1158 [29:26<2:10:39,  8.14s/it]Exception raised in Job[193]: TimeoutError()
-Evaluating:  17%|█▋        | 196/1158 [29:45<2:57:49, 11.09s/it]Exception raised in Job[191]: TimeoutError()
-Evaluating:  17%|█▋        | 198/1158 [29:48<1:49:21,  6.83s/it]Evaluating:  17%|█▋        | 199/1158 [29:55<1:49:11,  6.83s/it]Exception raised in Job[196]: TimeoutError()
-Exception raised in Job[197]: TimeoutError()
-Exception raised in Job[194]: TimeoutError()
-Evaluating:  17%|█▋        | 200/1158 [30:24<3:21:24, 12.61s/it]Evaluating:  18%|█▊        | 203/1158 [30:53<2:55:51, 11.05s/it]Exception raised in Job[199]: TimeoutError()
-Evaluating:  18%|█▊        | 205/1158 [30:57<2:07:18,  8.02s/it]Evaluating:  18%|█▊        | 206/1158 [31:13<2:29:53,  9.45s/it]Exception raised in Job[202]: TimeoutError()
-Exception raised in Job[200]: TimeoutError()
-Evaluating:  18%|█▊        | 207/1158 [31:19<2:18:50,  8.76s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[203]: TimeoutError()
-Evaluating:  18%|█▊        | 209/1158 [31:22<1:35:11,  6.02s/it]Exception raised in Job[205]: TimeoutError()
-Evaluating:  18%|█▊        | 210/1158 [31:44<2:30:56,  9.55s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[206]: TimeoutError()
-Evaluating:  18%|█▊        | 211/1158 [32:01<2:55:51, 11.14s/it]Evaluating:  18%|█▊        | 212/1158 [32:07<2:36:06,  9.90s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Evaluating:  18%|█▊        | 213/1158 [32:39<4:09:12, 15.82s/it]Exception raised in Job[208]: TimeoutError()
-Exception raised in Job[209]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Exception raised in Job[212]: TimeoutError()
-Evaluating:  19%|█▊        | 216/1158 [32:49<2:22:33,  9.08s/it]Exception raised in Job[211]: TimeoutError()
-Evaluating:  19%|█▉        | 218/1158 [32:53<1:44:43,  6.68s/it]Exception raised in Job[214]: TimeoutError()
-Evaluating:  19%|█▉        | 219/1158 [32:59<1:43:26,  6.61s/it]Evaluating:  19%|█▉        | 220/1158 [33:13<2:07:45,  8.17s/it]Exception raised in Job[217]: TimeoutError()
-Exception raised in Job[215]: TimeoutError()
-Evaluating:  19%|█▉        | 221/1158 [33:31<2:46:43, 10.68s/it]Exception raised in Job[220]: TimeoutError()
-Evaluating:  19%|█▉        | 223/1158 [34:04<3:22:03, 12.97s/it]Exception raised in Job[218]: TimeoutError()
-Evaluating:  19%|█▉        | 225/1158 [34:10<2:25:48,  9.38s/it]Exception raised in Job[221]: TimeoutError()
-Evaluating:  20%|█▉        | 228/1158 [34:14<1:29:54,  5.80s/it]Exception raised in Job[223]: TimeoutError()
-Evaluating:  20%|█▉        | 229/1158 [34:43<2:31:07,  9.76s/it]Exception raised in Job[224]: TimeoutError()
-Evaluating:  20%|█▉        | 231/1158 [34:47<1:50:51,  7.18s/it]Evaluating:  20%|██        | 232/1158 [35:09<2:34:28, 10.01s/it]Exception raised in Job[226]: TimeoutError()
-Exception raised in Job[227]: TimeoutError()
-Evaluating:  20%|██        | 235/1158 [35:19<1:47:45,  7.01s/it]Evaluating:  20%|██        | 236/1158 [35:44<2:36:01, 10.15s/it]Exception raised in Job[229]: TimeoutError()
-Evaluating:  21%|██        | 238/1158 [35:50<2:00:55,  7.89s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[232]: TimeoutError()
-Evaluating:  21%|██        | 239/1158 [35:54<1:46:50,  6.98s/it]Exception raised in Job[230]: TimeoutError()
-Evaluating:  21%|██        | 240/1158 [35:57<1:36:13,  6.29s/it]Evaluating:  21%|██        | 241/1158 [36:26<2:56:25, 11.54s/it]Exception raised in Job[235]: TimeoutError()
-Exception raised in Job[236]: TimeoutError()
-Evaluating:  21%|██        | 243/1158 [36:48<2:54:21, 11.43s/it]Evaluating:  21%|██        | 244/1158 [36:52<2:25:59,  9.58s/it]Evaluating:  21%|██        | 245/1158 [36:55<2:01:58,  8.02s/it]Exception raised in Job[238]: TimeoutError()
-Exception raised in Job[241]: TimeoutError()
-Evaluating:  21%|██        | 246/1158 [37:24<3:26:17, 13.57s/it]Exception raised in Job[239]: TimeoutError()
-Exception raised in Job[244]: TimeoutError()
-Evaluating:  22%|██▏       | 249/1158 [38:00<3:12:32, 12.71s/it]Exception raised in Job[245]: TimeoutError()
-Evaluating:  22%|██▏       | 253/1158 [38:26<2:25:30,  9.65s/it]Exception raised in Job[247]: TimeoutError()
-Exception raised in Job[250]: TimeoutError()
-Exception raised in Job[248]: TimeoutError()
-Evaluating:  22%|██▏       | 257/1158 [38:30<1:29:35,  5.97s/it]Evaluating:  22%|██▏       | 258/1158 [39:02<2:21:26,  9.43s/it]Exception raised in Job[253]: TimeoutError()
-Exception raised in Job[254]: TimeoutError()
-Evaluating:  23%|██▎       | 261/1158 [39:06<1:36:21,  6.45s/it]Evaluating:  23%|██▎       | 262/1158 [39:09<1:30:18,  6.05s/it]Evaluating:  23%|██▎       | 263/1158 [39:31<2:10:58,  8.78s/it]Exception raised in Job[256]: TimeoutError()
-Exception raised in Job[257]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  23%|██▎       | 266/1158 [40:09<2:34:34, 10.40s/it]Exception raised in Job[259]: TimeoutError()
-Evaluating:  23%|██▎       | 269/1158 [40:29<2:13:25,  9.01s/it]Exception raised in Job[262]: TimeoutError()
-Evaluating:  23%|██▎       | 271/1158 [40:32<1:44:14,  7.05s/it]Evaluating:  23%|██▎       | 272/1158 [41:02<2:36:15, 10.58s/it]Evaluating:  24%|██▎       | 273/1158 [41:05<2:15:58,  9.22s/it]Evaluating:  24%|██▎       | 274/1158 [41:21<2:37:26, 10.69s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  24%|██▎       | 275/1158 [41:27<2:22:27,  9.68s/it]Exception raised in Job[268]: TimeoutError()
-Evaluating:  24%|██▍       | 276/1158 [41:34<2:10:02,  8.85s/it]Exception raised in Job[269]: TimeoutError()
-Exception raised in Job[265]: TimeoutError()
-Evaluating:  24%|██▍       | 278/1158 [41:37<1:25:36,  5.84s/it]Exception raised in Job[271]: TimeoutError()
-Evaluating:  24%|██▍       | 279/1158 [41:37<1:07:34,  4.61s/it]Exception raised in Job[274]: TimeoutError()
-Evaluating:  24%|██▍       | 280/1158 [42:06<2:34:14, 10.54s/it]Evaluating:  24%|██▍       | 281/1158 [42:09<2:06:05,  8.63s/it]Exception raised in Job[275]: TimeoutError()
-Exception raised in Job[277]: TimeoutError()
-Evaluating:  24%|██▍       | 283/1158 [42:13<1:24:56,  5.82s/it]Evaluating:  25%|██▍       | 284/1158 [42:23<1:38:36,  6.77s/it]Evaluating:  25%|██▍       | 285/1158 [42:43<2:23:59,  9.90s/it]Exception raised in Job[280]: TimeoutError()
-Evaluating:  25%|██▍       | 288/1158 [43:09<2:15:10,  9.32s/it]Evaluating:  25%|██▍       | 289/1158 [43:15<2:06:15,  8.72s/it]Exception raised in Job[283]: TimeoutError()
-Evaluating:  25%|██▌       | 291/1158 [43:42<2:29:22, 10.34s/it]Exception raised in Job[286]: TimeoutError()
-Evaluating:  25%|██▌       | 293/1158 [43:45<1:46:27,  7.38s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  25%|██▌       | 294/1158 [44:11<2:38:04, 10.98s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  26%|██▌       | 296/1158 [44:33<2:39:06, 11.08s/it]Exception raised in Job[289]: TimeoutError()
-Evaluating:  26%|██▌       | 298/1158 [44:37<1:54:34,  7.99s/it]Evaluating:  26%|██▌       | 299/1158 [44:40<1:41:03,  7.06s/it]Exception raised in Job[292]: TimeoutError()
-Evaluating:  26%|██▌       | 301/1158 [45:10<2:19:58,  9.80s/it]Exception raised in Job[295]: TimeoutError()
-Evaluating:  26%|██▌       | 303/1158 [45:34<2:30:10, 10.54s/it]Exception raised in Job[298]: TimeoutError()
-Evaluating:  26%|██▋       | 306/1158 [45:40<1:38:53,  6.96s/it]Exception raised in Job[301]: TimeoutError()
-Evaluating:  27%|██▋       | 308/1158 [45:47<1:24:30,  5.97s/it]Evaluating:  27%|██▋       | 309/1158 [45:51<1:19:37,  5.63s/it]Exception raised in Job[304]: TimeoutError()
-Evaluating:  27%|██▋       | 310/1158 [46:19<2:23:05, 10.12s/it]Evaluating:  27%|██▋       | 311/1158 [46:45<3:11:14, 13.55s/it]Exception raised in Job[307]: TimeoutError()
-Evaluating:  27%|██▋       | 313/1158 [46:52<2:16:31,  9.69s/it]Evaluating:  27%|██▋       | 316/1158 [46:56<1:23:09,  5.93s/it]Evaluating:  27%|██▋       | 317/1158 [47:19<2:04:07,  8.86s/it]Exception raised in Job[310]: TimeoutError()
-Exception raised in Job[313]: TimeoutError()
-Evaluating:  28%|██▊       | 319/1158 [47:45<2:24:53, 10.36s/it]Evaluating:  28%|██▊       | 320/1158 [47:49<2:05:11,  8.96s/it]Evaluating:  28%|██▊       | 321/1158 [47:52<1:47:14,  7.69s/it]Evaluating:  28%|██▊       | 322/1158 [48:00<1:48:10,  7.76s/it]Evaluating:  28%|██▊       | 323/1158 [48:25<2:49:02, 12.15s/it]Exception raised in Job[316]: TimeoutError()
-Evaluating:  28%|██▊       | 326/1158 [48:51<2:24:09, 10.40s/it]Exception raised in Job[319]: TimeoutError()
-Exception raised in Job[322]: TimeoutError()
-Evaluating:  28%|██▊       | 330/1158 [49:21<2:02:34,  8.88s/it]Exception raised in Job[325]: TimeoutError()
-Evaluating:  29%|██▊       | 331/1158 [49:24<1:51:50,  8.11s/it]Evaluating:  29%|██▊       | 332/1158 [49:50<2:34:13, 11.20s/it]Evaluating:  29%|██▉       | 335/1158 [50:06<1:59:45,  8.73s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
-Exception raised in Job[331]: TimeoutError()
-Exception raised in Job[328]: TimeoutError()
-Evaluating:  29%|██▉       | 339/1158 [50:16<1:19:42,  5.84s/it]Evaluating:  29%|██▉       | 340/1158 [50:32<1:39:18,  7.28s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  29%|██▉       | 341/1158 [50:58<2:22:51, 10.49s/it]Exception raised in Job[334]: TimeoutError()
-Evaluating:  30%|██▉       | 345/1158 [51:25<1:56:22,  8.59s/it]Exception raised in Job[337]: TimeoutError()
-Exception raised in Job[340]: TimeoutError()
-Evaluating:  30%|██▉       | 347/1158 [51:29<1:32:57,  6.88s/it]Evaluating:  30%|███       | 348/1158 [51:51<2:05:36,  9.30s/it]Evaluating:  30%|███       | 349/1158 [51:54<1:50:27,  8.19s/it]Evaluating:  30%|███       | 350/1158 [52:04<1:53:30,  8.43s/it]Exception raised in Job[341]: TimeoutError()
-Exception raised in Job[343]: TimeoutError()
-Evaluating:  30%|███       | 352/1158 [52:04<1:12:36,  5.41s/it]Evaluating:  30%|███       | 353/1158 [52:18<1:35:16,  7.10s/it]Exception raised in Job[346]: TimeoutError()
-Evaluating:  31%|███       | 354/1158 [52:30<1:51:05,  8.29s/it]Evaluating:  31%|███       | 355/1158 [52:37<1:46:31,  7.96s/it]Evaluating:  31%|███       | 356/1158 [53:02<2:47:44, 12.55s/it]Exception raised in Job[349]: TimeoutError()
-Exception raised in Job[352]: TimeoutError()
-Evaluating:  31%|███       | 359/1158 [53:10<1:35:42,  7.19s/it]Exception raised in Job[353]: TimeoutError()
-Evaluating:  31%|███       | 361/1158 [53:23<1:32:21,  6.95s/it]Evaluating:  31%|███▏      | 362/1158 [53:26<1:22:32,  6.22s/it]Evaluating:  31%|███▏      | 363/1158 [53:32<1:22:22,  6.22s/it]Exception raised in Job[355]: TimeoutError()
-Evaluating:  31%|███▏      | 364/1158 [53:41<1:32:03,  6.96s/it]Evaluating:  32%|███▏      | 365/1158 [54:08<2:36:04, 11.81s/it]Exception raised in Job[358]: TimeoutError()
-Evaluating:  32%|███▏      | 368/1158 [54:34<2:15:00, 10.25s/it]Exception raised in Job[361]: TimeoutError()
-Evaluating:  32%|███▏      | 371/1158 [55:07<2:17:55, 10.52s/it]Exception raised in Job[364]: TimeoutError()
-Evaluating:  32%|███▏      | 374/1158 [55:10<1:30:48,  6.95s/it]Exception raised in Job[367]: TimeoutError()
-Exception raised in Job[365]: TimeoutError()
-Evaluating:  33%|███▎      | 377/1158 [55:29<1:27:19,  6.71s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ConnectError: .
-Exception raised in Job[370]: TimeoutError()
-Evaluating:  33%|███▎      | 378/1158 [55:46<1:46:30,  8.19s/it]Evaluating:  33%|███▎      | 379/1158 [55:52<1:42:02,  7.86s/it]Exception raised in Job[373]: TimeoutError()
-Evaluating:  33%|███▎      | 380/1158 [56:19<2:30:15, 11.59s/it]Evaluating:  33%|███▎      | 381/1158 [56:20<2:00:10,  9.28s/it]Exception raised in Job[376]: TimeoutError()
-Evaluating:  33%|███▎      | 382/1158 [56:26<1:51:03,  8.59s/it]Exception raised in Job[377]: TimeoutError()
-Evaluating:  33%|███▎      | 383/1158 [56:30<1:34:54,  7.35s/it]Evaluating:  33%|███▎      | 384/1158 [56:46<2:04:37,  9.66s/it]Exception raised in Job[379]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  33%|███▎      | 387/1158 [56:52<1:12:08,  5.61s/it]Evaluating:  34%|███▎      | 388/1158 [56:55<1:05:38,  5.11s/it]Exception raised in Job[382]: TimeoutError()
-Evaluating:  34%|███▎      | 389/1158 [57:22<2:07:18,  9.93s/it]Evaluating:  34%|███▎      | 390/1158 [57:28<1:55:45,  9.04s/it]Exception raised in Job[385]: TimeoutError()
-Evaluating:  34%|███▍      | 391/1158 [57:48<2:30:03, 11.74s/it]Evaluating:  34%|███▍      | 392/1158 [57:57<2:21:55, 11.12s/it]Exception raised in Job[388]: TimeoutError()
-Exception raised in Job[391]: TimeoutError()
-Evaluating:  34%|███▍      | 394/1158 [58:27<2:41:40, 12.70s/it]Exception raised in Job[389]: TimeoutError()
-Evaluating:  34%|███▍      | 397/1158 [58:30<1:30:02,  7.10s/it]Evaluating:  34%|███▍      | 398/1158 [58:43<1:43:08,  8.14s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[394]: TimeoutError()
-Evaluating:  34%|███▍      | 399/1158 [59:09<2:31:34, 11.98s/it]Evaluating:  35%|███▍      | 400/1158 [59:15<2:14:30, 10.65s/it]Exception raised in Job[395]: TimeoutError()
-Evaluating:  35%|███▍      | 401/1158 [59:22<2:03:08,  9.76s/it]Exception raised in Job[397]: TimeoutError()
-Evaluating:  35%|███▍      | 402/1158 [59:42<2:34:29, 12.26s/it]Exception raised in Job[398]: TimeoutError()
-Evaluating:  35%|███▍      | 404/1158 [59:48<1:45:03,  8.36s/it]Exception raised in Job[400]: TimeoutError()
-Evaluating:  35%|███▍      | 405/1158 [59:52<1:32:27,  7.37s/it]Exception raised in Job[401]: TimeoutError()
-Exception raised in Job[403]: TimeoutError()
-Evaluating:  35%|███▌      | 407/1158 [1:00:11<1:43:47,  8.29s/it]Evaluating:  35%|███▌      | 408/1158 [1:00:15<1:29:31,  7.16s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Exception raised in Job[404]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  35%|███▌      | 409/1158 [1:00:34<2:06:13, 10.11s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  35%|███▌      | 410/1158 [1:00:40<1:53:38,  9.12s/it]Exception raised in Job[406]: TimeoutError()
-Evaluating:  35%|███▌      | 411/1158 [1:01:03<2:38:08, 12.70s/it]Exception raised in Job[407]: TimeoutError()
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
-Evaluating:  36%|███▌      | 413/1158 [1:01:32<2:46:49, 13.44s/it]Exception raised in Job[409]: TimeoutError()
-Exception raised in Job[410]: TimeoutError()
-Exception raised in Job[412]: TimeoutError()
-Evaluating:  36%|███▌      | 417/1158 [1:01:35<1:20:32,  6.52s/it]Evaluating:  36%|███▌      | 418/1158 [1:02:15<2:27:20, 11.95s/it]Exception raised in Job[413]: TimeoutError()
-Exception raised in Job[415]: TimeoutError()
-Evaluating:  36%|███▋      | 420/1158 [1:02:37<2:23:45, 11.69s/it]Exception raised in Job[416]: TimeoutError()
-Evaluating:  36%|███▋      | 422/1158 [1:02:45<1:53:52,  9.28s/it]Evaluating:  37%|███▋      | 423/1158 [1:02:48<1:39:53,  8.15s/it]Exception raised in Job[419]: TimeoutError()
-Evaluating:  37%|███▋      | 424/1158 [1:02:52<1:27:52,  7.18s/it]Exception raised in Job[418]: TimeoutError()
-Evaluating:  37%|███▋      | 425/1158 [1:02:52<1:08:12,  5.58s/it]Exception raised in Job[421]: TimeoutError()
-Evaluating:  37%|███▋      | 426/1158 [1:03:21<2:17:51, 11.30s/it]Exception raised in Job[422]: TimeoutError()
-Evaluating:  37%|███▋      | 428/1158 [1:03:50<2:33:58, 12.66s/it]Exception raised in Job[424]: TimeoutError()
-Exception raised in Job[425]: TimeoutError()
-Evaluating:  37%|███▋      | 432/1158 [1:04:25<2:08:44, 10.64s/it]Exception raised in Job[427]: TimeoutError()
-Exception raised in Job[430]: TimeoutError()
-Evaluating:  37%|███▋      | 434/1158 [1:04:51<2:14:40, 11.16s/it]Exception raised in Job[431]: TimeoutError()
-Exception raised in Job[428]: TimeoutError()
-Evaluating:  38%|███▊      | 435/1158 [1:04:54<1:59:51,  9.95s/it]Evaluating:  38%|███▊      | 438/1158 [1:05:16<1:46:04,  8.84s/it]Exception raised in Job[433]: TimeoutError()
-Exception raised in Job[434]: TimeoutError()
-Evaluating:  38%|███▊      | 439/1158 [1:05:29<1:54:28,  9.55s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised RemoteProtocolError: Server disconnected without sending a response..
