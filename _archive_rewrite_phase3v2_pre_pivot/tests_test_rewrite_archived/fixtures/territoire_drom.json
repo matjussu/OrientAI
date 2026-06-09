@@ -1,9 +1,0 @@
-{
-  "id": "domtom_dispositif:drom_dispositif_passeport_mobilite_etudes",
-  "domain": "territoire_drom",
-  "source": "domtom_curated",
-  "granularity": "dispositif_etendu",
-  "subject": "Passeport Mobilité Études (LADOM)",
-  "source_officielle": "https://www.ladom.fr/",
-  "text": "DROM-COM (extension Sprint 8 W2) — Passeport Mobilité Études (LADOM) | Le Passeport Mobilité Études est financé par LADOM (Agence de l'Outre-Mer pour la Mobilité). Public : étudiants ressortissants DROM/COM (Guadeloupe, Martinique, Guyane, Réunion, Mayotte, Saint-Pierre-et-Miquelon, etc.) inscrits dans une formation supérieure en métropole. Couvre : 1 billet aller-retour DROM ↔ métropole/an + 1 billet de prise de poste à l'arrivée si stage. Conditions : être boursier CROUS échelon 0bis-7 ou âgé de moins de 26 ans avec ressources foyer fiscal sous plafond. Demande sur ladom.fr ou via SCUIO. | Public cible : Étudiants ressortissants DROM mobilité études métropole | Source officielle (vérification année en cours) : https://www.ladom.fr/"
-}

@@ -1,3 +1,5 @@
+> PERIME (snapshot date). Chiffres superseded par audit_empirique_2026-06-09 : region manquante reelle 45,9% (pas 41,5%), corpus 47220 fiches. Conserve comme historique.
+
 # Session Handoff — Verrouillage data + pipeline + bench multi-tour
 
 **Date** : 2026-05-08
