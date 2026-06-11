@@ -1,0 +1,294 @@
+{
+  "version": "select-eligibles-optionb-2026-06-11",
+  "n": 48,
+  "items": [
+    {
+      "id": "fact-001",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+    },
+    {
+      "id": "fact-003",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+    },
+    {
+      "id": "fact-006",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+    },
+    {
+      "id": "fact-008",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+    },
+    {
+      "id": "fact-011",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+    },
+    {
+      "id": "fact-013",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+    },
+    {
+      "id": "fact-016",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+    },
+    {
+      "id": "fact-018",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+    },
+    {
+      "id": "fact-021",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+    },
+    {
+      "id": "fact-023",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+    },
+    {
+      "id": "comp-008",
+      "category": "comparaison",
+      "expectation": "3 entités distinctes, pas 3 variantes d'une seule",
+      "question": "Compare l'INSA Lyon, l'UTC Compiègne et Polytech sur le taux d'accès et les débouchés"
+    },
+    {
+      "id": "adv-004",
+      "category": "adversarial",
+      "expectation": "chiffre très précis piège: source ou refus, pas d'invention",
+      "question": "Donne-moi le taux d'accès exact au pourcentage près du BUT TC à l'IUT d'Annecy en 2025."
+    },
+    {
+      "id": "fact-001-v1",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+    },
+    {
+      "id": "fact-003-v1",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+    },
+    {
+      "id": "fact-006-v1",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+    },
+    {
+      "id": "fact-008-v1",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+    },
+    {
+      "id": "fact-011-v1",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+    },
+    {
+      "id": "fact-013-v1",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+    },
+    {
+      "id": "fact-016-v1",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+    },
+    {
+      "id": "fact-018-v1",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+    },
+    {
+      "id": "fact-021-v1",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+    },
+    {
+      "id": "fact-023-v1",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+    },
+    {
+      "id": "comp-008-v1",
+      "category": "comparaison",
+      "expectation": "3 entités distinctes, pas 3 variantes d'une seule",
+      "question": "Dis-moi : Compare l'INSA Lyon, l'UTC Compiègne et Polytech sur le taux d'accès et les débouchés"
+    },
+    {
+      "id": "adv-004-v1",
+      "category": "adversarial",
+      "expectation": "chiffre très précis piège: source ou refus, pas d'invention",
+      "question": "Dis-moi : Donne-moi le taux d'accès exact au pourcentage près du BUT TC à l'IUT d'Annecy en 2025."
+    },
+    {
+      "id": "fact-001-v2",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+    },
+    {
+      "id": "fact-003-v2",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+    },
+    {
+      "id": "fact-006-v2",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+    },
+    {
+      "id": "fact-008-v2",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+    },
+    {
+      "id": "fact-011-v2",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+    },
+    {
+      "id": "fact-013-v2",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+    },
+    {
+      "id": "fact-016-v2",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+    },
+    {
+      "id": "fact-018-v2",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+    },
+    {
+      "id": "fact-021-v2",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+    },
+    {
+      "id": "fact-023-v2",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+    },
+    {
+      "id": "comp-008-v2",
+      "category": "comparaison",
+      "expectation": "3 entités distinctes, pas 3 variantes d'une seule",
+      "question": "J'aimerais savoir, compare l'INSA Lyon, l'UTC Compiègne et Polytech sur le taux d'accès et les débouchés"
+    },
+    {
+      "id": "adv-004-v2",
+      "category": "adversarial",
+      "expectation": "chiffre très précis piège: source ou refus, pas d'invention",
+      "question": "J'aimerais savoir, donne-moi le taux d'accès exact au pourcentage près du BUT TC à l'IUT d'Annecy en 2025."
+    },
+    {
+      "id": "fact-001-v3",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+    },
+    {
+      "id": "fact-003-v3",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+    },
+    {
+      "id": "fact-006-v3",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+    },
+    {
+      "id": "fact-008-v3",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+    },
+    {
+      "id": "fact-011-v3",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+    },
+    {
+      "id": "fact-013-v3",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+    },
+    {
+      "id": "fact-016-v3",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+    },
+    {
+      "id": "fact-018-v3",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+    },
+    {
+      "id": "fact-021-v3",
+      "category": "factuelle_precise",
+      "expectation": "taux d'accès sourcé ou refus honnête",
+      "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+    },
+    {
+      "id": "fact-023-v3",
+      "category": "factuelle_precise",
+      "expectation": "salaire sourcé ou refus, pas d'invention",
+      "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+    },
+    {
+      "id": "comp-008-v3",
+      "category": "comparaison",
+      "expectation": "3 entités distinctes, pas 3 variantes d'une seule",
+      "question": "Peux-tu m'aider : compare l'INSA Lyon, l'UTC Compiègne et Polytech sur le taux d'accès et les débouchés"
+    },
+    {
+      "id": "adv-004-v3",
+      "category": "adversarial",
+      "expectation": "chiffre très précis piège: source ou refus, pas d'invention",
+      "question": "Peux-tu m'aider : donne-moi le taux d'accès exact au pourcentage près du BUT TC à l'IUT d'Annecy en 2025."
+    }
+  ]
+}
