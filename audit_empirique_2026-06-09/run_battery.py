@@ -157,6 +157,8 @@ def main():
     ap.add_argument("--eval-set", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--limit", type=int, default=0, help="0 = toutes")
+    ap.add_argument("--temperature", type=float, default=0.3,
+                    help="0.0 = génération déterministe (A/B sans bruit de génération)")
     args = ap.parse_args()
 
     _load_env()
@@ -203,7 +205,7 @@ def main():
         }
         t0 = time.time()
         try:
-            text, sources = pipeline.answer(question)
+            text, sources = pipeline.answer(question, temperature=args.temperature)
             rec["latency_s"] = round(time.time() - t0, 2)
             rec["answer"] = text
             rec["scope"] = _serialize_scope(pipeline.last_scope_result)
