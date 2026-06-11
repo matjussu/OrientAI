@@ -46,6 +46,21 @@ DOMAIN_KEYWORDS = {
         "santé publique",
         "biologie médicale", "laboratoire médical",
     ],
+    # Travail social (NSF 332) — DISTINCT de la santé. Fix order 2026-06-11 :
+    # CESF / AES / éducateurs spécialisés -> domaine "social" (débouchés ROME K*,
+    # PAS les J11xx médicaux). Mots-clés professionnels spécifiques : on évite
+    # "social" nu / "sciences sociales" (disciplines, classées sciences_humaines).
+    "social": [
+        r"travail\s+social", r"travailleur\s+social",
+        r"économie\s+sociale\s+et\s+familiale", r"\bCESF\b",
+        r"éducateur\s+spécialisé", r"éducateur\s+de\s+jeunes\s+enfants",
+        r"éducateur\s+technique\s+spécialisé", r"moniteur[-\s]éducateur",
+        r"accompagnant\s+éducatif\s+et\s+social", r"\bAES\b",
+        r"assistant\w*\s+(?:de\s+)?service\s+social",
+        r"intervention\s+sociale", r"\bTISF\b",
+        r"médiateur\s+social", r"médiation\s+sociale",
+        r"carrières\s+sociales", r"secteur\s+social",
+    ],
     # === Extension scope élargi (ADR-041, 2026-04-23) — tous secteurs 17-25 ans ===
     "droit": [
         "droit", r"\bjurid", "science politique", "sciences politiques",
@@ -180,7 +195,7 @@ FORM_LIB_VOE_ACC_TO_DOMAINE = {
     "licence - sciences humaines et sociales": "sciences_humaines",
     "lp - sciences humaines et sociales": "sciences_humaines",
     "sciences politiques": "sciences_humaines",
-    "d.e secteur social": "sante",
+    "d.e secteur social": "social",   # Fix order 2026-06-11 : travail social ≠ santé
     "d.e secteur sanitaire": "sante",
     "bts - agricole": "agriculture",
     "licence - staps": "sport",

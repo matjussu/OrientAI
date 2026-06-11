@@ -69,7 +69,12 @@ from typing import Any
 from src.collect.cross_ref import attach_cross_refs
 from src.collect.insersup import attach_insertion as _legacy_insertion_attach  # noqa: F401
 from src.collect.insersup_attach import attach_insersup_to_fiches
-from src.collect.merge import attach_debouches, attach_metadata, merge_all_extended
+from src.collect.merge import (
+    attach_debouches,
+    attach_metadata,
+    merge_all_extended,
+    reclassify_social_health,
+)
 from src.collect.parcoursup import collect_parcoursup_fiches, collect_parcoursup_all_cascade
 from src.collect.secnumedu import load_secnumedu
 from src.collect.trends import attach_trends
@@ -942,6 +947,19 @@ def run_merge_v3(
     if verbose:
         for k, v in stats5.items():
             print(f"  {k}: {v}")
+
+    # Stage 5.9 — RECLASSIFY_SOCIAL_HEALTH (fix order 2026-06-11)
+    # Sort les formations TRAVAIL SOCIAL (CESF, AES, éducateurs) du domaine=sante
+    # AVANT attach_debouches, sinon elles héritent des 10 débouchés médicaux J11xx.
+    _n_sante_before = sum(1 for f in fiches if f.get("domaine") == "sante")
+    fiches = reclassify_social_health(fiches)
+    _n_sante_after = sum(1 for f in fiches if f.get("domaine") == "sante")
+    stage_stats["5_9_reclassify_social"] = {
+        "n_reclassified_sante_to_social": _n_sante_before - _n_sante_after,
+        "n_social_total": sum(1 for f in fiches if f.get("domaine") == "social"),
+    }
+    if verbose:
+        print(f"\n[Stage 5.9] RECLASSIFY_SOCIAL — {_n_sante_before - _n_sante_after} fiches sante→social")
 
     # Stage 6 — ATTACH_DEBOUCHES
     if verbose:

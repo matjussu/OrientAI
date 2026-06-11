@@ -231,7 +231,8 @@ def test_cascade_step1_keyword_on_name_wins():
 
 def test_cascade_step2_form_lib_mapping_when_name_has_no_keyword():
     from src.collect.parcoursup import domaine_cascade
-    assert domaine_cascade(_cascade_row("Formation XYZ", "D.E secteur social")) == "sante"
+    # Fix order 2026-06-11 : secteur social -> "social" (travail social ≠ santé)
+    assert domaine_cascade(_cascade_row("Formation XYZ", "D.E secteur social")) == "social"
     assert domaine_cascade(_cascade_row("Formation XYZ", "BTS - Agricole")) == "agriculture"
     assert domaine_cascade(_cascade_row("Formation XYZ", "Licence - STAPS")) == "sport"
 

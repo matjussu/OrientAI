@@ -29,6 +29,7 @@ import src.observability  # noqa: F401 - shim mistralai avant tout import lourd
 from mistralai.client import Mistral
 
 from src.rag.factory import make_production_pipeline
+from src.rag.fact_card import _summarize_voies_acces
 
 REPO = Path(__file__).resolve().parent.parent
 FICHES_PATH = Path(os.environ.get("ORIENTIA_FICHES_PATH", REPO / "data/processed/formations.json"))
@@ -134,6 +135,16 @@ def _extract_fiche(s: dict) -> dict:
             out[tk] = out[tk][:600]
     out["_retrieval_score"] = s.get("score")
     out["_sub_index"] = s.get("_sub_index")
+    # Fix order 2026-06-11 (Fix 2) — alignement instrument générateur/juge.
+    # Le GÉNÉRATEUR voit la normalisation reconversion via
+    # FactCard.dispositifs_reconversion (C2a) : "Par expérience" -> VAE,
+    # "formation continue", alternance. Le JUGE ne voyait que le voies_acces
+    # BRUT ("Par expérience"), d'où il flaguait à tort "accessible en VAE"
+    # comme non-supporté (reconv-001/004-v1/malform-004-v1). On expose au juge
+    # exactement la même chaîne canonique. cf [[feedback-validate-measurement-instrument]].
+    dispositifs = _summarize_voies_acces(fiche.get("voies_acces"))
+    if dispositifs:
+        out["dispositifs_reconversion"] = dispositifs
     return out
 
 
