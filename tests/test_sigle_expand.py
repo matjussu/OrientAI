@@ -1,7 +1,12 @@
 """Tests expansion sigles BM25-only (J2 U1, 2026-06-11)."""
 from __future__ import annotations
 
-from src.rag.sigle_expand import SIGLE_EXPANSIONS, expand_sigles_for_bm25
+from src.rag.sigle_expand import (
+    SIGLE_EXPANSIONS,
+    detect_sigles_in_fiche,
+    expand_sigles_for_bm25,
+    sigle_injection_text,
+)
 
 
 def test_expands_known_acronym_additively():
@@ -52,3 +57,40 @@ def test_empty_safe():
 def test_dict_has_no_ambiguous_two_letter_token():
     # garde-fou règle 1 (Jarvis) : pas de sigle 2-lettres ambigu (TC, CS, CJ...).
     assert all(len(s) >= 3 for s in SIGLE_EXPANSIONS), "sigle <3 lettres = risque ambiguïté"
+
+
+# ──────────── Injection corpus (detect_sigles_in_fiche / sigle_injection_text) ────────────
+
+
+def test_detect_sigle_from_full_form_in_nom():
+    f = {"nom": "BUT - Génie électrique et informatique industrielle"}
+    assert detect_sigles_in_fiche(f) == ["GEII"]
+
+
+def test_detect_sigle_from_text_field():
+    f = {"text": "Master MIAGE — méthodes informatiques appliquées à la gestion des entreprises, Nantes"}
+    assert "MIAGE" in detect_sigles_in_fiche(f)
+
+
+def test_detect_no_match_returns_empty():
+    f = {"nom": "BUT - Informatique"}  # pas de forme longue d'un sigle du dico
+    assert detect_sigles_in_fiche(f) == []
+
+
+def test_detect_accent_robust():
+    # sans accents dans la fiche -> doit quand même matcher (accent-strip).
+    f = {"nom": "BUT Genie mecanique et productique"}
+    assert detect_sigles_in_fiche(f) == ["GMP"]
+
+
+def test_injection_text_format():
+    f = {"nom": "Génie électrique et informatique industrielle"}
+    assert sigle_injection_text(f) == "Sigle : GEII"
+
+
+def test_injection_text_empty_when_no_sigle():
+    assert sigle_injection_text({"nom": "Licence de droit"}) == ""
+
+
+def test_detect_non_dict_safe():
+    assert detect_sigles_in_fiche(None) == []

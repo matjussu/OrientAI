@@ -1,5 +1,7 @@
 from mistralai.client import Mistral
 
+from src.rag.sigle_expand import sigle_injection_text
+
 
 EMBED_MODEL = "mistral-embed"
 
@@ -440,7 +442,11 @@ def fiche_to_text(fiche: dict) -> str:
             # Tronquer text_field à 1500 chars pour éviter dilution
             # (test empirique : >1500 fait baisser la précision du retrieve)
             embed_text = f"{' | '.join(prefix_parts)} | {text_field[:1500]}"
-            return embed_text
+            # J2 enrichissement — injection sigle (additif) sur le chemin annexe
+            # (fiches BUT-specialty domain!=none) : la fiche forme-longue reçoit
+            # son acronyme pour que dense matche l'acronyme nu.
+            inj = sigle_injection_text(fiche)
+            return f"{embed_text} | {inj}" if inj else embed_text
 
     # Comportement v4 inchangé pour fiches Parcoursup (domain absent)
     parts = [
@@ -517,6 +523,11 @@ def fiche_to_text(fiche: dict) -> str:
     )
     if metier_tags:
         parts.append(metier_tags)
+
+    # J2 enrichissement — injection sigle (additif) sur le chemin non-annexe.
+    inj = sigle_injection_text(fiche)
+    if inj:
+        parts.append(inj)
 
     return " | ".join(parts)
 

@@ -31,6 +31,8 @@ from typing import Any
 
 from rank_bm25 import BM25Okapi
 
+from src.rag.sigle_expand import sigle_injection_text
+
 
 # Stopwords FR minimaux — évite que "le", "la", "des" pollue le scoring
 # tout en gardant les mots-outils signifiants ("après", "avec", "comment").
@@ -113,6 +115,11 @@ def _fiche_to_search_text(fiche: dict[str, Any]) -> str:
                     parts.append(str(lib))
             elif isinstance(d, str):
                 parts.append(d)
+    # J2 enrichissement — injection sigle (additif) : symétrique à fiche_to_text
+    # (dense) pour que BM25 matche l'acronyme nu des fiches forme-longue.
+    inj = sigle_injection_text(fiche)
+    if inj:
+        parts.append(inj)
     return " ".join(parts)
 
 
