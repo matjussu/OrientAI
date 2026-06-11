@@ -418,6 +418,12 @@ _SOCIAL_WORK_PATTERNS = [
     r"medico-?social",
     r"habitat\s+social",
     r"etablissements?\s+(?:et\s+services?\s+)?sociaux",
+    # Petite enfance + insertion/orientation (résidu audit #131, même iceberg) :
+    # AEPE, éducateur de jeunes enfants, Montessori petite enfance, relais petite
+    # enfance, conseiller en transition professionnelle. Le garde-fou paramédical
+    # exclut "auxiliaire de puériculture" (puéricult -> reste santé).
+    r"petite\s+enfance",
+    r"transition\s+professionnelle",
 ]
 _SOCIAL_WORK_RE = re.compile("|".join(_SOCIAL_WORK_PATTERNS))
 

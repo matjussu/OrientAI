@@ -270,6 +270,12 @@ def test_is_social_work_formation_predicate():
     # Carrières Sociales (BUT travail social) — True (faux négatif récupéré)
     assert is_social_work_formation("Carrières sociales : Éducation spécialisée")
     assert is_social_work_formation("Carrières Sociales : Animation Sociale et Socioculturelle")
+    # Petite enfance + insertion (résidu audit #131) — True
+    assert is_social_work_formation("Accompagnant éducatif petite enfance")
+    assert is_social_work_formation("Educateur Montessori pour la petite enfance")
+    assert is_social_work_formation("Conseiller en transition professionnelle")
+    # Auxiliaire de puériculture = paramédical, reste santé (garde-fou puéricult)
+    assert not is_social_work_formation("Auxiliaire de puériculture en petite enfance")
 
 
 def test_reclassify_social_health_moves_social_out_of_sante():

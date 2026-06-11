@@ -10,7 +10,7 @@ Auteur : Claudette · Date : 2026-06-11 · Branche : `fix/rome-j11-social-mappin
 Deux bugs corrigés à la racine, prouvés par-question de façon déterministe, **sans
 toucher l'index FAISS figé** (pas de ré-embed → baseline retrieval 497q intacte) :
 
-- **Fix 1 (corruption data réelle)** : 409 formations de TRAVAIL SOCIAL (CESF, AES,
+- **Fix 1 (corruption data réelle)** : 416 formations de TRAVAIL SOCIAL (CESF, AES,
   éducateurs spécialisés, assistants de service social...) classées à tort
   `domaine=sante` héritaient des 10 débouchés ROME médicaux J11xx (médecin,
   sage-femme, infirmier, kiné...). Corrigé : `domaine=social` + débouchés ROME K*
@@ -64,18 +64,25 @@ Le système a deux représentations de sources :
 |---|---|
 | Fiches `domaine=sante` | 1737 |
 | Fiches avec débouchés médicaux J11xx | 1737 (= le "1733" du brief, corpus a grossi) |
-| **Reclassées sante → social (prédicat déterministe)** | **409** |
+| **Reclassées sante → social (prédicat déterministe)** | **416** |
 | Faux positifs médicaux (fiche médicale perdant ses débouchés santé) | **0** |
-| Restent `sante` (vraie santé/paramédical) | 1328 |
+| Restent `sante` (vraie santé/paramédical) | 1321 |
 
 Prédicat `is_social_work_formation` : multi-mots/acronymes spécifiques (AES, CESF,
 éducateur spécialisé, assistant de service social, TISF, médiateur social, carrières
-sociales, secteur médico-social...) + garde-fou paramédical (exclut infirmier,
-aide-soignant, kiné... même avec un terme social). Tests : tests/test_merge.py.
+sociales, secteur médico-social, petite enfance, transition professionnelle...) +
+garde-fou paramédical (exclut infirmier, aide-soignant, kiné, puériculture... même
+avec un terme social). Tests : tests/test_merge.py.
 
-Note : 409 vs ~392 estimé par l'audit Jarvis = prédicat production plus strict (évite
+Note : 416 vs ~392 estimé par l'audit Jarvis = prédicat production plus strict (évite
 "sciences sociales") MAIS récupère les vrais faux négatifs (BUT Carrières Sociales,
 médico-social), avec garde-fou paramédical. Set haute-précision.
+
+Extension audit #131 (Jarvis) : +7 fiches du même iceberg, famille petite enfance +
+insertion (Accompagnant éducatif petite enfance / AEPE, Educateur Montessori petite
+enfance, relais petite enfance, Conseiller en transition professionnelle...), patterns
+multi-mots sûrs, toujours 0 faux positif. 409 → 416. "Auxiliaire de puériculture"
+(paramédical) reste santé via le garde-fou puéricult.
 
 ---
 
@@ -128,10 +135,12 @@ seulement sur GO Matteo.**
    classification thématique (sante/social/data_ia...) ne pilote PAS le ranking des
    formations. Candidat : unifier `domain`/`domaine` ou câbler le boost thématique.
 
-2. **Résidu faux négatif** : "Conseiller en transition professionnelle" (et formations
-   d'insertion/orientation proches) restent `domaine=sante` avec débouchés médicaux —
-   même classe de bug, hors prédicat précis (évité pour ne pas sur-élargir). Candidat
-   pour un 2e passage avec validation manuelle.
+2. **Résidu faux négatif — RÉSOLU (audit #131)** : "Conseiller en transition
+   professionnelle" + la famille petite enfance (AEPE, Montessori, relais) ont été
+   intégrés au prédicat (+7 fiches, 409 → 416, 0 faux positif). Reste à surveiller :
+   d'autres intitulés d'insertion/orientation très périphériques pourraient subsister ;
+   un balayage exhaustif sante+J11 (1321 restantes) post-VivaTech confirmera s'il
+   existe encore un résidu hors familles connues.
 
 3. **Régénération corpus** : `formations.json` est gitignored (régénéré, non versionné).
    La correction est appliquée localement (backup `data/processed/formations.json.bak-presocial-*`)

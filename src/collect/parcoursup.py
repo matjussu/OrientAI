@@ -60,6 +60,10 @@ DOMAIN_KEYWORDS = {
         r"intervention\s+sociale", r"\bTISF\b",
         r"médiateur\s+social", r"médiation\s+sociale",
         r"carrières\s+sociales", r"secteur\s+social",
+        # Petite enfance + insertion (résidu audit #131). "sante" est testé AVANT
+        # "social" (ordre EXTENDED_DOMAINS first-wins) -> "auxiliaire de
+        # puériculture" matche puéricult en santé d'abord et n'est pas capté ici.
+        r"petite\s+enfance", r"transition\s+professionnelle",
     ],
     # === Extension scope élargi (ADR-041, 2026-04-23) — tous secteurs 17-25 ans ===
     "droit": [
