@@ -94,10 +94,39 @@ def _format_insertion_pro(ip: dict) -> str | None:
         pours = _safe_pct(ip.get("part_poursuite_etudes"))
         if pours:
             fragments.append(f"poursuite études : {pours}")
+        sf = _salary_fragment(ip)
+        if sf:
+            fragments.append(sf)
         if fragments:
             return f"Insertion apprentissage (Inserjeunes CFA, {annee}) : " + " — ".join(fragments)
 
+    # Schéma salaire-direct (InserSup MESR / IP Doc doctorat — order C2b 2026-06-11) :
+    # salaire net médian par formation posé en insertion_pro.salaire_median_embauche,
+    # sans bloc taux Céreq/CFA. Rend le salaire retrievable au futur ré-embed.
+    sf = _salary_fragment(ip)
+    if sf:
+        src = ip.get("salaire_source") or source or "enquête publique"
+        cohorte = ip.get("salaire_cohorte") or ip.get("cohorte")
+        an = f", promo {cohorte}" if cohorte else ""
+        return f"Insertion pro (salaire {src}{an}) : {sf}"
+
     return None
+
+
+def _salary_fragment(ip: dict) -> str | None:
+    """Fragment verbatim salaire net médian (order C2b). None si pas de salaire.
+
+    Étiquette le NET explicitement (RÈGLE 6) + l'horizon (12m/30m après diplôme)."""
+    sal = ip.get("salaire_median_embauche")
+    if sal is None or not isinstance(sal, (int, float)):
+        return None
+    import math
+    if math.isnan(float(sal)):
+        return None
+    net = " net" if ip.get("salaire_net") else ""
+    horizon = ip.get("salaire_horizon")
+    hz = f" à {horizon}" if horizon else ""
+    return f"salaire médian{net} : {int(float(sal))}€/mois{hz}"
 
 
 def _format_profil_admis(profil_admis: dict | None) -> str | None:
