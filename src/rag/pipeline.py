@@ -266,6 +266,12 @@ class OrientIAPipeline:
         # (None si intent != FACTUAL_POINTED OU SELECT pas tenté). Argument
         # démo INRIA : marker visible `via_select=True` pour audit.
         self.last_select_result: SelectResult | None = None
+        # Option B (J2 U1, 2026-06-11) — True si la réponse a été servie par le
+        # RAG en FALL-THROUGH après un SELECT non-concluant (via_select=False),
+        # au lieu d'un refus aveugle. Tag d'observabilité pour attribution mesure
+        # et diag (le SELECT bypass servait 0/48 factuelles → on laisse le RAG
+        # gardé essayer). Réinitialisé à chaque `.answer()`.
+        self.last_select_fallthrough: bool = False
         # Chantier 1.B (2026-05-03) — métadonnées du retry-with-hint loop pour
         # audit / observabilité. None tant qu'aucun call avec validator. Format :
         #   {
@@ -540,23 +546,20 @@ class OrientIAPipeline:
         if intent_label == INTENT_FACTUAL_POINTED:
             select_result = try_select_or_none(question, self.fiches)
             self.last_select_result = select_result
-            # Vague 0 fix Q9 (PCS 37 retrieval vide).
-            # Bypass RAG dans 2 cas seulement :
-            # 1. SELECT vrai succès (via_select=True) → zero hallu garanti
-            # 2. SELECT échec MAIS sans domain_hint annexe pertinent
-            #    (le RAG ne ramènerait pas mieux que le fallback unifié)
-            # On NE bypass PAS si :
-            # - select_no_entity : pas une question SELECT (pas de formation
-            #   nommée) → continuer en RAG
-            # - domain_hint annexe détecté (insee_salaire, dares, crous,
-            #   apec_region, etc.) : le RAG peut ramener la fiche annexe.
-            #   Cas Q9 PCS 37 → domain_hint=insee_salaire → continue RAG.
-            should_bypass = select_result is not None and (
-                select_result.via_select
-                or (
-                    select_result.reason != "select_no_entity"
-                    and not domain_hint
-                )
+            # Option B (J2 U1, 2026-06-11) — on ne BYPASS que sur un VRAI succès
+            # SELECT (via_select=True, zéro hallu garanti par le lookup). Tous les
+            # autres cas (no_match, ambiguous, invalid_value, stale, no_entity,
+            # domain annexe) tombent dans le RAG GARDÉ (fact_card + validator +
+            # prompt strict) au lieu d'un refus aveugle -> réduit le sur-refus.
+            # Historique : le bypass-vers-refus servait 0/48 questions factuelles
+            # (égalités WRatio, aucun match dominant) ; le narratif démo repose
+            # sur la groundedness mesurée du RAG, pas sur ce bypass. Réversible :
+            # revert si le gate (hallu/substitution) casse sur le subset SELECT.
+            should_bypass = select_result is not None and select_result.via_select
+            # Trace observabilité (Jarvis cond. 2) : réponse servie par fall-through
+            # RAG = le SELECT a tenté mais n'a pas servi (via_select=False).
+            self.last_select_fallthrough = (
+                select_result is not None and not select_result.via_select
             )
             if should_bypass:
                 # SELECT a tenté quelque chose d'utile — on retourne sans appel LLM
@@ -571,10 +574,11 @@ class OrientIAPipeline:
                     "retry_skipped_reason": "select_bypass",
                 }
                 return _ShortCircuitResult(text=select_result.text, reason="select_bypass")
-            # Sinon (None, no_entity, ou domain annexe pertinent) : continuer
-            # le RAG normal. last_select_result conservé pour traçabilité.
+            # Sinon : continuer le RAG normal (fall-through tracé). last_select_result
+            # conservé pour traçabilité.
         else:
             self.last_select_result = None
+            self.last_select_fallthrough = False
 
         # Sprint 10 §8.3-§8.4 : retrieve avec auto-expansion si filter activé.
         # Étape 6 (2026-05-09) : route_decision optionnel pilote le path

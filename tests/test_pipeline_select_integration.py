@@ -45,20 +45,25 @@ class TestSelectBypassIntegration:
         assert p.last_select_result is not None
         assert p.last_select_result.via_select is True
 
-    def test_factual_pointed_no_match_bypasses_with_fallback(self):
-        """Question factuelle + pas de match → SELECT fallback (pas RAG)."""
+    def test_factual_pointed_no_match_falls_through_to_rag(self):
+        """Option B (J2 U1, 2026-06-11) : factuelle + no_match SELECT -> fall-through
+        vers le RAG gardé (tracé), au lieu d'un refus aveugle. generate() EST appelé."""
         fiches = [
             {"nom": "Master Droit", "etablissement": "Sorbonne", "ville": "Paris"},
         ]
         p = _pipeline_with_intent(fiches)
-        with patch("src.rag.pipeline.generate") as mock_gen:
-            answer, top = p.answer("Quel est le taux d'accès du Bachelor Inexistant XYZ ?")
+        with patch("src.rag.pipeline.generate", return_value="rag answer") as mock_gen:
+            with patch.object(p, "_retrieve_and_filter", return_value=[{"fiche": {"nom": "Master Droit"}}]):
+                with patch.object(p, "_maybe_build_golden_qa_prefix", return_value=None):
+                    answer, top = p.answer("Quel est le taux d'accès du Bachelor Inexistant XYZ ?")
 
-        # SELECT a tenté mais no_match → fallback unifié, toujours pas de generate()
-        mock_gen.assert_not_called()
-        assert "Je n'ai pas l'information" in answer
+        # Option B : on ne bypasse plus vers un refus -> le RAG gardé est sollicité.
+        mock_gen.assert_called_once()
+        assert answer == "rag answer"
+        # SELECT a tenté (no_match) et on a fall-through -> tracé pour observabilité.
         assert p.last_select_result.via_select is False
         assert p.last_select_result.reason == "select_no_match"
+        assert p.last_select_fallthrough is True
 
     def test_non_factual_question_uses_rag(self):
         """Question non-factuelle (orientation) → RAG normal, pas de SELECT."""
