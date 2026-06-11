@@ -114,6 +114,20 @@ RELEVANT_ROME_CODES = {
     "J1502": "Cadre de santé / Directeur de soins",
     "J1505": "Kinésithérapeute / Ergothérapeute",
     "J1506": "Orthophoniste",
+    # Travail social — 8 codes K1xxx/K2xxx (NSF 332). Famille ROME DISTINCTE de
+    # la santé : un Accompagnant Educatif et Social, un CESF ou un éducateur
+    # spécialisé n'a AUCUN débouché médical. Vérifiés contre France Travail
+    # ROME 4.0 (2026-04, via get_rome_info). Fix order 2026-06-11 : ces
+    # formations héritaient à tort des 10 débouchés médicaux J11xx via
+    # domaine=sante (NSF 332 collapsé sur "sante"). cf detresse-prec-007.
+    "K1201": "Assistant / Assistante de service social",
+    "K1202": "Éducateur / Éducatrice de jeunes enfants",
+    "K1204": "Médiateur social / Médiatrice sociale",
+    "K1207": "Éducateur spécialisé / Éducatrice spécialisée",
+    "K1305": "Technicien / Technicienne d'intervention sociale et familiale (TISF)",
+    "K1306": "Accompagnant éducatif et social (AES)",
+    "K1403": "Directeur / Directrice de structure sociale ou médico-sociale",
+    "K2112": "Conseiller / Conseillère d'orientation / d'insertion",
 }
 
 
@@ -122,6 +136,8 @@ _DOMAIN_CODES = {
     "data_ia": ["M1405", "M1419", "M1423", "M1811", "M1868", "M1894"],
     "sante": ["J1102", "J1103", "J1104", "J1201", "J1304", "J1401",
               "J1501", "J1502", "J1505", "J1506"],
+    # Travail social (NSF 332) — débouchés ROME K*, jamais médicaux (cf supra).
+    "social": ["K1201", "K1202", "K1204", "K1207", "K1305", "K1306", "K1403", "K2112"],
 }
 
 

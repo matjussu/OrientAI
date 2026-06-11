@@ -227,6 +227,89 @@ def test_attach_debouches_empty_for_missing_domain():
     assert enriched[0]["debouches"] == []
 
 
+# === Order 2026-06-11 — fix mapping ROME J11 : travail social ≠ santé ===
+# Root cause : NSF 332 "Travail social" + parcoursup "secteur social" mappaient
+# sur domaine=sante -> attach_debouches injectait les 10 ROME médicaux J11xx à
+# ~392 formations sociales (CESF, AES, éducateur spé). detresse-007 = la pointe.
+
+
+def test_nsf_332_travail_social_maps_to_social_not_sante():
+    """NSF 332 = 'Travail social', distinct de 331 (Santé) / 344 (Techno méd.).
+    Régression : mappait 'sante' -> débouchés médicaux J11xx aux formations sociales."""
+    from src.collect.merge import _infer_domaine_from_nsf
+    assert _infer_domaine_from_nsf([{"code": "332"}]) == "social"
+    # Les vrais codes santé restent santé
+    assert _infer_domaine_from_nsf([{"code": "331"}]) == "sante"
+    assert _infer_domaine_from_nsf([{"code": "344"}]) == "sante"
+
+
+def test_is_social_work_formation_predicate():
+    """Prédicat déterministe travail social. Précis : capte le social, JAMAIS
+    le paramédical/médical (qui doit garder ses débouchés santé légitimes)."""
+    from src.collect.merge import is_social_work_formation
+    # Travail social (NSF 332) — True
+    assert is_social_work_formation("ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)")
+    assert is_social_work_formation("Conseiller en économie sociale familiale")
+    assert is_social_work_formation("Diplôme d'État d'éducateur spécialisé")
+    assert is_social_work_formation("Assistant de service social")
+    assert is_social_work_formation("Technicien d'intervention sociale et familiale")
+    assert is_social_work_formation("Moniteur éducateur")
+    assert is_social_work_formation("DE Éducateur de jeunes enfants")
+    # Santé / paramédical / autre — False (garde ses débouchés)
+    assert not is_social_work_formation("Diplôme d'État d'infirmier")
+    assert not is_social_work_formation("Aide-soignant")
+    assert not is_social_work_formation("Masseur-kinésithérapeute")
+    assert not is_social_work_formation("PASS - accès santé")
+    assert not is_social_work_formation("Master Cybersécurité")
+    assert not is_social_work_formation("Licence de sciences sociales")  # discipline, pas métier social
+    # Garde-fou paramédical : une profession santé en structure médico-sociale
+    # reste santé (le terme "médico-social" ne doit pas l'emporter sur "infirmier").
+    assert not is_social_work_formation(
+        "Exercer une mission de coordinateur infirmier dans une structure médico-sociale"
+    )
+    # Carrières Sociales (BUT travail social) — True (faux négatif récupéré)
+    assert is_social_work_formation("Carrières sociales : Éducation spécialisée")
+    assert is_social_work_formation("Carrières Sociales : Animation Sociale et Socioculturelle")
+    # Petite enfance + insertion (résidu audit #131) — True
+    assert is_social_work_formation("Accompagnant éducatif petite enfance")
+    assert is_social_work_formation("Educateur Montessori pour la petite enfance")
+    assert is_social_work_formation("Conseiller en transition professionnelle")
+    # Auxiliaire de puériculture = paramédical, reste santé (garde-fou puéricult)
+    assert not is_social_work_formation("Auxiliaire de puériculture en petite enfance")
+
+
+def test_reclassify_social_health_moves_social_out_of_sante():
+    """La passe de reclassification déterministe sort les formations travail
+    social du domaine 'sante' (chokepoint avant attach_debouches)."""
+    from src.collect.merge import reclassify_social_health
+    fiches = [
+        {"nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL", "domaine": "sante"},
+        {"nom": "Conseiller en économie sociale familiale", "domaine": "sante"},
+        {"nom": "Diplôme d'État d'infirmier", "domaine": "sante"},   # vraie santé : inchangé
+        {"nom": "Master Cyber", "domaine": "cyber"},                 # intouché
+    ]
+    out = reclassify_social_health(fiches)
+    assert out[0]["domaine"] == "social"
+    assert out[1]["domaine"] == "social"
+    assert out[2]["domaine"] == "sante", "une formation santé réelle reste santé"
+    assert out[3]["domaine"] == "cyber"
+
+
+def test_social_formation_gets_no_medical_debouches_end_to_end():
+    """Intégration reclassify -> attach_debouches : une formation travail social
+    ne sort JAMAIS avec un débouché médical J11xx."""
+    from src.collect.merge import reclassify_social_health, attach_debouches
+    fiches = reclassify_social_health(
+        [{"nom": "Conseiller en économie sociale familiale", "domaine": "sante"}]
+    )
+    fiches = attach_debouches(fiches)
+    codes = [d["code_rome"] for d in fiches[0]["debouches"]]
+    assert codes, "social doit avoir des débouchés (K*)"
+    assert not any(c.startswith("J") for c in codes), \
+        f"AUCUN débouché médical J* sur une formation sociale, got {codes}"
+    assert all(c.startswith("K") for c in codes)
+
+
 def test_attach_metadata_populates_provenance_and_dates():
     from src.collect.merge import attach_metadata
     fiches = [{

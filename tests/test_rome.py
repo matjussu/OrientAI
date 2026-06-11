@@ -14,6 +14,25 @@ def test_load_rome_returns_code_to_title_mapping(tmp_path):
     assert mapping["M1811"] == "Data engineer"
 
 
+def test_get_debouches_for_social_returns_K_codes_not_medical():
+    """Order 2026-06-11 Fix 1 : le domaine 'social' (travail social) doit porter
+    des débouchés ROME K* (action sociale), JAMAIS les J11xx médicaux.
+
+    Régression : CESF / AES (NSF 332 Travail social) recevaient à tort les 10
+    débouchés médicaux via domaine=sante. Le domaine 'social' canonise les
+    métiers réels du travail social.
+    """
+    debouches = get_debouches_for_domain("social")
+    assert len(debouches) >= 5
+    codes = [d["code_rome"] for d in debouches]
+    assert all(c.startswith("K") for c in codes), f"social doit être K*, got {codes}"
+    assert not any(c.startswith("J") for c in codes), "AUCUN code médical J* dans social"
+    assert all("code_rome" in d and "libelle" in d for d in debouches)
+    # Cœur travail social : AES (K1306) + Assistant social (K1201)
+    assert "K1306" in codes  # Accompagnant Educatif et Social
+    assert "K1201" in codes  # Assistant de service social
+
+
 def test_get_debouches_for_cyber_returns_rome_codes():
     debouches = get_debouches_for_domain("cyber")
     assert len(debouches) >= 5

@@ -1,3 +1,5 @@
+import re
+import unicodedata
 from datetime import date
 from rapidfuzz import fuzz
 from src.collect.normalize import normalize_name, normalize_city
@@ -21,7 +23,9 @@ _NSF_CODE_TO_DOMAIN = {
     "326": "data_ia",                 # Informatique, TIT
     "344": "sante",                   # Technologies médicales
     "331": "sante",                   # Santé
-    "332": "sante",                   # Travail social
+    "332": "social",                  # Travail social — PAS santé : débouchés ROME
+                                      # K* (action sociale), jamais J11xx médicaux.
+                                      # Fix order 2026-06-11 (cf reclassify_social_health).
     "133": "sciences_fondamentales",  # Maths / physique fondamentales
     "134": "sciences_fondamentales",  # Sciences vie / terre
     "230": "ingenierie_industrielle", # Spécialités pluritechnologiques
@@ -373,6 +377,102 @@ def merge_all(
             f["niveau"] = infer_niveau(f.get("nom", ""))
 
     return all_merged
+
+
+# === Fix order 2026-06-11 — travail social ≠ santé (mapping ROME J11) ===
+
+
+def _strip_accents_lower(s) -> str:
+    s = str(s or "").lower()
+    return "".join(
+        c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)
+    )
+
+
+# Signatures professionnelles du TRAVAIL SOCIAL (NSF 332). Multi-mots /
+# acronymes spécifiques : on évite volontairement le mot "social" seul, qui
+# matcherait des disciplines ("sciences sociales", "psychologie sociale") et
+# non des métiers du social.
+_SOCIAL_WORK_PATTERNS = [
+    r"accompagnant\w*\s+educati\w*\s+et\s+social",
+    r"\baes\b",
+    r"aide\s+medico-?psychologique", r"\bamp\b",
+    r"auxiliaire\s+de\s+vie\s+sociale", r"\bavs\b",
+    r"assistant\w*\s+(?:de\s+)?service\s+social", r"assistant\w*\s+social\w*",
+    r"economie\s+sociale\s+et\s+familiale", r"\bcesf\b", r"\bdecesf\b",
+    r"educateur\w*\s+specialise", r"educateur\w*\s+de\s+jeunes\s+enfants",
+    r"educateur\w*\s+technique\s+specialise",
+    r"moniteur\W*educateur",
+    r"\beje\b", r"\bdees\b", r"\bdeme\b",
+    r"intervention\s+sociale", r"\btisf\b",
+    r"mediateur\w*\s+social\w*", r"mediation\s+sociale",
+    r"travail\w*\s+social\w*", r"intervenant\w*\s+social\w*",
+    r"conseiller\w*\s+en\s+economie\s+sociale",
+    r"delegue\w*\s+aux?\s+prestations?\s+familiales?",
+    r"mandataire\s+judiciaire\s+a\s+la\s+protection",
+    # Faux négatifs récupérés (travail social réel, validés zéro faux positif
+    # sur le corpus sante) : diplômes BUT Carrières Sociales, secteur
+    # médico-social, accompagnement/habitat social, établissements sociaux.
+    r"carrieres?\s+sociales?",
+    r"accompagnement\s+social\w*",
+    r"medico-?social",
+    r"habitat\s+social",
+    r"etablissements?\s+(?:et\s+services?\s+)?sociaux",
+    # Petite enfance + insertion/orientation (résidu audit #131, même iceberg) :
+    # AEPE, éducateur de jeunes enfants, Montessori petite enfance, relais petite
+    # enfance, conseiller en transition professionnelle. Le garde-fou paramédical
+    # exclut "auxiliaire de puériculture" (puéricult -> reste santé).
+    r"petite\s+enfance",
+    r"transition\s+professionnelle",
+]
+_SOCIAL_WORK_RE = re.compile("|".join(_SOCIAL_WORK_PATTERNS))
+
+# Garde-fou : si le NOM désigne une profession médicale/paramédicale explicite,
+# la fiche reste santé même si un terme social apparaît (ex « coordinateur
+# infirmier en structure médico-sociale » = infirmier, débouchés santé légitimes).
+_MEDICAL_PROFESSION_RE = re.compile(
+    r"infirmi|aide-?soignant|kinesi|masseur|sage-?femme|maieut|m[ée]decin|"
+    r"pharmaci|dentaire|odontolog|podolog|orthopt|orthophon|audiopro|opticien|"
+    r"psychomot|dietet|ergothera|ambulanci|pueri[c]ult|manipulateur"
+)
+
+# Domaines "santé" depuis lesquels une formation sociale doit être requalifiée
+# (toute fiche domaine=sante reçoit les 10 débouchés médicaux J11xx).
+_HEALTH_DOMAINS_TO_RECHECK = {"sante"}
+
+
+def is_social_work_formation(nom) -> bool:
+    """True si le NOM désigne une formation au TRAVAIL SOCIAL (NSF 332).
+
+    Prédicat déterministe (multi-mots / acronymes) calibré pour éviter les faux
+    positifs sur les disciplines académiques ('sciences sociales') et le
+    paramédical. Une formation sociale ne doit JAMAIS hériter de débouchés
+    médicaux J11xx. Fix order 2026-06-11 — cf detresse-prec-007 (CESF).
+    """
+    norm = _strip_accents_lower(nom)
+    if _MEDICAL_PROFESSION_RE.search(norm):
+        return False  # profession médicale/paramédicale -> reste santé
+    return bool(_SOCIAL_WORK_RE.search(norm))
+
+
+def reclassify_social_health(fiches: list[dict]) -> list[dict]:
+    """Requalifie les formations TRAVAIL SOCIAL mal classées domaine=sante vers
+    domaine='social'. Chokepoint déterministe AVANT attach_debouches.
+
+    Root cause order 2026-06-11 : NSF 332 ('Travail social'), parcoursup
+    'd.e secteur social' et labonnealternance faisaient tomber CESF / AES /
+    éducateurs spécialisés en domaine=sante -> injection des 10 débouchés
+    médicaux J11xx (cf detresse-prec-007 : CESF affichant médecin/sage-femme).
+    Cette passe capte toutes les sources d'un coup, par le nom. Idempotente.
+    """
+    for f in fiches:
+        if not isinstance(f, dict):
+            continue
+        if f.get("domaine") in _HEALTH_DOMAINS_TO_RECHECK and is_social_work_formation(
+            f.get("nom")
+        ):
+            f["domaine"] = "social"
+    return fiches
 
 
 # === Vague A — post-merge enrichment: debouches + provenance + fraîcheur ===
