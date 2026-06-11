@@ -177,7 +177,9 @@ def build_doctorat_insertion_pro(fiche: dict[str, Any]) -> dict[str, Any] | None
         "salaire_horizon": fiche.get("situation"),       # "12m" / "36m" après le doctorat
         "salaire_brut_median_annuel": fiche.get("salaire_brut_median_annuel"),
         "taux_insertion": fiche.get("taux_insertion"),
-        "cohorte": fiche.get("annee"),
+        # Année de cohorte d'enquête, tracée pour citation (cf détresse-006).
+        # Le corpus servi porte `annee_cohorte` ; le normalize_record produit `annee`.
+        "cohorte": fiche.get("annee_cohorte") or fiche.get("annee"),
     }
 
 

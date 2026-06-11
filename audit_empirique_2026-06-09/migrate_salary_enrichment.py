@@ -28,12 +28,12 @@ CSV = REPO / "data/raw/insersup.csv"
 
 
 def _enrich_doctorat(fiches: list[dict]) -> int:
+    """Reconstruit insertion_pro pour les fiches doctorat. DÉTERMINISTE depuis les
+    champs source top-level de la fiche elle-même (pas de jointure) -> rebuild
+    inconditionnel sûr (idempotent : même salaire, cohorte corrigée annee_cohorte)."""
     n = 0
     for f in fiches:
         if not isinstance(f, dict) or f.get("source") != "ip_doc_doctorat":
-            continue
-        ip = f.get("insertion_pro")
-        if isinstance(ip, dict) and ip.get("salaire_median_embauche") is not None:
             continue
         built = build_doctorat_insertion_pro(f)
         if built is not None:

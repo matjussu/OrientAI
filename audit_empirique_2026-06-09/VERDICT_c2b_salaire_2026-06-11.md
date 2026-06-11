@@ -49,7 +49,8 @@ COLLECTE, pas câblage.
   Verrouillé par `test_build_salary_index_keeps_only_ensemble_slice`.
 - **Freshest-promo** : sur clé multi-cohortes, on retient l'année la plus récente,
   TRACÉE par fiche dans `insertion_pro.salaire_cohorte` (citation d'année possible,
-  cf détresse-006).
+  cf détresse-006). Doctorat : année tracée dans `insertion_pro.cohorte` depuis
+  `annee_cohorte` (2014/2016 selon la fiche) — fix résidu audit Jarvis #1957.
 - **Ambiguïtés** : 68 clés distinctes (60 bucket ingénieur + 8 bucket master) ont des
   valeurs ensemble divergentes (le compteur d'insertion en logue 76 events, dont des
   triples). **0 (zéro) des 4055 fiches enrichies ne touche une clé ambiguë** (vérifié).
