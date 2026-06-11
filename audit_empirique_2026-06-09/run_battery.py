@@ -89,6 +89,31 @@ _FICHE_KEEP = (
     # citation pourtant grounded serait faussement flaggée hallucination (même
     # piège d'instrument que taux_admission ci-dessus). Validation avant mesure.
     "voies_acces",
+    # Instrument completion (2026-06-11) — 3e occurrence du pattern "juge
+    # semi-aveugle". Le générateur LIT du contenu (salaire INSEE, descriptions
+    # métier/RNCP) via FactCard.text_libre (`text`/`detail`) et le NOM de la
+    # source via la name-cascade — tout cela était strippé côté juge. Résultat :
+    # sur une question salaire, S2 (fiche INSEE) se sérialisait en "?" et le juge
+    # ne pouvait ni vérifier le chiffre ni détecter le mismatch brut/net. On
+    # ajoute exactement ce que le générateur voit. cf
+    # [[feedback-validate-measurement-instrument]]. Inventaire complet :
+    # docs (jalon 2 Jarvis). Fix DURABLE proposé séparément (juge = FactCard).
+    "text", "detail",
+    # name-cascade (fact_card._pick_formation_name) : sans ça le juge voit "?"
+    # au lieu du vrai nom (ex « professions scientifiques PCS 34 »).
+    "libelle_metier", "nom_metier", "libelle", "intitule",
+    "libelle_diplome", "libelle_formation", "fap_libelle", "subject",
+    "discipline", "grande_discipline",
+    # salaire INSEE structuré (partition insee_salaire / salaan 2023) — net ET
+    # brut explicitement étiquetés en SOURCE -> le juge peut vérifier le
+    # qualificatif brut/net cité par le modèle (garde-fou salaire volet b).
+    "salaire_net_median_annuel", "salaire_net_median_mensuel",
+    "salaire_net_q1_mensuel", "salaire_net_q3_mensuel",
+    "salaire_brut_median_annuel", "cs_libelle", "cs_code",
+    "pcs_group_label", "effectif_total", "discipline_agregee",
+    "taux_insertion", "part_cadre",
+    # mineurs aussi exposés au générateur via FactCard.
+    "domain", "url", "duree", "frais_annuels", "selectivite_code", "provenance",
 )
 
 
@@ -102,6 +127,11 @@ def _extract_fiche(s: dict) -> dict:
     # tronquer debouches volumineux
     if isinstance(out.get("debouches"), list):
         out["debouches"] = out["debouches"][:8]
+    # tronquer text/detail (parité avec fact_card.text_libre, ~400-600 chars) —
+    # capture la chaîne salaire INSEE complète sans gonfler le contexte juge.
+    for tk in ("text", "detail"):
+        if isinstance(out.get(tk), str) and len(out[tk]) > 600:
+            out[tk] = out[tk][:600]
     out["_retrieval_score"] = s.get("score")
     out["_sub_index"] = s.get("_sub_index")
     return out
