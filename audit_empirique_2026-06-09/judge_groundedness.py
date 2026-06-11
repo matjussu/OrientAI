@@ -7,13 +7,25 @@ reellement fournies au generateur. Evite l'auto-jugement (le honesty_score
 interne du pipeline etait justement faussement confiant).
 
 Classe aussi l'OUTCOME de chaque reponse pour distinguer :
-- answered_grounded         : repond + tout sourcé
-- answered_unsupported      : repond mais >=1 claim non supportée (hallucination)
-- metric_substitution       : refuse/devie puis donne une metrique a cote (ex
-                              insertion demandee -> taux Parcoursup d'autres)
-- honest_refusal            : refuse proprement, rien d'invente
-- off_topic                 : repond a cote sans le dire
-- crisis_response / oos     : court-circuit detresse / hors-perimetre
+- answered_grounded               : repond directement a la question + tout sourcé
+- answered_alternative_disclaimed : signale EXPLICITEMENT que la cible demandee est absente des
+                                    sources, PUIS propose une alternative clairement etiquetee dont
+                                    chaque claim est sourcé, SANS pretendre qu'elle repond a la
+                                    question d'origine. Comportement FIDELE (J3, 2026-06-11).
+- answered_unsupported            : repond mais >=1 claim non supportée (hallucination)
+- metric_substitution             : donne une metrique/formation a cote SANS divulguer que la cible
+                                    demandee manque, comme si c'etait la reponse (insertion demandee
+                                    -> taux Parcoursup d'autres, presente sans disclaimer)
+- honest_refusal                  : refuse proprement, rien d'invente
+- off_topic                       : repond a cote sans le dire
+- crisis_response / oos           : court-circuit detresse / hors-perimetre
+
+GARDE-FOU ANTI-GAMING (J3) : answered_alternative_disclaimed ne re-bucket QUE des reponses dont le
+juge a lui-meme prouve groundedness=1.0 (chaque claim supporte). hallucinated_numbers et la
+detection de claim non-supporte restent INTOUCHES : une alternative NON sourcee ou un chiffre
+fabrique reste answered_unsupported. On corrige un label auto-contradictoire (unsupported alors que
+tous les claims sont supportes), on ne deguise pas du mauvais en bon. alternative_relevance
+(relevant/weak/irrelevant) est un axe HELPFULNESS orthogonal, hors du gate faithfulness.
 
 Lit les sorties brutes (battery_run.json), n'appelle Claude que sur les
 réponses in_scope (les court-circuits urgent/oos sont classés sans LLM).
@@ -83,7 +95,7 @@ SOURCES FOURNIES AU GENERATEUR (chaque chiffre cite doit venir d'ici) :
 
 Renvoie ce JSON exact :
 {{
-  "outcome": "answered_grounded | answered_unsupported | metric_substitution | honest_refusal | off_topic",
+  "outcome": "answered_grounded | answered_alternative_disclaimed | answered_unsupported | metric_substitution | honest_refusal | off_topic",
   "answers_the_question": true/false,
   "claims": [
     {{"claim": "affirmation factuelle extraite", "is_numeric": true/false, "supported_by_sources": true/false, "note": "court"}}
@@ -93,17 +105,29 @@ Renvoie ce JSON exact :
   "groundedness": 0.0,
   "hallucinated_numbers": true/false,
   "metric_substitution": true/false,
+  "alternative_relevance": "relevant | weak | irrelevant | null",
   "notes": "1-2 phrases : ce que fait la reponse, et son principal defaut s'il y en a un"
 }}
 
 Regles IMPORTANTES :
 - Un "claim" = une affirmation sur le MONDE (une formation existe, un chiffre vaut X, un debouche est Y). Les meta-phrases du type "je n'ai pas cette information dans mes sources", "consulte l'ONISEP", "prends RDV au CIO" NE SONT PAS des claims a grounder : ignore-les.
-- Si la reponse ne fait AUCUN claim sur le monde (refus pur), alors outcome=honest_refusal, n_claims=0, groundedness=null.
-- groundedness = n_supported / n_claims sinon.
-- metric_substitution = true si la reponse refuse/n'a pas la metrique demandee MAIS fournit une autre metrique (ex : on demande l'insertion, elle donne des taux d'acces Parcoursup d'autres formations) comme si pertinent.
-- honest_refusal = refuse proprement, n'avance aucun chiffre non source.
-- off_topic = repond a cote sans le signaler.
-- IMPORTANT : un chiffre suivi de [source SX] DOIT correspondre a une valeur reellement presente dans la source SX fournie. Si la valeur figure bien dans les sources, le claim est supporte."""
+- groundedness = n_supported / n_claims (null si n_claims=0).
+- Un chiffre suivi de [source SX] DOIT correspondre a une valeur reellement presente dans la source SX fournie. Si la valeur figure bien dans les sources, le claim est supporte.
+
+PROCEDURE DE DECISION DE L'OUTCOME (applique-la DANS CET ORDRE, prends le PREMIER cas qui matche) :
+  A. La reponse ne fait AUCUN claim sur le monde (refus pur, aucune formation/chiffre avance) -> honest_refusal, n_claims=0, groundedness=null.
+  B. La reponse DIVULGUE EXPLICITEMENT que la cible demandee (formation / lieu / metrique precis) est ABSENTE des sources (formulations type "je n'ai pas X dans mes sources", "X n'est pas disponible", "aucune fiche pour X"), PUIS propose une alternative clairement etiquetee (autre lieu, autre formation proche, metrique liee) ET chaque claim factuel de l'alternative est supporte par les sources (n_supported == n_claims) -> answered_alternative_disclaimed. metric_substitution=false. C'est FIDELE : le disclaimer empeche toute pretention de pertinence directe.
+  C. La reponse fournit une autre metrique/formation que celle demandee MAIS SANS divulguer explicitement que la cible manque (presente l'alternative comme si elle repondait) -> metric_substitution=true, outcome=metric_substitution.
+  D. Il reste >=1 claim NON supporte par les sources -> answered_unsupported. (NE JAMAIS choisir answered_unsupported si n_supported == n_claims : par definition il faut au moins un claim non supporte.)
+  E. La reponse repond directement a la question posee, tous claims supportes -> answered_grounded.
+  F. La reponse parle d'autre chose sans le signaler -> off_topic.
+
+- metric_substitution (le flag booleen) = true UNIQUEMENT au cas C (substitution NON divulguee). Au cas B (alternative divulguee+sourcee) il est false.
+- alternative_relevance : a remplir UNIQUEMENT si outcome=answered_alternative_disclaimed, sinon null. C'est un jugement de UTILITE de l'alternative pour l'utilisateur (PAS de fidelite, n'affecte pas groundedness) :
+    * "relevant"   = alternative plausiblement utile (meme metrique meme region, ou meme lieu formation proche).
+    * "weak"       = liee mais d'utilite limitee (autre type de metrique ; proxy de categorie large ; region differente).
+    * "irrelevant" = geographiquement/thematiquement lointaine (ex : une formation a Papeete proposee pour une demande a Nantes).
+- honest_refusal = refuse proprement, n'avance aucun chiffre non source."""
 
 
 def judge_one(client: Anthropic, rec: dict) -> dict:
