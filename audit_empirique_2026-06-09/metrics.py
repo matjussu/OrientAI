@@ -19,6 +19,7 @@ def compute_metrics(battery_path: str, groundedness_path: str) -> dict:
 
     n = len(J)
     outcomes: dict[str, int] = {}
+    alt_relevance: dict[str, int] = {}   # J3 : utilite de l'alternative (hors gate faithfulness)
     ground_vals = []
     hallucinated = []
     substitutions = []
@@ -40,6 +41,10 @@ def compute_metrics(battery_path: str, groundedness_path: str) -> dict:
             hallucinated.append(qid)
         if jd.get("metric_substitution"):
             substitutions.append(qid)
+        if o == "answered_alternative_disclaimed":
+            ar = jd.get("alternative_relevance")
+            if ar:
+                alt_relevance[ar] = alt_relevance.get(ar, 0) + 1
         h = j.get("honesty_selfreported")
         if isinstance(g, (int, float)) and h is not None and h >= 0.9 and g < 0.7 and o != "honest_refusal":
             honesty_gaps.append(qid)
@@ -62,6 +67,8 @@ def compute_metrics(battery_path: str, groundedness_path: str) -> dict:
         "hallucinated_ids": sorted(hallucinated),
         "n_metric_substitution": len(substitutions),
         "substitution_ids": sorted(substitutions),
+        "n_answered_alternative_disclaimed": outcomes.get("answered_alternative_disclaimed", 0),
+        "alternative_relevance": alt_relevance,
         "n_honesty_gaps": len(honesty_gaps),
         "honesty_gap_ids": sorted(honesty_gaps),
         "n_urgent_false_positive": len(urgent_false_pos),

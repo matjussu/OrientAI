@@ -62,6 +62,53 @@ FUZZY_THRESHOLD = 85
 # Le grouping (etab, ville) protège des fiches multi-voies de la même école.
 AMBIGUITY_DELTA = 2
 
+# Pool filter SELECT (J2 U1, 2026-06-11) — exclusion NOMMÉE des fiches
+# NON-formation qui polluaient le rang-1 du fuzzy. Une fiche « Logements CROUS
+# à Lyon » (texte cherchable = nom de ville seul) était scorée ~90 par WRatio
+# sur toute query « [formation] [ville] » et squattait le rang-1 sur 27/48
+# questions SELECT mesurées. Servir ce dominant = hallu déterministe (un taux
+# d'accès servi depuis une fiche logement). Le SELECT ne sert QUE des faits de
+# FORMATION nommée -> on restreint le pool de candidats aux fiches
+# formation-identité. Aucun domaine FORMATION ne contient ces sous-chaînes
+# (vérifié corpus 2026-06 : eco_gestion, sciences_*, droit, sante, ...).
+# Extensible : si le SELECT s'étend un jour aux lookups métier/INSEE légitimes
+# (post-VivaTech), retirer ICI le domaine concerné de façon explicite — pas un
+# blanket silencieux.
+_NONFORM_SELECT_DOMAIN_SUBSTR = ("crous", "insee", "metier", "aides")
+
+
+def is_select_candidate(fiche: Any) -> bool:
+    """True si la fiche est une formation nommée éligible au SELECT déterministe.
+
+    Exclut (1) les fiches sans identité (ni `nom` ni `etablissement`) et (2) les
+    fiches de domaine non-formation (crous, insee, metier, aides). cf
+    `_NONFORM_SELECT_DOMAIN_SUBSTR`.
+    """
+    if not isinstance(fiche, dict):
+        return False
+    if not (fiche.get("nom") or fiche.get("etablissement")):
+        return False
+    dom = str(fiche.get("domain") or fiche.get("domaine") or "").lower()
+    if any(sub in dom for sub in _NONFORM_SELECT_DOMAIN_SUBSTR):
+        return False
+    return True
+
+
+# Suffixe de site d'un établissement multi-sites (« IUT Lyon1 Site de
+# Villeurbanne Doua » -> racine « iut lyon1 »). Regroupe les variantes de SITE
+# d'un même établissement pour ne pas les compter comme établissements distincts
+# (sinon faux ambigu sur fact-001 : BUT Info Doua vs Bourg = même formation).
+_SITE_SUFFIX_RE = re.compile(r"\s*[-,]?\s*site\s+d[e'].*$", re.IGNORECASE)
+
+
+def _etab_root(etab: str | None) -> str:
+    return _SITE_SUFFIX_RE.sub("", (etab or "").strip().lower()).strip()
+
+
+def _norm_nom(nom: str | None) -> str:
+    return (nom or "").strip().lower()
+
+
 # Critique expert #4b (2026-05-03) — mots discriminateurs métier qui DOIVENT
 # matcher dans la fiche cible si présents dans la query, sinon match suspect.
 # Ex : « prépa commerciales Henri IV » ne doit PAS matcher la prépa A/L
@@ -438,6 +485,13 @@ def lookup_formation(entity: Entity, fiches: list[dict]) -> tuple[dict | None, f
     if entity.is_empty() or not fiches:
         return None, 0.0, False
 
+    # Pool filter (J2 U1) — exclure les fiches non-formation AVANT le fuzzy.
+    # Sans ça, une fiche CROUS/INSEE squatte le rang-1 (WRatio inflate les
+    # chaînes courtes) et provoque refus (ambigu/no_match) ou garbage-SELECT.
+    fiches = [f for f in fiches if is_select_candidate(f)]
+    if not fiches:
+        return None, 0.0, False
+
     query = entity.to_query_string()
     if not query:
         return None, 0.0, False
@@ -456,9 +510,14 @@ def lookup_formation(entity: Entity, fiches: list[dict]) -> tuple[dict | None, f
     fiches_filtered = fiches
     if entity.ville:
         ville_lower = entity.ville.lower().strip()
+        # J2 U1 bug 2 — match la ville contre le champ `ville` OU `etablissement`.
+        # 581 fiches métropole ont « lyon » dans l'etab (« IUT Lyon1 ») mais une
+        # ville de commune (Villeurbanne, Bron) -> le pré-filtre ville strict les
+        # excluait à tort (poste de sur-refus au-delà de fact-001).
         fiches_filtered = [
             f for f in fiches
             if ville_lower in (f.get("ville") or "").lower().strip()
+            or ville_lower in (f.get("etablissement") or "").lower()
         ]
         if not fiches_filtered:
             return None, 0.0, False
@@ -501,21 +560,31 @@ def lookup_formation(entity: Entity, fiches: list[dict]) -> tuple[dict | None, f
     # qu'il s'agit de la MÊME école sous variants de voie. On vérifie donc
     # que les top matches pointent sur des écoles DISTINCTES (etab, ville).
     # Si tous partagent etab+ville → pas ambigu, prendre le best.
+    # J2 U1 (c) — clé d'identité pour l'ambiguïté, conditionnée à la localisation :
+    #  - ville PRÉCISÉE -> (nom normalisé, racine d'établissement). Les variantes
+    #    de SITE d'une même formation/etab dans la localité demandée ne sont PAS
+    #    ambiguës -> on sert la meilleure (le site exact est affiché = honnête).
+    #    fact-001 : BUT Info IUT Lyon1 Doua vs Bourg (même nom, racine « iut lyon1 »).
+    #  - PAS de ville -> (etab, ville) : des campus en villes différentes du même
+    #    établissement restent ambigus (EFREI Paris vs Bordeaux : « quel campus ? »).
+    # Reste ambigu si nom OU racine etab diffèrent (formations/établissements
+    # distincts ex-aequo, même avec ville : refus/clarification conservé).
+    def _school_key(f: dict) -> tuple:
+        if entity.ville:
+            return (_norm_nom(f.get("nom")), _etab_root(f.get("etablissement")))
+        return (
+            (f.get("etablissement") or "").strip().lower(),
+            (f.get("ville") or "").strip().lower(),
+        )
+
     ambiguous = False
-    top_school = (
-        (fiches_filtered[top_idx].get("etablissement") or "").strip().lower(),
-        (fiches_filtered[top_idx].get("ville") or "").strip().lower(),
-    )
+    top_school = _school_key(fiches_filtered[top_idx])
     for _, score, idx in results[1:]:
         if score < FUZZY_THRESHOLD:
             break
         if (top_score - score) >= AMBIGUITY_DELTA:
             break
-        other_school = (
-            (fiches_filtered[idx].get("etablissement") or "").strip().lower(),
-            (fiches_filtered[idx].get("ville") or "").strip().lower(),
-        )
-        if other_school != top_school:
+        if _school_key(fiches_filtered[idx]) != top_school:
             ambiguous = True
             break
 

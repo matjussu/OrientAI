@@ -29,6 +29,7 @@ from src.rag.metadata_filter import (
     apply_metadata_filter,
 )
 from src.rag.post_process import post_process_answer
+from src.rag.geo_coherence import geo_coherence_check
 from src.rag.router_llm import RouteDecision, RouterLLM, SUB_INDEX_NAMES
 from src.rag.scope_classifier import ScopeClassifier, ScopeResult
 from src.validator import (
@@ -203,6 +204,7 @@ class OrientIAPipeline:
         scope_classifier: ScopeClassifier | None = None,
         use_strict_v4: bool = False,
         router_llm: RouterLLM | None = None,
+        enable_geo_coherence: bool = True,
     ):
         self.client = client
         self.fiches = fiches
@@ -266,6 +268,18 @@ class OrientIAPipeline:
         # (None si intent != FACTUAL_POINTED OU SELECT pas tenté). Argument
         # démo INRIA : marker visible `via_select=True` pour audit.
         self.last_select_result: SelectResult | None = None
+        # Option B (J2 U1, 2026-06-11) — True si la réponse a été servie par le
+        # RAG en FALL-THROUGH après un SELECT non-concluant (via_select=False),
+        # au lieu d'un refus aveugle. Tag d'observabilité pour attribution mesure
+        # et diag (le SELECT bypass servait 0/48 factuelles → on laisse le RAG
+        # gardé essayer). Réinitialisé à chaque `.answer()`.
+        self.last_select_fallthrough: bool = False
+        # Garde-fou géo déterministe NARROW (J3, 2026-06-11, GO Matteo option B) —
+        # remplace le prompt-only RÈGLE 9 reverté. Refus + relais si la question cible
+        # une zone qu'AUCUNE source ne couvre (out-of-zone clair, ex Papeete-pour-Nantes).
+        # Conservateur (abstention au moindre doute). Désactivable (revertable).
+        self.enable_geo_coherence: bool = enable_geo_coherence
+        self.last_geo_refusal: bool = False
         # Chantier 1.B (2026-05-03) — métadonnées du retry-with-hint loop pour
         # audit / observabilité. None tant qu'aucun call avec validator. Format :
         #   {
@@ -540,23 +554,20 @@ class OrientIAPipeline:
         if intent_label == INTENT_FACTUAL_POINTED:
             select_result = try_select_or_none(question, self.fiches)
             self.last_select_result = select_result
-            # Vague 0 fix Q9 (PCS 37 retrieval vide).
-            # Bypass RAG dans 2 cas seulement :
-            # 1. SELECT vrai succès (via_select=True) → zero hallu garanti
-            # 2. SELECT échec MAIS sans domain_hint annexe pertinent
-            #    (le RAG ne ramènerait pas mieux que le fallback unifié)
-            # On NE bypass PAS si :
-            # - select_no_entity : pas une question SELECT (pas de formation
-            #   nommée) → continuer en RAG
-            # - domain_hint annexe détecté (insee_salaire, dares, crous,
-            #   apec_region, etc.) : le RAG peut ramener la fiche annexe.
-            #   Cas Q9 PCS 37 → domain_hint=insee_salaire → continue RAG.
-            should_bypass = select_result is not None and (
-                select_result.via_select
-                or (
-                    select_result.reason != "select_no_entity"
-                    and not domain_hint
-                )
+            # Option B (J2 U1, 2026-06-11) — on ne BYPASS que sur un VRAI succès
+            # SELECT (via_select=True, zéro hallu garanti par le lookup). Tous les
+            # autres cas (no_match, ambiguous, invalid_value, stale, no_entity,
+            # domain annexe) tombent dans le RAG GARDÉ (fact_card + validator +
+            # prompt strict) au lieu d'un refus aveugle -> réduit le sur-refus.
+            # Historique : le bypass-vers-refus servait 0/48 questions factuelles
+            # (égalités WRatio, aucun match dominant) ; le narratif démo repose
+            # sur la groundedness mesurée du RAG, pas sur ce bypass. Réversible :
+            # revert si le gate (hallu/substitution) casse sur le subset SELECT.
+            should_bypass = select_result is not None and select_result.via_select
+            # Trace observabilité (Jarvis cond. 2) : réponse servie par fall-through
+            # RAG = le SELECT a tenté mais n'a pas servi (via_select=False).
+            self.last_select_fallthrough = (
+                select_result is not None and not select_result.via_select
             )
             if should_bypass:
                 # SELECT a tenté quelque chose d'utile — on retourne sans appel LLM
@@ -571,10 +582,11 @@ class OrientIAPipeline:
                     "retry_skipped_reason": "select_bypass",
                 }
                 return _ShortCircuitResult(text=select_result.text, reason="select_bypass")
-            # Sinon (None, no_entity, ou domain annexe pertinent) : continuer
-            # le RAG normal. last_select_result conservé pour traçabilité.
+            # Sinon : continuer le RAG normal (fall-through tracé). last_select_result
+            # conservé pour traçabilité.
         else:
             self.last_select_result = None
+            self.last_select_fallthrough = False
 
         # Sprint 10 §8.3-§8.4 : retrieve avec auto-expansion si filter activé.
         # Étape 6 (2026-05-09) : route_decision optionnel pilote le path
@@ -593,6 +605,16 @@ class OrientIAPipeline:
             top = mmr_select(reranked, k=effective_top_k, lambda_=effective_lambda)
         else:
             top = reranked[:effective_top_k]
+
+        # Garde-fou géo déterministe NARROW (J3, 2026-06-11) — court-circuit AVANT
+        # génération si la question cible une zone qu'aucune source (top) ne couvre.
+        # Conservateur : ne tire que sur out-of-zone clair (cf geo_coherence_check).
+        self.last_geo_refusal = False
+        if self.enable_geo_coherence:
+            geo_refusal = geo_coherence_check(question, top)
+            if geo_refusal is not None:
+                self.last_geo_refusal = True
+                return _ShortCircuitResult(text=geo_refusal, reason="geo_out_of_zone")
 
         # Sprint 10 chantier D — Q&A Golden few-shot prefix (opt-in)
         golden_qa_prefix = self._maybe_build_golden_qa_prefix(question)

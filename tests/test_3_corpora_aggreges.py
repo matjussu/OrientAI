@@ -80,7 +80,10 @@ class TestCrousCorpus:
         ] + [{"nom": "Single", "zone": "TinyVille", "region": "X", "services": []}]
         recs = crous_villes(logs)
         zones = {r["ville"] for r in recs}
-        assert "Paris 18" in zones
+        # commit 52520f9 : agrégation par ville CANONIQUE -> "Paris 18" (5 logs,
+        # >= seuil 3) est canonicalisé en "Paris". Le test vérifie toujours le
+        # seuil (5 gardés via la ville canonique, 1 TinyVille skippé).
+        assert "Paris" in zones
         # TinyVille only has 1 → skipped (threshold < 3)
         assert "TinyVille" not in zones
 

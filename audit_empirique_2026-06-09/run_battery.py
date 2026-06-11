@@ -212,6 +212,8 @@ def main():
             rec["validation_selfreported"] = _serialize_validation(pipeline.last_validation)
             rec["sources"] = _serialize_sources(sources)
             rec["n_sources"] = len(sources or [])
+            # Option B (J2 U1) — tag observabilité fall-through SELECT->RAG.
+            rec["select_fallthrough"] = getattr(pipeline, "last_select_fallthrough", None)
             rec["error"] = None
         except Exception as e:  # noqa: BLE001 - on logge le raté, on continue
             rec["latency_s"] = round(time.time() - t0, 2)
