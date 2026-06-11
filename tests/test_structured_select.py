@@ -14,6 +14,7 @@ from src.lookup.structured_select import (
     extract_entity_simple,
     extract_field,
     format_select_response,
+    is_select_candidate,
     is_valid_field_value,
     lookup_formation,
     try_select_or_none,
@@ -452,3 +453,107 @@ class TestTrySelectOrNone:
         else:
             # Fallback acceptable si ambigu — mais doit dire "Je n'ai pas l'info"
             assert "Je n'ai pas l'information" in result.text
+
+
+# ──────────────────────── Pool filter SELECT (J2 U1, 2026-06-11) ────────────────────────
+
+# Le bug : des fiches NON-formation (CROUS logements, INSEE salaires, métiers,
+# aides) squattaient le rang-1 du fuzzy via l'inflation WRatio sur les chaînes
+# courtes (texte = nom de ville seul). 27/48 questions SELECT touchées. Servir
+# le "dominant" = hallucination déterministe (taux d'accès depuis une fiche
+# logement). Fix = filtrer le pool aux fiches formation-identité AVANT le fuzzy.
+
+_CROUS_FICHE = {"domain": "crous", "ville": "Lyon",
+                "source": "crous_combine_logements_restos",
+                "text": "Logements étudiants CROUS à Lyon"}
+_INSEE_FICHE = {"domain": "insee_salaire", "source": "insee_salaan_2023",
+                "cs_libelle": "Professions scientifiques", "salaire_net_median_annuel": 37500}
+_METIER_FICHE = {"domain": "metier", "nom": "contrôleur/euse aérien/ne", "source": "onisep_metiers"}
+_AIDES_FICHE = {"domain": "aides_territoires", "nom": "Bourse régionale", "source": "aides_territoires"}
+_FORMATION_DOUA = {"nom": "BUT - Informatique",
+                   "etablissement": "IUT Lyon1 Site de Villeurbanne Doua",
+                   "ville": "Villeurbanne", "niveau": "BUT", "domain": "autre",
+                   "taux_acces_parcoursup_2025": 16.0}
+_FORMATION_BOURG = {"nom": "BUT - Informatique",
+                    "etablissement": "IUT Lyon1 Site de Bourg-en-Bresse",
+                    "ville": "Bourg-en-Bresse", "niveau": "BUT", "domain": "autre",
+                    "taux_acces_parcoursup_2025": 34.0}
+
+
+class TestSelectCandidateFilter:
+    """Condition (a) : crous/insee/metier/aides + sans identité ne sont JAMAIS candidats."""
+
+    def test_crous_excluded(self):
+        assert is_select_candidate(_CROUS_FICHE) is False
+
+    def test_insee_excluded(self):
+        assert is_select_candidate(_INSEE_FICHE) is False
+
+    def test_metier_excluded(self):
+        assert is_select_candidate(_METIER_FICHE) is False
+
+    def test_aides_excluded(self):
+        assert is_select_candidate(_AIDES_FICHE) is False
+
+    def test_real_formation_included(self):
+        assert is_select_candidate(_FORMATION_DOUA) is True
+
+    def test_formation_etab_only_included(self):
+        assert is_select_candidate(
+            {"etablissement": "IUT Lyon1", "ville": "Lyon", "domain": "sciences_fondamentales"}
+        ) is True
+
+    def test_no_identity_excluded(self):
+        assert is_select_candidate({"domain": "autre", "ville": "Lyon"}) is False
+
+    def test_non_dict_excluded(self):
+        assert is_select_candidate(None) is False
+
+
+class TestLookupPoolFilterAndVille:
+    """Conditions (a) + (b) : garbage jamais retourné ; ville matche aussi l'etab ;
+    refus conservé si aucune vraie formation."""
+
+    def test_crous_never_returned_real_formation_wins(self):
+        fiches = [_CROUS_FICHE, _FORMATION_DOUA]
+        entity = Entity(formation_name="Informatique", ville="Lyon", niveau="BUT")
+        fiche, score, ambiguous = lookup_formation(entity, fiches)
+        assert fiche is not None
+        assert fiche.get("nom") == "BUT - Informatique"  # PAS la fiche CROUS
+
+    def test_ville_matches_etablissement_not_just_ville_field(self):
+        # entity ville=Lyon ; fiche ville=Villeurbanne mais etab "IUT Lyon1" -> incluse
+        fiches = [_FORMATION_DOUA]
+        entity = Entity(formation_name="Informatique", ville="Lyon", niveau="BUT")
+        fiche, score, ambiguous = lookup_formation(entity, fiches)
+        assert fiche is not None and fiche.get("nom") == "BUT - Informatique"
+
+    def test_only_garbage_in_pool_returns_none(self):
+        # aucune vraie formation -> refus conservé (condition b)
+        fiches = [_CROUS_FICHE, _INSEE_FICHE, _METIER_FICHE]
+        entity = Entity(formation_name="Informatique", ville="Lyon", niveau="BUT")
+        fiche, score, ambiguous = lookup_formation(entity, fiches)
+        assert fiche is None
+
+
+class TestSameFormationVariants:
+    """Condition (c) : variantes de SITE d'une même formation/etab != ambiguïté
+    distincte (servir la meilleure, site affiché) ; établissements distincts = ambigu."""
+
+    def test_same_nom_same_etab_root_not_ambiguous(self):
+        entity = Entity(formation_name="Informatique", ville="Lyon", niveau="BUT")
+        fiche, score, ambiguous = lookup_formation(entity, [_FORMATION_DOUA, _FORMATION_BOURG])
+        assert fiche is not None
+        assert fiche.get("nom") == "BUT - Informatique"
+        assert ambiguous is False  # même formation, sites différents -> pas ambigu
+
+    def test_distinct_etablissements_same_nom_is_ambiguous(self):
+        lyon2 = {"nom": "Licence Droit", "etablissement": "Université Lumière - Lyon 2",
+                 "ville": "Lyon", "niveau": "Licence", "domain": "droit",
+                 "taux_acces_parcoursup_2025": 40.0}
+        lyon3 = {"nom": "Licence Droit", "etablissement": "Université Jean Moulin - Lyon 3",
+                 "ville": "Lyon", "niveau": "Licence", "domain": "droit",
+                 "taux_acces_parcoursup_2025": 42.0}
+        entity = Entity(formation_name="Droit", ville="Lyon", niveau="Licence")
+        fiche, score, ambiguous = lookup_formation(entity, [lyon2, lyon3])
+        assert ambiguous is True  # établissements distincts -> refus/clarification conservé
