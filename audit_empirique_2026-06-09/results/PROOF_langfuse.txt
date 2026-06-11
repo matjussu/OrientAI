@@ -1,0 +1,9 @@
+PREUVE - Langfuse integre reellement (2026-06-09)
+=================================================
+DATASET "orientai-eval-2026-06-09-full" : 497 items pousses et visibles
+  (annotable depuis l'UI http://localhost:3000).
+TRACES : le run 497q a emis des traces pipeline reelles. Spans observes :
+  step_6_mmr, step_7_golden_qa_prefix, step_8_generate_with_retry,
+  step_9_validator_policy, step_10_post_process.
+  => l'instrumentation @observe est active, les traces atterrissent dans la
+     stack self-hostee. Dataset + traces = integration reelle confirmee.

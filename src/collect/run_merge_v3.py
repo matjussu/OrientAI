@@ -70,7 +70,7 @@ from src.collect.cross_ref import attach_cross_refs
 from src.collect.insersup import attach_insertion as _legacy_insertion_attach  # noqa: F401
 from src.collect.insersup_attach import attach_insersup_to_fiches
 from src.collect.merge import attach_debouches, attach_metadata, merge_all_extended
-from src.collect.parcoursup import collect_parcoursup_fiches
+from src.collect.parcoursup import collect_parcoursup_fiches, collect_parcoursup_all_cascade
 from src.collect.secnumedu import load_secnumedu
 from src.collect.trends import attach_trends
 
@@ -567,6 +567,26 @@ def stage_load_primary() -> dict[str, list[dict[str, Any]]]:
         sources["manual_labels"] = manual_data.get("entries", [])
     else:
         sources["manual_labels"] = []
+
+    # C1 (2026-06-09) — élargissement ingestion Parcoursup : ajoute les formations
+    # HORS taxonomie keyword (~6000 : BTS, D.E social/sanitaire, licences portail…)
+    # avec domaine assigné par cascade. ADDITIF : inputs existants intacts, on
+    # APPEND uniquement les cod_aff_form absents des sources Parcoursup déjà
+    # chargées. run_merge_v3 (fuzzy-merge + dedup) gère nativement les ~1021
+    # déjà couvertes par une autre source (enrichissement max-merge).
+    ps_csv = raw_dir / "parcoursup_2025.csv"
+    if ps_csv.exists():
+        existing_codes = {
+            (f.get("cod_aff_form") or "").strip()
+            for f in (sources["parcoursup_raw"] + sources["parcoursup_extended"])
+            if isinstance(f, dict) and (f.get("cod_aff_form") or "").strip()
+        }
+        new_ps = [
+            f for f in collect_parcoursup_all_cascade(str(ps_csv))
+            if (f.get("cod_aff_form") or "").strip() not in existing_codes
+        ]
+        sources["parcoursup_extended"] = sources["parcoursup_extended"] + new_ps
+        _logger.info("[C1] +%d formations Parcoursup hors taxonomie ajoutées", len(new_ps))
     return sources
 
 

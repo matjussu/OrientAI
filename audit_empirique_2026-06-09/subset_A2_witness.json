@@ -1,0 +1,32 @@
+[
+  {
+    "id": "fact-002",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?"
+  },
+  {
+    "id": "fact-007",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour BTS Communication à Strasbourg ?"
+  },
+  {
+    "id": "fact-012",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour licence de mathématiques à Brest ?"
+  },
+  {
+    "id": "fact-017",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour prépa ECG à Toulouse ?"
+  },
+  {
+    "id": "fact-022",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour DUT à Bourges ?"
+  }
+]

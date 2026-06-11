@@ -1,0 +1,135 @@
+{
+  "n_fiches": 47220,
+  "file": "/home/matteo_linux/projets/OrientIA/data/processed/formations.json",
+  "retrieval_eligible": 43185,
+  "sources": {
+    "parcoursup": 8191,
+    "monmaster": 7573,
+    "rncp": 5181,
+    "rncp_blocs": 4891,
+    "onisep": 4758,
+    "inserjeunes_cfa": 4065,
+    "labonnealternance": 4008,
+    "inserjeunes_lycee_pro": 2693,
+    "rome_api_v4": 1584,
+    "dares_metiers_2030": 1160,
+    "onisep_ideo_fiches": 1075,
+    "onisep_metiers": 1075,
+    "insersup_mesr": 368,
+    "ip_doc_doctorat": 240,
+    "mesri_parcours_bacheliers_licence": 151,
+    "insee_salaan_2023": 59,
+    "crous_combine_logements_restos": 45,
+    "financement_dispositifs_curated": 28,
+    "onisep_formations_extended": 20,
+    "domtom_curated": 16,
+    "apec_observatoire_emploi_cadre_2026": 13,
+    "parcoursup_calendrier_officiel": 9,
+    "monmaster_calendrier_officiel": 7,
+    "dse_calendrier_officiel": 5,
+    "corrections_factuelles_curated": 5
+  },
+  "region_coverage_eligible": {
+    "present": 23380,
+    "total": 43185,
+    "pct": 54.1,
+    "missing_pct": 45.9
+  },
+  "region_distribution": {
+    "(vide)": 19805,
+    "Île-de-France": 4671,
+    "Auvergne-Rhône-Alpes": 2765,
+    "Occitanie": 2204,
+    "Nouvelle-Aquitaine": 1964,
+    "Grand Est": 1924,
+    "Hauts-de-France": 1892,
+    "Provence-Alpes-Côte d'Azur": 1629,
+    "Pays de la Loire": 1400,
+    "Bretagne": 1151,
+    "Normandie": 1044,
+    "Bourgogne-Franche-Comté": 914,
+    "Centre-Val de Loire": 792,
+    "La Réunion": 408,
+    "Corse": 189,
+    "Guadeloupe": 176,
+    "Guyane": 103,
+    "Martinique": 102,
+    "Collectivités d'outre-mer": 25,
+    "Mayotte": 24,
+    "France hexagonale": 1,
+    "Observations cross-régions": 1,
+    "Provence-Alpes-Côte d'Azur & Corse": 1
+  },
+  "ville_trap": {
+    "key_present": 33794,
+    "nonempty": 15782,
+    "empty_string_count": 18012
+  },
+  "field_coverage": {
+    "niveau": {
+      "present": 31844,
+      "pct": 67.4
+    },
+    "type_diplome": {
+      "present": 14831,
+      "pct": 31.4
+    },
+    "statut": {
+      "present": 25110,
+      "pct": 53.2
+    },
+    "domaine": {
+      "present": 34869,
+      "pct": 73.8
+    },
+    "nom": {
+      "present": 34881,
+      "pct": 73.9
+    },
+    "etablissement": {
+      "present": 30011,
+      "pct": 63.6
+    }
+  },
+  "numeric_fields_nonnull": {
+    "taux_acces_parcoursup_2025": 8191,
+    "nombre_places": 8191,
+    "insertion.taux_emploi_6m": 13347,
+    "insertion.part_emploi_6m": 2259,
+    "insertion.part_poursuite_etudes": 2259
+  },
+  "numeric_fields_pct_of_corpus": {
+    "taux_acces_parcoursup_2025": 17.3,
+    "nombre_places": 17.3,
+    "insertion.taux_emploi_6m": 28.3,
+    "insertion.part_emploi_6m": 4.8,
+    "insertion.part_poursuite_etudes": 4.8
+  },
+  "insertion_block": {
+    "fiches_with_block": 14771,
+    "block_all_null": 1098,
+    "block_all_null_pct_of_block": 7.4
+  },
+  "annee_distribution_top": {
+    "cumul 2023-2024": 1384,
+    "cumul 2022-2023": 790,
+    "cumul 2021-2022": 627,
+    "cumul 2018-2019": 575,
+    "cumul 2020-2021": 427,
+    "cumul 2019-2020": 262,
+    "2024": 188,
+    "2023": 177,
+    "2022": 135,
+    "2021": 128,
+    "2025": 77,
+    "2026": 32,
+    "2020": 20,
+    "2018": 1
+  },
+  "domtom_eligible": 813,
+  "agricole_count": 546,
+  "text_fields": {
+    "has_text_field": 13444,
+    "has_debouches": 2468
+  }
+}

@@ -534,3 +534,270 @@ class TestSourceToTierMapping:
                     "dares", "apec", "crous", "france_travail"]
         for src in required:
             assert src in SOURCE_TO_TIER, f"source critique manquante : {src}"
+
+
+# ─────────────── Bloc A (2026-06-09) — champs présents-non-exposés ───────────────
+#
+# Généralisation d'A2 : des champs factuels EXISTENT dans les fiches mais ne sont
+# pas mappés à la FactCard, donc le générateur ne peut pas les citer (faux-refus).
+# C0 a inventorié ces champs ; la re-vérification data a montré 3 pièges :
+#   1. taux_admission (monmaster) = ratio 0-1, PAS un % 0-100 -> normaliser ×100
+#   2. profil_admis = dict imbriqué POLYSÉMIQUE (schéma monmaster ≠ parcoursup)
+#   3. mention = polysémique (spécialité master sur monmaster) -> EXCLU de Bloc A
+
+
+def fiche_monmaster_bloc_a() -> dict:
+    """MonMaster réelle (schéma observé dans formations.json 2026-06-09)."""
+    return {
+        "source": "monmaster",
+        "phase": "master",
+        "nom": "MEEF Acoustique et musicologie",
+        "etablissement": "Sorbonne Université",
+        "ville": "PARIS",
+        "niveau": "bac+5",
+        "taux_admission": 0.1935483870967742,   # ratio 0-1 (≈ 19,4 %)
+        "capacite": 12,
+        "n_candidats_pp": 62,
+        "n_acceptes_total": 12,
+        "rang_dernier_appele": 20,
+        "alternance": False,                      # bool valide (≠ None)
+        "profil_admis": {                         # schéma MonMaster = origine parcours
+            "pct_lg3": 50.0, "pct_lp3": 0.0, "pct_but3": 16.7,
+            "pct_master": 0.0, "pct_autre": 8.3, "pct_femme": 0.0,
+            "pct_etab": 16.7, "pct_lieu_acad": 16.7,
+        },
+        "mention": "ACOUSTIQUE ET MUSICOLOGIE",   # NOM de spécialité, PAS une stat
+    }
+
+
+def fiche_parcoursup_bloc_a() -> dict:
+    """Parcoursup réelle avec trends + profil_admis (schéma observé)."""
+    return {
+        "source": "parcoursup",
+        "nom": "BUT Informatique",
+        "etablissement": "IUT Lyon 1",
+        "ville": "Villeurbanne",
+        "niveau": "bac+3",
+        "taux_acces_parcoursup_2025": 43.0,
+        "trends": {
+            "taux_acces": {
+                "direction": "stable", "delta_pp": 6.0,
+                "start_year": 2023, "end_year": 2025,
+                "start_value": 37.0, "end_value": 43.0,
+                "interpretation": "taux d'accès stable 2023→2025 (37% → 43%)",
+            },
+            "places": {"direction": "stable", "delta": 0, "interpretation": None},
+        },
+        "profil_admis": {                         # schéma Parcoursup = mentions au bac
+            "mentions_pct": {"tb": 10.0, "b": 21.0, "ab": 44.0, "sans": 26.0},
+            "bac_type_pct": {"general": 85.0, "techno": 15.0, "pro": 0.0},
+            "boursiers_pct": 16.0, "femmes_pct": 49.0,
+            "neobacheliers_pct": 95.0,
+        },
+    }
+
+
+class TestFicheToFactCardBlocA:
+    """Mappings Bloc A : taux_admission, sélectivité master, alternance,
+    tendance d'accès, profil_admis source-aware. mention reste exclue."""
+
+    # --- taux_admission : ratio 0-1 -> % 0-100 ---
+    def test_taux_admission_normalise_en_pourcent(self):
+        card = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1")
+        # 0.1935… -> 19.4 (et SURTOUT pas 0.19, sinon le LLM cite « 0,19 % »)
+        assert card.chiffres.taux_admission == 19.4
+
+    def test_taux_admission_un_devient_cent(self):
+        f = fiche_monmaster_bloc_a(); f["taux_admission"] = 1.0
+        assert fiche_to_fact_card(f, "S1").chiffres.taux_admission == 100.0
+
+    def test_taux_admission_absent_reste_none(self):
+        f = fiche_monmaster_bloc_a(); del f["taux_admission"]
+        assert fiche_to_fact_card(f, "S1").chiffres.taux_admission is None
+
+    # --- scalaires de sélectivité master ---
+    def test_selectivite_scalaires_master(self):
+        c = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1").chiffres
+        assert c.capacite == 12
+        assert c.nombre_candidats == 62
+        assert c.nombre_admis == 12
+        assert c.rang_dernier_appele == 20
+
+    # --- alternance booléen (False doit être préservé, ≠ None) ---
+    def test_alternance_false_preservee(self):
+        card = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1")
+        assert card.chiffres.alternance_possible is False
+
+    def test_alternance_true(self):
+        f = fiche_monmaster_bloc_a(); f["alternance"] = True
+        assert fiche_to_fact_card(f, "S1").chiffres.alternance_possible is True
+
+    def test_alternance_absente_reste_none(self):
+        f = fiche_monmaster_bloc_a(); del f["alternance"]
+        assert fiche_to_fact_card(f, "S1").chiffres.alternance_possible is None
+
+    # --- tendance d'accès depuis trends.taux_acces.interpretation ---
+    def test_tendance_acces_depuis_trends(self):
+        card = fiche_to_fact_card(fiche_parcoursup_bloc_a(), "S1")
+        assert card.tendance_acces == "taux d'accès stable 2023→2025 (37% → 43%)"
+
+    def test_tendance_acces_absente_reste_none(self):
+        card = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1")
+        assert card.tendance_acces is None
+
+    # --- profil_admis SOURCE-AWARE (2 schémas distincts) ---
+    def test_profil_admis_parcoursup_mentions(self):
+        p = fiche_to_fact_card(fiche_parcoursup_bloc_a(), "S1").profil_admis
+        assert p is not None
+        assert "mention" in p.lower()        # schéma parcoursup = mentions au bac
+        assert "44" in p                     # AB 44 %
+        assert "boursier" in p.lower() and "16" in p
+
+    def test_profil_admis_monmaster_origine(self):
+        p = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1").profil_admis
+        assert p is not None
+        assert "origine" in p.lower()        # schéma monmaster = origine parcours
+        assert "50" in p                     # 50 % L3 générale
+        assert "mention" not in p.lower()    # NE PAS inventer des mentions au bac
+
+    def test_profil_admis_schema_inconnu_reste_none(self):
+        f = fiche_monmaster_bloc_a(); f["profil_admis"] = {"clef_inconnue": 42}
+        assert fiche_to_fact_card(f, "S1").profil_admis is None
+
+    # --- mention EXCLUE de Bloc A (garde anti-contresens factuel) ---
+    def test_mention_non_exposee(self):
+        d = fiche_to_fact_card(fiche_monmaster_bloc_a(), "S1").to_dict()
+        assert "mention" not in d
+        assert "mention" not in d.get("chiffres", {})
+
+
+# ─────────────── C2a — voies_acces -> dispositifs reconversion ───────────────
+#
+# Généralisation d'A2/Bloc A : `voies_acces` (vocabulaire RNCP fermé de 6 valeurs,
+# 10072 fiches rncp + rncp_blocs) encode les dispositifs de reconversion (VAE,
+# formation continue, alternance) mais n'est PAS exposé à la FactCard -> le
+# générateur refuse à tort les questions reconversion alors que la donnée existe.
+# Champ de citation pur (zéro re-embed). Mapping déterministe, source-aware.
+#
+# Garde-fous (audit data réelle 2026-06-09 + consigne Jarvis) :
+#   1. "Par expérience" = la voie VAE (libellé France Compétences standard) -> SÛR.
+#   2. PAS d'éligibilité CPF / financement déduite de voies_acces (c'est C2b, différé).
+#   3. "sous statut d'élève ou d'étudiant" = voie INITIALE, NON reconversion -> non mappé.
+#   4. "Par candidature individuelle" = pas un dispositif de reconversion -> non mappé.
+#   5. Apostrophe typographique U+2019 dans la data ("d'apprentissage") -> normaliser.
+
+# Les 6 chaînes EXACTES observées dans formations.json (apostrophes U+2019 préservées).
+VA_VAE = "Par expérience"
+VA_FC = "Après un parcours de formation continue"
+VA_PRO = "En contrat de professionnalisation"
+VA_APP = "En contrat d’apprentissage"                       # U+2019
+VA_INIT = "Après un parcours de formation sous statut d’élève ou d’étudiant"  # U+2019 x2
+VA_CAND = "Par candidature individuelle"
+
+
+def fiche_rncp_voies_acces(voies: list[str]) -> dict:
+    """Fiche RNCP réelle (schéma observé) avec une liste voies_acces donnée."""
+    return {
+        "source": "rncp",
+        "nom": "Accompagnant éducatif et social",
+        "niveau": "bac",
+        "voies_acces": list(voies),
+    }
+
+
+class TestFicheToFactCardVoiesAccesC2a:
+    """C2a : mapping voies_acces -> dispositifs_reconversion (citation, source-aware)."""
+
+    # --- VAE depuis "Par expérience" (mapping le plus important : 9834 fiches) ---
+    def test_vae_depuis_par_experience(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_VAE]), "S1")
+        d = card.dispositifs_reconversion
+        assert d is not None
+        assert "VAE" in d
+        assert "expérience" in d.lower()
+
+    # --- formation continue ---
+    def test_formation_continue(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_FC]), "S1")
+        assert card.dispositifs_reconversion is not None
+        assert "formation continue" in card.dispositifs_reconversion.lower()
+
+    # --- alternance : apprentissage + contrat pro regroupés ---
+    def test_alternance_groupee(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_APP, VA_PRO]), "S1")
+        d = card.dispositifs_reconversion
+        assert d is not None
+        assert "alternance" in d.lower()
+        assert "apprentissage" in d.lower()
+        assert "professionnalisation" in d.lower()
+
+    # --- piège Unicode : apostrophe typographique U+2019 doit matcher ---
+    def test_apostrophe_typographique_matchee(self):
+        # VA_APP contient bien U+2019, pas l'apostrophe droite
+        assert "’" in VA_APP
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_APP]), "S1")
+        assert card.dispositifs_reconversion is not None
+        assert "alternance" in card.dispositifs_reconversion.lower()
+
+    # --- les 6 valeurs réelles : 3 dispositifs présents, ordre reconversion-first ---
+    def test_complet_ordre_reconversion(self):
+        toutes = [VA_VAE, VA_FC, VA_PRO, VA_APP, VA_INIT, VA_CAND]
+        d = fiche_to_fact_card(fiche_rncp_voies_acces(toutes), "S1").dispositifs_reconversion
+        assert d is not None
+        assert "VAE" in d
+        assert "formation continue" in d.lower()
+        assert "alternance" in d.lower()
+        # ordre : VAE avant alternance (reconversion-first)
+        assert d.index("VAE") < d.lower().index("alternance")
+
+    # --- voie INITIALE seule (statut élève/étudiant) = NON reconversion -> None ---
+    def test_statut_eleve_etudiant_seul_non_mappe(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_INIT]), "S1")
+        assert card.dispositifs_reconversion is None
+
+    # --- candidature individuelle seule = pas un dispositif reconversion -> None ---
+    def test_candidature_individuelle_seule_non_mappe(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_CAND]), "S1")
+        assert card.dispositifs_reconversion is None
+
+    # --- voies initiales mélangées : seules les reconversion remontent ---
+    def test_init_et_cand_ignorees_si_vae_present(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces([VA_INIT, VA_CAND, VA_VAE]), "S1")
+        d = card.dispositifs_reconversion
+        assert d is not None
+        assert "VAE" in d
+        # la voie initiale ne doit PAS apparaître comme dispositif reconversion
+        assert "initial" not in d.lower()
+        assert "statut" not in d.lower()
+
+    # --- absence / vide -> None ---
+    def test_voies_acces_absente_reste_none(self):
+        f = fiche_rncp_voies_acces([VA_VAE]); del f["voies_acces"]
+        assert fiche_to_fact_card(f, "S1").dispositifs_reconversion is None
+
+    def test_voies_acces_liste_vide_reste_none(self):
+        assert fiche_to_fact_card(fiche_rncp_voies_acces([]), "S1").dispositifs_reconversion is None
+
+    # --- valeur inconnue (hors vocab fermé) seule -> None (ne rien inventer) ---
+    def test_valeur_inconnue_seule_reste_none(self):
+        card = fiche_to_fact_card(fiche_rncp_voies_acces(["Par téléportation"]), "S1")
+        assert card.dispositifs_reconversion is None
+
+    # --- garde-fou : JAMAIS de claim CPF/financement depuis voies_acces (C2b différé) ---
+    def test_pas_de_claim_cpf_ni_financement(self):
+        toutes = [VA_VAE, VA_FC, VA_PRO, VA_APP, VA_INIT, VA_CAND]
+        d = fiche_to_fact_card(fiche_rncp_voies_acces(toutes), "S1").dispositifs_reconversion
+        assert d is not None
+        low = d.lower()
+        assert "cpf" not in low
+        assert "financ" not in low
+        assert "éligible" not in low and "eligible" not in low
+
+    # --- sérialisation to_dict ---
+    def test_present_dans_to_dict(self):
+        d = fiche_to_fact_card(fiche_rncp_voies_acces([VA_VAE]), "S1").to_dict()
+        assert "dispositifs_reconversion" in d
+
+    def test_absent_de_to_dict_si_none(self):
+        d = fiche_to_fact_card(fiche_rncp_voies_acces([VA_INIT]), "S1").to_dict()
+        assert "dispositifs_reconversion" not in d

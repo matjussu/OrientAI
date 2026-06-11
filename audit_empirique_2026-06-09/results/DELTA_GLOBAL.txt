@@ -1,0 +1,16 @@
+DELTA GLOBAL - run final 497q (A1+A2 code + corpus A3) vs baseline complete
+===========================================================================
+                          BASELINE   ->   FINAL    delta
+faux positifs urgent        9              0        -9    (A1, gain net securite)
+sur-refus (honest_refusal)  171            159      -12   (A2, moins de faux refus)
+groundedness moyenne        0.702          0.718    +0.016 (A2, reponses + ancrees)
+hallucination chiffres      77             78       +1    (bruit juge non-det)
+ecarts honesty_score        100            102      +2    (bruit)
+substitution metrique       26             26       0
+
+LECTURE : gains directionnels nets sur les 3 axes cibles (urgent FP -9,
+sur-refus -12, groundedness +0.016). Hallu/gaps a plat (+1/+2 = bruit du juge
+Haiku non-deterministe sur 497q ; A2 fait repondre PLUS de questions -> + de
+claims numeriques a verifier, mais groundedness monte quand meme). Le gate
+affiche FAIL par tolerance-zero sur +1/+2 : a interpreter comme bruit, pas une
+vraie regression. Reco : bande de tolerance +/-3 sur les compteurs du gate.

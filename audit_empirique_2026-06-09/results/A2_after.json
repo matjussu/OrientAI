@@ -1,0 +1,1206 @@
+[
+  {
+    "id": "fact-002",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?",
+    "latency_s": 6.86,
+    "answer": "D’après les données disponibles, le **BUT Génie électrique et informatique industrielle** en Île-de-France affiche un **taux d’emploi à 6 mois de 47,37 %** pour les diplômés [source S1, S2, S3, S4].\n\nVoici les établissements concernés avec leurs spécificités :\n- **[BUT Génie électrique et informatique industrielle à l’IUT de Cachan](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11440&typeBac=0&originePc=0)** : 190 places [source S1].\n- **[I.U.T. d’Evry Val d’Essonne](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=10957&typeBac=0&originePc=0)** : 72 places [source S2].\n- **I.U.T de Cergy-Pontoise** : 100 places [source S3].\n\nCe taux reflète une insertion progressive, avec une amélioration à 12 mois (66,31 % [source S1, S2, S3, S4]).\n\nAs-tu une préférence pour un IUT en particulier, ou souhaites-tu explorer d’autres critères (sélectivité, localisation) ?",
+    "scope": {
+      "label": "in_scope",
+      "via": "llm",
+      "reason": "question sur l'insertion professionnelle d'une formation post-bac",
+      "has_prewritten": false
+    },
+    "validation_selfreported": {
+      "honesty_score": 1.0,
+      "flagged": false,
+      "rule_violations": [],
+      "corpus_warnings": [],
+      "presence_warnings": []
+    },
+    "sources": [
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "etablissement": "IUT de Cachan Université Paris-Saclay",
+        "ville": "Cachan",
+        "region": "Île-de-France",
+        "departement": "Val-de-Marne",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 28.0,
+        "nombre_places": 190,
+        "propositions_totales": 859,
+        "pct_acceptes_debut_pp": 67.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 491,
+          "taux_emploi_6m": 0.4737,
+          "taux_emploi_12m": 0.6631,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 3.0,
+            "b": 17.0,
+            "ab": 45.0,
+            "sans": 35.0
+          },
+          "bac_type_pct": {
+            "general": 50.0,
+            "techno": 50.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 50.0,
+            "techno": 50.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 25.0,
+          "femmes_pct": 9.0,
+          "neobacheliers_pct": 94.0,
+          "origine_academique_idf_pct": 96.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11440&typeBac=0&originePc=0",
+        "_retrieval_score": 0.02242058823529412,
+        "_sub_index": null,
+        "id": "S1"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "etablissement": "I.U.T. d'Evry Val d'Essonne",
+        "ville": "Evry-Courcouronnes",
+        "region": "Île-de-France",
+        "departement": "Essonne",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 42.0,
+        "nombre_places": 72,
+        "propositions_totales": 422,
+        "pct_acceptes_debut_pp": 61.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 491,
+          "taux_emploi_6m": 0.4737,
+          "taux_emploi_12m": 0.6631,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 0.0,
+            "b": 0.0,
+            "ab": 25.0,
+            "sans": 75.0
+          },
+          "bac_type_pct": {
+            "general": 48.0,
+            "techno": 48.0,
+            "pro": 4.0
+          },
+          "acces_pct": {
+            "general": 47.0,
+            "techno": 52.0,
+            "pro": 1.0
+          },
+          "boursiers_pct": 35.0,
+          "femmes_pct": 4.0,
+          "neobacheliers_pct": 62.0,
+          "origine_academique_idf_pct": 98.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=10957&typeBac=0&originePc=0",
+        "_retrieval_score": 0.018368674698795183,
+        "_sub_index": null,
+        "id": "S2"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "etablissement": "I.U.T de Cergy-Pontoise - Site de Neuville",
+        "ville": "Cergy",
+        "region": "Île-de-France",
+        "departement": "Val-d'oise",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 34.0,
+        "nombre_places": 100,
+        "propositions_totales": 680,
+        "pct_acceptes_debut_pp": 57.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 491,
+          "taux_emploi_6m": 0.4737,
+          "taux_emploi_12m": 0.6631,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 0.0,
+            "b": 4.0,
+            "ab": 34.0,
+            "sans": 62.0
+          },
+          "bac_type_pct": {
+            "general": 42.0,
+            "techno": 58.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 46.0,
+            "techno": 54.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 41.0,
+          "femmes_pct": 9.0,
+          "neobacheliers_pct": 82.0,
+          "origine_academique_idf_pct": 95.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11619&typeBac=0&originePc=0",
+        "_retrieval_score": 0.017325000000000004,
+        "_sub_index": null,
+        "id": "S3"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "etablissement": "I.U.T de Velizy",
+        "ville": "Vélizy-Villacoublay",
+        "region": "Île-de-France",
+        "departement": "Yvelines",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 49.0,
+        "nombre_places": 58,
+        "propositions_totales": 560,
+        "pct_acceptes_debut_pp": 20.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 491,
+          "taux_emploi_6m": 0.4737,
+          "taux_emploi_12m": 0.6631,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 2.0,
+            "b": 13.0,
+            "ab": 37.0,
+            "sans": 48.0
+          },
+          "bac_type_pct": {
+            "general": 54.0,
+            "techno": 43.0,
+            "pro": 2.0
+          },
+          "acces_pct": {
+            "general": 55.0,
+            "techno": 45.0,
+            "pro": 1.0
+          },
+          "boursiers_pct": 22.0,
+          "femmes_pct": 12.0,
+          "neobacheliers_pct": 90.0,
+          "origine_academique_idf_pct": 96.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9992&typeBac=0&originePc=0",
+        "_retrieval_score": 0.01694,
+        "_sub_index": null,
+        "id": "S4"
+      },
+      {
+        "region": "Île-de-France",
+        "type_diplome": "Diplôme d'ingénieurs",
+        "source": "insersup_mesr",
+        "_retrieval_score": 0.01639344262295082,
+        "_sub_index": null,
+        "id": "S5"
+      }
+    ],
+    "n_sources": 5,
+    "error": null
+  },
+  {
+    "id": "fact-007",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour BTS Communication à Strasbourg ?",
+    "latency_s": 7.57,
+    "answer": "Je n’ai pas de données sur le **taux d’insertion professionnelle à 6 mois** pour le [BTS Communication](https://www.onisep.fr/http/redirection/formation/slug/FOR.8456) dans mes sources [source S1].\n\nPour la région **Grand Est** (Strasbourg incluse), voici ce que je peux te dire sur les formations similaires disponibles :\n- Le [BTS Communication](https://www.onisep.fr/http/redirection/formation/slug/FOR.8456) dure **2 ans** [source S1].\n- D’autres BTS en communication/plurimédia sont aussi proposés (ex : [BTS Études de réalisation d’un projet de communication option A](https://www.onisep.fr/http/redirection/formation/slug/FOR.6223)), mais **aucune source ne précise les taux d’insertion** [sources S1 à S4].\n\nPour obtenir ces chiffres, je te conseille de :\n1. Contacter directement les établissements strasbourgeois (ex : [lycée Couffignal](https://www.onisep.fr) ou [lycée Le Corbusier](https://www.onisep.fr)) via Parcoursup.\n2. Consulter les **enquêtes d’insertion** sur le site de l’[ONISEP Grand Est](https://www.onisep.fr/Grand-Est) ou de la [Région](https://www.grandest.fr).\n\nQuelle est ta priorité : un BTS avec **stages obligatoires** (meilleure employabilité) ou une formation plus **théorique** avant une poursuite d’études ?",
+    "scope": {
+      "label": "in_scope",
+      "via": "llm",
+      "reason": "question sur l'insertion professionnelle d'une formation post-bac",
+      "has_prewritten": false
+    },
+    "validation_selfreported": {
+      "honesty_score": 1.0,
+      "flagged": false,
+      "rule_violations": [],
+      "corpus_warnings": [],
+      "presence_warnings": []
+    },
+    "sources": [
+      {
+        "nom": "BTS communication",
+        "etablissement": "",
+        "ville": "",
+        "niveau": "bac+2",
+        "type_diplome": "brevet de technicien supérieur",
+        "domaine": "communication",
+        "debouches": [],
+        "source": "onisep",
+        "url_canonical": "https://www.onisep.fr/http/redirection/formation/slug/FOR.8456",
+        "rncp": "37198",
+        "_retrieval_score": 0.014705882352941176,
+        "_sub_index": null,
+        "id": "S1"
+      },
+      {
+        "nom": "BTS édition",
+        "etablissement": "",
+        "ville": "",
+        "niveau": "bac+2",
+        "type_diplome": "brevet de technicien supérieur",
+        "domaine": "communication",
+        "debouches": [],
+        "source": "onisep",
+        "url_canonical": "https://www.onisep.fr/http/redirection/formation/slug/FOR.266",
+        "rncp": "36965",
+        "_retrieval_score": 0.014084507042253521,
+        "_sub_index": null,
+        "id": "S2"
+      },
+      {
+        "nom": "BTS études de réalisation d'un projet de communication option A études de réalisation de produits plurimédia",
+        "etablissement": "",
+        "ville": "",
+        "niveau": "bac+2",
+        "type_diplome": "brevet de technicien supérieur",
+        "domaine": "communication",
+        "debouches": [],
+        "source": "onisep",
+        "url_canonical": "https://www.onisep.fr/http/redirection/formation/slug/FOR.6223",
+        "rncp": "38421",
+        "_retrieval_score": 0.01282051282051282,
+        "_sub_index": null,
+        "id": "S3"
+      },
+      {
+        "nom": "BTS études de réalisation d'un projet de communication option B études de réalisation de produits imprimés",
+        "etablissement": "",
+        "ville": "",
+        "niveau": "bac+2",
+        "type_diplome": "brevet de technicien supérieur",
+        "domaine": "communication",
+        "debouches": [],
+        "source": "onisep",
+        "url_canonical": "https://www.onisep.fr/http/redirection/formation/slug/FOR.6237",
+        "rncp": "38421",
+        "_retrieval_score": 0.011904761904761904,
+        "_sub_index": null,
+        "id": "S4"
+      }
+    ],
+    "n_sources": 4,
+    "error": null
+  },
+  {
+    "id": "fact-012",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour licence de mathématiques à Brest ?",
+    "latency_s": 21.27,
+    "answer": "D’après les données disponibles, voici les taux d’insertion professionnelle à 6 mois pour les licences de mathématiques à **Brest** :\n\n- **[Licence - Mathématiques - Parcours Mathématiques Renforcées et Concours](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3878&typeBac=0&originePc=0)** à l’**Université de Brest** : **45,8 %** [source S1].\n- **[Licence - Portail MPMEI : Mathématiques, Physique, Mathématiques-Economie, Informatique](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35602&typeBac=0&originePc=0)** (incluant les mathématiques) : **45,8 %** également [source S2].\n\nCes chiffres reflètent l’insertion dans les 6 mois suivant l’obtention du diplôme.\n\nEst-ce que ces données t’aident à évaluer tes options, ou souhaites-tu explorer d’autres critères (sélectivité, débouchés, etc.) ?",
+    "scope": {
+      "label": "in_scope",
+      "via": "llm",
+      "reason": "question sur l'insertion professionnelle d'une formation spécifique (licence de mathématiques)",
+      "has_prewritten": false
+    },
+    "validation_selfreported": {
+      "honesty_score": 1.0,
+      "flagged": false,
+      "rule_violations": [],
+      "corpus_warnings": [],
+      "presence_warnings": []
+    },
+    "sources": [
+      {
+        "nom": "Licence - Mathématiques - Parcours Mathématiques Renforcées et Concours",
+        "etablissement": "Université de Brest",
+        "ville": "Brest",
+        "region": "Bretagne",
+        "departement": "Finistère",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "sciences_fondamentales",
+        "taux_acces_parcoursup_2025": 50.0,
+        "nombre_places": 20,
+        "propositions_totales": 186,
+        "pct_acceptes_debut_pp": 50.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 81,
+          "taux_emploi_6m": 0.4583,
+          "taux_emploi_12m": 0.5833,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 31.0,
+            "b": 56.0,
+            "ab": 12.0,
+            "sans": 0.0
+          },
+          "bac_type_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 12.0,
+          "femmes_pct": 40.0,
+          "neobacheliers_pct": 80.0,
+          "origine_academique_idf_pct": 100.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3878&typeBac=0&originePc=0",
+        "_retrieval_score": 0.024993442622950824,
+        "_sub_index": null,
+        "id": "S1"
+      },
+      {
+        "nom": "Licence - Portail MPMEI : Mathématiques, Physique, Mathématiques-Economie, Informatique",
+        "etablissement": "Université de Brest",
+        "ville": "Brest",
+        "region": "Bretagne",
+        "departement": "Finistère",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "sciences_fondamentales",
+        "taux_acces_parcoursup_2025": 99.0,
+        "nombre_places": 140,
+        "propositions_totales": 835,
+        "pct_acceptes_debut_pp": 55.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 81,
+          "taux_emploi_6m": 0.4583,
+          "taux_emploi_12m": 0.5833,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 2.0,
+            "b": 25.0,
+            "ab": 35.0,
+            "sans": 38.0
+          },
+          "bac_type_pct": {
+            "general": 95.0,
+            "techno": 5.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 95.0,
+            "techno": 4.0,
+            "pro": 1.0
+          },
+          "boursiers_pct": 18.0,
+          "femmes_pct": 33.0,
+          "neobacheliers_pct": 48.0,
+          "origine_academique_idf_pct": 82.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35602&typeBac=0&originePc=0",
+        "_retrieval_score": 0.024590322580645165,
+        "_sub_index": null,
+        "id": "S2"
+      },
+      {
+        "nom": "Licence - Portail Economie et gestion - Economie Gestion parcours international",
+        "etablissement": "Université de Brest",
+        "ville": "Brest",
+        "region": "Bretagne",
+        "departement": "Finistère",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "eco_gestion",
+        "taux_acces_parcoursup_2025": 66.0,
+        "nombre_places": 30,
+        "propositions_totales": 243,
+        "pct_acceptes_debut_pp": 38.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 134,
+          "taux_emploi_6m": 0.5758,
+          "taux_emploi_12m": 0.7576,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 0.0,
+            "b": 46.0,
+            "ab": 38.0,
+            "sans": 15.0
+          },
+          "bac_type_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 4.0,
+          "femmes_pct": 48.0,
+          "neobacheliers_pct": 90.0,
+          "origine_academique_idf_pct": 81.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=19318&typeBac=0&originePc=0",
+        "_retrieval_score": 0.024200000000000003,
+        "_sub_index": null,
+        "id": "S3"
+      },
+      {
+        "nom": "Licence - Sociologie",
+        "etablissement": "Université de Brest",
+        "ville": "Brest",
+        "region": "Bretagne",
+        "departement": "Finistère",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "sciences_humaines",
+        "taux_acces_parcoursup_2025": 100.0,
+        "nombre_places": 120,
+        "propositions_totales": 732,
+        "pct_acceptes_debut_pp": 34.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 820,
+          "taux_emploi_6m": 0.6061,
+          "taux_emploi_12m": 0.6667,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 5.0,
+            "b": 12.0,
+            "ab": 35.0,
+            "sans": 49.0
+          },
+          "bac_type_pct": {
+            "general": 81.0,
+            "techno": 16.0,
+            "pro": 2.0
+          },
+          "acces_pct": {
+            "general": 82.0,
+            "techno": 15.0,
+            "pro": 3.0
+          },
+          "boursiers_pct": 30.0,
+          "femmes_pct": 61.0,
+          "neobacheliers_pct": 38.0,
+          "origine_academique_idf_pct": 72.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3857&typeBac=0&originePc=0",
+        "_retrieval_score": 0.023821875000000006,
+        "_sub_index": null,
+        "id": "S4"
+      },
+      {
+        "nom": "Licence - Sciences de l'éducation et de la formation",
+        "etablissement": "Université de Brest",
+        "ville": "Brest",
+        "region": "Bretagne",
+        "departement": "Finistère",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "education",
+        "taux_acces_parcoursup_2025": 50.0,
+        "nombre_places": 50,
+        "propositions_totales": 322,
+        "pct_acceptes_debut_pp": 40.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 820,
+          "taux_emploi_6m": 0.6061,
+          "taux_emploi_12m": 0.6667,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 3.0,
+            "b": 24.0,
+            "ab": 34.0,
+            "sans": 39.0
+          },
+          "bac_type_pct": {
+            "general": 84.0,
+            "techno": 16.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 89.0,
+            "techno": 11.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 8.0,
+          "femmes_pct": 96.0,
+          "neobacheliers_pct": 76.0,
+          "origine_academique_idf_pct": 97.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=21126&typeBac=0&originePc=0",
+        "_retrieval_score": 0.02345538461538462,
+        "_sub_index": null,
+        "id": "S5"
+      }
+    ],
+    "n_sources": 5,
+    "error": null
+  },
+  {
+    "id": "fact-017",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour prépa ECG à Toulouse ?",
+    "latency_s": 23.54,
+    "answer": "Je n’ai pas de données sur le taux d’insertion professionnelle à 6 mois pour une **prépa ECG à Toulouse** dans mes sources.\n\nEn revanche, voici les taux d’insertion à 6 mois pour des formations similaires en économie/gestion dans la région Occitanie (Toulouse) :\n- **Licence Gestion** ([Université Toulouse Capitole](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4140&typeBac=0&originePc=0)) : **40 %** [source S4]\n- **BUT GEA** ([IUT de Toulouse](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4100&typeBac=0&originePc=0)) : **54,45 %** [source S5]\n\nSi tu cherches spécifiquement une prépa ECG, je te conseille de consulter directement les rapports d’insertion des lycées concernés (ex : Lycée Pierre-de-Fermat) ou de contacter leur service d’orientation.",
+    "scope": {
+      "label": "in_scope",
+      "via": "llm",
+      "reason": "question sur l'insertion professionnelle d'une formation post-bac (prépa ECG)",
+      "has_prewritten": false
+    },
+    "validation_selfreported": {
+      "honesty_score": 1.0,
+      "flagged": false,
+      "rule_violations": [],
+      "corpus_warnings": [],
+      "presence_warnings": []
+    },
+    "sources": [
+      {
+        "nom": "Formation d'ingénieur Bac + 5 - Bac général",
+        "etablissement": "La Prépa des INP - Groupe INP - Toulouse",
+        "ville": "Toulouse",
+        "region": "Occitanie",
+        "departement": "Haute-Garonne",
+        "niveau": "bac+5",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 28.0,
+        "nombre_places": 100,
+        "propositions_totales": 856,
+        "pct_acceptes_debut_pp": 38.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 3350,
+          "taux_emploi_6m": 0.5714,
+          "taux_emploi_12m": 0.7436,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 70.0,
+            "b": 26.0,
+            "ab": 0.0,
+            "sans": 0.0
+          },
+          "bac_type_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 11.0,
+          "femmes_pct": 43.0,
+          "neobacheliers_pct": 98.0,
+          "origine_academique_idf_pct": 57.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=47711&typeBac=0&originePc=0",
+        "_retrieval_score": 0.02455588235294118,
+        "_sub_index": null,
+        "id": "S1"
+      },
+      {
+        "nom": "ECONOMIE — Economie",
+        "etablissement": "Toulouse School of Economics",
+        "ville": "TOULOUSE",
+        "region": "Occitanie",
+        "niveau": "bac+5",
+        "statut": "Public",
+        "domaine": "eco_gestion",
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "etablissement_x_discipline",
+          "match_score": 1.0,
+          "cohorte": "2024",
+          "nombre_sortants": 37,
+          "taux_emploi_6m": 0.5135000000000001,
+          "taux_emploi_12m": 0.6215999999999999,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "pct_lg3": 100.0,
+          "pct_lp3": 0.0,
+          "pct_but3": 0.0,
+          "pct_master": 0.0,
+          "pct_autre": 0.0,
+          "pct_femme": 50.0,
+          "pct_etab": 0.0,
+          "pct_lieu_acad": 0.0
+        },
+        "debouches": [],
+        "source": "monmaster",
+        "url_canonical": "https://www.onisep.fr/recherche?q=ECONOMIE%20%E2%80%94%20Economie",
+        "_retrieval_score": 0.02140769230769231,
+        "_sub_index": null,
+        "id": "S2"
+      },
+      {
+        "nom": "SCIENCES ECONOMIQUES ET SOCIALES — Ingénierie de la Transition des Territoires",
+        "etablissement": "Université Toulouse Capitole",
+        "ville": "TOULOUSE CEDEX 9",
+        "region": "Occitanie",
+        "niveau": "bac+5",
+        "statut": "Public",
+        "domaine": "eco_gestion",
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "etablissement_x_discipline",
+          "match_score": 1.0,
+          "cohorte": "2024",
+          "nombre_sortants": 137,
+          "taux_emploi_6m": 0.708,
+          "taux_emploi_12m": 0.8029000000000001,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "pct_lg3": 59.1,
+          "pct_lp3": 0.0,
+          "pct_but3": 4.5,
+          "pct_master": 4.5,
+          "pct_autre": 4.5,
+          "pct_femme": 50.0,
+          "pct_etab": 27.3,
+          "pct_lieu_acad": 54.5
+        },
+        "debouches": [],
+        "source": "monmaster",
+        "url_canonical": "https://www.onisep.fr/recherche?q=SCIENCES%20ECONOMIQUES%20ET%20SOCIALES%20%E2%80%94%20Ing%C3%A9nierie%20de%20la%20Transition%20des%20Territoires",
+        "_retrieval_score": 0.021083333333333336,
+        "_sub_index": null,
+        "id": "S3"
+      },
+      {
+        "nom": "Licence - Gestion",
+        "etablissement": "Université Toulouse Capitole",
+        "ville": "Toulouse",
+        "region": "Occitanie",
+        "departement": "Haute-Garonne",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "eco_gestion",
+        "taux_acces_parcoursup_2025": 14.0,
+        "nombre_places": 200,
+        "propositions_totales": 662,
+        "pct_acceptes_debut_pp": 35.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 223,
+          "taux_emploi_6m": 0.4,
+          "taux_emploi_12m": 0.4632,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 12.0,
+            "b": 52.0,
+            "ab": 32.0,
+            "sans": 4.0
+          },
+          "bac_type_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 100.0,
+            "techno": 0.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 15.0,
+          "femmes_pct": 56.0,
+          "neobacheliers_pct": 94.0,
+          "origine_academique_idf_pct": 91.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4140&typeBac=0&originePc=0",
+        "_retrieval_score": 0.020884931506849322,
+        "_sub_index": null,
+        "id": "S4"
+      },
+      {
+        "nom": "BUT - Gestion des entreprises et des administrations",
+        "etablissement": "I.U.T de Toulouse",
+        "ville": "Toulouse",
+        "region": "Occitanie",
+        "departement": "Haute-Garonne",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "eco_gestion",
+        "taux_acces_parcoursup_2025": 30.0,
+        "nombre_places": 359,
+        "propositions_totales": 1984,
+        "pct_acceptes_debut_pp": 39.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 361,
+          "taux_emploi_6m": 0.5445,
+          "taux_emploi_12m": 0.6269,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 6.0,
+            "b": 39.0,
+            "ab": 45.0,
+            "sans": 10.0
+          },
+          "bac_type_pct": {
+            "general": 44.0,
+            "techno": 56.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 47.0,
+            "techno": 53.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 26.0,
+          "femmes_pct": 45.0,
+          "neobacheliers_pct": 82.0,
+          "origine_academique_idf_pct": 67.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4100&typeBac=0&originePc=0",
+        "_retrieval_score": 0.0190575,
+        "_sub_index": null,
+        "id": "S5"
+      }
+    ],
+    "n_sources": 5,
+    "error": null
+  },
+  {
+    "id": "fact-022",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour DUT à Bourges ?",
+    "latency_s": 6.68,
+    "answer": "Tu cherches des données précises sur l’insertion pro à 6 mois pour les **BUT** (ex-DUT) à Bourges. Voici ce que j’ai dans mes sources pour 2025 :\n\n- **[BUT Gestion des entreprises et des administrations](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3123&typeBac=0&originePc=0)** (IUT de Bourges) : **64,3 %** d’insertion à 6 mois [source S1].\n- Les 4 autres BUT de l’IUT (Génie civil, Qualité logistique, Génie mécanique, Mesures physiques) affichent **72,3 %** à 6 mois [sources S2, S3, S4, S5].\n\n**À noter** : ces taux concernent les diplômés *ne poursuivant pas d’études* (données Parcoursup 2025). Les écarts s’expliquent souvent par les secteurs (l’industrie recrute plus vite que la gestion).\n\nTu vises un domaine en particulier ? Je peux t’aider à creuser les parcours types selon la filière.",
+    "scope": {
+      "label": "in_scope",
+      "via": "llm",
+      "reason": "question sur l'insertion professionnelle des formations supérieures (DUT) à Bourges",
+      "has_prewritten": false
+    },
+    "validation_selfreported": {
+      "honesty_score": 1.0,
+      "flagged": false,
+      "rule_violations": [],
+      "corpus_warnings": [],
+      "presence_warnings": []
+    },
+    "sources": [
+      {
+        "nom": "BUT - Gestion des entreprises et des administrations",
+        "etablissement": "I.U.T de Bourges",
+        "ville": "Bourges",
+        "region": "Centre-Val de Loire",
+        "departement": "Cher",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "eco_gestion",
+        "taux_acces_parcoursup_2025": 50.0,
+        "nombre_places": 108,
+        "propositions_totales": 342,
+        "pct_acceptes_debut_pp": 82.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 195,
+          "taux_emploi_6m": 0.6429,
+          "taux_emploi_12m": 0.7,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 1.0,
+            "b": 19.0,
+            "ab": 49.0,
+            "sans": 31.0
+          },
+          "bac_type_pct": {
+            "general": 49.0,
+            "techno": 51.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 48.0,
+            "techno": 52.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 25.0,
+          "femmes_pct": 54.0,
+          "neobacheliers_pct": 96.0,
+          "origine_academique_idf_pct": 90.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3123&typeBac=0&originePc=0",
+        "_retrieval_score": 0.024993442622950824,
+        "_sub_index": null,
+        "id": "S1"
+      },
+      {
+        "nom": "BUT - Génie civil - Construction durable",
+        "etablissement": "I.U.T de Bourges",
+        "ville": "Bourges",
+        "region": "Centre-Val de Loire",
+        "departement": "Cher",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 62.0,
+        "nombre_places": 110,
+        "propositions_totales": 485,
+        "pct_acceptes_debut_pp": 51.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 227,
+          "taux_emploi_6m": 0.7231,
+          "taux_emploi_12m": 0.7959,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 2.0,
+            "b": 15.0,
+            "ab": 35.0,
+            "sans": 49.0
+          },
+          "bac_type_pct": {
+            "general": 49.0,
+            "techno": 50.0,
+            "pro": 2.0
+          },
+          "acces_pct": {
+            "general": 52.0,
+            "techno": 48.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 11.0,
+          "femmes_pct": 21.0,
+          "neobacheliers_pct": 90.0,
+          "origine_academique_idf_pct": 64.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3119&typeBac=0&originePc=0",
+        "_retrieval_score": 0.024590322580645165,
+        "_sub_index": null,
+        "id": "S2"
+      },
+      {
+        "nom": "BUT - Qualité, logistique industrielle et organisation",
+        "etablissement": "I.U.T de Bourges",
+        "ville": "Bourges",
+        "region": "Centre-Val de Loire",
+        "departement": "Cher",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 91.0,
+        "nombre_places": 30,
+        "propositions_totales": 111,
+        "pct_acceptes_debut_pp": 48.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 227,
+          "taux_emploi_6m": 0.7231,
+          "taux_emploi_12m": 0.7959,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 0.0,
+            "b": 0.0,
+            "ab": 21.0,
+            "sans": 79.0
+          },
+          "bac_type_pct": {
+            "general": 26.0,
+            "techno": 63.0,
+            "pro": 11.0
+          },
+          "acces_pct": {
+            "general": 47.0,
+            "techno": 49.0,
+            "pro": 4.0
+          },
+          "boursiers_pct": 21.0,
+          "femmes_pct": 19.0,
+          "neobacheliers_pct": 70.0,
+          "origine_academique_idf_pct": 89.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3122&typeBac=0&originePc=0",
+        "_retrieval_score": 0.024200000000000003,
+        "_sub_index": null,
+        "id": "S3"
+      },
+      {
+        "nom": "BUT - Génie mécanique et productique",
+        "etablissement": "I.U.T de Bourges",
+        "ville": "Bourges",
+        "region": "Centre-Val de Loire",
+        "departement": "Cher",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "ingenierie_industrielle",
+        "taux_acces_parcoursup_2025": 60.0,
+        "nombre_places": 60,
+        "propositions_totales": 228,
+        "pct_acceptes_debut_pp": 60.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 227,
+          "taux_emploi_6m": 0.7231,
+          "taux_emploi_12m": 0.7959,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 6.0,
+            "b": 9.0,
+            "ab": 55.0,
+            "sans": 30.0
+          },
+          "bac_type_pct": {
+            "general": 53.0,
+            "techno": 47.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 65.0,
+            "techno": 35.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 4.0,
+          "femmes_pct": 6.0,
+          "neobacheliers_pct": 90.0,
+          "origine_academique_idf_pct": 68.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3120&typeBac=0&originePc=0",
+        "_retrieval_score": 0.023821875000000006,
+        "_sub_index": null,
+        "id": "S4"
+      },
+      {
+        "nom": "BUT - Mesures physiques",
+        "etablissement": "I.U.T de Bourges",
+        "ville": "Bourges",
+        "region": "Centre-Val de Loire",
+        "departement": "Cher",
+        "niveau": "bac+3",
+        "statut": "Public",
+        "domaine": "sciences_fondamentales",
+        "taux_acces_parcoursup_2025": 98.0,
+        "nombre_places": 46,
+        "propositions_totales": 248,
+        "pct_acceptes_debut_pp": 72.0,
+        "insertion_pro": {
+          "source": "insersup_mesr",
+          "granularite": "discipline_region",
+          "match_score": 0.7,
+          "cohorte": "2024",
+          "nombre_sortants": 227,
+          "taux_emploi_6m": 0.7231,
+          "taux_emploi_12m": 0.7959,
+          "taux_emploi_18m": null,
+          "taux_emploi_24m": null,
+          "taux_emploi_30m": null,
+          "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+        },
+        "profil_admis": {
+          "mentions_pct": {
+            "tb": 3.0,
+            "b": 11.0,
+            "ab": 31.0,
+            "sans": 54.0
+          },
+          "bac_type_pct": {
+            "general": 83.0,
+            "techno": 17.0,
+            "pro": 0.0
+          },
+          "acces_pct": {
+            "general": 89.0,
+            "techno": 11.0,
+            "pro": 0.0
+          },
+          "boursiers_pct": 6.0,
+          "femmes_pct": 13.0,
+          "neobacheliers_pct": 90.0,
+          "origine_academique_idf_pct": 71.0
+        },
+        "debouches": [],
+        "source": "parcoursup",
+        "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3121&typeBac=0&originePc=0",
+        "_retrieval_score": 0.02345538461538462,
+        "_sub_index": null,
+        "id": "S5"
+      }
+    ],
+    "n_sources": 5,
+    "error": null
+  }
+]

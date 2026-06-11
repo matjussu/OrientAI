@@ -1,0 +1,11 @@
+PREUVE - Great Expectations attrape reellement une violation (2026-06-09)
+========================================================================
+Expectation : ExpectColumnValuesToBeBetween(taux_acces, 0, 100)
+
+corpus SAIN     [12.4, 45.0, 88.0, 30.2]    -> success=True   unexpected=0.0%
+corpus CORROMPU [12.4, 150.0, 88.0, -5.0]   -> success=False  unexpected=50.0%
+                                                values flagges = [150.0, -5.0]
+
+=> La suite GE bloque (exit 1) si une regression data injecte un taux hors bornes.
+   Sur le corpus reel, les expectations HARD passent ; les TARGET (ville/region)
+   echouent et documentent la dette data que Phase A3 doit combler.

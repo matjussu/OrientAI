@@ -1,0 +1,13 @@
+A2 DELTA - exposer insertion_pro 6m/12m a la FactCard (temoins insertion)
+=========================================================================
+fact-002 (BUT GEII Ile-de-France, insertion 6 mois) :
+  BASELINE : "je n'ai pas d'information sur le taux d'insertion a 6 mois" (FAUX refus)
+  A2       : "taux d'emploi a 6 mois de 47,37 % [source S1-S4]" (SOURCE)  <-- FIXE
+fact-012 (licence maths Brest)  : faux refus -> reponse sourcee  <-- FIXE
+fact-022 (DUT Bourges)          : refus -> reponse sourcee        <-- FIXE
+fact-007 (BTS Comm Strasbourg)  : refus -> refus (donnee 6m ABSENTE, refus honnete correct)
+fact-017 (prepa ECG Toulouse)   : refus -> refus (prepa sans insertion, correct)
+
+=> 3/5 temoins passent de faux-refus a reponse sourcee (ceux qui AVAIENT la
+   donnee). Refus honnete preserve la ou la donnee manque vraiment. Le finding
+   "faux refus sur donnee presente" est corrige a la racine (FactCard).

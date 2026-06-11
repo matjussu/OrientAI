@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "fact-001",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+  },
+  {
+    "id": "fact-002",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?"
+  },
+  {
+    "id": "fact-003",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+  },
+  {
+    "id": "fact-004",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Quel est le nombre de places pour BUT Gestion des entreprises à Lille ?"
+  },
+  {
+    "id": "fact-005",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Quel est les frais de scolarité annuels pour BTS SIO option SLAM à Toulouse ?"
+  },
+  {
+    "id": "fact-006",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+  },
+  {
+    "id": "fact-007",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour BTS Communication à Strasbourg ?"
+  },
+  {
+    "id": "fact-008",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+  },
+  {
+    "id": "fact-009",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Quel est le nombre de places pour licence de droit à Montpellier ?"
+  },
+  {
+    "id": "fact-010",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Quel est les frais de scolarité annuels pour licence de psychologie à Bourges ?"
+  },
+  {
+    "id": "fact-011",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+  },
+  {
+    "id": "fact-012",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour licence de mathématiques à Brest ?"
+  },
+  {
+    "id": "fact-013",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+  },
+  {
+    "id": "fact-014",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Quel est le nombre de places pour licence d'économie-gestion à Paris ?"
+  },
+  {
+    "id": "fact-015",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Quel est les frais de scolarité annuels pour prépa MPSI à Bordeaux ?"
+  },
+  {
+    "id": "fact-016",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+  },
+  {
+    "id": "fact-017",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour prépa ECG à Toulouse ?"
+  },
+  {
+    "id": "fact-018",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+  },
+  {
+    "id": "fact-019",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Quel est le nombre de places pour master en intelligence artificielle à Strasbourg ?"
+  },
+  {
+    "id": "fact-020",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Quel est les frais de scolarité annuels pour master de droit des affaires à Rennes ?"
+  },
+  {
+    "id": "fact-021",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+  },
+  {
+    "id": "fact-022",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Quel est le taux d'insertion professionnelle à 6 mois pour DUT à Bourges ?"
+  },
+  {
+    "id": "fact-023",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+  },
+  {
+    "id": "fact-024",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "Quelle est la date limite de confirmation des voeux sur Parcoursup en 2026 ?"
+  },
+  {
+    "id": "fact-025",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "Quelle est la date limite de confirmation des voeux sur Parcoursup en 2025 ?"
+  },
+  {
+    "id": "metier-001",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir développeur web ?"
+  },
+  {
+    "id": "metier-002",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un data scientist en début de carrière ?"
+  },
+  {
+    "id": "metier-003",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de infirmier ?"
+  },
+  {
+    "id": "metier-004",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir kinésithérapeute ?"
+  },
+  {
+    "id": "metier-005",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un avocat en début de carrière ?"
+  },
+  {
+    "id": "metier-006",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de enseignant ?"
+  },
+  {
+    "id": "metier-007",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir ingénieur aéronautique ?"
+  },
+  {
+    "id": "metier-008",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un vétérinaire en début de carrière ?"
+  },
+  {
+    "id": "metier-009",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de psychologue ?"
+  },
+  {
+    "id": "metier-010",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir architecte ?"
+  },
+  {
+    "id": "metier-011",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un comptable en début de carrière ?"
+  },
+  {
+    "id": "metier-012",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de designer UX ?"
+  },
+  {
+    "id": "metier-013",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir travailleur social ?"
+  },
+  {
+    "id": "metier-014",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un métiers du jeu vidéo en début de carrière ?"
+  },
+  {
+    "id": "metier-015",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de journaliste ?"
+  },
+  {
+    "id": "metier-016",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un développeur web en début de carrière ?"
+  },
+  {
+    "id": "metier-017",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de data scientist ?"
+  },
+  {
+    "id": "metier-018",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir infirmier ?"
+  },
+  {
+    "id": "metier-019",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un kinésithérapeute en début de carrière ?"
+  },
+  {
+    "id": "metier-020",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de avocat ?"
+  },
+  {
+    "id": "metier-021",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir enseignant ?"
+  },
+  {
+    "id": "metier-022",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un ingénieur aéronautique en début de carrière ?"
+  },
+  {
+    "id": "metier-023",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de vétérinaire ?"
+  },
+  {
+    "id": "metier-024",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir psychologue ?"
+  },
+  {
+    "id": "metier-025",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un architecte en début de carrière ?"
+  },
+  {
+    "id": "metier-026",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de comptable ?"
+  },
+  {
+    "id": "metier-027",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir designer UX ?"
+  },
+  {
+    "id": "metier-028",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Quel est le salaire d'un travailleur social en début de carrière ?"
+  },
+  {
+    "id": "metier-029",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Quels sont les débouchés du métier de métiers du jeu vidéo ?"
+  },
+  {
+    "id": "metier-030",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Quelles études faut-il faire pour devenir journaliste ?"
+  },
+  {
+    "id": "fact-001-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+  },
+  {
+    "id": "fact-002-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Dis-moi : Quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?"
+  },
+  {
+    "id": "fact-003-v1",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+  },
+  {
+    "id": "fact-004-v1",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Dis-moi : Quel est le nombre de places pour BUT Gestion des entreprises à Lille ?"
+  },
+  {
+    "id": "fact-005-v1",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est les frais de scolarité annuels pour BTS SIO option SLAM à Toulouse ?"
+  },
+  {
+    "id": "fact-006-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+  },
+  {
+    "id": "fact-007-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Dis-moi : Quel est le taux d'insertion professionnelle à 6 mois pour BTS Communication à Strasbourg ?"
+  },
+  {
+    "id": "fact-008-v1",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+  },
+  {
+    "id": "fact-009-v1",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Dis-moi : Quel est le nombre de places pour licence de droit à Montpellier ?"
+  },
+  {
+    "id": "fact-010-v1",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est les frais de scolarité annuels pour licence de psychologie à Bourges ?"
+  },
+  {
+    "id": "fact-011-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+  },
+  {
+    "id": "fact-012-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Dis-moi : Quel est le taux d'insertion professionnelle à 6 mois pour licence de mathématiques à Brest ?"
+  },
+  {
+    "id": "fact-013-v1",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+  },
+  {
+    "id": "fact-014-v1",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Dis-moi : Quel est le nombre de places pour licence d'économie-gestion à Paris ?"
+  },
+  {
+    "id": "fact-015-v1",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est les frais de scolarité annuels pour prépa MPSI à Bordeaux ?"
+  },
+  {
+    "id": "fact-016-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+  },
+  {
+    "id": "fact-017-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Dis-moi : Quel est le taux d'insertion professionnelle à 6 mois pour prépa ECG à Toulouse ?"
+  },
+  {
+    "id": "fact-018-v1",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+  },
+  {
+    "id": "fact-019-v1",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Dis-moi : Quel est le nombre de places pour master en intelligence artificielle à Strasbourg ?"
+  },
+  {
+    "id": "fact-020-v1",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est les frais de scolarité annuels pour master de droit des affaires à Rennes ?"
+  },
+  {
+    "id": "fact-021-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+  },
+  {
+    "id": "fact-022-v1",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Dis-moi : Quel est le taux d'insertion professionnelle à 6 mois pour DUT à Bourges ?"
+  },
+  {
+    "id": "fact-023-v1",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+  },
+  {
+    "id": "fact-024-v1",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "Dis-moi : Quelle est la date limite de confirmation des voeux sur Parcoursup en 2026 ?"
+  },
+  {
+    "id": "fact-025-v1",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "Dis-moi : Quelle est la date limite de confirmation des voeux sur Parcoursup en 2025 ?"
+  },
+  {
+    "id": "metier-001-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir développeur web ?"
+  },
+  {
+    "id": "metier-002-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un data scientist en début de carrière ?"
+  },
+  {
+    "id": "metier-003-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de infirmier ?"
+  },
+  {
+    "id": "metier-004-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir kinésithérapeute ?"
+  },
+  {
+    "id": "metier-005-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un avocat en début de carrière ?"
+  },
+  {
+    "id": "metier-006-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de enseignant ?"
+  },
+  {
+    "id": "metier-007-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir ingénieur aéronautique ?"
+  },
+  {
+    "id": "metier-008-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un vétérinaire en début de carrière ?"
+  },
+  {
+    "id": "metier-009-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de psychologue ?"
+  },
+  {
+    "id": "metier-010-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir architecte ?"
+  },
+  {
+    "id": "metier-011-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un comptable en début de carrière ?"
+  },
+  {
+    "id": "metier-012-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de designer UX ?"
+  },
+  {
+    "id": "metier-013-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir travailleur social ?"
+  },
+  {
+    "id": "metier-014-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un métiers du jeu vidéo en début de carrière ?"
+  },
+  {
+    "id": "metier-015-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de journaliste ?"
+  },
+  {
+    "id": "metier-016-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un développeur web en début de carrière ?"
+  },
+  {
+    "id": "metier-017-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de data scientist ?"
+  },
+  {
+    "id": "metier-018-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir infirmier ?"
+  },
+  {
+    "id": "metier-019-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un kinésithérapeute en début de carrière ?"
+  },
+  {
+    "id": "metier-020-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de avocat ?"
+  },
+  {
+    "id": "metier-021-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir enseignant ?"
+  },
+  {
+    "id": "metier-022-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un ingénieur aéronautique en début de carrière ?"
+  },
+  {
+    "id": "metier-023-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de vétérinaire ?"
+  },
+  {
+    "id": "metier-024-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir psychologue ?"
+  },
+  {
+    "id": "metier-025-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un architecte en début de carrière ?"
+  },
+  {
+    "id": "metier-026-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de comptable ?"
+  },
+  {
+    "id": "metier-027-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir designer UX ?"
+  },
+  {
+    "id": "metier-028-v1",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Dis-moi : Quel est le salaire d'un travailleur social en début de carrière ?"
+  },
+  {
+    "id": "metier-029-v1",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Dis-moi : Quels sont les débouchés du métier de métiers du jeu vidéo ?"
+  },
+  {
+    "id": "metier-030-v1",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Dis-moi : Quelles études faut-il faire pour devenir journaliste ?"
+  },
+  {
+    "id": "fact-001-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+  },
+  {
+    "id": "fact-002-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "J'aimerais savoir, quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?"
+  },
+  {
+    "id": "fact-003-v2",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+  },
+  {
+    "id": "fact-004-v2",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "J'aimerais savoir, quel est le nombre de places pour BUT Gestion des entreprises à Lille ?"
+  },
+  {
+    "id": "fact-005-v2",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est les frais de scolarité annuels pour BTS SIO option SLAM à Toulouse ?"
+  },
+  {
+    "id": "fact-006-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+  },
+  {
+    "id": "fact-007-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "J'aimerais savoir, quel est le taux d'insertion professionnelle à 6 mois pour BTS Communication à Strasbourg ?"
+  },
+  {
+    "id": "fact-008-v2",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+  },
+  {
+    "id": "fact-009-v2",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "J'aimerais savoir, quel est le nombre de places pour licence de droit à Montpellier ?"
+  },
+  {
+    "id": "fact-010-v2",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est les frais de scolarité annuels pour licence de psychologie à Bourges ?"
+  },
+  {
+    "id": "fact-011-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+  },
+  {
+    "id": "fact-012-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "J'aimerais savoir, quel est le taux d'insertion professionnelle à 6 mois pour licence de mathématiques à Brest ?"
+  },
+  {
+    "id": "fact-013-v2",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+  },
+  {
+    "id": "fact-014-v2",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "J'aimerais savoir, quel est le nombre de places pour licence d'économie-gestion à Paris ?"
+  },
+  {
+    "id": "fact-015-v2",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est les frais de scolarité annuels pour prépa MPSI à Bordeaux ?"
+  },
+  {
+    "id": "fact-016-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+  },
+  {
+    "id": "fact-017-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "J'aimerais savoir, quel est le taux d'insertion professionnelle à 6 mois pour prépa ECG à Toulouse ?"
+  },
+  {
+    "id": "fact-018-v2",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+  },
+  {
+    "id": "fact-019-v2",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "J'aimerais savoir, quel est le nombre de places pour master en intelligence artificielle à Strasbourg ?"
+  },
+  {
+    "id": "fact-020-v2",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est les frais de scolarité annuels pour master de droit des affaires à Rennes ?"
+  },
+  {
+    "id": "fact-021-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+  },
+  {
+    "id": "fact-022-v2",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "J'aimerais savoir, quel est le taux d'insertion professionnelle à 6 mois pour DUT à Bourges ?"
+  },
+  {
+    "id": "fact-023-v2",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+  },
+  {
+    "id": "fact-024-v2",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "J'aimerais savoir, quelle est la date limite de confirmation des voeux sur Parcoursup en 2026 ?"
+  },
+  {
+    "id": "fact-025-v2",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "J'aimerais savoir, quelle est la date limite de confirmation des voeux sur Parcoursup en 2025 ?"
+  },
+  {
+    "id": "metier-001-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir développeur web ?"
+  },
+  {
+    "id": "metier-002-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un data scientist en début de carrière ?"
+  },
+  {
+    "id": "metier-003-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de infirmier ?"
+  },
+  {
+    "id": "metier-004-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir kinésithérapeute ?"
+  },
+  {
+    "id": "metier-005-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un avocat en début de carrière ?"
+  },
+  {
+    "id": "metier-006-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de enseignant ?"
+  },
+  {
+    "id": "metier-007-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir ingénieur aéronautique ?"
+  },
+  {
+    "id": "metier-008-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un vétérinaire en début de carrière ?"
+  },
+  {
+    "id": "metier-009-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de psychologue ?"
+  },
+  {
+    "id": "metier-010-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir architecte ?"
+  },
+  {
+    "id": "metier-011-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un comptable en début de carrière ?"
+  },
+  {
+    "id": "metier-012-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de designer UX ?"
+  },
+  {
+    "id": "metier-013-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir travailleur social ?"
+  },
+  {
+    "id": "metier-014-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un métiers du jeu vidéo en début de carrière ?"
+  },
+  {
+    "id": "metier-015-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de journaliste ?"
+  },
+  {
+    "id": "metier-016-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un développeur web en début de carrière ?"
+  },
+  {
+    "id": "metier-017-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de data scientist ?"
+  },
+  {
+    "id": "metier-018-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir infirmier ?"
+  },
+  {
+    "id": "metier-019-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un kinésithérapeute en début de carrière ?"
+  },
+  {
+    "id": "metier-020-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de avocat ?"
+  },
+  {
+    "id": "metier-021-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir enseignant ?"
+  },
+  {
+    "id": "metier-022-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un ingénieur aéronautique en début de carrière ?"
+  },
+  {
+    "id": "metier-023-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de vétérinaire ?"
+  },
+  {
+    "id": "metier-024-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir psychologue ?"
+  },
+  {
+    "id": "metier-025-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un architecte en début de carrière ?"
+  },
+  {
+    "id": "metier-026-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de comptable ?"
+  },
+  {
+    "id": "metier-027-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir designer UX ?"
+  },
+  {
+    "id": "metier-028-v2",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "J'aimerais savoir, quel est le salaire d'un travailleur social en début de carrière ?"
+  },
+  {
+    "id": "metier-029-v2",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "J'aimerais savoir, quels sont les débouchés du métier de métiers du jeu vidéo ?"
+  },
+  {
+    "id": "metier-030-v2",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "J'aimerais savoir, quelles études faut-il faire pour devenir journaliste ?"
+  },
+  {
+    "id": "fact-001-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?"
+  },
+  {
+    "id": "fact-002-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Peux-tu m'aider : quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?"
+  },
+  {
+    "id": "fact-003-v3",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?"
+  },
+  {
+    "id": "fact-004-v3",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Peux-tu m'aider : quel est le nombre de places pour BUT Gestion des entreprises à Lille ?"
+  },
+  {
+    "id": "fact-005-v3",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est les frais de scolarité annuels pour BTS SIO option SLAM à Toulouse ?"
+  },
+  {
+    "id": "fact-006-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?"
+  },
+  {
+    "id": "fact-007-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Peux-tu m'aider : quel est le taux d'insertion professionnelle à 6 mois pour BTS Communication à Strasbourg ?"
+  },
+  {
+    "id": "fact-008-v3",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?"
+  },
+  {
+    "id": "fact-009-v3",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Peux-tu m'aider : quel est le nombre de places pour licence de droit à Montpellier ?"
+  },
+  {
+    "id": "fact-010-v3",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est les frais de scolarité annuels pour licence de psychologie à Bourges ?"
+  },
+  {
+    "id": "fact-011-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour licence MIASHS à Annecy ?"
+  },
+  {
+    "id": "fact-012-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Peux-tu m'aider : quel est le taux d'insertion professionnelle à 6 mois pour licence de mathématiques à Brest ?"
+  },
+  {
+    "id": "fact-013-v3",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?"
+  },
+  {
+    "id": "fact-014-v3",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Peux-tu m'aider : quel est le nombre de places pour licence d'économie-gestion à Paris ?"
+  },
+  {
+    "id": "fact-015-v3",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est les frais de scolarité annuels pour prépa MPSI à Bordeaux ?"
+  },
+  {
+    "id": "fact-016-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?"
+  },
+  {
+    "id": "fact-017-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Peux-tu m'aider : quel est le taux d'insertion professionnelle à 6 mois pour prépa ECG à Toulouse ?"
+  },
+  {
+    "id": "fact-018-v3",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?"
+  },
+  {
+    "id": "fact-019-v3",
+    "category": "factuelle_precise",
+    "expectation": "capacité sourcée ou refus",
+    "question": "Peux-tu m'aider : quel est le nombre de places pour master en intelligence artificielle à Strasbourg ?"
+  },
+  {
+    "id": "fact-020-v3",
+    "category": "factuelle_precise",
+    "expectation": "coût sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est les frais de scolarité annuels pour master de droit des affaires à Rennes ?"
+  },
+  {
+    "id": "fact-021-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux d'accès sourcé ou refus honnête",
+    "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?"
+  },
+  {
+    "id": "fact-022-v3",
+    "category": "factuelle_precise",
+    "expectation": "taux insertion sourcé ou refus, pas de substitution",
+    "question": "Peux-tu m'aider : quel est le taux d'insertion professionnelle à 6 mois pour DUT à Bourges ?"
+  },
+  {
+    "id": "fact-023-v3",
+    "category": "factuelle_precise",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?"
+  },
+  {
+    "id": "fact-024-v3",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "Peux-tu m'aider : quelle est la date limite de confirmation des voeux sur Parcoursup en 2026 ?"
+  },
+  {
+    "id": "fact-025-v3",
+    "category": "factuelle_precise",
+    "expectation": "date exacte si corpus calendrier, sinon refus. Pas d'invention de date.",
+    "question": "Peux-tu m'aider : quelle est la date limite de confirmation des voeux sur Parcoursup en 2025 ?"
+  },
+  {
+    "id": "metier-001-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir développeur web ?"
+  },
+  {
+    "id": "metier-002-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un data scientist en début de carrière ?"
+  },
+  {
+    "id": "metier-003-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de infirmier ?"
+  },
+  {
+    "id": "metier-004-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir kinésithérapeute ?"
+  },
+  {
+    "id": "metier-005-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un avocat en début de carrière ?"
+  },
+  {
+    "id": "metier-006-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de enseignant ?"
+  },
+  {
+    "id": "metier-007-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir ingénieur aéronautique ?"
+  },
+  {
+    "id": "metier-008-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un vétérinaire en début de carrière ?"
+  },
+  {
+    "id": "metier-009-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de psychologue ?"
+  },
+  {
+    "id": "metier-010-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir architecte ?"
+  },
+  {
+    "id": "metier-011-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un comptable en début de carrière ?"
+  },
+  {
+    "id": "metier-012-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de designer UX ?"
+  },
+  {
+    "id": "metier-013-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir travailleur social ?"
+  },
+  {
+    "id": "metier-014-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un métiers du jeu vidéo en début de carrière ?"
+  },
+  {
+    "id": "metier-015-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de journaliste ?"
+  },
+  {
+    "id": "metier-016-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un développeur web en début de carrière ?"
+  },
+  {
+    "id": "metier-017-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de data scientist ?"
+  },
+  {
+    "id": "metier-018-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir infirmier ?"
+  },
+  {
+    "id": "metier-019-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un kinésithérapeute en début de carrière ?"
+  },
+  {
+    "id": "metier-020-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de avocat ?"
+  },
+  {
+    "id": "metier-021-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir enseignant ?"
+  },
+  {
+    "id": "metier-022-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un ingénieur aéronautique en début de carrière ?"
+  },
+  {
+    "id": "metier-023-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de vétérinaire ?"
+  },
+  {
+    "id": "metier-024-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir psychologue ?"
+  },
+  {
+    "id": "metier-025-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un architecte en début de carrière ?"
+  },
+  {
+    "id": "metier-026-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de comptable ?"
+  },
+  {
+    "id": "metier-027-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir designer UX ?"
+  },
+  {
+    "id": "metier-028-v3",
+    "category": "metier",
+    "expectation": "salaire sourcé ou refus, pas d'invention",
+    "question": "Peux-tu m'aider : quel est le salaire d'un travailleur social en début de carrière ?"
+  },
+  {
+    "id": "metier-029-v3",
+    "category": "metier",
+    "expectation": "débouchés: info utile, pas de chiffre inventé",
+    "question": "Peux-tu m'aider : quels sont les débouchés du métier de métiers du jeu vidéo ?"
+  },
+  {
+    "id": "metier-030-v3",
+    "category": "metier",
+    "expectation": "parcours vers le métier: pistes sourcées ou honnête",
+    "question": "Peux-tu m'aider : quelles études faut-il faire pour devenir journaliste ?"
+  }
+]
