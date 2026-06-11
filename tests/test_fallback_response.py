@@ -58,7 +58,8 @@ class TestFormatOutOfScopeResponse:
     def test_default_post_bac_scope(self):
         out = format_out_of_scope_response()
         assert "post-bac" in out
-        assert "OrientIA" in out
+        # commit d539c6d : rebranding OrientIA -> OrientAI dans les textes visibles.
+        assert "OrientAI" in out
 
     def test_redirects_to_human_referral(self):
         out = format_out_of_scope_response()

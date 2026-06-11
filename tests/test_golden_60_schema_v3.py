@@ -30,7 +30,9 @@ def golden() -> dict:
 
 
 def test_schema_version_v3(golden: dict) -> None:
-    assert golden["schema_version"] == "v3"
+    # ADR-060 (commit c7c0966) a bumpé v3 -> v3.1 (patch refusal_markers +
+    # 5 vie_etudiante_periph). On verrouille la version courante intentionnelle.
+    assert golden["schema_version"] == "v3.1"
 
 
 def test_categories_extended_with_live_and_paraphrase(golden: dict) -> None:
@@ -58,9 +60,10 @@ def test_schema_v3_documents_optional_fields(golden: dict) -> None:
 # ────────────────────────── Comptes total ──────────────────────────
 
 
-def test_total_questions_is_66(golden: dict) -> None:
-    """60 v2 + 6 v3 cassantes = 66."""
-    assert len(golden["questions"]) == 66
+def test_total_questions_is_71(golden: dict) -> None:
+    """60 v2 + 6 v3 cassantes (commit 4989d59) + 5 vie_etudiante_periph
+    (ADR-060, commit c7c0966) = 71."""
+    assert len(golden["questions"]) == 71
 
 
 def test_v2_questions_preserved(golden: dict) -> None:
@@ -219,7 +222,9 @@ def test_eval_recall_handles_missing_routing_gracefully(golden: dict) -> None:
             assert q.get("expected_routing", {}).get("sub_indexes") is None
         else:
             n_with_routing += 1
-    assert n_with_routing == 6
+    # 6 cassantes v3 + 5 vie_etudiante_periph (ADR-060) portent un routing ;
+    # les 60 questions v2 n'en ont pas.
+    assert n_with_routing == 11
     assert n_without_routing == 60
 
 
