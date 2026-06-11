@@ -29,6 +29,7 @@ from src.rag.metadata_filter import (
     apply_metadata_filter,
 )
 from src.rag.post_process import post_process_answer
+from src.rag.geo_coherence import geo_coherence_check
 from src.rag.router_llm import RouteDecision, RouterLLM, SUB_INDEX_NAMES
 from src.rag.scope_classifier import ScopeClassifier, ScopeResult
 from src.validator import (
@@ -203,6 +204,7 @@ class OrientIAPipeline:
         scope_classifier: ScopeClassifier | None = None,
         use_strict_v4: bool = False,
         router_llm: RouterLLM | None = None,
+        enable_geo_coherence: bool = True,
     ):
         self.client = client
         self.fiches = fiches
@@ -272,6 +274,12 @@ class OrientIAPipeline:
         # et diag (le SELECT bypass servait 0/48 factuelles → on laisse le RAG
         # gardé essayer). Réinitialisé à chaque `.answer()`.
         self.last_select_fallthrough: bool = False
+        # Garde-fou géo déterministe NARROW (J3, 2026-06-11, GO Matteo option B) —
+        # remplace le prompt-only RÈGLE 9 reverté. Refus + relais si la question cible
+        # une zone qu'AUCUNE source ne couvre (out-of-zone clair, ex Papeete-pour-Nantes).
+        # Conservateur (abstention au moindre doute). Désactivable (revertable).
+        self.enable_geo_coherence: bool = enable_geo_coherence
+        self.last_geo_refusal: bool = False
         # Chantier 1.B (2026-05-03) — métadonnées du retry-with-hint loop pour
         # audit / observabilité. None tant qu'aucun call avec validator. Format :
         #   {
@@ -597,6 +605,16 @@ class OrientIAPipeline:
             top = mmr_select(reranked, k=effective_top_k, lambda_=effective_lambda)
         else:
             top = reranked[:effective_top_k]
+
+        # Garde-fou géo déterministe NARROW (J3, 2026-06-11) — court-circuit AVANT
+        # génération si la question cible une zone qu'aucune source (top) ne couvre.
+        # Conservateur : ne tire que sur out-of-zone clair (cf geo_coherence_check).
+        self.last_geo_refusal = False
+        if self.enable_geo_coherence:
+            geo_refusal = geo_coherence_check(question, top)
+            if geo_refusal is not None:
+                self.last_geo_refusal = True
+                return _ShortCircuitResult(text=geo_refusal, reason="geo_out_of_zone")
 
         # Sprint 10 chantier D — Q&A Golden few-shot prefix (opt-in)
         golden_qa_prefix = self._maybe_build_golden_qa_prefix(question)
