@@ -76,6 +76,39 @@ def fiche_monmaster_simple() -> dict:
     }
 
 
+def test_chiffres_exposent_quartiles_salaire():
+    """Phase 1 (order 0825) : la fourchette Q1/Q3 InserSup doit remonter à la
+    FactCard pour que le générateur puisse citer une fourchette sourcée."""
+    fiche = {
+        "source": "monmaster", "nom": "Acoustique", "etablissement": "Université X",
+        "niveau": "bac+5",
+        "insertion_pro": {
+            "salaire_median_embauche": 1850, "salaire_q1": 1600, "salaire_q3": 2200,
+            "salaire_net": True, "salaire_horizon": "12m",
+        },
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.salaire_median_embauche == 1850
+    assert card.chiffres.salaire_q1 == 1600
+    assert card.chiffres.salaire_q3 == 2200
+    # exposé dans le JSON LLM
+    d = card.to_dict()
+    assert d["chiffres"]["salaire_q1"] == 1600
+    assert d["chiffres"]["salaire_q3"] == 2200
+
+
+def test_chiffres_quartiles_none_when_absent():
+    """Médiane seule (pas de quartile source) -> q1/q3 None, pas de fourchette inventée."""
+    fiche = {
+        "source": "monmaster", "nom": "Acoustique", "etablissement": "Université X",
+        "insertion_pro": {"salaire_median_embauche": 1850},
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.salaire_median_embauche == 1850
+    assert card.chiffres.salaire_q1 is None
+    assert card.chiffres.salaire_q3 is None
+
+
 def fiche_rncp_minimal() -> dict:
     """Fiche RNCP nationale sans école nommée — cas des fiches multi-corpus."""
     return {

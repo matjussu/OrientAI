@@ -77,6 +77,10 @@ _FICHE_KEEP = (
     "nom", "etablissement", "ville", "region", "departement", "niveau",
     "statut", "type_diplome", "domaine", "taux_acces_parcoursup_2025",
     "nombre_places", "propositions_totales", "pct_acceptes_debut_pp",
+    # `insertion_pro` est gardé ENTIER (dict nested) : toute clé ajoutée dedans
+    # côté collecte (salaire_median_embauche C2b, salaire_q1/salaire_q3 fourchette
+    # order 0825) est AUTOMATIQUEMENT visible au juge — pas de re-sync par champ
+    # nécessaire pour les ajouts sous insertion_pro. Vérifié order 0825 Phase 1.
     "insertion_pro", "profil_admis", "debouches", "salaire", "annee",
     "source", "url_canonical", "rncp",
     # Bloc A (2026-06-09) — champs exposés par fact_card mais qui manquaient au

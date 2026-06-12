@@ -53,6 +53,7 @@ def main(apply: bool) -> None:
     print("\n[2] Attach InserSup salaires…")
     metrics = attach_insersup_salaries(fiches, index)
     print(f"  fiches enrichies InserSup: {metrics['n_enriched']}")
+    print(f"  quartiles backfillés (médiane InserSup déjà là, order 0825): {metrics.get('n_quartiles_backfilled', 0)}")
     print(f"  par méthode de jointure : {metrics['by_method']}  (exact-match normalisé, zéro fuzzy)")
     print(f"  par source fiche        : {metrics['by_source']}")
     print(f"  ambiguïtés résiduelles (même clé libellé + même promo, salaires divergents) : {index['metrics']['ambiguities_same_key_same_promo']}")
@@ -72,9 +73,16 @@ def main(apply: bool) -> None:
         and isinstance(f.get("insertion_pro"), dict)
         and f["insertion_pro"].get("salaire_median_embauche") is not None
     )
+    n_quartiles_total = sum(
+        1 for f in fiches if isinstance(f, dict)
+        and isinstance(f.get("insertion_pro"), dict)
+        and f["insertion_pro"].get("salaire_q1") is not None
+        and f["insertion_pro"].get("salaire_q3") is not None
+    )
     print(f"\n=== COUVERTURE SALAIRE après enrichissement ===")
     print(f"  nouvellement enrichies : {total} (InserSup {metrics['n_enriched']} + doctorat {n_doc})")
     print(f"  fiches avec salaire_median_embauche au total : {n_salary_total}")
+    print(f"  fiches avec fourchette Q1+Q3 complète (order 0825) : {n_quartiles_total}")
 
     if not apply:
         print("\n--- DRY-RUN (aucune écriture). --apply pour migrer. ---")
