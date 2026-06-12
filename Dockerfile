@@ -16,10 +16,12 @@ RUN pip install --no-cache-dir -r requirements.lock
 # Code application
 COPY src/ ./src/
 
-# Corpus principal (95 MB) embarqué dans l'image — simple, pas de bootstrap volume
-# nécessaire. Pour les ~185 MB de FAISS index : voir volume Railway monté sur
+# Corpus principal (~135 MB) embarqué dans l'image — aligné sur main : 52040 fiches
+# (salaire+quartiles InserSup + debouches ROME #146). server.py charge par défaut
+# data/processed/formations.json (ORIENTIA_FICHES_PATH ne doit PAS override vers v7).
+# Index FAISS (~213 MB, état #2 dense-sigle-OFF) : volume Railway monté sur
 # /app/data/embeddings/ (ne pas COPY l'index dans l'image, trop lourd).
-COPY data/processed/formations_v7.json ./data/processed/formations_v7.json
+COPY data/processed/formations.json ./data/processed/formations.json
 COPY data/processed/golden_qa_meta.json ./data/processed/golden_qa_meta.json
 
 # Railway injecte $PORT automatiquement
