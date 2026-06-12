@@ -11,6 +11,10 @@ requires-python = ">=3.12"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+markers = [
+    "golden: gate CI golden 50q (intégration, nécessite index FAISS + MISTRAL_API_KEY ; skippé sinon)",
+    "integration: test d'intégration (ressources externes : index, API, réseau)",
+]
 
 [tool.ruff]
 line-length = 100
