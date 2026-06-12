@@ -1,0 +1,1237 @@
+[
+  {
+    "id": "hp-010",
+    "category": "hors_perimetre",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 0.7999999999999999,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence STAPS Parcours Kiné à l'Université Paris Cité : 60 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme 60 places"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kiné à l'Université Paris Cité : taux d'accès de 7 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme taux_acces_parcoursup_2025 = 7.0"
+        },
+        {
+          "claim": "Licence Kinésithérapie en IFMK à l'UPEC (Créteil) : 65 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme 65 places"
+        },
+        {
+          "claim": "Licence Kinésithérapie en IFMK à l'UPEC (Créteil) : taux d'accès de 9 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme taux_acces_parcoursup_2025 = 9.0"
+        },
+        {
+          "claim": "Portail BCST préparation aux écoles de kiné (Paris-Saclay) : 20 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 confirme 20 places"
+        },
+        {
+          "claim": "Portail BCST préparation aux écoles de kiné (Paris-Saclay) : taux d'accès de 19 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 confirme taux_acces_parcoursup_2025 = 19.0"
+        },
+        {
+          "claim": "Concours interne très sélectif (~3% d'accès national) pour IFMK",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "Aucune source ne mentionne un taux de 3% d'accès national pour les IFMK. Les sources fournissent des taux Parcoursup locaux (9% à Créteil) mais pas de chiffre national de 3%."
+        }
+      ],
+      "n_claims": 7,
+      "n_supported": 6,
+      "groundedness": 0.857,
+      "hallucinated_numbers": true,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse identifie correctement trois formations avec leurs places et taux d'accès Parcoursup 2025 (tous vérifiés). Cependant, elle avance un chiffre de ~3% d'accès national pour les IFMK qui n'apparaît dans aucune source fournie : c'est une hallucination numérique."
+    }
+  },
+  {
+    "id": "geo-013",
+    "category": "edge_geo",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Portail Sciences de la vie : 353 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme 353 places"
+        },
+        {
+          "claim": "Licence - Portail Sciences de la vie : 45% de propositions acceptées en début de phase principale",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme pct_acceptes_debut_pp: 45.0"
+        },
+        {
+          "claim": "Licence - Sciences de la terre : 40 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme 40 places"
+        },
+        {
+          "claim": "Licence - Sciences de la terre : 22% de propositions acceptées",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme pct_acceptes_debut_pp: 22.0"
+        },
+        {
+          "claim": "Licence - Portail Sciences pour la santé : 80 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 confirme 80 places"
+        },
+        {
+          "claim": "Licence - Portail Sciences pour la santé : 96% de taux d'accès",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "S5 indique taux_acces_parcoursup_2025: 96.0, mais l'assistant dit '96% de taux d'accès' alors que le chiffre correct est le taux d'accès (96%), pas le pourcentage de propositions acceptées (11%). L'assistant confond deux métriques différentes."
+        }
+      ],
+      "n_claims": 6,
+      "n_supported": 5,
+      "groundedness": 0.833,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse propose trois formations scientifiques à La Réunion avec chiffres sourcés, mais commet une erreur métrique sur Sciences pour la santé : elle cite '96% de taux d'accès' alors que S5 montre que le taux d'accès est 96% mais le pourcentage de propositions acceptées en début de phase principale est 11%. L'assistant a mélangé deux indicateurs différents."
+    }
+  },
+  {
+    "id": "base-005",
+    "category": "baseline_inscope",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 4,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Taux d'emploi à 12 mois de 65,2 % pour le master Qualité, Hygiène, Sécurité à l'Université Sorbonne Paris Nord",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : taux_emploi_12m = 0.6515 = 65,15 % ✓"
+        },
+        {
+          "claim": "Taux d'emploi à 12 mois de 62,3 % pour le master Informatique (Réseaux) à Sorbonne Université",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : taux_emploi_12m = 0.6226 = 62,26 % ✓"
+        },
+        {
+          "claim": "Taux d'emploi à 12 mois de 70,3 % pour le master Lean Management à Paris Nanterre",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 : taux_emploi_12m = 0.7031 = 70,31 % ✓"
+        },
+        {
+          "claim": "Capacité de 45 places pour le master Qualité, Hygiène, Sécurité",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : capacite = 45 ✓"
+        },
+        {
+          "claim": "Capacité de 28 places pour le master Informatique (Réseaux)",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : capacite = 28 ✓"
+        },
+        {
+          "claim": "Taux d'admission de 3,2 % pour le master Qualité, Hygiène, Sécurité",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "S1 : taux_admission = 0.0316 = 3,16 %, pas 3,2 % (arrondi incorrect ou approximation non justifiée)"
+        },
+        {
+          "claim": "Taux d'admission de 1,3 % pour le master Informatique (Réseaux)",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "S2 : taux_admission = 0.0131 = 1,31 %, pas 1,3 % (arrondi incorrect ou approximation non justifiée)"
+        },
+        {
+          "claim": "L'alternance allie formation théorique et expérience en entreprise",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Définition générale de l'alternance non présente dans les sources (qui ne contiennent que des fiches de formations spécifiques)"
+        }
+      ],
+      "n_claims": 8,
+      "n_supported": 5,
+      "groundedness": 0.625,
+      "hallucinated_numbers": true,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse cite des taux d'emploi et capacités vérifiables dans les sources, mais ne répond pas vraiment à la question posée (définition et avantages généraux de l'alternance). Elle propose à la place des exemples spécifiques de formations en alternance. Les taux d'admission sont arrondis de manière inexacte (3,16 % présenté comme 3,2 %, 1,31 % comme 1,3 %), et la définition générale de l'alternance n'est pas sourcée."
+    }
+  },
+  {
+    "id": "metier-004-v1",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 0.85,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence STAPS avec parcours dédié kiné existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1, S2, S3, S4 confirment l'existence de licences STAPS parcours kiné"
+        },
+        {
+          "claim": "Licence Sciences de la Vie avec option kiné existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S5 confirme l'existence d'une Licence SVSE option Kinésithérapie"
+        },
+        {
+          "claim": "IFMK (Institut de Formation en Masso-Kinésithérapie) existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 et S6 mentionnent des formations IFMK"
+        },
+        {
+          "claim": "Licence Kinésithérapie en IFMK à Université Paris-Est Créteil : 65 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : nombre_places = 65"
+        },
+        {
+          "claim": "Licence Kinésithérapie en IFMK à Université Paris-Est Créteil : taux d'accès 9%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : taux_acces_parcoursup_2025 = 9.0"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kiné à Université Paris Cité : 60 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : nombre_places = 60"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kiné à Université Paris Cité : taux d'accès 7%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : taux_acces_parcoursup_2025 = 7.0"
+        },
+        {
+          "claim": "Licence SVSE option Kinésithérapie à Montpellier : 20 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : nombre_places = 20"
+        },
+        {
+          "claim": "Licence SVSE option Kinésithérapie à Montpellier : taux d'accès 6%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : taux_acces_parcoursup_2025 = 6.0"
+        },
+        {
+          "claim": "Ces formations sont très sélectives",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Les taux d'accès (6-9%) confirment la sélectivité"
+        }
+      ],
+      "n_claims": 10,
+      "n_supported": 10,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit une description générale des parcours (Licence STAPS, Licence Sciences de la Vie, IFMK) et cite trois formations spécifiques avec chiffres (places, taux d'accès) tous vérifiés dans les sources Parcoursup 2025. Tous les claims factuels sont supportés."
+    }
+  },
+  {
+    "id": "metier-010-v1",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Le diplôme d'État d'architecte est au niveau bac+5",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 indique explicitement 'niveau: bac+5'"
+        },
+        {
+          "claim": "Ce diplôme se prépare en 2 ans",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 indique 'duree: 2 ans'"
+        },
+        {
+          "claim": "Il y a un cycle de 3 ans (licence) avant ces 2 ans dans une école nationale supérieure d'architecture",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "S5 mentionne seulement '2 ans' de durée du diplôme d'État, sans détailler la structure 3+2 ou les écoles nationales supérieures d'architecture"
+        },
+        {
+          "claim": "Le métier s'exerce souvent en libéral",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 affirme 'Le métier s'exerce le plus souvent en libéral'"
+        },
+        {
+          "claim": "Les missions incluent la construction, réhabilitation, etc.",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 mentionne 'Construction d'un immeuble ou d'un hôpital, réhabilitation de logements sociaux, reconversion d'une usine en bureaux'"
+        }
+      ],
+      "n_claims": 5,
+      "n_supported": 4,
+      "groundedness": 0.8,
+      "hallucinated_numbers": true,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question avec des informations largement sourcées. Cependant, l'affirmation sur la structure '3 ans (licence) + 2 ans' n'est pas explicitement supportée par S5, qui ne mentionne que la durée totale de 2 ans du diplôme d'État sans détailler le cycle préalable."
+    }
+  },
+  {
+    "id": "reconv-002-v1",
+    "category": "reconversion_adulte",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 4,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "La VAE permet d'obtenir un diplôme ou une certification (comme un RNCP) en faisant reconnaître son expérience professionnelle",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Aucune source ne définit la VAE ni son fonctionnement général. Les sources fournies sont des fiches de formations RNCP spécifiques, pas des documents sur la VAE."
+        },
+        {
+          "claim": "Toute personne justifiant d'au moins 1 an d'expérience (1 607 heures) en lien avec la certification visée peut accéder à la VAE",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "Les chiffres '1 an' et '1 607 heures' ne figurent dans aucune des sources fournies. Ces critères d'éligibilité VAE ne sont pas documentés."
+        },
+        {
+          "claim": "On peut postuler en autonomie via vae.gouv.fr",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Le site vae.gouv.fr n'est mentionné dans aucune source fournie."
+        },
+        {
+          "claim": "On peut être accompagné par un organisme, par exemple Expert en design d'expérience utilisateur propose la VAE",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 liste 'Par expérience' dans voies_acces, ce qui inclut implicitement la VAE. La formation S1 accepte cette voie d'accès."
+        },
+        {
+          "claim": "Le financement est possible via le CPF pour l'accompagnement",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Aucune source ne mentionne le CPF ou les modalités de financement de la VAE."
+        }
+      ],
+      "n_claims": 5,
+      "n_supported": 1,
+      "groundedness": 0.2,
+      "hallucinated_numbers": true,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit une explication générale sur la VAE (définition, critères d'éligibilité, financement) qui ne figure dans aucune des sources fournies. Seule la mention d'une formation acceptant la VAE est supportée. Les chiffres clés (1 an, 1 607 heures) sont hallucinations."
+    }
+  },
+  {
+    "id": "malform-003-v2",
+    "category": "mal_formulee",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Psychologie (IPC-Facultés Libres) : 50 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme nombre_places: 50"
+        },
+        {
+          "claim": "Licence - Psychologie (IPC-Facultés Libres) : taux d'accès à 12 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme taux_acces_parcoursup_2025: 12.0"
+        },
+        {
+          "claim": "PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE (Sorbonne Paris Nord) : 63 admis",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme n_acceptes_total: 63"
+        },
+        {
+          "claim": "PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE (Sorbonne Paris Nord) : 1 458 candidats",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme n_candidats_pp: 1458"
+        },
+        {
+          "claim": "PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE (Sorbonne Paris Nord) : taux d'admission à 4,3 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme taux_admission: 0.043209876543209874 ≈ 4.32%"
+        },
+        {
+          "claim": "Les autres masters en psycho ont des taux d'admission entre 2,6 % et 13,9 %",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "S1: 2.59%, S3: 13.92%, S5: 3.53%, S6: 1.68%, S7: 3.16%, S8: 2.25%, S9: 1.52%, S10: 6.13%. Le minimum est 1.52% (S9), non 2.6%. Le maximum est 13.92% (S3), ce qui correspond. L'affirmation d'une plage 2.6%-13.9% est inexacte."
+        }
+      ],
+      "n_claims": 6,
+      "n_supported": 5,
+      "groundedness": 0.833,
+      "hallucinated_numbers": true,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit des données sourcées pour les deux formations principales citées (licence et master Sorbonne), mais commet une erreur factuelle en affirmant que les taux d'admission des autres masters varient entre 2,6% et 13,9%, alors que le minimum réel dans les sources est 1,52%."
+    }
+  },
+  {
+    "id": "hp-010-v3",
+    "category": "hors_perimetre",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 0.85,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence STAPS Parcours Kinésithérapie à Université Paris-Est Créteil : 65 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme 65 places"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kinésithérapie à Université Paris-Est Créteil : taux d'accès 9%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme taux_acces_parcoursup_2025 = 9.0"
+        },
+        {
+          "claim": "Licence STAPS Parcours Accès Kiné à Université Toulouse III : 72 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme 72 places"
+        },
+        {
+          "claim": "Licence STAPS Parcours Accès Kiné à Université Toulouse III : taux d'accès 7%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme taux_acces_parcoursup_2025 = 7.0"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kiné à Université Paris Cité : 60 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme 60 places"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kiné à Université Paris Cité : taux d'accès 7%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme taux_acces_parcoursup_2025 = 7.0"
+        },
+        {
+          "claim": "Concours d'entrée en IFMK avec taux d'accès national ~3%",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "Aucune source ne mentionne un taux national de 3% pour les concours IFMK"
+        },
+        {
+          "claim": "Les parcours permettent de se présenter aux concours d'entrée en IFMK après L2 ou L3",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Les sources décrivent des licences STAPS/Sciences de la vie avec parcours kiné, mais ne précisent pas explicitement que ces licences préparent aux concours IFMK ou le timing (L2/L3)"
+        }
+      ],
+      "n_claims": 8,
+      "n_supported": 6,
+      "groundedness": 0.75,
+      "hallucinated_numbers": true,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit correctement les chiffres des trois formations STAPS listées (places et taux d'accès Parcoursup 2025). Cependant, elle avance deux affirmations non sourcées : un taux national de ~3% pour les concours IFMK (hallucination numérique) et l'affirmation que ces licences préparent spécifiquement aux concours IFMK avec accès après L2/L3 (non explicite dans les sources)."
+    }
+  },
+  {
+    "id": "malform-003-v3",
+    "category": "mal_formulee",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Psychologie (IPC-Facultés Libres, Paris) : 50 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme 'nombre_places': 50"
+        },
+        {
+          "claim": "Licence - Psychologie (IPC-Facultés Libres, Paris) : taux d'accès de 12 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme 'taux_acces_parcoursup_2025': 12.0"
+        },
+        {
+          "claim": "PSYCHOLOGIE — NEUROPSYCHOLOGIE CLINIQUE ET INTÉGRATIVE (Uni. Picardie) : 20 admis sur 633 candidats",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme 'n_acceptes_total': 20 et 'n_candidats_pp': 633"
+        },
+        {
+          "claim": "PSYCHOLOGIE — NEUROPSYCHOLOGIE CLINIQUE ET INTÉGRATIVE (Uni. Picardie) : rang dernier appelé 43",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme 'rang_dernier_appele': 43"
+        },
+        {
+          "claim": "Les masters sont encore plus sélectifs (ex : 3,2 % d'admission pour S1)",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "S1 (NEUROPSYCHOLOGIE) est un master (bac+5) avec taux_admission=0.0315955766192733 soit ~3.16%, pas 3.2%. L'arrondi est acceptable mais l'affirmation 'les masters sont encore plus sélectifs' est une généralisation non supportée : S3 (licence) a 12%, S1 (master) a 3.16%, mais on ne peut pas conclure que TOUS les masters sont plus sélectifs sans données comparatives systématiques."
+        }
+      ],
+      "n_claims": 5,
+      "n_supported": 4,
+      "groundedness": 0.8,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit des chiffres sourcés pour les deux formations citées, mais l'affirmation générale 'les masters sont encore plus sélectifs' dépasse ce que les sources permettent de conclure (comparaison partielle, pas systématique). Un claim non supporté suffit pour 'answered_unsupported'."
+    }
+  },
+  {
+    "id": "metier-004-v3",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 0.85,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence Kinésithérapie en IFMK à l'Université Paris-Est Créteil : 65 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme 65 places"
+        },
+        {
+          "claim": "Licence Kinésithérapie en IFMK à l'Université Paris-Est Créteil : taux d'accès 9%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme taux_acces_parcoursup_2025 = 9.0"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kiné à l'Université Paris Cité : 60 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme 60 places"
+        },
+        {
+          "claim": "Licence STAPS Parcours Kiné à l'Université Paris Cité : taux d'accès 7%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme taux_acces_parcoursup_2025 = 7.0"
+        },
+        {
+          "claim": "Licence STAPS Parcours Accès Kiné à l'Université Toulouse III : 72 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme 72 places"
+        },
+        {
+          "claim": "Licence STAPS Parcours Accès Kiné à l'Université Toulouse III : taux d'accès 7%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme taux_acces_parcoursup_2025 = 7.0"
+        },
+        {
+          "claim": "Concours interne très sélectif (~3% d'accès national) pour IFMK",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "Aucune source ne mentionne un taux de 3% d'accès national aux IFMK. S1 parle de 9% pour Créteil uniquement (taux Parcoursup local, pas national)."
+        }
+      ],
+      "n_claims": 7,
+      "n_supported": 6,
+      "groundedness": 0.857,
+      "hallucinated_numbers": true,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question avec trois formations bien sourcées (places et taux d'accès Parcoursup 2025 vérifiés). Cependant, l'affirmation du '~3% d'accès national' aux IFMK n'est pas supportée par les sources fournies : c'est une hallucination numérique qui confond probablement le taux local Parcoursup (9%) avec un taux national hypothétique."
+    }
+  },
+  {
+    "id": "adv-002-v2",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent explicitement dans S1 : 'La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026'"
+        }
+      ],
+      "n_claims": 1,
+      "n_supported": 1,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse corrige directement l'erreur de la question (31 février n'existe pas) en fournissant la bonne date limite (12 mars 2026), qui est entièrement supportée par la source S1. Aucun hallucination numérique."
+    }
+  },
+  {
+    "id": "adv-002-v3",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent explicitement dans S1 : 'La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026'"
+        },
+        {
+          "claim": "Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœux principaux",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Confirmé dans S1 : 'Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœux principaux'"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse corrige correctement l'erreur de la question (31 février n'existe pas) et fournit la bonne date limite (12 mars 2026) avec une source fiable. Tous les claims factuels sont directement supportés par S1."
+    }
+  },
+  {
+    "id": "base-001",
+    "category": "baseline_inscope",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 4,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Un BUT est un diplôme bac+3",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Confirmé par S1, S2, S3, S4 : tous les BUT listés ont 'niveau': 'bac+3'"
+        },
+        {
+          "claim": "Un BUT dure 3 ans",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "Aucune source ne mentionne explicitement la durée en années. L'assistant reconnaît lui-même que 'la durée exacte n'est pas précisée dans mes sources'"
+        },
+        {
+          "claim": "Les BUT sont proposés par les IUT",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Confirmé par les sources : S1 mentionne 'I.U.T de Quimper', S2 'IUT Aix-Marseille', S3 'I.U.T. Nantes', S4 'I.U.T. de Créteil-Vitry'"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 2,
+      "groundedness": 0.67,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond correctement à la question sur le niveau (bac+3) et le lieu (IUT), mais reconnaît honnêtement que la durée de 3 ans n'est pas explicitement sourcée. L'assistant ne prétend pas avoir cette information dans ses sources, ce qui est une bonne pratique de transparence."
+    }
+  },
+  {
+    "id": "base-002-v1",
+    "category": "baseline_inscope",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Sciences et Ingénierie - Multimédia et technologie de l'information à EFREI PARIS est une formation bac+3",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme niveau bac+3"
+        },
+        {
+          "claim": "Cette formation a des débouchés en data scientist et data analyst",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S3 liste ces deux débouchés dans debouches"
+        },
+        {
+          "claim": "Cette formation propose des dispositifs de reconversion (VAE, alternance)",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S3 liste voies_acces incluant 'En contrat d'apprentissage' et 'Par expérience' (VAE)"
+        },
+        {
+          "claim": "École Pour l'Informatique et les nouvellesTECHnologies est en PACA",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S5 confirme region Provence-Alpes-Côte d'Azur"
+        },
+        {
+          "claim": "Cette école propose un cursus en apprentissage",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S5 indique statut 'CFA Apprentissage' et type_diplome 'Apprentissage'"
+        }
+      ],
+      "n_claims": 5,
+      "n_supported": 5,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse propose deux formations concrètes avec détails vérifiés dans les sources. Tous les claims factuels (niveaux, débouchés, voies d'accès, régions) sont directement supportés par S3 et S5. La réponse répond efficacement à la question de réorientation."
+    }
+  },
+  {
+    "id": "adv-001-v1",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "L'École Supérieure de Technologie Numérique de Roubaix (ESTNR) n'est pas présente dans les sources",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Disclaimer explicite : l'assistant déclare ne pas avoir cette formation dans ses sources"
+        },
+        {
+          "claim": "Une formation DN MADE - Graphisme - Spécialité : Supports connectés existe à l'E.S.AA.T. Roubaix",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présente dans S1 comme alternative"
+        },
+        {
+          "claim": "Le taux d'insertion du DN MADE - Graphisme n'est pas disponible",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 ne contient pas de champ 'taux_insertion' ou 'debouches' (debouches=[])"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement que l'ESTNR n'est pas dans ses sources, puis propose une alternative pertinente (même ville, même région, domaine proche). Tous les claims factuels sont sourcés. L'alternative est géographiquement et thématiquement proche (Roubaix, formation numérique/arts)."
+    }
+  },
+  {
+    "id": "adv-001-v2",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "77,42 % d'insertion à 6 mois pour le master AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — PRODUCTIONS à l'INSA Hauts-de-France",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S4 : taux_emploi_6m = 0.7742 = 77,42%"
+        },
+        {
+          "claim": "79,57 % d'insertion à 12 mois pour le même master",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S4 : taux_emploi_12m = 0.7957 = 79,57%"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement l'absence de l'ESTNR dans ses sources et propose une alternative (master à l'INSA Hauts-de-France). Les deux chiffres avancés sont correctement sourcés. Cependant, l'alternative est faiblement pertinente : il s'agit d'un master (bac+5) alors que l'ESTNR semble être une école technologique (probablement bac+2/3), et les domaines (audiovisuel/jeux vs technologie numérique générale) ne correspondent que partiellement."
+    }
+  },
+  {
+    "id": "adv-004",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Il n'existe pas de formation BUT TC à l'IUT d'Annecy",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Vérification : aucune source ne mentionne BUT TC à Annecy. Les formations Annecy listées sont : Informatique (S1), Carrières sociales (S6), Génie mécanique (S7), Réseaux et télécommunications (S8), Mesures physiques (S10), Génie électrique (S11), Techniques de commercialisation (S12). Absence confirmée."
+        },
+        {
+          "claim": "BUT - Informatique à l'I.U.T. Annecy a un taux d'accès de 40 % en 2025",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S1 : taux_acces_parcoursup_2025 = 40.0"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement l'absence du BUT TC à Annecy et propose une alternative (BUT Informatique au même établissement) avec chiffre sourcé. Cependant, l'alternative est faiblement pertinente : elle répond à une formation différente (Informatique ≠ Techniques de commercialisation), bien qu'au même lieu."
+    }
+  },
+  {
+    "id": "adv-004-v2",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "L'IUT d'Annecy ne propose pas de formation BUT TC en 2025",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Aucune source ne mentionne un BUT TC à Annecy. Les sources S1, S5-S7, S10-S12 listent les BUT d'Annecy : Informatique, Carrières sociales, Génie mécanique, Réseaux et télécommunications, Mesures physiques, Techniques de commercialisation, Génie électrique. Pas de TC."
+        },
+        {
+          "claim": "L'IUT Annecy propose un BUT Carrières sociales parcours coordination et gestion des établissements et services sanitaires et sociaux",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Source S5 confirme cette formation à l'IUT Annecy."
+        },
+        {
+          "claim": "Le taux d'accès du BUT Carrières sociales à l'IUT Annecy est de 68 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S5 : taux_acces_parcoursup_2025 = 68.0"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement l'absence du BUT TC à Annecy et propose une alternative (BUT Carrières sociales du même établissement) avec tous les chiffres sourcés. Cependant, l'alternative est faiblement pertinente : c'est une formation différente (pas du tout TC), bien que du même IUT."
+    }
+  },
+  {
+    "id": "adv-004-v3",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "L'IUT d'Annecy propose un BUT Informatique",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Source S1 confirme l'existence du BUT Informatique à l'IUT d'Annecy"
+        },
+        {
+          "claim": "Le taux d'accès du BUT Informatique à l'IUT d'Annecy est de 40%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S1 : taux_acces_parcoursup_2025 = 40.0"
+        },
+        {
+          "claim": "L'IUT d'Annecy n'a pas de formation nommée BUT TC",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Aucune source ne mentionne un BUT TC à l'IUT d'Annecy. Les formations Annecy listées sont : Informatique (S1), Carrières sociales (S5), Génie mécanique (S6), Réseaux et télécommunications (S7), Mesures physiques (S10), Techniques de commercialisation (S11)"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement que le BUT TC n'existe pas à l'IUT d'Annecy et propose une alternative (BUT Informatique) avec chiffre sourcé. Cependant, l'alternative est faiblement pertinente : elle ne répond pas à la demande spécifique (formation différente, même si même établissement et même région)."
+    }
+  },
+  {
+    "id": "adv-005",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 0,
+    "honesty_selfreported": null,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant refuse explicitement de fournir un classement (absent de ses sources), divulgue clairement cette absence, et propose des alternatives pertinentes (ONISEP, CIO, palmarès non-officiels) avec des critères concrets accessibles. Aucun claim factuel avancé."
+    }
+  },
+  {
+    "id": "adv-005-v1",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 0,
+    "honesty_selfreported": null,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant refuse explicitement de fournir un classement (absence de palmarès officiel dans ses sources), divulgue clairement cette limitation, et propose une alternative pertinente : lister les formations avec critères concrets (sélectivité, places, taux d'accès). Aucun claim factuel n'est avancé, donc aucun risque de hallucination. La réponse est fidèle et honnête."
+    }
+  },
+  {
+    "id": "adv-005-v3",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 0,
+    "honesty_selfreported": null,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant refuse explicitement de fournir un classement (absent de ses sources), divulgue clairement cette absence, et propose des alternatives pertinentes (ONISEP, CIO, L'Étudiant) avec des critères concrets accessibles. Aucun claim factuel avancé."
+    }
+  },
+  {
+    "id": "fact-002",
+    "category": "factuelle_precise",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "metric_substitution",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "BUT Génie électrique et informatique industrielle à l'IUT de Cachan a un taux d'insertion à 6 mois de 47,37%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 contient taux_emploi_6m: 0.4737 = 47,37%"
+        },
+        {
+          "claim": "BUT Génie électrique et informatique industrielle à l'IUT d'Evry a un taux d'insertion à 6 mois de 47,37%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 contient taux_emploi_6m: 0.4737 = 47,37%"
+        },
+        {
+          "claim": "Ces taux sont identiques pour les deux établissements franciliens",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Les deux sources donnent effectivement 0.4737"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": true,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit des données d'insertion professionnelle pour des IUT en Île-de-France (Cachan et Evry), mais la question demande spécifiquement 'à Paris'. Aucun établissement parisien n'est présenté, et l'assistant ne divulgue pas explicitement que le BUT Génie électrique et informatique industrielle n'existe pas à Paris même (ou que les données ne sont pas disponibles pour Paris). Les chiffres fournis sont corrects mais correspondent à une substitution géographique non déclarée."
+    }
+  },
+  {
+    "id": "fact-002-v1",
+    "category": "factuelle_precise",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "metric_substitution",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "BUT Génie électrique et informatique industrielle à l'IUT de Cachan Université Paris-Saclay affiche un taux d'emploi de 47,37 % à 6 mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 contient taux_emploi_6m: 0.4737 (47,37%)"
+        },
+        {
+          "claim": "BUT Génie électrique et informatique industrielle à l'I.U.T de Cergy-Pontoise a un taux d'emploi de 47,37 % à 6 mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 contient taux_emploi_6m: 0.4737 (47,37%)"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": true,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit des données sur deux formations en Île-de-France (Cachan et Cergy) au lieu de Paris spécifiquement. Elle ne divulgue pas explicitement que la question demandait Paris et que les données fournies sont des agrégats régionaux (granularité 'discipline_région' selon les sources). Les chiffres sont corrects mais correspondent à une substitution géographique non déclarée : les données sont au niveau région Île-de-France, pas au niveau établissement Paris."
+    }
+  },
+  {
+    "id": "fact-002-v2",
+    "category": "factuelle_precise",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "metric_substitution",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "BUT Génie électrique et informatique industrielle à l'IUT de Cachan Université Paris-Saclay a un taux d'insertion à 6 mois de 47,37%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 contient taux_emploi_6m: 0.4737 (47,37%) pour cette formation"
+        },
+        {
+          "claim": "BUT Génie électrique et informatique industrielle à l'I.U.T de Cergy-Pontoise - Site de Neuville a un taux d'insertion à 6 mois de 47,37%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 contient taux_emploi_6m: 0.4737 (47,37%) pour cette formation"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": true,
+      "alternative_relevance": null,
+      "notes": "L'assistant fournit des données d'insertion professionnelle pour deux formations en Île-de-France (Cachan et Cergy-Pontoise) au lieu de répondre spécifiquement à la demande sur Paris. Les chiffres sont sourcés mais correspondent à une granularité régionale (discipline_region) plutôt qu'à un établissement spécifique à Paris. Aucun disclaimer n'indique que la cible 'Paris' n'est pas disponible : l'assistant présente ces alternatives comme réponse directe sans signaler la substitution."
+    }
+  },
+  {
+    "id": "fact-002-v3",
+    "category": "factuelle_precise",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "metric_substitution",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "BUT Génie électrique et informatique industrielle à l'IUT de Cachan affiche un taux d'emploi de 47,37 % à 6 mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 contient taux_emploi_6m: 0.4737 (47,37%)"
+        },
+        {
+          "claim": "À Cergy, le taux est 47,37 % à 6 mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 contient taux_emploi_6m: 0.4737 (47,37%)"
+        },
+        {
+          "claim": "À Villetaneuse, le taux est 47,37 % à 6 mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 contient taux_emploi_6m: 0.4737 (47,37%)"
+        },
+        {
+          "claim": "Ces données couvrent les BUT de la région parisienne",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1, S2, S4 sont tous en Île-de-France"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": true,
+      "alternative_relevance": null,
+      "notes": "L'assistant fournit des données d'insertion professionnelle régionales (discipline_region) au lieu des données spécifiques par établissement demandées. La question porte sur 'Paris' mais l'assistant cite Cachan (Val-de-Marne), Cergy (Val-d'Oise) et Villetaneuse (Seine-Saint-Denis) sans clarifier que les taux d'emploi 47,37% proviennent d'une agrégation régionale (cohorte 2024, 491 sortants) et non de chaque établissement individuellement. C'est une substitution de métrique (données régionales pour données par établissement) présentée sans disclaimer explicite."
+    }
+  },
+  {
+    "id": "adv-001",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "honest_refusal",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "L'assistant refuse correctement de répondre en déclarant explicitement l'absence de la formation ESTNR dans ses sources. Aucun claim factuel n'est avancé ; les suggestions (Parcoursup, ONISEP, CIO) sont des conseils méthodologiques, non des affirmations sur le monde."
+    }
+  },
+  {
+    "id": "adv-001-v3",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "honest_refusal",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "L'assistant refuse proprement de répondre en déclarant l'absence de la formation ESTNR dans ses sources, sans avancer aucun chiffre ou affirmation factuelle. Aucun claim à vérifier."
+    }
+  },
+  {
+    "id": "adv-004-v1",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 1,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "honest_refusal",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "L'assistant refuse proprement de répondre en reconnaissant l'absence d'information pertinente dans ses sources. Aucun chiffre ou affirmation factuelle n'est avancé. Les suggestions (Parcoursup, ONISEP, CIO) sont des méta-phrases d'orientation, non des claims à vérifier."
+    }
+  },
+  {
+    "id": "adv-005-v2",
+    "category": "adversarial",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 0,
+    "honesty_selfreported": null,
+    "judgment": {
+      "outcome": "honest_refusal",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "L'assistant refuse proprement de fournir un classement, explique explicitement que cette information n'existe pas dans ses sources, et propose des alternatives (ONISEP, L'Étudiant, CIO). Aucun claim factuel sur le monde n'est avancé."
+    }
+  }
+]
