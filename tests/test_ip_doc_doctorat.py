@@ -10,11 +10,52 @@ from src.collect.ip_doc_doctorat import (
     IpDocFetchError,
     _safe_int,
     _safe_ratio,
+    build_doctorat_insertion_pro,
     disca_to_domaine,
     fetch_ip_doc_records,
     normalize_all,
     normalize_record,
 )
+
+
+# --- C2b (order 2026-06-11) : salaire doctorat -> insertion_pro ---
+
+
+def test_build_doctorat_insertion_pro_exposes_net_salary():
+    fiche = {
+        "salaire_net_median_mensuel": 2208,
+        "salaire_brut_median_annuel": 34000,
+        "situation": "36m",
+        "taux_insertion": 0.93,
+        "annee": "2022",
+    }
+    ip = build_doctorat_insertion_pro(fiche)
+    assert ip is not None
+    assert ip["salaire_median_embauche"] == 2208       # net mensuel, valeur source
+    assert ip["salaire_net"] is True                   # étiqueté net (RÈGLE 6)
+    assert ip["source"] == "ip_doc_doctorat"
+    assert ip["salaire_horizon"] == "36m"
+    assert ip["cohorte"] == "2022"                     # année tracée (citation)
+
+
+def test_build_doctorat_insertion_pro_reads_annee_cohorte():
+    """Le corpus servi porte `annee_cohorte` (pas `annee`) — l'année de cohorte
+    DOIT être tracée pour la citation (cf détresse-006)."""
+    fiche = {"salaire_net_median_mensuel": 2125, "annee_cohorte": 2016, "situation": "12 mois après le diplôme"}
+    ip = build_doctorat_insertion_pro(fiche)
+    assert ip["cohorte"] == 2016
+
+
+def test_build_doctorat_insertion_pro_none_without_salary():
+    assert build_doctorat_insertion_pro({"situation": "12m", "taux_insertion": 0.9}) is None
+
+
+def test_normalize_record_attaches_insertion_pro_with_salary():
+    rec = {"disca": "Mathématiques", "annee": "2022", "situation": "36m",
+           "sal_net_med_mensuel": "2208", "taux_insertion": "0.93"}
+    fiche = normalize_record(rec)
+    assert isinstance(fiche.get("insertion_pro"), dict)
+    assert fiche["insertion_pro"]["salaire_median_embauche"] == 2208
 
 
 # --- Mapping disca → domaine ---

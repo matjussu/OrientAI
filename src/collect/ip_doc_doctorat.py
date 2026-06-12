@@ -155,6 +155,34 @@ def _safe_ratio(val: Any) -> Optional[float]:
 # --- Normalize ---
 
 
+def build_doctorat_insertion_pro(fiche: dict[str, Any]) -> dict[str, Any] | None:
+    """Construit le bloc `insertion_pro` d'une fiche doctorat depuis ses champs
+    salaire/insertion top-level.
+
+    Fix order 2026-06-11 (C2b) : les fiches ip_doc_doctorat portent un salaire net
+    médian mensuel RÉEL (source enquête IP Doc) au top-level mais `insertion_pro`
+    était absent -> ni `_format_insertion_pro` ni `FactChiffres.salaire_median_embauche`
+    (fact_card lit `insertion_pro.salaire_median_embauche`) ne le surfaçaient.
+    On expose le salaire net étiqueté source (RÈGLE 6), zéro agrégation maison.
+
+    Retourne None si pas de salaire net médian exploitable.
+    """
+    sal = fiche.get("salaire_net_median_mensuel")
+    if sal is None:
+        return None
+    return {
+        "source": "ip_doc_doctorat",
+        "salaire_median_embauche": sal,                  # net mensuel, valeur source
+        "salaire_net": True,
+        "salaire_horizon": fiche.get("situation"),       # "12m" / "36m" après le doctorat
+        "salaire_brut_median_annuel": fiche.get("salaire_brut_median_annuel"),
+        "taux_insertion": fiche.get("taux_insertion"),
+        # Année de cohorte d'enquête, tracée pour citation (cf détresse-006).
+        # Le corpus servi porte `annee_cohorte` ; le normalize_record produit `annee`.
+        "cohorte": fiche.get("annee_cohorte") or fiche.get("annee"),
+    }
+
+
 def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
     """Normalise un record IP Doc en fiche OrientIA.
 
@@ -168,7 +196,7 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         salaire_net_q1 / q3 / median_mensuel, salaire_brut_median_annuel.
     """
     disca = record.get("disca")
-    return {
+    fiche = {
         "source": "ip_doc_doctorat",
         "annee": record.get("annee"),
         "situation": record.get("situation"),
@@ -197,6 +225,10 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         "salaire_net_q3_mensuel": _safe_int(record.get("sal_net_q3_mensuel")),
         "salaire_brut_median_annuel": _safe_int(record.get("sal_brut_med_annuel")),
     }
+    ip = build_doctorat_insertion_pro(fiche)
+    if ip is not None:
+        fiche["insertion_pro"] = ip
+    return fiche
 
 
 def normalize_all(raw: list[dict[str, Any]]) -> list[dict[str, Any]]:
