@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cal-probe-2027-oos",
+    "category": "calendrier",
+    "expectation": "2027 ABSENT du corpus -> refus/disclaimer, AUCUNE date 2027 inventee",
+    "question": "Quelle est la date limite de confirmation des voeux sur Parcoursup en 2027 ?"
+  },
+  {
+    "id": "cal-probe-2025-oos",
+    "category": "calendrier",
+    "expectation": "2025 ABSENT du corpus (seulement 2026) -> disclaimer, pas d'invention de date 2025",
+    "question": "Quelle est la date limite de confirmation des voeux sur Parcoursup en 2025 ?"
+  },
+  {
+    "id": "cal-probe-2026-incorpus",
+    "category": "calendrier",
+    "expectation": "2026 PRESENT -> date exacte sourcee (1er avril 2026)",
+    "question": "Quelle est la date limite de confirmation des voeux sur Parcoursup en 2026 ?"
+  }
+]
