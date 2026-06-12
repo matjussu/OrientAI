@@ -69,6 +69,24 @@ réponse + sources
 
 ---
 
+## Flags env-var (corpus / texte embeddé)
+
+Lus au niveau process (env), pas via `make_production_pipeline()`. Affectent la
+construction du texte embeddé (`src/rag/embeddings.py:fiche_to_text`) — donc l'index :
+un changement ne prend effet qu'au re-embed.
+
+| Flag env | Défaut | Rôle | Statut |
+|---|---|---|---|
+| `ORIENTIA_DENSE_SIGLE` | non set (= OFF) | Injecte le sigle/acronyme (J2, `sigle_injection_text`) dans le texte EMBEDDÉ dense des fiches BUT-specialty. | **PARKÉ** — gate J2 partiellement FAIL : 6 gains (BUT obscurs Montluçon/Vichy/Morlaix...) MAIS déplace **LAS Cergy (4→5)** et surtout **MIAGE Paris (4→hors top-10, cas démo)**. Arbitrage zéro-régression Matteo, re-confirmé par le check du 2026-06-12 (re-embed 0825). **Revival** prévue au chantier ranking unifié post-VivaTech (mesurer le net après ré-équilibrage du reranker). |
+
+Note importante : ce flag NE gate PAS le sigle BM25 (`src/rag/bm25_index`), qui reste
+actif et faisait déjà partie de la baseline figée (dense OFF + BM25 ON = état du gel
+10/06). Pour réactiver le dense en A/B : `ORIENTIA_DENSE_SIGLE=1` AU LANCEMENT du
+re-embed (le flag est lu à l'import du module, pas modifiable après — vérifier l'env
+du process détaché).
+
+---
+
 ## Couches actives par défaut prod (résumé)
 
 | Couche | État | Coût/question | Latency contrib |
