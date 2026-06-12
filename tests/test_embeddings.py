@@ -2,6 +2,22 @@ from unittest.mock import MagicMock, patch
 from src.rag.embeddings import embed_texts, fiche_to_text, _salary_fragment
 
 
+def test_dense_sigle_injection_parked_by_default():
+    """J2 sigle dense PARKÉ (ordre 0825) : par défaut (ORIENTIA_DENSE_SIGLE non set),
+    le sigle n'est PAS injecté dans le texte embeddé — protège la baseline d'une
+    régression connue (déplace MIAGE Paris hors top-10). La logique sigle reste
+    intacte (réactivable post-VivaTech)."""
+    from src.rag.sigle_expand import sigle_injection_text
+    from src.rag import embeddings as emb
+    fiche = {"nom": "BUT Génie électrique et informatique industrielle",
+             "etablissement": "IUT d'Allier", "ville": "Montluçon"}
+    # logique sigle intacte : un sigle EST détecté sur cette fiche
+    assert sigle_injection_text(fiche), "fixture invalide : aucun sigle détecté"
+    # mais le flag dense est OFF par défaut -> pas d'injection dans l'embed
+    assert emb._DENSE_SIGLE_INJECTION is False, "ORIENTIA_DENSE_SIGLE ne doit pas être set en CI/dev"
+    assert "Sigle :" not in fiche_to_text(fiche)
+
+
 def test_salary_fragment_includes_quartile_range_when_present():
     """Phase 1 (order 0825) : la fourchette Q1-Q3 doit apparaître dans le fragment
     salaire pour devenir retrievable via l'embedding."""

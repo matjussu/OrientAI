@@ -1,9 +1,21 @@
+import os
+
 from mistralai.client import Mistral
 
 from src.rag.sigle_expand import sigle_injection_text
 
 
 EMBED_MODEL = "mistral-embed"
+
+# Injection sigle DENSE (J2, commit 5d4b175) dans le texte EMBEDDÉ : feature dont le
+# gate J2 a partiellement FAIL (6 gains BUT obscurs MAIS déplace LAS Cergy et surtout
+# MIAGE Paris hors du top-10 — cas démo), PARKÉE par arbitrage zéro-régression Matteo
+# et re-confirmée par le check du 2026-06-12 (re-embed 0825). Neutralisée PAR DÉFAUT.
+# Réactivable via ORIENTIA_DENSE_SIGLE=1, prévue pour revival au chantier ranking
+# unifié post-VivaTech. Le sigle BM25 (src/rag/bm25_index) n'est PAS gaté par ce flag :
+# il était déjà actif dans la baseline figée (dense OFF + BM25 ON = état du gel).
+# cf VERDICT re-gel 0825 + PIPELINE_v4_1_FLAGS.md.
+_DENSE_SIGLE_INJECTION = os.environ.get("ORIENTIA_DENSE_SIGLE") == "1"
 
 
 def _safe_pct(val, arrondi: bool = True) -> str | None:
@@ -479,8 +491,9 @@ def fiche_to_text(fiche: dict) -> str:
             embed_text = f"{' | '.join(prefix_parts)} | {text_field[:1500]}"
             # J2 enrichissement — injection sigle (additif) sur le chemin annexe
             # (fiches BUT-specialty domain!=none) : la fiche forme-longue reçoit
-            # son acronyme pour que dense matche l'acronyme nu.
-            inj = sigle_injection_text(fiche)
+            # son acronyme pour que dense matche l'acronyme nu. Gaté (parké) : cf
+            # _DENSE_SIGLE_INJECTION.
+            inj = sigle_injection_text(fiche) if _DENSE_SIGLE_INJECTION else ""
             return f"{embed_text} | {inj}" if inj else embed_text
 
     # Comportement v4 inchangé pour fiches Parcoursup (domain absent)
@@ -560,7 +573,8 @@ def fiche_to_text(fiche: dict) -> str:
         parts.append(metier_tags)
 
     # J2 enrichissement — injection sigle (additif) sur le chemin non-annexe.
-    inj = sigle_injection_text(fiche)
+    # Gaté (parké par défaut) : cf _DENSE_SIGLE_INJECTION.
+    inj = sigle_injection_text(fiche) if _DENSE_SIGLE_INJECTION else ""
     if inj:
         parts.append(inj)
 
