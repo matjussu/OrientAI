@@ -1,0 +1,2498 @@
+{
+  "n_total": 497,
+  "n_modified_fiches": 8106,
+  "a_set_changed": 380,
+  "b_set_same_but_modified": 5,
+  "c_portable": 112,
+  "c_dont_no_retrieval_shortcut": 91,
+  "n_portables": 112,
+  "n_regen": 385,
+  "pct_regen": 77.5,
+  "detail": [
+    {
+      "id": "fact-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-005",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-006",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "fact-007",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-008",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-009",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-010",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-011",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-012",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-013",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-014",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-015",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-016",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-017",
+      "cat": "b",
+      "reason": "4_modif_in_set"
+    },
+    {
+      "id": "fact-018",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-019",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-020",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-021",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "fact-022",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-023",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-024",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-025",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-001",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-002",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-003",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-004",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-005",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-006",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-007",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-008",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-009",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-010",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-011",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-012",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "detresse-expl-001",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-expl-002",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-expl-003",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-expl-004",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-expl-005",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-expl-006",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-expl-007",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-expl-008",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-impl-001",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-impl-002",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-impl-003",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-impl-004",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-impl-005",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-impl-006",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-impl-007",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-prec-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "detresse-prec-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "detresse-prec-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "detresse-prec-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "detresse-prec-005",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "detresse-prec-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "detresse-prec-007",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "detresse-prec-008",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-001",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-002",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-003",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-004",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-005",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-007",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-008",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-005",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-006",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "geo-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-005",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-007",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-008",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-009",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-010",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-011",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-012",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-013",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-005",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-007",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-008",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-009",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-010",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-011",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-012",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-013",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-014",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-015",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-016",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-017",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-018",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-019",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-020",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-021",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-022",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-023",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-024",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-025",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-026",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-027",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-028",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-029",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-030",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-005",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-007",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-005",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-007",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-002",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-003",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-004",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-005",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "bias-001",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "bias-002",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "bias-003",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "bias-004",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-005",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-006",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "bias-007",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-008",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-009",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "bias-010",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-011",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "bias-012",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-013",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-014",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-015",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-016",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-017",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "bias-018",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "fact-001-v1",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "fact-002-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-003-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-004-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-005-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-006-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "fact-007-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-008-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-009-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-010-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-011-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-012-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-013-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-014-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-015-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-016-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-017-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-018-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-019-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-020-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-021-v1",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "fact-022-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-023-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-024-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-025-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-001-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-002-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-003-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-004-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-005-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-006-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-007-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-008-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-009-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-010-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-011-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-012-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-001-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-002-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-003-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-004-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-005-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-006-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-007-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-008-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-001-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-002-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-003-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-004-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-005-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-006-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "geo-001-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-002-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-003-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-004-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-005-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-006-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-007-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-008-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-009-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-010-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-011-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-012-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-013-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-001-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-002-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-003-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-004-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-005-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-006-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-007-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-008-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-009-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-010-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-011-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-012-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-013-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-014-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-015-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-016-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-017-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-018-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-019-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-020-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-021-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-022-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-023-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-024-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-025-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-026-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-027-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-028-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-029-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-030-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-001-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-002-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-003-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-004-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-005-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-006-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-007-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-001-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-002-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-003-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-004-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-005-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-006-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-007-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-001-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-002-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-003-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-004-v1",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-005-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-006-v1",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "fact-001-v2",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "fact-002-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-003-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-004-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-005-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-006-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "fact-007-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-008-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-009-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-010-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-011-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-012-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-013-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-014-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-015-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-016-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-017-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-018-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-019-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-020-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-021-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-022-v2",
+      "cat": "b",
+      "reason": "5_modif_in_set"
+    },
+    {
+      "id": "fact-023-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-024-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-025-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-001-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-002-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-003-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-004-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-005-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-006-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-007-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-008-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-009-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-010-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-011-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-012-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-001-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-002-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-003-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-004-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-005-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-006-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-007-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-008-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-001-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-002-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-003-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-004-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "malform-005-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-006-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "geo-001-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-002-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-003-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-004-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-005-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-006-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-007-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-008-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-009-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-010-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-011-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-012-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-013-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-001-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-002-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-003-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-004-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-005-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-006-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-007-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-008-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-009-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-010-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-011-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-012-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-013-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-014-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-015-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-016-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-017-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-018-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-019-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-020-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-021-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-022-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-023-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-024-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-025-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-026-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-027-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-028-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-029-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-030-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-001-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-002-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-003-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-004-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-005-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-006-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-007-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-001-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-002-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-003-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-004-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-005-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-006-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-007-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-001-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-002-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-003-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-004-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-005-v2",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-006-v2",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-001-v3",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "fact-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-003-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-004-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-005-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-006-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "fact-007-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-008-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-009-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-010-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-011-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-012-v3",
+      "cat": "b",
+      "reason": "3_modif_in_set"
+    },
+    {
+      "id": "fact-013-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-014-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-015-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-016-v3",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "fact-017-v3",
+      "cat": "b",
+      "reason": "5_modif_in_set"
+    },
+    {
+      "id": "fact-018-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-019-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-020-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-021-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-022-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-023-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-024-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "fact-025-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-001-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-002-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-003-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-004-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-005-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-006-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-007-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-008-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "hp-009-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-010-v3",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "hp-011-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "hp-012-v3",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    },
+    {
+      "id": "comp-001-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-003-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-004-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-005-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-006-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "comp-007-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "comp-008-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-001-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-003-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-004-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "malform-005-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "malform-006-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "geo-001-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-003-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-004-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-005-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-006-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "geo-007-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-008-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-009-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-010-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-011-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-012-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "geo-013-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-001-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-003-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-004-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-005-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-006-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-007-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-008-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-009-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-010-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-011-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-012-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-013-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-014-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-015-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-016-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-017-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-018-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-019-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-020-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-021-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-022-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-023-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-024-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-025-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-026-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-027-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-028-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-029-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "metier-030-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-001-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-003-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-004-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-005-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-006-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "reconv-007-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-001-v3",
+      "cat": "b",
+      "reason": "1_modif_in_set"
+    },
+    {
+      "id": "base-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-003-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-004-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-005-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-006-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "base-007-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-001-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-002-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-003-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-004-v3",
+      "cat": "a",
+      "reason": "set_changed"
+    },
+    {
+      "id": "adv-005-v3",
+      "cat": "c",
+      "reason": "no_retrieval_shortcut"
+    },
+    {
+      "id": "adv-006-v3",
+      "cat": "c",
+      "reason": "identical_unmodified"
+    }
+  ]
+}
