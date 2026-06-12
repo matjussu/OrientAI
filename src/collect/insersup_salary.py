@@ -36,6 +36,12 @@ COL_GENRE, COL_NAT, COL_REGIME, COL_OBT = (
 COL_PROMO = "Promotion"
 COL_SAL12 = "12-Salaire mensuel net médian en équivalent temps plein - 12 mois après le diplôme"
 COL_SAL30 = "30-Salaire mensuel net médian en équivalent temps plein - 30 mois après le diplôme"
+# Quartiles (fourchette Q1-Q3), order 0825 Phase 1. On lit ceux de l'horizon
+# de la médiane retenue (12m prioritaire, sinon 30m) — jamais de mélange d'horizons.
+COL_Q1_12 = "12-1er quartile du salaire mensuel net en équivalent temps plein - 12 mois après le diplôme"
+COL_Q3_12 = "12-3ème quartile du salaire mensuel net en équivalent temps plein - 12 mois après le diplôme"
+COL_Q1_30 = "30-1er quartile du salaire mensuel net en équivalent temps plein - 30 mois après le diplôme"
+COL_Q3_30 = "30-3ème quartile du salaire mensuel net en équivalent temps plein - 30 mois après le diplôme"
 
 INSERSUP_DATASET_URL = (
     "https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-insersup/"
@@ -78,6 +84,13 @@ def _safe_int(val: Any) -> int | None:
         return int(round(f))
     except (ValueError, TypeError):
         return None
+
+
+def _csv_int(row: dict, col: str) -> int | None:
+    """Lit une colonne salaire CSV : None si token nul (ns/nd/.../vide), sinon int."""
+    if (row.get(col) or "").strip().lower() in _NULL_TOKENS:
+        return None
+    return _safe_int(row.get(col))
 
 
 def _type_bucket(type_label: str) -> str | None:
@@ -167,8 +180,8 @@ def build_salary_index(csv_path: str | Path) -> dict[str, Any]:
             if (row.get(COL_GENRE) != "ensemble" or row.get(COL_NAT) != "ensemble"
                     or row.get(COL_REGIME) != "ensemble" or row.get(COL_OBT) != "ensemble"):
                 continue
-            sal12 = _safe_int(row.get(COL_SAL12)) if (row.get(COL_SAL12) or "").strip().lower() not in _NULL_TOKENS else None
-            sal30 = _safe_int(row.get(COL_SAL30)) if (row.get(COL_SAL30) or "").strip().lower() not in _NULL_TOKENS else None
+            sal12 = _csv_int(row, COL_SAL12)
+            sal30 = _csv_int(row, COL_SAL30)
             salaire = sal12 if sal12 is not None else sal30
             if salaire is None:
                 continue
@@ -182,8 +195,14 @@ def build_salary_index(csv_path: str | Path) -> dict[str, Any]:
             etab = _norm(row.get(COL_ETAB))
             uai = (row.get(COL_UAI) or "").strip().upper()
             promo = _promo_key(row.get(COL_PROMO))
+            # Quartiles du MÊME horizon que la médiane retenue (anti-mélange).
+            if sal12 is not None:
+                horizon, q1, q3 = "12m", _csv_int(row, COL_Q1_12), _csv_int(row, COL_Q3_12)
+            else:
+                horizon, q1, q3 = "30m", _csv_int(row, COL_Q1_30), _csv_int(row, COL_Q3_30)
             rec = {
-                "salaire": salaire, "salaire_30m": sal30, "horizon": "12m" if sal12 is not None else "30m",
+                "salaire": salaire, "salaire_30m": sal30, "horizon": horizon,
+                "salaire_q1": q1, "salaire_q3": q3,
                 "cohorte": str(row.get(COL_PROMO) or "").strip() or None,
                 "_promo": promo, "etab": row.get(COL_ETAB), "type": row.get(COL_TYPE),
                 "discipline": row.get(COL_DISC), "libelle": row.get(COL_LIBELLE), "uai": uai,
@@ -243,19 +262,51 @@ def match_fiche_salary(fiche: dict, index: dict[str, Any]) -> tuple[dict | None,
     return None, "none"
 
 
+def _set_quartiles(ip: dict, rec: dict) -> bool:
+    """Pose la fourchette Q1/Q3 dans insertion_pro si présente dans rec.
+    On n'écrit la clé que si présente (pas de None bruyant). Retourne True si
+    au moins un quartile a été posé."""
+    posed = False
+    if rec.get("salaire_q1") is not None:
+        ip["salaire_q1"] = rec["salaire_q1"]
+        posed = True
+    if rec.get("salaire_q3") is not None:
+        ip["salaire_q3"] = rec["salaire_q3"]
+        posed = True
+    return posed
+
+
 def attach_insersup_salaries(fiches: list[dict], index: dict[str, Any]) -> dict[str, Any]:
-    """Enrichit `insertion_pro.salaire_median_embauche` (net source) sur les
-    fiches matchées. Idempotent (n'écrase pas un salaire déjà présent). Retourne
-    des métriques de jointure (pour audit)."""
+    """Enrichit `insertion_pro` (salaire net médian + fourchette Q1/Q3) sur les
+    fiches matchées. Idempotent.
+
+    Deux modes par fiche :
+      - médiane ABSENTE -> enrichissement complet (médiane + libellés + quartiles).
+      - médiane DÉJÀ présente ET issue d'InserSup mais quartiles manquants ->
+        BACKFILL des quartiles seuls (order 0825 : le corpus servi porte déjà la
+        médiane C2b ; on complète la fourchette sans re-toucher la médiane). On ne
+        backfill JAMAIS sur une médiane d'une AUTRE source (cohérence
+        médiane/fourchette même source/join, anti-confabulation).
+      - sinon -> skip (ne clobber pas une médiane existante).
+    Retourne des métriques de jointure (pour audit)."""
     by_method = collections.Counter()
     by_source = collections.Counter()
+    n_quartiles_backfilled = 0
     examples: list[dict] = []
     for f in fiches:
         if not isinstance(f, dict):
             continue
         ip = f.get("insertion_pro")
-        if isinstance(ip, dict) and ip.get("salaire_median_embauche") is not None:
-            continue  # déjà un salaire, on ne clobber pas
+        existing = ip.get("salaire_median_embauche") if isinstance(ip, dict) else None
+        if existing is not None:
+            # Médiane déjà là : on complète UNIQUEMENT les quartiles, et seulement
+            # si la médiane vient d'InserSup (même source que les quartiles).
+            if (ip.get("salaire_source") == "insersup"
+                    and ip.get("salaire_q1") is None and ip.get("salaire_q3") is None):
+                rec, _ = match_fiche_salary(f, index)
+                if rec and _set_quartiles(ip, rec):
+                    n_quartiles_backfilled += 1
+            continue  # ne clobber pas la médiane existante
         rec, method = match_fiche_salary(f, index)
         if not rec:
             continue
@@ -266,6 +317,8 @@ def attach_insersup_salaries(fiches: list[dict], index: dict[str, Any]) -> dict[
         f["insertion_pro"]["salaire_horizon"] = rec["horizon"]
         f["insertion_pro"]["salaire_source"] = "insersup"
         f["insertion_pro"]["salaire_cohorte"] = rec["cohorte"]
+        # Fourchette Q1/Q3 (même horizon que la médiane), order 0825.
+        _set_quartiles(f["insertion_pro"], rec)
         f["insertion_pro"].setdefault("source", "insersup_mesr")
         f["insertion_pro"].setdefault("url_source", INSERSUP_DATASET_URL)
         by_method[method] += 1
@@ -280,6 +333,7 @@ def attach_insersup_salaries(fiches: list[dict], index: dict[str, Any]) -> dict[
             })
     return {
         "n_enriched": sum(by_method.values()),
+        "n_quartiles_backfilled": n_quartiles_backfilled,
         "by_method": dict(by_method),
         "by_source": dict(by_source),
         "examples": examples,

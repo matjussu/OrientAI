@@ -1,5 +1,37 @@
 from unittest.mock import MagicMock, patch
-from src.rag.embeddings import embed_texts, fiche_to_text
+from src.rag.embeddings import embed_texts, fiche_to_text, _salary_fragment
+
+
+def test_salary_fragment_includes_quartile_range_when_present():
+    """Phase 1 (order 0825) : la fourchette Q1-Q3 doit apparaître dans le fragment
+    salaire pour devenir retrievable via l'embedding."""
+    sf = _salary_fragment({
+        "salaire_median_embauche": 1850, "salaire_q1": 1600, "salaire_q3": 2200,
+        "salaire_net": True, "salaire_horizon": "12m",
+    })
+    assert "1850" in sf and "net" in sf
+    assert "1600" in sf and "2200" in sf  # fourchette présente
+
+
+def test_salary_fragment_no_range_when_quartiles_absent():
+    """Médiane seule -> pas de fourchette (ni '1600-' inventé)."""
+    sf = _salary_fragment({"salaire_median_embauche": 1850, "salaire_net": True})
+    assert "1850" in sf
+    assert "fourchette" not in sf.lower()
+
+
+def test_fiche_to_text_salary_direct_schema_surfaces_quartiles():
+    """Schéma salaire-direct InserSup (insertion_pro sans bloc taux) : le texte
+    embeddé doit porter la fourchette pour la retrievabilité."""
+    fiche = {
+        "nom": "Master Acoustique", "etablissement": "Université X",
+        "insertion_pro": {
+            "salaire_median_embauche": 1850, "salaire_q1": 1600, "salaire_q3": 2200,
+            "salaire_net": True, "salaire_horizon": "12m", "salaire_source": "insersup",
+        },
+    }
+    out = fiche_to_text(fiche)
+    assert "1600" in out and "2200" in out
 
 
 def test_fiche_to_text_includes_key_fields():

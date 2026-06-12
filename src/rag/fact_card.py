@@ -243,6 +243,11 @@ class FactChiffres:
     part_poursuite_etudes: float | None = None
     taux_cdi: float | None = None
     salaire_median_embauche: int | None = None
+    # Fourchette salaire net InserSup (order 0825 Phase 1) — Q1/Q3 du même horizon
+    # que la médiane. Permet au générateur de citer une fourchette sourcée plutôt
+    # qu'un point unique. None si la source n'a pas les quartiles.
+    salaire_q1: int | None = None
+    salaire_q3: int | None = None
     pct_acceptes_debut_pp: float | None = None
     propositions_totales: int | None = None
     # ADR-054 — granularité du matching InserSup pour transparence.
@@ -757,6 +762,8 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
         chiffres.part_poursuite_etudes = _safe_float(ip.get("part_poursuite_etudes"))
         chiffres.taux_cdi = _safe_float(ip.get("taux_cdi"))
         chiffres.salaire_median_embauche = _safe_int(ip.get("salaire_median_embauche"))
+        chiffres.salaire_q1 = _safe_int(ip.get("salaire_q1"))
+        chiffres.salaire_q3 = _safe_int(ip.get("salaire_q3"))
 
     # Bloc A — tendance d'accès : phrase pré-calculée dans trends.taux_acces.
     tendance_acces = None

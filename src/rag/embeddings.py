@@ -126,7 +126,13 @@ def _salary_fragment(ip: dict) -> str | None:
     net = " net" if ip.get("salaire_net") else ""
     horizon = ip.get("salaire_horizon")
     hz = f" à {horizon}" if horizon else ""
-    return f"salaire médian{net} : {int(float(sal))}€/mois{hz}"
+    frag = f"salaire médian{net} : {int(float(sal))}€/mois{hz}"
+    # Fourchette Q1-Q3 (order 0825) : ajoutée seulement si les DEUX quartiles sont
+    # présents (sinon fourchette incomplète trompeuse). Même horizon que la médiane.
+    q1, q3 = ip.get("salaire_q1"), ip.get("salaire_q3")
+    if isinstance(q1, (int, float)) and isinstance(q3, (int, float)):
+        frag += f" (fourchette Q1-Q3 : {int(q1)}-{int(q3)}€)"
+    return frag
 
 
 def _format_profil_admis(profil_admis: dict | None) -> str | None:
