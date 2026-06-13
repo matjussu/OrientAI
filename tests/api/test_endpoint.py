@@ -120,31 +120,38 @@ def test_answer_rejects_too_much_history(client):
     assert r.status_code == 422  # max 6 (durci par rapport au contrat plateforme 20)
 
 
-def test_answer_accepts_history_content_up_to_3000_chars(client):
-    """Régression H1 (audit 2026-05-13) : une réponse Mistral long-tail
-    (~2200-2400 chars post bump max_tokens=800) revenue dans
-    `history.content` au tour suivant ne doit PAS être rejetée en 422.
+def test_answer_accepts_narrative_length_history_content(client):
+    """Multi-tour RÉCIT (R2, re-scope bridge 2218) : une réponse récit
+    sectionnée (mode récit `max_tokens=1500`, jusqu'à ~4000-7500 chars) revenue
+    dans `history.content` au tour 2 ne doit PAS être rejetée en 422.
 
-    Avant fix : max_length=2000 → 422 silencieux côté plateforme
-    (3 retries → ORIENTIA_UNAVAILABLE). Depuis fix : max_length=3000.
+    Le cap initial 3000 (ère max_tokens=800) rejetait 8/12 réponses récit du LOT
+    (3050-4157 chars) -> 422 au tour 2 du multi-tour. Cap relevé à 9000 (plafond
+    de génération récit, pas le max observé). Cf src/api/schemas.py.
     """
-    long_assistant_response = "x" * 2500
+    # Réponse récit typique au-dessus de l'ancien cap 3000 (échantillon LOT : 4157).
+    narrative_answer = "x" * 4200
     r = client.post(
         "/answer",
         json={
-            "question": "Tour 2 après réponse long-tail",
+            "question": "Et si je reste à Lyon finalement ?",
             "history": [
-                {"role": "user", "content": "Tour 1"},
-                {"role": "assistant", "content": long_assistant_response},
+                {"role": "user", "content": "mon récit d'orientation détaillé"},
+                {"role": "assistant", "content": narrative_answer},
             ],
         },
     )
     assert r.status_code == 200
 
 
-def test_answer_rejects_history_content_above_3000_chars(client):
-    """Borne supérieure préservée — un content >3000 chars reste 422."""
-    too_long_content = "x" * 3500
+def test_answer_rejects_history_content_above_cap(client):
+    """Borne supérieure préservée — un content au-dessus du cap (9000) reste 422.
+
+    Le cap est dimensionné sur le plafond de génération récit (max_tokens=1500),
+    pas sur un max observé : une valeur clairement au-delà reste rejetée (garde
+    la surface prompt-injection bornée).
+    """
+    too_long_content = "x" * 9500
     r = client.post(
         "/answer",
         json={
