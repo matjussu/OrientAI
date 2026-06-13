@@ -11,10 +11,19 @@ from pathlib import Path
 
 from src.rag.narrative_detect import (
     is_narrative,
+    is_narrative_followup,
     narrative_signal,
     detect_facets,
     NARRATIVE_MIN_LEN,
     FACET_MIN_LEN,
+)
+
+# Récit long réutilisé (>=300 chars) pour les tests multi-tour.
+_RECIT = (
+    "Bonjour, je suis en terminale generale a Bordeaux avec maths et SVT. J'aime "
+    "les sciences mais je ne veux surtout pas faire medecine, les concours et les "
+    "etudes trop longues ne me tentent pas. Je voudrais explorer d'autres pistes "
+    "scientifiques qui me correspondent. Tu aurais des idees de filieres ?"
 )
 
 REPO = Path(__file__).resolve().parents[1]
@@ -100,3 +109,36 @@ def test_detect_facets_identifies_categories():
 def test_empty_question_is_not_narrative():
     assert is_narrative("") is False
     assert is_narrative("   ") is False
+
+
+class TestIsNarrativeFollowup:
+    """R2 FORK A : un follow-up court reste en mode récit si la conversation est
+    déjà narrative (un tour user antérieur est un récit)."""
+
+    def test_no_history_is_false(self):
+        # Garde-fou 2 : banc single-turn (history None/[]) -> jamais de bascule.
+        assert is_narrative_followup(None) is False
+        assert is_narrative_followup([]) is False
+
+    def test_prior_user_recit_triggers(self):
+        history = [
+            {"role": "user", "content": _RECIT},
+            {"role": "assistant", "content": "**1. Ta situation** ... (réponse sectionnée)"},
+        ]
+        assert is_narrative_followup(history) is True
+
+    def test_only_short_user_turns_is_false(self):
+        history = [
+            {"role": "user", "content": "c'est quoi un BUT info ?"},
+            {"role": "assistant", "content": "Le BUT informatique est ..."},
+        ]
+        assert is_narrative_followup(history) is False
+
+    def test_assistant_long_turn_does_not_count(self):
+        # La réponse longue de l'assistant ne doit PAS compter comme récit user.
+        history = [{"role": "assistant", "content": _RECIT}]
+        assert is_narrative_followup(history) is False
+
+    def test_malformed_messages_no_crash(self):
+        history = [{"role": "user"}, "pas un dict", {"content": _RECIT}, {"role": "user", "content": None}]
+        assert is_narrative_followup(history) is False
