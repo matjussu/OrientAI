@@ -1,10 +1,37 @@
 # OrientIA — Session Handoff
 
-**Last updated:** 2026-05-06 (Refonte produit niveau 2 — Étapes 1+2 livrées, v4 strict mesuré)
+**Last updated:** 2026-06-13 (Mode récit R1 complet — flag OFF, gel 16/06)
 
 This document is the **single source of truth for project state**. Any fresh
 session (Claude Code or human) must read this FIRST. Updated whenever the
 project's state changes materially.
+
+---
+
+## État au 2026-06-13 — Mode récit R1 complet (flag OFF, gel 16/06)
+
+**Mode récit** (`ORIENTIA_NARRATIVE_MODE`, défaut **OFF**) livré de bout en bout sur
+`feature/orientai-mode-recit` — pipeline "conseiller" pour récits longs (≥300 chars),
+isolé du banc 100q/497q (cf **ADR-061**). Composants : détection (1a) → profil étendu
+clarify_narrative (1b) → routing déterministe profil-driven + requête forgée + dérivation
+géo ville→région (1c) → génération sectionnée 4 sections (1d) → flag prod-wired via env (1e).
+
+- **Génération 1d** : `src/prompt/system_narrative.py` réutilise le contrat factuel v4
+  strict R1-R5/R7 VERBATIM (slicing), remplace R6 (cap 250 mots) par 4 sections
+  (Ta situation / Pistes / Vigilance / Prochaine étape). Branche `narrative_mode`
+  (`generator._build_chat_kwargs`, max_tokens 1500). Few-shot récit dédié.
+- **Fix R02** : règle négation clarifier + prédicat déterministe `dedup_sector_vs_eviter`
+  (sector ∩ a_eviter = ∅) — médecine rejetée ne reste plus en secteur.
+- **Géo** : `narrative_query._region_from_mobilite` dérive la région depuis la ville de
+  mobilité (table `_CITY_TO_REGION` partagée) quand `region=None`. BOOST jamais filtre.
+- **LOT jugé EN BLOC par Jarvis (format VALIDÉ)** : `audit_empirique_2026-06-09/results/gate_narrative_1d_sectioned.md`. Gate R11 MIAGE Lille **rang 1/12**.
+- **Activation prod** : poser `ORIENTIA_NARRATIVE_MODE=1` dans l'env Railway (server.py →
+  factory). Décision Matteo, prévu jour J VivaTech 17/06.
+- **Tests** : 3050+ verts (flag OFF byte-identique). Commits : 9ccd891 (1d+R02), 0af194c (géo).
+
+**Suite** : R07 (filet détresse déterministe dans scope_classifier, tâche sécurité dédiée
+avec gate gratuit non-régression 100q) → R2 multi-tour (history[] backend déjà câblé,
+reste accumulation profil sur les tours). Gel mardi 16/06.
 
 ---
 

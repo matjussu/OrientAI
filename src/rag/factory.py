@@ -40,15 +40,22 @@ Cf plan refonte produit niveau 2 — Phase 2 (`~/.claude/plans/...`).
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from mistralai.client import Mistral
 
+from src.agent.tools.profile_clarifier import ProfileClarifier
 from src.rag.pipeline import OrientIAPipeline
 from src.rag.router_llm import RouterLLM
 from src.rag.scope_classifier import ScopeClassifier
 from src.validator import Validator
 from src.validator.layer3 import Layer3Validator
+
+
+def _env_truthy(val: str | None) -> bool:
+    """True si la variable d'env exprime un opt-in (1/true/yes/on)."""
+    return str(val or "").strip().lower() in ("1", "true", "yes", "on")
 
 
 # Paths par défaut pour les artefacts Golden QA (chantier D Sprint 10).
@@ -108,6 +115,10 @@ def make_production_pipeline(
     use_intent: bool = True,
     use_metadata_filter: bool = True,
     model: str = "mistral-medium-latest",
+    # Mode récit (R1 1c, ordre #137). None -> lit l'env ORIENTIA_NARRATIVE_MODE
+    # (default OFF). Quand actif, instancie un ProfileClarifier dédié et active
+    # la branche _prepare_narrative (déterministe profil-driven) sur les récits.
+    enable_narrative_mode: bool | None = None,
 ) -> OrientIAPipeline:
     """Build a production-ready OrientIAPipeline.
 
@@ -171,6 +182,11 @@ def make_production_pipeline(
         gqa_idx = gqa_idx or DEFAULT_GOLDEN_QA_INDEX
         gqa_meta = gqa_meta or DEFAULT_GOLDEN_QA_META
 
+    # Mode récit : résolution flag (param explicite > env > default OFF).
+    if enable_narrative_mode is None:
+        enable_narrative_mode = _env_truthy(os.environ.get("ORIENTIA_NARRATIVE_MODE"))
+    narrative_clarifier = ProfileClarifier(client=client) if enable_narrative_mode else None
+
     return OrientIAPipeline(
         client=client,
         fiches=fiches,
@@ -186,6 +202,8 @@ def make_production_pipeline(
         scope_classifier=scope_classifier,
         use_strict_v4=enable_strict_v4,
         router_llm=router_llm,
+        enable_narrative_mode=enable_narrative_mode,
+        narrative_clarifier=narrative_clarifier,
     )
 
 

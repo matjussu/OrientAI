@@ -16,7 +16,8 @@ Cf ADR-051 pour le rationale architectural.
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass, asdict
+import unicodedata
+from dataclasses import dataclass, asdict, field
 from typing import Optional
 
 from mistralai.client import Mistral
@@ -91,6 +92,15 @@ class Profile:
     - urgent_concern : flag stress / urgence détecté
     - confidence : niveau de confiance auto-rapporté du LLM (0-1)
     - notes : annotations libres du LLM
+
+    Champs étendus MODE RÉCIT (1b, ordre #137) — additifs et
+    backward-compatibles (defaults sûrs). Peuplés uniquement par
+    `clarify_narrative()` ; restent vides sur le chemin `clarify()`
+    classique pour ne pas perturber la pipeline agentique / le banc 100q :
+    - a_eviter : ce que l'utilisateur veut explicitement éviter
+    - contraintes : alternance, durée, rémunération, distance, budget...
+    - mobilite : disposition géographique (libellé libre) ou None
+    - spans : best-effort, facette -> extrait verbatim du récit qui la justifie
     """
 
     age_group: str
@@ -101,18 +111,27 @@ class Profile:
     urgent_concern: bool = False
     confidence: float = 0.5
     notes: Optional[str] = None
+    # --- Champs étendus mode récit (1b) ---
+    a_eviter: list[str] = field(default_factory=list)
+    contraintes: list[str] = field(default_factory=list)
+    mobilite: Optional[str] = None
+    spans: dict[str, str] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return asdict(self)
 
     def is_valid(self) -> bool:
-        """Sanity check des enums core."""
+        """Sanity check des enums core + types des champs étendus (1b)."""
         return (
             self.age_group in VALID_AGE_GROUPS
             and self.education_level in VALID_EDUCATION_LEVELS
             and self.intent_type in VALID_INTENT_TYPES
             and isinstance(self.sector_interest, list)
             and 0.0 <= self.confidence <= 1.0
+            and isinstance(self.a_eviter, list)
+            and isinstance(self.contraintes, list)
+            and isinstance(self.spans, dict)
+            and (self.mobilite is None or isinstance(self.mobilite, str))
         )
 
 
@@ -238,6 +257,169 @@ PROFILE_CLARIFIER_TOOL = Tool(
 )
 
 
+# --- Tool ÉTENDU mode récit (1b, ordre #137) ---
+#
+# Les vrais utilisateurs racontent un récit long (parcours + situation +
+# envies + a-éviter). Le tool de base ne capture ni le `a_eviter`, ni les
+# `contraintes`, ni la `mobilite` — pourtant essentiels pour qu'une bonne
+# réponse "le montre" (cf definition_succes du seed). Ce tool ÉTEND le tool
+# de base (mêmes enums core, réutilisés pour éviter tout drift) avec ces
+# facettes + des `spans` best-effort (verbatim qui justifie chaque facette).
+
+
+def _coerce_spans(raw) -> dict[str, str]:
+    """Best-effort : normalise `spans` en dict[str, str], ignore le reste.
+
+    Le LLM peut omettre des spans ou en renvoyer un type inattendu. On ne
+    plante jamais et on ne vérifie pas que le span est un substring exact
+    (paraphrase / accents tolérés) — best-effort assumé.
+    """
+    if not isinstance(raw, dict):
+        return {}
+    return {str(k): v for k, v in raw.items() if isinstance(v, str) and v.strip()}
+
+
+def _norm_facet(s: str) -> str:
+    """Normalisation légère (minuscule, sans accents, trim) pour comparer des
+    facettes texte de façon robuste."""
+    return "".join(
+        c for c in unicodedata.normalize("NFKD", str(s or "").lower().strip())
+        if not unicodedata.combining(c)
+    )
+
+
+def dedup_sector_vs_eviter(profile: Profile) -> Profile:
+    """Retire de `sector_interest` tout domaine que l'utilisateur a en réalité
+    REJETÉ (présent aussi dans `a_eviter`).
+
+    Un même domaine ne peut pas être à la fois cible et à-éviter : la
+    contradiction polluerait la requête de retrieval forgée (cf R02 — médecine
+    listée en secteur ALORS qu'elle est rejetée -> fiches « sciences du
+    médicament » remontées). C'est un PRÉDICAT DÉTERMINISTE (code, pas prompt) :
+    on a prouvé 2× en A/B que le prompt ne renverse pas de façon fiable l'inertie
+    qui place un domaine rejeté mais saillant (médecine, voisine de « sciences »)
+    en secteur. Le prompt garde son rôle (faire remonter le rejet dans a_eviter) ;
+    le code garantit la disjonction sector ∩ a_eviter = ∅.
+
+    Conservateur : ne retire un terme secteur que sur match normalisé EXACT avec
+    un terme a_eviter, ou si le terme secteur (≥5 car.) est contenu dans un terme
+    a_eviter (ex: « médecine » ⊂ « études de médecine »). Jamais l'inverse (un
+    a_eviter court ne purge pas un secteur plus large). Mutation in place + retour.
+    """
+    if not profile.sector_interest or not profile.a_eviter:
+        return profile
+    evit = [_norm_facet(a) for a in profile.a_eviter if isinstance(a, str) and a.strip()]
+    if not evit:
+        return profile
+    kept: list[str] = []
+    for s in profile.sector_interest:
+        if not isinstance(s, str) or not s.strip():
+            continue
+        sn = _norm_facet(s)
+        rejected = any(sn == e or (len(sn) >= 5 and sn in e) for e in evit)
+        if not rejected:
+            kept.append(s)
+    profile.sector_interest = kept
+    return profile
+
+
+NARRATIVE_EXTRA_PROPERTIES = {
+    "a_eviter": {
+        "type": "array",
+        "items": {"type": "string"},
+        "description": (
+            "Ce que l'utilisateur veut EXPLICITEMENT éviter (ex: "
+            "['commercial', 'vente'] ou ['études longues sans revenu']). "
+            "Vide si rien d'exprimé. Crucial : une bonne réponse doit le "
+            "prendre en compte visiblement."
+        ),
+    },
+    "contraintes": {
+        "type": "array",
+        "items": {"type": "string"},
+        "description": (
+            "Contraintes pratiques exprimées : 'alternance', "
+            "'rémunéré', 'études courtes', 'à distance', 'budget limité', "
+            "etc. Vide si aucune."
+        ),
+    },
+    "mobilite": {
+        "type": ["string", "null"],
+        "description": (
+            "Disposition géographique exprimée, libellé libre : "
+            "'mobile en France', 'rester à Lyon', 'pas mobile'. "
+            "null si non exprimée."
+        ),
+    },
+    "spans": {
+        "type": "object",
+        "additionalProperties": {"type": "string"},
+        "description": (
+            "Best-effort : pour chaque facette extraite, l'extrait VERBATIM "
+            "du récit qui la justifie (ex: {'a_eviter': 'je ne veux surtout "
+            "pas finir dans la vente'}). Sert la traçabilité. Omets une "
+            "facette plutôt que d'inventer un extrait."
+        ),
+    },
+}
+
+
+NARRATIVE_PROFILE_TOOL_PARAMS_SCHEMA = {
+    "type": "object",
+    "properties": {
+        **PROFILE_TOOL_PARAMS_SCHEMA["properties"],
+        **NARRATIVE_EXTRA_PROPERTIES,
+    },
+    # Les champs étendus restent best-effort -> required = core de base.
+    "required": PROFILE_TOOL_PARAMS_SCHEMA["required"],
+}
+
+
+def _narrative_profile_tool_func(**kwargs) -> dict:
+    """Tool func étendu : valide + construit un Profile avec champs récit.
+
+    Mêmes defaults sûrs que le tool de base sur le core, plus extraction
+    best-effort de a_eviter / contraintes / mobilite / spans.
+    """
+    try:
+        profile = Profile(
+            age_group=kwargs.get("age_group", "other_or_unknown"),
+            education_level=kwargs.get("education_level", "unknown"),
+            intent_type=kwargs.get("intent_type", "other"),
+            sector_interest=kwargs.get("sector_interest", []) or [],
+            region=kwargs.get("region"),
+            urgent_concern=bool(kwargs.get("urgent_concern", False)),
+            confidence=float(kwargs.get("confidence", 0.5)),
+            notes=kwargs.get("notes"),
+            a_eviter=kwargs.get("a_eviter", []) or [],
+            contraintes=kwargs.get("contraintes", []) or [],
+            mobilite=kwargs.get("mobilite"),
+            spans=_coerce_spans(kwargs.get("spans")),
+        )
+    except (TypeError, ValueError) as e:
+        return {"error": "profile_construction_failed", "message": str(e)}
+    if not profile.is_valid():
+        return {
+            "error": "profile_validation_failed",
+            "raw_input": {k: kwargs.get(k) for k in NARRATIVE_PROFILE_TOOL_PARAMS_SCHEMA["required"]},
+        }
+    return {"profile": profile.to_dict(), "valid": True}
+
+
+NARRATIVE_PROFILE_TOOL = Tool(
+    name="extract_narrative_profile",
+    description=(
+        "Extrait un profil ÉTENDU depuis un RÉCIT long d'orientation : "
+        "tout le profil de base PLUS ce que l'utilisateur veut éviter "
+        "(a_eviter), ses contraintes pratiques, sa mobilité géographique, "
+        "et des spans verbatim qui justifient chaque facette. À utiliser "
+        "quand l'utilisateur raconte son parcours et sa situation en détail."
+    ),
+    parameters=NARRATIVE_PROFILE_TOOL_PARAMS_SCHEMA,
+    func=_narrative_profile_tool_func,
+)
+
+
 # --- ProfileClarifier (interface haut niveau) ---
 
 
@@ -248,6 +430,42 @@ CLARIFIER_SYSTEM_PROMPT = (
     "narrative — tu invoques l'outil avec les paramètres extraits, "
     "c'est tout. Si la query est ambiguë, fais des best guesses et "
     "baisse `confidence` en conséquence."
+)
+
+
+NARRATIVE_CLARIFIER_SYSTEM_PROMPT = (
+    "Tu es ProfileClarifier d'OrientIA en MODE RÉCIT. L'utilisateur "
+    "raconte son parcours, sa situation, ses envies et ce qu'il veut "
+    "éviter. Ta seule mission est d'extraire un profil structuré en "
+    "appelant l'outil `extract_narrative_profile`. Tu N'écris PAS de "
+    "réponse — tu invoques l'outil, c'est tout.\n"
+    "Sois exhaustif sur les facettes RÉELLEMENT exprimées : en plus du "
+    "profil de base, capture `a_eviter` (ce qui est explicitement rejeté), "
+    "les `contraintes` pratiques (alternance, rémunération, durée, "
+    "distance...) et la `mobilite` géographique. Pour chaque facette "
+    "extraite, renseigne dans `spans` l'extrait VERBATIM du récit qui la "
+    "justifie. N'invente RIEN : si une facette n'est pas exprimée, laisse-la "
+    "vide plutôt que de deviner. Baisse `confidence` si le récit est vague.\n"
+    "\n"
+    "RÈGLE NÉGATION (ne s'applique QUE si l'utilisateur exprime un REJET ; "
+    "marqueurs : « mais pas », « sauf », « sans », « ça ne me tente pas », "
+    "« ne m'attire pas », « je ne veux surtout pas », « on me pousse vers X "
+    "mais... »). L'élément rejeté va dans `a_eviter`. Distingue deux cas :\n"
+    "- Rejet d'un domaine DISTINCT de ce qui l'attire : il va dans `a_eviter` "
+    "et n'est PAS listé dans `sector_interest`. Ex : « j'aime les sciences mais "
+    "pas la médecine ni la pression des concours » → sector_interest=['sciences'], "
+    "a_eviter=['médecine', 'concours médicaux'].\n"
+    "- Rejet d'une ACTIVITÉ / facette au sein d'un domaine qui, lui, l'attire : "
+    "le domaine RESTE dans `sector_interest`, seule l'activité va dans `a_eviter`. "
+    "Ex : « le data analyst m'attire, mais pas le développement backend » → "
+    "sector_interest=['data analyst', 'analyse de données'], "
+    "a_eviter=['développement backend']. Ex : « je veux faire de l'informatique "
+    "mais je n'aime pas coder » → sector_interest=['informatique'], "
+    "a_eviter=['programmation', 'écrire du code'] (informatique RESTE : c'est le "
+    "champ d'intérêt).\n"
+    "Ne VIDE jamais `sector_interest` à cause d'un rejet : si un domaine attire "
+    "l'utilisateur, il y figure, même partiellement rejeté. En l'absence de "
+    "rejet, extrais `sector_interest` normalement (cette règle ne change rien)."
 )
 
 
@@ -270,6 +488,9 @@ class ProfileClarifier:
 
     client: Mistral
     model: str = "mistral-large-latest"
+    # Mode récit (1b) : modèle small + temp 0 -> extraction déterministe et
+    # économe (~0 crédit Claude), reproductible pour la boucle de jugement.
+    narrative_model: str = "mistral-small-latest"
     timeout_ms: int = 60_000
     max_retries: int = 3
     initial_backoff: float = 2.0
@@ -330,3 +551,82 @@ class ProfileClarifier:
         if self.cache is not None:
             self.cache.set(query, profile)
         return profile
+
+    # --- Mode récit (1b, ordre #137) ---
+
+    _NARRATIVE_CACHE_PREFIX = "narrative::"
+
+    def clarify_narrative(self, query: str) -> Profile:
+        """Extraction ÉTENDUE pour le mode récit. NE RAISE JAMAIS.
+
+        Diffère de `clarify()` :
+        - modèle `narrative_model` (small) + temperature=0 (déterministe)
+        - tool étendu `extract_narrative_profile` (a_eviter / contraintes /
+          mobilite / spans best-effort)
+        - FALLBACK SILENCIEUX : toute défaillance (pas de tool_call, tool
+          inattendu, JSON invalide, tool error, exception réseau après
+          retries) retourne un Profile de repli sûr (`confidence=0.0`,
+          `notes='narrative_fallback:<raison>'`) au lieu de lever. Le mode
+          récit doit dégrader proprement, jamais casser le pipeline aval.
+          Le catch large est INTENTIONNEL (exigence d'ordre) ; la raison est
+          tracée dans `notes` pour l'observabilité — donc pas de catch muet.
+        """
+        if self.cache is not None:
+            cached = self.cache.get(self._NARRATIVE_CACHE_PREFIX + query)
+            if cached is not None:
+                return cached
+
+        try:
+            messages = [
+                {"role": "system", "content": NARRATIVE_CLARIFIER_SYSTEM_PROMPT},
+                {"role": "user", "content": query},
+            ]
+            response = call_with_retry(
+                lambda: self.client.chat.complete(
+                    model=self.narrative_model,
+                    messages=messages,
+                    tools=[NARRATIVE_PROFILE_TOOL.to_mistral_schema()],
+                    tool_choice="any",  # force le call
+                    temperature=0.0,    # déterministe
+                ),
+                max_retries=self.max_retries,
+                initial_backoff=self.initial_backoff,
+            )
+            msg = response.choices[0].message
+            if not msg.tool_calls:
+                return self._narrative_fallback("no_tool_call")
+            tc = msg.tool_calls[0]
+            if tc.function.name != NARRATIVE_PROFILE_TOOL.name:
+                return self._narrative_fallback(f"unexpected_tool:{tc.function.name}")
+            args = json.loads(tc.function.arguments)
+            result = NARRATIVE_PROFILE_TOOL.call(**args)
+            if "error" in result:
+                return self._narrative_fallback(f"tool_error:{result.get('error')}")
+            profile = Profile(**result["profile"])
+            # Prédicat déterministe : un domaine rejeté ne reste pas en secteur
+            # (cf dedup_sector_vs_eviter — fix R02, code pas prompt).
+            profile = dedup_sector_vs_eviter(profile)
+        except Exception as e:  # noqa: BLE001 — fallback silencieux voulu (cf docstring)
+            return self._narrative_fallback(f"exception:{type(e).__name__}")
+
+        if self.cache is not None:
+            self.cache.set(self._NARRATIVE_CACHE_PREFIX + query, profile)
+        return profile
+
+    def _narrative_fallback(self, reason: str) -> Profile:
+        """Profil de repli sûr pour le mode récit (confidence=0.0).
+
+        Signale au pipeline aval (1c retrieval) qu'aucune extraction fiable
+        n'a eu lieu -> il doit retomber sur la query brute plutôt que de se
+        fier au profil. La raison est conservée dans `notes`.
+        """
+        return Profile(
+            age_group="other_or_unknown",
+            education_level="unknown",
+            intent_type="other",
+            sector_interest=[],
+            region=None,
+            urgent_concern=False,
+            confidence=0.0,
+            notes=f"narrative_fallback:{reason}",
+        )
