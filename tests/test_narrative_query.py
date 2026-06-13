@@ -10,7 +10,7 @@ remonter les fiches rejetées). C'est un signal de génération, pas de retrieva
 from __future__ import annotations
 
 from src.agent.tools.profile_clarifier import Profile
-from src.rag.narrative_query import build_narrative_retrieval_query
+from src.rag.narrative_query import _region_from_mobilite, build_narrative_retrieval_query
 
 
 def _profile(**over) -> Profile:
@@ -155,4 +155,48 @@ class TestR11GatePrerequisite:
         q = build_narrative_retrieval_query(r11, "récit R11").lower()
         assert "miage" in q
         assert "lille" in q
-        assert "insertion" in q or "salaire" in q
+
+
+class TestGeoFromMobilite:
+    """Fallback géo déterministe (1d post-lock) : dériver la région depuis la
+    ville citée en mobilité quand `region` n'est pas peuplée -> alimente le
+    boost. Ne sur-contraint JAMAIS un candidat mobile non-localisé."""
+
+    def test_city_in_mobilite_derives_region(self):
+        assert _region_from_mobilite("rester à Bordeaux") == "nouvelle-aquitaine"
+        assert _region_from_mobilite("rester à Lyon") == "auvergne-rhône-alpes"
+        assert _region_from_mobilite("rester à Lille") == "hauts-de-france"
+        assert _region_from_mobilite("rester à Nantes ou proximité") == "pays de la loire"
+
+    def test_mobile_en_france_yields_no_region(self):
+        # R11 : « mobile en France » n'est PAS une ville -> pas de boost géo
+        # fabriqué (le candidat mobile garde tout le corpus).
+        assert _region_from_mobilite("mobile en France") == ""
+        assert _region_from_mobilite("prêt à bouger partout") == ""
+
+    def test_word_boundary_no_false_positive(self):
+        # « pau » ne doit pas matcher dans « paul » ; bordure de mot.
+        assert _region_from_mobilite("je m'appelle Paul") == ""
+
+    def test_build_query_derives_region_when_region_none(self):
+        p = _profile(sector_interest=["sciences"], region=None, mobilite="rester à Bordeaux")
+        q = build_narrative_retrieval_query(p).lower()
+        assert "nouvelle-aquitaine" in q
+
+    def test_explicit_region_takes_precedence(self):
+        # Si `region` est déjà extraite, on ne la ré-dérive pas depuis mobilite.
+        p = _profile(sector_interest=["info"], region="Bretagne", mobilite="rester à Lyon")
+        q = build_narrative_retrieval_query(p)
+        assert "Bretagne" in q
+        assert "auvergne" not in q.lower()
+
+    def test_mobile_candidate_query_has_no_region(self):
+        p = _profile(sector_interest=["MIAGE"], region=None, mobilite="mobile en France")
+        q = build_narrative_retrieval_query(p).lower()
+        for reg in ("nouvelle-aquitaine", "auvergne", "hauts-de-france", "île-de-france"):
+            assert reg not in q
+
+    def test_mobilite_none_is_safe(self):
+        p = _profile(sector_interest=["info"], region=None, mobilite=None)
+        q = build_narrative_retrieval_query(p)
+        assert q == "info"

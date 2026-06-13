@@ -27,6 +27,7 @@ import re
 
 from src.agent.tools.profile_clarifier import Profile
 from src.rag.intent import _strip_accents
+from src.rag.router_fallback import _CITY_TO_REGION
 
 
 # Facettes dont on tire le span verbatim — POSITIVES uniquement.
@@ -43,6 +44,26 @@ def _alternance_keyword(contraintes: list[str]) -> str | None:
         if isinstance(c, str) and any(kw in _strip_accents(c.lower()) for kw in _ALTERNANCE_KEYWORDS):
             return "alternance"
     return None
+
+
+def _region_from_mobilite(mobilite: str) -> str:
+    """Dérive la région canonique depuis une ville citée en mobilité.
+
+    Fallback géo déterministe : le clarifier extrait souvent une `mobilite`
+    libre (« rester à Bordeaux ») sans peupler `region`. On récupère alors le
+    signal géo en mappant la ville -> région via la table partagée
+    `_CITY_TO_REGION` (« rester à Bordeaux » -> « nouvelle-aquitaine »), pour
+    alimenter le BOOST de la requête forgée. Code, pas prompt.
+
+    Match sur bordure de mot (évite « pau » dans « paul ») ; villes les plus
+    longues d'abord (« le mans » avant un éventuel « mans »). Retourne '' si
+    aucune ville connue.
+    """
+    norm = _strip_accents(mobilite.lower())
+    for city in sorted(_CITY_TO_REGION, key=len, reverse=True):
+        if re.search(rf"\b{re.escape(city)}\b", norm):
+            return _CITY_TO_REGION[city]
+    return ""
 
 
 def build_narrative_retrieval_query(profile: Profile, original_question: str = "") -> str:
@@ -73,8 +94,16 @@ def build_narrative_retrieval_query(profile: Profile, original_question: str = "
 
     # 3. Région en BOOST (texte, jamais filtre dur). Le candidat mobile garde
     #    toutes les fiches hors-région ; le terme géo ne fait que pondérer.
-    if profile.region and profile.region.strip():
-        parts.append(profile.region.strip())
+    region_term = (profile.region or "").strip()
+    if not region_term and profile.mobilite:
+        # Fallback géo déterministe : dériver la région depuis la ville citée en
+        # mobilité quand le clarifier n'a pas peuplé `region` (« rester à
+        # Bordeaux » -> « nouvelle-aquitaine »). Ne tire RIEN d'une mobilité
+        # non-localisée (« mobile en France ») -> un candidat mobile n'est jamais
+        # sur-contraint par un terme géo fabriqué.
+        region_term = _region_from_mobilite(profile.mobilite)
+    if region_term:
+        parts.append(region_term)
 
     # 4. Mot-clé corpus déterministe (domain-hint figé en code).
     kw = _alternance_keyword(profile.contraintes)
