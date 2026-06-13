@@ -19,19 +19,33 @@ from typing import Any, Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 
+# Plafond de `HistoryMessage.content` : dimensionné sur le PLAFOND DE GÉNÉRATION
+# récit (max_tokens=1500 × ~6 chars/token FR verbeux + liens Markdown ≈ 9000),
+# pas sur un max observé. Cf docstring HistoryMessage.
+NARRATIVE_HISTORY_CONTENT_MAX = 9000
+
+
 class HistoryMessage(BaseModel):
     """Un tour de conversation (Mistral compliant).
 
-    `content.max_length=3000` absorbe les réponses long-tail Mistral
-    (max_tokens=800 produit ~2200-2400 chars worst-case) qu'un client peut
-    remettre dans `history.content` au tour suivant. Avant 3000, le backend
-    rejetait en 422 les long-tails revenus dans l'historique alors que côté
-    plateforme Zod ne contraint plus la length depuis PR Zod #24.
-    Cf. audit-pont-orientia-platform-2026-05-13 §H1.
+    `content.max_length` est dimensionné sur le PLAFOND DE GÉNÉRATION, pas sur
+    un max observé (sample != borne). Le mode récit génère jusqu'à
+    `max_tokens=1500` (réponses sectionnées 4 sections) -> ~6000-7500 chars
+    worst-case en français verbeux avec liens Markdown. On cape donc à **9000**
+    (≈ 1500 tokens × 6 chars/token + marge) pour qu'une réponse récit max-longue,
+    remise dans `history.content` au tour suivant, ne soit JAMAIS rejetée en 422 :
+    la classe de bug ne doit pas se re-déclencher sur un récit futur plus long.
+
+    Historique : cap initial 3000 (ère max_tokens=800, ~2200 chars). Bumpé à 9000
+    quand le mode récit (max_tokens=1500) a fait passer 8/12 réponses du LOT
+    au-dessus de 3000 -> 422 au tour 2 du multi-tour récit. Backward-compat
+    STRICT : accepte plus, ne rejette rien qui passait. Côté plateforme, Zod ne
+    contraint pas la length (HistoryMessageSchema.content sans .max) -> pas de
+    drift. Cf. audit-pont-orientia-platform-2026-05-13 §H1.
     """
 
     role: Literal["user", "assistant"]
-    content: str = Field(min_length=1, max_length=3000)
+    content: str = Field(min_length=1, max_length=NARRATIVE_HISTORY_CONTENT_MAX)
 
 
 class AnswerRequest(BaseModel):
