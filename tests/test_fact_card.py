@@ -109,6 +109,115 @@ def test_chiffres_quartiles_none_when_absent():
     assert card.chiffres.salaire_q3 is None
 
 
+# ─────────────── Étape 0 (2026-06-13) — labellisation salaire + granularité ───────────────
+#
+# Le salaire (salaire_median_embauche) EST déjà sérialisé au LLM v4, mais SANS
+# unité/horizon/cohorte ni granularité de l'échantillon -> risque de mislabel R6-R9
+# (un net/mois cité sans dire net/mois, une médiane discipline-nationale prise pour
+# de l'étab). Ces tests verrouillent l'auto-description du salaire et la transparence
+# statistique. Garde-fous : flag salaire_net JAMAIS sorti comme valeur, pas de
+# conversion brut<->net, métadonnée absente -> label omis (pas inventé).
+
+
+def test_salaire_labellise_net_mensuel_horizon_cohorte():
+    """(b) salaire_net=True -> unité 'net mensuel' + horizon + cohorte exposés.
+    Cas MIAGE Lille : 2370 net/mois, horizon 12m, promo 2022."""
+    fiche = {
+        "source": "monmaster", "nom": "MIAGE", "etablissement": "Université de Lille",
+        "niveau": "bac+5",
+        "insertion_pro": {
+            "salaire_median_embauche": 2370, "salaire_q1": 2280, "salaire_q3": 2570,
+            "salaire_net": True, "salaire_horizon": "12m", "salaire_cohorte": "2022",
+            "granularite": "etablissement_x_discipline", "nombre_sortants": 83,
+            "source": "insersup_mesr",
+        },
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.salaire_median_embauche == 2370  # scalaire inchangé (contract-safe)
+    assert card.chiffres.salaire_unite == "net mensuel"
+    assert card.chiffres.salaire_horizon == "12m"
+    assert card.chiffres.salaire_cohorte == "2022"
+    # (a) attribution insertion data-driven : InserSup MESR, PAS MonMaster
+    assert card.chiffres.insertion_source_label == "InserSup MESR"
+    # la provenance FORMATION (admission) reste MonMaster et COEXISTE
+    assert card.provenance is not None and card.provenance.source_label == "MonMaster"
+    d = card.to_dict()
+    assert d["chiffres"]["salaire_unite"] == "net mensuel"
+    assert d["chiffres"]["salaire_cohorte"] == "2022"
+    assert d["chiffres"]["insertion_source_label"] == "InserSup MESR"
+    assert d["provenance"]["source_label"] == "MonMaster"  # non écrasée
+
+
+def test_insertion_source_label_omis_si_source_inconnue():
+    """(a garde-fou) source insertion absente/inconnue -> pas de label inventé."""
+    fiche = {
+        "source": "monmaster", "nom": "X", "etablissement": "Y",
+        "insertion_pro": {"salaire_median_embauche": 2000},  # pas de source
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.insertion_source_label is None
+
+
+def test_salaire_flag_net_false_donne_brut_mensuel():
+    """(b) salaire_net=False -> 'brut mensuel', pas de conversion maison."""
+    fiche = {
+        "source": "monmaster", "nom": "X", "etablissement": "Y",
+        "insertion_pro": {"salaire_median_embauche": 2000, "salaire_net": False},
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.salaire_unite == "brut mensuel"
+    assert card.chiffres.salaire_median_embauche == 2000  # valeur inchangée, pas convertie
+
+
+def test_salaire_sans_flag_net_omet_qualificatif():
+    """(b garde-fou) flag absent -> 'mensuel' sans inventer net/brut."""
+    fiche = {
+        "source": "monmaster", "nom": "X", "etablissement": "Y",
+        "insertion_pro": {"salaire_median_embauche": 2000},
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.salaire_unite == "mensuel"
+
+
+def test_pas_de_label_salaire_si_pas_de_mediane():
+    """(b garde-fou) aucune médiane mensuelle -> pas de label salaire inventé."""
+    fiche = {
+        "source": "monmaster", "nom": "X", "etablissement": "Y",
+        "insertion_pro": {"taux_emploi_12m": 0.80},
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.salaire_unite is None
+    assert card.chiffres.salaire_horizon is None
+    assert card.chiffres.salaire_cohorte is None
+
+
+def test_salaire_brut_annuel_fallback_explicite():
+    """(b) salaire_brut_median_annuel exposé, libellé par son nom, jamais converti."""
+    fiche = {
+        "source": "cereq", "nom": "X", "etablissement": "Y",
+        "insertion_pro": {"salaire_brut_median_annuel": 32000},
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.salaire_brut_median_annuel == 32000
+
+
+def test_insertion_pro_granularite_et_nombre_sortants_peuples():
+    """(c) granularité + nombre_sortants depuis insertion_pro -> transparence stat."""
+    fiche = {
+        "source": "monmaster", "nom": "MIAGE", "etablissement": "Université de Lille",
+        "insertion_pro": {
+            "salaire_median_embauche": 2370,
+            "granularite": "etablissement_x_discipline", "nombre_sortants": 83,
+        },
+    }
+    card = fiche_to_fact_card(fiche, fact_id="S1")
+    assert card.chiffres.insertion_pro_granularite == "etablissement_x_discipline"
+    assert card.chiffres.nombre_sortants == 83
+    d = card.to_dict()
+    assert d["chiffres"]["insertion_pro_granularite"] == "etablissement_x_discipline"
+    assert d["chiffres"]["nombre_sortants"] == 83
+
+
 def fiche_rncp_minimal() -> dict:
     """Fiche RNCP nationale sans école nommée — cas des fiches multi-corpus."""
     return {
