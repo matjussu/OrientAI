@@ -15,10 +15,22 @@ from __future__ import annotations
 
 from unittest.mock import MagicMock
 
-from src.agent.tools.profile_clarifier import Profile
+from src.agent.tools.profile_clarifier import Profile, ProfileClarifier
+from src.rag.factory import make_production_pipeline
 from src.rag.narrative_query import build_narrative_retrieval_query
 from src.rag.narrative_route import route_from_profile
 from src.rag.pipeline import OrientIAPipeline, _PreparedGenContext, _ShortCircuitResult
+
+
+# Flags lourds désactivés : on teste juste le câblage du flag récit, pas les
+# composants prod (validator/scope/router/golden font des side-effects).
+_LIGHT = dict(
+    enable_validator=False,
+    enable_scope_classifier=False,
+    enable_router_llm=False,
+    enable_golden_qa=False,
+    enable_post_process=False,
+)
 
 
 _LONG_RECIT = (
@@ -143,3 +155,28 @@ class TestScopePrecedenceOverNarrative:
         assert isinstance(prepared, _ShortCircuitResult)
         assert prepared.reason == "scope_urgent"
         clar.clarify_narrative.assert_not_called()
+
+
+class TestFactoryNarrativeFlag:
+    def test_off_by_default(self, monkeypatch):
+        monkeypatch.delenv("ORIENTIA_NARRATIVE_MODE", raising=False)
+        p = make_production_pipeline(MagicMock(), [], **_LIGHT)
+        assert p.enable_narrative_mode is False
+        assert p.narrative_clarifier is None
+
+    def test_explicit_on_creates_clarifier(self, monkeypatch):
+        monkeypatch.delenv("ORIENTIA_NARRATIVE_MODE", raising=False)
+        p = make_production_pipeline(MagicMock(), [], enable_narrative_mode=True, **_LIGHT)
+        assert p.enable_narrative_mode is True
+        assert isinstance(p.narrative_clarifier, ProfileClarifier)
+
+    def test_env_var_enables(self, monkeypatch):
+        monkeypatch.setenv("ORIENTIA_NARRATIVE_MODE", "1")
+        p = make_production_pipeline(MagicMock(), [], **_LIGHT)
+        assert p.enable_narrative_mode is True
+        assert isinstance(p.narrative_clarifier, ProfileClarifier)
+
+    def test_explicit_false_overrides_env(self, monkeypatch):
+        monkeypatch.setenv("ORIENTIA_NARRATIVE_MODE", "1")
+        p = make_production_pipeline(MagicMock(), [], enable_narrative_mode=False, **_LIGHT)
+        assert p.enable_narrative_mode is False
