@@ -66,6 +66,40 @@ def _region_from_mobilite(mobilite: str) -> str:
     return ""
 
 
+def build_narrative_clarifier_input(question: str, history: list[dict] | None = None) -> str:
+    """Assemble l'entree du clarifier en mode recit MULTI-TOUR (R2, FORK B).
+
+    Accumulation profil par RE-EXTRACTION : on concatene les tours USER de la
+    conversation (recit initial + follow-ups) puis le clarifier extrait le
+    profil sur ce texte COMPLET. Le profil reflete ainsi toute la conversation,
+    SANS merge-logic fragile ni stockage profil serveur (stateless -> anti-PII
+    preserve). Au tour 1 (history vide) -> retourne la question seule
+    (comportement 1c strictement inchange).
+
+    Les tours ASSISTANT sont EXCLUS : ce sont nos reponses, pas le profil de
+    l'utilisateur. L'ordre chronologique est preserve (recit initial d'abord).
+
+    Args:
+        question: message utilisateur courant (dernier tour).
+        history: `[{role, content}]` de la conversation (cap 6 cote schemas).
+
+    Returns:
+        Texte concatene des tours user + question, separe par double saut de
+        ligne. Jamais vide si `question` ne l'est pas.
+    """
+    parts: list[str] = []
+    if history:
+        for msg in history:
+            if not isinstance(msg, dict):
+                continue
+            content = msg.get("content")
+            if msg.get("role") == "user" and isinstance(content, str) and content.strip():
+                parts.append(content.strip())
+    if question and question.strip():
+        parts.append(question.strip())
+    return "\n\n".join(parts)
+
+
 def build_narrative_retrieval_query(profile: Profile, original_question: str = "") -> str:
     """Forge une requête de retrieval focalisée depuis un profil récit.
 

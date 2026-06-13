@@ -172,3 +172,28 @@ def is_narrative(question: str) -> bool:
     dont les 100 du banc de non-regression, max 118) ne declenchent JAMAIS.
     """
     return narrative_signal(question).is_narrative
+
+
+def is_narrative_followup(history: list[dict] | None) -> bool:
+    """True si la CONVERSATION est deja en mode recit : un tour USER anterieur
+    de l'history est lui-meme un recit (is_narrative).
+
+    R2 multi-tour : permet de router les follow-ups COURTS (« et a Lyon ? »,
+    « oui developpe la piste A ») en mode recit au tour 2+, alors que
+    `is_narrative(question)` seul ne verrait que le message courant et
+    laisserait le follow-up retomber sur le pipeline classique (perte du
+    contexte recit).
+
+    Isolation baseline preservee PAR CONSTRUCTION : le banc 100q/497q est
+    SINGLE-TURN (history=None/[]) -> retourne toujours False -> jamais de
+    bascule recit sur le banc. Deterministe, zero LLM.
+    """
+    if not history:
+        return False
+    for msg in history:
+        if not isinstance(msg, dict):
+            continue
+        if msg.get("role") == "user" and isinstance(msg.get("content"), str):
+            if is_narrative(msg["content"]):
+                return True
+    return False

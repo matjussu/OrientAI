@@ -10,7 +10,11 @@ remonter les fiches rejetées). C'est un signal de génération, pas de retrieva
 from __future__ import annotations
 
 from src.agent.tools.profile_clarifier import Profile
-from src.rag.narrative_query import _region_from_mobilite, build_narrative_retrieval_query
+from src.rag.narrative_query import (
+    _region_from_mobilite,
+    build_narrative_clarifier_input,
+    build_narrative_retrieval_query,
+)
 
 
 def _profile(**over) -> Profile:
@@ -200,3 +204,41 @@ class TestGeoFromMobilite:
         p = _profile(sector_interest=["info"], region=None, mobilite=None)
         q = build_narrative_retrieval_query(p)
         assert q == "info"
+
+
+class TestBuildClarifierInput:
+    """R2 FORK B : accumulation profil par concaténation des tours USER."""
+
+    def test_turn1_no_history_is_question_only(self):
+        # Comportement 1c inchangé au tour 1.
+        assert build_narrative_clarifier_input("mon récit initial") == "mon récit initial"
+        assert build_narrative_clarifier_input("mon récit", None) == "mon récit"
+        assert build_narrative_clarifier_input("mon récit", []) == "mon récit"
+
+    def test_concatenates_user_turns_in_order(self):
+        history = [
+            {"role": "user", "content": "je suis en terminale, j'aime les sciences"},
+            {"role": "assistant", "content": "voici des pistes scientifiques ..."},
+        ]
+        out = build_narrative_clarifier_input("et si je reste à Lyon ?", history)
+        assert out == (
+            "je suis en terminale, j'aime les sciences\n\net si je reste à Lyon ?"
+        )
+
+    def test_assistant_turns_excluded(self):
+        history = [
+            {"role": "user", "content": "tour user 1"},
+            {"role": "assistant", "content": "REPONSE_ASSISTANT_NE_DOIT_PAS_APPARAITRE"},
+            {"role": "user", "content": "tour user 2"},
+        ]
+        out = build_narrative_clarifier_input("question courante", history)
+        assert "REPONSE_ASSISTANT" not in out
+        assert out == "tour user 1\n\ntour user 2\n\nquestion courante"
+
+    def test_malformed_history_no_crash(self):
+        history = ["pas un dict", {"role": "user", "content": None}, {"role": "user"}, {"content": "x"}]
+        out = build_narrative_clarifier_input("q", history)
+        assert out == "q"
+
+    def test_never_empty_if_question_present(self):
+        assert build_narrative_clarifier_input("q", [{"role": "assistant", "content": "x"}]) == "q"
