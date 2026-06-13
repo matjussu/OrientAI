@@ -181,6 +181,30 @@ class TestPrepareNarrativePropagatesFlag:
         )
         assert ctx.narrative_mode is False
 
+    def test_flag_off_keeps_generation_classic_on_long_recit(self):
+        # 1e — non-régression LOCK : flag OFF, même sur un récit long (>=300
+        # chars), la génération reste classique (narrative_mode jamais propagé
+        # -> v4/v3.2 byte-identique, banc 100q/serving intact).
+        clar = MagicMock()
+        p = OrientIAPipeline(
+            client=MagicMock(), fiches=[],
+            enable_narrative_mode=False,           # flag OFF
+            narrative_clarifier=clar,
+            enable_geo_coherence=False,
+        )
+        p._retrieve_and_filter = lambda **kw: [{"id": "F.1", "text": "x", "score": 1.0}]  # type: ignore[assignment]
+        recit = (
+            "Bonjour, je suis en terminale et je raconte ici un long récit "
+            "d'orientation détaillé avec mon parcours, mes envies, mes doutes et "
+            "ce que je veux éviter, bien au-delà de trois cents caractères pour "
+            "franchir le seuil de détection narrative et vérifier que, flag OFF, "
+            "rien ne bascule sur le mode récit. Quelles pistes pour moi ?"
+        )
+        prepared = p._prepare_for_generation(recit, k=30, top_k_sources=10, criteria=None, history=None)
+        assert isinstance(prepared, _PreparedGenContext)
+        assert prepared.narrative_mode is False
+        clar.clarify_narrative.assert_not_called()
+
 
 class TestR02NegationRuleWired:
     def test_clarifier_prompt_has_negation_rule(self):

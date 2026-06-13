@@ -3870,3 +3870,112 @@ backup `golden_60.json.pre_adr060_20260511_193347`) :
 - Bench rouge à l'origine : `results/bench_v7_v4_1_2026-05-10_225807/SUMMARY.md`
 - Code mesure refus : `scripts/eval_recall.py:188 _check_refusal`
 - Réponse pré-écrite : `src/rag/scope_classifier.py:155 OUT_OF_SCOPE_RESPONSE`
+
+---
+
+## ADR-061 — Mode récit : pipeline conseiller flag-gated pour récits longs (R1, ordre #137, 2026-06-13)
+
+### Contexte
+
+Le banc 100q (et le pipeline v4 strict) est optimisé pour des **questions courtes**
+("C'est quoi un BUT info ?", "Salaire MIAGE Lille ?"). Les **vrais** utilisateurs
+(lycéens, étudiants en réorientation) racontent un **récit long** : parcours +
+situation + envies + ce qu'ils veulent éviter (300+ caractères). Sur ce format,
+le pipeline court (a) dilue les termes discriminants au retrieval (300 chars de
+connecteurs et d'affect noient "MIAGE"), (b) produit une réponse courte (≤250
+mots, 2-3 puces) qui ne ressemble pas à un **retour de conseiller**.
+
+Objectif : un "rendu conseiller" personnalisé et structuré pour la démo VivaTech
+(17/06), SANS toucher le banc 100q/497q (comparabilité longitudinale, gel 16/06).
+
+### Décision
+
+Mode récit **flag-gated** (`ORIENTIA_NARRATIVE_MODE`, défaut **OFF**), entièrement
+**isolé** du chemin classique. Sept composants, tous **déterministes** hors
+génération (reproductible pour la boucle de jugement humain, zéro Claude) :
+
+1. **1a — détection** (`src/rag/narrative_detect.py`) : `is_narrative` sur plancher
+   ≥300 chars + signaux. 0/100 baseline déclenche, 12/12 seed déclenche.
+2. **1b — profil étendu** (`profile_clarifier.clarify_narrative`) : champs additifs
+   `a_eviter` / `contraintes` / `mobilite` / `spans` (best-effort), mistral-small
+   temp 0, **fallback silencieux** (confidence 0.0 + notes, jamais de raise). Le
+   `clarify()` classique + le tool de base restent byte-identiques.
+3. **1c-route** (`narrative_route.route_from_profile`) : RouteDecision déterministe
+   qui **remplace le RouterLLM** en mode récit (un appel LLM séquentiel en moins).
+   Recall-first : **géo = BOOST jamais filtre dur** (`criteria=None`, pas de
+   hardlock) — un récit est multi-facettes par construction.
+4. **1c-query** (`narrative_query.build_narrative_retrieval_query`) : "query_reformuler
+   figé en code". Tire les facettes POSITIVES (cible/situation/intérêts/géo) +
+   secteurs + région ; `a_eviter` n'entre **jamais** (sinon remonte les fiches
+   rejetées). **Dérivation région ← ville de mobilité** via `_CITY_TO_REGION`
+   partagée (« rester à Bordeaux » → « nouvelle-aquitaine ») quand `region` n'est
+   pas peuplée — alimente le boost, jamais une mobilité non-localisée.
+5. **1d — génération sectionnée** (`src/prompt/system_narrative.py`) :
+   `SYSTEM_PROMPT_NARRATIVE` dérivé par **slicing** de `SYSTEM_PROMPT_V4_STRICT` —
+   réutilise le **contrat factuel R1-R5/R7 verbatim** (zéro drift, asserts
+   fail-fast), remplace **seulement R6** (cap 250 mots) par une structure en
+   **4 sections** (Ta situation / Pistes qui collent / Points de vigilance /
+   Prochaine étape). Few-shot récit dédié (séparation Comment/Quoi). Branche
+   `narrative_mode` dans `generator._build_chat_kwargs` (max_tokens 1500, bypass
+   cap). Le conseil est cadré par la STRUCTURE, **pas** par de nouvelles règles de
+   faits.
+6. **Fix R02** : la règle prompt « rejet → a_eviter » ne retire pas un domaine
+   rejeté mais saillant (médecine, voisine de « sciences ») du secteur. Résolu par
+   **prédicat déterministe** `dedup_sector_vs_eviter` (sector ∩ a_eviter = ∅) —
+   code, pas prompt (cf Rationale).
+7. **1e — flag** : défaut OFF, **prod-wired via env** (`src/api/server.py` →
+   `make_production_pipeline` → `ORIENTIA_NARRATIVE_MODE`). Bascule prod = poser
+   la variable d'env, **décision Matteo** (pas de flip par défaut).
+
+### Rationale
+
+- **Isolation baseline** : la branche récit est insérée APRÈS le scope_classifier
+  (détresse R06/R07 escalade avant tout, non négociable) et AVANT le RouterLLM
+  (qu'elle remplace). Flag OFF → chemin classique strictement inchangé ; les
+  questions courtes (<300 chars) du banc 100q/497q ne déclenchent jamais → banc
+  byte-identique.
+- **Réutilisation du contrat factuel** : R1-R5/R7 (chiffres ⊂ sources, identité ⊂
+  sources, citations [SX], liens, posture, hardlock) sont repris VERBATIM par
+  slicing du prompt v4. Aucune nouvelle règle de faits → la fidélité du récit est
+  gouvernée par le MÊME contrat que le banc, seul le rendu change.
+- **Code > prompt pour comportement ancré** : ajouter une règle de prompt ne
+  renverse pas un comportement de génération ancré (prouvé 2× en A/B : médecine
+  reste en secteur quoi que dise le prompt ; et une 1re version trop large a vidé
+  le secteur de R08/R09). D'où le prédicat déterministe pour la disjonction
+  sector/a_eviter et la dérivation géo. Le prompt garde son rôle (faire remonter
+  le rejet dans a_eviter), le code garantit l'invariant.
+- **Déterminisme** : tout le pré-LLM est déterministe → on re-juge le LOT des 12
+  récits en bloc sans bruit de routing, génération Mistral seule (~0.01$/récit).
+
+### Conséquences
+
+- Gate empirique : R11 MIAGE Lille **rang 1/12** (sectionné 1d), réponse sourcée
+  bout en bout. Jugement bloc Jarvis : format conseiller VALIDÉ, à-éviter visible
+  en §1, pistes hiérarchisées, vigilance honnête sur les trous data.
+- Banc 100q/497q : inchangé (flag OFF par défaut, non-régression structurelle +
+  testée).
+- R2 (multi-tour) : `history[]` déjà câblé backend, reste l'accumulation de profil
+  sur les tours → tâche ultérieure. R07 (filet détresse déterministe) = tâche
+  sécurité dédiée, hors mode récit.
+
+### Alternatives rejetées
+
+1. **Étendre le RouterLLM** au lieu d'une route dédiée : rejeté, briserait
+   l'isolation baseline et rajouterait un appel LLM séquentiel.
+2. **QueryReformuler LLM** au lieu de la requête forgée déterministe : rejeté,
+   n'exploite pas le profil 1b, exigerait la fusion RRF AgentPipeline interdite,
+   2e appel LLM. La forge déterministe EST le mandat « query_reformuler figé ».
+3. **Régler R02 par le prompt seul** : rejeté, prouvé inerte (le modèle garde
+   médecine en secteur) → prédicat déterministe.
+4. **Reconstruire un prompt récit from scratch** : rejeté, dériverait du contrat
+   factuel v4 ; le slicing réutilise R1-R5/R7 verbatim (drift impossible, asserts).
+5. **Flag ON par défaut** : rejeté, change le comportement prod ; bascule = décision
+   Matteo, le jour J VivaTech, via env.
+
+### Liens
+
+- Commits : `2c4076a` (1a), `6c4126e` (1b), `b39d1b3`/`5532c21`/`03344a1`/`28ff253`
+  (1c), `5ec7d5a` (gate 1c), `9ccd891` (1d + fix R02), `0af194c` (géo)
+- Prompt récit : `src/prompt/system_narrative.py`
+- LOT jugé : `audit_empirique_2026-06-09/results/gate_narrative_1d_sectioned.md`
+- Mémoire transverse : `feedback_prompt_additive_vs_anchored` (code>prompt, 3e occ.)
