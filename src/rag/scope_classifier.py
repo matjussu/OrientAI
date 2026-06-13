@@ -75,11 +75,15 @@ _URGENT_PATTERNS = [
     # « peur de me tromper », « j'angoisse à l'idée de mal choisir », « je dors
     # mal »). Vérifié 0/474 questions non-détresse du banc 497q ; catch additif
     # sur 3 détresses du banc + R07 + R06.
-    re.compile(r"\bje (?:ne )?tiens plus\b", re.IGNORECASE),       # R07 « je tiens plus »
+    # « je tiens plus » (détresse) ≠ « je tiens plus à/au/aux X » (préférence :
+    # « je tiens plus à la pratique qu'à la théorie ») -> lookahead négatif.
+    re.compile(r"\bje (?:ne )?tiens plus\b(?!\s+(?:à|a|au|aux)\b)", re.IGNORECASE),
     re.compile(r"\bje craque\b(?!\s+(?:\w+\s+)?pour\b)", re.IGNORECASE),  # R07 « je craque » (≠ « craque [adv] pour » = enthousiasme)
     re.compile(r"\bje (?:ne )?sers (?:a|à) rien\b", re.IGNORECASE),  # R06 « je sers à rien »
     re.compile(r"\brien n['’]a (?:plus )?de sens\b", re.IGNORECASE),  # R06 « rien n'a de sens »
-    re.compile(r"\bje me sens (?:nul|nulle|inutile)\b", re.IGNORECASE),  # R06 « je me sens nul »
+    # « je me sens nul » (détresse) ≠ « je me sens nul EN maths » (auto-dépréciation
+    # matière, hyper-courante en orientation) -> lookahead négatif.
+    re.compile(r"\bje me sens (?:nul|nulle|inutile)\b(?!\s+en\b)", re.IGNORECASE),
     re.compile(r"\brat(?:er|é|e) ma vie\b", re.IGNORECASE),        # R06 « rater ma vie »
 ]
 
