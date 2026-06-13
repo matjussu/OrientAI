@@ -94,6 +94,22 @@ class TestRegexUrgentDetresseIndirecte:
         # « je suis nul en maths » = auto-éval scolaire normale, pas « je me sens nul ».
         assert not detect_urgent_signals_regex("je suis nul en maths, est-ce grave pour une prépa ?")
 
+    def test_latent_false_positives_guardrailed(self):
+        # Faux-positifs LATENTS (audit Jarvis pré-merge, absents du banc 497q donc
+        # invisibles au gate 0/474) : tournures bénignes hyper-courantes en
+        # orientation qui NE DOIVENT PAS escalader la crise.
+        # « tenir à/au/aux X » = préférence, pas « je tiens plus » (rupture).
+        assert not detect_urgent_signals_regex(
+            "je tiens plus à la pratique qu'à la théorie, quelle formation ?"
+        )
+        assert not detect_urgent_signals_regex("je tiens plus aux maths qu'à la physique")
+        assert not detect_urgent_signals_regex("je tiens plus au concret")
+        # « nul EN [matière] » = auto-dépréciation scolaire, pas « je me sens nul ».
+        assert not detect_urgent_signals_regex("je me sens nul en maths, c'est éliminatoire pour une prépa ?")
+        # ... mais la détresse standalone reste bien attrapée (non-régression du fix).
+        assert detect_urgent_signals_regex("je tiens plus, chaque jour est trop dur")
+        assert detect_urgent_signals_regex("je me sens nul, je sers a rien")
+
 
 # ─────────────── ScopeClassifier sans LLM (mode dégradé) ───────────────
 
