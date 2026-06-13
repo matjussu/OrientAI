@@ -32,6 +32,10 @@ from src.rag.post_process import post_process_answer
 from src.rag.geo_coherence import geo_coherence_check
 from src.rag.router_llm import RouteDecision, RouterLLM, SUB_INDEX_NAMES
 from src.rag.scope_classifier import ScopeClassifier, ScopeResult
+from src.agent.tools.profile_clarifier import Profile, ProfileClarifier
+from src.rag.narrative_detect import is_narrative
+from src.rag.narrative_route import route_from_profile
+from src.rag.narrative_query import build_narrative_retrieval_query
 from src.validator import (
     Validator,
     ValidatorResult,
@@ -205,6 +209,8 @@ class OrientIAPipeline:
         use_strict_v4: bool = False,
         router_llm: RouterLLM | None = None,
         enable_geo_coherence: bool = True,
+        enable_narrative_mode: bool = False,
+        narrative_clarifier: "ProfileClarifier | None" = None,
     ):
         self.client = client
         self.fiches = fiches
@@ -280,6 +286,14 @@ class OrientIAPipeline:
         # Conservateur (abstention au moindre doute). Désactivable (revertable).
         self.enable_geo_coherence: bool = enable_geo_coherence
         self.last_geo_refusal: bool = False
+        # Mode récit (R1 1c, ordre #137) — flag-gated, isolé. Quand
+        # enable_narrative_mode ET narrative_clarifier sont fournis ET
+        # is_narrative(question), `_prepare_narrative` remplace le RouterLLM
+        # classique par un routing déterministe profil-driven. Default OFF =
+        # banc 100q byte-identique (aucune des questions courtes ne déclenche).
+        self.enable_narrative_mode = enable_narrative_mode
+        self.narrative_clarifier = narrative_clarifier
+        self.last_narrative_profile: Profile | None = None
         # Chantier 1.B (2026-05-03) — métadonnées du retry-with-hint loop pour
         # audit / observabilité. None tant qu'aucun call avec validator. Format :
         #   {
@@ -480,6 +494,18 @@ class OrientIAPipeline:
         else:
             self.last_scope_result = None
 
+        # MODE RÉCIT (R1 1c, ordre #137) — branche isolée, flag-gated, insérée
+        # APRÈS le scope_classifier (R06/R07 détresse escaladent avant tout
+        # traitement récit, non négociable) et AVANT le RouterLLM (qu'elle
+        # remplace par un routing déterministe profil-driven). Inactive par
+        # défaut -> chemin classique strictement inchangé.
+        if (
+            self.enable_narrative_mode
+            and self.narrative_clarifier is not None
+            and is_narrative(question)
+        ):
+            return self._prepare_narrative(question, k, top_k_sources, history)
+
         # Étape 6 refonte (2026-05-09) — RouterLLM léger en amont du retrieve.
         # Décide (a) sub-indexes ciblés, (b) FilterCriteria, (c) refus structurés,
         # (d) hardlock R7, (e) top_k_override. Toujours non-bloquant : le
@@ -635,6 +661,62 @@ class OrientIAPipeline:
             intent_label=intent_label,
             hardlock_block=hardlock_block,
             criteria=criteria,
+            route_decision=route_decision,
+        )
+
+    def _prepare_narrative(
+        self,
+        question: str,
+        k: int,
+        top_k_sources: int,
+        history: list[dict] | None,
+    ) -> "_PreparedGenContext | _ShortCircuitResult":
+        """Pré-LLM du MODE RÉCIT (R1 1c) — déterministe, profil-driven.
+
+        Remplace le RouterLLM par : clarify_narrative (profil étendu 1b) ->
+        route_from_profile (RouteDecision recall-first, géo=boost) ->
+        build_narrative_retrieval_query (requête focalisée déterministe) ->
+        _retrieve_and_filter -> MMR. Aucun filtre dur (criteria None). Pas de
+        SELECT / golden_qa / geo-refusal (logique pensée pour questions courtes,
+        inadaptée aux récits). La génération sectionnée dédiée arrive en 1d ;
+        ici la requête forgée et le routing alimentent le retrieve.
+
+        `history` réservé au multi-tour (R2) ; non utilisé au retrieve récit MVP.
+        """
+        profile = self.narrative_clarifier.clarify_narrative(question)
+        self.last_narrative_profile = profile
+
+        route_decision = route_from_profile(profile)
+        self.last_router_result = route_decision
+
+        retrieval_query = build_narrative_retrieval_query(profile, question)
+        target = route_decision.top_k_override or top_k_sources
+
+        reranked = self._retrieve_and_filter(
+            question=retrieval_query,
+            k=k,
+            domain_hint=classify_domain_hint(retrieval_query),
+            target=target,
+            criteria=None,                 # géo = boost via requête, jamais filtre dur
+            route_decision=route_decision,
+        )
+        if self.use_mmr:
+            top = mmr_select(reranked, k=target, lambda_=self.mmr_lambda)
+        else:
+            top = reranked[:target]
+
+        # Reset des markers court-circuit non pertinents en mode récit.
+        self.last_select_result = None
+        self.last_select_fallthrough = False
+        self.last_geo_refusal = False
+
+        return _PreparedGenContext(
+            top=top,
+            effective_top_k=target,
+            golden_qa_prefix=None,
+            intent_label=None,
+            hardlock_block="",
+            criteria=None,
             route_decision=route_decision,
         )
 
