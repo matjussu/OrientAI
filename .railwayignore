@@ -16,22 +16,11 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Data raw / golden_qa / annexes — pas runtime-needed
+# Data raw / embeddings / golden_qa — pas dans le tarball (index sur volume Railway).
+# (Option C abandonnée 2026-06-12 : index dans l'image -> tarball 1.8GB -> 413 Cloudflare.)
 data/raw/
+data/embeddings/
 data/golden_qa/
-
-# Option C (ordre 1535) — index + quads + manifest EMBARQUÉS dans l'image (volume
-# Railway abandonné). On exclut data/embeddings/* (backups, checkpoints, rollback,
-# vieux index) SAUF les 7 artefacts servis. glob+négation (gitignore-style ne
-# ré-inclut pas sous un dir exclu). ~+412MB au tarball railway up (index 213 + quads 196).
-data/embeddings/*
-!data/embeddings/formations.index
-!data/embeddings/formations_v7_formations.index
-!data/embeddings/formations_v7_metiers.index
-!data/embeddings/formations_v7_statistiques.index
-!data/embeddings/formations_v7_aides_territoires.index
-!data/embeddings/formations_partition_manifest.json
-!data/embeddings/golden_qa.index
 data/processed/formations_v6.json
 data/processed/formations_unified.pre_d5_backup.json
 data/processed/formations_golden_pipeline.json
