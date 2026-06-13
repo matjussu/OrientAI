@@ -248,6 +248,20 @@ class FactChiffres:
     # qu'un point unique. None si la source n'a pas les quartiles.
     salaire_q1: int | None = None
     salaire_q3: int | None = None
+    # Étape 0 (2026-06-13) — attribution + labellisation des chiffres insertion_pro.
+    # insertion_pro porte sa propre source (InserSup MESR / Céreq / CFA), DISTINCTE
+    # de la source de la fiche (MonMaster, Parcoursup) qui ne décrit que l'admission.
+    # Sans ces labels, le LLM attribue le salaire/taux d'emploi à la source admission
+    # -> régression de sourçage R6-R9 (audit 2026-06-13, ex MIAGE Lille : 2370€ InserSup
+    # affiché sous provenance MonMaster). Champs frères SCALAIRES = contract-safe (pas
+    # d'objet nested là où le contrat v4 attend des scalaires). Garde-fous : flag
+    # salaire_net jamais sorti comme valeur, aucune conversion brut<->net, métadonnée
+    # absente -> label omis (pas inventé).
+    insertion_source_label: str | None = None   # ex "InserSup MESR" — attribue tout le bloc insertion
+    salaire_unite: str | None = None             # "net mensuel" | "brut mensuel" | "mensuel"
+    salaire_horizon: str | None = None           # ex "12m" — horizon de mesure du salaire
+    salaire_cohorte: str | None = None           # ex "2022" — promotion enquêtée (!= cohorte emploi)
+    salaire_brut_median_annuel: int | None = None  # fallback explicitement brut annuel, jamais converti
     pct_acceptes_debut_pp: float | None = None
     propositions_totales: int | None = None
     # ADR-054 — granularité du matching InserSup pour transparence.
@@ -718,6 +732,25 @@ def _infer_provenance(fiche: dict) -> FactProvenance | None:
     )
 
 
+def _insertion_source_label(ip: dict) -> str | None:
+    """Libellé humain de la source des chiffres d'insertion (taux_emploi, salaire).
+
+    Lit `insertion_pro.source` (ex "insersup_mesr") en priorité, fallback
+    `salaire_source` (ex "insersup"). Mappe via SOURCE_LABEL_MAP. Source
+    absente/inconnue -> None (on omet le label, on ne l'invente pas).
+
+    Distinct de `_infer_provenance` (qui décrit la source de la FICHE / admission) :
+    insertion_pro vient d'InserSup MESR / Céreq / CFA selon la fiche, pas de la
+    plateforme d'admission (MonMaster / Parcoursup). Cf audit 2026-06-13.
+    """
+    if not isinstance(ip, dict):
+        return None
+    raw = ip.get("source") or ip.get("salaire_source")
+    if not isinstance(raw, str) or not raw.strip():
+        return None
+    return SOURCE_LABEL_MAP.get(raw.lower().strip())
+
+
 def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
     """Mappe une fiche corpus (dict JSON) vers une FactCard structurée.
 
@@ -764,6 +797,26 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
         chiffres.salaire_median_embauche = _safe_int(ip.get("salaire_median_embauche"))
         chiffres.salaire_q1 = _safe_int(ip.get("salaire_q1"))
         chiffres.salaire_q3 = _safe_int(ip.get("salaire_q3"))
+        chiffres.salaire_brut_median_annuel = _safe_int(ip.get("salaire_brut_median_annuel"))
+        # (c) transparence statistique : granularité du matching + taille échantillon.
+        chiffres.insertion_pro_granularite = _safe_str(ip.get("granularite"))
+        chiffres.nombre_sortants = _safe_int(ip.get("nombre_sortants"))
+        # (a) attribution data-driven de TOUT le bloc insertion (InserSup/Céreq/CFA),
+        # distincte de la provenance formation (admission).
+        chiffres.insertion_source_label = _insertion_source_label(ip)
+        # (b) labels salaire — seulement si une médiane mensuelle est présente.
+        # salaire_net est un FLAG booléen (jamais une valeur). Flag absent ->
+        # 'mensuel' sans inventer net/brut. Aucune conversion brut<->net.
+        if chiffres.salaire_median_embauche is not None:
+            net_flag = _safe_bool(ip.get("salaire_net"))
+            if net_flag is True:
+                chiffres.salaire_unite = "net mensuel"
+            elif net_flag is False:
+                chiffres.salaire_unite = "brut mensuel"
+            else:
+                chiffres.salaire_unite = "mensuel"
+            chiffres.salaire_horizon = _safe_str(ip.get("salaire_horizon"))
+            chiffres.salaire_cohorte = _safe_str(ip.get("salaire_cohorte"))
 
     # Bloc A — tendance d'accès : phrase pré-calculée dans trends.taux_acces.
     tendance_acces = None

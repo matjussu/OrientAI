@@ -3,7 +3,7 @@ from typing import AsyncGenerator
 
 from mistralai.client import Mistral
 from src.prompt.system import SYSTEM_PROMPT, build_user_prompt
-from src.rag.fact_card import format_sources_for_llm
+from src.rag.fact_card import format_sources_for_llm, SOURCE_LABEL_MAP
 from src.rag.intent import classify_intent, intent_to_format_guidance
 from src.rag.user_level import classify_user_level, level_to_guidance
 
@@ -215,44 +215,63 @@ def _detail_line(f: dict) -> str | None:
 
 
 def _insertion_line(f: dict) -> str | None:
-    """Vague D — insertion pro InserSup DEPP (taux emploi, salaire médian)
-    with explicit disclaimer on the aggregation level. This line is optional
-    and only emitted when a matched insertion snapshot is attached.
+    """Vague D + fix 2026-06-13 — insertion pro (taux emploi, salaire médian).
 
-    Format kept compact to fit budget (replaces the previously-free line 7
-    which was the source line — we fold source + insertion into the line).
+    Lit `insertion_pro` (le champ réel du corpus migré) en priorité, fallback
+    `insertion` (clé legacy, rétrocompat). Supporte les 2 namings de salaire
+    (`salaire_median_embauche` neuf, `salaire_median_12m_mensuel_net` ancien).
+    Attribution de source DATA-DRIVEN (`source`/`salaire_source` via
+    SOURCE_LABEL_MAP) au lieu d'un "InserSup DEPP" hardcodé : insertion_pro peut
+    venir d'InserSup MESR, Céreq ou CFA selon la fiche. Aucune conversion
+    brut<->net ; flag `salaire_net` jamais sorti comme valeur.
+
+    NB : chemin LEGACY v3.2 (format_context). La prod tourne en v4 strict via
+    fact_card.format_sources_for_llm — ce fix garde la cohérence du 2e chemin.
     """
-    ins = f.get("insertion")
-    if not ins:
+    ins = f.get("insertion_pro") or f.get("insertion")
+    if not isinstance(ins, dict):
         return None
-    bits = []
+    bits: list[str] = []
+    # InserSup stocke le taux en fraction (0.88) ou en pourcent (88) — si >1.5,
+    # déjà en pourcent (évite le double ×100).
     taux = ins.get("taux_emploi_12m")
     if taux is not None:
-        # InserSup stores taux as decimal fraction (0.88) or percent (88) —
-        # detect heuristically: if value > 1.5, it's already percent.
-        pct = taux if taux > 1.5 else taux * 100
-        bits.append(f"emploi 12m: {pct:.0f}%")
-    taux18 = ins.get("taux_emploi_18m")
-    if taux is None and taux18 is not None:
-        pct = taux18 if taux18 > 1.5 else taux18 * 100
-        bits.append(f"emploi 18m: {pct:.0f}%")
-    sal = ins.get("salaire_median_12m_mensuel_net")
+        bits.append(f"emploi 12m: {(taux if taux > 1.5 else taux * 100):.0f}%")
+    else:
+        taux18 = ins.get("taux_emploi_18m")
+        if taux18 is not None:
+            bits.append(f"emploi 18m: {(taux18 if taux18 > 1.5 else taux18 * 100):.0f}%")
+
+    # Salaire mensuel : clé neuve insertion_pro, fallback clé legacy (= net par déf).
+    sal = ins.get("salaire_median_embauche")
     if sal is not None:
-        bits.append(f"salaire médian 12m: {sal}€/mois net")
-    sal30 = ins.get("salaire_median_30m_mensuel_net")
-    if sal is None and sal30 is not None:
-        bits.append(f"salaire médian 30m: {sal30}€/mois net")
-    stable = ins.get("taux_emploi_stable_12m")
-    if stable is not None:
-        pct = stable if stable > 1.5 else stable * 100
-        bits.append(f"emploi stable: {pct:.0f}%")
+        nf = ins.get("salaire_net")
+        sal_net = nf if isinstance(nf, bool) else None
+    else:
+        sal = ins.get("salaire_median_12m_mensuel_net")
+        sal_net = True if sal is not None else None
+    if sal is not None:
+        unit = " net" if sal_net is True else (" brut" if sal_net is False else "")
+        bits.append(f"salaire médian: {sal}€/mois{unit}")
+    elif ins.get("salaire_brut_median_annuel") is not None:
+        bits.append(f"salaire brut médian annuel: {ins['salaire_brut_median_annuel']}€/an")
+
     if not bits:
         return None
-    cohorte = ins.get("cohorte", "?")
-    gran = ins.get("granularite", "?")
-    gran_short = "discipline" if gran == "discipline" else "agrégat établissement"
-    return (f"  Insertion (InserSup DEPP, cohorte {cohorte}, {gran_short}): "
-            + " | ".join(bits))
+
+    # Attribution source data-driven (mappée si code connu, sinon libellé brut).
+    raw_src = ins.get("source") or ins.get("salaire_source")
+    src_label = None
+    if isinstance(raw_src, str) and raw_src.strip():
+        src_label = SOURCE_LABEL_MAP.get(raw_src.lower().strip()) or raw_src.strip()
+    cohorte = ins.get("salaire_cohorte") or ins.get("cohorte")
+    gran = ins.get("granularite")
+    gran_short = "discipline" if gran == "discipline" else ("agrégat établissement" if gran else None)
+    meta = [m for m in (src_label,
+                        f"cohorte {cohorte}" if cohorte else None,
+                        gran_short) if m]
+    prefix = f"Insertion ({', '.join(meta)})" if meta else "Insertion"
+    return f"  {prefix}: " + " | ".join(bits)
 
 
 def _source_line(f: dict) -> str | None:

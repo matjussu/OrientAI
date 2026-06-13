@@ -423,6 +423,31 @@ def test_vague_d_budget_allows_nine_lines_with_insertion():
     assert len(non_empty) <= 9
 
 
+def test_insertion_line_reads_insertion_pro_new_schema():
+    """Fix 2026-06-13 — chemin legacy lit insertion_pro (corpus migré), salaire
+    via la clé neuve + net depuis le flag, source mappée data-driven (pas de
+    'InserSup DEPP' hardcodé). Cas MIAGE Lille."""
+    fiche = _vague_a_fiche()
+    fiche["insertion_pro"] = {
+        "taux_emploi_12m": 0.747,
+        "salaire_median_embauche": 2370,
+        "salaire_net": True,
+        "salaire_horizon": "12m",
+        "salaire_cohorte": "2022",
+        "granularite": "etablissement_x_discipline",
+        "nombre_sortants": 83,
+        "source": "insersup_mesr",
+    }
+    line = next(l for l in format_context([{"fiche": fiche, "score": 0.9}]).split("\n")
+                if "Insertion" in l)
+    assert "2370" in line              # salaire (clé neuve)
+    assert "net" in line.lower()       # unité depuis le flag salaire_net
+    assert "75%" in line               # 0.747 -> 75%
+    assert "InserSup MESR" in line     # source mappée, PAS hardcodée
+    assert "2022" in line              # cohorte salaire
+    assert "salaire_net" not in line   # le flag n'est jamais sorti tel quel
+
+
 def test_v2_profil_line_prefixes_mentions_with_word_mention():
     """V2 data cleanup (ADR-036) : les mentions TB/B/AB sont préfixées
     'mention' dans le contexte pour éviter que le LLM Mistral Medium ne
