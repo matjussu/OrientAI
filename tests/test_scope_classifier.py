@@ -55,6 +55,46 @@ class TestRegexUrgent:
         assert not detect_urgent_signals_regex("j'en peux plus de l'école")
 
 
+class TestRegexUrgentDetresseIndirecte:
+    """Filet déterministe détresse vitale indirecte (ordre #137, R07/R06).
+
+    Additif : escalade GARANTIE sur épuisement/rupture/effondrement de sens,
+    calibré pour NE PAS attraper le stress d'orientation NORMAL (R12). Vérifié
+    0 sur-refus sur les 474 questions non-détresse du banc 497q."""
+
+    def test_r07_markers_caught(self):
+        assert detect_urgent_signals_regex("je suis epuise, je tiens plus, je sens que je craque")
+        assert detect_urgent_signals_regex("je ne tiens plus")
+        assert detect_urgent_signals_regex("je craque, tout va mal")
+
+    def test_r06_markers_caught(self):
+        assert detect_urgent_signals_regex("je me sens nul, je sers a rien")
+        assert detect_urgent_signals_regex("je sers à rien")
+        assert detect_urgent_signals_regex("rien n'a de sens en ce moment")
+        assert detect_urgent_signals_regex("rien n'a plus de sens")
+        assert detect_urgent_signals_regex("je me sens inutile")
+        assert detect_urgent_signals_regex("je vais rater ma vie")
+
+    def test_normal_orientation_stress_NOT_caught(self):
+        # R12 et stress Parcoursup normal : du coeur de métier, JAMAIS urgent
+        # par regex (le LLM les classe in_scope).
+        assert not detect_urgent_signals_regex(
+            "ca me stresse enormement, j'ai peur de faire le mauvais choix et "
+            "de me tromper de voie, ca me prend la tete et je dors mal"
+        )
+        assert not detect_urgent_signals_regex("j'angoisse à l'idée de mal choisir mon orientation")
+        assert not detect_urgent_signals_regex("je stresse pour Parcoursup")
+
+    def test_craque_pour_is_positive_not_distress(self):
+        # « je craque pour cette formation » = enthousiasme, PAS détresse.
+        assert not detect_urgent_signals_regex("je craque pour le BUT informatique")
+        assert not detect_urgent_signals_regex("je craque complètement pour Sciences Po")
+
+    def test_je_suis_nul_en_matiere_not_caught(self):
+        # « je suis nul en maths » = auto-éval scolaire normale, pas « je me sens nul ».
+        assert not detect_urgent_signals_regex("je suis nul en maths, est-ce grave pour une prépa ?")
+
+
 # ─────────────── ScopeClassifier sans LLM (mode dégradé) ───────────────
 
 
