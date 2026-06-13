@@ -156,6 +156,29 @@ class TestScopePrecedenceOverNarrative:
         assert prepared.reason == "scope_urgent"
         clar.clarify_narrative.assert_not_called()
 
+    def test_urgent_followup_in_narrative_conv_shortcircuits(self):
+        # R2 garde-fou 1 : un follow-up de DÉTRESSE dans une conv déjà récit doit
+        # escalader (scope Étape 1) AVANT la branche récit. La détresse au tour 2+
+        # ne doit jamais être noyée par le routage conversation-aware.
+        scope = MagicMock()
+        scope_res = MagicMock()
+        scope_res.label = "urgent"
+        scope_res.pre_written_response = "Réponse d'écoute + 3114"
+        scope.classify.return_value = scope_res
+
+        clar = _clarifier_returning(_profile())
+        p, _ = _pipeline(True, clar, scope_classifier=scope)
+        history = [
+            {"role": "user", "content": _LONG_RECIT},
+            {"role": "assistant", "content": "réponse sectionnée du tour 1"},
+        ]
+        prepared = p._prepare_for_generation(
+            "franchement je tiens plus, je craque", k=30, top_k_sources=10, criteria=None, history=history,
+        )
+        assert isinstance(prepared, _ShortCircuitResult)
+        assert prepared.reason == "scope_urgent"
+        clar.clarify_narrative.assert_not_called()
+
 
 class TestFactoryNarrativeFlag:
     def test_off_by_default(self, monkeypatch):
@@ -180,3 +203,56 @@ class TestFactoryNarrativeFlag:
         monkeypatch.setenv("ORIENTIA_NARRATIVE_MODE", "1")
         p = make_production_pipeline(MagicMock(), [], enable_narrative_mode=False, **_LIGHT)
         assert p.enable_narrative_mode is False
+
+
+class TestNarrativeMultiTurn:
+    """R2 (FORK A+B) : follow-ups conversation-aware + accumulation profil."""
+
+    def test_short_followup_in_narrative_conv_triggers_branch(self):
+        # FORK A : « et à Lyon ? » seul n'est pas un récit, mais l'history
+        # contient un récit -> branche récit prise au tour 2.
+        clar = _clarifier_returning(_profile())
+        p, captured = _pipeline(True, clar)
+        history = [
+            {"role": "user", "content": _LONG_RECIT},
+            {"role": "assistant", "content": "**1. Ta situation** ... réponse sectionnée"},
+        ]
+        prepared = p._prepare_for_generation(_SHORT_Q, k=30, top_k_sources=10, criteria=None, history=history)
+        assert isinstance(prepared, _PreparedGenContext)
+        assert prepared.narrative_mode is True
+        clar.clarify_narrative.assert_called_once()
+
+    def test_clarify_called_with_concatenated_user_turns(self):
+        # FORK B : le profil est extrait sur récit + follow-up (accumulation),
+        # l'assistant exclu.
+        clar = _clarifier_returning(_profile())
+        p, _ = _pipeline(True, clar)
+        history = [
+            {"role": "user", "content": _LONG_RECIT},
+            {"role": "assistant", "content": "REPONSE_ASSISTANT_EXCLUE"},
+        ]
+        p._prepare_for_generation("finalement je veux rester à Lyon", k=30, top_k_sources=10, criteria=None, history=history)
+        arg = clar.clarify_narrative.call_args[0][0]
+        assert _LONG_RECIT in arg
+        assert "rester à Lyon" in arg
+        assert "REPONSE_ASSISTANT_EXCLUE" not in arg
+
+    def test_non_narrative_history_does_not_trigger(self):
+        # Garde-fou : une conv de questions COURTES (pas de récit) ne bascule pas
+        # en mode récit (sinon on capturerait des conversations classiques).
+        clar = _clarifier_returning(_profile())
+        p, _ = _pipeline(True, clar)
+        history = [
+            {"role": "user", "content": "c'est quoi un BTS ?"},
+            {"role": "assistant", "content": "un BTS est un diplôme bac+2 ..."},
+        ]
+        p._prepare_for_generation(_SHORT_Q, k=30, top_k_sources=10, criteria=None, history=history)
+        clar.clarify_narrative.assert_not_called()
+
+    def test_single_turn_short_q_no_history_still_isolated(self):
+        # Garde-fou 2 (banc) : question courte single-turn (history None) ->
+        # branche récit JAMAIS prise (isolation baseline 100q/497q).
+        clar = _clarifier_returning(_profile())
+        p, _ = _pipeline(True, clar)
+        p._prepare_for_generation(_SHORT_Q, k=30, top_k_sources=10, criteria=None, history=None)
+        clar.clarify_narrative.assert_not_called()

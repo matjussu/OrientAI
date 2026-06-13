@@ -33,9 +33,9 @@ from src.rag.geo_coherence import geo_coherence_check
 from src.rag.router_llm import RouteDecision, RouterLLM, SUB_INDEX_NAMES
 from src.rag.scope_classifier import ScopeClassifier, ScopeResult
 from src.agent.tools.profile_clarifier import Profile, ProfileClarifier
-from src.rag.narrative_detect import is_narrative
+from src.rag.narrative_detect import is_narrative, is_narrative_followup
 from src.rag.narrative_route import route_from_profile
-from src.rag.narrative_query import build_narrative_retrieval_query
+from src.rag.narrative_query import build_narrative_retrieval_query, build_narrative_clarifier_input
 from src.prompt.system_narrative import NARRATIVE_FEW_SHOT_PREFIX
 from src.validator import (
     Validator,
@@ -505,10 +505,17 @@ class OrientIAPipeline:
         # traitement récit, non négociable) et AVANT le RouterLLM (qu'elle
         # remplace par un routing déterministe profil-driven). Inactive par
         # défaut -> chemin classique strictement inchangé.
+        # R2 multi-tour : la branche récit se déclenche si le message courant EST
+        # un récit (tour 1) OU si la conversation est DÉJÀ en mode récit (un tour
+        # user antérieur était un récit) -> les follow-ups courts (« et à Lyon ? »)
+        # restent en mode récit au tour 2+. Le scope_classifier détresse a déjà
+        # tourné en amont (Étape 1) sur CE tour avec l'history -> garde-fou détresse
+        # préservé. Banc 100q/497q = single-turn -> is_narrative_followup(None)=False
+        # -> isolation baseline intacte.
         if (
             self.enable_narrative_mode
             and self.narrative_clarifier is not None
-            and is_narrative(question)
+            and (is_narrative(question) or is_narrative_followup(history))
         ):
             return self._prepare_narrative(question, k, top_k_sources, history)
 
@@ -687,15 +694,24 @@ class OrientIAPipeline:
         inadaptée aux récits). La génération sectionnée dédiée arrive en 1d ;
         ici la requête forgée et le routing alimentent le retrieve.
 
-        `history` réservé au multi-tour (R2) ; non utilisé au retrieve récit MVP.
+        R2 multi-tour (FORK B) : le profil est extrait sur la CONCATÉNATION des
+        tours USER de l'history (récit initial + follow-ups) via
+        `build_narrative_clarifier_input` -> accumulation par ré-extraction,
+        stateless, sans stockage profil serveur. Au tour 1 (history vide) =
+        question seule, comportement 1c strictement inchangé.
         """
-        profile = self.narrative_clarifier.clarify_narrative(question)
+        # FORK B : entrée clarifier = concat des tours user (accumulation profil).
+        clarifier_input = build_narrative_clarifier_input(question, history)
+        profile = self.narrative_clarifier.clarify_narrative(clarifier_input)
         self.last_narrative_profile = profile
 
         route_decision = route_from_profile(profile)
         self.last_router_result = route_decision
 
-        retrieval_query = build_narrative_retrieval_query(profile, question)
+        # Fallback retrieval = la conv complète (clarifier_input), pas le seul
+        # follow-up courant : si le profil est un repli, on retombe sur tout le
+        # contexte plutôt que sur « et à Lyon ? » seul.
+        retrieval_query = build_narrative_retrieval_query(profile, clarifier_input)
         target = route_decision.top_k_override or top_k_sources
 
         reranked = self._retrieve_and_filter(
