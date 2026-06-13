@@ -10,10 +10,12 @@ from src.agent.tools.profile_clarifier import (
     Profile,
     ProfileClarifier,
     PROFILE_CLARIFIER_TOOL,
+    NARRATIVE_PROFILE_TOOL,
     VALID_AGE_GROUPS,
     VALID_EDUCATION_LEVELS,
     VALID_INTENT_TYPES,
     _profile_clarifier_tool_func,
+    _narrative_profile_tool_func,
 )
 
 
@@ -290,3 +292,259 @@ class TestProfileClarifier:
         clarifier = ProfileClarifier(client=client)
         with pytest.raises(ValueError, match="returned error"):
             clarifier.clarify("test")
+
+
+# --- 1b mode récit : champs étendus du Profile (additifs, backward-compat) ---
+
+
+class TestProfileExtendedFields:
+    """Le mode récit extrait a_eviter / contraintes / mobilite + spans.
+
+    Contrainte dure : additif. Un Profile construit "à l'ancienne" (les
+    callers existants, la pipeline agentique, le banc 100q) ne doit PAS
+    casser et doit recevoir des defaults sûrs.
+    """
+
+    def test_base_profile_has_empty_extended_defaults(self):
+        p = Profile(
+            age_group="lyceen_terminale",
+            education_level="terminale",
+            intent_type="orientation_initiale",
+            sector_interest=["informatique"],
+        )
+        assert p.a_eviter == []
+        assert p.contraintes == []
+        assert p.mobilite is None
+        assert p.spans == {}
+        assert p.is_valid()
+
+    def test_extended_construction(self):
+        p = Profile(
+            age_group="adulte_25_45",
+            education_level="professionnel_actif",
+            intent_type="reconversion_pro",
+            sector_interest=["numerique"],
+            a_eviter=["etudes longues sans revenu"],
+            contraintes=["alternance", "remunere"],
+            mobilite="Lyon, pas mobile",
+            spans={"a_eviter": "je ne peux pas reprendre des etudes sans rentree d'argent"},
+        )
+        assert p.is_valid()
+        assert p.a_eviter == ["etudes longues sans revenu"]
+        assert p.contraintes == ["alternance", "remunere"]
+        assert p.mobilite == "Lyon, pas mobile"
+        assert p.spans["a_eviter"].startswith("je ne peux pas")
+
+    def test_to_dict_roundtrip_with_extended(self):
+        p = Profile(
+            age_group="etudiant_master",
+            education_level="bac+5",
+            intent_type="info_metier_specifique",
+            sector_interest=[],
+            mobilite="mobile en France",
+            a_eviter=["backend"],
+            contraintes=[],
+            spans={"cible": "data analyst"},
+        )
+        d = p.to_dict()
+        assert {"a_eviter", "contraintes", "mobilite", "spans"} <= set(d.keys())
+        p2 = Profile(**d)
+        assert p == p2
+
+    def test_is_valid_false_when_a_eviter_not_list(self):
+        p = Profile(
+            age_group="lyceen_terminale",
+            education_level="terminale",
+            intent_type="orientation_initiale",
+            sector_interest=[],
+            a_eviter="commercial",  # string au lieu de list
+        )
+        assert not p.is_valid()
+
+    def test_is_valid_false_when_spans_not_dict(self):
+        p = Profile(
+            age_group="lyceen_terminale",
+            education_level="terminale",
+            intent_type="orientation_initiale",
+            sector_interest=[],
+            spans=["not", "a", "dict"],
+        )
+        assert not p.is_valid()
+
+
+# --- 1b mode récit : NARRATIVE_PROFILE_TOOL (définition + func) ---
+
+
+class TestNarrativeProfileTool:
+    def test_tool_name(self):
+        assert NARRATIVE_PROFILE_TOOL.name == "extract_narrative_profile"
+
+    def test_tool_has_extended_properties(self):
+        props = NARRATIVE_PROFILE_TOOL.parameters["properties"]
+        for key in ("a_eviter", "contraintes", "mobilite", "spans"):
+            assert key in props, f"propriété étendue manquante: {key}"
+
+    def test_tool_reuses_base_enums(self):
+        # Enums core synchronisés avec le tool de base (DRY, pas de drift).
+        props = NARRATIVE_PROFILE_TOOL.parameters["properties"]
+        assert set(props["age_group"]["enum"]) == VALID_AGE_GROUPS
+        assert set(props["intent_type"]["enum"]) == VALID_INTENT_TYPES
+
+    def test_tool_required_is_core_only(self):
+        # Les champs étendus sont best-effort : jamais requis.
+        required = set(NARRATIVE_PROFILE_TOOL.parameters["required"])
+        assert "a_eviter" not in required
+        assert "mobilite" not in required
+        assert "spans" not in required
+        assert "age_group" in required
+
+    def test_func_extracts_extended(self):
+        result = _narrative_profile_tool_func(
+            age_group="adulte_25_45",
+            education_level="professionnel_actif",
+            intent_type="reconversion_pro",
+            sector_interest=["numerique"],
+            urgent_concern=False,
+            confidence=0.7,
+            a_eviter=["vente", "commercial"],
+            contraintes=["alternance"],
+            mobilite="Lyon",
+            spans={"cible": "me reconvertir dans le numerique"},
+        )
+        assert result["valid"] is True
+        prof = result["profile"]
+        assert prof["a_eviter"] == ["vente", "commercial"]
+        assert prof["contraintes"] == ["alternance"]
+        assert prof["mobilite"] == "Lyon"
+        assert prof["spans"]["cible"] == "me reconvertir dans le numerique"
+
+    def test_func_extended_defaults_when_omitted(self):
+        result = _narrative_profile_tool_func(
+            age_group="lyceen_terminale",
+            education_level="terminale",
+            intent_type="orientation_initiale",
+            sector_interest=[],
+            urgent_concern=False,
+            confidence=0.5,
+        )
+        assert result["valid"] is True
+        assert result["profile"]["a_eviter"] == []
+        assert result["profile"]["contraintes"] == []
+        assert result["profile"]["mobilite"] is None
+        assert result["profile"]["spans"] == {}
+
+    def test_func_coerces_bad_spans_to_empty(self):
+        # spans best-effort : un type inattendu ne plante pas, il est ignoré.
+        result = _narrative_profile_tool_func(
+            age_group="lyceen_terminale",
+            education_level="terminale",
+            intent_type="orientation_initiale",
+            sector_interest=[],
+            urgent_concern=False,
+            confidence=0.5,
+            spans="pas un dict",
+        )
+        assert result["valid"] is True
+        assert result["profile"]["spans"] == {}
+
+
+# --- 1b mode récit : ProfileClarifier.clarify_narrative (mocked, fallback) ---
+
+
+def _mock_narrative_response(args_dict):
+    """Mock réponse Mistral avec un tool_call sur extract_narrative_profile."""
+    tool_call = MagicMock()
+    tool_call.function.name = "extract_narrative_profile"
+    tool_call.function.arguments = json.dumps(args_dict)
+    msg = MagicMock()
+    msg.tool_calls = [tool_call]
+    msg.content = ""
+    response = MagicMock()
+    response.choices = [MagicMock(message=msg)]
+    return response
+
+
+class TestClarifyNarrative:
+    def _full_args(self, **over):
+        base = {
+            "age_group": "etudiant_l1_l3",
+            "education_level": "bac+2",
+            "intent_type": "reorientation_etude",
+            "sector_interest": ["informatique", "data"],
+            "region": "Hauts-de-France",
+            "urgent_concern": False,
+            "confidence": 0.8,
+            "notes": None,
+            "a_eviter": ["commercial", "vente"],
+            "contraintes": [],
+            "mobilite": None,
+            "spans": {"a_eviter": "je ne veux surtout pas finir dans un metier commercial"},
+        }
+        base.update(over)
+        return base
+
+    def test_extracts_extended_fields(self):
+        client = MagicMock()
+        client.chat.complete.return_value = _mock_narrative_response(self._full_args())
+        clarifier = ProfileClarifier(client=client)
+        p = clarifier.clarify_narrative("recit long L2 droit vers dev/data")
+        assert p.a_eviter == ["commercial", "vente"]
+        assert p.spans["a_eviter"].startswith("je ne veux surtout pas")
+        assert p.age_group == "etudiant_l1_l3"
+
+    def test_uses_small_model_and_temperature_zero(self):
+        client = MagicMock()
+        client.chat.complete.return_value = _mock_narrative_response(self._full_args())
+        clarifier = ProfileClarifier(client=client)
+        clarifier.clarify_narrative("recit")
+        kwargs = client.chat.complete.call_args.kwargs
+        assert kwargs["model"] == "mistral-small-latest"
+        assert kwargs["temperature"] == 0.0
+
+    def test_silent_fallback_on_no_tool_call(self):
+        client = MagicMock()
+        msg = MagicMock()
+        msg.tool_calls = None
+        msg.content = "blabla pas de tool"
+        response = MagicMock()
+        response.choices = [MagicMock(message=msg)]
+        client.chat.complete.return_value = response
+        clarifier = ProfileClarifier(client=client)
+        p = clarifier.clarify_narrative("recit")  # ne doit PAS raise
+        assert isinstance(p, Profile)
+        assert p.confidence == 0.0
+        assert p.notes and p.notes.startswith("narrative_fallback")
+
+    def test_silent_fallback_on_exception(self):
+        client = MagicMock()
+        client.chat.complete.side_effect = RuntimeError("mistral down")
+        clarifier = ProfileClarifier(client=client)
+        p = clarifier.clarify_narrative("recit")  # ne doit PAS raise
+        assert isinstance(p, Profile)
+        assert p.confidence == 0.0
+        assert p.a_eviter == []
+
+    def test_silent_fallback_on_bad_json(self):
+        client = MagicMock()
+        tool_call = MagicMock()
+        tool_call.function.name = "extract_narrative_profile"
+        tool_call.function.arguments = "{not valid json"
+        msg = MagicMock()
+        msg.tool_calls = [tool_call]
+        msg.content = ""
+        response = MagicMock()
+        response.choices = [MagicMock(message=msg)]
+        client.chat.complete.return_value = response
+        clarifier = ProfileClarifier(client=client)
+        p = clarifier.clarify_narrative("recit")
+        assert isinstance(p, Profile)
+        assert p.confidence == 0.0
+
+    def test_spans_best_effort_absent(self):
+        client = MagicMock()
+        client.chat.complete.return_value = _mock_narrative_response(
+            self._full_args(spans={})
+        )
+        clarifier = ProfileClarifier(client=client)
+        p = clarifier.clarify_narrative("recit")
+        assert p.spans == {}
