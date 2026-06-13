@@ -18,22 +18,13 @@ COPY src/ ./src/
 
 # Corpus principal (~135 MB) embarqué dans l'image — aligné sur main : 52040 fiches
 # (salaire+quartiles InserSup + debouches ROME #146).
+# Option C (index dans l'image) ABANDONNÉE le 2026-06-12 : tarball railway up 1.8GB ->
+# 413 Cloudflare. Retour à l'approche volume : l'index FAISS #2 + quad sub-indexes +
+# manifest (~410 MB, dense-sigle-OFF, 52040) vivent sur le volume Railway ÉLARGI (>500MB)
+# monté sur /app/data/embeddings (ORIENTIA_INDEX_PATH). Ne PAS COPY l'index dans l'image
+# (tarball trop lourd pour la limite d'upload Cloudflare).
 COPY data/processed/formations.json ./data/processed/formations.json
 COPY data/processed/golden_qa_meta.json ./data/processed/golden_qa_meta.json
-
-# Option C (ordre 1535, 2026-06-12) — index FAISS + quad sub-indexes + manifest
-# EMBARQUÉS dans l'image (état #2 dense-sigle-OFF, 52040, aligné corpus). Décision :
-# le volume Railway (quota 500MB, mutations destructives gatées) est abandonné comme
-# source des index. Le volume sera DÉTACHÉ au deploy (sinon il masque /app/data/embeddings
-# de l'image). Avantage : état atomique code+corpus+index, rollback = redeploy image
-# précédente, plus aucune op volume. ~+412 MB image (index 213 + quads 196 + golden 3).
-COPY data/embeddings/formations.index ./data/embeddings/formations.index
-COPY data/embeddings/formations_v7_formations.index ./data/embeddings/formations_v7_formations.index
-COPY data/embeddings/formations_v7_metiers.index ./data/embeddings/formations_v7_metiers.index
-COPY data/embeddings/formations_v7_statistiques.index ./data/embeddings/formations_v7_statistiques.index
-COPY data/embeddings/formations_v7_aides_territoires.index ./data/embeddings/formations_v7_aides_territoires.index
-COPY data/embeddings/formations_partition_manifest.json ./data/embeddings/formations_partition_manifest.json
-COPY data/embeddings/golden_qa.index ./data/embeddings/golden_qa.index
 
 # Railway injecte $PORT automatiquement
 ENV PYTHONPATH=/app \

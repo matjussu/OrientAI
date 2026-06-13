@@ -8,22 +8,12 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Data raw / golden_qa — pas runtime-needed
+# Data — index montés via volume Railway au runtime, pas dans l'image
+# (Option C abandonnée 2026-06-12 : index dans l'image -> tarball 1.8GB -> 413 Cloudflare.
+#  Retour approche volume, index sur volume Railway élargi.)
 data/raw/
+data/embeddings/
 data/golden_qa/
-
-# Option C (ordre 1535) — index + quads + manifest EMBARQUÉS dans l'image (volume
-# Railway abandonné). On exclut data/embeddings/* (backups, checkpoints, vieux index)
-# SAUF les 7 artefacts servis. glob+négation : gitignore-style ne ré-inclut pas un
-# fichier sous un dir exclu, d'où `data/embeddings/*` (et non `data/embeddings/`).
-data/embeddings/*
-!data/embeddings/formations.index
-!data/embeddings/formations_v7_formations.index
-!data/embeddings/formations_v7_metiers.index
-!data/embeddings/formations_v7_statistiques.index
-!data/embeddings/formations_v7_aides_territoires.index
-!data/embeddings/formations_partition_manifest.json
-!data/embeddings/golden_qa.index
 
 # Backups & WIP locaux
 data/processed/formations_unified.pre_d5_backup.json
