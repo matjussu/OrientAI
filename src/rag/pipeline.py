@@ -36,6 +36,7 @@ from src.agent.tools.profile_clarifier import Profile, ProfileClarifier
 from src.rag.narrative_detect import is_narrative
 from src.rag.narrative_route import route_from_profile
 from src.rag.narrative_query import build_narrative_retrieval_query
+from src.prompt.system_narrative import NARRATIVE_FEW_SHOT_PREFIX
 from src.validator import (
     Validator,
     ValidatorResult,
@@ -145,6 +146,10 @@ class _PreparedGenContext:
     hardlock_block: str
     criteria: FilterCriteria | None
     route_decision: RouteDecision | None
+    # Mode récit (1d) — quand True, la génération bascule sur le prompt
+    # sectionné (4 sections, max_tokens relevé). Default False = chemin v4/v3.2
+    # inchangé pour le banc 100q et le serving classique.
+    narrative_mode: bool = False
 
 
 @dataclass
@@ -426,6 +431,7 @@ class OrientIAPipeline:
             temperature=temperature,
             wall_t0=wall_t0,
             intent=intent_label,
+            narrative_mode=prepared.narrative_mode,
         )
 
         # Validator v1 + UX Policy
@@ -713,11 +719,15 @@ class OrientIAPipeline:
         return _PreparedGenContext(
             top=top,
             effective_top_k=target,
-            golden_qa_prefix=None,
+            # 1d : few-shot récit DÉDIÉ (format sectionné) injecté via le canal
+            # golden_qa_prefix (côté user, attaché au contexte fact). Le mode
+            # récit n'utilise pas le retrieve Golden QA — c'est un exemple fixe.
+            golden_qa_prefix=NARRATIVE_FEW_SHOT_PREFIX,
             intent_label=None,
             hardlock_block="",
             criteria=None,
             route_decision=route_decision,
+            narrative_mode=True,
         )
 
     async def answer_stream(
@@ -807,6 +817,7 @@ class OrientIAPipeline:
                 history=history,
                 hardlock_block=prepared.hardlock_block,
                 use_strict_v4=self.use_strict_v4,
+                narrative_mode=prepared.narrative_mode,
             ):
                 full_text_parts.append(chunk)
                 yield {"type": "token", "content": chunk}
@@ -886,8 +897,15 @@ class OrientIAPipeline:
         temperature: float,
         wall_t0: float,
         intent: str | None = None,
+        narrative_mode: bool = False,
     ) -> tuple[str, dict]:
         """Boucle retry-with-hint anti-hallucination (chantier 1.B).
+
+        ``narrative_mode`` (1d) propage la branche génération sectionnée jusqu'à
+        ``generate()``. En mode récit, le pipeline tourne en strict_v4=True : le
+        tour 2 retry-with-hint est de toute façon court-circuité (cf garde-fou
+        strict_v4 ci-dessous), donc la génération récit est single-shot — cohérent
+        avec la boucle de jugement humain.
 
         Sans validator : single-shot generate (pas de retry possible).
         Avec validator : tour 1 generate → validate → si claims problématiques
@@ -934,6 +952,7 @@ class OrientIAPipeline:
             temperature=temperature,
             use_strict_v4=self.use_strict_v4,
             hardlock_block=hardlock_block,
+            narrative_mode=narrative_mode,
         )
 
         # Sans validator : pas de retry (no-op transparent)
@@ -995,6 +1014,7 @@ class OrientIAPipeline:
             hint_block=hint_block,
             use_strict_v4=self.use_strict_v4,
             hardlock_block=hardlock_block,
+            narrative_mode=narrative_mode,
         )
         tour2_validation = self.validator.validate(tour2_answer, intent=intent)
         tour2_failed = extract_failed_claims(tour2_validation)

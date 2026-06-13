@@ -16,6 +16,7 @@ Cf ADR-051 pour le rationale architectural.
 from __future__ import annotations
 
 import json
+import unicodedata
 from dataclasses import dataclass, asdict, field
 from typing import Optional
 
@@ -278,6 +279,50 @@ def _coerce_spans(raw) -> dict[str, str]:
     return {str(k): v for k, v in raw.items() if isinstance(v, str) and v.strip()}
 
 
+def _norm_facet(s: str) -> str:
+    """Normalisation légère (minuscule, sans accents, trim) pour comparer des
+    facettes texte de façon robuste."""
+    return "".join(
+        c for c in unicodedata.normalize("NFKD", str(s or "").lower().strip())
+        if not unicodedata.combining(c)
+    )
+
+
+def dedup_sector_vs_eviter(profile: Profile) -> Profile:
+    """Retire de `sector_interest` tout domaine que l'utilisateur a en réalité
+    REJETÉ (présent aussi dans `a_eviter`).
+
+    Un même domaine ne peut pas être à la fois cible et à-éviter : la
+    contradiction polluerait la requête de retrieval forgée (cf R02 — médecine
+    listée en secteur ALORS qu'elle est rejetée -> fiches « sciences du
+    médicament » remontées). C'est un PRÉDICAT DÉTERMINISTE (code, pas prompt) :
+    on a prouvé 2× en A/B que le prompt ne renverse pas de façon fiable l'inertie
+    qui place un domaine rejeté mais saillant (médecine, voisine de « sciences »)
+    en secteur. Le prompt garde son rôle (faire remonter le rejet dans a_eviter) ;
+    le code garantit la disjonction sector ∩ a_eviter = ∅.
+
+    Conservateur : ne retire un terme secteur que sur match normalisé EXACT avec
+    un terme a_eviter, ou si le terme secteur (≥5 car.) est contenu dans un terme
+    a_eviter (ex: « médecine » ⊂ « études de médecine »). Jamais l'inverse (un
+    a_eviter court ne purge pas un secteur plus large). Mutation in place + retour.
+    """
+    if not profile.sector_interest or not profile.a_eviter:
+        return profile
+    evit = [_norm_facet(a) for a in profile.a_eviter if isinstance(a, str) and a.strip()]
+    if not evit:
+        return profile
+    kept: list[str] = []
+    for s in profile.sector_interest:
+        if not isinstance(s, str) or not s.strip():
+            continue
+        sn = _norm_facet(s)
+        rejected = any(sn == e or (len(sn) >= 5 and sn in e) for e in evit)
+        if not rejected:
+            kept.append(s)
+    profile.sector_interest = kept
+    return profile
+
+
 NARRATIVE_EXTRA_PROPERTIES = {
     "a_eviter": {
         "type": "array",
@@ -400,7 +445,27 @@ NARRATIVE_CLARIFIER_SYSTEM_PROMPT = (
     "distance...) et la `mobilite` géographique. Pour chaque facette "
     "extraite, renseigne dans `spans` l'extrait VERBATIM du récit qui la "
     "justifie. N'invente RIEN : si une facette n'est pas exprimée, laisse-la "
-    "vide plutôt que de deviner. Baisse `confidence` si le récit est vague."
+    "vide plutôt que de deviner. Baisse `confidence` si le récit est vague.\n"
+    "\n"
+    "RÈGLE NÉGATION (ne s'applique QUE si l'utilisateur exprime un REJET ; "
+    "marqueurs : « mais pas », « sauf », « sans », « ça ne me tente pas », "
+    "« ne m'attire pas », « je ne veux surtout pas », « on me pousse vers X "
+    "mais... »). L'élément rejeté va dans `a_eviter`. Distingue deux cas :\n"
+    "- Rejet d'un domaine DISTINCT de ce qui l'attire : il va dans `a_eviter` "
+    "et n'est PAS listé dans `sector_interest`. Ex : « j'aime les sciences mais "
+    "pas la médecine ni la pression des concours » → sector_interest=['sciences'], "
+    "a_eviter=['médecine', 'concours médicaux'].\n"
+    "- Rejet d'une ACTIVITÉ / facette au sein d'un domaine qui, lui, l'attire : "
+    "le domaine RESTE dans `sector_interest`, seule l'activité va dans `a_eviter`. "
+    "Ex : « le data analyst m'attire, mais pas le développement backend » → "
+    "sector_interest=['data analyst', 'analyse de données'], "
+    "a_eviter=['développement backend']. Ex : « je veux faire de l'informatique "
+    "mais je n'aime pas coder » → sector_interest=['informatique'], "
+    "a_eviter=['programmation', 'écrire du code'] (informatique RESTE : c'est le "
+    "champ d'intérêt).\n"
+    "Ne VIDE jamais `sector_interest` à cause d'un rejet : si un domaine attire "
+    "l'utilisateur, il y figure, même partiellement rejeté. En l'absence de "
+    "rejet, extrais `sector_interest` normalement (cette règle ne change rien)."
 )
 
 
@@ -538,6 +603,9 @@ class ProfileClarifier:
             if "error" in result:
                 return self._narrative_fallback(f"tool_error:{result.get('error')}")
             profile = Profile(**result["profile"])
+            # Prédicat déterministe : un domaine rejeté ne reste pas en secteur
+            # (cf dedup_sector_vs_eviter — fix R02, code pas prompt).
+            profile = dedup_sector_vs_eviter(profile)
         except Exception as e:  # noqa: BLE001 — fallback silencieux voulu (cf docstring)
             return self._narrative_fallback(f"exception:{type(e).__name__}")
 

@@ -8,6 +8,15 @@ from src.rag.intent import classify_intent, intent_to_format_guidance
 from src.rag.user_level import classify_user_level, level_to_guidance
 
 
+# Mode récit (1d, ordre #137) — paramètres de génération sectionnée.
+# Cap output relevé (vs 800 en v4 strict) pour laisser respirer les 4 sections ;
+# le cap 250 mots R6 est remplacé par la structure (cf SYSTEM_PROMPT_NARRATIVE).
+NARRATIVE_MAX_TOKENS = 1500
+# Plus de sources qu'en v4 strict (5) : un récit multi-facettes a besoin de
+# matière pour hiérarchiser 2-4 pistes ; le routing récit sert top_k=12.
+NARRATIVE_MAX_SOURCES = 8
+
+
 def selectivite_qualitative(taux: float | None) -> str:
     """Translate a Parcoursup access rate to a qualitative label.
 
@@ -380,6 +389,7 @@ def _build_chat_kwargs(
     hint_block: str,
     use_strict_v4: bool,
     hardlock_block: str,
+    narrative_mode: bool = False,
 ) -> dict:
     """Build the ``client.chat.complete`` / ``stream_async`` kwargs.
 
@@ -387,8 +397,27 @@ def _build_chat_kwargs(
     ``generate_stream()`` async (SSE Phase 1) sans dupliquer la
     construction des messages. Comportement identique à pré-extraction —
     couvert par ``tests/test_generator.py`` + ``tests/test_system_v4_strict_r7.py``.
+
+    ``narrative_mode`` (1d, ordre #137) : branche « rendu conseiller ». Réutilise
+    EXACTEMENT la mécanique factuelle v4 strict (sources JSON tabulaire via
+    FactCard, R1-R3 inchangées) mais substitue ``SYSTEM_PROMPT_NARRATIVE``
+    (structure en 4 sections) au cap 250 mots R6, et relève ``max_tokens`` à
+    ``NARRATIVE_MAX_TOKENS``. Le few-shot récit dédié transite par
+    ``golden_qa_prefix`` (même canal que le Golden QA, côté user). Prioritaire
+    sur ``use_strict_v4`` (le mode récit tourne avec strict_v4=True).
     """
-    if use_strict_v4:
+    if narrative_mode:
+        # Branche MODE RÉCIT (1d) : contrat factuel v4 strict + system prompt
+        # sectionné. Pas de hardlock_block (le routing récit pose criteria=None,
+        # jamais de hardlock). Le few-shot récit est injecté côté user comme le
+        # Golden QA, attaché au contexte fact.
+        from src.prompt.system_narrative import SYSTEM_PROMPT_NARRATIVE
+        sources_json = format_sources_for_llm(retrieved, max_sources=NARRATIVE_MAX_SOURCES)
+        user_prompt = _build_user_prompt_strict_v4(
+            sources_json, question, golden_qa_prefix=golden_qa_prefix,
+        )
+        sys_prompt = SYSTEM_PROMPT_NARRATIVE
+    elif use_strict_v4:
         # Branche v4 strict : pas de prose retrieved, JSON tabulaire seul.
         # v4.1 (2026-05-06) : top-5 sources au lieu de top-10 (réduit input
         # tokens + force le LLM à se concentrer sur les sources pertinentes).
@@ -453,7 +482,11 @@ def _build_chat_kwargs(
         "temperature": temperature,
         "messages": messages,
     }
-    if use_strict_v4:
+    if narrative_mode:
+        # Cap relevé : les 4 sections + 2-4 pistes sourcées dépassent largement
+        # les 800 tokens du contrat court v4. Le cap reste un filet de sécurité.
+        api_kwargs["max_tokens"] = NARRATIVE_MAX_TOKENS
+    elif use_strict_v4:
         api_kwargs["max_tokens"] = 800
     return api_kwargs
 
@@ -485,6 +518,7 @@ def generate(
     hint_block: str = "",
     use_strict_v4: bool = False,
     hardlock_block: str = "",
+    narrative_mode: bool = False,
 ) -> str:
     """Generate an answer via Mistral.
 
@@ -532,6 +566,7 @@ def generate(
         hint_block=hint_block,
         use_strict_v4=use_strict_v4,
         hardlock_block=hardlock_block,
+        narrative_mode=narrative_mode,
     )
     response = client.chat.complete(**api_kwargs)
     content = response.choices[0].message.content
@@ -566,6 +601,7 @@ async def generate_stream(
     hint_block: str = "",
     use_strict_v4: bool = False,
     hardlock_block: str = "",
+    narrative_mode: bool = False,
 ) -> AsyncGenerator[str, None]:
     """Variante streaming async de :func:`generate`.
 
@@ -604,6 +640,7 @@ async def generate_stream(
         hint_block=hint_block,
         use_strict_v4=use_strict_v4,
         hardlock_block=hardlock_block,
+        narrative_mode=narrative_mode,
     )
 
     pending: str = ""
