@@ -390,6 +390,7 @@ def _build_chat_kwargs(
     use_strict_v4: bool,
     hardlock_block: str,
     narrative_mode: bool = False,
+    narrative_decision: "FormatDecision | None" = None,
 ) -> dict:
     """Build the ``client.chat.complete`` / ``stream_async`` kwargs.
 
@@ -411,12 +412,23 @@ def _build_chat_kwargs(
         # sectionné. Pas de hardlock_block (le routing récit pose criteria=None,
         # jamais de hardlock). Le few-shot récit est injecté côté user comme le
         # Golden QA, attaché au contexte fact.
-        from src.prompt.system_narrative import SYSTEM_PROMPT_NARRATIVE
+        from src.prompt.system_narrative import build_narrative_system_prompt
         sources_json = format_sources_for_llm(retrieved, max_sources=NARRATIVE_MAX_SOURCES)
         user_prompt = _build_user_prompt_strict_v4(
             sources_json, question, golden_qa_prefix=golden_qa_prefix,
         )
-        sys_prompt = SYSTEM_PROMPT_NARRATIVE
+        # Forme adaptative (ordre 1926) : le system prompt sectionné dépend du
+        # FORMAT routé + des overlays. Sans décision (back-compat / appel direct),
+        # défaut = CONSEIL sans overlay (== ancien SYSTEM_PROMPT_NARRATIVE).
+        if narrative_decision is not None:
+            sys_prompt = build_narrative_system_prompt(
+                narrative_decision.format,
+                anchor_constraint=narrative_decision.anchor_constraint,
+                reassure=narrative_decision.reassure,
+                constraint_terms=narrative_decision.constraint_terms,
+            )
+        else:
+            sys_prompt = build_narrative_system_prompt()
     elif use_strict_v4:
         # Branche v4 strict : pas de prose retrieved, JSON tabulaire seul.
         # v4.1 (2026-05-06) : top-5 sources au lieu de top-10 (réduit input
@@ -519,6 +531,7 @@ def generate(
     use_strict_v4: bool = False,
     hardlock_block: str = "",
     narrative_mode: bool = False,
+    narrative_decision: "FormatDecision | None" = None,
 ) -> str:
     """Generate an answer via Mistral.
 
@@ -567,6 +580,7 @@ def generate(
         use_strict_v4=use_strict_v4,
         hardlock_block=hardlock_block,
         narrative_mode=narrative_mode,
+        narrative_decision=narrative_decision,
     )
     response = client.chat.complete(**api_kwargs)
     content = response.choices[0].message.content
@@ -602,6 +616,7 @@ async def generate_stream(
     use_strict_v4: bool = False,
     hardlock_block: str = "",
     narrative_mode: bool = False,
+    narrative_decision: "FormatDecision | None" = None,
 ) -> AsyncGenerator[str, None]:
     """Variante streaming async de :func:`generate`.
 
@@ -641,6 +656,7 @@ async def generate_stream(
         use_strict_v4=use_strict_v4,
         hardlock_block=hardlock_block,
         narrative_mode=narrative_mode,
+        narrative_decision=narrative_decision,
     )
 
     pending: str = ""

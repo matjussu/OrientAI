@@ -171,7 +171,13 @@ class TestPrepareNarrativePropagatesFlag:
         prepared = p._prepare_for_generation(recit, k=30, top_k_sources=10, criteria=None, history=None)
         assert isinstance(prepared, _PreparedGenContext)
         assert prepared.narrative_mode is True
-        assert prepared.golden_qa_prefix == NARRATIVE_FEW_SHOT_PREFIX
+        # Forme adaptative (ordre 1926) : le récit « aucune idée » route en
+        # EXPLORATOIRE -> few-shot MATCHÉ au format (plus le few-shot CONSEIL fixe).
+        from src.rag.narrative_format import EXPLORATOIRE
+        from src.prompt.system_narrative import narrative_few_shot
+        assert prepared.format_decision is not None
+        assert prepared.format_decision.format == EXPLORATOIRE
+        assert prepared.golden_qa_prefix == narrative_few_shot(EXPLORATOIRE)
 
     def test_non_narrative_context_defaults_flag_false(self):
         # Garde-fou : le chemin classique ne doit jamais activer narrative_mode.

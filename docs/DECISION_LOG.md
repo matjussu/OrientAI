@@ -3979,3 +3979,81 @@ génération (reproductible pour la boucle de jugement humain, zéro Claude) :
 - Prompt récit : `src/prompt/system_narrative.py`
 - LOT jugé : `audit_empirique_2026-06-09/results/gate_narrative_1d_sectioned.md`
 - Mémoire transverse : `feedback_prompt_additive_vs_anchored` (code>prompt, 3e occ.)
+
+---
+
+## ADR-062 — Forme adaptative du mode récit : formats routés déterministes + sortie typée (ordre 1926, 2026-06-14)
+
+### Contexte
+
+Le mode récit (ADR-061) sortait TOUJOURS la même structure figée (4 sections :
+situation / pistes / vigilance / action), quelle que soit l'intention du récit.
+Retour Matteo : le FOND est très bon, la FORME est trop fixe → effet « template
+de base », pas « IA spécialisée 2026 ». Visée VivaTech (17/06), gel mardi 16/06.
+Décision produit parallèle : Option A retenue (on construit AUSSI le rendu
+visuel plateforme) → besoin d'une sortie STRUCTURÉE exploitable par le front.
+
+### Décision
+
+1. **Format adaptatif** : la structure de la réponse dépend de l'intention,
+   routée de façon déterministe (`route_narrative_format`) en 6 FORMATS
+   (exploratoire / comparaison / trajectoire / validation / shortlist / conseil)
+   + 2 OVERLAYS orthogonaux (`anchor_constraint`, `reassure`). Seul le bloc R6
+   (structure) du prompt est paramétré par format ; `_HEAD` / `_R7` / violation
+   (contrat factuel) restent BYTE-IDENTIQUES (slicing v4 strict, asserts).
+2. **Routage 100% déterministe** : marqueurs sur le texte brut (précédence
+   COMPARAISON > VALIDATION > TRAJECTOIRE > SHORTLIST > EXPLORATOIRE), puis
+   `intent_type` (déjà extrait par clarify_narrative) en départage, puis CONSEIL
+   en fallback. ZÉRO 2e appel LLM (reproductibilité du jugement humain + stabilité
+   démo ; mistral-small temp=0 non déterministe serveur-side).
+3. **Sections conditionnelles = STRUCTURELLES** : la conditionnalité dure est
+   portée par le format choisi EN CODE, pas par une règle de prompt (un additif
+   ne renverse pas un ancrage — cf `feedback_prompt_additive_vs_anchored`). Chaque
+   format a un few-shot DÉDIÉ qui MONTRE son squelette réel (mécanisme anti-ancrage).
+4. **Sortie typée par parser déterministe** : génération PROSE-native (contrat
+   factuel inchangé, citations `[source SX]` inline) + parser TOTAL
+   (`narrative_structured`) dérivant `NarrativeResponse {format, overlays,
+   blocks[], markdown_full, parse_confidence}`. `markdown_full` CANONIQUE ; les
+   blocs typés sont une couche d'ENRICHISSEMENT front. PAS d'émission JSON par le
+   LLM (réécrirait le contrat de génération, menacerait le groundedness).
+5. **L'overlay `reassure` NE TOUCHE PAS le circuit de sécurité** : la détresse
+   (R07 hardlock) est tranchée EN AMONT par `scope_classifier` (INCHANGÉ). `reassure`
+   est un pur registre de ton sur un récit déjà jugé in_scope (contrôle négatif
+   anti-sur-refus, symétrique de R12).
+
+### Rationale
+
+- Change la FORME sans toucher les FAITS : contrat factuel byte-identique,
+  groundedness préservé, gate comparable à la baseline.
+- Déterministe → reproductible pour le jugement humain EN BLOC + stable en démo.
+- Parser déterministe → contrat frontend défini MAINTENANT sans parier la qualité
+  factuelle sur du JSON LLM ; fallback markdown gratuit (zéro perte de contenu).
+- Isolation baseline : tout derrière `narrative_mode` (flag OFF) → 100q / golden_50
+  byte-identique ; `is_narrative` inchangé.
+
+### Alternatives rejetées
+
+1. **Émission JSON LLM-native** : rejeté — réécrirait le contrat de génération
+   (prose + citations inline), menacerait le groundedness et la comparabilité du
+   gate. Le parser déterministe offre le même découplage, sans le risque.
+2. **Fallback LLM léger pour le routage** : rejeté — `intent_type` est déjà
+   extrait, et un 2e call ré-introduit du non-déterminisme (le FORMAT flotterait
+   run-to-run = instable en démo).
+3. **`anchor` / `reassure` comme formats** : rejeté — ce sont des registres
+   orthogonaux combinables avec tout format → overlays.
+4. **Conditionnalité par règle de prompt** : rejeté — ancrage par le few-shot
+   « toujours 4 sections ». La conditionnalité devient structurelle (format en code)
+   + few-shot par format.
+5. **Flag ON par défaut** : rejeté — la bascule est une décision Matteo, le jour-J
+   VivaTech, via env.
+
+### Liens
+
+- Router : `src/rag/narrative_format.py` · prompts par format + overlays :
+  `src/prompt/system_narrative.py` · parser : `src/rag/narrative_structured.py`
+- Wiring : `_prepare_narrative` (pipeline.py) + branche `narrative_mode` (generator.py)
+- Contrat front : champ `structured` (`NarrativeResponse`) additif ; payloads par
+  format dans `audit_empirique_2026-06-09/results/gate_narrative_forme_structured.json`
+- LOT jugé : `audit_empirique_2026-06-09/results/gate_narrative_forme_LOT.md`
+- Mémoires transverses : `feedback_prompt_additive_vs_anchored` (anti-ancrage),
+  `feedback_plan_review_prior_art` (intent_type = prior art réutilisé)
