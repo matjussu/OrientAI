@@ -653,6 +653,10 @@ def rncp_to_fiche(certif: dict) -> dict:
         "niveau_eu": certif.get("niveau_eu"),
         "type_diplome": certif.get("abrege_intitule"),
         "abrege_type": certif.get("abrege_type"),
+        # Signal autoritaire pour derive_rncp_professional_title (Stage 5.95, ordre
+        # 1305) : "Enregistrement sur demande" = certif pro (titre/CQP) sans diplôme
+        # formel. Préservé ici (était droppé) pour que la dérivation soit reproductible.
+        "type_enregistrement": certif.get("type_enregistrement"),
         "domaine": domaine,
         "statut": "Certificat RNCP",  # catégorie distincte des formations classiques
         "voies_acces": certif.get("voies_acces") or [],

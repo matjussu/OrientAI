@@ -67,7 +67,11 @@ from pathlib import Path
 from typing import Any
 
 from src.collect.cross_ref import attach_cross_refs
-from src.collect.derive_fields import derive_type_diplome, geocode_region
+from src.collect.derive_fields import (
+    derive_rncp_professional_title,
+    derive_type_diplome,
+    geocode_region,
+)
 from src.collect.insersup import attach_insertion as _legacy_insertion_attach  # noqa: F401
 from src.collect.insersup_attach import attach_insersup_to_fiches
 from src.collect.merge import (
@@ -970,6 +974,7 @@ def run_merge_v3(
     _td_before = sum(1 for f in fiches if f.get("type_diplome"))
     _rg_before = sum(1 for f in fiches if f.get("region"))
     fiches = derive_type_diplome(fiches)
+    fiches = derive_rncp_professional_title(fiches)  # ordre 1305 Option A
     fiches = geocode_region(fiches)
     stage_stats["5_95_derive_fields"] = {
         "type_diplome_filled": sum(1 for f in fiches if f.get("type_diplome")) - _td_before,

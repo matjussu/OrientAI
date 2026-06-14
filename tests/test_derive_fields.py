@@ -7,6 +7,7 @@ departement->region appris du corpus). Sinon : VIDE.
 """
 from src.collect.derive_fields import (
     derive_type_diplome,
+    derive_rncp_professional_title,
     geocode_region,
     TYPE_FROM_FILI_CODE,
 )
@@ -118,6 +119,42 @@ def test_autre_source_hors_scope_non_touchee():
 def test_table_fili_code_couvre_les_codes_ancres():
     for code in ("BTS", "BUT", "Licence", "Licence_Las", "CPGE", "Ecole d'Ingénieur", "IFSI"):
         assert code in TYPE_FROM_FILI_CODE
+
+
+# --------------------------------------------------------------------------
+# rncp : certifs "sur demande" -> "Titre professionnel (RNCP)" (ordre 1305, Option A)
+# --------------------------------------------------------------------------
+
+def test_rncp_sur_demande_devient_titre_professionnel():
+    # type_enregistrement = signal autoritaire (déterministe, 100% précis).
+    fiches = [{"source": "rncp", "type_enregistrement": "Enregistrement sur demande",
+               "type_diplome": None, "nom": "Acheteur"}]
+    assert derive_rncp_professional_title(fiches)[0]["type_diplome"] == "Titre professionnel (RNCP)"
+
+
+def test_rncp_de_droit_sans_type_reste_vide():
+    # Les 37 certifs "de droit" dont l'abrégé n'a pas été capturé NE sont PAS des
+    # titres pros : ce sont des diplômes formels -> rester vide, pas mal-étiqueter.
+    fiches = [{"source": "rncp", "type_enregistrement": "Enregistrement de droit",
+               "type_diplome": None, "nom": "X"}]
+    assert derive_rncp_professional_title(fiches)[0]["type_diplome"] is None
+
+
+def test_rncp_titre_pro_n_ecrase_pas_un_type_existant():
+    fiches = [{"source": "rncp", "type_enregistrement": "Enregistrement sur demande",
+               "type_diplome": "Master"}]
+    assert derive_rncp_professional_title(fiches)[0]["type_diplome"] == "Master"
+
+
+def test_rncp_sans_type_enregistrement_reste_vide():
+    fiches = [{"source": "rncp", "type_diplome": None, "nom": "X"}]
+    assert derive_rncp_professional_title(fiches)[0]["type_diplome"] is None
+
+
+def test_titre_pro_ne_touche_pas_les_autres_sources():
+    fiches = [{"source": "parcoursup", "type_enregistrement": "Enregistrement sur demande",
+               "type_diplome": None}]
+    assert derive_rncp_professional_title(fiches)[0]["type_diplome"] is None
 
 
 # --------------------------------------------------------------------------

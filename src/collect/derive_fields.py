@@ -90,6 +90,29 @@ def derive_type_diplome(fiches: list[dict]) -> list[dict]:
     return fiches
 
 
+# Valeur À PART (ordre 1305 Option A, GO Matteo) : ne se mélange pas aux diplômes
+# formels (BTS/BUT/Licence/Master...) pour ne pas polluer le filtrage par diplôme.
+RNCP_PROFESSIONAL_TITLE = "Titre professionnel (RNCP)"
+
+
+def derive_rncp_professional_title(fiches: list[dict]) -> list[dict]:
+    """Type les certifications RNCP "Enregistrement sur demande" (vide uniquement).
+
+    Signal AUTORITAIRE : `type_enregistrement == "Enregistrement sur demande"`
+    (certifs professionnelles : CQP, titres pros — pas de diplôme formel). Les
+    certifs "Enregistrement de droit" sans abrégé capturé (37 cas) NE sont PAS
+    touchées : ce sont des diplômes formels, on les laisse vides plutôt que de les
+    mal-étiqueter. N'écrase jamais une valeur existante.
+    """
+    for f in fiches:
+        if not isinstance(f, dict) or _nonempty(f.get("type_diplome")):
+            continue
+        if (f.get("source") == "rncp"
+                and f.get("type_enregistrement") == "Enregistrement sur demande"):
+            f["type_diplome"] = RNCP_PROFESSIONAL_TITLE
+    return fiches
+
+
 def _build_departement_region_map(fiches: list[dict]) -> dict[str, str]:
     """Apprend departement -> région depuis les fiches qui ont LES DEUX.
 
