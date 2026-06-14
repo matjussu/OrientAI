@@ -67,6 +67,7 @@ from pathlib import Path
 from typing import Any
 
 from src.collect.cross_ref import attach_cross_refs
+from src.collect.derive_fields import derive_type_diplome, geocode_region
 from src.collect.insersup import attach_insertion as _legacy_insertion_attach  # noqa: F401
 from src.collect.insersup_attach import attach_insersup_to_fiches
 from src.collect.merge import (
@@ -960,6 +961,23 @@ def run_merge_v3(
     }
     if verbose:
         print(f"\n[Stage 5.9] RECLASSIFY_SOCIAL — {_n_sante_before - _n_sante_after} fiches sante→social")
+
+    # Stage 5.95 — DERIVE_FIELDS (fix order 2026-06-14-1230, phase 1a fill)
+    # Remplit type_diplome (parcoursup via fili_code structuré + monmaster->Master)
+    # et region (departement->region appris du corpus + supplément overseas), en
+    # PRÉCISION > RAPPEL. Vide laissé tel quel au moindre doute. Aucune région
+    # fabriquée sur les fiches nationales (RNCP/ONISEP/ROME) sans departement.
+    _td_before = sum(1 for f in fiches if f.get("type_diplome"))
+    _rg_before = sum(1 for f in fiches if f.get("region"))
+    fiches = derive_type_diplome(fiches)
+    fiches = geocode_region(fiches)
+    stage_stats["5_95_derive_fields"] = {
+        "type_diplome_filled": sum(1 for f in fiches if f.get("type_diplome")) - _td_before,
+        "region_filled": sum(1 for f in fiches if f.get("region")) - _rg_before,
+    }
+    if verbose:
+        s = stage_stats["5_95_derive_fields"]
+        print(f"\n[Stage 5.95] DERIVE_FIELDS — +{s['type_diplome_filled']} type_diplome, +{s['region_filled']} region")
 
     # Stage 6 — ATTACH_DEBOUCHES
     if verbose:
