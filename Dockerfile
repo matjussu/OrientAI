@@ -16,24 +16,22 @@ RUN pip install --no-cache-dir -r requirements.lock
 # Code application
 COPY src/ ./src/
 
-# Corpus principal (~135 MB) embarqué dans l'image — aligné sur main : 52040 fiches
-# (salaire+quartiles InserSup + debouches ROME #146).
-COPY data/processed/formations.json ./data/processed/formations.json
-COPY data/processed/golden_qa_meta.json ./data/processed/golden_qa_meta.json
-
-# Option C (ordre 1535, 2026-06-12) — index FAISS + quad sub-indexes + manifest
-# EMBARQUÉS dans l'image (état #2 dense-sigle-OFF, 52040, aligné corpus). Décision :
-# le volume Railway (quota 500MB, mutations destructives gatées) est abandonné comme
-# source des index. Le volume sera DÉTACHÉ au deploy (sinon il masque /app/data/embeddings
-# de l'image). Avantage : état atomique code+corpus+index, rollback = redeploy image
-# précédente, plus aucune op volume. ~+412 MB image (index 213 + quads 196 + golden 3).
-COPY data/embeddings/formations.index ./data/embeddings/formations.index
-COPY data/embeddings/formations_v7_formations.index ./data/embeddings/formations_v7_formations.index
-COPY data/embeddings/formations_v7_metiers.index ./data/embeddings/formations_v7_metiers.index
-COPY data/embeddings/formations_v7_statistiques.index ./data/embeddings/formations_v7_statistiques.index
-COPY data/embeddings/formations_v7_aides_territoires.index ./data/embeddings/formations_v7_aides_territoires.index
-COPY data/embeddings/formations_partition_manifest.json ./data/embeddings/formations_partition_manifest.json
-COPY data/embeddings/golden_qa.index ./data/embeddings/golden_qa.index
+# MIGRATION VOLUME (ordre 2026-06-14-1501) — les gros artefacts (corpus formations.json
+# + index FAISS + 4 quad sub-indexes + manifest + golden_qa) ne sont PLUS embarqués dans
+# l'image : ils vivent sur le VOLUME Railway monté à /app/data. Raison : `railway up`
+# bakant ~510MB d'index tape la limite d'upload Cloudflare (413). Avec le volume, le
+# deploy est CODE-ONLY (image légère) et les artefacts sont uploadés UNE fois
+# (`railway volume files upload`), plus jamais de 413/502.
+#
+# Anti-shadow-mount (cf incident Option C 06-12 où le volume masquait l'index baké ->
+# prod servait le 47220 en silence) : l'image ne contient AUCUN index baké, il n'y a
+# donc RIEN à masquer. L'app lit l'index UNIQUEMENT depuis le volume -> désalignement
+# silencieux impossible par construction.
+#
+# SÉQUENCE OBLIGATOIRE : volume créé + peuplé AVANT le deploy code (sinon fail-fast au
+# boot via _require_artifacts dans server.py). Le volume DOIT monter à /app/data : le
+# manifest quad se résout via parents[2]=/app + chemins relatifs, il faut donc que
+# /app/data == le volume.
 
 # Railway injecte $PORT automatiquement
 ENV PYTHONPATH=/app \

@@ -65,8 +65,45 @@ logger = logging.getLogger("orientia.api")
 # ───────────────────────────── Config / globals ─────────────────────────────
 
 _VERSION = "v4.1"
-_FICHES_PATH = Path(os.environ.get("ORIENTIA_FICHES_PATH", "data/processed/formations.json"))
-_INDEX_PATH = os.environ.get("ORIENTIA_INDEX_PATH", "data/embeddings/formations.index")
+
+
+def _resolve_artifact_paths() -> tuple[Path, str]:
+    """Résout (fiches_path, index_path) des gros artefacts.
+
+    Migration volume (ordre 1501) : en prod les artefacts vivent sur le volume Railway
+    monté à `RAILWAY_VOLUME_MOUNT_PATH` (=/app/data), pas dans l'image. Priorité :
+    override explicite ORIENTIA_* (tests / cas spéciaux) > volume > défaut relatif.
+    NB : le manifest quad + sous-index se résolvent via parents[2]=/app + chemins
+    relatifs, donc ils pointent vers le volume SI celui-ci monte à /app/data.
+    """
+    fiches = os.environ.get("ORIENTIA_FICHES_PATH")
+    index = os.environ.get("ORIENTIA_INDEX_PATH")
+    vol = os.environ.get("RAILWAY_VOLUME_MOUNT_PATH")
+    if vol:
+        fiches = fiches or str(Path(vol) / "processed" / "formations.json")
+        index = index or str(Path(vol) / "embeddings" / "formations.index")
+    return (Path(fiches or "data/processed/formations.json"),
+            index or "data/embeddings/formations.index")
+
+
+def _require_artifacts(fiches_path: Path, index_path: str) -> None:
+    """Fail-fast au boot : lève RuntimeError clair si un artefact volume est absent.
+
+    Remplace l'ancien mode dégradé : avec la séquence volume-peuplé-AVANT-deploy
+    (ordre 1501), un artefact manquant = erreur de bootstrap visible, pas un serveur
+    qui répond 503 en silence.
+    """
+    missing = [str(p) for p in (fiches_path, Path(index_path)) if not Path(p).exists()]
+    if missing:
+        raise RuntimeError(
+            f"Artefacts volume absents: {missing}. Le volume Railway (mount /app/data) "
+            "doit contenir processed/formations.json + embeddings/{formations.index, "
+            "4 quads, manifest} AVANT le deploy code-only. Peupler via "
+            "`railway volume files upload` puis redeployer."
+        )
+
+
+_FICHES_PATH, _INDEX_PATH = _resolve_artifact_paths()
 
 # Pipeline global, chargé une seule fois au lifespan startup.
 # `_pipeline.last_validation` est un état mutable — on garde --workers 1 en prod
@@ -107,35 +144,24 @@ async def lifespan(_app: FastAPI):
     # Mistral bloquerait jusqu'au kill Railway (30-60s) sans 504 propre.
     client = Mistral(api_key=api_key, timeout_ms=_MISTRAL_TIMEOUT_MS)
 
-    # Mode dégradé : si fiches.json ou formations.index manquent (Railway
-    # volume pas encore bootstrapé), le serveur démarre quand même mais
-    # /answer retournera 503 jusqu'à ce que les fichiers soient en place.
-    # Ça évite le crash-loop empêchant railway ssh pendant le bootstrap.
-    if not _FICHES_PATH.exists():
-        logger.warning(
-            f"Fiches file not found: {_FICHES_PATH}. "
-            "Booting in DEGRADED mode — /health=ok, /answer=503."
-        )
-        yield
-        return
+    # Migration volume (ordre 1501) : les gros artefacts viennent du volume Railway
+    # (mount /app/data), plus de l'image. Fail-fast si absent (séquence : volume peuplé
+    # AVANT le deploy code). Le port BIND après ce chargement (lifespan bloque le serve).
+    fiches_path, index_path = _resolve_artifact_paths()
+    logger.info(
+        "Artefacts: RAILWAY_VOLUME_MOUNT_PATH=%s | fiches=%s | index=%s",
+        os.environ.get("RAILWAY_VOLUME_MOUNT_PATH"), fiches_path, index_path,
+    )
+    _require_artifacts(fiches_path, index_path)  # log + exit propre si absent
 
-    fiches = json.loads(_FICHES_PATH.read_text())
+    fiches = json.loads(fiches_path.read_text())
     _index_size = len(fiches)
-
-    if not Path(_INDEX_PATH).exists():
-        logger.warning(
-            f"FAISS index not found: {_INDEX_PATH}. "
-            "Bootstrap the persistent volume with formations.index (185 MB). "
-            "Booting in DEGRADED mode — /health=ok, /answer=503."
-        )
-        yield
-        return
 
     # Defaults are correct as of 2026-05-08 :
     # enable_strict_v4=True (v4.1 ≤250 mots), enable_validator=True,
     # enable_scope_classifier=True, enable_golden_qa=True, enable_post_process=True.
     pipeline = make_production_pipeline(client, fiches)
-    pipeline.load_index_from(_INDEX_PATH)
+    pipeline.load_index_from(index_path)
 
     # Warmup retrieval indices : sans ça, le 1er /answer paie ~30s pour
     # builder les sub-indices double-corpus (Vague 1.C) + ~5-10s pour
