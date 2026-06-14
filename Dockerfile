@@ -16,24 +16,22 @@ RUN pip install --no-cache-dir -r requirements.lock
 # Code application
 COPY src/ ./src/
 
-# Corpus principal (~135 MB) embarqué dans l'image — aligné sur main : 52040 fiches
-# (salaire+quartiles InserSup + debouches ROME #146).
+# MIGRATION VOLUME — Approche A (ordre 2026-06-14-1501, 2026-06-14) : les INDEX FAISS
+# (formations.index + 4 quad sub-indexes + manifest + golden_qa, ~412MB) vivent sur le
+# VOLUME Railway DÉJÀ monté à /app/data/embeddings -> ils ne sont PLUS COPY dans l'image
+# (sinon `railway up` baker ~410MB tape la limite Cloudflare 413). Mis à jour 1×
+# (`railway volume files upload --overwrite`), plus jamais de 413 à l'upload.
+#
+# Le CORPUS (formations.json + golden_qa_meta.json, ~107MB) RESTE dans l'image : le
+# volume ne couvre que /app/data/embeddings, pas /app/data/processed. railway up upload
+# ~corpus seul ~35MB compressé -> sous la limite, plus de 413.
+#
+# Anti-shadow-mount : l'image ne COPY AUCUN data/embeddings -> rien à masquer sous le
+# volume (le volume EST la seule source d'index). Le manifest quad se résout via
+# parents[2]=/app + chemins relatifs (data/embeddings/...) = /app/data/embeddings = volume.
+# Fail-fast au boot si index/corpus absent (_require_artifacts dans server.py).
 COPY data/processed/formations.json ./data/processed/formations.json
 COPY data/processed/golden_qa_meta.json ./data/processed/golden_qa_meta.json
-
-# Option C (ordre 1535, 2026-06-12) — index FAISS + quad sub-indexes + manifest
-# EMBARQUÉS dans l'image (état #2 dense-sigle-OFF, 52040, aligné corpus). Décision :
-# le volume Railway (quota 500MB, mutations destructives gatées) est abandonné comme
-# source des index. Le volume sera DÉTACHÉ au deploy (sinon il masque /app/data/embeddings
-# de l'image). Avantage : état atomique code+corpus+index, rollback = redeploy image
-# précédente, plus aucune op volume. ~+412 MB image (index 213 + quads 196 + golden 3).
-COPY data/embeddings/formations.index ./data/embeddings/formations.index
-COPY data/embeddings/formations_v7_formations.index ./data/embeddings/formations_v7_formations.index
-COPY data/embeddings/formations_v7_metiers.index ./data/embeddings/formations_v7_metiers.index
-COPY data/embeddings/formations_v7_statistiques.index ./data/embeddings/formations_v7_statistiques.index
-COPY data/embeddings/formations_v7_aides_territoires.index ./data/embeddings/formations_v7_aides_territoires.index
-COPY data/embeddings/formations_partition_manifest.json ./data/embeddings/formations_partition_manifest.json
-COPY data/embeddings/golden_qa.index ./data/embeddings/golden_qa.index
 
 # Railway injecte $PORT automatiquement
 ENV PYTHONPATH=/app \

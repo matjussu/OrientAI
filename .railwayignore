@@ -1,10 +1,9 @@
-# Railway tarball ignore — utilisé avec `railway up --no-gitignore` pour
-# embarquer `data/processed/formations.json` (gitignored mais nécessaire au
-# runtime) tout en filtrant les gros artefacts qui blow up le payload upload.
-#
-# Limite Cloudflare : ~100 MB body. Sans cet ignore, le tarball fait 2.7 GB.
-# Avec : on cible ~600 MB (formations.json 104 MB + src/ + requirements.lock +
-# deps Docker layers downloaded à part).
+# Railway tarball ignore — deploy CODE-ONLY (migration volume, ordre 1501, 2026-06-14).
+# Les gros artefacts (corpus formations.json + index FAISS + 4 quads + manifest +
+# golden_qa) vivent sur le VOLUME Railway monté à /app/data, PAS dans l'image. Donc on
+# exclut TOUT data/ du contexte d'upload -> tarball ~quelques MB (src + requirements +
+# Dockerfile + 1 script). Plus jamais de 413/502 (avant : data/archive 2.5G + variants
+# data/processed passaient et faisaient un tarball de 1.6-1.8G > limite Cloudflare).
 
 # Python
 .venv/
@@ -16,49 +15,20 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Data raw / golden_qa / annexes — pas runtime-needed
-data/raw/
-data/golden_qa/
+# Data — Approche A (migration volume 1501) : les INDEX (data/embeddings, ~412MB) sont
+# sur le VOLUME Railway (/app/data/embeddings) -> EXCLUS du tarball. Le CORPUS (formations.json
+# + golden_qa_meta.json) reste dans l'image -> WHITELIST. Tout le reste de data/ exclu
+# (archive 2.5G, raw, variants...). Garde le tarball ~35MB compressé -> plus de 413.
+# Pattern gitignore : data/* exclut tout, !data/processed/ ré-inclut le dir, data/processed/*
+# exclut son contenu, !les 2 fichiers ré-inclut le corpus.
+data/*
+!data/processed/
+data/processed/*
+!data/processed/formations.json
+!data/processed/golden_qa_meta.json
 
-# Option C (ordre 1535) — index + quads + manifest EMBARQUÉS dans l'image (volume
-# Railway abandonné). On exclut data/embeddings/* (backups, checkpoints, rollback,
-# vieux index) SAUF les 7 artefacts servis. glob+négation (gitignore-style ne
-# ré-inclut pas sous un dir exclu). ~+412MB au tarball railway up (index 213 + quads 196).
-data/embeddings/*
-!data/embeddings/formations.index
-!data/embeddings/formations_v7_formations.index
-!data/embeddings/formations_v7_metiers.index
-!data/embeddings/formations_v7_statistiques.index
-!data/embeddings/formations_v7_aides_territoires.index
-!data/embeddings/formations_partition_manifest.json
-!data/embeddings/golden_qa.index
-data/processed/formations_v6.json
-data/processed/formations_unified.pre_d5_backup.json
-data/processed/formations_golden_pipeline.json
-data/processed/formations_unified.json
-data/processed/formations_dedupe.json
-data/processed/formations_multi_corpus.json
-data/processed/formations_multi_corpus_dedupe.json
-data/processed/formations.json.pre_dedup
-data/processed/calendrier_corpus.json
-data/processed/apec_*.json
-data/processed/cereq_*.json
-data/processed/dares_*.json
-data/processed/crous_*.json
-data/processed/insee_*.json
-data/processed/financement_*.json
-data/processed/onisep_*.json
-data/processed/parcoursup_*.json
-data/processed/inserjeunes_*.json
-data/processed/monmaster_*.json
-data/processed/rncp_*.json
-data/processed/rome_*.json
-data/processed/labonnealternance_*.json
-data/processed/manuel_*.json
-data/processed/anotea_*.json
-data/processed/insertion_*.json
-data/processed/corrections_*.json
-data/processed/quality_*.json
+# Audits / bench : volumineux (results, baselines, jsons), jamais runtime.
+audit_empirique_2026-06-09/
 
 # Outputs benchmarks / experiments — pas runtime
 results/
