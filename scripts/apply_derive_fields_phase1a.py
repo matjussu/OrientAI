@@ -87,6 +87,12 @@ def main():
     fiches = derive_lyceepro_insertion(fiches)
     fiches = derive_onisep_niveau(fiches)
     fiches = geocode_region(fiches)
+    # ROME 4.0 (ordre 1402) — enrichissement métier fact_card (passerelles/RIASEC/transitions)
+    rome_zip = REPO / "data/raw/rome_4_0.zip"
+    if rome_zip.exists():
+        from src.collect.rome_mobilite import parse_rome_enrichment, attach_rome_enrichment
+        n_rome = attach_rome_enrichment(fiches, parse_rome_enrichment(rome_zip))
+        print(f"[ROME 4.0] {n_rome} fiches métier enrichies (passerelles/RIASEC/transitions)")
     after = _coverage(fiches)
 
     FICHES.write_text(json.dumps(fiches, ensure_ascii=False))

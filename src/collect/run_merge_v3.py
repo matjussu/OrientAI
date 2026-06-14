@@ -992,6 +992,17 @@ def run_merge_v3(
         s = stage_stats["5_95_derive_fields"]
         print(f"\n[Stage 5.95] DERIVE_FIELDS — +{s['type_diplome_filled']} type_diplome, +{s['region_filled']} region")
 
+    # Stage 5.96 — ROME 4.0 enrichissement métier (fix order 2026-06-14-1402)
+    # passerelles + RIASEC + flags transition sur les fiches métier, fact_card UNIQUEMENT
+    # (jamais fiche_to_text, ADR-033 Run 5). Skip si le ZIP data.gouv est absent.
+    _rome_zip = Path("data/raw/rome_4_0.zip")
+    if _rome_zip.exists():
+        from src.collect.rome_mobilite import parse_rome_enrichment, attach_rome_enrichment
+        n_rome = attach_rome_enrichment(fiches, parse_rome_enrichment(_rome_zip))
+        stage_stats["5_96_rome_enrichment"] = {"n_metier_enriched": n_rome}
+        if verbose:
+            print(f"\n[Stage 5.96] ROME 4.0 — {n_rome} fiches métier enrichies (passerelles/RIASEC/transitions)")
+
     # Stage 6 — ATTACH_DEBOUCHES
     if verbose:
         print("\n[Stage 6] ATTACH_DEBOUCHES — métiers ROME...")

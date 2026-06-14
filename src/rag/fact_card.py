@@ -315,6 +315,11 @@ class FactCard:
     # Résumé source-aware des voies reconversion (VAE, formation continue,
     # alternance). None si aucune voie reconversion (ex : voie initiale seule).
     dispositifs_reconversion: str | None = None
+    # ROME 4.0 (order 1402) — enrichissement métier, fact_card UNIQUEMENT (jamais
+    # fiche_to_text, ADR-033 Run 5). Présents seulement sur les fiches métier ROME.
+    passerelles: list[str] = field(default_factory=list)   # mobilités/évolutions métier
+    riasec: str | None = None                              # profil d'intérêt (Réaliste/...)
+    transitions: list[str] = field(default_factory=list)   # Emploi Vert, métier réglementé...
     # ADR-055 — provenance avec tier de confiance, exposée au LLM via JSON.
     # None si la source de la fiche est inconnue ou hors liste blanche.
     provenance: FactProvenance | None = None
@@ -845,6 +850,10 @@ def fiche_to_fact_card(fiche: dict, fact_id: str) -> FactCard:
         tendance_acces=tendance_acces,
         profil_admis=_summarize_profil_admis(fiche.get("profil_admis")),
         dispositifs_reconversion=_summarize_voies_acces(fiche.get("voies_acces")),
+        # ROME 4.0 (order 1402) — enrichissement métier posé par attach_rome_enrichment.
+        passerelles=fiche.get("rome_passerelles") or [],
+        riasec=_safe_str(fiche.get("rome_riasec")),
+        transitions=fiche.get("rome_transitions") or [],
         provenance=_infer_provenance(fiche),
     )
 
