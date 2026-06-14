@@ -40,6 +40,12 @@ echo "=== [1] CRÉE + MONTE le volume à /app/data (mount OBLIGATOIRE = /app/dat
 echo "    (déclenche un redeploy 06-13 avec volume vide -> fenêtre dégradée jusqu'au deploy code)"
 railway volume add --mount-path /app/data 2>&1 | tail -10
 
+echo "=== [1.5] RAILWAY_RUN_UID=0 (root) — GARANTIT la LECTURE des fichiers volume (owned root) ==="
+echo "    (image sans directive USER = root, mais on force RAILWAY_RUN_UID=0 pour éliminer"
+echo "     tout risque de permission-denied non-root sur le volume -> fail-fast persistant)"
+echo "    --skip-deploys : prend effet au deploy code (étape 3), n'impacte pas 06-13 maintenant"
+railway variables --set "RAILWAY_RUN_UID=0" --skip-deploys 2>&1 | tail -3
+
 echo "=== [2] UPLOAD des 9 artefacts NEUFS vers le volume ==="
 railway volume files upload data/processed/formations.json        /app/data/processed/formations.json        --overwrite 2>&1 | tail -2
 railway volume files upload data/processed/golden_qa_meta.json     /app/data/processed/golden_qa_meta.json     --overwrite 2>&1 | tail -2
