@@ -27,7 +27,7 @@ from src.rag.factory import make_production_pipeline
 CORPUS = os.environ.get("ORIENTIA_CORPUS_PATH", "data/processed/formations.json")
 INDEX = os.environ.get("ORIENTIA_INDEX_PATH", "data/embeddings/formations.index")
 OUT = os.environ.get("BENCH_OUT", "audit_empirique_2026-06-09/bench_e2e_out.json")
-QUESTIONS = "audit_empirique_2026-06-09/bench_e2e_questions_1403.json"
+QUESTIONS = os.environ.get("BENCH_QUESTIONS", "audit_empirique_2026-06-09/bench_e2e_questions_1403.json")
 ROUTER = os.environ.get("ORIENTIA_BENCH_ROUTER", "1") != "0"
 
 

@@ -1,0 +1,614 @@
+[
+  {
+    "id": "but-01",
+    "cat": "BUT",
+    "q": "Le BUT informatique, c'est quel type de diplôme et à quel niveau ?",
+    "answer": "Le BUT Informatique est un **diplôme national de niveau bac+3** (grade licence), délivré par des IUT publics.\n\n- Type de diplôme : **BUT** (Bachelor Universitaire de Technologie) [source S2]\n- Niveau : **bac+3** [source S2]\n\nTu cherches une formation en particulier ou des précisions sur les débouchés ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "BUT - Information communication Parcours information numérique dans les organisations",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Informatique",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Informatique",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Métiers du multimédia et de l'internet",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      }
+    ]
+  },
+  {
+    "id": "but-02",
+    "cat": "BUT",
+    "q": "Le BUT génie électrique et informatique industrielle mène à quel niveau d'études ?",
+    "answer": "Le BUT Génie électrique et informatique industrielle est un diplôme de **niveau bac+3** [source S2][source S3][source S4][source S5].\n\nAs-tu déjà une idée des débouchés ou de la poursuite d’études qui t’intéresseraient après ce BUT ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Licence - Sciences pour l'ingénieur - Parcours Génie Electrique Informatique Industrielle",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      }
+    ]
+  },
+  {
+    "id": "but-03",
+    "cat": "BUT",
+    "q": "Le BUT techniques de commercialisation, c'est quel diplôme ?",
+    "answer": "Le BUT Techniques de commercialisation est un **diplôme national de niveau bac+3** (grade licence), délivré par des IUT publics.\n\n- Il s’agit d’un **BUT** (Bachelor Universitaire de Technologie), sélectif, avec des taux d’accès variables selon les établissements : 17 % à 51 % en 2025 [source S5][source S3].\n- Il forme aux métiers du commerce, du marketing et de la gestion commerciale.\n\nTu cherches une formation en particulier ou des précisions sur son contenu ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "BUT - Techniques de commercialisation",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Techniques de commercialisation - Double diplôme franco-allemand «Gestion d’entreprise et marketing »",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Techniques de commercialisation",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Techniques de commercialisation",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Techniques de commercialisation",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      }
+    ]
+  },
+  {
+    "id": "bts-01",
+    "cat": "BTS",
+    "q": "À quoi mène le BTS SIO et c'est quel niveau de diplôme ?",
+    "answer": "Je n'ai pas de formation **BTS SIO** dans mes sources pour cette question. Je te suggère de vérifier sur Parcoursup, ONISEP ou de prendre RDV avec le CIO le plus proche.",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "BTS - Services - Commerce International",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Agricole - QUalité, ALimentation, Innovation et Maîtrise Sanitaire (BioQUALIM) aliments et processus technologiques",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Conception et Réalisation de Systèmes Automatiques",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Agricole - Métiers de l'élevage: développement, production et conseil",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      }
+    ]
+  },
+  {
+    "id": "bts-02",
+    "cat": "BTS",
+    "q": "Le BTS comptabilité et gestion, c'est quel type de diplôme et quel niveau ?",
+    "answer": "Le BTS Comptabilité et gestion est un **diplôme d'État de niveau bac+2**, classé comme formation sélective.\n\n- Type de diplôme : **BTS** (Brevet de Technicien Supérieur) [source S1]\n- Niveau : **bac+2** [source S1]\n\nTu cherches une formation courte et professionnelle, ou tu envisages une poursuite d'études après ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "BTS - Services - Comptabilité et gestion",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Comptabilité et gestion",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Comptabilité et gestion",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Comptabilité et gestion",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Management économique de la construction",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      }
+    ]
+  },
+  {
+    "id": "bts-03",
+    "cat": "BTS",
+    "q": "Le BTS électrotechnique, on sort avec quel niveau ?",
+    "answer": "Le BTS Électrotechnique est un diplôme de **niveau bac+2** [source S1].\n\nC’est un cursus court et professionnel, conçu pour une insertion rapide ou une poursuite d’études en licence pro.\n\nEst-ce que tu envisages plutôt de travailler directement après ou de continuer tes études ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "BTS - Production - Electrotechnique",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Electrotechnique",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Electrotechnique",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Electrotechnique",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Electrotechnique",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      }
+    ]
+  },
+  {
+    "id": "lic-01",
+    "cat": "Licence",
+    "q": "La licence de droit, c'est quel niveau de diplôme ?",
+    "answer": "La licence de droit est un diplôme de **niveau bac+3** [source S1].",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Licence - Double diplôme - Licence Droit - Licence droit Collège de droit",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Double diplôme - Licence Droit -  Double diplôme international franco-irlandais",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Droit",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Double diplôme - Licence Droit - Licence de droit (Université Côte d'Azur) / LL.B. (Université de la Sarre) de droit français et de droit allemand",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Droit",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      }
+    ]
+  },
+  {
+    "id": "lic-02",
+    "cat": "Licence",
+    "q": "La licence économie et gestion, quel type de diplôme et quel niveau ?",
+    "answer": "La licence économie et gestion est un **diplôme de niveau bac+3** [source S1].\n\n- Type de diplôme : **Licence** [source S1]\n- Niveau : **bac+3** [source S1]\n\nTu cherches une formation en particulier ou des précisions sur les débouchés ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Licence - Economie et gestion",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Double diplôme - Licence Economie et gestion - Double diplôme Licence Management international - Diplôme universitaire Compétences en management - site de Sénart",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Double diplôme - Licence Economie et gestion - Licence 1 Economie et gestion + DU Agir pour la transition (en 5 ans)",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Double licence - Langues étrangères appliquées / Economie et gestion - Double licence LEA - Economie et gestion",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Economie et gestion",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      }
+    ]
+  },
+  {
+    "id": "lic-03",
+    "cat": "Licence",
+    "q": "La licence de psychologie mène à quel niveau ?",
+    "answer": "Je comprends que tu cherches à savoir jusqu'où peut mener une licence de psychologie.\n\n- Les licences de psychologie proposées dans mes sources sont des formations de **niveau bac+3** [source S1][source S2][source S3].\n- La [Double licence Philosophie / Psychologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=18320&typeBac=0&originePc=0) et la [Double licence Sciences biomédicales / Psychologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=47247&typeBac=0&originePc=0) sont aussi des formations de **niveau bac+3** [source S4][source S5].\n\nAs-tu déjà une idée de la spécialisation ou du métier que tu vises après ce niveau ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Licence - Sciences cognitives - Parcours Psychologie",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Psychologie",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Psychologie",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Double licence - Philosophie / Psychologie -  Double licence Philosophie - Psychologie",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Double licence - Sciences biomédicales / Psychologie - Sciences biomédicales / Psychologie parcours Sciences Psychologiques",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      }
+    ]
+  },
+  {
+    "id": "lp-01",
+    "cat": "Licence pro",
+    "q": "La licence professionnelle métiers du BTP, c'est quel niveau de diplôme ?",
+    "answer": "La licence professionnelle **Métiers du BTP** est un diplôme de **niveau bac+3** [source S1].\n\nTu cherches une formation en particulier ou des précisions sur les spécialités ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Métiers du BTP : bâtiment et construction (fiche nationale)",
+        "source": "rncp",
+        "type_diplome": "Licence professionnelle"
+      },
+      {
+        "nom": "Métiers du BTP : travaux publics (fiche nationale)",
+        "source": "rncp",
+        "type_diplome": "Licence professionnelle"
+      },
+      {
+        "nom": "Concepteur en modélisation des informations du bâtiment (« building information modeling ») en sciences et techniques pour l’architecture",
+        "source": "rncp",
+        "type_diplome": "Diplôme conférant le grade de Licence "
+      },
+      {
+        "nom": "Métiers du BTP : performance énergétique et environnementale des bâtiments (fiche nationale)",
+        "source": "rncp",
+        "type_diplome": "Licence professionnelle"
+      },
+      {
+        "nom": "Sciences et Ingénierie, spécialité bâtiment et travaux publics",
+        "source": "rncp",
+        "type_diplome": "Diplôme conférant le grade de Licence "
+      }
+    ]
+  },
+  {
+    "id": "master-01",
+    "cat": "Master",
+    "q": "Le master MIAGE, c'est quel type de diplôme et quel niveau ?",
+    "answer": "Le master MIAGE est un **diplôme de niveau bac+5** de type **Master** [source S1].\n\nQuelle spécialisation ou université t’intéresse particulièrement dans ce domaine ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "INFORMATIQUE — Méthodes informatiques appliquées à la gestion des entreprises - MIAGE (M1)",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — MIAGE - Formation Initiale",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Sciences du numérique et management",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénierie d'Affaires Numériques (IAN)",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — MIAGE",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      }
+    ]
+  },
+  {
+    "id": "master-02",
+    "cat": "Master",
+    "q": "Le master marketing, vente, on sort à quel niveau ?",
+    "answer": "Si tu veux savoir à quel niveau sort un master en marketing/vente, voici ce que donnent les données disponibles :\n\n- Les masters cités (ex: [MARKETING, VENTE — Logistique, Marketing & Distribution à l’Université Paris 1](https://www.onisep.fr/recherche?q=MARKETING%2C%20VENTE%20%E2%80%94%20Logistique%2C%20Marketing%20%26%20Distribution%20%20%28LMD%29)) sont tous de **niveau bac+5** [source S1].\n\nEst-ce que tu cherches des précisions sur un parcours en particulier ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "MARKETING, VENTE — Logistique, Marketing & Distribution  (LMD)",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "MARKETING, VENTE — Commerce des Vins",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "MARKETING, VENTE — Commerce et merchandising",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "MARKETING, VENTE — None",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "MARKETING, VENTE — Marketing intégré dans un monde digitalisé",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      }
+    ]
+  },
+  {
+    "id": "master-03",
+    "cat": "Master",
+    "q": "Le master droit public, quel niveau de diplôme ?",
+    "answer": "Le master droit public est un diplôme de **niveau bac+5** [source S1].",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "DROIT PUBLIC — Droit public (enseignement à distance)",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "DROIT PUBLIC — Droit Public",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "DROIT PUBLIC — Droit et contentieux publics",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "DROIT PUBLIC — Droit de l'Action Publique",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "DROIT PUBLIC — DROIT PUBLIC FONDAMENTAL",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      }
+    ]
+  },
+  {
+    "id": "cpge-01",
+    "cat": "CPGE",
+    "q": "La prépa MPSI, c'est quel type de formation ?",
+    "answer": "La [classe préparatoire mathématiques, physique et sciences de l'ingénieur (MPSI)](https://www.onisep.fr/http/redirection/formation/slug/FOR.595) est une **classe préparatoire scientifique et technologique** [source S1].\n\nQu’est-ce qui t’intéresse dans ce type de parcours ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "classe préparatoire mathématiques, physique et sciences de l'ingénieur (MPSI), 1re année option informatique",
+        "source": "onisep",
+        "type_diplome": "classe préparatoire scientifique et technologique"
+      },
+      {
+        "nom": "cycle préparatoire intégré de l'ISEP (associé avec le Lycée Stanislas de Paris) - prépa associée MPSI-PSI",
+        "source": "onisep",
+        "type_diplome": "cycle préparatoire intégré"
+      },
+      {
+        "nom": "PrépaPsy",
+        "source": "onisep",
+        "type_diplome": "formation d'école spécialisée"
+      },
+      {
+        "nom": "cycle préparatoire intégré ECAM, sur le programme MPSI, PSI",
+        "source": "onisep",
+        "type_diplome": "formation d'école spécialisée"
+      },
+      {
+        "nom": "la Prépa des INP",
+        "source": "onisep",
+        "type_diplome": "cycle préparatoire commun"
+      }
+    ]
+  },
+  {
+    "id": "cpge-02",
+    "cat": "CPGE",
+    "q": "La CPGE BCPST mène à quoi et c'est quel type de classe ?",
+    "answer": "La CPGE BCPST (Biologie, Chimie, Physique et Sciences de la Terre) est une **classe préparatoire aux grandes écoles** (CPGE) scientifique, spécialisée dans les sciences du vivant et de la matière. Elle prépare principalement aux concours des **écoles d'ingénieurs agronomes, vétérinaires, ou généralistes** (comme AgroParisTech, l'ENSV, ou Polytechnique via la filière BCPST).\n\nC’est une formation **sélective** (ex : [CPGE BCPST au Lycée Chaptal](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8994&typeBac=0&originePc=0) avec un taux d’accès de 38 % [source S1]).\n\nQuels débouchés ou écoles vises-tu après cette prépa ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "CPGE - BCPST",
+        "source": "parcoursup",
+        "type_diplome": "CPGE"
+      },
+      {
+        "nom": "CPGE - BCPST",
+        "source": "parcoursup",
+        "type_diplome": "CPGE"
+      },
+      {
+        "nom": "CPGE - BCPST",
+        "source": "parcoursup",
+        "type_diplome": "CPGE"
+      },
+      {
+        "nom": "CPGE - BCPST",
+        "source": "parcoursup",
+        "type_diplome": "CPGE"
+      },
+      {
+        "nom": "CPGE - BCPST",
+        "source": "parcoursup",
+        "type_diplome": "CPGE"
+      }
+    ]
+  },
+  {
+    "id": "ing-01",
+    "cat": "Ingénieur",
+    "q": "Une formation d'ingénieur en 5 ans, on sort avec quel diplôme et quel niveau ?",
+    "answer": "Si tu cherches à savoir quel diplôme et niveau tu obtiendras après 5 ans d’études d’ingénieur, voici ce que disent mes sources :\n\n- Les formations comme **[Ingénieur diplômé de l'Ecole polytechnique](https://www.onisep.fr/recherche?q=Ing%C3%A9nieur%20dipl%C3%B4m%C3%A9%20de%20l%27Ecole%20polytechnique)** ou **[Ingénieur diplômé de l’Université de Perpignan, spécialité énergétique](https://www.onisep.fr/recherche?q=Ing%C3%A9nieur%20dipl%C3%B4m%C3%A9%20de%20l%E2%80%99Universit%C3%A9%20de%20Perpignan%2C%20sp%C3%A9cialit%C3%A9%20%C3%A9nerg%C3%A9tique)** délivrent un **titre d’ingénieur** (niveau **bac+5**) [source S1, S4].\n- Le **[diplôme d'ingénieur du CNAM](https://www.onisep.fr/http/redirection/formation/slug/FOR.10681)** suit la même logique : **diplôme d’ingénieur** à **bac+5** [source S5].\n\nEst-ce que tu cherches une formation en particulier ou des précisions sur un domaine ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Ingénieur diplômé de l'Ecole polytechnique",
+        "source": "rncp",
+        "type_diplome": "Titre ingénieur"
+      },
+      {
+        "nom": "Ingénieur diplômé de l’Institut Supérieur de l’Automobile et des Transports de l'Université Bourgogne Europe  - spécialité  Génie Industriel",
+        "source": "rncp",
+        "type_diplome": "Titre ingénieur"
+      },
+      {
+        "nom": "diplôme d'ingénieur de l'École navale",
+        "source": "onisep",
+        "type_diplome": "diplôme d'ingénieur"
+      },
+      {
+        "nom": "Ingénieur diplômé de l’Université de Perpignan, spécialité énergétique",
+        "source": "rncp",
+        "type_diplome": "Titre ingénieur"
+      },
+      {
+        "nom": "diplôme d'ingénieur du CNAM spécialité génie industriel en partenariat avec l'ITII Ile de France",
+        "source": "onisep",
+        "type_diplome": "diplôme d'ingénieur"
+      }
+    ]
+  },
+  {
+    "id": "titrepro-01",
+    "cat": "Titre pro RNCP",
+    "q": "La certification d'accompagnant en gérontologie, c'est quel type de certification ?",
+    "answer": "Je n'ai pas de formation intitulée exactement \"accompagnant en gérontologie\" dans mes sources. En revanche, la certification **Auxiliaire de gérontologie** (niveau CAP-BEP) est référencée comme une compétence certifiée RNCP39232, avec des métiers visés en accompagnement médicosocial [source S4].\n\nSouhaites-tu explorer cette piste ou chercher une autre appellation proche ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "ifsi-01",
+    "cat": "DE infirmier",
+    "q": "Pour devenir infirmier en IFSI, on obtient quel diplôme ?",
+    "answer": "Tu cherches à savoir quel diplôme est délivré à l’issue d’une formation en IFSI.\n\n- Le diplôme obtenu est le **Diplôme d'État infirmier** dans tous les IFSI listés [source S1].\n\nEst-ce que tu envisages une formation en particulier parmi celles disponibles ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "D.E Infirmier",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'État infirmier"
+      },
+      {
+        "nom": "D.E Infirmier",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'État infirmier"
+      },
+      {
+        "nom": "D.E Infirmier",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'État infirmier"
+      },
+      {
+        "nom": "D.E Infirmier",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'État infirmier"
+      },
+      {
+        "nom": "D.E Infirmier",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'État infirmier"
+      }
+    ]
+  }
+]
