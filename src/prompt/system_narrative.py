@@ -237,6 +237,13 @@ def build_narrative_system_prompt(
     Contrat factuel (`_HEAD` / `_R7_BLOCK` / violation) byte-identique quel que
     soit le format : seul le bloc R6 (structure) change, plus d'éventuels
     overlays insérés entre la structure et R7.
+
+    Note (fix A, ordre 1926) : on a TESTÉ une directive « compare SPÉCIFIQUEMENT
+    ces options » dans le prompt COMPARAISON. Résultat MESURÉ contre-productif :
+    elle faisait REFUSER le tableau (R12/T2 -> « pas de formation pertinente »)
+    quand une option ne matchait pas exactement, au lieu d'une table partielle.
+    Abandonnée : le retrieval PAR option (cf `_prepare_narrative`) suffit à
+    surfacer les options ; le tableau se peuple de lui-même.
     """
     structure = _STRUCTURE_BY_FORMAT.get(fmt, _STRUCT_CONSEIL)
     parts = [_HEAD, structure]

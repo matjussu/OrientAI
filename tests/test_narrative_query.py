@@ -242,3 +242,57 @@ class TestBuildClarifierInput:
 
     def test_never_empty_if_question_present(self):
         assert build_narrative_clarifier_input("q", [{"role": "assistant", "content": "x"}]) == "q"
+
+
+# --- Fix A (ordre 1926) : extraction des options comparées + merge round-robin ---
+
+from src.rag.narrative_query import extract_comparison_options
+from src.rag.pipeline import _round_robin_dedup, _fiche_key
+
+
+def test_extract_options_entre_et():
+    assert extract_comparison_options(
+        "j'hesite entre une prepa et un BUT informatique, je sais pas") == ["prepa", "but informatique"]
+
+
+def test_extract_options_a_la_fois_en():
+    assert extract_comparison_options(
+        "admise a la fois en BUT GEA et en BTS Comptabilite-Gestion. Lequel ?"
+    ) == ["but gea", "bts comptabilite-gestion"]
+
+
+def test_extract_options_mieux_entre():
+    opts = extract_comparison_options(
+        "qu'est-ce qui serait le mieux entre ecole de commerce et BUT pour viser le marketing ?")
+    assert opts == ["ecole de commerce", "but"]
+
+
+def test_extract_options_ignores_situation_en():
+    # Ne doit PAS attraper le « en » de la situation (« en terminale … »).
+    opts = extract_comparison_options(
+        "Je suis en terminale STMG a Lyon, admise a la fois en BUT GEA et en BTS CG")
+    assert "terminale" not in " ".join(opts)
+    assert opts == ["but gea", "bts cg"]
+
+
+def test_extract_options_none_when_not_comparison():
+    assert extract_comparison_options("je suis perdu, aucune idee de ce que je veux faire") == []
+
+
+def test_round_robin_guarantees_each_pool_represented():
+    a = [{"fiche": {"nom": "A1"}}, {"fiche": {"nom": "A2"}}]
+    b = [{"fiche": {"nom": "B1"}}, {"fiche": {"nom": "B2"}}]
+    base = [{"fiche": {"nom": "C1"}}]
+    top = _round_robin_dedup([a, b, base], target=4)
+    noms = [_fiche_key(x)[0] for x in top]
+    assert "a1" in noms and "b1" in noms  # chaque option représentée tôt
+    assert len(top) == 4
+
+
+def test_round_robin_dedups_across_pools():
+    shared = {"fiche": {"nom": "X", "etablissement": "U", "ville": "V"}}
+    a = [shared, {"fiche": {"nom": "A1"}}]
+    b = [dict(shared), {"fiche": {"nom": "B1"}}]  # même fiche que a[0]
+    top = _round_robin_dedup([a, b], target=10)
+    keys = [_fiche_key(x) for x in top]
+    assert len(keys) == len(set(keys))  # pas de doublon

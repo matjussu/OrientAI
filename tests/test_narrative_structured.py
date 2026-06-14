@@ -154,3 +154,38 @@ def test_markdown_full_always_canonical():
         for fmt in (CONSEIL, COMPARAISON, TRAJECTOIRE, VALIDATION, SHORTLIST, EXPLORATOIRE):
             r = parse_narrative_response(md, _d(fmt))
             assert r["markdown_full"] == md  # jamais altéré, quel que soit le format
+
+
+# --- Détection de troncature (fix B, ordre 1926) ---
+
+def test_complete_response_not_truncated():
+    r = parse_narrative_response(CONSEIL_MD, _d(CONSEIL))
+    assert r["truncated"] is False
+
+
+def test_truncated_mid_citation_detected():
+    # Cas R01 réel : coupé sur « [source S » (citation inachevée).
+    md = TRAJECTOIRE_MD.rstrip() + "\n- **[Master data Lille](https://ex.fr/m)** : insertion forte [source S"
+    r = parse_narrative_response(md, _d(TRAJECTOIRE))
+    assert r["truncated"] is True
+    assert r["parse_confidence"] <= 0.5  # pénalisé malgré titres présents
+
+
+def test_truncated_mid_markdown_link_detected():
+    # Cas T3 réel (démo) : coupé dans une URL de lien markdown.
+    md = TRAJECTOIRE_MD.rstrip() + "\n- **[Data scientist](https://www.onisep.fr/recherche?q=Syst%C3%A8mes%20automatis"
+    r = parse_narrative_response(md, _d(TRAJECTOIRE))
+    assert r["truncated"] is True
+
+
+def test_truncated_mid_word_detected():
+    md = CONSEIL_MD.rstrip()[:-30]  # coupe au milieu d'une phrase
+    r = parse_narrative_response(md, _d(CONSEIL))
+    # se termine sur un mot/ponctuation interne -> truncated
+    assert r["truncated"] is True
+
+
+def test_question_ending_not_truncated():
+    # Une relance par question est une fin LÉGITIME (la plupart des formats finissent ainsi).
+    r = parse_narrative_response(SHORTLIST_MD, _d(SHORTLIST))
+    assert r["truncated"] is False  # finit sur « ... Parcoursup ? »

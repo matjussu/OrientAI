@@ -93,6 +93,10 @@ class FormatDecision:
     constraint_terms: list[str] = field(default_factory=list)
     source: str = "fallback"
     matched: dict[str, bool] = field(default_factory=dict)
+    # Options nommées du face-à-face (format COMPARAISON) — peuplé par
+    # `_prepare_narrative` (extract_comparison_options), sert à ancrer le tableau
+    # sur les options DEMANDÉES (fix A, ordre 1926). Vide hors comparaison.
+    comparison_options: list[str] = field(default_factory=list)
 
     def is_valid(self) -> bool:
         return self.format in VALID_FORMATS

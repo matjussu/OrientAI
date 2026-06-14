@@ -35,8 +35,10 @@ from src.rag.scope_classifier import ScopeClassifier, ScopeResult
 from src.agent.tools.profile_clarifier import Profile, ProfileClarifier
 from src.rag.narrative_detect import is_narrative, is_narrative_followup
 from src.rag.narrative_route import route_from_profile
-from src.rag.narrative_query import build_narrative_retrieval_query, build_narrative_clarifier_input
-from src.rag.narrative_format import route_narrative_format, FormatDecision, TRAJECTOIRE
+from src.rag.narrative_query import (
+    build_narrative_retrieval_query, build_narrative_clarifier_input, extract_comparison_options,
+)
+from src.rag.narrative_format import route_narrative_format, FormatDecision, TRAJECTOIRE, COMPARAISON
 from src.rag.narrative_structured import parse_narrative_response
 from src.prompt.system_narrative import NARRATIVE_FEW_SHOT_PREFIX, narrative_few_shot
 from src.validator import (
@@ -166,6 +168,39 @@ class _ShortCircuitResult:
     """
     text: str
     reason: str
+
+
+def _fiche_key(item: dict) -> tuple:
+    """Clé d'identité d'une fiche pour dédup inter-retrievals (fix A COMPARAISON)."""
+    f = item.get("fiche", item) if isinstance(item, dict) else {}
+    if not isinstance(f, dict):
+        return (str(item),)
+    return (
+        str(f.get("nom", "")).strip().lower(),
+        str(f.get("etablissement", "")).strip().lower(),
+        str(f.get("ville", "")).strip().lower(),
+    )
+
+
+def _round_robin_dedup(pools: list[list[dict]], target: int) -> list[dict]:
+    """Fusionne plusieurs pools de retrieval en round-robin (1 par pool à tour de
+    rôle), dédupliqué, jusqu'à `target`. Garantit que CHAQUE pool (= chaque option
+    comparée) soit représenté dans les sources servies au LLM (fix A, ordre 1926)."""
+    out: list[dict] = []
+    seen: set = set()
+    idx = [0] * len(pools)
+    while len(out) < target and any(idx[i] < len(pools[i]) for i in range(len(pools))):
+        for i in range(len(pools)):
+            if idx[i] < len(pools[i]):
+                it = pools[i][idx[i]]
+                idx[i] += 1
+                key = _fiche_key(it)
+                if key not in seen:
+                    seen.add(key)
+                    out.append(it)
+                    if len(out) >= target:
+                        break
+    return out
 
 
 def _chunk_text_into_tokens(text: str) -> list[str]:
@@ -308,6 +343,7 @@ class OrientIAPipeline:
         # (exposés au serving pour le payload `structured`). None hors récit.
         self.last_narrative_format_decision: FormatDecision | None = None
         self.last_narrative_structured: dict | None = None
+        self.last_narrative_comparison_options: list[str] = []
         # Chantier 1.B (2026-05-03) — métadonnées du retry-with-hint loop pour
         # audit / observabilité. None tant qu'aucun call avec validator. Format :
         #   {
@@ -463,6 +499,22 @@ class OrientIAPipeline:
             if prepared.narrative_mode else None
         )
         return answer_text, top
+
+    def warmup_generation(self) -> None:
+        """Pré-chauffe le pool de connexions Mistral (génération) + le clarifier
+        récit (ordre 1926, fix C — complément du warmup retrieval déjà fait au
+        boot serveur). Sans ça, la 1re VRAIE réponse paie le cold-start réseau
+        (handshake TLS + pool). Best-effort : jamais bloquant pour le démarrage.
+        """
+        try:
+            self.answer("Quelles formations après un bac général ?")
+        except Exception as e:  # noqa: BLE001 — warmup best-effort
+            _logger.warning("warmup_generation skipped (non-bloquant): %s", e)
+        if self.enable_narrative_mode and self.narrative_clarifier is not None:
+            try:
+                self.narrative_clarifier.clarify_narrative("warmup mode recit")
+            except Exception as e:  # noqa: BLE001
+                _logger.warning("warmup clarify_narrative skipped: %s", e)
 
     def _prepare_for_generation(
         self,
@@ -752,7 +804,31 @@ class OrientIAPipeline:
             criteria=None,                 # géo = boost via requête, jamais filtre dur
             route_decision=route_decision,
         )
-        if self.use_mmr:
+
+        # Fix A (ordre 1926) — COMPARAISON : retrieval PAR option nommée pour que
+        # CHAQUE option du face-à-face soit représentée dans les sources. Sans ça,
+        # quand la requête sector-driven ne surface pas les options (R05/R12), le
+        # modèle refuse en bloc. Merge round-robin (options d'abord) -> table
+        # partielle T6-style ; le contrat factuel garantit « hors sources » pour
+        # une option absente du corpus (ex. prépa), pas un refus total.
+        options = extract_comparison_options(clarifier_input) if decision.format == COMPARAISON else []
+        self.last_narrative_comparison_options = options
+        decision.comparison_options = options  # ancre le tableau sur les options DEMANDÉES (fix A)
+        if options:
+            per = max(4, target // (len(options) + 1))
+            opt_pools = [
+                self._retrieve_and_filter(
+                    question=opt, k=k, domain_hint=classify_domain_hint(opt),
+                    target=per, criteria=None, route_decision=route_decision,
+                )
+                for opt in options
+            ]
+            # BASE D'ABORD (augmente, ne DÉPLACE pas) : les cas qui marchaient via
+            # la requête sector (T2 BUT GEA) gardent leurs fiches en tête ; les
+            # options ne font qu'AJOUTER la couverture manquante (R05 école de
+            # commerce). Mettre les options en tête déstabilisait les cas sains.
+            top = _round_robin_dedup([reranked, *opt_pools], target)
+        elif self.use_mmr:
             top = mmr_select(reranked, k=target, lambda_=self.mmr_lambda)
         else:
             top = reranked[:target]

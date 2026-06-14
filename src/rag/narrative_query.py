@@ -150,3 +150,51 @@ def build_narrative_retrieval_query(profile: Profile, original_question: str = "
     if not query:
         return (original_question or "").strip()
     return query
+
+
+# --- Extraction des OPTIONS comparées (fix A COMPARAISON, ordre 1926) ---
+#
+# Quand un récit compare des options NOMMÉES (« BUT GEA ou BTS CG ? », « prépa ou
+# BUT info ? »), la requête forgée depuis le sector_interest ne surface pas
+# forcément ces options (R05/R12 -> refus complet « pas dans mes sources »). On
+# extrait déterministiquement les options pour un retrieval PAR option (cf
+# `_prepare_narrative`), ce qui peuple la table même partiellement (« hors
+# sources » sur une option absente type prépa, plutôt qu'un refus total).
+
+_OPT_STOP = r"(?:[.?!,;]|\bpour\b|\bje crois\b|\bafin\b|\bcar\b|\bmais\b|\bsi jamais\b|$)"
+_OPT_PATTERNS = [
+    re.compile(r"\bmieux entre\s+(.+?)\s+et\s+(.+?)" + _OPT_STOP),
+    re.compile(r"\bhesit\w*\b[^.?!]*?\bentre\s+(.+?)\s+et\s+(.+?)" + _OPT_STOP),
+    # « (admis) à la fois en A et en B » : on ANCRE sur le contexte d'admission
+    # pour ne pas attraper le « en » de la situation (« en terminale… »).
+    re.compile(r"\ba la fois\s+en\s+(.+?)\s+et\s+en\s+(.+?)" + _OPT_STOP),
+    re.compile(r"\badmis\w*\b[^.?!]*?\ben\s+(.+?)\s+et\s+(?:en\s+)?(.+?)" + _OPT_STOP),
+    re.compile(r"\bentre\s+(.+?)\s+et\s+(.+?)" + _OPT_STOP),
+]
+_OPT_LEAD = re.compile(r"^(?:integrer|faire|aller en|passer par|suivre|choisir|une|un|le|la|les|l'|d'|de|des|en|a|du)\s+")
+
+
+def _clean_option(s: str) -> str:
+    s = re.sub(r"\(.*?\)", "", s or "").strip()          # retire les parenthèses
+    s = re.sub(r"\b(post[- ]?bac|je crois|plutot)\b", "", s).strip()
+    for _ in range(3):                                     # strip stopwords/verbes de tête
+        s2 = _OPT_LEAD.sub("", s)
+        if s2 == s:
+            break
+        s = s2
+    s = " ".join(s.split()[:5])                            # cap ~5 mots
+    return s.strip()
+
+
+def extract_comparison_options(question: str) -> list[str]:
+    """Extrait (déterministe) les options comparées d'un récit. [] si rien."""
+    t = re.sub(r"\s+", " ", _strip_accents((question or "").lower()))
+    for pat in _OPT_PATTERNS:
+        m = pat.search(t)
+        if not m:
+            continue
+        opts = [_clean_option(m.group(1)), _clean_option(m.group(2))]
+        opts = [o for o in opts if o and len(o) >= 2]
+        if len(opts) >= 2:
+            return opts[:3]
+    return []

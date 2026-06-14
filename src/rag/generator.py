@@ -8,10 +8,28 @@ from src.rag.intent import classify_intent, intent_to_format_guidance
 from src.rag.user_level import classify_user_level, level_to_guidance
 
 
-# Mode récit (1d, ordre #137) — paramètres de génération sectionnée.
-# Cap output relevé (vs 800 en v4 strict) pour laisser respirer les 4 sections ;
-# le cap 250 mots R6 est remplacé par la structure (cf SYSTEM_PROMPT_NARRATIVE).
-NARRATIVE_MAX_TOKENS = 1500
+# Mode récit — paramètres de génération sectionnée.
+# Cap output relevé (vs 800 en v4 strict) pour laisser respirer les sections ;
+# le cap 250 mots R6 est remplacé par la structure (cf system_narrative).
+#
+# Ordre 1926 (fix B troncature) : le cap dépend du FORMAT. À 1500, les formats à
+# 4 sections + pistes détaillées (trajectoire, conseil) étaient COUPÉS en pleine
+# phrase (R01, T3 démo n'atteignaient jamais « Premier pas »). Cap dimensionné
+# par format : assez pour finir, sans sur-allouer (latence) sur les formats courts.
+NARRATIVE_MAX_TOKENS = 2200  # défaut (formats à 3 sections / décision absente)
+NARRATIVE_MAX_TOKENS_BY_FORMAT = {
+    "trajectoire": 3000,   # 4 sections + passerelles + 2-3 pistes sourcées détaillées
+    "conseil": 2800,       # 4 sections conditionnelles
+    "comparaison": 2400,   # tableau + reco
+    "validation": 2200,
+    "exploratoire": 2200,
+    "shortlist": 1400,     # palmarès concis par design
+}
+
+
+def narrative_max_tokens(fmt: str | None) -> int:
+    """Cap output par format récit (fix B troncature, ordre 1926)."""
+    return NARRATIVE_MAX_TOKENS_BY_FORMAT.get(fmt or "", NARRATIVE_MAX_TOKENS)
 # Plus de sources qu'en v4 strict (5) : un récit multi-facettes a besoin de
 # matière pour hiérarchiser 2-4 pistes ; le routing récit sert top_k=12.
 NARRATIVE_MAX_SOURCES = 8
@@ -495,9 +513,11 @@ def _build_chat_kwargs(
         "messages": messages,
     }
     if narrative_mode:
-        # Cap relevé : les 4 sections + 2-4 pistes sourcées dépassent largement
-        # les 800 tokens du contrat court v4. Le cap reste un filet de sécurité.
-        api_kwargs["max_tokens"] = NARRATIVE_MAX_TOKENS
+        # Cap PAR FORMAT (fix B troncature, ordre 1926) : trajectoire/conseil
+        # (4 sections + pistes) ont besoin de plus que les formats courts. Le cap
+        # reste un filet ; la détection de troncature (parser) couvre le résiduel.
+        _fmt = narrative_decision.format if narrative_decision is not None else None
+        api_kwargs["max_tokens"] = narrative_max_tokens(_fmt)
     elif use_strict_v4:
         api_kwargs["max_tokens"] = 800
     return api_kwargs

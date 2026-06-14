@@ -64,6 +64,36 @@ _BULLET_RE = re.compile(r"^\s*(?:[-*]|\d+[.)])\s+(?P<body>.+)$")
 # Ligne de séparation d'un tableau markdown : « |---|---| ».
 _TABLE_SEP_RE = re.compile(r"^\s*\|?\s*:?-{2,}.*$")
 
+# Détection de TRONCATURE (fix B, ordre 1926) — la réponse a été coupée au cap
+# max_tokens en pleine phrase. Déterministe, uniforme sync+stream (l'heuristique
+# fin-de-texte est plus fiable que `finish_reason`, absent/instable en streaming).
+# Cas observés : R01 finissait sur « [source S », T3 (démo) sur un lien markdown
+# inachevé « [Data scientist](https://...%20automatis ». Un parse_confidence=1.0
+# ne suffit PAS : les titres étaient tous présents AVANT la coupe.
+_TRUNCATION_RE = re.compile(r"(\[[^\]]*$)|(\]\([^)]*$)")  # crochet / lien ouvert en fin
+_COMPLETE_LAST_CHARS = set(".!?)»”\"'…")
+
+
+def _looks_truncated(markdown: str) -> bool:
+    """True si la réponse semble coupée en pleine phrase (cap max_tokens atteint).
+
+    Heuristique déterministe : lien markdown / citation source inachevé en fin,
+    OU dernier caractère significatif = alphanumérique / ponctuation de milieu de
+    phrase (pas une fin de phrase propre). On NE sert JAMAIS une coupe silencieuse
+    (surtout en démo) -> ce flag remonte dans NarrativeResponse + pénalise la
+    confiance, le serving/front peut décider de masquer ou re-générer.
+    """
+    s = (markdown or "").rstrip().rstrip("*_`").rstrip()
+    if not s:
+        return False
+    if _TRUNCATION_RE.search(s):
+        return True
+    last = s[-1]
+    if last in _COMPLETE_LAST_CHARS:
+        return False
+    # finit sur un mot / une ponctuation de milieu de phrase -> coupé
+    return last.isalnum() or last in ",;:-—–/«("
+
 
 def _extract_sources(text: str) -> list[str]:
     """Sources citées, normalisées « S<n> », dédupliquées en ordre d'apparition."""
@@ -245,6 +275,7 @@ def _empty_response(decision: FormatDecision, markdown: str, reason: str = "") -
         }],
         "markdown_full": markdown or "",
         "parse_confidence": 0.0,
+        "truncated": _looks_truncated(markdown or ""),
         **({"parse_error": reason} if reason else {}),
     }
 
@@ -297,6 +328,11 @@ def parse_narrative_response(markdown: str, decision: FormatDecision) -> dict:
             n_items = sum(len(b.get("items", [])) for b in blocks)
             if n_items < 2:
                 confidence = min(confidence, 0.5)
+        # Troncature (fix B) : une réponse coupée est incomplète même si tous les
+        # titres sont présents avant la coupe -> pénalise la confiance + flag.
+        truncated = _looks_truncated(markdown)
+        if truncated:
+            confidence = min(confidence, 0.5)
 
         return {
             "format": fmt,
@@ -307,6 +343,7 @@ def parse_narrative_response(markdown: str, decision: FormatDecision) -> dict:
             "blocks": blocks,
             "markdown_full": markdown,
             "parse_confidence": round(min(1.0, max(0.0, confidence)), 3),
+            "truncated": truncated,
         }
     except Exception as e:  # noqa: BLE001 — parser TOTAL (cf docstring)
         return _empty_response(decision, markdown or "", reason=f"exception:{type(e).__name__}")

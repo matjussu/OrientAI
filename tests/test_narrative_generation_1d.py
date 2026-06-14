@@ -114,17 +114,30 @@ class TestBuildChatKwargsNarrativeBranch:
         kw = _kwargs(use_strict_v4=True, narrative_mode=True, golden_qa_prefix="FEWSHOT_X")
         sys_msg = kw["messages"][0]["content"]
         user_msg = kw["messages"][-1]["content"]
-        assert kw["max_tokens"] == NARRATIVE_MAX_TOKENS == 1500
+        # Sans decision -> défaut (fix B : 2200, relevé de 1500 pour éviter la troncature).
+        assert kw["max_tokens"] == NARRATIVE_MAX_TOKENS == 2200
         assert "**1. Ta situation**" in sys_msg
         assert "MAX 250 mots" not in sys_msg
         # Few-shot injecté côté user (canal golden_qa_prefix), attaché au fact.
         assert "FEWSHOT_X" in user_msg
         assert "<sources>" in user_msg
 
+    def test_narrative_per_format_max_tokens(self):
+        # Fix B (ordre 1926) : trajectoire (4 sections + pistes) a un cap plus haut
+        # que les formats courts -> évite la coupe en pleine phrase.
+        from src.rag.narrative_format import FormatDecision
+        kw_traj = _kwargs(use_strict_v4=True, narrative_mode=True,
+                          narrative_decision=FormatDecision(format="trajectoire"))
+        kw_short = _kwargs(use_strict_v4=True, narrative_mode=True,
+                           narrative_decision=FormatDecision(format="shortlist"))
+        assert kw_traj["max_tokens"] == 3000
+        assert kw_short["max_tokens"] == 1400
+        assert kw_traj["max_tokens"] > kw_short["max_tokens"]
+
     def test_narrative_takes_precedence_over_strict_v4(self):
         # narrative_mode prime même avec use_strict_v4=True (cas prod réel).
         kw = _kwargs(use_strict_v4=True, narrative_mode=True)
-        assert kw["max_tokens"] == 1500  # pas 800
+        assert kw["max_tokens"] != 800  # cap récit, pas le cap v4 court
 
     def test_strict_v4_unchanged_when_not_narrative(self):
         kw = _kwargs(use_strict_v4=True, narrative_mode=False)
