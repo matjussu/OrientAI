@@ -8,17 +8,9 @@ from pathlib import Path
 import pytest
 
 
-def test_resolve_paths_from_volume(monkeypatch):
-    monkeypatch.delenv("ORIENTIA_FICHES_PATH", raising=False)
-    monkeypatch.delenv("ORIENTIA_INDEX_PATH", raising=False)
-    monkeypatch.setenv("RAILWAY_VOLUME_MOUNT_PATH", "/app/data")
-    from src.api.server import _resolve_artifact_paths
-    fiches, index = _resolve_artifact_paths()
-    assert fiches == Path("/app/data/processed/formations.json")
-    assert index == "/app/data/embeddings/formations.index"
-
-
-def test_resolve_paths_default_no_volume(monkeypatch):
+def test_resolve_paths_default_relatif(monkeypatch):
+    # Approche A : défauts relatifs. data/embeddings/... = /app/data/embeddings = volume
+    # (cwd=/app) ; data/processed/... = image. Pas de dérivation RAILWAY_VOLUME_MOUNT_PATH.
     for k in ("ORIENTIA_FICHES_PATH", "ORIENTIA_INDEX_PATH", "RAILWAY_VOLUME_MOUNT_PATH"):
         monkeypatch.delenv(k, raising=False)
     from src.api.server import _resolve_artifact_paths
@@ -27,15 +19,27 @@ def test_resolve_paths_default_no_volume(monkeypatch):
     assert index == "data/embeddings/formations.index"
 
 
+def test_railway_volume_mount_path_ignore(monkeypatch):
+    # Le mount est /app/data/embeddings (pas /app/data) -> on N'utilise PAS
+    # RAILWAY_VOLUME_MOUNT_PATH (le dériver donnerait /app/data/embeddings/embeddings).
+    # Les chemins relatifs s'alignent déjà sur le volume.
+    for k in ("ORIENTIA_FICHES_PATH", "ORIENTIA_INDEX_PATH"):
+        monkeypatch.delenv(k, raising=False)
+    monkeypatch.setenv("RAILWAY_VOLUME_MOUNT_PATH", "/app/data/embeddings")
+    from src.api.server import _resolve_artifact_paths
+    fiches, index = _resolve_artifact_paths()
+    assert fiches == Path("data/processed/formations.json")  # relatif, ignoré le mount path
+    assert index == "data/embeddings/formations.index"
+
+
 def test_resolve_paths_explicit_override_wins(monkeypatch):
-    # ORIENTIA_* (tests / cas spéciaux) prime sur le volume.
-    monkeypatch.setenv("RAILWAY_VOLUME_MOUNT_PATH", "/app/data")
+    # ORIENTIA_* (prod les a, relatifs corrects) prime sur le défaut.
     monkeypatch.setenv("ORIENTIA_FICHES_PATH", "/custom/f.json")
     monkeypatch.delenv("ORIENTIA_INDEX_PATH", raising=False)
     from src.api.server import _resolve_artifact_paths
     fiches, index = _resolve_artifact_paths()
     assert fiches == Path("/custom/f.json")
-    assert index == "/app/data/embeddings/formations.index"  # index pas overridé -> volume
+    assert index == "data/embeddings/formations.index"
 
 
 def test_require_artifacts_raises_if_absent(tmp_path):

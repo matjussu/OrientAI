@@ -15,11 +15,17 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Data — TOUT exclu : les artefacts runtime (corpus + index + quads + manifest +
-# golden_qa) sont servis depuis le VOLUME Railway (/app/data), pas embarqués dans
-# l'image. Le Dockerfile ne COPY plus aucun data/. Exclure tout data/ garde le tarball
-# minuscule (corrige définitivement le 413 : data/archive 2.5G + variants ne passent plus).
-data/
+# Data — Approche A (migration volume 1501) : les INDEX (data/embeddings, ~412MB) sont
+# sur le VOLUME Railway (/app/data/embeddings) -> EXCLUS du tarball. Le CORPUS (formations.json
+# + golden_qa_meta.json) reste dans l'image -> WHITELIST. Tout le reste de data/ exclu
+# (archive 2.5G, raw, variants...). Garde le tarball ~35MB compressé -> plus de 413.
+# Pattern gitignore : data/* exclut tout, !data/processed/ ré-inclut le dir, data/processed/*
+# exclut son contenu, !les 2 fichiers ré-inclut le corpus.
+data/*
+!data/processed/
+data/processed/*
+!data/processed/formations.json
+!data/processed/golden_qa_meta.json
 
 # Audits / bench : volumineux (results, baselines, jsons), jamais runtime.
 audit_empirique_2026-06-09/

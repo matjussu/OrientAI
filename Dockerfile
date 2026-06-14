@@ -16,22 +16,22 @@ RUN pip install --no-cache-dir -r requirements.lock
 # Code application
 COPY src/ ./src/
 
-# MIGRATION VOLUME (ordre 2026-06-14-1501) — les gros artefacts (corpus formations.json
-# + index FAISS + 4 quad sub-indexes + manifest + golden_qa) ne sont PLUS embarqués dans
-# l'image : ils vivent sur le VOLUME Railway monté à /app/data. Raison : `railway up`
-# bakant ~510MB d'index tape la limite d'upload Cloudflare (413). Avec le volume, le
-# deploy est CODE-ONLY (image légère) et les artefacts sont uploadés UNE fois
-# (`railway volume files upload`), plus jamais de 413/502.
+# MIGRATION VOLUME — Approche A (ordre 2026-06-14-1501, 2026-06-14) : les INDEX FAISS
+# (formations.index + 4 quad sub-indexes + manifest + golden_qa, ~412MB) vivent sur le
+# VOLUME Railway DÉJÀ monté à /app/data/embeddings -> ils ne sont PLUS COPY dans l'image
+# (sinon `railway up` baker ~410MB tape la limite Cloudflare 413). Mis à jour 1×
+# (`railway volume files upload --overwrite`), plus jamais de 413 à l'upload.
 #
-# Anti-shadow-mount (cf incident Option C 06-12 où le volume masquait l'index baké ->
-# prod servait le 47220 en silence) : l'image ne contient AUCUN index baké, il n'y a
-# donc RIEN à masquer. L'app lit l'index UNIQUEMENT depuis le volume -> désalignement
-# silencieux impossible par construction.
+# Le CORPUS (formations.json + golden_qa_meta.json, ~107MB) RESTE dans l'image : le
+# volume ne couvre que /app/data/embeddings, pas /app/data/processed. railway up upload
+# ~corpus seul ~35MB compressé -> sous la limite, plus de 413.
 #
-# SÉQUENCE OBLIGATOIRE : volume créé + peuplé AVANT le deploy code (sinon fail-fast au
-# boot via _require_artifacts dans server.py). Le volume DOIT monter à /app/data : le
-# manifest quad se résout via parents[2]=/app + chemins relatifs, il faut donc que
-# /app/data == le volume.
+# Anti-shadow-mount : l'image ne COPY AUCUN data/embeddings -> rien à masquer sous le
+# volume (le volume EST la seule source d'index). Le manifest quad se résout via
+# parents[2]=/app + chemins relatifs (data/embeddings/...) = /app/data/embeddings = volume.
+# Fail-fast au boot si index/corpus absent (_require_artifacts dans server.py).
+COPY data/processed/formations.json ./data/processed/formations.json
+COPY data/processed/golden_qa_meta.json ./data/processed/golden_qa_meta.json
 
 # Railway injecte $PORT automatiquement
 ENV PYTHONPATH=/app \

@@ -70,20 +70,16 @@ _VERSION = "v4.1"
 def _resolve_artifact_paths() -> tuple[Path, str]:
     """Résout (fiches_path, index_path) des gros artefacts.
 
-    Migration volume (ordre 1501) : en prod les artefacts vivent sur le volume Railway
-    monté à `RAILWAY_VOLUME_MOUNT_PATH` (=/app/data), pas dans l'image. Priorité :
-    override explicite ORIENTIA_* (tests / cas spéciaux) > volume > défaut relatif.
-    NB : le manifest quad + sous-index se résolvent via parents[2]=/app + chemins
-    relatifs, donc ils pointent vers le volume SI celui-ci monte à /app/data.
+    Migration volume Approche A (ordre 1501) : l'INDEX FAISS vit sur le volume Railway
+    monté à /app/data/embeddings ; le chemin relatif `data/embeddings/formations.index`
+    (depuis cwd=/app) = /app/data/embeddings/... = le volume. Le CORPUS reste dans
+    l'image (`data/processed/formations.json`). On NE dérive PAS de RAILWAY_VOLUME_MOUNT_PATH :
+    le mount n'est PAS /app/data (c'est /app/data/embeddings), donc le dériver donnerait
+    de mauvais chemins. Override ORIENTIA_* (prod les a, relatifs -> corrects) > défaut relatif.
     """
-    fiches = os.environ.get("ORIENTIA_FICHES_PATH")
-    index = os.environ.get("ORIENTIA_INDEX_PATH")
-    vol = os.environ.get("RAILWAY_VOLUME_MOUNT_PATH")
-    if vol:
-        fiches = fiches or str(Path(vol) / "processed" / "formations.json")
-        index = index or str(Path(vol) / "embeddings" / "formations.index")
-    return (Path(fiches or "data/processed/formations.json"),
-            index or "data/embeddings/formations.index")
+    fiches = os.environ.get("ORIENTIA_FICHES_PATH", "data/processed/formations.json")
+    index = os.environ.get("ORIENTIA_INDEX_PATH", "data/embeddings/formations.index")
+    return Path(fiches), index
 
 
 def _require_artifacts(fiches_path: Path, index_path: str) -> None:
