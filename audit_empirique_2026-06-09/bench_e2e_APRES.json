@@ -1,0 +1,837 @@
+[
+  {
+    "id": "typage-01",
+    "cat": "typage",
+    "q": "Quelle est la différence entre un BUT informatique et une prépa MPSI ?",
+    "answer": "Je n'ai pas de formation pertinente dans mes sources pour comparer un BUT Informatique et une prépa MPSI. Je te suggère de vérifier sur Parcoursup, ONISEP ou de prendre RDV avec le CIO le plus proche.",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "Formation d'ingénieur Bac + 5 - CPI orientée numérique (Cycle préparatoire intégré informatique) - bac général et STI2D et STMG",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'ingénieur"
+      },
+      {
+        "nom": "BUT - Information communication Parcours communication des organisations",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Informatique",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Gestion des entreprises et des administrations",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      }
+    ]
+  },
+  {
+    "id": "typage-02",
+    "cat": "typage",
+    "q": "Je veux comparer un BUT et une école d'ingénieur, quelles différences ?",
+    "answer": "Je comprends que tu cherches à comparer les débouchés et l'accès entre un BUT et une école d'ingénieur. Voici ce que je peux te dire à partir des BUT disponibles dans mes sources :\n\n- **Sélectivité** : Les BUT en Île-de-France comme le [BUT Génie électrique et informatique industrielle à l'I.U.T de Velizy](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9992&typeBac=0&originePc=0) ont un taux d'accès de 49 % [source S1], tandis que le [BUT Mesures physiques à Paris Pajol](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9544&typeBac=0&originePc=0) est à 36 % [source S2].\n- **Insertion pro** : Le [BUT Science et génie des matériaux à Nantes](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=5484&typeBac=0&originePc=0) affiche 80 % d'emploi à 6 mois [source S4], contre 47,37 % pour d'autres BUT [source S1, S2, S5].\n\nPour les écoles d'ingénieur, je n'ai pas de données dans mes sources. Qu'est-ce qui compte le plus pour toi : l'accès, l'insertion ou la spécialisation ?",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "BUT - Génie électrique et informatique industrielle",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Mesures physiques",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Génie civil - Construction durable",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Science et génie des matériaux",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Science et génie des matériaux",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      }
+    ]
+  },
+  {
+    "id": "typage-03",
+    "cat": "typage",
+    "q": "Différence entre un BTS et un BUT en commerce ?",
+    "answer": "Si tu veux comparer BTS et BUT en commerce, voici ce que je peux te dire à partir des formations en BUT disponibles dans mes sources :\n\n- Le **[BUT Techniques de commercialisation](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=10826&typeBac=0&originePc=0)** à Belfort propose **70 places** avec un **taux d'accès de 31 %** en 2025 [source S1].\n- Le **[BUT Gestion administrative et commerciale des organisations](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39345&typeBac=0&originePc=0)** à Pontivy offre **56 places** et un **taux d'emploi à 6 mois de 61,12 %** [source S2].\n\nJe n’ai pas de données sur les BTS dans mes sources. Pour une comparaison complète, je te conseille de vérifier sur Parcoursup ou ONISEP.\n\nQu’est-ce qui t’attire le plus : un format court (BTS) ou un bac+3 (BUT) avec plus de perspectives ?",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "BUT - Techniques de commercialisation",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Gestion administrative et commerciale des organisations",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Techniques de commercialisation - Double diplôme franco-allemand «Gestion d’entreprise et marketing »",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Techniques de commercialisation",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      },
+      {
+        "nom": "BUT - Gestion administrative et commerciale des organisations - en distanciel",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      }
+    ]
+  },
+  {
+    "id": "typage-04",
+    "cat": "typage",
+    "q": "C'est quoi un BTS comptabilité gestion et à quel niveau ?",
+    "answer": "Un **BTS Comptabilité et gestion** est un diplôme **bac+2** (niveau 5) dans le domaine de l'économie-gestion, axé sur la gestion financière, la comptabilité et l'analyse des coûts.\n\n- Il est proposé dans plusieurs lycées parisiens comme le **[BTS - Services - Comptabilité et gestion au Lycée Edgar Quinet](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9008&typeBac=0&originePc=0)** ou le **[BTS - Services - Comptabilité et gestion à l'École Nationale de Commerce](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9158&typeBac=0&originePc=0)** [source S1, S3].\n- C’est une **formation sélective** (accès sur dossier via Parcoursup).\n\nEst-ce que tu cherches des précisions sur les débouchés ou les modalités d’admission ?",
+    "n_sources": 4,
+    "top_sources": [
+      {
+        "nom": "BTS - Services - Comptabilité et gestion",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Comptabilité et gestion",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Comptabilité et gestion",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Management économique de la construction",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      }
+    ]
+  },
+  {
+    "id": "typage-05",
+    "cat": "typage",
+    "q": "Quelles formations de type Licence en droit existe-t-il ?",
+    "answer": "Si tu cherches des licences en droit, voici les options identifiées dans mes sources :\n\n- **[licence mention droit, sciences et innovation (double diplôme licence - DU)](https://www.onisep.fr/http/redirection/formation/slug/FOR.6728)** : durée de 3 ans [source S1]\n- **[licence mention droit-informatique (double diplôme licence - DU)](https://www.onisep.fr/http/redirection/formation/slug/FOR.6723)** : durée de 3 ans [source S3]\n- **[licence mention droit](https://www.onisep.fr/http/redirection/formation/slug/FOR.9722)** : durée de 3 ans [source S5]\n\nAs-tu une préférence pour un domaine spécifique (ex : droit et numérique, droit et sciences) ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "licence mention droit, sciences et innovation (double diplôme licence - DU)",
+        "source": "onisep",
+        "type_diplome": "licence"
+      },
+      {
+        "nom": "Droit",
+        "source": "rncp",
+        "type_diplome": "Diplôme conférant le grade de Licence "
+      },
+      {
+        "nom": "licence mention droit-informatique (double diplôme licence - DU)",
+        "source": "onisep",
+        "type_diplome": "licence"
+      },
+      {
+        "nom": "licence pro mention activités juridiques : métiers du droit privé",
+        "source": "onisep",
+        "type_diplome": "licence professionnelle"
+      },
+      {
+        "nom": "licence mention droit",
+        "source": "onisep",
+        "type_diplome": "licence"
+      }
+    ]
+  },
+  {
+    "id": "typage-06",
+    "cat": "typage",
+    "q": "Une CPGE c'est quoi exactement comme type de formation ?",
+    "answer": "Si tu veux comprendre ce qu’est une CPGE, sache qu’il s’agit d’une **Classe Préparatoire aux Grandes Écoles**, une formation sélective de 2 ans après le bac, souvent en lycée.\n\n- **Exemples concrets** : la [CPGE MP2I au Lycée Claude Bernard](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=43009&typeBac=0&originePc=0) propose 48 places [source S2], tandis que la [CPGE de l'École nationale des Chartes au Lycée Henri IV](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8972&typeBac=0&originePc=0) en offre aussi 48 [source S4].\n- **Sélectivité** : le taux d’accès en 2025 varie, par exemple 32 % pour la MP2I [source S2] ou 22 % pour les Chartes [source S4].\n\nEst-ce que tu cherches plutôt une CPGE scientifique, littéraire ou autre ?",
+    "n_sources": 4,
+    "top_sources": [
+      {
+        "nom": "CUPGE - Cycle Universitaire Préparatoire aux Grandes Ecoles - CUPGE Scientifique - Cycle Universitaire Préparatoire aux Grandes Ecoles d'ingénieur",
+        "source": "parcoursup",
+        "type_diplome": null
+      },
+      {
+        "nom": "CPGE - MP2I",
+        "source": "parcoursup",
+        "type_diplome": "CPGE"
+      },
+      {
+        "nom": "CUPGE - Cycle universitaire préparatoire aux grandes écoles",
+        "source": "parcoursup",
+        "type_diplome": null
+      },
+      {
+        "nom": "CPGE - Ecole nationale des Chartes",
+        "source": "parcoursup",
+        "type_diplome": "CPGE"
+      }
+    ]
+  },
+  {
+    "id": "rncp-01",
+    "cat": "rncp",
+    "q": "C'est quoi un titre professionnel RNCP ?",
+    "answer": "Je n'ai pas de définition explicite du titre professionnel RNCP dans mes sources, mais je peux te dire que les certifications RNCP (comme **Expert du design numérique** ou **Ingénieur diplômé de l'Ecole Nationale Supérieure de Chimie de Montpellier**) correspondent à des compétences validées au niveau 7 (bac+5) [source S1, S2].\n\nCes titres sont accessibles via la VAE, la formation continue ou l'alternance [source S1, S2, S3, S4].\n\nTu cherches des précisions sur leur reconnaissance ou leur utilité professionnelle ?",
+    "n_sources": 4,
+    "top_sources": [
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "rncp-02",
+    "cat": "rncp",
+    "q": "Quelles certifications professionnelles pour devenir développeur web ?",
+    "answer": "Si tu cherches des certifications professionnelles pour devenir développeur web, voici les options RNCP disponibles dans mes sources :\n\n- **[Expert en développement logiciel](https://www.onisep.fr/recherche?q=Expert%20en%20d%C3%A9veloppement%20logiciel)** (niveau bac+5) proposée par [OPENCLASSROOMS](https://www.onisep.fr/recherche?q=Expert%20en%20d%C3%A9veloppement%20logiciel) ou [YNOV](https://www.onisep.fr/recherche?q=Expert%20en%20d%C3%A9veloppement%20logiciel) [source S1, S2]\n- **[Concepteur développeur d'applications web](https://www.onisep.fr/recherche?q=Concepteur%20d%C3%A9veloppeur%20d%27applications%20web)** (niveau bac+3) chez [IRONHACK FRANCE](https://www.onisep.fr/recherche?q=Concepteur%20d%C3%A9veloppeur%20d%27applications%20web) [source S3]\n- **[Développeur Web](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20Web)** (niveau bac+2) à [WEBECOM](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20Web) [source S4]\n\nToutes ces certifications sont éligibles à la VAE, la formation continue ou l'alternance [source S1, S2, S3, S4].\n\nQuel niveau de certification correspond le mieux à ton projet ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Expert en développement logiciel",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Expert en développement logiciel",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Concepteur développeur d'applications web",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Développeur Web",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Concepteur développeur web full stack",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      }
+    ]
+  },
+  {
+    "id": "rncp-03",
+    "cat": "rncp",
+    "q": "Comment devenir accompagnant en gérontologie ? Quelle certification ?",
+    "answer": "Si tu veux travailler dans l’accompagnement des personnes âgées, la certification **[Accompagnant en gérontologie](https://www.onisep.fr/recherche?q=Accompagnant%20en%20g%C3%A9rontologie)** (niveau CAP-BEP) est une piste solide. Elle est reconnue par un **Titre professionnel RNCP** et accessible via la formation continue, la VAE ou l’alternance [source S2].\n\nPour un rôle plus opérationnel, le **[Agent accompagnant au grand âge](https://www.onisep.fr/recherche?q=Agent%20accompagnant%20au%20grand%20%C3%A2ge)** (CAP) est aussi une option certifiante [source S4].\n\nAs-tu une préférence pour un niveau d’études ou un type de contrat (alternance, VAE) ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Directeur d'établissements gérontologiques",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Accompagnant en gérontologie",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Animateur en gérontologie",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Agent accompagnant au grand âge",
+        "source": "rncp",
+        "type_diplome": "Certificat d'aptitude professionnelle"
+      },
+      {
+        "nom": "Auxiliaire de gérontologie",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      }
+    ]
+  },
+  {
+    "id": "rncp-04",
+    "cat": "rncp",
+    "q": "Quels titres RNCP existent dans le secteur du commerce ?",
+    "answer": "Voici les titres RNCP dans le commerce identifiés dans mes sources :\n\n- **Manager de commerce et de centre de profit** (bac+5, niveau européen 7) : métiers visés en conseil, management d’entreprise et marketing [source S1]\n- **E-commerce et marketing numérique** (bac+3, niveau 6) : métiers en assistanat commercial, management relation clientèle et animation de site multimédia [source S2]\n- **Responsable commerce retail** (bac+3, niveau 6) : métiers en management de magasin et gestion de rayon [source S5]\n\nTu cherches un titre en particulier ou des précisions sur les débouchés ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "rncp_blocs",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "lyceepro-01",
+    "cat": "lyceepro",
+    "q": "Quel est le taux d'emploi après un bac pro commerce ?",
+    "answer": "Je n'ai pas de formation pertinente dans mes sources pour cette question. Je te suggère de vérifier sur Parcoursup, ONISEP ou de prendre RDV avec le CIO le plus proche.",
+    "n_sources": 5,
+    "top_sources": [
+      {
+        "nom": null,
+        "source": "insersup_mesr",
+        "type_diplome": "Diplôme visé niveau bac+5 grade Master"
+      },
+      {
+        "nom": null,
+        "source": "insersup_mesr",
+        "type_diplome": "Bachelor universitaire de technologie"
+      },
+      {
+        "nom": null,
+        "source": "insersup_mesr",
+        "type_diplome": "Bachelor universitaire de technologie"
+      },
+      {
+        "nom": null,
+        "source": "insersup_mesr",
+        "type_diplome": "Bachelor universitaire de technologie"
+      },
+      {
+        "nom": null,
+        "source": "insersup_mesr",
+        "type_diplome": "Diplôme gradé ou visé management niveau bac+5"
+      }
+    ]
+  },
+  {
+    "id": "lyceepro-02",
+    "cat": "lyceepro",
+    "q": "Quelle insertion professionnelle après un bac pro aéronautique ?",
+    "answer": "Si tu veux savoir ce que donne un bac pro aéronautique côté insertion, voici ce que j’ai dans mes sources :\n\n- Le [bac pro aéronautique option avionique](https://www.onisep.fr/http/redirection/formation/slug/FOR.6047) forme en 3 ans, mais **aucune donnée d’insertion n’est disponible** dans mes sources [source S4].\n- Pour aller plus loin, des certifications comme [Inspecteur qualité aéronautique et spatiale](https://www.onisep.fr/recherche?q=Inspecteur%20qualit%C3%A9%20a%C3%A9ronautique%20et%20spatiale) (niveau bac+2) ou [Monteur câbleur en aéronautique](https://www.onisep.fr/recherche?q=Monteur%20c%C3%A2bleur%20en%20a%C3%A9ronautique) (niveau CAP-BEP) existent, mais **pas de chiffres d’insertion non plus** [source S2, S5].\n\nEst-ce que tu cherches plutôt des métiers accessibles directement après le bac pro, ou des formations complémentaires ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Certificat de Spécialisation - Technicien(ne) en peinture aéronautique",
+        "source": "parcoursup",
+        "type_diplome": null
+      },
+      {
+        "nom": "Inspecteur qualité aéronautique et spatiale",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel"
+      },
+      {
+        "nom": null,
+        "source": "insersup_mesr",
+        "type_diplome": "Diplôme d'ingénieurs"
+      },
+      {
+        "nom": "bac pro aéronautique option avionique",
+        "source": "onisep",
+        "type_diplome": "baccalauréat professionnel"
+      },
+      {
+        "nom": "Monteur câbleur en aéronautique",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel"
+      }
+    ]
+  },
+  {
+    "id": "lyceepro-03",
+    "cat": "lyceepro",
+    "q": "Après un bac pro, vaut-il mieux travailler ou poursuivre ses études ?",
+    "answer": "Si je te suis bien, tu hésites entre entrer dans la vie active ou continuer à te former après ton bac pro. Voici ce que disent les données disponibles :\n\n- **Travailler après un bac pro** : pour le [BAC PRO technicien du bâtiment : organisation et réalisation du gros œuvre](https://www.onisep.fr/recherche?q=technicien%20du%20batiment%20%3A%20organisation%20et%20realisation%20du%20gros%20oeuvre), 46,1 % des diplômés trouvent un emploi 12 mois après, et 53,8 % à 24 mois [source S5]. 44,9 % choisissent de poursuivre leurs études [source S5].\n- **Poursuivre en formation certifiante** : des titres professionnels comme [Technicien d'après-vente en électroménager et audiovisuel](https://www.onisep.fr/recherche?q=Technicien%20d%27apr%C3%A8s-vente%20en%20%C3%A9lectrom%C3%A9nager%20et%20audiovisuel) (niveau bac) existent, mais les chiffres d'insertion ne sont pas disponibles dans mes sources.\n\nQu’est-ce qui compte le plus pour toi : un salaire rapide ou un diplôme pour évoluer plus tard ?",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "Technicien d'après-vente en électroménager et audiovisuel",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel"
+      },
+      {
+        "nom": "ouvrier/ère agricole",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "onisep_formations_extended",
+        "type_diplome": "BAC PRO"
+      },
+      {
+        "nom": "concepteur/trice-rédacteur/trice",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "technicien du batiment : organisation et realisation du gros oeuvre",
+        "source": "inserjeunes_lycee_pro",
+        "type_diplome": "BAC PRO"
+      }
+    ]
+  },
+  {
+    "id": "rome-01",
+    "cat": "rome-passerelles",
+    "q": "Vers quel métier peut évoluer un boulanger ?",
+    "answer": "Ton profil de boulanger ouvre des portes vers plusieurs métiers connexes, souvent accessibles via des passerelles naturelles.\n\n- **[Boulanger / Boulangère](https://candidat.francetravail.fr/metierscope/fiche-metier/D1102)** : peut évoluer vers **Pâtissier / Pâtissière** ou **Chef boulanger / Cheffe boulangère** pour encadrer une équipe ou gérer une production [source S1].\n- **[Pâtissier / Pâtissière](https://candidat.francetravail.fr/metierscope/fiche-metier/D1104)** : une spécialisation possible, avec des compétences transférables en fabrication et décoration [source S5].\n- **[Chef boulanger / Cheffe boulangère](https://candidat.francetravail.fr/metierscope/fiche-metier/D1108)** : pour prendre des responsabilités en gestion de production ou de stocks [source S3].\n\nQuel type d’évolution te motive le plus : la technique, l’encadrement ou la création ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Boulanger / Boulangère",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "boulanger/ère",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "Chef boulanger / Cheffe boulangère",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "Formateur coiffeur / Formatrice coiffeuse",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "Pâtissier / Pâtissière",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "rome-02",
+    "cat": "rome-passerelles",
+    "q": "Quelles reconversions possibles quand on est éleveur d'animaux ?",
+    "answer": "Si tu cherches à évoluer tout en restant dans l’univers de l’élevage, plusieurs métiers s’offrent à toi sans tout abandonner.\n\n- **[Eleveur / Eleveuse d'animaux sauvages](https://candidat.francetravail.fr/metierscope/fiche-metier/A1408)** : spécialisation vers des espèces non domestiques, avec des missions de soin, d’alimentation et de prévention sanitaire [source S1].\n- **[Responsable d'élevage agricole](https://www.onisep.fr/recherche?q=responsable%20d%27%C3%A9levage%20agricole)** : encadrement d’une exploitation, gestion de la reproduction et commercialisation [source S4].\n- **[Employé / employée d'élevage](https://www.onisep.fr/http/redirection/metier/slug/MET.250)** : poste opérationnel dans différents types d’élevages (bovin, porcin, etc.) [source S5].\n\nQuelle dimension t’attire le plus : le contact direct avec les animaux, la gestion d’équipe ou la diversification des espèces ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Eleveur / Eleveuse d'animaux sauvages",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "vétérinaire",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "dares_metiers_2030",
+        "type_diplome": null
+      },
+      {
+        "nom": "responsable d'élevage agricole",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "employé / employée d'élevage",
+        "source": "onisep_metiers",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "rome-03",
+    "cat": "rome-passerelles",
+    "q": "Je suis bûcheron, vers quels métiers je peux évoluer ?",
+    "answer": "Si tu es bûcheron et que tu veux évoluer, plusieurs métiers dans la filière bois et forêt s’offrent à toi.\n\n- **[Sylviculteur / Sylvicultrice](https://candidat.francetravail.fr/metierscope/fiche-metier/A1205)** : gestion des forêts, inventaires, aménagement durable. Un métier en lien direct avec la nature et la biodiversité [source S5].\n- **[Responsable d'approvisionnement en exploitations forestières](https://www.onisep.fr/http/redirection/metier/slug/MET.8009)** : organisation de l’approvisionnement en bois, coordination entre producteurs et acheteurs [source S4].\n- **[Négociant / Négociante en bois](https://candidat.francetravail.fr/metierscope/fiche-metier/D1418)** : achat/vente de bois, développement commercial, relation client [source S3].\n\nQuel aspect te motive le plus : le terrain, la gestion ou le commerce ?",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "bûcheron/ne",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "verrier / verrière au chalumeau",
+        "source": "onisep_metiers",
+        "type_diplome": null
+      },
+      {
+        "nom": "Négociant / Négociante en bois",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "responsable d'approvisionnement en exploitations forestières",
+        "source": "onisep_metiers",
+        "type_diplome": null
+      },
+      {
+        "nom": "Sylviculteur / Sylvicultrice",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "rome-04",
+    "cat": "rome-passerelles",
+    "q": "Le métier de concepteur paysagiste est-il concerné par la transition écologique ?",
+    "answer": "Si tu veux savoir si le métier de **concepteur paysagiste** s’inscrit dans la transition écologique, la réponse est oui : ce métier est au cœur de l’aménagement durable des territoires.\n\n- Le [paysagiste](https://www.onisep.fr/http/redirection/metier/slug/MET.158) (incluant le concepteur) invente des cadres de vie en intégrant des compétences techniques, créatives et économiques, souvent liées à la préservation de l’environnement et à l’adaptation aux enjeux climatiques `[source S3]`.\n- Il travaille sur des projets d’aménagement paysager, un domaine classé dans l’environnement, les énergies et la propreté `[source S3]`.\n\nEst-ce que cette dimension écologique correspond à ce que tu recherches dans ton projet professionnel ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "paysagiste",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "technicien/ne éco-concepteur/trice",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "paysagiste",
+        "source": "onisep_metiers",
+        "type_diplome": null
+      },
+      {
+        "nom": "technicien/ne paysagiste",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "conseiller/ère en environnement",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "rome-05",
+    "cat": "rome-riasec",
+    "q": "Quel profil d'intérêt correspond au métier de jardinier paysagiste ?",
+    "answer": "Si tu veux savoir quel profil correspond au métier de jardinier paysagiste, voici ce que j’ai dans mes sources :\n\n- Le métier de [Jardinier / Jardinière paysagiste](https://candidat.francetravail.fr/metierscope/fiche-metier/A1208) est associé à un profil **Réaliste / Artistique** [source S1].\n\nQu’est-ce qui te parle le plus dans ces traits de personnalité ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Jardinier / Jardinière paysagiste",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "ouvrier/ère paysagiste",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "paysagiste",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "paysagiste",
+        "source": "onisep_metiers",
+        "type_diplome": null
+      },
+      {
+        "nom": "technicien/ne paysagiste",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "niveau-01",
+    "cat": "onisep-niveau",
+    "q": "À quel niveau d'études correspond une licence professionnelle ?",
+    "answer": "Une licence professionnelle correspond au niveau **bac+3** [source S4][source S5].\n\nQu’est-ce qui t’intéresse dans ce type de formation ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Licence - Portail Langues, littératures et civilisations étrangères et régionales - Licence LLCER Anglais (renforcé ou mineures) - Entièrement en distanciel",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "Licence - Portail Langues, littératures et civilisations étrangères et régionales - Licence LLCER Italien (renforcé ou mineures)",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "année de mise à niveau avant les licences avec une option 'accès santé' (L.AS)",
+        "source": "onisep",
+        "type_diplome": "classe de mise à niveau post bac"
+      },
+      {
+        "nom": "licence pro mention métiers des administrations et collectivités territoriales",
+        "source": "onisep",
+        "type_diplome": "licence professionnelle"
+      },
+      {
+        "nom": "licence pro mention métiers du jeu vidéo",
+        "source": "onisep",
+        "type_diplome": "licence professionnelle"
+      }
+    ]
+  },
+  {
+    "id": "sanity-01",
+    "cat": "sanity",
+    "q": "Quelles formations en cybersécurité à Bordeaux ?",
+    "answer": "Je préfère ne pas répondre sur ce point de manière détaillée, car ma réponse contiendrait des imprécisions factuelles importantes qui pourraient t'induire en erreur.\n\nDétails :\n• Formation citée non présente dans notre base de données vérifiée : *Master Mathématiques et Applications — Cryptologie*.\n\nPour avoir une information fiable sur ton orientation, je te conseille :\n- **ONISEP** : catalogue officiel des formations françaises — https://www.onisep.fr\n- **Parcoursup** : procédures et taux d'accès officiels — https://www.parcoursup.fr\n- **SCUIO** : service d'orientation de ton université (si étudiant·e)\n- **CIO** / **Psy-EN** : conseiller·ères d'orientation en lycée\n\nTu peux aussi me reposer la question autrement (par exemple avec un profil plus précis ou sur un sujet plus ciblé) et je ferai de mon mieux pour répondre dans la limite de ce que nos données vérifient.",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "Certificat de Spécialisation - Cybersécurité",
+        "source": "parcoursup",
+        "type_diplome": null
+      },
+      {
+        "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "MATHEMATIQUES ET APPLICATIONS — Cryptologie et sécurité informatique",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "Formation Bac + 3 - Bachelor Cybersécurité et Ethical Hacking",
+        "source": "parcoursup",
+        "type_diplome": "formation d'école spécialisée"
+      },
+      {
+        "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      }
+    ]
+  },
+  {
+    "id": "sanity-02",
+    "cat": "sanity",
+    "q": "Je veux travailler dans l'informatique, quelles études après le bac ?",
+    "answer": "Si tu veux te lancer dans l’informatique après le bac, voici des pistes **concrètes** issues de mes sources :\n\n- **[Ingénieur diplômé de l'Université Paris XIII spécialité Informatique](https://www.onisep.fr/recherche?q=Ing%C3%A9nieur%20dipl%C3%B4m%C3%A9%20de%20l%27Universit%C3%A9%20Paris%20XIII%20sp%C3%A9cialit%C3%A9%20Informatique)** (bac+5) : formation certifiée RNCP, avec des débouchés comme [data scientist](https://www.onisep.fr/recherche?q=Ing%C3%A9nieur%20dipl%C3%B4m%C3%A9%20de%20l%27Universit%C3%A9%20Paris%20XIII%20sp%C3%A9cialit%C3%A9%20Informatique) ou [data engineer](https://www.onisep.fr/recherche?q=Ing%C3%A9nieur%20dipl%C3%B4m%C3%A9%20de%20l%27Universit%C3%A9%20Paris%20XIII%20sp%C3%A9cialit%C3%A9%20Informatique) [source S1].\n- **[Concepteur développeur de solutions informatiques](https://www.onisep.fr/recherche?q=Concepteur%20d%C3%A9veloppeur%20de%20solutions%20informatiques)** à **42** (bac+3) : titre RNCP accessible en alternance ou VAE [source S3].\n- **[BUT Informatique à l’Université Le Havre Normandie](https://www.onisep.fr/recherche?q=Informatique%20%3A%20R%C3%A9alisation%20d%27applications%20%3A%20conception%2C%20d%C3%A9veloppement%2C%20validation)** (bac+3) : débouchés similaires en data et développement [source S4].\n\nLes chiffres (places, frais, taux) ne sont **pas disponibles dans mes sources**.\n\nQuel domaine de l’informatique t’attire le plus : développement, data, ou cybersécurité ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Ingénieur diplômé de l'Université Paris XIII spécialité Informatique",
+        "source": "rncp",
+        "type_diplome": "Titre ingénieur"
+      },
+      {
+        "nom": "réalisation de jeux vidéo",
+        "source": "onisep",
+        "type_diplome": "formation d'école spécialisée"
+      },
+      {
+        "nom": "Concepteur développeur de solutions informatiques",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Informatique : Réalisation d'applications : conception, développement, validation",
+        "source": "rncp",
+        "type_diplome": "Bachelor universitaire de technologie"
+      },
+      {
+        "nom": "Sciences et Ingénierie - Informatique et Cybersécurité",
+        "source": "rncp",
+        "type_diplome": "Diplôme conférant le grade de Licence "
+      }
+    ]
+  },
+  {
+    "id": "sanity-03",
+    "cat": "sanity",
+    "q": "Quelles écoles d'ingénieurs en Bretagne dans le numérique ?",
+    "answer": "Je comprends que tu cherches des écoles d'ingénieurs en Bretagne axées sur le numérique. Voici les options **publiques** disponibles dans mes sources :\n\n- **[Formation d'ingénieur Bac + 5](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=38&typeBac=0&originePc=0)** à l’[ENIB Brest](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=38&typeBac=0&originePc=0) (Plouzané) : 120 places, taux d’accès de 75 % [source S1].\n- **[Formation d'ingénieur Bac + 5](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=472&typeBac=0&originePc=0)** à l’[ENSIBS Lorient](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=472&typeBac=0&originePc=0) : 80 places, taux d’accès de 76 % [source S4].\n\nAucune source ne précise explicitement une spécialisation \"numérique\" pour ces formations. Veux-tu que je vérifie si d’autres cursus en Bretagne correspondent mieux à ce domaine ?",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "Formation d'ingénieur Bac + 5 - Bac général",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'ingénieur"
+      },
+      {
+        "nom": "BTS - Production - Assistance technique d'ingénieur",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "Formation d'ingénieur Bac + 5 - bac STI2D",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'ingénieur"
+      },
+      {
+        "nom": "Formation d'ingénieur Bac + 5 - Bac général",
+        "source": "parcoursup",
+        "type_diplome": "Diplôme d'ingénieur"
+      },
+      {
+        "nom": "BUT - Science et génie des matériaux",
+        "source": "parcoursup",
+        "type_diplome": "BUT"
+      }
+    ]
+  },
+  {
+    "id": "sanity-04",
+    "cat": "sanity",
+    "q": "Je m'intéresse à la santé mais je ne veux pas être médecin, quelles options ?",
+    "answer": "Si tu veux travailler dans la santé sans exercer la médecine, plusieurs métiers s’offrent à toi.\n\n- **[Médecin conseil en santé publique](https://candidat.francetravail.fr/metierscope/fiche-metier/K1411)** : tu interviendras sur des actions de prévention, d’évaluation et de coordination en santé publique, sans exercer de soins directs [source S1].\n- **[Médecin scolaire](https://candidat.francetravail.fr/metierscope/fiche-metier/J1107)** : tu suivras la santé des élèves, organiseras des bilans et des ateliers de sensibilisation, en collaboration avec les familles [source S3].\n- La licence **[Sciences pour la santé](https://www.onisep.fr/recherche?q=Sciences%20pour%20la%20sant%C3%A9%20%28fiche%20nationale%29)** à l’**UNIVERSITE DE TOULOUSE** ouvre aussi à des débouchés paramédicaux (sage-femme, professions paramédicales) ou en prévention [source S4].\n\nQuel aspect de la santé te motive le plus : la prévention, l’accompagnement ou la recherche ?\n\n💭 **Avant de te lancer** : As-tu pu observer ces métiers en stage ou en consultation ?\n\n👤 Pour structurer ton projet en profondeur, parle-en au **CIO** ou au **Psy-EN** de ton lycée.",
+    "n_sources": 12,
+    "top_sources": [
+      {
+        "nom": "Médecin conseil en santé publique",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "médecin généraliste",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "Médecin scolaire",
+        "source": "rome_api_v4",
+        "type_diplome": null
+      },
+      {
+        "nom": "Sciences pour la santé (fiche nationale)",
+        "source": "rncp",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "chercheur/euse en robotique médicale",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "sanity-05",
+    "cat": "sanity",
+    "q": "Quel master en data science après une licence d'informatique ?",
+    "answer": "Si tu cherches un master en data science après une licence d’informatique, voici 2 options en Île-de-France avec des profils adaptés :\n\n- **[INFORMATIQUE — Machine Learning pour la science des données](https://www.onisep.fr/recherche?q=INFORMATIQUE%20%E2%80%94%20Machine%20Learning%20pour%20la%20science%20des%20donn%C3%A9es)** à [Université Paris Cité](https://www.onisep.fr/recherche?q=INFORMATIQUE%20%E2%80%94%20Machine%20Learning%20pour%20la%20science%20des%20donn%C3%A9es) : 30 places, salaire médian à 12 mois de **2 850 € net/mois** [source S2]. Alternance possible.\n- **[SCIENCES SOCIALES — Data Science et société numérique](https://www.onisep.fr/recherche?q=SCIENCES%20SOCIALES%20%E2%80%94%20Data%20Science%20et%20soci%C3%A9t%C3%A9%20num%C3%A9rique)** à [Université Gustave Eiffel](https://www.onisep.fr/recherche?q=SCIENCES%20SOCIALES%20%E2%80%94%20Data%20Science%20et%20soci%C3%A9t%C3%A9%20num%C3%A9rique) : 8 places, salaire médian à 12 mois de **2 240 € net/mois** [source S3].\n\nQuelle spécialisation (technique ou sciences sociales) te correspond le mieux ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "Licence - Economie et gestion - Parcours Cursus master en ingénierie (CMI) : Data science for social Sciences",
+        "source": "parcoursup",
+        "type_diplome": "Licence"
+      },
+      {
+        "nom": "INFORMATIQUE — Machine Learning pour la science des données",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "SCIENCES SOCIALES — Data Science et société numérique",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "Ingénieur en science des données spécialisé en infrastructure data ou en apprentissage automatique",
+        "source": "rncp",
+        "type_diplome": "Titre professionnel (RNCP)"
+      },
+      {
+        "nom": "Humanités numériques (fiche nationale)",
+        "source": "rncp",
+        "type_diplome": "Master"
+      }
+    ]
+  },
+  {
+    "id": "sanity-06",
+    "cat": "sanity",
+    "q": "Quelles formations agricoles en alternance existe-t-il ?",
+    "answer": "Je n'ai pas de formation pertinente dans mes sources pour cette question. Je te suggère de vérifier sur Parcoursup, ONISEP ou de prendre RDV avec le CIO le plus proche.",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "ACS'AGRI : Analyse, Conduite et Stratégie de l'entreprise Agricole",
+        "source": "rncp",
+        "type_diplome": "Brevet de technicien supérieur agricole"
+      },
+      {
+        "nom": "Métiers de l'agriculture",
+        "source": "rncp",
+        "type_diplome": "Certificat d'aptitude professionnelle agricole"
+      },
+      {
+        "nom": "Pilotage de machines agricoles et travaux mécanisés à haute technicité",
+        "source": "rncp",
+        "type_diplome": "Certificat de spécialisation"
+      },
+      {
+        "nom": "Constructions paysagères",
+        "source": "rncp",
+        "type_diplome": "Certificat de spécialisation"
+      },
+      {
+        "nom": "Conduite et gestion de l'entreprise agricole",
+        "source": "rncp",
+        "type_diplome": "Baccalauréat professionnel"
+      }
+    ]
+  }
+]

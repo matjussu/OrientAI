@@ -1,0 +1,264 @@
+[
+  {
+    "id": "frais-priv-01",
+    "cat": "frais-prive",
+    "q": "Combien coûte une école d'ingénieur privée comme l'ESILV ?",
+    "answer": "Je n'ai pas d'information fiable dans mes sources pour répondre à cette question précise. Pour ne pas inventer, je préfère te rediriger :\n\n- **Onisep** : https://www.onisep.fr — fiches formations + métiers officielles\n- **Parcoursup** : https://www.parcoursup.fr — procédures, taux d'accès\n- **SCUIO** ou **CIO** — conseiller·ère d'orientation\n\nTu peux aussi reformuler ou préciser ta question (région, niveau, secteur) et je ferai de mon mieux dans les limites de mes données.",
+    "n_sources": 0,
+    "top_sources": []
+  },
+  {
+    "id": "frais-priv-02",
+    "cat": "frais-prive",
+    "q": "Quels sont les frais de scolarité d'une école de commerce comme HEC ?",
+    "answer": "Cette question dépasse ce que mes sources couvrent précisément. Pour ne pas te donner une info partielle ou inventée, je préfère te rediriger :\n\n- **Onisep** : https://www.onisep.fr (fiches officielles)\n- **Parcoursup** : https://www.parcoursup.fr (procédures)\n- **CIO** / **Psy-EN** : conseil personnalisé sur ton parcours\n\nSinon, reformule avec un angle plus précis et je retente.",
+    "n_sources": 0,
+    "top_sources": []
+  },
+  {
+    "id": "frais-pub-01",
+    "cat": "frais-public",
+    "q": "Quels sont les frais d'inscription en licence à l'université ?",
+    "answer": "Pas trouvé d'info précise sur ta question dans mes sources. Plutôt que d'inventer, je te propose deux pistes :\n\n1. **Reformule** en précisant région, niveau (bac+N), secteur, type de diplôme — souvent le détail qui fait la différence.\n2. **Source officielle** : Onisep (https://www.onisep.fr), Parcoursup (https://www.parcoursup.fr), ou ton CIO/SCUIO local.\n\nSur quoi veux-tu que je creuse en priorité ?",
+    "n_sources": 0,
+    "top_sources": []
+  },
+  {
+    "id": "frais-pub-02",
+    "cat": "frais-public",
+    "q": "Combien coûte une année de master à la fac ?",
+    "answer": "Je n'ai pas de formation pertinente dans mes sources pour cette question. Je te suggère de vérifier sur Parcoursup, ONISEP ou de prendre RDV avec le CIO le plus proche.",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "GENIE CIVIL — Génie civil et construction durable",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — Lettres classiques",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "COMPTABILITE-CONTROLE-AUDIT — None",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "LANGUES, LITTERATURES ET CIVILISATIONS ETRANGERES ET REGIONALES — Métiers de la Culture dans le domaine Franco-Allemand (MCFA)",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "INFORMATIQUE — None",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      }
+    ]
+  },
+  {
+    "id": "sal-but-01",
+    "cat": "salaire-non-master",
+    "q": "Quel salaire on gagne après un BUT informatique ?",
+    "answer": "Je n'ai pas de formation de type **BUT informatique** dans mes sources pour répondre à ta question sur les salaires.\n\nMes données concernent uniquement des **masters en informatique** (bac+5), avec des salaires médians à l'embauche comme 2 420 € [source S1] ou 2 850 € [source S2].\n\nPour des infos précises sur les BUT, je te conseille de consulter les fiches ONISEP ou Parcoursup dédiées. Quel aspect du salaire t'intéresse le plus : brut, net, ou par spécialité ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "INFORMATIQUE — Génie logiciel",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "INFORMATIQUE — Génie Informatique en alternance (GENIAL)",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "INFORMATIQUE — Science et technologie du logiciel (STL)",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "INFORMATIQUE — Ingénierie du web, des objets communicants et systèmes complexes",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      },
+      {
+        "nom": "INFORMATIQUE — Génie informatique en alternance",
+        "source": "monmaster",
+        "type_diplome": "Master"
+      }
+    ]
+  },
+  {
+    "id": "sal-lic-01",
+    "cat": "salaire-non-master",
+    "q": "Combien gagne-t-on après une licence de droit ?",
+    "answer": "Je n'ai pas de formation pertinente dans mes sources pour cette question. Je te suggère de vérifier sur Parcoursup, ONISEP ou de prendre RDV avec le CIO le plus proche.",
+    "n_sources": 5,
+    "top_sources": [
+      {
+        "nom": "juriste en propriété intellectuelle",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "commissaire-priseur/euse (ventes volontaires)",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "juriste d'entreprise",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "avocat/e d'affaires",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "courtier/ère",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "sal-bts-01",
+    "cat": "salaire-non-master",
+    "q": "Quel est le salaire de sortie d'un BTS comptabilité gestion ?",
+    "answer": "Je n'ai pas de formation **BTS Comptabilité Gestion** dans mes sources, ni de salaire de sortie associé.\n\nEn revanche, voici les métiers accessibles après ce type de diplôme :\n- **[comptable](https://www.onisep.fr/recherche?q=comptable)** [source S1]\n- **[collaborateur/rice de cabinet d'expertise comptable](https://www.onisep.fr/recherche?q=collaborateur/rice%20de%20cabinet%20d%27expertise%20comptable)** [source S5]\n\nPour des données salariales précises, consulte les enquêtes d'insertion de ton lycée ou Parcoursup.\n\nQuel secteur te tente le plus ?",
+    "n_sources": 5,
+    "top_sources": [
+      {
+        "nom": "comptable",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "insee_salaan_2023",
+        "type_diplome": null
+      },
+      {
+        "nom": "comptable",
+        "source": "onisep_metiers",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "insee_salaan_2023",
+        "type_diplome": null
+      },
+      {
+        "nom": "collaborateur/rice de cabinet d'expertise comptable",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "sal-lyceepro-01",
+    "cat": "salaire-non-master",
+    "q": "Quel salaire après un bac pro commerce ?",
+    "answer": "Ton bac pro commerce ouvre vers des métiers comme [vendeur/euse en magasin](https://www.onisep.fr/recherche?q=vendeur/euse%20en%20magasin) ou [vendeur/euse spécialisé/e en bricolage](https://www.onisep.fr/recherche?q=vendeur/euse%20sp%C3%A9cialis%C3%A9/e%20en%20bricolage).\n\n- Salaire net médian annuel pour les **employés de commerce (PCS 55)** : **17 000 €** [source S1]\n- Salaire net médian annuel pour les **commerçants et assimilés (PCS 22)** : **19 000 €** [source S5]\n\nCes chiffres te donnent une fourchette réaliste pour des postes accessibles après ton diplôme. Tu te vois plutôt dans quel type de commerce ?",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": null,
+        "source": "insee_salaan_2023",
+        "type_diplome": null
+      },
+      {
+        "nom": "vendeur/euse en magasin",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "vendeur/euse spécialisé/e en bricolage",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "commercial/e export",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "insee_salaan_2023",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "sal-ing-01",
+    "cat": "salaire-non-master",
+    "q": "Combien gagne un ingénieur en sortie d'école ?",
+    "answer": "Je n'ai pas de données sur les salaires **en sortie d'école** dans mes sources. En revanche, pour les **ingénieurs et cadres techniques d'entreprises** (PCS 38), le salaire net médian annuel est de **45 000 €** [source S1].\n\nTu cherches des infos sur un secteur en particulier (aéronautique, fonderie, etc.) ?",
+    "n_sources": 5,
+    "top_sources": [
+      {
+        "nom": null,
+        "source": "insee_salaan_2023",
+        "type_diplome": null
+      },
+      {
+        "nom": null,
+        "source": "insee_salaan_2023",
+        "type_diplome": null
+      },
+      {
+        "nom": "ingénieur/e en fonderie",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "ingénieur/e pétrolier/ère",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      },
+      {
+        "nom": "ingénieur/e en aéronautique",
+        "source": "onisep_ideo_fiches",
+        "type_diplome": null
+      }
+    ]
+  },
+  {
+    "id": "frais-alt-01",
+    "cat": "frais-alternance",
+    "q": "Combien coûte un BTS en alternance pour l'étudiant ?",
+    "answer": "Je n'ai pas d'information sur les frais d'alternance pour les BTS dans mes sources. Les données disponibles ne précisent pas les coûts pour l'étudiant.\n\nTu peux vérifier directement auprès des établissements ou sur les fiches Parcoursup des formations qui t'intéressent.",
+    "n_sources": 10,
+    "top_sources": [
+      {
+        "nom": "BTS - Services - Commerce International",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Production - Métiers de la mode-vêtements",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Commerce International",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Gestion de la PME",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      },
+      {
+        "nom": "BTS - Services - Assurance",
+        "source": "parcoursup",
+        "type_diplome": "BTS"
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {"id": "but-01", "cat": "BUT", "q": "Le BUT informatique, c'est quel type de diplôme et à quel niveau ?"},
+  {"id": "but-02", "cat": "BUT", "q": "Le BUT génie électrique et informatique industrielle mène à quel niveau d'études ?"},
+  {"id": "but-03", "cat": "BUT", "q": "Le BUT techniques de commercialisation, c'est quel diplôme ?"},
+  {"id": "bts-01", "cat": "BTS", "q": "À quoi mène le BTS SIO et c'est quel niveau de diplôme ?"},
+  {"id": "bts-02", "cat": "BTS", "q": "Le BTS comptabilité et gestion, c'est quel type de diplôme et quel niveau ?"},
+  {"id": "bts-03", "cat": "BTS", "q": "Le BTS électrotechnique, on sort avec quel niveau ?"},
+  {"id": "lic-01", "cat": "Licence", "q": "La licence de droit, c'est quel niveau de diplôme ?"},
+  {"id": "lic-02", "cat": "Licence", "q": "La licence économie et gestion, quel type de diplôme et quel niveau ?"},
+  {"id": "lic-03", "cat": "Licence", "q": "La licence de psychologie mène à quel niveau ?"},
+  {"id": "lp-01", "cat": "Licence pro", "q": "La licence professionnelle métiers du BTP, c'est quel niveau de diplôme ?"},
+  {"id": "master-01", "cat": "Master", "q": "Le master MIAGE, c'est quel type de diplôme et quel niveau ?"},
+  {"id": "master-02", "cat": "Master", "q": "Le master marketing, vente, on sort à quel niveau ?"},
+  {"id": "master-03", "cat": "Master", "q": "Le master droit public, quel niveau de diplôme ?"},
+  {"id": "cpge-01", "cat": "CPGE", "q": "La prépa MPSI, c'est quel type de formation ?"},
+  {"id": "cpge-02", "cat": "CPGE", "q": "La CPGE BCPST mène à quoi et c'est quel type de classe ?"},
+  {"id": "ing-01", "cat": "Ingénieur", "q": "Une formation d'ingénieur en 5 ans, on sort avec quel diplôme et quel niveau ?"},
+  {"id": "titrepro-01", "cat": "Titre pro RNCP", "q": "La certification d'accompagnant en gérontologie, c'est quel type de certification ?"},
+  {"id": "ifsi-01", "cat": "DE infirmier", "q": "Pour devenir infirmier en IFSI, on obtient quel diplôme ?"}
+]

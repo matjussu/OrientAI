@@ -1,0 +1,12 @@
+[
+  {"id": "frais-priv-01", "cat": "frais-prive", "q": "Combien coûte une école d'ingénieur privée comme l'ESILV ?"},
+  {"id": "frais-priv-02", "cat": "frais-prive", "q": "Quels sont les frais de scolarité d'une école de commerce comme HEC ?"},
+  {"id": "frais-pub-01", "cat": "frais-public", "q": "Quels sont les frais d'inscription en licence à l'université ?"},
+  {"id": "frais-pub-02", "cat": "frais-public", "q": "Combien coûte une année de master à la fac ?"},
+  {"id": "sal-but-01", "cat": "salaire-non-master", "q": "Quel salaire on gagne après un BUT informatique ?"},
+  {"id": "sal-lic-01", "cat": "salaire-non-master", "q": "Combien gagne-t-on après une licence de droit ?"},
+  {"id": "sal-bts-01", "cat": "salaire-non-master", "q": "Quel est le salaire de sortie d'un BTS comptabilité gestion ?"},
+  {"id": "sal-lyceepro-01", "cat": "salaire-non-master", "q": "Quel salaire après un bac pro commerce ?"},
+  {"id": "sal-ing-01", "cat": "salaire-non-master", "q": "Combien gagne un ingénieur en sortie d'école ?"},
+  {"id": "frais-alt-01", "cat": "frais-alternance", "q": "Combien coûte un BTS en alternance pour l'étudiant ?"}
+]
