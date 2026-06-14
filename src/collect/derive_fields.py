@@ -113,6 +113,61 @@ def derive_rncp_professional_title(fiches: list[dict]) -> list[dict]:
     return fiches
 
 
+# lycée_pro : les stats d'emploi vivent au top-level (_moyen) et NON dans un bloc
+# insertion_pro -> invisibles à fact_card. On les remappe vers les noms de champs
+# que fact_card lit (taux_emploi_12m/24m, part_poursuite_etudes). Valeurs = fractions
+# [0,1] (format attendu par _safe_pct/_safe_float). Source étiquetée pour l'attribution.
+_LYCEEPRO_INSERTION_MAP = {
+    "taux_emploi_12m_moyen": "taux_emploi_12m",
+    "taux_emploi_24m_moyen": "taux_emploi_24m",
+    "taux_poursuite_etudes_moyen": "part_poursuite_etudes",
+}
+
+
+def derive_lyceepro_insertion(fiches: list[dict]) -> list[dict]:
+    """Construit un bloc insertion_pro pour les fiches lycée_pro (vide uniquement).
+
+    Les stats d'emploi étaient présentes mais hors bloc structuré -> non citables par
+    fact_card. N'écrase jamais un insertion_pro existant. Ne crée le bloc que si au
+    moins une stat est présente (sinon pas de bloc tout-à-null).
+    """
+    for f in fiches:
+        if not isinstance(f, dict) or f.get("source") != "inserjeunes_lycee_pro":
+            continue
+        if f.get("insertion_pro"):
+            continue
+        block = {}
+        for src_key, ip_key in _LYCEEPRO_INSERTION_MAP.items():
+            v = f.get(src_key)
+            if v is not None:
+                block[ip_key] = v
+        if block:
+            block["source"] = "inserjeunes_lycee_pro"
+            f["insertion_pro"] = block
+    return fiches
+
+
+# niveau_certification ONISEP -> niveau. Échelle INVERSÉE non-RNCP, mapping APPRIS
+# du corpus (fiches ayant niveau ET niveau_certification, ≥98% purity, ≥360 ex) :
+#   '1'->bac+5 (100%/1422), '2'->bac+3 (99%/787), '3'->bac+2 (98%/362).
+# Exclus VOLONTAIREMENT : '0' (ambigu, 38% purity), '4' (3 ex, insuffisant),
+# '5' (0 ex labellisé) -> restent vides (précision > rappel).
+_ONISEP_CERT_TO_NIVEAU = {"1": "bac+5", "2": "bac+3", "3": "bac+2"}
+
+
+def derive_onisep_niveau(fiches: list[dict]) -> list[dict]:
+    """Dérive niveau depuis niveau_certification pour les fiches onisep (vide uniquement)."""
+    for f in fiches:
+        if not isinstance(f, dict) or f.get("source") != "onisep":
+            continue
+        if _nonempty(f.get("niveau")):
+            continue
+        niv = _ONISEP_CERT_TO_NIVEAU.get(str(f.get("niveau_certification") or "").strip())
+        if niv:
+            f["niveau"] = niv
+    return fiches
+
+
 def _build_departement_region_map(fiches: list[dict]) -> dict[str, str]:
     """Apprend departement -> région depuis les fiches qui ont LES DEUX.
 

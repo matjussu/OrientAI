@@ -20,6 +20,8 @@ import shutil
 from pathlib import Path
 
 from src.collect.derive_fields import (
+    derive_lyceepro_insertion,
+    derive_onisep_niveau,
     derive_rncp_professional_title,
     derive_type_diplome,
     geocode_region,
@@ -54,13 +56,17 @@ def _coverage(fiches):
     n = len(fiches)
     sub = lambda s: [f for f in fiches if f.get("source") == s]
     ps, mm, rncp = sub("parcoursup"), sub("monmaster"), sub("rncp")
+    on, lp = sub("onisep"), sub("inserjeunes_lycee_pro")
     elig = [f for f in fiches if f.get("retrieval_eligible")]
     vide = lambda lst: round(100 * sum(1 for f in lst if not _nonempty(f.get("type_diplome"))) / max(1, len(lst)), 1)
+    vide_k = lambda lst, k: round(100 * sum(1 for f in lst if not _nonempty(f.get(k))) / max(1, len(lst)), 1)
     return {
         "type_diplome_global_pct_vide": round(100 * sum(1 for f in fiches if not _nonempty(f.get("type_diplome"))) / n, 1),
         "type_diplome_parcoursup_pct_vide": vide(ps),
         "type_diplome_monmaster_pct_vide": vide(mm),
         "type_diplome_rncp_pct_vide": vide(rncp),
+        "niveau_onisep_pct_vide": vide_k(on, "niveau"),
+        "insertion_pro_lyceepro_pct_absent": round(100 * sum(1 for f in lp if not f.get("insertion_pro")) / max(1, len(lp)), 1),
         "region_eligible_pct_vide": round(100 * sum(1 for f in elig if not _nonempty(f.get("region"))) / max(1, len(elig)), 1),
     }
 
@@ -78,6 +84,8 @@ def main():
 
     fiches = derive_type_diplome(fiches)
     fiches = derive_rncp_professional_title(fiches)
+    fiches = derive_lyceepro_insertion(fiches)
+    fiches = derive_onisep_niveau(fiches)
     fiches = geocode_region(fiches)
     after = _coverage(fiches)
 

@@ -8,6 +8,8 @@ departement->region appris du corpus). Sinon : VIDE.
 from src.collect.derive_fields import (
     derive_type_diplome,
     derive_rncp_professional_title,
+    derive_lyceepro_insertion,
+    derive_onisep_niveau,
     geocode_region,
     TYPE_FROM_FILI_CODE,
 )
@@ -155,6 +157,73 @@ def test_titre_pro_ne_touche_pas_les_autres_sources():
     fiches = [{"source": "parcoursup", "type_enregistrement": "Enregistrement sur demande",
                "type_diplome": None}]
     assert derive_rncp_professional_title(fiches)[0]["type_diplome"] is None
+
+
+# --------------------------------------------------------------------------
+# lycée_pro : stats emploi top-level -> bloc insertion_pro (ordre 1327)
+# --------------------------------------------------------------------------
+
+def test_lyceepro_insertion_mappee():
+    # stats fractions [0,1] -> noms de champs lus par fact_card.
+    fiches = [{"source": "inserjeunes_lycee_pro", "taux_emploi_12m_moyen": 0.44,
+               "taux_emploi_24m_moyen": 0.49, "taux_poursuite_etudes_moyen": 0.42}]
+    ip = derive_lyceepro_insertion(fiches)[0]["insertion_pro"]
+    assert ip["taux_emploi_12m"] == 0.44
+    assert ip["taux_emploi_24m"] == 0.49
+    assert ip["part_poursuite_etudes"] == 0.42
+    assert ip["source"] == "inserjeunes_lycee_pro"
+
+
+def test_lyceepro_insertion_existante_non_ecrasee():
+    fiches = [{"source": "inserjeunes_lycee_pro", "insertion_pro": {"taux_emploi_12m": 0.9},
+               "taux_emploi_12m_moyen": 0.44}]
+    assert derive_lyceepro_insertion(fiches)[0]["insertion_pro"] == {"taux_emploi_12m": 0.9}
+
+
+def test_lyceepro_sans_stat_pas_de_bloc():
+    fiches = [{"source": "inserjeunes_lycee_pro", "libelle_formation": "X"}]
+    out = derive_lyceepro_insertion(fiches)[0]
+    assert not out.get("insertion_pro")
+
+
+def test_lyceepro_partiel_ne_met_que_le_present():
+    fiches = [{"source": "inserjeunes_lycee_pro", "taux_poursuite_etudes_moyen": 0.42}]
+    ip = derive_lyceepro_insertion(fiches)[0]["insertion_pro"]
+    assert ip["part_poursuite_etudes"] == 0.42
+    assert "taux_emploi_12m" not in ip
+
+
+def test_lyceepro_insertion_ne_touche_pas_autres_sources():
+    fiches = [{"source": "parcoursup", "taux_emploi_12m_moyen": 0.44}]
+    assert not derive_lyceepro_insertion(fiches)[0].get("insertion_pro")
+
+
+# --------------------------------------------------------------------------
+# onisep : niveau depuis niveau_certification (mapping empirique vérifié, ordre 1327)
+# --------------------------------------------------------------------------
+
+def test_onisep_niveau_depuis_certification_valeurs_sures():
+    cas = {"1": "bac+5", "2": "bac+3", "3": "bac+2"}
+    for nc, niv in cas.items():
+        fiches = [{"source": "onisep", "niveau": None, "niveau_certification": nc}]
+        assert derive_onisep_niveau(fiches)[0]["niveau"] == niv, f"nc={nc}"
+
+
+def test_onisep_niveau_certif_ambigu_ou_insuffisant_reste_vide():
+    # '0' ambigu (38% purity), '4' 3 ex, '5' 0 ex -> jamais mappé (précision > rappel).
+    for nc in ("0", "4", "5"):
+        fiches = [{"source": "onisep", "niveau": "", "niveau_certification": nc}]
+        assert derive_onisep_niveau(fiches)[0]["niveau"] in ("", None), f"nc={nc}"
+
+
+def test_onisep_niveau_existant_non_ecrase():
+    fiches = [{"source": "onisep", "niveau": "bac+3", "niveau_certification": "1"}]
+    assert derive_onisep_niveau(fiches)[0]["niveau"] == "bac+3"
+
+
+def test_onisep_niveau_ne_touche_pas_autres_sources():
+    fiches = [{"source": "rncp", "niveau": None, "niveau_certification": "1"}]
+    assert derive_onisep_niveau(fiches)[0]["niveau"] is None
 
 
 # --------------------------------------------------------------------------

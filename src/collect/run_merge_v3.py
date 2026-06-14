@@ -68,6 +68,8 @@ from typing import Any
 
 from src.collect.cross_ref import attach_cross_refs
 from src.collect.derive_fields import (
+    derive_lyceepro_insertion,
+    derive_onisep_niveau,
     derive_rncp_professional_title,
     derive_type_diplome,
     geocode_region,
@@ -973,12 +975,18 @@ def run_merge_v3(
     # fabriquée sur les fiches nationales (RNCP/ONISEP/ROME) sans departement.
     _td_before = sum(1 for f in fiches if f.get("type_diplome"))
     _rg_before = sum(1 for f in fiches if f.get("region"))
+    _nv_before = sum(1 for f in fiches if f.get("niveau"))
+    _ip_before = sum(1 for f in fiches if f.get("insertion_pro"))
     fiches = derive_type_diplome(fiches)
     fiches = derive_rncp_professional_title(fiches)  # ordre 1305 Option A
+    fiches = derive_lyceepro_insertion(fiches)        # ordre 1327
+    fiches = derive_onisep_niveau(fiches)             # ordre 1327
     fiches = geocode_region(fiches)
     stage_stats["5_95_derive_fields"] = {
         "type_diplome_filled": sum(1 for f in fiches if f.get("type_diplome")) - _td_before,
         "region_filled": sum(1 for f in fiches if f.get("region")) - _rg_before,
+        "niveau_filled": sum(1 for f in fiches if f.get("niveau")) - _nv_before,
+        "insertion_pro_filled": sum(1 for f in fiches if f.get("insertion_pro")) - _ip_before,
     }
     if verbose:
         s = stage_stats["5_95_derive_fields"]
