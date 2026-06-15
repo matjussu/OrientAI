@@ -22,7 +22,8 @@ from src.rag.intent import (
     intent_to_config,
     INTENT_FACTUAL_POINTED,
 )
-from src.rag.generator import generate, generate_stream
+from src.rag.generator import generate, generate_stream, NARRATIVE_MAX_SOURCES
+from src.rag.fact_card import build_sources_index
 from src.lookup.structured_select import try_select_or_none, SelectResult
 from src.rag.metadata_filter import (
     FilterCriteria,
@@ -35,8 +36,12 @@ from src.rag.scope_classifier import ScopeClassifier, ScopeResult
 from src.agent.tools.profile_clarifier import Profile, ProfileClarifier
 from src.rag.narrative_detect import is_narrative, is_narrative_followup
 from src.rag.narrative_route import route_from_profile
-from src.rag.narrative_query import build_narrative_retrieval_query, build_narrative_clarifier_input
-from src.prompt.system_narrative import NARRATIVE_FEW_SHOT_PREFIX
+from src.rag.narrative_query import (
+    build_narrative_retrieval_query, build_narrative_clarifier_input, extract_comparison_options,
+)
+from src.rag.narrative_format import route_narrative_format, FormatDecision, TRAJECTOIRE, COMPARAISON
+from src.rag.narrative_structured import parse_narrative_response
+from src.prompt.system_narrative import NARRATIVE_FEW_SHOT_PREFIX, narrative_few_shot
 from src.validator import (
     Validator,
     ValidatorResult,
@@ -147,9 +152,12 @@ class _PreparedGenContext:
     criteria: FilterCriteria | None
     route_decision: RouteDecision | None
     # Mode récit (1d) — quand True, la génération bascule sur le prompt
-    # sectionné (4 sections, max_tokens relevé). Default False = chemin v4/v3.2
+    # sectionné (max_tokens relevé). Default False = chemin v4/v3.2
     # inchangé pour le banc 100q et le serving classique.
     narrative_mode: bool = False
+    # Forme adaptative (ordre 1926) — décision de format + overlays, déterminée
+    # par route_narrative_format. None hors mode récit.
+    format_decision: FormatDecision | None = None
 
 
 @dataclass
@@ -161,6 +169,39 @@ class _ShortCircuitResult:
     """
     text: str
     reason: str
+
+
+def _fiche_key(item: dict) -> tuple:
+    """Clé d'identité d'une fiche pour dédup inter-retrievals (fix A COMPARAISON)."""
+    f = item.get("fiche", item) if isinstance(item, dict) else {}
+    if not isinstance(f, dict):
+        return (str(item),)
+    return (
+        str(f.get("nom", "")).strip().lower(),
+        str(f.get("etablissement", "")).strip().lower(),
+        str(f.get("ville", "")).strip().lower(),
+    )
+
+
+def _round_robin_dedup(pools: list[list[dict]], target: int) -> list[dict]:
+    """Fusionne plusieurs pools de retrieval en round-robin (1 par pool à tour de
+    rôle), dédupliqué, jusqu'à `target`. Garantit que CHAQUE pool (= chaque option
+    comparée) soit représenté dans les sources servies au LLM (fix A, ordre 1926)."""
+    out: list[dict] = []
+    seen: set = set()
+    idx = [0] * len(pools)
+    while len(out) < target and any(idx[i] < len(pools[i]) for i in range(len(pools))):
+        for i in range(len(pools)):
+            if idx[i] < len(pools[i]):
+                it = pools[i][idx[i]]
+                idx[i] += 1
+                key = _fiche_key(it)
+                if key not in seen:
+                    seen.add(key)
+                    out.append(it)
+                    if len(out) >= target:
+                        break
+    return out
 
 
 def _chunk_text_into_tokens(text: str) -> list[str]:
@@ -299,6 +340,11 @@ class OrientIAPipeline:
         self.enable_narrative_mode = enable_narrative_mode
         self.narrative_clarifier = narrative_clarifier
         self.last_narrative_profile: Profile | None = None
+        # Forme adaptative (ordre 1926) — derniers format/structure produits
+        # (exposés au serving pour le payload `structured`). None hors récit.
+        self.last_narrative_format_decision: FormatDecision | None = None
+        self.last_narrative_structured: dict | None = None
+        self.last_narrative_comparison_options: list[str] = []
         # Chantier 1.B (2026-05-03) — métadonnées du retry-with-hint loop pour
         # audit / observabilité. None tant qu'aucun call avec validator. Format :
         #   {
@@ -432,6 +478,7 @@ class OrientIAPipeline:
             wall_t0=wall_t0,
             intent=intent_label,
             narrative_mode=prepared.narrative_mode,
+            format_decision=prepared.format_decision,
         )
 
         # Validator v1 + UX Policy
@@ -445,7 +492,33 @@ class OrientIAPipeline:
             self.last_post_process_stats = pp_stats
         else:
             self.last_post_process_stats = None
+        # Forme adaptative (ordre 1926) : sortie typée dérivée du markdown FINAL
+        # (post-policy/post-process). Exposée au serving via le payload `structured`.
+        # markdown_full reste canonique ; parser TOTAL (ne lève jamais).
+        self.last_narrative_structured = (
+            parse_narrative_response(
+                answer_text, prepared.format_decision,
+                sources=build_sources_index(top, max_sources=NARRATIVE_MAX_SOURCES),
+            )
+            if prepared.narrative_mode else None
+        )
         return answer_text, top
+
+    def warmup_generation(self) -> None:
+        """Pré-chauffe le pool de connexions Mistral (génération) + le clarifier
+        récit (ordre 1926, fix C — complément du warmup retrieval déjà fait au
+        boot serveur). Sans ça, la 1re VRAIE réponse paie le cold-start réseau
+        (handshake TLS + pool). Best-effort : jamais bloquant pour le démarrage.
+        """
+        try:
+            self.answer("Quelles formations après un bac général ?")
+        except Exception as e:  # noqa: BLE001 — warmup best-effort
+            _logger.warning("warmup_generation skipped (non-bloquant): %s", e)
+        if self.enable_narrative_mode and self.narrative_clarifier is not None:
+            try:
+                self.narrative_clarifier.clarify_narrative("warmup mode recit")
+            except Exception as e:  # noqa: BLE001
+                _logger.warning("warmup clarify_narrative skipped: %s", e)
 
     def _prepare_for_generation(
         self,
@@ -705,7 +778,20 @@ class OrientIAPipeline:
         profile = self.narrative_clarifier.clarify_narrative(clarifier_input)
         self.last_narrative_profile = profile
 
+        # Forme adaptative (ordre 1926) : format + overlays routés de façon
+        # déterministe depuis le profil + le texte courant. Le format gouverne
+        # la STRUCTURE de la réponse (prompt) et le few-shot ; les overlays
+        # (anchor_constraint / reassure) sont des registres orthogonaux.
+        decision = route_narrative_format(profile, question, history)
+        self.last_narrative_format_decision = decision
+
         route_decision = route_from_profile(profile)
+        # Format TRAJECTOIRE : garantir le sous-index `metiers` (les passerelles
+        # ROME vivent dans la fact_card métier) même si le profil ne l'aurait pas
+        # déclenché. Ordre canonique préservé (déterminisme).
+        if decision.format == TRAJECTOIRE and "metiers" not in route_decision.sub_indexes:
+            want = set(route_decision.sub_indexes) | {"metiers"}
+            route_decision.sub_indexes = [s for s in SUB_INDEX_NAMES if s in want]
         self.last_router_result = route_decision
 
         # Fallback retrieval = la conv complète (clarifier_input), pas le seul
@@ -722,7 +808,31 @@ class OrientIAPipeline:
             criteria=None,                 # géo = boost via requête, jamais filtre dur
             route_decision=route_decision,
         )
-        if self.use_mmr:
+
+        # Fix A (ordre 1926) — COMPARAISON : retrieval PAR option nommée pour que
+        # CHAQUE option du face-à-face soit représentée dans les sources. Sans ça,
+        # quand la requête sector-driven ne surface pas les options (R05/R12), le
+        # modèle refuse en bloc. Merge round-robin (options d'abord) -> table
+        # partielle T6-style ; le contrat factuel garantit « hors sources » pour
+        # une option absente du corpus (ex. prépa), pas un refus total.
+        options = extract_comparison_options(clarifier_input) if decision.format == COMPARAISON else []
+        self.last_narrative_comparison_options = options
+        decision.comparison_options = options  # ancre le tableau sur les options DEMANDÉES (fix A)
+        if options:
+            per = max(4, target // (len(options) + 1))
+            opt_pools = [
+                self._retrieve_and_filter(
+                    question=opt, k=k, domain_hint=classify_domain_hint(opt),
+                    target=per, criteria=None, route_decision=route_decision,
+                )
+                for opt in options
+            ]
+            # BASE D'ABORD (augmente, ne DÉPLACE pas) : les cas qui marchaient via
+            # la requête sector (T2 BUT GEA) gardent leurs fiches en tête ; les
+            # options ne font qu'AJOUTER la couverture manquante (R05 école de
+            # commerce). Mettre les options en tête déstabilisait les cas sains.
+            top = _round_robin_dedup([reranked, *opt_pools], target)
+        elif self.use_mmr:
             top = mmr_select(reranked, k=target, lambda_=self.mmr_lambda)
         else:
             top = reranked[:target]
@@ -735,15 +845,16 @@ class OrientIAPipeline:
         return _PreparedGenContext(
             top=top,
             effective_top_k=target,
-            # 1d : few-shot récit DÉDIÉ (format sectionné) injecté via le canal
-            # golden_qa_prefix (côté user, attaché au contexte fact). Le mode
-            # récit n'utilise pas le retrieve Golden QA — c'est un exemple fixe.
-            golden_qa_prefix=NARRATIVE_FEW_SHOT_PREFIX,
+            # Forme adaptative (ordre 1926) : few-shot DÉDIÉ AU FORMAT (anti-
+            # ancrage — l'exemple montre le squelette réel), injecté via le canal
+            # golden_qa_prefix (côté user, attaché au contexte fact).
+            golden_qa_prefix=narrative_few_shot(decision.format),
             intent_label=None,
             hardlock_block="",
             criteria=None,
             route_decision=route_decision,
             narrative_mode=True,
+            format_decision=decision,
         )
 
     async def answer_stream(
@@ -834,11 +945,20 @@ class OrientIAPipeline:
                 hardlock_block=prepared.hardlock_block,
                 use_strict_v4=self.use_strict_v4,
                 narrative_mode=prepared.narrative_mode,
+                narrative_decision=prepared.format_decision,
             ):
                 full_text_parts.append(chunk)
                 yield {"type": "token", "content": chunk}
 
             full_text = "".join(full_text_parts)
+            # Forme adaptative (ordre 1926) : sortie typée dérivée du texte streamé.
+            self.last_narrative_structured = (
+                parse_narrative_response(
+                    full_text, prepared.format_decision,
+                    sources=build_sources_index(prepared.top, max_sources=NARRATIVE_MAX_SOURCES),
+                )
+                if prepared.narrative_mode else None
+            )
 
             # Post-LLM (validator + policy + post-process) via to_thread —
             # ces étapes sont sync. Note : on n'a PAS le retry-with-hint
@@ -914,6 +1034,7 @@ class OrientIAPipeline:
         wall_t0: float,
         intent: str | None = None,
         narrative_mode: bool = False,
+        format_decision: FormatDecision | None = None,
     ) -> tuple[str, dict]:
         """Boucle retry-with-hint anti-hallucination (chantier 1.B).
 
@@ -969,6 +1090,7 @@ class OrientIAPipeline:
             use_strict_v4=self.use_strict_v4,
             hardlock_block=hardlock_block,
             narrative_mode=narrative_mode,
+            narrative_decision=format_decision,
         )
 
         # Sans validator : pas de retry (no-op transparent)
@@ -1031,6 +1153,7 @@ class OrientIAPipeline:
             use_strict_v4=self.use_strict_v4,
             hardlock_block=hardlock_block,
             narrative_mode=narrative_mode,
+            narrative_decision=format_decision,
         )
         tour2_validation = self.validator.validate(tour2_answer, intent=intent)
         tour2_failed = extract_failed_claims(tour2_validation)

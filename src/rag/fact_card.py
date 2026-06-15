@@ -566,6 +566,41 @@ def _pick_url(fiche: dict) -> str | None:
     return None
 
 
+def _pick_real_fiche_url(fiche: dict) -> str | None:
+    """URL de FICHE RÉELLE uniquement, pour le contrat `structured` (ordre iter1 A1).
+
+    Diffère de `_pick_url` : EXCLUT le fallback `url_canonical` qui est souvent une
+    recherche ONISEP générique (« lien mort »). Retour Matteo iter1 : mieux PAS de
+    lien qu'un lien de recherche vide. Priorité fiche officielle : Parcoursup
+    (`lien_form_psup`) > fiche ONISEP (`url_onisep`) > url native (`url`). None sinon
+    -> le front rend la carte NON cliquable (contrainte « pas de lien creux »).
+    """
+    for key in ("lien_form_psup", "url_onisep", "url"):
+        url = _safe_str(fiche.get(key))
+        if url and url.startswith(("http://", "https://")):
+            return url
+    return None
+
+
+def build_sources_index(top_sources: list[dict], max_sources: int = 10) -> list[dict]:
+    """Map AUTORITAIRE des sources [{ref, label, url}] pour le payload `structured`.
+
+    Construit avec la MÊME numérotation S1..SN que `format_sources_for_llm` (ce que
+    le LLM a vu via [source SX]) -> les chips [SX] du front se résolvent en vraie
+    fiche. `url` = fiche réelle (`_pick_real_fiche_url`) ou None (pas de lien creux).
+    Déterministe (ordre 1926 iter1 A1).
+    """
+    out: list[dict] = []
+    for i, s in enumerate(top_sources[:max_sources], 1):
+        fiche = s.get("fiche") if isinstance(s, dict) and "fiche" in s else s
+        if not isinstance(fiche, dict):
+            continue
+        card = fiche_to_fact_card(fiche, fact_id=f"S{i}")
+        label = card.formation or _safe_str(fiche.get("nom")) or _safe_str(fiche.get("libelle_humain")) or ""
+        out.append({"ref": f"S{i}", "label": label, "url": _pick_real_fiche_url(fiche)})
+    return out
+
+
 def _pick_annee(fiche: dict) -> int | None:
     """Récupère l'année des données. Priorité : admission.session > annee > collected_at year."""
     admission = fiche.get("admission")

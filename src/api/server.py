@@ -173,6 +173,13 @@ async def lifespan(_app: FastAPI):
         pipeline._bm25_built,
     )
 
+    # Warmup génération (ordre 1926, fix C) : chauffe le pool Mistral + le
+    # clarifier récit pour que la 1re vraie réponse au stand soit snappy.
+    logger.info("Warming up generation (Mistral pool + narrative clarifier)...")
+    t_gen = time.perf_counter()
+    pipeline.warmup_generation()
+    logger.info("Generation warm in %.1fs", time.perf_counter() - t_gen)
+
     _pipeline = pipeline
     logger.info(f"Pipeline ready, {_index_size} fiches indexed")
     yield

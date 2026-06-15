@@ -1,0 +1,677 @@
+{
+  "exploratoire": {
+    "format": "exploratoire",
+    "overlays": {
+      "anchor_constraint": false,
+      "reassure": false
+    },
+    "blocks": [
+      {
+        "role": "lead",
+        "heading": "1. Ce que je retiens",
+        "markdown": "Tu as un profil solide en maths et SES, une curiosité pour l’économie et la société, et une préférence pour des études moins théoriques et plus concrètes. Tu veux rester dans le Sud (Occitanie ici) et éviter les cursus trop longs si possible.\n\n---",
+        "items": [],
+        "table": null,
+        "sources": []
+      },
+      {
+        "role": "options",
+        "heading": "2. Des familles de pistes",
+        "markdown": "- **Les licences courtes et non sélectives en sciences sociales/économie** :\n  La **[Licence - Sciences sociales - Parcours bi disciplinaire Economie - Sociologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4172&typeBac=0&originePc=0)** à l’**Université Toulouse 2 Jean Jaurès** est accessible à 99 % des candidats [source S5] et propose 210 places [source S5]. Taux d’emploi à 12 mois : 60 % [source S5].\n  Autre option : la **[Licence - Administration économique et sociale - Parcours Sciences de l'homme et de la société](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4614&typeBac=0&originePc=0)** à **Béziers** (100 % d’accès, 90 places [source S1]), avec un taux d’emploi à 12 mois de 46,32 % [source S1].\n\n- **Les masters pro en 5 ans (si tu changes d’avis sur la durée)** :\n  Si tu envisages un bac+5 plus appliqué, le **[Master SCIENCES SOCIALES — Réseaux et sociétés : données, méthodes, analyses (RESO)](https://www.onisep.fr/recherche?q=SOCIOLOGIE%20%E2%80%94%20R%C3%A9seaux%20et%20soci%C3%A9t%C3%A9s%20%3A%20donn%C3%A9es%2C%20m%C3%A9thodes%2C%20analyses%20%28RESO%29)** à Toulouse offre un salaire médian d’embauche de 1760 € net/mois [source S8] et un taux d’emploi à 12 mois de 77,4 % [source S8].\n  Le **[Master SCIENCES SOCIALES — Economie Ecologique et Développement Durable (2E2D)](https://www.onisep.fr/recherche?q=SCIENCES%20SOCIALES%20%E2%80%94%20Economie%20Ecologique%20et%20D%C3%A9veloppement%20Durable%20%282E2D%29)** propose aussi 2070 € net/mois médian [source S4] et 77,4 % d’emploi à 12 mois [source S4].\n\n- **Les masters en économie sociale/solidaire ou transition** :\n  À creuser si tu veux allier économie et impact social. Exemples : **[Master ECONOMIE SOCIALE ET SOLIDAIRE — Economie sociale et solidaire](https://www.onisep.fr/recherche?q=ECONOMIE%20SOCIALE%20ET%20SOLIDAIRE%20%E2%80%94%20Economie%20sociale%20et%20solidaire)** à Montpellier (66,7 % d’emploi à 12 mois [source S3]) ou **[Master SCIENCES ECONOMIQUES ET SOCIALES — Ingénierie de la Transition des Territoires](https://www.onisep.fr/recherche?q=SCIENCES%20ECONOMIQUES%20ET%20SOCIALES%2%20%E2%80%94%20Ing%C3%A9nierie%20de%20la%20Transition%20des%20Territoires)** à Toulouse (80,3 % d’emploi à 12 mois [source S6]).\n\n---",
+        "items": [
+          {
+            "titre": "Les licences courtes et non sélectives en sciences sociales/économie",
+            "url": null,
+            "pourquoi": "",
+            "sources": [],
+            "markdown": "- **Les licences courtes et non sélectives en sciences sociales/économie** :"
+          },
+          {
+            "titre": "Les masters pro en 5 ans (si tu changes d’avis sur la durée)",
+            "url": null,
+            "pourquoi": "",
+            "sources": [],
+            "markdown": "- **Les masters pro en 5 ans (si tu changes d’avis sur la durée)** :"
+          },
+          {
+            "titre": "Les masters en économie sociale/solidaire ou transition",
+            "url": null,
+            "pourquoi": "",
+            "sources": [],
+            "markdown": "- **Les masters en économie sociale/solidaire ou transition** :"
+          }
+        ],
+        "table": null,
+        "sources": [
+          "S5",
+          "S1",
+          "S8",
+          "S4",
+          "S3",
+          "S6"
+        ]
+      },
+      {
+        "role": "closing",
+        "heading": "3. Pour t'aider à choisir",
+        "markdown": "Tu te vois plutôt :\n- **Entrer vite dans le concret** avec une licence pro ou générale (3 ans) et un accès quasi garanti ?\n- **Accepter 5 ans** si le projet est motivant (ex : données sociales, transition écologique) avec des débouchés solides ?\n- **Privilégier l’oral et le terrain** (intervention sociale, réseaux) ou **l’analyse de données** (économie, sociologie quantitative) ?\n\nDis-moi ce qui te parle le plus, et on affine ensemble.",
+        "items": [],
+        "table": null,
+        "sources": []
+      }
+    ],
+    "sources": [
+      {
+        "ref": "S1",
+        "label": "Licence - Administration économique et sociale - Parcours Sciences de l'homme et de la société",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4614&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S2",
+        "label": "ECONOMIE — Économie - Science Politique :  Gouvernance des sociétés et territoires en transition",
+        "url": null
+      },
+      {
+        "ref": "S3",
+        "label": "ECONOMIE SOCIALE ET SOLIDAIRE — Economie sociale et solidaire",
+        "url": null
+      },
+      {
+        "ref": "S4",
+        "label": "SCIENCES SOCIALES — Economie Ecologique et Développement Durable (2E2D)",
+        "url": null
+      },
+      {
+        "ref": "S5",
+        "label": "Licence - Sciences sociales - Parcours bi disciplinaire Economie - Sociologie",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4172&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S6",
+        "label": "SCIENCES ECONOMIQUES ET SOCIALES — Ingénierie de la Transition des Territoires",
+        "url": null
+      },
+      {
+        "ref": "S7",
+        "label": "SOCIOLOGIE — Pratiques réflexives et émancipatrices de l'intervention sociale",
+        "url": null
+      },
+      {
+        "ref": "S8",
+        "label": "SOCIOLOGIE — Réseaux et sociétés : données, méthodes, analyses (RESO)",
+        "url": null
+      }
+    ],
+    "markdown_full": "**1. Ce que je retiens**\nTu as un profil solide en maths et SES, une curiosité pour l’économie et la société, et une préférence pour des études moins théoriques et plus concrètes. Tu veux rester dans le Sud (Occitanie ici) et éviter les cursus trop longs si possible.\n\n---\n\n**2. Des familles de pistes**\n- **Les licences courtes et non sélectives en sciences sociales/économie** :\n  La **[Licence - Sciences sociales - Parcours bi disciplinaire Economie - Sociologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4172&typeBac=0&originePc=0)** à l’**Université Toulouse 2 Jean Jaurès** est accessible à 99 % des candidats [source S5] et propose 210 places [source S5]. Taux d’emploi à 12 mois : 60 % [source S5].\n  Autre option : la **[Licence - Administration économique et sociale - Parcours Sciences de l'homme et de la société](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4614&typeBac=0&originePc=0)** à **Béziers** (100 % d’accès, 90 places [source S1]), avec un taux d’emploi à 12 mois de 46,32 % [source S1].\n\n- **Les masters pro en 5 ans (si tu changes d’avis sur la durée)** :\n  Si tu envisages un bac+5 plus appliqué, le **[Master SCIENCES SOCIALES — Réseaux et sociétés : données, méthodes, analyses (RESO)](https://www.onisep.fr/recherche?q=SOCIOLOGIE%20%E2%80%94%20R%C3%A9seaux%20et%20soci%C3%A9t%C3%A9s%20%3A%20donn%C3%A9es%2C%20m%C3%A9thodes%2C%20analyses%20%28RESO%29)** à Toulouse offre un salaire médian d’embauche de 1760 € net/mois [source S8] et un taux d’emploi à 12 mois de 77,4 % [source S8].\n  Le **[Master SCIENCES SOCIALES — Economie Ecologique et Développement Durable (2E2D)](https://www.onisep.fr/recherche?q=SCIENCES%20SOCIALES%20%E2%80%94%20Economie%20Ecologique%20et%20D%C3%A9veloppement%20Durable%20%282E2D%29)** propose aussi 2070 € net/mois médian [source S4] et 77,4 % d’emploi à 12 mois [source S4].\n\n- **Les masters en économie sociale/solidaire ou transition** :\n  À creuser si tu veux allier économie et impact social. Exemples : **[Master ECONOMIE SOCIALE ET SOLIDAIRE — Economie sociale et solidaire](https://www.onisep.fr/recherche?q=ECONOMIE%20SOCIALE%20ET%20SOLIDAIRE%20%E2%80%94%20Economie%20sociale%20et%20solidaire)** à Montpellier (66,7 % d’emploi à 12 mois [source S3]) ou **[Master SCIENCES ECONOMIQUES ET SOCIALES — Ingénierie de la Transition des Territoires](https://www.onisep.fr/recherche?q=SCIENCES%20ECONOMIQUES%20ET%20SOCIALES%2%20%E2%80%94%20Ing%C3%A9nierie%20de%20la%20Transition%20des%20Territoires)** à Toulouse (80,3 % d’emploi à 12 mois [source S6]).\n\n---\n**3. Pour t'aider à choisir**\nTu te vois plutôt :\n- **Entrer vite dans le concret** avec une licence pro ou générale (3 ans) et un accès quasi garanti ?\n- **Accepter 5 ans** si le projet est motivant (ex : données sociales, transition écologique) avec des débouchés solides ?\n- **Privilégier l’oral et le terrain** (intervention sociale, réseaux) ou **l’analyse de données** (économie, sociologie quantitative) ?\n\nDis-moi ce qui te parle le plus, et on affine ensemble.",
+    "parse_confidence": 1.0,
+    "truncated": false,
+    "_example_recit": "T1"
+  },
+  "comparaison": {
+    "format": "comparaison",
+    "overlays": {
+      "anchor_constraint": false,
+      "reassure": false
+    },
+    "blocks": [
+      {
+        "role": "lead",
+        "heading": "1. Ta question en clair",
+        "markdown": "Tu hésites entre un BTS Comptabilité-Gestion et une Licence Économie et Gestion (GEA) à Lyon, avec deux priorités : entrer rapidement dans l’emploi tout en gardant la possibilité de poursuivre en école plus tard. Voici comment les deux options se comparent sur ces critères pour ton profil STMG.\n\n---",
+        "items": [],
+        "table": null,
+        "sources": []
+      },
+      {
+        "role": "comparison_table",
+        "heading": "2. Le face à face",
+        "markdown": "| Critère | [Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2) | [BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille) |\n|---|---|---|\n| **Niveau et durée** | bac+3 (3 ans) | bac+2 (2 ans) |\n| **Sélectivité / accès** | Taux d'accès 32 % [source S1] | Taux d'accès 40 % [source S3] |\n| **Insertion à 6 mois** | 31,39 % [source S1] | information non disponible dans mes sources |\n| **Poursuite d'études** | Très ouverte (écoles de commerce, master) | Possible mais moins directe (écoles spécialisées, licences pro) |\n| **Cadre / géo** | Lyon (7e arrondissement) | Lille (hors Lyon) |\n| **Profil des admis** | 100 % bac général [source S1] | 27 % bac général, 42 % technologique, 31 % professionnel [source S3] |\n\n*Note* : Aucune source ne mentionne de BTS Comptabilité-Gestion **à Lyon** dans mes données. Le BTS cité ici est celui de Lille (S3). Pour un BTS local, il faudrait vérifier si une autre fiche existe (ex: [BTS Comptabilité et gestion au Lycée Louis Pergaud](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3465&typeBac=0&originePc=0) à Besançon, mais hors Lyon).\n\n---",
+        "items": [],
+        "table": {
+          "options": [
+            "[Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2)",
+            "[BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille)"
+          ],
+          "criteria": [
+            {
+              "label": "Niveau et durée",
+              "values": {
+                "[Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2)": "bac+3 (3 ans)",
+                "[BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille)": "bac+2 (2 ans)"
+              },
+              "sources": []
+            },
+            {
+              "label": "Sélectivité / accès",
+              "values": {
+                "[Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2)": "Taux d'accès 32 % [source S1]",
+                "[BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille)": "Taux d'accès 40 % [source S3]"
+              },
+              "sources": [
+                "S1",
+                "S3"
+              ]
+            },
+            {
+              "label": "Insertion à 6 mois",
+              "values": {
+                "[Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2)": "31,39 % [source S1]",
+                "[BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille)": "information non disponible dans mes sources"
+              },
+              "sources": [
+                "S1"
+              ]
+            },
+            {
+              "label": "Poursuite d'études",
+              "values": {
+                "[Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2)": "Très ouverte (écoles de commerce, master)",
+                "[BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille)": "Possible mais moins directe (écoles spécialisées, licences pro)"
+              },
+              "sources": []
+            },
+            {
+              "label": "Cadre / géo",
+              "values": {
+                "[Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2)": "Lyon (7e arrondissement)",
+                "[BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille)": "Lille (hors Lyon)"
+              },
+              "sources": []
+            },
+            {
+              "label": "Profil des admis",
+              "values": {
+                "[Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2)": "100 % bac général [source S1]",
+                "[BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille)": "27 % bac général, 42 % technologique, 31 % professionnel [source S3]"
+              },
+              "sources": [
+                "S1",
+                "S3"
+              ]
+            }
+          ]
+        },
+        "sources": [
+          "S1",
+          "S3"
+        ]
+      },
+      {
+        "role": "closing",
+        "heading": "3. Ma reco",
+        "markdown": "À ta place, je partirais sur la **[Licence - Économie et gestion à Lyon 2](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0)** : même si elle est moins sélective que le BTS de Lille (32 % vs 40 % [source S1, S3]), elle te permet de garder toutes les portes ouvertes pour une école ensuite (master, école de commerce), tout en restant dans ta région. Le BTS reprend l’avantage si tu veux un diplôme **plus court** et **plus professionnel** dès bac+2, mais attention à la mobilité géographique (Lille vs Lyon).\n\nTu veux que je vérifie si un BTS Comptabilité-Gestion **à Lyon** existe dans mes sources, ou préfères-tu creuser les poursuites d’études après la licence ?",
+        "items": [],
+        "table": null,
+        "sources": []
+      }
+    ],
+    "sources": [
+      {
+        "ref": "S1",
+        "label": "Licence - Economie et gestion",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S2",
+        "label": "GEOENERGIES — GREEN - SustainAble GeoEnergies (SAGE)",
+        "url": null
+      },
+      {
+        "ref": "S3",
+        "label": "BTS - Services - Comptabilité et gestion",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S4",
+        "label": "Diplôme de Comptabilité et de Gestion",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8496&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S5",
+        "label": "GEOMATIQUE — None",
+        "url": null
+      },
+      {
+        "ref": "S6",
+        "label": "BTS - Services - Comptabilité et gestion",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3465&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S7",
+        "label": "Diplôme de Comptabilité et de Gestion",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8311&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S8",
+        "label": "GEOMATIQUE — Géographies Numériques",
+        "url": null
+      }
+    ],
+    "markdown_full": "**1. Ta question en clair**\nTu hésites entre un BTS Comptabilité-Gestion et une Licence Économie et Gestion (GEA) à Lyon, avec deux priorités : entrer rapidement dans l’emploi tout en gardant la possibilité de poursuivre en école plus tard. Voici comment les deux options se comparent sur ces critères pour ton profil STMG.\n\n---\n\n**2. Le face à face**\n\n| Critère | [Licence - Économie et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0) (Lyon 2) | [BTS - Services - Comptabilité et gestion](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6872&typeBac=0&originePc=0) (Lycée Gaston Berger, Lille) |\n|---|---|---|\n| **Niveau et durée** | bac+3 (3 ans) | bac+2 (2 ans) |\n| **Sélectivité / accès** | Taux d'accès 32 % [source S1] | Taux d'accès 40 % [source S3] |\n| **Insertion à 6 mois** | 31,39 % [source S1] | information non disponible dans mes sources |\n| **Poursuite d'études** | Très ouverte (écoles de commerce, master) | Possible mais moins directe (écoles spécialisées, licences pro) |\n| **Cadre / géo** | Lyon (7e arrondissement) | Lille (hors Lyon) |\n| **Profil des admis** | 100 % bac général [source S1] | 27 % bac général, 42 % technologique, 31 % professionnel [source S3] |\n\n*Note* : Aucune source ne mentionne de BTS Comptabilité-Gestion **à Lyon** dans mes données. Le BTS cité ici est celui de Lille (S3). Pour un BTS local, il faudrait vérifier si une autre fiche existe (ex: [BTS Comptabilité et gestion au Lycée Louis Pergaud](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3465&typeBac=0&originePc=0) à Besançon, mais hors Lyon).\n\n---\n**3. Ma reco**\nÀ ta place, je partirais sur la **[Licence - Économie et gestion à Lyon 2](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35453&typeBac=0&originePc=0)** : même si elle est moins sélective que le BTS de Lille (32 % vs 40 % [source S1, S3]), elle te permet de garder toutes les portes ouvertes pour une école ensuite (master, école de commerce), tout en restant dans ta région. Le BTS reprend l’avantage si tu veux un diplôme **plus court** et **plus professionnel** dès bac+2, mais attention à la mobilité géographique (Lille vs Lyon).\n\nTu veux que je vérifie si un BTS Comptabilité-Gestion **à Lyon** existe dans mes sources, ou préfères-tu creuser les poursuites d’études après la licence ?",
+    "parse_confidence": 1.0,
+    "truncated": false,
+    "_example_recit": "T2"
+  },
+  "trajectoire": {
+    "format": "trajectoire",
+    "overlays": {
+      "anchor_constraint": false,
+      "reassure": true
+    },
+    "blocks": [
+      {
+        "role": "lead",
+        "heading": "1. D'où tu pars",
+        "markdown": "Deux ans en L2 de droit, ce n’est pas du temps perdu : tu as développé des compétences en analyse, en rédaction et en logique juridique — des atouts réutilisables en développement (analyse des besoins, résolution de problèmes) ou en data (structuration de l’information). Ton option NSI au lycée est un vrai plus : tu as déjà un premier contact avec le code, ce qui te place devant une transition plus fluide que tu ne le penses.\n\n---",
+        "items": [],
+        "table": null,
+        "sources": []
+      },
+      {
+        "role": "passerelles",
+        "heading": "2. Les passerelles",
+        "markdown": "Ton profil (droit + NSI) te permet de basculer vers des métiers techniques comme **[Développeur / Développeuse informatique](https://candidat.francetravail.fr/metierscope/fiche-metier/M1805)** [source S8], avec des spécialisations possibles en data (data analyst, data engineer) ou en développement logiciel. Les transitions vers ces métiers sont explicitement identifiées comme accessibles via des certifications RNCP (reconversion, VAE, alternance) [source S1, S2, S3, S4, S5, S7].\n\n---",
+        "items": [],
+        "table": null,
+        "sources": [
+          "S8"
+        ]
+      },
+      {
+        "role": "options",
+        "heading": "3. Le chemin concret",
+        "markdown": "Voici des formations **accessibles à Lille ou en distanciel** (sans mobilité géographique) et adaptées à une reconversion depuis ton niveau actuel :\n- **[Développeur informatique (Titre RNCP bac+2)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20informatique)** [source S4] : Formation en ligne (OpenClassrooms), compatible avec une reconversion. Durée, frais et taux d’insertion : **information non disponible dans mes sources**.\n- **[Développeur web (Titre RNCP bac+2)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20web)** [source S5] : Proposée par EPITECH (présence nationale, vérifie si Lille est concerné). Alternance possible (dispositif de reconversion) [source S5].\n- **[Développeur concepteur logiciel (Titre RNCP bac+3)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20concepteur%20logiciel)** [source S1] : OpenClassrooms, 100 % en ligne. Idéal pour monter en compétences tout en validant un niveau bac+3.\n\n*Pour la data* : Les formations ci-dessus ouvrent des débouchés vers des métiers comme **[Data analyst](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20concepteur%20logiciel)** ou **[Data engineer](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20concepteur%20logiciel)** [source S1, S2, S3, S4, S5, S7], mais aucune source ne précise de formation *spécifique data* à Lille.\n\n*Sur les salaires* : Aucune donnée salariale n’est disponible dans mes sources pour ces formations. En revanche, pour un niveau bac+8 (doctorat en Sciences et TIC), le salaire net médian est de **2 600 €/mois** 36 mois après le diplôme [source S6] — mais ce n’est pas représentatif de ton cas.\n\n---",
+        "items": [
+          {
+            "titre": "Développeur informatique (Titre RNCP bac+2)",
+            "url": null,
+            "pourquoi": "**  : Formation en ligne (OpenClassrooms), compatible avec une reconversion. Durée, frais et taux d’insertion : **information non disponible dans mes sources**",
+            "sources": [
+              "S4"
+            ],
+            "markdown": "- **[Développeur informatique (Titre RNCP bac+2)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20informatique)** [source S4] : Formation en ligne (OpenClassrooms), compatible avec une reconversion. Durée, frais et taux d’insertion : **information non disponible dans mes sources**."
+          },
+          {
+            "titre": "Développeur web (Titre RNCP bac+2)",
+            "url": null,
+            "pourquoi": "**  : Proposée par EPITECH (présence nationale, vérifie si Lille est concerné). Alternance possible (dispositif de reconversion)",
+            "sources": [
+              "S5"
+            ],
+            "markdown": "- **[Développeur web (Titre RNCP bac+2)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20web)** [source S5] : Proposée par EPITECH (présence nationale, vérifie si Lille est concerné). Alternance possible (dispositif de reconversion) [source S5]."
+          },
+          {
+            "titre": "Développeur concepteur logiciel (Titre RNCP bac+3)",
+            "url": null,
+            "pourquoi": "**  : OpenClassrooms, 100 % en ligne. Idéal pour monter en compétences tout en validant un niveau bac+3",
+            "sources": [
+              "S1"
+            ],
+            "markdown": "- **[Développeur concepteur logiciel (Titre RNCP bac+3)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20concepteur%20logiciel)** [source S1] : OpenClassrooms, 100 % en ligne. Idéal pour monter en compétences tout en validant un niveau bac+3."
+          }
+        ],
+        "table": null,
+        "sources": [
+          "S4",
+          "S5",
+          "S1",
+          "S6"
+        ]
+      },
+      {
+        "role": "closing",
+        "heading": "4. Premier pas",
+        "markdown": "Cette semaine, explore les fiches métiers pour te projeter :\n- **[Développeur / Développeuse informatique](https://candidat.francetravail.fr/metierscope/fiche-metier/M1805)** [source S8] : Décris les missions, les compétences attendues et les passerelles vers d’autres métiers du numérique.\n- Contacte **OpenClassrooms** ou **EPITECH Lille** pour un entretien conseil sur leurs titres RNCP en développement (durée, coût, alternance).\n\nTes parents s’inquiètent pour le salaire ? Rappelle-leur que les métiers du numérique (développement, data) sont parmi les plus porteurs, et que ton profil hybride (droit + code) peut être un atout pour des postes comme chef de projet technique. Veux-tu que l’on creuse ensemble les dispositifs d’alternance pour allier formation et rémunération ?",
+        "items": [],
+        "table": null,
+        "sources": [
+          "S8"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": "S1",
+        "label": "Développeur concepteur logiciel",
+        "url": null
+      },
+      {
+        "ref": "S2",
+        "label": "Développeur intégrateur en informatique industrielle",
+        "url": null
+      },
+      {
+        "ref": "S3",
+        "label": "Métiers de l'informatique : conception, développement et tests de logiciels (fiche nationale)",
+        "url": null
+      },
+      {
+        "ref": "S4",
+        "label": "Développeur informatique",
+        "url": null
+      },
+      {
+        "ref": "S5",
+        "label": "Développeur web",
+        "url": null
+      },
+      {
+        "ref": "S6",
+        "label": "36 mois apres le diplome",
+        "url": null
+      },
+      {
+        "ref": "S7",
+        "label": "Chef de projets développement web",
+        "url": null
+      },
+      {
+        "ref": "S8",
+        "label": "Développeur / Développeuse informatique",
+        "url": "https://candidat.francetravail.fr/metierscope/fiche-metier/M1805"
+      }
+    ],
+    "markdown_full": "**1. D'où tu pars**\nDeux ans en L2 de droit, ce n’est pas du temps perdu : tu as développé des compétences en analyse, en rédaction et en logique juridique — des atouts réutilisables en développement (analyse des besoins, résolution de problèmes) ou en data (structuration de l’information). Ton option NSI au lycée est un vrai plus : tu as déjà un premier contact avec le code, ce qui te place devant une transition plus fluide que tu ne le penses.\n\n---\n\n**2. Les passerelles**\nTon profil (droit + NSI) te permet de basculer vers des métiers techniques comme **[Développeur / Développeuse informatique](https://candidat.francetravail.fr/metierscope/fiche-metier/M1805)** [source S8], avec des spécialisations possibles en data (data analyst, data engineer) ou en développement logiciel. Les transitions vers ces métiers sont explicitement identifiées comme accessibles via des certifications RNCP (reconversion, VAE, alternance) [source S1, S2, S3, S4, S5, S7].\n\n---\n**3. Le chemin concret**\nVoici des formations **accessibles à Lille ou en distanciel** (sans mobilité géographique) et adaptées à une reconversion depuis ton niveau actuel :\n- **[Développeur informatique (Titre RNCP bac+2)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20informatique)** [source S4] : Formation en ligne (OpenClassrooms), compatible avec une reconversion. Durée, frais et taux d’insertion : **information non disponible dans mes sources**.\n- **[Développeur web (Titre RNCP bac+2)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20web)** [source S5] : Proposée par EPITECH (présence nationale, vérifie si Lille est concerné). Alternance possible (dispositif de reconversion) [source S5].\n- **[Développeur concepteur logiciel (Titre RNCP bac+3)](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20concepteur%20logiciel)** [source S1] : OpenClassrooms, 100 % en ligne. Idéal pour monter en compétences tout en validant un niveau bac+3.\n\n*Pour la data* : Les formations ci-dessus ouvrent des débouchés vers des métiers comme **[Data analyst](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20concepteur%20logiciel)** ou **[Data engineer](https://www.onisep.fr/recherche?q=D%C3%A9veloppeur%20concepteur%20logiciel)** [source S1, S2, S3, S4, S5, S7], mais aucune source ne précise de formation *spécifique data* à Lille.\n\n*Sur les salaires* : Aucune donnée salariale n’est disponible dans mes sources pour ces formations. En revanche, pour un niveau bac+8 (doctorat en Sciences et TIC), le salaire net médian est de **2 600 €/mois** 36 mois après le diplôme [source S6] — mais ce n’est pas représentatif de ton cas.\n\n---\n**4. Premier pas**\nCette semaine, explore les fiches métiers pour te projeter :\n- **[Développeur / Développeuse informatique](https://candidat.francetravail.fr/metierscope/fiche-metier/M1805)** [source S8] : Décris les missions, les compétences attendues et les passerelles vers d’autres métiers du numérique.\n- Contacte **OpenClassrooms** ou **EPITECH Lille** pour un entretien conseil sur leurs titres RNCP en développement (durée, coût, alternance).\n\nTes parents s’inquiètent pour le salaire ? Rappelle-leur que les métiers du numérique (développement, data) sont parmi les plus porteurs, et que ton profil hybride (droit + code) peut être un atout pour des postes comme chef de projet technique. Veux-tu que l’on creuse ensemble les dispositifs d’alternance pour allier formation et rémunération ?",
+    "parse_confidence": 1.0,
+    "truncated": false,
+    "_example_recit": "T3"
+  },
+  "validation": {
+    "format": "validation",
+    "overlays": {
+      "anchor_constraint": false,
+      "reassure": false
+    },
+    "blocks": [
+      {
+        "role": "lead",
+        "heading": "1. Réponse directe",
+        "markdown": "Oui, la MIAGE correspond bien à ton profil. Elle allie informatique et gestion d’entreprise, avec une approche appliquée des maths, et ne se limite pas au développement web pur. Ton niveau (15 de moyenne avec maths/NSI) te permet de viser les masters MIAGE les plus sélectifs.\n\n---",
+        "items": [],
+        "table": null,
+        "sources": []
+      },
+      {
+        "role": "justification",
+        "heading": "2. Pourquoi",
+        "markdown": "- **Adéquation avec tes goûts** : La MIAGE forme à l’analyse, la modélisation et l’optimisation des systèmes d’information pour les entreprises — bien loin du développement web exclusif. Les parcours comme **[Intelligent Business Informatics](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Intelligent%20Business%20informatics)** à Paris 1 ou **[Informatique décisionnelle](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20M1%20MIAGE%20-%20Informatique%20d%C3%A9cisionnelle%20%23PR598)** à Paris-Saclay misent sur des compétences en data, optimisation et aide à la décision [source S1, S6].\n- **Sélectivité** : Les masters MIAGE sont très demandés. Par exemple, à Paris 1 (Intelligent Business Informatics), **26 places** pour **1081 candidats** (taux d’admission de **2,4 %**) [source S1], et à Paris-Saclay, **25 places** pour **740 candidats** (taux d’admission de **3,4 %**) [source S6]. Ton dossier (15 de moyenne) est dans la fourchette des admis (dernier appelé à Paris 1 : rang **64** [source S1] ; à Paris-Saclay : rang **85** [source S6]).\n- **Insertion pro** : Les salaires à l’embauche sont attractifs : **2760 € net/mois** (médiane) pour les sortants de Paris 1 (Intelligent Business Informatics) [source S1], et **2710 € net/mois** pour Paris-Saclay [source S6]. Les taux d’emploi à 12 mois atteignent **46,48 %** (Paris 1) [source S1] et **59,53 %** (Paris-Saclay) [source S6], avec une progression significative après 6 mois.\n\n---",
+        "items": [],
+        "table": null,
+        "sources": [
+          "S1",
+          "S6"
+        ]
+      },
+      {
+        "role": "options",
+        "heading": "3. Alternatives proches",
+        "markdown": "Si tu veux explorer d’autres angles de l’informatique appliquée à la gestion :\n- **[MIAGE - Sustainable Business Informatics](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Sustainable%20Business%20informatics)** (Paris 1) : même université, mais avec une dimension \"durable\" (alternance possible) [source S7].\n- **[MIAGE - Ingénierie d'Affaires Numériques](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Ing%C3%A9nierie%20d%27Affaires%20Num%C3%A9riques%20%28IAN%29)** (Toulouse) : plus orienté business et moins sélectif (**17 places** pour **522 candidats**, dernier appelé au rang **30**) [source S2].\n\n**Prochaine étape** : Compare les programmes des parcours MIAGE qui t’intéressent (notamment les UE en gestion vs. tech pure). Veux-tu que je t’aide à identifier les licences d’informatique qui préparent le mieux à ces masters ?",
+        "items": [
+          {
+            "titre": "MIAGE - Sustainable Business Informatics",
+            "url": null,
+            "pourquoi": "** (Paris 1) : même université, mais avec une dimension \"durable\" (alternance possible)",
+            "sources": [
+              "S7"
+            ],
+            "markdown": "- **[MIAGE - Sustainable Business Informatics](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Sustainable%20Business%20informatics)** (Paris 1) : même université, mais avec une dimension \"durable\" (alternance possible) [source S7]."
+          },
+          {
+            "titre": "MIAGE - Ingénierie d'Affaires Numériques",
+            "url": null,
+            "pourquoi": "** (Toulouse) : plus orienté business et moins sélectif (**17 places** pour **522 candidats**, dernier appelé au rang **30**)",
+            "sources": [
+              "S2"
+            ],
+            "markdown": "- **[MIAGE - Ingénierie d'Affaires Numériques](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Ing%C3%A9nierie%20d%27Affaires%20Num%C3%A9riques%20%28IAN%29)** (Toulouse) : plus orienté business et moins sélectif (**17 places** pour **522 candidats**, dernier appelé au rang **30**) [source S2]."
+          }
+        ],
+        "table": null,
+        "sources": [
+          "S7",
+          "S2"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": "S1",
+        "label": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Intelligent Business informatics",
+        "url": null
+      },
+      {
+        "ref": "S2",
+        "label": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénierie d'Affaires Numériques (IAN)",
+        "url": null
+      },
+      {
+        "ref": "S3",
+        "label": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — None",
+        "url": null
+      },
+      {
+        "ref": "S4",
+        "label": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — None",
+        "url": null
+      },
+      {
+        "ref": "S5",
+        "label": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — M1 Méthodes informatiques appliquées à la gestion des entreprises - MIAGE Parcours classique",
+        "url": null
+      },
+      {
+        "ref": "S6",
+        "label": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — M1 MIAGE - Informatique décisionnelle #PR598",
+        "url": null
+      },
+      {
+        "ref": "S7",
+        "label": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Sustainable Business informatics",
+        "url": null
+      },
+      {
+        "ref": "S8",
+        "label": "INFORMATIQUE — Méthodes informatiques appliquées à la gestion des entreprises - MIAGE (M1)",
+        "url": null
+      }
+    ],
+    "markdown_full": "**1. Réponse directe**\nOui, la MIAGE correspond bien à ton profil. Elle allie informatique et gestion d’entreprise, avec une approche appliquée des maths, et ne se limite pas au développement web pur. Ton niveau (15 de moyenne avec maths/NSI) te permet de viser les masters MIAGE les plus sélectifs.\n\n---\n\n**2. Pourquoi**\n- **Adéquation avec tes goûts** : La MIAGE forme à l’analyse, la modélisation et l’optimisation des systèmes d’information pour les entreprises — bien loin du développement web exclusif. Les parcours comme **[Intelligent Business Informatics](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Intelligent%20Business%20informatics)** à Paris 1 ou **[Informatique décisionnelle](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20M1%20MIAGE%20-%20Informatique%20d%C3%A9cisionnelle%20%23PR598)** à Paris-Saclay misent sur des compétences en data, optimisation et aide à la décision [source S1, S6].\n- **Sélectivité** : Les masters MIAGE sont très demandés. Par exemple, à Paris 1 (Intelligent Business Informatics), **26 places** pour **1081 candidats** (taux d’admission de **2,4 %**) [source S1], et à Paris-Saclay, **25 places** pour **740 candidats** (taux d’admission de **3,4 %**) [source S6]. Ton dossier (15 de moyenne) est dans la fourchette des admis (dernier appelé à Paris 1 : rang **64** [source S1] ; à Paris-Saclay : rang **85** [source S6]).\n- **Insertion pro** : Les salaires à l’embauche sont attractifs : **2760 € net/mois** (médiane) pour les sortants de Paris 1 (Intelligent Business Informatics) [source S1], et **2710 € net/mois** pour Paris-Saclay [source S6]. Les taux d’emploi à 12 mois atteignent **46,48 %** (Paris 1) [source S1] et **59,53 %** (Paris-Saclay) [source S6], avec une progression significative après 6 mois.\n\n---\n**3. Alternatives proches**\nSi tu veux explorer d’autres angles de l’informatique appliquée à la gestion :\n- **[MIAGE - Sustainable Business Informatics](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Sustainable%20Business%20informatics)** (Paris 1) : même université, mais avec une dimension \"durable\" (alternance possible) [source S7].\n- **[MIAGE - Ingénierie d'Affaires Numériques](https://www.onisep.fr/recherche?q=METHODES%20INFORMATIQUES%20APPLIQUEES%20A%20LA%20GESTION%20DES%20ENTREPRISES-MIAGE%20%E2%80%94%20Ing%C3%A9nierie%20d%27Affaires%20Num%C3%A9riques%20%28IAN%29)** (Toulouse) : plus orienté business et moins sélectif (**17 places** pour **522 candidats**, dernier appelé au rang **30**) [source S2].\n\n**Prochaine étape** : Compare les programmes des parcours MIAGE qui t’intéressent (notamment les UE en gestion vs. tech pure). Veux-tu que je t’aide à identifier les licences d’informatique qui préparent le mieux à ces masters ?",
+    "parse_confidence": 1.0,
+    "truncated": false,
+    "_example_recit": "T4"
+  },
+  "shortlist": {
+    "format": "shortlist",
+    "overlays": {
+      "anchor_constraint": false,
+      "reassure": false
+    },
+    "blocks": [
+      {
+        "role": "options",
+        "heading": "Le palmarès",
+        "markdown": "Classées par taux d'insertion à 12 mois.\n\n1. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3880&typeBac=0&originePc=0)** à l’I.U.T de Quimper — taux d’insertion à 12 mois de 81,97 % et 63 places [source S3].\n2. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3839&typeBac=0&originePc=0)** à l’I.U.T de Brest — taux d’insertion à 12 mois de 81,97 % et 56 places [source S8].\n3. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3056&typeBac=0&originePc=0)** à l’I.U.T. La Rochelle — taux d’insertion à 12 mois de 80,95 % et 58 places [source S2].\n4. **[C.M.I - Cursus Master en Ingénierie - Sciences pour la santé - Génie biotechnologique](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=20976&typeBac=0&originePc=0)** à La Rochelle Université — 20 places, taux d’accès Parcoursup de 47 % [source S1].\n\nÀ viser en priorité : les BUT de Quimper ou Brest pour leur taux d’insertion. Tu veux que je vérifie les attendus Parcoursup de ces formations ?",
+        "items": [
+          {
+            "titre": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+            "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3880&typeBac=0&originePc=0",
+            "pourquoi": "** à l’I.U.T de Quimper — taux d’insertion à 12 mois de 81,97 % et 63 places",
+            "sources": [
+              "S3"
+            ],
+            "markdown": "1. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3880&typeBac=0&originePc=0)** à l’I.U.T de Quimper — taux d’insertion à 12 mois de 81,97 % et 63 places [source S3]."
+          },
+          {
+            "titre": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+            "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3839&typeBac=0&originePc=0",
+            "pourquoi": "** à l’I.U.T de Brest — taux d’insertion à 12 mois de 81,97 % et 56 places",
+            "sources": [
+              "S8"
+            ],
+            "markdown": "2. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3839&typeBac=0&originePc=0)** à l’I.U.T de Brest — taux d’insertion à 12 mois de 81,97 % et 56 places [source S8]."
+          },
+          {
+            "titre": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+            "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3056&typeBac=0&originePc=0",
+            "pourquoi": "** à l’I.U.T. La Rochelle — taux d’insertion à 12 mois de 80,95 % et 58 places",
+            "sources": [
+              "S2"
+            ],
+            "markdown": "3. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3056&typeBac=0&originePc=0)** à l’I.U.T. La Rochelle — taux d’insertion à 12 mois de 80,95 % et 58 places [source S2]."
+          },
+          {
+            "titre": "C.M.I - Cursus Master en Ingénierie - Sciences pour la santé - Génie biotechnologique",
+            "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=20976&typeBac=0&originePc=0",
+            "pourquoi": "** à La Rochelle Université — 20 places, taux d’accès Parcoursup de 47 %",
+            "sources": [
+              "S1"
+            ],
+            "markdown": "4. **[C.M.I - Cursus Master en Ingénierie - Sciences pour la santé - Génie biotechnologique](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=20976&typeBac=0&originePc=0)** à La Rochelle Université — 20 places, taux d’accès Parcoursup de 47 % [source S1]."
+          }
+        ],
+        "table": null,
+        "sources": [
+          "S3",
+          "S8",
+          "S2",
+          "S1"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "ref": "S1",
+        "label": "C.M.I - Cursus Master en Ingénierie - Sciences pour la santé - Génie biotechnologique",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=20976&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S2",
+        "label": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3056&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S3",
+        "label": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3880&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S4",
+        "label": "INGENIERIE DE LA SANTE — Génie Physiologique, Biotechnologique et Informatique",
+        "url": null
+      },
+      {
+        "ref": "S5",
+        "label": "BIOTECHNOLOGIES — Génie biotechnologique et management en agro-industries",
+        "url": null
+      },
+      {
+        "ref": "S6",
+        "label": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6892&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S7",
+        "label": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4868&typeBac=0&originePc=0"
+      },
+      {
+        "ref": "S8",
+        "label": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+        "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3839&typeBac=0&originePc=0"
+      }
+    ],
+    "markdown_full": "**Le palmarès**\nClassées par taux d'insertion à 12 mois.\n\n1. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3880&typeBac=0&originePc=0)** à l’I.U.T de Quimper — taux d’insertion à 12 mois de 81,97 % et 63 places [source S3].\n2. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3839&typeBac=0&originePc=0)** à l’I.U.T de Brest — taux d’insertion à 12 mois de 81,97 % et 56 places [source S8].\n3. **[BUT - Génie biologique parcours biologie médicale et biotechnologie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3056&typeBac=0&originePc=0)** à l’I.U.T. La Rochelle — taux d’insertion à 12 mois de 80,95 % et 58 places [source S2].\n4. **[C.M.I - Cursus Master en Ingénierie - Sciences pour la santé - Génie biotechnologique](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=20976&typeBac=0&originePc=0)** à La Rochelle Université — 20 places, taux d’accès Parcoursup de 47 % [source S1].\n\nÀ viser en priorité : les BUT de Quimper ou Brest pour leur taux d’insertion. Tu veux que je vérifie les attendus Parcoursup de ces formations ?",
+    "parse_confidence": 1.0,
+    "truncated": false,
+    "_example_recit": "T7"
+  },
+  "conseil": {
+    "format": "conseil",
+    "overlays": {
+      "anchor_constraint": false,
+      "reassure": false
+    },
+    "blocks": [
+      {
+        "role": "lead",
+        "heading": "1. Ta situation",
+        "markdown": "Tu es en terminale et tu envisages le métier de développeur informatique, attiré·e par les débouchés et les salaires. Mais tu as un doute de taille : tu n’aimes pas l’idée de passer des heures devant un écran à coder, et la programmation en elle-même ne t’inspire pas. Tu te demandes si c’est compatible avec ce métier.",
+        "items": [],
+        "table": null,
+        "sources": []
+      },
+      {
+        "role": "options",
+        "heading": "2. Les pistes qui collent",
+        "markdown": "D’après les fiches métiers disponibles, le cœur du travail de **[développeur/euse informatique](https://www.onisep.fr/recherche?q=d%C3%A9veloppeur/euse%20informatique)** repose sur la réalisation technique d’applications, de sites web ou de logiciels, ce qui implique effectivement d’écrire du code et de travailler sur écran [source S7]. Les autres formations listées (CESI, Epitech, OpenClassrooms, etc.) préparent toutes à ce type de missions, sans alternative claire pour éviter la programmation.",
+        "items": [],
+        "table": null,
+        "sources": [
+          "S7"
+        ]
+      },
+      {
+        "role": "vigilance",
+        "heading": "3. Points de vigilance",
+        "markdown": "Aucune source ne mentionne de parcours ou de spécialisation en développement informatique qui permettrait d’éviter l’écriture de code ou le travail sur écran. Au contraire, les descriptions disponibles soulignent que coder est au centre du métier. Si cette activité te semble rébarbative, il y a un risque fort de désengagement ou de frustration dans ce domaine.",
+        "items": [],
+        "table": null,
+        "sources": []
+      },
+      {
+        "role": "closing",
+        "heading": "4. Prochaine étape",
+        "markdown": "Avant de t’engager, explore d’autres métiers du numérique où ton profil pourrait mieux s’épanouir (ex : chef de projet digital, UX designer, etc.). Pour affiner, question : *Quelles sont les tâches liées au numérique qui t’attirent vraiment, même si ce n’est pas coder ?* (ex : résoudre des problèmes, travailler en équipe, concevoir des interfaces, etc.)",
+        "items": [],
+        "table": null,
+        "sources": []
+      }
+    ],
+    "sources": [
+      {
+        "ref": "S1",
+        "label": "Développeur informatique",
+        "url": null
+      },
+      {
+        "ref": "S2",
+        "label": "développeur web (Epitech)",
+        "url": "https://www.onisep.fr/http/redirection/formation/slug/FOR.11396"
+      },
+      {
+        "ref": "S3",
+        "label": "Développeur informatique",
+        "url": null
+      },
+      {
+        "ref": "S4",
+        "label": "36 mois apres le diplome",
+        "url": null
+      },
+      {
+        "ref": "S5",
+        "label": "Développeur intégrateur en informatique industrielle",
+        "url": null
+      },
+      {
+        "ref": "S6",
+        "label": "Analyste développeur d'applications informatiques",
+        "url": null
+      },
+      {
+        "ref": "S7",
+        "label": "développeur/euse informatique",
+        "url": null
+      },
+      {
+        "ref": "S8",
+        "label": "Développeur Intégrateur Web",
+        "url": null
+      }
+    ],
+    "markdown_full": "**1. Ta situation**\nTu es en terminale et tu envisages le métier de développeur informatique, attiré·e par les débouchés et les salaires. Mais tu as un doute de taille : tu n’aimes pas l’idée de passer des heures devant un écran à coder, et la programmation en elle-même ne t’inspire pas. Tu te demandes si c’est compatible avec ce métier.\n\n**2. Les pistes qui collent**\nD’après les fiches métiers disponibles, le cœur du travail de **[développeur/euse informatique](https://www.onisep.fr/recherche?q=d%C3%A9veloppeur/euse%20informatique)** repose sur la réalisation technique d’applications, de sites web ou de logiciels, ce qui implique effectivement d’écrire du code et de travailler sur écran [source S7]. Les autres formations listées (CESI, Epitech, OpenClassrooms, etc.) préparent toutes à ce type de missions, sans alternative claire pour éviter la programmation.\n\n**3. Points de vigilance**\nAucune source ne mentionne de parcours ou de spécialisation en développement informatique qui permettrait d’éviter l’écriture de code ou le travail sur écran. Au contraire, les descriptions disponibles soulignent que coder est au centre du métier. Si cette activité te semble rébarbative, il y a un risque fort de désengagement ou de frustration dans ce domaine.\n\n**4. Prochaine étape**\nAvant de t’engager, explore d’autres métiers du numérique où ton profil pourrait mieux s’épanouir (ex : chef de projet digital, UX designer, etc.). Pour affiner, question : *Quelles sont les tâches liées au numérique qui t’attirent vraiment, même si ce n’est pas coder ?* (ex : résoudre des problèmes, travailler en équipe, concevoir des interfaces, etc.)",
+    "parse_confidence": 1.0,
+    "truncated": false,
+    "_example_recit": "R09"
+  }
+}
