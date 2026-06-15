@@ -189,3 +189,39 @@ def test_question_ending_not_truncated():
     # Une relance par question est une fin LÉGITIME (la plupart des formats finissent ainsi).
     r = parse_narrative_response(SHORTLIST_MD, _d(SHORTLIST))
     assert r["truncated"] is False  # finit sur « ... Parcoursup ? »
+
+
+# --- A1 (iter1) : vraies URLs sources ---
+
+def test_build_sources_index_real_url_vs_search():
+    from src.rag.fact_card import build_sources_index
+    top = [
+        {"fiche": {"nom": "BUT MMI", "lien_form_psup": "https://dossierappel.parcoursup.fr/x?g_ta_cod=1"}},
+        {"fiche": {"nom": "LP UX", "url_canonical": "https://www.onisep.fr/recherche?q=lp%20ux"}},  # search -> null
+        {"fiche": {"nom": "Master Data", "url_onisep": "https://www.onisep.fr/ressources/univers-formation/formations/x"}},
+    ]
+    idx = build_sources_index(top, max_sources=10)
+    assert idx[0] == {"ref": "S1", "label": "BUT MMI", "url": "https://dossierappel.parcoursup.fr/x?g_ta_cod=1"}
+    assert idx[1]["ref"] == "S2" and idx[1]["url"] is None  # canonical search exclu -> pas de lien creux
+    assert idx[2]["url"].startswith("https://www.onisep.fr/ressources")
+
+
+def test_sources_attached_and_piste_url_resolved_to_real_fiche():
+    sources = [
+        {"ref": "S1", "label": "Licence pro UX/UI Rennes 2", "url": "https://dossierappel.parcoursup.fr/real?g_ta_cod=7"},
+        {"ref": "S2", "label": "BUT MMI Lannion", "url": None},
+    ]
+    r = parse_narrative_response(CONSEIL_MD, _d(CONSEIL), sources=sources)
+    assert r["sources"] == sources  # map autoritaire attachée
+    opt = next(b for b in r["blocks"] if b["role"] == "options")
+    # piste 1 cite [S1] (markdown url ex.fr/lp) -> résolue sur la VRAIE fiche S1
+    assert opt["items"][0]["url"] == "https://dossierappel.parcoursup.fr/real?g_ta_cod=7"
+    # piste 2 cite [S2] dont url=None -> pas de lien creux
+    assert opt["items"][1]["url"] is None
+
+
+def test_piste_search_url_dropped_when_no_real_source():
+    md = "**2. Les pistes qui collent**\n- **[Une formation](https://www.onisep.fr/recherche?q=truc)** : pourquoi [source S9].\n"
+    r = parse_narrative_response(md, _d(CONSEIL), sources=[])
+    opt = next(b for b in r["blocks"] if b["role"] == "options")
+    assert opt["items"][0]["url"] is None  # lien de recherche -> non cliquable

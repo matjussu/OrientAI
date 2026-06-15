@@ -22,7 +22,8 @@ from src.rag.intent import (
     intent_to_config,
     INTENT_FACTUAL_POINTED,
 )
-from src.rag.generator import generate, generate_stream
+from src.rag.generator import generate, generate_stream, NARRATIVE_MAX_SOURCES
+from src.rag.fact_card import build_sources_index
 from src.lookup.structured_select import try_select_or_none, SelectResult
 from src.rag.metadata_filter import (
     FilterCriteria,
@@ -495,7 +496,10 @@ class OrientIAPipeline:
         # (post-policy/post-process). Exposée au serving via le payload `structured`.
         # markdown_full reste canonique ; parser TOTAL (ne lève jamais).
         self.last_narrative_structured = (
-            parse_narrative_response(answer_text, prepared.format_decision)
+            parse_narrative_response(
+                answer_text, prepared.format_decision,
+                sources=build_sources_index(top, max_sources=NARRATIVE_MAX_SOURCES),
+            )
             if prepared.narrative_mode else None
         )
         return answer_text, top
@@ -949,7 +953,10 @@ class OrientIAPipeline:
             full_text = "".join(full_text_parts)
             # Forme adaptative (ordre 1926) : sortie typée dérivée du texte streamé.
             self.last_narrative_structured = (
-                parse_narrative_response(full_text, prepared.format_decision)
+                parse_narrative_response(
+                    full_text, prepared.format_decision,
+                    sources=build_sources_index(prepared.top, max_sources=NARRATIVE_MAX_SOURCES),
+                )
                 if prepared.narrative_mode else None
             )
 

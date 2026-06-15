@@ -186,7 +186,8 @@ _STRUCT_SHORTLIST = """### R6 — STRUCTURE DE LA RÉPONSE (mode récit, format 
 L'utilisateur·ice sait ce qu'il/elle veut et demande JUSTE les meilleures options, sans long développement. Tu vas droit à l'essentiel.
 
 **Le palmarès**
-Une LISTE NUMÉROTÉE et HIÉRARCHISÉE (la plus pertinente d'abord), 3 à 5 options tirées UNIQUEMENT des `<sources>`. PAS de paragraphe d'intro, PAS de reformulation de profil. Une ligne par option, format EXACT :
+Annonce d'ABORD le CRITÈRE de classement en une ligne (ex. « Classées par taux d'insertion à 12 mois. »), et CLASSE réellement dessus. Critère selon les données disponibles : taux d'insertion à 12 mois EN PRIORITÉ ; à défaut taux d'emploi/insertion à 6 mois, sinon sélectivité (taux d'accès) ou pertinence pour le profil. Si aucun chiffre comparable n'existe dans tes `<sources>`, dis-le (« Classées par pertinence pour ton profil, faute de chiffres comparables. ») et n'invente AUCUN rang chiffré.
+Puis une LISTE NUMÉROTÉE et HIÉRARCHISÉE (selon le critère annoncé), 3 à 5 options tirées UNIQUEMENT des `<sources>`. PAS d'autre paragraphe d'intro, PAS de reformulation de profil. Une ligne par option, format EXACT :
 
 1. **[Nom de la formation](url)** — pourquoi elle colle en une phrase, fait sourcé décisif `[source SX]`.
 2. **[Nom](url)** — …

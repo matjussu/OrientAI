@@ -261,7 +261,51 @@ def _dedup(xs: list[str]) -> list[str]:
     return [x for x in xs if not (x in seen or seen.add(x))]
 
 
-def _empty_response(decision: FormatDecision, markdown: str, reason: str = "") -> dict:
+def _is_search_url(u: str | None) -> bool:
+    """True si l'URL est une RECHERCHE générique (ONISEP search) plutôt qu'une
+    vraie fiche -> à ne PAS rendre cliquable (retour Matteo iter1, lien creux)."""
+    lo = (u or "").lower()
+    return "onisep.fr/recherche" in lo or "/recherche?q=" in lo
+
+
+def _resolve_piste_urls(blocks: list[dict], sources: list[dict]) -> None:
+    """Résout l'URL de chaque piste sur une VRAIE fiche (ordre iter1 A1).
+
+    Priorité : (1) map autoritaire `sources` via la source citée [SX] ; (2) match
+    titre<->label d'une source ; (3) URL markdown existante SI c'est une vraie fiche
+    (pas une recherche). Sinon url=None -> carte non cliquable. Mutation in place.
+    """
+    has_map = bool(sources)
+    url_by_ref = {s.get("ref"): s.get("url") for s in sources if s.get("ref")}
+    for b in blocks:
+        for p in b.get("items", []):
+            cited = p.get("sources", [])
+            # 1. Autoritatif : 1re source citée avec une vraie URL fiche.
+            resolved = next((url_by_ref[r] for r in cited if url_by_ref.get(r)), None) if has_map else None
+            # 2. Map fournie + source citée SANS vraie URL -> None (la map fait foi,
+            #    pas de repli sur l'URL markdown qui serait une recherche). Pas de lien creux.
+            if has_map and cited and resolved is None:
+                p["url"] = None
+                continue
+            # 3. Pas de source citée (ou pas de map) -> match titre<->label, puis
+            #    URL markdown existante SI ce n'est pas une recherche.
+            if resolved is None:
+                t = _norm_head(p.get("titre", ""))
+                if t and has_map:
+                    for s in sources:
+                        lbl = _norm_head(s.get("label", ""))
+                        if s.get("url") and lbl and (t in lbl or lbl in t):
+                            resolved = s["url"]
+                            break
+                if resolved is None:
+                    existing = p.get("url")
+                    if existing and not _is_search_url(existing):
+                        resolved = existing
+            p["url"] = resolved  # vraie fiche ou None (jamais un lien de recherche)
+
+
+def _empty_response(decision: FormatDecision, markdown: str, reason: str = "",
+                    sources: list[dict] | None = None) -> dict:
     fmt = decision.format if decision and decision.is_valid() else CONSEIL
     return {
         "format": fmt,
@@ -273,6 +317,7 @@ def _empty_response(decision: FormatDecision, markdown: str, reason: str = "") -
             "role": "prose", "heading": None, "markdown": markdown or "",
             "items": [], "table": None, "sources": _extract_sources(markdown or ""),
         }],
+        "sources": sources or [],
         "markdown_full": markdown or "",
         "parse_confidence": 0.0,
         "truncated": _looks_truncated(markdown or ""),
@@ -280,12 +325,20 @@ def _empty_response(decision: FormatDecision, markdown: str, reason: str = "") -
     }
 
 
-def parse_narrative_response(markdown: str, decision: FormatDecision) -> dict:
+def parse_narrative_response(
+    markdown: str, decision: FormatDecision, sources: list[dict] | None = None
+) -> dict:
     """Dérive un `NarrativeResponse` typé depuis la réponse markdown récit.
+
+    `sources` (ordre iter1 A1) = map autoritaire [{ref, label, url}] des fiches
+    source (S1..SN), construite par `fact_card.build_sources_index` depuis les
+    fiches `top`. Sert à résoudre les liens en VRAIES fiches (chips + pistes) ;
+    url=None -> non cliquable (pas de lien creux).
 
     TOTAL : ne lève jamais. `markdown_full` toujours intègre. Sur échec, renvoie
     un unique bloc `prose` + `parse_confidence=0.0`.
     """
+    sources = sources or []
     try:
         markdown = markdown or ""
         fmt = decision.format if decision and decision.is_valid() else CONSEIL
@@ -293,7 +346,7 @@ def parse_narrative_response(markdown: str, decision: FormatDecision) -> dict:
 
         # Aucun titre détecté -> blob : un seul bloc prose (le front utilise markdown_full).
         if not any(t for t, _ in sections):
-            return _empty_response(decision, markdown, reason="no_headings")
+            return _empty_response(decision, markdown, reason="no_headings", sources=sources)
 
         blocks: list[dict] = []
         found_roles: set[str] = set()
@@ -334,6 +387,9 @@ def parse_narrative_response(markdown: str, decision: FormatDecision) -> dict:
         if truncated:
             confidence = min(confidence, 0.5)
 
+        # A1 : résout les liens des pistes en vraies fiches via la map sources.
+        _resolve_piste_urls(blocks, sources)
+
         return {
             "format": fmt,
             "overlays": {
@@ -341,12 +397,13 @@ def parse_narrative_response(markdown: str, decision: FormatDecision) -> dict:
                 "reassure": bool(decision.reassure) if decision else False,
             },
             "blocks": blocks,
+            "sources": sources,
             "markdown_full": markdown,
             "parse_confidence": round(min(1.0, max(0.0, confidence)), 3),
             "truncated": truncated,
         }
     except Exception as e:  # noqa: BLE001 — parser TOTAL (cf docstring)
-        return _empty_response(decision, markdown or "", reason=f"exception:{type(e).__name__}")
+        return _empty_response(decision, markdown or "", reason=f"exception:{type(e).__name__}", sources=sources)
 
 
 def _mk_block(role: str, heading: str | None, body: str) -> dict:
