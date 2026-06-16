@@ -959,6 +959,13 @@ class OrientIAPipeline:
                 )
                 if prepared.narrative_mode else None
             )
+            # Câblage live (ordre 2026-06-16-1738) : émet le NarrativeResponse typé
+            # pour que le front rende StructuredAnswer (cartes/timeline) au lieu du
+            # markdown plat. Seulement si récit + structure dérivée ; sinon le front
+            # garde le fallback markdown (zéro régression). Coercion numpy->JSON faite
+            # côté producer SSE (_stream_events_with_heartbeat).
+            if self.last_narrative_structured is not None:
+                yield {"type": "structured", "structured": self.last_narrative_structured}
 
             # Post-LLM (validator + policy + post-process) via to_thread —
             # ces étapes sont sync. Note : on n'a PAS le retry-with-hint
