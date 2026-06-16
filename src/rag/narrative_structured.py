@@ -178,38 +178,84 @@ def _split_sections(markdown: str) -> list[tuple[str | None, str]]:
     return [(t, "\n".join(b).strip()) for t, b in sections]
 
 
+def _md_to_text(s: str) -> str:
+    """`[label](url)` -> `label`, retire le gras. Pour replier du détail en prose lisible."""
+    s = _MDLINK_RE.sub(r"\1", s or "")
+    return _strip_md(s)
+
+
+def _make_piste(line: str, raw: str) -> dict:
+    """Construit une piste depuis la ligne de puce PARENTE (titre/url/pourquoi/sources)."""
+    link = _MDLINK_RE.search(line)
+    if link:
+        titre, url = link.group(1).strip(), link.group(2).strip()
+    else:
+        # « **Titre** ... » sans lien
+        bold = re.search(r"\*\*(.+?)\*\*", line)
+        titre = bold.group(1).strip() if bold else line[:80].strip()
+        url = None
+    # « pourquoi » = ce qui suit le titre/lien (tiret, deux-points...)
+    pourquoi = line
+    if link:
+        pourquoi = line[link.end():]
+    elif "**" in line:
+        pourquoi = line.split("**", 2)[-1]
+    # nettoie : marqueurs de source (gardés à part), gras résiduel (`**` de fin de
+    # lien-dans-gras), liens markdown -> texte. Évite « ** (bac+5) » dans le pourquoi.
+    pourquoi = _md_to_text(_SOURCE_RE.sub("", pourquoi))
+    pourquoi = pourquoi.strip().lstrip(" :*-—–").strip().rstrip(".").strip()
+    return {
+        "titre": _strip_md(titre),
+        "url": url,
+        "pourquoi": pourquoi,
+        "sources": _extract_sources(line),
+        "markdown": raw.strip(),
+    }
+
+
 def _parse_pistes(body: str) -> list[dict]:
-    """Extrait les pistes (puces / liste numérotée) d'un corps de section."""
+    """Extrait les pistes (formations) d'un corps de section, en GROUPANT le détail.
+
+    Respecte la HIÉRARCHIE D'INDENTATION (ordre 1902) : une puce au NIVEAU DE BASE
+    = une formation (1 piste) ; tout ce qui est plus indenté (sous-puces d'attributs
+    OU lignes de continuation) = le DÉTAIL de la formation parente, replié dans
+    `pourquoi`, PAS des pistes séparées. Sinon les attributs (« 80 places », « 40 % »,
+    « Salaire médian : ... ») s'éclatent en items plats numérotés côté front.
+    Robuste aux 2 sorties LLM : attributs en continuation (non-puce) OU en sous-puces.
+    """
+    lines = body.splitlines()
+    indents = [len(ln) - len(ln.lstrip()) for ln in lines if _BULLET_RE.match(ln)]
+    base = min(indents) if indents else 0
+
     pistes: list[dict] = []
-    for raw in body.splitlines():
+    detail: list[str] = []  # corps des lignes de détail de la piste courante
+
+    def _flush() -> None:
+        if pistes and detail:
+            p = pistes[-1]
+            joined = " ".join(d for d in detail if d.strip())
+            srcs = _extract_sources(joined)
+            text = _md_to_text(_SOURCE_RE.sub("", joined))
+            text = re.sub(r"\s+", " ", text).strip().lstrip(" :-—–").strip().rstrip(".").strip()
+            if text:
+                sep = " — " if p["pourquoi"] else ""
+                p["pourquoi"] = (p["pourquoi"] + sep + text).strip()
+            p["sources"] = p["sources"] + [s for s in srcs if s not in p["sources"]]
+            p["markdown"] = (p["markdown"] + "\n" + "\n".join(detail)).strip()
+        detail.clear()
+
+    for raw in lines:
         bm = _BULLET_RE.match(raw)
-        if not bm:
-            continue
-        line = bm.group("body").strip()
-        link = _MDLINK_RE.search(line)
-        if link:
-            titre, url = link.group(1).strip(), link.group(2).strip()
-        else:
-            # « **Titre** ... » sans lien
-            bold = re.search(r"\*\*(.+?)\*\*", line)
-            titre = bold.group(1).strip() if bold else line[:80].strip()
-            url = None
-        # « pourquoi » = ce qui suit le titre/lien (tiret, deux-points...)
-        pourquoi = line
-        if link:
-            pourquoi = line[link.end():]
-        elif "**" in line:
-            pourquoi = line.split("**", 2)[-1]
-        pourquoi = pourquoi.lstrip(" :-—–").strip()
-        # nettoie les marqueurs de source du « pourquoi » lisible (gardés à part)
-        pourquoi = _SOURCE_RE.sub("", pourquoi).strip().rstrip(".").strip()
-        pistes.append({
-            "titre": _strip_md(titre),
-            "url": url,
-            "pourquoi": pourquoi,
-            "sources": _extract_sources(line),
-            "markdown": raw.strip(),
-        })
+        indent = len(raw) - len(raw.lstrip())
+        if bm and indent <= base:
+            # puce au niveau de base = nouvelle formation parente
+            _flush()
+            pistes.append(_make_piste(bm.group("body").strip(), raw))
+        elif raw.strip() and pistes:
+            # sous-puce indentée OU ligne de continuation -> détail de la formation
+            # courante (le préambule avant la 1re puce est ignoré, pas une piste).
+            detail.append(bm.group("body").strip() if bm else raw.strip())
+    _flush()
     return pistes
 
 
