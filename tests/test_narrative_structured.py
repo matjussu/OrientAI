@@ -242,3 +242,42 @@ def test_piste_search_url_dropped_when_no_real_source():
     r = parse_narrative_response(md, _d(CONSEIL), sources=[])
     opt = next(b for b in r["blocks"] if b["role"] == "options")
     assert opt["items"][0]["url"] is None  # lien de recherche -> non cliquable
+
+
+# --- Grouping chemin concret (ordre 2026-06-16-1902) : attributs repliés, pas aplatis ---
+
+# Markdown réel mêlant les 2 sorties LLM : attributs en CONTINUATION (BUT) + en
+# SOUS-PUCES (Master) + une catégorie avec sous-formations indentées (Certifs).
+CHEMIN_CONCRET_MD = """**3. Le chemin concret**
+- **[BUT Science des données](https://dossierappel.parcoursup.fr/x?g_ta_cod=7128)** (bac+3) :
+  80 places, taux d'accès 40 % [source S1]. Taux d'emploi à 6 mois : 70,84 % [source S1].
+  *Pour toi* : une L3 en 1 an après validation des acquis.
+- **[Master Data science](https://www.onisep.fr/recherche?q=data)** (bac+5) :
+  - **Alternance possible** : oui [source S2]
+  - **Salaire médian à 12 mois** : 2 420 € net/mois [source S4]
+  - **Sélectivité** : 1,9 % d'admission [source S2]
+- **Certifications RNCP en reconversion** :
+  - **[Titre pro Python](https://dossierappel.parcoursup.fr/y?g_ta_cod=9)** : VAE [source S6]
+"""
+
+
+def test_chemin_concret_groups_attributes_under_formations():
+    r = parse_narrative_response(CHEMIN_CONCRET_MD, _d(TRAJECTOIRE))
+    opt = next(b for b in r["blocks"] if b["role"] == "options")
+    items = opt["items"]
+    titres = [i["titre"] for i in items]
+    # 3 formations PARENTES (BUT, Master, Certifications), PAS 8+ items aplatis.
+    assert len(items) == 3, titres
+    # aucun attribut (places / salaire / alternance / sélectivité) n'est devenu un item.
+    flat = ("places", "salaire", "alternance", "sélectivité", "%", "€")
+    assert all(not any(k in t.lower() for k in flat) for t in titres), titres
+    # BUT : continuation repliée dans le pourquoi + source S1 remontée.
+    but = items[0]
+    assert "places" in but["pourquoi"].lower() and "70,84" in but["pourquoi"]
+    assert "S1" in but["sources"]
+    # Master : sous-puces attributs repliées + sources fusionnées (S2 + S4).
+    master = items[1]
+    assert "2 420" in master["pourquoi"] and "alternance" in master["pourquoi"].lower()
+    assert "S2" in master["sources"] and "S4" in master["sources"]
+    # la liste plate de markdown ne fuit pas dans le pourquoi (liens convertis en texte).
+    assert "](http" not in master["pourquoi"] and "**" not in master["pourquoi"]
