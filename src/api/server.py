@@ -533,7 +533,9 @@ async def answer(request: AnswerRequest, http_request: Request) -> AnswerRespons
 # Cf docs/integration/02-http-contract.md §5 Streaming SSE.
 # Coté front : OrientAI_Platform/src/lib/orientia-stream-client.ts:171-228.
 # Contrat events : StreamEventSchema discriminated union (token/sources/
-# faithfulness/done/error) — `src/lib/api/schemas.ts:96-119`.
+# structured/faithfulness/done/error) — `src/lib/api/schemas.ts:96-119`.
+# `structured` (ordre 1738) : NarrativeResponse typé émis en mode récit, juste
+# après le dernier token, pour le rendu StructuredAnswer côté plateforme.
 
 # Heartbeat SSE : envoyé toutes les 15s en commentaire (`: keepalive\n\n`,
 # ignoré par le parser client cf `extractEventPayload` line 154). Évite que
@@ -595,6 +597,10 @@ async def _stream_events_with_heartbeat(
                             for s in ev.get("sources", [])
                         ],
                     }
+                # Structured (ordre 1738) : NarrativeResponse typé -> coerce numpy->JSON
+                # (même garde que `sources`, sinon json.dumps crashe le producer).
+                elif ev.get("type") == "structured":
+                    ev = {"type": "structured", "structured": _to_jsonable(ev.get("structured"))}
                 await queue.put(_format_sse_event(ev))
                 if ev.get("type") in ("done", "error"):
                     break

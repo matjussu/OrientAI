@@ -220,6 +220,23 @@ def test_sources_attached_and_piste_url_resolved_to_real_fiche():
     assert opt["items"][1]["url"] is None
 
 
+# --- Câblage live structured (ordre 2026-06-16-1738) ---
+
+def test_parse_output_is_json_serializable():
+    """Le NarrativeResponse émis sur /answer/stream (event `structured`, ordre 1738)
+    doit passer json.dumps sans crash : le producer SSE le sérialise avant d'envoyer.
+    Couvre tous les formats + sources attachées + le cas fallback (markdown vide)."""
+    import json
+    sources = [{"ref": "S1", "label": "BUT MMI", "url": "https://dossierappel.parcoursup.fr/x?g_ta_cod=1"},
+               {"ref": "S2", "label": "LP UX", "url": None}]
+    for md, fmt in [(CONSEIL_MD, CONSEIL), (COMPARAISON_MD, COMPARAISON),
+                    (SHORTLIST_MD, SHORTLIST), (TRAJECTOIRE_MD, TRAJECTOIRE),
+                    ("", VALIDATION)]:
+        r = parse_narrative_response(md, _d(fmt), sources=sources)
+        # Ne lève pas -> safe pour l'emit `structured` (sinon le producer crashe).
+        assert isinstance(json.dumps(r), str)
+
+
 def test_piste_search_url_dropped_when_no_real_source():
     md = "**2. Les pistes qui collent**\n- **[Une formation](https://www.onisep.fr/recherche?q=truc)** : pourquoi [source S9].\n"
     r = parse_narrative_response(md, _d(CONSEIL), sources=[])
