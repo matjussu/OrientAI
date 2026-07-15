@@ -1,0 +1,2460 @@
+[
+  {
+    "id": "G01",
+    "category": "lyceen_parcoursup",
+    "factcheck": {
+      "A": {
+        "score": 0.5789473684210527,
+        "n_claims": 19,
+        "claims": [
+          {
+            "text": "EFREI Bordeaux (anciennement Epitech Bordeaux, intégrée au groupe EFREI depuis 2023)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'intégration d'Epitech Bordeaux dans le groupe EFREI en 2023 est un fait établi dans le secteur de l'enseignement informatique français."
+          },
+          {
+            "text": "Bachelor Cyber de l'EFREI Bordeaux est une formation en 3 ans (Bac+3)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les Bachelors du groupe EFREI sont effectivement des formations de 3 ans post-bac correspondant à Bac+3."
+          },
+          {
+            "text": "En 2023, l'EFREI (tous campus confondus) avait un taux d'acceptation moyen d'environ 30-40% pour ses formations post-bac",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre plausible mais non vérifiable sans accès aux données officielles Parcoursup 2023 de l'EFREI."
+          },
+          {
+            "text": "Environ 50-60 places à Bordeaux",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Capacité d'accueil non confirmée officiellement par l'établissement."
+          },
+          {
+            "text": "Le taux d'acceptation en admission parallèle est légèrement plus élevé (environ 50%)",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre plausible mais non vérifiable sans données officielles EFREI."
+          },
+          {
+            "text": "BUT Informatique (IUT) ou BTS SIO ont un taux d'acceptation souvent > 70%",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Généralisation plausible mais non vérifiable car variable selon les IUT et établissements."
+          },
+          {
+            "text": "Écoles d'ingénieurs post-bac comme EPITA ou ESGI ont un taux < 20%",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Ordre de grandeur plausible mais chiffre exact non vérifiable sans données officielles 2023-2024."
+          },
+          {
+            "text": "Titre RNCP niveau 6 (Bac+3)",
+            "type": "label",
+            "status": "verified_general",
+            "reason": "Les Bachelors d'écoles reconnues comme EFREI sont certifiés RNCP niveau 6, ce qui correspond à Bac+3."
+          },
+          {
+            "text": "BUT Informatique à IUT de Blagnac et IUT de Villetaneuse",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Ces IUT existent et proposent effectivement des BUT Informatique."
+          },
+          {
+            "text": "Université Bordeaux 1 propose un parcours Cybersécurité en L3",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Université Bordeaux existe (Université de Bordeaux), mais le parcours exact non vérifiable sans consulter la fiche pédagogique."
+          },
+          {
+            "text": "Master SAR à Université de Limoges",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'Université de Limoges propose effectivement un Master SAR (Sécurité Architectures Réseaux), pertinent en cybersécurité."
+          },
+          {
+            "text": "Master Cybersécurité à Université de Rennes 1",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'Université de Rennes 1 (Université de Rennes) propose effectivement des formations en cybersécurité."
+          },
+          {
+            "text": "Salaire moyen à la sortie : 30-35k€ brut/an (source : enquêtes EFREI 2023)",
+            "type": "report",
+            "status": "contradicted",
+            "reason": "Affirmation d'une source précise (« enquêtes EFREI 2023 ») qui n'a pas pu être vérifiée et est probablement une hallucination. Les enquêtes insertion EFREI ne sont pas publiquement disponibles avec ces détails précis."
+          },
+          {
+            "text": "Coût environ 7 000€/an",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Chiffre plausible pour une école privée d'informatique, mais non vérifiable sans consulter les tarifs officiels 2024."
+          },
+          {
+            "text": "FCSC (compétition de hacking éthique)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le FCSC (French Cybersecurity Challenge) est un concours officiel français réel en cybersécurité."
+          },
+          {
+            "text": "Root Me (plateforme de compétitions de hacking éthique)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Root Me est une plateforme réelle française de défis cybersécurité."
+          },
+          {
+            "text": "Korben et The Hacker News comme ressources",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Korben est un blog français connu en informatique/cybersécurité. The Hacker News est un site réputé d'actualité cybersécurité."
+          },
+          {
+            "text": "Wireshark et Kali Linux comme outils",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Ce sont des outils réels et largement utilisés en cybersécurité et tests d'intrusion."
+          },
+          {
+            "text": "Mastère Cybersécurité (Bac+5) à l'EFREI",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'EFREI propose effectivement un Mastère Cybersécurité de niveau Bac+5."
+          }
+        ]
+      },
+      "B": {
+        "score": 1.0,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "L'EFREI est une grande école d'ingénieurs spécialisée dans le domaine du numérique et de l'informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'EFREI (École Fédérale de Robotique, d'Électronique et d'Informatique) est effectivement une école d'ingénieurs reconnue spécialisée en informatique et numérique."
+          },
+          {
+            "text": "Elle propose un Bachelor en Cybersécurité, qui est une formation de niveau Bac+3",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'EFREI propose effectivement des formations en cybersécurité au niveau bachelor (Bac+3)."
+          },
+          {
+            "text": "L'EFREI est principalement située à Villejuif, près de Paris",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'EFREI a effectivement son campus principal à Villejuif dans le Val-de-Marne, région Île-de-France."
+          },
+          {
+            "text": "L'Université de Bordeaux propose des formations en informatique avec des spécialisations en cybersécurité",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'Université de Bordeaux propose effectivement des cursus informatique avec spécialisations en cybersécurité."
+          },
+          {
+            "text": "L'ENSEIRB-MATMECA offre des cursus en ingénierie informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'ENSEIRB-MATMECA (École Nationale Supérieure d'Électronique, Informatique et Radiocommunications de Bordeaux) est effectivement une école d'ingénieurs proposant des formations en informatique."
+          }
+        ]
+      },
+      "C": {
+        "score": 0.0,
+        "n_claims": 3,
+        "claims": [
+          {
+            "text": "EFREI Bordeaux existe et propose un Bachelor Cybersécurité",
+            "type": "school",
+            "status": "contradicted",
+            "reason": "EFREI n'a qu'un seul campus situé à Villejuif (région parisienne), pas de campus à Bordeaux. Cette affirmation mélange le nom d'une école réelle avec un lieu inexistant."
+          },
+          {
+            "text": "Le taux d'accès Parcoursup du Bachelor Cybersécurité est de 77 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Impossible de vérifier sans accès aux données Parcoursup 2025 officielles, mais la prémisse (école à Bordeaux) est fausse."
+          },
+          {
+            "text": "RNCP: 35350 est le numéro d'enregistrement RNCP du Bachelor Cybersécurité d'EFREI Bordeaux",
+            "type": "onisep_id",
+            "status": "unverifiable",
+            "reason": "Impossible de vérifier ce numéro RNCP spécifique sans base de données actualisée, mais associé à une école inexistante (EFREI Bordeaux)."
+          }
+        ]
+      },
+      "D": {
+        "score": 0.0,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "Le Bachelor Cybersécurité de l'EFREI Bordeaux affiche un taux d'accès Parcoursup de 77 % en 2025",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Aucune fiche RAG fournie pour vérifier ce chiffre spécifique. Le taux est plausible mais non confirmable sans données Parcoursup 2025 officielles."
+          },
+          {
+            "text": "EFREI Bordeaux existe",
+            "type": "school",
+            "status": "contradicted",
+            "reason": "EFREI est une école d'ingénieurs informatique basée en Île-de-France (Villejuif/Paris). Il n'existe pas de campus EFREI à Bordeaux reconnu officiellement."
+          },
+          {
+            "text": "RNCP: 35350",
+            "type": "onisep_id",
+            "status": "unverifiable",
+            "reason": "Format RNCP valide mais impossible de vérifier sans accès à la base RNCP. Ce numéro pourrait correspondre à un cursus, mais l'association avec 'EFREI Bordeaux' est douteuse."
+          },
+          {
+            "text": "Formation post-bac en 3 ans avec grade Licence",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Plausible pour un bachelor, mais impossible de confirmer sans fiche établissement. La structure (3 ans, grade Licence) est cohérente avec les normes françaises."
+          },
+          {
+            "text": "Admission via Parcoursup sur dossier + entretien",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Processus plausible pour une école privée en Parcoursup, mais non vérifiable sans documentation officielle."
+          }
+        ]
+      },
+      "E": {
+        "score": 0.0,
+        "n_claims": 6,
+        "claims": [
+          {
+            "text": "Le Bachelor Cybersécurité d'EFREI Bordeaux affiche un taux d'accès Parcoursup de 77 % en 2025",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Aucune fiche RAG fournie ; le taux de 77 % ne peut être vérifié sans données Parcoursup 2025 officielles"
+          },
+          {
+            "text": "RNCP: 35350",
+            "type": "onisep_id",
+            "status": "unverifiable",
+            "reason": "Identifiant RNCP non vérifiable sans accès à la base RNCP officielle ; format plausible mais non confirmé"
+          },
+          {
+            "text": "Formation labellisée SecNumEdu par l'ANSSI",
+            "type": "label",
+            "status": "unverifiable",
+            "reason": "SecNumEdu est un label ANSSI réel et officiel, mais l'accréditation spécifique du Bachelor Cybersécurité EFREI Bordeaux ne peut être vérifiée sans fiche ou source officielle"
+          },
+          {
+            "text": "Grade de Licence (Bac+3) délivré par l'État",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Un Grade de Licence est un statut officiel français réel, mais son attribution à ce cursus d'EFREI Bordeaux ne peut être confirmée sans fiche"
+          },
+          {
+            "text": "Frais de scolarité : environ 9 100 €/an",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Montant plausible pour une école privée, mais non vérifiable sans fiche ou source officielle EFREI"
+          },
+          {
+            "text": "Possibilité d'alternance en 3ème année",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Affirmation plausible mais non vérifiable sans fiche cursus ou site officiel"
+          }
+        ]
+      },
+      "F": {
+        "score": 1.0,
+        "n_claims": 4,
+        "claims": [
+          {
+            "text": "Je n'ai pas l'information sur taux d'accès Parcoursup 2025 pour la formation que tu décris dans mes sources vérifiées.",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation méthodologique légitime : l'assistant reconnaît l'absence de donnée dans ses sources, ce qui est une posture appropriée."
+          },
+          {
+            "text": "Je n'ai pas trouvé de formation correspondant suffisamment précisément à « cyber efrei bordeaux bachelor » dans mes sources (meilleur score : 90/100, seuil requis : 85).",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation méthodologique légitime : l'assistant explique une non-correspondance avec seuil de matching. Pas d'affirmation factuelle sur l'existence ou non de la formation."
+          },
+          {
+            "text": "Vérifie sur Parcoursup officiel (parcoursup.fr)",
+            "type": "onisep_id",
+            "status": "verified_general",
+            "reason": "Le domaine parcoursup.fr est le site officiel de Parcoursup, vérifiable et correct."
+          },
+          {
+            "text": "ONISEP (onisep.fr)",
+            "type": "onisep_id",
+            "status": "verified_general",
+            "reason": "Le domaine onisep.fr est le site officiel de l'ONISEP, vérifiable et correct."
+          }
+        ]
+      },
+      "G": {
+        "score": 0.75,
+        "n_claims": 4,
+        "claims": [
+          {
+            "text": "L'EFREI est une école d'ingénieurs reconnue",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'EFREI (École Française d'Électronique et d'Informatique) est effectivement une école d'ingénieurs reconnue en France, accréditée CTI."
+          },
+          {
+            "text": "Les données de sélectivité ne sont généralement pas publiées de manière systématique par les écoles privées comme l'EFREI",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "C'est une affirmation générale correcte : les écoles privées publient moins systématiquement leurs données de sélectivité que les formations publiques sur Parcoursup."
+          },
+          {
+            "text": "L'EFREI Bordeaux existe",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "L'EFREI a un campus à Bordeaux mais il n'est pas possible de confirmer sans accès aux données actuelles si ce campus propose spécifiquement un Bachelor Cyber."
+          },
+          {
+            "text": "Les Bachelors de l'EFREI sont généralement sélectifs et recrutent sur dossier",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "C'est une caractéristique générale valide des formations de l'EFREI : sélection sur dossier avec étude des résultats académiques."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "G02",
+    "category": "lyceen_parcoursup",
+    "factcheck": {
+      "A": {
+        "score": 0.6666666666666666,
+        "n_claims": 3,
+        "claims": [
+          {
+            "text": "Le BUT Informatique est proposé par l'IUT Lyon 1, qui fait partie de l'Université Claude Bernard Lyon 1",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'IUT Lyon 1 existe et fait partie de l'Université Claude Bernard Lyon 1. Le BUT Informatique y est bien proposé."
+          },
+          {
+            "text": "Les capacités d'accueil sont généralement mises à jour chaque année sur Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte : Parcoursup met à jour les places disponibles par formation chaque année."
+          },
+          {
+            "text": "Les IUT ont une capacité d'accueil qui peut varier entre 100 et 150 étudiants par promotion pour un BUT",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Plausible comme ordre de grandeur général pour les IUT, mais non vérifiable sans données spécifiques et factuellement variable selon les établissements."
+          }
+        ]
+      },
+      "B": {
+        "score": 0.6666666666666666,
+        "n_claims": 3,
+        "claims": [
+          {
+            "text": "IUT Lyon 1 (Villeurbanne) propose du BUT Informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'IUT Lyon 1 à Villeurbanne est un établissement réel qui propose effectivement des formations BUT incluant l'informatique."
+          },
+          {
+            "text": "IUT Lumière Lyon 2 propose du BUT Informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'IUT Lumière (rattaché à l'Université Lyon 2) est un établissement réel qui propose des formations BUT."
+          },
+          {
+            "text": "Les capacités d'accueil en BUT Informatique varient généralement entre 50 et 150 places selon la taille de l'IUT",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Affirmation générale plausible sur les ordres de grandeur, mais non vérifiable sans données spécifiques et datées des établissements."
+          }
+        ]
+      },
+      "C": {
+        "score": 1.0,
+        "n_claims": 3,
+        "claims": [
+          {
+            "text": "fiche officielle Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Parcoursup est le portail officiel d'admission français pour les études supérieures, cela existe réellement"
+          },
+          {
+            "text": "IUT de Lyon",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'IUT de Lyon est un établissement d'enseignement supérieur réel et connu, proposant des formations en BUT"
+          },
+          {
+            "text": "SCUIO ou CIO",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "SCUIO (Service Commun Universitaire d'Information et d'Orientation) et CIO (Centre d'Information et d'Orientation) sont des structures officielles du système éducatif français"
+          }
+        ]
+      },
+      "D": {
+        "score": 1.0,
+        "n_claims": 2,
+        "claims": [
+          {
+            "text": "BUT Informatique à Lyon",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le BUT (Bachelor Universitaire de Technologie) Informatique existe et est proposé par plusieurs IUT en région Auvergne-Rhône-Alpes, dont Lyon. C'est un diplôme officiel reconnu."
+          },
+          {
+            "text": "Parcoursup officiel",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Parcoursup est le portail officiel français d'admission en enseignement supérieur, administré par le ministère. Référence correcte."
+          }
+        ]
+      },
+      "E": {
+        "score": 1.0,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "Parcoursup officiel (parcoursup.fr)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "parcoursup.fr est l'URL officielle du portail Parcoursup géré par le ministère de l'Enseignement supérieur"
+          },
+          {
+            "text": "ONISEP (onisep.fr)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "onisep.fr est l'URL officielle de l'Office national d'information sur les enseignements et les professions"
+          },
+          {
+            "text": "Psy-EN de ton lycée",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Psy-EN (psychologue de l'éducation nationale) est une fonction officielle dans le système éducatif français"
+          },
+          {
+            "text": "SCUIO de ta fac",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "SCUIO (Service commun universitaire d'information, d'orientation) est un service officiel dans les universités françaises"
+          },
+          {
+            "text": "CIO le plus proche",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "CIO (Centre d'information et d'orientation) est une institution officielle du système éducatif français"
+          }
+        ]
+      },
+      "F": {
+        "score": 0.2857142857142857,
+        "n_claims": 7,
+        "claims": [
+          {
+            "text": "IUT Lyon 1 - Site de Villeurbanne avec capacité d'environ 190 places en 1ère année",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Aucune fiche fournie pour vérification ; établissement réel mais nombre de places non confirmé"
+          },
+          {
+            "text": "IUT Lyon 1 est localisé au Campus de La Doua, Villeurbanne",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Localisation connue et correcte de l'IUT Lyon 1"
+          },
+          {
+            "text": "IUT Lumière Lyon 2 - Bron avec capacité d'environ 80-90 places en 1ère année",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Aucune fiche fournie ; établissement réel mais nombre de places non confirmé"
+          },
+          {
+            "text": "Total région lyonnaise : environ 270-280 places en BUT Informatique",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Dépend de la vérification des chiffres individuels non confirmés"
+          },
+          {
+            "text": "Taux de pression généralement de 10 à 15 candidats par place",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Affirmation plausible mais non sourcée et non vérifiable sans données Parcoursup actuelles"
+          },
+          {
+            "text": "Parcours proposés : Réalisation d'applications, Administration/Gestion/Exploitation des données, Déploiement d'applications communicantes à Lyon 1",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Parcours standards du BUT Informatique reconnus au niveau national"
+          },
+          {
+            "text": "Parcours proposés : Réalisation d'applications principalement à Lyon 2",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Spécificité du site non confirmée sans fiche"
+          }
+        ]
+      },
+      "G": {
+        "score": 0.48,
+        "n_claims": 25,
+        "claims": [
+          {
+            "text": "BUT Informatique proposé à IUT Lyon 1 (Université Claude Bernard Lyon 1)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "IUT Lyon 1 existe et propose effectivement des formations BUT informatique, ceci est une réalité connue du système universitaire français"
+          },
+          {
+            "text": "IUT Lyon 1 a un campus à Doua (Villeurbanne) et un à Bourg-en-Bresse",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Ces deux implantations de l'IUT Lyon 1 sont réelles et documentées"
+          },
+          {
+            "text": "180 places en 1ère année à IUT Lyon 1 Villeurbanne en 2023",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Nombre spécifique de places non vérifiable sans données Parcoursup 2023 officielles"
+          },
+          {
+            "text": "Taux d'acceptation IUT Lyon 1 en 2023 : environ 1 place pour 5-6 candidats",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Ratio spécifique non vérifiable sans statistiques Parcoursup officielles 2023"
+          },
+          {
+            "text": "IUT Lumière Lyon 2 (Université Lumière Lyon 2) propose BUT Informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "IUT Lyon 2 existe et propose des formations informatique"
+          },
+          {
+            "text": "120 places en 1ère année à IUT Lyon 2 en 2023",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Nombre spécifique non vérifiable sans données officielles"
+          },
+          {
+            "text": "IUT de Saint-Étienne (Université Jean Monnet) propose BUT Informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Cet IUT existe et propose des formations informatique"
+          },
+          {
+            "text": "80 places à IUT Saint-Étienne en 2023",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Nombre spécifique non vérifiable"
+          },
+          {
+            "text": "IUT de Roanne (Université Jean Monnet) propose BUT Informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Cet IUT existe réellement"
+          },
+          {
+            "text": "60 places à IUT Roanne en 2023",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Nombre spécifique non vérifiable"
+          },
+          {
+            "text": "IUT d'Annecy (Université Savoie Mont Blanc) propose BUT Informatique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Cet IUT existe et propose des formations informatique"
+          },
+          {
+            "text": "90 places à IUT Annecy en 2023",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Nombre spécifique non vérifiable"
+          },
+          {
+            "text": "Portes ouvertes IUT Lyon 1 le 4 février 2024",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Date spécifique d'événement non vérifiable ; les portes ouvertes varient selon les années et cette information daterait de 2024"
+          },
+          {
+            "text": "Portes ouvertes IUT Lyon 2 le 3 février 2024",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Date spécifique d'événement non vérifiable"
+          },
+          {
+            "text": "80% des diplômés poursuivent leurs études après un BUT Informatique",
+            "type": "report",
+            "status": "unverifiable",
+            "reason": "Pourcentage non cité avec source précise ; plausible mais non vérifiable"
+          },
+          {
+            "text": "Salaire moyen 30-35k€/an en début de carrière pour développeur·se (source : enquêtes IUT 2022)",
+            "type": "report",
+            "status": "unverifiable",
+            "reason": "Statistique salariale citée vaguement (« enquêtes IUT 2022 ») sans source précise identifiable ; non vérifiable"
+          },
+          {
+            "text": "INSA Lyon est une école d'ingénieurs",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "INSA Lyon est une école d'ingénieurs réputée et bien connue"
+          },
+          {
+            "text": "CPE Lyon est une école d'ingénieurs",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "CPE Lyon est une école d'ingénieurs reconnue"
+          },
+          {
+            "text": "EPSI est une école informatique privée",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "EPSI existe comme école informatique privée"
+          },
+          {
+            "text": "SUPINFO est une école informatique privée",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "SUPINFO existe comme école informatique"
+          },
+          {
+            "text": "42 Lyon est gratuite et sans diplôme requis",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "42 Lyon (école coding) est effectivement gratuite et accessible sans bac/diplôme préalable"
+          },
+          {
+            "text": "BTS SIO (Services Informatiques aux Organisations) proposé à La Martinière Monplaisir à Lyon",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "BTS SIO existe, mais la présence du programme à ce lycée spécifique est non vérifiable"
+          },
+          {
+            "text": "BTS SIO proposé à ORT Lyon",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Non vérifiable sans données spécifiques"
+          },
+          {
+            "text": "BTS SIO proposé à lycée Saint-Exupéry (Vénissieux)",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Non vérifiable sans données spécifiques"
+          },
+          {
+            "text": "Les données 2024 seront confirmées lors de l'ouverture de Parcoursup en janvier 2024",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Parcoursup ouvre effectivement en janvier chaque année, c'est un calendrier officiel"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "G03",
+    "category": "lyceen_parcoursup",
+    "factcheck": {
+      "A": {
+        "score": 0.8333333333333334,
+        "n_claims": 6,
+        "claims": [
+          {
+            "text": "Les Classes Préparatoires aux Grandes Écoles (CPGE) MPSI préparent principalement aux concours d'entrée des grandes écoles d'ingénieurs",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte : les CPGE MPSI préparent effectivement aux concours d'entrée des écoles d'ingénieurs (Polytechnique, CentraleSupélec, Mines, etc.)"
+          },
+          {
+            "text": "Le Lycée du Parc à Lyon est l'un des établissements les plus réputés pour ces classes préparatoires",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc à Lyon est effectivement connu comme l'un des meilleurs lycées de France pour les CPGE, notamment en MPSI"
+          },
+          {
+            "text": "La spécialité mathématiques est quasiment indispensable",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte : les spécialités mathématiques et physique-chimie sont quasi obligatoires pour intégrer une MPSI"
+          },
+          {
+            "text": "Une mention 'Très Bien' souvent attendue au baccalauréat",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Bien que plausible pour un excellent lycée, aucune donnée précise sur les mentions minimales requises au Lycée du Parc n'est fournie"
+          },
+          {
+            "text": "Les notes des classes de première et terminale sont scrutées avec attention dans le dossier Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte concernant les critères généraux de Parcoursup pour les CPGE sélectives"
+          },
+          {
+            "text": "Les appréciations des professeurs et du chef d'établissement jouent un rôle important (via Fiches Avenir)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte : les Fiches Avenir sont un élément clé du dossier Parcoursup pour les CPGE"
+          }
+        ]
+      },
+      "B": {
+        "score": 0.5714285714285714,
+        "n_claims": 7,
+        "claims": [
+          {
+            "text": "CPGE MPSI au Lycée du Parc à Lyon",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc à Lyon est une institution connue proposant des classes préparatoires MPSI."
+          },
+          {
+            "text": "MPSI signifie Mathématiques, Physique et Sciences de l'Ingénieur",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "L'acronyme MPSI est correct dans le contexte français des CPGE."
+          },
+          {
+            "text": "Notes en maths et physique ≥ 18/20 comme critère décisif",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Affirmation plausible pour une prépa très sélective, mais pas vérifiable sans données officielles Parcoursup."
+          },
+          {
+            "text": "Moyenne générale ≥ 16/20 (souvent 17+ pour les admis)",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données cohérentes avec le profil d'une prépa sélective, mais non vérifiables sans statistiques officielles."
+          },
+          {
+            "text": "INSA Lyon comme prépa intégrée d'école d'ingé",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "INSA Lyon est une école d'ingénieurs reconnue proposant des formations intégrées."
+          },
+          {
+            "text": "UTBM comme prépa intégrée d'école d'ingé",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "UTBM (Université de Technologie de Belfort-Montbéliard) est une école d'ingénieurs reconnue."
+          },
+          {
+            "text": "Source : données Parcoursup 2025 et retours d'anciens élèves",
+            "type": "report",
+            "status": "unverifiable",
+            "reason": "Mention vague de sources sans spécification précise ; l'auteur reconnaît lui-même l'absence de 'taux exact dans les fiches fournies'."
+          }
+        ]
+      },
+      "C": {
+        "score": 1.0,
+        "n_claims": 2,
+        "claims": [
+          {
+            "text": "Lycée du Parc à Lyon",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc est un établissement réel et reconnu à Lyon, proposant des classes préparatoires MPSI."
+          },
+          {
+            "text": "CPGE MPSI au Lycée du Parc à Lyon",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc propose effectivement une filière MPSI (Mathématiques, Physique, Sciences de l'Ingénieur) en classe préparatoire."
+          }
+        ]
+      },
+      "D": {
+        "score": 0.7096774193548387,
+        "n_claims": 31,
+        "claims": [
+          {
+            "text": "Lycée du Parc à Lyon est l'un des établissements les plus réputés de France pour ses Classes Préparatoires aux Grandes Écoles (CPGE)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc est effectivement une CPGE réputée à Lyon, connue pour ses classes préparatoires."
+          },
+          {
+            "text": "Lycée Louis-le-Grand, Henri-IV, Saint-Louis à Paris sont des établissements réputés",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Ces trois lycées parisiens sont effectivement reconnus pour leurs CPGE de haut niveau."
+          },
+          {
+            "text": "Lycée du Parc, La Martinière Monplaisir à Lyon sont des établissements réputés",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Ces deux lycées lyonnais sont effectivement connus pour leurs CPGE."
+          },
+          {
+            "text": "La prépa demande 50-60h de travail/semaine",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Charge horaire standard reconnue pour une classe préparatoire aux grandes écoles."
+          },
+          {
+            "text": "~50% des admis viennent de l'académie de Lyon",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique spécifique non vérifiable sans données officielles du Lycée du Parc."
+          },
+          {
+            "text": "~30% viennent d'autres académies",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique spécifique non vérifiable sans données officielles."
+          },
+          {
+            "text": "~20% viennent de l'étranger",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique spécifique non vérifiable sans données officielles."
+          },
+          {
+            "text": "Janvier 2025 : Ouverture de Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Parcoursup ouvre généralement en janvier pour la campagne du printemps."
+          },
+          {
+            "text": "Mars 2025 : Date limite pour finaliser tes vœux",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "La date limite pour finaliser les vœux sur Parcoursup est généralement en mars."
+          },
+          {
+            "text": "Mai-juin 2025 : Réponses des formations",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les réponses Parcoursup sont généralement communiquées entre mai et juin."
+          },
+          {
+            "text": "Juillet 2025 : Phase complémentaire",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "La phase complémentaire Parcoursup intervient généralement en juillet."
+          },
+          {
+            "text": "Nombre de places : ~90 en MPSI au Lycée du Parc",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique spécifique non vérifiable sans données officielles du lycée."
+          },
+          {
+            "text": "Nombre de candidats : ~1 500 à 2 000",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Estimation non vérifiable sans accès aux données Parcoursup officielles."
+          },
+          {
+            "text": "Taux d'admission < 10%",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Déduit des chiffres précédents, mais non vérifiable indépendamment."
+          },
+          {
+            "text": "INSA Lyon offre une prépa intégrée",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'INSA Lyon propose effectivement un cycle préparatoire intégré aux écoles INSA."
+          },
+          {
+            "text": "Geipi Polytech est un concours d'accès aux écoles comme UTT, UTC, UTBM",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Geipi Polytech est un concours d'accès valide pour ces écoles d'ingénieurs."
+          },
+          {
+            "text": "ETH Zurich, MIT, Cambridge acceptent des étudiants français de CPGE sur dossier",
+            "type": "unverifiable",
+            "status": "unverifiable",
+            "reason": "Bien que plausible, le processus d'admission spécifique pour les élèves de CPGE françaises n'est pas vérifiable sans documentation."
+          },
+          {
+            "text": "Khan Academy, Les Bons Profs, Mathraining sont des ressources valides pour préparer les maths",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Ces trois plateformes sont effectivement des ressources reconnues pour l'apprentissage des mathématiques."
+          },
+          {
+            "text": "Polytechnique (X), Mines ParisTech, Centrale Lyon, Ponts ParisTech sont des écoles d'ingénieurs accessibles après MPSI",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Ces écoles d'ingénieurs prestigieuses recrutent effectivement via les concours post-MPSI (Mines-Ponts, Centrale-Supélec, etc.)."
+          },
+          {
+            "text": "ENS Lyon recrute via le concours de la Banque ENS",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "L'ENS Lyon participe effectivement à la Banque ENS pour le recrutement d'étudiants de CPGE."
+          },
+          {
+            "text": "ISAE-SUPAERO est une école spécialisée en aéronautique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'ISAE-SUPAERO est effectivement l'Institut Supérieur de l'Aéronautique et de l'Espace, spécialisée en aéronautique."
+          },
+          {
+            "text": "Télécom Paris est une école accessible après MPSI",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Télécom Paris recrute effectivement des étudiants de CPGE via des concours."
+          },
+          {
+            "text": "École des Ponts (ParisTech) est accessible après MPSI via les concours",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'École des Ponts recrute effectivement via les concours post-CPGE (Mines-Ponts)."
+          },
+          {
+            "text": "Université Paris-Saclay propose une double licence maths-physique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'Université Paris-Saclay propose effectivement des doubles licences en sciences mathématiques et physiques."
+          },
+          {
+            "text": "Université Claude Bernard Lyon 1 propose une double licence maths-physique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'Université Claude Bernard Lyon 1 propose des formations renforcées en sciences, incluant maths-physique."
+          },
+          {
+            "text": "CUPGE existe à l'Université de Lyon",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les CUPGE (Cycles Universitaires Préparatoires aux Grandes Écoles) existent dans plusieurs universités, dont à Lyon."
+          },
+          {
+            "text": "Grenoble INP est une grande école d'ingénieurs accessible après CPGE",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Grenoble INP recrute effectivement des étudiants de CPGE."
+          },
+          {
+            "text": "Lycée Champollion à Grenoble a une excellente réputation en CPGE",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée Champollion de Grenoble est effectivement connu pour ses CPGE de bon niveau."
+          },
+          {
+            "text": "Mines de Saint-Étienne est une école d'ingénieurs accessible après CPGE",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Mines Saint-Étienne recrute effectivement des étudiants de CPGE via les concours."
+          },
+          {
+            "text": "Les admis en MPSI au Lycée du Parc sont typiquement classés parmi les 5 premiers de leur classe en terminale",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Estimation plausible mais non vérifiable sans données officielles du lycée."
+          },
+          {
+            "text": "Les notes moyennes des admis sont Maths 18-19/20, Physique-Chimie 17-18/20, Français 15-16/20",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique spécifique non vérifiable sans données officielles du lycée."
+          }
+        ]
+      },
+      "E": {
+        "score": 0.3333333333333333,
+        "n_claims": 6,
+        "claims": [
+          {
+            "text": "Lycée du Parc à Lyon est l'une des CPGE les plus réputées et sélectives de France en filière scientifique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc (Lyon) est effectivement un établissement CPGE réputé et sélectif en France, classé parmi les meilleurs."
+          },
+          {
+            "text": "Moyenne générale généralement 16-17/20 minimum en Première et Terminale",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Plausible pour un établissement très sélectif, mais les chiffres exacts ne peuvent être vérifiés sans données officielles."
+          },
+          {
+            "text": "Résultats en maths notes régulièrement entre 17 et 20/20",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Cohérent avec un profil CPGE de très haut niveau, mais chiffres non vérifiables sans données officielles."
+          },
+          {
+            "text": "Élèves classés dans les 5-10% premiers de leur promotion",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Estimation plausible mais non vérifiable sans données d'admission officielles."
+          },
+          {
+            "text": "Le lycée recrute au niveau national",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les CPGE du Lycée du Parc recrutent effectivement au niveau national via Parcoursup."
+          },
+          {
+            "text": "Plusieurs milliers de candidatures pour ~48 places",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Le nombre de places (~48) est plausible pour une MPSI de haut niveau, mais le nombre de candidatures (« plusieurs milliers ») n'est pas vérifiable sans données officielles."
+          }
+        ]
+      },
+      "F": {
+        "score": 0.75,
+        "n_claims": 8,
+        "claims": [
+          {
+            "text": "Le Lycée du Parc est l'une des prépas scientifiques les plus sélectives de France",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc à Lyon est effectivement connu comme l'une des meilleures CPGE MPSI de France, très sélective."
+          },
+          {
+            "text": "Le Lycée du Parc fait partie du top 5 national",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc figure régulièrement parmi les meilleures prépas scientifiques françaises (top 5-10)."
+          },
+          {
+            "text": "Lyon La Martinière est une CPGE MPSI",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le lycée La Martinière à Lyon propose effectivement une prépa MPSI reconnue."
+          },
+          {
+            "text": "Saint-Étienne Claude Fauriel est une CPGE MPSI",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le lycée Claude Fauriel à Saint-Étienne dispose d'une prépa MPSI établie."
+          },
+          {
+            "text": "Grenoble Champollion est une CPGE MPSI",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le lycée Champollion à Grenoble propose une prépa MPSI reconnue."
+          },
+          {
+            "text": "Notes en Maths/Physique attendues : 16+/20 minimum pour Lycée du Parc",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Seuil plausible mais sans documentation officielle précise du Lycée du Parc sur les critères numériques d'admission."
+          },
+          {
+            "text": "Mention TB au bac vivement recommandée pour admission en CPGE MPSI sélective",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Conseil cohérent avec les standards d'admission des meilleures prépas scientifiques."
+          },
+          {
+            "text": "CUPGE (Cycle Prépa Intégré) permet une candidature en 2ème année de prépa",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Bien que les CUPGE existent, le mécanisme exact de passerelle vers prépa classique n'est pas vérifié."
+          }
+        ]
+      },
+      "G": {
+        "score": 0.2,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "CPGE - B/L - Lettres et sciences sociales au Lycée du Parc",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée du Parc (Lyon) est un établissement réputé qui propose effectivement une CPGE B/L reconnue"
+          },
+          {
+            "text": "code Parcoursup 8187",
+            "type": "onisep_id",
+            "status": "unverifiable",
+            "reason": "Sans accès direct à Parcoursup, impossible de vérifier ce code spécifique"
+          },
+          {
+            "text": "46 % des candidats ont été admis en début de procédure Parcoursup",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux d'admission spécifique à une formation CPGE : sans fiche RAG ou source officielle consultable, impossible de vérifier ce chiffre précis"
+          },
+          {
+            "text": "c'est la seule formation en CPGE référencée pour ce lycée",
+            "type": "other",
+            "status": "contradicted",
+            "reason": "Le Lycée du Parc propose plusieurs CPGE (au minimum B/L et MPSI/MP) ; cette affirmation est factuellement incorrecte"
+          },
+          {
+            "text": "pas d'information sur les profils spécifiques en MPSI dans ses sources",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Déclaration sur l'absence d'information dans les sources de l'assistant ; plausible mais non vérifiable indépendamment"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "G04",
+    "category": "lyceen_parcoursup",
+    "factcheck": {
+      "A": {
+        "score": 0.6666666666666666,
+        "n_claims": 9,
+        "claims": [
+          {
+            "text": "Le PASS à Sorbonne Université est une formation extrêmement sélective",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le PASS est effectivement connu comme très sélectif ; affirmation qualitative cohérente avec la réalité."
+          },
+          {
+            "text": "En 2025, le taux d'admission en 2ᵉ année (L2 Santé) était de 10,3 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Aucune fiche RAG fournie pour vérifier ce pourcentage spécifique ; le chiffre est plausible mais ne peut être confirmé."
+          },
+          {
+            "text": "cod_aff_form: 12345",
+            "type": "onisep_id",
+            "status": "contradicted",
+            "reason": "12345 est un code manifestement fictif (trop simple, format invalide pour les identifiants ONISEP réels qui suivent des patterns spécifiques)."
+          },
+          {
+            "text": "En PASS, tu dois choisir une mineure disciplinaire (ex : droit, biologie, psychologie) en parallèle de la majeure santé",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le système PASS inclut effectivement un double cursus avec mineure disciplinaire ; affirmation conforme à la structure officielle."
+          },
+          {
+            "text": "Si tu échoues en santé, tu peux basculer vers cette mineure (sous conditions)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le mécanisme de seconde chance via basculement vers la mineure est une caractéristique officielle du PASS."
+          },
+          {
+            "text": "La sélection se fait via un concours national (écrits + oraux) pour accéder aux filières MMOPK",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "L'existence d'un concours pour l'accès aux filières médicales via PASS est correcte ; MMOPK est l'acronyme officiel (Médecine, Maïeutique, Odontologie, Pharmacie, Kinésithérapie)."
+          },
+          {
+            "text": "L.AS (Licence Accès Santé) est moins sélective que le PASS",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "L'alternative L.AS est reconnue comme moins sélective que le PASS ; affirmation conforme à la réalité du système français."
+          },
+          {
+            "text": "L.AS Sciences pour la Santé à Sorbonne",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Sorbonne Université existe et propose des formations santé, mais sans fiche RAG, impossible de confirmer ce programme spécifique."
+          },
+          {
+            "text": "passerelles (ex : licence de bio puis master santé publique)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les passerelles post-L2/L3 vers des formations santé sont une réalité officielle du système français."
+          }
+        ]
+      },
+      "B": {
+        "score": 0.2222222222222222,
+        "n_claims": 9,
+        "claims": [
+          {
+            "text": "Environ 2 500 à 3 000 places en PASS à Sorbonne Université",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Nombre de places spécifique à Sorbonne Université non vérifiable sans données institutionnelles récentes"
+          },
+          {
+            "text": "Entre 15 000 et 20 000 candidatures reçues sur Parcoursup pour le PASS à Sorbonne",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données Parcoursup spécifiques à cette formation et année non vérifiables sans accès officiel"
+          },
+          {
+            "text": "Taux d'acceptation : environ 15-20% des candidats",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Cohérent avec les chiffres donnés (3000/20000 ≈ 15%), mais non vérifiable indépendamment"
+          },
+          {
+            "text": "Bac général quasi-exclusivement avec spécialités scientifiques",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le PASS requiert effectivement un bac général avec spécialités scientifiques, c'est une caractéristique établie"
+          },
+          {
+            "text": "Moyenne générale : généralement 15-16/20 minimum",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Ordre de grandeur plausible pour PASS mais non vérifiable précisément"
+          },
+          {
+            "text": "Environ 20-30% seulement passent en 2e année de santé au niveau national",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique nationale sur les taux de passage PASS/MMOPK non vérifiée ; ce taux varie par année et région"
+          },
+          {
+            "text": "Pour Médecine spécifiquement : environ 10-15% de réussite",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Donnée plausible mais non vérifiable sans source officielle (DREES, ministère)"
+          },
+          {
+            "text": "MMOPK : Médecine, Maïeutique, Odontologie, Pharmacie, Kiné",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Acronyme officiel établi pour les formations de santé post-PASS"
+          },
+          {
+            "text": "Charge de travail très intensive (50-60h/semaine)",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Estimation plausible mais non vérifiable précisément ; varie selon l'étudiant et l'établissement"
+          }
+        ]
+      },
+      "C": {
+        "score": 0.25,
+        "n_claims": 8,
+        "claims": [
+          {
+            "text": "Licence PASS à Sorbonne Université : 1 200 places pour 4 098 propositions",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Pas de fiche RAG fournie; les chiffres Parcoursup 2025 ne sont pas accessibles pour vérification directe"
+          },
+          {
+            "text": "Taux d'accès PASS Sorbonne Université de 36 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Calcul cohérent (1200/4098 ≈ 29%, mais l'énoncé dit 36% — écart >3 points) mais non vérifiable sans données officielles 2025"
+          },
+          {
+            "text": "14 % des admis·es PASS Sorbonne Université avaient un 'oui' dès le début des propositions",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Donnée spécifique non vérifiable sans accès aux données détaillées Parcoursup 2025"
+          },
+          {
+            "text": "Licence PASS à Université Paris Cité : 80 places pour 828 propositions",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Pas de fiche RAG; chiffres 2025 non vérifiables"
+          },
+          {
+            "text": "Taux d'accès PASS Université Paris Cité de 23 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Calcul cohérent (80/828 ≈ 9.7% — écart significatif avec 23%) et non vérifiable"
+          },
+          {
+            "text": "PASS à Bobigny (Sorbonne Paris Nord) : 20 places pour 205 propositions, taux 27 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Calcul incohérent (20/205 ≈ 9.8% ≠ 27%) mais données non vérifiables sans source officielle 2025"
+          },
+          {
+            "text": "Les formations PASS sont techniquement 'non sélectives' (pas de concours)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Correct : le PASS est un parcours sans concours à l'entrée, avec classement Parcoursup"
+          },
+          {
+            "text": "Arrêté du 4 novembre 2019 : interdiction de redoublement PASS",
+            "type": "report",
+            "status": "verified_general",
+            "reason": "Exact : l'arrêté du 4 nov. 2019 interdit formellement le redoublement en PASS/LAS"
+          }
+        ]
+      },
+      "D": {
+        "score": 0.8333333333333334,
+        "n_claims": 6,
+        "claims": [
+          {
+            "text": "Le PASS est une voie d'accès aux études de santé en France pour les filières de médecine, maïeutique, odontologie et pharmacie",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le PASS (Parcours d'Accès Spécifique Santé) est effectivement un dispositif officiel français d'accès aux études de santé couvrant ces filières."
+          },
+          {
+            "text": "L'Université Paris 1 Panthéon-Sorbonne propose le PASS",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Paris 1 Panthéon-Sorbonne est une université réelle, mais on ne peut pas confirmer sans fiches que cette université spécifique propose le PASS (certains PASS sont portés par d'autres universités dans des territoires donnés)."
+          },
+          {
+            "text": "Le PASS est une filière avec un nombre de places limité",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le PASS est effectivement sélectif avec un nombre de places défini, ce qui est un fait connu du système d'accès aux études de santé."
+          },
+          {
+            "text": "L'admission au PASS se fait via la plateforme Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "C'est exact : le PASS relève du système Parcoursup depuis sa création."
+          },
+          {
+            "text": "Les critères incluent les notes du baccalauréat dans les matières scientifiques",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les matières scientifiques (mathématiques, physique-chimie, SVT) sont effectivement des critères importants pour l'accès aux études de santé."
+          },
+          {
+            "text": "Il existe une Licence Accès Santé (LAS) comme alternative au PASS",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "La LAS (Licence Accès Santé) est un dispositif officiel français alternative au PASS pour accéder aux études de santé."
+          }
+        ]
+      },
+      "E": {
+        "score": 0.8,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "Le PASS reste une des voies d'accès aux études de santé (MMOPK : médecine, maïeutique, odontologie, pharmacie, kiné) les plus sélectives de France",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le PASS est effectivement reconnu comme très sélectif pour l'accès aux filières MMOPK depuis sa création en 2020."
+          },
+          {
+            "text": "À Sorbonne Université, la sélection se fait sur Parcoursup avec examen du dossier (notes scientifiques lycée, spécialités, projet)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Processus standard Parcoursup pour les PASS confirmé."
+          },
+          {
+            "text": "En fin de 1ère année : concours/examens classants pour accéder aux filières MMOPK",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le système PASS prévoit effectivement une évaluation en fin d'année pour le classement d'accès aux filières."
+          },
+          {
+            "text": "Le taux de réussite au concours de fin d'année est historiquement ~15-20 % toutes facs confondues",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre plausible mais non spécifiquement vérifiable ; les taux varient fortement selon les années et établissements."
+          },
+          {
+            "text": "PASS Paris 6 (ancien nom)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Sorbonne Université est issue de la fusion de Paris 6 (UPMC) et Paris 4 en 2018 ; la référence historique à 'Paris 6' est correcte."
+          }
+        ]
+      },
+      "F": {
+        "score": 0.2903225806451613,
+        "n_claims": 31,
+        "claims": [
+          {
+            "text": "PASS à Sorbonne Université avec ~1 200 places en 2023",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Pas de fiche fournie. Le nombre de places en PASS varie annuellement et n'est pas systématiquement public."
+          },
+          {
+            "text": "~80% des places PASS pour la filière médecine",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Proportion non vérifiable sans données officielles de Sorbonne Université."
+          },
+          {
+            "text": "~10 000 vœux sur Parcoursup pour la PASS à Sorbonne Université en 2023",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Chiffre non vérifié. Les données de flux Parcoursup ne sont pas systématiquement publiques par formation."
+          },
+          {
+            "text": "Taux d'admission d'environ 12% en PASS Sorbonne (2023)",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Pourcentage plausible mais non vérifiable sans données officielles de Sorbonne."
+          },
+          {
+            "text": "Dernier admis en PASS avec ~16,5/20 de moyenne générale en Terminale",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre non vérifiable. Les seuils d'admission ne sont pas communiqués publiquement par Sorbonne."
+          },
+          {
+            "text": "~20-25% des étudiants en PASS à Sorbonne accèdent à la 2ème année de santé",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux de réussite non vérifié. Les données de taux de passage ne sont pas systématiquement publiques."
+          },
+          {
+            "text": "Université de Reims avec ~15% d'admis en PASS",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux comparatif non vérifiable sans rapports officiels Parcoursup."
+          },
+          {
+            "text": "Université de Poitiers avec ~18% d'admis en PASS",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux comparatif non vérifiable sans rapports officiels Parcoursup."
+          },
+          {
+            "text": "Université de Bretagne Occidentale (Brest) avec ~20% d'admis en PASS",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux comparatif non vérifiable sans rapports officiels Parcoursup."
+          },
+          {
+            "text": "Université de Lille avec ~13% d'admis en PASS",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux comparatif non vérifiable sans rapports officiels Parcoursup."
+          },
+          {
+            "text": "L.AS moins sélective que PASS avec taux d'admission ~20-30% à Sorbonne",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux non vérifié. Les données de sélectivité L.AS de Sorbonne ne sont pas publiques."
+          },
+          {
+            "text": "Environ 10-15% des places L.AS en 2ème année de santé",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Proportion non vérifiable pour Sorbonne spécifiquement."
+          },
+          {
+            "text": "IFSI avec ~30-40% d'admis",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux très variable selon l'IFSI. Généralisation non vérifiable."
+          },
+          {
+            "text": "Infirmier/ère avec salaire ~2 000€ net en début de carrière",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Salaire approximatif plausible mais non vérifiable (varie selon région, statut)."
+          },
+          {
+            "text": "BTS Analyses de Biologie Médicale avec ~50% d'admis",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux très variable selon établissement. Généralisation non vérifiable."
+          },
+          {
+            "text": "Technicien de laboratoire avec salaire ~1 800€ net",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Salaire approximatif plausible mais non vérifiable."
+          },
+          {
+            "text": "BUT Génie Biologique avec ~40% d'admis",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux très variable selon IUT. Généralisation non vérifiable."
+          },
+          {
+            "text": "INSA Lyon avec département Biochimie et Biotechnologies",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "INSA Lyon existe et dispose de formations en biotechnologies/génie biologique."
+          },
+          {
+            "text": "UTC (Université de Technologie de Compiègne) avec filière Biologie",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "UTC existe et propose des formations en biologie."
+          },
+          {
+            "text": "Polytech avec spécialité Génie Biologique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Polytech est un réseau d'écoles d'ingénieurs proposant du génie biologique."
+          },
+          {
+            "text": "Écoles post-bac avec sélectivité ~20-30%",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Taux très variable selon école. Généralisation non vérifiable."
+          },
+          {
+            "text": "Sorbonne Université ne prend pas en compte les notes du bac",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Affirmation sur les critères d'admission Parcoursup non vérifiable sans documentation officielle."
+          },
+          {
+            "text": "L.AS Biologie à Sorbonne",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Existence de cette formation non vérifiée par fiche fournie."
+          },
+          {
+            "text": "L.AS Psychologie à Sorbonne",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Existence de cette formation non vérifiée par fiche fournie."
+          },
+          {
+            "text": "L.AS Droit à Sorbonne",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Existence de cette formation non vérifiée par fiche fournie."
+          },
+          {
+            "text": "IFSI de l'AP-HP (Hôpital Cochin, Pitié-Salpêtrière) à Paris",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'AP-HP gère effectivement des IFSI sur ces sites."
+          },
+          {
+            "text": "Université de Szeged en Hongrie avec filières santé en anglais",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'Université de Szeged est réputée pour ses programmes médicaux en anglais."
+          },
+          {
+            "text": "Lycée Jean-Baptiste Say à Paris avec BTS",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement existant à Paris."
+          },
+          {
+            "text": "Lycée Louis Pasteur à Lille avec BTS",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement existant à Lille."
+          },
+          {
+            "text": "IUT de Bobigny avec BUT Génie Biologique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement existant proposant ce type de formation."
+          },
+          {
+            "text": "IUT de Toulouse avec BUT Génie Biologique",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement existant proposant ce type de formation."
+          }
+        ]
+      },
+      "G": {
+        "score": 1.0,
+        "n_claims": 0,
+        "claims": []
+      }
+    }
+  },
+  {
+    "id": "G05",
+    "category": "lyceen_parcoursup",
+    "factcheck": {
+      "A": {
+        "score": 1.0,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "les BTS Comptabilité-Gestion en Île-de-France sont modérément sélectifs (taux variables selon le lycée, de ~30 % pour les plus demandés à >70 % pour d'autres)",
+            "type": "percentage",
+            "status": "verified_general",
+            "reason": "Les taux d'accès aux BTS Comptabilité-Gestion en Île-de-France varient effectivement selon les établissements; ces fourchettes sont cohérentes avec la sélectivité réelle des lycées parisiens et régionaux."
+          },
+          {
+            "text": "Les profils STMG option Gestion-Finance sont prioritaires",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les BTS tertiaires (dont Comptabilité-Gestion) privilégient effectivement les bacs STMG option Gestion-Finance selon les critères d'accès standard."
+          },
+          {
+            "text": "les bacs généraux avec option SES/Maths sont aussi acceptés",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les admissions aux BTS Comptabilité-Gestion acceptent également les bacs généraux, notamment avec SES ou Mathématiques, sans être des profils prioritaires."
+          },
+          {
+            "text": "Parcoursup.fr affiche les taux d'accès 2025 pour chaque lycée",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Parcoursup publie bien les taux d'accès et d'admission pour chaque formation et établissement."
+          },
+          {
+            "text": "ONISEP recense les taux par académie",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les fiches établissement ONISEP contiennent effectivement des données de sélectivité et de taux d'accès par académie."
+          }
+        ]
+      },
+      "B": {
+        "score": 0.8333333333333334,
+        "n_claims": 6,
+        "claims": [
+          {
+            "text": "Le BTS Comptabilité et Gestion est accessible après l'obtention d'un baccalauréat",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte : le BTS CG est effectivement accessible post-bac"
+          },
+          {
+            "text": "Les admissions se font principalement via la plateforme Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Correct : Parcoursup est le portail d'accès aux BTS publics et privés sous contrat"
+          },
+          {
+            "text": "Lycée Turgot - Situé dans le 3ème arrondissement, il propose le BTS Comptabilité et Gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le lycée Turgot existe à Paris (3ème arr.) et propose effectivement ce BTS"
+          },
+          {
+            "text": "Lycée Paul Valéry - Dans le 12ème arrondissement, il offre le BTS Comptabilité et Gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le lycée Paul Valéry existe à Paris (12ème arr.) et propose ce BTS"
+          },
+          {
+            "text": "Lycée René Cassin - Situé dans le 16ème arrondissement",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Plusieurs établissements portent ce nom en France ; la localisation précise (16ème arr. à Paris) ne peut être confirmée sans vérification supplémentaire"
+          },
+          {
+            "text": "Un bac général avec une spécialité en mathématiques ou un bac technologique STMG sont de préférence requis",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte : les conditions d'accès préférentielles au BTS CG correspondent à ces profils"
+          }
+        ]
+      },
+      "C": {
+        "score": 0.7777777777777778,
+        "n_claims": 9,
+        "claims": [
+          {
+            "text": "Lycée Colbert (10e arr.)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée Colbert existe à Paris dans le 10e arrondissement et propose des formations post-bac incluant des BTS."
+          },
+          {
+            "text": "Lycée Simone Weil (3e arr.)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée Simone Weil existe à Paris dans le 3e arrondissement."
+          },
+          {
+            "text": "Lycée Paul Valéry (12e arr.)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée Paul Valéry existe à Paris dans le 12e arrondissement."
+          },
+          {
+            "text": "Lycée Albert de Mun (7e arr.)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée Albert de Mun existe à Paris dans le 7e arrondissement et est privé sous contrat."
+          },
+          {
+            "text": "Lycée Saint-Michel de Picpus (12e arr.)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée Saint-Michel de Picpus existe à Paris dans le 12e arrondissement et est privé sous contrat."
+          },
+          {
+            "text": "Taux d'accès BTS Comptabilité Gestion Paris lycées publics 10-40%",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Affirmation générale plausible mais non vérifiée : les taux d'accès varient fortement par établissement et année, aucune donnée précise fournie."
+          },
+          {
+            "text": "Taux d'accès BTS Comptabilité Gestion Paris lycées privés sous contrat 20-60%",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Fourchette générale plausible mais non vérifiable sans données Parcoursup précises."
+          },
+          {
+            "text": "Bac STMG (Gestion-Finance) est un profil privilégié pour le BTS CG",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "C'est une affirmation correcte : le Bac STMG spécialité Gestion-Finance prépare directement au BTS Comptabilité-Gestion."
+          },
+          {
+            "text": "Les fiches formations Parcoursup indiquent le nombre de places, candidats, critères de sélection",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation correcte : les fiches formations Parcoursup contiennent effectivement ces informations."
+          }
+        ]
+      },
+      "D": {
+        "score": 0.36585365853658536,
+        "n_claims": 41,
+        "claims": [
+          {
+            "text": "Lycée Turgot (3e arr.) propose un BTS CG",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée Turgot à Paris est un établissement public connu pour proposer des BTS, dont le BTS CG."
+          },
+          {
+            "text": "Lycée Jean-Baptiste Say (16e arr.) propose un BTS CG",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée Jean-Baptiste Say à Paris est un établissement public réputé proposant des formations BTS."
+          },
+          {
+            "text": "Lycée Paul Poiret (11e arr.) propose un BTS CG",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée Paul Poiret est un établissement parisien connu pour ses formations tertiaires incluant le BTS CG."
+          },
+          {
+            "text": "Lycée Dorian (75014) propose un BTS CG",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée Dorian à Paris 14e est un établissement proposant des formations BTS."
+          },
+          {
+            "text": "ESG Comptabilité (Paris 11e) est une école privée proposant un BTS CG",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "ESG existe en tant que groupe (Ecoles Supérieures de Gestion) mais la précision de l'adresse (11e) et l'existence d'une formation BTS spécifique ne peut être vérifiée."
+          },
+          {
+            "text": "INTEC (CNAM, Paris 3e) propose un BTS CG en alternance",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "INTEC (Institut national de la Technologie, de l'Enseignement et de la Comptabilité) du CNAM existe et propose des formations comptables."
+          },
+          {
+            "text": "École Supérieure de Gestion (ESG, Paris 12e) propose un BTS CG",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Duplication potentielle avec ESG mentionné plus haut. La localisation précise (12e) et l'offre BTS ne peuvent être confirmées."
+          },
+          {
+            "text": "IUT de Paris (Rives de Seine, Paris 13e) propose un BUT GEA",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "L'IUT de Paris propose effectivement des formations BUT GEA (Gestion des Entreprises et des Administrations)."
+          },
+          {
+            "text": "Lycée Gustave Eiffel (Rueil-Malmaison) propose un BTS CG",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée Gustave Eiffel à Rueil-Malmaison est un établissement public connu pour ses formations BTS."
+          },
+          {
+            "text": "Lycée Louise Michel (Bobigny) propose un BTS CG",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée Louise Michel à Bobigny existe et propose des formations BTS."
+          },
+          {
+            "text": "Paris 1 Panthéon-Sorbonne propose une licence d'économie-gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Paris 1 Panthéon-Sorbonne est une université proposant effectivement des licences d'économie-gestion."
+          },
+          {
+            "text": "Paris Dauphine propose une licence d'économie-gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Paris Dauphine (Université Paris-Dauphine) est spécialisée dans les formations en gestion et économie."
+          },
+          {
+            "text": "Paris Nanterre propose une licence d'économie-gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université Paris Nanterre propose des licences en économie-gestion."
+          },
+          {
+            "text": "Taux moyen d'acceptation en BTS CG à Paris entre 30 % et 70 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Plage large et générique. Pas de source officielle Parcoursup citée précisément pour valider ces chiffres."
+          },
+          {
+            "text": "Lycée Turgot : taux d'accès ~25–35 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement sans source vérifiable fournie."
+          },
+          {
+            "text": "Lycée Jean-Baptiste Say : taux d'accès ~30–40 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement sans source vérifiable fournie."
+          },
+          {
+            "text": "Lycée Paul Poiret : taux d'accès ~40–50 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement sans source vérifiable fournie."
+          },
+          {
+            "text": "Lycée Dorian : taux d'accès ~50–60 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement sans source vérifiable fournie."
+          },
+          {
+            "text": "ESG Comptabilité : taux d'accès ~40–50 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement privé sans source vérifiable."
+          },
+          {
+            "text": "INTEC : taux d'accès ~50–60 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques sans source vérifiable."
+          },
+          {
+            "text": "École Supérieure de Gestion (ESG, Paris 12e) : taux d'accès ~35–45 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques sans source vérifiable."
+          },
+          {
+            "text": "Environ 15 000 candidats pour 3 500 places en Île-de-France en 2023",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre statistique agrégé non sourçable sans données Parcoursup ou académiques officielles."
+          },
+          {
+            "text": "À Paris intra-muros, ratio 1 place pour 6–8 candidats dans les lycées les plus demandés",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Estimation locale sans source officielle citée."
+          },
+          {
+            "text": "Lycée Turgot : taux de réussite 95–100 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement sans source vérifiable."
+          },
+          {
+            "text": "Lycée Jean-Baptiste Say : taux de réussite 90–95 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement sans source vérifiable."
+          },
+          {
+            "text": "Lycée Paul Poiret : taux de réussite 85–90 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques à un établissement sans source vérifiable."
+          },
+          {
+            "text": "ESG Comptabilité : taux de réussite 80–85 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques sans source vérifiable."
+          },
+          {
+            "text": "INTEC : taux d'insertion 70 % en CDI après le diplôme",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Donnée statistique d'insertion sans source officielle citée."
+          },
+          {
+            "text": "École Supérieure de Gestion (ESG, Paris 12e) : taux de réussite ~75–85 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Données spécifiques sans source vérifiable."
+          },
+          {
+            "text": "IUT de Paris propose un BUT GEA avec taux d'accès 60–70 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Le BUT GEA est confirmé mais le taux d'accès spécifique n'est pas vérifiable."
+          },
+          {
+            "text": "Coût INTEC ~3 000 €/an (gratuit en alternance)",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Tarification spécifique non sourcée."
+          },
+          {
+            "text": "ESG Comptabilité : coût ~2 000–6 000 €/an",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Tarification variable non sourcée."
+          },
+          {
+            "text": "Écoles de commerce post-bac (PPA, ESDES, INSEEC) : coût ~6 000–9 000 €/an",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Tarifications approximatives non vérifiées."
+          },
+          {
+            "text": "Salaire débutant BTS CG : 22–28 k€ brut/an",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Donnée salariale sans source officielle."
+          },
+          {
+            "text": "70 % des diplômés BTS CG poursuivent leurs études",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique d'insertion sans source officielle vérifiable."
+          },
+          {
+            "text": "30 % des diplômés BTS CG s'insèrent professionnellement directement",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Statistique complémentaire non sourcée (cohérente avec 70 % si vraie, mais non vérifiable)."
+          },
+          {
+            "text": "Salon Studyrama des BTS se tient en janvier/février à Paris",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Information sur un événement récurrent sans source de date confirmée."
+          },
+          {
+            "text": "Salon de l'Etudiant aux Portes de Versailles",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le Salon de l'Étudiant existe et se tient effectivement aux Portes de Versailles."
+          },
+          {
+            "text": "DCG (Diplôme de Comptabilité et Gestion) est un diplôme bac+3",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le DCG est effectivement un diplôme de niveau bac+3 reconnu officiellement."
+          },
+          {
+            "text": "DSCG (Diplôme Supérieur de Comptabilité et de Gestion) est un diplôme bac+5",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le DSCG est effectivement un diplôme de niveau bac+5."
+          },
+          {
+            "text": "BUT GEA (Gestion des Entreprises et des Administrations) est un diplôme en 3 ans de grade licence",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le BUT est un diplôme 3 ans de grade licence (depuis 2021, remplaçant le DUT)."
+          }
+        ]
+      },
+      "E": {
+        "score": 0.6666666666666666,
+        "n_claims": 9,
+        "claims": [
+          {
+            "text": "Bachelor universitaire de technologie (BUT) en Sciences économiques, gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le BUT est un diplôme officiel français existant; les spécialités en gestion/économie sont reconnues."
+          },
+          {
+            "text": "CY Cergy Paris Université propose un BUT en Sciences économiques, gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "CY Cergy Paris Université est une université publique connue proposant des BUT."
+          },
+          {
+            "text": "Université Gustave Eiffel propose un BUT en Sciences économiques, gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université Gustave Eiffel (anciennement UPEM) est une université publique reconnue."
+          },
+          {
+            "text": "Université Paris 8 propose un BUT en Sciences économiques, gestion",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université Paris 8 est une université publique existante."
+          },
+          {
+            "text": "Taux d'emploi salarié 6 mois après le diplôme: 49% pour le BUT en Sciences économiques, gestion",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre plausible mais non vérifiable sans source S4 accessible; pas de fiche fournie."
+          },
+          {
+            "text": "EDC Paris Business School propose un Diplôme gradé/visé en management bac+5",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "EDC Paris Business School est une école de commerce connue en Île-de-France."
+          },
+          {
+            "text": "ESCP Business School propose un Diplôme gradé/visé en management bac+5",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "ESCP est une grande école de commerce reconnue internationalement."
+          },
+          {
+            "text": "Taux d'emploi salarié 6 mois après le diplôme: 48% pour le Diplôme gradé/visé en management bac+5",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre plausible mais non vérifiable sans source S1 accessible; pas de fiche fournie."
+          },
+          {
+            "text": "10 sites en Île-de-France pour le BUT en Sciences économiques, gestion",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Nombre plausible mais non vérifiable sans source précise."
+          }
+        ]
+      },
+      "F": {
+        "score": 1.0,
+        "n_claims": 2,
+        "claims": [
+          {
+            "text": "Les BTS publics en Île-de-France sont généralement modérément sélectifs (30-60 % d'admission)",
+            "type": "percentage",
+            "status": "verified_general",
+            "reason": "Les taux d'admission aux BTS publics en Île-de-France se situent effectivement dans cette plage, bien que variables selon les établissements et formations."
+          },
+          {
+            "text": "Lycée Turgot",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Le Lycée Turgot existe et propose des formations BTS à Paris (4e arrondissement), c'est un établissement public connu."
+          }
+        ]
+      },
+      "G": {
+        "score": 1.0,
+        "n_claims": 0,
+        "claims": []
+      }
+    }
+  },
+  {
+    "id": "G06",
+    "category": "lyceen_parcoursup",
+    "factcheck": {
+      "A": {
+        "score": 0.625,
+        "n_claims": 8,
+        "claims": [
+          {
+            "text": "Panthéon-Assas est l'une des universités les plus prestigieuses et sélectives pour le droit en France",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Panthéon-Assas (Paris 2) est effectivement reconnue comme une université prestigieuse en droit en France, confirmée par les classements et la réputation générale"
+          },
+          {
+            "text": "Environ 95% des admis en licence de droit à Panthéon-Assas viennent du bac général",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Pourcentage spécifique non vérifiable sans données officielles de Panthéon-Assas ; plausible mais pas de source accessible"
+          },
+          {
+            "text": "Spécialités recommandées : SES, HGGSP, Humanités/Littérature/Philo, Maths, Langues",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Ces spécialités sont cohérentes avec les attendus généraux pour une licence de droit"
+          },
+          {
+            "text": "Les bacs technologiques (STMG) sont très rares et difficiles",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Affirmation cohérente avec la pratique générale des universités sélectives en droit"
+          },
+          {
+            "text": "Les bacs professionnels sont quasi inexistants à Panthéon-Assas en droit",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Cohérent avec la sélectivité très élevée de cette université"
+          },
+          {
+            "text": "Moyenne générale attendue : généralement 14-15/20 minimum (souvent 16+ pour être confortable)",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Valeur indicative non vérifiable officiellement ; plausible pour une université sélective mais pas de chiffres publiés"
+          },
+          {
+            "text": "Panthéon-Assas propose des doubles licences (Droit-Éco, Droit-Anglais, etc.)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Panthéon-Assas propose effectivement des doubles licences ; existence confirmée par connaissance générale de l'établissement"
+          },
+          {
+            "text": "Les doubles licences à Panthéon-Assas sont encore plus sélectives",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Affirmation plausible mais non vérifiable sans données comparatives officielles"
+          }
+        ]
+      },
+      "B": {
+        "score": 0.8,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "ONISEP : catalogue officiel des formations françaises — https://www.onisep.fr",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "L'ONISEP est effectivement le catalogue officiel des formations en France et son URL est correcte."
+          },
+          {
+            "text": "Parcoursup : procédures et taux d'accès officiels — https://www.parcoursup.fr",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Parcoursup est le portail officiel français d'accès à l'enseignement supérieur et son URL est correcte."
+          },
+          {
+            "text": "SCUIO : service d'orientation de ton université",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le SCUIO (Service Commun Universitaire d'Information et d'Orientation) existe réellement dans les universités françaises."
+          },
+          {
+            "text": "CIO / Psy-EN : conseiller·ères d'orientation en lycée",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les Centres d'Information et d'Orientation (CIO) et les psychologues de l'Éducation nationale (Psy-EN) sont des services officiels français d'orientation."
+          },
+          {
+            "text": "Licence Droit (Paris 5e) non présente dans notre base de données vérifiée",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "L'absence de données RAG rend impossible la vérification de cette affirmation spécifique."
+          }
+        ]
+      },
+      "C": {
+        "score": 1.0,
+        "n_claims": 4,
+        "claims": [
+          {
+            "text": "L'Université Panthéon-Assas (Paris 2) est l'une des institutions les plus prestigieuses en France pour étudier le droit",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Panthéon-Assas est effectivement une université prestigieuse reconnue en droit en France, avec une longue tradition juridique"
+          },
+          {
+            "text": "L'admission en première année de licence de droit se fait principalement via la plateforme Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "C'est le processus standard d'admission en licence à l'université en France depuis 2018"
+          },
+          {
+            "text": "Les spécialités HGGSP, HLP et LLCE sont mentionnées comme exemples de spécialités de baccalauréat",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Ces spécialités de bac réformé existent effectivement et correspondent aux réformes du lycée français"
+          },
+          {
+            "text": "La lettre de motivation et le projet de formation motivé sont des éléments clés dans le dossier Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Le projet de formation motivé est effectivement un élément obligatoire et central dans les dossiers Parcoursup"
+          }
+        ]
+      },
+      "D": {
+        "score": 1.0,
+        "n_claims": 4,
+        "claims": [
+          {
+            "text": "les admissions en licence de droit se font via Parcoursup",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les licences de droit en France sont effectivement accessibles via Parcoursup, c'est un fait établi."
+          },
+          {
+            "text": "les critères peuvent inclure les notes du lycée, la motivation et le projet professionnel",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Les critères d'admission Parcoursup pour les formations supérieures incluent classiquement ces éléments (notes, motivation, projet)."
+          },
+          {
+            "text": "Université Panthéon-Assas propose une Licence de Droit",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Panthéon-Assas est une université parisienne reconnue spécialisée en droit ; elle propose effectivement des licences de droit."
+          },
+          {
+            "text": "RDV avec le Psy-EN, le SCUIO, ou le CIO",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Ces acronymes désignent des services d'orientation réels en France (Psychologue de l'Éducation Nationale, Service Commun Universitaire d'Information et d'Orientation, Centre d'Information et d'Orientation)."
+          }
+        ]
+      },
+      "E": {
+        "score": 0.56,
+        "n_claims": 25,
+        "claims": [
+          {
+            "text": "Université Paris Panthéon-Assas (Paris II)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement réel et connu, bien que le nom officiel exact soit « Université Paris Panthéon-Assas »"
+          },
+          {
+            "text": "Centre Assas à Paris 5e",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Campus historique d'Assas localisé à Paris 5e, information cohérente"
+          },
+          {
+            "text": "Centre Mélun en Seine-et-Marne",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Assas possède un campus à Mélun, localisation correcte"
+          },
+          {
+            "text": "Centre Vaugirard à Paris 15e",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Campus Vaugirard d'Assas localisé à Paris 15e, information cohérente"
+          },
+          {
+            "text": "Taux d'admission Centre Assas ~5-10% en 2023",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffre plausible pour une grande université sélective mais non vérifiable sans données officielles"
+          },
+          {
+            "text": "Taux d'admission Centre Mélun/Vaugirard ~15-20%",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Estimation plausible mais non vérifiable sans données officielles"
+          },
+          {
+            "text": "École Nationale de la Magistrature (ENA)",
+            "type": "other",
+            "status": "contradicted",
+            "reason": "L'ENA n'est pas l'École Nationale de la Magistrature. L'ENA est l'École Nationale d'Administration. La magistrature a sa propre école (ENMP)"
+          },
+          {
+            "text": "IUT de Sceaux (Paris-Saclay) proposant BUT Carrières Juridiques",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Établissement non vérifiable avec précision ; Sceaux a bien un IUT mais la rattachement exact et les programmes ne sont pas certains"
+          },
+          {
+            "text": "Lycée Jean-Baptiste Say (Paris) pour BTS Notariat",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Lycée réel mais l'existence d'un BTS Notariat à cet établissement n'est pas vérifiée"
+          },
+          {
+            "text": "Lycée Condorcet (Paris) pour BTS Métiers du Renseignement",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Lycée réel mais l'existence d'un BTS Métiers du Renseignement à cet établissement n'est pas vérifiée"
+          },
+          {
+            "text": "IESEG (Lille/Paris) avec parcours droit et management",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "École connue avec campus à Lille et Paris, propose effectivement des parcours en droit"
+          },
+          {
+            "text": "ESSCA (Angers/Paris) avec option droit des affaires",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "École connue avec campus à Angers et Paris, offre des formations en droit des affaires"
+          },
+          {
+            "text": "Classe préparatoire D1 (Droit-Économie)",
+            "type": "other",
+            "status": "contradicted",
+            "reason": "La prépa D1 n'existe pas sous ce nom. Les prépas existantes sont D1 (Droit - Économie - Gestion) ou autres filières, mais pas formellement appelée « D1 Droit-Économie »"
+          },
+          {
+            "text": "Lycée Henri-IV (Paris) proposant D1",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée réel et prestigieux proposant des classes préparatoires, bien qu'on ne puisse vérifier précisément la filière D1"
+          },
+          {
+            "text": "Lycée Louis-le-Grand (Paris) proposant D1",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée réel et prestigieux proposant des classes préparatoires"
+          },
+          {
+            "text": "Lycée Pierre-de-Fermat (Toulouse) proposant D1",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Lycée réel à Toulouse proposant des classes préparatoires"
+          },
+          {
+            "text": "FUN MOOC – Introduction au droit",
+            "type": "report",
+            "status": "unverifiable",
+            "reason": "FUN MOOC existe mais la présence exacte d'un MOOC nommé « Introduction au droit » n'est pas vérifiable"
+          },
+          {
+            "text": "Olympiades de Droit",
+            "type": "other",
+            "status": "unverifiable",
+            "reason": "Existence de concours/olympiades en droit pour lycéens plausible mais non vérifiable précisément"
+          },
+          {
+            "text": "Paris 1 Panthéon-Sorbonne",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université réelle et prestigieuse avec formation en droit"
+          },
+          {
+            "text": "Paris-Nanterre",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université réelle proposant formations en droit"
+          },
+          {
+            "text": "Aix-Marseille",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université réelle avec formations en droit réputée en droit privé"
+          },
+          {
+            "text": "Université de Bordeaux",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université réelle proposant formations en droit"
+          },
+          {
+            "text": "Université de Lyon 3",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Université réelle (Jean Moulin Lyon 3) spécialisée notamment en droit"
+          },
+          {
+            "text": "CEI International comme prépa privée",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Structure plausible mais non vérifiée comme organisme de préparation à Parcoursup"
+          },
+          {
+            "text": "Licences bidisciplinaires Droit-Économie à Paris Dauphine",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "Paris Dauphine existe mais l'existence d'une licence bidisciplinaire Droit-Économie n'est pas vérifiée"
+          }
+        ]
+      },
+      "F": {
+        "score": 0.6,
+        "n_claims": 5,
+        "claims": [
+          {
+            "text": "Panthéon-Assas est très sélective en droit (parmi les facs les plus demandées en France)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Panthéon-Assas Paris 2 est effectivement reconnue comme l'une des facultés de droit les plus sélectives et demandées en France"
+          },
+          {
+            "text": "Profil type : très bon niveau général (14-16+)",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Estimation plausible mais non vérifiée ; l'assistant lui-même reconnaît qu'Assas ne publie pas de moyenne officielle"
+          },
+          {
+            "text": "Spécialités HLP, SES, HGGSP valorisées",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Ces spécialités sont effectivement valorisées pour les études de droit au niveau général"
+          },
+          {
+            "text": "le taux d'accès Parcoursup est généralement <20-30 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Estimation sans source précise ; l'assistant reconnaît ne pas avoir le taux exact et conseille de vérifier sur Parcoursup officiel"
+          },
+          {
+            "text": "Paris 1, Nanterre, Lyon 3 sont aussi d'excellentes facs publiques en droit",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Ces trois universités sont effectivement reconnues comme excellentes facultés de droit publiques en France"
+          }
+        ]
+      },
+      "G": {
+        "score": 0.6666666666666666,
+        "n_claims": 12,
+        "claims": [
+          {
+            "text": "Université Panthéon-Assas (Paris II)",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement réel, bien connu sous ce nom officiel"
+          },
+          {
+            "text": "Licence Droit à l'Université Panthéon-Assas est l'une des licences de droit les plus demandées en France",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Réputation largement documentée, Assas est effectivement très sélective en droit"
+          },
+          {
+            "text": "En 2025, la Licence Droit d'Assas a reçu plus de 15 000 vœux pour environ 1 200 places",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Chiffres plausibles pour une licence très demandée, mais sans accès direct à Parcoursup 2025, impossible à confirmer précisément"
+          },
+          {
+            "text": "taux d'accès inférieur à 10 %",
+            "type": "percentage",
+            "status": "unverifiable",
+            "reason": "Cohérent avec les chiffres (15000 vœux pour 1200 places ≈ 8%), mais non vérifiable sans source officielle"
+          },
+          {
+            "text": "cod_aff_form: 12345",
+            "type": "onisep_id",
+            "status": "contradicted",
+            "reason": "Identifiant fictif manifestement inventé (format numérique générique, pas un vrai code Parcoursup/ONISEP)"
+          },
+          {
+            "text": "Université Paris Nanterre",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement réel, université publique à Paris"
+          },
+          {
+            "text": "Université de Strasbourg",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement réel, université publique en France"
+          },
+          {
+            "text": "Lyon 2",
+            "type": "school",
+            "status": "verified_general",
+            "reason": "Établissement réel (Université Lumière Lyon 2)"
+          },
+          {
+            "text": "BUT Carrières Juridiques",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Formation réelle existant en France dans plusieurs IUT"
+          },
+          {
+            "text": "BUT CJ de l'IUT de Sceaux",
+            "type": "school",
+            "status": "unverifiable",
+            "reason": "IUT de Sceaux existe, mais impossibilité de confirmer l'existence spécifique d'un BUT Carrières Juridiques à ce campus sans consultation du catalogue"
+          },
+          {
+            "text": "SCUIO (Service Commun Universitaire d'Information et d'Orientation)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Structure officielle réelle dans les universités françaises"
+          },
+          {
+            "text": "CIO (Centre d'Information et d'Orientation)",
+            "type": "other",
+            "status": "verified_general",
+            "reason": "Structure officielle réelle du système éducatif français"
+          }
+        ]
+      }
+    }
+  }
+]

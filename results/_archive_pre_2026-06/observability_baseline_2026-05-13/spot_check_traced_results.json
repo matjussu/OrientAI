@@ -1,0 +1,221 @@
+{
+  "session_id": "spot_check_baseline_1778706472",
+  "timestamp": "2026-05-13 23:10:22",
+  "corpus": "data/processed/formations_v5.json",
+  "index": "data/embeddings/formations_v5.index",
+  "n_questions": 13,
+  "n_pass_domain_match": 4,
+  "results": [
+    {
+      "q_id": "Q01",
+      "question": "Quels métiers vont recruter en Occitanie en 2030 ?",
+      "expected_domain": "metier_prospective",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 36.119,
+      "answer_preview": "Je comprends que tu cherches à anticiper les débouchés en Occitanie pour orienter ton projet. Voici les pistes **concrètes** que je peux te partager à partir des formations répertoriées dans la région…",
+      "n_top": 12,
+      "error": null
+    },
+    {
+      "q_id": "Q02",
+      "question": "Combien coûte le logement étudiant CROUS à Lyon ?",
+      "expected_domain": "crous",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 4.228,
+      "answer_preview": "Je n'ai pas de formation ni d'information sur les logements CROUS à Lyon dans mes sources.\n\nPour obtenir des réponses précises sur les tarifs des résidences CROUS, je te conseille de consulter directe…",
+      "n_top": 12,
+      "error": null
+    },
+    {
+      "q_id": "Q03",
+      "question": "Quels sont les blocs de compétences du RNCP 38450 ?",
+      "expected_domain": "competences_certif",
+      "n_domain_match_top5": 5,
+      "domains_in_top5": [
+        "competences_certif",
+        "competences_certif",
+        "competences_certif",
+        "competences_certif",
+        "competences_certif"
+      ],
+      "latency_s": 4.03,
+      "answer_preview": "Je n'ai pas d'information sur le **RNCP 38450** dans mes sources actuelles. Les certifications disponibles concernent d'autres codes RNCP (ex: 35298, 35307, etc.) et des métiers comme **Responsable de…",
+      "n_top": 10,
+      "error": null
+    },
+    {
+      "q_id": "Q04",
+      "question": "Quel salaire après un Master Droit en région PACA ?",
+      "expected_domain": "insertion_pro",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.245,
+      "answer_preview": "Je comprends que tu cherches à évaluer les perspectives salariales après un **master en droit en région PACA**. Malheureusement, **aucune des sources disponibles** ne fournit de données sur les salair…",
+      "n_top": 10,
+      "error": null
+    },
+    {
+      "q_id": "Q05",
+      "question": "Que fait un actuaire au quotidien ?",
+      "expected_domain": "metier_detail",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        "metier",
+        "metier",
+        "metier",
+        "metier",
+        "metier"
+      ],
+      "latency_s": 8.18,
+      "answer_preview": "Tu t’intéresses au métier d’**[actuaire](https://www.onisep.fr/http/redirection/metier/slug/MET.861)** et veux savoir en quoi consiste son quotidien. Voici les missions clés, tirées des fiches ONISEP …",
+      "n_top": 10,
+      "error": null
+    },
+    {
+      "q_id": "Q06",
+      "question": "Quelles aides financières pour les étudiants boursiers ?",
+      "expected_domain": "financement_etudes",
+      "n_domain_match_top5": 5,
+      "domains_in_top5": [
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes"
+      ],
+      "latency_s": 6.241,
+      "answer_preview": "Je comprends que tu cherches à sécuriser ton budget pour tes études. Voici les dispositifs **spécifiques aux étudiants boursiers** que je peux te confirmer :\n\n• **Bourse sur critères sociaux CROUS** :…",
+      "n_top": 6,
+      "error": null
+    },
+    {
+      "q_id": "Q07",
+      "question": "Quelles formations en Guadeloupe ?",
+      "expected_domain": "territoire_drom",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 11.103,
+      "answer_preview": "Tu cherches des formations accessibles en Guadeloupe après le bac. Voici les options disponibles dans mes sources, toutes proposées par **[l’Université des Antilles - Pôle Guadeloupe](https://www.univ…",
+      "n_top": 10,
+      "error": null
+    },
+    {
+      "q_id": "Q08",
+      "question": "Marché de l'emploi cadres en Bretagne ?",
+      "expected_domain": "apec_region",
+      "n_domain_match_top5": 1,
+      "domains_in_top5": [
+        "apec_region"
+      ],
+      "latency_s": 4.96,
+      "answer_preview": "D’après les dernières données, le marché des cadres en Bretagne montre une dynamique plutôt positive en 2025, à contre-courant des tendances nationales.\n\n- **Recrutements 2025** : 9 990 postes (+5 % v…",
+      "n_top": 1,
+      "error": null
+    },
+    {
+      "q_id": "Q09",
+      "question": "Salaire moyen d'un cadre supérieur (PCS 37) ?",
+      "expected_domain": "insee_salaire",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [],
+      "latency_s": 13.094,
+      "answer_preview": "Je n'ai pas de formation pertinente dans mes sources pour cette question, ni de données salariales associées à la PCS 37.\n\nPour des chiffres officiels sur les salaires par catégorie socio-professionne…",
+      "n_top": 0,
+      "error": null
+    },
+    {
+      "q_id": "Q10",
+      "question": "Insertion à 3 ans après un Bac pro Industrie ?",
+      "expected_domain": "formation_insertion",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro"
+      ],
+      "latency_s": 4.526,
+      "answer_preview": "Je n’ai pas de données dans mes sources sur l’insertion après un **Bac pro Industrie** (ni à 3 ans, ni à d’autres horizons). Mes chiffres concernent uniquement des docteurs en **biologie, médecine et …",
+      "n_top": 10,
+      "error": null
+    },
+    {
+      "q_id": "Q11",
+      "question": "Quelles sont les spécialités possibles en BAC PRO agriculture ?",
+      "expected_domain": "voie_pre_bac",
+      "n_domain_match_top5": 1,
+      "domains_in_top5": [
+        "voie_pre_bac",
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.019,
+      "answer_preview": "D’après tes centres d’intérêt pour le secteur agricole, voici les spécialités de **bac pro** référencées dans mes sources, toutes accessibles en 3 ans [source S3/S4/S5] :\n\n• **[Bac pro aménagements pa…",
+      "n_top": 10,
+      "error": null
+    },
+    {
+      "q_id": "Q12",
+      "question": "Taux de réussite L1 pour un bac S avec mention bien ?",
+      "expected_domain": "parcours_bacheliers",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.708,
+      "answer_preview": "Je préfère ne pas répondre sur ce point de manière détaillée, car ma réponse contiendrait des imprécisions factuelles importantes qui pourraient t'induire en erreur.\n\nDétails :\n• Le 'bac S' a été supp…",
+      "n_top": 6,
+      "error": null
+    },
+    {
+      "q_id": "Q13",
+      "question": "Quelle insertion après un doctorat en chimie ?",
+      "expected_domain": "insertion_pro",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 11.453,
+      "answer_preview": "Je comprends que tu te demandes quelles perspectives s’offrent après un doctorat en chimie. Malheureusement, mes sources ne fournissent **aucune donnée** sur l’insertion professionnelle (taux d’emploi…",
+      "n_top": 10,
+      "error": null
+    }
+  ]
+}

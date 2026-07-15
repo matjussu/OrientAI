@@ -1,0 +1,122 @@
+{
+  "A10": {
+    "our_rag_enriched_large": 12.34334921836853,
+    "our_rag_enriched_medium": 11.961989164352417
+  },
+  "A11": {
+    "our_rag_enriched_large": 13.435304403305054,
+    "our_rag_enriched_medium": 7.882650375366211
+  },
+  "A12": {
+    "our_rag_enriched_large": 10.536583662033081,
+    "our_rag_enriched_medium": 7.593703031539917
+  },
+  "A6": {
+    "our_rag_enriched_large": 9.855235576629639,
+    "our_rag_enriched_medium": 9.197366714477539
+  },
+  "A7": {
+    "our_rag_enriched_large": 15.400617599487305,
+    "our_rag_enriched_medium": 7.841208219528198
+  },
+  "A8": {
+    "our_rag_enriched_large": 13.432993412017822,
+    "our_rag_enriched_medium": 8.98546028137207
+  },
+  "A9": {
+    "our_rag_enriched_large": 11.404938459396362,
+    "our_rag_enriched_medium": 26.07125997543335
+  },
+  "B10": {
+    "our_rag_enriched_large": 15.388089179992676,
+    "our_rag_enriched_medium": 9.307935953140259
+  },
+  "B11": {
+    "our_rag_enriched_large": 13.763669967651367,
+    "our_rag_enriched_medium": 9.57009220123291
+  },
+  "B12": {
+    "our_rag_enriched_large": 15.0759117603302,
+    "our_rag_enriched_medium": 13.46268105506897
+  },
+  "B6": {
+    "our_rag_enriched_large": 15.629782676696777,
+    "our_rag_enriched_medium": 8.6201810836792
+  },
+  "B7": {
+    "our_rag_enriched_large": 15.21676778793335,
+    "our_rag_enriched_medium": 9.778718709945679
+  },
+  "B8": {
+    "our_rag_enriched_large": 12.933892250061035,
+    "our_rag_enriched_medium": 9.061133623123169
+  },
+  "B9": {
+    "our_rag_enriched_large": 17.904603719711304,
+    "our_rag_enriched_medium": 9.249155044555664
+  },
+  "C10": {
+    "our_rag_enriched_large": 7.851139068603516,
+    "our_rag_enriched_medium": 7.1648337841033936
+  },
+  "C11": {
+    "our_rag_enriched_large": 13.274093389511108,
+    "our_rag_enriched_medium": 6.683928966522217
+  },
+  "C12": {
+    "our_rag_enriched_large": 11.230361700057983,
+    "our_rag_enriched_medium": 8.173346042633057
+  },
+  "C6": {
+    "our_rag_enriched_large": 9.010135650634766,
+    "our_rag_enriched_medium": 13.345519781112671
+  },
+  "C7": {
+    "our_rag_enriched_large": 13.336695671081543,
+    "our_rag_enriched_medium": 5.772608757019043
+  },
+  "C8": {
+    "our_rag_enriched_large": 15.276234149932861,
+    "our_rag_enriched_medium": 5.897763729095459
+  },
+  "C9": {
+    "our_rag_enriched_large": 18.313135385513306,
+    "our_rag_enriched_medium": 6.0703301429748535
+  },
+  "D10": {
+    "our_rag_enriched_large": 16.21858835220337,
+    "our_rag_enriched_medium": 7.721343994140625
+  },
+  "D11": {
+    "our_rag_enriched_large": 13.252454280853271,
+    "our_rag_enriched_medium": 10.587003707885742
+  },
+  "D12": {
+    "our_rag_enriched_large": 12.349600076675415,
+    "our_rag_enriched_medium": 7.715524911880493
+  },
+  "D6": {
+    "our_rag_enriched_large": 22.32316541671753,
+    "our_rag_enriched_medium": 8.730417251586914
+  },
+  "D7": {
+    "our_rag_enriched_large": 10.359094858169556,
+    "our_rag_enriched_medium": 6.128215074539185
+  },
+  "D8": {
+    "our_rag_enriched_large": 12.400919198989868,
+    "our_rag_enriched_medium": 5.823925733566284
+  },
+  "D9": {
+    "our_rag_enriched_large": 11.921669721603394,
+    "our_rag_enriched_medium": 6.940239667892456
+  },
+  "E10": {
+    "our_rag_enriched_large": 14.236734628677368,
+    "our_rag_enriched_medium": 7.738482713699341
+  },
+  "E11": {
+    "our_rag_enriched_large": 9.252803087234497,
+    "our_rag_enriched_medium": 7.189779996871948
+  }
+}

@@ -1,0 +1,5398 @@
+[
+  {
+    "id": "G01",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Détails complets et équilibrés, réaliste, donne les alternatives, encourage la réflexion."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Information vague, peu de détails sourcés, dominant Paris."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Score d'accès précis mais manque le reste, focus Paris, source mentionnée."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Bonne précision de sources et réaliste, mention de quelques choix mais dominé par Paris."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Précision élevée des sources, varié en détails et encourage à explorer."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Pas de données pertinentes, pas de diversité ou découv. métiers."
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Raisonnablement sourcé, mentionne quelques options mais limité en découverte."
+      }
+    }
+  },
+  {
+    "id": "G02",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Sourçage et réalisme corrects, mais diversité géographique limitée."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Agentivité bien développée, mais manque de détails sourcés."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Bonne diversité géographique et sourçage satisfaisant."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Réponse très générale avec peu de détails et de sourçage."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Aucune information pertinente ou détaillée fournie."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse complète et bien sourcée avec une excellente couverture."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse extrêmement détaillée et bien équilibrée sur tous les critères."
+      }
+    }
+  },
+  {
+    "id": "G03",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Description standard sans source précise"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Mentionne des alternatives précises avec sourcing"
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Peu de détails sur sélectivité et sourcing"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Très détaillé avec sourcing et alternatives"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Propose des critères clairs mais moins de sources"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Données précises avec un sourcing direct"
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Informations incorrectes pour le contexte MPSI"
+      }
+    }
+  },
+  {
+    "id": "G04",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Taux précis, sources exactes, propose des alternatives réalistes."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Priorisation des labels, quelques données chiffrées, approche Paris-centrée."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Mentions de sources, chiffres de sélectivité moyennement précises."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Focus sur Paris, absence de sourcing, présente des alternatives."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Mention alternative PAS, peu de sourcing."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Excellente couverture de tous les critères."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Mentionne vérification sur Parcoursup, pas de détails concrets."
+      }
+    }
+  },
+  {
+    "id": "G05",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Donne des taux d'accès précis et guide l'étudiant vers Parcoursup mais se limite à Paris."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne bien les lycées parisiens mais reste vague sur les taux d'accès."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Priorise les établissements publics et propose des taux d'accès moyens."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Fournit des informations complètes, détaillées et variées avec des sources et alternatives."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 7,
+        "justification": "Très limité dans l'information donnée sur le programme ciblé, pas de diversité géographique."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Aborde les aspects importants mais manque de détails précis."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Aide limitée sans sources ni alternatives, se contente de renvoyer à Parcoursup."
+      }
+    }
+  },
+  {
+    "id": "G06",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Bon réalisme, manque de sourçage."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Excellente neutralité et sourçage, réaliste mais peu exploratoire."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Informations utiles mais manque de sources et diversité limitée."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Informations basiques, manque de profondeur et de diversité."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Très complet avec sourçage et options variées."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Bonne diversité et précision, manque de découverte."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Excellente approche globale, avec des options et un bon réalisme."
+      }
+    }
+  },
+  {
+    "id": "G07",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Mentionne les différentes voies d'admission avec une incitation à réfléchir à sa situation."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Fournit une description détaillée des concours et des statistiques d'admission."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Très détaillée avec des ressources, des taux de sélectivité précis et des voies alternatives."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Explique bien les voies d'admission, quelques alternatives précises mais moins de sourçage."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Bonne explication des voies d'admission avec un équilibre entre détail et clarté."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Clarifie les admissions parallèles mais manque de détails sur la diversité géographique."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Couvre bien la région mais se concentre sur des programmes alternatifs peu pertinents."
+      }
+    }
+  },
+  {
+    "id": "G08",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Informations complètes et bien sourcées avec alternatives réalistes et options."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Réponse très limitée avec peu d'informations."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Réponse très détaillée avec des options et alternatives complètes."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Informations générales, conseille sur Parcoursup avec quelques éléments de stratégie."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Fournit des conseils et perspectives mais manque de données précises."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Informations peu détaillées, orientées vers des ressources externes."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Offre quelques indications générales mais manque de détails sur le processus."
+      }
+    }
+  },
+  {
+    "id": "G09",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Détails précis, soutenu par des sources et des débouchés diversifiés."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Fournit des sources et statistiques claires, bonnes alternatives régionales."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Informations générales avec moins de détails et de diversité géographique."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Présentation simple avec un manque de diversité géographique et de détails sourcés."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Bonne couverture régionale et exemples pratiques, manque de profondeur sur des métiers spécifiques."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Propose plusieurs options réalistes avec encouragement à la réflexion."
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Pratique mais trop général, manque de détails et de diversité."
+      }
+    }
+  },
+  {
+    "id": "G10",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Information détaillée et complète, avec des sources précises."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Réponse très générale, peu de détails ou de diversité."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Des détails sur les critères d'admission, mais manque de précisions et de diversité géographique."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Couverture complète avec des statistiques précises et des conseils personnalisés."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Information complète et bien sourcée, avec des questions engageantes pour l'étudiant."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Peu d'informations spécifiques et de diversité."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Information factuelle mais manque de détails précis et de conseils variés."
+      }
+    }
+  },
+  {
+    "id": "G11",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Équilibre entre public/privé, encourage la réflexion, mais sélectivité peu détaillée."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bon sourçage avec incitation à approfondir, divers métiers mentionnés."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Infos précises sur les salaires et métiers variés, faible sur le sourçage."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Propose différentes options et explique facteurs, mais peu précis sur salaires."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Encourage l'exploration de métiers et de sources mais manque de détails."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Excellent détail et diversité, avec bonnes sources et informations précises."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Mention des sources adéquates mais absence de données salariales précises."
+      }
+    }
+  },
+  {
+    "id": "G12",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Ne mentionne pas explicitement de labels officiels, pas de sources précises, offre des débouchés classiques, mais pas de chiffres concrets."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Cite des sources précises, mentionne les sélectivités, propose des alternatives réalistes, et encourage la réflexion."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Pas de sources, offre des options mais reste vague sur les perspectives concrètes."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Décrit bien des parcours avec des statistiques et offre des réflexions encourageantes."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Couvre tous les aspects avec des détails précis, citations de sources, et offre des perspectives variées avec des données concrètes."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Bon équilibre entre données concrètes et options réalistes, encourageant à l'action avec détails pratiques."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Présente des options classiques sans détails sur la sélectivité ni des sources précises."
+      }
+    }
+  },
+  {
+    "id": "G13",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne diversité géographique et réalisme avec explication des démarches."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Propose des plans alternatifs avec beaucoup d'agentivité."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose une réflexion sur les motivations de l'étudiant."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Explication détaillée des choix de BUT et inclusion des labels officiels."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Cite des taux d'accès précis et mentionne des sources vérifiables."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Offre des plans personnalisés et encourage l'étudiant à réfléchir."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Explique les options avec des conseils pratiques et encourage la réflexion."
+      }
+    }
+  },
+  {
+    "id": "G14",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Bonne analyse des chances et réalités avec des options, mais manque de sources précises. Couvre plutôt bien Paris."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Sourçage correct et institutions mentionnées, mais ne répond pas directement à la question. Concentre sur Paris."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Réponse très générale sans détail ni diversité géographique, peu de sourcing."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Propose des alternatives et sources pertinentes avec une bonne couverture géographique et incite à la réflexion."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Données chiffrées solides avec mise en contexte réaliste et options, manque de diversité géographique."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Bonne diversité géographique et réaliste, mais manque de sourçage précis."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Très complet sur tous les plans avec des données variées, un bon sourçage et des conseils utiles."
+      }
+    }
+  },
+  {
+    "id": "G15",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Priorise les labels officiels, offre des sources précises, propose des options et encourage la réflexion."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Diversité géographique bien couverte, suggestions classiques, réaliste sans fournir de sources précises."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Mentionne des institutions sans détails, offre des options limitées, diversité géographique moyenne."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Très complet, réaliste, diversifié, propose des options et sources valables, découvre des pistes nombreuses."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Fournit des informations limitées, sans sources précises, peu de variété et d'originalité."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne des sources et diversités de formations, offre quelques options mais avec peu de détails."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Couvre bien la diversité géographique et propose des options avec une vision réaliste des salaires."
+      }
+    }
+  },
+  {
+    "id": "G16",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Pas de mention des labels publics, pas de données précises, peu de diversité géographique."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Mentionne des sources, discute de sélectivité, mais manque de diversité."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Couvre plusieurs aspects avec des données et propose des pistes diversifiées."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Excellent détails et sourcing, couvre largement la France."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Informations limitées avec peu de détails et axé sur une référence."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Bonne couverture et suggestions pratiques, bien détaillée."
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Donne un aperçu général mais manque de détails et de sourcing."
+      }
+    }
+  },
+  {
+    "id": "G17",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Sources et formations publiques mentionnées, mais peu de détails sur débouchés."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Propose des alternatives et encourage la réflexion, mais manque de détails géographiques."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 14,
+        "justification": "Excellente diversité et découverte avec approche réaliste, bien sourcé."
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Peu de détails et aucune source, mais encourageant pour l'agentivité."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Bonne diversité géographique avec propositions originales, mais sources vagues."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Bonne diversité et agentivité, mais manque de sources précises."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Excellente couverture géographique et diversité, réaliste avec de bons détails."
+      }
+    }
+  },
+  {
+    "id": "G18",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Cite des institutions et formations publiques avec précisions, donne taux d'accès et sources vérifiables."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne des formations publiques, aborde sélectivité, mais les sources et options sont moins développées."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Priorise formations publiques, détaille sélectivité et démarches pratiques avec des options variées."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Suggestions simplistes sans source ni diversité géographique."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Fournit des plans nuancés avec priorité aux formations publiques adaptées au profil."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Propose des options réalistes avec des données précises et diverses formations méconnues."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Suggestions réalistes avec approche diversifiée et des métiers moins connus."
+      }
+    }
+  },
+  {
+    "id": "G19",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Détails complets et équilibrés avec des sources précises."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Réponse limitée, manque de détail et de réalisme."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse très détaillée, avec des pistes variées et sourcées."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Réponse plus générale, moins sourcée avec peu de diversité géographique."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Varie les secteurs mais manque de données précises et de sourçage."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Réponse très sommaire avec peu de détails et aucune source."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Excellente réponse, complète et bien sourcée."
+      }
+    }
+  },
+  {
+    "id": "G20",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Infos réalistes sur passerelles But/BTS mais peu de diversités géographiques mentionnées."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Explications détaillées, précises et bien sourcées avec un plan d’actions clair."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Infos concises sur exigences et options mais peu de diversité géographique."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Manque d'informations utiles et de diversité géographique."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Propose des solutions, mais peu de précisions et diversité géographique limitée."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Propose des options mais manque de détails et de sourçage."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Très complet et bien documenté sur les options et parcours possibles."
+      }
+    }
+  },
+  {
+    "id": "G21",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 3,
+        "justification": "Réponse basique, peu d'informations sur neutralité, réalisme ou sourçage."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Mentionne quelques aspects techniques mais manque de diversité et de sourçage."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Donne des exemples concrets et cite des sources, mais manque de neutralité et réalisme."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Offre une vue complète sur le métier, avec une certaine diversité et un bon réalisme."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Discussion plaisante mais manque de neutralité et de sourçage détaillé."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 3,
+        "justification": "Présentation standard, peu d'éléments substantiels en termes de réalisme ou de neutralité."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Remarquable précision et richesse d'informations sur tous les aspects du métier."
+      }
+    }
+  },
+  {
+    "id": "G22",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Cite des métiers dans la cybersécurité et les compétences associées avec quelques sources, mais peu de diversité géographique."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Détaille des formations avec de nombreuses sources vérifiables, couvre plusieurs régions, propose des alternatives réalistes et un large éventail de compétences."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Mentionne des formations labellisées, propose une couverture territoriale étendue, et incite à la réflexion."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Explique clairement les compétences requises mais avec moins de détails sourcés, couverture géographique raisonnable."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Propose un aperçu général des compétences nécessaires mais manque de détails et de sourçage précis."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Présente des niveaux de compétences, incite à la réflexion mais avec un sourcing limité."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Fournit des compétences techniques et formations possibles avec quelques références mais reste vague sur les sources."
+      }
+    }
+  },
+  {
+    "id": "G23",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Propose plusieurs options avec sourcing précis et question ouverte."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Détail complet avec sourcing vérifiable et diversité géographique."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Bon équilibre entre options et information, mais manque de sourcing précis."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Propose des pistes concrètes avec bonne diversité géographique."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Diversité géographique, mais sourcing et détails à préciser."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Manque d'informations détaillées et de diversité géographique."
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Suggestion générale sans détails ni sourcing clair."
+      }
+    }
+  },
+  {
+    "id": "G24",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Priorise les labels officiels et propose des taux d'accès précis."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne plusieurs villes et propose des options, mais sourçage faible."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Réponse ouverte et encourage la réflexion, mais manque de détails concrets."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Couverture exhaustive, sourcage précis, et large diversité géographique."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Présente les formations et débouchés mais manque de sourçage."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne diversité géographique et agentivité élevée."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Pas de détails concrets, minimal en découvertes."
+      }
+    }
+  },
+  {
+    "id": "G25",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Réponse équilibrée mais sans sources précises."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Très bien sourcé avec des données précises et des alternatives."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Réponse limitée en profondeur mais facilite la réflexion."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse exhaustive et bien structurée avec des données vérifiables."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Offre plusieurs options mais avec moins de détails sourcés."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Simple et directe mais manque de détails et de sources précises."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Bien détaillée mais manque de sources précises."
+      }
+    }
+  },
+  {
+    "id": "G26",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Réponse générale sans précision institutionnelle ou géographique."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Mentionne des écoles mais reste vague sur la selectivité."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Cite des sources sans données chiffrées, diversifie légèrement les écoles mentionnées."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Réponse très détaillée avec une bonne couverture des critères."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Réponse structurée avec un bon équilibre entre précision et diversité."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Réponse concise qui manque de profondeur sur la selectivité et les données."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Détails suffisants avec une diversité géographique raisonnable."
+      }
+    }
+  },
+  {
+    "id": "G27",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Mentionne des tendances globales sans détails spécifiques ou sourçage."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Donne des pistes et défis mais reste vague sur les chiffres et spécificités géographiques."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Information détaillée avec sources, obstacles spécifiques et perspective géographique."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Suggestions vagues et principalement dirigées, encourage moins l'exploration personnelle."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Très général sans détails ni sourçage, mais propose quelques directions de pensée."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bon équilibre entre détail, tendances émergentes et conseils concrets, mentionne des lieux et métiers variés."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Peu d'informations concrètes et directives fermées sans encourager la découverte."
+      }
+    }
+  },
+  {
+    "id": "G28",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bien structuré avec informations réalistes, mentions d'écoles variées et incite à explorer différentes options."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Informations générales sans détails, peu de sources et diversité limitée."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse complète avec nombreuses sources, détails sur la réalité du métier et diversité des formations."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Bonne diversité géographique, incite à la réflexion et présente des pistes réalistes."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Informations basiques, manque de sources et diversité géographique limitée."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Réponse sommaire, peu de détails pratiques et découverte limitée."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Informations générales avec quelques pistes, mais couverture géographique et sourcing peuvent être améliorés."
+      }
+    }
+  },
+  {
+    "id": "G29",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Mention d'organisations officielles sans données précises."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Bonne couverture de la sélectivité et mention de différentes formations."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Description large sans détails ni sources précises."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Indique les sources fiables mais sans chiffres."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Pas de données ni de suggestions concrètes."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse complète avec données, variations sectorielles et options éducatives."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Propose de consulter certaines sources mais sans détails."
+      }
+    }
+  },
+  {
+    "id": "G30",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Excellente diversité géographique et agentivité, réaliste avec sources et données chiffrées."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Informations générales, manque de détails sur la sélectivité ou des données précises."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Diversité géographique et créativité, manque de sources précises pour certaines affirmations."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Excellente diversité de secteurs et de métiers, nombreuses options et détails réalistes."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Pas de contenu pertinent pour la question posée."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Données chiffrées limitées, pas de détails géographiques, et peu d'agentivité."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Pas directement lié à la question, propose de consulter des ressources externes."
+      }
+    }
+  },
+  {
+    "id": "G31",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Confirme les dates sur le site officiel mais aucune mention de neutralité ni réalisme."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Calendrier général mais sourçage flou et pas de diversité géographique."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Ne propose pas d'alternatives ou de réflexions mais mentionne des sources vagues."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Donne une estimation réaliste avec recommandations mais sans diversité ou découvertes."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Référence au site officiel mais pas de détails supplémentaires."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Expliqué en détail avec des options mais sans précisions sourcées."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Ne fournit aucune information additionnelle."
+      }
+    }
+  },
+  {
+    "id": "G32",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Explique bien les étapes, sources mentionnées, pose une question."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Ne fournit pas de réponse, aucune source, aucune nuance."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Bien structuré, informations détaillées, contient des conseils pratiques et des options."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Dates fournies, mais pas de diversification ni de mention de sources."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Explications vagues, pas de localisation diversifiée ni de sources précises."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Donne des étapes claires, mention de la source officielle, question posée."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Information basique, quelques conseils, mais manque de précisions et de sources."
+      }
+    }
+  },
+  {
+    "id": "G33",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Donne un lien et suggère de contacter un CIO, mais n'explore pas plus."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Indique vaguement les dates et parle de l'importance de cette phase."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Répond de manière succincte avec verif sur site officiel."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Donne des dates historiques et encourage à vérifier, propose de l'aide."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Explique bien à quoi sert la phase et quand elle a lieu historiquement."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Fournit des dates précédentes avec des conseils et stratégies détaillées."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Donne des dates limitées avec une source imprécise."
+      }
+    }
+  },
+  {
+    "id": "G34",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Procédure bien décrite mais manque de diversité géographique."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Sourçage correct, invite à l'action, géographiquement limité."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Informations précises mais manque de sourçage et de diversité géographique."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Bonne information et diversité géographique, sourçage vague."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Excellente diversité et détails, sourçage et réalisme bien présents."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Bonne agentivité mais manque de réalisme et découverte."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Peu d'informations précises et diversifiées."
+      }
+    }
+  },
+  {
+    "id": "G35",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Informations claires sur Parcoursup et proposition de vérifier les sources."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Sources officielles mentionnées, mais peu de détails sur l'agentivité et la diversité géographique."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Aucune information précise ni conseil sur les dates ou institutions."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse très complète, bien sourcée et offrant une grande diversité de conseils et d'options."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Fournit des informations et source quelques données, mais manque d'agentivité et de diversité géographique."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Bon niveau de détail et de conseils, mais pourrait développer davantage la diversité géographique."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Explications claires avec certaines recommandations, mais manque de diversité géographique."
+      }
+    }
+  },
+  {
+    "id": "G36",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Bonne diversité et agentivité, mais manque de sourçage précis."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Excellente couverture avec source et diversité, propose des métiers méconnus."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Diversité géographique mentionnée, mais manque de données précises."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 14,
+        "justification": "Bonne diversité et découverte, mais sourcing doit être renforcé."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Bon sourçage mais neutralité doit être améliorée, découvre peu."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Réaliste avec bonnes options d'agentivité, mais sourçage limité."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Bien diversifié et neutre, manque de sourçage et réalisme."
+      }
+    }
+  },
+  {
+    "id": "G37",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Réponse complète, détaillée avec sourçage précis et encouragement à l'agentivité."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Bonne diversité et neutralité, mais moins de données précises et d'encouragement à explorer les options."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Sourcage et réalisme performants, mais manque d'options variées et d'agentivité."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Présentation systématique mais manque de données chiffrées."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Bonne neutralité mais souffre d'absence totale de sourçage."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Spécificités locales bien couvertes, mais vagues informations sur la sélectivité et le sourçage absent."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Extensive, bien référencée et stimulante pour l'agentivité."
+      }
+    }
+  },
+  {
+    "id": "G38",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Réponse équilibrée avec détails sur les masters et options."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Réponse générale sans précision, bonne diversité géographique."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Bon équilibre entre diversité des formations et réalisme."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Forte en sourçage mais peu d'options proposées à l'étudiant."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Informations complètes avec divers exemples, très bien sourcée."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Réponse correcte avec des informations de base et des options limitées."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Bonne agentivité mais manque de détails précis et de variété géographique."
+      }
+    }
+  },
+  {
+    "id": "G39",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Réponse complète et détaillée, mentionne des formations publiques, donne des indications précises sur l'offre locale, propose des options et encourage la réflexion."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Bon équilibre entre neutralité, réalisme avec des taux d'accès précis, et couverture géographique, mais moins de diversité dans les métiers."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Réponse bien structurée avec mention des formations publiques, mais manque de données chiffrées précises, diversité géographique présente mais limitée."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Mention des formations publiques et options disponibles, mais manque de précision dans les données de sélectivité et diversité des parcours."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne diversité géographique et réalisme, avec des formations publiques citées; manque de variétés dans les métiers proposés."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose un bon éventail de formations publiques, mais manque de détails sur la sélectivité et les options professionnelles uniques."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Structure claire et bien expliquée, propose des options diverses adaptées au local, mais manque de données de sélectivité et de diversité en découverte."
+      }
+    }
+  },
+  {
+    "id": "G40",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Bonne explication de la formation mais sourcing limité."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Fournit un large éventail d'informations avec des sources précises et diversifiées."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Détaillée avec des parcours et des métiers originaux, sources variées."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Manque de détails et de sources mais quelques options proposées."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Informations limitées sur d'autres régions, peu de sourcing spécifique."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Propose des options et demande l'engagement de l'étudiant, sources vagues."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Bonne présentation mais manque de détails géographiques et de découverte."
+      }
+    }
+  },
+  {
+    "id": "G41",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Précis, neutre, propose des options diverses, sources mentionnées, incite à la réflexion."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne plusieurs écoles, réaliste mais sans détails, sourcing sommaire, peu d'options."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Offre plusieurs options mais manque de détails, pas de sourcing vérifiable, incite à la réflexion."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Options limitées et manque de détails, pas de sourcing clair, diversifie peu géographiquement."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Très complet, nombreuses options avec sourcing fiable, réaliste, et varié géographiquement."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Données précises et sourcing bien cité, multirégional avec divers choix."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Propose plusieurs options mais avec sourcing limité, réaliste mais peu d'originalité dans les métiers."
+      }
+    }
+  },
+  {
+    "id": "G42",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Priorise les labels, donne une bonne information sur l'université, offre des pistes de réflexion."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Priorise les labels officiels, mentionne des taux d'accès clairs, cite des sources précises, discute d'alternatives réalistes."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose une formation publique et d'autres options, évalue la sélectivité, encourage l'agentivité."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Liste des parcours éducatifs réalistes et alternatifs, offre une carte de réflexion large."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Approfondit plusieurs pistes de formation, discute de la faisabilité et encourage la réflexion personnelle."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Offre des informations basiques avec une encouragement minimale à l'agentivité."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Fournit une information détaillée et bien sourcée avec une large variété géographique et institutionnelle tout en explorant des options variées."
+      }
+    }
+  },
+  {
+    "id": "G43",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse extrêmement détaillée et complète, mentionne de nombreuses options avec données précises et un bon équilibre public/privé."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse claire avec focus sur différentes options adaptées au profil, bonnes sources et réalisme présent."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Réponse plus générale, moins diversifiée géographiquement et en options, mentionne quelques institutions."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne liste de formations avec diversité géographique importante, sources moins précises mais multiple options discutées."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Réponse informative avec différents établissements, mais manque de détails spécifiques sur l'accès et les alternatives."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose certaines pistes avec des exemples, des manques sur les taux d'accès précis et des informations sourcées."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Présente de nombreuses options avec détails sur les labels officiels, mais manque de précisions sur l'admission et les placements."
+      }
+    }
+  },
+  {
+    "id": "G44",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Couvre bien les formations disponibles avec un focus public, encourage réflexion mais manque de données précises"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Présente un bilan réaliste et complet, favorise la diversité géographique, bien structuré avec options motivantes"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Inclut options publiques mais reste générique, peu de détails pour approfondir les pistes"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Facilite la découverte mais manque en spécificité et en précisions sourcées"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Riche en détails sur les options locales, supporte un bon agentivité avec diversification"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Excellente couverture avec des données précises, offre une compréhension globale étayée et engageante"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Fournit des statistiques précises mais trop limité en options et diversité"
+      }
+    }
+  },
+  {
+    "id": "G45",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Prorise les labels institutionnels et propose des options variées."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Mentionne des options classiques et encourage un choix."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Détaille les formations avec diversité géographique."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Propose une vue d'ensemble et invite à la réflexion."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Fournit sources précises et diversité d'options."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Présente des options classiques sans détails."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Offre une couverture exhaustive avec des sources et diversité."
+      }
+    }
+  },
+  {
+    "id": "G46",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Propose des options sans données précises mais invite à prendre contact pour plus d'informations."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Réponse basique sans données précises et peu d'incitation à l'action."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Offre des données précises, des options variées et sourcées, encourage la réflexion."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Fournit des données claires et pratiques, encourage la planification."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Informations peu précises et sources vagues, peu de suggestion d'actions."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Information basique et répétée sans détail précis ou instruction concrète."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Fournit des informations générales, mentionne le processus DSE et différentes options."
+      }
+    }
+  },
+  {
+    "id": "G47",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne les formations publiques et priorise l'institutionnalité, mais manque de sourçage et diversité limitée à plusieurs régions."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Évoque les aides principales sans priorisation, peu de données sourcées et géographiquement limité."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Priorise l'institutionnalité et mentionne des sources, mais manque de réalisme et diversité géographique limitée."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Priorise les labels institutionnels, propose des pistes variées et couvre bien le territoire."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Excellente couverture et sourçage, avec un large éventail d'options présentées de manière agentive."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Omission de sources et diversité géographique surtout centrée sur Paris, offre des options mais avec peu de détails."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Très bon niveau de détail, sources mentionnées et large spectre d'options avec priorisation institutionnelle."
+      }
+    }
+  },
+  {
+    "id": "G48",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Couvre les étapes avec objectivité et offre des conseils."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Détails précis, bien sourcé, et offre des alternatives."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Procédure claire et encourage la réflexion."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Informations basiques sans profondeur d'analyse."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Détails sur les résidences mais peu de diversité géographique."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Options diversifiées et bien sourcées."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Exploration complète mais standard."
+      }
+    }
+  },
+  {
+    "id": "G49",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Infos détaillées, sourçage correct, peu de diversité géo."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Explications réalistes et sourcées, diversifiée géo limitée."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Infos basiques avec recommandation de vérifier les sources."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Oriente vers des sources fiables, pas de découverte."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Très complet et détaillé, diversifié, incite à explorer."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Généraliste avec renvoi vers des sources officielles."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Renvoit vers site officiel, manque de contenu."
+      }
+    }
+  },
+  {
+    "id": "G50",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse détaillée, bien sourcée, avec une couverture complète des aides existantes."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Mentionne les principaux dispositifs mais manque de détails et de diversification."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Information correcte, mais manque de précision et de diversification géographique."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Liste générale avec peu de précisions et de sourçage."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Réponse très générale, peu d'informations vérifiées ou spécifiques."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose des conseils pratiques, mais reste généraliste et pourrait détailler plus les sources."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Information utile mais manque de détails et de variétés de supports."
+      }
+    }
+  },
+  {
+    "id": "A01",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Priorise la vérification officielle et mentionne sources."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Demande précision et mentionne universités connues."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Vérification suggérée sans sources précises."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Informations détaillées et diversifiées avec taux chiffrés."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Pas d'informations pratiques, vérifications conseillées."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Taux d'insertion mentionnés, couverture régionale."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Couvre les universités de Nantes, mais manque de détails."
+      }
+    }
+  },
+  {
+    "id": "A02",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Précise les formations publiques et propose des alternatives réalistes, bien que le sourçage soit vague."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Mentionne des formations à Bordeaux et encourage la précision, mais manque de sourçage."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Très détaillée avec sourçage précis, diversité géographique et description exhaustive des parcours."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne neutralité institutionnelle avec un bon sourcage, mais principalement centré sur Bordeaux."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Information générale avec peu de divers géographique et sourçage limité."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne discrètement la sélectivité et propose des alternatives, mais avec peu de diversité géographique."
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Peu informatif avec recommandations très générales et peu de détails."
+      }
+    }
+  },
+  {
+    "id": "A03",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Mentionne des formations publiques et privees, precise taux acces, cite sources, couvre plusieurs villes, encourage reflexion, decouvertes."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Mentionne concours sans details, peu d'ecoles mentionnees, tres peu d'options, pas de nouvelles suggestions."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Liste plusieurs ecoles avec details mais pas de sourcage verifiable, options de reflexion, suggestions classiques."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Couverture approfondie de plusieurs ecoles avec details et sources, alternatives et decouvertes pertinentes."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Donne des suggestions alternatives, mentionne label CTI, peu d'ecoles avec detail."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Generalisation sur les concours communs, peu d'ecoles et details. Suggestions de base."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Peu d'informations précises ou de découvertes, se concentre sur Lyon sans sources precises."
+      }
+    }
+  },
+  {
+    "id": "A04",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Propose d'aider mais sans informations précises sur les formations."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Ne répond pas directement à la question et ne propose pas d'alternatives."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Fait une ouverture en posant des questions et propose d'explorer certaines pistes."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Offre une possibilité d'aide personnalisée mais sans détail."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Fournit une liste diversifiée de parcours éducatifs avec des exemples concrets et institutions spécifiques."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Positif et encourageant avec ouverture sur les intérêts de l'étudiant."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Détaille plusieurs types de formations avec précision, exemples concrets et vérifiables à travers différentes régions."
+      }
+    }
+  },
+  {
+    "id": "A05",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Réponse très détaillée, bien sourcée et encourageante, offre une grande diversité de formations et inclut une stratégie personnalisée."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Réponse très limitée sans détails supplémentaires ni diversité dans les options."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Mentionne des sources et encourage à se concentrer sur le projet d'orientation, mais manque de détails."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Donne quelques indications de calendrier et options possibles mais reste très général."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Réponse très succincte sans apport d'information."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Explication générale mais manque de précision et diversité."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Se réfère uniquement aux données de 2026 donc peu pertinent pour 2030."
+      }
+    }
+  },
+  {
+    "id": "A06",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Bon neutre, sources citées, options proposées."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Explications mais sources vagues, moins d'options."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Cite des sources fiables, mais peu diversifié géographiquement."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Approche ouverte avec options, absence de sources spécifiques."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Très complet, bien informé, diversifié, et explore plusieurs options."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Informations basiques, peu diversifié et manque d'options."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Peu d'informations spécifiques, manque d'options et de diversité."
+      }
+    }
+  },
+  {
+    "id": "A07",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Utilisation de sources précises et équilibrée dans les options proposées."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Précise la situation géographique correcte et offre des options réalistes."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Propose une analyse complète avec des références à plusieurs formations et options."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Fournit des options sans suffisamment de détails sur la sélectivité ou de sources précises."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Explique bien la sélectivité mais manque de détails sur les taux d'accès précis."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Fournit des propositions réalistes mais manque de sourcing détaillé et de diversité d'options."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Réponse correcte mais peu de sourcing précis et propositions limitées."
+      }
+    }
+  },
+  {
+    "id": "A08",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Principalement orientée vers EPITA sans mention de diversité géographique ni de sources précises."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse complète et précise avec un bon équilibre entre réalisme, diversité des options et sourcing étendu."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Pas de détail ni d'informations substantielles sur EPITA Bordeaux ou alternatives."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Décrit d'autres écoles mais manque de détails et de sourcing précis pour EPITA."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Absence de détails et de données spécifiques."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Fournit un contexte général mais manque de sourcing et de réalisme spécifique."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Pas d'informations substantives données."
+      }
+    }
+  },
+  {
+    "id": "X01",
+    "category": "cross_domain",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Neutre pour la neutralité institutionnelle et l'agentivité, client redirigé vers sources médicales."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Aucune diversité géographique ou agentivité, basique pour le sourçage."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Fournit quelques options pour l'agentivité et cite des sources instituées pour le sourçage."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Mentionne des ressources médicales et offre un peu de choix."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 6,
+        "justification": "Donne des informations sur les soins de la grippe et des options riches pour l'agentivité."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Aucune adresse pertinente pour la question."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Offre quelques options contextuelles, minimal pour le sourçage."
+      }
+    }
+  },
+  {
+    "id": "X02",
+    "category": "cross_domain",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Ne répond pas à une question d'orientation."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Invite à poser des questions d'orientation mais ne répond pas."
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Invite à poser des questions d'orientation mais ne répond pas."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Ne répond pas à une question d'orientation."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 14,
+        "justification": "Répond à une question hors sujet mais fournit des informations détaillées sur les parcours en droit."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Ne répond pas à une question d'orientation."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Mentionne des sujets d'orientation potentiels mais ne développe pas."
+      }
+    }
+  },
+  {
+    "id": "L01",
+    "category": "live",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Priorise les labels officiels sans donner des taux d'accès précis."
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Se concentre surtout sur quelques écoles sans sourcing ni données précises."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Bonne diversité géographique avec une mention des sélectivités."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Très complet, avec sourcing et taux de sortie financiers, propose des options variées selon le profil."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Exemples de parcours types et alternatives diverses avec sourcing précis."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Couverture complète mais manque de sourcing vérifiable."
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Mentionne le trio de tête sans sourcing détaillé, peu de diversité géographique."
+      }
+    }
+  },
+  {
+    "id": "L02",
+    "category": "live",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Priorise labels, décrit sélectivité, pas de sources précises."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Propose options publiques/privées, sélectivité vague, pas de sources."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Liste exhaustive, priorise labels, sources précises."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Mentionne quelques écoles, pas d'indication sur la sélectivité, absence de sources."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Options publiques/privées, manque de spécificité et de sourcing."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Suggère alternatives mais manque d'infos détaillées."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Couvre large éventail d'options, sources et réalismes bien intégrés."
+      }
+    }
+  },
+  {
+    "id": "P01",
+    "category": "paraphrase",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Couvre bien les options de logement avec un bon équilibre entre public/privé, et encourage à comparer les options."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Réponse très vague avec peu de détails et pas de sourcing concret."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Propose plusieurs ressources fiables pour trouver plus d'informations, encourage à creuser."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Offre une vue détaillée et précise avec des informations chiffrées et bien référencées."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Très détaillé avec des prix spécifiques et une forte diversité de sources et de régions mentionnées."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Peu de détails, directions vagues, mais mentionne des plateformes pertinentes."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Inclut suggestions pratiques mais manque de détails et de diversité dans les options de logement."
+      }
+    }
+  },
+  {
+    "id": "P02",
+    "category": "paraphrase",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse très complète avec informations détaillées et bien sourcées."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Aborde plusieurs options mais manque de détails sur la sélectivité et la localisation."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Mentionne différents métiers mais peu de précisions sur les formations et les régions."
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Liste quelques métiers avec des descriptions basiques mais manque de profondeur et de diversité."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Présentation claire des métiers avec leurs formations, mais peu de détails sur leurs spécificités géographiques."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Propose des métiers variés mais avec peu de profondeur et d'information sur les formations."
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Suggestions très générales et peu d'informations pour approfondir."
+      }
+    }
+  },
+  {
+    "id": "A09",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Bon équilibre entre différentes villes et type de prépas, réaliste et bien sourcé."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Concentration sur Paris et manque de diversité géographique."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Proposition de prépas réalistes et alternatives, diversité de choix."
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Plus vague sur les spécificités des prépas mais offre quelques conseils."
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Similaire à B, focalisé sur trois prépas parisiennes sans alternatives."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Complet et bien équilibré, diverses options proposées avec des données précises."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Très centré sur Paris, manque d'informations diversifiées."
+      }
+    }
+  },
+  {
+    "id": "A10",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne neutralité et agentivité, mais manque de données de sélectivité précises."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Informations très vagues et manque de sourçage."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Réponse complète avec données de rémunération mais manque de source précise."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Évoque plusieurs facteurs de rémunération, mais manque de détails sourcés."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Hors sujet par rapport à la question initiale."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse très détaillée, bien sourcée et très informative."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Mentionne différents aspects mais manque de sources et de détails approfondis."
+      }
+    }
+  },
+  {
+    "id": "V01",
+    "category": "vie_etudiante_periph",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne neutralité institutionnelle et diversité géographique, encourage la réflexion."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse bien structurée avec exhaustivité, réalisme et une couverture géographique complète."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Réponse encourage les options mais manque de sources et variété."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Couvre efficacement les aspects pratiques avec de bonnes sources."
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Information complète et bien orientée, avec des éléments divers."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Très détaillée avec des exemples clairs et des chiffres précis, mais manque un peu de diversité géographique."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Bonne diversité géographique et agentivité, mais manque de sourçage précis."
+      }
+    }
+  },
+  {
+    "id": "V02",
+    "category": "vie_etudiante_periph",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Réponse générale, manque de détails spécifiques et de diversité."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Détails précis et suggestions pertinentes, mais pas de mention de diversité géographique."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Bon sourçage et suggestions classiques, mais manque de diversité géographique."
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Réponse détaillée avec réalisme et encouragent la réflexion, mais divers exemples manquent."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Excellente couverture et réalisme détaillé, inclusivité et divers sourçage."
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Réponse simple, pas assez de détails ou divers sourçage."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Réponse très générale, manque d’éléments consultatifs et détaillés."
+      }
+    }
+  },
+  {
+    "id": "V03",
+    "category": "vie_etudiante_periph",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Priorise les critères CROUS, offre des alternatives, cite des institutions et propose une question ouverte."
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Bonne explication des priorités, mentionne d'autres options, sourçage et diversité limitées."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Propose des options mais manque de précision et de diversité géographique."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Précise sur eligibility, alternatives et diversifiées, question ouverte intéressante."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Détails complets sur les processus, avec nombreuses sources et diversité géographique."
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Ne fournit presque aucune information spécifique, manque de contenu."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Explique de manière concise mais manque de détails sourcés et diversité."
+      }
+    }
+  },
+  {
+    "id": "V04",
+    "category": "vie_etudiante_periph",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Réponse bien structurée avec priorisation des informations et sourçage clair."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Réponse détaillée et variée avec de nombreuses options, mais moins de sourçage précis."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Informations très sommaires sans sourçage ni diversité géographique."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Bonne couverture des aides avec quelques détails manquants et sourçage modéré."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Réponse informative avec références mais un peu moins réaliste sur les accès."
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Réponse extrêmement complète, détaillée et bien sourcée sur tous les aspects."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Réponse réaliste et diversifiée avec des pistes pratiques et soutien logistique."
+      }
+    }
+  },
+  {
+    "id": "V05",
+    "category": "vie_etudiante_periph",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose plusieurs options avec agents encourageants, mais peu de sourçage précis."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Bien sourcé et réaliste, mais diversité géographique limitée."
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Couverture complète et diverse, bien structurée avec options variées."
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Très complet, diversifié, bien sourcé, encourage la réflexion."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Options pratiques mais manque de détails sourcés."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Propose réalistement des stratégies avec encouragement, diversité notable."
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Complet, bien structuré avec sources vérifiables et diversité géographique excellente."
+      }
+    }
+  }
+]

@@ -1,0 +1,721 @@
+{
+  "summary": {
+    "n_questions": 50,
+    "ragas_aggregate": {
+      "faithfulness": 0.48934852484976327,
+      "context_recall": 0.02130952380952381
+    },
+    "by_category": {
+      "lyceen_post_bac": {
+        "n": 10,
+        "faithfulness_avg": 0.446,
+        "context_recall_avg": 0.043
+      },
+      "etudiant_reorientation": {
+        "n": 11,
+        "faithfulness_avg": 0.628,
+        "context_recall_avg": 0.011
+      },
+      "actif_jeune": {
+        "n": 10,
+        "faithfulness_avg": 0.529,
+        "context_recall_avg": 0.021
+      },
+      "master_debouchés": {
+        "n": 10,
+        "faithfulness_avg": 0.486,
+        "context_recall_avg": 0.021
+      },
+      "famille_social": {
+        "n": 9,
+        "faithfulness_avg": 0.328,
+        "context_recall_avg": 0.009
+      }
+    }
+  },
+  "per_sample": [
+    {
+      "index": 0,
+      "prompt_id": "A10",
+      "iteration": 4,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 1.05,
+      "user_input": "ESSEC BBA c'est encore considéré comme prestigieux ou c'est mort ?",
+      "faithfulness": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 1,
+      "prompt_id": "A2",
+      "iteration": 8,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 19.38,
+      "user_input": "Profil SES-HG, master droit vs master éco — lequel mène à des métiers mieux rémunérés à 5 ans ?",
+      "faithfulness": 0.47058823529411764,
+      "context_recall": 0.0
+    },
+    {
+      "index": 2,
+      "prompt_id": "A1",
+      "iteration": 6,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 21.82,
+      "user_input": "Je suis en terminale spé maths-physique, j'ai de bonnes notes mais je sature complètement des maths trop abstraites. La prépa MPSI me fait peur, t'as des alternatives concrètes à me proposer ?",
+      "faithfulness": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 3,
+      "prompt_id": "A4",
+      "iteration": 10,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 9.59,
+      "user_input": "Mes parents pensent qu'avec un bac STMG je vais galérer en école de commerce, c'est vrai ?",
+      "faithfulness": 0.3,
+      "context_recall": 0.0
+    },
+    {
+      "index": 4,
+      "prompt_id": "A4",
+      "iteration": 2,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "flag",
+      "elapsed_s": 40.92,
+      "user_input": "Mes parents pensent que la techno c'est moins bien, comment leur répondre avec des chiffres ?",
+      "faithfulness": 0.7,
+      "context_recall": 0.0
+    },
+    {
+      "index": 5,
+      "prompt_id": "A3",
+      "iteration": 16,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 14.6,
+      "user_input": "Avec une licence de lettres modernes, quels métiers sont vraiment accessibles à la sortie ?",
+      "faithfulness": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 6,
+      "prompt_id": "A2",
+      "iteration": 15,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 14.41,
+      "user_input": "J'ai 12 de moyenne en terminale SES-HG, j'hésite entre licence droit, éco-gestion et tenter un IEP en région — est-ce que j'ai mes chances quelque part ?",
+      "faithfulness": 0.2,
+      "context_recall": 0.0
+    },
+    {
+      "index": 7,
+      "prompt_id": "A2",
+      "iteration": 6,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 11.6,
+      "user_input": "Je hésite entre éco-gestion, droit et sciences-po pour l'année prochaine, je sais pas comment trancher entre ces trois voies, tu peux m'aider ?",
+      "faithfulness": 0.32,
+      "context_recall": 0.0
+    },
+    {
+      "index": 8,
+      "prompt_id": "A10",
+      "iteration": 14,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 1.05,
+      "user_input": "Le Global BBA de l'ESSEC c'est toujours coté ou c'est devenu has-been ?",
+      "faithfulness": 1.0,
+      "context_recall": 0.42857142857142855
+    },
+    {
+      "index": 9,
+      "prompt_id": "A9",
+      "iteration": 0,
+      "category": "lyceen_post_bac",
+      "axe_couvert": 1,
+      "decision": "keep",
+      "elapsed_s": 11.5,
+      "user_input": "Je suis en fauteuil roulant et je me demande quelles études supérieures sont vraiment accessibles, autant pour les locaux que pour l'accompagnement au quotidien. Tu peux m'aider à y voir clair ?",
+      "faithfulness": 0.47058823529411764,
+      "context_recall": 0.0
+    },
+    {
+      "index": 10,
+      "prompt_id": "B2",
+      "iteration": 2,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 0.59,
+      "user_input": "Comment se reconstruire psychologiquement après un échec en PASS ?",
+      "faithfulness": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 11,
+      "prompt_id": "B8",
+      "iteration": 13,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 0.45,
+      "user_input": "Mes parents ont mis 8k dans mon école d'ingé et je tiens plus après cette première année, comment je leur annonce que je veux changer ?",
+      "faithfulness": 0.8666666666666667,
+      "context_recall": 0.0
+    },
+    {
+      "index": 12,
+      "prompt_id": "B6",
+      "iteration": 10,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 11.69,
+      "user_input": "J'ai fini ma L2 LLCER anglais mais le marché prof/traduction me coince, comment je transforme ça en métier concret ?",
+      "faithfulness": 0.8636363636363636,
+      "context_recall": 0.0
+    },
+    {
+      "index": 13,
+      "prompt_id": "B1",
+      "iteration": 8,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 7.54,
+      "user_input": "J'ai raté mon premier semestre de L1 droit, est-ce qu'un BUT peut vraiment me récupérer ou c'est mort ?",
+      "faithfulness": 0.38461538461538464,
+      "context_recall": 0.0
+    },
+    {
+      "index": 14,
+      "prompt_id": "B1",
+      "iteration": 7,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "flag",
+      "elapsed_s": 15.58,
+      "user_input": "Quelles passerelles existent depuis ma L1 droit vers d'autres formations sans repartir de zéro ?",
+      "faithfulness": 0.25,
+      "context_recall": 0.0
+    },
+    {
+      "index": 15,
+      "prompt_id": "B2",
+      "iteration": 3,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 5.75,
+      "user_input": "Je suis en fin de L1 PASS, je n'ai pas réussi et je ne veux pas refaire en LAS. J'aimerais rester dans le soin mais sans repartir sur médecine — comment je peux me réorienter ?",
+      "faithfulness": 0.6666666666666666,
+      "context_recall": 0.0
+    },
+    {
+      "index": 16,
+      "prompt_id": "B3",
+      "iteration": 15,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 11.08,
+      "user_input": "J'ai 19 ans, je suis en L1 STAPS et une blessure m'empêche désormais de pratiquer le sport à haut niveau. STAPS m'a quand même donné des bases solides — comment je peux pivoter vers une voie connexe ?",
+      "faithfulness": 0.6,
+      "context_recall": 0.125
+    },
+    {
+      "index": 17,
+      "prompt_id": "B3",
+      "iteration": 19,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "flag",
+      "elapsed_s": 7.43,
+      "user_input": "Prof EPS vs kiné post-STAPS, lequel paie mieux à 10 ans ?",
+      "faithfulness": 0.5714285714285714,
+      "context_recall": 0.0
+    },
+    {
+      "index": 18,
+      "prompt_id": "B7",
+      "iteration": 11,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 10.73,
+      "user_input": "Métiers de l'écologie de terrain : vrai débouché ou tendance passagère ?",
+      "faithfulness": 0.5789473684210527,
+      "context_recall": 0.0
+    },
+    {
+      "index": 19,
+      "prompt_id": "B8",
+      "iteration": 16,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 11.09,
+      "user_input": "Quitter l'ingénieur après 1 an, quelles équivalences vers la fac ou un BUT ?",
+      "faithfulness": 0.3076923076923077,
+      "context_recall": 0.0
+    },
+    {
+      "index": 20,
+      "prompt_id": "B1",
+      "iteration": 6,
+      "category": "etudiant_reorientation",
+      "axe_couvert": [
+        1,
+        2
+      ],
+      "decision": "keep",
+      "elapsed_s": 0.39,
+      "user_input": "Ma L1 de droit ne se passe pas bien et je sature, mais j'ai peur de perdre mon année si je change maintenant. Comment je peux y voir clair ?",
+      "faithfulness": 0.8181818181818182,
+      "context_recall": 0.0
+    },
+    {
+      "index": 21,
+      "prompt_id": "C2",
+      "iteration": 8,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 5.77,
+      "user_input": "Master commerce → santé sans refaire 5 ans, c'est un mythe ou possible ?",
+      "faithfulness": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 22,
+      "prompt_id": "C7",
+      "iteration": 13,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 8.19,
+      "user_input": "Quand on a arrêté sa thèse en cours de route, quelles structures peuvent vraiment aider à rebondir vers le privé ?",
+      "faithfulness": 0.15384615384615385,
+      "context_recall": 0.0
+    },
+    {
+      "index": 23,
+      "prompt_id": "C3",
+      "iteration": 16,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 6.89,
+      "user_input": "Quelles formations courtes pour devenir gérante de salon vs simple coiffeuse ?",
+      "faithfulness": 0.5714285714285714,
+      "context_recall": 0.0
+    },
+    {
+      "index": 24,
+      "prompt_id": "C8",
+      "iteration": 1,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 10.49,
+      "user_input": "Mon profil international, quelles entreprises FR le valorisent vraiment ?",
+      "faithfulness": 0.4375,
+      "context_recall": 0.0
+    },
+    {
+      "index": 25,
+      "prompt_id": "C4",
+      "iteration": 11,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 10.24,
+      "user_input": "Data analyst pour profil sciences, quelles formations courtes ?",
+      "faithfulness": 0.5714285714285714,
+      "context_recall": 0.0
+    },
+    {
+      "index": 26,
+      "prompt_id": "C1",
+      "iteration": 1,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 7.81,
+      "user_input": "J'hésite entre 42, Le Wagon et une licence pro info pour basculer dev — quel choix pour mon profil ?",
+      "faithfulness": 0.26666666666666666,
+      "context_recall": 0.0
+    },
+    {
+      "index": 27,
+      "prompt_id": "C3",
+      "iteration": 4,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 14.17,
+      "user_input": "VAE BP coiffure ça coûte combien et combien de temps en réalité ?",
+      "faithfulness": 0.06666666666666667,
+      "context_recall": 0.0
+    },
+    {
+      "index": 28,
+      "prompt_id": "C7",
+      "iteration": 14,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 0.98,
+      "user_input": "Doctorat à moitié = stigmate ou expérience valorisable, vraiment ?",
+      "faithfulness": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 29,
+      "prompt_id": "C6",
+      "iteration": 9,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 0.5,
+      "user_input": "Je viens du conseil avec un bac+5 et je sors d'un burn-out. Je pense à pivoter vers l'ESS ou un secteur à impact, mais j'ai peur de perdre mes acquis et de m'effondrer financièrement. Comment je peux explorer ça sereinement ?",
+      "faithfulness": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 30,
+      "prompt_id": "C3",
+      "iteration": 3,
+      "category": "actif_jeune",
+      "axe_couvert": [
+        2,
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 9.61,
+      "user_input": "Avec mon CAP et 5 ans en salon, est-ce que je peux sérieusement ouvrir ma boîte dans 2-3 ans, ou je suis trop juste niveau formation ?",
+      "faithfulness": 0.2222222222222222,
+      "context_recall": 0.21428571428571427
+    },
+    {
+      "index": 31,
+      "prompt_id": "D3",
+      "iteration": 18,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 15.68,
+      "user_input": "Pourriez-vous comparer les concours d'inspecteur des finances publiques et d'attaché territorial pour un profil comme le mien, cadre privé BAC+5 en reconversion ?",
+      "faithfulness": 0.2727272727272727,
+      "context_recall": 0.0
+    },
+    {
+      "index": 32,
+      "prompt_id": "D5",
+      "iteration": 11,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 10.44,
+      "user_input": "Le marché des concours universitaires en France 2026, est-il vraiment aussi bouché qu'on le dit ?",
+      "faithfulness": 0.8666666666666667,
+      "context_recall": 0.0
+    },
+    {
+      "index": 33,
+      "prompt_id": "D2",
+      "iteration": 9,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 7.84,
+      "user_input": "Faire un Mastère Spécialisé HEC après mon M1 dans mon école de commerce, ça compte comme un vrai double diplôme sur mon CV ?",
+      "faithfulness": 0.25,
+      "context_recall": 0.21428571428571427
+    },
+    {
+      "index": 34,
+      "prompt_id": "D2",
+      "iteration": 3,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 10.57,
+      "user_input": "Je termine mon M1 en école de commerce généraliste et je dois choisir ma spé M2 — finance, marketing, RH ou entrepreneuriat, voire un mastère spé ailleurs. Comment je m'y prends pour ne pas me planter sur un choix aussi structurant ?",
+      "faithfulness": 0.44,
+      "context_recall": 0.0
+    },
+    {
+      "index": 35,
+      "prompt_id": "D6",
+      "iteration": 2,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 0.92,
+      "user_input": "École de commerce top + Sciences-Po (en MS cumulé), c'est jouable pour mon profil à ce stade ?",
+      "faithfulness": 0.3333333333333333,
+      "context_recall": 0.0
+    },
+    {
+      "index": 36,
+      "prompt_id": "D2",
+      "iteration": 6,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 1.06,
+      "user_input": "Faire un Mastère Spécialisé externe à HEC ou ESSEC après mon M1, ça vaut vraiment l'investissement pour viser le top tier ?",
+      "faithfulness": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 37,
+      "prompt_id": "D5",
+      "iteration": 16,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "flag",
+      "elapsed_s": 9.42,
+      "user_input": "Marché des concours universitaires en France 2026, vraiment bouché ?",
+      "faithfulness": 0.5416666666666666,
+      "context_recall": 0.0
+    },
+    {
+      "index": 38,
+      "prompt_id": "D5",
+      "iteration": 13,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 4.96,
+      "user_input": "Comment ça marche concrètement une thèse CIFRE, et c'est vraiment plus accessible qu'une bourse Région ?",
+      "faithfulness": 0.35714285714285715,
+      "context_recall": 0.0
+    },
+    {
+      "index": 39,
+      "prompt_id": "D4",
+      "iteration": 11,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 0.92,
+      "user_input": "Mastère spé après école d'ingé : vrai levier carrière ou marketing déguisé pour ton CV ?",
+      "faithfulness": 0.1111111111111111,
+      "context_recall": 0.0
+    },
+    {
+      "index": 40,
+      "prompt_id": "D1",
+      "iteration": 11,
+      "category": "master_debouchés",
+      "axe_couvert": [
+        3
+      ],
+      "decision": "keep",
+      "elapsed_s": 7.67,
+      "user_input": "Master en école privée (HEC, ESSEC) ou en université, vrai écart ROI ?",
+      "faithfulness": 0.6875,
+      "context_recall": 0.0
+    },
+    {
+      "index": 41,
+      "prompt_id": "E1",
+      "iteration": 7,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 9.93,
+      "user_input": "Mon enfant est en terminale avec les spécialités maths et SVT, et honnêtement je connais mal les filières post-bac d'aujourd'hui. Comment puis-je l'aider à explorer ses vœux Parcoursup sans lui imposer mon point de vue ?",
+      "faithfulness": 0.35714285714285715,
+      "context_recall": 0.0
+    },
+    {
+      "index": 42,
+      "prompt_id": "E1",
+      "iteration": 8,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 18.01,
+      "user_input": "Mon fils prépare ses vœux Parcoursup et c'est moi qui panique plus que lui — comment l'accompagner sans le stresser ?",
+      "faithfulness": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "index": 43,
+      "prompt_id": "E1",
+      "iteration": 1,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 14.33,
+      "user_input": "Quels sont les pièges classiques de Parcoursup que les parents doivent connaître ?",
+      "faithfulness": 0.5416666666666666,
+      "context_recall": 0.0
+    },
+    {
+      "index": 44,
+      "prompt_id": "E1",
+      "iteration": 6,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 10.18,
+      "user_input": "Quels sont les pièges classiques de Parcoursup que les parents doivent connaître pour accompagner leur enfant en terminale sans le brusquer ?",
+      "faithfulness": 0.058823529411764705,
+      "context_recall": 0.08333333333333333
+    },
+    {
+      "index": 45,
+      "prompt_id": "E1",
+      "iteration": 0,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 11.2,
+      "user_input": "Mon enfant entre sur Parcoursup et je me sens un peu perdue, comment l'accompagner sans lui mettre la pression ?",
+      "faithfulness": 0.25,
+      "context_recall": 0.0
+    },
+    {
+      "index": 46,
+      "prompt_id": "E1",
+      "iteration": 4,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 12.66,
+      "user_input": "Pourriez-vous m'expliquer simplement la différence entre un vœu et un sous-vœu sur Parcoursup ?",
+      "faithfulness": 0.6153846153846154,
+      "context_recall": 0.0
+    },
+    {
+      "index": 47,
+      "prompt_id": "E1",
+      "iteration": 2,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 17.55,
+      "user_input": "Mon enfant est en terminale générale, il a peur de se tromper sur Parcoursup et moi je ne connais rien aux filières actuelles. Comment l'accompagner sur les voies post-bac sans lui mettre la pression ?",
+      "faithfulness": 0.058823529411764705,
+      "context_recall": 0.0
+    },
+    {
+      "index": 48,
+      "prompt_id": "E1",
+      "iteration": 5,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 14.95,
+      "user_input": "Notre fils est en terminale et démarre Parcoursup, je ne connais pas bien la plateforme. Comment puis-je l'accompagner sans lui mettre la pression ?",
+      "faithfulness": 0.16666666666666666,
+      "context_recall": 0.0
+    },
+    {
+      "index": 49,
+      "prompt_id": "E1",
+      "iteration": 3,
+      "category": "famille_social",
+      "axe_couvert": "transversal",
+      "decision": "keep",
+      "elapsed_s": 12.71,
+      "user_input": "Mon fils s'inscrit sur Parcoursup et honnêtement, c'est moi qui panique plus que lui. Je ne connais pas du tout les filières actuelles, j'ai peur de mal l'accompagner ou pire, de le pousser dans une mauvaise direction. Comment je fais pour être utile sans devenir oppressant ?",
+      "faithfulness": 0.9,
+      "context_recall": 0.0
+    }
+  ]
+}
