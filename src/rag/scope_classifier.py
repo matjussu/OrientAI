@@ -21,7 +21,7 @@ le pipeline RAG (`in_scope`) ou court-circuitée par une réponse pré-écrite
   subies, harcèlement intense, détresse psychologique aiguë. Réponse imposée
   qui (a) reconnaît la souffrance, (b) redirige vers les numéros d'urgence
   appropriés (3114 prévention suicide, 3919 violences femmes, 119 enfance
-  maltraitance, 30 18 SOS Amitié). NE TENTE PAS de "répondre" — ce n'est pas
+  maltraitance, 3018 harcèlement, SOS Amitié). NE TENTE PAS de "répondre" — ce n'est pas
   notre rôle.
 
 Stratégie :
@@ -215,12 +215,14 @@ GREETING_RESPONSE = (
 URGENT_RESPONSE = (
     "Je perçois dans ton message une **détresse importante**. Avant tout, "
     "ta sécurité et ton bien-être passent avant les questions d'orientation.\n\n"
-    "**Numéros d'écoute gratuits, anonymes, 24h/24** :\n\n"
+    "**Numéros d'écoute gratuits et anonymes** :\n\n"
     "- **3114** — Numéro national de **prévention du suicide** "
-    "(gratuit, confidentiel, professionnels formés)\n"
-    "- **3919** — Violences faites aux femmes (gratuit, anonyme)\n"
+    "(24h/24, gratuit, confidentiel, professionnels formés)\n"
+    "- **3919** — Violences faites aux femmes (24h/24, gratuit, anonyme)\n"
     "- **119** — Enfance en danger / maltraitance (24h/24)\n"
-    "- **30 18** — SOS Amitié, écoute généraliste (anxiété, isolement)\n"
+    "- **3018** — Harcèlement scolaire et cyberharcèlement (7j/7, 9h-23h)\n"
+    "- **09 72 39 40 50** — SOS Amitié, écoute généraliste "
+    "(anxiété, isolement, 24h/24)\n"
     "- **15** — SAMU si urgence vitale immédiate\n\n"
     "Tu peux aussi en parler à une personne de confiance autour de toi : "
     "Psy-EN du lycée, infirmier·ère scolaire, médecin traitant, parent, ami·e.\n\n"
