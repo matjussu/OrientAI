@@ -1,0 +1,78 @@
+# Golden CI (H0 rallumer-securiser, ordre 2026-07-15-1220)
+#
+# Branche le gate golden en CI GitHub :
+#   [1] BLOQUANT : suite pytest complete (3 202 tests deterministes, offline).
+#       Inclut les assertions schema golden_50/golden_60 (tests/test_golden_*.py).
+#       Les tests marques `golden` dependant de l'index FAISS + cle Mistral
+#       s'auto-skippent sur runner GitHub (index 213 MB gitignore, absent ici).
+#   [2] SOFT (non bloquant, manuel) : gate retrieval golden 50q + juge groundedness
+#       via `python -m src.eval.golden_ci`. Necessite le secret MISTRAL_API_KEY
+#       et un index FAISS restaure depuis le cache Actions. Tant que le cache
+#       n'est pas seede, le job emet un warning explicite (pas de faux vert).
+#
+# Le gate complet local reste : bash audit_empirique_2026-06-09/golden_ci.sh
+
+name: Golden CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: pytest deterministe (bloquant)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install deps (lock reproductible)
+        run: pip install -r requirements.lock
+      - name: pytest tests/ (assertions deterministes bloquantes)
+        env:
+          # Juge en SOFT : les tests appelant un juge LLM reel (Haiku) sont
+          # flaky par nature (temp>0) et exclus du gate bloquant. Ils restent
+          # executables en local sans ce flag.
+          OFFLINE_JUDGE_TESTS: "1"
+        run: PYTHONPATH=. python -m pytest tests/ -q --tb=short
+
+  golden-retrieval-gate:
+    name: gate retrieval golden 50q (soft, manuel)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install deps
+        run: pip install -r requirements.lock
+      - name: Restore index FAISS depuis le cache Actions
+        id: index-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/embeddings/formations.index
+            data/processed/formations.json
+          key: faiss-index-v1
+      - name: Gate retrieval (deterministe) + rapport
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          if [ ! -f data/embeddings/formations.index ]; then
+            echo "::warning title=Gate golden non execute::Index FAISS absent du cache Actions (213 MB gitignore). Gate retrieval execute en local uniquement via audit_empirique_2026-06-09/golden_ci.sh. Seeder le cache pour l'activer en CI."
+            exit 0
+          fi
+          if [ -z "$MISTRAL_API_KEY" ]; then
+            echo "::warning title=Gate golden non execute::Secret MISTRAL_API_KEY absent du repo GitHub."
+            exit 0
+          fi
+          PYTHONPATH=. python -m src.eval.golden_ci

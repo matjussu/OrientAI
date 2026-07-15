@@ -1,0 +1,623 @@
+{
+  "session_id": "spot_check_baseline_1778706472",
+  "n_questions": 13,
+  "n_pass": 4,
+  "n_fail": 9,
+  "step_stats_global": {
+    "orientia.answer": {
+      "n_observations": 13,
+      "avg_s": 9.452,
+      "median_s": 6.243,
+      "min_s": 4.029,
+      "max_s": 36.112,
+      "p95_s": 13.093,
+      "total_s": 122.878
+    },
+    "step_8_generate_with_retry": {
+      "n_observations": 13,
+      "avg_s": 4.605,
+      "median_s": 4.137,
+      "min_s": 1.917,
+      "max_s": 8.602,
+      "p95_s": 7.561,
+      "total_s": 59.864
+    },
+    "step_9_validator_policy": {
+      "n_observations": 13,
+      "avg_s": 0.001,
+      "median_s": 0.0,
+      "min_s": 0.0,
+      "max_s": 0.002,
+      "p95_s": 0.001,
+      "total_s": 0.007
+    },
+    "step_10_post_process": {
+      "n_observations": 13,
+      "avg_s": 0.001,
+      "median_s": 0.0,
+      "min_s": 0.0,
+      "max_s": 0.007,
+      "p95_s": 0.002,
+      "total_s": 0.011
+    },
+    "chat mistral-medium-latest": {
+      "n_observations": 13,
+      "avg_s": 4.508,
+      "median_s": 4.114,
+      "min_s": 1.884,
+      "max_s": 8.595,
+      "p95_s": 6.858,
+      "total_s": 58.61
+    },
+    "embeddings mistral-embed": {
+      "n_observations": 35,
+      "avg_s": 0.21,
+      "median_s": 0.159,
+      "min_s": 0.118,
+      "max_s": 0.565,
+      "p95_s": 0.419,
+      "total_s": 7.343
+    },
+    "step_6_mmr": {
+      "n_observations": 13,
+      "avg_s": 0.004,
+      "median_s": 0.001,
+      "min_s": 0.0,
+      "max_s": 0.023,
+      "p95_s": 0.011,
+      "total_s": 0.05
+    },
+    "step_5_retrieve_filter": {
+      "n_observations": 13,
+      "avg_s": 2.078,
+      "median_s": 0.386,
+      "min_s": 0.131,
+      "max_s": 22.054,
+      "p95_s": 0.972,
+      "total_s": 27.017
+    },
+    "step_7_golden_qa_prefix": {
+      "n_observations": 13,
+      "avg_s": 0.237,
+      "median_s": 0.177,
+      "min_s": 0.133,
+      "max_s": 0.464,
+      "p95_s": 0.454,
+      "total_s": 3.086
+    },
+    "step_1_scope_classify": {
+      "n_observations": 13,
+      "avg_s": 1.218,
+      "median_s": 0.512,
+      "min_s": 0.419,
+      "max_s": 5.661,
+      "p95_s": 3.47,
+      "total_s": 15.831
+    },
+    "chat mistral-small-latest": {
+      "n_observations": 26,
+      "avg_s": 0.852,
+      "median_s": 0.508,
+      "min_s": 0.412,
+      "max_s": 4.967,
+      "p95_s": 1.174,
+      "total_s": 22.151
+    },
+    "step_3b_domain_hint": {
+      "n_observations": 13,
+      "avg_s": 0.0,
+      "median_s": 0.0,
+      "min_s": 0.0,
+      "max_s": 0.001,
+      "p95_s": 0.001,
+      "total_s": 0.004
+    },
+    "step_2_router_llm": {
+      "n_observations": 13,
+      "avg_s": 0.575,
+      "median_s": 0.549,
+      "min_s": 0.462,
+      "max_s": 0.766,
+      "p95_s": 0.728,
+      "total_s": 7.48
+    },
+    "step_3_intent_domain_hint": {
+      "n_observations": 13,
+      "avg_s": 0.0,
+      "median_s": 0.0,
+      "min_s": 0.0,
+      "max_s": 0.003,
+      "p95_s": 0.001,
+      "total_s": 0.005
+    },
+    "step_4_select_bypass": {
+      "n_observations": 1,
+      "avg_s": 8.941,
+      "median_s": 8.941,
+      "min_s": 8.941,
+      "max_s": 8.941,
+      "p95_s": 8.941,
+      "total_s": 8.941
+    }
+  },
+  "pass_vs_fail_compare": {
+    "orientia.answer": {
+      "pass_avg_s": 5.311,
+      "fail_avg_s": 11.293,
+      "n_pass": 4,
+      "n_fail": 9
+    },
+    "step_1_scope_classify": {
+      "pass_avg_s": 0.651,
+      "fail_avg_s": 1.47,
+      "n_pass": 4,
+      "n_fail": 9
+    },
+    "step_2_router_llm": {
+      "pass_avg_s": 0.495,
+      "fail_avg_s": 0.611,
+      "n_pass": 4,
+      "n_fail": 9
+    },
+    "step_5_retrieve_filter": {
+      "pass_avg_s": 0.238,
+      "fail_avg_s": 2.896,
+      "n_pass": 4,
+      "n_fail": 9
+    },
+    "step_8_generate_with_retry": {
+      "pass_avg_s": 3.683,
+      "fail_avg_s": 5.015,
+      "n_pass": 4,
+      "n_fail": 9
+    }
+  },
+  "questions_detail": [
+    {
+      "q_id": "Q01",
+      "question": "Quels métiers vont recruter en Occitanie en 2030 ?",
+      "expected_domain": "metier_prospective",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 36.119,
+      "answer_preview": "Je comprends que tu cherches à anticiper les débouchés en Occitanie pour orienter ton projet. Voici les pistes **concrètes** que je peux te partager à partir des formations répertoriées dans la région…",
+      "n_top": 12,
+      "error": null,
+      "trace_id": "f5ce61e6a2e33d7bb720d9684d9fb1a7",
+      "trace_total_s": 36.112,
+      "step_durs": {
+        "orientia.answer": 36.112,
+        "step_8_generate_with_retry": 7.561,
+        "step_9_validator_policy": 0.002,
+        "step_10_post_process": 0.007,
+        "chat mistral-medium-latest": 6.527,
+        "embeddings mistral-embed": 0.137,
+        "step_6_mmr": 0.023,
+        "step_5_retrieve_filter": 22.054,
+        "step_7_golden_qa_prefix": 0.184,
+        "step_1_scope_classify": 5.661,
+        "chat mistral-small-latest": 0.542,
+        "step_3b_domain_hint": 0.0,
+        "step_2_router_llm": 0.575,
+        "step_3_intent_domain_hint": 0.003
+      }
+    },
+    {
+      "q_id": "Q02",
+      "question": "Combien coûte le logement étudiant CROUS à Lyon ?",
+      "expected_domain": "crous",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 4.228,
+      "answer_preview": "Je n'ai pas de formation ni d'information sur les logements CROUS à Lyon dans mes sources.\n\nPour obtenir des réponses précises sur les tarifs des résidences CROUS, je te conseille de consulter directe…",
+      "n_top": 12,
+      "error": null,
+      "trace_id": "63e3bc610ad77d5cb1a4cab68ae265f4",
+      "trace_total_s": 4.226,
+      "step_durs": {
+        "step_8_generate_with_retry": 1.917,
+        "step_10_post_process": 0.001,
+        "step_9_validator_policy": 0.0,
+        "orientia.answer": 4.226,
+        "chat mistral-medium-latest": 1.884,
+        "chat mistral-small-latest": 0.653,
+        "step_1_scope_classify": 0.687,
+        "embeddings mistral-embed": 0.445,
+        "step_7_golden_qa_prefix": 0.454,
+        "step_5_retrieve_filter": 0.519,
+        "step_2_router_llm": 0.586,
+        "step_6_mmr": 0.007,
+        "step_3_intent_domain_hint": 0.001,
+        "step_3b_domain_hint": 0.0
+      }
+    },
+    {
+      "q_id": "Q03",
+      "question": "Quels sont les blocs de compétences du RNCP 38450 ?",
+      "expected_domain": "competences_certif",
+      "n_domain_match_top5": 5,
+      "domains_in_top5": [
+        "competences_certif",
+        "competences_certif",
+        "competences_certif",
+        "competences_certif",
+        "competences_certif"
+      ],
+      "latency_s": 4.03,
+      "answer_preview": "Je n'ai pas d'information sur le **RNCP 38450** dans mes sources actuelles. Les certifications disponibles concernent d'autres codes RNCP (ex: 35298, 35307, etc.) et des métiers comme **Responsable de…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "839ede3fbbb713811bd4f09eef0ae541",
+      "trace_total_s": 4.029,
+      "step_durs": {
+        "step_3_intent_domain_hint": 0.0,
+        "orientia.answer": 4.029,
+        "step_9_validator_policy": 0.0,
+        "step_8_generate_with_retry": 2.573,
+        "step_7_golden_qa_prefix": 0.301,
+        "step_5_retrieve_filter": 0.153,
+        "step_3b_domain_hint": 0.001,
+        "step_10_post_process": 0.002,
+        "chat mistral-medium-latest": 2.561,
+        "step_6_mmr": 0.002,
+        "step_2_router_llm": 0.507,
+        "embeddings mistral-embed": 0.141,
+        "step_1_scope_classify": 0.478,
+        "chat mistral-small-latest": 0.461
+      }
+    },
+    {
+      "q_id": "Q04",
+      "question": "Quel salaire après un Master Droit en région PACA ?",
+      "expected_domain": "insertion_pro",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.245,
+      "answer_preview": "Je comprends que tu cherches à évaluer les perspectives salariales après un **master en droit en région PACA**. Malheureusement, **aucune des sources disponibles** ne fournit de données sur les salair…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "d86f5908e010474a56043fb71a7542d0",
+      "trace_total_s": 6.243,
+      "step_durs": {
+        "embeddings mistral-embed": 0.136,
+        "step_5_retrieve_filter": 0.408,
+        "step_9_validator_policy": 0.001,
+        "orientia.answer": 6.243,
+        "step_3b_domain_hint": 0.0,
+        "step_10_post_process": 0.0,
+        "step_3_intent_domain_hint": 0.001,
+        "step_2_router_llm": 0.766,
+        "step_8_generate_with_retry": 4.137,
+        "step_6_mmr": 0.001,
+        "chat mistral-medium-latest": 4.114,
+        "step_7_golden_qa_prefix": 0.383,
+        "chat mistral-small-latest": 0.502,
+        "step_1_scope_classify": 0.512
+      }
+    },
+    {
+      "q_id": "Q05",
+      "question": "Que fait un actuaire au quotidien ?",
+      "expected_domain": "metier_detail",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        "metier",
+        "metier",
+        "metier",
+        "metier",
+        "metier"
+      ],
+      "latency_s": 8.18,
+      "answer_preview": "Tu t’intéresses au métier d’**[actuaire](https://www.onisep.fr/http/redirection/metier/slug/MET.861)** et veux savoir en quoi consiste son quotidien. Voici les missions clés, tirées des fiches ONISEP …",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "e2cbb20148736fb3318246f0607a705f",
+      "trace_total_s": 8.177,
+      "step_durs": {
+        "step_8_generate_with_retry": 5.915,
+        "orientia.answer": 8.177,
+        "step_9_validator_policy": 0.001,
+        "step_10_post_process": 0.0,
+        "chat mistral-medium-latest": 5.878,
+        "step_7_golden_qa_prefix": 0.464,
+        "step_6_mmr": 0.001,
+        "step_5_retrieve_filter": 0.758,
+        "step_3b_domain_hint": 0.001,
+        "step_3_intent_domain_hint": 0.0,
+        "embeddings mistral-embed": 0.565,
+        "step_2_router_llm": 0.502,
+        "step_1_scope_classify": 0.517,
+        "chat mistral-small-latest": 0.453
+      }
+    },
+    {
+      "q_id": "Q06",
+      "question": "Quelles aides financières pour les étudiants boursiers ?",
+      "expected_domain": "financement_etudes",
+      "n_domain_match_top5": 5,
+      "domains_in_top5": [
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes"
+      ],
+      "latency_s": 6.241,
+      "answer_preview": "Je comprends que tu cherches à sécuriser ton budget pour tes études. Voici les dispositifs **spécifiques aux étudiants boursiers** que je peux te confirmer :\n\n• **Bourse sur critères sociaux CROUS** :…",
+      "n_top": 6,
+      "error": null,
+      "trace_id": "35ff9baacd8779325623f08af6466393",
+      "trace_total_s": 6.239,
+      "step_durs": {
+        "orientia.answer": 6.239,
+        "chat mistral-medium-latest": 3.966,
+        "step_9_validator_policy": 0.0,
+        "step_8_generate_with_retry": 3.974,
+        "step_10_post_process": 0.0,
+        "step_3b_domain_hint": 0.0,
+        "step_3_intent_domain_hint": 0.0,
+        "step_5_retrieve_filter": 0.319,
+        "chat mistral-small-latest": 0.425,
+        "step_6_mmr": 0.0,
+        "step_2_router_llm": 0.462,
+        "step_1_scope_classify": 1.187,
+        "embeddings mistral-embed": 0.272,
+        "step_7_golden_qa_prefix": 0.275
+      }
+    },
+    {
+      "q_id": "Q07",
+      "question": "Quelles formations en Guadeloupe ?",
+      "expected_domain": "territoire_drom",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 11.103,
+      "answer_preview": "Tu cherches des formations accessibles en Guadeloupe après le bac. Voici les options disponibles dans mes sources, toutes proposées par **[l’Université des Antilles - Pôle Guadeloupe](https://www.univ…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "c2f8293bcbbf621964ed7169446fa0e4",
+      "trace_total_s": 11.1,
+      "step_durs": {
+        "step_8_generate_with_retry": 8.602,
+        "step_10_post_process": 0.0,
+        "orientia.answer": 11.1,
+        "chat mistral-medium-latest": 8.595,
+        "step_9_validator_policy": 0.0,
+        "step_2_router_llm": 0.635,
+        "step_1_scope_classify": 1.006,
+        "step_5_retrieve_filter": 0.386,
+        "step_6_mmr": 0.002,
+        "embeddings mistral-embed": 0.124,
+        "step_3_intent_domain_hint": 0.0,
+        "step_7_golden_qa_prefix": 0.133,
+        "step_3b_domain_hint": 0.0,
+        "chat mistral-small-latest": 0.629
+      }
+    },
+    {
+      "q_id": "Q08",
+      "question": "Marché de l'emploi cadres en Bretagne ?",
+      "expected_domain": "apec_region",
+      "n_domain_match_top5": 1,
+      "domains_in_top5": [
+        "apec_region"
+      ],
+      "latency_s": 4.96,
+      "answer_preview": "D’après les dernières données, le marché des cadres en Bretagne montre une dynamique plutôt positive en 2025, à contre-courant des tendances nationales.\n\n- **Recrutements 2025** : 9 990 postes (+5 % v…",
+      "n_top": 1,
+      "error": null,
+      "trace_id": "5f40b85c37104ad665424bce92b916c6",
+      "trace_total_s": 4.959,
+      "step_durs": {
+        "orientia.answer": 4.959,
+        "step_9_validator_policy": 0.0,
+        "step_8_generate_with_retry": 3.605,
+        "step_10_post_process": 0.0,
+        "chat mistral-medium-latest": 3.598,
+        "step_2_router_llm": 0.525,
+        "embeddings mistral-embed": 0.12,
+        "step_3b_domain_hint": 0.0,
+        "step_3_intent_domain_hint": 0.0,
+        "chat mistral-small-latest": 0.515,
+        "step_1_scope_classify": 0.507,
+        "step_5_retrieve_filter": 0.137,
+        "step_7_golden_qa_prefix": 0.177,
+        "step_6_mmr": 0.0
+      }
+    },
+    {
+      "q_id": "Q09",
+      "question": "Salaire moyen d'un cadre supérieur (PCS 37) ?",
+      "expected_domain": "insee_salaire",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [],
+      "latency_s": 13.094,
+      "answer_preview": "Je n'ai pas de formation pertinente dans mes sources pour cette question, ni de données salariales associées à la PCS 37.\n\nPour des chiffres officiels sur les salaires par catégorie socio-professionne…",
+      "n_top": 0,
+      "error": null,
+      "trace_id": "7a6a49e8f5146d0d03d675859313de2c",
+      "trace_total_s": 13.093,
+      "step_durs": {
+        "step_10_post_process": 0.0,
+        "embeddings mistral-embed": 0.137,
+        "step_9_validator_policy": 0.0,
+        "step_5_retrieve_filter": 0.972,
+        "step_7_golden_qa_prefix": 0.14,
+        "step_8_generate_with_retry": 2.124,
+        "orientia.answer": 13.093,
+        "chat mistral-medium-latest": 2.11,
+        "step_4_select_bypass": 8.941,
+        "step_6_mmr": 0.0,
+        "step_3_intent_domain_hint": 0.0,
+        "step_1_scope_classify": 0.419,
+        "step_3b_domain_hint": 0.0,
+        "chat mistral-small-latest": 0.412,
+        "step_2_router_llm": 0.492
+      }
+    },
+    {
+      "q_id": "Q10",
+      "question": "Insertion à 3 ans après un Bac pro Industrie ?",
+      "expected_domain": "formation_insertion",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro"
+      ],
+      "latency_s": 4.526,
+      "answer_preview": "Je n’ai pas de données dans mes sources sur l’insertion après un **Bac pro Industrie** (ni à 3 ans, ni à d’autres horizons). Mes chiffres concernent uniquement des docteurs en **biologie, médecine et …",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "c286aa482b38e98944381ae46564b8f9",
+      "trace_total_s": 4.525,
+      "step_durs": {
+        "step_5_retrieve_filter": 0.131,
+        "step_6_mmr": 0.001,
+        "orientia.answer": 4.525,
+        "step_10_post_process": 0.0,
+        "step_7_golden_qa_prefix": 0.133,
+        "step_9_validator_policy": 0.001,
+        "step_8_generate_with_retry": 3.104,
+        "chat mistral-medium-latest": 3.058,
+        "embeddings mistral-embed": 0.129,
+        "step_2_router_llm": 0.665,
+        "step_1_scope_classify": 0.483,
+        "step_3b_domain_hint": 0.0,
+        "chat mistral-small-latest": 0.655,
+        "step_3_intent_domain_hint": 0.0
+      }
+    },
+    {
+      "q_id": "Q11",
+      "question": "Quelles sont les spécialités possibles en BAC PRO agriculture ?",
+      "expected_domain": "voie_pre_bac",
+      "n_domain_match_top5": 1,
+      "domains_in_top5": [
+        "voie_pre_bac",
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.019,
+      "answer_preview": "D’après tes centres d’intérêt pour le secteur agricole, voici les spécialités de **bac pro** référencées dans mes sources, toutes accessibles en 3 ans [source S3/S4/S5] :\n\n• **[Bac pro aménagements pa…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "11672e200b89cbd2e384474e30d99ef3",
+      "trace_total_s": 6.018,
+      "step_durs": {
+        "orientia.answer": 6.018,
+        "step_8_generate_with_retry": 4.58,
+        "step_10_post_process": 0.001,
+        "chat mistral-medium-latest": 4.573,
+        "step_9_validator_policy": 0.001,
+        "step_5_retrieve_filter": 0.345,
+        "step_7_golden_qa_prefix": 0.165,
+        "step_3_intent_domain_hint": 0.0,
+        "step_6_mmr": 0.001,
+        "embeddings mistral-embed": 0.161,
+        "step_3b_domain_hint": 0.0,
+        "step_2_router_llm": 0.488,
+        "chat mistral-small-latest": 0.424,
+        "step_1_scope_classify": 0.431
+      }
+    },
+    {
+      "q_id": "Q12",
+      "question": "Taux de réussite L1 pour un bac S avec mention bien ?",
+      "expected_domain": "parcours_bacheliers",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.708,
+      "answer_preview": "Je préfère ne pas répondre sur ce point de manière détaillée, car ma réponse contiendrait des imprécisions factuelles importantes qui pourraient t'induire en erreur.\n\nDétails :\n• Le 'bac S' a été supp…",
+      "n_top": 6,
+      "error": null,
+      "trace_id": "771f66c16f16802dab0f33848239272c",
+      "trace_total_s": 6.706,
+      "step_durs": {
+        "orientia.answer": 6.706,
+        "chat mistral-medium-latest": 4.888,
+        "step_9_validator_policy": 0.0,
+        "step_8_generate_with_retry": 4.896,
+        "step_10_post_process": 0.0,
+        "step_6_mmr": 0.001,
+        "step_2_router_llm": 0.728,
+        "step_5_retrieve_filter": 0.458,
+        "step_3b_domain_hint": 0.001,
+        "step_7_golden_qa_prefix": 0.133,
+        "chat mistral-small-latest": 0.467,
+        "embeddings mistral-embed": 0.3,
+        "step_1_scope_classify": 0.473,
+        "step_3_intent_domain_hint": 0.0
+      }
+    },
+    {
+      "q_id": "Q13",
+      "question": "Quelle insertion après un doctorat en chimie ?",
+      "expected_domain": "insertion_pro",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 11.453,
+      "answer_preview": "Je comprends que tu te demandes quelles perspectives s’offrent après un doctorat en chimie. Malheureusement, mes sources ne fournissent **aucune donnée** sur l’insertion professionnelle (taux d’emploi…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "cb494b2a3e73dab2c0db40ba3f9e8914",
+      "trace_total_s": 11.451,
+      "step_durs": {
+        "step_9_validator_policy": 0.001,
+        "orientia.answer": 11.451,
+        "step_8_generate_with_retry": 6.876,
+        "step_10_post_process": 0.0,
+        "chat mistral-medium-latest": 6.858,
+        "step_7_golden_qa_prefix": 0.144,
+        "step_6_mmr": 0.011,
+        "step_3b_domain_hint": 0.001,
+        "step_2_router_llm": 0.549,
+        "step_5_retrieve_filter": 0.377,
+        "chat mistral-small-latest": 3.464,
+        "embeddings mistral-embed": 0.34,
+        "step_3_intent_domain_hint": 0.0,
+        "step_1_scope_classify": 3.47
+      }
+    }
+  ]
+}

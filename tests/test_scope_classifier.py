@@ -224,6 +224,17 @@ class TestPreWrittenResponses:
     def test_urgent_response_lists_119(self):
         assert "119" in URGENT_RESPONSE
 
+    def test_urgent_response_labels_3018_as_harcelement(self):
+        # Régression ordre 2026-07-15 : le 3018 est le numéro harcèlement
+        # scolaire / cyberharcèlement, il était étiqueté "SOS Amitié" à tort.
+        line_3018 = next(l for l in URGENT_RESPONSE.splitlines() if "3018" in l)
+        assert "arcèlement" in line_3018
+        assert "SOS Amitié" not in line_3018
+
+    def test_urgent_response_lists_sos_amitie_real_number(self):
+        line_sos = next(l for l in URGENT_RESPONSE.splitlines() if "SOS Amitié" in l)
+        assert "09 72 39 40 50" in line_sos
+
     def test_urgent_response_recognizes_distress(self):
         assert "détresse" in URGENT_RESPONSE.lower()
 

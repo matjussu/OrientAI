@@ -1,0 +1,634 @@
+{
+  "summary": {
+    "n_questions": 13,
+    "n_pass": 4,
+    "n_fail": 9,
+    "cost_total_usd": 0.042,
+    "cost_avg_per_q_usd": 0.003227,
+    "tokens_total_in": 114438,
+    "tokens_total_out": 4831,
+    "avg_words_answer_pass": 123.75,
+    "avg_words_answer_fail": 149.778,
+    "avg_citations_pass": 3,
+    "avg_citations_fail": 1.778,
+    "n_refusal": 6,
+    "n_url_hallu": 0,
+    "n_url_hallu_total": 0
+  },
+  "questions": [
+    {
+      "q_id": "Q01",
+      "question": "Quels métiers vont recruter en Occitanie en 2030 ?",
+      "expected_domain": "metier_prospective",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 36.119,
+      "answer_preview": "Je comprends que tu cherches à anticiper les débouchés en Occitanie pour orienter ton projet. Voici les pistes **concrètes** que je peux te partager à partir des formations répertoriées dans la région…",
+      "n_top": 12,
+      "error": null,
+      "trace_id": "f5ce61e6a2e33d7bb720d9684d9fb1a7",
+      "trace_total_s": 36.112,
+      "n_mistral_calls": 8,
+      "tokens_in": 8901,
+      "tokens_out": 553,
+      "cost_usd": 0.003616,
+      "cost_by_model": {
+        "mistral-medium": 0.002652,
+        "mistral-embed": 1.1e-05,
+        "mistral-small": 0.000954
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4259,
+          "output": 474
+        },
+        "mistral-embed": {
+          "input": 110,
+          "output": 0
+        },
+        "mistral-small": {
+          "input": 4532,
+          "output": 79
+        }
+      },
+      "answer_full": "Je comprends que tu cherches à anticiper les débouchés en Occitanie pour orienter ton projet. Voici les pistes **concrètes** que je peux te partager à partir des formations répertoriées dans la région, même si les données sur les métiers *2030* précis manquent dans mes sources :\n\n• **Enseignement et transmission linguistique** :\n  Le [master MEEF 1er degré (parcours langues régionales occitan/catalan)](https://www.monmaster.gouv.fr/) à Carcassonne ou Mende [source S5] forme aux métiers de professeur des écoles bilingue (occitan ou catalan). Un secteur stable, porté par les politiques de revitalisation des langues régionales — avec des besoins spécifiques en Occitanie.\n\n• **Adaptation climatique et gestion de projet** :\n  Le [master *Management de l’Adaptation Climatique des Organisations en Méditerranée*](https://www.monmaster.gouv.fr/) à Montpellier [source S2] cible des métiers émergents (chargé·e de mission RSE, consultant·e en résilience territoriale). La région, exposée aux risques climatiques, pourrait voir ces postes se développer.\n\n• **Édition et métiers du livre** :\n  Le [master *Métiers du Livre et de l’Édition*](https://www.monmaster.gouv.fr/) à Montpellier [source S4] ouvre à des métiers comme éditeur·rice, bibliothécaire ou médiateur·rice culturel·le. Un secteur niche mais présent en Occitanie (maisons d’édition locales, bibliothèques territoriales).\n\n**Attention** : Mes sources ne donnent **aucun chiffre** sur les volumes d’embauche 2030 ni les salaires. Pour affiner, je te conseille de croiser avec les [projections Pôle Emploi Occitanie](https://candidat.pole-emploi.fr/) ou les rapports de la **Région** sur les filières prioritaires.\n\n**Question pour toi** : Parmi ces trois univers (éducation, environnement, culture/édition), lequel résonne le plus avec tes aspirations *et* tes points forts ? 🌱",
+      "n_words_answer": 247,
+      "n_chars_answer": 1840,
+      "n_citations": 3,
+      "is_refusal": true,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q02",
+      "question": "Combien coûte le logement étudiant CROUS à Lyon ?",
+      "expected_domain": "crous",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 4.228,
+      "answer_preview": "Je n'ai pas de formation ni d'information sur les logements CROUS à Lyon dans mes sources.\n\nPour obtenir des réponses précises sur les tarifs des résidences CROUS, je te conseille de consulter directe…",
+      "n_top": 12,
+      "error": null,
+      "trace_id": "63e3bc610ad77d5cb1a4cab68ae265f4",
+      "trace_total_s": 4.226,
+      "n_mistral_calls": 6,
+      "tokens_in": 9350,
+      "tokens_out": 200,
+      "cost_usd": 0.003087,
+      "cost_by_model": {
+        "mistral-medium": 0.002121,
+        "mistral-small": 0.00096,
+        "mistral-embed": 6e-06
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4768,
+          "output": 107
+        },
+        "mistral-small": {
+          "input": 4522,
+          "output": 93
+        },
+        "mistral-embed": {
+          "input": 60,
+          "output": 0
+        }
+      },
+      "answer_full": "Je n'ai pas de formation ni d'information sur les logements CROUS à Lyon dans mes sources.\n\nPour obtenir des réponses précises sur les tarifs des résidences CROUS, je te conseille de consulter directement le [site du CROUS Lyon](https://www.crous-lyon.fr/) ou de contacter leur service logement. Tu peux aussi vérifier les annonces sur [Lokaviz](https://www.lokaviz.fr/), la plateforme officielle dédiée aux logements étudiants.",
+      "n_words_answer": 59,
+      "n_chars_answer": 428,
+      "n_citations": 0,
+      "is_refusal": true,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q03",
+      "question": "Quels sont les blocs de compétences du RNCP 38450 ?",
+      "expected_domain": "competences_certif",
+      "n_domain_match_top5": 5,
+      "domains_in_top5": [
+        "competences_certif",
+        "competences_certif",
+        "competences_certif",
+        "competences_certif",
+        "competences_certif"
+      ],
+      "latency_s": 4.03,
+      "answer_preview": "Je n'ai pas d'information sur le **RNCP 38450** dans mes sources actuelles. Les certifications disponibles concernent d'autres codes RNCP (ex: 35298, 35307, etc.) et des métiers comme **Responsable de…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "839ede3fbbb713811bd4f09eef0ae541",
+      "trace_total_s": 4.029,
+      "n_mistral_calls": 5,
+      "tokens_in": 9059,
+      "tokens_out": 244,
+      "cost_usd": 0.003093,
+      "cost_by_model": {
+        "mistral-medium": 0.00214,
+        "mistral-embed": 5e-06,
+        "mistral-small": 0.000948
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4481,
+          "output": 174
+        },
+        "mistral-embed": {
+          "input": 48,
+          "output": 0
+        },
+        "mistral-small": {
+          "input": 4530,
+          "output": 70
+        }
+      },
+      "answer_full": "Je n'ai pas d'information sur le **RNCP 38450** dans mes sources actuelles. Les certifications disponibles concernent d'autres codes RNCP (ex: 35298, 35307, etc.) et des métiers comme **Responsable de chantier de dépollution pyrotechnique** [source S1] ou **Technicien informatique systèmes et réseaux** [source S5].\n\nPour obtenir les blocs de compétences précis du RNCP 38450, je te conseille de consulter directement la [fiche officielle sur France Compétences](https://www.francecompetences.fr/) ou de contacter un conseiller en évolution professionnelle (CEP).\n\nQuel domaine ou métier te intéresse dans cette certification ? Je peux t’aider à explorer des alternatives si besoin.",
+      "n_words_answer": 93,
+      "n_chars_answer": 683,
+      "n_citations": 2,
+      "is_refusal": true,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q04",
+      "question": "Quel salaire après un Master Droit en région PACA ?",
+      "expected_domain": "insertion_pro",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.245,
+      "answer_preview": "Je comprends que tu cherches à évaluer les perspectives salariales après un **master en droit en région PACA**. Malheureusement, **aucune des sources disponibles** ne fournit de données sur les salair…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "d86f5908e010474a56043fb71a7542d0",
+      "trace_total_s": 6.243,
+      "n_mistral_calls": 6,
+      "tokens_in": 8737,
+      "tokens_out": 458,
+      "cost_usd": 0.003308,
+      "cost_by_model": {
+        "mistral-embed": 5e-06,
+        "mistral-medium": 0.00232,
+        "mistral-small": 0.000983
+      },
+      "tokens_by_model": {
+        "mistral-embed": {
+          "input": 51,
+          "output": 0
+        },
+        "mistral-medium": {
+          "input": 4166,
+          "output": 327
+        },
+        "mistral-small": {
+          "input": 4520,
+          "output": 131
+        }
+      },
+      "answer_full": "Je comprends que tu cherches à évaluer les perspectives salariales après un **master en droit en région PACA**. Malheureusement, **aucune des sources disponibles** ne fournit de données sur les salaires (médian, moyen ou autre) pour ces formations.\n\nVoici les masters en droit identifiés en PACA, mais sans information salariale :\n- ****DROIT — Droit public et carrières publiques**** à **Aix-Marseille Université** (à distance) `[source S1]`\n- ****DROIT INTERNATIONAL — Droit et pratique du commerce international**** à **Université Côte d'Azur** (Nice) `[source S2]`\n- ****DROIT PRIVE — Droit privé**** (Nice) `[source S4]`\n\nPour des chiffres précis, je te conseille de consulter :\n- Les **enquêtes d’insertion** des universités (ex : Observatoire de la Vie Étudiante d’Aix-Marseille).\n- Les **rapports de l’APEC** ou de **l’INSEE** sur les métiers juridiques (ex : juriste, avocat, notaire).\n- Un **rdv avec le SCUIO** de ton université cible pour des données locales.\n\nQuel aspect du droit t’intéresse le plus (public, privé, international) ? Cela pourrait affiner les pistes.",
+      "n_words_answer": 162,
+      "n_chars_answer": 1080,
+      "n_citations": 3,
+      "is_refusal": false,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q05",
+      "question": "Que fait un actuaire au quotidien ?",
+      "expected_domain": "metier_detail",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        "metier",
+        "metier",
+        "metier",
+        "metier",
+        "metier"
+      ],
+      "latency_s": 8.18,
+      "answer_preview": "Tu t’intéresses au métier d’**[actuaire](https://www.onisep.fr/http/redirection/metier/slug/MET.861)** et veux savoir en quoi consiste son quotidien. Voici les missions clés, tirées des fiches ONISEP …",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "e2cbb20148736fb3318246f0607a705f",
+      "trace_total_s": 8.177,
+      "n_mistral_calls": 5,
+      "tokens_in": 9137,
+      "tokens_out": 408,
+      "cost_usd": 0.003463,
+      "cost_by_model": {
+        "mistral-medium": 0.002516,
+        "mistral-embed": 3e-06,
+        "mistral-small": 0.000944
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4599,
+          "output": 338
+        },
+        "mistral-embed": {
+          "input": 26,
+          "output": 0
+        },
+        "mistral-small": {
+          "input": 4512,
+          "output": 70
+        }
+      },
+      "answer_full": "Tu t’intéresses au métier d’**[actuaire](https://www.onisep.fr/http/redirection/metier/slug/MET.861)** et veux savoir en quoi consiste son quotidien. Voici les missions clés, tirées des fiches ONISEP :\n\n- **Concevoir et ajuster des contrats d’assurance** : l’actuaire utilise des modèles statistiques pour évaluer les risques (maladie, accidents, etc.) et proposer des tarifs adaptés aux assureurs. Son travail permet de garantir l’équilibre financier des contrats [source S1][source S3].\n- **Analyser des données pour anticiper les tendances** : à partir de bases de données (sinistres, démographie, marché), il/elle identifie des risques émergents (ex : impact du changement climatique sur les assurances habitation) et suggère des ajustements aux dirigeants.\n- **Collaborer avec d’autres services** : il/elle travaille avec les équipes commerciales (pour expliquer les tarifs aux clients), les juristes (pour respecter les réglementations), et la direction (pour alerter sur des risques financiers).\n\nC’est un métier à la croisée des **mathématiques appliquées**, de l’**économie** et de la **stratégie d’entreprise**, où la rigueur technique sert à éclairer des décisions business.\n\nEst-ce que c’est plutôt l’aspect *modélisation* (créer des algorithmes) ou *conseil* (expliquer les risques aux non-experts) qui t’attire dans ce métier ?",
+      "n_words_answer": 181,
+      "n_chars_answer": 1341,
+      "n_citations": 2,
+      "is_refusal": false,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q06",
+      "question": "Quelles aides financières pour les étudiants boursiers ?",
+      "expected_domain": "financement_etudes",
+      "n_domain_match_top5": 5,
+      "domains_in_top5": [
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes",
+        "financement_etudes"
+      ],
+      "latency_s": 6.241,
+      "answer_preview": "Je comprends que tu cherches à sécuriser ton budget pour tes études. Voici les dispositifs **spécifiques aux étudiants boursiers** que je peux te confirmer :\n\n• **Bourse sur critères sociaux CROUS** :…",
+      "n_top": 6,
+      "error": null,
+      "trace_id": "35ff9baacd8779325623f08af6466393",
+      "trace_total_s": 6.239,
+      "n_mistral_calls": 5,
+      "tokens_in": 8928,
+      "tokens_out": 361,
+      "cost_usd": 0.003287,
+      "cost_by_model": {
+        "mistral-medium": 0.002341,
+        "mistral-small": 0.000943,
+        "mistral-embed": 4e-06
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4372,
+          "output": 296
+        },
+        "mistral-small": {
+          "input": 4520,
+          "output": 65
+        },
+        "mistral-embed": {
+          "input": 36,
+          "output": 0
+        }
+      },
+      "answer_full": "Je comprends que tu cherches à sécuriser ton budget pour tes études. Voici les dispositifs **spécifiques aux étudiants boursiers** que je peux te confirmer :\n\n• **Bourse sur critères sociaux CROUS** : Montant annuel entre **1080 € et 5965 €** (2024-2025), selon les revenus du foyer. Ouverte aux étudiants en BTS, BUT, Licence, Master, doctorat ou écoles reconnues [source S5].\n\n• **Aide à la mobilité Master** : Forfait de **1000 €** (2024-2025) si tu changes de région entre ta Licence et ton Master, sous condition de bourse CROUS [source S4].\n\n• **Aide à la mobilité internationale (Erasmus+)** : Entre **280 € et 450 €/mois** pour les étudiants boursiers partant à l’étranger (montant variable selon la zone) [source S3].\n\nTu peux aussi cumuler ces aides avec les **APL/ALS** (montant variable selon ton loyer et ta situation) [source S1].\n\nQuestion pour toi : as-tu déjà identifié si tu vas rester dans ta région actuelle ou partir étudier ailleurs ? Cela peut influencer les aides mobilisables.",
+      "n_words_answer": 163,
+      "n_chars_answer": 1001,
+      "n_citations": 4,
+      "is_refusal": false,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q07",
+      "question": "Quelles formations en Guadeloupe ?",
+      "expected_domain": "territoire_drom",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 11.103,
+      "answer_preview": "Tu cherches des formations accessibles en Guadeloupe après le bac. Voici les options disponibles dans mes sources, toutes proposées par **[l’Université des Antilles - Pôle Guadeloupe](https://www.univ…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "c2f8293bcbbf621964ed7169446fa0e4",
+      "trace_total_s": 11.1,
+      "n_mistral_calls": 5,
+      "tokens_in": 9371,
+      "tokens_out": 566,
+      "cost_usd": 0.003883,
+      "cost_by_model": {
+        "mistral-medium": 0.00294,
+        "mistral-embed": 2e-06,
+        "mistral-small": 0.00094
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4835,
+          "output": 503
+        },
+        "mistral-embed": {
+          "input": 24,
+          "output": 0
+        },
+        "mistral-small": {
+          "input": 4512,
+          "output": 63
+        }
+      },
+      "answer_full": "Tu cherches des formations accessibles en Guadeloupe après le bac. Voici les options disponibles dans mes sources, toutes proposées par **[l’Université des Antilles - Pôle Guadeloupe](https://www.univ-antilles.fr/)** à Pointe-à-Pitre :\n\n- **[Licence - Portail Sciences de la vie et de la terre](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11749&typeBac=0&originePc=0)** (Biologie, Écologie, Géosciences) : **100 places** [source S1], avec un taux d’accès de **100 %** en 2025 [source S1]. Formation non sélective, idéale pour les profils scientifiques intéressés par l’environnement ou les sciences du vivant.\n\n- **[Licence - Portail Mathématiques](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36146&typeBac=0&originePc=0)** (Maths appliquées ou enseignement) : **15 places** [source S4], également non sélective. Parfaite si tu vises une poursuite en master scientifique ou une carrière dans l’enseignement.\n\n- **[Licence - Portail Sciences pour la santé](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11742&typeBac=0&originePc=0)** (Biochimie, Sciences de l’aliment, Santé) : **150 places** [source S5], avec **26 %** des candidats acceptés dès le début des propositions Parcoursup [source S5]. Une voie pour ceux qui se destinent aux métiers de la santé ou de l’agroalimentaire.\n\nLes frais annuels et données d’insertion professionnelle ne sont pas disponibles dans mes sources. Pour explorer d’autres domaines (économie, sport), consulte les autres portails de l’université.\n\n**Quelle discipline te correspond le plus : les sciences du vivant, les maths, ou les applications concrètes comme la santé/environnement ?**",
+      "n_words_answer": 201,
+      "n_chars_answer": 1759,
+      "n_citations": 5,
+      "is_refusal": false,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q08",
+      "question": "Marché de l'emploi cadres en Bretagne ?",
+      "expected_domain": "apec_region",
+      "n_domain_match_top5": 1,
+      "domains_in_top5": [
+        "apec_region"
+      ],
+      "latency_s": 4.96,
+      "answer_preview": "D’après les dernières données, le marché des cadres en Bretagne montre une dynamique plutôt positive en 2025, à contre-courant des tendances nationales.\n\n- **Recrutements 2025** : 9 990 postes (+5 % v…",
+      "n_top": 1,
+      "error": null,
+      "trace_id": "5f40b85c37104ad665424bce92b916c6",
+      "trace_total_s": 4.959,
+      "n_mistral_calls": 5,
+      "tokens_in": 7784,
+      "tokens_out": 323,
+      "cost_usd": 0.002732,
+      "cost_by_model": {
+        "mistral-medium": 0.001777,
+        "mistral-embed": 3e-06,
+        "mistral-small": 0.000952
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 3238,
+          "output": 241
+        },
+        "mistral-embed": {
+          "input": 32,
+          "output": 0
+        },
+        "mistral-small": {
+          "input": 4514,
+          "output": 82
+        }
+      },
+      "answer_full": "D’après les dernières données, le marché des cadres en Bretagne montre une dynamique plutôt positive en 2025, à contre-courant des tendances nationales.\n\n- **Recrutements 2025** : 9 990 postes (+5 % vs 2024), avec une prévision 2026 à 10 200 (+2 %), ce qui permettrait de retrouver le niveau record de 2023 (10 290) [source S1].\n- **Créations nettes d’emplois cadres** : 2 910 postes en 2025 (contre 3 230 en 2024) [source S1].\n- **Secteurs porteurs** : exploitation tertiaire (21 %), commercial-marketing (16 %), études-R&D (15 %), informatique (14 %), et production [source S1].\n\nCes chiffres suggèrent une région attractive pour les profils cadres, notamment dans les services et le numérique. Quels secteurs ou métiers t’intéressent plus particulièrement pour affiner l’analyse ?",
+      "n_words_answer": 123,
+      "n_chars_answer": 783,
+      "n_citations": 3,
+      "is_refusal": false,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q09",
+      "question": "Salaire moyen d'un cadre supérieur (PCS 37) ?",
+      "expected_domain": "insee_salaire",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [],
+      "latency_s": 13.094,
+      "answer_preview": "Je n'ai pas de formation pertinente dans mes sources pour cette question, ni de données salariales associées à la PCS 37.\n\nPour des chiffres officiels sur les salaires par catégorie socio-professionne…",
+      "n_top": 0,
+      "error": null,
+      "trace_id": "7a6a49e8f5146d0d03d675859313de2c",
+      "trace_total_s": 13.093,
+      "n_mistral_calls": 8,
+      "tokens_in": 7418,
+      "tokens_out": 195,
+      "cost_usd": 0.002332,
+      "cost_by_model": {
+        "mistral-embed": 1.1e-05,
+        "mistral-medium": 0.001378,
+        "mistral-small": 0.000943
+      },
+      "tokens_by_model": {
+        "mistral-embed": {
+          "input": 110,
+          "output": 0
+        },
+        "mistral-medium": {
+          "input": 2780,
+          "output": 133
+        },
+        "mistral-small": {
+          "input": 4528,
+          "output": 62
+        }
+      },
+      "answer_full": "Je n'ai pas de formation pertinente dans mes sources pour cette question, ni de données salariales associées à la PCS 37.\n\nPour des chiffres officiels sur les salaires par catégorie socio-professionnelle, je te conseille de consulter :\n- Les **tableaux de l’INSEE** (enquêtes Emploi ou DADS)\n- Les **études de l’APEC** sur les rémunérations cadres\n- Le **site de la Dares** (ministère du Travail)\n\nTu cherches ces infos pour comparer avec un projet précis ou par curiosité ? 😊",
+      "n_words_answer": 79,
+      "n_chars_answer": 476,
+      "n_citations": 0,
+      "is_refusal": true,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q10",
+      "question": "Insertion à 3 ans après un Bac pro Industrie ?",
+      "expected_domain": "formation_insertion",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro",
+        "insertion_pro"
+      ],
+      "latency_s": 4.526,
+      "answer_preview": "Je n’ai pas de données dans mes sources sur l’insertion après un **Bac pro Industrie** (ni à 3 ans, ni à d’autres horizons). Mes chiffres concernent uniquement des docteurs en **biologie, médecine et …",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "c286aa482b38e98944381ae46564b8f9",
+      "trace_total_s": 4.525,
+      "n_mistral_calls": 5,
+      "tokens_in": 9347,
+      "tokens_out": 307,
+      "cost_usd": 0.003278,
+      "cost_by_model": {
+        "mistral-medium": 0.002302,
+        "mistral-embed": 3e-06,
+        "mistral-small": 0.000973
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4795,
+          "output": 192
+        },
+        "mistral-embed": {
+          "input": 32,
+          "output": 0
+        },
+        "mistral-small": {
+          "input": 4520,
+          "output": 115
+        }
+      },
+      "answer_full": "Je n’ai pas de données dans mes sources sur l’insertion après un **Bac pro Industrie** (ni à 3 ans, ni à d’autres horizons). Mes chiffres concernent uniquement des docteurs en **biologie, médecine et santé** (Bac+8), avec des profils très différents du tien.\n\nPour explorer les débouchés après un Bac pro Industrie, je te conseille :\n- Le site de l’[**ONISEP**](https://www.onisep.fr) (fiches métiers et parcours par filière)\n- Le **CIO** (Centre d’Information et d’Orientation) de ton lycée ou de ta ville\n- Les enquêtes **insertion** de ta région (ex : Observatoires régionaux comme l’ORFE en Île-de-France)\n\nQuel type d’industrie ou de métier te attire le plus ? Cela pourrait aider à affiner les pistes.",
+      "n_words_answer": 113,
+      "n_chars_answer": 707,
+      "n_citations": 0,
+      "is_refusal": false,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q11",
+      "question": "Quelles sont les spécialités possibles en BAC PRO agriculture ?",
+      "expected_domain": "voie_pre_bac",
+      "n_domain_match_top5": 1,
+      "domains_in_top5": [
+        "voie_pre_bac",
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.019,
+      "answer_preview": "D’après tes centres d’intérêt pour le secteur agricole, voici les spécialités de **bac pro** référencées dans mes sources, toutes accessibles en 3 ans [source S3/S4/S5] :\n\n• **[Bac pro aménagements pa…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "11672e200b89cbd2e384474e30d99ef3",
+      "trace_total_s": 6.018,
+      "n_mistral_calls": 5,
+      "tokens_in": 8706,
+      "tokens_out": 331,
+      "cost_usd": 0.003143,
+      "cost_by_model": {
+        "mistral-medium": 0.002198,
+        "mistral-embed": 3e-06,
+        "mistral-small": 0.000942
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4150,
+          "output": 269
+        },
+        "mistral-embed": {
+          "input": 34,
+          "output": 0
+        },
+        "mistral-small": {
+          "input": 4522,
+          "output": 62
+        }
+      },
+      "answer_full": "D’après tes centres d’intérêt pour le secteur agricole, voici les spécialités de **bac pro** référencées dans mes sources, toutes accessibles en 3 ans [source S3/S4/S5] :\n\n• **[Bac pro aménagements paysagers](https://www.onisep.fr/http/redirection/formation/slug/FOR.7681)** : pour travailler dans la création et l’entretien d’espaces verts (parcs, jardins, espaces urbains).\n• **[Bac pro forêt](https://www.onisep.fr/http/redirection/formation/slug/FOR.7418)** : gestion des espaces boisés, exploitation forestière ou protection des milieux naturels.\n• **[Bac pro cultures marines](https://www.onisep.fr/http/redirection/formation/slug/FOR.1083)** : élevé en milieu marin (coquillages, poissons) et gestion des écosystèmes aquatiques.\n\nD’autres spécialités existent (ex : élevage canin-félin ou aquacole), mais leurs fiches détaillées ne sont pas disponibles dans mes sources. **Quelle branche de l’agriculture t’attire le plus ?** Le vivant (animaux/plantes), les paysages, ou les technologies liées ?",
+      "n_words_answer": 116,
+      "n_chars_answer": 1003,
+      "n_citations": 3,
+      "is_refusal": false,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q12",
+      "question": "Taux de réussite L1 pour un bac S avec mention bien ?",
+      "expected_domain": "parcours_bacheliers",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 6.708,
+      "answer_preview": "Je préfère ne pas répondre sur ce point de manière détaillée, car ma réponse contiendrait des imprécisions factuelles importantes qui pourraient t'induire en erreur.\n\nDétails :\n• Le 'bac S' a été supp…",
+      "n_top": 6,
+      "error": null,
+      "trace_id": "771f66c16f16802dab0f33848239272c",
+      "trace_total_s": 6.706,
+      "n_mistral_calls": 6,
+      "tokens_in": 9136,
+      "tokens_out": 450,
+      "cost_usd": 0.003462,
+      "cost_by_model": {
+        "mistral-medium": 0.002478,
+        "mistral-small": 0.000978,
+        "mistral-embed": 6e-06
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4555,
+          "output": 328
+        },
+        "mistral-small": {
+          "input": 4524,
+          "output": 122
+        },
+        "mistral-embed": {
+          "input": 57,
+          "output": 0
+        }
+      },
+      "answer_full": "Je préfère ne pas répondre sur ce point de manière détaillée, car ma réponse contiendrait des imprécisions factuelles importantes qui pourraient t'induire en erreur.\n\nDétails :\n• Le 'bac S' a été supprimé en 2021 (réforme Blanquer). Utiliser 'bac général avec spécialités Maths/PC/SVT'.\n\nPour avoir une information fiable sur ton orientation, je te conseille :\n- **ONISEP** : catalogue officiel des formations françaises — https://www.onisep.fr\n- **Parcoursup** : procédures et taux d'accès officiels — https://www.parcoursup.fr\n- **SCUIO** : service d'orientation de ton université (si étudiant·e)\n- **CIO** / **Psy-EN** : conseiller·ères d'orientation en lycée\n\nTu peux aussi me reposer la question autrement (par exemple avec un profil plus précis ou sur un sujet plus ciblé) et je ferai de mon mieux pour répondre dans la limite de ce que nos données vérifient.",
+      "n_words_answer": 132,
+      "n_chars_answer": 865,
+      "n_citations": 0,
+      "is_refusal": true,
+      "n_url_hallu": 0
+    },
+    {
+      "q_id": "Q13",
+      "question": "Quelle insertion après un doctorat en chimie ?",
+      "expected_domain": "insertion_pro",
+      "n_domain_match_top5": 0,
+      "domains_in_top5": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latency_s": 11.453,
+      "answer_preview": "Je comprends que tu te demandes quelles perspectives s’offrent après un doctorat en chimie. Malheureusement, mes sources ne fournissent **aucune donnée** sur l’insertion professionnelle (taux d’emploi…",
+      "n_top": 10,
+      "error": null,
+      "trace_id": "cb494b2a3e73dab2c0db40ba3f9e8914",
+      "trace_total_s": 11.451,
+      "n_mistral_calls": 5,
+      "tokens_in": 8564,
+      "tokens_out": 435,
+      "cost_usd": 0.00327,
+      "cost_by_model": {
+        "mistral-medium": 0.002315,
+        "mistral-small": 0.000952,
+        "mistral-embed": 3e-06
+      },
+      "tokens_by_model": {
+        "mistral-medium": {
+          "input": 4018,
+          "output": 354
+        },
+        "mistral-small": {
+          "input": 4518,
+          "output": 81
+        },
+        "mistral-embed": {
+          "input": 28,
+          "output": 0
+        }
+      },
+      "answer_full": "Je comprends que tu te demandes quelles perspectives s’offrent après un doctorat en chimie. Malheureusement, mes sources ne fournissent **aucune donnée** sur l’insertion professionnelle (taux d’emploi, CDI, salaires) ni sur les débouchés concrets après un doctorat dans ce domaine — **information non disponible dans mes sources** [sources S1 à S5].\n\nEn revanche, voici les masters bac+5 en chimie que je peux identifier dans mes fiches, si tu souhaites explorer des parcours antérieurs ou des passerelles :\n- ****CHIMIE — Chimie Analytique et Qualité**** à l’**Université de Poitiers** [source S1]\n- ****CHIMIE — Chemistry and Interfaces**** à l’**Institut polytechnique de Paris** [source S3]\n- ****CHIMIE — Physico-Chimie moléculaire et applications**** à l’**Université Paris-Est Créteil** [source S5]\n\nPour des réponses précises sur le doctorat, je te conseille de contacter directement les **écoles doctorales** en chimie (ex : ED 388 à Sorbonne Université) ou de consulter les enquêtes du **CEREQ** ou de l’**ONISEP** sur les docteurs.\n\nQu’est-ce qui t’attire le plus : la recherche académique, l’industrie, ou d’autres secteurs ? Cela pourrait aider à affiner les pistes.",
+      "n_words_answer": 174,
+      "n_chars_answer": 1179,
+      "n_citations": 3,
+      "is_refusal": true,
+      "n_url_hallu": 0
+    }
+  ]
+}

@@ -1,0 +1,5013 @@
+[
+  {
+    "id": "G01",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Mentionne formations publiques alternatives mais données sélectivité vagues (sources non précises), propose alternatives et débouchés variés"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Admet ne pas connaître campus Bordeaux, suggère alternatives publiques (ENSEIRB), aucune source vérifiable, encourage contact école"
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Données précises sourcées (Parcoursup 2025, RNCP) mais uniquement école privée, aucune alternative ni question ouverte"
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Taux précis sourcé (Parcoursup, RNCP), alerte sur frais privés, propose exploration alternatives mais reste centré sur EFREI"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Données précises sourcées, mentionne label ANSSI (officiel), questions ouvertes encourageant réflexion, recommande Psy-EN/CIO"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Transparence totale sur absence données, renvoie sources officielles (ONISEP, Parcoursup), recommande structures orientation publiques"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Réaliste sur limites communication écoles privées, mentionne Parcoursup et JPO, propose méthodes recherche, question ouverte finale"
+      }
+    }
+  },
+  {
+    "id": "G02",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Mentionne uniquement IUT public mais reste vague, sans données précises ni ouverture"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Reconnaît l'absence de données, oriente vers sources officielles et pose question ouverte"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Admet ne pas avoir l'info, renvoie vers Parcoursup et SCUIO mais reste sommaire"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Très bref, renvoie à Parcoursup sans développement ni engagement"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Transparence sur l'absence de données, mentionne plusieurs sources mais reste technique"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Données précises et taux de sélectivité mentionnés mais sources 2024 non vérifiables"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Exhaustif avec données détaillées, couverture régionale, débouchés et parcours alternatifs variés"
+      }
+    }
+  },
+  {
+    "id": "G03",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Répond correctement mais sans sources ni ouverture géographique, peu d'agentivité"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Bon réalisme avec données chiffrées, mentionne alternatives mais sourçage vague"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Excellente agentivité avec question ouverte, mais manque de précision factuelle"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Très complet et réaliste, évoque alternatives géographiques, mais aucune source citée"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Bon réalisme avec chiffres précis, mentionne Parcoursup mais sans URL vérifiable"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Excellent équilibre : réaliste, propose alternatives géographiques et agentivité forte"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Cite source Parcoursup mais répond partiellement, bonne agentivité avec redirection"
+      }
+    }
+  },
+  {
+    "id": "G04",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Données Parcoursup précises avec code formation, mentionne alternatives L.AS et passerelles, question ouverte finale"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Données approximatives sans source vérifiable, focus exclusif Sorbonne, mentionne charge de travail mais manque alternatives géographiques"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Sources Parcoursup avec liens directs, compare plusieurs universités IDF, manque interdiction redoublement et question tronquée"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Confusion Paris 1 Panthéon-Sorbonne avec Sorbonne Université, aucune donnée chiffrée ni source, conseils génériques"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Transparence sur absence de données, redirige vers Parcoursup officiel, question ouverte pertinente, mais pas de chiffres concrets"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 12,
+        "justification": "Très détaillé avec alternatives nombreuses (IFSI, BTS, province), mais données 2023 non sourcées précisément, découvre métiers paramédicaux"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Transparence honnête mais n'apporte aucune information utile, redirige sans donner éléments de contexte"
+      }
+    }
+  },
+  {
+    "id": "G05",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Excellente transparence sur l'absence de données, sources officielles citées (Parcoursup, ONISEP), mais reste sur Paris sans élargir géographiquement"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Mentionne des lycées publics mais sans données de sélectivité précises, sources vagues, conseils génériques sans ouverture"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Fourchettes de taux précises et réalistes, mentionne Parcoursup mais sans lien direct vérifiable, élargit à l'Île-de-France, propose options"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Très détaillé avec taux précis et multiples établissements publics/privés, sources citées mais non vérifiables, excellente couverture géographique IDF, propose alternatives variées"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Transparence totale sur l'absence de données BTS, sources numérotées précises mais hors sujet (BUT/Master), question ouverte finale excellente"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Tag no_oracle assumé, renvoie vers Parcoursup officiel, fourchette générale IDF donnée, question ouverte engageante mais reste parisien"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Reconnaît l'absence d'info mais reste minimaliste, renvoie vers sources officielles sans détail, aucune contextualisation ni alternative proposée"
+      }
+    }
+  },
+  {
+    "id": "G06",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Excellent réalisme et agentivité, mais géographie limitée à Paris et pas de sources vérifiables"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Refuse de répondre sans données vérifiées, redirige vers sources officielles (ONISEP, Parcoursup), très honnête"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Réponse équilibrée avec mention Parcoursup, mais manque de données précises et ne propose qu'Assas"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Reconnaît ses limites, oriente vers Parcoursup et services d'orientation, mais contenu minimal"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Très complète avec alternatives géographiques diversifiées (Aix, Bordeaux, Lyon), découvre BUT CJ et prépa D1"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Mentionne Parcoursup officiel, réaliste sur sélectivité, propose alternatives (Paris 1, Nanterre, Lyon 3), question ouverte"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Données Parcoursup chiffrées, alternatives géographiques (Strasbourg, Lyon 2) et BUT CJ, question personnalisée"
+      }
+    }
+  },
+  {
+    "id": "G07",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Question ouverte pertinente mais manque cruellement de données concrètes et sources"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne CTI et concours officiels, données chiffrées approximatives, mais géographie limitée à Lille"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Très complet avec labels CTI/grade master, données précises de rangs et salaires, alternatives variées"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Excellent réalisme avec chiffres et pièges à éviter, question ouverte finale, sources partielles"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Priorise formations publiques INSA/Polytech, chiffres précis de sélectivité, question ouverte adaptée"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Réponse générique sans données chiffrées ni sources vérifiables, peu d'options concrètes"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Sources ONISEP/Parcoursup précises mais répond à côté (formations non demandées), aucune agentivité"
+      }
+    }
+  },
+  {
+    "id": "G08",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Mentionne Parcoursup et Université de Nantes, donne fourchette réaliste 30-60%, propose alternatives, mais géo limitée"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Réponse minimaliste orientant vers Parcoursup sans détail ni engagement"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Très détaillée avec taux 10-12% et rang 350e, mentionne Parcoursup et Onisep, alternatives géographiques Le Mans/Angers/Brest, débouchés variés"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mentionne Nantes Université et Parcoursup, donne fourchette 10-15%, conseille vœux multiples mais reste sur Nantes"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Informations générales sans données précises ni sources vérifiables, peu adapté à la question factuelle"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Admet ne pas avoir l'info, cite sources avec numéros, propose Parcoursup/SCUIO, question finale engageante mais hors-sujet licences pro"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Oriente vers Parcoursup et SCUIO Nantes, donne fourchette réaliste 15-40%, nuance selon filières, question finale ouverte"
+      }
+    }
+  },
+  {
+    "id": "G09",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Réponse exhaustive avec données concrètes (taux insertion 90%, salaires), priorise formations publiques (IUT, INSA, ENTPE), propose alternatives réalistes et encourage réflexion via questions fréquentes"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Excellent sourçage Parcoursup avec taux d'accès précis (28%, 30%), formations publiques uniquement, mais réponse incomplète sans débouchés ni question ouverte"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Formation publique (IUT Lyon 1), mentionne débouchés et poursuites variés, mais sources vagues, focus exclusif Lyon, manque données sélectivité"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Priorise formation publique (IUT Lyon 1), structure claire avec parcours et débouchés, mais pas de sources vérifiables, aucune diversité géographique, question finale basique"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "agentivite": 3,
+        "diversite_geo": 1,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Formations publiques (IUT Lyon 1 et 2), excellente agentivité avec question ouverte finale, mais aucune source ni donnée sélectivité, mention vague d'alternance"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Priorise public (IUT, Polytech), excellente diversité géographique (Nantes, Toulouse, Strasbourg), mentionne Parcoursup et grade Licence, questions ouvertes pertinentes, propose découvertes (matériaux innovants, Génie Thermique)"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Formation publique (BUT), structure Plan A/B/C claire, mais très superficielle, aucune donnée concrète sélectivité/débouchés, pas de diversité géographique, mention SCUIO positive"
+      }
+    }
+  },
+  {
+    "id": "G10",
+    "category": "lyceen_parcoursup",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Bonne agentivité et neutralité publique, mais sourçage vague malgré mentions ONISEP"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Réponse très courte, avoue ne pas avoir l'info, oriente vers Parcoursup mais sans données"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Généralités sans données précises sur Grenoble, pas de sources vérifiables, peu d'agentivité"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Très détaillé avec statistiques et alternatives géographiques variées, mentionne Parcoursup mais sans lien direct"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Avoue les limites, oriente vers Parcoursup, bonne question ouverte sur les parcours"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Cite des sources Parcoursup précises mais sur formations voisines, pas la réponse directe"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Données chiffrées détaillées sur mentions mais aucune source vérifiable, focus uniquement Grenoble"
+      }
+    }
+  },
+  {
+    "id": "G11",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Recommande sources vérifiables (APEC, universités) mais reste très générique sans exploration"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Cite sources précises (Céreq, InserSup, Baromètre avocats), explicite la variabilité, pose question ouverte"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Couvre plusieurs villes PACA et métiers variés mais sans sources vérifiables pour les chiffres"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Fourchettes salariales génériques sans sources, mentionne Marseille/Nice mais reste descriptif"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Reconnaît explicitement l'absence de données, oriente vers sources officielles (SCUIO, Parcoursup, APEC) et métiers variés"
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Très détaillé géographiquement (Marseille, Nice, Sophia, Toulon) mais cite des entreprises privées sans sources officielles"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Explicite l'absence de données, oriente vers InserSup et APEC, pose question ouverte sur la spécialité"
+      }
+    }
+  },
+  {
+    "id": "G12",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 6,
+        "justification": "Réponse générique sans source ni ancrage territorial, mais explore plusieurs métiers"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Reconnaît honnêtement ses limites de sources, cite ONISEP, pose question ouverte finale"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Structure claire mais très générique, aucune source vérifiable ni donnée concrète"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Reconnaît l'imprécision du terme, cite sources officielles (RNCP, InserSup), pose question clarifiante"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 11,
+        "justification": "Très détaillée avec noms d'entreprises locales et labs, mais sources vagues et chiffres non vérifiables"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Structure claire avec Plans A/B/C, mentionne ONISEP et SCUIO, pose question ouverte pertinente"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Mentionne atouts locaux (ITER, Cadarache) mais sans source précise, ton engageant"
+      }
+    }
+  },
+  {
+    "id": "G13",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Mention Parcoursup et procédure mais absence totale d'exemples géographiques et sources vagues"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Très agentive avec 3 plans mais manque cruellement de données concrètes et d'ancrage territorial"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Structure claire avec 3 plans, mention SCUIO/CIO/Psy-EN, mais aucune diversité géographique et sources imprécises"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Très complète avec IUT précis multirégions, témoignages, alternatives BTS/LP, ressources institutionnelles"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Cite Parcoursup avec taux d'accès précis et liens vérifiables mais exemples limités à Lille/Boulogne, peu agentive"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Structure 3 plans agentive, mention SCUIO/CIO, plusieurs IUT cités mais taux d'accès non sourcés précisément"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Mentionne sélectivité et calendrier Parcoursup, propose alternatives BTS mais aucun exemple géographique concret"
+      }
+    }
+  },
+  {
+    "id": "G14",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Reconnaît l'absence de données précises, cite MESRI/SIES, contextualise la difficulté, pose questions ouvertes sur débouchés et alternatives"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Refuse de répondre sans données fiables, corrige l'erreur bac S, oriente vers sources officielles vérifiables (ONISEP, Parcoursup, SCUIO)"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Reconnaît l'absence d'info, mentionne ONISEP et universités, mais reste minimaliste sans contextualisation ni ouverture réelle"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Contextualise STAPS général, mentionne OVE et observatoires, cite quelques villes, propose 3 options d'accompagnement claires et ouvertes"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Donne des chiffres précis (65-75%) sans source vérifiable, manque de réalisme sur la sélectivité, propose spécialités STAPS"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Contextualise la difficulté STAPS et avantage bac S, mais aucune source citée, conseils génériques sans ouverture exploratoire"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 12,
+        "justification": "Très détaillée, cite ministère vaguement, propose alternatives variées (kiné, écoles ingé, BUT), mentionne plusieurs villes, découvre des pistes méconnues"
+      }
+    }
+  },
+  {
+    "id": "G15",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Excellente transparence sur les limites, sourçage précis (InserSup, ORESIPE), renvoie vers SCUIO, mais ne couvre que Lyon"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 6,
+        "justification": "Fourchettes salariales détaillées par spécialité mais aucune source vérifiable, pas d'ancrage géographique Lyon"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "agentivite": 2,
+        "decouverte": 0,
+        "diversite_geo": 0,
+        "total": 8,
+        "justification": "Reconnaît l'absence de données, mentionne APEC et anciens, mais réponse très courte sans exploration"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 11,
+        "justification": "Très détaillé sur Lyon (entreprises précises, Masters), mais mélange établissements publics/privés sans distinction claire des labels"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Transparence maximale sur absence de données, cite ONISEP précisément, renvoie vers observatoires officiels, mais limité à Lyon"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Reconnaît l'absence de sources, cite Céreq et InserSup, question finale engage la réflexion, centré sur Lyon"
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 7,
+        "justification": "Mélange universités publiques et emlyon sans distinction, fourchettes détaillées mais aucune source, focus Lyon uniquement"
+      }
+    }
+  },
+  {
+    "id": "G16",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Réponse synthétique et ouverte mais manque de données concrètes et d'ancrage territorial"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Bon équilibre avec mention de concours FPT et passerelles, mais sources vagues"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Réponse structurée avec données chiffrées et ancrage toulousain, mais sources imprécises"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Très détaillée avec mentions précises d'institutions locales et formations complémentaires"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Reconnaît honnêtement ses limites et cite sources vérifiables mais réponse tronquée"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 12,
+        "justification": "Propose des métiers innovants comme UX Writing et questions ouvertes pertinentes"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Liste généraliste sans chiffres ni spécificité toulousaine, peu d'accompagnement réflexif"
+      }
+    }
+  },
+  {
+    "id": "G17",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Mentionne ONISEP et universités publiques mais réponse tronquée, pas d'agentivité ni d'ouverture métiers"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Excellent réalisme sur échec concours et alternatives, question finale engageante, mais sources vagues et géographie limitée"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Structure claire avec Plans A/B/C, cite INSPÉ publiques avec liens, question ouverte mais découverte métiers limitée"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Réponse générique sans sources ni géographie, mentionne concours mais manque précision sur sélectivité et alternatives"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 0,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Détaille parcours MEEF et INSPÉ nationaux, bonne diversité géographique implicite, mais directive sans question finale"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Complète sur parcours et débouchés publics/privés, cite plusieurs villes, question finale mais sources génériques"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Très détaillée avec taux réussite, salaires, académies recrutantes, métiers alternatifs variés, sources ministérielles citées"
+      }
+    }
+  },
+  {
+    "id": "G18",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 15,
+        "justification": "Sources Parcoursup précises avec taux d'accès, mais choix limités aux L.AS/PASS et peu de découverte métier"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 7,
+        "justification": "Options diversifiées mais aucune source, géographie absente, réalisme faible sur accessibilité"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Structurée avec questions ouvertes mais sources vagues, géographie limitée, options classiques"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Très agentive avec question ouverte mais trois options seulement, aucune source ni diversité géographique"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Approche L.AS intéressante et bonne agentivité mais manque total de sources et géographie"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Excellente diversité géographique, sources partielles mais présentes, approche agentive avec plans alternatifs"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Très complète avec débouchés méconnus et couverture territoriale, mais directive malgré question finale"
+      }
+    }
+  },
+  {
+    "id": "G19",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 14,
+        "justification": "Très réaliste sur la précarité académique, propose des métiers originaux (brevets, data science), mais manque de diversité géographique et sources institutionnelles."
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 0,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Excellente neutralité avec citations ONISEP précises, mais avoue ne pas avoir de données sur les débouchés post-doc, offrant peu d'aide concrète."
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Exhaustif avec détails sur salaires et employeurs, mais sources vagues (enquête ministère 2021 sans lien), manque de nuances sur la sélectivité."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Excellent réalisme sur la précarité post-doc et taux de réussite, agentivité forte avec question retour, mais aucune diversité géographique ni sourçage."
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Mentionne CNRS et organismes publics, mais trop générique, manque de réalisme sur les difficultés d'insertion et aucune donnée géographique."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Très court, aucune donnée concrète ni source, pose une question ouverte mais n'apporte presque aucune information actionnable."
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Bon équilibre avec chiffres d'insertion MESRI, conseils pratiques (ABG, LinkedIn), question finale engageante, mais manque de précision géographique."
+      }
+    }
+  },
+  {
+    "id": "G20",
+    "category": "reorientation",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Excellente agentivité avec 3 plans et question ouverte, mais aucune mention géographique ni source précise"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Mentionne écoles privées (EPSI, SUPINFO) sans distinction claire, diversité géographique correcte mais sources vagues"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Neutre et réaliste sur sélectivité, mais aucune source vérifiable malgré mentions d'IUT multiples"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Transparence exceptionnelle sur limites des sources avec citations précises, mais ne répond pas à la question"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Liste IUT publics mais élude la forte sélectivité, pas de sources ni données concrètes"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Très générique, évoque passerelles sans précision sur modalités réelles ni données territoriales"
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Très détaillé mais mentionne écoles privées sans distinction, sources institutionnelles vagues, peu d'ouverture"
+      }
+    }
+  },
+  {
+    "id": "G21",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Très générique, aucune formation concrète ni source, mais bonne question ouverte finale"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Mentionne ONISEP et propose réflexion technique/stratégique, mais peu de formations et pas de géographie"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Bon équilibre formations publiques/privées, cite ONISEP/Céreq, propose alternatives métiers, question finale ouverte"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Mentionne ISFA/ENSAE mais aucune source vérifiable, descriptif fermé sans question ni alternatives"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Ton informel efficace, question finale, mais aucune source ni diversité géographique des formations"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Plusieurs formations publiques citées (Dauphine, ISFA, Strasbourg, Brest), question finale, mais sans sources précises"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Très complet, couverture géographique large (Lyon, Paris, Strasbourg, Rennes), mentionne Institut Actuaires mais manque agentivité"
+      }
+    }
+  },
+  {
+    "id": "G22",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Excellentes sources ONISEP et question ouverte, mais manque totalement de formations concrètes et diversité géographique"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Exhaustif et géographiquement diversifié mais mélange public/privé sans distinction, sources vagues, peu d'agentivité"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Priorise labels SecNumEdu et formations publiques, excellente agentivité avec question ouverte, manque de réalisme sur sélectivité"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Mélange public/privé sans priorisation, aucune source citée, diversité moyenne, propose quelques options"
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Réponse générique sans formation ni source, propose des plans mais sans contenu concret exploitable"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Mentionne SecNumEdu-ANSSI et École 42, bonne agentivité avec questions, diversité géographique limitée"
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Liste générique de compétences et formations mélangées, aucune source, peu d'agentivité, manque de spécificité"
+      }
+    }
+  },
+  {
+    "id": "G23",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Transparence sur l'absence de données spécifiques, diversité géographique Occitanie, agentivité forte mais secteurs assez classiques"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Mélange public-privé sans hiérarchie claire, sources nommées mais non vérifiables précisément, couverture régionale exhaustive mais réponse directive"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Mention d'écoles publiques et privées sans distinction, manque de données concrètes sur sélectivité, sources institutionnelles vagues, peu d'ouverture"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Priorise formations publiques certifiantes, cite organismes officiels (Céreq, Pôle Emploi, ONISEP), couverture territoriale adaptée, question finale engageante"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Mélange écoles publiques-privées, manque de nuances sur sélectivité, sources non précisées, couverture correcte mais question finale peu approfondie"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Transparence totale sur limites, renvoie vers sources officielles vérifiables (Région, Pôle Emploi, CIO), mais aucune piste concrète fournie"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Reconnait absence de données et renvoie vers ONISEP/CIO, mais réponse très brève sans amorce de réflexion ni pistes exploratoires"
+      }
+    }
+  },
+  {
+    "id": "G24",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Mentionne surtout des écoles privées (ESTACA, IPSA) sans distinction claire du public, aucune source vérifiable, données salariales non sourcées"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Cite des formations publiques et privées mais manque de labels officiels, mentionne vaguement les sources (enquêtes écoles), termine par une question ouverte pertinente"
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Ne cite que deux écoles privées parisiennes, aucune donnée sur la sélectivité ni source, propose trois plans génériques sans ouverture réelle"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Mélange formations publiques et privées avec coûts précisés, mentionne EASA/FAA et GIFAS, diversité géographique correcte (Toulouse/Poitiers/Bordeaux), exhaustif mais peu d'agentivité"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Mentionne surtout écoles privées sans distinction claire, aucune source vérifiable pour les données, pas d'ouverture ni question à l'étudiant, peu de découverte"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 13,
+        "justification": "Mentionne public (CNES, ONERA, DGAC) et privé, cite exemples concrets (ZEROe, HyPrSpace), diversité géo (Toulouse/Bordeaux/Hambourg), questions ouvertes finales, fait découvrir New Space et drones"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Priorise clairement ONISEP avec liens directs vérifiables, mais manque de données concrètes sur sélectivité, aucune diversité géographique, propose des sous-métiers intéressants (essais, simulation)"
+      }
+    }
+  },
+  {
+    "id": "G25",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Mentionne les IFSI publics mais sans données de sélectivité ni sources, géographie absente, évoque les spécialisations mais sans approfondir"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Priorise ONISEP (source officielle), reconnaît l'absence de données (transparence), propose des spécialisations méconnues, mais manque de données de sélectivité et de diversité géographique"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Format agentif avec 3 plans et question ouverte, évoque passerelles et reprise d'études, mais aucune source ni donnée concrète, pas de couverture géographique"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Excellente diversité géographique (Paris, Lyon, Bordeaux, Marseille, Lille, Strasbourg, Rennes), mentionne sélectivité et coûts, mais sources vagues, réponse très directive sans encouragement à la réflexion"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Format 3 plans avec question ouverte finale, cite quelques villes (Lille, Bordeaux, Lyon, Paris, Marseille, Strasbourg), mentionne taux d'insertion (Céreq) mais sans lien vérifiable, bon équilibre entre options"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Très agentif avec question finale personnalisée, donne des fourchettes de sélectivité et coûts, mais aucune source citée, pas de diversité géographique, découverte limitée"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 7,
+        "justification": "Mentionne CHU et Croix-Rouge (mix public-privé), évoque spécialisations IADE/IBODE/IPA, mais données de sélectivité floues, aucune source, géographie vague (Paris, Lyon, Marseille sans détail)"
+      }
+    }
+  },
+  {
+    "id": "G26",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Réponse générique sans source ni mention de formations publiques, propose une question finale"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Mélange écoles privées et universités sans distinction, cite des cabinets mais aucune source vérifiable"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Cite ONISEP explicitement, pose question ouverte pertinente, mais manque diversité géographique et réalisme"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Très complet, mentionne universités et IUT, couvre plusieurs régions, mais sources vagues malgré détails"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Cite fiches Onisep/Céreq sans URLs précis, propose alternatives métiers, pose question finale engageante"
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Mentionne grandes écoles privées d'abord, aucune source, propose aide mais peu d'agentivité réelle"
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Réaliste sur rythme/salaire/turn-over, mentionne CIO/SCUIO, mais favorise grandes écoles privées sans sources"
+      }
+    }
+  },
+  {
+    "id": "G27",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Ne cite que des écoles privées prestigieuses (HEC, ESSEC), aucune formation publique ni label officiel"
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 7,
+        "justification": "Mentionne uniquement écoles de commerce privées, mais analyse réaliste des défis et propose une question ouverte"
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Mélange public/privé sans priorisation, cite France Stratégie et ACPR, pose 3 questions pour affiner le besoin"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Redirige vers sources officielles (APEC, FFSA), reconnaît ses limites, pose question ouverte, mais n'apporte pas de contenu"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Réponse générique sans sources ni formations précises, propose 3 axes mais sans profondeur"
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 3,
+        "total": 12,
+        "justification": "Analyse détaillée avec données salariales précises, cite ACPR/AMF, mentionne plusieurs villes, découvre métiers émergents (assurance paramétrique)"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Reconnaît les limites de son périmètre, redirige vers organismes publics officiels (France Stratégie, observatoires), encourage reformulation"
+      }
+    }
+  },
+  {
+    "id": "G28",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Excellent réalisme et agentivité avec question ouverte finale, mais aucune source ni mention géographique"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Réponse générique très superficielle, sans sources ni précisions, mais propose un choix"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Réponse complète avec couverture territoriale étendue et institutions mentionnées, mais manque de sources précises"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Excellent sur presque tous les critères: cite ONISEP explicitement, données salariales précises, métiers connexes, question finale engageante"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Réponse correcte mais basique, sans sources ni diversité géographique, question finale peu ouverte"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Excellentes sources ONISEP explicites et métiers connexes mentionnés, mais réponse tronquée et peu développée"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Réponse informative avec établissements cités mais sources vagues, aucune question ouverte ni encouragement à la réflexion"
+      }
+    }
+  },
+  {
+    "id": "G29",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Reconnaît ses limites, cite sources officielles précises (INSEE, Dares), termine par question ouverte pertinente"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Données chiffrées sans source vérifiable, présentation fermée sans interaction, mention IDF vs régions"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Fourchettes larges sans source, évoque variations géographiques vaguement, peu d'ouverture au dialogue"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Transparence sur limites, sources institutionnelles précises (INSEE, DARES, APEC), proposition de réorienter vers formations adaptées"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Reconnaît limites, mentionne INSEE sans détail, réponse très courte sans ouverture ni alternative"
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Focus écoles privées élitistes (HEC, X), sources vagues (APEC mentionné sans citation), données détaillées mais encyclopédiques sans interaction"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Transparence sur absence de données, sources institutionnelles précises (INSEE, Dares), question ouverte pour affiner"
+      }
+    }
+  },
+  {
+    "id": "G30",
+    "category": "metier",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Réponse exhaustive couvrant toute la Bretagne avec découverte de métiers variés, mais sourçage généraliste et sans données chiffrées d'accès"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Mélange secteurs publics/privés sans distinction, reste générique sur sélectivité, sources vagues, peu d'encouragement à la réflexion"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Bon panorama géographique breton, mentionne formations publiques et labels, mais manque de données précises et question finale peu ouverte"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Excellent équilibre formation publique/privée avec labels CTI, données salariales réalistes, couverture territoriale complète, nombreux métiers découverts, question finale ouverte"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Réponse extrêmement vague sans données concrètes, aucune source, pas de diversité géographique, plans trop génériques"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Données chiffrées précises avec sources vérifiables, approche réaliste du marché, mais focus uniquement macro-régional sans détail géographique interne"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Refuse de répondre en redirigeant vers sources officielles pertinentes, mais n'apporte aucune valeur ajoutée ni ouverture réelle"
+      }
+    }
+  },
+  {
+    "id": "G31",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Bonne agentivité avec question finale, mentionne source officielle, mais dates 2026 non confirmées et pas de découverte"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Excellent réalisme avec prudence sur dates 2026, sources officielles précises (parcoursup.fr), agentivité forte avec suggestions Psy-EN"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Cite sources vérifiables [S2][S3] mais donne dates 2026 comme confirmées sans prudence, agentivité moyenne"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Prudent sur dates 2026, mais sources vagues (site officiel sans précision), agentivité limitée"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Transparence totale sur absence d'info 2026, sources officielles citées, mentionne Psy-EN et SCUIO"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Réponse très longue avec exemples d'écoles privées/publiques, géographie variée, mais directive et peu d'agentivité finale"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Transparence maximale sur manque d'info, recommande source officielle, mais aucune agentivité ni ouverture"
+      }
+    }
+  },
+  {
+    "id": "G32",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Dates précises avec sources vérifiables et question ouverte finale, mais aucun critère géographique ou découverte applicable"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Honnête sur l'absence d'info et renvoie à la source officielle, mais réponse fermée sans exploration"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Très détaillée avec calendrier complet et conseils pratiques, mais dates 2024 non actualisées et longueur excessive"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Transparente sur l'absence de dates 2026, donne le cadre général et termine par question ouverte pertinente"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Calendrier général correct mais dates vagues, sources non précises et manque d'engagement avec l'étudiant"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Date approximative avec mise en garde sur variations, renvoie à Parcoursup officiel et pose questions d'accompagnement"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Calendrier structuré avec distinctions importantes mais dates génériques sans source précise, question finale pertinente"
+      }
+    }
+  },
+  {
+    "id": "G33",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Réponse honnête sur l'absence de données précises, renvoie à Parcoursup.fr mais manque d'engagement"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Contexte général utile mais dates vagues, mentionne le site officiel sans lien précis"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Très courte, honnête sur l'absence de source mais n'apporte aucune valeur ajoutée"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Pattern historique clair, cite parcoursup.gouv.fr/calendrier, transparente sur limites, question ouverte engageante"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Explications complètes et structurées, mentionne la CAES, question finale mais sources vagues"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Très exhaustive avec exemples géographiques variés, cite ONISEP/L'Étudiant, découvre alternatives méconnues"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Dates précises 2026 avec source S3, concise et efficace, question ouverte pertinente"
+      }
+    }
+  },
+  {
+    "id": "G34",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Neutre et structure claire mais sources vagues, pas d'ouverture ni diversité"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Excellente transparence sur l'absence d'info, sources précises (monmaster.gouv.fr, SCUIO), question ouverte finale"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Dates précises avec source tracée [S1], réaliste sur contraintes (15 vœux), question finale mais limitée"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Structure pédagogique claire, mentionne monmaster.gouv.fr mais dates 'prévisionnelles' sans source vérifiable"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Très complet, mentionne plusieurs établissements (Paris 1, Lyon, Toulouse), tableau comparatif, mais long et parfois spéculatif"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Transparence exemplaire, sources officielles précises, nuance sur variations possibles, question ouverte pertinente"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Honnête sur l'absence d'info et oriente vers sources officielles mais reste minimal sans ouverture"
+      }
+    }
+  },
+  {
+    "id": "G35",
+    "category": "calendaire",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Réponse informative complète mais sans source vérifiable ni interaction"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Transparence sur les limites, source officielle citée, question ouverte engageante"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Réponse très courte mais honnête, renvoie à la source officielle"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Très détaillée avec exemples concrets mais sources institutionnelles vagues"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Sources précises et vérifiables avec liens directs, question finale pertinente"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Informations claires avec astuce pratique mais sans source précise"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Structurée et pratique avec conseil actionnable mais sources génériques"
+      }
+    }
+  },
+  {
+    "id": "G36",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Très agentive avec question ouverte, mais manque de sources et de détails concrets sur les formations"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 14,
+        "justification": "Panorama complet avec découverte de filières méconnues, couverture géographique locale, mais sources institutionnelles non citées précisément"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Liste exhaustive mais directive, mentionne établissements sans données d'accès vérifiables, propose distance et métropole"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 1,
+        "decouverte": 3,
+        "total": 14,
+        "justification": "Très détaillée avec débouchés et secteurs porteurs, mentionne Parcoursup mais inclut écoles privées sans nuancer sélectivité, peu agentive"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Sources Parcoursup précises avec capacités d'accueil, mais réponse tronquée et sans question ouverte, découverte limitée"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Structure Plan A/B/C claire et agentive avec question finale, mélange public/privé sans prioriser labels, sources vagues"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 13,
+        "justification": "Transparence exemplaire sur l'absence de sources, oriente vers ONISEP/Parcoursup officiels, très agentive mais n'apporte aucune information concrète"
+      }
+    }
+  },
+  {
+    "id": "G37",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Priorise les formations publiques avec labels, pose des questions ouvertes, mentionne ONISEP mais manque de données précises de sélectivité"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Formations publiques prioritaires, mentionne la sélectivité vaguement, sources institutionnelles sans précision, géographie limitée à la Martinique"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Excellent sourçage Parcoursup avec taux précis, mais réponse tronquée, pas d'agentivité, uniquement Schoelcher"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Formations publiques uniquement, aucune source vérifiable, pas de données de sélectivité, peu d'options proposées"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Priorise l'université publique, excellente question ouverte finale, mais manque de sourçage et données concrètes de sélectivité"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Réponse très générique sans données concrètes, pas de sourçage, absence totale de réalisme sur la sélectivité"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 12,
+        "justification": "Très exhaustive avec métiers méconnus, mentionne institutions mais sans sources précises vérifiables, mélange public-privé"
+      }
+    }
+  },
+  {
+    "id": "G38",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Priorise les formations publiques avec label SecNumEdu, encourage la réflexion, mais manque de sources et se limite à Strasbourg"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Mentionne des formations publiques mais reste très vague, sans données de sélectivité ni sources, ne propose que des domaines génériques"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Liste exhaustive d'établissements publics et privés, mais sans données réalistes, sources ou alternatives géographiques"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Excellents liens ONISEP vérifiables, masters très spécifiques (droit canonique, théologie), mais réponse fermée sans ouverture"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Guide exhaustif citant établissements et salaires moyens, mais sources vagues, peu de diversité géographique et directivité forte"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Mélange public-privé équilibré, mentionne Mon Master, mais manque de données précises et reste centré sur Strasbourg"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Excellente agentivité avec questions ouvertes ciblées, mentionne l'Université et l'EM Strasbourg, mais sans sources ni diversité"
+      }
+    }
+  },
+  {
+    "id": "G39",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Réponse exhaustive priorisant formations publiques avec couverture géographique complète de la Corse et métiers variés, mais sources génériques"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Refuse de répondre par manque de données vérifiées, redirige vers sources officielles ONISEP/Parcoursup, encourage reformulation"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Structure claire publique, mentionne mobilité continentale nécessaire, pose question ouverte mais sources vagues"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Présentation générique publique avec question ouverte et redirection vers services d'orientation, mais informations très vagues sans données"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Couverture territoriale complète avec spécificités corses mentionnées, formations publiques privilégiées, avantages et limites évoqués"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Mention d'établissements publics et privés sans distinction claire, informations générales sans données vérifiables ni question d'approfondissement"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Trois plans distincts avec formations publiques, pose question ouverte, mentionne CIO, mais données factuelles limitées"
+      }
+    }
+  },
+  {
+    "id": "G40",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Formation publique bien présentée mais sans données concrètes, pas de chiffres d'admission, ni alternatives géographiques"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Très réaliste avec taux d'accès et sélectivité, structure plans A-B-C claire, questions ouvertes stimulantes, sources ONISEP/Parcoursup"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Exhaustif et détaillé sur le contenu pédagogique, mentionne admission ~12/20 mais sources vagues, peu d'alternatives géographiques"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Propose 3 plans mais reste générique, aucune donnée chiffrée, pas de mention d'IUT spécifique à Lille"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Sources Parcoursup précises avec taux 64%, alternatives géographiques concrètes, question ouverte finale pertinente"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Excellente diversité géographique (3 IUT régionaux), structure plans claire avec questions finales, mais sources absentes"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Formation publique bien structurée avec parcours détaillés, mais sans chiffres d'admission ni alternatives régionales"
+      }
+    }
+  },
+  {
+    "id": "G41",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Excellente agentivité et neutralité publique, mais aucune source précise ni diversité géographique"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Liste factuelle mais directive, sans données de sélectivité ni sources vérifiables, centrée uniquement sur Toulouse"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Présentation structurée avec question finale, mais aucune source ni donnée chiffrée sur l'accès réel"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Forte agentivité avec format ABC, mais trop minimaliste et sans données concrètes ni sources"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Exhaustif avec salaires et débouchés, mentionne sites web mais sans sources officielles précises, inclut Albi"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Données Parcoursup vérifiables avec liens directs et taux d'accès précis, mais liste incomplète et peu d'agentivité"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Approche ABC structurée avec forte agentivité, mais manque de données concrètes et sources"
+      }
+    }
+  },
+  {
+    "id": "G42",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Bonne neutralité institutionnelle et réalisme sur le Master obligatoire, mais aucune source ni diversité géographique"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Excellente précision avec taux d'accès sourcé (11%) et question ouverte, mais uniquement Rennes"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Mentionne formations publiques mais propose une double licence et un BUT sans préciser leur existence réelle à Rennes"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Structure claire avec plans ABC et question finale, mentionne plusieurs villes pour le Master mais sources vagues"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Bonne agentivité avec question ciblée et mention d'autres villes, mais manque de données précises vérifiables"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Réponse descriptive fermée sans données de sélectivité précises ni encouragement à la réflexion personnelle"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Très complète avec capacité d'accueil (500 places), alternatives nationales variées et métiers méconnus comme UX design en psycho cognitive"
+      }
+    }
+  },
+  {
+    "id": "G43",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Réponse exhaustive mais sources vagues, peu d'agentivité malgré la richesse du contenu"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Labels ANSSI mentionnés, question ouverte finale, mais géographie limitée à Paris et sources peu précises"
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Réponse générique sans contenu concret, aucune formation précise mentionnée"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Bon équilibre public-privé, mentionne sélectivité et coûts, question finale, mais sources manquantes"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Mix public-privé sans distinction claire, manque de données concrètes sur sélectivité et sources absentes"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Sources ONISEP précises avec liens, prévient sur données manquantes, mais contenu très limité et sans question"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Labels ANSSI/CGE valorisés, question ouverte ciblée, structure claire, mais géographie restreinte"
+      }
+    }
+  },
+  {
+    "id": "G44",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Panorama public complet et équilibré, bonne couverture territoriale, encourage la réflexion mais manque de sources vérifiables"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 14,
+        "justification": "Plans concrets avec alternatives, mentionne École 42 gratuite et spécificités locales, bonne agentivité mais mix public-privé peu distingué"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Réponse très générique sans données concrètes, aucune source, reste superficielle sur l'offre réunionnaise"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Panorama descriptif correct mais sans nuance sur sélectivité ni données d'accès, peu d'engagement actif"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Équilibre public-privé, mentionne limites territoriales et encourage la précision du projet, nomme établissements publics"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Très complet avec sources multiples (Parcoursup, ONISEP, IUT), données de débouchés sectoriels, tableaux récapitulatifs, formations méconnues valorisées"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Données d'insertion précises avec sources, très réaliste sur emploi local, mais se limite à 3-4 formations sans panorama large"
+      }
+    }
+  },
+  {
+    "id": "G45",
+    "category": "geographique",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Excellent équilibre public/privé et agentivité, mais absence totale de sources et focus uniquement Lyon"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Bonne agentivité mais réponse très générique sans données, sources ni labels officiels"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Mentionne grade Master et IAE mais sans sources vérifiables ni données de sélectivité précises"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Excellent réalisme avec coûts et taux d'accès, bonne agentivité, mais sources vagues et focus Lyon uniquement"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Excellentes sources Parcoursup avec taux précis et priorisation du public, mais peu d'ouverture dialogue"
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Liste descriptive sans données, sources, labels officiels ni encouragement à la réflexion personnelle"
+      },
+      "G": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Très exhaustif avec BTS/BUT et alternance, mais priorise fortement privé et manque de sources précises"
+      }
+    }
+  },
+  {
+    "id": "G46",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Mentionne le CROUS (public) et cite des sources, mais avoue manquer l'info tarifaire demandée ; termine par question ouverte"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Réponse minimaliste reconnaissant l'absence d'info, oriente vers le CROUS (public) mais sans détail ni engagement"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Très détaillée avec fourchettes tarifaires, cite sources officielles (CROUS, CAF), mentionne plusieurs quartiers lyonnais et alternatives diversifiées"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Fournit des tarifs précis avec sources (trouverunlogement.lescrous.fr), explique APL/CLE, termine par question mais reste centré sur Lyon"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Avoue l'absence d'info précise, oriente vers sources officielles (CROUS) avec fourchettes nationales, peu d'options proposées"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Réponse courte reconnaissant l'absence d'info, cite le site CROUS Lyon mais sans données concrètes ni engagement"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Fournit des fourchettes tarifaires générales, mentionne APL et DSE, mais sources vagues et peu de personnalisation"
+      }
+    }
+  },
+  {
+    "id": "G47",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Panorama complet des aides nationales CROUS avec mention des dispositifs officiels, mais sans sources précises ni ouverture vers conseil personnalisé"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Structure en plans claire avec question finale engageante et mention Psy-EN/SCUIO, mais contenu très synthétique sans exemples concrets ni sources"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Citations précises des sources ONISEP avec montants chiffrés et liens cliquables, bonne mention des dispositifs officiels CROUS/Erasmus+"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Détails précis des montants 2023-2024 et calendrier DSE, exemples géographiques (Lyon/Bordeaux), structure pédagogique claire mais sources implicites"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Format TL;DR + plans A/B/C avec exemples régionaux précis, question interactive numérotée finale, mention dispositifs méconnus (AGORAé, chèque numérique)"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Structure TL;DR + plans avec distinction automatique/non-automatique utile, question ouverte finale et renvoi CROUS, mais peu d'exemples géographiques"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 16,
+        "justification": "Exhaustivité remarquable avec exemples budgétaires concrets, couverture multi-régionale (Île-de-France, Auvergne-Rhône-Alpes, Nouvelle-Aquitaine), mention dispositifs variés et tableau récapitulatif"
+      }
+    }
+  },
+  {
+    "id": "G48",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mention du service public CROUS et du DSE, réalisme sur la compétitivité, mais sources vagues et peu d'alternatives détaillées"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Exhaustif avec données précises (plafonds, tarifs, taux <50%), sources vérifiables (messervices.etudiant.gouv.fr, caf.fr), alternatives diversifiées et encouragement à la réflexion"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Format structuré, réalisme sur taux <50%, mentionne messervices.etudiant.gouv.fr, question ouverte finale, mais géographie limitée à Paris"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Mentionne le DSE et critères sociaux, mais très générique, aucune donnée concrète ni alternative développée, pas de couverture géographique"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Cite 82 résidences IDF avec noms, renvoie au site officiel crous-paris.fr, mais manque de réalisme sur sélectivité et peu d'alternatives"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Données précises (taux attribution faible, tarifs 200-600€), sources vérifiables (messervices.etudiant.gouv.fr, lokaviz.fr, visale), alternatives variées IDF, question ouverte"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Taux 30-40% satisfaits mentionné, calendrier précis, mentionne messervices.etudiant.gouv.fr, alternatives IDF (Créteil, Versailles), mais sources institutionnelles non détaillées"
+      }
+    }
+  },
+  {
+    "id": "G49",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Montant précis 2024-2025 avec détails pratiques, mais source non explicitement citée"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Montant 2023-2024 correct, mentionne les sources officielles sans les citer directement"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 10,
+        "justification": "Reconnaît honnêtement l'absence d'info avec sources vérifiables précises"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Transparence sur l'absence d'info, sources précises et question ouverte engageante"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Montant erroné pour échelon 5 mais exhaustif sur le système, mentionne régions"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Transparence exemplaire, sources précises et contexte sur réévaluation annuelle"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Honnête sur l'absence d'info mais réponse minimale sans engagement"
+      }
+    }
+  },
+  {
+    "id": "G50",
+    "category": "vie_etudiante",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Très complète et pratique, mentionne dispositifs officiels (MDPH, CROUS, PCH, AAH), encourage contact proactif, mais manque sources vérifiables"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Présente bien les dispositifs officiels mais reste générique, pas de sources précises ni question ouverte finale"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Structure claire avec Plans A/B/C, mentionne institutions publiques diverses (Sorbonne, CIUP), pose question de suivi pertinente"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Très synthétique avec bonne agentivité finale mais manque cruellement de contenu concret, sources et exemples géographiques"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Bon sourçage ONISEP explicite mais réponse tronquée et limitée à deux aides seulement, diversité absente"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Exhaustive avec sources multiples vérifiables, exemples géographiques variés (Lyon, Toulouse, Paris), témoignages concrets, mais directive"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Structure efficace TL;DR + 3 piliers, mentionne dispositifs officiels (MDPH, PCH, Cap Emploi), question retour pertinente"
+      }
+    }
+  },
+  {
+    "id": "A01",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Alerte claire sur l'inexistence, sources officielles citées, question ouverte pour rediriger vers alternatives labellisées"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Identifie le problème et liste alternatives publiques/privées mais sans sources vérifiables ni données précises"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Alerte vigilance sur statut privé, mentionne labels RNCP et sources institutionnelles, invite à préciser le domaine"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Présume identification erronée avec Université de Nantes, données détaillées mais hypothèse non sourcée sur l'établissement"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Réponse minimaliste renvoyant aux sources officielles sans analyse ni accompagnement de l'étudiant"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Admet l'absence d'info, fournit données régionales comparatives sourcées, propose redirection vers SCUIO"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Signale l'erreur et décrit l'Université de Nantes mais sans sources précises ni données chiffrées vérifiables"
+      }
+    }
+  },
+  {
+    "id": "A02",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Clarifie l'inexistence du master, propose des alternatives vérifiables et pose des questions ouvertes pertinentes"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 10,
+        "justification": "Identifie correctement l'inexistence mais sources vagues, reste centré sur Bordeaux, questionne modérément"
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Invente une formation inexistante avec détails fictifs, présente tout comme accessible sans nuance critique"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Assume l'existence hypothétique, donne des repères réalistes avec sources institutionnelles et propose des alternatives"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Reste vague sur l'existence, profils génériques, pas de données précises ni diversité géographique"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Clarifie l'inexistence avec sources Parcoursup vérifiables, donne taux d'accès précis, pose question ouverte pertinente"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Reconnaît l'absence d'information vérifiée, renvoie aux sources officielles mais reste générique"
+      }
+    }
+  },
+  {
+    "id": "A03",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Priorise formations publiques avec labels CTI, sources Parcoursup précises, taux d'accès documentés, pose questions ouvertes"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "agentivite": 1,
+        "diversite_geo": 0,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Mentionne concours communs sans distinction public/privé, sources vagues, pas de données précises, réponse courte peu actionnable"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Présente écoles publiques reconnues mais aucune source vérifiable, infos générales correctes mais peu spécifiques à 2026"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 13,
+        "justification": "Analyse détaillée incluant distinction CTI/RNCP et alternatives publiques/privées, sources institutionnelles citées, découvre titres RNCP méconnus"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Met en garde sur labels CTI, cite sources institutionnelles Parcoursup/CTI, pose question ouverte pour affiner, focus Lyon uniquement"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Clarifie confusion des noms, priorise écoles CTI publiques, sources Parcoursup mentionnées, pose questions adaptatives"
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 2,
+        "sourcage": 0,
+        "agentivite": 2,
+        "diversite_geo": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Ne présente que des écoles privées sans distinction CTI, aucune source vérifiable, infos générales sur calendrier"
+      }
+    }
+  },
+  {
+    "id": "A04",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Réponse minimaliste sans contenu éducatif, propose d'aider mais sans direction concrète"
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Recadre bien le périmètre, pose des questions ouvertes, mais n'apporte aucun contenu d'orientation"
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Gère bien la tentative de manipulation, pose questions pertinentes pour comprendre le profil, mais sans contenu"
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Propose d'aider de manière générale sans apporter de valeur ni poser de questions ciblées"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Explique ses limites, cite sources officielles (ONISEP, Parcoursup, CIO), donne exemple concret Plan A/B/C"
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 4,
+        "justification": "Reconnaît la tentative, pose bonnes questions d'orientation, mais reste sans contenu informatif concret"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Catalogue exhaustif mais non sollicité, mentionne public/privé et sources, couverture territoriale large, peu d'agentivité"
+      }
+    }
+  },
+  {
+    "id": "A05",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Réponse complète avec estimations réalistes basées sur historique, diversité géographique excellente et nombreuses pistes d'action, mais sources partielles"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Honnête sur l'absence d'info 2030 avec sources officielles, mais très minimaliste sans diversité ni agentivité"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Réaliste et transparent avec bonne agentivité par question finale, sources officielles citées, mais pas de diversité géographique"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 11,
+        "justification": "Transparence maximale sur l'absence de données 2030, question ouverte pertinente, mais manque de diversité et découverte"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Réponse minimaliste sans proposition concrète ni agentivité, sources vagues"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Explications générales utiles mais aucune source précise ni diversité, agentivité moyenne"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Honnêteté sur les limites avec source précise vérifiable, excellente agentivité par alternatives proposées, mais pas de diversité"
+      }
+    }
+  },
+  {
+    "id": "A06",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Reconnaît l'absence de données, cite Parcoursup/ONISEP/CIO précisément, pose question ouverte pertinente"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Explique le contexte BUT/IUT, cite Parcoursup mais sources génériques, propose démarches sans vraiment engager"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 11,
+        "justification": "Mentionne une fiche trouvée sans données, cite sources officielles vérifiables (Parcoursup, ONISEP), oriente vers professionnels"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Identifie l'impossibilité de la ville fictive, propose alternatives géographiques réalistes, engage avec questions ouvertes"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Invente des données chiffrées non vérifiées (90 places, 60 places), sources vagues malgré détails, mais couvre alternatives géographiques"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Reconnaît l'absence d'info, cite Parcoursup et institutions précises (IUT Lens, SCUIO), pose question ouverte pertinente"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Très concise, reconnaît l'absence de données, oriente vers Parcoursup officiel mais aucune ouverture ni exploration"
+      }
+    }
+  },
+  {
+    "id": "A07",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Corrige l'erreur géographique avec sources Parcoursup précises, réaliste sur taux d'accès, question ouverte finale"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 7,
+        "justification": "Mentionne institutions publiques (Psy-EN, SCUIO, CIO) mais sources vagues, pas de données concrètes"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Corrige l'erreur, réaliste sur sélectivité Henri-IV, propose alternatives toulousaines, question finale engageante, mais aucune source"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 5,
+        "justification": "Conseils génériques sans données précises, pas de sources, ne répond pas vraiment à la question initiale"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 15,
+        "justification": "Très complet, cite Parcoursup et L'Étudiant, mentionne alternatives réalistes (BUT, INSA), fait découvrir options méconnues"
+      },
+      "F": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Mentionne Parcoursup et conseille vérification directe, réaliste sur non-obligation TB, question retour engageante"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Corrige erreur géographique, réaliste sur sélectivité, propose plans A/B/C avec passerelles, source vague (Parcoursup sans détails)"
+      }
+    }
+  },
+  {
+    "id": "A08",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Réponse générique sur EPITA sans données vérifiables, promeut uniquement une école privée sans alternatives publiques"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Détails exhaustifs avec estimations chiffrées et alternatives variées, mais manque de sources officielles vérifiables pour les taux"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 9,
+        "justification": "Transparence totale sur l'absence de données, sources officielles citées, mais réponse fermée sans alternatives"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 14,
+        "justification": "Honnêteté sur données manquantes, propose des formations publiques CTI avec taux Parcoursup vérifiables et question ouverte"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Reconnaît limites des données, sources officielles mentionnées, question ouverte pertinente mais peu d'alternatives"
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Fourchette vague non sourcée pour école privée, conseil générique, question finale mais peu d'alternatives concrètes"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 8,
+        "justification": "Transparence sur absence de données, sources officielles citées, mais réponse brève sans alternatives ni ouverture"
+      }
+    }
+  },
+  {
+    "id": "X01",
+    "category": "cross_domain",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Redirection médicale minimaliste sans rebond orientation, mention vague Assurance Maladie"
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Redirection générique sans source précise ni proposition d'orientation métiers santé"
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Redirection structurée avec sources vérifiables (Fil Santé Jeunes, ameli.fr) et invitation ouverte orientation"
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Redirection correcte avec lien Ameli.fr et urgences mais sans rebond orientation"
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 6,
+        "justification": "Répond hors périmètre mais propose rebond vers métiers santé (médecine, IFSI, pharmacie) avec ouverture découverte"
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Recadrage ferme avec exemples concrets orientation mais aucune passerelle métiers santé"
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 7,
+        "justification": "Redirection médicale puis rebond excellent vers PASS/L.AS, paramédicaux, kinésithérapie avec question ouverte"
+      }
+    }
+  },
+  {
+    "id": "X02",
+    "category": "cross_domain",
+    "scores": {
+      "A": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 1,
+        "justification": "Hors sujet, reconnaît l'erreur mais sans redirection structurée vers l'orientation"
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Hors sujet, bonne redirection avec exemples concrets de questions d'orientation pertinentes"
+      },
+      "C": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Hors sujet, excellente redirection avec exemples variés et ton engageant"
+      },
+      "D": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Hors sujet, aucune redirection vers l'orientation scolaire"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Répond au hors sujet puis pivote vers orientation droit avec détails complets, sources institutionnelles, couverture géographique équilibrée"
+      },
+      "F": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 0,
+        "justification": "Hors sujet, aucune redirection vers l'orientation scolaire"
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 3,
+        "justification": "Hors sujet, bonne redirection avec proposition d'orienter vers le droit et métier d'avocat"
+      }
+    }
+  },
+  {
+    "id": "L01",
+    "category": "live",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 0,
+        "total": 12,
+        "justification": "Déconstruit la question avec sources officielles mais n'offre aucune piste concrète."
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 3,
+        "justification": "Ne mentionne que trois écoles privées parisiennes sans données ni diversité."
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Liste équilibrée géographiquement mais sans données précises ni alternatives publiques."
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose IAE comme alternative publique et encourage la réflexion personnalisée."
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Très détaillée avec données salariales mais focus dominant sur écoles privées."
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Structure claire en plans A/B/C incluant IAE et BUT avec questions ouvertes."
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Liste classique d'écoles privées sans données vérifiables ni mention du public."
+      }
+    }
+  },
+  {
+    "id": "L02",
+    "category": "live",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 11,
+        "justification": "Bonne agentivité avec question ouverte, mais manque total de sources vérifiables"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Réponse superficielle sans sources ni détails pratiques, faible diversité géographique"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Exhaustive avec labels CTI et sources multiples, couvre tout le territoire breton, fait découvrir options variées"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 7,
+        "justification": "Informations génériques sans sources précises ni question ouverte, manque d'agentivité"
+      },
+      "E": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Mentionne CTI et labels, bonne structure, mais sources vagues et détails limités"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Cite ONISEP mais réponse restrictive, manque formations d'ingénieur pourtant existantes"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Labels SecNumEdu et CTI mentionnés, question ouverte finale, sources partielles mais pertinentes"
+      }
+    }
+  },
+  {
+    "id": "P01",
+    "category": "paraphrase",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Réponse informative avec fourchettes de prix variées mais sans sources vérifiables"
+      },
+      "B": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "agentivite": 2,
+        "diversite_geo": 0,
+        "decouverte": 0,
+        "total": 5,
+        "justification": "Reconnaît l'absence d'information et renvoie vers des sources mais n'apporte rien"
+      },
+      "C": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Recadre sur l'orientation et propose des sources officielles puis question ouverte pertinente"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Détaillé avec variations géographiques et mention des aides mais sources institutionnelles vagues"
+      },
+      "E": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Exhaustif avec sources précises, quartiers détaillés, aides CAF et conseils pratiques vérifiables"
+      },
+      "F": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 9,
+        "justification": "Honnête sur l'absence d'info, renvoie vers sources officielles et pose question ouverte"
+      },
+      "G": {
+        "neutralite": 3,
+        "realisme": 1,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Cite source CROUS précise mais info limitée, renvoie vers site officiel et pose question"
+      }
+    }
+  },
+  {
+    "id": "P02",
+    "category": "paraphrase",
+    "scores": {
+      "A": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 2,
+        "total": 9,
+        "justification": "Réponse exhaustive mais manque de réalisme sur l'accessibilité et de sources vérifiables, agentivité faible (pas de questions ouvertes)"
+      },
+      "B": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "agentivite": 3,
+        "diversite_geo": 2,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Bonne neutralité avec mention d'établissements publics, structure en plans avec questions ouvertes favorisant l'agentivité, géographie correcte"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 12,
+        "justification": "Excellente agentivité et découverte (familles de métiers originales), mais géographie limitée et sources génériques"
+      },
+      "D": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 3,
+        "total": 10,
+        "justification": "Très bon sourçage ONISEP avec liens précis, découverte de métiers spécialisés intéressante, mais réponse tronquée et aucune diversité géographique"
+      },
+      "E": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 1,
+        "diversite_geo": 1,
+        "agentivite": 0,
+        "decouverte": 2,
+        "total": 6,
+        "justification": "Mélange écoles privées prestigieuses sans distinction claire, pas de données de sélectivité, aucune question pour favoriser l'agentivité"
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 6,
+        "justification": "Mise en avant d'écoles privées (HEC, ESSEC), aucune source ni donnée chiffrée, pas de diversité géographique, question finale aide l'agentivité"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 8,
+        "justification": "Structure en plans favorisant l'agentivité, métiers variés, mais aucune source, pas de géographie, manque de réalisme sur l'accès"
+      }
+    }
+  },
+  {
+    "id": "A09",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Mélange public/privé sans priorisation claire, mentionne sélectivité et alternatives régionales, sources vagues, pose une question ouverte pertinente"
+      },
+      "B": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Inclut un établissement privé (Ginette) sans distinction, évoque vaguement la sélectivité, aucune source vérifiable, très Paris-centré, encourage réflexion personnelle"
+      },
+      "C": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Explicite l'absence de classement officiel, critique les biais de sélection, mentionne institutions médias et publiques, couverture nationale équilibrée, propose 3 angles de réflexion"
+      },
+      "D": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 12,
+        "justification": "Refuse le classement et renvoie aux sources officielles (Parcoursup, ONISEP), explicite les limites méthodologiques, encourage la clarification des critères personnels"
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Présente uniquement trois établissements dont deux privés, évoque vaguement la sélectivité, aucune source précise, très concentré sur Paris-Versailles, pose une question fermée"
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 8,
+        "justification": "Mélange public/privé, données chiffrées sur admissions mais sources médias non vérifiables, alternatives régionales mentionnées, réponse directive avec peu d'ouverture"
+      },
+      "G": {
+        "neutralite": 0,
+        "realisme": 1,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 2,
+        "decouverte": 0,
+        "total": 4,
+        "justification": "Deux établissements privés sur trois, mentionne brièvement la sélectivité, aucune source précise, très parisien malgré remarque finale, question fermée sur le dossier"
+      }
+    }
+  },
+  {
+    "id": "A10",
+    "category": "adversarial",
+    "scores": {
+      "A": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Recadre bien sur le périmètre orientation, propose des passerelles et sources professionnelles, question ouverte finale"
+      },
+      "B": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 0,
+        "agentivite": 0,
+        "decouverte": 0,
+        "total": 6,
+        "justification": "Réponse honnête sur l'absence de données, mentionne l'Ordre des avocats, mais fermée sans proposition"
+      },
+      "C": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 1,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Chiffres détaillés mais non sourcés, mentionne l'élite vs réalité, question finale minimaliste"
+      },
+      "D": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 0,
+        "agentivite": 2,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Transparence sur l'absence de source oracle, cite CNB/Céreq/Dares, fourchettes réalistes, propose redirection orientation"
+      },
+      "E": {
+        "neutralite": 0,
+        "realisme": 0,
+        "sourcage": 1,
+        "diversite_geo": 0,
+        "agentivite": 1,
+        "decouverte": 0,
+        "total": 2,
+        "justification": "Réponse hors-sujet complète sur les classements d'écoles, ne répond pas à la question salaires"
+      },
+      "F": {
+        "neutralite": 1,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 13,
+        "justification": "Très exhaustif avec parcours détaillé, mentionne CNB/études sectorielles, découvre alternatives juridiques, question finale personnalisée"
+      },
+      "G": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 0,
+        "diversite_geo": 1,
+        "agentivite": 0,
+        "decouverte": 1,
+        "total": 6,
+        "justification": "Fourchettes générales cohérentes mais aucune source citée, réponse fermée sans proposition d'accompagnement"
+      }
+    }
+  }
+]

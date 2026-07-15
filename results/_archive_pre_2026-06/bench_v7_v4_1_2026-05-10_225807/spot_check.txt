@@ -1,0 +1,70 @@
+Loaded 47193 fiches from data/processed/formations_v5.json
+Loaded FAISS index from data/embeddings/formations_v5.index
+
+[1/13] Quels métiers vont recruter en Occitanie en 2030 ?
+  → 0/5 top-K avec domain attendu 'metier_prospective'
+  → 0 citations [source SX]
+  → latency: 7.68s
+
+[2/13] Combien coûte le logement étudiant CROUS à Lyon ?
+  → 0/5 top-K avec domain attendu 'crous'
+  → 0 citations [source SX]
+  → latency: 3.55s
+
+[3/13] Quels sont les blocs de compétences du RNCP 38450 ?
+  → 5/5 top-K avec domain attendu 'competences_certif'
+  → 5 citations [source SX]
+  → latency: 4.30s
+
+[4/13] Quel salaire après un Master Droit en région PACA ?
+  → 0/5 top-K avec domain attendu 'insertion_pro'
+  → 3 citations [source SX]
+  → latency: 6.87s
+
+[5/13] Que fait un actuaire au quotidien ?
+  → 0/5 top-K avec domain attendu 'metier_detail'
+  → 3 citations [source SX]
+  → latency: 7.14s
+
+[6/13] Quelles aides financières pour les étudiants boursiers ?
+  → 5/5 top-K avec domain attendu 'financement_etudes'
+  → 3 citations [source SX]
+  → latency: 9.23s
+
+[7/13] Quelles formations en Guadeloupe ?
+  → 0/5 top-K avec domain attendu 'territoire_drom'
+  → 5 citations [source SX]
+  → latency: 6.09s
+
+[8/13] Marché de l'emploi cadres en Bretagne ?
+  → 1/5 top-K avec domain attendu 'apec_region'
+  → 3 citations [source SX]
+  → latency: 9.35s
+
+[9/13] Salaire moyen d'un cadre supérieur (PCS 37) ?
+  → 0/5 top-K avec domain attendu 'insee_salaire'
+  → 0 citations [source SX]
+  → latency: 3.63s
+
+[10/13] Insertion à 3 ans après un Bac pro Industrie ?
+  → 1/5 top-K avec domain attendu 'formation_insertion'
+  → 1 citations [source SX]
+  → latency: 5.30s
+
+[11/13] Quelles sont les spécialités possibles en BAC PRO agriculture ?
+  → 1/5 top-K avec domain attendu 'voie_pre_bac'
+  → 0 citations [source SX]
+  → latency: 8.68s
+
+[12/13] Taux de réussite L1 pour un bac S avec mention bien ?
+  → 0/5 top-K avec domain attendu 'parcours_bacheliers'
+  → 0 citations [source SX]
+  → latency: 3.85s
+
+[13/13] Quelle insertion après un doctorat en chimie ?
+  → 0/5 top-K avec domain attendu 'insertion_pro'
+  → 0 citations [source SX]
+  → latency: 4.91s
+
+→ 5/13 questions ont leur domain attendu dans top-5
+Rapport : /home/matteo_linux/projets/OrientIA/docs/SPOT_CHECK_V5_2026-05-10.md

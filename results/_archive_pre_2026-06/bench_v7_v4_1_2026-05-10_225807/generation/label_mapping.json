@@ -1,0 +1,596 @@
+{
+  "G01": {
+    "A": "mistral_neutral",
+    "B": "gpt4o_neutral",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_v3_2_no_rag",
+    "E": "claude_v3_2_no_rag",
+    "F": "our_rag",
+    "G": "claude_neutral"
+  },
+  "G02": {
+    "A": "gpt4o_neutral",
+    "B": "claude_v3_2_no_rag",
+    "C": "mistral_v3_2_no_rag",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "our_rag",
+    "F": "claude_neutral",
+    "G": "mistral_neutral"
+  },
+  "G03": {
+    "A": "gpt4o_neutral",
+    "B": "mistral_v3_2_no_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_neutral",
+    "E": "claude_neutral",
+    "F": "claude_v3_2_no_rag",
+    "G": "our_rag"
+  },
+  "G04": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "claude_neutral",
+    "C": "our_rag",
+    "D": "gpt4o_neutral",
+    "E": "claude_v3_2_no_rag",
+    "F": "mistral_neutral",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "G05": {
+    "A": "claude_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "claude_neutral",
+    "D": "mistral_neutral",
+    "E": "our_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "G06": {
+    "A": "claude_neutral",
+    "B": "our_rag",
+    "C": "gpt4o_neutral",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "mistral_neutral",
+    "F": "claude_v3_2_no_rag",
+    "G": "mistral_v3_2_no_rag"
+  },
+  "G07": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "claude_neutral",
+    "C": "mistral_neutral",
+    "D": "mistral_v3_2_no_rag",
+    "E": "claude_v3_2_no_rag",
+    "F": "gpt4o_neutral",
+    "G": "our_rag"
+  },
+  "G08": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "mistral_neutral",
+    "D": "claude_neutral",
+    "E": "gpt4o_neutral",
+    "F": "our_rag",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G09": {
+    "A": "mistral_neutral",
+    "B": "our_rag",
+    "C": "gpt4o_neutral",
+    "D": "claude_neutral",
+    "E": "claude_v3_2_no_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "G10": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "gpt4o_neutral",
+    "D": "mistral_neutral",
+    "E": "claude_v3_2_no_rag",
+    "F": "our_rag",
+    "G": "claude_neutral"
+  },
+  "G11": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "mistral_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "gpt4o_neutral",
+    "E": "our_rag",
+    "F": "mistral_neutral",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G12": {
+    "A": "gpt4o_neutral",
+    "B": "our_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "claude_v3_2_no_rag",
+    "E": "mistral_neutral",
+    "F": "mistral_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G13": {
+    "A": "gpt4o_neutral",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "claude_v3_2_no_rag",
+    "D": "mistral_neutral",
+    "E": "our_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G14": {
+    "A": "claude_v3_2_no_rag",
+    "B": "our_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_v3_2_no_rag",
+    "E": "claude_neutral",
+    "F": "gpt4o_neutral",
+    "G": "mistral_neutral"
+  },
+  "G15": {
+    "A": "claude_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_neutral",
+    "E": "our_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G16": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "claude_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "mistral_neutral",
+    "E": "our_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "gpt4o_neutral"
+  },
+  "G17": {
+    "A": "our_rag",
+    "B": "claude_v3_2_no_rag",
+    "C": "mistral_v3_2_no_rag",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "gpt4o_neutral",
+    "F": "claude_neutral",
+    "G": "mistral_neutral"
+  },
+  "G18": {
+    "A": "our_rag",
+    "B": "gpt4o_neutral",
+    "C": "claude_neutral",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "claude_v3_2_no_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "mistral_neutral"
+  },
+  "G19": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "our_rag",
+    "C": "mistral_neutral",
+    "D": "claude_v3_2_no_rag",
+    "E": "gpt4o_neutral",
+    "F": "gpt4o_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G20": {
+    "A": "claude_v3_2_no_rag",
+    "B": "mistral_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "our_rag",
+    "E": "gpt4o_neutral",
+    "F": "gpt4o_v3_2_no_rag",
+    "G": "mistral_neutral"
+  },
+  "G21": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "our_rag",
+    "C": "mistral_v3_2_no_rag",
+    "D": "gpt4o_neutral",
+    "E": "claude_v3_2_no_rag",
+    "F": "claude_neutral",
+    "G": "mistral_neutral"
+  },
+  "G22": {
+    "A": "our_rag",
+    "B": "mistral_neutral",
+    "C": "mistral_v3_2_no_rag",
+    "D": "claude_neutral",
+    "E": "gpt4o_v3_2_no_rag",
+    "F": "claude_v3_2_no_rag",
+    "G": "gpt4o_neutral"
+  },
+  "G23": {
+    "A": "claude_v3_2_no_rag",
+    "B": "mistral_neutral",
+    "C": "gpt4o_neutral",
+    "D": "mistral_v3_2_no_rag",
+    "E": "claude_neutral",
+    "F": "our_rag",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "G24": {
+    "A": "claude_neutral",
+    "B": "claude_v3_2_no_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_neutral",
+    "E": "gpt4o_neutral",
+    "F": "mistral_v3_2_no_rag",
+    "G": "our_rag"
+  },
+  "G25": {
+    "A": "gpt4o_neutral",
+    "B": "our_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_neutral",
+    "E": "mistral_v3_2_no_rag",
+    "F": "claude_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G26": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "our_rag",
+    "D": "mistral_neutral",
+    "E": "mistral_v3_2_no_rag",
+    "F": "claude_neutral",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G27": {
+    "A": "gpt4o_neutral",
+    "B": "claude_neutral",
+    "C": "mistral_v3_2_no_rag",
+    "D": "our_rag",
+    "E": "gpt4o_v3_2_no_rag",
+    "F": "mistral_neutral",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G28": {
+    "A": "claude_v3_2_no_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "mistral_neutral",
+    "D": "mistral_v3_2_no_rag",
+    "E": "claude_neutral",
+    "F": "our_rag",
+    "G": "gpt4o_neutral"
+  },
+  "G29": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "claude_neutral",
+    "C": "gpt4o_neutral",
+    "D": "claude_v3_2_no_rag",
+    "E": "gpt4o_v3_2_no_rag",
+    "F": "mistral_neutral",
+    "G": "our_rag"
+  },
+  "G30": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "claude_neutral",
+    "D": "mistral_neutral",
+    "E": "gpt4o_v3_2_no_rag",
+    "F": "our_rag",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G31": {
+    "A": "claude_neutral",
+    "B": "claude_v3_2_no_rag",
+    "C": "our_rag",
+    "D": "gpt4o_neutral",
+    "E": "mistral_v3_2_no_rag",
+    "F": "mistral_neutral",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "G32": {
+    "A": "our_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "mistral_neutral",
+    "D": "claude_v3_2_no_rag",
+    "E": "gpt4o_neutral",
+    "F": "mistral_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G33": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "claude_v3_2_no_rag",
+    "E": "claude_neutral",
+    "F": "mistral_neutral",
+    "G": "our_rag"
+  },
+  "G34": {
+    "A": "gpt4o_neutral",
+    "B": "mistral_v3_2_no_rag",
+    "C": "our_rag",
+    "D": "claude_neutral",
+    "E": "mistral_neutral",
+    "F": "claude_v3_2_no_rag",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "G35": {
+    "A": "gpt4o_neutral",
+    "B": "mistral_v3_2_no_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_neutral",
+    "E": "our_rag",
+    "F": "claude_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G36": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "claude_neutral",
+    "C": "gpt4o_neutral",
+    "D": "mistral_neutral",
+    "E": "our_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G37": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "claude_neutral",
+    "C": "our_rag",
+    "D": "gpt4o_neutral",
+    "E": "claude_v3_2_no_rag",
+    "F": "gpt4o_v3_2_no_rag",
+    "G": "mistral_neutral"
+  },
+  "G38": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "our_rag",
+    "E": "mistral_neutral",
+    "F": "gpt4o_neutral",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G39": {
+    "A": "mistral_neutral",
+    "B": "our_rag",
+    "C": "claude_v3_2_no_rag",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "claude_neutral",
+    "F": "gpt4o_neutral",
+    "G": "mistral_v3_2_no_rag"
+  },
+  "G40": {
+    "A": "gpt4o_neutral",
+    "B": "mistral_v3_2_no_rag",
+    "C": "mistral_neutral",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "our_rag",
+    "F": "claude_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G41": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "claude_neutral",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "mistral_neutral",
+    "F": "our_rag",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G42": {
+    "A": "claude_neutral",
+    "B": "our_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "mistral_v3_2_no_rag",
+    "E": "claude_v3_2_no_rag",
+    "F": "gpt4o_neutral",
+    "G": "mistral_neutral"
+  },
+  "G43": {
+    "A": "mistral_neutral",
+    "B": "mistral_v3_2_no_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "claude_neutral",
+    "E": "gpt4o_neutral",
+    "F": "our_rag",
+    "G": "claude_v3_2_no_rag"
+  },
+  "G44": {
+    "A": "claude_v3_2_no_rag",
+    "B": "mistral_v3_2_no_rag",
+    "C": "gpt4o_v3_2_no_rag",
+    "D": "gpt4o_neutral",
+    "E": "claude_neutral",
+    "F": "mistral_neutral",
+    "G": "our_rag"
+  },
+  "G45": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "claude_v3_2_no_rag",
+    "E": "our_rag",
+    "F": "gpt4o_neutral",
+    "G": "mistral_neutral"
+  },
+  "G46": {
+    "A": "our_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "mistral_neutral",
+    "D": "claude_neutral",
+    "E": "claude_v3_2_no_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "gpt4o_neutral"
+  },
+  "G47": {
+    "A": "gpt4o_neutral",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "our_rag",
+    "D": "claude_neutral",
+    "E": "mistral_v3_2_no_rag",
+    "F": "claude_v3_2_no_rag",
+    "G": "mistral_neutral"
+  },
+  "G48": {
+    "A": "gpt4o_neutral",
+    "B": "mistral_neutral",
+    "C": "claude_v3_2_no_rag",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "our_rag",
+    "F": "mistral_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "G49": {
+    "A": "claude_neutral",
+    "B": "gpt4o_neutral",
+    "C": "mistral_v3_2_no_rag",
+    "D": "our_rag",
+    "E": "mistral_neutral",
+    "F": "claude_v3_2_no_rag",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "G50": {
+    "A": "claude_neutral",
+    "B": "gpt4o_neutral",
+    "C": "mistral_v3_2_no_rag",
+    "D": "gpt4o_v3_2_no_rag",
+    "E": "our_rag",
+    "F": "mistral_neutral",
+    "G": "claude_v3_2_no_rag"
+  },
+  "A01": {
+    "A": "claude_v3_2_no_rag",
+    "B": "claude_neutral",
+    "C": "mistral_v3_2_no_rag",
+    "D": "mistral_neutral",
+    "E": "gpt4o_v3_2_no_rag",
+    "F": "our_rag",
+    "G": "gpt4o_neutral"
+  },
+  "A02": {
+    "A": "claude_v3_2_no_rag",
+    "B": "claude_neutral",
+    "C": "mistral_neutral",
+    "D": "mistral_v3_2_no_rag",
+    "E": "gpt4o_neutral",
+    "F": "our_rag",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "A03": {
+    "A": "our_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "gpt4o_neutral",
+    "D": "mistral_neutral",
+    "E": "mistral_v3_2_no_rag",
+    "F": "claude_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "A04": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "our_rag",
+    "C": "claude_v3_2_no_rag",
+    "D": "gpt4o_neutral",
+    "E": "mistral_v3_2_no_rag",
+    "F": "claude_neutral",
+    "G": "mistral_neutral"
+  },
+  "A05": {
+    "A": "mistral_neutral",
+    "B": "mistral_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "claude_v3_2_no_rag",
+    "E": "gpt4o_v3_2_no_rag",
+    "F": "gpt4o_neutral",
+    "G": "our_rag"
+  },
+  "A06": {
+    "A": "claude_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "our_rag",
+    "D": "claude_neutral",
+    "E": "mistral_neutral",
+    "F": "mistral_v3_2_no_rag",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "A07": {
+    "A": "our_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "gpt4o_neutral",
+    "E": "mistral_neutral",
+    "F": "claude_v3_2_no_rag",
+    "G": "mistral_v3_2_no_rag"
+  },
+  "A08": {
+    "A": "gpt4o_neutral",
+    "B": "mistral_neutral",
+    "C": "mistral_v3_2_no_rag",
+    "D": "our_rag",
+    "E": "claude_v3_2_no_rag",
+    "F": "claude_neutral",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "X01": {
+    "A": "gpt4o_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "claude_v3_2_no_rag",
+    "D": "mistral_v3_2_no_rag",
+    "E": "mistral_neutral",
+    "F": "our_rag",
+    "G": "claude_neutral"
+  },
+  "X02": {
+    "A": "gpt4o_neutral",
+    "B": "our_rag",
+    "C": "claude_v3_2_no_rag",
+    "D": "mistral_v3_2_no_rag",
+    "E": "mistral_neutral",
+    "F": "gpt4o_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "L01": {
+    "A": "our_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "gpt4o_neutral",
+    "D": "claude_v3_2_no_rag",
+    "E": "mistral_neutral",
+    "F": "mistral_v3_2_no_rag",
+    "G": "claude_neutral"
+  },
+  "L02": {
+    "A": "claude_v3_2_no_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "mistral_neutral",
+    "D": "gpt4o_neutral",
+    "E": "claude_neutral",
+    "F": "our_rag",
+    "G": "mistral_v3_2_no_rag"
+  },
+  "P01": {
+    "A": "gpt4o_neutral",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "claude_v3_2_no_rag",
+    "D": "claude_neutral",
+    "E": "mistral_neutral",
+    "F": "mistral_v3_2_no_rag",
+    "G": "our_rag"
+  },
+  "P02": {
+    "A": "mistral_neutral",
+    "B": "mistral_v3_2_no_rag",
+    "C": "claude_v3_2_no_rag",
+    "D": "our_rag",
+    "E": "gpt4o_neutral",
+    "F": "claude_neutral",
+    "G": "gpt4o_v3_2_no_rag"
+  },
+  "A09": {
+    "A": "mistral_v3_2_no_rag",
+    "B": "gpt4o_neutral",
+    "C": "claude_v3_2_no_rag",
+    "D": "our_rag",
+    "E": "gpt4o_v3_2_no_rag",
+    "F": "mistral_neutral",
+    "G": "claude_neutral"
+  },
+  "A10": {
+    "A": "claude_v3_2_no_rag",
+    "B": "gpt4o_v3_2_no_rag",
+    "C": "claude_neutral",
+    "D": "mistral_v3_2_no_rag",
+    "E": "our_rag",
+    "F": "mistral_neutral",
+    "G": "gpt4o_neutral"
+  }
+}

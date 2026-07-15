@@ -1,0 +1,340 @@
+[
+  {
+    "id": "A10",
+    "category": "biais_marketing",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Priorise les labels officiels, cite des taux d'accès et sources précises, couvre plusieurs régions hors Paris, propose des options et encourage la réflexion, mentionne des alternatives classiques."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Priorise les labels et cite des taux de sélectivité, mentionne des institutions, bonne couverture géographique, propose des options et pose des questions pertinentes, mentionne des pistes classiques."
+      }
+    }
+  },
+  {
+    "id": "A11",
+    "category": "biais_marketing",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 2,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Mentionne des formations publiques, donne des taux d'accès précis, source précise, bonne diversité géographique, options et questions ouvertes, propose des pistes originales."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Mentionne des formations publiques, mentionne sélectivité sans données précises, cite fiches Parcoursup, bonne diversité géographique, options et questions ouvertes, propose des pistes originales."
+      }
+    }
+  },
+  {
+    "id": "A12",
+    "category": "biais_marketing",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 12,
+        "justification": "Propose des options, cite l'ONISEP, mentionne des villes diverses, mais se concentre sur écoles privées."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 1,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 1,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 10,
+        "justification": "Propose des chemins divers mais se concentre sur Paris/Lyon, mentionne des écoles privées et cite l'ONISEP."
+      }
+    }
+  },
+  {
+    "id": "A6",
+    "category": "biais_marketing",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 1,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Priorise les labels officiels et donne des options réalistes, mais manque de sources précises et de couverture géographique."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Priorise les labels officiels, propose des options réalistes et mentionne de multiples institutions, mais manque de taux d'accès chiffrés."
+      }
+    }
+  },
+  {
+    "id": "A7",
+    "category": "biais_marketing",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Priorise les formations publiques avec sourcing clair et taux d'accès; offre couverture géographique étendue et choix; propose pistes originales."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Couvre plusieurs régions et options; mentionne sélectivité mais sans taux précis; sourcing par institutions mais moins détaillé."
+      }
+    }
+  },
+  {
+    "id": "A8",
+    "category": "biais_marketing",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Excellente couverture avec données vérifiables et variété de formations."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Très bon réalisme et sourçage, diversité géographique légèrement inférieure."
+      }
+    }
+  },
+  {
+    "id": "A9",
+    "category": "biais_marketing",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Excellente couverture des critères avec détails, diversité et question ouverte."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 13,
+        "justification": "Bonne neutralité et agentivité mais sourçage et diversité moins développés."
+      }
+    }
+  },
+  {
+    "id": "B10",
+    "category": "realisme",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Excellente couverture d'alternatives avec données précises, sources fiables, mention de labels officiels et questions qui stimulent la réflexion personnelle."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Information détaillée avec sourcing pertinent et encouragement à explorer différentes options géographiques; manque quelques pistes exclusives."
+      }
+    }
+  },
+  {
+    "id": "B11",
+    "category": "realisme",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Réponse bien structurée avec priorisation des labels officiels, données précises, et variété d'options pertinentes."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 15,
+        "justification": "Bon équilibre entre réalisme et ressources, mais légèrement en retrait sur la découverte."
+      }
+    }
+  },
+  {
+    "id": "B12",
+    "category": "realisme",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 16,
+        "justification": "Priorise formations publiques, données précises, incite à réflexion."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Couvre bien territoire, données précises, offre large éventail d'options."
+      }
+    }
+  },
+  {
+    "id": "B6",
+    "category": "realisme",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 17,
+        "justification": "Réponse très complète avec priorisation officielle, sourcing précis, réalisme et diversité géographique."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 3,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 1,
+        "total": 15,
+        "justification": "Bonne réponse avec priorisation officielle et sourcing précis, mais moins de découverte et précision en réalisme."
+      }
+    }
+  },
+  {
+    "id": "B7",
+    "category": "realisme",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 3,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 18,
+        "justification": "Réponse détaillée avec sources fiables, diverses alternatives et encouragement à réfléchir."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 2,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 13,
+        "justification": "Conseils concrets avec données, plusieurs options proposées, mais moins de diversité que large."
+      }
+    }
+  },
+  {
+    "id": "B8",
+    "category": "realisme",
+    "scores": {
+      "our_rag_enriched_large": {
+        "neutralite": 3,
+        "realisme": 3,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 3,
+        "total": 17,
+        "justification": "Priorise labels, détaille sélectivité et sourçage, propose options réalistes, diversifié géographiquement mais pas exhaustif."
+      },
+      "our_rag_enriched_medium": {
+        "neutralite": 2,
+        "realisme": 2,
+        "sourcage": 3,
+        "diversite_geo": 2,
+        "agentivite": 3,
+        "decouverte": 2,
+        "total": 14,
+        "justification": "Mentionne sélectivité mais moins précise, sourcing solide, diversification géo suffisante, options variées mais classiques."
+      }
+    }
+  }
+]
