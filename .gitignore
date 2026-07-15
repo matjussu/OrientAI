@@ -110,3 +110,6 @@ data/textualized/*
 
 # artefacts runtime audit (volatils)
 audit_empirique_2026-06-09/results/*.log
+
+# L1+ corpus backups (gitignored rollback for url-enrichment family, cf ADR-046)
+data/processed/*.bak*
