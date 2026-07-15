@@ -91,10 +91,9 @@ frontend/.vite/
 # Local-only docs (kept locally, not published)
 V1.md
 INRIA_AI_ORIENTATION_PROJECT.md
-# Audit interne pipeline v4.1 — détaillé, pas pour évaluateurs externes
-LLM_Final.md
-# Carnet projet personnel (instructions Matteo + Claudette + Jarvis)
-CLAUDE.md
+# CLAUDE.md et LLM_Final.md versionnés depuis le 2026-07-15 (décision Matteo,
+# phase startup : la dérive silencieuse de 2 mois constatée à l'audit H0 a
+# montré le coût du local-only datant du concours)
 
 # Backups intermédiaires (snapshots avant migration / phase) — pattern global
 **/*.pre_*
