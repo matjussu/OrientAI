@@ -1,0 +1,104 @@
+# Canary prod /answer (H0 rallumer-securiser, ordre 2026-07-15-1220)
+#
+# Pose une VRAIE question au POST /answer de prod chaque heure (le /health est
+# reste vert pendant toute la panne du 15/07 : il ne suffit pas). Verifie que la
+# reponse est generee (texte substantiel + sources non vides), pas juste un 200.
+#
+# Notification : en echec, ouvre (ou commente) une issue GitHub labelisee
+# `canary-prod` -> notification GitHub a Matteo. Quand le canary repasse vert,
+# l'issue ouverte est fermee automatiquement.
+#
+# Sobriete credits Mistral : 1 question/heure, 1 retry uniquement en cas d'echec.
+#
+# Secrets requis : ORIENTIA_API_KEY (bearer API Railway, meme valeur que Vercel).
+
+name: Canary prod /answer
+
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      API_URL: https://orientia-api-production.up.railway.app
+      QUESTION: "Quelles etudes pour devenir infirmier apres le bac ?"
+    steps:
+      - name: Question canary sur /answer
+        id: probe
+        env:
+          ORIENTIA_API_KEY: ${{ secrets.ORIENTIA_API_KEY }}
+        run: |
+          set -u
+          if [ -z "$ORIENTIA_API_KEY" ]; then
+            echo "::warning title=Canary non arme::Secret ORIENTIA_API_KEY absent du repo GitHub (Settings > Secrets > Actions). Le canary ne surveille RIEN tant qu'il n'est pas pose (valeur lisible dans le dashboard Railway, variable ORIENTIA_API_KEY du service orientia-api)."
+            echo "status=unarmed" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          probe() {
+            HTTP=$(curl -sS -m 120 -o /tmp/canary.json -w '%{http_code}' \
+              -X POST "$API_URL/answer" \
+              -H "Authorization: Bearer $ORIENTIA_API_KEY" \
+              -H 'Content-Type: application/json' \
+              -d "{\"question\":\"$QUESTION\"}" || echo "000")
+            echo "HTTP=$HTTP"
+            if [ "$HTTP" != "200" ]; then return 1; fi
+            python3 - <<'EOF'
+          import json, sys
+          d = json.load(open('/tmp/canary.json'))
+          answer = d.get('answer') or ''
+          sources = d.get('sources') or []
+          print(f"answer_len={len(answer)} sources={len(sources)}")
+          if len(answer) < 100:
+              sys.exit('FAIL: reponse trop courte (pipeline degrade ?)')
+          if not sources:
+              sys.exit('FAIL: aucune source retournee')
+          EOF
+          }
+          if probe; then
+            echo "status=ok" >> "$GITHUB_OUTPUT"
+          else
+            echo "Premier essai en echec, retry dans 60s..."
+            sleep 60
+            if probe; then
+              echo "status=ok" >> "$GITHUB_OUTPUT"
+            else
+              echo "status=fail" >> "$GITHUB_OUTPUT"
+              head -c 500 /tmp/canary.json || true
+            fi
+          fi
+
+      - name: Ouvrir ou commenter l'issue canary en cas d'echec
+        if: steps.probe.outputs.status == 'fail'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          NOW=$(date -u '+%Y-%m-%d %H:%M UTC')
+          EXISTING=$(gh issue list --label canary-prod --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "Canary toujours en echec au $NOW (run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          else
+            gh label create canary-prod --color B60205 --description "Alerte canary prod /answer" 2>/dev/null || true
+            gh issue create --label canary-prod \
+              --title "ALERTE canary : POST /answer prod ne genere plus de reponse ($NOW)" \
+              --body "Le canary horaire a echoue 2 fois de suite : /answer ne retourne pas une reponse generee avec sources. Le /health peut etre vert malgre tout (vu le 15/07). Verifier les logs Railway du service orientia-api (premier suspect historique : cle Mistral rejetee 401). Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
+          exit 1
+
+      - name: Fermer l'issue canary si retour au vert
+        if: steps.probe.outputs.status == 'ok'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          EXISTING=$(gh issue list --label canary-prod --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "Canary de nouveau vert : /answer regenere des reponses avec sources."
+          fi
