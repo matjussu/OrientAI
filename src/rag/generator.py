@@ -30,6 +30,9 @@ NARRATIVE_MAX_TOKENS_BY_FORMAT = {
 def narrative_max_tokens(fmt: str | None) -> int:
     """Cap output par format récit (fix B troncature, ordre 1926)."""
     return NARRATIVE_MAX_TOKENS_BY_FORMAT.get(fmt or "", NARRATIVE_MAX_TOKENS)
+# v4.1 : top-5 sources (réduit input tokens + concentre le LLM). Constante
+# NOMMÉE car le check citation aval doit reconstruire la MÊME numérotation S1..SN.
+V4_MAX_SOURCES = 5
 # Plus de sources qu'en v4 strict (5) : un récit multi-facettes a besoin de
 # matière pour hiérarchiser 2-4 pistes ; le routing récit sert top_k=12.
 NARRATIVE_MAX_SOURCES = 8
@@ -457,7 +460,7 @@ def _build_chat_kwargs(
         # injecter le bloc en tête. Sans hardlock_block, comportement v4.1
         # historique préservé strict.
         from src.prompt.system_v4_strict import build_system_prompt_v4_strict
-        sources_json = format_sources_for_llm(retrieved, max_sources=5)
+        sources_json = format_sources_for_llm(retrieved, max_sources=V4_MAX_SOURCES)
         user_prompt = _build_user_prompt_strict_v4(
             sources_json, question, golden_qa_prefix=golden_qa_prefix,
         )
