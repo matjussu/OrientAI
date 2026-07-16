@@ -1,5 +1,11 @@
 """FetchStatFromSource — Sprint 3 axe B agentique (3ᵉ tool).
 
+STATUT (H1 lot 1.4, 2026-07-16) : NON SERVI en production. Ce tool
+n'existe que pour `src/agent/pipeline_agent.py` (architecture Phase 3,
+non branchée dans src/api). Ce n'est PAS un guardrail actif du pipeline
+servi — les chiffres y sont vérifiés par `src/validator/citation_check.py`.
+Conservé pour la Phase 3 agentique (multi-tour + critic loop).
+
 Vérifie si un `claim` (stat / fait / affirmation réglementaire) est
 **supporté par les sources retrievées** ou s'il s'agit d'une
 hallucination. Cible explicit : éviter les erreurs réglementaires
@@ -36,7 +42,7 @@ Le LLM-as-fact-checker n'est PAS un oracle. Il peut :
 
 Le `confidence` retourné permet au routing aval (Sprint 4) de pondérer
 les décisions. Pattern compatible avec le StatFactChecker existant
-(`src/rag/fact_checker.py`) — FetchStatFromSource ajoute la couche
+(`src/experimental/fact_checker.py`) — FetchStatFromSource ajoute la couche
 agentique LLM-judge.
 """
 from __future__ import annotations

@@ -1,4 +1,4 @@
-"""Tests pour `src/rag/fact_checker.py` (StatFactChecker LLM-based).
+"""Tests pour `src/experimental/fact_checker.py` (StatFactChecker LLM-based).
 
 Couvre l'extension Sprint 7 Action 1 — verdict `verified_by_official_source`
 pour le pattern anti-hallu défensif (chiffre approximatif `~X` + URL
@@ -10,7 +10,7 @@ identiquement.
 """
 from __future__ import annotations
 
-from src.rag.fact_checker import (
+from src.experimental.fact_checker import (
     OFFICIAL_SOURCE_URL_PATTERNS,
     OFFICIAL_SOURCE_REGEX,
     StatVerification,

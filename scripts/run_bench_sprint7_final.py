@@ -47,7 +47,7 @@ from mistralai.client import Mistral  # noqa: E402
 from src.agent.cache import LRUCache  # noqa: E402
 from src.agent.pipeline_agent import AgentPipeline  # noqa: E402
 from src.config import load_config  # noqa: E402
-from src.rag.fact_checker import StatFactChecker  # noqa: E402
+from src.experimental.fact_checker import StatFactChecker  # noqa: E402
 from src.experimental.critic_loop import CriticLoop  # noqa: E402
 from src.experimental.system_strict import SYSTEM_PROMPT_V33_STRICT  # noqa: E402
 

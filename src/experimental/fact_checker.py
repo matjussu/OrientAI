@@ -1,4 +1,13 @@
-"""Fact-checker aval pour OrientIA (v4).
+"""Fact-checker aval pour OrientIA (v4). — STATUT : EXPERIMENTAL, NON SERVI.
+
+Déplacé de src/rag/ le 2026-07-16 (H1 lot 1.4, ordre 0905). Décision :
+jamais câblé en prod depuis sa création, et le besoin qu'il visait (vérifier
+les chiffres cités contre les fiches) est couvert MÉCANIQUEMENT par
+`src/validator/citation_check.py` (déterministe, 0 coût, 0 latence,
+0 variance) branché sur les deux chemins de serving. Un vérificateur
+LLM (mistral-small) reste pertinent uniquement pour les claims QUALITATIFS
+non chiffrés — cas d'usage Phase 3 avec le critic_loop, d'où experimental/
+plutôt que suppression.
 
 Objectif : après génération par `pipeline.answer()`, vérifier chaque
 statistique chiffrée citée dans la réponse en la confrontant aux fiches

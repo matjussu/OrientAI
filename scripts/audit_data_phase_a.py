@@ -33,7 +33,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from mistralai.client import Mistral  # noqa: E402
 
 from src.config import load_config  # noqa: E402
-from src.rag.fact_checker import StatFactChecker  # noqa: E402
+from src.experimental.fact_checker import StatFactChecker  # noqa: E402
 from src.rag.pipeline import OrientIAPipeline  # noqa: E402
 from src.rag.factory import make_production_pipeline  # noqa: E402
 
