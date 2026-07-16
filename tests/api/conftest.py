@@ -21,7 +21,16 @@ from fastapi.testclient import TestClient
 @pytest.fixture
 def mock_pipeline():
     """Pipeline mock alimenté par des sources réalistes au format brut natif."""
+    from src.rag.pipeline import RequestTrace
+
     p = MagicMock()
+    validation = MagicMock()
+    validation.honesty_score = 0.92
+    validation.flagged = False
+    trace = RequestTrace(validation=validation)
+
+    # H1 lot 1.6 : le serveur appelle answer(..., return_trace=True) et lit
+    # la validation depuis la TRACE retournée (3-uplet), plus depuis last_*.
     p.answer.return_value = (
         "Réponse mock pour test.",
         [
@@ -47,11 +56,10 @@ def mock_pipeline():
                 "labels": ["SecNumEdu"],
             },
         ],
+        trace,
     )
 
-    validation = MagicMock()
-    validation.honesty_score = 0.92
-    validation.flagged = False
+    # Rétrocompat lecture pour les tests qui inspectent encore last_validation
     p.last_validation = validation
 
     return p

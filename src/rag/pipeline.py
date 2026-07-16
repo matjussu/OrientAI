@@ -3,7 +3,7 @@ import dataclasses
 import json
 import logging
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field as dataclass_field
 from pathlib import Path
 from typing import AsyncGenerator
 
@@ -236,7 +236,42 @@ def _chunk_text_into_tokens(text: str) -> list[str]:
     return tokens
 
 
+
+@dataclass
+class RequestTrace:
+    """État PAR REQUÊTE du pipeline (H1 lot 1.6, ordre 0905).
+
+    Remplace la famille d'attributs mutables `pipeline.last_*` : chaque appel
+    à `answer()` / `answer_stream()` crée SA trace, la passe dans la chaîne
+    interne, et l'expose en retour (`return_trace=True`) — le serving lit le
+    RETOUR, jamais l'état partagé. En fin de requête réussie, la trace est
+    posée d'un seul mouvement sur `pipeline._last_trace` (swap de référence
+    atomique sous GIL) pour la rétrocompat lecture des scripts/tests
+    single-thread via les propriétés `last_*` (DEBUG UNIQUEMENT : sous
+    concurrence, ces propriétés reflètent la dernière requête TERMINÉE,
+    pas la vôtre — utilisez le retour).
+    """
+    validation: "ValidatorResult | None" = None
+    policy_result: "PolicyResult | None" = None
+    filter_stats: dict | None = None
+    golden_qa: dict | None = None
+    select_result: "SelectResult | None" = None
+    select_fallthrough: bool = False
+    geo_refusal: bool = False
+    narrative_profile: "Profile | None" = None
+    narrative_format_decision: "FormatDecision | None" = None
+    narrative_structured: dict | None = None
+    narrative_comparison_options: list = dataclass_field(default_factory=list)
+    retry_metadata: dict | None = None
+    post_process_stats: dict | None = None
+    scope_result: "ScopeResult | None" = None
+    router_result: "RouteDecision | None" = None
+
 class OrientIAPipeline:
+    # Defaut de CLASSE : les instances creees sans __init__ (tests via __new__)
+    # ont quand meme un etat _last_trace coherent.
+    _last_trace: "RequestTrace | None" = None
+
     def __init__(
         self,
         client: Mistral,
@@ -271,11 +306,9 @@ class OrientIAPipeline:
         # generate() et stocke le résultat dans .last_validation (backward-compat
         # — la signature de .answer() n'est PAS modifiée).
         self.validator = validator
-        self.last_validation: ValidatorResult | None = None
         # UX Policy (Gate J+6) — hybride α+β. Appliquée automatiquement quand
         # un validator est fourni. `last_policy_result` expose le verdict +
         # la réponse finale (peut avoir remplacé l'answer si Policy.BLOCK).
-        self.last_policy_result: PolicyResult | None = None
         # Sprint 10 chantier C — RAG filtré métadonnées.
         #
         # Sprint 10 chantier C v1 (PR #102 mergée 10:12) : `False` par défaut.
@@ -302,7 +335,6 @@ class OrientIAPipeline:
         # Stats du dernier `.answer(criteria=...)` — utiles pour audit
         # F+G (combien d'expansions ont été nécessaires, recall pré/post
         # filter, etc.). None tant qu'aucun call.
-        self.last_filter_stats: dict | None = None
         # Sprint 10 chantier D — Q&A Golden Dynamic Few-Shot (opt-in).
         # False par défaut = backward compat strict. True = active le
         # triple-retrieve : top-1 Q&A Golden injecté en few-shot prefix
@@ -316,23 +348,19 @@ class OrientIAPipeline:
         self._golden_qa_index: faiss.IndexFlatL2 | None = None
         self._golden_qa_meta: list[dict] | None = None
         # Stats du dernier `.answer()` côté Q&A Golden (pour audit F+G).
-        self.last_golden_qa: dict | None = None
         # Chantier 2 (2026-05-03) — résultat du dernier SELECT structuré tenté
         # (None si intent != FACTUAL_POINTED OU SELECT pas tenté). Argument
         # démo INRIA : marker visible `via_select=True` pour audit.
-        self.last_select_result: SelectResult | None = None
         # Option B (J2 U1, 2026-06-11) — True si la réponse a été servie par le
         # RAG en FALL-THROUGH après un SELECT non-concluant (via_select=False),
         # au lieu d'un refus aveugle. Tag d'observabilité pour attribution mesure
         # et diag (le SELECT bypass servait 0/48 factuelles → on laisse le RAG
         # gardé essayer). Réinitialisé à chaque `.answer()`.
-        self.last_select_fallthrough: bool = False
         # Garde-fou géo déterministe NARROW (J3, 2026-06-11, GO Matteo option B) —
         # remplace le prompt-only RÈGLE 9 reverté. Refus + relais si la question cible
         # une zone qu'AUCUNE source ne couvre (out-of-zone clair, ex Papeete-pour-Nantes).
         # Conservateur (abstention au moindre doute). Désactivable (revertable).
         self.enable_geo_coherence: bool = enable_geo_coherence
-        self.last_geo_refusal: bool = False
         # Mode récit (R1 1c, ordre #137) — flag-gated, isolé. Quand
         # enable_narrative_mode ET narrative_clarifier sont fournis ET
         # is_narrative(question), `_prepare_narrative` remplace le RouterLLM
@@ -340,12 +368,8 @@ class OrientIAPipeline:
         # banc 100q byte-identique (aucune des questions courtes ne déclenche).
         self.enable_narrative_mode = enable_narrative_mode
         self.narrative_clarifier = narrative_clarifier
-        self.last_narrative_profile: Profile | None = None
         # Forme adaptative (ordre 1926) — derniers format/structure produits
         # (exposés au serving pour le payload `structured`). None hors récit.
-        self.last_narrative_format_decision: FormatDecision | None = None
-        self.last_narrative_structured: dict | None = None
-        self.last_narrative_comparison_options: list[str] = []
         # Chantier 1.B (2026-05-03) — métadonnées du retry-with-hint loop pour
         # audit / observabilité. None tant qu'aucun call avec validator. Format :
         #   {
@@ -357,19 +381,16 @@ class OrientIAPipeline:
         #     "wall_clock_s": float,
         #     "retry_skipped_reason": str|None ("timeout" | "no_validator" | None),
         #   }
-        self.last_retry_metadata: dict | None = None
         # Phase 2 refonte (2026-05-06) — post-process déterministe (zéro LLM)
         # Sprint 8 Wave 1 : strip_invented_urls + fix_broken_markdown_tables +
         # validate_onisep_slugs. Appliqué post-validator/policy, pré-phase_projet.
         # Stats du dernier appel exposées via `last_post_process_stats`.
         self.enable_post_process = enable_post_process
-        self.last_post_process_stats: dict | None = None
         # Étape 1 refonte (2026-05-06) — ScopeClassifier amont du pipeline.
         # Si fourni, classifie chaque question en {in_scope, out_of_scope, urgent}
         # AVANT tout retrieve/generate. Court-circuit avec réponse pré-écrite si
         # != in_scope. None par défaut = backward compat (toutes questions traitées).
         self.scope_classifier = scope_classifier
-        self.last_scope_result: ScopeResult | None = None
         # Étape 2 refonte (2026-05-06) — contrat strict v4 WHAT/HOW.
         # Quand True, la génération utilise SYSTEM_PROMPT_V4_STRICT + JSON
         # tabulaire <sources> via FactCard au lieu de la prose libre v3.2.
@@ -403,10 +424,90 @@ class OrientIAPipeline:
         # - hardlock_constraints (R7 du prompt v4.1 strict, étape 7)
         # None par défaut = backward compat strict.
         self.router_llm = router_llm
-        self.last_router_result: RouteDecision | None = None
         # Phase C ADR-058 — BM25 hybride lexical + RRF fusion (cf src/rag/bm25_index.py)
         self._bm25_index = None  # Lazy build au 1er appel
         self._bm25_built: bool = False
+
+        # H1 lot 1.6 — trace de la derniere requete TERMINEE (reference swap
+        # atomique). Les proprietes last_* ci-dessous la lisent : DEBUG et
+        # scripts single-thread uniquement. Le serving lit le RETOUR de
+        # answer(return_trace=True) / les events du stream.
+        self._last_trace: RequestTrace | None = None
+
+    # ── Proprietes retrocompat last_* (requete TERMINEE ; debug/tests) ──
+    # Lecture : trace de la derniere requete terminee. Ecriture (tests, scripts
+    # d'audit historiques) : ecrit dans cette meme trace debug — JAMAIS lue par
+    # le serving, qui consomme le retour de answer(return_trace=True) / events.
+    def _lt(self, field_name: str, default=None):
+        t = self._last_trace
+        return getattr(t, field_name, default) if t is not None else default
+
+    def _lt_set(self, field_name: str, value) -> None:
+        if self._last_trace is None:
+            self._last_trace = RequestTrace()
+        setattr(self._last_trace, field_name, value)
+
+    @property
+    def last_validation(self): return self._lt("validation")
+    @last_validation.setter
+    def last_validation(self, value): self._lt_set("validation", value)
+    @property
+    def last_policy_result(self): return self._lt("policy_result")
+    @last_policy_result.setter
+    def last_policy_result(self, value): self._lt_set("policy_result", value)
+    @property
+    def last_filter_stats(self): return self._lt("filter_stats")
+    @last_filter_stats.setter
+    def last_filter_stats(self, value): self._lt_set("filter_stats", value)
+    @property
+    def last_golden_qa(self): return self._lt("golden_qa")
+    @last_golden_qa.setter
+    def last_golden_qa(self, value): self._lt_set("golden_qa", value)
+    @property
+    def last_select_result(self): return self._lt("select_result")
+    @last_select_result.setter
+    def last_select_result(self, value): self._lt_set("select_result", value)
+    @property
+    def last_select_fallthrough(self): return self._lt("select_fallthrough", False)
+    @last_select_fallthrough.setter
+    def last_select_fallthrough(self, value): self._lt_set("select_fallthrough", value)
+    @property
+    def last_geo_refusal(self): return self._lt("geo_refusal", False)
+    @last_geo_refusal.setter
+    def last_geo_refusal(self, value): self._lt_set("geo_refusal", value)
+    @property
+    def last_narrative_profile(self): return self._lt("narrative_profile")
+    @last_narrative_profile.setter
+    def last_narrative_profile(self, value): self._lt_set("narrative_profile", value)
+    @property
+    def last_narrative_format_decision(self): return self._lt("narrative_format_decision")
+    @last_narrative_format_decision.setter
+    def last_narrative_format_decision(self, value): self._lt_set("narrative_format_decision", value)
+    @property
+    def last_narrative_structured(self): return self._lt("narrative_structured")
+    @last_narrative_structured.setter
+    def last_narrative_structured(self, value): self._lt_set("narrative_structured", value)
+    @property
+    def last_narrative_comparison_options(self): return self._lt("narrative_comparison_options", [])
+    @last_narrative_comparison_options.setter
+    def last_narrative_comparison_options(self, value): self._lt_set("narrative_comparison_options", value)
+    @property
+    def last_retry_metadata(self): return self._lt("retry_metadata")
+    @last_retry_metadata.setter
+    def last_retry_metadata(self, value): self._lt_set("retry_metadata", value)
+    @property
+    def last_post_process_stats(self): return self._lt("post_process_stats")
+    @last_post_process_stats.setter
+    def last_post_process_stats(self, value): self._lt_set("post_process_stats", value)
+    @property
+    def last_scope_result(self): return self._lt("scope_result")
+    @last_scope_result.setter
+    def last_scope_result(self, value): self._lt_set("scope_result", value)
+    @property
+    def last_router_result(self): return self._lt("router_result")
+    @last_router_result.setter
+    def last_router_result(self, value): self._lt_set("router_result", value)
+
 
     def build_index(self) -> None:
         texts = [fiche_to_text(f) for f in self.fiches]
@@ -430,8 +531,14 @@ class OrientIAPipeline:
         criteria: FilterCriteria | None = None,
         history: list[dict] | None = None,
         temperature: float = 0.3,
-    ) -> tuple[str, list[dict]]:
+        *,
+        return_trace: bool = False,
+    ) -> "tuple[str, list[dict]] | tuple[str, list[dict], RequestTrace]":
         """Génère une réponse depuis FAISS + rerank + MMR + generator.
+
+        H1 lot 1.6 : ``return_trace=True`` retourne AUSSI la RequestTrace de
+        CETTE requête (validation, policy, scope…) — c'est ce que le serving
+        doit lire (pur, thread-safe), pas les propriétés ``last_*``.
 
         Sprint 10 chantier C §8.3 : argument `criteria` opt-in. Quand fourni
         ET `use_metadata_filter=True` à l'init, applique
@@ -459,9 +566,11 @@ class OrientIAPipeline:
         # Phase 1 SSE refacto 2026-05-13 — délégué à `_prepare_for_generation()`
         # pour permettre réutilisation côté `answer_stream()`. Extraction mécanique
         # sans changement de comportement (tests pipeline valident).
-        prepared = self._prepare_for_generation(question, k, top_k_sources, criteria, history)
+        trace = RequestTrace()
+        self._last_trace = trace  # visible en debug des l'entree (single-thread)
+        prepared = self._prepare_for_generation(question, k, top_k_sources, criteria, history, trace=trace)
         if isinstance(prepared, _ShortCircuitResult):
-            return prepared.text, []
+            return (prepared.text, [], trace) if return_trace else (prepared.text, [])
         # Variables locales attendues par le reste de `answer()` (post-LLM)
         top = prepared.top
         effective_top_k = prepared.effective_top_k  # noqa: F841 (kept for retro-compat lecture)
@@ -480,30 +589,31 @@ class OrientIAPipeline:
             intent=intent_label,
             narrative_mode=prepared.narrative_mode,
             format_decision=prepared.format_decision,
+            trace=trace,
         )
 
         # Validator v1 + UX Policy
-        self.last_retry_metadata = retry_meta
+        trace.retry_metadata = retry_meta
         if self.validator is not None:
-            self.last_policy_result = apply_policy(answer_text, self.last_validation)
-            answer_text = self.last_policy_result.final_answer
+            trace.policy_result = apply_policy(answer_text, trace.validation)
+            answer_text = trace.policy_result.final_answer
             answer_text, _ = append_phase_projet(answer_text, question)
         if self.enable_post_process:
             answer_text, pp_stats = post_process_answer(answer_text, top)
-            self.last_post_process_stats = pp_stats
+            trace.post_process_stats = pp_stats
         else:
-            self.last_post_process_stats = None
+            trace.post_process_stats = None
         # Forme adaptative (ordre 1926) : sortie typée dérivée du markdown FINAL
         # (post-policy/post-process). Exposée au serving via le payload `structured`.
         # markdown_full reste canonique ; parser TOTAL (ne lève jamais).
-        self.last_narrative_structured = (
+        trace.narrative_structured = (
             parse_narrative_response(
                 answer_text, prepared.format_decision,
                 sources=build_sources_index(top, max_sources=NARRATIVE_MAX_SOURCES),
             )
             if prepared.narrative_mode else None
         )
-        return answer_text, top
+        return (answer_text, top, trace) if return_trace else (answer_text, top)
 
     def warmup_generation(self) -> None:
         """Pré-chauffe le pool de connexions Mistral (génération) + le clarifier
@@ -528,6 +638,7 @@ class OrientIAPipeline:
         top_k_sources: int,
         criteria: FilterCriteria | None,
         history: list[dict] | None,
+        trace: "RequestTrace | None" = None,
     ) -> "_PreparedGenContext | _ShortCircuitResult":
         """Extrait depuis `answer()` (Phase 1 SSE refacto 2026-05-13).
 
@@ -543,19 +654,25 @@ class OrientIAPipeline:
               select_bypass). Le caller (sync ou stream) retourne / yield
               ce texte directement.
 
-        Side-effects : set `self.last_scope_result`, `self.last_router_result`,
-        `self.last_select_result`, et reset les autres `last_*` markers
+        Side-effects : set `trace.scope_result`, `trace.router_result`,
+        `trace.select_result`, et reset les autres `last_*` markers
         en cas de short-circuit (backward-compat consumers).
         """
+        if trace is None:
+            # Appel direct (tests / outillage) : trace autonome, exposee en
+            # debug comme le faisaient les last_* historiques.
+            trace = RequestTrace()
+            self._last_trace = trace
+
         # Étape 1 refonte (2026-05-06) — Scope classification AMONT.
         if self.scope_classifier is not None:
             scope_res = self.scope_classifier.classify(question, history=history)
-            self.last_scope_result = scope_res
+            trace.scope_result = scope_res
             if scope_res.label != "in_scope":
-                self.last_select_result = None
-                self.last_validation = None
-                self.last_policy_result = None
-                self.last_retry_metadata = {
+                trace.select_result = None
+                trace.validation = None
+                trace.policy_result = None
+                trace.retry_metadata = {
                     "retries_attempted": 0,
                     "tour1_failed_claims": [],
                     "tour2_failed_claims": None,
@@ -564,15 +681,15 @@ class OrientIAPipeline:
                     "wall_clock_s": 0.0,
                     "retry_skipped_reason": f"scope_{scope_res.label}",
                 }
-                self.last_filter_stats = None
-                self.last_golden_qa = None
-                self.last_post_process_stats = None
+                trace.filter_stats = None
+                trace.golden_qa = None
+                trace.post_process_stats = None
                 return _ShortCircuitResult(
                     text=scope_res.pre_written_response or "",
                     reason=f"scope_{scope_res.label}",
                 )
         else:
-            self.last_scope_result = None
+            trace.scope_result = None
 
         # MODE RÉCIT (R1 1c, ordre #137) — branche isolée, flag-gated, insérée
         # APRÈS le scope_classifier (R06/R07 détresse escaladent avant tout
@@ -591,7 +708,7 @@ class OrientIAPipeline:
             and self.narrative_clarifier is not None
             and (is_narrative(question) or is_narrative_followup(history))
         ):
-            return self._prepare_narrative(question, k, top_k_sources, history)
+            return self._prepare_narrative(question, k, top_k_sources, history, trace=trace)
 
         # Étape 6 refonte (2026-05-09) — RouterLLM léger en amont du retrieve.
         # Décide (a) sub-indexes ciblés, (b) FilterCriteria, (c) refus structurés,
@@ -601,13 +718,13 @@ class OrientIAPipeline:
         route_decision: RouteDecision | None = None
         if self.router_llm is not None:
             route_decision = self.router_llm.route(question, history=history)
-            self.last_router_result = route_decision
+            trace.router_result = route_decision
             # Court-circuit pré-pipeline si refus structuré (analogue ScopeClassifier)
             if route_decision.refusal_reason is not None:
-                self.last_select_result = None
-                self.last_validation = None
-                self.last_policy_result = None
-                self.last_retry_metadata = {
+                trace.select_result = None
+                trace.validation = None
+                trace.policy_result = None
+                trace.retry_metadata = {
                     "retries_attempted": 0,
                     "tour1_failed_claims": [],
                     "tour2_failed_claims": None,
@@ -616,9 +733,9 @@ class OrientIAPipeline:
                     "wall_clock_s": 0.0,
                     "retry_skipped_reason": f"router_{route_decision.refusal_reason}",
                 }
-                self.last_filter_stats = None
-                self.last_golden_qa = None
-                self.last_post_process_stats = None
+                trace.filter_stats = None
+                trace.golden_qa = None
+                trace.post_process_stats = None
                 return _ShortCircuitResult(
                     text=route_decision.pre_written_response or "",
                     reason=f"router_{route_decision.refusal_reason}",
@@ -639,7 +756,7 @@ class OrientIAPipeline:
             if route_decision.top_k_override:
                 top_k_sources = max(top_k_sources, route_decision.top_k_override)
         else:
-            self.last_router_result = None
+            trace.router_result = None
 
         effective_top_k = top_k_sources
         effective_lambda = self.mmr_lambda
@@ -666,7 +783,7 @@ class OrientIAPipeline:
 
         if intent_label == INTENT_FACTUAL_POINTED:
             select_result = try_select_or_none(question, self.fiches)
-            self.last_select_result = select_result
+            trace.select_result = select_result
             # Option B (J2 U1, 2026-06-11) — on ne BYPASS que sur un VRAI succès
             # SELECT (via_select=True, zéro hallu garanti par le lookup). Tous les
             # autres cas (no_match, ambiguous, invalid_value, stale, no_entity,
@@ -679,13 +796,13 @@ class OrientIAPipeline:
             should_bypass = select_result is not None and select_result.via_select
             # Trace observabilité (Jarvis cond. 2) : réponse servie par fall-through
             # RAG = le SELECT a tenté mais n'a pas servi (via_select=False).
-            self.last_select_fallthrough = (
+            trace.select_fallthrough = (
                 select_result is not None and not select_result.via_select
             )
             if should_bypass:
                 # SELECT a tenté quelque chose d'utile — on retourne sans appel LLM
                 # (zero hallu garanti par construction). `top` est vide car bypass.
-                self.last_retry_metadata = {
+                trace.retry_metadata = {
                     "retries_attempted": 0,
                     "tour1_failed_claims": [],
                     "tour2_failed_claims": None,
@@ -698,8 +815,8 @@ class OrientIAPipeline:
             # Sinon : continuer le RAG normal (fall-through tracé). last_select_result
             # conservé pour traçabilité.
         else:
-            self.last_select_result = None
-            self.last_select_fallthrough = False
+            trace.select_result = None
+            trace.select_fallthrough = False
 
         # Sprint 10 §8.3-§8.4 : retrieve avec auto-expansion si filter activé.
         # Étape 6 (2026-05-09) : route_decision optionnel pilote le path
@@ -712,6 +829,7 @@ class OrientIAPipeline:
             target=effective_top_k,
             criteria=criteria,
             route_decision=route_decision,
+            trace=trace,
         )
 
         if self.use_mmr:
@@ -722,15 +840,15 @@ class OrientIAPipeline:
         # Garde-fou géo déterministe NARROW (J3, 2026-06-11) — court-circuit AVANT
         # génération si la question cible une zone qu'aucune source (top) ne couvre.
         # Conservateur : ne tire que sur out-of-zone clair (cf geo_coherence_check).
-        self.last_geo_refusal = False
+        trace.geo_refusal = False
         if self.enable_geo_coherence:
             geo_refusal = geo_coherence_check(question, top)
             if geo_refusal is not None:
-                self.last_geo_refusal = True
+                trace.geo_refusal = True
                 return _ShortCircuitResult(text=geo_refusal, reason="geo_out_of_zone")
 
         # Sprint 10 chantier D — Q&A Golden few-shot prefix (opt-in)
-        golden_qa_prefix = self._maybe_build_golden_qa_prefix(question)
+        golden_qa_prefix = self._maybe_build_golden_qa_prefix(question, trace=trace)
 
         # Étape 7 refonte (2026-05-09) — Hardlock block injecté en tête du
         # system prompt v4 strict si le RouterLLM a détecté une contrainte
@@ -757,6 +875,7 @@ class OrientIAPipeline:
         k: int,
         top_k_sources: int,
         history: list[dict] | None,
+        trace: "RequestTrace | None" = None,
     ) -> "_PreparedGenContext | _ShortCircuitResult":
         """Pré-LLM du MODE RÉCIT (R1 1c) — déterministe, profil-driven.
 
@@ -774,17 +893,21 @@ class OrientIAPipeline:
         stateless, sans stockage profil serveur. Au tour 1 (history vide) =
         question seule, comportement 1c strictement inchangé.
         """
+        if trace is None:
+            trace = RequestTrace()
+            self._last_trace = trace
+
         # FORK B : entrée clarifier = concat des tours user (accumulation profil).
         clarifier_input = build_narrative_clarifier_input(question, history)
         profile = self.narrative_clarifier.clarify_narrative(clarifier_input)
-        self.last_narrative_profile = profile
+        trace.narrative_profile = profile
 
         # Forme adaptative (ordre 1926) : format + overlays routés de façon
         # déterministe depuis le profil + le texte courant. Le format gouverne
         # la STRUCTURE de la réponse (prompt) et le few-shot ; les overlays
         # (anchor_constraint / reassure) sont des registres orthogonaux.
         decision = route_narrative_format(profile, question, history)
-        self.last_narrative_format_decision = decision
+        trace.narrative_format_decision = decision
 
         route_decision = route_from_profile(profile)
         # Format TRAJECTOIRE : garantir le sous-index `metiers` (les passerelles
@@ -793,7 +916,7 @@ class OrientIAPipeline:
         if decision.format == TRAJECTOIRE and "metiers" not in route_decision.sub_indexes:
             want = set(route_decision.sub_indexes) | {"metiers"}
             route_decision.sub_indexes = [s for s in SUB_INDEX_NAMES if s in want]
-        self.last_router_result = route_decision
+        trace.router_result = route_decision
 
         # Fallback retrieval = la conv complète (clarifier_input), pas le seul
         # follow-up courant : si le profil est un repli, on retombe sur tout le
@@ -808,6 +931,7 @@ class OrientIAPipeline:
             target=target,
             criteria=None,                 # géo = boost via requête, jamais filtre dur
             route_decision=route_decision,
+            trace=trace,
         )
 
         # Fix A (ordre 1926) — COMPARAISON : retrieval PAR option nommée pour que
@@ -817,7 +941,7 @@ class OrientIAPipeline:
         # partielle T6-style ; le contrat factuel garantit « hors sources » pour
         # une option absente du corpus (ex. prépa), pas un refus total.
         options = extract_comparison_options(clarifier_input) if decision.format == COMPARAISON else []
-        self.last_narrative_comparison_options = options
+        trace.narrative_comparison_options = options
         decision.comparison_options = options  # ancre le tableau sur les options DEMANDÉES (fix A)
         if options:
             per = max(4, target // (len(options) + 1))
@@ -839,9 +963,9 @@ class OrientIAPipeline:
             top = reranked[:target]
 
         # Reset des markers court-circuit non pertinents en mode récit.
-        self.last_select_result = None
-        self.last_select_fallthrough = False
-        self.last_geo_refusal = False
+        trace.select_result = None
+        trace.select_fallthrough = False
+        trace.geo_refusal = False
 
         return _PreparedGenContext(
             top=top,
@@ -914,11 +1038,14 @@ class OrientIAPipeline:
             )
 
         started_ns = time.perf_counter_ns()
+        trace = RequestTrace()
+        self._last_trace = trace  # debug single-thread ; le serving lit les events
         try:
             # Pré-LLM via to_thread (libère l'event loop pendant retrieve/MMR ~150-300ms)
             prepared = await asyncio.to_thread(
                 self._prepare_for_generation,
                 question, k, top_k_sources, criteria, history,
+                trace,
             )
 
             if isinstance(prepared, _ShortCircuitResult):
@@ -953,7 +1080,7 @@ class OrientIAPipeline:
 
             full_text = "".join(full_text_parts)
             # Forme adaptative (ordre 1926) : sortie typée dérivée du texte streamé.
-            self.last_narrative_structured = (
+            trace.narrative_structured = (
                 parse_narrative_response(
                     full_text, prepared.format_decision,
                     sources=build_sources_index(prepared.top, max_sources=NARRATIVE_MAX_SOURCES),
@@ -965,8 +1092,8 @@ class OrientIAPipeline:
             # markdown plat. Seulement si récit + structure dérivée ; sinon le front
             # garde le fallback markdown (zéro régression). Coercion numpy->JSON faite
             # côté producer SSE (_stream_events_with_heartbeat).
-            if self.last_narrative_structured is not None:
-                yield {"type": "structured", "structured": self.last_narrative_structured}
+            if trace.narrative_structured is not None:
+                yield {"type": "structured", "structured": trace.narrative_structured}
 
             # Post-LLM (validator + policy + post-process) via to_thread —
             # ces étapes sont sync. Note : on n'a PAS le retry-with-hint
@@ -974,7 +1101,7 @@ class OrientIAPipeline:
             # mais pas de 2e génération (le streaming est uni-directionnel).
             score, verdict = await asyncio.to_thread(
                 self._validate_for_stream, full_text, prepared.intent_label,
-                prepared.top, prepared.narrative_mode,
+                prepared.top, prepared.narrative_mode, trace,
             )
             if score is not None:
                 event: dict = {"type": "faithfulness", "score": score}
@@ -1016,6 +1143,7 @@ class OrientIAPipeline:
         intent_label: str | None,
         top: list[dict] | None = None,
         narrative_mode: bool = False,
+        trace: "RequestTrace | None" = None,
     ) -> tuple[float | None, str | None]:
         """Run validator + score mapping pour le path streaming.
 
@@ -1028,11 +1156,14 @@ class OrientIAPipeline:
         """
         if self.validator is None:
             return None, None
+        if trace is None:
+            trace = RequestTrace()
+            self._last_trace = trace
         validation = self.validator.validate(
             full_text, intent=intent_label,
             fact_cards=self._fact_cards_for_validation(top, narrative_mode),
         )
-        self.last_validation = validation
+        trace.validation = validation
         score = float(validation.honesty_score)
         verdict = "INFIDELE" if validation.flagged else "FIDELE"
         return score, verdict
@@ -1064,6 +1195,7 @@ class OrientIAPipeline:
         intent: str | None = None,
         narrative_mode: bool = False,
         format_decision: FormatDecision | None = None,
+        trace: "RequestTrace | None" = None,
     ) -> tuple[str, dict]:
         """Boucle retry-with-hint anti-hallucination (chantier 1.B).
 
@@ -1099,6 +1231,10 @@ class OrientIAPipeline:
             (answer_text, retry_metadata_dict)
             answer_text est le meilleur tour sélectionné.
         """
+        if trace is None:
+            trace = RequestTrace()
+            self._last_trace = trace
+
         meta: dict = {
             "retries_attempted": 0,
             "tour1_failed_claims": [],
@@ -1114,8 +1250,8 @@ class OrientIAPipeline:
         # forte (région stricte, domaine verrouillé). Vide sinon = comportement
         # v4.1 historique préservé.
         hardlock_block = (
-            self.last_router_result.hardlock_block_for_prompt()
-            if self.last_router_result is not None
+            trace.router_result.hardlock_block_for_prompt()
+            if trace.router_result is not None
             else ""
         )
 
@@ -1144,7 +1280,7 @@ class OrientIAPipeline:
         tour1_validation = self.validator.validate(
             tour1_answer, intent=intent, fact_cards=fact_cards,
         )
-        self.last_validation = tour1_validation
+        trace.validation = tour1_validation
         tour1_failed = extract_failed_claims(tour1_validation)
         meta["tour1_failed_claims"] = list(tour1_failed)
 
@@ -1234,7 +1370,7 @@ class OrientIAPipeline:
         # Sélection : on garde le tour avec le moins de failed_claims.
         # Si égal → tour 2 (la dernière instruction a été suivie au moins partiellement).
         if len(tour2_failed) <= len(tour1_failed):
-            self.last_validation = tour2_validation
+            trace.validation = tour2_validation
             best_answer = tour2_answer
         else:
             # Tour 2 a régressé → on garde le tour 1
@@ -1242,7 +1378,7 @@ class OrientIAPipeline:
                 "Tour 2 regressed (%d claims vs %d at tour 1). Keeping tour 1 answer.",
                 len(tour2_failed), len(tour1_failed),
             )
-            self.last_validation = tour1_validation
+            trace.validation = tour1_validation
             best_answer = tour1_answer
 
         meta["wall_clock_s"] = round(time.time() - wall_t0, 2)
@@ -1257,6 +1393,7 @@ class OrientIAPipeline:
         target: int,
         criteria: FilterCriteria | None,
         route_decision: RouteDecision | None = None,
+        trace: "RequestTrace | None" = None,
     ) -> list[dict]:
         """Retrieve + rerank, avec auto-expansion §8.4 si filter actif.
 
@@ -1271,8 +1408,12 @@ class OrientIAPipeline:
         Sans filter actif (ou criteria empty) : Option C v6 (quota adaptatif).
         Avec filter : retrieve k×INITIAL_K_MULTIPLIER, filter, expand si <target.
         Toujours retourne reranked candidates (même format que v1).
-        Stats stockées dans self.last_filter_stats pour audit F+G.
+        Stats stockées dans trace.filter_stats pour audit F+G.
         """
+        if trace is None:
+            trace = RequestTrace()
+            self._last_trace = trace
+
         # Étape 6 path quad-subindex : actif uniquement si router_llm a routé
         # vers un sous-ensemble strict (sub_indexes ≠ tous les 4).
         # Si router a renvoyé tous les sub_indexes (filet de sécurité confidence
@@ -1326,7 +1467,7 @@ class OrientIAPipeline:
                     )
                     # Fall through au path v1 (ne pas return).
                 else:
-                    self.last_filter_stats = {
+                    trace.filter_stats = {
                         "filter_active": criteria is not None and not criteria.is_empty(),
                         "router_active": True,
                         "router_sub_indexes": list(route_decision.sub_indexes),
@@ -1341,7 +1482,7 @@ class OrientIAPipeline:
         # Path par défaut (no metadata filter) : Option C v6 — retrieval indépendant
         # du domain_hint avec quota adaptatif d'annexes basé sur score brut.
         if not self.use_metadata_filter or criteria is None or criteria.is_empty():
-            return self._retrieve_with_annex_quota(question, k, target, domain_hint)
+            return self._retrieve_with_annex_quota(question, k, target, domain_hint, trace=trace)
 
         # Path filter actif : retrieve avec k_eff = k × INITIAL, expand si nécessaire
         k_eff = k * INITIAL_K_MULTIPLIER
@@ -1370,7 +1511,7 @@ class OrientIAPipeline:
             k_eff = min(k_eff * 2, max_k)
             expansions += 1
 
-        self.last_filter_stats = {
+        trace.filter_stats = {
             "filter_active": True,
             "criteria_empty": False,
             "k_initial": k,
@@ -1805,6 +1946,7 @@ class OrientIAPipeline:
         k: int,
         target: int,
         domain_hint: str | None,
+        trace: "RequestTrace | None" = None,
     ) -> list[dict]:
         """Option C v6 + Double-index — retrieve séparé main/annex + quota adaptatif.
 
@@ -1820,6 +1962,10 @@ class OrientIAPipeline:
 
         Stats stockées dans last_filter_stats pour audit.
         """
+        if trace is None:
+            trace = RequestTrace()
+            self._last_trace = trace
+
         # Phase C++ — retrieve double-index (main 100 + annex 30)
         main_pool, annex_pool = self._retrieve_with_double_subindex(question)
 
@@ -1931,7 +2077,7 @@ class OrientIAPipeline:
             combined = main_reranked
 
         # Stats audit
-        self.last_filter_stats = {
+        trace.filter_stats = {
             "filter_active": False,
             "criteria_empty": True,
             "annex_quota_strategy": "v6_double_index_score_threshold",
@@ -2050,18 +2196,22 @@ class OrientIAPipeline:
             "=== FIN EXEMPLE EXPERT ===\n"
         )
 
-    def _maybe_build_golden_qa_prefix(self, question: str) -> str | None:
+    def _maybe_build_golden_qa_prefix(self, question: str, trace: "RequestTrace | None" = None) -> str | None:
         """Wrapper qui combine retrieve + build_prefix + stats. Retourne None
         si flag désactivé ou pas de match. Utilisé par .answer()."""
+        if trace is None:
+            trace = RequestTrace()
+            self._last_trace = trace
+
         qa = self._retrieve_golden_qa(question, top_k=1)
         if qa is None:
-            self.last_golden_qa = {
+            trace.golden_qa = {
                 "active": self.use_golden_qa,
                 "matched": False,
             }
             return None
         prefix = self._build_few_shot_prefix(qa)
-        self.last_golden_qa = {
+        trace.golden_qa = {
             "active": True,
             "matched": True,
             "prompt_id": qa.get("prompt_id"),

@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import asyncio
 import hmac
+import functools
 import json
 import logging
 import os
@@ -102,8 +103,11 @@ def _require_artifacts(fiches_path: Path, index_path: str) -> None:
 _FICHES_PATH, _INDEX_PATH = _resolve_artifact_paths()
 
 # Pipeline global, chargé une seule fois au lifespan startup.
-# `_pipeline.last_validation` est un état mutable — on garde --workers 1 en prod
-# pour éviter les races (cf docs/integration/03-orientia-fastapi-spec.md).
+# H1 lot 1.6 : l'état par requête vit dans RequestTrace (retour de
+# answer(return_trace=True) / events du stream) — plus d'état mutable partagé
+# sur le chemin servi. Multi-workers uvicorn possible (chaque worker charge
+# son pipeline, ~1.5 GB RAM par worker : dimensionner le plan Railway avant
+# de monter --workers).
 _pipeline: Any = None
 _index_size: int | None = None
 # Fingerprint de provenance (H1 lot 1.5) : hashes prompt/corpus/index + modeles
@@ -465,8 +469,13 @@ async def answer(request: AnswerRequest, http_request: Request) -> AnswerRespons
         # Note : si timeout fire, le thread continue en arrière-plan jusqu'à
         # ce que le Mistral SDK timeout 25s lui-même remonte. Le user récupère
         # un 504 propre en ~30s sans attendre le kill Railway 30-60s.
-        answer_text, sources_raw = await asyncio.wait_for(
-            asyncio.to_thread(_pipeline.answer, sanitized, history=history_dicts),
+        answer_text, sources_raw, trace = await asyncio.wait_for(
+            asyncio.to_thread(
+                functools.partial(
+                    _pipeline.answer, sanitized, history=history_dicts,
+                    return_trace=True,
+                )
+            ),
             timeout=_PIPELINE_TIMEOUT_S,
         )
     except asyncio.TimeoutError:
@@ -496,12 +505,13 @@ async def answer(request: AnswerRequest, http_request: Request) -> AnswerRespons
 
     latency_ms = (time.perf_counter_ns() - t0) / 1_000_000.0
 
-    # Faithfulness mapping : honesty_score continu + flagged.
-    # `last_validation` est None quand ScopeClassifier short-circuite
-    # (out_of_scope, urgent) — on retourne alors None/None proprement.
+    # Faithfulness mapping : honesty_score continu + flagged. Lu depuis la
+    # TRACE DE CETTE REQUÊTE (H1 lot 1.6, thread-safe), plus jamais depuis
+    # l'état partagé pipeline.last_*. validation est None quand le
+    # ScopeClassifier court-circuite (out_of_scope, urgent).
     score: float | None = None
     verdict: str | None = None
-    last_validation = getattr(_pipeline, "last_validation", None)
+    last_validation = trace.validation
     if last_validation is not None:
         score = float(last_validation.honesty_score)
         verdict = "INFIDELE" if last_validation.flagged else "FIDELE"
