@@ -167,6 +167,56 @@ def _serialize_sources(sources) -> list[dict]:
     return out
 
 
+def _answer_via_stream(pipeline, question: str, temperature: float):
+    """Consomme answer_stream() comme le front (H1 lot 1.3, conditions de serving).
+
+    Retourne (texte_complet, sources, meta) où meta capture ce que le bench
+    sync ne voyait pas : verdict faithfulness émis DANS le stream (celui que
+    l'utilisateur reçoit), latence au premier token, présence d'un event
+    structured (mode récit), event error éventuel.
+
+    Différences vs answer() qui justifient ce mode (audit 15/07 « le chemin
+    servi n'est pas le chemin certifié ») :
+      - pas de policy replacement ni post_process sur le texte streamé ;
+      - le verdict vient de _validate_for_stream, pas du retry loop ;
+      - pas de retry tour 2 du tout (stream uni-directionnel).
+    """
+    import asyncio
+
+    async def _consume():
+        tokens: list[str] = []
+        sources: list = []
+        meta: dict = {
+            "mode": "stream",
+            "stream_first_token_s": None,
+            "stream_faithfulness": None,
+            "stream_verdict": None,
+            "stream_structured": False,
+            "stream_error": None,
+        }
+        t0 = time.time()
+        async for ev in pipeline.answer_stream(
+            question, temperature=temperature, short_circuit_pace_s=0.0,
+        ):
+            etype = ev.get("type")
+            if etype == "token":
+                if meta["stream_first_token_s"] is None:
+                    meta["stream_first_token_s"] = round(time.time() - t0, 2)
+                tokens.append(ev.get("content") or "")
+            elif etype == "sources":
+                sources = ev.get("sources") or []
+            elif etype == "faithfulness":
+                meta["stream_faithfulness"] = ev.get("score")
+                meta["stream_verdict"] = ev.get("verdict")
+            elif etype == "structured":
+                meta["stream_structured"] = ev.get("structured") is not None
+            elif etype == "error":
+                meta["stream_error"] = ev.get("error")
+        return "".join(tokens), sources, meta
+
+    return asyncio.run(_consume())
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--eval-set", required=True)
@@ -174,6 +224,12 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="0 = toutes")
     ap.add_argument("--temperature", type=float, default=0.3,
                     help="0.0 = génération déterministe (A/B sans bruit de génération)")
+    ap.add_argument("--serving", action="store_true",
+                    help="conditions de serving RÉELLES (H1 lot 1.3) : passe par "
+                         "answer_stream() — le chemin que le front consomme — au lieu "
+                         "de answer(). Collecte tokens + events sources/faithfulness/"
+                         "structured. À utiliser pour golden CI et batteries futures ; "
+                         "le mode answer() reste pour comparabilité historique.")
     args = ap.parse_args()
 
     _load_env()
@@ -220,7 +276,13 @@ def main():
         }
         t0 = time.time()
         try:
-            text, sources = pipeline.answer(question, temperature=args.temperature)
+            if args.serving:
+                text, sources, stream_meta = _answer_via_stream(
+                    pipeline, question, temperature=args.temperature,
+                )
+                rec.update(stream_meta)
+            else:
+                text, sources = pipeline.answer(question, temperature=args.temperature)
             rec["latency_s"] = round(time.time() - t0, 2)
             rec["answer"] = text
             rec["scope"] = _serialize_scope(pipeline.last_scope_result)

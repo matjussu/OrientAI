@@ -23,7 +23,10 @@ fi
 echo "=== [2/2] ALERTE NON BLOQUANTE : groundedness golden 50q (génération + juge) ==="
 # golden_50.json = {questions:[...]} -> format run_battery {items:[...]}
 python -c "import json,pathlib; d=json.load(open('data/golden_eval/golden_50.json')); pathlib.Path('$RES/golden_eval_set.json').write_text(json.dumps({'items':d['questions']},ensure_ascii=False))"
-python $DIR/run_battery.py --eval-set $RES/golden_eval_set.json --out $RES/golden_battery.json --temperature 0 \
+# H1 lot 1.3 : conditions de serving REELLES (temp 0.3 + answer_stream, le
+# chemin que le front consomme). Pour un A/B de prompt a bruit minimal,
+# utiliser run_battery.py sans --serving avec --temperature 0.
+python $DIR/run_battery.py --eval-set $RES/golden_eval_set.json --out $RES/golden_battery.json --serving --temperature 0.3 \
   || echo "[golden-ci][alerte] génération golden incomplète (NON BLOQUANT)"
 python $DIR/judge_groundedness.py --in $RES/golden_battery.json --out $RES/golden_ground.json \
   || echo "[golden-ci][alerte] juge golden incomplet (NON BLOQUANT)"
