@@ -25,6 +25,7 @@ from mistralai.client import Mistral
 from src.agent.cache import LRUCache
 from src.agent.retry import call_with_retry
 from src.agent.tool import Tool
+from src.rag.models import MISTRAL_LARGE, MISTRAL_SMALL
 
 
 # --- Profile dataclass (typed output) ---
@@ -487,10 +488,10 @@ class ProfileClarifier:
     """
 
     client: Mistral
-    model: str = "mistral-large-latest"
+    model: str = MISTRAL_LARGE
     # Mode récit (1b) : modèle small + temp 0 -> extraction déterministe et
     # économe (~0 crédit Claude), reproductible pour la boucle de jugement.
-    narrative_model: str = "mistral-small-latest"
+    narrative_model: str = MISTRAL_SMALL
     timeout_ms: int = 60_000
     max_retries: int = 3
     initial_backoff: float = 2.0

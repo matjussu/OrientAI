@@ -90,6 +90,9 @@ class HealthResponse(BaseModel):
     pipeline_loaded: bool
     index_size: int | None = None
     time: str  # ISO 8601
+    # H1 lot 1.5 — fingerprint de provenance (hash prompt/corpus/index +
+    # modeles pinnes), calcule au boot. None avant le lifespan (tests).
+    provenance: dict | None = None
 
 
 class ErrorResponse(BaseModel):

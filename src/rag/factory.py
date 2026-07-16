@@ -51,6 +51,7 @@ from src.rag.router_llm import RouterLLM
 from src.rag.scope_classifier import ScopeClassifier
 from src.validator import Validator
 from src.validator.layer3 import Layer3Validator
+from src.rag.models import MISTRAL_MEDIUM, MISTRAL_SMALL
 
 
 def _env_truthy(val: str | None) -> bool:
@@ -109,12 +110,12 @@ def make_production_pipeline(
     enable_router_llm: bool = True,
     # Modèle utilisé pour le routing (séparé du modèle de génération).
     # mistral-small-latest = ~$0.0001/q + 500-800 ms latence.
-    router_model: str = "mistral-small-latest",
+    router_model: str = MISTRAL_SMALL,
     # Retrieval / generation tuning (rarement override)
     use_mmr: bool = True,
     use_intent: bool = True,
     use_metadata_filter: bool = True,
-    model: str = "mistral-medium-latest",
+    model: str = MISTRAL_MEDIUM,
     # Mode récit (R1 1c, ordre #137). None -> lit l'env ORIENTIA_NARRATIVE_MODE
     # (default OFF). Quand actif, instancie un ProfileClarifier dédié et active
     # la branche _prepare_narrative (déterministe profil-driven) sur les récits.

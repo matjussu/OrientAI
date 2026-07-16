@@ -3,9 +3,10 @@ import os
 from mistralai.client import Mistral
 
 from src.rag.sigle_expand import sigle_injection_text
+from src.rag.models import MISTRAL_EMBED
 
 
-EMBED_MODEL = "mistral-embed"
+EMBED_MODEL = MISTRAL_EMBED
 
 # Injection sigle DENSE (J2, commit 5d4b175) dans le texte EMBEDDÉ : feature dont le
 # gate J2 a partiellement FAIL (6 gains BUT obscurs MAIS déplace LAS Cergy et surtout

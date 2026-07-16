@@ -629,9 +629,10 @@ def test_router_llm_falls_back_on_tool_call_validation_error() -> None:
 
 
 def test_router_llm_uses_default_model_mistral_small() -> None:
-    """Par défaut, RouterLLM utilise mistral-small-latest (souverain léger)."""
+    """Par défaut, RouterLLM utilise le pin MISTRAL_SMALL (souverain léger)."""
     router = RouterLLM(client=MagicMock())
-    assert router.model == "mistral-small-latest"
+    from src.rag.models import MISTRAL_SMALL
+    assert router.model == MISTRAL_SMALL
 
 
 def test_router_llm_passes_tool_choice_any() -> None:

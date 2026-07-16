@@ -49,9 +49,10 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from mistralai.client import Mistral
+from src.rag.models import MISTRAL_SMALL
 
 
-CRITIC_LOOP_MODEL = "mistral-small-latest"
+CRITIC_LOOP_MODEL = MISTRAL_SMALL
 
 
 CRITIC_LOOP_PROMPT = """Tu es un correcteur anti-hallucination spécialisé orientation.

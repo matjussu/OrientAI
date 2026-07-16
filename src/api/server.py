@@ -106,6 +106,9 @@ _FICHES_PATH, _INDEX_PATH = _resolve_artifact_paths()
 # pour éviter les races (cf docs/integration/03-orientia-fastapi-spec.md).
 _pipeline: Any = None
 _index_size: int | None = None
+# Fingerprint de provenance (H1 lot 1.5) : hashes prompt/corpus/index + modeles
+# pinnes, calcule UNE FOIS au lifespan, joint aux logs de chaque reponse.
+_provenance: dict | None = None
 
 # Timeouts H2 (audit-pont-orientia-platform-2026-05-13 §H2)
 # - Mistral SDK : 25s — borne basse, le SDK lui-même fail proprement à 25s
@@ -179,6 +182,11 @@ async def lifespan(_app: FastAPI):
     t_gen = time.perf_counter()
     pipeline.warmup_generation()
     logger.info("Generation warm in %.1fs", time.perf_counter() - t_gen)
+
+    global _provenance
+    from src.api.provenance import build_fingerprint
+    _provenance = build_fingerprint(fiches_path, index_path)
+    logger.info("Provenance fingerprint: %s", json.dumps(_provenance))
 
     _pipeline = pipeline
     logger.info(f"Pipeline ready, {_index_size} fiches indexed")
@@ -413,6 +421,7 @@ async def health() -> HealthResponse:
         pipeline_loaded=_pipeline is not None,
         index_size=_index_size,
         time=datetime.now(timezone.utc).isoformat(),
+        provenance=_provenance,
     )
 
 
@@ -521,6 +530,7 @@ async def answer(request: AnswerRequest, http_request: Request) -> AnswerRespons
                 "flagged": last_validation.flagged if last_validation else None,
                 "question_len": len(sanitized),
                 "history_len": len(request.history) if request.history else 0,
+                "provenance": _provenance,
             }
         )
     )
@@ -734,6 +744,7 @@ async def answer_stream(request: AnswerRequest, http_request: Request):
             "event": "stream_start",
             "question_len": len(sanitized),
             "history_len": len(request.history) if request.history else 0,
+            "provenance": _provenance,
         })
     )
 
