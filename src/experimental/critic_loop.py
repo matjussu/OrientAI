@@ -31,7 +31,7 @@ bench triple-run 38q × 3 = 114 inférences supplémentaires =
 
 ## Cohabitation avec StatFactChecker
 
-Le critic loop et le StatFactChecker (`src/rag/fact_checker.py`) sont
+Le critic loop et le StatFactChecker (`src/experimental/fact_checker.py`) sont
 **complémentaires** :
 - StatFactChecker : MESURE les hallucinations post-réponse
   (`{verified, verified_by_official_source, with_disclaimer, unsafe}`)

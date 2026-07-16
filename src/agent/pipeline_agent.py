@@ -90,7 +90,7 @@ class AgentAnswer:
             "error": self.error,
         }
         if include_sources:
-            # Sérialise format compatible StatFactChecker (existant `src/rag/fact_checker.py`).
+            # Sérialise format compatible StatFactChecker (existant `src/experimental/fact_checker.py`).
             # StatFactChecker.verify(answer, sources) attend list[dict] avec
             # `fiche` key contenant le texte recherchable.
             out["sources_aggregated"] = [
