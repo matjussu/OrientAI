@@ -1,0 +1,3467 @@
+[
+ {
+  "qid": "comp-003-v3",
+  "question": "Peux-tu m'aider : compare BTS SIO et BUT Informatique sur le taux d'insertion et le coût, lequel est mieux ?",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option b solutions logicielles et applications metiers en ILE-DE-FRANCE | Établissements/coho"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en NORMANDIE | Établissements/cohortes mesurés : 47 | Taux d'emploi 12 mois : 5"
+   },
+   {
+    "fiche_id": "idx:34555",
+    "nom": "Couturier en atelier mode et luxe",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-a-solutions-",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux (France) | Établissements/cohortes m"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en OCCITANIE | Établissements/cohortes mesurés : 68 | Taux d'emploi 12 mois : 5"
+   },
+   {
+    "fiche_id": "idx:34556",
+    "nom": "Couturier retoucheur réparateur",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux en ILE-DE-FRANCE | Établissements/co"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en BRETAGNE | Établissements/cohortes mesurés : 35 | Taux d'emploi 12 mois : 58"
+   },
+   {
+    "fiche_id": "idx:35019",
+    "nom": "Développeur intégrateur en informatique industrielle",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-b-solutions-",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option b solutions logicielles et applications metiers (France) | Établissements/cohortes mes"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en GRAND EST | Établissements/cohortes mesurés : 82 | Taux d'emploi 12 mois : 4"
+   },
+   {
+    "fiche_id": "idx:38264",
+    "nom": "Tapissier-couturier d'ameublement",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux en NORMANDIE | Établissements/cohort"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en PAYS DE LA LOIRE | Établissements/cohortes mesurés : 52 | Taux d'emploi 12 m"
+   },
+   {
+    "fiche_id": "idx:38407",
+    "nom": "Technicien informatique de proximité",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:systemes-numeriques-option-a-informatique-et-reseaux",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux (France) | Établissements/cohortes mesurés : 832 | Taux d'emploi 12 mois après "
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en HAUTS-DE-FRANCE | Établissements/cohortes mesurés : 99 | Taux d'emploi 12 mo"
+   },
+   {
+    "fiche_id": "idx:38446",
+    "nom": "Technicien supérieur en automatique et informatique industrielle",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bourgogne-franche-comte",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option b solutions logicielles et applications metiers en BOURGOGNE-FRANCHE-COMTE | Établisse"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en ILE-DE-FRANCE | Établissements/cohortes mesurés : 131 | Taux d'emploi 12 moi"
+   },
+   {
+    "fiche_id": "idx:881",
+    "nom": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la Valorisation de l'In",
+    "etablissement": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la ",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option b solutions logicielles et applications metiers en HAUTS-DE-FRANCE | Établissements/co"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en NOUVELLE-AQUITAINE | Établissements/cohortes mesurés : 62 | Taux d'emploi 12"
+   },
+   {
+    "fiche_id": "idx:1234",
+    "nom": "CFA Relais Avenir Pro (Association pour la Promotion et la Valorisation de l'Ins",
+    "etablissement": "CFA Relais Avenir Pro (Association pour la Promotion et la V",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bourgogne-franche-comte",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux en BOURGOGNE-FRANCHE-COMTE | Établis"
+   },
+   {
+    "fiche_id": "idx:4132",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux en HAUTS-DE-FRANCE | Établissements/"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:auvergne-rhone-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en AUVERGNE-RHONE-ALPES | Établissements/cohortes mesurés : 75 | Taux d'emploi "
+   },
+   {
+    "fiche_id": "idx:4212",
+    "nom": "ACCOMPAGNEMENT, SOINS ET SERVICES A LA PERSONNE",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option b solutions logicielles et applications metiers en OCCITANIE | Établissements/cohortes"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 28 | Taux d'emploi 1"
+   },
+   {
+    "fiche_id": "idx:4559",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option b solutions logicielles et applications metiers en BRETAGNE | Établissements/cohortes "
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:bourgogne-franche-comte",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en BOURGOGNE-FRANCHE-COMTE | Établissements/cohortes mesurés : 36 | Taux d'empl"
+   },
+   {
+    "fiche_id": "idx:5363",
+    "nom": "CONCEPTION ET REALISATION DES SYSTEMES AUTOMATIQUES",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux en BRETAGNE | Établissements/cohorte"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en LA REUNION | Établissements/cohortes mesurés : 17 | Taux de poursuite d'étud"
+   },
+   {
+    "fiche_id": "idx:5454",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux en OCCITANIE | Établissements/cohort"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:provence-alpes-cote-d-azur",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en PROVENCE-ALPES-COTE D'AZUR | Établissements/cohortes mesurés : 79 | Taux d'e"
+   }
+  ]
+ },
+ {
+  "qid": "comp-004-v3",
+  "question": "Peux-tu m'aider : compare licence de droit et Sciences Po sur le taux d'insertion et le coût, lequel est mieux ?",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Sciences Po / Instituts d'études politiques - Sciences Humaines et Sociales - Gr",
+    "etablissement": "Sciences Po - campus de Menton - Institut d'études politique",
+    "ville": "Menton",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "droit",
+    "source": "parcoursup",
+    "extrait": "Campus de Menton, Bachelor de Sciences Po, Mineure Mediterranée - Moyen-Orient"
+   },
+   {
+    "fiche_id": "idx:9163",
+    "nom": "DROIT COMPARE — Common law et droit comparé",
+    "etablissement": "Université Paris Cité",
+    "ville": "MALAKOFF",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9164",
+    "nom": "DROIT COMPARE — Droit anglais et Nord américain des affaires",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS CEDEX 05",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9165",
+    "nom": "DROIT COMPARE — Droit comparé et droit international des échanges dans les espac",
+    "etablissement": "Université de Perpignan Via Domitia",
+    "ville": "PERPIGNAN",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9166",
+    "nom": "DROIT COMPARE — Droit comparé et droits étrangers",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS CEDEX 05",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9167",
+    "nom": "DROIT COMPARE — Droit et études multilingues",
+    "etablissement": "Université Paris-Panthéon-Assas",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9168",
+    "nom": "DROIT COMPARE — Droit public comparé",
+    "etablissement": "Université Paris-Panthéon-Assas",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9169",
+    "nom": "DROIT COMPARE — None",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9312",
+    "nom": "DROIT DES AFFAIRES — Droit des affaires comparé",
+    "etablissement": "Université de Bordeaux",
+    "ville": "PESSAC",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9313",
+    "nom": "DROIT DES AFFAIRES — Droit des affaires comparé",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9361",
+    "nom": "DROIT DES AFFAIRES — DROIT INTERNATIONAL ET COMPARE DES AFFAIRES",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9364",
+    "nom": "DROIT DES AFFAIRES — DROIT PRIVE INTERNATIONAL ET COMPARE",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9555",
+    "nom": "DROIT INTERNATIONAL ET DROIT EUROPEEN — Droit international et comparé",
+    "etablissement": "Université Toulouse Capitole",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9556",
+    "nom": "DROIT INTERNATIONAL ET DROIT EUROPEEN — Droit international et comparé des affai",
+    "etablissement": "Université Toulouse Capitole",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9575",
+    "nom": "DROIT INTERNATIONAL — Droit comparé des affaires",
+    "etablissement": "Université Paris-Panthéon-Assas",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9587",
+    "nom": "DROIT INTERNATIONAL — Droit international et comparé des affaires",
+    "etablissement": "Université de Bordeaux",
+    "ville": "PESSAC",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "comp-005-v3",
+  "question": "Peux-tu m'aider : compare master MIAGE et école d'ingénieurs sur le taux d'insertion et le coût, lequel est mieux ?",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Tronc com",
+    "etablissement": "Université des Antilles",
+    "ville": "POINTE-A-PITRE",
+    "region": "Guadeloupe",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:34555",
+    "nom": "Couturier en atelier mode et luxe",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:34556",
+    "nom": "Couturier retoucheur réparateur",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:38264",
+    "nom": "Tapissier-couturier d'ameublement",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Diplôme d'ingénieurs en Sciences fondamentales et applications (Normandie, cohorte 2024) | Niveau d'études : bac+5 | "
+   }
+  ]
+ },
+ {
+  "qid": "comp-006-v3",
+  "question": "Peux-tu m'aider : compare INSA Lyon et UTC Compiègne sur le taux d'insertion et le coût, lequel est mieux ?",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Assistant biomédical en ingénierie hospitalière",
+    "etablissement": "UNIVERSITE DE TECHNOLOGIE DE COMPIEGNE (UTC)",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:7004",
+    "nom": "MANAGER DE L'ENVIRONNEMENT ET DE L'ECO-EFFICACITE ENERGETIQUE (INSA LYON)",
+    "etablissement": "INSTITUT NATIONAL DES SCIENCES APPLIQUEES DE LYON",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9313",
+    "nom": "DROIT DES AFFAIRES — Droit des affaires comparé",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9361",
+    "nom": "DROIT DES AFFAIRES — DROIT INTERNATIONAL ET COMPARE DES AFFAIRES",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9364",
+    "nom": "DROIT DES AFFAIRES — DROIT PRIVE INTERNATIONAL ET COMPARE",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15977",
+    "nom": "bachelor en sciences et ingénierie - génie électrique et génie civil (INSA Lyon)",
+    "etablissement": "INSA Lyon",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:19783",
+    "nom": "mastère spé. systèmes de transports ferroviaires et urbains (ENPC - INSA Hauts-d",
+    "etablissement": "ENPC - INSA Hauts-de-France - UTC",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:19951",
+    "nom": "premier cycle INSA post bac général - Formation initiale aux métiers d'ingénieur",
+    "etablissement": "INSA de Lyon",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:assistance-technique-d-ingenieur",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — assistance technique d'ingenieur (France) | Établissements/cohortes mesurés : 210 | Taux d'emploi 12 mois après diplôme : 59.2% (moyen"
+   },
+   {
+    "fiche_id": "idx:19961",
+    "nom": "premier cycle INSA post bac général et bac technologique (STI2D et STL) - FIMI I",
+    "etablissement": "INSA de Lyon",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:29838",
+    "nom": "Formation Bac + 3",
+    "etablissement": "INSA Lyon",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Bachelor Mutations technologiques et industrielles - Spécialité Infrastructures des réseaux électriques"
+   },
+   {
+    "fiche_id": "idx:29839",
+    "nom": "Formation Bac + 3",
+    "etablissement": "INSA Lyon - Antenne de Oyonnax",
+    "ville": "Bellignat",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Bachelor Mutations technologiques et industrielles - Spécialité Plasturgie et Ecologie Industrielle"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:transport-et-prestation-logistiques",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — transport et prestation logistiques (France) | Établissements/cohortes mesurés : 158 | Taux d'emploi 12 mois après diplôme : 65.6% (mo"
+   },
+   {
+    "fiche_id": "idx:29906",
+    "nom": "Formation d'ingénieur Bac + 5 - (en 6 ans) - Bac général",
+    "etablissement": "INSA Lyon",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "(en 6 ans) - Bac général"
+   },
+   {
+    "fiche_id": "idx:29953",
+    "nom": "Formation d'ingénieur Bac + 5 - Bac Général",
+    "etablissement": "INSA Lyon",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Bac Général"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:communication-et-industries-graphiques-option-etude-et-reali",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication et industries graphiques option etude et realisation de produits graphiques (France) | Établissements/cohortes mesurés :"
+   },
+   {
+    "fiche_id": "idx:30082",
+    "nom": "Formation d'ingénieur Bac + 5 - bac STI2D,STL",
+    "etablissement": "INSA Lyon",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "(en 6 ans) - Bac STI2D,STL"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:conception-des-processus-de-realisation-de-produits-option-a",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — conception des processus de realisation de produits option a production unitaire (France) | Établissements/cohortes mesurés : 183 | Ta"
+   },
+   {
+    "fiche_id": "idx:30228",
+    "nom": "Formation d'ingénieur Bac + 5 - Série générale",
+    "etablissement": "Cursus Humanités et technologie UTC Université de Technologi",
+    "ville": "Compiègne",
+    "region": "Hauts-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Série générale"
+   },
+   {
+    "fiche_id": "idx:30245",
+    "nom": "Formation d'ingénieur Bac + 5 - Série générale",
+    "etablissement": "UTC Université de Technologie de Compiègne",
+    "ville": "Compiègne",
+    "region": "Hauts-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Série générale"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:moteurs-a-combustion-interne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — moteurs a combustion interne (France) | Établissements/cohortes mesurés : 61 | Taux d'emploi 12 mois après diplôme : 70.9% (moyenne Fr"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:assistance-technique-d-ingenieur:auvergne-rhone-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — assistance technique d'ingenieur en AUVERGNE-RHONE-ALPES | Établissements/cohortes mesurés : 19 | Taux d'emploi 12 mois : 71.7% (en AU"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bac-pro:technicien-d-etudes-du-batiment-option-a-etudes-et-economie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — technicien d'etudes du batiment option a : etudes et economie (France) | Établissements/cohortes mesurés : 655 | Taux d'emploi 12 "
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:gestion-et-maitrise-de-l-eau",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — gestion et maitrise de l'eau (France) | Établissements/cohortes mesurés : 6 | Taux d'emploi 12 mois après diplôme : 57.0% (moyenne Fra"
+   }
+  ]
+ },
+ {
+  "qid": "comp-007-v3",
+  "question": "Peux-tu m'aider : j'hésite entre une bonne école loin de chez moi et une école correcte à côté, c'est mieux quoi ?",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "FCIL mieux communiquer pour mieux accompagner",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:3545",
+    "nom": "Organisme de formation-Centre de formation d'apprentis ISCOD Valbonne",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis ISCOD",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:3695",
+    "nom": "Organisme de formation-Centre de formation d'apprentis Toccata Valbonne",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis Tocca",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:3718",
+    "nom": "Organisme de formation-Centre de formation d'apprentis VISIPLUS Valbonne",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis VISIP",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8234",
+    "nom": "ARCHEOLOGIE, SCIENCES POUR L'ARCHEOLOGIE — Recherches, Sciences, Patrimoines",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8347",
+    "nom": "ARTS, LETTRES ET CIVILISATIONS — Patrimoine, Médiation et Ingénierie des Parcour",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "VILLETANEUSE",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8970",
+    "nom": "CONSERVATION-RESTAURATION DES BIENS CULTURELS — Conservation préventive du patri",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9053",
+    "nom": "CULTURE ET COMMUNICATION — Médiations, Musées et Patrimoines (MMP)",
+    "etablissement": "Avignon Université",
+    "ville": "AVIGNON CEDEX 01",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9136",
+    "nom": "DIRECTION DE PROJETS OU ETABLISSEMENTS CULTURELS — Médiation du Patrimoine et de",
+    "etablissement": "Université Sorbonne Nouvelle",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9152",
+    "nom": "DROIT BANCAIRE ET FINANCIER — Droit de la banque et gestion de patrimoine",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "MARSEILLE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9350",
+    "nom": "DROIT DES AFFAIRES — Droit et gestion du patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "TOULON",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10543",
+    "nom": "GEOGRAPHIE — Patrimoines, Médiation et Ingénierie des Parcours Touristiques",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "VILLETANEUSE",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10557",
+    "nom": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT — Culture politique et p",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10698",
+    "nom": "GESTION DE PATRIMOINE — Gestion des produits et risques financiers",
+    "etablissement": "Université Côte d'Azur",
+    "ville": "NICE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10699",
+    "nom": "GESTION DE PATRIMOINE — Gestion internationale de patrimoine",
+    "etablissement": "Université Côte d'Azur",
+    "ville": "NICE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "comp-008-v3",
+  "question": "Peux-tu m'aider : compare l'INSA Lyon, l'UTC Compiègne et Polytech sur le taux d'accès et les débouchés",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Formation Bac + 3",
+    "etablissement": "INSA Lyon",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Bachelor Mutations technologiques et industrielles - Spécialité Infrastructures des réseaux électriques"
+   },
+   {
+    "fiche_id": "idx:7004",
+    "nom": "MANAGER DE L'ENVIRONNEMENT ET DE L'ECO-EFFICACITE ENERGETIQUE (INSA LYON)",
+    "etablissement": "INSTITUT NATIONAL DES SCIENCES APPLIQUEES DE LYON",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9313",
+    "nom": "DROIT DES AFFAIRES — Droit des affaires comparé",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9361",
+    "nom": "DROIT DES AFFAIRES — DROIT INTERNATIONAL ET COMPARE DES AFFAIRES",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9364",
+    "nom": "DROIT DES AFFAIRES — DROIT PRIVE INTERNATIONAL ET COMPARE",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15977",
+    "nom": "bachelor en sciences et ingénierie - génie électrique et génie civil (INSA Lyon)",
+    "etablissement": "INSA Lyon",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17708",
+    "nom": "diplôme d'ingénieur de l'École polytechnique universitaire de l'université Lyon ",
+    "etablissement": "École polytechnique universitaire de l'université Lyon I",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17709",
+    "nom": "diplôme d'ingénieur de l'École polytechnique universitaire de l'université Lyon ",
+    "etablissement": "École polytechnique universitaire de l'université Lyon I",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17710",
+    "nom": "diplôme d'ingénieur de l'École polytechnique universitaire de l'université Lyon ",
+    "etablissement": "École polytechnique universitaire de l'université Lyon I",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17711",
+    "nom": "diplôme d'ingénieur de l'École polytechnique universitaire de l'université Lyon ",
+    "etablissement": "École polytechnique universitaire de l'université Lyon I",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17712",
+    "nom": "diplôme d'ingénieur de l'École polytechnique universitaire de l'université Lyon ",
+    "etablissement": "École polytechnique universitaire de l'université Lyon I",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17713",
+    "nom": "diplôme d'ingénieur de l'École polytechnique universitaire de l'université Lyon ",
+    "etablissement": "École polytechnique universitaire de l'université Lyon I",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18052",
+    "nom": "diplôme d'ingénieur spécialisé en intrapreneuriat et innovation, de l'École poly",
+    "etablissement": "École polytechnique universitaire de l'université Lyon I",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:19783",
+    "nom": "mastère spé. systèmes de transports ferroviaires et urbains (ENPC - INSA Hauts-d",
+    "etablissement": "ENPC - INSA Hauts-de-France - UTC",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:19951",
+    "nom": "premier cycle INSA post bac général - Formation initiale aux métiers d'ingénieur",
+    "etablissement": "INSA de Lyon",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:19961",
+    "nom": "premier cycle INSA post bac général et bac technologique (STI2D et STL) - FIMI I",
+    "etablissement": "INSA de Lyon",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40945",
+    "nom": "Ingénieur diplômé de l'Université de Technologie de Compiègne (UTC), spécialité ",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40945) — Ingénieur diplômé de l'Université de Technologie de Compiègne (UTC), spécialité Génie des Procédés (bac+5) | Nive"
+   }
+  ]
+ },
+ {
+  "qid": "malform-001-v3",
+  "question": "Peux-tu m'aider : je veux faire des jeux vidéo plus tard mais je sais pas quoi faire après le bac",
+  "category": "mal_formulee",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Concepteur 3D animation VFX jeux vidéo",
+    "etablissement": "BRASSART RHONE ALPES",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.885",
+    "nom": "concepteur/trice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de jeux vidéo | Libellé : conceptrice de jeux vidéo / concepteur de jeux vidéo | Synonymes : créateur/trice de jeux vidéo, g"
+   },
+   {
+    "fiche_id": "idx:2028",
+    "nom": "Maison Familiale Rurale de Mareuil-sur-Lay-Dissais",
+    "etablissement": "Maison Familiale Rurale de Mareuil-sur-Lay-Dissais",
+    "ville": "",
+    "region": "Pays de la Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8375",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — M1 - Direction de projets vid",
+    "etablissement": "Université Grenoble Alpes",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9041",
+    "nom": "CREATION NUMERIQUE — Design graphique et d'interaction - Option Jeux vidéo",
+    "etablissement": "Institut catholique de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15708",
+    "nom": "artiste concepteur de cinéma d'animation et de jeux vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40184",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40184) — Métiers du jeu vidéo  (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étude"
+   },
+   {
+    "fiche_id": "idx:16028",
+    "nom": "bachelor jeux video et animation 3D franco-japonais",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16036",
+    "nom": "bachelor management et business - jeux vidéo et Esport",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38294",
+    "nom": "Concepteur de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38294) — Concepteur de jeux vidéo (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:16770",
+    "nom": "concepteur 3D animation VFX jeux vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16773",
+    "nom": "concepteur de jeux vidéo - Game designer",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16774",
+    "nom": "concepteur de jeux vidéo - Lead Game designer",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39760",
+    "nom": "Concepteur de jeux vidéo / Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39760) — Concepteur de jeux vidéo / Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   },
+   {
+    "fiche_id": "idx:17292",
+    "nom": "développement de jeux vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.823",
+    "nom": "concepteur/trice de niveaux de jeu web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de niveaux de jeu web | Libellé : conceptrice de niveaux de jeu web / concepteur de niveaux de jeu web | Accroche : Au sein "
+   },
+   {
+    "fiche_id": "idx:18740",
+    "nom": "jeux vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37652",
+    "nom": "Concepteur de jeux vidéo - Lead Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37652) — Concepteur de jeux vidéo - Lead Game designer (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104"
+   },
+   {
+    "fiche_id": "idx:18760",
+    "nom": "lead infographiste 3D jeux vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42021",
+    "nom": "Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42021) — Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:20080",
+    "nom": "réalisation de jeux vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:30607",
+    "nom": "Licence - Arts - Parcours Création numérique - Concepteur-réalisateur numérique ",
+    "etablissement": "PIKTURA",
+    "ville": "Roubaix",
+    "region": "Hauts-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Création numérique - Concepteur-réalisateur numérique - Options Animation 2D/Animation 3D-FX/Jeux vidéo/Illustration"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39594",
+    "nom": "Expert en création et développement de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39594) — Expert en création et développement de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1"
+   },
+   {
+    "fiche_id": "idx:33704",
+    "nom": "Artiste concepteur de cinéma d’animation et de jeux vidéo",
+    "etablissement": "FORMATAGE LANGUEDOC",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.639",
+    "nom": "ludothécaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ludothécaire | Synonymes : animateur/trice de ludothèque | Accroche : Le ou la ludothécaire fait découvrir jeux et jouets à un public varié a"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38806",
+    "nom": "Concepteur de jeux vidéo - Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38806) — Concepteur de jeux vidéo - Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   },
+   {
+    "fiche_id": "rome_metier:E1125",
+    "nom": "Concepteur / Conceptrice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1125 : Concepteur / Conceptrice de jeux vidéo | Compétences par enjeu : Communication, Multimédia (Concevoir des jeux vidéo innovants et "
+   }
+  ]
+ },
+ {
+  "qid": "malform-002-v3",
+  "question": "Peux-tu m'aider : ya quoi comme études pour bosser dans un truc où t'aides les gens genre le social ?",
+  "category": "mal_formulee",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "ETUDES SUR LE GENRE — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8091",
+    "nom": "ADMINISTRATION ECONOMIQUE ET SOCIALE — Direction des structures médico-sociales ",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9142",
+    "nom": "DIRECTION DE PROJETS OU ETABLISSEMENTS CULTURELS — ORCHESTRA (Organisation des R",
+    "etablissement": "Université de Corse Pasquale Paoli",
+    "ville": "CORTE",
+    "region": "Corse",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9143",
+    "nom": "DIRECTION DE PROJETS OU ETABLISSEMENTS CULTURELS — ORCHESTRA (Organisation des R",
+    "etablissement": "Université de Corse Pasquale Paoli",
+    "ville": "CORTE",
+    "region": "Corse",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9144",
+    "nom": "DIRECTION DE PROJETS OU ETABLISSEMENTS CULTURELS — ORCHESTRA (Organisation des R",
+    "etablissement": "Université de Corse Pasquale Paoli",
+    "ville": "CORTE",
+    "region": "Corse",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10353",
+    "nom": "ETUDES SUR LE GENRE — Anthropologie",
+    "etablissement": "École des hautes études en sciences sociales",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10354",
+    "nom": "ETUDES SUR LE GENRE — Études sur le Genre et Actions Liées à l'Égalité dans la S",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10355",
+    "nom": "ETUDES SUR LE GENRE — Etudes sur le genre parcours Démographie-Economie",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10356",
+    "nom": "ETUDES SUR LE GENRE — Etudes sur le genre parcours Etudes de développement",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10357",
+    "nom": "ETUDES SUR LE GENRE — Etudes sur le genre parcours humanités (Arts, Histoire, Ph",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10358",
+    "nom": "ETUDES SUR LE GENRE — Etudes sur le genre parcours Monde Anglophone (partenariat",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10359",
+    "nom": "ETUDES SUR LE GENRE — Etudes sur le genre parcours Science politique",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10360",
+    "nom": "ETUDES SUR LE GENRE — Études sur le Genre, Analyses, Lectures Interdisciplinaire",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "BRON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10361",
+    "nom": "ETUDES SUR LE GENRE — Genre, Égalité et Politiques Sociales (GEPS)",
+    "etablissement": "Université Toulouse - Jean Jaurès",
+    "ville": "TOULOUSE",
+    "region": "Occitanie",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10362",
+    "nom": "ETUDES SUR LE GENRE — Genre, Littératures, Cultures (GLC)",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "BRON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10363",
+    "nom": "ETUDES SUR LE GENRE — GENRES, CULTURES, SOCIETES",
+    "etablissement": "Université Bordeaux Montaigne",
+    "ville": "PESSAC",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "malform-003-v3",
+  "question": "Peux-tu m'aider : cv comment on fait pour aller en fac de psycho c'est dur d'y rentrer ?",
+  "category": "mal_formulee",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Exercer la médiation animale en milieu médico-psycho-social",
+    "etablissement": "LAURENCE BRUDER SERGENT",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8440",
+    "nom": "BIODIVERSITE, ECOLOGIE ET EVOLUTION — Ecologie et développement durable en alter",
+    "etablissement": "Facultés libres de l'Ouest",
+    "ville": "ANGERS",
+    "region": "Pays de la Loire",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8441",
+    "nom": "BIODIVERSITE, ECOLOGIE ET EVOLUTION — Ecologie et développement durable en forma",
+    "etablissement": "Facultés libres de l'Ouest",
+    "ville": "ANGERS",
+    "region": "Pays de la Loire",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10585",
+    "nom": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT — M1 - Geographie Inform",
+    "etablissement": "Université Grenoble Alpes",
+    "ville": "GRENOBLE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14370",
+    "nom": "PSYCHOLOGIE SOCIALE, DU TRAVAIL ET DES ORGANISATIONS — Accompagnement et conseil",
+    "etablissement": "Facultés libres de l'Ouest",
+    "ville": "SAINT DENIS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14371",
+    "nom": "PSYCHOLOGIE SOCIALE, DU TRAVAIL ET DES ORGANISATIONS — Accompagnement et conseil",
+    "etablissement": "Facultés libres de l'Ouest",
+    "ville": "ANGERS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14374",
+    "nom": "PSYCHOLOGIE SOCIALE, DU TRAVAIL ET DES ORGANISATIONS — Ergonomie, Psychologie de",
+    "etablissement": "Université Rennes 2",
+    "ville": "RENNES CEDEX",
+    "region": "Bretagne",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14396",
+    "nom": "PSYCHOLOGIE — Approche clinique et sociale face aux VIolences et DIscriminations",
+    "etablissement": "Université Clermont Auvergne",
+    "ville": "CLERMONT-FERRAND",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "idx:14409",
+    "nom": "PSYCHOLOGIE — Ergonomie : facteurs humains et ingénierie des systèmes d'informat",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "AIX-EN-PROVENCE CEDEX 01",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14440",
+    "nom": "PSYCHOLOGIE — Psychologie : Ergonomie Cognitive, Innovation Technologique et Fac",
+    "etablissement": "Université Toulouse - Jean Jaurès",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:ouverture-inscription",
+    "nom": "Ouverture de la plateforme MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "MonMaster 2026 ouvre le 2 février 2026 pour l'année universitaire 2026-2027. Les candidats à un Master peuvent à partir de cette date créer leur compt"
+   },
+   {
+    "fiche_id": "idx:14450",
+    "nom": "PSYCHOLOGIE — Psychologie clinique intégrative",
+    "etablissement": "Facultés libres de l'Ouest",
+    "ville": "GUINGAMP",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14456",
+    "nom": "PSYCHOLOGIE — Psychologie cognitive et ingénierie des facteurs humains",
+    "etablissement": "Université de Montpellier Paul-Valéry",
+    "ville": "MONTPELLIER CEDEX 5",
+    "region": "Occitanie",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14509",
+    "nom": "PSYCHOLOGIE:PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE — Clinique du développemen",
+    "etablissement": "Facultés libres de l'Ouest",
+    "ville": "ANGERS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8191",
+    "nom": "chargé/e d'orientation et d'insertion profesionnelle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e d'orientation et d'insertion profesionnelle | Libellé : chargée d'orientation et d'insertion professionnelle / chargé d'orientation "
+   },
+   {
+    "fiche_id": "idx:14532",
+    "nom": "PSYCHOLOGIE:PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE — Psychologie clinique, st",
+    "etablissement": "Facultés libres de l'Ouest",
+    "ville": "ANGERS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28798",
+    "nom": "D.E Psychomotricien",
+    "etablissement": "FACULTE DE SANTE UNIVERSITE TOULOUSE 3",
+    "ville": "Toulouse",
+    "region": "Occitanie",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.676",
+    "nom": "audioprothésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : audioprothésiste | Accroche : L'audioprothésiste est le ou la spécialiste des corrections de l'audition. Sur prescription d'un médecin ORL (o"
+   },
+   {
+    "fiche_id": "idx:28938",
+    "nom": "Diplôme d'Université - PAREO",
+    "etablissement": "IPC-Facultés Libres de Philosophie et de Psycholog",
+    "ville": "Paris 14e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:depot-candidatures",
+    "nom": "Phase de dépôt des candidatures MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "Les candidats déposent leurs candidatures sur MonMaster du 17 février au 17 mars 2026. Chaque candidat peut formuler jusqu'à 15 candidatures de Master"
+   },
+   {
+    "fiche_id": "metier:MET.477",
+    "nom": "écrivain/ne public",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : écrivain/ne public | Libellé : écrivaine public / écrivain public | Accroche : Courrier administratif, CV, mémoire, biographie... autant d'ex"
+   },
+   {
+    "fiche_id": "metier:MET.561",
+    "nom": "aide-soignant/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : aide-soignant/e | Libellé : aide-soignante / aide-soignant | Synonymes : aide infirmier/ère, assistant/e en soins | Accroche : À l'hôpital, e"
+   }
+  ]
+ },
+ {
+  "qid": "malform-004-v3",
+  "question": "Peux-tu m'aider : je kiff l'informatique mais jsp si je suis assez bon, ça craint ?",
+  "category": "mal_formulee",
+  "candidates": [
+   {
+    "fiche_id": "rncp_blocs:RNCP37579",
+    "nom": "Ingénieur diplômé de l'Ecole polytechnique universitaire d'Aix-Marseille Univers",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37579) — Ingénieur diplômé de l'Ecole polytechnique universitaire d'Aix-Marseille Université, spécialité \"Informatique\" (b"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39998",
+    "nom": "Spécialiste en maîtrise d’ouvrage des SI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39998) — Spécialiste en maîtrise d’ouvrage des SI (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1802 Expe"
+   },
+   {
+    "fiche_id": "idx:2168",
+    "nom": "Maison Familiale Rurale des Alluaz - Bonne",
+    "etablissement": "Maison Familiale Rurale des Alluaz - Bonne",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40106",
+    "nom": "Métiers de l'informatique : applications web (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40106) — Métiers de l'informatique : applications web (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers vis"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38599",
+    "nom": "Manager de programmes et projets SI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38599) — Manager de programmes et projets SI (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1806 Conseil e"
+   },
+   {
+    "fiche_id": "idx:3575",
+    "nom": "Organisme de formation-Centre de formation d'apprentis M2I (Maison International",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis M2I (",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1841",
+    "nom": "Ingénieur informaticien / Ingénieure informaticienne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1841 : Ingénieur informaticien / Ingénieure informaticienne | Compétences par enjeu : Data et Nouvelles technologies (Concevoir la cartog"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "CA.R.T.I.F.",
+    "etablissement": "CA.R.T.I.F.",
+    "ville": "",
+    "region": "Centre-Val de Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6453",
+    "nom": "INGENIEUR DIPLOME DE L'ECOLE POLYTECHNIQUE UNIVERSITAIRE DE L'UNIVERSITE SORBONN",
+    "etablissement": "CHAMBRE DE COMMERCE ET D INDUSTRIE DE REGION PARIS ILE DE FR",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.718",
+    "nom": "architecte web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte web | Synonymes : architecte J2EE (Java 2 Enterprise et Edition), architecte solution web | Accroche : L'architecte Web a pour mis"
+   },
+   {
+    "fiche_id": "metier:MET.478",
+    "nom": "architecte des systèmes d'information",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte des systèmes d'information | Synonymes : architecte SI, urbaniste du système d'information | Accroche : Indispensable au bon fonct"
+   },
+   {
+    "fiche_id": "idx:8501",
+    "nom": "BIOLOGIE MOLECULAIRE ET CELLULAIRE — Bioinformatique et Modélisation",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1818",
+    "nom": "Ingénieur / Ingénieure d'étude informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1818 : Ingénieur / Ingénieure d'étude informatique | Compétences par enjeu : Data et Nouvelles technologies (Analyser les besoins des uti"
+   },
+   {
+    "fiche_id": "parcours:santé|bac_technologique_hors_stmg|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC technologique hors STMG | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 100.0% pa"
+   },
+   {
+    "fiche_id": "idx:11224",
+    "nom": "INFORMATIQUE — Algorithmes, Intelligence Artificielle, Interactions, Décisions (",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.554",
+    "nom": "technicien/ne de maintenance en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de maintenance en informatique | Libellé : technicienne de maintenance en informatique / technicien de maintenance en informati"
+   },
+   {
+    "fiche_id": "idx:11234",
+    "nom": "INFORMATIQUE — Bio-Informatique et modélisation (BIM)",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41378",
+    "nom": "Ingénieur diplômé de l'Université Paris XIII spécialité Informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41378) — Ingénieur diplômé de l'Université Paris XIII spécialité Informatique (bac+5) | Niveau européen : Niveau 7 | Métie"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 351 néobacheliers ; 4.3% passent en L"
+   },
+   {
+    "fiche_id": "idx:11244",
+    "nom": "INFORMATIQUE — Cryptologie, Calcul Haute-Performance et Algorithmique (CCA)",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39893",
+    "nom": "Ingénieur diplômé de l'Ecole Supérieure d'Informatique, Electronique, Automatiqu",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39893) — Ingénieur diplômé de l'Ecole Supérieure d'Informatique, Electronique, Automatique (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 5 néobacheliers ; 80.0% passent en L2 en 1 an ; 8"
+   },
+   {
+    "fiche_id": "idx:11245",
+    "nom": "INFORMATIQUE — Cryptologie, Calcul Haute-Performance et Algorithmique filière HP",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP36115",
+    "nom": "Ingénieur diplômé de l’Ecole nationale supérieure Mines-Télécom Atlantique Breta",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP36115) — Ingénieur diplômé de l’Ecole nationale supérieure Mines-Télécom Atlantique Bretagne Pays de la Loire de l’Institu"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 98 néobacheliers ; 52.0% passent en L2 en 1 an ; "
+   },
+   {
+    "fiche_id": "idx:11277",
+    "nom": "INFORMATIQUE — Image, vision par ordinateur, informatique graphique (IMA)",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 1 479 néobacheliers ; 70.5% passent en L2 en 1 an"
+   },
+   {
+    "fiche_id": "idx:11365",
+    "nom": "INFORMATIQUE — Machine Learning, Intelligence artificielle et Données (MIND)",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41246",
+    "nom": "Ingénieur diplômé de l'Institut supérieur d'informatique, de modélisation et de ",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41246) — Ingénieur diplômé de l'Institut supérieur d'informatique, de modélisation et de leurs applications de l'institut "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39837",
+    "nom": "Expert en cybersécurité (MS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39837) — Expert en cybersécurité (MS) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1802 Expertise et sup"
+   },
+   {
+    "fiche_id": "idx:11378",
+    "nom": "INFORMATIQUE — None",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "VILLETANEUSE",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39548",
+    "nom": "Sciences et Ingénierie - Multimédia et technologie de l’information",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39548) — Sciences et Ingénierie - Multimédia et technologie de l’information (bac+3) | Niveau européen : Niveau 6 | Métier"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_stmg|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC STMG | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 341 néobacheliers ; 23.5% passent en L2 en 1 a"
+   },
+   {
+    "fiche_id": "idx:11381",
+    "nom": "INFORMATIQUE — Quantum Information (QI)",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_professionnel|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC professionnel | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 327 néo"
+   },
+   {
+    "fiche_id": "idx:11389",
+    "nom": "INFORMATIQUE — Réseaux: Internet, Cybersécurité, Cloud et Automatisation (RES)",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_es|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC ES | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 709 néobacheliers ; 62.6% passent en L2 en 1 an "
+   },
+   {
+    "fiche_id": "idx:11390",
+    "nom": "INFORMATIQUE — Réseaux: Internet, Cybersécurité, Cloud et Automatisation en alte",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40757",
+    "nom": "Ingénieur diplômé de l'Ecole Polytechnique Universitaire de l'Université de Mont",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40757) — Ingénieur diplômé de l'Ecole Polytechnique Universitaire de l'Université de Montpellier, spécialité Informatique "
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC L | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 21 néobacheliers ; "
+   }
+  ]
+ },
+ {
+  "qid": "malform-005-v3",
+  "question": "Peux-tu m'aider : bonjour je voudrais travailler dans laeronautique cmt faire",
+  "category": "mal_formulee",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.760",
+    "nom": "ingénieur/e en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e en aéronautique | Libellé : ingénieure en aéronautique / ingénieur en aéronautique | Synonymes : ingénieur/e des industries aéron"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "CHIMIE — Chimie moléculaire et thérapeutique (CMT)",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:K1302",
+    "nom": "Assistant / Assistante de vie dépendance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1302 : Assistant / Assistante de vie dépendance | Compétences par enjeu : Soin (Accompagner une personne lors d'un déplacement, Aider des"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39001",
+    "nom": "Sciences économiques et sociales (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39001) — Sciences économiques et sociales (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : "
+   },
+   {
+    "fiche_id": "metier:MET.676",
+    "nom": "audioprothésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : audioprothésiste | Accroche : L'audioprothésiste est le ou la spécialiste des corrections de l'audition. Sur prescription d'un médecin ORL (o"
+   },
+   {
+    "fiche_id": "metier:MET.7965",
+    "nom": "mandataire judiciaire à la protection des majeurs",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : mandataire judiciaire à la protection des majeurs | Accroche : Protéger les droits des adultes vulnérables et les accompagner dans leur vie q"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.171",
+    "nom": "vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : vétérinaire | Codes ROME : A1504 (Santé animale) | GFE : GFE A : agriculture | Domaine : agriculture, animaux/soins aux animaux | Édit"
+   },
+   {
+    "fiche_id": "metier:MET.371",
+    "nom": "aérodynamicien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : aérodynamicien/ne | Libellé : aérodynamicienne en aéronautique / aérodynamicien | Synonymes : ingénieur/e en aérodynamique | Accroche : L'aér"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8184",
+    "nom": "éducateur / éducatrice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : éducateur / éducatrice de chiens d'assistance | GFE : GFE A : agriculture | Domaine : agriculture, animaux/soins aux animaux | Édition"
+   },
+   {
+    "fiche_id": "metier:MET.561",
+    "nom": "aide-soignant/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : aide-soignant/e | Libellé : aide-soignante / aide-soignant | Synonymes : aide infirmier/ère, assistant/e en soins | Accroche : À l'hôpital, e"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.7817",
+    "nom": "éducateur / éducatrice de chiens guides d'aveugles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : éducateur / éducatrice de chiens guides d'aveugles | GFE : GFE A : agriculture | Domaine : agriculture, animaux/soins aux animaux | Éd"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.765",
+    "nom": "orthophoniste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : orthophoniste | Codes ROME : J1406 (Orthophonie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, sport/para"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41505",
+    "nom": "Agent cynotechnique, auxiliaire de dressage",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41505) — Agent cynotechnique, auxiliaire de dressage (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : K2503"
+   },
+   {
+    "fiche_id": "rome_metier:K1311",
+    "nom": "Assistant / Assistante de vie aux familles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1311 : Assistant / Assistante de vie aux familles | Compétences par enjeu : Soin (Aider une personne à s'habiller, Veiller à l'hygiène co"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.335",
+    "nom": "pédiatre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : pédiatre | Codes ROME : J1102 (Médecine généraliste et spécialisée) | GFE : GFE R : santé, social, soins personnels | Domaine : santé,"
+   },
+   {
+    "fiche_id": "metier:MET.772",
+    "nom": "hôtesse de l'air (steward)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : hôtesse de l'air (steward) | Libellé : hôtesse de l'air / steward | Synonymes : agent/e de bord, membre d'équipage de cabine, personnel navig"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.48",
+    "nom": "zoologiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : zoologiste | Codes ROME : K2402 (Recherche en sciences de l'univers, de la matière et du vivant) | GFE : GFE J : transformation des ma"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.559",
+    "nom": "toiletteur / toiletteuse d'animaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : toiletteur / toiletteuse d'animaux | Codes ROME : A1503 (Toilettage des animaux) | GFE : GFE A : agriculture | Domaine : agriculture, "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.471",
+    "nom": "entraîneur / entraîneuse de chevaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : entraîneur / entraîneuse de chevaux | Codes ROME : L1401 (Sportif professionnel) | GFE : GFE A : agriculture | Domaine : agriculture, "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.7812",
+    "nom": "maître-chien",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : maître-chien | Codes ROME : K1705 (Sécurité civile et secours) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : armée, s"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.639",
+    "nom": "ludothécaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ludothécaire | Codes ROME : K1601 (Gestion de l'information et de la documentation) | GFE : GFE S : hôtellerie,  tourisme, loisirs | D"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.6",
+    "nom": "musicien / musicienne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : musicien / musicienne | Codes ROME : L1202 (Musique et chant) | GFE : GFE V : arts, spectacle, audiovisuel | Domaine : arts, culture, "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.905",
+    "nom": "soigneur / soigneuse d'animaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : soigneur / soigneuse d'animaux | Codes ROME : A1501 (Aide aux soins animaux) | GFE : GFE A : agriculture | Domaine : agriculture, anim"
+   }
+  ]
+ },
+ {
+  "qid": "malform-006-v3",
+  "question": "Peux-tu m'aider : c koi le mieux apres un bac pro commerce ?",
+  "category": "mal_formulee",
+  "candidates": [
+   {
+    "fiche_id": "voie_pre_bac:bac-pro:eco-gestion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "BAC PRO en eco gestion | 16 spécialités référencées (ONISEP) | Liste : bac pro artisanat et métiers d'art option marchandisage visuel — https://www.on"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bac-pro:commerce",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce (France) | Établissements/cohortes mesurés : 3041 | Taux d'emploi 12 mois après diplôme : 45.0% (moyenne France) | Taux d"
+   },
+   {
+    "fiche_id": "idx:342",
+    "nom": "Centre de Formation d'Apprentis Commerce et Distribution-AFPAM (Association pour",
+    "etablissement": "Centre de Formation d'Apprentis Commerce et Distribution-AFP",
+    "ville": "",
+    "region": "Grand Est",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "voie_pre_bac:cap:eco-gestion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "CAP en eco gestion | 14 spécialités référencées (ONISEP) | Liste : CAP boucher — https://www.onisep.fr/http/redirection/formation/slug/FOR.8785 ; CAP "
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-a-animation-et-ges",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — metiers du commerce et de la vente option a animation et gestion de l'espace commercial (France) | Établissements/cohortes mesurés"
+   },
+   {
+    "fiche_id": "idx:1372",
+    "nom": "Ecole commerce ALPHA Communication Formation - IFASUD",
+    "etablissement": "Ecole commerce ALPHA Communication Formation - IFASUD",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "licence pro mention commerce et distribution",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en NORMANDIE | Établissements/cohortes mesurés : 153 | Taux d'emploi 12 mois : 48.7% (en NORMANDIE) | Taux d'emploi 24 mo"
+   },
+   {
+    "fiche_id": "idx:1375",
+    "nom": "Ecole de commerce Acaman",
+    "etablissement": "Ecole de commerce Acaman",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en OCCITANIE | Établissements/cohortes mesurés : 261 | Taux d'emploi 12 mois : 46.0% (en OCCITANIE) | Taux d'emploi 24 mo"
+   },
+   {
+    "fiche_id": "idx:1383",
+    "nom": "Ecole de commerce gestion privée ILEC",
+    "etablissement": "Ecole de commerce gestion privée ILEC",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:martinique",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Martinique",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en MARTINIQUE | Établissements/cohortes mesurés : 20 | Taux d'emploi 12 mois : 19.8% (en MARTINIQUE) | Taux d'emploi 24 m"
+   },
+   {
+    "fiche_id": "idx:4468",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "LYCEE PROFESSIONNEL MARIE CURIE - LYCEE DES METIERS DU COMME",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en GRAND EST | Établissements/cohortes mesurés : 320 | Taux d'emploi 12 mois : 43.9% (en GRAND EST) | Taux d'emploi 24 mo"
+   },
+   {
+    "fiche_id": "idx:4623",
+    "nom": "ASSISTANT MANAGER LOISIRS HEBERGEMENT RESTAURATION (CCI FRANCE)",
+    "etablissement": "CHAMBRE DE COMMERCE ET D'INDUSTRIE TERRITORIALE ALPES-DE-HAU",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en BRETAGNE | Établissements/cohortes mesurés : 139 | Taux d'emploi 12 mois : 60.3% (en BRETAGNE) | Taux d'emploi 24 mois"
+   },
+   {
+    "fiche_id": "idx:4628",
+    "nom": "ATTACHE COMMERCIAL (CCI FRANCE)",
+    "etablissement": "CHAMBRE DE COMMERCE ET D'INDUSTRIE METROPOLITAINE AIX-MARSEI",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guyane",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Guyane",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en GUYANE | Établissements/cohortes mesurés : 16 | Taux d'emploi 12 mois : 20.2% (en GUYANE) | Taux d'emploi 24 mois : 28"
+   },
+   {
+    "fiche_id": "idx:4802",
+    "nom": "CHEF DE PROJET DIGITAL (IEF21)",
+    "etablissement": "CHAMBRE DE COMMERCE ET D INDUSTRIE DES VOSGES",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guadeloupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Guadeloupe",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en GUADELOUPE | Établissements/cohortes mesurés : 20 | Taux d'emploi 12 mois : 20.6% (en GUADELOUPE) | Taux d'emploi 24 m"
+   },
+   {
+    "fiche_id": "idx:4811",
+    "nom": "CHEF DE PROJET MARKETING ET E-COMMERCE (FORMAOUEST)",
+    "etablissement": "EMINEO MANAGEMENT",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en LA REUNION | Établissements/cohortes mesurés : 56 | Taux d'emploi 12 mois : 22.5% (en LA REUNION) | Taux d'emploi 24 m"
+   },
+   {
+    "fiche_id": "idx:4813",
+    "nom": "CHEF DE PROJET WEB ET STRATEGIE DIGITALE (CCIT OUEST NORMANDIE)",
+    "etablissement": "CHAMBRE COMMERCE ET INDUSTRIE NORD ISERE",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "voie_pre_bac:bac-pro:tourisme-hotellerie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "BAC PRO en tourisme hotellerie | 2 spécialités référencées (ONISEP) | Liste : bac pro commercialisation et services en restauration (CSR) — https://ww"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-b-prospection-clie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — metiers du commerce et de la vente option b prospection clientele et valorisation de l'offre commerciale (France) | Établissements"
+   },
+   {
+    "fiche_id": "idx:4814",
+    "nom": "CHEF DE PROJET WEB ET STRATEGIE DIGITALE (CCIT OUEST NORMANDIE)",
+    "etablissement": "CHAMBRE DE COMMERCE ET D'INDUSTRIE TERRITORIALE ILLE-ET-VILA",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en ILE-DE-FRANCE | Établissements/cohortes mesurés : 501 | Taux d'emploi 12 mois : 40.6% (en ILE-DE-FRANCE) | Taux d'empl"
+   },
+   {
+    "fiche_id": "idx:4881",
+    "nom": "COMMERCE INTERNATIONAL",
+    "etablissement": "ALMEA FORMATIONS INTERPRO",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en NOUVELLE-AQUITAINE | Établissements/cohortes mesurés : 233 | Taux d'emploi 12 mois : 51.8% (en NOUVELLE-AQUITAINE) | T"
+   },
+   {
+    "fiche_id": "idx:4885",
+    "nom": "COMMERCE INTERNATIONAL",
+    "etablissement": "ASSOCIATION POUR LA PROMOTION SOCIALE ET LA FORMATION PROFES",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en HAUTS-DE-FRANCE | Établissements/cohortes mesurés : 355 | Taux d'emploi 12 mois : 36.6% (en HAUTS-DE-FRANCE) | Taux d'"
+   },
+   {
+    "fiche_id": "idx:4912",
+    "nom": "COMMERCE INTERNATIONAL",
+    "etablissement": "FONDATION PROVIDENCE DE RIBEAUVILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en PAYS DE LA LOIRE | Établissements/cohortes mesurés : 165 | Taux d'emploi 12 mois : 57.0% (en PAYS DE LA LOIRE) | Taux "
+   },
+   {
+    "fiche_id": "idx:4913",
+    "nom": "COMMERCE INTERNATIONAL",
+    "etablissement": "FORMALIFE ACCOMPAGNEMENT PROFESSIONNEL ET FORMATION",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bourgogne-franche-comte",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en BOURGOGNE-FRANCHE-COMTE | Établissements/cohortes mesurés : 135 | Taux d'emploi 12 mois : 48.0% (en BOURGOGNE-FRANCHE-"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 116 | Taux d'emploi 12 mois : 46.2% (en CENTRE-VAL DE LOIRE) |"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:auvergne-rhone-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en AUVERGNE-RHONE-ALPES | Établissements/cohortes mesurés : 338 | Taux d'emploi 12 mois : 51.4% (en AUVERGNE-RHONE-ALPES)"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:provence-alpes-cote-d-azur",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — commerce en PROVENCE-ALPES-COTE D'AZUR | Établissements/cohortes mesurés : 205 | Taux d'emploi 12 mois : 49.5% (en PROVENCE-ALPES-"
+   }
+  ]
+ },
+ {
+  "qid": "geo-001-v3",
+  "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à la Martinique après le bac ?",
+  "category": "edge_geo",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "diplôme supérieur en marketing, commerce et gestion (EGC Martinique)",
+    "etablissement": "EGC Martinique",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:21710",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Joseph Gaillard",
+    "ville": "Fort-de-France",
+    "region": "Martinique",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:21821",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Frantz Fanon",
+    "ville": "La Trinité",
+    "region": "Martinique",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:25372",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée AMEP",
+    "ville": "Fort-de-France",
+    "region": "Martinique",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:25439",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée Joseph Gaillard",
+    "ville": "Fort-de-France",
+    "region": "Martinique",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26375",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T de la Martinique",
+    "ville": "Schoelcher",
+    "region": "Martinique",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:31326",
+    "nom": "Licence - Informatique",
+    "etablissement": "Université des Antilles - Pôle Martinique",
+    "ville": "Schoelcher",
+    "region": "Martinique",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:31350",
+    "nom": "Licence - Informatique - Parcours Sciences du numérique",
+    "etablissement": "INSTITUT CATHOLIQUE EUROPEEN DES AMERIQUES",
+    "ville": "Fort-de-France",
+    "region": "Martinique",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": "Sciences du numérique"
+   },
+   {
+    "fiche_id": "inserjeunes_region_diplome:martinique:bac-pro",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Martinique",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — région MARTINIQUE | Établissements/cohortes mesurés : 517 | Taux d'emploi 12 mois : 27.5% (moyenne MARTINIQUE) | Taux d'emploi 24 "
+   }
+  ]
+ },
+ {
+  "qid": "geo-002-v3",
+  "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à la Guadeloupe après le bac ?",
+  "category": "edge_geo",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Carrières sociales Parcours animation sociale et socioculturelle",
+    "etablissement": "I.U.T de la Guadeloupe - Campus de St-Claude",
+    "ville": "Saint-Claude",
+    "region": "Guadeloupe",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11417",
+    "nom": "INFORMATIQUE — Tronc commun",
+    "etablissement": "Université des Antilles",
+    "ville": "POINTE-A-PITRE",
+    "region": "Guadeloupe",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:assistance-a-la-gestion-des-organisations-et-de-leurs-activi:guadeloupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Guadeloupe",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — assistance a la gestion des organisations et de leurs activites en GUADELOUPE | Établissements/cohortes mesurés : 16 | Taux de pou"
+   },
+   {
+    "fiche_id": "idx:12807",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Tronc com",
+    "etablissement": "Université des Antilles",
+    "ville": "POINTE-A-PITRE",
+    "region": "Guadeloupe",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:systemes-numeriques-option-c-reseaux-informatiques-et-system:guadeloupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Guadeloupe",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — systemes numeriques option c reseaux informatiques et systemes communicants en GUADELOUPE | Établissements/cohortes mesurés : 16 |"
+   },
+   {
+    "fiche_id": "idx:21647",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Bel Air",
+    "ville": "Baie-Mahault",
+    "region": "Guadeloupe",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_region_diplome:guadeloupe:bts",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Guadeloupe",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — région GUADELOUPE | Établissements/cohortes mesurés : 403 | Taux d'emploi 12 mois : 47.9% (moyenne GUADELOUPE) | Taux d'emploi 24 mois"
+   },
+   {
+    "fiche_id": "idx:21658",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Chevalier Saint-Georges",
+    "ville": "Les Abymes",
+    "region": "Guadeloupe",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:21806",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Chevalier Saint-Georges",
+    "ville": "Les Abymes",
+    "region": "Guadeloupe",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:21849",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Les Perseverants",
+    "ville": "Basse-Terre",
+    "region": "Guadeloupe",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_region_diplome:guadeloupe:bac-pro",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Guadeloupe",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — région GUADELOUPE | Établissements/cohortes mesurés : 625 | Taux d'emploi 12 mois : 26.4% (moyenne GUADELOUPE) | Taux d'emploi 24 "
+   },
+   {
+    "fiche_id": "idx:25379",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée Baimbridge",
+    "ville": "Les Abymes",
+    "region": "Guadeloupe",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:25451",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée Les Perseverants",
+    "ville": "Basse-Terre",
+    "region": "Guadeloupe",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:32471",
+    "nom": "Licence - Portail Informatique - Informatique  / Méthodes Informatiques appliqué",
+    "etablissement": "Université des Antilles - Pôle Guadeloupe",
+    "ville": "Pointe-à-Pitre",
+    "region": "Guadeloupe",
+    "domain": "eco_gestion",
+    "source": "parcoursup",
+    "extrait": "Informatique scientifique / Méthodes Informatiques appliquées à la  gestion des entreprises / Informatique appliquée - Guadeloupe"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:metiers-du-commerce-et-de-la-vente-option-b-prospection-clie:guadeloupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Guadeloupe",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — metiers du commerce et de la vente option b prospection clientele et valorisation de l'offre commerciale en GUADELOUPE | Établisse"
+   }
+  ]
+ },
+ {
+  "qid": "geo-003-v3",
+  "question": "Peux-tu m'aider : quelles formations en informatique sont disponibles à La Réunion après le bac ?",
+  "category": "edge_geo",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Roland Garros",
+    "ville": "Le Tampon",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11372",
+    "nom": "INFORMATIQUE — None",
+    "etablissement": "Université de La Réunion",
+    "ville": "SAINT DENIS CEDEX 9",
+    "region": "La Réunion",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17774",
+    "nom": "diplôme d'ingénieur de l'École supérieure d'ingénieurs Réunion Océan Indien de l",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:21739",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Mémona Hintermann-Afféjee",
+    "ville": "Saint-Denis",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option a : informatique et reseaux en LA REUNION | Établissements/cohortes mesurés : 17 | Taux de poursuite d'étud"
+   },
+   {
+    "fiche_id": "idx:21750",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Paule Pignolet de fresne Rivière",
+    "ville": "Les Trois-Bassins",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option b solutions logicielles et applications metiers en LA REUNION | Établissements/cohorte"
+   },
+   {
+    "fiche_id": "idx:21765",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée professionnel Jean Perrin",
+    "ville": "Saint-André",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "domtom_dispositif:drom_formations_universite_reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "territoire_drom",
+    "source": "domtom_curated",
+    "extrait": "DROM-COM (extension Sprint 8 W2) — Université de La Réunion — offre formation | L'Université de La Réunion (UR) propose une large palette de formation"
+   },
+   {
+    "fiche_id": "idx:21773",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Roland Garros",
+    "ville": "Le Tampon",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — services informatiques aux organisations option a solutions d'infrastructure, systemes et reseaux en LA REUNION | Établissements/cohor"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:technicien-geometre-topographe:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — technicien geometre-topographe en LA REUNION | Établissements/cohortes mesurés : 24 | Taux de poursuite d'études : 61.0% | Note : "
+   },
+   {
+    "fiche_id": "idx:21861",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Mémona Hintermann-Afféjee",
+    "ville": "Saint-Denis",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:technicien-constructeur-bois:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — technicien constructeur bois en LA REUNION | Établissements/cohortes mesurés : 17 | Taux de poursuite d'études : 58.4% | Note : st"
+   },
+   {
+    "fiche_id": "idx:21870",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Paule Pignolet de fresne Rivière",
+    "ville": "Les Trois-Bassins",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:21882",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée professionnel Jean Perrin",
+    "ville": "Saint-André",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:21886",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Roland Garros",
+    "ville": "Le Tampon",
+    "region": "La Réunion",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:systemes-numeriques-option-c-reseaux-informatiques-et-system:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — systemes numeriques option c reseaux informatiques et systemes communicants en LA REUNION | Établissements/cohortes mesurés : 25 |"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:technicien-d-etudes-du-batiment-option-b-assistant-en-archit:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — technicien d'etudes du batiment option b : assistant en architecture en LA REUNION | Établissements/cohortes mesurés : 30 | Taux d"
+   },
+   {
+    "fiche_id": "idx:25369",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "LPO Nelson Mandela",
+    "ville": "Saint-Benoît",
+    "region": "La Réunion",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:technicien-d-etudes-du-batiment-option-a-etudes-et-economie:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — technicien d'etudes du batiment option a : etudes et economie en LA REUNION | Établissements/cohortes mesurés : 24 | Taux de pours"
+   },
+   {
+    "fiche_id": "idx:25457",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée Marguerite Jauzelon",
+    "ville": "Saint-Denis",
+    "region": "La Réunion",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:25478",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée Pierre Poivre",
+    "ville": "Saint-Joseph",
+    "region": "La Réunion",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_region_diplome:la-reunion:bac-pro",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — région LA REUNION | Établissements/cohortes mesurés : 1072 | Taux d'emploi 12 mois : 29.2% (moyenne LA REUNION) | Taux d'emploi 24"
+   },
+   {
+    "fiche_id": "idx:31319",
+    "nom": "Licence - Informatique",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "ville": "Saint-Denis",
+    "region": "La Réunion",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:32131",
+    "nom": "Licence - Mathématiques et informatique appliquées aux sciences humaines et soci",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "ville": "Saint-Denis",
+    "region": "La Réunion",
+    "domain": "sciences_humaines",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:metiers-du-commerce-et-de-la-vente-option-b-prospection-clie:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — metiers du commerce et de la vente option b prospection clientele et valorisation de l'offre commerciale en LA REUNION | Établisse"
+   }
+  ]
+ }
+]

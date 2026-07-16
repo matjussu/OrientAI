@@ -1,0 +1,4107 @@
+[
+ {
+  "qid": "reconv-003-v1",
+  "question": "Dis-moi : Je veux devenir développeur à 35 ans sans diplôme, quelles formations finançables ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "CFA Bâtiment 35",
+    "etablissement": "CFA Bâtiment 35",
+    "ville": "",
+    "region": "Bretagne",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.12",
+    "nom": "développeur/euse informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : développeur/euse informatique | Libellé : développeuse informatique / développeur informatique | Synonymes : analyste-programmeur/euse, codeu"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "idx:17154",
+    "nom": "DEJEPS spécialité perfectionnement sportif mention sports de glace option A : di",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.923",
+    "nom": "développeur/euse économique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : développeur/euse économique | Libellé : développeuse économique / développeur économique | Synonymes : chargé/e de développement territorial,"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "voie_pre_bac_synthese:cap",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "Catalogue CAP (synthèse globale) | 86 spécialités référencées sur ONISEP | 8 domaines couverts | Distribution par domaine : lettres arts (35), ingenie"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_es|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC ES | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 34 néobacheliers ; 35.3% passent en L2 en 1 an ; 5"
+   },
+   {
+    "fiche_id": "idx:30021",
+    "nom": "Formation d'ingénieur Bac + 5 - Bac Série générale avec 2 spécialités scientifiq",
+    "etablissement": "ECE Paris",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Bac Série générale avec 2 spécialités scientifiques mais sans la spécialité Maths en Terminale"
+   },
+   {
+    "fiche_id": "idx:35138",
+    "nom": "Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention",
+    "etablissement": "MINISTERE DE LA CULTURE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 553 néobacheliers ; 4"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39413",
+    "nom": "Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39413) — Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention Architecture et Patrimoine (bac+"
+   },
+   {
+    "fiche_id": "parcours:lettres_langues_et_sciences_humaines|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Lettres, langues et sciences humaines | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 169 néobacheliers ;"
+   },
+   {
+    "fiche_id": "idx:2036",
+    "nom": "Maison Familiale Rurale de Moirans",
+    "etablissement": "Maison Familiale Rurale de Moirans",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_technologique_hors_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC technologique hors STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 122 néobacheliers ; 27.9% pas"
+   },
+   {
+    "fiche_id": "idx:2964",
+    "nom": "Organisme de formation-Centre de formation d'apprentis d'ADFI-Moirans",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis d'ADF",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_professionnel|passable_premier_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC professionnel | Mention au bac : Passable premier groupe | Cohorte 2014 (L1→"
+   },
+   {
+    "fiche_id": "idx:4072",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "APRADIS",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:droit_gestion_économie_aes|bac_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Droit, gestion, économie, AES | Bachelier : BAC STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 117 néobacheliers ; 10.3"
+   },
+   {
+    "fiche_id": "idx:4101",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "ASSOCIATION POUR LA FORMATION PAR ALTERNANCE DANS LE SECTEUR",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4162",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "LYCEE POLYVALENT VAUCANSON",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.311",
+    "nom": "éducateur/trice spécialisé/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice spécialisé/e | Libellé : éducatrice spécialisée / éducateur spécialisé | Accroche : L'éducateur spécialisé ou l'éducatrice sp"
+   },
+   {
+    "fiche_id": "idx:4354",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "ASSOCIATION POUR LA FORMATION PAR ALTERNANCE DANS LE SECTEUR",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|passable_premier_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC L | Mention au bac : Passable premier groupe | Cohorte 2014 (L1→L2) : 35 néo"
+   },
+   {
+    "fiche_id": "idx:4399",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "CENTRE HOSPITALIER UNIVERSITAIRE D ORLEANS",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.794",
+    "nom": "vendeur/euse en animalerie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vendeur/euse en animalerie | Libellé : vendeuse en animalerie / vendeur en animalerie | Accroche : Le vendeur en animalerie est là pour conse"
+   },
+   {
+    "fiche_id": "idx:4431",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "HOPITAL LE MANS",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:lettres_langues_et_sciences_humaines|bac_l|passable_deuxième_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Lettres, langues et sciences humaines | Bachelier : BAC L | Mention au bac : Passable deuxième groupe | Cohorte 2014 (L1→L2) : 2 9"
+   },
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "parcours:droit_gestion_économie_aes|bac_technologique_hors_stmg|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Droit, gestion, économie, AES | Bachelier : BAC technologique hors STMG | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 266"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-004-v1",
+  "question": "Dis-moi : Après un burn-out je veux me reconvertir dans le paramédical, par où commencer ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "diplôme d'État d'ambulancier",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10186",
+    "nom": "ENERGIE — Approche Interdisciplinaire de l'Energie et de la Soutenabilité",
+    "etablissement": "Université Paris Cité",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.280",
+    "nom": "ergothérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ergothérapeute | Codes ROME : J1403 (Ergothérapie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, sport/pa"
+   },
+   {
+    "fiche_id": "idx:10283",
+    "nom": "ETUDES CULTURELLES — None",
+    "etablissement": "Université de la Polynésie Française",
+    "ville": "PUNAAUIA",
+    "region": "Collectivités d'outre-mer",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.877",
+    "nom": "orthoptiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : orthoptiste | Codes ROME : J1407 (Orthoptique) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, sport/paramé"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.676",
+    "nom": "audioprothésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : audioprothésiste | Codes ROME : J1401 (Audioprothèses) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, spor"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11097",
+    "nom": "HUMANITES — Ingénierie de Projets socioculturels et Interculturels (HIPSI)",
+    "etablissement": "Université de la Nouvelle-Calédonie",
+    "ville": "NOUMEA CEDEX",
+    "region": "Collectivités d'outre-mer",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.221",
+    "nom": "ostéopathe",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ostéopathe | Codes ROME : J1408 (Ostéopathie et chiropraxie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.276",
+    "nom": "orthoprothésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : orthoprothésiste | Codes ROME : J1411 (Prothèses et orthèses) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, socia"
+   },
+   {
+    "fiche_id": "idx:13874",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), PRATIQUES E",
+    "etablissement": "Université de la Polynésie Française",
+    "ville": "FAA'A",
+    "region": "Collectivités d'outre-mer",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.29",
+    "nom": "masseur-kinésithérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : masseur-kinésithérapeute | Codes ROME : J1404 (Kinésithérapie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, soci"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.411",
+    "nom": "prothésiste dentaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : prothésiste dentaire | Codes ROME : J1410 (Prothèses dentaires) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, soc"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.282",
+    "nom": "podo-orthésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : podo-orthésiste | Codes ROME : J1411 (Prothèses et orthèses) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.876",
+    "nom": "psychomotricien / psychomotricienne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychomotricien / psychomotricienne | Codes ROME : J1412 (Rééducation en psychomotricité) | GFE : GFE R : santé, social, soins personn"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.415",
+    "nom": "auxiliaire de puériculture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : auxiliaire de puériculture | Codes ROME : J1304 (Aide en puériculture) | GFE : GFE R : santé, social, soins personnels | Domaine : san"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.875",
+    "nom": "pédicure-podologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : pédicure-podologue | Codes ROME : J1409 (Pédicurie et podologie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, so"
+   },
+   {
+    "fiche_id": "idx:14027",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — DEveloppement Durable et Finance Internati",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "VILLETANEUSE",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.330",
+    "nom": "assistant / assistante dentaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : assistant / assistante dentaire | Codes ROME : J1303 (Assistance médico-technique) | GFE : GFE R : santé, social, soins personnels | D"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.281",
+    "nom": "opticien-lunetier / opticienne-lunetière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : opticien-lunetier / opticienne-lunetière | Codes ROME : J1405 (Optique - lunetterie) | GFE : GFE R : santé, social, soins personnels |"
+   },
+   {
+    "fiche_id": "idx:14969",
+    "nom": "SCIENCES DU LANGAGE — Analyse de discours : ressources et outils",
+    "etablissement": "Université de Montpellier Paul-Valéry",
+    "ville": "MONTPELLIER CEDEX 5",
+    "region": "Occitanie",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.416",
+    "nom": "manipulateur / manipulatrice en électroradiologie médicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : manipulateur / manipulatrice en électroradiologie médicale | Codes ROME : J1306 (Imagerie médicale) | GFE : GFE R : santé, social, soi"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.418",
+    "nom": "visiteur médical / visiteuse médicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : visiteur médical / visiteuse médicale | Codes ROME : D1405 (Conseil en information médicale) | GFE : GFE R : santé, social, soins pers"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.771",
+    "nom": "technicien / technicienne d'analyses biomédicales",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : technicien / technicienne d'analyses biomédicales | Codes ROME : J1302 (Analyses médicales) | GFE : GFE R : santé, social, soins perso"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.744",
+    "nom": "monteur-vendeur / monteuse-vendeuse en optique-lunetterie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : monteur-vendeur / monteuse-vendeuse en optique-lunetterie | Codes ROME : J1405 (Optique - lunetterie) | GFE : GFE R : santé, social, s"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-005-v1",
+  "question": "Dis-moi : Comment financer une formation de reconversion quand on est demandeur d'emploi ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:proa",
+    "nom": "Pro-A (reconversion ou promotion par alternance)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Pro-A (reconversion ou promotion par alternance) | Organisme : OPCO (Opérateurs de compétences) | Public cible : Salariés CDI/CDD à temp"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:afe_pole_emploi",
+    "nom": "Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi | Organisme : France Travail (Pôle Emploi) | Public cible "
+   },
+   {
+    "fiche_id": "financement_dispositif:cpf",
+    "nom": "Compte Personnel de Formation (CPF)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Compte Personnel de Formation (CPF) | Organisme : Caisse des Dépôts (gestion) / Ministère du Travail (cadre) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:ptp_transitions_pro",
+    "nom": "Projet de transition professionnelle (PTP)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Projet de transition professionnelle (PTP) | Organisme : Transitions Pro (associations régionales paritaires) | Public cible : Salariés "
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_voie:continue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation continue (salariés, agents publics, indépendants) | 10 dispositifs principaux disponibles | Liste : Compte P"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT — Transition, reconversi",
+    "etablissement": "Université de Lorraine",
+    "ville": "VANDOEUVRE-LES-NANCY",
+    "region": "Grand Est",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_voie:initial",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 11 dispositifs principaux disponibles | Liste : Bourse sur cri"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:vae",
+    "nom": "Validation des acquis de l'expérience (VAE)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Validation des acquis de l'expérience (VAE) | Organisme : Ministère du Travail / France VAE (portail unique) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:agepi",
+    "nom": "Aide à la garde d'enfants pour parent isolé (AGEPI)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la garde d'enfants pour parent isolé (AGEPI) | Organisme : France Travail (Pôle Emploi) | Public cible : Parents isolés (élevant "
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:afdas",
+    "nom": "AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport | Organisme : AFDAS | Public cible : Salariés et indépendants"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:agefiph",
+    "nom": "AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de ha",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de handicap | Organisme : AGEFIPH (Association de gestion du "
+   },
+   {
+    "fiche_id": "idx:15210",
+    "nom": "SCIENCES SOCIALES — Lutte Contre les Inégalités et les Discriminations dans le T",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:cej",
+    "nom": "Contrat d'engagement jeune (CEJ)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Contrat d'engagement jeune (CEJ) | Organisme : Mission Locale ou France Travail (Pôle Emploi) | Public cible : Jeunes 16-25 ans (jusqu'à"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8191",
+    "nom": "chargé/e d'orientation et d'insertion profesionnelle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e d'orientation et d'insertion profesionnelle | Libellé : chargée d'orientation et d'insertion professionnelle / chargé d'orientation "
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.535",
+    "nom": "serveur / serveuse en restauration (restaurant, café-bar-brasserie)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : serveur / serveuse en restauration (restaurant, café-bar-brasserie) | Codes ROME : G1801 (Café, bar brasserie) | GFE : GFE S : hôtelle"
+   },
+   {
+    "fiche_id": "financement_dispositif:akto",
+    "nom": "Akto — OPCO services à forte intensité de main-d'œuvre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Akto — OPCO services à forte intensité de main-d'œuvre | Organisme : Akto | Public cible : Salariés des branches : propreté, hôtellerie-"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-006-v1",
+  "question": "Dis-moi : C'est quoi l'AFEST et est-ce que ça me concerne pour une reconversion en entreprise ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Licence - Portail Informatique - Programmation informatique pour l'entreprise et",
+    "etablissement": "Institut national universitaire Champollion",
+    "ville": "Albi",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": "Programmation informatique pour l'entreprise et l'innovation technologique"
+   },
+   {
+    "fiche_id": "financement_dispositif:proa",
+    "nom": "Pro-A (reconversion ou promotion par alternance)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Pro-A (reconversion ou promotion par alternance) | Organisme : OPCO (Opérateurs de compétences) | Public cible : Salariés CDI/CDD à temp"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "financement_dispositif:ptp_transitions_pro",
+    "nom": "Projet de transition professionnelle (PTP)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Projet de transition professionnelle (PTP) | Organisme : Transitions Pro (associations régionales paritaires) | Public cible : Salariés "
+   },
+   {
+    "fiche_id": "idx:9178",
+    "nom": "DROIT DE L'ENTREPRISE — DROIT DE L' ENTREPRISE ET DU PATRIMOINE PROFESSIONNEL",
+    "etablissement": "Université de Limoges",
+    "ville": "LIMOGES",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:akto",
+    "nom": "Akto — OPCO services à forte intensité de main-d'œuvre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Akto — OPCO services à forte intensité de main-d'œuvre | Organisme : Akto | Public cible : Salariés des branches : propreté, hôtellerie-"
+   },
+   {
+    "fiche_id": "idx:9179",
+    "nom": "DROIT DE L'ENTREPRISE — DROIT DE L' ENTREPRISE ET DU PATRIMOINE PROFESSIONNEL",
+    "etablissement": "Université de Limoges",
+    "ville": "LIMOGES CEDEX",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:constructys",
+    "nom": "Constructys — OPCO BTP (Bâtiment, Travaux Publics, Négoce des matériaux)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Constructys — OPCO BTP (Bâtiment, Travaux Publics, Négoce des matériaux) | Organisme : Constructys | Public cible : Salariés des entrepr"
+   },
+   {
+    "fiche_id": "idx:9183",
+    "nom": "DROIT DE L'ENTREPRISE — Droit de la distribution - En apprentissage",
+    "etablissement": "Université de Lille",
+    "ville": "LILLE CEDEX",
+    "region": "Hauts-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:agepi",
+    "nom": "Aide à la garde d'enfants pour parent isolé (AGEPI)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la garde d'enfants pour parent isolé (AGEPI) | Organisme : France Travail (Pôle Emploi) | Public cible : Parents isolés (élevant "
+   },
+   {
+    "fiche_id": "idx:9184",
+    "nom": "DROIT DE L'ENTREPRISE — Droit de la distribution - En apprentissage",
+    "etablissement": "Université de Lille",
+    "ville": "LILLE",
+    "region": "Hauts-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9337",
+    "nom": "DROIT DES AFFAIRES — Droit du financement et du patrimoine des entreprises",
+    "etablissement": "Université Clermont Auvergne",
+    "ville": "CLERMONT-FERRAND",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10382",
+    "nom": "FINANCE — Entreprise et patrimoine",
+    "etablissement": "CY Cergy Paris Université",
+    "ville": "CERGY-PONTOISE CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:agefiph",
+    "nom": "AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de ha",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de handicap | Organisme : AGEFIPH (Association de gestion du "
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:cpf",
+    "nom": "Compte Personnel de Formation (CPF)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Compte Personnel de Formation (CPF) | Organisme : Caisse des Dépôts (gestion) / Ministère du Travail (cadre) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "idx:12218",
+    "nom": "MANAGEMENT ET ADMINISTRATION DES ENTREPRISES — Management de la Supply Chain et ",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12371",
+    "nom": "MANAGEMENT — Banque – Chargé d’affaires entreprises et professionnels / Gestion ",
+    "etablissement": "Université Savoie Mont Blanc",
+    "ville": "ANNECY-LE-VIEUX",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.666",
+    "nom": "technicien/ne plasturgiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne plasturgiste | Libellé : technicienne plasturgiste / technicien plasturgiste | Synonymes : technicien/ne en plastiques et compo"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14010",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires Entreprise et Gestion de",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:afdas",
+    "nom": "AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport | Organisme : AFDAS | Public cible : Salariés et indépendants"
+   },
+   {
+    "fiche_id": "financement_dispositif:cej",
+    "nom": "Contrat d'engagement jeune (CEJ)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Contrat d'engagement jeune (CEJ) | Organisme : Mission Locale ou France Travail (Pôle Emploi) | Public cible : Jeunes 16-25 ans (jusqu'à"
+   },
+   {
+    "fiche_id": "financement_dispositif:fiphfp",
+    "nom": "FIPHFP — Fonds pour l'insertion des personnes handicapées dans la fonction publi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — FIPHFP — Fonds pour l'insertion des personnes handicapées dans la fonction publique | Organisme : FIPHFP | Public cible : Agents de la f"
+   },
+   {
+    "fiche_id": "financement_dispositif:rsa_jeune",
+    "nom": "Revenu de solidarité active (RSA) jeunes 18-24 ans",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Revenu de solidarité active (RSA) jeunes 18-24 ans | Organisme : CAF (Caisse d'Allocations Familiales) | Public cible : Jeunes 18-24 ans"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37720",
+    "nom": "Diplôme de gestion des entreprises pour dirigeants",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37720) — Diplôme de gestion des entreprises pour dirigeants (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : "
+   }
+  ]
+ },
+ {
+  "qid": "reconv-007-v1",
+  "question": "Dis-moi : Je suis en poste et je veux une formation continue le soir en gestion, ça existe ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Centre de Formation continue - Institut superieur de commerce et gestion",
+    "etablissement": "Centre de Formation continue - Institut superieur de commerc",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:187",
+    "nom": "Centre de Formation continue - Institut superieur de commerce et gestion",
+    "etablissement": "Centre de Formation continue - Institut superieur de commerc",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4558",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:4559",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4631",
+    "nom": "ATTACHE COMMERCIAL (CCI FRANCE)",
+    "etablissement": "GROUPEMENT INTERPROFESSIONNEL POUR L'APPRENTISSAGE ET LA FOR",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41765",
+    "nom": "Responsable opérationnel de site en circulation ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41765) — Responsable opérationnel de site en circulation ferroviaire (bac+2) | Niveau européen : Niveau 5 | Métiers visés "
+   },
+   {
+    "fiche_id": "idx:4659",
+    "nom": "BUSINESS DEVELOPER EN HAUTES TECHNOLOGIES (EURIDIS MANAGEMENT)",
+    "etablissement": "EURIDIS MANAGEMENT",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39730",
+    "nom": "CQP Opérateur multipostes en confection",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39730) — CQP Opérateur multipostes en confection (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2402 Ass"
+   },
+   {
+    "fiche_id": "idx:4660",
+    "nom": "BUSINESS DEVELOPER EN HAUTES TECHNOLOGIES (EURIDIS MANAGEMENT)",
+    "etablissement": "FORMATIVES",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:4661",
+    "nom": "BUSINESS DEVELOPER EN HAUTES TECHNOLOGIES (EURIDIS MANAGEMENT)",
+    "etablissement": "ICADEMIE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:4665",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39728",
+    "nom": "CQP Opérateur en confection",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39728) — CQP Opérateur en confection (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2402 Assemblage - mo"
+   },
+   {
+    "fiche_id": "idx:4666",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE HAUTE ALSACE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4876",
+    "nom": "COMMERCE ET DISTRIBUTION (MASTER LILLE)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37157",
+    "nom": "Opérateur de Circulation Ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37157) — Opérateur de Circulation Ferroviaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : N4401 Circulatio"
+   },
+   {
+    "fiche_id": "idx:4911",
+    "nom": "COMMERCE INTERNATIONAL",
+    "etablissement": "EURIDIS MANAGEMENT",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40273",
+    "nom": "Conducteur de RER",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40273) — Conducteur de RER (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : N4301 Conduite sur rails | Spéciali"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41971",
+    "nom": "CQP Opérateur en préparation de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41971) — CQP Opérateur en préparation de commandes (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2101 A"
+   },
+   {
+    "fiche_id": "metier:MET.30",
+    "nom": "responsable de formation",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : responsable de formation | Synonymes : chef/fe de projet formation, conseiller/ère en formation, consultant/e en formation, directeur/trice d"
+   },
+   {
+    "fiche_id": "metier:MET.132",
+    "nom": "médiateur/trice social/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médiateur/trice social/e | Libellé : médiatrice sociale / médiateur social | Accroche : Les médiateurs sociaux exercent en zones sensibles po"
+   }
+  ]
+ },
+ {
+  "qid": "base-001-v1",
+  "question": "Dis-moi : Qu'est-ce qu'un BUT et combien de temps ça dure ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.316",
+    "nom": "concepteur/trice-rédacteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice-rédacteur/trice | Libellé : conceptrice-rédactrice / concepteur-rédacteur | Accroche : Le concepteur-rédacteur travaille à t"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T de Lannion",
+    "ville": "Lannion",
+    "region": "Bretagne",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "voie_pre_bac_synthese:bac-pro",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "Catalogue BAC PRO (synthèse globale) | 87 spécialités référencées sur ONISEP | 10 domaines couverts | Distribution par domaine : ingenierie industriel"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "voie_pre_bac_synthese:cap",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "Catalogue CAP (synthèse globale) | 86 spécialités référencées sur ONISEP | 8 domaines couverts | Distribution par domaine : lettres arts (35), ingenie"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.7995",
+    "nom": "manager de proximité",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : manager de proximité | Synonymes : manager terrain | Accroche : Sur le terrain, le ou la manager de proximité est au cœur de l’action. Il ou "
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-admission",
+    "nom": "Phase d'admission Parcoursup 2026 — début des réponses",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026. Les candidats reçoivent leurs propositions d'admission et doivent y répondre "
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.535",
+    "nom": "serveur / serveuse en restauration (restaurant, café-bar-brasserie)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : serveur / serveuse en restauration (restaurant, café-bar-brasserie) | Codes ROME : G1801 (Café, bar brasserie) | GFE : GFE S : hôtelle"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "idx:29384",
+    "nom": "DN MADE - Objet - Spécialité : Horlogerie, mention objet numérique et patrimoine",
+    "etablissement": "Lycée Diderot",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Horlogerie, mention objet numérique et patrimoine"
+   }
+  ]
+ },
+ {
+  "qid": "base-002-v1",
+  "question": "Dis-moi : Je suis en L2 d'éco et je veux me réorienter vers l'informatique, comment faire ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "etablissement": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_deuxième_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable deuxième groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 4 néobacheliers ; 25.0% passent en L2 "
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_technologique_hors_stmg|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC technologique hors STMG | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 100.0% pa"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:25351",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Ecole Nationale De Commerce",
+    "ville": "Paris 17e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 9 néobacheliers ; 44.4% passent en L2 en 1 an ; 44."
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 7 néobacheliers ; 100.0% passent en L2 en 1 an ; 100.0%"
+   },
+   {
+    "fiche_id": "idx:29406",
+    "nom": "DN MADE - Patrimoine - Spécialité : Décor et traitement de surfaces (Créateur-co",
+    "etablissement": "ESAA Boulle",
+    "ville": "Paris 12e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Décor et traitement de surfaces (Créateur-concepteur - décor et restauration en mobilier d’exception)"
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_premier_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable premier groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L2"
+   },
+   {
+    "fiche_id": "idx:29407",
+    "nom": "DN MADE - Patrimoine - Spécialité : Marqueterie (Créateur-concepteur - décor et ",
+    "etablissement": "ESAA Boulle",
+    "ville": "Paris 12e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Marqueterie (Créateur-concepteur - décor et restauration en mobilier d’exception)"
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 6 néobacheliers ; 100.0% passent en L2 en 1 an ; 1"
+   },
+   {
+    "fiche_id": "idx:29408",
+    "nom": "DN MADE - Patrimoine - Spécialité : Restauration de mobilier (Créateur-concepteu",
+    "etablissement": "ESAA Boulle",
+    "ville": "Paris 12e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Restauration de mobilier (Créateur-concepteur - décor et restauration en mobilier d’exception)"
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 3 néobacheliers ; "
+   },
+   {
+    "fiche_id": "idx:33069",
+    "nom": "Licence - Sciences du langage - Parcours Sciences du langage mineures au choix (",
+    "etablissement": "Université Sorbonne Nouvelle Paris 3",
+    "ville": "Paris 12e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "langues",
+    "source": "parcoursup",
+    "extrait": "Sciences du langage mineures au choix (Lettres ou Didactique du français langue étrangère et secondes ou Langues ou Informatique ou Renforcée ou Langu"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 30 néobacheliers ; 63.3% passent en L2 en 1 an ; 83.3% "
+   },
+   {
+    "fiche_id": "idx:358",
+    "nom": "Centre de formation d'apprentis de l'école du commerce et de la distribution",
+    "etablissement": "Centre de formation d'apprentis de l'école du commerce et de",
+    "ville": "",
+    "region": "Normandie",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 131 néobacheliers ; 53.4% passent en L2 en 1 an ; 6"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 417 néobacheliers ; 71.0% passent en L2 en 1 an ; 76.3%"
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 14 néobacheliers ; 50.0% "
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 351 néobacheliers ; 4.3% passent en L"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 5 néobacheliers ; 80.0% passent en L2 en 1 an ; 80"
+   }
+  ]
+ },
+ {
+  "qid": "base-003-v1",
+  "question": "Dis-moi : Quels métiers peut-on faire après un master en intelligence artificielle ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DROIT DU NUMERIQUE — Droit de l'intelligence artificielle",
+    "etablissement": "Institut catholique de Paris",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11313",
+    "nom": "INFORMATIQUE — Intelligence Artificielle Distribuée",
+    "etablissement": "Université Paris Cité",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37827",
+    "nom": "Développeur en intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37827) — Développeur en intelligence artificielle (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étud"
+   },
+   {
+    "fiche_id": "idx:18931",
+    "nom": "licence pro mention métiers de l'intelligence artificielle : outils et méthodes",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41813",
+    "nom": "Chef de projet data et intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41813) — Chef de projet data et intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38584",
+    "nom": "Chef de projet en développement de solutions d'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38584) — Chef de projet en développement de solutions d'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | M"
+   },
+   {
+    "fiche_id": "idx:30514",
+    "nom": "Formation valant grade de licence - Double licence Intelligence Artificielle et ",
+    "etablissement": "Université Paris-Dauphine",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "data_ia",
+    "source": "parcoursup",
+    "extrait": "Double licence Intelligence Artificielle et Sciences des Organisations"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39485",
+    "nom": "Intelligence artificielle (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39485) — Intelligence artificielle (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : H1206 M"
+   },
+   {
+    "fiche_id": "idx:33301",
+    "nom": "Licence professionnelle - Métiers de l’industrie : Mécatronique, Robotique  parc",
+    "etablissement": "I.U.T de Béziers",
+    "ville": "Béziers",
+    "region": "Occitanie",
+    "domain": "data_ia",
+    "source": "parcoursup",
+    "extrait": "Métiers de l’industrie : Mécatronique, Robotique  parcours Robotique et Intelligence Artificielle"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40551",
+    "nom": "Chef de projets en intelligence artificielle et sciences des données (MS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40551) — Chef de projets en intelligence artificielle et sciences des données (MS) (bac+5) | Niveau européen : Niveau 7 | "
+   },
+   {
+    "fiche_id": "idx:36542",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": "CONSERVATOIRE NATIONAL DES ARTS ET METIERS",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:37181",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": "UNIVERSITE DE CAEN NORMANDIE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39541",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39541) — Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Science de la donnée et intelligence "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38587",
+    "nom": "Expert en ingénierie de l'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38587) — Expert en ingénierie de l'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) :"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41068",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41068) — Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale) (bac+3) | Niveau européen : Niveau "
+   },
+   {
+    "fiche_id": "idx:342",
+    "nom": "Centre de Formation d'Apprentis Commerce et Distribution-AFPAM (Association pour",
+    "etablissement": "Centre de Formation d'Apprentis Commerce et Distribution-AFP",
+    "ville": "",
+    "region": "Grand Est",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6363",
+    "nom": "INFORMATION-COMMUNICATION : METIERS DU LIVRE ET DU PATRIMOINE (BUT)",
+    "etablissement": "NANTES UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6364",
+    "nom": "INFORMATION-COMMUNICATION : METIERS DU LIVRE ET DU PATRIMOINE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6365",
+    "nom": "INFORMATION-COMMUNICATION : METIERS DU LIVRE ET DU PATRIMOINE (BUT)",
+    "etablissement": "UNIVERSITE DE TOULOUSE",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42011",
+    "nom": "Diplôme d'études supérieures en intelligence artificielle et sciences des donnée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42011) — Diplôme d'études supérieures en intelligence artificielle et sciences des données (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "idx:9030",
+    "nom": "CREATION LITTERAIRE — Métiers de l'écriture",
+    "etablissement": "Université Toulouse - Jean Jaurès",
+    "ville": "TOULOUSE",
+    "region": "Occitanie",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9222",
+    "nom": "DROIT DE L'IMMOBILIER — Expertise conseil en patrimoine immobilier",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "GRENOBLE",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "base-004-v1",
+  "question": "Dis-moi : Comment obtenir une bourse étudiante et c'est quoi le DSE ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "calendrier:dse-2026:ouverture-dse",
+    "nom": "Ouverture du Dossier Social Étudiant (DSE) 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le Dossier Social Étudiant (DSE) 2026 ouvre le 2 mars 2026 sur la plateforme MesServices.Étudiants.gouv.fr. Le DSE est le dossier UNIQUE pour demander"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+    "nom": "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution "
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:bourse_crous_sup",
+    "nom": "Bourse sur critères sociaux CROUS — enseignement supérieur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse sur critères sociaux CROUS — enseignement supérieur | Organisme : CROUS | Public cible : Étudiants post-bac (BTS, BUT, Licence, M"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+    "nom": "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesSer"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_voie:initial",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 11 dispositifs principaux disponibles | Liste : Bourse sur cri"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "MARKETING, VENTE — MOI : Marketing opérationnel international - Alternance - App",
+    "etablissement": "Université Paris Nanterre",
+    "ville": "NANTERRE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+    "nom": "Premier cycle d'attribution des logements CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le premier cycle d'attribution des logements CROUS pour la rentrée 2026 a lieu le 2 juin 2026. Les étudiants ayant fait leur DSE et saisi leurs vœux d"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:bourse_lycee",
+    "nom": "Bourse de lycée (collégiens et lycéens)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse de lycée (collégiens et lycéens) | Organisme : Ministère de l'Éducation Nationale | Public cible : Élèves au lycée général, techn"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:29384",
+    "nom": "DN MADE - Objet - Spécialité : Horlogerie, mention objet numérique et patrimoine",
+    "etablissement": "Lycée Diderot",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Horlogerie, mention objet numérique et patrimoine"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "metier:MET.8191",
+    "nom": "chargé/e d'orientation et d'insertion profesionnelle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e d'orientation et d'insertion profesionnelle | Libellé : chargée d'orientation et d'insertion professionnelle / chargé d'orientation "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.535",
+    "nom": "serveur / serveuse en restauration (restaurant, café-bar-brasserie)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : serveur / serveuse en restauration (restaurant, café-bar-brasserie) | Codes ROME : G1801 (Café, bar brasserie) | GFE : GFE S : hôtelle"
+   }
+  ]
+ },
+ {
+  "qid": "base-005-v1",
+  "question": "Dis-moi : C'est quoi l'alternance et quels sont ses avantages ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "IFP'ALTERNANCE",
+    "etablissement": "IFP'ALTERNANCE",
+    "ville": "",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9715",
+    "nom": "DROIT PRIVE — Droit et ingénierie du patrimoine (DIPAT) - (M2 en alternance) -",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:9848",
+    "nom": "DROIT PUBLIC — Gestion locale du patrimoine culturel - (Alternance en M2) -",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:10695",
+    "nom": "GESTION DE PATRIMOINE — GESTION DE PATRIMOINE ET BANQUE EN ALTERNANCE",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.535",
+    "nom": "serveur / serveuse en restauration (restaurant, café-bar-brasserie)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : serveur / serveuse en restauration (restaurant, café-bar-brasserie) | Codes ROME : G1801 (Café, bar brasserie) | GFE : GFE S : hôtelle"
+   },
+   {
+    "fiche_id": "idx:12556",
+    "nom": "MARKETING, VENTE — MOI : Marketing opérationnel international - Alternance - App",
+    "etablissement": "Université Paris Nanterre",
+    "ville": "NANTERRE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14001",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque - Conseiller Clientèle Professionne",
+    "etablissement": "Université Paris Nanterre",
+    "ville": "NANTERRE",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39258",
+    "nom": "Responsable rémunération globale et avantages sociaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39258) — Responsable rémunération globale et avantages sociaux (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME)"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:proa",
+    "nom": "Pro-A (reconversion ou promotion par alternance)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Pro-A (reconversion ou promotion par alternance) | Organisme : OPCO (Opérateurs de compétences) | Public cible : Salariés CDI/CDD à temp"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14051",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Management du risque et de l'innovation en",
+    "etablissement": "Université Paris Nanterre",
+    "ville": "NANTERRE",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "base-006-v1",
+  "question": "Dis-moi : Après une prépa, qu'est-ce que je peux intégrer comme écoles ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BTS - Production - Conception de produits industriels - Parcours Prépa Ingénieur",
+    "etablissement": "Lycée Catherine et Raymond JANOT",
+    "ville": "Sens",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Parcours Prépa Ingénieur - en 3 ans"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28086",
+    "nom": "CUPGE - Cycle universitaire préparatoire aux grandes écoles",
+    "etablissement": "Université Paris Cité",
+    "ville": "Paris  6e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:30667",
+    "nom": "Licence - Arts plastiques - Parcours Préparatoire au Professorat des Ecoles (PPP",
+    "etablissement": "Université Paris 1 Panthéon Sorbonne",
+    "ville": "Paris  5e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Préparatoire au Professorat des Ecoles (PPPE)"
+   },
+   {
+    "fiche_id": "idx:31946",
+    "nom": "Licence - Langues, littératures et civilisations étrangères et régionales - Parc",
+    "etablissement": "Sorbonne université",
+    "ville": "Paris  6e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "langues",
+    "source": "parcoursup",
+    "extrait": "Préparatoire au Professorat des Ecoles (PPPE) - Anglais"
+   },
+   {
+    "fiche_id": "idx:33073",
+    "nom": "Licence - Sciences et société - Classe Préparatoire au Professorat des Écoles",
+    "etablissement": "Lycée Henri IV",
+    "ville": "Paris  5e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "parcoursup",
+    "extrait": "Classe Préparatoire au Professorat des Écoles"
+   },
+   {
+    "fiche_id": "idx:5644",
+    "nom": "DIPLOME D'ETAT DE LA JEUNESSE, DE L'EDUCATION POPULAIRE ET DU SPORT SPE PERFECTI",
+    "etablissement": "PREPA SPORTS",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12918",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 1ER DEGRE —",
+    "etablissement": "CY Cergy Paris Université",
+    "ville": "GENNEVILLIERS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12919",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 1ER DEGRE —",
+    "etablissement": "CY Cergy Paris Université",
+    "ville": "CERGY PONTOISE CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12942",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 1ER DEGRE —",
+    "etablissement": "Université de Picardie Jules-Verne",
+    "ville": "AMIENS",
+    "region": "Hauts-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13894",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), PRATIQUES E",
+    "etablissement": "CY Cergy Paris Université",
+    "ville": "CERGY PONTOISE CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13895",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), PRATIQUES E",
+    "etablissement": "CY Cergy Paris Université",
+    "ville": "GENNEVILLIERS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "base-007-v1",
+  "question": "Dis-moi : Quelle est la différence entre une licence et un BUT ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Techniques de commercialisation",
+    "etablissement": "I.U.T d'Evreux",
+    "ville": "Evreux",
+    "region": "Normandie",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37157",
+    "nom": "Opérateur de Circulation Ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37157) — Opérateur de Circulation Ferroviaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : N4401 Circulatio"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.535",
+    "nom": "serveur / serveuse en restauration (restaurant, café-bar-brasserie)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : serveur / serveuse en restauration (restaurant, café-bar-brasserie) | Codes ROME : G1801 (Café, bar brasserie) | GFE : GFE S : hôtelle"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.67",
+    "nom": "secrétaire d'édition",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : secrétaire d'édition | Synonymes : assistant/e d'édition | Accroche : La mission du secrétaire d'édition ? Transformer un manuscrit en livre,"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.604",
+    "nom": "conseiller/ère en voyages",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : conseiller/ère en voyages | Libellé : conseillère en voyages / conseiller en voyages | Synonymes : agent/e de comptoir, agent/e de voyage, bi"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "idx:29384",
+    "nom": "DN MADE - Objet - Spécialité : Horlogerie, mention objet numérique et patrimoine",
+    "etablissement": "Lycée Diderot",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Horlogerie, mention objet numérique et patrimoine"
+   }
+  ]
+ },
+ {
+  "qid": "fact-001-v2",
+  "question": "J'aimerais savoir, quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T de Rodez",
+    "ville": "Rodez",
+    "region": "Occitanie",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:consultation-offre",
+    "nom": "Consultation de l'offre de formation Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le 17 décembre 2025, les futurs étudiants peuvent consulter l'offre de formation Parcoursup 2026. Cette phase d'information préalable permet d'explore"
+   },
+   {
+    "fiche_id": "idx:6320",
+    "nom": "GESTIONNAIRE PAIE ET ADMINISTRATION SOCIALE (SCIENCES-U LYON)",
+    "etablissement": "INSTITUT SUPERIEUR D'INFORMATIQUE ET DE MANAGEMENT DE L'INFO",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:fin-phase-complementaire",
+    "nom": "Fin de la phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 se termine le 10 septembre 2026. C'est la dernière échéance pour les candidats qui n'ont pas reçu de propositi"
+   },
+   {
+    "fiche_id": "idx:8415",
+    "nom": "BIO-INFORMATIQUE — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-complementaire",
+    "nom": "Phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 ouvre le 11 juin 2026 et se termine le 10 septembre 2026. Elle permet aux candidats sans proposition d'admissi"
+   },
+   {
+    "fiche_id": "idx:11195",
+    "nom": "INFORMATION, COMMUNICATION — Médiation, usage, savoirs et expertises (MUSE)",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "BRON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "idx:11285",
+    "nom": "INFORMATIQUE — Informatique",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "BRON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "idx:11286",
+    "nom": "INFORMATIQUE — Informatique (alternance)",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "BRON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_mobilite_parcoursup",
+    "nom": "Aide à la mobilité Parcoursup (changement académie après bac)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la mobilité Parcoursup (changement académie après bac) | Organisme : Ministère de l'Enseignement supérieur | Public cible : Néo-b"
+   },
+   {
+    "fiche_id": "idx:11368",
+    "nom": "INFORMATIQUE — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12708",
+    "nom": "MATHEMATIQUES ET INFORMATIQUE APPLIQUEES AUX SCIENCES HUMAINES ET SOCIALES -MIAS",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "BRON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+    "nom": "Calendrier général Parcoursup 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le calendrier Parcoursup 2026 se déroule en 6 phases clés : (1) consultation offre du 17 décembre 2025 au 19 janvier 2026 ; (2) inscription + formulat"
+   },
+   {
+    "fiche_id": "idx:12796",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13533",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Institut catholique de Lyon",
+    "ville": "CRAPONNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:inscription-administrative",
+    "nom": "Inscription administrative dans l'établissement choisi (Parcoursup 2026)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Une fois une proposition d'admission acceptée définitivement sur Parcoursup, le candidat doit procéder à l'inscription administrative dans l'établisse"
+   },
+   {
+    "fiche_id": "idx:13534",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Institut catholique de Lyon",
+    "ville": "CHAMALIERES",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13535",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Institut catholique de Lyon",
+    "ville": "CALUIRE-ET-CUIRE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13536",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Institut catholique de Lyon",
+    "ville": "DIJON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.554",
+    "nom": "technicien/ne de maintenance en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de maintenance en informatique | Libellé : technicienne de maintenance en informatique / technicien de maintenance en informati"
+   },
+   {
+    "fiche_id": "idx:13537",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Institut catholique de Lyon",
+    "ville": "MARSEILLE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-admission",
+    "nom": "Phase d'admission Parcoursup 2026 — début des réponses",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026. Les candidats reçoivent leurs propositions d'admission et doivent y répondre "
+   },
+   {
+    "fiche_id": "idx:13538",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Institut catholique de Lyon",
+    "ville": "SEYSSINNET-PARISET",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.594",
+    "nom": "vendeur/euse en micro-informatique et multimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vendeur/euse en micro-informatique et multimédia | Libellé : vendeuse en micro-informatique et multimédia / vendeur en micro-informatique et "
+   },
+   {
+    "fiche_id": "idx:13574",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.133",
+    "nom": "hacker (pirate informatique) éthique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : hacker (pirate informatique) éthique | Accroche : Les hackers éthiques sont des pirates informatiques bienveillants qui testent et identifien"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:ouverture-voeux",
+    "nom": "Ouverture de la phase d'inscription et formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026. Chaque candidat peut formuler jusqu'à 10 vœux pri"
+   }
+  ]
+ },
+ {
+  "qid": "fact-002-v2",
+  "question": "J'aimerais savoir, quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "I.U.T de Velizy",
+    "ville": "Vélizy-Villacoublay",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5950",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "CY CERGY PARIS UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5977",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE PARIS EST CRETEIL VAL DE MARNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5978",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE PARIS NANTERRE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5979",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE PARIS-SACLAY",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26097",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "I.U.T de Villetaneuse - Université Sorbonne Paris Nord",
+    "ville": "Villetaneuse",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26119",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "IUT de Cachan Université Paris-Saclay",
+    "ville": "Cachan",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5363",
+    "nom": "CONCEPTION ET REALISATION DES SYSTEMES AUTOMATIQUES",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5951",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "FORMASUP AUVERGNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5952",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5953",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "NANTES UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5954",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "SAVOISIENNE DEVELOP TECHNIQUES NOUVELLES",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5955",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNION UNIVERSITE ECONOMIE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5956",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE AMIENS PICARDIE JULES VERNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5957",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE BOURGOGNE EUROPE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5958",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE COTE D'AZUR",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-003-v2",
+  "question": "J'aimerais savoir, quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Techniques de commercialisation",
+    "etablissement": "I.U.T de Corte",
+    "ville": "Corte",
+    "region": "Corse",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8005",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : BUSINESS DEVELOPPEMENT ET MANAGEMENT DE LA REL",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8020",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : BUSINESS INTERNATIONAL : ACHAT ET VENTE (BUT)",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8032",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : MARKETING DIGITAL, E-BUSINESS ET ENTREPRENEURI",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8046",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : MARKETING ET MANAGEMENT DU POINT DE VENTE (BUT",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8057",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : STRATEGIE DE MARQUE ET EVENEMENTIEL (BUT)",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26611",
+    "nom": "BUT - Techniques de commercialisation",
+    "etablissement": "I.U.T de Bordeaux - Site de Périgueux",
+    "ville": "Périgueux",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26656",
+    "nom": "BUT - Techniques de commercialisation",
+    "etablissement": "I.U.T. de Bordeaux - Site de Bordeaux-Bastide",
+    "ville": "Bordeaux",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26673",
+    "nom": "BUT - Techniques de commercialisation",
+    "etablissement": "IUT de Bordeaux - Antenne de Polynésie Française",
+    "ville": "Faaa",
+    "region": "Polynésie française",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5426",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "ACADEMIE VAUCLUSE PROVENCE INDUSTRIES",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5427",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "ACF ALTERNANCE CONSEIL ET FORMATION",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5428",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "AEP PRADEAU LA SEDE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5429",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "AFTEC",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5430",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "AMBITIONS",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5431",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "ASS DES PERES DE FAMILLE DE L ECOLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5432",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "ASS TOURQUENNOISE DE GESTION DE L'EIC",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   }
+  ]
+ }
+]

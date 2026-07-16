@@ -1,0 +1,3217 @@
+[
+ {
+  "qid": "base-002",
+  "question": "Je suis en L2 d'éco et je veux me réorienter vers l'informatique, comment faire ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "etablissement": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_deuxième_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable deuxième groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L"
+   },
+   {
+    "fiche_id": "idx:1411",
+    "nom": "Ecole Pour l'informatique et les nouvelles technologies",
+    "etablissement": "Ecole Pour l'informatique et les nouvelles technologies",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1412",
+    "nom": "Ecole pour l'informatique et les nouvelles technologies (EPITECH Campus de Nice)",
+    "etablissement": "Ecole pour l'informatique et les nouvelles technologies (EPI",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 4 néobacheliers ; 25.0% passent en L2 "
+   },
+   {
+    "fiche_id": "idx:1413",
+    "nom": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "etablissement": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1432",
+    "nom": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "etablissement": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_technologique_hors_stmg|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC technologique hors STMG | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 100.0% pa"
+   },
+   {
+    "fiche_id": "idx:1433",
+    "nom": "Ecole supérieure d'informatique Metz",
+    "etablissement": "Ecole supérieure d'informatique Metz",
+    "ville": "",
+    "region": "Grand Est",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "idx:1444",
+    "nom": "Ecole supérieure de génie informatique - Réseau des grandes écoles spécialisées",
+    "etablissement": "Ecole supérieure de génie informatique - Réseau des grandes ",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1532",
+    "nom": "ENI ECOLE INFORMATIQUE",
+    "etablissement": "ENI ECOLE INFORMATIQUE",
+    "ville": "",
+    "region": "Pays de la Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 7 néobacheliers ; 100.0% passent en L2 en 1 an ; 100.0%"
+   },
+   {
+    "fiche_id": "idx:1541",
+    "nom": "EPITECH Lille - Ecole de l'innovation et de l'expertise informatique",
+    "etablissement": "EPITECH Lille - Ecole de l'innovation et de l'expertise info",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 9 néobacheliers ; 44.4% passent en L2 en 1 an ; 44."
+   },
+   {
+    "fiche_id": "idx:1553",
+    "nom": "ESIEA - Ecole Supérieure d'Informatique Electronique Automatique",
+    "etablissement": "ESIEA - Ecole Supérieure d'Informatique Electronique Automat",
+    "ville": "",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 6 néobacheliers ; 100.0% passent en L2 en 1 an ; 1"
+   },
+   {
+    "fiche_id": "idx:1740",
+    "nom": "Ingetis Ecole d'Ingénierie Informatique",
+    "etablissement": "Ingetis Ecole d'Ingénierie Informatique",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_premier_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable premier groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L2"
+   },
+   {
+    "fiche_id": "idx:2736",
+    "nom": "Organisme de formation-Centre de formation d'apprentis - Ecole supérieure inform",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis - Eco",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 3 néobacheliers ; "
+   },
+   {
+    "fiche_id": "idx:5955",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNION UNIVERSITE ECONOMIE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 30 néobacheliers ; 63.3% passent en L2 en 1 an ; 83.3% "
+   },
+   {
+    "fiche_id": "idx:6141",
+    "nom": "GESTION DE LA PME",
+    "etablissement": "INSTITUT DE FORMATION A L'INFORMATIQUE POUR LE DEVEL DE L'EN",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 417 néobacheliers ; 71.0% passent en L2 en 1 an ; 76.3%"
+   },
+   {
+    "fiche_id": "idx:6320",
+    "nom": "GESTIONNAIRE PAIE ET ADMINISTRATION SOCIALE (SCIENCES-U LYON)",
+    "etablissement": "INSTITUT SUPERIEUR D'INFORMATIQUE ET DE MANAGEMENT DE L'INFO",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 14 néobacheliers ; 50.0% "
+   },
+   {
+    "fiche_id": "idx:6420",
+    "nom": "INGENIEUR DIPLOME DE L'ECOLE NATIONALE SUPERIEURE D'INFORMATIQUE ET DE MATHEMATI",
+    "etablissement": "ASSOC DAUPHINOISE FORMATION INDUSTRIE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 131 néobacheliers ; 53.4% passent en L2 en 1 an ; 6"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 5 néobacheliers ; 80.0% passent en L2 en 1 an ; 80"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 351 néobacheliers ; 4.3% passent en L"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 90 néobacheliers ; 21.1% passent en L2 en 1"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 19 néobacheliers ; 36.8% passent en L2 en 1 an ;"
+   }
+  ]
+ },
+ {
+  "qid": "base-003",
+  "question": "Quels métiers peut-on faire après un master en intelligence artificielle ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Intelligence Artificielle appliquée aux enjeux sociétaux",
+    "etablissement": "CENTRALESUPELEC",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18931",
+    "nom": "licence pro mention métiers de l'intelligence artificielle : outils et méthodes",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37827",
+    "nom": "Développeur en intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37827) — Développeur en intelligence artificielle (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étud"
+   },
+   {
+    "fiche_id": "idx:33301",
+    "nom": "Licence professionnelle - Métiers de l’industrie : Mécatronique, Robotique  parc",
+    "etablissement": "I.U.T de Béziers",
+    "ville": "Béziers",
+    "region": "Occitanie",
+    "domain": "data_ia",
+    "source": "parcoursup",
+    "extrait": "Métiers de l’industrie : Mécatronique, Robotique  parcours Robotique et Intelligence Artificielle"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41813",
+    "nom": "Chef de projet data et intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41813) — Chef de projet data et intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1"
+   },
+   {
+    "fiche_id": "idx:36542",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": "CONSERVATOIRE NATIONAL DES ARTS ET METIERS",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38584",
+    "nom": "Chef de projet en développement de solutions d'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38584) — Chef de projet en développement de solutions d'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | M"
+   },
+   {
+    "fiche_id": "idx:37181",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": "UNIVERSITE DE CAEN NORMANDIE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39485",
+    "nom": "Intelligence artificielle (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39485) — Intelligence artificielle (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : H1206 M"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39541",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39541) — Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Science de la donnée et intelligence "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40551",
+    "nom": "Chef de projets en intelligence artificielle et sciences des données (MS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40551) — Chef de projets en intelligence artificielle et sciences des données (MS) (bac+5) | Niveau européen : Niveau 7 | "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41068",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41068) — Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale) (bac+3) | Niveau européen : Niveau "
+   },
+   {
+    "fiche_id": "idx:9459",
+    "nom": "DROIT DU NUMERIQUE — Droit de l'intelligence artificielle",
+    "etablissement": "Institut catholique de Paris",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9461",
+    "nom": "DROIT DU NUMERIQUE — Droit des activités numériques et de l'intelligence artific",
+    "etablissement": "Université de Caen Normandie",
+    "ville": "CAEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38587",
+    "nom": "Expert en ingénierie de l'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38587) — Expert en ingénierie de l'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) :"
+   },
+   {
+    "fiche_id": "idx:9983",
+    "nom": "ECONOMIE APPLIQUEE — Double-diplôme Master Méthodes appliquées de la statistique",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10148",
+    "nom": "ELECTRONIQUE, ENERGIE ELECTRIQUE, AUTOMATIQUE — Intelligence Artificielle et Aut",
+    "etablissement": "Université de Perpignan Via Domitia",
+    "ville": "PERPIGNAN",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11104",
+    "nom": "IA - INTELLIGENCE ARTIFICIELLE / AI - ARTIFICIAL INTELLIGENCE — None",
+    "etablissement": "Institut national des sciences appliquées de Lyon",
+    "ville": "VILLEURBANNE CEDEX",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11224",
+    "nom": "INFORMATIQUE — Algorithmes, Intelligence Artificielle, Interactions, Décisions (",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11227",
+    "nom": "INFORMATIQUE — Applications Réparties, Intelligence Artificielle et Sécurité (AR",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX",
+    "region": "Centre-Val de Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42011",
+    "nom": "Diplôme d'études supérieures en intelligence artificielle et sciences des donnée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42011) — Diplôme d'études supérieures en intelligence artificielle et sciences des données (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "idx:11302",
+    "nom": "INFORMATIQUE — Ingénierie en intelligence artificielle",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "ville": "ST DENIS CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11306",
+    "nom": "INFORMATIQUE — Intelligence artificielle",
+    "etablissement": "Le Mans Université",
+    "ville": "LE MANS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "base-004",
+  "question": "Comment obtenir une bourse étudiante et c'est quoi le DSE ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "financement_dispositif:bourse_crous_sup",
+    "nom": "Bourse sur critères sociaux CROUS — enseignement supérieur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse sur critères sociaux CROUS — enseignement supérieur | Organisme : CROUS | Public cible : Étudiants post-bac (BTS, BUT, Licence, M"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+    "nom": "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution "
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:ouverture-dse",
+    "nom": "Ouverture du Dossier Social Étudiant (DSE) 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le Dossier Social Étudiant (DSE) 2026 ouvre le 2 mars 2026 sur la plateforme MesServices.Étudiants.gouv.fr. Le DSE est le dossier UNIQUE pour demander"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+    "nom": "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesSer"
+   },
+   {
+    "fiche_id": "financement_voie:initial",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 11 dispositifs principaux disponibles | Liste : Bourse sur cri"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Centre de Formation de la Bourse du Travail",
+    "etablissement": "Centre de Formation de la Bourse du Travail",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+    "nom": "Premier cycle d'attribution des logements CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le premier cycle d'attribution des logements CROUS pour la rentrée 2026 a lieu le 2 juin 2026. Les étudiants ayant fait leur DSE et saisi leurs vœux d"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "financement_dispositif:bourse_lycee",
+    "nom": "Bourse de lycée (collégiens et lycéens)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse de lycée (collégiens et lycéens) | Organisme : Ministère de l'Éducation Nationale | Public cible : Élèves au lycée général, techn"
+   },
+   {
+    "fiche_id": "metier:MET.8191",
+    "nom": "chargé/e d'orientation et d'insertion profesionnelle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e d'orientation et d'insertion profesionnelle | Libellé : chargée d'orientation et d'insertion professionnelle / chargé d'orientation "
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "domtom_dispositif:drom_mobilite_erasmus_ocean_indien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "territoire_drom",
+    "source": "domtom_curated",
+    "extrait": "DROM-COM (extension Sprint 8 W2) — Erasmus+ régional Océan Indien (depuis La Réunion / Mayotte) | Pour les étudiants de l'Université de La Réunion ou "
+   },
+   {
+    "fiche_id": "metier:MET.397",
+    "nom": "analyste financier/ère et ESG",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : analyste financier/ère et ESG | Libellé : analyste financière et ESG / analyste financier et ESG | Synonymes : chargé/e d'études financières "
+   },
+   {
+    "fiche_id": "metier:MET.449",
+    "nom": "linguiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : linguiste | Synonymes : chercheur/euse en linguistique | Accroche : Observer, décortiquer, comprendre le fonctionnement du langage et des lan"
+   },
+   {
+    "fiche_id": "metier:MET.398",
+    "nom": "agent/e de transit",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : agent/e de transit | Libellé : agente de transit / agent de transit | Synonymes : affréteur/euse, commissionnaire de transport, employé/e de "
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_paje",
+    "nom": "Prime à la naissance / PreParE pour étudiants parents",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Prime à la naissance / PreParE pour étudiants parents | Organisme : CAF | Public cible : Étudiants parents de jeunes enfants | Concerne "
+   },
+   {
+    "fiche_id": "crous_region:reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "crous",
+    "source": "crous_combine_logements_restos",
+    "extrait": "Vie étudiante CROUS CROUS Réunion (logement + restauration universitaire) | Restaurants universitaires : 12 lieux totaux | Types principaux : Restaura"
+   },
+   {
+    "fiche_id": "crous:france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "crous",
+    "source": "crous_combine_logements_restos",
+    "extrait": "Vie étudiante CROUS — vue d'ensemble France | Total résidences universitaires : 820 logements répertoriés | Total restaurants/cafétérias universitaire"
+   }
+  ]
+ },
+ {
+  "qid": "base-005",
+  "question": "C'est quoi l'alternance et quels sont ses avantages ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Alternance Rhône-Alpes",
+    "etablissement": "Alternance Rhône-Alpes",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39258",
+    "nom": "Responsable rémunération globale et avantages sociaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39258) — Responsable rémunération globale et avantages sociaux (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME)"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37998",
+    "nom": "Responsable en rémunération globale et avantages sociaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37998) — Responsable en rémunération globale et avantages sociaux (bac+5) | Niveau européen : Niveau 7 | Métiers visés (RO"
+   }
+  ]
+ },
+ {
+  "qid": "base-006",
+  "question": "Après une prépa, qu'est-ce que je peux intégrer comme écoles ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "prépa digitale",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15684",
+    "nom": "année préparatoire aux concours des grandes écoles de cinéma - photographie - so",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15691",
+    "nom": "année préparatoire privée aux concours des Écoles nationales supérieures d'archi",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15692",
+    "nom": "année préparatoire privée aux concours des écoles supérieures d'art et design",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15693",
+    "nom": "année préparatoire publique aux concours des écoles supérieures d'art et de desi",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16647",
+    "nom": "classe préparatoire aux concours des écoles supérieures d'art dramatique",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16710",
+    "nom": "classe préparatoire égalité des chances aux concours des écoles de journalisme",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16989",
+    "nom": "cycle préparatoire intégré de chimie / Écoles de la Fédération Gay-Lussac",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18423",
+    "nom": "DU préparation aux grandes écoles d'économie et de management",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20022",
+    "nom": "préparation au concours d'agent territorial spécialisé des écoles maternelles (A",
+    "etablissement": "ATSEM",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20043",
+    "nom": "préparation au concours de professeurs des écoles du privé sous contrat",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20044",
+    "nom": "préparation au concours de professeurs des écoles publiques",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20051",
+    "nom": "préparation aux concours d'entrée aux écoles de journalisme reconnues par la pro",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28081",
+    "nom": "CUPGE - Cursus préparatoire aux concours des grandes écoles d'ingénieurs",
+    "etablissement": "Université Claude Bernard Lyon 1",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28084",
+    "nom": "CUPGE - Cycle Universitaire de Préparation aux Grandes Ecoles Scientifiques",
+    "etablissement": "Université de la Polynésie française",
+    "ville": "Faaa",
+    "region": "Polynésie française",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28085",
+    "nom": "CUPGE - Cycle Universitaire Préparatoire aux Grandes Ecoles",
+    "etablissement": "Ecole Nationale Supérieure des Sciences Appliquées et de Tec",
+    "ville": "Lannion",
+    "region": "Bretagne",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": "Cybersécurité"
+   }
+  ]
+ },
+ {
+  "qid": "base-007",
+  "question": "Quelle est la différence entre une licence et un BUT ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T du Havre",
+    "ville": "Le Havre",
+    "region": "Normandie",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37157",
+    "nom": "Opérateur de Circulation Ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37157) — Opérateur de Circulation Ferroviaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : N4401 Circulatio"
+   },
+   {
+    "fiche_id": "metier:MET.67",
+    "nom": "secrétaire d'édition",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : secrétaire d'édition | Synonymes : assistant/e d'édition | Accroche : La mission du secrétaire d'édition ? Transformer un manuscrit en livre,"
+   },
+   {
+    "fiche_id": "metier:MET.604",
+    "nom": "conseiller/ère en voyages",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : conseiller/ère en voyages | Libellé : conseillère en voyages / conseiller en voyages | Synonymes : agent/e de comptoir, agent/e de voyage, bi"
+   }
+  ]
+ },
+ {
+  "qid": "fact-001-v1",
+  "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour BUT Informatique à Lyon ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T de Vannes",
+    "ville": "Vannes",
+    "region": "Bretagne",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:consultation-offre",
+    "nom": "Consultation de l'offre de formation Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le 17 décembre 2025, les futurs étudiants peuvent consulter l'offre de formation Parcoursup 2026. Cette phase d'information préalable permet d'explore"
+   },
+   {
+    "fiche_id": "idx:21679",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Edouard Branly",
+    "ville": "Lyon 5e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:fin-phase-complementaire",
+    "nom": "Fin de la phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 se termine le 10 septembre 2026. C'est la dernière échéance pour les candidats qui n'ont pas reçu de propositi"
+   },
+   {
+    "fiche_id": "idx:21743",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée ORT",
+    "ville": "Lyon 8e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-complementaire",
+    "nom": "Phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 ouvre le 11 juin 2026 et se termine le 10 septembre 2026. Elle permet aux candidats sans proposition d'admissi"
+   },
+   {
+    "fiche_id": "idx:21817",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Edouard Branly",
+    "ville": "Lyon 5e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "idx:21897",
+    "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option",
+    "etablissement": "Lycée Edouard Branly",
+    "ville": "Lyon 5e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "cyber",
+    "source": "parcoursup",
+    "extrait": "Parcours Armée de Terre"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "idx:25350",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "CRESPA -SCIENCES U",
+    "ville": "Lyon 3e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_mobilite_parcoursup",
+    "nom": "Aide à la mobilité Parcoursup (changement académie après bac)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la mobilité Parcoursup (changement académie après bac) | Organisme : Ministère de l'Enseignement supérieur | Public cible : Néo-b"
+   },
+   {
+    "fiche_id": "idx:25357",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "ICOF - Campus Lyon Saint Irénée",
+    "ville": "Lyon 5e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:25362",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Institution des Chartreux",
+    "ville": "Lyon 1er Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+    "nom": "Calendrier général Parcoursup 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le calendrier Parcoursup 2026 se déroule en 6 phases clés : (1) consultation offre du 17 décembre 2025 au 19 janvier 2026 ; (2) inscription + formulat"
+   },
+   {
+    "fiche_id": "idx:25443",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée La Martinière Duchère",
+    "ville": "Lyon 9e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:25468",
+    "nom": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée ORT",
+    "ville": "Lyon 8e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:inscription-administrative",
+    "nom": "Inscription administrative dans l'établissement choisi (Parcoursup 2026)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Une fois une proposition d'admission acceptée définitivement sur Parcoursup, le candidat doit procéder à l'inscription administrative dans l'établisse"
+   },
+   {
+    "fiche_id": "idx:3616",
+    "nom": "Organisme de formation-Centre de formation d'apprentis ORGALY FRANCE DISTANCIEL ",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis ORGAL",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6320",
+    "nom": "GESTIONNAIRE PAIE ET ADMINISTRATION SOCIALE (SCIENCES-U LYON)",
+    "etablissement": "INSTITUT SUPERIEUR D'INFORMATIQUE ET DE MANAGEMENT DE L'INFO",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.554",
+    "nom": "technicien/ne de maintenance en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de maintenance en informatique | Libellé : technicienne de maintenance en informatique / technicien de maintenance en informati"
+   },
+   {
+    "fiche_id": "idx:8415",
+    "nom": "BIO-INFORMATIQUE — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-admission",
+    "nom": "Phase d'admission Parcoursup 2026 — début des réponses",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026. Les candidats reçoivent leurs propositions d'admission et doivent y répondre "
+   },
+   {
+    "fiche_id": "idx:8725",
+    "nom": "CHIMIE — Chémoinformatique",
+    "etablissement": "Université de Strasbourg",
+    "ville": "STRASBOURG",
+    "region": "Grand Est",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9369",
+    "nom": "DROIT DES AFFAIRES — Droit, Contrat, Distribution et Concurrence",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9720",
+    "nom": "DROIT PRIVE — DROIT PRIVE  A DISTANCE",
+    "etablissement": "Université Jean Moulin - Lyon 3",
+    "ville": "LYON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.133",
+    "nom": "hacker (pirate informatique) éthique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : hacker (pirate informatique) éthique | Accroche : Les hackers éthiques sont des pirates informatiques bienveillants qui testent et identifien"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:ouverture-voeux",
+    "nom": "Ouverture de la phase d'inscription et formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026. Chaque candidat peut formuler jusqu'à 10 vœux pri"
+   }
+  ]
+ },
+ {
+  "qid": "fact-002-v1",
+  "question": "Dis-moi : Quel est le taux d'insertion professionnelle à 6 mois pour BUT Génie électrique et informatique industrielle à Paris ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "I.U.T LITTORAL (CALAIS)",
+    "ville": "Calais",
+    "region": "Hauts-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5950",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "CY CERGY PARIS UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5977",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE PARIS EST CRETEIL VAL DE MARNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5978",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE PARIS NANTERRE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5979",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE PARIS-SACLAY",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26097",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "I.U.T de Villetaneuse - Université Sorbonne Paris Nord",
+    "ville": "Villetaneuse",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26118",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "IUT Aix-Marseille - Site de Marseille St Jérôme",
+    "ville": "Marseille 13e  Arrondissement",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26119",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "IUT de Cachan Université Paris-Saclay",
+    "ville": "Cachan",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26704",
+    "nom": "C.M.I - Cursus Master en Ingénierie - Electronique, énergie électrique, automati",
+    "etablissement": "Sorbonne université",
+    "ville": "Paris  6e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Cursus Master en Ingénierie (CMI) : Electronique, Energie électrique, Automatique"
+   },
+   {
+    "fiche_id": "idx:32438",
+    "nom": "Licence - Portail Électronique, Informatique",
+    "etablissement": "Sorbonne université",
+    "ville": "Paris  6e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Électronique, Informatique"
+   },
+   {
+    "fiche_id": "idx:35138",
+    "nom": "Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention",
+    "etablissement": "MINISTERE DE LA CULTURE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5363",
+    "nom": "CONCEPTION ET REALISATION DES SYSTEMES AUTOMATIQUES",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5951",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "FORMASUP AUVERGNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5952",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5953",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "NANTES UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5954",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "SAVOISIENNE DEVELOP TECHNIQUES NOUVELLES",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-003-v1",
+  "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour BUT Techniques de commercialisation à Bordeaux ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Techniques de commercialisation",
+    "etablissement": "Iut De Troyes",
+    "ville": "Troyes",
+    "region": "Grand Est",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5448",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "EURIDIS MANAGEMENT",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5507",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "OGEC SAINT APHRODISE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8005",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : BUSINESS DEVELOPPEMENT ET MANAGEMENT DE LA REL",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8020",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : BUSINESS INTERNATIONAL : ACHAT ET VENTE (BUT)",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8032",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : MARKETING DIGITAL, E-BUSINESS ET ENTREPRENEURI",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8046",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : MARKETING ET MANAGEMENT DU POINT DE VENTE (BUT",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8057",
+    "nom": "TECHNIQUES DE COMMERCIALISATION : STRATEGIE DE MARQUE ET EVENEMENTIEL (BUT)",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23574",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "IPAG Business School - Campus de Paris",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23577",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "Lycée Albert de Mun",
+    "ville": "Paris  7e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23583",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "Lycée Aux Lazaristes La Salle Croix Rousse",
+    "ville": "Lyon 1er Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23584",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "Lycée Batiment-Saint-Lambert",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23605",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "Lycée Elisa Lemonnier",
+    "ville": "Paris 12e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23629",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "Lycée Jean Perrin",
+    "ville": "Marseille 10e  Arrondissement",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23641",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "Lycée Léonard de Vinci",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:23663",
+    "nom": "BTS - Services - Conseil et commercialisation de solutions techniques",
+    "etablissement": "Lycée Raspail",
+    "ville": "Paris 14e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-004-v1",
+  "question": "Dis-moi : Quel est le nombre de places pour BUT Gestion des entreprises à Lille ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Gestion des entreprises et des administrations",
+    "etablissement": "Iut De Troyes",
+    "ville": "Troyes",
+    "region": "Grand Est",
+    "domain": "eco_gestion",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4876",
+    "nom": "COMMERCE ET DISTRIBUTION (MASTER LILLE)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5748",
+    "nom": "ECONOMIE ET PILOTAGE DES ENTREPRISES (MASTER)",
+    "etablissement": "INSTITUT CATHOLIQUE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:5749",
+    "nom": "ECONOMIE ET PILOTAGE DES ENTREPRISES (MASTER)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6225",
+    "nom": "GESTION DES ENTREPRISES ET DES ADMINISTRATIONS : GESTION COMPTABLE, FISCALE ET F",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6236",
+    "nom": "GESTION DES ENTREPRISES ET DES ADMINISTRATIONS : GESTION ET PILOTAGE DES RESSOUR",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8882",
+    "nom": "COMMERCE ET DISTRIBUTION — Commerce et distribution connectés - En apprentissage",
+    "etablissement": "Université de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8883",
+    "nom": "COMMERCE ET DISTRIBUTION — Etudes, recherche et conseil en marketing, consommati",
+    "etablissement": "Université de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8884",
+    "nom": "COMMERCE ET DISTRIBUTION — Management de la distribution",
+    "etablissement": "Université de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8885",
+    "nom": "COMMERCE ET DISTRIBUTION — Management de la distribution - En apprentissage",
+    "etablissement": "Université de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8886",
+    "nom": "COMMERCE ET DISTRIBUTION — Marketing du distributeur international",
+    "etablissement": "Université de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8887",
+    "nom": "COMMERCE ET DISTRIBUTION — Retailing supply chain - En apprentissage",
+    "etablissement": "Université de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9981",
+    "nom": "ECONOMIE APPLIQUEE — Conseil économique pour les entreprises",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10078",
+    "nom": "ECONOMIE ET PILOTAGE DES ENTREPRISES — Management des entreprises",
+    "etablissement": "Institut catholique de Lille",
+    "ville": "LILLE",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10079",
+    "nom": "ECONOMIE ET PILOTAGE DES ENTREPRISES — Management des entreprises et organisatio",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-005-v1",
+  "question": "Dis-moi : Quel est les frais de scolarité annuels pour BTS SIO option SLAM à Toulouse ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BTS - Services - Collaborateur juriste notarial",
+    "etablissement": "INSTITUT NATIONAL DES FORMATIONS NOTARIALES - Site de Toulou",
+    "ville": "Toulouse",
+    "region": "Occitanie",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "correction:epita_couts_scolarite_2025",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "correction_factuelle",
+    "source": "corrections_factuelles_curated",
+    "extrait": "Correction factuelle — EPITA — coûts de scolarité cycle ingénieur | Information correcte (autorité) : Le coût annuel de scolarité de l'EPITA pour le c"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "correction:bba_inseec_couts_scolarite_2025",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "correction_factuelle",
+    "source": "corrections_factuelles_curated",
+    "extrait": "Correction factuelle — BBA INSEEC — coûts de scolarité | Information correcte (autorité) : Le coût annuel de scolarité du BBA INSEEC est d'environ 12 "
+   },
+   {
+    "fiche_id": "idx:13086",
+    "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — ",
+    "etablissement": "Université Toulouse - Jean Jaurès",
+    "ville": "TOULOUSE",
+    "region": "Occitanie",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15754",
+    "nom": "bac pro artisanat et métiers d'art option marchandisage visuel",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15781",
+    "nom": "bac pro interventions sur le patrimoine bâti option A maçonnerie",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15782",
+    "nom": "bac pro interventions sur le patrimoine bâti option B charpente",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15783",
+    "nom": "bac pro interventions sur le patrimoine bâti option C couverture",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16150",
+    "nom": "BPJEPS spécialité éducateur sportif mention activités de sports de glace option ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16151",
+    "nom": "BPJEPS spécialité éducateur sportif mention activités de sports de glace option ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16163",
+    "nom": "BPJEPS spécialité éducateur sportif mention canoë-kayak et disciplines associées",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16164",
+    "nom": "BPJEPS spécialité éducateur sportif mention canoë-kayak et disciplines associées",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16165",
+    "nom": "BPJEPS spécialité éducateur sportif mention disciplines gymniques option A : dis",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16166",
+    "nom": "BPJEPS spécialité éducateur sportif mention disciplines gymniques option B : gym",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16179",
+    "nom": "BPJEPS spécialité éducateur sportif mention ski nautique et disciplines associée",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.467",
+    "nom": "bruiteur/euse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : bruiteur/euse | Libellé : bruiteuse / bruiteur | Accroche : Utiliser des sons naturels ou créer des effets sonores pour illustrer les actions"
+   },
+   {
+    "fiche_id": "rome_metier:D1107",
+    "nom": "Vendeur / Vendeuse grossiste en produits frais",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME D1107 : Vendeur / Vendeuse grossiste en produits frais | Compétences par enjeu : Développement commercial (Développer un portefeuille clie"
+   }
+  ]
+ },
+ {
+  "qid": "fact-006-v1",
+  "question": "Dis-moi : Quel est le taux d'accès sur Parcoursup pour BTS Commerce international à Nantes ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "LANGUES ETRANGERES APPLIQUEES — Commerce international",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "langues",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4911",
+    "nom": "COMMERCE INTERNATIONAL",
+    "etablissement": "EURIDIS MANAGEMENT",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8886",
+    "nom": "COMMERCE ET DISTRIBUTION — Marketing du distributeur international",
+    "etablissement": "Université de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en BRETAGNE | Établissements/cohortes mesurés : 20 | Taux d'emploi 12 mois : 60.4% (en BRETAGNE) | Taux de pour"
+   },
+   {
+    "fiche_id": "idx:9064",
+    "nom": "CULTURE, PATRIMOINE ET MEDIATION — Médiation Culturelle et Communication Interna",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en OCCITANIE | Établissements/cohortes mesurés : 22 | Taux d'emploi 12 mois : 58.7% (en OCCITANIE) | Taux de po"
+   },
+   {
+    "fiche_id": "idx:10297",
+    "nom": "ETUDES EUROPEENNES ET INTERNATIONALES — Commerce international et marketing expo",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "ville": "ST DENIS CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en GRAND EST | Établissements/cohortes mesurés : 28 | Taux d'emploi 12 mois : 57.4% (en GRAND EST) | Taux de po"
+   },
+   {
+    "fiche_id": "idx:10307",
+    "nom": "ETUDES EUROPEENNES ET INTERNATIONALES — Droit européen et international",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10324",
+    "nom": "ETUDES EUROPEENNES ET INTERNATIONALES — Ingénierie en projets européens",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10327",
+    "nom": "ETUDES EUROPEENNES ET INTERNATIONALES — Métiers de la solidarité internationale",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10335",
+    "nom": "ETUDES EUROPEENNES ET INTERNATIONALES — Paix, négociations internationales et di",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:consultation-offre",
+    "nom": "Consultation de l'offre de formation Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le 17 décembre 2025, les futurs étudiants peuvent consulter l'offre de formation Parcoursup 2026. Cette phase d'information préalable permet d'explore"
+   },
+   {
+    "fiche_id": "idx:10340",
+    "nom": "ETUDES EUROPEENNES ET INTERNATIONALES — Science politique de l'Europe",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:commerce-international",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international (France) | Établissements/cohortes mesurés : 318 | Taux d'emploi 12 mois après diplôme : 61.3% (moyenne France)"
+   },
+   {
+    "fiche_id": "idx:11697",
+    "nom": "LANGUES ETRANGERES APPLIQUEES — Commerce international",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "langues",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en ILE-DE-FRANCE | Établissements/cohortes mesurés : 70 | Taux d'emploi 12 mois : 62.7% (en ILE-DE-FRANCE) | Ta"
+   },
+   {
+    "fiche_id": "idx:12250",
+    "nom": "MANAGEMENT ET COMMERCE INTERNATIONAL — Finance et logistique maritime (Shipping ",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en NOUVELLE-AQUITAINE | Établissements/cohortes mesurés : 25 | Taux d'emploi 12 mois : 61.6% (en NOUVELLE-AQUIT"
+   },
+   {
+    "fiche_id": "idx:12265",
+    "nom": "MANAGEMENT ET COMMERCE INTERNATIONAL — Management et commerce international - Fo",
+    "etablissement": "Université de Poitiers",
+    "ville": "POITIERS",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en HAUTS-DE-FRANCE | Établissements/cohortes mesurés : 32 | Taux d'emploi 12 mois : 63.3% (en HAUTS-DE-FRANCE) "
+   },
+   {
+    "fiche_id": "idx:14015",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — COMMERCE ET AFFAIRES INTERNATIONALES",
+    "etablissement": "Université de Limoges",
+    "ville": "LIMOGES",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en PAYS DE LA LOIRE | Établissements/cohortes mesurés : 20 | Taux d'emploi 12 mois : 65.0% (en PAYS DE LA LOIRE"
+   },
+   {
+    "fiche_id": "idx:22977",
+    "nom": "BTS - Services - Commerce International",
+    "etablissement": "Ecole Nationale De Commerce",
+    "ville": "Paris 17e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:22979",
+    "nom": "BTS - Services - Commerce International",
+    "etablissement": "ENC-ENACOM",
+    "ville": "Nantes",
+    "region": "Pays de la Loire",
+    "domain": "eco_gestion",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international:auvergne-rhone-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international en AUVERGNE-RHONE-ALPES | Établissements/cohortes mesurés : 38 | Taux d'emploi 12 mois : 60.0% (en AUVERGNE-RHO"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international-a-referentiel-commun-europeen:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international a referentiel commun europeen en GRAND EST | Établissements/cohortes mesurés : 70 | Taux d'emploi 12 mois : 49."
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international-a-referentiel-commun-europeen:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international a referentiel commun europeen en OCCITANIE | Établissements/cohortes mesurés : 55 | Taux d'emploi 12 mois : 59."
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international-a-referentiel-commun-europeen:la-reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "La Réunion",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international a referentiel commun europeen en LA REUNION | Établissements/cohortes mesurés : 15 | Taux d'emploi 12 mois : 38"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international-a-referentiel-commun-europeen:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international a referentiel commun europeen en BRETAGNE | Établissements/cohortes mesurés : 50 | Taux d'emploi 12 mois : 67.3"
+   }
+  ]
+ },
+ {
+  "qid": "fact-007-v1",
+  "question": "Dis-moi : Quel est le taux d'insertion professionnelle à 6 mois pour BTS Communication à Strasbourg ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:etudes-de-realisation-d-un-projet-de-communication-option-a-:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — etudes de realisation d'un projet de communication, option a : etudes de realisation de produits plurimedia en GRAND EST | Établisseme"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en OCCITANIE | Établissements/cohortes mesurés : 42 | Taux d'emploi 12 mois : 58.7% (en OCCITANIE) | Taux d'emploi 24 mo"
+   },
+   {
+    "fiche_id": "idx:18925",
+    "nom": "licence pro mention métiers de l'information : archives, médiation et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en GRAND EST | Établissements/cohortes mesurés : 42 | Taux d'emploi 12 mois : 55.6% (en GRAND EST) | Taux d'emploi 24 mo"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en NORMANDIE | Établissements/cohortes mesurés : 24 | Taux d'emploi 12 mois : 54.8% (en NORMANDIE) | Taux d'emploi 24 mo"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:etudes-de-realisation-d-un-projet-de-communication-option-b-:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — etudes de realisation d'un projet de communication, option b : etudes de realisation de produits imprimes en GRAND EST | Établissement"
+   },
+   {
+    "fiche_id": "idx:31734",
+    "nom": "Licence - Langues, littératures et civilisations étrangères et régionales - Parc",
+    "etablissement": "INALCO",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "langues",
+    "source": "parcoursup",
+    "extrait": "Asie du Sud-Est et Pacifique - Siamois (Thaï)"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:etudes-de-realisation-d-un-projet-de-communication-option-a-:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — etudes de realisation d'un projet de communication, option a : etudes de realisation de produits plurimedia en ILE-DE-FRANCE | Établis"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en BRETAGNE | Établissements/cohortes mesurés : 33 | Taux d'emploi 12 mois : 63.6% (en BRETAGNE) | Taux d'emploi 24 mois"
+   },
+   {
+    "fiche_id": "idx:35138",
+    "nom": "Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention",
+    "etablissement": "MINISTERE DE LA CULTURE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BTS - Services - Communication",
+    "etablissement": "Lycée De La Communication",
+    "ville": "Metz",
+    "region": "Grand Est",
+    "domain": "communication",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en HAUTS-DE-FRANCE | Établissements/cohortes mesurés : 54 | Taux d'emploi 12 mois : 58.4% (en HAUTS-DE-FRANCE) | Taux d'"
+   },
+   {
+    "fiche_id": "idx:38306",
+    "nom": "Technicien de centre de valorisation énergétique",
+    "etablissement": "GIP FORMATION ET CERTIFICATION POUR L'INSERTION PROFESSIONNE",
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:communication",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication (France) | Établissements/cohortes mesurés : 506 | Taux d'emploi 12 mois après diplôme : 57.9% (moyenne France) | Taux d"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en NOUVELLE-AQUITAINE | Établissements/cohortes mesurés : 38 | Taux d'emploi 12 mois : 59.0% (en NOUVELLE-AQUITAINE) | T"
+   },
+   {
+    "fiche_id": "idx:881",
+    "nom": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la Valorisation de l'In",
+    "etablissement": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la ",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:commerce-international-a-referentiel-commun-europeen:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — commerce international a referentiel commun europeen en GRAND EST | Établissements/cohortes mesurés : 70 | Taux d'emploi 12 mois : 49."
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en ILE-DE-FRANCE | Établissements/cohortes mesurés : 75 | Taux d'emploi 12 mois : 59.0% (en ILE-DE-FRANCE) | Taux d'empl"
+   },
+   {
+    "fiche_id": "idx:1234",
+    "nom": "CFA Relais Avenir Pro (Association pour la Promotion et la Valorisation de l'Ins",
+    "etablissement": "CFA Relais Avenir Pro (Association pour la Promotion et la V",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en PAYS DE LA LOIRE | Établissements/cohortes mesurés : 36 | Taux d'emploi 12 mois : 63.0% (en PAYS DE LA LOIRE) | Taux "
+   },
+   {
+    "fiche_id": "idx:2017",
+    "nom": "Maison Familiale Rurale de Limoise",
+    "etablissement": "Maison Familiale Rurale de Limoise",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences fondamentales et applications (Grand Est, cohorte 2024) | Niveau d'études : bac+3"
+   },
+   {
+    "fiche_id": "idx:2037",
+    "nom": "Maison Familiale Rurale de Moissac",
+    "etablissement": "Maison Familiale Rurale de Moissac",
+    "ville": "",
+    "region": "Occitanie",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:etudes-de-realisation-d-un-projet-de-communication-option-b-:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — etudes de realisation d'un projet de communication, option b : etudes de realisation de produits imprimes en ILE-DE-FRANCE | Établisse"
+   },
+   {
+    "fiche_id": "idx:4132",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:negociation-et-digitalisation-de-la-relation-client:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — negociation et digitalisation de la relation client en GRAND EST | Établissements/cohortes mesurés : 126 | Taux d'emploi 12 mois : 62."
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:auvergne-rhone-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en AUVERGNE-RHONE-ALPES | Établissements/cohortes mesurés : 64 | Taux d'emploi 12 mois : 58.4% (en AUVERGNE-RHONE-ALPES)"
+   },
+   {
+    "fiche_id": "idx:4212",
+    "nom": "ACCOMPAGNEMENT, SOINS ET SERVICES A LA PERSONNE",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:assistant-de-gestion-de-pme-pmi-a-referentiel-commun-europee:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — assistant de gestion de pme pmi a referentiel commun europeen en GRAND EST | Établissements/cohortes mesurés : 40 | Taux d'emploi 12 m"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 30 | Taux d'emploi 12 mois : 54.1% (en CENTRE-VAL DE LOIRE) |"
+   },
+   {
+    "fiche_id": "idx:4559",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:negociation-et-relation-client:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — negociation et relation client en GRAND EST | Établissements/cohortes mesurés : 40 | Taux d'emploi 12 mois : 56.7% (en GRAND EST) | Ta"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-economiques-gestion:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences économiques, gestion (Grand Est, cohorte 2024) | Niveau d'études : bac+3 | Effect"
+   },
+   {
+    "fiche_id": "idx:4953",
+    "nom": "COMMUNICATION",
+    "etablissement": "ASS DE PROMOTION ET DE GESTION DES FORMATIONS PROFESSIONNELL",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-b-electronique-et-communications:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — systemes numeriques option b : electronique et communications en GRAND EST | Établissements/cohortes mesurés : 64 | Taux d'emploi 12 m"
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:provence-alpes-cote-d-azur",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en PROVENCE-ALPES-COTE D'AZUR | Établissements/cohortes mesurés : 25 | Taux d'emploi 12 mois : 61.2% (en PROVENCE-ALPES-"
+   },
+   {
+    "fiche_id": "idx:4996",
+    "nom": "COMMUNICATION",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_region_diplome:grand-est:bts",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — région GRAND EST | Établissements/cohortes mesurés : 3232 | Taux d'emploi 12 mois : 62.0% (moyenne GRAND EST) | Taux d'emploi 24 mois "
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:design-de-communication-espace-et-volume",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — design de communication : espace et volume (France) | Établissements/cohortes mesurés : 45 | Taux d'emploi 12 mois après diplôme : 51."
+   }
+  ]
+ },
+ {
+  "qid": "fact-008-v1",
+  "question": "Dis-moi : Quel est le salaire médian à l'embauche après pour licence d'informatique à Rennes ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Licence - Lettres - Parcours Français pour le professorat des écoles - Entièreme",
+    "etablissement": "Université de Rennes 2",
+    "ville": "Rennes",
+    "region": "Bretagne",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Français pour le professorat des écoles"
+   },
+   {
+    "fiche_id": "idx:5968",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE DE RENNES",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8394",
+    "nom": "BIO-GEOSCIENCES — M1 Paléontologie-Paléoenvironnements-Patrimoine (PPP)",
+    "etablissement": "Université de Rennes",
+    "ville": "RENNES",
+    "region": "Bretagne",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8416",
+    "nom": "BIO-INFORMATIQUE — None",
+    "etablissement": "Université de Rennes",
+    "ville": "RENNES CEDEX",
+    "region": "Bretagne",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   },
+   {
+    "fiche_id": "idx:8474",
+    "nom": "BIODIVERSITE, ECOLOGIE ET EVOLUTION — M1 Patrimoine Naturel et Biodiversité (PNB",
+    "etablissement": "Université de Rennes",
+    "ville": "RENNES",
+    "region": "Bretagne",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "idx:8725",
+    "nom": "CHIMIE — Chémoinformatique",
+    "etablissement": "Université de Strasbourg",
+    "ville": "STRASBOURG",
+    "region": "Grand Est",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Bretagne (2023) | Effectif pondéré régional : 197 004 | Salaire net médian annuel : 37 500 € | Salaire net médi"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Occitanie (2023) | Effectif pondéré régional : 398 388 | Salaire net médian annuel : 37 500 € | Salaire net méd"
+   },
+   {
+    "fiche_id": "idx:11037",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — None",
+    "etablissement": "Université Rennes 2",
+    "ville": "RENNES CÉDEX",
+    "region": "Bretagne",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Bretagne (2023) | Effectif pondéré régional : 8 592 | Salaire net médian annuel : 32 500"
+   },
+   {
+    "fiche_id": "idx:11248",
+    "nom": "INFORMATIQUE — Cybersécurité - Cyberschool",
+    "etablissement": "Université de Rennes",
+    "ville": "RENNES",
+    "region": "Bretagne",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Bretagne (2023) | Effectif pondéré régional : 468 084 | Salaire net médian annuel : 17 000 € | Salaire net"
+   },
+   {
+    "fiche_id": "idx:11255",
+    "nom": "INFORMATIQUE — Développement et validation logiciel (à distance)",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Occitanie (2023) | Effectif pondéré régional : 866 556 | Salaire net médian annuel : 17 000 € | Salaire ne"
+   },
+   {
+    "fiche_id": "idx:11289",
+    "nom": "INFORMATIQUE — Informatique avancée et applications (à distance)",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Bretagne (2023) | Effectif pondéré régional : 427 284 | Salaire net médian annuel : 21 000 "
+   },
+   {
+    "fiche_id": "idx:11291",
+    "nom": "INFORMATIQUE — Informatique et mathématiques discrètes (IMD)",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "MARSEILLE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Île-de-France (2023) | Effectif pondéré régional : 1 323 348 | Salaire net médian annuel : 29 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "idx:11295",
+    "nom": "INFORMATIQUE — Infrastructures Cloud & Systèmes distribués (SYRIUS)",
+    "etablissement": "Avignon Université",
+    "ville": "AVIGNON CEDEX",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 519 516 | Salaire net médian annuel : 27 000 € | Salaire net médian mensu"
+   },
+   {
+    "fiche_id": "idx:11311",
+    "nom": "INFORMATIQUE — Intelligence Artificielle (IA)",
+    "etablissement": "Université de Rennes",
+    "ville": "RENNES",
+    "region": "Bretagne",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Hauts-de-France (2023) | Effectif pondéré régional : 489 768 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "idx:11313",
+    "nom": "INFORMATIQUE — Intelligence Artificielle Distribuée",
+    "etablissement": "Université Paris Cité",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Occitanie (2023) | Effectif pondéré régional : 33 540 | Salaire net médian annuel : 19 0"
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Occitanie (2023) | Effectif pondéré régional : 609 912 | Salaire net médian annuel : 19 000"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 339 324 | Salaire net médian annuel : 37 500 € | Salair"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Île-de-France (2023) | Effectif pondéré régional : 2 145 348 | Salaire net médian annuel : 45 000 € | Salaire n"
+   }
+  ]
+ },
+ {
+  "qid": "fact-009-v1",
+  "question": "Dis-moi : Quel est le nombre de places pour licence de droit à Montpellier ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DROIT PUBLIC — Théorie et pratique du droit constitutionnel",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8105",
+    "nom": "ADMINISTRATION ET ECHANGES INTERNATIONAUX — Administration et échanges internati",
+    "etablissement": "Université de Montpellier Paul-Valéry",
+    "ville": "MONTPELLIER CEDEX 5",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9296",
+    "nom": "DROIT DES AFFAIRES — Droit de la distribution et des contrats d’affaires",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9488",
+    "nom": "DROIT DU PATRIMOINE — Droit et fiscalité du patrimoine",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13992",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Actuariat",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13993",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Analyse des risques bancaires (ARB)",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13994",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Analyse des risques de marché (ARM)",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14042",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Ingénierie financière (IGF)",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14076",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Système d’Information Economique et Financ",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:35138",
+    "nom": "Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention",
+    "etablissement": "MINISTERE DE LA CULTURE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   }
+  ]
+ }
+]

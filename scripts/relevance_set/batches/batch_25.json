@@ -1,0 +1,2076 @@
+[
+ {
+  "qid": "reconv-006-v3",
+  "question": "Peux-tu m'aider : c'est quoi l'AFEST et est-ce que ça me concerne pour une reconversion en entreprise ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "financement_dispositif:proa",
+    "nom": "Pro-A (reconversion ou promotion par alternance)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Pro-A (reconversion ou promotion par alternance) | Organisme : OPCO (Opérateurs de compétences) | Public cible : Salariés CDI/CDD à temp"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Licence - Portail Informatique - Programmation informatique pour l'entreprise et",
+    "etablissement": "Institut national universitaire Champollion",
+    "ville": "Albi",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": "Programmation informatique pour l'entreprise et l'innovation technologique"
+   },
+   {
+    "fiche_id": "financement_dispositif:ptp_transitions_pro",
+    "nom": "Projet de transition professionnelle (PTP)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Projet de transition professionnelle (PTP) | Organisme : Transitions Pro (associations régionales paritaires) | Public cible : Salariés "
+   },
+   {
+    "fiche_id": "financement_dispositif:akto",
+    "nom": "Akto — OPCO services à forte intensité de main-d'œuvre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Akto — OPCO services à forte intensité de main-d'œuvre | Organisme : Akto | Public cible : Salariés des branches : propreté, hôtellerie-"
+   },
+   {
+    "fiche_id": "financement_dispositif:constructys",
+    "nom": "Constructys — OPCO BTP (Bâtiment, Travaux Publics, Négoce des matériaux)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Constructys — OPCO BTP (Bâtiment, Travaux Publics, Négoce des matériaux) | Organisme : Constructys | Public cible : Salariés des entrepr"
+   },
+   {
+    "fiche_id": "financement_dispositif:agepi",
+    "nom": "Aide à la garde d'enfants pour parent isolé (AGEPI)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la garde d'enfants pour parent isolé (AGEPI) | Organisme : France Travail (Pôle Emploi) | Public cible : Parents isolés (élevant "
+   },
+   {
+    "fiche_id": "financement_dispositif:agefiph",
+    "nom": "AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de ha",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de handicap | Organisme : AGEFIPH (Association de gestion du "
+   },
+   {
+    "fiche_id": "financement_dispositif:cpf",
+    "nom": "Compte Personnel de Formation (CPF)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Compte Personnel de Formation (CPF) | Organisme : Caisse des Dépôts (gestion) / Ministère du Travail (cadre) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "financement_voie:continue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation continue (salariés, agents publics, indépendants) | 10 dispositifs principaux disponibles | Liste : Compte P"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38182",
+    "nom": "Économie de l’entreprise et des marchés (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38182) — Économie de l’entreprise et des marchés (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (R"
+   },
+   {
+    "fiche_id": "metier:MET.666",
+    "nom": "technicien/ne plasturgiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne plasturgiste | Libellé : technicienne plasturgiste / technicien plasturgiste | Synonymes : technicien/ne en plastiques et compo"
+   },
+   {
+    "fiche_id": "financement_dispositif:afdas",
+    "nom": "AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport | Organisme : AFDAS | Public cible : Salariés et indépendants"
+   },
+   {
+    "fiche_id": "metier:MET.849",
+    "nom": "agent/e de joueurs",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : agent/e de joueurs | Libellé : agente de joueurs / agent de joueurs | Synonymes : agent/e sportif/ve | Accroche : Évoluant dans le monde du s"
+   },
+   {
+    "fiche_id": "financement_dispositif:cej",
+    "nom": "Contrat d'engagement jeune (CEJ)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Contrat d'engagement jeune (CEJ) | Organisme : Mission Locale ou France Travail (Pôle Emploi) | Public cible : Jeunes 16-25 ans (jusqu'à"
+   },
+   {
+    "fiche_id": "financement_dispositif:fiphfp",
+    "nom": "FIPHFP — Fonds pour l'insertion des personnes handicapées dans la fonction publi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — FIPHFP — Fonds pour l'insertion des personnes handicapées dans la fonction publique | Organisme : FIPHFP | Public cible : Agents de la f"
+   },
+   {
+    "fiche_id": "financement_dispositif:rsa_jeune",
+    "nom": "Revenu de solidarité active (RSA) jeunes 18-24 ans",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Revenu de solidarité active (RSA) jeunes 18-24 ans | Organisme : CAF (Caisse d'Allocations Familiales) | Public cible : Jeunes 18-24 ans"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37720",
+    "nom": "Diplôme de gestion des entreprises pour dirigeants",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37720) — Diplôme de gestion des entreprises pour dirigeants (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : "
+   }
+  ]
+ },
+ {
+  "qid": "reconv-007-v3",
+  "question": "Peux-tu m'aider : je suis en poste et je veux une formation continue le soir en gestion, ça existe ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Centre de Formation continue - Institut superieur de commerce et gestion",
+    "etablissement": "Centre de Formation continue - Institut superieur de commerc",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:187",
+    "nom": "Centre de Formation continue - Institut superieur de commerce et gestion",
+    "etablissement": "Centre de Formation continue - Institut superieur de commerc",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4558",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4559",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4631",
+    "nom": "ATTACHE COMMERCIAL (CCI FRANCE)",
+    "etablissement": "GROUPEMENT INTERPROFESSIONNEL POUR L'APPRENTISSAGE ET LA FOR",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41765",
+    "nom": "Responsable opérationnel de site en circulation ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41765) — Responsable opérationnel de site en circulation ferroviaire (bac+2) | Niveau européen : Niveau 5 | Métiers visés "
+   },
+   {
+    "fiche_id": "idx:5131",
+    "nom": "COMPTABILITE ET GESTION",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39730",
+    "nom": "CQP Opérateur multipostes en confection",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39730) — CQP Opérateur multipostes en confection (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2402 Ass"
+   },
+   {
+    "fiche_id": "idx:5223",
+    "nom": "COMPTABILITE ET GESTION (DIPLÔME DE)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35750",
+    "nom": "Gestionnaire de Paie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35750) — Gestionnaire de Paie (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1501 Assistanat en ressources"
+   },
+   {
+    "fiche_id": "idx:5453",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39728",
+    "nom": "CQP Opérateur en confection",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39728) — CQP Opérateur en confection (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2402 Assemblage - mo"
+   },
+   {
+    "fiche_id": "idx:5454",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5457",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GROUPEMENT INTERPROFESSIONNEL POUR L'APPRENTISSAGE ET LA FOR",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37157",
+    "nom": "Opérateur de Circulation Ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37157) — Opérateur de Circulation Ferroviaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : N4401 Circulatio"
+   },
+   {
+    "fiche_id": "idx:6127",
+    "nom": "GESTION DE LA PME",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35378",
+    "nom": "Gestion des entreprises et des administrations : contrôle de gestion et pilotage",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35378) — Gestion des entreprises et des administrations : contrôle de gestion et pilotage de la performance (bac+3) | Nive"
+   },
+   {
+    "fiche_id": "idx:6130",
+    "nom": "GESTION DE LA PME",
+    "etablissement": "GROUPEMENT INTERPROFESSIONNEL POUR L'APPRENTISSAGE ET LA FOR",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40273",
+    "nom": "Conducteur de RER",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40273) — Conducteur de RER (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : N4301 Conduite sur rails | Spéciali"
+   },
+   {
+    "fiche_id": "idx:7166",
+    "nom": "MANAGER EN RESSOURCES HUMAINES (ECORIS, ICADEMIE)",
+    "etablissement": "INSTITUT POUR LA FORMATION CONTINUE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41562",
+    "nom": "Gestion des entreprises et des administrations : Contrôle de gestion et pilotage",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41562) — Gestion des entreprises et des administrations : Contrôle de gestion et pilotage de la performance (bac+3) | Nive"
+   },
+   {
+    "fiche_id": "idx:7207",
+    "nom": "MANAGER EN STRATEGIE D'ENTREPRISE (ECORIS)",
+    "etablissement": "INSTITUT POUR LA FORMATION CONTINUE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41971",
+    "nom": "CQP Opérateur en préparation de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41971) — CQP Opérateur en préparation de commandes (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2101 A"
+   },
+   {
+    "fiche_id": "idx:7313",
+    "nom": "METIERS DE L'AUDIOVISUEL OPTION GESTION DE LA PRODUCTION",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.30",
+    "nom": "responsable de formation",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : responsable de formation | Synonymes : chef/fe de projet formation, conseiller/ère en formation, consultant/e en formation, directeur/trice d"
+   },
+   {
+    "fiche_id": "idx:8998",
+    "nom": "CONTROLE DE GESTION ET AUDIT ORGANISATIONNEL — Contrôleur de Gestion Business Pa",
+    "etablissement": "Université de Caen Normandie",
+    "ville": "CAEN",
+    "region": "Normandie",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.132",
+    "nom": "médiateur/trice social/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médiateur/trice social/e | Libellé : médiatrice sociale / médiateur social | Accroche : Les médiateurs sociaux exercent en zones sensibles po"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39729",
+    "nom": "CQP Opérateur confection main",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39729) — CQP Opérateur confection main (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2402 Assemblage - "
+   },
+   {
+    "fiche_id": "metier:MET.561",
+    "nom": "aide-soignant/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : aide-soignant/e | Libellé : aide-soignante / aide-soignant | Synonymes : aide infirmier/ère, assistant/e en soins | Accroche : À l'hôpital, e"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39001",
+    "nom": "Sciences économiques et sociales (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39001) — Sciences économiques et sociales (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35377",
+    "nom": "Gestion des entreprises et des administrations : gestion entrepreneuriat et mana",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35377) — Gestion des entreprises et des administrations : gestion entrepreneuriat et management d’activités (bac+3) | Nive"
+   }
+  ]
+ },
+ {
+  "qid": "base-001-v3",
+  "question": "Peux-tu m'aider : qu'est-ce qu'un BUT et combien de temps ça dure ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T. Laval",
+    "ville": "Laval",
+    "region": "Pays de la Loire",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-admission",
+    "nom": "Phase d'admission Parcoursup 2026 — début des réponses",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026. Les candidats reçoivent leurs propositions d'admission et doivent y répondre "
+   },
+   {
+    "fiche_id": "metier:MET.554",
+    "nom": "technicien/ne de maintenance en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de maintenance en informatique | Libellé : technicienne de maintenance en informatique / technicien de maintenance en informati"
+   },
+   {
+    "fiche_id": "metier:MET.316",
+    "nom": "concepteur/trice-rédacteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice-rédacteur/trice | Libellé : conceptrice-rédactrice / concepteur-rédacteur | Accroche : Le concepteur-rédacteur travaille à t"
+   }
+  ]
+ },
+ {
+  "qid": "base-002-v3",
+  "question": "Peux-tu m'aider : je suis en L2 d'éco et je veux me réorienter vers l'informatique, comment faire ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "etablissement": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "idx:1411",
+    "nom": "Ecole Pour l'informatique et les nouvelles technologies",
+    "etablissement": "Ecole Pour l'informatique et les nouvelles technologies",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.592",
+    "nom": "cogniticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : cogniticien/ne | Libellé : cogniticienne / cogniticien | Synonymes : analyste cogniticien/ne, cogniticien/ne informatique, ingénieur/e cognit"
+   },
+   {
+    "fiche_id": "idx:1412",
+    "nom": "Ecole pour l'informatique et les nouvelles technologies (EPITECH Campus de Nice)",
+    "etablissement": "Ecole pour l'informatique et les nouvelles technologies (EPI",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_deuxième_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable deuxième groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L"
+   },
+   {
+    "fiche_id": "idx:1413",
+    "nom": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "etablissement": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1432",
+    "nom": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "etablissement": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 4 néobacheliers ; 25.0% passent en L2 "
+   },
+   {
+    "fiche_id": "idx:1433",
+    "nom": "Ecole supérieure d'informatique Metz",
+    "etablissement": "Ecole supérieure d'informatique Metz",
+    "ville": "",
+    "region": "Grand Est",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1444",
+    "nom": "Ecole supérieure de génie informatique - Réseau des grandes écoles spécialisées",
+    "etablissement": "Ecole supérieure de génie informatique - Réseau des grandes ",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_technologique_hors_stmg|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC technologique hors STMG | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 100.0% pa"
+   },
+   {
+    "fiche_id": "idx:1532",
+    "nom": "ENI ECOLE INFORMATIQUE",
+    "etablissement": "ENI ECOLE INFORMATIQUE",
+    "ville": "",
+    "region": "Pays de la Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1541",
+    "nom": "EPITECH Lille - Ecole de l'innovation et de l'expertise informatique",
+    "etablissement": "EPITECH Lille - Ecole de l'innovation et de l'expertise info",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 7 néobacheliers ; 100.0% passent en L2 en 1 an ; 100.0%"
+   },
+   {
+    "fiche_id": "idx:1553",
+    "nom": "ESIEA - Ecole Supérieure d'Informatique Electronique Automatique",
+    "etablissement": "ESIEA - Ecole Supérieure d'Informatique Electronique Automat",
+    "ville": "",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 9 néobacheliers ; 44.4% passent en L2 en 1 an ; 44."
+   },
+   {
+    "fiche_id": "idx:1740",
+    "nom": "Ingetis Ecole d'Ingénierie Informatique",
+    "etablissement": "Ingetis Ecole d'Ingénierie Informatique",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_premier_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable premier groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L2"
+   },
+   {
+    "fiche_id": "idx:2736",
+    "nom": "Organisme de formation-Centre de formation d'apprentis - Ecole supérieure inform",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis - Eco",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 3 néobacheliers ; "
+   },
+   {
+    "fiche_id": "idx:5955",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNION UNIVERSITE ECONOMIE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 30 néobacheliers ; 63.3% passent en L2 en 1 an ; 83.3% "
+   },
+   {
+    "fiche_id": "idx:6141",
+    "nom": "GESTION DE LA PME",
+    "etablissement": "INSTITUT DE FORMATION A L'INFORMATIQUE POUR LE DEVEL DE L'EN",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 6 néobacheliers ; 100.0% passent en L2 en 1 an ; 1"
+   },
+   {
+    "fiche_id": "idx:6320",
+    "nom": "GESTIONNAIRE PAIE ET ADMINISTRATION SOCIALE (SCIENCES-U LYON)",
+    "etablissement": "INSTITUT SUPERIEUR D'INFORMATIQUE ET DE MANAGEMENT DE L'INFO",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.190",
+    "nom": "moniteur/trice-éducateur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : moniteur/trice-éducateur/trice | Libellé : monitrice-éducatrice / moniteur-éducateur | Accroche : Au sein d'établissements spécialisés, qui a"
+   },
+   {
+    "fiche_id": "idx:6420",
+    "nom": "INGENIEUR DIPLOME DE L'ECOLE NATIONALE SUPERIEURE D'INFORMATIQUE ET DE MATHEMATI",
+    "etablissement": "ASSOC DAUPHINOISE FORMATION INDUSTRIE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 14 néobacheliers ; 50.0% "
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 417 néobacheliers ; 71.0% passent en L2 en 1 an ; 76.3%"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 131 néobacheliers ; 53.4% passent en L2 en 1 an ; 6"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 19 néobacheliers ; 36.8% passent en L2 en 1 an ;"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 123 néobacheliers ; 10.6% passent en L2"
+   }
+  ]
+ },
+ {
+  "qid": "base-003-v3",
+  "question": "Peux-tu m'aider : quels métiers peut-on faire après un master en intelligence artificielle ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "INFORMATIQUE — Intelligence Artificielle Distribuée",
+    "etablissement": "Université Paris Cité",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18931",
+    "nom": "licence pro mention métiers de l'intelligence artificielle : outils et méthodes",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37827",
+    "nom": "Développeur en intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37827) — Développeur en intelligence artificielle (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étud"
+   },
+   {
+    "fiche_id": "idx:33301",
+    "nom": "Licence professionnelle - Métiers de l’industrie : Mécatronique, Robotique  parc",
+    "etablissement": "I.U.T de Béziers",
+    "ville": "Béziers",
+    "region": "Occitanie",
+    "domain": "data_ia",
+    "source": "parcoursup",
+    "extrait": "Métiers de l’industrie : Mécatronique, Robotique  parcours Robotique et Intelligence Artificielle"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41813",
+    "nom": "Chef de projet data et intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41813) — Chef de projet data et intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1"
+   },
+   {
+    "fiche_id": "idx:36542",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": "CONSERVATOIRE NATIONAL DES ARTS ET METIERS",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38584",
+    "nom": "Chef de projet en développement de solutions d'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38584) — Chef de projet en développement de solutions d'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | M"
+   },
+   {
+    "fiche_id": "idx:37181",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": "UNIVERSITE DE CAEN NORMANDIE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39485",
+    "nom": "Intelligence artificielle (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39485) — Intelligence artificielle (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : H1206 M"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39541",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39541) — Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Science de la donnée et intelligence "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40551",
+    "nom": "Chef de projets en intelligence artificielle et sciences des données (MS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40551) — Chef de projets en intelligence artificielle et sciences des données (MS) (bac+5) | Niveau européen : Niveau 7 | "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41068",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41068) — Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale) (bac+3) | Niveau européen : Niveau "
+   },
+   {
+    "fiche_id": "idx:9459",
+    "nom": "DROIT DU NUMERIQUE — Droit de l'intelligence artificielle",
+    "etablissement": "Institut catholique de Paris",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9461",
+    "nom": "DROIT DU NUMERIQUE — Droit des activités numériques et de l'intelligence artific",
+    "etablissement": "Université de Caen Normandie",
+    "ville": "CAEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38587",
+    "nom": "Expert en ingénierie de l'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38587) — Expert en ingénierie de l'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) :"
+   },
+   {
+    "fiche_id": "idx:9983",
+    "nom": "ECONOMIE APPLIQUEE — Double-diplôme Master Méthodes appliquées de la statistique",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10148",
+    "nom": "ELECTRONIQUE, ENERGIE ELECTRIQUE, AUTOMATIQUE — Intelligence Artificielle et Aut",
+    "etablissement": "Université de Perpignan Via Domitia",
+    "ville": "PERPIGNAN",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11104",
+    "nom": "IA - INTELLIGENCE ARTIFICIELLE / AI - ARTIFICIAL INTELLIGENCE — None",
+    "etablissement": "Institut national des sciences appliquées de Lyon",
+    "ville": "VILLEURBANNE CEDEX",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11224",
+    "nom": "INFORMATIQUE — Algorithmes, Intelligence Artificielle, Interactions, Décisions (",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11227",
+    "nom": "INFORMATIQUE — Applications Réparties, Intelligence Artificielle et Sécurité (AR",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX",
+    "region": "Centre-Val de Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42011",
+    "nom": "Diplôme d'études supérieures en intelligence artificielle et sciences des donnée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42011) — Diplôme d'études supérieures en intelligence artificielle et sciences des données (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "idx:11302",
+    "nom": "INFORMATIQUE — Ingénierie en intelligence artificielle",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "ville": "ST DENIS CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11306",
+    "nom": "INFORMATIQUE — Intelligence artificielle",
+    "etablissement": "Le Mans Université",
+    "ville": "LE MANS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1889",
+    "nom": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1889 : Ingénieur / Ingénieure en Intelligence Artificielle (IA) | Compétences par enjeu : Data et Nouvelles technologies (Optimiser les p"
+   }
+  ]
+ },
+ {
+  "qid": "base-004-v3",
+  "question": "Peux-tu m'aider : comment obtenir une bourse étudiante et c'est quoi le DSE ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "financement_voie:initial",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 11 dispositifs principaux disponibles | Liste : Bourse sur cri"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+    "nom": "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution "
+   },
+   {
+    "fiche_id": "financement_dispositif:bourse_crous_sup",
+    "nom": "Bourse sur critères sociaux CROUS — enseignement supérieur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse sur critères sociaux CROUS — enseignement supérieur | Organisme : CROUS | Public cible : Étudiants post-bac (BTS, BUT, Licence, M"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+    "nom": "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesSer"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:ouverture-dse",
+    "nom": "Ouverture du Dossier Social Étudiant (DSE) 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le Dossier Social Étudiant (DSE) 2026 ouvre le 2 mars 2026 sur la plateforme MesServices.Étudiants.gouv.fr. Le DSE est le dossier UNIQUE pour demander"
+   },
+   {
+    "fiche_id": "financement_dispositif:bourse_lycee",
+    "nom": "Bourse de lycée (collégiens et lycéens)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse de lycée (collégiens et lycéens) | Organisme : Ministère de l'Éducation Nationale | Public cible : Élèves au lycée général, techn"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Centre de Formation de la Bourse du Travail",
+    "etablissement": "Centre de Formation de la Bourse du Travail",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_mobilite_master",
+    "nom": "Aide à la mobilité Master",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la mobilité Master | Organisme : Ministère de l'Enseignement supérieur | Public cible : Étudiants boursiers CROUS qui changent de"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+    "nom": "Premier cycle d'attribution des logements CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le premier cycle d'attribution des logements CROUS pour la rentrée 2026 a lieu le 2 juin 2026. Les étudiants ayant fait leur DSE et saisi leurs vœux d"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "metier:MET.397",
+    "nom": "analyste financier/ère et ESG",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : analyste financier/ère et ESG | Libellé : analyste financière et ESG / analyste financier et ESG | Synonymes : chargé/e d'études financières "
+   },
+   {
+    "fiche_id": "metier:MET.8191",
+    "nom": "chargé/e d'orientation et d'insertion profesionnelle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e d'orientation et d'insertion profesionnelle | Libellé : chargée d'orientation et d'insertion professionnelle / chargé d'orientation "
+   },
+   {
+    "fiche_id": "domtom_dispositif:drom_mobilite_erasmus_ocean_indien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "territoire_drom",
+    "source": "domtom_curated",
+    "extrait": "DROM-COM (extension Sprint 8 W2) — Erasmus+ régional Océan Indien (depuis La Réunion / Mayotte) | Pour les étudiants de l'Université de La Réunion ou "
+   },
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "metier:MET.449",
+    "nom": "linguiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : linguiste | Synonymes : chercheur/euse en linguistique | Accroche : Observer, décortiquer, comprendre le fonctionnement du langage et des lan"
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_mobilite_internationale",
+    "nom": "Aide à la mobilité internationale (CROUS / Erasmus+)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la mobilité internationale (CROUS / Erasmus+) | Organisme : CROUS + Union Européenne (Erasmus+) | Public cible : Étudiants en mob"
+   },
+   {
+    "fiche_id": "metier:MET.398",
+    "nom": "agent/e de transit",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : agent/e de transit | Libellé : agente de transit / agent de transit | Synonymes : affréteur/euse, commissionnaire de transport, employé/e de "
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_paje",
+    "nom": "Prime à la naissance / PreParE pour étudiants parents",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Prime à la naissance / PreParE pour étudiants parents | Organisme : CAF | Public cible : Étudiants parents de jeunes enfants | Concerne "
+   },
+   {
+    "fiche_id": "crous_region:reunion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "crous",
+    "source": "crous_combine_logements_restos",
+    "extrait": "Vie étudiante CROUS CROUS Réunion (logement + restauration universitaire) | Restaurants universitaires : 12 lieux totaux | Types principaux : Restaura"
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_premiere_installation",
+    "nom": "Aide à la première installation (CROUS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la première installation (CROUS) | Organisme : CROUS | Public cible : Étudiants éligibles aux logements CROUS qui s'installent da"
+   },
+   {
+    "fiche_id": "rome_metier:K1302",
+    "nom": "Assistant / Assistante de vie dépendance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1302 : Assistant / Assistante de vie dépendance | Compétences par enjeu : Soin (Accompagner une personne lors d'un déplacement, Aider des"
+   }
+  ]
+ },
+ {
+  "qid": "base-005-v3",
+  "question": "Peux-tu m'aider : c'est quoi l'alternance et quels sont ses avantages ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Groupe Alternance Chartres",
+    "etablissement": "Groupe Alternance Chartres",
+    "ville": "",
+    "region": "Centre-Val de Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:proa",
+    "nom": "Pro-A (reconversion ou promotion par alternance)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Pro-A (reconversion ou promotion par alternance) | Organisme : OPCO (Opérateurs de compétences) | Public cible : Salariés CDI/CDD à temp"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39258",
+    "nom": "Responsable rémunération globale et avantages sociaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39258) — Responsable rémunération globale et avantages sociaux (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME)"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37998",
+    "nom": "Responsable en rémunération globale et avantages sociaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37998) — Responsable en rémunération globale et avantages sociaux (bac+5) | Niveau européen : Niveau 7 | Métiers visés (RO"
+   }
+  ]
+ },
+ {
+  "qid": "base-006-v3",
+  "question": "Peux-tu m'aider : après une prépa, qu'est-ce que je peux intégrer comme écoles ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "prépa digitale",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15684",
+    "nom": "année préparatoire aux concours des grandes écoles de cinéma - photographie - so",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15691",
+    "nom": "année préparatoire privée aux concours des Écoles nationales supérieures d'archi",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15692",
+    "nom": "année préparatoire privée aux concours des écoles supérieures d'art et design",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15693",
+    "nom": "année préparatoire publique aux concours des écoles supérieures d'art et de desi",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16647",
+    "nom": "classe préparatoire aux concours des écoles supérieures d'art dramatique",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16710",
+    "nom": "classe préparatoire égalité des chances aux concours des écoles de journalisme",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16989",
+    "nom": "cycle préparatoire intégré de chimie / Écoles de la Fédération Gay-Lussac",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18423",
+    "nom": "DU préparation aux grandes écoles d'économie et de management",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20022",
+    "nom": "préparation au concours d'agent territorial spécialisé des écoles maternelles (A",
+    "etablissement": "ATSEM",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20043",
+    "nom": "préparation au concours de professeurs des écoles du privé sous contrat",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20044",
+    "nom": "préparation au concours de professeurs des écoles publiques",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:20051",
+    "nom": "préparation aux concours d'entrée aux écoles de journalisme reconnues par la pro",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28081",
+    "nom": "CUPGE - Cursus préparatoire aux concours des grandes écoles d'ingénieurs",
+    "etablissement": "Université Claude Bernard Lyon 1",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28084",
+    "nom": "CUPGE - Cycle Universitaire de Préparation aux Grandes Ecoles Scientifiques",
+    "etablissement": "Université de la Polynésie française",
+    "ville": "Faaa",
+    "region": "Polynésie française",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28085",
+    "nom": "CUPGE - Cycle Universitaire Préparatoire aux Grandes Ecoles",
+    "etablissement": "Ecole Nationale Supérieure des Sciences Appliquées et de Tec",
+    "ville": "Lannion",
+    "region": "Bretagne",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": "Cybersécurité"
+   }
+  ]
+ },
+ {
+  "qid": "base-007-v3",
+  "question": "Peux-tu m'aider : quelle est la différence entre une licence et un BUT ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T. Laval",
+    "ville": "Laval",
+    "region": "Pays de la Loire",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37157",
+    "nom": "Opérateur de Circulation Ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37157) — Opérateur de Circulation Ferroviaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : N4401 Circulatio"
+   },
+   {
+    "fiche_id": "metier:MET.67",
+    "nom": "secrétaire d'édition",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : secrétaire d'édition | Synonymes : assistant/e d'édition | Accroche : La mission du secrétaire d'édition ? Transformer un manuscrit en livre,"
+   },
+   {
+    "fiche_id": "metier:MET.604",
+    "nom": "conseiller/ère en voyages",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : conseiller/ère en voyages | Libellé : conseillère en voyages / conseiller en voyages | Synonymes : agent/e de comptoir, agent/e de voyage, bi"
+   }
+  ]
+ },
+ {
+  "qid": "miage-001",
+  "question": "Quel salaire net puis-je viser en sortie de Master MIAGE à Lille ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — MIAGE - F",
+    "etablissement": "Université Toulouse Capitole",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1374",
+    "nom": "Ecole d'Optique et de Lunetterie de Lille",
+    "etablissement": "Ecole d'Optique et de Lunetterie de Lille",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11321",
+    "nom": "INFORMATIQUE — Internet of things and cybersecurity",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "idx:11322",
+    "nom": "INFORMATIQUE — Internet of things and cybersecurity - en alternance",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   },
+   {
+    "fiche_id": "idx:12780",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénieri",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Occitanie (2023) | Effectif pondéré régional : 398 388 | Salaire net médian annuel : 37 500 € | Salaire net méd"
+   },
+   {
+    "fiche_id": "idx:12781",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénieri",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Bretagne (2023) | Effectif pondéré régional : 197 004 | Salaire net médian annuel : 37 500 € | Salaire net médi"
+   },
+   {
+    "fiche_id": "idx:14934",
+    "nom": "SCIENCES DE LA TERRE ET DES PLANETES, ENVIRONNEMENT — Paleontology, geoconservat",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14935",
+    "nom": "SCIENCES DE LA TERRE ET DES PLANETES, ENVIRONNEMENT — Paleontology, paleoclimato",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Occitanie (2023) | Effectif pondéré régional : 866 556 | Salaire net médian annuel : 17 000 € | Salaire ne"
+   },
+   {
+    "fiche_id": "idx:14936",
+    "nom": "SCIENCES DE LA TERRE ET DES PLANETES, ENVIRONNEMENT — Paleontology, paleoclimato",
+    "etablissement": "Université de Lille",
+    "ville": "UPPSALA",
+    "region": "Hauts-de-France",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Bretagne (2023) | Effectif pondéré régional : 8 592 | Salaire net médian annuel : 32 500"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Bretagne (2023) | Effectif pondéré régional : 468 084 | Salaire net médian annuel : 17 000 € | Salaire net"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Hauts-de-France (2023) | Effectif pondéré régional : 489 768 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Île-de-France (2023) | Effectif pondéré régional : 1 323 348 | Salaire net médian annuel : 29 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 519 516 | Salaire net médian annuel : 27 000 € | Salaire net médian mensu"
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Occitanie (2023) | Effectif pondéré régional : 33 540 | Salaire net médian annuel : 19 0"
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Bretagne (2023) | Effectif pondéré régional : 427 284 | Salaire net médian annuel : 21 000 "
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Occitanie (2023) | Effectif pondéré régional : 609 912 | Salaire net médian annuel : 19 000"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Île-de-France (2023) | Effectif pondéré régional : 2 145 348 | Salaire net médian annuel : 45 000 € | Salaire n"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Hauts-de-France (2023) | Effectif pondéré régional : 326 100 | Salaire net médian annuel : 37 500 € | Salaire n"
+   }
+  ]
+ },
+ {
+  "qid": "miage-002",
+  "question": "Quelles perspectives d'insertion après un Master MIAGE à l'université de Lille ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénieri",
+    "etablissement": "Université de Toulouse",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12780",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénieri",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12781",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénieri",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:3713",
+    "nom": "Organisme de formation-Centre de formation d'apprentis Université des Compétence",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis Unive",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4549",
+    "nom": "ANIMATION ET GESTION DES ACTIVITES PHYSIQUES, SPORTIVES OU CULTURELLES (DEUST)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4638",
+    "nom": "AUTOMATIQUE, ROBOTIQUE (MASTER)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4657",
+    "nom": "BIOTECHNOLOGIES (MASTER)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4664",
+    "nom": "CARRIERES JURIDIQUES : ENTREPRISE ET ASSOCIATION (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4832",
+    "nom": "CHIMIE (MASTER)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4842",
+    "nom": "CHIMIE : CHIMIE INDUSTRIELLE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4850",
+    "nom": "CHIMIE : MATERIAUX ET PRODUITS FORMULES (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4857",
+    "nom": "CHIMIE : SYNTHESE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4876",
+    "nom": "COMMERCE ET DISTRIBUTION (MASTER LILLE)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5569",
+    "nom": "CONTROLE DE GESTION ET AUDIT ORGANISATIONNEL (MASTER)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5717",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "miage-003",
+  "question": "Master MIAGE Lille : taux d'admission et débouchés ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — None",
+    "etablissement": "Université de Picardie Jules-Verne",
+    "ville": "AMIENS CEDEX 1",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12780",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénieri",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12781",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — Ingénieri",
+    "etablissement": "Université de Lille",
+    "ville": "VILLENEUVE D'ASCQ",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ }
+]

@@ -1,0 +1,3427 @@
+[
+ {
+  "qid": "metier-009",
+  "question": "Quels sont les débouchés du métier de psychologue ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.871",
+    "nom": "psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : psychologue | Accroche : Aider les personnes souffrant de troubles mentaux, psychiques et comportementaux, telle est la mission du ou de la p"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.871",
+    "nom": "psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychologue | Codes ROME : K1104 (Psychologie) | GFE : GFE R : santé, social, soins personnels | Domaine : histoire-géographie, psycho"
+   },
+   {
+    "fiche_id": "rome_metier:K1104",
+    "nom": "Psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1104 : Psychologue | Compétences par enjeu : Soin (Pratiquer une séance de psychothérapie individuelle, de groupe, familiale, Suivre l'év"
+   },
+   {
+    "fiche_id": "metier:MET.361",
+    "nom": "psychologue de l'Éducation nationale spécialité éducation, développement et appr",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : psychologue de l'Éducation nationale spécialité éducation, développement et apprentissages | Accroche : Le ou la psy-EN (psychologue de l'Édu"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.361",
+    "nom": "psychologue de l'Éducation nationale spécialité éducation, développement et appr",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychologue de l'Éducation nationale spécialité éducation, développement et apprentissages | Codes ROME : K2112 (Orientation scolaire "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41646",
+    "nom": "Psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41646) — Psychologue (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : K1104 Psychologie, K2401 Recherche en s"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "certificat d'aptitude aux fonctions de psychologue de l'éducation nationale spéc",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39023",
+    "nom": "Psychologie (Fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39023) — Psychologie (Fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1104 Psychologie, K1"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.634",
+    "nom": "psychologue de l'éducation nationale spécialité éducation, développement et cons",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychologue de l'éducation nationale spécialité éducation, développement et conseil en orientation scolaire et professionnelle | Codes"
+   },
+   {
+    "fiche_id": "metier:MET.634",
+    "nom": "psychologue de l'éducation nationale spécialité éducation, développement et cons",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : psychologue de l'éducation nationale spécialité éducation, développement et conseil en orientation scolaire et professionnelle | Synonymes : "
+   },
+   {
+    "fiche_id": "rome_metier:K1107",
+    "nom": "Conseiller / Conseillère d’orientation psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1107 : Conseiller / Conseillère d’orientation psychologue | Compétences par enjeu : Conseil, Transmission (Accompagner les collégiens, ly"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37813",
+    "nom": "Psychologue du travail",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37813) — Psychologue du travail (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : K1801 Conseil en emploi et i"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39025",
+    "nom": "Psychologie (Fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39025) — Psychologie (Fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : K1104 Psychologie | S"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39022",
+    "nom": "Psychologie clinique, psychopathologie et psychologie de la santé (fiche nationa",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39022) — Psychologie clinique, psychopathologie et psychologie de la santé (fiche nationale) (bac+5) | Niveau européen : N"
+   },
+   {
+    "fiche_id": "rome_metier:J1131",
+    "nom": "Psychiatre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1131 : Psychiatre | Compétences par enjeu : Soin (Détecter des situations à risques (maltraitance, harcèlement, urgence sociale, addictio"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38989",
+    "nom": "Psychologie : psychopathologie clinique psychanalytique (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38989) — Psychologie : psychopathologie clinique psychanalytique (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.7994",
+    "nom": "technicien / technicienne de maintenance en infrastructure aéroportuaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : technicien / technicienne de maintenance en infrastructure aéroportuaire | Codes ROME : I1304 (Installation et maintenance d'équipemen"
+   },
+   {
+    "fiche_id": "voie_pre_bac:cap:communication",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "CAP en communication | 1 spécialité référencée (ONISEP) | Liste : CAP arts de la reliure — https://www.onisep.fr/http/redirection/formation/slug/FOR.1"
+   }
+  ]
+ },
+ {
+  "qid": "metier-010",
+  "question": "Quelles études faut-il faire pour devenir architecte ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.161",
+    "nom": "architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte | Accroche : Construction d'un immeuble ou d'un hôpital, réhabilitation de logements sociaux, reconversion d'une usine en bureaux."
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Architecte d'intérieur",
+    "etablissement": "ASSOCIATION INTERNATIONALE POUR LA FORMATION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "rome_metier:F1101",
+    "nom": "Architecte du bâtiment",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME F1101 : Architecte du bâtiment | Compétences par enjeu : Aménagement (Concevoir un projet architectural ou d'aménagement, Décliner la conc"
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37206",
+    "nom": "Assistant  d’architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37206) — Assistant  d’architecte (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : F1106 Ingénierie et études du"
+   },
+   {
+    "fiche_id": "metier:MET.8071",
+    "nom": "architecte-ingénieur/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte-ingénieur/e | Libellé : architecte-ingénieure / architecte-ingénieur | Accroche : Exerçant en cabinet d’architecture ou en bureau "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38343",
+    "nom": "DEEA - Diplôme d'études en architecture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38343) — DEEA - Diplôme d'études en architecture (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : F1106 Ingén"
+   },
+   {
+    "fiche_id": "metier:MET.648",
+    "nom": "assistant/e en architecture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : assistant/e en architecture | Libellé : assistante en architecture / assistant en architecture | Synonymes : assistant/e de conception des ou"
+   },
+   {
+    "fiche_id": "metier:MET.864",
+    "nom": "architecte naval/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte naval/e | Libellé : architecte navale / architecte naval | Accroche : L'architecte naval imagine la coque, le pont ou la voilure d"
+   },
+   {
+    "fiche_id": "metier:MET.715",
+    "nom": "chargé/e de recherche en acoustique musicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e de recherche en acoustique musicale | Libellé : chargée de recherche en acoustique musicale / chargé de recherche en acoustique musi"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.161",
+    "nom": "architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : architecte | Codes ROME : F1101 (Architecture du BTP et du paysage) | GFE : GFE C : bâtiment | Domaine : construction, architecture, t"
+   },
+   {
+    "fiche_id": "metier:MET.247",
+    "nom": "thanatopracteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : thanatopracteur/trice | Libellé : thanatopractrice / thanatopracteur | Accroche : Salariés d'une entreprise de pompes funèbres, d'un service "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38342",
+    "nom": "DEA - Diplôme d'Etat d'architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38342) — DEA - Diplôme d'Etat d'architecte (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : F1106 Ingénierie "
+   },
+   {
+    "fiche_id": "metier:MET.504",
+    "nom": "mannequin",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : mannequin | Synonymes : modèle | Accroche : Faire la couverture de célèbres magazines de mode, défiler pour les grands noms de la haute-coutu"
+   },
+   {
+    "fiche_id": "metier:MET.813",
+    "nom": "roboticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : roboticien/ne | Libellé : roboticienne / roboticien | Synonymes : ingénieur/e en robotique, mécatronicien/ne | Accroche : Spécialiste des sys"
+   },
+   {
+    "fiche_id": "rome_metier:F1102",
+    "nom": "Architecte d'intérieur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME F1102 : Architecte d'intérieur | Compétences par enjeu : Aménagement (Concevoir un projet architectural ou d'aménagement, Concevoir l'amén"
+   },
+   {
+    "fiche_id": "metier:MET.434",
+    "nom": "directeur/trice d'office de tourisme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : directeur/trice d'office de tourisme | Libellé : directrice d'office de tourisme / directeur d'office de tourisme | Accroche : Le directeur d"
+   },
+   {
+    "fiche_id": "metier:MET.461",
+    "nom": "statisticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : statisticien/ne | Libellé : statisticienne / statisticien | Synonymes : chargé/e d'études statistiques | Accroche : Opinions politiques, pote"
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "metier:MET.832",
+    "nom": "pisteur/euse secouriste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pisteur/euse secouriste | Libellé : pisteuse secouriste / pisteur secouriste | Accroche : Dans une station de sports d'hiver, la pisteuse ou "
+   },
+   {
+    "fiche_id": "rome_metier:F1127",
+    "nom": "Architecte-urbaniste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME F1127 : Architecte-urbaniste | Compétences par enjeu : Aménagement (Concevoir le plan local d'urbanisme d'une commune, Concevoir un projet"
+   },
+   {
+    "fiche_id": "metier:MET.155",
+    "nom": "lad-jockey, lad-driver",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : lad-jockey, lad-driver | Synonymes : cavalier/ère d'entraînement | Accroche : Le lad-jockey s'occupe de chevaux de galop ; le lad-driver, de "
+   },
+   {
+    "fiche_id": "metier:MET.8107",
+    "nom": "pilote de port",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote de port | Accroche : Exercer comme pilote de port, c’est conseiller et assister le commandant pour aider les géants des mers à accoste"
+   },
+   {
+    "fiche_id": "metier:MET.258",
+    "nom": "architecte d'intérieur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte d'intérieur | Synonymes : designer d'espace intérieur | Accroche : L'architecte d'intérieur conçoit et aménage des espaces intérie"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39413",
+    "nom": "Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39413) — Diplôme de spécialisation et d'approfondissement en architecture (DSA) - mention Architecture et Patrimoine (bac+"
+   },
+   {
+    "fiche_id": "metier:MET.146",
+    "nom": "comédien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : comédien/ne | Libellé : comédienne / comédien | Synonymes : acteur/trice | Accroche : Incarner un rôle sur scène ou à l'écran, apparaître dan"
+   }
+  ]
+ },
+ {
+  "qid": "metier-011",
+  "question": "Quel est le salaire d'un comptable en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.11",
+    "nom": "comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : comptable | Synonymes : collaborateur/trice comptable, comptable général/e, comptable unique | Accroche : Indispensable à toute organisation "
+   },
+   {
+    "fiche_id": "rome_metier:M1211",
+    "nom": "Expert-comptable / Experte-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1211 : Expert-comptable / Experte-comptable | Compétences par enjeu : Gestion et contrôle (Réaliser un bilan comptable, Superviser une cl"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "collaborateur comptable",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1203",
+    "nom": "Comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1203 : Comptable | Compétences par enjeu : Gestion administrative et comptable (Préparer des documents comptables, Gérer les notes de fra"
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "dares_fap_region:L1Z:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Employés de la comptabilité en Grand Est (FAP L1Z) | Effectifs 2019 régionaux : 22 025 personnes | Postes à pourvoir 2019-2030 :"
+   },
+   {
+    "fiche_id": "rome_metier:M1213",
+    "nom": "Assistant / Assistante comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1213 : Assistant / Assistante comptable | Compétences par enjeu : Gestion administrative et comptable (Enregistrer les opérations comptab"
+   },
+   {
+    "fiche_id": "dares_fap:L1Z",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — FAP L1Z : Employés de la comptabilité | Effectifs 2019 France : 285 076 personnes | Créations/destructions nettes 2019-2030 : -6"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.149",
+    "nom": "expert-comptable / experte-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : expert-comptable / experte-comptable | Codes ROME : M1202 (Audit et contrôle comptables et financiers) | GFE : GFE Q : commerce, gesti"
+   },
+   {
+    "fiche_id": "rome_metier:M1202",
+    "nom": "Auditeur comptable et financier / Auditrice comptable et financière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1202 : Auditeur comptable et financier / Auditrice comptable et financière | Compétences par enjeu : Gestion et contrôle (Réaliser un aud"
+   },
+   {
+    "fiche_id": "metier:MET.7772",
+    "nom": "collaborateur/rice de cabinet d'expertise comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : collaborateur/rice de cabinet d'expertise comptable | Libellé : collaboratrice de cabinet d'expertise comptable / collaborateur de cabinet d'"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.195",
+    "nom": "chef / cheffe comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chef / cheffe comptable | Codes ROME : M1206 (Management de groupe ou de service comptable) | GFE : GFE Q : commerce, gestion, finance"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP36522",
+    "nom": "Comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP36522) — Comptable (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1203 Comptabilité | Spécialité NSF : 314"
+   },
+   {
+    "fiche_id": "dares_fap_region:L1Z:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Employés de la comptabilité en Île-de-France (FAP L1Z) | Effectifs 2019 régionaux : 58 888 personnes | Postes à pourvoir 2019-20"
+   },
+   {
+    "fiche_id": "metier:MET.195",
+    "nom": "chef/fe comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chef/fe comptable | Libellé : cheffe comptable / chef comptable | Accroche : Le ou la chef/fe comptable encadre et anime l'équipe comptable d"
+   }
+  ]
+ },
+ {
+  "qid": "metier-012",
+  "question": "Quels sont les débouchés du métier de designer UX ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.936",
+    "nom": "UX designer (concepteur/trice de l'expérience utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : UX designer (concepteur/trice de l'expérience utilisateur) | Libellé : UX designer (conceptrice de l'expérience utilisateur) / UX designer (c"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.936",
+    "nom": "UX designer (concepteur / conceptrice de l'expérience utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : UX designer (concepteur / conceptrice de l'expérience utilisateur) | Codes ROME : E1205 (Réalisation de contenus multimédias) | GFE : "
+   },
+   {
+    "fiche_id": "rome_metier:E1206",
+    "nom": "UX - UI Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1206 : UX - UI Designer | Compétences par enjeu : Recherche, Innovation (Procéder à des tests, expérimentations, Animer une démarche agil"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DN MADE - Objet - Design prospectif / nouveaux objets et nouveaux process (UX-UI",
+    "etablissement": "Lycée la Tourrache",
+    "ville": "La Garde",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Design prospectif / nouveaux objets et nouveaux process (UX-UI)"
+   },
+   {
+    "fiche_id": "metier:MET.928",
+    "nom": "designer d'interaction",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : designer d'interaction | Accroche : Le designer d'interaction choisit la façon dont un objet ou un service va se comporter dans le dialogue a"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39367",
+    "nom": "Designer UX-UI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39367) — Designer UX-UI (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1101 Animation de site multimédia, "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40917",
+    "nom": "UX/UI Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40917) — UX/UI Designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de contenus multim"
+   },
+   {
+    "fiche_id": "metier:MET.7901",
+    "nom": "UI designer (concepteur/trice d'interface utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : UI designer (concepteur/trice d'interface utilisateur) | Libellé : UI designer (conceptrice d'interface utilisateur) / UI designer (concepteu"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41103",
+    "nom": "UX Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41103) — UX Designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conception de contenus multimédia"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41742",
+    "nom": "Concepteur webdesigner UX/UI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41742) — Concepteur webdesigner UX/UI (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de c"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:ouverture-voeux",
+    "nom": "Ouverture de la phase d'inscription et formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026. Chaque candidat peut formuler jusqu'à 10 vœux pri"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41694",
+    "nom": "Expert en design d’expérience utilisateur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41694) — Expert en design d’expérience utilisateur (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1205 Réa"
+   },
+   {
+    "fiche_id": "metier:MET.568",
+    "nom": "designer/euse industriel/le",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : designer/euse industriel/le | Libellé : designeuse industrielle / designer industriel | Synonymes : concepteur/trice de produits industriels,"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8225",
+    "nom": "designer en horlogerie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : designer en horlogerie | GFE : GFE V : arts, spectacle, audiovisuel | Domaine : arts, culture, artisanat/arts graphiques| mécanique/mé"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38244",
+    "nom": "Concepteur UI et webdesign",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38244) — Concepteur UI et webdesign (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de con"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8087",
+    "nom": "designer d'objets sportifs",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : designer d'objets sportifs | Codes ROME : H1204 (Design industriel) | GFE : GFE N : techniques graphiques, impression | Domaine : arts"
+   },
+   {
+    "fiche_id": "rome_metier:H1204",
+    "nom": "Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME H1204 : Designer | Compétences par enjeu : Recherche, Innovation (Dessiner des avant-projets (roughs, croquis) à partir du concept, des th"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8088",
+    "nom": "designer d'objet de mode",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : designer d'objet de mode | Codes ROME : H1204 (Design industriel) | GFE : GFE N : techniques graphiques, impression | Domaine : arts, "
+   }
+  ]
+ },
+ {
+  "qid": "metier-013",
+  "question": "Quelles études faut-il faire pour devenir travailleur social ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "D.E Assistant de Service Social",
+    "etablissement": "ARIFTS Association Régionale pour l'Institut de Formation en",
+    "ville": "Rezé",
+    "region": "Pays de la Loire",
+    "domain": "social",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "idx:25253",
+    "nom": "BTS - Services - Services et prestations des secteurs sanitaire et social",
+    "etablissement": "Lycée Francois Truffaut",
+    "ville": "Beauvais",
+    "region": "Hauts-de-France",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.189",
+    "nom": "technicien/ne de l'intervention sociale et familiale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de l'intervention sociale et familiale | Libellé : technicienne de l'intervention sociale et familiale / technicien de l'interv"
+   },
+   {
+    "fiche_id": "idx:33454",
+    "nom": "Adapter ses pratiques managériales aux travailleurs d'ESAT",
+    "etablissement": "PARMENTIER BLEU SOCIAL",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41748",
+    "nom": "Assistant de service social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41748) — Assistant de service social (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1201 Action sociale | "
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35515",
+    "nom": "Carrières Sociales  : Assistance Sociale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35515) — Carrières Sociales  : Assistance Sociale (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1205 Info"
+   },
+   {
+    "fiche_id": "metier:MET.92",
+    "nom": "juriste en droit social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste en droit social | Accroche : Plans sociaux, contrats de travail, réforme des retraites... Le droit social évolue constamment, au gré "
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8187",
+    "nom": "instructeur / instructrice pour l'autonomie des personnes déficientes visuelles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : instructeur / instructrice pour l'autonomie des personnes déficientes visuelles | GFE : GFE R : santé, social, soins personnels | Doma"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39695",
+    "nom": "Sciences sociales (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39695) — Sciences sociales (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1201 Action so"
+   },
+   {
+    "fiche_id": "metier:MET.311",
+    "nom": "éducateur/trice spécialisé/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice spécialisé/e | Libellé : éducatrice spécialisée / éducateur spécialisé | Accroche : L'éducateur spécialisé ou l'éducatrice sp"
+   },
+   {
+    "fiche_id": "metier:MET.132",
+    "nom": "médiateur/trice social/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médiateur/trice social/e | Libellé : médiatrice sociale / médiateur social | Accroche : Les médiateurs sociaux exercent en zones sensibles po"
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP36004",
+    "nom": "Accompagnant éducatif et social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP36004) — Accompagnant éducatif et social (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : J1501 Soins d''hy"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37675",
+    "nom": "Assistant de service social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37675) — Assistant de service social (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1201 Action sociale | "
+   },
+   {
+    "fiche_id": "metier:MET.715",
+    "nom": "chargé/e de recherche en acoustique musicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e de recherche en acoustique musicale | Libellé : chargée de recherche en acoustique musicale / chargé de recherche en acoustique musi"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41552",
+    "nom": "Carrières sociales : Assistance sociale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41552) — Carrières sociales : Assistance sociale (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1205 Infor"
+   },
+   {
+    "fiche_id": "metier:MET.247",
+    "nom": "thanatopracteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : thanatopracteur/trice | Libellé : thanatopractrice / thanatopracteur | Accroche : Salariés d'une entreprise de pompes funèbres, d'un service "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41744",
+    "nom": "Conseiller en économie sociale familiale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41744) — Conseiller en économie sociale familiale (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1201 Acti"
+   },
+   {
+    "fiche_id": "metier:MET.504",
+    "nom": "mannequin",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : mannequin | Synonymes : modèle | Accroche : Faire la couverture de célèbres magazines de mode, défiler pour les grands noms de la haute-coutu"
+   }
+  ]
+ },
+ {
+  "qid": "metier-014",
+  "question": "Quel est le salaire d'un métiers du jeu vidéo en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.885",
+    "nom": "concepteur/trice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de jeux vidéo | Libellé : conceptrice de jeux vidéo / concepteur de jeux vidéo | Synonymes : créateur/trice de jeux vidéo, g"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42021",
+    "nom": "Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42021) — Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:18971",
+    "nom": "licence pro mention métiers du jeu vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "education",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1125",
+    "nom": "Concepteur / Conceptrice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1125 : Concepteur / Conceptrice de jeux vidéo | Compétences par enjeu : Communication, Multimédia (Concevoir des jeux vidéo innovants et "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38294",
+    "nom": "Concepteur de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38294) — Concepteur de jeux vidéo (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:34958",
+    "nom": "Designer d’expériences immersives, interactives et ludiques pour le jeu vidéo, l",
+    "etablissement": "CONSERVATOIRE NATIONAL DES ARTS ET METIERS",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Réalisateur de jeu vidéo",
+    "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39594",
+    "nom": "Expert en création et développement de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39594) — Expert en création et développement de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1"
+   },
+   {
+    "fiche_id": "idx:37267",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": "UNIVERSITE PARIS XIII PARIS NORD VILLETANEUSE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40184",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40184) — Métiers du jeu vidéo  (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étude"
+   },
+   {
+    "fiche_id": "metier:MET.823",
+    "nom": "concepteur/trice de niveaux de jeu web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de niveaux de jeu web | Libellé : conceptrice de niveaux de jeu web / concepteur de niveaux de jeu web | Accroche : Au sein "
+   },
+   {
+    "fiche_id": "idx:7296",
+    "nom": "METIERS D'ART ET DU DESIGN - GRAPHISME",
+    "etablissement": "ASSOCIATION JEUNESSE ET AVENIR",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37652",
+    "nom": "Concepteur de jeux vidéo - Lead Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37652) — Concepteur de jeux vidéo - Lead Game designer (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104"
+   },
+   {
+    "fiche_id": "idx:8263",
+    "nom": "ARTS PLASTIQUES — Jeu vidéo",
+    "etablissement": "Université de Montpellier Paul-Valéry",
+    "ville": "MONTPELLIER CEDEX 5",
+    "region": "Occitanie",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1115",
+    "nom": "Chef / Cheffe de projet jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1115 : Chef / Cheffe de projet jeux vidéo | Compétences par enjeu : Relation client (Analyser la demande des clients et identifier la ou "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38793",
+    "nom": "Concepteur artistique - Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38793) — Concepteur artistique - Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1"
+   },
+   {
+    "fiche_id": "idx:8363",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Conception sonore",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8364",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Conception visuelle",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.885",
+    "nom": "concepteur / conceptrice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : concepteur / conceptrice de jeux vidéo | Codes ROME : E1104 (Conception de contenus multimédias) | GFE : GFE U : communication, médias"
+   },
+   {
+    "fiche_id": "idx:8368",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Ergonomie UX/UI",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8370",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Game design",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39760",
+    "nom": "Concepteur de jeux vidéo / Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39760) — Concepteur de jeux vidéo / Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   },
+   {
+    "fiche_id": "idx:8375",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — M1 - Direction de projets vid",
+    "etablissement": "Université Grenoble Alpes",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8376",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Management de projet",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8380",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Programmation",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9041",
+    "nom": "CREATION NUMERIQUE — Design graphique et d'interaction - Option Jeux vidéo",
+    "etablissement": "Institut catholique de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11059",
+    "nom": "HUMANITES ET INDUSTRIES CREATIVES — Management, Jeu Vidéo, Image et Créativité (",
+    "etablissement": "Université Côte d'Azur",
+    "ville": "CANNES LA BOCCA",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38806",
+    "nom": "Concepteur de jeux vidéo - Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38806) — Concepteur de jeux vidéo - Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   }
+  ]
+ },
+ {
+  "qid": "metier-015",
+  "question": "Quels sont les débouchés du métier de journaliste ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.45",
+    "nom": "journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste | Synonymes : flash-man, journaliste scientifique | Accroche : Journaliste en presse écrite ou sur le Web, JRI (journaliste repor"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.45",
+    "nom": "journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine : information-comm"
+   },
+   {
+    "fiche_id": "rome_metier:E1106",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1106 : Journaliste | Compétences par enjeu : Communication, Multimédia (Gérer les relations avec les contributeurs externes, Repérer les "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.677",
+    "nom": "journaliste reporter d'images",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste reporter d'images | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38922",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38922) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.253",
+    "nom": "journaliste radio et TV",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste radio et TV | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine : info"
+   },
+   {
+    "fiche_id": "metier:MET.253",
+    "nom": "journaliste radio et TV",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste radio et TV | Accroche : Informer le public via des interviews, des reportages ou des dossiers diffusés sur les ondes radio ou su"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.385",
+    "nom": "journaliste sportif / sportive",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste sportif / sportive | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42049",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42049) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "metier:MET.677",
+    "nom": "journaliste reporter d'images",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste reporter d'images | Synonymes : journaliste de presse audiovisuelle, JRI, reporter cameraman | Accroche : Journaliste de terrain "
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "journaliste plurimédia (MediaSchool)",
+    "etablissement": "MediaSchool",
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.385",
+    "nom": "journaliste sportif/ve",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste sportif/ve | Libellé : journaliste sportive / journaliste sportif | Accroche : Il lui faut saisir l’info comme on saisit la balle"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39871",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39871) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38950",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38950) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40281",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40281) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de contenus multimédi"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39736",
+    "nom": "Journaliste plurimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39736) — Journaliste plurimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "rome_metier:E1118",
+    "nom": "Présentateur / Présentatrice journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1118 : Présentateur / Présentatrice journaliste | Compétences par enjeu : Communication, Multimédia (Repérer les sujets émergents suscept"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37033",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37033) — Journaliste (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de contenus multimédia"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39755",
+    "nom": "Journaliste multimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39755) — Journaliste multimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40793",
+    "nom": "Journalisme (Institut Pratique du Journalisme de l'université Paris Dauphine-PSL",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40793) — Journalisme (Institut Pratique du Journalisme de l'université Paris Dauphine-PSL) (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39872",
+    "nom": "Journaliste plurimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39872) — Journaliste plurimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37034",
+    "nom": "Diplôme de journalisme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37034) — Diplôme de journalisme (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40161",
+    "nom": "Journaliste plurimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40161) — Journaliste plurimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   }
+  ]
+ },
+ {
+  "qid": "metier-016",
+  "question": "Quel est le salaire d'un développeur web en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "INFORMATIQUE — Développeur Full Stack web et mobile",
+    "etablissement": "Université de Corse Pasquale Paoli",
+    "ville": "CORTE",
+    "region": "Corse",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5608",
+    "nom": "DEVELOPPEUR WEB (CESI)",
+    "etablissement": "CESI",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11256",
+    "nom": "INFORMATIQUE — Développeur Full Stack web et mobile",
+    "etablissement": "Université de Corse Pasquale Paoli",
+    "ville": "CORTE",
+    "region": "Corse",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15895",
+    "nom": "bachelor développeur web",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16779",
+    "nom": "concepteur développeur web full-stack",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17297",
+    "nom": "développeur web",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17298",
+    "nom": "développeur web (Epitech)",
+    "etablissement": "Epitech",
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17299",
+    "nom": "développeur web Full Stack",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38436",
+    "nom": "Développeur web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38436) — Développeur web (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1801 Administration de systèmes d'"
+   },
+   {
+    "fiche_id": "idx:29855",
+    "nom": "Formation Bac + 3 - Bachelor Développeur web et application",
+    "etablissement": "EFREI Bordeaux",
+    "ville": "Bordeaux",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Bachelor Développeur web et application"
+   },
+   {
+    "fiche_id": "rome_metier:M1855",
+    "nom": "Développeur / Développeuse web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1855 : Développeur / Développeuse web | Compétences par enjeu : Data et Nouvelles technologies (Concevoir une application web, Configurer"
+   },
+   {
+    "fiche_id": "idx:29856",
+    "nom": "Formation Bac + 3 - Bachelor Développeur web et application",
+    "etablissement": "EFREI Paris",
+    "ville": "Villejuif",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Bachelor Développeur web et application"
+   },
+   {
+    "fiche_id": "idx:34323",
+    "nom": "Concepteur développeur d'applications web",
+    "etablissement": "IRONHACK FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37674",
+    "nom": "Développeur web et web mobile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37674) — Développeur web et web mobile (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1805 Études et dével"
+   },
+   {
+    "fiche_id": "idx:34324",
+    "nom": "Concepteur développeur d'applications web",
+    "etablissement": "LE WAGON",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:34334",
+    "nom": "Concepteur développeur web (BADGE CGE)",
+    "etablissement": "ECOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCEES (EPITA)",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35687",
+    "nom": "Développeur Intégrateur Web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35687) — Développeur Intégrateur Web (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1805 Études et dévelop"
+   },
+   {
+    "fiche_id": "idx:34335",
+    "nom": "Concepteur développeur web full stack",
+    "etablissement": "ASSOCIATION POUR LA GESTION DE 3IL",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41463",
+    "nom": "Concepteur développeur web (BADGE CGE)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41463) — Concepteur développeur web (BADGE CGE) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Études"
+   },
+   {
+    "fiche_id": "idx:34336",
+    "nom": "Concepteur développeur web full-stack",
+    "etablissement": "INSTITUT EUROPEEN F 2I",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39111",
+    "nom": "Développeur d'applications web ou web mobile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39111) — Développeur d'applications web ou web mobile (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1805 "
+   },
+   {
+    "fiche_id": "idx:34353",
+    "nom": "Concepteur-développeur d'applications web et mobile",
+    "etablissement": "LA CAPSULE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37625",
+    "nom": "Concepteur-développeur d'applications web et mobile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37625) — Concepteur-développeur d'applications web et mobile (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) :"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35959",
+    "nom": "Développeur web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35959) — Développeur web (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : E1103 Communication, E1104 Concepti"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39618",
+    "nom": "Concepteur développeur d'applications web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39618) — Concepteur développeur d'applications web (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étu"
+   }
+  ]
+ },
+ {
+  "qid": "metier-017",
+  "question": "Quels sont les débouchés du métier de data scientist ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "rome_metier:M1405",
+    "nom": "Data scientist",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1405 : Data scientist | Compétences par enjeu : Recherche, Innovation (Concevoir des modèles théoriques (calcul, simulation, modélisation"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "MSc Data Analytics for Business",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:34924",
+    "nom": "Data scientist",
+    "etablissement": "ASSOCIATION DE GESTION ICAM STRASBOURG-EUROPE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.512",
+    "nom": "data scientist (expert en mégadonnées)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : data scientist (expert en mégadonnées) | Codes ROME : M1403 (Études et prospectives socio-économiques) | GFE : GFE P : Gestion et trai"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39590",
+    "nom": "Data scientist",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39590) — Data scientist (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1805 Études et développement inform"
+   },
+   {
+    "fiche_id": "metier:MET.512",
+    "nom": "data scientist (experte en mégadonnées)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : data scientist (experte en mégadonnées) | Libellé : data scientist (experte en mégadonnées) / data scientist (expert en mégadonnées) | Synony"
+   }
+  ]
+ },
+ {
+  "qid": "metier-018",
+  "question": "Quelles études faut-il faire pour devenir infirmier ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "D.E Infirmier",
+    "etablissement": "Institut de Formation Association Educative pour l'Hospitali",
+    "ville": "Saint-Jean",
+    "region": "Occitanie",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "metier:MET.38",
+    "nom": "infirmier/ère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère | Libellé : infirmière / infirmier | Accroche : L'infirmier ou l'infirmière dispense des soins de nature préventive, curative o"
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "metier:MET.8198",
+    "nom": "infirmier/ère scolaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère scolaire | Libellé : infirmière scolaire / infirmier scolaire | Synonymes : infirmier/ère de l'éducation nationale | Accroche :"
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "metier:MET.8199",
+    "nom": "infirmier/ère coordinateur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère coordinateur/trice | Libellé : infirmière coordinatrice / infirmier coordinateur | Accroche : L'infirmier coordinateur ou l’inf"
+   },
+   {
+    "fiche_id": "metier:MET.715",
+    "nom": "chargé/e de recherche en acoustique musicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e de recherche en acoustique musicale | Libellé : chargée de recherche en acoustique musicale / chargé de recherche en acoustique musi"
+   },
+   {
+    "fiche_id": "metier:MET.247",
+    "nom": "thanatopracteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : thanatopracteur/trice | Libellé : thanatopractrice / thanatopracteur | Accroche : Salariés d'une entreprise de pompes funèbres, d'un service "
+   },
+   {
+    "fiche_id": "metier:MET.504",
+    "nom": "mannequin",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : mannequin | Synonymes : modèle | Accroche : Faire la couverture de célèbres magazines de mode, défiler pour les grands noms de la haute-coutu"
+   },
+   {
+    "fiche_id": "metier:MET.813",
+    "nom": "roboticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : roboticien/ne | Libellé : roboticienne / roboticien | Synonymes : ingénieur/e en robotique, mécatronicien/ne | Accroche : Spécialiste des sys"
+   },
+   {
+    "fiche_id": "metier:MET.434",
+    "nom": "directeur/trice d'office de tourisme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : directeur/trice d'office de tourisme | Libellé : directrice d'office de tourisme / directeur d'office de tourisme | Accroche : Le directeur d"
+   },
+   {
+    "fiche_id": "metier:MET.461",
+    "nom": "statisticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : statisticien/ne | Libellé : statisticienne / statisticien | Synonymes : chargé/e d'études statistiques | Accroche : Opinions politiques, pote"
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "metier:MET.832",
+    "nom": "pisteur/euse secouriste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pisteur/euse secouriste | Libellé : pisteuse secouriste / pisteur secouriste | Accroche : Dans une station de sports d'hiver, la pisteuse ou "
+   },
+   {
+    "fiche_id": "metier:MET.155",
+    "nom": "lad-jockey, lad-driver",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : lad-jockey, lad-driver | Synonymes : cavalier/ère d'entraînement | Accroche : Le lad-jockey s'occupe de chevaux de galop ; le lad-driver, de "
+   },
+   {
+    "fiche_id": "metier:MET.8107",
+    "nom": "pilote de port",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote de port | Accroche : Exercer comme pilote de port, c’est conseiller et assister le commandant pour aider les géants des mers à accoste"
+   },
+   {
+    "fiche_id": "metier:MET.146",
+    "nom": "comédien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : comédien/ne | Libellé : comédienne / comédien | Synonymes : acteur/trice | Accroche : Incarner un rôle sur scène ou à l'écran, apparaître dan"
+   },
+   {
+    "fiche_id": "metier:MET.661",
+    "nom": "analyste de crédit",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : analyste de crédit | Synonymes : chargé/e d'études de crédit, gestionnaire crédit entreprise, responsable des crédits | Accroche : Prêter de "
+   },
+   {
+    "fiche_id": "metier:MET.880",
+    "nom": "enseignant/e-chercheur/euse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e-chercheur/euse | Libellé : enseignante-chercheuse / enseignant-chercheur | Synonymes : chercheur/euse, enseignant/e en universit"
+   }
+  ]
+ },
+ {
+  "qid": "metier-019",
+  "question": "Quel est le salaire d'un kinésithérapeute en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "INGENIERIE DE LA SANTE — Ergonomie santé développement",
+    "etablissement": "Université de Lille",
+    "ville": "LOOS",
+    "region": "Hauts-de-France",
+    "domain": "autre",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   },
+   {
+    "fiche_id": "rome_metier:J1404",
+    "nom": "Kinésithérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1404 : Kinésithérapeute | Compétences par enjeu : Soin (Identifier le besoin du patient et échanger des informations (traitements en cour"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Bretagne (2023) | Effectif pondéré régional : 197 004 | Salaire net médian annuel : 37 500 € | Salaire net médi"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Occitanie (2023) | Effectif pondéré régional : 398 388 | Salaire net médian annuel : 37 500 € | Salaire net méd"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Bretagne (2023) | Effectif pondéré régional : 468 084 | Salaire net médian annuel : 17 000 € | Salaire net"
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Bretagne (2023) | Effectif pondéré régional : 8 592 | Salaire net médian annuel : 32 500"
+   },
+   {
+    "fiche_id": "metier:MET.29",
+    "nom": "masseur-kinésithérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : masseur-kinésithérapeute | Synonymes : kinésithérapeute | Accroche : Une bronchiolite, une hospitalisation, une chute de vélo... autant de si"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Occitanie (2023) | Effectif pondéré régional : 866 556 | Salaire net médian annuel : 17 000 € | Salaire ne"
+   },
+   {
+    "fiche_id": "financement_dispositif:ptp_transitions_pro",
+    "nom": "Projet de transition professionnelle (PTP)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Projet de transition professionnelle (PTP) | Organisme : Transitions Pro (associations régionales paritaires) | Public cible : Salariés "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 519 516 | Salaire net médian annuel : 27 000 € | Salaire net médian mensu"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Île-de-France (2023) | Effectif pondéré régional : 1 323 348 | Salaire net médian annuel : 29 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Hauts-de-France (2023) | Effectif pondéré régional : 489 768 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Occitanie (2023) | Effectif pondéré régional : 33 540 | Salaire net médian annuel : 19 0"
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Bretagne (2023) | Effectif pondéré régional : 427 284 | Salaire net médian annuel : 21 000 "
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Occitanie (2023) | Effectif pondéré régional : 609 912 | Salaire net médian annuel : 19 000"
+   },
+   {
+    "fiche_id": "metier:MET.280",
+    "nom": "ergothérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ergothérapeute | Accroche : Professionnels de santé, les ergothérapeutes interviennent auprès des personnes de tous âges en situation de hand"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Hauts-de-France (2023) | Effectif pondéré régional : 326 100 | Salaire net médian annuel : 37 500 € | Salaire n"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Île-de-France (2023) | Effectif pondéré régional : 2 145 348 | Salaire net médian annuel : 45 000 € | Salaire n"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 339 324 | Salaire net médian annuel : 37 500 € | Salair"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:inscription-administrative",
+    "nom": "Inscription administrative dans l'établissement choisi (Parcoursup 2026)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Une fois une proposition d'admission acceptée définitivement sur Parcoursup, le candidat doit procéder à l'inscription administrative dans l'établisse"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Hauts-de-France (2023) | Effectif pondéré régional : 780 408 | Salaire net médian annuel : 17 000 € | Sala"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Île-de-France (2023) | Effectif pondéré régional : 2 195 640 | Salaire net médian annuel : 17 000 € | Sala"
+   }
+  ]
+ },
+ {
+  "qid": "metier-020",
+  "question": "Quels sont les débouchés du métier de avocat ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.1264",
+    "nom": "avocat/e d'affaires",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : avocat/e d'affaires | Libellé : avocate d'affaires / avocat d'affaires | Accroche : L'avocat ou l'avocate d'affaires défend les intérêts des "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.1264",
+    "nom": "avocat / avocate d'affaires",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : avocat / avocate d'affaires | Codes ROME : K1903 (Défense et conseil juridique) | GFE : GFE W : droit, enseignement, recherche et scie"
+   },
+   {
+    "fiche_id": "metier:MET.33",
+    "nom": "avocat/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : avocat/e | Libellé : avocate / avocat | Synonymes : avocat/e civiliste, avocat/e d'affaires, avocat/e pénaliste | Accroche : Plaider pour fai"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.33",
+    "nom": "avocat / avocate",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : avocat / avocate | Codes ROME : K1903 (Défense et conseil juridique) | GFE : GFE W : droit, enseignement, recherche et sciences humain"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DROIT PENAL ET SCIENCES CRIMINELLES — Métiers de la justice (Avocat / Magistrat)",
+    "etablissement": "Université Toulouse Capitole",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap:P3Z",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — FAP P3Z : Professionnels du droit (hors juristes en entreprise) | Effectifs 2019 France : 99 057 personnes | Créations/destructi"
+   },
+   {
+    "fiche_id": "dares_fap_region:P3Z:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Professionnels du droit (hors juristes en entreprise) en Occitanie (FAP P3Z) | Effectifs 2019 régionaux : 7 810 personnes | Post"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.7994",
+    "nom": "technicien / technicienne de maintenance en infrastructure aéroportuaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : technicien / technicienne de maintenance en infrastructure aéroportuaire | Codes ROME : I1304 (Installation et maintenance d'équipemen"
+   },
+   {
+    "fiche_id": "metier:MET.806",
+    "nom": "juriste droit de l'environnement",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste droit de l'environnement | Accroche : Nouvelles normes de qualité, dépollution des sols, mise en conformité des constructions... Les "
+   },
+   {
+    "fiche_id": "voie_pre_bac:cap:communication",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "CAP en communication | 1 spécialité référencée (ONISEP) | Liste : CAP arts de la reliure — https://www.onisep.fr/http/redirection/formation/slug/FOR.1"
+   },
+   {
+    "fiche_id": "rome_metier:K1903",
+    "nom": "Juriste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1903 : Juriste | Compétences par enjeu : Droit, contentieux et négociation (Appliquer un cadre juridique ou réglementaire, Apporter des c"
+   },
+   {
+    "fiche_id": "voie_pre_bac:bac-pro:cyber",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "BAC PRO en cyber | 1 spécialité référencée (ONISEP) | Liste : bac pro cybersécurité, informatique et réseaux, électronique (CIEL) — https://www.onisep"
+   },
+   {
+    "fiche_id": "metier:MET.1190",
+    "nom": "juriste contentieux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste contentieux | Accroche : En entreprise, le ou la juriste contentieux contrôle la légalité des décisions prises et des contrats conclu"
+   },
+   {
+    "fiche_id": "voie_pre_bac:bac-pro:droit",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "BAC PRO en droit | 1 spécialité référencée (ONISEP) | Liste : bac pro assistance à la gestion des organisations et de leurs activités (AGOrA) — https:"
+   },
+   {
+    "fiche_id": "metier:MET.333",
+    "nom": "juriste en propriété intellectuelle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste en propriété intellectuelle | Accroche : Contrats et partenariats industriels, brevets, droits d'auteur... Les entreprises font appel"
+   },
+   {
+    "fiche_id": "metier:MET.562",
+    "nom": "agent/e de propreté et d'hygiène",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : agent/e de propreté et d'hygiène | Libellé : agente de propreté et d'hygiène / agent de propreté et d'hygiène | Synonymes : agent/e d'entreti"
+   },
+   {
+    "fiche_id": "dares_fap_region:P3Z:bourgogne-franche-comte",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Professionnels du droit (hors juristes en entreprise) en Bourgogne-Franche-Comté (FAP P3Z) | Effectifs 2019 régionaux : 2 563 pe"
+   },
+   {
+    "fiche_id": "metier:MET.63",
+    "nom": "encadreur/euse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : encadreur/euse | Libellé : encadreuse / encadreur | Accroche : L'encadreur fabrique ou restaure un cadre pour une toile, un dessin ou une pho"
+   },
+   {
+    "fiche_id": "metier:MET.82",
+    "nom": "juriste d'entreprise",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste d'entreprise | Accroche : Protéger les intérêts de sa société sur les plans commercial, fiscal, social..., telle est la mission du ju"
+   },
+   {
+    "fiche_id": "metier:MET.926",
+    "nom": "surveillant/e de centre pénitentiaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : surveillant/e de centre pénitentiaire | Libellé : surveillante de centre pénitentiaire / surveillant de centre pénitentiaire | Synonymes : ga"
+   },
+   {
+    "fiche_id": "metier:MET.92",
+    "nom": "juriste en droit social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste en droit social | Accroche : Plans sociaux, contrats de travail, réforme des retraites... Le droit social évolue constamment, au gré "
+   },
+   {
+    "fiche_id": "metier:MET.8077",
+    "nom": "chef/fe de produit marketing (mode)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chef/fe de produit marketing (mode) | Libellé : cheffe de produit marketing (mode) / chef de produit marketing (mode) | Accroche : Vêtements,"
+   },
+   {
+    "fiche_id": "dares_fap_region:P3Z:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Professionnels du droit (hors juristes en entreprise) en Île-de-France (FAP P3Z) | Effectifs 2019 régionaux : 38 185 personnes |"
+   },
+   {
+    "fiche_id": "metier:MET.929",
+    "nom": "paléontologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : paléontologue | Synonymes : chercheur/euse en paléontologie, enseignant/e-chercheur/euse en paléontologie | Accroche : Fouiller le passé, rec"
+   },
+   {
+    "fiche_id": "metier:MET.171",
+    "nom": "vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vétérinaire | Accroche : Les vétos ? En ville, leurs patients sont des chiens, des chats, des rongeurs... À la campagne, ce sont les animaux "
+   },
+   {
+    "fiche_id": "metier:MET.962",
+    "nom": "orthodontiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : orthodontiste | Accroche : Docteur en chirurgie dentaire, l'orthodontiste reçoit enfants, adolescents, mais aussi adultes pour corriger l'ali"
+   },
+   {
+    "fiche_id": "dares_fap_region:P3Z:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Professionnels du droit (hors juristes en entreprise) en Hauts-de-France (FAP P3Z) | Effectifs 2019 régionaux : 5 398 personnes "
+   },
+   {
+    "fiche_id": "metier:MET.538",
+    "nom": "plâtrier/ère plaquiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : plâtrier/ère plaquiste | Libellé : plâtrière plaquiste / plâtrier plaquiste | Accroche : Aménagement, isolation, décoration des espaces intér"
+   },
+   {
+    "fiche_id": "dares_fap_region:P3Z:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Professionnels du droit (hors juristes en entreprise) en Normandie (FAP P3Z) | Effectifs 2019 régionaux : 3 155 personnes | Post"
+   },
+   {
+    "fiche_id": "voie_pre_bac:bac-pro:tourisme-hotellerie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "BAC PRO en tourisme hotellerie | 2 spécialités référencées (ONISEP) | Liste : bac pro commercialisation et services en restauration (CSR) — https://ww"
+   },
+   {
+    "fiche_id": "dares_fap_region:P3Z:auvergne-rhone-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Professionnels du droit (hors juristes en entreprise) en Auvergne-Rhône-Alpes (FAP P3Z) | Effectifs 2019 régionaux : 10 445 pers"
+   },
+   {
+    "fiche_id": "metier:MET.322",
+    "nom": "miroitier/ère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : miroitier/ère | Libellé : miroitière / miroitier | Synonymes : techniverrier/ère, vitrier/ère | Accroche : L'architecture moderne est synonym"
+   },
+   {
+    "fiche_id": "metier:MET.1192",
+    "nom": "juriste droit des affaires",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste droit des affaires | Accroche : Au sein d’un grand groupe ou d’un cabinet de conseil, le ou la juriste du droit des affaires protège "
+   },
+   {
+    "fiche_id": "voie_pre_bac:cap:sciences-fondamentales",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "CAP en sciences fondamentales | 3 spécialités référencées (ONISEP) | Liste : CAP agent de la qualité de l'eau — https://www.onisep.fr/http/redirection"
+   }
+  ]
+ },
+ {
+  "qid": "metier-021",
+  "question": "Quelles études faut-il faire pour devenir enseignant ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "rncp_blocs:RNCP37469",
+    "nom": "Enseigner dans le  premier degré",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37469) — Enseigner dans le  premier degré (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K2106 Enseignement"
+   },
+   {
+    "fiche_id": "metier:MET.880",
+    "nom": "enseignant/e-chercheur/euse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e-chercheur/euse | Libellé : enseignante-chercheuse / enseignant-chercheur | Synonymes : chercheur/euse, enseignant/e en universit"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37525",
+    "nom": "Enseignant du premier degré",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37525) — Enseignant du premier degré (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K2106 Enseignement des "
+   },
+   {
+    "fiche_id": "metier:MET.680",
+    "nom": "enseignant/e de la conduite automobile et de la sécurité routière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e de la conduite automobile et de la sécurité routière | Libellé : enseignante de la conduite automobile et de la sécurité routièr"
+   },
+   {
+    "fiche_id": "metier:MET.557",
+    "nom": "professeur/e des écoles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : professeur/e des écoles | Libellé : professeure des écoles / professeur des écoles | Synonymes : enseignant/e, instituteur/trice, maître/esse"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Enseignant de la conduite et de la sécurité routière",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.937",
+    "nom": "enseignant/e en activité physique adaptée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e en activité physique adaptée | Libellé : enseignante en activité physique adaptée / enseignant en activité physique adaptée | Sy"
+   },
+   {
+    "fiche_id": "metier:MET.766",
+    "nom": "enseignant/e spécialisé/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e spécialisé/e | Libellé : enseignante spécialisée / enseignant spécialisé | Accroche : L'enseignant spécialisé ou l'enseignante s"
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "metier:MET.813",
+    "nom": "roboticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : roboticien/ne | Libellé : roboticienne / roboticien | Synonymes : ingénieur/e en robotique, mécatronicien/ne | Accroche : Spécialiste des sys"
+   },
+   {
+    "fiche_id": "metier:MET.8193",
+    "nom": "enseignant/e référent à la scolarisation des élèves en situation de handicap",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e référent à la scolarisation des élèves en situation de handicap | Libellé : enseignante référent à la scolarisation des élèves e"
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "metier:MET.277",
+    "nom": "enseignant/e d'art",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e d'art | Libellé : enseignante d'art / enseignant d'art | Synonymes : professeur/e en arts appliqués, professeur/e en arts plasti"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.277",
+    "nom": "enseignant / enseignante d'art",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant / enseignante d'art | Codes ROME : K2105 (Enseignement artistique) | GFE : GFE W : droit, enseignement, recherche et scienc"
+   },
+   {
+    "fiche_id": "metier:MET.345",
+    "nom": "moniteur/trice d'activités équestres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : moniteur/trice d'activités équestres | Libellé : monitrice d'activités équestres / moniteur d'activités équestres | Synonymes : enseignant/e "
+   },
+   {
+    "fiche_id": "rome_metier:K2106",
+    "nom": "Professeur / Professeure des écoles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K2106 : Professeur / Professeure des écoles | Compétences par enjeu : Conseil, Transmission (Collecter des informations pour préparer une "
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38356",
+    "nom": "Métiers de l'enseignement, de l'éducation et de la formation (MEEF), 2e degré / ",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38356) — Métiers de l'enseignement, de l'éducation et de la formation (MEEF), 2e degré / Professeur des collèges et lycées"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8193",
+    "nom": "enseignant / enseignante référent à la scolarisation des élèves en situation de ",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant / enseignante référent à la scolarisation des élèves en situation de handicap | GFE : GFE W : droit, enseignement, recherch"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.937",
+    "nom": "enseignant / enseignante en activité physique adaptée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant / enseignante en activité physique adaptée | GFE : GFE S : hôtellerie,  tourisme, loisirs | Domaine : sciences/biologie| sa"
+   }
+  ]
+ },
+ {
+  "qid": "metier-022",
+  "question": "Quel est le salaire d'un ingénieur aéronautique en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.760",
+    "nom": "ingénieur/e en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e en aéronautique | Libellé : ingénieure en aéronautique / ingénieur en aéronautique | Synonymes : ingénieur/e des industries aéron"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "diplôme d'ingénieur de l'École nationale supérieure de mécanique et d'aérotechni",
+    "etablissement": "Poitiers",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6471",
+    "nom": "INGENIEUR DIPLOME DE L'ECOLE SUPERIEURE DES TECHNIQUES AERONAUTIQUES ET DE CONST",
+    "etablissement": "ASSOCIATION DE FORMATION ET D INNOVATION POUR LES METIERS DE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:6517",
+    "nom": "INGENIEUR DIPLOME DU CONSERVATOIRE NATIONAL DES ARTS ET METIERS SPECIALITE AERON",
+    "etablissement": "ASSOCIATION INGENIEURS 2000",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.211",
+    "nom": "ingénieur/e production en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e production en aéronautique | Libellé : ingénieure production en aéronautique / ingénieur production en aéronautique | Synonymes :"
+   },
+   {
+    "fiche_id": "idx:17566",
+    "nom": "diplôme d'ingénieur de l'École nationale supérieure de mécanique et d'aérotechni",
+    "etablissement": "Poitiers",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17630",
+    "nom": "diplôme d'ingénieur de l'École nationale supérieure pour la performance industri",
+    "etablissement": "Bordeaux en convention avec l'université de Bordeaux",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.371",
+    "nom": "aérodynamicien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : aérodynamicien/ne | Libellé : aérodynamicienne en aéronautique / aérodynamicien | Synonymes : ingénieur/e en aérodynamique | Accroche : L'aér"
+   },
+   {
+    "fiche_id": "idx:17788",
+    "nom": "diplôme d'ingénieur de l'École supérieure des techniques aéronautiques et de con",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17789",
+    "nom": "diplôme d'ingénieur de l'École supérieure des techniques aéronautiques et de con",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17790",
+    "nom": "diplôme d'ingénieur de l'École supérieure des techniques aéronautiques et de con",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.211",
+    "nom": "ingénieur / ingénieure production en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ingénieur / ingénieure production en aéronautique | Codes ROME : H2502 (Management et ingénierie de production) | GFE : GFE F : mécani"
+   },
+   {
+    "fiche_id": "idx:17910",
+    "nom": "diplôme d'ingénieur de l'Institut supérieur de l'aéronautique et de l'espace",
+    "etablissement": "Institut supérieur de l'aéronautique et de l'espace",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.920",
+    "nom": "ingénieur/e maintenance aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e maintenance aéronautique | Libellé : ingénieure maintenance aéronautique / ingénieur maintenance aéronautique | Synonymes : ingén"
+   },
+   {
+    "fiche_id": "idx:17911",
+    "nom": "diplôme d'ingénieur de l'Institut supérieur de l'aéronautique et de l'espace spé",
+    "etablissement": "Institut supérieur de l'aéronautique et de l'espace",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.760",
+    "nom": "ingénieur / ingénieure en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ingénieur / ingénieure en aéronautique | Codes ROME : H1206 (Management et ingénierie études, recherche et développement industriel), "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.920",
+    "nom": "ingénieur / ingénieure maintenance aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ingénieur / ingénieure maintenance aéronautique | Codes ROME : I1102 (Management et ingénierie de maintenance industrielle) | GFE : GF"
+   },
+   {
+    "fiche_id": "idx:17922",
+    "nom": "diplôme d'ingénieur de l'Institut supérieur de mécanique de Paris spécialité gén",
+    "etablissement": "Institut supérieur de mécanique de Paris",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17986",
+    "nom": "diplôme d'ingénieur du CNAM spécialité aéronautique et espace en partenariat ave",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18038",
+    "nom": "diplôme d'ingénieur l'école nationale supérieure de techniques avancées et de l'",
+    "etablissement": "Institut supérieur de l'aéronautique et de l'espace",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26755",
+    "nom": "C.M.I - Cursus Master en Ingénierie - Sciences pour l'ingénieur - Cursus Master ",
+    "etablissement": "Université Paris Nanterre - Ville-d'Avray",
+    "ville": "Ville-d'Avray",
+    "region": "Île-de-France",
+    "domain": "sport",
+    "source": "parcoursup",
+    "extrait": "Cursus Master en Ingénierie (CMI) : Ingénierie pour l'Aéronautique, les Transports et l'Energétique"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.231",
+    "nom": "ingénieur / ingénieure intégration satellite",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ingénieur / ingénieure intégration satellite | Codes ROME : H1206 (Management et ingénierie études, recherche et développement industr"
+   },
+   {
+    "fiche_id": "idx:26756",
+    "nom": "C.M.I - Cursus Master en Ingénierie - Sciences pour l'ingénieur - Cursus Master ",
+    "etablissement": "Université de Bordeaux - Bordeaux Métropole",
+    "ville": "Talence",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "sport",
+    "source": "parcoursup",
+    "extrait": "Cursus Master en Ingénierie (CMI): Ingénierie et Maintenance des Systèmes pour l'Aéronautique et les Transports (IMSAT)"
+   },
+   {
+    "fiche_id": "idx:36058",
+    "nom": "Ingénieur Diplômé de l'Ecole Nationale de Mécanique et d'Aérotechnique, spéciali",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE DE MECANIQUE ET D'AEROTECHNIQUE D",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.492",
+    "nom": "ingénieur/e qualité moteur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e qualité moteur | Libellé : ingénieure qualité moteur / ingénieur qualité moteur | Synonymes : ingénieur/e aéronautique, ingénieur"
+   }
+  ]
+ },
+ {
+  "qid": "metier-023",
+  "question": "Quels sont les débouchés du métier de vétérinaire ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.171",
+    "nom": "vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vétérinaire | Accroche : Les vétos ? En ville, leurs patients sont des chiens, des chats, des rongeurs... À la campagne, ce sont les animaux "
+   },
+   {
+    "fiche_id": "metier:MET.323",
+    "nom": "auxiliaire vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : auxiliaire vétérinaire | Synonymes : assistant/e vétérinaire, auxiliaire spécialisé/e vétérinaire, auxiliaire vétérinaire qualifié/e | Accroc"
+   },
+   {
+    "fiche_id": "rome_metier:A1504",
+    "nom": "Vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME A1504 : Vétérinaire | Compétences par enjeu : Soin (Identifier le motif de consultation, le degré d'urgence et informer le propriétaire de"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.171",
+    "nom": "vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : vétérinaire | Codes ROME : A1504 (Santé animale) | GFE : GFE A : agriculture | Domaine : agriculture, animaux/soins aux animaux | Édit"
+   },
+   {
+    "fiche_id": "rome_metier:A1305",
+    "nom": "Technicien / Technicienne des services vétérinaires",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME A1305 : Technicien / Technicienne des services vétérinaires | Compétences par enjeu : Droit, contentieux et négociation (Suivre les évolut"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": "IPAM - INSTITUT PRIVE DU PARA MEDICAL",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40580",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40580) — Auxiliaire spécialisé vétérinaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : A1504 Santé animale"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40344",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40344) — Auxiliaire spécialisé vétérinaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : A1500 Soins aux ani"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.323",
+    "nom": "auxiliaire vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : auxiliaire vétérinaire | Codes ROME : A15 (Soins aux animaux), A1503 (Toilettage des animaux), D1210 (Vente en animalerie) | GFE : GFE"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40358",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40358) — Auxiliaire spécialisé vétérinaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : A1501 Aide aux soin"
+   },
+   {
+    "fiche_id": "metier:MET.794",
+    "nom": "vendeur/euse en animalerie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vendeur/euse en animalerie | Libellé : vendeuse en animalerie / vendeur en animalerie | Accroche : Le vendeur en animalerie est là pour conse"
+   },
+   {
+    "fiche_id": "rome_metier:A1501",
+    "nom": "Auxiliaire vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME A1501 : Auxiliaire vétérinaire | Compétences par enjeu : Soin (Identifier le motif de consultation, le degré d'urgence et informer le prop"
+   },
+   {
+    "fiche_id": "metier:MET.7948",
+    "nom": "ostéopathe animalier/ière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ostéopathe animalier/ière | Libellé : ostéopathe animalière / ostéopathe animalier | Accroche : Un cheval qui boîte ? Un chien qui souffre d’"
+   },
+   {
+    "fiche_id": "rome_metier:D1210",
+    "nom": "Vendeur / Vendeuse en animalerie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME D1210 : Vendeur / Vendeuse en animalerie | Compétences par enjeu : Relation client (Recueillir et analyser les besoins client, Accueillir,"
+   },
+   {
+    "fiche_id": "metier:MET.905",
+    "nom": "soigneur/euse d'animaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : soigneur/euse d'animaux | Libellé : soigneuse d'animaux / soigneur d'animaux | Synonymes : soigneur/euse animalier/ère | Accroche : S'occuper"
+   },
+   {
+    "fiche_id": "rome_metier:A1503",
+    "nom": "Toiletteur / Toiletteuse d'animaux",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME A1503 : Toiletteur / Toiletteuse d'animaux | Compétences par enjeu : Soin (Détecter les contre-indications traumatiques, inflammatoires, i"
+   },
+   {
+    "fiche_id": "rome_metier:N4125",
+    "nom": "Conducteur / Conductrice de transport routier d'animaux vivants",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME N4125 : Conducteur / Conductrice de transport routier d'animaux vivants | Compétences par enjeu : Transport (Prendre en charge un véhicule"
+   },
+   {
+    "fiche_id": "metier:MET.268",
+    "nom": "boucher/ère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : boucher/ère | Libellé : bouchère / boucher | Accroche : Spécialiste de la viande, le boucher intervient de l'approvisionnement à la vente au "
+   },
+   {
+    "fiche_id": "rome_metier:D1101",
+    "nom": "Boucher / Bouchère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME D1101 : Boucher / Bouchère | Compétences par enjeu : Production, Fabrication (Identifier les types et morceaux de viande, Découper, désoss"
+   }
+  ]
+ }
+]

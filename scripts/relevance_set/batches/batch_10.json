@@ -1,0 +1,4967 @@
+[
+ {
+  "qid": "metier-003-v1",
+  "question": "Dis-moi : Quels sont les débouchés du métier de infirmier ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.38",
+    "nom": "infirmier/ère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère | Libellé : infirmière / infirmier | Accroche : L'infirmier ou l'infirmière dispense des soins de nature préventive, curative o"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:J1511",
+    "nom": "Infirmier / Infirmière scolaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1511 : Infirmier / Infirmière scolaire | Compétences par enjeu : Soin (Collaborer avec les enseignants pour intégrer la santé dans le pro"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "D.E Infirmier",
+    "etablissement": "IFSI Neufchateau",
+    "ville": "Neufchâteau",
+    "region": "Grand Est",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.343",
+    "nom": "infirmier/ère humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère humanitaire | Libellé : infirmière humanitaire / infirmier humanitaire | Accroche : Organiser les soins, mener une campagne de "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:J1506",
+    "nom": "Infirmier / Infirmière en soins généraux (IDE)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1506 : Infirmier / Infirmière en soins généraux (IDE) | Compétences par enjeu : Soin (Surveiller l'évolution de l'état de santé des patie"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.38",
+    "nom": "infirmier / infirmière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : infirmier / infirmière | Codes ROME : J1506 (Soins infirmiers généralistes) | GFE : GFE R : santé, social, soins personnels | Domaine "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.535",
+    "nom": "serveur / serveuse en restauration (restaurant, café-bar-brasserie)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : serveur / serveuse en restauration (restaurant, café-bar-brasserie) | Codes ROME : G1801 (Café, bar brasserie) | GFE : GFE S : hôtelle"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8198",
+    "nom": "infirmier/ère scolaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère scolaire | Libellé : infirmière scolaire / infirmier scolaire | Synonymes : infirmier/ère de l'éducation nationale | Accroche :"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8198",
+    "nom": "infirmier / infirmière scolaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : infirmier / infirmière scolaire | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, sport/paramédical | Édition"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8199",
+    "nom": "infirmier coordinateur / infirmière coordinatrice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : infirmier coordinateur / infirmière coordinatrice | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, sport/par"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:J1505",
+    "nom": "Infirmier / Infirmière de prévention",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1505 : Infirmier / Infirmière de prévention | Compétences par enjeu : Prévention des risques (Concevoir et mettre en place les actions de"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.7994",
+    "nom": "technicien / technicienne de maintenance en infrastructure aéroportuaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : technicien / technicienne de maintenance en infrastructure aéroportuaire | Codes ROME : I1304 (Installation et maintenance d'équipemen"
+   },
+   {
+    "fiche_id": "idx:28413",
+    "nom": "D.E Infirmier",
+    "etablissement": "Ecole Rockefeller",
+    "ville": "Lyon 8e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:J1512",
+    "nom": "Infirmier / Infirmière de santé au travail",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1512 : Infirmier / Infirmière de santé au travail | Compétences par enjeu : Soin (Mettre en place des actions pour prévenir les accidents"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.343",
+    "nom": "infirmier / infirmière humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : infirmier / infirmière humanitaire | Codes ROME : J1506 (Soins infirmiers généralistes) | GFE : GFE R : santé, social, soins personnel"
+   },
+   {
+    "fiche_id": "idx:28416",
+    "nom": "D.E Infirmier",
+    "etablissement": "I.F.S.I. BLANCARDE",
+    "ville": "Marseille  3e  Arrondissement",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28417",
+    "nom": "D.E Infirmier",
+    "etablissement": "I.F.S.I. du centre hospitalier du sud Seine-et-Marne (rentré",
+    "ville": "Samois-sur-Seine",
+    "region": "Île-de-France",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8199",
+    "nom": "infirmier/ère coordinateur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère coordinateur/trice | Libellé : infirmière coordinatrice / infirmier coordinateur | Accroche : L'infirmier coordinateur ou l’inf"
+   }
+  ]
+ },
+ {
+  "qid": "metier-004-v1",
+  "question": "Dis-moi : Quelles études faut-il faire pour devenir kinésithérapeute ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "rome_metier:J1404",
+    "nom": "Kinésithérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1404 : Kinésithérapeute | Compétences par enjeu : Soin (Identifier le besoin du patient et échanger des informations (traitements en cour"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "MARKETING, VENTE — MOI : Marketing opérationnel international - Alternance - App",
+    "etablissement": "Université Paris Nanterre",
+    "ville": "NANTERRE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.715",
+    "nom": "chargé/e de recherche en acoustique musicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e de recherche en acoustique musicale | Libellé : chargée de recherche en acoustique musicale / chargé de recherche en acoustique musi"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.247",
+    "nom": "thanatopracteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : thanatopracteur/trice | Libellé : thanatopractrice / thanatopracteur | Accroche : Salariés d'une entreprise de pompes funèbres, d'un service "
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.504",
+    "nom": "mannequin",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : mannequin | Synonymes : modèle | Accroche : Faire la couverture de célèbres magazines de mode, défiler pour les grands noms de la haute-coutu"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.29",
+    "nom": "masseur-kinésithérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : masseur-kinésithérapeute | Synonymes : kinésithérapeute | Accroche : Une bronchiolite, une hospitalisation, une chute de vélo... autant de si"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.813",
+    "nom": "roboticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : roboticien/ne | Libellé : roboticienne / roboticien | Synonymes : ingénieur/e en robotique, mécatronicien/ne | Accroche : Spécialiste des sys"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.434",
+    "nom": "directeur/trice d'office de tourisme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : directeur/trice d'office de tourisme | Libellé : directrice d'office de tourisme / directeur d'office de tourisme | Accroche : Le directeur d"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.461",
+    "nom": "statisticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : statisticien/ne | Libellé : statisticienne / statisticien | Synonymes : chargé/e d'études statistiques | Accroche : Opinions politiques, pote"
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "metier:MET.832",
+    "nom": "pisteur/euse secouriste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pisteur/euse secouriste | Libellé : pisteuse secouriste / pisteur secouriste | Accroche : Dans une station de sports d'hiver, la pisteuse ou "
+   },
+   {
+    "fiche_id": "idx:29384",
+    "nom": "DN MADE - Objet - Spécialité : Horlogerie, mention objet numérique et patrimoine",
+    "etablissement": "Lycée Diderot",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Horlogerie, mention objet numérique et patrimoine"
+   },
+   {
+    "fiche_id": "metier:MET.375",
+    "nom": "masseur-kinésithérapeute du sport",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : masseur-kinésithérapeute du sport | Synonymes : kiné du sport, kinésithérapeute du sport | Accroche : En cabinet, club ou fédération, le ou l"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "metier:MET.155",
+    "nom": "lad-jockey, lad-driver",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : lad-jockey, lad-driver | Synonymes : cavalier/ère d'entraînement | Accroche : Le lad-jockey s'occupe de chevaux de galop ; le lad-driver, de "
+   },
+   {
+    "fiche_id": "metier:MET.8107",
+    "nom": "pilote de port",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote de port | Accroche : Exercer comme pilote de port, c’est conseiller et assister le commandant pour aider les géants des mers à accoste"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   }
+  ]
+ },
+ {
+  "qid": "metier-005-v1",
+  "question": "Dis-moi : Quel est le salaire d'un avocat en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DROIT PENAL ET SCIENCES CRIMINELLES — Métiers de la justice (Avocat / Magistrat)",
+    "etablissement": "Université Toulouse Capitole",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:2914",
+    "nom": "Organisme de formation-Centre de Formation d'apprentis Carrière et Conseil Enaco",
+    "etablissement": "Organisme de formation-Centre de Formation d'apprentis Carri",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.1264",
+    "nom": "avocat/e d'affaires",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : avocat/e d'affaires | Libellé : avocate d'affaires / avocat d'affaires | Accroche : L'avocat ou l'avocate d'affaires défend les intérêts des "
+   },
+   {
+    "fiche_id": "metier:MET.33",
+    "nom": "avocat/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : avocat/e | Libellé : avocate / avocat | Synonymes : avocat/e civiliste, avocat/e d'affaires, avocat/e pénaliste | Accroche : Plaider pour fai"
+   },
+   {
+    "fiche_id": "idx:4665",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4666",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE HAUTE ALSACE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.1264",
+    "nom": "avocat / avocate d'affaires",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : avocat / avocate d'affaires | Codes ROME : K1903 (Défense et conseil juridique) | GFE : GFE W : droit, enseignement, recherche et scie"
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.33",
+    "nom": "avocat / avocate",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : avocat / avocate | Codes ROME : K1903 (Défense et conseil juridique) | GFE : GFE W : droit, enseignement, recherche et sciences humain"
+   },
+   {
+    "fiche_id": "idx:9939",
+    "nom": "DROIT — Droit public et carrières publiques",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "A DISTANCE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:14008",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Carrières de la banque et de l’assurance :",
+    "etablissement": "Université Clermont Auvergne",
+    "ville": "CLERMONT-FERRAND",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Occitanie (2023) | Effectif pondéré régional : 398 388 | Salaire net médian annuel : 37 500 € | Salaire net méd"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Bretagne (2023) | Effectif pondéré régional : 197 004 | Salaire net médian annuel : 37 500 € | Salaire net médi"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Bretagne (2023) | Effectif pondéré régional : 468 084 | Salaire net médian annuel : 17 000 € | Salaire net"
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Bretagne (2023) | Effectif pondéré régional : 8 592 | Salaire net médian annuel : 32 500"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Occitanie (2023) | Effectif pondéré régional : 866 556 | Salaire net médian annuel : 17 000 € | Salaire ne"
+   }
+  ]
+ },
+ {
+  "qid": "metier-006-v1",
+  "question": "Dis-moi : Quels sont les débouchés du métier de enseignant ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "dares_fap:W0Z",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — FAP W0Z : Enseignants | Effectifs 2019 France : 1 066 706 personnes | Créations/destructions nettes 2019-2030 : +1 146 postes | "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8193",
+    "nom": "enseignant / enseignante référent à la scolarisation des élèves en situation de ",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant / enseignante référent à la scolarisation des élèves en situation de handicap | GFE : GFE W : droit, enseignement, recherch"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.557",
+    "nom": "professeur/e des écoles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : professeur/e des écoles | Libellé : professeure des écoles / professeur des écoles | Synonymes : enseignant/e, instituteur/trice, maître/esse"
+   },
+   {
+    "fiche_id": "metier:MET.880",
+    "nom": "enseignant/e-chercheur/euse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e-chercheur/euse | Libellé : enseignante-chercheuse / enseignant-chercheur | Synonymes : chercheur/euse, enseignant/e en universit"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:bourgogne-franche-comte",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Bourgogne-Franche-Comté (FAP W0Z) | Effectifs 2019 régionaux : 44 163 personnes | Postes à pourvoir 2019-2030 : 1"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.937",
+    "nom": "enseignant / enseignante en activité physique adaptée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant / enseignante en activité physique adaptée | GFE : GFE S : hôtellerie,  tourisme, loisirs | Domaine : sciences/biologie| sa"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:K2106",
+    "nom": "Professeur / Professeure des écoles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K2106 : Professeur / Professeure des écoles | Compétences par enjeu : Conseil, Transmission (Collecter des informations pour préparer une "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.277",
+    "nom": "enseignant / enseignante d'art",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant / enseignante d'art | Codes ROME : K2105 (Enseignement artistique) | GFE : GFE W : droit, enseignement, recherche et scienc"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Île-de-France (FAP W0Z) | Effectifs 2019 régionaux : 223 674 personnes | Postes à pourvoir 2019-2030 : 68 591 pos"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Hauts-de-France (FAP W0Z) | Effectifs 2019 régionaux : 102 846 personnes | Postes à pourvoir 2019-2030 : 29 562 p"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.680",
+    "nom": "enseignant / enseignante de la conduite automobile et de la sécurité routière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant / enseignante de la conduite automobile et de la sécurité routière | Codes ROME : K2110 (Formation en conduite de véhicules"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Grand Est (FAP W0Z) | Effectifs 2019 régionaux : 88 462 personnes | Postes à pourvoir 2019-2030 : 21 152 postes e"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.766",
+    "nom": "enseignant spécialisé / enseignante spécialisée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant spécialisé / enseignante spécialisée | Codes ROME : K2109 (Enseignement technique et professionnel) | GFE : GFE W : droit, "
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.766",
+    "nom": "enseignant/e spécialisé/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e spécialisé/e | Libellé : enseignante spécialisée / enseignant spécialisé | Accroche : L'enseignant spécialisé ou l'enseignante s"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "TP enseignant de la conduite et de la sécurité routière",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Occitanie (FAP W0Z) | Effectifs 2019 régionaux : 93 590 personnes | Postes à pourvoir 2019-2030 : 33 961 postes e"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Normandie (FAP W0Z) | Effectifs 2019 régionaux : 54 195 personnes | Postes à pourvoir 2019-2030 : 16 409 postes e"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Pays de la Loire (FAP W0Z) | Effectifs 2019 régionaux : 61 378 personnes | Postes à pourvoir 2019-2030 : 19 748 p"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap_region:W0Z:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — Enseignants en Bretagne (FAP W0Z) | Effectifs 2019 régionaux : 54 737 personnes | Postes à pourvoir 2019-2030 : 18 864 postes en"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.880",
+    "nom": "enseignant-chercheur / enseignante-chercheuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : enseignant-chercheur / enseignante-chercheuse | Codes ROME : K2108 (Enseignement supérieur) | GFE : GFE W : droit, enseignement, reche"
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "rome_metier:K2107",
+    "nom": "Professeur / Professeure de collège et de lycée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K2107 : Professeur / Professeure de collège et de lycée | Compétences par enjeu : Conseil, Transmission (Développer une démarche pédagogiq"
+   },
+   {
+    "fiche_id": "metier:MET.680",
+    "nom": "enseignant/e de la conduite automobile et de la sécurité routière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : enseignant/e de la conduite automobile et de la sécurité routière | Libellé : enseignante de la conduite automobile et de la sécurité routièr"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   }
+  ]
+ },
+ {
+  "qid": "metier-007-v1",
+  "question": "Dis-moi : Quelles études faut-il faire pour devenir ingénieur aéronautique ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.760",
+    "nom": "ingénieur/e en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e en aéronautique | Libellé : ingénieure en aéronautique / ingénieur en aéronautique | Synonymes : ingénieur/e des industries aéron"
+   },
+   {
+    "fiche_id": "idx:6390",
+    "nom": "INGENIEUR D'AFFAIRES EN HAUTES TECHNOLOGIES (EURIDIS MANAGEMENT)",
+    "etablissement": "EURIDIS MANAGEMENT",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Ingénieur diplômé de l’Institut supérieur de mécanique de Paris, spécialité Géni",
+    "etablissement": "INSTITUT SUPERIEUR DE MECANIQUE DE PARIS",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.211",
+    "nom": "ingénieur/e production en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e production en aéronautique | Libellé : ingénieure production en aéronautique / ingénieur production en aéronautique | Synonymes :"
+   },
+   {
+    "fiche_id": "idx:6391",
+    "nom": "INGENIEUR D'AFFAIRES EN HAUTES TECHNOLOGIES (EURIDIS MANAGEMENT)",
+    "etablissement": "ICADEMIE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.920",
+    "nom": "ingénieur/e maintenance aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e maintenance aéronautique | Libellé : ingénieure maintenance aéronautique / ingénieur maintenance aéronautique | Synonymes : ingén"
+   },
+   {
+    "fiche_id": "idx:6471",
+    "nom": "INGENIEUR DIPLOME DE L'ECOLE SUPERIEURE DES TECHNIQUES AERONAUTIQUES ET DE CONST",
+    "etablissement": "ASSOCIATION DE FORMATION ET D INNOVATION POUR LES METIERS DE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.813",
+    "nom": "roboticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : roboticien/ne | Libellé : roboticienne / roboticien | Synonymes : ingénieur/e en robotique, mécatronicien/ne | Accroche : Spécialiste des sys"
+   },
+   {
+    "fiche_id": "idx:6517",
+    "nom": "INGENIEUR DIPLOME DU CONSERVATOIRE NATIONAL DES ARTS ET METIERS SPECIALITE AERON",
+    "etablissement": "ASSOCIATION INGENIEURS 2000",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.371",
+    "nom": "aérodynamicien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : aérodynamicien/ne | Libellé : aérodynamicienne en aéronautique / aérodynamicien | Synonymes : ingénieur/e en aérodynamique | Accroche : L'aér"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.492",
+    "nom": "ingénieur/e qualité moteur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e qualité moteur | Libellé : ingénieure qualité moteur / ingénieur qualité moteur | Synonymes : ingénieur/e aéronautique, ingénieur"
+   },
+   {
+    "fiche_id": "idx:11010",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Histoire et patrimoine de l'aéronautique e",
+    "etablissement": "Université Toulouse - Jean Jaurès",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38957",
+    "nom": "Ingénieur diplômé de l'Institut supérieur de l'aéronautique et de l'espace, spéc",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38957) — Ingénieur diplômé de l'Institut supérieur de l'aéronautique et de l'espace, spécialité génie industriel (bac+5) |"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39668",
+    "nom": "Ingénieur Diplômé de l'Ecole Nationale de Mécanique et d'Aérotechnique, spéciali",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39668) — Ingénieur Diplômé de l'Ecole Nationale de Mécanique et d'Aérotechnique, spécialité Génie industriel pour l'Aérona"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39922",
+    "nom": "Diplôme d'ingénieur de l'Ecole Nationale Supérieure de Mécanique et d'Aérotechni",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39922) — Diplôme d'ingénieur de l'Ecole Nationale Supérieure de Mécanique et d'Aérotechnique (ENSMA) (bac+5) | Niveau euro"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40532",
+    "nom": "Ingénieur diplômé de l’Ecole supérieure des Techniques Aéronautiques et de Const",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40532) — Ingénieur diplômé de l’Ecole supérieure des Techniques Aéronautiques et de Construction Automobile spécialité Gén"
+   },
+   {
+    "fiche_id": "idx:16942",
+    "nom": "cycle pluridisciplinaire d'études supérieures - Sciences pour l'ingénieur",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39141",
+    "nom": "Ingénieur diplômé de l'Institut Supérieur de l'Aéronautique et de l'Espace",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39141) — Ingénieur diplômé de l'Institut Supérieur de l'Aéronautique et de l'Espace (bac+5) | Niveau européen : Niveau 7 |"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.760",
+    "nom": "ingénieur / ingénieure en aéronautique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ingénieur / ingénieure en aéronautique | Codes ROME : H1206 (Management et ingénierie études, recherche et développement industriel), "
+   }
+  ]
+ },
+ {
+  "qid": "metier-008-v1",
+  "question": "Dis-moi : Quel est le salaire d'un vétérinaire en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.171",
+    "nom": "vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vétérinaire | Accroche : Les vétos ? En ville, leurs patients sont des chiens, des chats, des rongeurs... À la campagne, ce sont les animaux "
+   },
+   {
+    "fiche_id": "metier:MET.323",
+    "nom": "auxiliaire vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : auxiliaire vétérinaire | Synonymes : assistant/e vétérinaire, auxiliaire spécialisé/e vétérinaire, auxiliaire vétérinaire qualifié/e | Accroc"
+   },
+   {
+    "fiche_id": "idx:2914",
+    "nom": "Organisme de formation-Centre de Formation d'apprentis Carrière et Conseil Enaco",
+    "etablissement": "Organisme de formation-Centre de Formation d'apprentis Carri",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:A1504",
+    "nom": "Vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME A1504 : Vétérinaire | Compétences par enjeu : Soin (Identifier le motif de consultation, le degré d'urgence et informer le propriétaire de"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": "INSTITUT DES METIERS DE LA FILIERE ANIMALE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4665",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40580",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40580) — Auxiliaire spécialisé vétérinaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : A1504 Santé animale"
+   },
+   {
+    "fiche_id": "idx:4666",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE HAUTE ALSACE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.794",
+    "nom": "vendeur/euse en animalerie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vendeur/euse en animalerie | Libellé : vendeuse en animalerie / vendeur en animalerie | Accroche : Le vendeur en animalerie est là pour conse"
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.7948",
+    "nom": "ostéopathe animalier/ière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ostéopathe animalier/ière | Libellé : ostéopathe animalière / ostéopathe animalier | Accroche : Un cheval qui boîte ? Un chien qui souffre d’"
+   },
+   {
+    "fiche_id": "idx:9939",
+    "nom": "DROIT — Droit public et carrières publiques",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "A DISTANCE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40358",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40358) — Auxiliaire spécialisé vétérinaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : A1501 Aide aux soin"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40344",
+    "nom": "Auxiliaire spécialisé vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40344) — Auxiliaire spécialisé vétérinaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : A1500 Soins aux ani"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:A1305",
+    "nom": "Technicien / Technicienne des services vétérinaires",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME A1305 : Technicien / Technicienne des services vétérinaires | Compétences par enjeu : Droit, contentieux et négociation (Suivre les évolut"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14008",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Carrières de la banque et de l’assurance :",
+    "etablissement": "Université Clermont Auvergne",
+    "ville": "CLERMONT-FERRAND",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.171",
+    "nom": "vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : vétérinaire | Codes ROME : A1504 (Santé animale) | GFE : GFE A : agriculture | Domaine : agriculture, animaux/soins aux animaux | Édit"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:A1501",
+    "nom": "Auxiliaire vétérinaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME A1501 : Auxiliaire vétérinaire | Compétences par enjeu : Soin (Identifier le motif de consultation, le degré d'urgence et informer le prop"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "metier-009-v1",
+  "question": "Dis-moi : Quels sont les débouchés du métier de psychologue ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.871",
+    "nom": "psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : psychologue | Accroche : Aider les personnes souffrant de troubles mentaux, psychiques et comportementaux, telle est la mission du ou de la p"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.871",
+    "nom": "psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychologue | Codes ROME : K1104 (Psychologie) | GFE : GFE R : santé, social, soins personnels | Domaine : histoire-géographie, psycho"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:K1104",
+    "nom": "Psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1104 : Psychologue | Compétences par enjeu : Soin (Pratiquer une séance de psychothérapie individuelle, de groupe, familiale, Suivre l'év"
+   },
+   {
+    "fiche_id": "metier:MET.361",
+    "nom": "psychologue de l'Éducation nationale spécialité éducation, développement et appr",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : psychologue de l'Éducation nationale spécialité éducation, développement et apprentissages | Accroche : Le ou la psy-EN (psychologue de l'Édu"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.361",
+    "nom": "psychologue de l'Éducation nationale spécialité éducation, développement et appr",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychologue de l'Éducation nationale spécialité éducation, développement et apprentissages | Codes ROME : K2112 (Orientation scolaire "
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41646",
+    "nom": "Psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41646) — Psychologue (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : K1104 Psychologie, K2401 Recherche en s"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "certificat d'aptitude aux fonctions de psychologue de l'éducation nationale spéc",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:K1107",
+    "nom": "Conseiller / Conseillère d’orientation psychologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1107 : Conseiller / Conseillère d’orientation psychologue | Compétences par enjeu : Conseil, Transmission (Accompagner les collégiens, ly"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.634",
+    "nom": "psychologue de l'éducation nationale spécialité éducation, développement et cons",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : psychologue de l'éducation nationale spécialité éducation, développement et conseil en orientation scolaire et professionnelle | Synonymes : "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.634",
+    "nom": "psychologue de l'éducation nationale spécialité éducation, développement et cons",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychologue de l'éducation nationale spécialité éducation, développement et conseil en orientation scolaire et professionnelle | Codes"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39023",
+    "nom": "Psychologie (Fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39023) — Psychologie (Fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1104 Psychologie, K1"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37813",
+    "nom": "Psychologue du travail",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37813) — Psychologue du travail (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : K1801 Conseil en emploi et i"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39025",
+    "nom": "Psychologie (Fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39025) — Psychologie (Fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : K1104 Psychologie | S"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:J1131",
+    "nom": "Psychiatre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME J1131 : Psychiatre | Compétences par enjeu : Soin (Détecter des situations à risques (maltraitance, harcèlement, urgence sociale, addictio"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "idx:29384",
+    "nom": "DN MADE - Objet - Spécialité : Horlogerie, mention objet numérique et patrimoine",
+    "etablissement": "Lycée Diderot",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Horlogerie, mention objet numérique et patrimoine"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39022",
+    "nom": "Psychologie clinique, psychopathologie et psychologie de la santé (fiche nationa",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39022) — Psychologie clinique, psychopathologie et psychologie de la santé (fiche nationale) (bac+5) | Niveau européen : N"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38989",
+    "nom": "Psychologie : psychopathologie clinique psychanalytique (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38989) — Psychologie : psychopathologie clinique psychanalytique (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.535",
+    "nom": "serveur / serveuse en restauration (restaurant, café-bar-brasserie)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : serveur / serveuse en restauration (restaurant, café-bar-brasserie) | Codes ROME : G1801 (Café, bar brasserie) | GFE : GFE S : hôtelle"
+   }
+  ]
+ },
+ {
+  "qid": "metier-010-v1",
+  "question": "Dis-moi : Quelles études faut-il faire pour devenir architecte ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Architecte d'intérieur",
+    "etablissement": "ASSOCIATION INTERNATIONALE POUR LA FORMATION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.161",
+    "nom": "architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte | Accroche : Construction d'un immeuble ou d'un hôpital, réhabilitation de logements sociaux, reconversion d'une usine en bureaux."
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:F1101",
+    "nom": "Architecte du bâtiment",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME F1101 : Architecte du bâtiment | Compétences par enjeu : Aménagement (Concevoir un projet architectural ou d'aménagement, Décliner la conc"
+   },
+   {
+    "fiche_id": "metier:MET.8071",
+    "nom": "architecte-ingénieur/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : architecte-ingénieur/e | Libellé : architecte-ingénieure / architecte-ingénieur | Accroche : Exerçant en cabinet d’architecture ou en bureau "
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.648",
+    "nom": "assistant/e en architecture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : assistant/e en architecture | Libellé : assistante en architecture / assistant en architecture | Synonymes : assistant/e de conception des ou"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.715",
+    "nom": "chargé/e de recherche en acoustique musicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e de recherche en acoustique musicale | Libellé : chargée de recherche en acoustique musicale / chargé de recherche en acoustique musi"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:F1102",
+    "nom": "Architecte d'intérieur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME F1102 : Architecte d'intérieur | Compétences par enjeu : Aménagement (Concevoir un projet architectural ou d'aménagement, Concevoir l'amén"
+   },
+   {
+    "fiche_id": "metier:MET.247",
+    "nom": "thanatopracteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : thanatopracteur/trice | Libellé : thanatopractrice / thanatopracteur | Accroche : Salariés d'une entreprise de pompes funèbres, d'un service "
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.504",
+    "nom": "mannequin",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : mannequin | Synonymes : modèle | Accroche : Faire la couverture de célèbres magazines de mode, défiler pour les grands noms de la haute-coutu"
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37206",
+    "nom": "Assistant  d’architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37206) — Assistant  d’architecte (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : F1106 Ingénierie et études du"
+   },
+   {
+    "fiche_id": "metier:MET.813",
+    "nom": "roboticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : roboticien/ne | Libellé : roboticienne / roboticien | Synonymes : ingénieur/e en robotique, mécatronicien/ne | Accroche : Spécialiste des sys"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.161",
+    "nom": "architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : architecte | Codes ROME : F1101 (Architecture du BTP et du paysage) | GFE : GFE C : bâtiment | Domaine : construction, architecture, t"
+   },
+   {
+    "fiche_id": "metier:MET.434",
+    "nom": "directeur/trice d'office de tourisme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : directeur/trice d'office de tourisme | Libellé : directrice d'office de tourisme / directeur d'office de tourisme | Accroche : Le directeur d"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "idx:29384",
+    "nom": "DN MADE - Objet - Spécialité : Horlogerie, mention objet numérique et patrimoine",
+    "etablissement": "Lycée Diderot",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Horlogerie, mention objet numérique et patrimoine"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38342",
+    "nom": "DEA - Diplôme d'Etat d'architecte",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38342) — DEA - Diplôme d'Etat d'architecte (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : F1106 Ingénierie "
+   },
+   {
+    "fiche_id": "metier:MET.461",
+    "nom": "statisticien/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : statisticien/ne | Libellé : statisticienne / statisticien | Synonymes : chargé/e d'études statistiques | Accroche : Opinions politiques, pote"
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38343",
+    "nom": "DEEA - Diplôme d'études en architecture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38343) — DEEA - Diplôme d'études en architecture (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : F1106 Ingén"
+   },
+   {
+    "fiche_id": "metier:MET.832",
+    "nom": "pisteur/euse secouriste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pisteur/euse secouriste | Libellé : pisteuse secouriste / pisteur secouriste | Accroche : Dans une station de sports d'hiver, la pisteuse ou "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "metier:MET.155",
+    "nom": "lad-jockey, lad-driver",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : lad-jockey, lad-driver | Synonymes : cavalier/ère d'entraînement | Accroche : Le lad-jockey s'occupe de chevaux de galop ; le lad-driver, de "
+   }
+  ]
+ },
+ {
+  "qid": "metier-011-v1",
+  "question": "Dis-moi : Quel est le salaire d'un comptable en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.11",
+    "nom": "comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : comptable | Synonymes : collaborateur/trice comptable, comptable général/e, comptable unique | Accroche : Indispensable à toute organisation "
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "assistant comptable",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:2914",
+    "nom": "Organisme de formation-Centre de Formation d'apprentis Carrière et Conseil Enaco",
+    "etablissement": "Organisme de formation-Centre de Formation d'apprentis Carri",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4665",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1203",
+    "nom": "Comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1203 : Comptable | Compétences par enjeu : Gestion administrative et comptable (Préparer des documents comptables, Gérer les notes de fra"
+   },
+   {
+    "fiche_id": "rome_metier:M1211",
+    "nom": "Expert-comptable / Experte-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1211 : Expert-comptable / Experte-comptable | Compétences par enjeu : Gestion et contrôle (Réaliser un bilan comptable, Superviser une cl"
+   },
+   {
+    "fiche_id": "idx:4666",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE HAUTE ALSACE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9939",
+    "nom": "DROIT — Droit public et carrières publiques",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "A DISTANCE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1213",
+    "nom": "Assistant / Assistante comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1213 : Assistant / Assistante comptable | Compétences par enjeu : Gestion administrative et comptable (Enregistrer les opérations comptab"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "dares_fap:L1Z",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_prospective",
+    "source": "dares_metiers_2030",
+    "extrait": "Métier 2030 (DARES) — FAP L1Z : Employés de la comptabilité | Effectifs 2019 France : 285 076 personnes | Créations/destructions nettes 2019-2030 : -6"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.149",
+    "nom": "expert-comptable / experte-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : expert-comptable / experte-comptable | Codes ROME : M1202 (Audit et contrôle comptables et financiers) | GFE : GFE Q : commerce, gesti"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14008",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Carrières de la banque et de l’assurance :",
+    "etablissement": "Université Clermont Auvergne",
+    "ville": "CLERMONT-FERRAND",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1202",
+    "nom": "Auditeur comptable et financier / Auditrice comptable et financière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1202 : Auditeur comptable et financier / Auditrice comptable et financière | Compétences par enjeu : Gestion et contrôle (Réaliser un aud"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.7772",
+    "nom": "collaborateur/rice de cabinet d'expertise comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : collaborateur/rice de cabinet d'expertise comptable | Libellé : collaboratrice de cabinet d'expertise comptable / collaborateur de cabinet d'"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.195",
+    "nom": "chef / cheffe comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chef / cheffe comptable | Codes ROME : M1206 (Management de groupe ou de service comptable) | GFE : GFE Q : commerce, gestion, finance"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   }
+  ]
+ },
+ {
+  "qid": "metier-012-v1",
+  "question": "Dis-moi : Quels sont les débouchés du métier de designer UX ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "rome_metier:E1206",
+    "nom": "UX - UI Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1206 : UX - UI Designer | Compétences par enjeu : Recherche, Innovation (Procéder à des tests, expérimentations, Animer une démarche agil"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.936",
+    "nom": "UX designer (concepteur / conceptrice de l'expérience utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : UX designer (concepteur / conceptrice de l'expérience utilisateur) | Codes ROME : E1205 (Réalisation de contenus multimédias) | GFE : "
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.928",
+    "nom": "designer d'interaction",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : designer d'interaction | Accroche : Le designer d'interaction choisit la façon dont un objet ou un service va se comporter dans le dialogue a"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DN MADE - Objet - Design prospectif / nouveaux objets et nouveaux process (UX-UI",
+    "etablissement": "Lycée la Tourrache",
+    "ville": "La Garde",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Design prospectif / nouveaux objets et nouveaux process (UX-UI)"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.936",
+    "nom": "UX designer (concepteur/trice de l'expérience utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : UX designer (concepteur/trice de l'expérience utilisateur) | Libellé : UX designer (conceptrice de l'expérience utilisateur) / UX designer (c"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.7901",
+    "nom": "UI designer (concepteur/trice d'interface utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : UI designer (concepteur/trice d'interface utilisateur) | Libellé : UI designer (conceptrice d'interface utilisateur) / UI designer (concepteu"
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39367",
+    "nom": "Designer UX-UI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39367) — Designer UX-UI (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1101 Animation de site multimédia, "
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40917",
+    "nom": "UX/UI Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40917) — UX/UI Designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de contenus multim"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41103",
+    "nom": "UX Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41103) — UX Designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conception de contenus multimédia"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41742",
+    "nom": "Concepteur webdesigner UX/UI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41742) — Concepteur webdesigner UX/UI (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de c"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:ouverture-voeux",
+    "nom": "Ouverture de la phase d'inscription et formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026. Chaque candidat peut formuler jusqu'à 10 vœux pri"
+   },
+   {
+    "fiche_id": "idx:29219",
+    "nom": "DN MADE - Graphisme - Spécialité : Designer graphique",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Designer graphique"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "idx:29220",
+    "nom": "DN MADE - Graphisme - Spécialité : Designer typographe",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Designer typographe"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.928",
+    "nom": "designer d'interaction",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : designer d'interaction | Codes ROME : E1205 (Réalisation de contenus multimédias) | GFE : GFE U : communication, médias | Domaine : ar"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "metier:MET.568",
+    "nom": "designer/euse industriel/le",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : designer/euse industriel/le | Libellé : designeuse industrielle / designer industriel | Synonymes : concepteur/trice de produits industriels,"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "rome_metier:H1204",
+    "nom": "Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME H1204 : Designer | Compétences par enjeu : Recherche, Innovation (Dessiner des avant-projets (roughs, croquis) à partir du concept, des th"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41694",
+    "nom": "Expert en design d’expérience utilisateur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41694) — Expert en design d’expérience utilisateur (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1205 Réa"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   }
+  ]
+ },
+ {
+  "qid": "metier-013-v1",
+  "question": "Dis-moi : Quelles études faut-il faire pour devenir travailleur social ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "D.E Assistant de Service Social",
+    "etablissement": "ARIFTS Association Régionale pour l'Institut de Formation en",
+    "ville": "Rezé",
+    "region": "Pays de la Loire",
+    "domain": "social",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.189",
+    "nom": "technicien/ne de l'intervention sociale et familiale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de l'intervention sociale et familiale | Libellé : technicienne de l'intervention sociale et familiale / technicien de l'interv"
+   },
+   {
+    "fiche_id": "idx:4072",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "APRADIS",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8110",
+    "nom": "ADMINISTRATION ET ECHANGES INTERNATIONAUX — Relations sociales - Ressources huma",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8196",
+    "nom": "ANTHROPOLOGIE — Muséologie : patrimoines immatériels et collections",
+    "etablissement": "Université de Strasbourg",
+    "ville": "STRASBOURG CEDEX",
+    "region": "Grand Est",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "idx:8231",
+    "nom": "ARCHEOLOGIE, SCIENCES POUR L'ARCHEOLOGIE — Patrimoine bâti, archéologie, culture",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41748",
+    "nom": "Assistant de service social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41748) — Assistant de service social (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1201 Action sociale | "
+   },
+   {
+    "fiche_id": "idx:8234",
+    "nom": "ARCHEOLOGIE, SCIENCES POUR L'ARCHEOLOGIE — Recherches, Sciences, Patrimoines",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8355",
+    "nom": "ARTS, LITTERATURES, LANGAGES — Pratiques, discours et usages",
+    "etablissement": "École des hautes études en sciences sociales",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8871",
+    "nom": "CIVILISATIONS, CULTURES ET SOCIETES — Histoire et culture des Juifs et du judaïs",
+    "etablissement": "Université Paris sciences et lettres",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8881",
+    "nom": "CIVILISATIONS, CULTURES ET SOCIETES — Valorisation des nouveaux patrimoines (VNP",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "idx:9053",
+    "nom": "CULTURE ET COMMUNICATION — Médiations, Musées et Patrimoines (MMP)",
+    "etablissement": "Avignon Université",
+    "ville": "AVIGNON CEDEX 01",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "idx:9059",
+    "nom": "CULTURE, PATRIMOINE ET MEDIATION — Expertise des médiations,  professions et ins",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8187",
+    "nom": "instructeur / instructrice pour l'autonomie des personnes déficientes visuelles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : instructeur / instructrice pour l'autonomie des personnes déficientes visuelles | GFE : GFE R : santé, social, soins personnels | Doma"
+   },
+   {
+    "fiche_id": "idx:9060",
+    "nom": "CULTURE, PATRIMOINE ET MEDIATION — Histoire de l'art et culture matérielle - de ",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9061",
+    "nom": "CULTURE, PATRIMOINE ET MEDIATION — Humanités environnementales",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.311",
+    "nom": "éducateur/trice spécialisé/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice spécialisé/e | Libellé : éducatrice spécialisée / éducateur spécialisé | Accroche : L'éducateur spécialisé ou l'éducatrice sp"
+   },
+   {
+    "fiche_id": "idx:9062",
+    "nom": "CULTURE, PATRIMOINE ET MEDIATION — M1 Administration culturelle / Projets Cultur",
+    "etablissement": "Université Paris-Saclay",
+    "ville": "GUYANCOURT",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "idx:9063",
+    "nom": "CULTURE, PATRIMOINE ET MEDIATION — M1 Evénementiel, Médiation des Arts et des Sc",
+    "etablissement": "Université Paris-Saclay",
+    "ville": "VERSAILLES",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP36004",
+    "nom": "Accompagnant éducatif et social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP36004) — Accompagnant éducatif et social (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : J1501 Soins d''hy"
+   },
+   {
+    "fiche_id": "metier:MET.132",
+    "nom": "médiateur/trice social/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médiateur/trice social/e | Libellé : médiatrice sociale / médiateur social | Accroche : Les médiateurs sociaux exercent en zones sensibles po"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35515",
+    "nom": "Carrières Sociales  : Assistance Sociale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35515) — Carrières Sociales  : Assistance Sociale (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1205 Info"
+   },
+   {
+    "fiche_id": "metier:MET.715",
+    "nom": "chargé/e de recherche en acoustique musicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e de recherche en acoustique musicale | Libellé : chargée de recherche en acoustique musicale / chargé de recherche en acoustique musi"
+   }
+  ]
+ },
+ {
+  "qid": "metier-014-v1",
+  "question": "Dis-moi : Quel est le salaire d'un métiers du jeu vidéo en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.885",
+    "nom": "concepteur/trice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de jeux vidéo | Libellé : conceptrice de jeux vidéo / concepteur de jeux vidéo | Synonymes : créateur/trice de jeux vidéo, g"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42021",
+    "nom": "Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42021) — Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:11059",
+    "nom": "HUMANITES ET INDUSTRIES CREATIVES — Management, Jeu Vidéo, Image et Créativité (",
+    "etablissement": "Université Côte d'Azur",
+    "ville": "CANNES LA BOCCA",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1125",
+    "nom": "Concepteur / Conceptrice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1125 : Concepteur / Conceptrice de jeux vidéo | Compétences par enjeu : Communication, Multimédia (Concevoir des jeux vidéo innovants et "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38294",
+    "nom": "Concepteur de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38294) — Concepteur de jeux vidéo (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:18971",
+    "nom": "licence pro mention métiers du jeu vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "education",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "multimédia, audiovisuel, animation, jeu vidéo, information et communication (MAA",
+    "etablissement": "MAAJIC",
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39594",
+    "nom": "Expert en création et développement de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39594) — Expert en création et développement de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.823",
+    "nom": "concepteur/trice de niveaux de jeu web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de niveaux de jeu web | Libellé : conceptrice de niveaux de jeu web / concepteur de niveaux de jeu web | Accroche : Au sein "
+   },
+   {
+    "fiche_id": "idx:31907",
+    "nom": "Licence - Langues, littératures et civilisations étrangères et régionales - Parc",
+    "etablissement": "Sorbonne université",
+    "ville": "Paris  6e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "parcoursup",
+    "extrait": "LLCER : ITALIEN MAJEURE NON DEBUTANT / mineure philosophie"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.885",
+    "nom": "concepteur / conceptrice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : concepteur / conceptrice de jeux vidéo | Codes ROME : E1104 (Conception de contenus multimédias) | GFE : GFE U : communication, médias"
+   },
+   {
+    "fiche_id": "idx:32256",
+    "nom": "Licence - Philosophie - Parcours PHILOSOPHIE MAJEURE / mineure italien non début",
+    "etablissement": "Sorbonne université",
+    "ville": "Paris  6e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "parcoursup",
+    "extrait": "PHILOSOPHIE MAJEURE / mineure italien non débutant"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40184",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40184) — Métiers du jeu vidéo  (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étude"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37652",
+    "nom": "Concepteur de jeux vidéo - Lead Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37652) — Concepteur de jeux vidéo - Lead Game designer (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104"
+   },
+   {
+    "fiche_id": "idx:33702",
+    "nom": "Artisanat et métiers d’art option marchandisage visuel",
+    "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38793",
+    "nom": "Concepteur artistique - Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38793) — Concepteur artistique - Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1"
+   },
+   {
+    "fiche_id": "idx:34958",
+    "nom": "Designer d’expériences immersives, interactives et ludiques pour le jeu vidéo, l",
+    "etablissement": "CONSERVATOIRE NATIONAL DES ARTS ET METIERS",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:37214",
+    "nom": "Métiers de la mode chapelier modiste",
+    "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:37267",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": "UNIVERSITE PARIS XIII PARIS NORD VILLETANEUSE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1115",
+    "nom": "Chef / Cheffe de projet jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1115 : Chef / Cheffe de projet jeux vidéo | Compétences par enjeu : Relation client (Analyser la demande des clients et identifier la ou "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39760",
+    "nom": "Concepteur de jeux vidéo / Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39760) — Concepteur de jeux vidéo / Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   },
+   {
+    "fiche_id": "idx:342",
+    "nom": "Centre de Formation d'Apprentis Commerce et Distribution-AFPAM (Association pour",
+    "etablissement": "Centre de Formation d'Apprentis Commerce et Distribution-AFP",
+    "ville": "",
+    "region": "Grand Est",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:2914",
+    "nom": "Organisme de formation-Centre de Formation d'apprentis Carrière et Conseil Enaco",
+    "etablissement": "Organisme de formation-Centre de Formation d'apprentis Carri",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38806",
+    "nom": "Concepteur de jeux vidéo - Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38806) — Concepteur de jeux vidéo - Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   },
+   {
+    "fiche_id": "idx:4665",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4666",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE HAUTE ALSACE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1831",
+    "nom": "Développeur / Développeuse - jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1831 : Développeur / Développeuse - jeux vidéo | Compétences par enjeu : Data et Nouvelles technologies (Concevoir l'architecture d'un sy"
+   }
+  ]
+ },
+ {
+  "qid": "metier-015-v1",
+  "question": "Dis-moi : Quels sont les débouchés du métier de journaliste ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.45",
+    "nom": "journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste | Synonymes : flash-man, journaliste scientifique | Accroche : Journaliste en presse écrite ou sur le Web, JRI (journaliste repor"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.45",
+    "nom": "journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine : information-comm"
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1106",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1106 : Journaliste | Compétences par enjeu : Communication, Multimédia (Gérer les relations avec les contributeurs externes, Repérer les "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.253",
+    "nom": "journaliste radio et TV",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste radio et TV | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine : info"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.253",
+    "nom": "journaliste radio et TV",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste radio et TV | Accroche : Informer le public via des interviews, des reportages ou des dossiers diffusés sur les ondes radio ou su"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.677",
+    "nom": "journaliste reporter d'images",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste reporter d'images | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine "
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38922",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38922) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média "
+   },
+   {
+    "fiche_id": "onisep_metier:MET.385",
+    "nom": "journaliste sportif / sportive",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : journaliste sportif / sportive | Codes ROME : E1106 (Journalisme et information média) | GFE : GFE U : communication, médias | Domaine"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42049",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42049) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DU journaliste reporter d'image",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1118",
+    "nom": "Présentateur / Présentatrice journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1118 : Présentateur / Présentatrice journaliste | Compétences par enjeu : Communication, Multimédia (Repérer les sujets émergents suscept"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39871",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39871) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.385",
+    "nom": "journaliste sportif/ve",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste sportif/ve | Libellé : journaliste sportive / journaliste sportif | Accroche : Il lui faut saisir l’info comme on saisit la balle"
+   },
+   {
+    "fiche_id": "metier:MET.677",
+    "nom": "journaliste reporter d'images",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste reporter d'images | Synonymes : journaliste de presse audiovisuelle, JRI, reporter cameraman | Accroche : Journaliste de terrain "
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1114",
+    "nom": "Reporter / Reportrice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1114 : Reporter / Reportrice | Compétences par enjeu : Communication, Multimédia (Repérer les sujets émergents susceptibles de faire l'ob"
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37033",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37033) — Journaliste (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de contenus multimédia"
+   },
+   {
+    "fiche_id": "idx:29129",
+    "nom": "DN MADE - Espace - Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS",
+    "etablissement": "ECOLE NATIONALE SUPERIEURE A.A-MET.D'ART.",
+    "ville": "Paris 15e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : ARCHITECTURE, PATRIMOINE ET LIEUX CULTURELS"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   },
+   {
+    "fiche_id": "idx:29273",
+    "nom": "DN MADE - Livre - Spécialité : Reliure-création et patrimoine",
+    "etablissement": "Lycée Estienne Esaig",
+    "ville": "Paris 13e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Reliure-création et patrimoine"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39755",
+    "nom": "Journaliste multimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39755) — Journaliste multimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "idx:29384",
+    "nom": "DN MADE - Objet - Spécialité : Horlogerie, mention objet numérique et patrimoine",
+    "etablissement": "Lycée Diderot",
+    "ville": "Paris 19e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Horlogerie, mention objet numérique et patrimoine"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38950",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38950) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40281",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40281) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de contenus multimédi"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39736",
+    "nom": "Journaliste plurimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39736) — Journaliste plurimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   }
+  ]
+ },
+ {
+  "qid": "metier-016-v1",
+  "question": "Dis-moi : Quel est le salaire d'un développeur web en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "INFORMATIQUE — Développeur Full Stack web et mobile",
+    "etablissement": "Université de Corse Pasquale Paoli",
+    "ville": "CORTE",
+    "region": "Corse",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:2914",
+    "nom": "Organisme de formation-Centre de Formation d'apprentis Carrière et Conseil Enaco",
+    "etablissement": "Organisme de formation-Centre de Formation d'apprentis Carri",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4665",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4666",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE HAUTE ALSACE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4667",
+    "nom": "CARRIERES JURIDIQUES : PATRIMOINE ET FINANCE (BUT)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1855",
+    "nom": "Développeur / Développeuse web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1855 : Développeur / Développeuse web | Compétences par enjeu : Data et Nouvelles technologies (Concevoir une application web, Configurer"
+   },
+   {
+    "fiche_id": "idx:5608",
+    "nom": "DEVELOPPEUR WEB (CESI)",
+    "etablissement": "CESI",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9939",
+    "nom": "DROIT — Droit public et carrières publiques",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "A DISTANCE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38436",
+    "nom": "Développeur web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38436) — Développeur web (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1801 Administration de systèmes d'"
+   },
+   {
+    "fiche_id": "idx:11256",
+    "nom": "INFORMATIQUE — Développeur Full Stack web et mobile",
+    "etablissement": "Université de Corse Pasquale Paoli",
+    "ville": "CORTE",
+    "region": "Corse",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35687",
+    "nom": "Développeur Intégrateur Web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35687) — Développeur Intégrateur Web (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1805 Études et dévelop"
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37674",
+    "nom": "Développeur web et web mobile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37674) — Développeur web et web mobile (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1805 Études et dével"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14008",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Carrières de la banque et de l’assurance :",
+    "etablissement": "Université Clermont Auvergne",
+    "ville": "CLERMONT-FERRAND",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41463",
+    "nom": "Concepteur développeur web (BADGE CGE)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41463) — Concepteur développeur web (BADGE CGE) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Études"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39111",
+    "nom": "Développeur d'applications web ou web mobile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39111) — Développeur d'applications web ou web mobile (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : M1805 "
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.12",
+    "nom": "développeur/euse informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : développeur/euse informatique | Libellé : développeuse informatique / développeur informatique | Synonymes : analyste-programmeur/euse, codeu"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37625",
+    "nom": "Concepteur-développeur d'applications web et mobile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37625) — Concepteur-développeur d'applications web et mobile (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) :"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39618",
+    "nom": "Concepteur développeur d'applications web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39618) — Concepteur développeur d'applications web (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étu"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35959",
+    "nom": "Développeur web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35959) — Développeur web (bac+2) | Niveau européen : Niveau 5 | Métiers visés (ROME) : E1103 Communication, E1104 Concepti"
+   }
+  ]
+ },
+ {
+  "qid": "metier-017-v1",
+  "question": "Dis-moi : Quels sont les débouchés du métier de data scientist ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "rome_metier:M1405",
+    "nom": "Data scientist",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1405 : Data scientist | Compétences par enjeu : Recherche, Innovation (Concevoir des modèles théoriques (calcul, simulation, modélisation"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "développeur en intelligence artificielle",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10821",
+    "nom": "HISTOIRE DE L'ART ET ARCHEOLOGIE — Histoire de l'art : création, diffusion, patr",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.512",
+    "nom": "data scientist (expert en mégadonnées)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : data scientist (expert en mégadonnées) | Codes ROME : M1403 (Études et prospectives socio-économiques) | GFE : GFE P : Gestion et trai"
+   },
+   {
+    "fiche_id": "idx:11048",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Sociétés, politique et cultures de l'Antiq",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "ville": "BESANCON",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8003",
+    "nom": "préparateur / préparatrice de commandes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : préparateur / préparatrice de commandes | Codes ROME : N1103 (Magasinage et préparation de commandes) | GFE : GFE O : transport, logis"
+   },
+   {
+    "fiche_id": "idx:11132",
+    "nom": "INFORMATION, COMMUNICATION — Communication des organisations, information, média",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "MARSEILLE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12048",
+    "nom": "LETTRES ET HUMANITES — Littératures, cultures et patrimoine",
+    "etablissement": "Université de Toulon",
+    "ville": "LA GARDE",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8008",
+    "nom": "laveur / laveuse de vitres",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : laveur / laveuse de vitres | Codes ROME : K2202 (Lavage de vitres) | GFE : GFE T : environnement, nettoyage, sécurité | Domaine : envi"
+   },
+   {
+    "fiche_id": "idx:13998",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Assurances, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.292",
+    "nom": "formateur / formatrice d'adultes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : formateur / formatrice d'adultes | Codes ROME : K2111 (Formation professionnelle) | GFE : GFE W : droit, enseignement, recherche et sc"
+   },
+   {
+    "fiche_id": "idx:14006",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Banque, Gestion de Patrimoine",
+    "etablissement": "Université de Rouen Normandie",
+    "ville": "ROUEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.210",
+    "nom": "chauffeur-livreur / chauffeuse-livreuse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chauffeur-livreur / chauffeuse-livreuse | Codes ROME : N4105 (Conduite et livraison par tournées sur courte distance) | GFE : GFE O : "
+   },
+   {
+    "fiche_id": "idx:14009",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Chargé d'affaires en banque : patrimoine e",
+    "etablissement": "Université Jean Monnet",
+    "ville": "SAINT-ETIENNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14021",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller patrimoine et professionnels",
+    "etablissement": "Université de Bretagne Occidentale",
+    "ville": "BREST",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.512",
+    "nom": "data scientist (experte en mégadonnées)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : data scientist (experte en mégadonnées) | Libellé : data scientist (experte en mégadonnées) / data scientist (expert en mégadonnées) | Synony"
+   },
+   {
+    "fiche_id": "idx:14024",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Conseiller Professionnels et Gestion de Pa",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14034",
+    "nom": "MONNAIE, BANQUE, FINANCE, ASSURANCE — Finance et patrimoine",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX",
+    "region": "Grand Est",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:14153",
+    "nom": "OPTIQUE, IMAGE, VISION, MULTIMEDIA — Systèmes distribués et technologies de la d",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18131",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18132",
+    "nom": "diplôme de spécialisation et d'approfondissement en architecture et patrimoine, ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26357",
+    "nom": "BUT - Information communication Parcours métiers du livre et du patrimoine",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:26590",
+    "nom": "BUT - Science des données",
+    "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+    "ville": "Paris 16e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "data_ia",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.8006",
+    "nom": "chargé / chargée de recrutement en agence d'emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chargé / chargée de recrutement en agence d'emploi | Codes ROME : M1502 (Développement des ressources humaines) | GFE : GFE Q : commer"
+   }
+  ]
+ }
+]

@@ -1,0 +1,3737 @@
+[
+ {
+  "qid": "metier-027-v2",
+  "question": "J'aimerais savoir, quelles études faut-il faire pour devenir designer UX ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.928",
+    "nom": "designer d'interaction",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : designer d'interaction | Accroche : Le designer d'interaction choisit la façon dont un objet ou un service va se comporter dans le dialogue a"
+   },
+   {
+    "fiche_id": "metier:MET.936",
+    "nom": "UX designer (concepteur/trice de l'expérience utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : UX designer (concepteur/trice de l'expérience utilisateur) | Libellé : UX designer (conceptrice de l'expérience utilisateur) / UX designer (c"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Designer UX-UI",
+    "etablissement": "EDUSERVICES",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1206",
+    "nom": "UX - UI Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1206 : UX - UI Designer | Compétences par enjeu : Recherche, Innovation (Procéder à des tests, expérimentations, Animer une démarche agil"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.936",
+    "nom": "UX designer (concepteur / conceptrice de l'expérience utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : UX designer (concepteur / conceptrice de l'expérience utilisateur) | Codes ROME : E1205 (Réalisation de contenus multimédias) | GFE : "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40917",
+    "nom": "UX/UI Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40917) — UX/UI Designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de contenus multim"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41103",
+    "nom": "UX Designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41103) — UX Designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conception de contenus multimédia"
+   },
+   {
+    "fiche_id": "metier:MET.7901",
+    "nom": "UI designer (concepteur/trice d'interface utilisateur)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : UI designer (concepteur/trice d'interface utilisateur) | Libellé : UI designer (conceptrice d'interface utilisateur) / UI designer (concepteu"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39367",
+    "nom": "Designer UX-UI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39367) — Designer UX-UI (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1101 Animation de site multimédia, "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41742",
+    "nom": "Concepteur webdesigner UX/UI",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41742) — Concepteur webdesigner UX/UI (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de c"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41694",
+    "nom": "Expert en design d’expérience utilisateur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41694) — Expert en design d’expérience utilisateur (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1205 Réa"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:ouverture-voeux",
+    "nom": "Ouverture de la phase d'inscription et formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026. Chaque candidat peut formuler jusqu'à 10 vœux pri"
+   },
+   {
+    "fiche_id": "metier:MET.239",
+    "nom": "concepteur/trice designer packaging (emballage)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice designer packaging (emballage) | Libellé : conceptrice designer packaging (emballage) / concepteur designer packaging (embal"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38244",
+    "nom": "Concepteur UI et webdesign",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38244) — Concepteur UI et webdesign (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de con"
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "metier:MET.647",
+    "nom": "moniteur/trice de voile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : moniteur/trice de voile | Libellé : monitrice de voile / moniteur de voile | Accroche : La monitrice ou le moniteur de voile encadre des élèv"
+   }
+  ]
+ },
+ {
+  "qid": "metier-028-v2",
+  "question": "J'aimerais savoir, quel est le salaire d'un travailleur social en début de carrière ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.92",
+    "nom": "juriste en droit social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : juriste en droit social | Accroche : Plans sociaux, contrats de travail, réforme des retraites... Le droit social évolue constamment, au gré "
+   },
+   {
+    "fiche_id": "insee_salaan:cs:43",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires PCS 43 : Professions intermédiaires de la santé et du travail social (France 2023) | Effectif pondéré : 1 437 756 | Salaire net médian annuel"
+   },
+   {
+    "fiche_id": "idx:4668",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "FORMASUP PARIS ILE-DE-FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Cfa sanitaire social et médico-social de Bourgogne",
+    "etablissement": "Cfa sanitaire social et médico-social de Bourgogne",
+    "ville": "",
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP36004",
+    "nom": "Accompagnant éducatif et social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP36004) — Accompagnant éducatif et social (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : J1501 Soins d''hy"
+   },
+   {
+    "fiche_id": "idx:4669",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "UNIVERSITE COTE D'AZUR",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4670",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4671",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "UNIVERSITE DE RENNES",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4672",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "UNIVERSITE GRENOBLE ALPES",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4673",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "UNIVERSITE MARIE ET LOUIS PASTEUR",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.132",
+    "nom": "médiateur/trice social/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médiateur/trice social/e | Libellé : médiatrice sociale / médiateur social | Accroche : Les médiateurs sociaux exercent en zones sensibles po"
+   },
+   {
+    "fiche_id": "metier:MET.189",
+    "nom": "technicien/ne de l'intervention sociale et familiale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de l'intervention sociale et familiale | Libellé : technicienne de l'intervention sociale et familiale / technicien de l'interv"
+   },
+   {
+    "fiche_id": "idx:4674",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "UNIVERSITE PARIS EST CRETEIL VAL DE MARNE",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4675",
+    "nom": "CARRIERES SOCIALES : ANIMATION SOCIALE ET SOCIOCULTURELLE (BUT)",
+    "etablissement": "UNIVERSITE TOULOUSE II",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4676",
+    "nom": "CARRIERES SOCIALES : VILLES ET TERRITOIRES DURABLES (BUT)",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4677",
+    "nom": "CARRIERES SOCIALES : VILLES ET TERRITOIRES DURABLES (BUT)",
+    "etablissement": "UNIVERSITE MARIE ET LOUIS PASTEUR",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_humaines",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10972",
+    "nom": "HISTOIRE — Pouvoirs, savoirs, genre",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "AIX-EN-PROVENCE CEDEX 01",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10973",
+    "nom": "HISTOIRE — Pouvoirs, savoirs, genre - DPI",
+    "etablissement": "Aix-Marseille Université",
+    "ville": "AIX-EN-PROVENCE CEDEX 01",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8097",
+    "nom": "ingénieur/e social/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : ingénieur/e social/e | Libellé : ingénieure sociale / ingénieur social | Accroche : Travaillant pour une ville ou une association, l’ingénieu"
+   },
+   {
+    "fiche_id": "idx:10992",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Enjeux des pouvoirs, des guerres, des savo",
+    "etablissement": "Université de Lorraine",
+    "ville": "VANDOEUVRE-LES-NANCY",
+    "region": "Grand Est",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10999",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Histoire : Circulation des savoirs et des ",
+    "etablissement": "Institut catholique de Paris",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.64",
+    "nom": "assistant/e de service social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : assistant/e de service social | Libellé : assistante de service social / assistant de service social | Synonymes : assistant/e social/e | Acc"
+   },
+   {
+    "fiche_id": "idx:11028",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Métiers de l’archéologie et de l’histoire ",
+    "etablissement": "Université de Lorraine",
+    "ville": "VANDOEUVRE-LES-NANCY",
+    "region": "Grand Est",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.64",
+    "nom": "assistant / assistante de service social",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : assistant / assistante de service social | Codes ROME : K1201 (Action sociale) | GFE : GFE R : santé, social, soins personnels | Domai"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35515",
+    "nom": "Carrières Sociales  : Assistance Sociale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35515) — Carrières Sociales  : Assistance Sociale (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K1205 Info"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   }
+  ]
+ },
+ {
+  "qid": "metier-029-v2",
+  "question": "J'aimerais savoir, quels sont les débouchés du métier de métiers du jeu vidéo ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "rome_metier:E1125",
+    "nom": "Concepteur / Conceptrice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1125 : Concepteur / Conceptrice de jeux vidéo | Compétences par enjeu : Communication, Multimédia (Concevoir des jeux vidéo innovants et "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42021",
+    "nom": "Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42021) — Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:18971",
+    "nom": "licence pro mention métiers du jeu vidéo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "education",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.885",
+    "nom": "concepteur/trice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de jeux vidéo | Libellé : conceptrice de jeux vidéo / concepteur de jeux vidéo | Synonymes : créateur/trice de jeux vidéo, g"
+   },
+   {
+    "fiche_id": "metier:MET.823",
+    "nom": "concepteur/trice de niveaux de jeu web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice de niveaux de jeu web | Libellé : conceptrice de niveaux de jeu web / concepteur de niveaux de jeu web | Accroche : Au sein "
+   },
+   {
+    "fiche_id": "idx:34958",
+    "nom": "Designer d’expériences immersives, interactives et ludiques pour le jeu vidéo, l",
+    "etablissement": "CONSERVATOIRE NATIONAL DES ARTS ET METIERS",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38294",
+    "nom": "Concepteur de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38294) — Concepteur de jeux vidéo (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "idx:37267",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": "UNIVERSITE PARIS XIII PARIS NORD VILLETANEUSE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40184",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40184) — Métiers du jeu vidéo  (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étude"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39594",
+    "nom": "Expert en création et développement de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39594) — Expert en création et développement de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "multimédia, audiovisuel, animation, jeu vidéo, information et communication (MAA",
+    "etablissement": "MAAJIC",
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:7296",
+    "nom": "METIERS D'ART ET DU DESIGN - GRAPHISME",
+    "etablissement": "ASSOCIATION JEUNESSE ET AVENIR",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.885",
+    "nom": "concepteur / conceptrice de jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : concepteur / conceptrice de jeux vidéo | Codes ROME : E1104 (Conception de contenus multimédias) | GFE : GFE U : communication, médias"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37652",
+    "nom": "Concepteur de jeux vidéo - Lead Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37652) — Concepteur de jeux vidéo - Lead Game designer (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104"
+   },
+   {
+    "fiche_id": "idx:8263",
+    "nom": "ARTS PLASTIQUES — Jeu vidéo",
+    "etablissement": "Université de Montpellier Paul-Valéry",
+    "ville": "MONTPELLIER CEDEX 5",
+    "region": "Occitanie",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:E1115",
+    "nom": "Chef / Cheffe de projet jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1115 : Chef / Cheffe de projet jeux vidéo | Compétences par enjeu : Relation client (Analyser la demande des clients et identifier la ou "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38793",
+    "nom": "Concepteur artistique - Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38793) — Concepteur artistique - Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1"
+   },
+   {
+    "fiche_id": "idx:8363",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Conception sonore",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8364",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Conception visuelle",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39760",
+    "nom": "Concepteur de jeux vidéo / Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39760) — Concepteur de jeux vidéo / Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   },
+   {
+    "fiche_id": "idx:8368",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Ergonomie UX/UI",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1831",
+    "nom": "Développeur / Développeuse - jeux vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1831 : Développeur / Développeuse - jeux vidéo | Compétences par enjeu : Data et Nouvelles technologies (Concevoir l'architecture d'un sy"
+   },
+   {
+    "fiche_id": "idx:8370",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Game design",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8375",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — M1 - Direction de projets vid",
+    "etablissement": "Université Grenoble Alpes",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38806",
+    "nom": "Concepteur de jeux vidéo - Game designer",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38806) — Concepteur de jeux vidéo - Game designer (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1104 Conc"
+   },
+   {
+    "fiche_id": "idx:8376",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Management de projet",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8380",
+    "nom": "AUDIOVISUEL, MEDIAS INTERACTIFS NUMERIQUES, JEUX — Programmation",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "ANGOULÊME",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9041",
+    "nom": "CREATION NUMERIQUE — Design graphique et d'interaction - Option Jeux vidéo",
+    "etablissement": "Institut catholique de Lille",
+    "ville": "ROUBAIX",
+    "region": "Hauts-de-France",
+    "domain": "lettres_arts",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10992",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Enjeux des pouvoirs, des guerres, des savo",
+    "etablissement": "Université de Lorraine",
+    "ville": "VANDOEUVRE-LES-NANCY",
+    "region": "Grand Est",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.823",
+    "nom": "concepteur / conceptrice de niveaux de jeu web",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : concepteur / conceptrice de niveaux de jeu web | Codes ROME : E1104 (Conception de contenus multimédias) | GFE : GFE U : communication"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38345",
+    "nom": "Réalisateur de jeu vidéo",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38345) — Réalisateur de jeu vidéo (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de conten"
+   },
+   {
+    "fiche_id": "rome_metier:E1126",
+    "nom": "Auteur / Auteure de jeux de société",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1126 : Auteur / Auteure de jeux de société | Compétences par enjeu : Communication, Multimédia (Concevoir et réaliser des éléments graphi"
+   }
+  ]
+ },
+ {
+  "qid": "metier-030-v2",
+  "question": "J'aimerais savoir, quelles études faut-il faire pour devenir journaliste ?",
+  "category": "metier",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.45",
+    "nom": "journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste | Synonymes : flash-man, journaliste scientifique | Accroche : Journaliste en presse écrite ou sur le Web, JRI (journaliste repor"
+   },
+   {
+    "fiche_id": "metier:MET.385",
+    "nom": "journaliste sportif/ve",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste sportif/ve | Libellé : journaliste sportive / journaliste sportif | Accroche : Il lui faut saisir l’info comme on saisit la balle"
+   },
+   {
+    "fiche_id": "rome_metier:E1106",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME E1106 : Journaliste | Compétences par enjeu : Communication, Multimédia (Gérer les relations avec les contributeurs externes, Repérer les "
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38922",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38922) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média "
+   },
+   {
+    "fiche_id": "metier:MET.677",
+    "nom": "journaliste reporter d'images",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : journaliste reporter d'images | Synonymes : journaliste de presse audiovisuelle, JRI, reporter cameraman | Accroche : Journaliste de terrain "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42049",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42049) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "journaliste sport - esport",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "metier:MET.647",
+    "nom": "moniteur/trice de voile",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : moniteur/trice de voile | Libellé : monitrice de voile / moniteur de voile | Accroche : La monitrice ou le moniteur de voile encadre des élèv"
+   },
+   {
+    "fiche_id": "metier:MET.27",
+    "nom": "conducteur/trice d'engins de travaux publics",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : conducteur/trice d'engins de travaux publics | Libellé : conductrice d'engins de travaux publics / conducteur d'engins de travaux publics | S"
+   },
+   {
+    "fiche_id": "metier:MET.149",
+    "nom": "expert/e-comptable",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : expert/e-comptable | Libellé : experte-comptable / expert-comptable | Accroche : L'activité principale de l'expert-comptable ou de l'experte-"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39871",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39871) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "metier:MET.547",
+    "nom": "agriculteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : agriculteur/trice | Libellé : agricultrice / agriculteur | Synonymes : chef/fe d'exploitation, exploitant/e agricole | Accroche : Passionné d"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38950",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38950) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et information média,"
+   },
+   {
+    "fiche_id": "metier:MET.313",
+    "nom": "gendarme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : gendarme | Synonymes : agent/e de la force publique, garde républicain, sous-officier/ère de gendarmerie | Accroche : Militaire de carrière, "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40281",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40281) — Journaliste (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1205 Réalisation de contenus multimédi"
+   },
+   {
+    "fiche_id": "metier:MET.155",
+    "nom": "lad-jockey, lad-driver",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : lad-jockey, lad-driver | Synonymes : cavalier/ère d'entraînement | Accroche : Le lad-jockey s'occupe de chevaux de galop ; le lad-driver, de "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37034",
+    "nom": "Diplôme de journalisme",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37034) — Diplôme de journalisme (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "metier:MET.832",
+    "nom": "pisteur/euse secouriste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pisteur/euse secouriste | Libellé : pisteuse secouriste / pisteur secouriste | Accroche : Dans une station de sports d'hiver, la pisteuse ou "
+   },
+   {
+    "fiche_id": "metier:MET.358",
+    "nom": "pilote d'hélicoptère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : pilote d'hélicoptère | Accroche : Le ou la pilote d'hélicoptère, militaire ou civile, participe à des missions de combat ou de secours. Il ou"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39736",
+    "nom": "Journaliste plurimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39736) — Journaliste plurimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40793",
+    "nom": "Journalisme (Institut Pratique du Journalisme de l'université Paris Dauphine-PSL",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40793) — Journalisme (Institut Pratique du Journalisme de l'université Paris Dauphine-PSL) (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39755",
+    "nom": "Journaliste multimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39755) — Journaliste multimédia (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : E1106 Journalisme et informa"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37033",
+    "nom": "Journaliste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37033) — Journaliste (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1104 Conception de contenus multimédia"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-001-v2",
+  "question": "J'aimerais savoir, je travaille depuis 8 ans dans la vente, comment me reconvertir dans l'informatique avec mon CPF ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "financement_dispositif:cpf",
+    "nom": "Compte Personnel de Formation (CPF)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Compte Personnel de Formation (CPF) | Organisme : Caisse des Dépôts (gestion) / Ministère du Travail (cadre) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "idx:3271",
+    "nom": "Organisme de formation-Centre de formation d'apprentis de Retravailler dans l'Ou",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis de Re",
+    "ville": "",
+    "region": "Pays de la Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.593",
+    "nom": "formateur/trice en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : formateur/trice en informatique | Libellé : formatrice en informatique / formateur en informatique | Accroche : À l'heure où les technologies"
+   },
+   {
+    "fiche_id": "metier:MET.594",
+    "nom": "vendeur/euse en micro-informatique et multimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vendeur/euse en micro-informatique et multimédia | Libellé : vendeuse en micro-informatique et multimédia / vendeur en micro-informatique et "
+   },
+   {
+    "fiche_id": "idx:11227",
+    "nom": "INFORMATIQUE — Applications Réparties, Intelligence Artificielle et Sécurité (AR",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX",
+    "region": "Centre-Val de Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "idx:11266",
+    "nom": "INFORMATIQUE — Excellence Minerve GPEx",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX",
+    "region": "Centre-Val de Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:ptp_transitions_pro",
+    "nom": "Projet de transition professionnelle (PTP)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Projet de transition professionnelle (PTP) | Organisme : Transitions Pro (associations régionales paritaires) | Public cible : Salariés "
+   },
+   {
+    "fiche_id": "metier:MET.229",
+    "nom": "chef/fe de produit technique en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chef/fe de produit technique en informatique | Libellé : chef de produit technique en informatique | Synonymes : ingénieur/e marketing produi"
+   },
+   {
+    "fiche_id": "idx:11306",
+    "nom": "INFORMATIQUE — Intelligence artificielle",
+    "etablissement": "Le Mans Université",
+    "ville": "LE MANS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "OF-CFA I-maginer Arinfo Ecole des Métiers du Numérique",
+    "etablissement": "OF-CFA I-maginer Arinfo Ecole des Métiers du Numérique",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.204",
+    "nom": "ingénieur technico-commercial / ingénieure technico-commerciale en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ingénieur technico-commercial / ingénieure technico-commerciale en informatique | Codes ROME : D1407 (Relation technico-commerciale) |"
+   },
+   {
+    "fiche_id": "idx:11307",
+    "nom": "INFORMATIQUE — Intelligence artificielle",
+    "etablissement": "Le Mans Université",
+    "ville": "LE MANS CEDEX 9",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.57",
+    "nom": "informaticien/ne industriel/le",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : informaticien/ne industriel/le | Libellé : informaticienne industrielle / informaticien industriel | Accroche : Dans l'industrie, l'informati"
+   },
+   {
+    "fiche_id": "metier:MET.659",
+    "nom": "responsable de la promotion des ventes",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : responsable de la promotion des ventes | Synonymes : responsable du marketing (mercatique) opérationnel, responsable trade marketing (mercati"
+   },
+   {
+    "fiche_id": "idx:11333",
+    "nom": "INFORMATIQUE — M1 - Digital Skills for Health Transformation",
+    "etablissement": "Institut polytechnique de Paris",
+    "ville": "PALAISEAU CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.229",
+    "nom": "chef / cheffe de produit technique en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : chef / cheffe de produit technique en informatique | Codes ROME : M1703 (Management et gestion de produit) | GFE : GFE P : Gestion et "
+   },
+   {
+    "fiche_id": "idx:12391",
+    "nom": "MANAGEMENT — Management Commerce Vente dans L'Agroalimentaire",
+    "etablissement": "Université de Montpellier",
+    "ville": "MONTPELLIER",
+    "region": "Occitanie",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8086",
+    "nom": "demand planner (prévisionniste des ventes)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : demand planner (prévisionniste des ventes) | Accroche : Maillon stratégique de la chaîne logistique, le ou la demand planner fixe les prévisi"
+   },
+   {
+    "fiche_id": "idx:12451",
+    "nom": "MARKETING, VENTE — Communication Évènementielle et Digitale, Mention Sport et Cu",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38399",
+    "nom": "Métiers du commerce et de la vente",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38399) — Métiers du commerce et de la vente (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : D1403 Relation com"
+   },
+   {
+    "fiche_id": "metier:MET.296",
+    "nom": "charpentier/ère métallique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : charpentier/ère métallique | Libellé : charpentière métallique / charpentier métallique | Synonymes : monteur/euse-assembleur/euse en constru"
+   },
+   {
+    "fiche_id": "idx:12455",
+    "nom": "MARKETING, VENTE — Distribution, services et transformation digitale",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "TROYES CEDEX 9",
+    "region": "Grand Est",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41310",
+    "nom": "Technicien Valoriste du Réemploi d’appareils informatiques",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41310) — Technicien Valoriste du Réemploi d’appareils informatiques (bac) | Niveau européen : Niveau 4 | Métiers visés (RO"
+   },
+   {
+    "fiche_id": "metier:MET.8113",
+    "nom": "responsable de marque",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : responsable de marque | Accroche : Dans une entreprise, le ou la responsable de marque gère l'identité de la marque auprès du grand public. I"
+   },
+   {
+    "fiche_id": "idx:12485",
+    "nom": "MARKETING, VENTE — Marketing des services",
+    "etablissement": "Le Mans Université",
+    "ville": "LE MANS",
+    "region": "Pays de la Loire",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.762",
+    "nom": "conseiller/ère relation client à distance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : conseiller/ère relation client à distance | Libellé : conseillère relation client à distance / conseiller relation client à distance | Synony"
+   },
+   {
+    "fiche_id": "idx:12496",
+    "nom": "MARKETING, VENTE — Marketing du Produit et des Solutions Innovantes (MPSI)",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX 2",
+    "region": "Centre-Val de Loire",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40509",
+    "nom": "E-commerce et marketing numérique (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40509) — E-commerce et marketing numérique (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) :"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.338",
+    "nom": "consultant / consultante web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : consultant / consultante web analytique | GFE : GFE P : Gestion et traitement de l'information (informatique, statistique, documentati"
+   },
+   {
+    "fiche_id": "idx:12509",
+    "nom": "MARKETING, VENTE — Marketing intégré dans un monde digitalisé",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "SAINT -ETIENNE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.860",
+    "nom": "vendeur/euse en magasin",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : vendeur/euse en magasin | Libellé : vendeuse en magasin / vendeur en magasin | Synonymes : conseiller/ère de clientèle, conseiller/ère en ven"
+   },
+   {
+    "fiche_id": "metier:MET.12",
+    "nom": "développeur/euse informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : développeur/euse informatique | Libellé : développeuse informatique / développeur informatique | Synonymes : analyste-programmeur/euse, codeu"
+   },
+   {
+    "fiche_id": "idx:12510",
+    "nom": "MARKETING, VENTE — Marketing intégré dans un monde digitalisé",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "SOISSONS",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38325",
+    "nom": "Ingénieur diplômé de l'école polytechnique universitaire de l'Université Côte d’",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38325) — Ingénieur diplômé de l'école polytechnique universitaire de l'Université Côte d’Azur, spécialité Informatique (ba"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.594",
+    "nom": "vendeur / vendeuse en micro-informatique et multimédia",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : vendeur / vendeuse en micro-informatique et multimédia | Codes ROME : D1212 (Vente en décoration et équipement du foyer) | GFE : GFE Q"
+   },
+   {
+    "fiche_id": "idx:12511",
+    "nom": "MARKETING, VENTE — Marketing intégré dans un monde digitalisé",
+    "etablissement": "Conservatoire national des arts et métiers",
+    "ville": "NANCY",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40589",
+    "nom": "Manager expert en transformation numérique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40589) — Manager expert en transformation numérique (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1806 Co"
+   },
+   {
+    "fiche_id": "metier:MET.597",
+    "nom": "agent/e d'escale et relation client",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : agent/e d'escale et relation client | Libellé : agente d'escale et relation client / agent d'escale et relation client | Synonymes : agent/e "
+   }
+  ]
+ },
+ {
+  "qid": "reconv-002-v2",
+  "question": "J'aimerais savoir, c'est quoi une VAE et comment l'utiliser pour valider mon expérience ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "correction:vae_experience_liee_diplome",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "correction_factuelle",
+    "source": "corrections_factuelles_curated",
+    "extrait": "Correction factuelle — VAE — expérience requise | Information correcte (autorité) : La VAE (Validation des Acquis de l'Expérience) exige au minimum 1 "
+   },
+   {
+    "fiche_id": "financement_dispositif:vae",
+    "nom": "Validation des acquis de l'expérience (VAE)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Validation des acquis de l'expérience (VAE) | Organisme : Ministère du Travail / France VAE (portail unique) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "rome_metier:K2126",
+    "nom": "Conseiller / Conseillère en validation des acquis de l'expérience",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K2126 : Conseiller / Conseillère en validation des acquis de l'expérience | Compétences par enjeu : Conseil, Transmission (Conseiller, acc"
+   },
+   {
+    "fiche_id": "financement_voie:continue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation continue (salariés, agents publics, indépendants) | 10 dispositifs principaux disponibles | Liste : Compte P"
+   },
+   {
+    "fiche_id": "metier:MET.825",
+    "nom": "consultant/e en validation",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e en validation | Libellé : consultante en validation / consultant en validation | Synonymes : consultant/e en validation qualific"
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40181",
+    "nom": "Diplôme d'accès aux études universitaires (DAEU) (Fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40181) — Diplôme d'accès aux études universitaires (DAEU) (Fiche nationale) (bac) | Niveau européen : Niveau 4 | Métiers v"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41694",
+    "nom": "Expert en design d’expérience utilisateur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41694) — Expert en design d’expérience utilisateur (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : E1205 Réa"
+   },
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41456",
+    "nom": "CQP Educateur de vie scolaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41456) — CQP Educateur de vie scolaire (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : K2104 Éducation et surv"
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41390",
+    "nom": "Communication et valorisation de la création artistique (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41390) — Communication et valorisation de la création artistique (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | "
+   },
+   {
+    "fiche_id": "rome_metier:D1118",
+    "nom": "Glacier / Glacière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME D1118 : Glacier / Glacière | Compétences par enjeu : Production, Fabrication (Préparer les ingrédients de base (lait, crème, sucre, fruits"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38154",
+    "nom": "Métiers de l'enseignement, de l'éducation et de la formation (MEEF), encadrement",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38154) — Métiers de l'enseignement, de l'éducation et de la formation (MEEF), encadrement éducatif (fiche nationale) (bac+"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP35795",
+    "nom": "Ingénieur diplômé de l’institut national des sciences appliquées de Rouen, spéci",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP35795) — Ingénieur diplômé de l’institut national des sciences appliquées de Rouen, spécialité informatique industrielle ("
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37469",
+    "nom": "Enseigner dans le  premier degré",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37469) — Enseigner dans le  premier degré (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : K2106 Enseignement"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39141",
+    "nom": "Ingénieur diplômé de l'Institut Supérieur de l'Aéronautique et de l'Espace",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39141) — Ingénieur diplômé de l'Institut Supérieur de l'Aéronautique et de l'Espace (bac+5) | Niveau européen : Niveau 7 |"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37467",
+    "nom": "Langues, enseignement, médiation (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37467) — Langues, enseignement, médiation (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : "
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DN MADE - Matériaux - Spécialité : Textile et savoir-faire écoresponsable, créat",
+    "etablissement": "Lycée de la Communication Saint Géraud",
+    "ville": "Aurillac",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "lettres_arts",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Textile et savoir-faire écoresponsable, création et recherche"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41760",
+    "nom": "Certificat d’aptitude au professorat de l’enseignement adapté aux jeunes déficie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41760) — Certificat d’aptitude au professorat de l’enseignement adapté aux jeunes déficients visuels (bac+5) | Niveau euro"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39355",
+    "nom": "Concepteur réalisateur d'expériences numériques interactives",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39355) — Concepteur réalisateur d'expériences numériques interactives (bac+3) | Niveau européen : Niveau 6 | Métiers visés"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40120",
+    "nom": "Langues, littératures et civilisations étrangères et régionales (fiche nationale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40120) — Langues, littératures et civilisations étrangères et régionales (fiche nationale) (bac+3) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "rome_metier:K1311",
+    "nom": "Assistant / Assistante de vie aux familles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME K1311 : Assistant / Assistante de vie aux familles | Compétences par enjeu : Soin (Aider une personne à s'habiller, Veiller à l'hygiène co"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39173",
+    "nom": "Langues étrangères appliquées (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39173) — Langues étrangères appliquées (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : D14"
+   },
+   {
+    "fiche_id": "metier:MET.115",
+    "nom": "moniteur/trice d'escalade",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : moniteur/trice d'escalade | Libellé : monitrice d'escalade / moniteur d'escalade | Accroche : En milieu naturel ou en salle, le moniteur ou l"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38385",
+    "nom": "Technicien en expérimentation animale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38385) — Technicien en expérimentation animale (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : A1501 Aide aux "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40184",
+    "nom": "Métiers du jeu vidéo  (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40184) — Métiers du jeu vidéo  (fiche nationale) (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étude"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41547",
+    "nom": "Métiers du multimédia et de l’Internet : Stratégie de communication numérique et",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41547) — Métiers du multimédia et de l’Internet : Stratégie de communication numérique et design d’expérience (bac+3) | Ni"
+   },
+   {
+    "fiche_id": "metier:MET.77",
+    "nom": "animateur/trice nature",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : animateur/trice nature | Libellé : animatrice nature / animateur nature | Synonymes : animateur/trice biodiversité, animateur/trice environne"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40098",
+    "nom": "Langues, littératures et civilisations étrangères et régionales (fiche nationale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40098) — Langues, littératures et civilisations étrangères et régionales (fiche nationale) (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37880",
+    "nom": "Ingénieur diplômé de l’Ecole Polytechnique Universitaire de l’Institut polytechn",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37880) — Ingénieur diplômé de l’Ecole Polytechnique Universitaire de l’Institut polytechnique de Grenoble (UGA), spécialit"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-003-v2",
+  "question": "J'aimerais savoir, je veux devenir développeur à 35 ans sans diplôme, quelles formations finançables ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Analyste développeur d'applications informatiques",
+    "etablissement": "MINISTERE DES ARMEES",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.344",
+    "nom": "médecin humanitaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : médecin humanitaire | Accroche : Généraliste ou spécialiste, le médecin humanitaire a une triple mission : soigner des populations dans un co"
+   },
+   {
+    "fiche_id": "idx:4101",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "ASSOCIATION POUR LA FORMATION PAR ALTERNANCE DANS LE SECTEUR",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.12",
+    "nom": "développeur/euse informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : développeur/euse informatique | Libellé : développeuse informatique / développeur informatique | Synonymes : analyste-programmeur/euse, codeu"
+   },
+   {
+    "fiche_id": "idx:4162",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "LYCEE POLYVALENT VAUCANSON",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.17",
+    "nom": "boulanger/ère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : boulanger/ère | Libellé : boulangère / boulanger | Synonymes : boulanger/ère-pâtissier/ère, ouvrier/ère boulanger/ère | Accroche : Baguettes,"
+   },
+   {
+    "fiche_id": "idx:4354",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "ASSOCIATION POUR LA FORMATION PAR ALTERNANCE DANS LE SECTEUR",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8184",
+    "nom": "éducateur/trice de chiens d'assistance",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice de chiens d'assistance | Libellé : éducatrice de chiens d'assistance / éducateur de chiens d'assistance | Accroche : Dans un "
+   },
+   {
+    "fiche_id": "idx:4399",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "CENTRE HOSPITALIER UNIVERSITAIRE D ORLEANS",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.682",
+    "nom": "maréchal/e-ferrant/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : maréchal/e-ferrant/e | Libellé : maréchale-ferrante / maréchal-ferrant | Accroche : « Pas de pied, pas de cheval » : cette expression anglais"
+   },
+   {
+    "fiche_id": "idx:4431",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "HOPITAL LE MANS",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.155",
+    "nom": "lad-jockey, lad-driver",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : lad-jockey, lad-driver | Synonymes : cavalier/ère d'entraînement | Accroche : Le lad-jockey s'occupe de chevaux de galop ; le lad-driver, de "
+   },
+   {
+    "fiche_id": "idx:5641",
+    "nom": "DIPLOME D'ETAT DE LA JEUNESSE, DE L'EDUCATION POPULAIRE ET DU SPORT SPE PERFECTI",
+    "etablissement": "TRANS-FAIRE FORMATION",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.615",
+    "nom": "substitut/e du procureur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : substitut/e du procureur | Libellé : substitute du procureur / substitut du procureur | Synonymes : magistrat/e | Accroche : De la direction "
+   },
+   {
+    "fiche_id": "idx:5657",
+    "nom": "DIPLOME DE DEVELOPPEUR COMMERCIAL ET MARKETING DE L'ISTEC PARIS",
+    "etablissement": "ISTEC",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.27",
+    "nom": "conducteur/trice d'engins de travaux publics",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : conducteur/trice d'engins de travaux publics | Libellé : conductrice d'engins de travaux publics / conducteur d'engins de travaux publics | S"
+   },
+   {
+    "fiche_id": "idx:6502",
+    "nom": "INGENIEUR DIPLOME DE L'UNIVERSITE DE TECHNOLOGIE DE BELFORT-MONTBELIARD SPECIALI",
+    "etablissement": "CENTRE DE FORMATION DES APPRENTIS DE L'INDUSTRIE FRANCHE-COM",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.964",
+    "nom": "éducateur/trice canin/ne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : éducateur/trice canin/ne | Libellé : éducatrice canine / éducateur canin | Synonymes : conseiller/ère en éducation canine, éducateur/trice de"
+   },
+   {
+    "fiche_id": "idx:8189",
+    "nom": "ANTHROPOLOGIE — Cultural Differences and Transnational Processes (CREOLE) – Dipl",
+    "etablissement": "Université Lumière - Lyon 2",
+    "ville": "BRON",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.923",
+    "nom": "développeur/euse économique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : développeur/euse économique | Libellé : développeuse économique / développeur économique | Synonymes : chargé/e de développement territorial,"
+   },
+   {
+    "fiche_id": "idx:16499",
+    "nom": "certificat d'aptitude aux fonctions de professeur de danse option danse contempo",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "voie_pre_bac_synthese:cap",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "Catalogue CAP (synthèse globale) | 86 spécialités référencées sur ONISEP | 8 domaines couverts | Distribution par domaine : lettres arts (35), ingenie"
+   },
+   {
+    "fiche_id": "idx:16500",
+    "nom": "certificat d'aptitude aux fonctions de professeur de danse option danse jazz",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "communication",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.295",
+    "nom": "tailleur/euse de pierre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : tailleur/euse de pierre | Libellé : tailleuse de pierre / tailleur de pierre | Accroche : Héritier des bâtisseurs de cathédrales, cet ouvrier"
+   },
+   {
+    "fiche_id": "idx:16821",
+    "nom": "CPJEPS mention animateur d'activités et de vie quotidienne dans toute structure ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_es|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC ES | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 34 néobacheliers ; 35.3% passent en L2 en 1 an ; 5"
+   },
+   {
+    "fiche_id": "idx:17154",
+    "nom": "DEJEPS spécialité perfectionnement sportif mention sports de glace option A : di",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.296",
+    "nom": "charpentier/ère métallique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : charpentier/ère métallique | Libellé : charpentière métallique / charpentier métallique | Synonymes : monteur/euse-assembleur/euse en constru"
+   },
+   {
+    "fiche_id": "idx:17290",
+    "nom": "DEUST technologie de l'organisation dans les professions de santé",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "metier:MET.359",
+    "nom": "régisseur/euse lumière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : régisseur/euse lumière | Libellé : régisseuse lumière / régisseur lumière | Synonymes : technicien/ne éclairagiste, technicien/ne lumière | A"
+   },
+   {
+    "fiche_id": "idx:17304",
+    "nom": "diplôme apprendre à conduire les transitions (ESSEC- CY Cergy)",
+    "etablissement": "ESSEC- CY Cergy",
+    "ville": "",
+    "region": null,
+    "domain": "droit",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 553 néobacheliers ; 4"
+   },
+   {
+    "fiche_id": "metier:MET.415",
+    "nom": "auxiliaire de puériculture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : auxiliaire de puériculture | Synonymes : auxiliaire-puériculteur/trice | Accroche : Crèche, service hospitalier, maternité… l'auxiliaire de p"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37211",
+    "nom": "Assistant en Développement Numérique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37211) — Assistant en Développement Numérique (bac) | Niveau européen : Niveau 4 | Métiers visés (ROME) : M1805 Études et "
+   },
+   {
+    "fiche_id": "metier:MET.538",
+    "nom": "plâtrier/ère plaquiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : plâtrier/ère plaquiste | Libellé : plâtrière plaquiste / plâtrier plaquiste | Accroche : Aménagement, isolation, décoration des espaces intér"
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_professionnel|passable_premier_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC professionnel | Mention au bac : Passable premier groupe | Cohorte 2014 (L1→"
+   },
+   {
+    "fiche_id": "parcours:lettres_langues_et_sciences_humaines|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Lettres, langues et sciences humaines | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 169 néobacheliers ;"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-004-v2",
+  "question": "J'aimerais savoir, après un burn-out je veux me reconvertir dans le paramédical, par où commencer ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "certificat de capacité d'orthoptiste",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "onisep_metier:MET.877",
+    "nom": "orthoptiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : orthoptiste | Codes ROME : J1407 (Orthoptique) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, sport/paramé"
+   },
+   {
+    "fiche_id": "idx:29250",
+    "nom": "DN MADE - Graphisme - Spécialité : Médias imprimés, conception et savoir-faire",
+    "etablissement": "Lycée Raymond Loewy",
+    "ville": "La Souterraine",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "communication",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Médias imprimés, conception et savoir-faire"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.676",
+    "nom": "audioprothésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : audioprothésiste | Codes ROME : J1401 (Audioprothèses) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, spor"
+   },
+   {
+    "fiche_id": "idx:29296",
+    "nom": "DN MADE - Matériaux - Spécialité : Terres et savoir-faire céramiques : processus",
+    "etablissement": "Lycée Raymond Loewy",
+    "ville": "La Souterraine",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Terres et savoir-faire céramiques : processus innovants entre artisanat et industrie"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.280",
+    "nom": "ergothérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ergothérapeute | Codes ROME : J1403 (Ergothérapie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social, sport/pa"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.221",
+    "nom": "ostéopathe",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : ostéopathe | Codes ROME : J1408 (Ostéopathie et chiropraxie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.276",
+    "nom": "orthoprothésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : orthoprothésiste | Codes ROME : J1411 (Prothèses et orthèses) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, socia"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.29",
+    "nom": "masseur-kinésithérapeute",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : masseur-kinésithérapeute | Codes ROME : J1404 (Kinésithérapie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, soci"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.876",
+    "nom": "psychomotricien / psychomotricienne",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : psychomotricien / psychomotricienne | Codes ROME : J1412 (Rééducation en psychomotricité) | GFE : GFE R : santé, social, soins personn"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.875",
+    "nom": "pédicure-podologue",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : pédicure-podologue | Codes ROME : J1409 (Pédicurie et podologie) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, so"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.282",
+    "nom": "podo-orthésiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : podo-orthésiste | Codes ROME : J1411 (Prothèses et orthèses) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, social"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.415",
+    "nom": "auxiliaire de puériculture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : auxiliaire de puériculture | Codes ROME : J1304 (Aide en puériculture) | GFE : GFE R : santé, social, soins personnels | Domaine : san"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.411",
+    "nom": "prothésiste dentaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : prothésiste dentaire | Codes ROME : J1410 (Prothèses dentaires) | GFE : GFE R : santé, social, soins personnels | Domaine : santé, soc"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.330",
+    "nom": "assistant / assistante dentaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : assistant / assistante dentaire | Codes ROME : J1303 (Assistance médico-technique) | GFE : GFE R : santé, social, soins personnels | D"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.416",
+    "nom": "manipulateur / manipulatrice en électroradiologie médicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : manipulateur / manipulatrice en électroradiologie médicale | Codes ROME : J1306 (Imagerie médicale) | GFE : GFE R : santé, social, soi"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.281",
+    "nom": "opticien-lunetier / opticienne-lunetière",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : opticien-lunetier / opticienne-lunetière | Codes ROME : J1405 (Optique - lunetterie) | GFE : GFE R : santé, social, soins personnels |"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.418",
+    "nom": "visiteur médical / visiteuse médicale",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : visiteur médical / visiteuse médicale | Codes ROME : D1405 (Conseil en information médicale) | GFE : GFE R : santé, social, soins pers"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.744",
+    "nom": "monteur-vendeur / monteuse-vendeuse en optique-lunetterie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : monteur-vendeur / monteuse-vendeuse en optique-lunetterie | Codes ROME : J1405 (Optique - lunetterie) | GFE : GFE R : santé, social, s"
+   },
+   {
+    "fiche_id": "onisep_metier:MET.771",
+    "nom": "technicien / technicienne d'analyses biomédicales",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_metiers",
+    "extrait": "Métier ONISEP : technicien / technicienne d'analyses biomédicales | Codes ROME : J1302 (Analyses médicales) | GFE : GFE R : santé, social, soins perso"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-005-v2",
+  "question": "J'aimerais savoir, comment financer une formation de reconversion quand on est demandeur d'emploi ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "financement_dispositif:afe_pole_emploi",
+    "nom": "Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi | Organisme : France Travail (Pôle Emploi) | Public cible "
+   },
+   {
+    "fiche_id": "financement_dispositif:proa",
+    "nom": "Pro-A (reconversion ou promotion par alternance)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Pro-A (reconversion ou promotion par alternance) | Organisme : OPCO (Opérateurs de compétences) | Public cible : Salariés CDI/CDD à temp"
+   },
+   {
+    "fiche_id": "financement_dispositif:cpf",
+    "nom": "Compte Personnel de Formation (CPF)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Compte Personnel de Formation (CPF) | Organisme : Caisse des Dépôts (gestion) / Ministère du Travail (cadre) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "financement_dispositif:ptp_transitions_pro",
+    "nom": "Projet de transition professionnelle (PTP)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Projet de transition professionnelle (PTP) | Organisme : Transitions Pro (associations régionales paritaires) | Public cible : Salariés "
+   },
+   {
+    "fiche_id": "financement_voie:continue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation continue (salariés, agents publics, indépendants) | 10 dispositifs principaux disponibles | Liste : Compte P"
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "financement_dispositif:vae",
+    "nom": "Validation des acquis de l'expérience (VAE)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Validation des acquis de l'expérience (VAE) | Organisme : Ministère du Travail / France VAE (portail unique) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "financement_dispositif:agepi",
+    "nom": "Aide à la garde d'enfants pour parent isolé (AGEPI)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la garde d'enfants pour parent isolé (AGEPI) | Organisme : France Travail (Pôle Emploi) | Public cible : Parents isolés (élevant "
+   },
+   {
+    "fiche_id": "financement_voie:initial",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 11 dispositifs principaux disponibles | Liste : Bourse sur cri"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DN MADE - Matériaux - Parcours : techniques et savoir-faire des métiers d'art au",
+    "etablissement": "Lycée professionnel Jean Guehenno",
+    "ville": "Saint-Amand-Montrond",
+    "region": "Centre-Val de Loire",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Parcours : techniques et savoir-faire des métiers d'art au service de la parure et de l'ornement"
+   },
+   {
+    "fiche_id": "financement_dispositif:cej",
+    "nom": "Contrat d'engagement jeune (CEJ)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Contrat d'engagement jeune (CEJ) | Organisme : Mission Locale ou France Travail (Pôle Emploi) | Public cible : Jeunes 16-25 ans (jusqu'à"
+   },
+   {
+    "fiche_id": "financement_dispositif:afdas",
+    "nom": "AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport | Organisme : AFDAS | Public cible : Salariés et indépendants"
+   },
+   {
+    "fiche_id": "financement_dispositif:agefiph",
+    "nom": "AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de ha",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de handicap | Organisme : AGEFIPH (Association de gestion du "
+   },
+   {
+    "fiche_id": "metier:MET.8191",
+    "nom": "chargé/e d'orientation et d'insertion profesionnelle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chargé/e d'orientation et d'insertion profesionnelle | Libellé : chargée d'orientation et d'insertion professionnelle / chargé d'orientation "
+   }
+  ]
+ },
+ {
+  "qid": "reconv-006-v2",
+  "question": "J'aimerais savoir, c'est quoi l'AFEST et est-ce que ça me concerne pour une reconversion en entreprise ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "financement_voie:reconversion",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel"
+   },
+   {
+    "fiche_id": "financement_dispositif:proa",
+    "nom": "Pro-A (reconversion ou promotion par alternance)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Pro-A (reconversion ou promotion par alternance) | Organisme : OPCO (Opérateurs de compétences) | Public cible : Salariés CDI/CDD à temp"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DN MADE - Matériaux - Spécialité : Recherche Matière et croisement des savoir-fa",
+    "etablissement": "Lycée Le Corbusier",
+    "ville": "Poissy",
+    "region": "Île-de-France",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Recherche Matière et croisement des savoir-faire"
+   },
+   {
+    "fiche_id": "financement_dispositif:ptp_transitions_pro",
+    "nom": "Projet de transition professionnelle (PTP)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Projet de transition professionnelle (PTP) | Organisme : Transitions Pro (associations régionales paritaires) | Public cible : Salariés "
+   },
+   {
+    "fiche_id": "financement_dispositif:akto",
+    "nom": "Akto — OPCO services à forte intensité de main-d'œuvre",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Akto — OPCO services à forte intensité de main-d'œuvre | Organisme : Akto | Public cible : Salariés des branches : propreté, hôtellerie-"
+   },
+   {
+    "fiche_id": "financement_dispositif:constructys",
+    "nom": "Constructys — OPCO BTP (Bâtiment, Travaux Publics, Négoce des matériaux)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Constructys — OPCO BTP (Bâtiment, Travaux Publics, Négoce des matériaux) | Organisme : Constructys | Public cible : Salariés des entrepr"
+   },
+   {
+    "fiche_id": "financement_dispositif:agepi",
+    "nom": "Aide à la garde d'enfants pour parent isolé (AGEPI)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la garde d'enfants pour parent isolé (AGEPI) | Organisme : France Travail (Pôle Emploi) | Public cible : Parents isolés (élevant "
+   },
+   {
+    "fiche_id": "financement_dispositif:agefiph",
+    "nom": "AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de ha",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AGEFIPH — Aides à la formation et à l'insertion des personnes en situation de handicap | Organisme : AGEFIPH (Association de gestion du "
+   },
+   {
+    "fiche_id": "financement_dispositif:cpf",
+    "nom": "Compte Personnel de Formation (CPF)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Compte Personnel de Formation (CPF) | Organisme : Caisse des Dépôts (gestion) / Ministère du Travail (cadre) | Public cible : Toute pers"
+   },
+   {
+    "fiche_id": "metier:MET.547",
+    "nom": "agriculteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : agriculteur/trice | Libellé : agricultrice / agriculteur | Synonymes : chef/fe d'exploitation, exploitant/e agricole | Accroche : Passionné d"
+   },
+   {
+    "fiche_id": "metier:MET.116",
+    "nom": "conducteur/trice de travaux en entreprise de travaux agricoles",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : conducteur/trice de travaux en entreprise de travaux agricoles | Libellé : conductrice de travaux en entreprise de travaux agricoles / conduc"
+   },
+   {
+    "fiche_id": "metier:MET.666",
+    "nom": "technicien/ne plasturgiste",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne plasturgiste | Libellé : technicienne plasturgiste / technicien plasturgiste | Synonymes : technicien/ne en plastiques et compo"
+   },
+   {
+    "fiche_id": "financement_dispositif:afdas",
+    "nom": "AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — AFDAS — Opérateur de Compétences (OPCO) Culture / Médias / Loisirs / Sport | Organisme : AFDAS | Public cible : Salariés et indépendants"
+   },
+   {
+    "fiche_id": "metier:MET.296",
+    "nom": "charpentier/ère métallique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : charpentier/ère métallique | Libellé : charpentière métallique / charpentier métallique | Synonymes : monteur/euse-assembleur/euse en constru"
+   },
+   {
+    "fiche_id": "financement_dispositif:cej",
+    "nom": "Contrat d'engagement jeune (CEJ)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Contrat d'engagement jeune (CEJ) | Organisme : Mission Locale ou France Travail (Pôle Emploi) | Public cible : Jeunes 16-25 ans (jusqu'à"
+   }
+  ]
+ },
+ {
+  "qid": "reconv-007-v2",
+  "question": "J'aimerais savoir, je suis en poste et je veux une formation continue le soir en gestion, ça existe ?",
+  "category": "reconversion_adulte",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DN MADE - Matériaux - Spécialité : Terres et savoir-faire céramiques : processus",
+    "etablissement": "Lycée Raymond Loewy",
+    "ville": "La Souterraine",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Spécialité : Terres et savoir-faire céramiques : processus innovants entre artisanat et industrie"
+   },
+   {
+    "fiche_id": "idx:187",
+    "nom": "Centre de Formation continue - Institut superieur de commerce et gestion",
+    "etablissement": "Centre de Formation continue - Institut superieur de commerc",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4558",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4559",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:4631",
+    "nom": "ATTACHE COMMERCIAL (CCI FRANCE)",
+    "etablissement": "GROUPEMENT INTERPROFESSIONNEL POUR L'APPRENTISSAGE ET LA FOR",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:B1603",
+    "nom": "Opérateur / Opératrice en bijouterie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME B1603 : Opérateur / Opératrice en bijouterie | Compétences par enjeu : Production, Fabrication (Mettre en oeuvre les processus et les mode"
+   },
+   {
+    "fiche_id": "idx:5131",
+    "nom": "COMPTABILITE ET GESTION",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41765",
+    "nom": "Responsable opérationnel de site en circulation ferroviaire",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41765) — Responsable opérationnel de site en circulation ferroviaire (bac+2) | Niveau européen : Niveau 5 | Métiers visés "
+   },
+   {
+    "fiche_id": "idx:5223",
+    "nom": "COMPTABILITE ET GESTION (DIPLÔME DE)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.763",
+    "nom": "facteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : facteur/trice | Libellé : factrice / facteur | Synonymes : agent/e de tri, opérateur/trice de colis à La Poste | Accroche : Les facteurs, age"
+   },
+   {
+    "fiche_id": "idx:5453",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5454",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5457",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GROUPEMENT INTERPROFESSIONNEL POUR L'APPRENTISSAGE ET LA FOR",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.8108",
+    "nom": "piqueur/euse",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : piqueur/euse | Libellé : piqueuse / piqueur | Accroche : Sacs, portefeuilles, pochettes... Le piqueur ou la piqueuse participe à la fabricati"
+   },
+   {
+    "fiche_id": "idx:6127",
+    "nom": "GESTION DE LA PME",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39730",
+    "nom": "CQP Opérateur multipostes en confection",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39730) — CQP Opérateur multipostes en confection (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2402 Ass"
+   },
+   {
+    "fiche_id": "idx:6130",
+    "nom": "GESTION DE LA PME",
+    "etablissement": "GROUPEMENT INTERPROFESSIONNEL POUR L'APPRENTISSAGE ET LA FOR",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.296",
+    "nom": "charpentier/ère métallique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : charpentier/ère métallique | Libellé : charpentière métallique / charpentier métallique | Synonymes : monteur/euse-assembleur/euse en constru"
+   },
+   {
+    "fiche_id": "idx:7166",
+    "nom": "MANAGER EN RESSOURCES HUMAINES (ECORIS, ICADEMIE)",
+    "etablissement": "INSTITUT POUR LA FORMATION CONTINUE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:7207",
+    "nom": "MANAGER EN STRATEGIE D'ENTREPRISE (ECORIS)",
+    "etablissement": "INSTITUT POUR LA FORMATION CONTINUE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:7313",
+    "nom": "METIERS DE L'AUDIOVISUEL OPTION GESTION DE LA PRODUCTION",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROF",
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:7465",
+    "nom": "NEGOCIATEUR TECHNICO-COMMERCIAL (TP)",
+    "etablissement": "HOMMES ET SAVOIRS",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.7816",
+    "nom": "électrobobinier/ère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : électrobobinier/ère | Libellé : électrobobinier | Synonymes : assistant/e-bobinier/ère en électricité, bobinier/ère, bobinier/ère électroméca"
+   },
+   {
+    "fiche_id": "financement_voie:continue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation continue (salariés, agents publics, indépendants) | 10 dispositifs principaux disponibles | Liste : Compte P"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39728",
+    "nom": "CQP Opérateur en confection",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39728) — CQP Opérateur en confection (cap-bep) | Niveau européen : Niveau 3 | Métiers visés (ROME) : H2402 Assemblage - mo"
+   }
+  ]
+ },
+ {
+  "qid": "base-001-v2",
+  "question": "J'aimerais savoir, qu'est-ce qu'un BUT et combien de temps ça dure ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.316",
+    "nom": "concepteur/trice-rédacteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : concepteur/trice-rédacteur/trice | Libellé : conceptrice-rédactrice / concepteur-rédacteur | Accroche : Le concepteur-rédacteur travaille à t"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Techniques de commercialisation",
+    "etablissement": "I.U.T de Figeac",
+    "ville": "Figeac",
+    "region": "Occitanie",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "voie_pre_bac_synthese:bac-pro",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "voie_pre_bac",
+    "source": "onisep_formations_extended",
+    "extrait": "Catalogue BAC PRO (synthèse globale) | 87 spécialités référencées sur ONISEP | 10 domaines couverts | Distribution par domaine : ingenierie industriel"
+   },
+   {
+    "fiche_id": "metier:MET.7995",
+    "nom": "manager de proximité",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : manager de proximité | Synonymes : manager terrain | Accroche : Sur le terrain, le ou la manager de proximité est au cœur de l’action. Il ou "
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-admission",
+    "nom": "Phase d'admission Parcoursup 2026 — début des réponses",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026. Les candidats reçoivent leurs propositions d'admission et doivent y répondre "
+   },
+   {
+    "fiche_id": "metier:MET.438",
+    "nom": "chef/fe de chantier",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : chef/fe de chantier | Libellé : cheffe de chantier / chef de chantier | Synonymes : aide-conducteur/trice de travaux, conducteur/trice de cha"
+   },
+   {
+    "fiche_id": "metier:MET.466",
+    "nom": "nivoculteur/trice",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : nivoculteur/trice | Libellé : nivocultrice / nivoculteur | Synonymes : technicien/ne de la neige | Accroche : De la bonne neige avant tout (s"
+   }
+  ]
+ },
+ {
+  "qid": "base-002-v2",
+  "question": "J'aimerais savoir, je suis en L2 d'éco et je veux me réorienter vers l'informatique, comment faire ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "metier:MET.593",
+    "nom": "formateur/trice en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : formateur/trice en informatique | Libellé : formatrice en informatique / formateur en informatique | Accroche : À l'heure où les technologies"
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   },
+   {
+    "fiche_id": "idx:1149",
+    "nom": "CFA l'Ecole Hermès des Savoirs Faire",
+    "etablissement": "CFA l'Ecole Hermès des Savoirs Faire",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "etablissement": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_deuxième_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable deuxième groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L"
+   },
+   {
+    "fiche_id": "idx:1411",
+    "nom": "Ecole Pour l'informatique et les nouvelles technologies",
+    "etablissement": "Ecole Pour l'informatique et les nouvelles technologies",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1412",
+    "nom": "Ecole pour l'informatique et les nouvelles technologies (EPITECH Campus de Nice)",
+    "etablissement": "Ecole pour l'informatique et les nouvelles technologies (EPI",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 4 néobacheliers ; 25.0% passent en L2 "
+   },
+   {
+    "fiche_id": "idx:1413",
+    "nom": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "etablissement": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1432",
+    "nom": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "etablissement": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.415",
+    "nom": "auxiliaire de puériculture",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : auxiliaire de puériculture | Synonymes : auxiliaire-puériculteur/trice | Accroche : Crèche, service hospitalier, maternité… l'auxiliaire de p"
+   },
+   {
+    "fiche_id": "idx:1433",
+    "nom": "Ecole supérieure d'informatique Metz",
+    "etablissement": "Ecole supérieure d'informatique Metz",
+    "ville": "",
+    "region": "Grand Est",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_technologique_hors_stmg|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC technologique hors STMG | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 100.0% pa"
+   },
+   {
+    "fiche_id": "idx:1444",
+    "nom": "Ecole supérieure de génie informatique - Réseau des grandes écoles spécialisées",
+    "etablissement": "Ecole supérieure de génie informatique - Réseau des grandes ",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1532",
+    "nom": "ENI ECOLE INFORMATIQUE",
+    "etablissement": "ENI ECOLE INFORMATIQUE",
+    "ville": "",
+    "region": "Pays de la Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 7 néobacheliers ; 100.0% passent en L2 en 1 an ; 100.0%"
+   },
+   {
+    "fiche_id": "idx:1541",
+    "nom": "EPITECH Lille - Ecole de l'innovation et de l'expertise informatique",
+    "etablissement": "EPITECH Lille - Ecole de l'innovation et de l'expertise info",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 9 néobacheliers ; 44.4% passent en L2 en 1 an ; 44."
+   },
+   {
+    "fiche_id": "idx:1553",
+    "nom": "ESIEA - Ecole Supérieure d'Informatique Electronique Automatique",
+    "etablissement": "ESIEA - Ecole Supérieure d'Informatique Electronique Automat",
+    "ville": "",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_stmg|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC STMG | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 3 néobacheliers ; "
+   },
+   {
+    "fiche_id": "idx:1740",
+    "nom": "Ingetis Ecole d'Ingénierie Informatique",
+    "etablissement": "Ingetis Ecole d'Ingénierie Informatique",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|passable_premier_groupe",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Passable premier groupe | Cohorte 2014 (L1→L2) : 1 néobacheliers ; 0.0% passent en L2"
+   },
+   {
+    "fiche_id": "idx:2736",
+    "nom": "Organisme de formation-Centre de formation d'apprentis - Ecole supérieure inform",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis - Eco",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 6 néobacheliers ; 100.0% passent en L2 en 1 an ; 1"
+   },
+   {
+    "fiche_id": "idx:5955",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNION UNIVERSITE ECONOMIE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 30 néobacheliers ; 63.3% passent en L2 en 1 an ; 83.3% "
+   },
+   {
+    "fiche_id": "idx:6141",
+    "nom": "GESTION DE LA PME",
+    "etablissement": "INSTITUT DE FORMATION A L'INFORMATIQUE POUR LE DEVEL DE L'EN",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|inconnue",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Inconnue | Cohorte 2014 (L1→L2) : 131 néobacheliers ; 53.4% passent en L2 en 1 an ; 6"
+   },
+   {
+    "fiche_id": "idx:6320",
+    "nom": "GESTIONNAIRE PAIE ET ADMINISTRATION SOCIALE (SCIENCES-U LYON)",
+    "etablissement": "INSTITUT SUPERIEUR D'INFORMATIQUE ET DE MANAGEMENT DE L'INFO",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Sciences et sciences de l'ingénieur | Bachelier : BAC L | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 14 néobacheliers ; 50.0% "
+   },
+   {
+    "fiche_id": "parcours:staps|bac_s|bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC S | Mention au bac : Bien | Cohorte 2014 (L1→L2) : 417 néobacheliers ; 71.0% passent en L2 en 1 an ; 76.3%"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_professionnel|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC professionnel | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 351 néobacheliers ; 4.3% passent en L"
+   },
+   {
+    "fiche_id": "parcours:santé|bac_s|assez_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en Santé | Bachelier : BAC S | Mention au bac : Assez bien | Cohorte 2014 (L1→L2) : 5 néobacheliers ; 80.0% passent en L2 en 1 an ; 8"
+   },
+   {
+    "fiche_id": "parcours:staps|bac_l|très_bien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "parcours_bacheliers",
+    "source": "mesri_parcours_bacheliers_licence",
+    "extrait": "Parcours licence en STAPS | Bachelier : BAC L | Mention au bac : Très bien | Cohorte 2014 (L1→L2) : 5 néobacheliers ; 80.0% passent en L2 en 1 an ; 80"
+   }
+  ]
+ },
+ {
+  "qid": "base-003-v2",
+  "question": "J'aimerais savoir, quels métiers peut-on faire après un master en intelligence artificielle ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "INFORMATIQUE — Intelligence Artificielle Distribuée",
+    "etablissement": "Université Paris Cité",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:18931",
+    "nom": "licence pro mention métiers de l'intelligence artificielle : outils et méthodes",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37827",
+    "nom": "Développeur en intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37827) — Développeur en intelligence artificielle (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étud"
+   },
+   {
+    "fiche_id": "idx:33301",
+    "nom": "Licence professionnelle - Métiers de l’industrie : Mécatronique, Robotique  parc",
+    "etablissement": "I.U.T de Béziers",
+    "ville": "Béziers",
+    "region": "Occitanie",
+    "domain": "data_ia",
+    "source": "parcoursup",
+    "extrait": "Métiers de l’industrie : Mécatronique, Robotique  parcours Robotique et Intelligence Artificielle"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41813",
+    "nom": "Chef de projet data et intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41813) — Chef de projet data et intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1"
+   },
+   {
+    "fiche_id": "idx:36542",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": "CONSERVATOIRE NATIONAL DES ARTS ET METIERS",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38584",
+    "nom": "Chef de projet en développement de solutions d'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38584) — Chef de projet en développement de solutions d'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | M"
+   },
+   {
+    "fiche_id": "idx:37181",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": "UNIVERSITE DE CAEN NORMANDIE",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39485",
+    "nom": "Intelligence artificielle (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39485) — Intelligence artificielle (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : H1206 M"
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39541",
+    "nom": "Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Scie",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39541) — Ingénieur diplômé du Conservatoire national des arts et métiers, spécialité Science de la donnée et intelligence "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40551",
+    "nom": "Chef de projets en intelligence artificielle et sciences des données (MS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40551) — Chef de projets en intelligence artificielle et sciences des données (MS) (bac+5) | Niveau européen : Niveau 7 | "
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41068",
+    "nom": "Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41068) — Métiers de l'intelligence artificielle : outils et méthodes (fiche nationale) (bac+3) | Niveau européen : Niveau "
+   },
+   {
+    "fiche_id": "idx:9459",
+    "nom": "DROIT DU NUMERIQUE — Droit de l'intelligence artificielle",
+    "etablissement": "Institut catholique de Paris",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9461",
+    "nom": "DROIT DU NUMERIQUE — Droit des activités numériques et de l'intelligence artific",
+    "etablissement": "Université de Caen Normandie",
+    "ville": "CAEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP38587",
+    "nom": "Expert en ingénierie de l'intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP38587) — Expert en ingénierie de l'intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) :"
+   },
+   {
+    "fiche_id": "idx:9983",
+    "nom": "ECONOMIE APPLIQUEE — Double-diplôme Master Méthodes appliquées de la statistique",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10148",
+    "nom": "ELECTRONIQUE, ENERGIE ELECTRIQUE, AUTOMATIQUE — Intelligence Artificielle et Aut",
+    "etablissement": "Université de Perpignan Via Domitia",
+    "ville": "PERPIGNAN",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11028",
+    "nom": "HISTOIRE, CIVILISATIONS, PATRIMOINE — Métiers de l’archéologie et de l’histoire ",
+    "etablissement": "Université de Lorraine",
+    "ville": "VANDOEUVRE-LES-NANCY",
+    "region": "Grand Est",
+    "domain": "sciences_humaines",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11104",
+    "nom": "IA - INTELLIGENCE ARTIFICIELLE / AI - ARTIFICIAL INTELLIGENCE — None",
+    "etablissement": "Institut national des sciences appliquées de Lyon",
+    "ville": "VILLEURBANNE CEDEX",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11224",
+    "nom": "INFORMATIQUE — Algorithmes, Intelligence Artificielle, Interactions, Décisions (",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP42011",
+    "nom": "Diplôme d'études supérieures en intelligence artificielle et sciences des donnée",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP42011) — Diplôme d'études supérieures en intelligence artificielle et sciences des données (bac+5) | Niveau européen : Niv"
+   },
+   {
+    "fiche_id": "idx:11227",
+    "nom": "INFORMATIQUE — Applications Réparties, Intelligence Artificielle et Sécurité (AR",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX",
+    "region": "Centre-Val de Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11302",
+    "nom": "INFORMATIQUE — Ingénierie en intelligence artificielle",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "ville": "ST DENIS CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "base-004-v2",
+  "question": "J'aimerais savoir, comment obtenir une bourse étudiante et c'est quoi le DSE ?",
+  "category": "baseline_inscope",
+  "candidates": [
+   {
+    "fiche_id": "financement_dispositif:bourse_crous_sup",
+    "nom": "Bourse sur critères sociaux CROUS — enseignement supérieur",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse sur critères sociaux CROUS — enseignement supérieur | Organisme : CROUS | Public cible : Étudiants post-bac (BTS, BUT, Licence, M"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+    "nom": "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution "
+   },
+   {
+    "fiche_id": "financement_voie:initial",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 11 dispositifs principaux disponibles | Liste : Bourse sur cri"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+    "nom": "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesSer"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:ouverture-dse",
+    "nom": "Ouverture du Dossier Social Étudiant (DSE) 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le Dossier Social Étudiant (DSE) 2026 ouvre le 2 mars 2026 sur la plateforme MesServices.Étudiants.gouv.fr. Le DSE est le dossier UNIQUE pour demander"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DN MADE - Matériaux - Parcours : techniques et savoir-faire des métiers d'art au",
+    "etablissement": "Lycée professionnel Jean Guehenno",
+    "ville": "Saint-Amand-Montrond",
+    "region": "Centre-Val de Loire",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": "Parcours : techniques et savoir-faire des métiers d'art au service de la parure et de l'ornement"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+    "nom": "Premier cycle d'attribution des logements CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le premier cycle d'attribution des logements CROUS pour la rentrée 2026 a lieu le 2 juin 2026. Les étudiants ayant fait leur DSE et saisi leurs vœux d"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "financement_dispositif:bourse_lycee",
+    "nom": "Bourse de lycée (collégiens et lycéens)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Bourse de lycée (collégiens et lycéens) | Organisme : Ministère de l'Éducation Nationale | Public cible : Élèves au lycée général, techn"
+   },
+   {
+    "fiche_id": "metier:MET.338",
+    "nom": "consultant/e web analytique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : consultant/e web analytique | Libellé : consultante web analytique / consultant web analytique | Accroche : Comment figurer en tête des class"
+   }
+  ]
+ }
+]

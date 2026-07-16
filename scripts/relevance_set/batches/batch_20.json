@@ -1,0 +1,3317 @@
+[
+ {
+  "qid": "fact-013-v3",
+  "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour licence STAPS à Lyon ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Licence - Portail Sciences et Techniques des Activités Physiques et Sportives - ",
+    "etablissement": "Université Claude Bernard Lyon 1",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sport",
+    "source": "parcoursup",
+    "extrait": "Licence STAPS - portail unique"
+   },
+   {
+    "fiche_id": "idx:15328",
+    "nom": "STAPS:ACTIVITE PHYSIQUE ADAPTEE ET SANTE — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sport",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:15371",
+    "nom": "STAPS:ENTRAINEMENT ET OPTIMISATION DE LA PERFORMANCE SPORTIVE — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sport",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insersup:licence-generale:staps:auvergne-rhone-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence générale en STAPS (Auvergne-Rhône-Alpes, cohorte 2024) | Niveau d'études : bac+3 | Effectif sortants : 327 | "
+   },
+   {
+    "fiche_id": "idx:15437",
+    "nom": "STAPS:MANAGEMENT DU SPORT — None",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "ville": "VILLEURBANNE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sport",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "idx:32811",
+    "nom": "Licence - Portail Sciences et Techniques des Activités Physiques et Sportives - ",
+    "etablissement": "Université Claude Bernard Lyon 1",
+    "ville": "Villeurbanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sport",
+    "source": "parcoursup",
+    "extrait": "Licence STAPS - portail unique"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Bretagne (2023) | Effectif pondéré régional : 197 004 | Salaire net médian annuel : 37 500 € | Salaire net médi"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Occitanie (2023) | Effectif pondéré régional : 398 388 | Salaire net médian annuel : 37 500 € | Salaire net méd"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Bretagne (2023) | Effectif pondéré régional : 468 084 | Salaire net médian annuel : 17 000 € | Salaire net"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Occitanie (2023) | Effectif pondéré régional : 866 556 | Salaire net médian annuel : 17 000 € | Salaire ne"
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Bretagne (2023) | Effectif pondéré régional : 8 592 | Salaire net médian annuel : 32 500"
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Bretagne (2023) | Effectif pondéré régional : 427 284 | Salaire net médian annuel : 21 000 "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Hauts-de-France (2023) | Effectif pondéré régional : 489 768 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Île-de-France (2023) | Effectif pondéré régional : 1 323 348 | Salaire net médian annuel : 29 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Occitanie (2023) | Effectif pondéré régional : 33 540 | Salaire net médian annuel : 19 0"
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Occitanie (2023) | Effectif pondéré régional : 609 912 | Salaire net médian annuel : 19 000"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 519 516 | Salaire net médian annuel : 27 000 € | Salaire net médian mensu"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 339 324 | Salaire net médian annuel : 37 500 € | Salair"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Île-de-France (2023) | Effectif pondéré régional : 2 145 348 | Salaire net médian annuel : 45 000 € | Salaire n"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Hauts-de-France (2023) | Effectif pondéré régional : 326 100 | Salaire net médian annuel : 37 500 € | Salaire n"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Île-de-France (2023) | Effectif pondéré régional : 2 195 640 | Salaire net médian annuel : 17 000 € | Sala"
+   }
+  ]
+ },
+ {
+  "qid": "fact-014-v3",
+  "question": "Peux-tu m'aider : quel est le nombre de places pour licence d'économie-gestion à Paris ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Double licence - Droit / Economie et gestion -",
+    "etablissement": "Université Paris Panthéon Assas",
+    "ville": "Paris  5e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5745",
+    "nom": "ECONOMIE DE L'ENTREPRISE ET DES MARCHES (MASTER)",
+    "etablissement": "FORMASUP PARIS ILE-DE-FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5750",
+    "nom": "ECONOMIE INTERNATIONALE (MASTER)",
+    "etablissement": "FORMASUP PARIS ILE-DE-FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8166",
+    "nom": "ANALYSE ET POLITIQUE ECONOMIQUE — Economie comportementale et appliquée",
+    "etablissement": "Université Paris Nanterre",
+    "ville": "NANTERRE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8170",
+    "nom": "ANALYSE ET POLITIQUE ECONOMIQUE — Macroéconomie Internationale Financiarisation ",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "VILLETANEUSE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9983",
+    "nom": "ECONOMIE APPLIQUEE — Double-diplôme Master Méthodes appliquées de la statistique",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9987",
+    "nom": "ECONOMIE APPLIQUEE — Economie de la santé",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9995",
+    "nom": "ECONOMIE APPLIQUEE — Méthodes appliquées de la statistique et de l'économétrie p",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9996",
+    "nom": "ECONOMIE APPLIQUEE — Méthodes appliquées de la statistique et de l'économétrie p",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9999",
+    "nom": "ECONOMIE APPLIQUEE — None",
+    "etablissement": "Université Paris 1 - Panthéon Sorbonne",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10000",
+    "nom": "ECONOMIE APPLIQUEE — None",
+    "etablissement": "Université Paris Cité",
+    "ville": "MALAKOFF",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10001",
+    "nom": "ECONOMIE APPLIQUEE — None",
+    "etablissement": "Université Paris Nanterre",
+    "ville": "NANTERRE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10006",
+    "nom": "ECONOMIE DE L'ENTREPRISE ET DES MARCHES — Big  Data,  Analyse et  Business Intel",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "VILLETANEUSE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10007",
+    "nom": "ECONOMIE DE L'ENTREPRISE ET DES MARCHES — Conseil en Entreprise",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "VILLETANEUSE",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10008",
+    "nom": "ECONOMIE DE L'ENTREPRISE ET DES MARCHES — Conseil en Entreprise ( Apprentissage)",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "ARGENTEUIL",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10010",
+    "nom": "ECONOMIE DE L'ENTREPRISE ET DES MARCHES — Dynamiques Entrepreneuriales et Manage",
+    "etablissement": "Université Sorbonne Paris Nord",
+    "ville": "ARGENTEUIL",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-015-v3",
+  "question": "Peux-tu m'aider : quel est les frais de scolarité annuels pour prépa MPSI à Bordeaux ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "cycle préparatoire JUNIA ISEN associé au Pôle d'enseignement supérieur privé Sai",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "correction:bba_inseec_couts_scolarite_2025",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "correction_factuelle",
+    "source": "corrections_factuelles_curated",
+    "extrait": "Correction factuelle — BBA INSEEC — coûts de scolarité | Information correcte (autorité) : Le coût annuel de scolarité du BBA INSEEC est d'environ 12 "
+   },
+   {
+    "fiche_id": "idx:17084",
+    "nom": "cycle préparatoire JUNIA HEI associé au lycée privé Sainte-Marie Grand Lebrun (B",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17090",
+    "nom": "cycle préparatoire JUNIA ISEN associé au lycée privé Sainte-Marie Grand Lebrun (",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:3449",
+    "nom": "organisme de formation-centre de formation d'apprentis g2c agathe prepa Bordeaux",
+    "etablissement": "organisme de formation-centre de formation d'apprentis g2c a",
+    "ville": "",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "correction:epita_couts_scolarite_2025",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "correction_factuelle",
+    "source": "corrections_factuelles_curated",
+    "extrait": "Correction factuelle — EPITA — coûts de scolarité cycle ingénieur | Information correcte (autorité) : Le coût annuel de scolarité de l'EPITA pour le c"
+   },
+   {
+    "fiche_id": "idx:16717",
+    "nom": "classe préparatoire mathématiques, physique et sciences de l'ingénieur (MPSI), 1",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16718",
+    "nom": "classe préparatoire mathématiques, physique et sciences de l'ingénieur (MPSI), 1",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16949",
+    "nom": "cycle préparatoire Bordeaux Sciences Agro - programme BCPST",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16950",
+    "nom": "cycle préparatoire de Bordeaux",
+    "etablissement": "Bordeaux",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16952",
+    "nom": "cycle préparatoire ECAM LaSalle - campus de Bordeaux (Lycée Saint Genès LaSalle)",
+    "etablissement": "Lycée Saint Genès LaSalle",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16958",
+    "nom": "cycle préparatoire ICAM Strasbourg Europe associé au lycée Jean XXIII (Metz) - p",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16964",
+    "nom": "cycle préparatoire intégré (CPGE à parcours sécurisé, associées avec le Lycée Ex",
+    "etablissement": "Toulon",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16977",
+    "nom": "cycle préparatoire intégré à l'ESEO Angers - CPGE à parcours sécurisé ouvert, as",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16990",
+    "nom": "cycle préparatoire intégré de JUNIA HEI (associé avec le Lycée La Salle de Lille",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16991",
+    "nom": "cycle préparatoire intégré de JUNIA HEI (associé avec le Lycée La Salle de Lille",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17041",
+    "nom": "cycle préparatoire intégré de l'ISEP (associé avec le Lycée Stanislas de Paris) ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17042",
+    "nom": "cycle préparatoire intégré de l'ISEP de Bordeaux - informatique et technologies ",
+    "etablissement": "ISEP de Bordeaux - informatique et technologies numériques",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-016-v3",
+  "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour prépa PCSI à Lille ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "CPGE - PCSI",
+    "etablissement": "Lycée Cesar Baggio",
+    "ville": "Lille",
+    "region": "Hauts-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16992",
+    "nom": "cycle préparatoire intégré de JUNIA HEI (associé avec le Lycée La Salle de Lille",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16993",
+    "nom": "cycle préparatoire intégré de JUNIA HEI (associé avec le Lycée La Salle de Lille",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:818",
+    "nom": "CFA CCI Grand Lille CEPRECO (CEntre de PREparation aux métiers du COmmerce) de R",
+    "etablissement": "CFA CCI Grand Lille CEPRECO (CEntre de PREparation aux métie",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:consultation-offre",
+    "nom": "Consultation de l'offre de formation Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le 17 décembre 2025, les futurs étudiants peuvent consulter l'offre de formation Parcoursup 2026. Cette phase d'information préalable permet d'explore"
+   },
+   {
+    "fiche_id": "idx:15377",
+    "nom": "STAPS:ENTRAINEMENT ET OPTIMISATION DE LA PERFORMANCE SPORTIVE — Préparation du s",
+    "etablissement": "Université de Lille",
+    "ville": "RONCHIN",
+    "region": "Hauts-de-France",
+    "domain": "sport",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16735",
+    "nom": "classe préparatoire physique-chimie et sciences de l'ingénieur (PCSI) 1re année",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:fin-phase-complementaire",
+    "nom": "Fin de la phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 se termine le 10 septembre 2026. C'est la dernière échéance pour les candidats qui n'ont pas reçu de propositi"
+   },
+   {
+    "fiche_id": "idx:16736",
+    "nom": "classe préparatoire physique-chimie et sciences de l'ingénieur (PCSI) option sci",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16976",
+    "nom": "cycle préparatoire intégré à l'ESEO Angers - CPGE à parcours sécurisé ouvert, as",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16990",
+    "nom": "cycle préparatoire intégré de JUNIA HEI (associé avec le Lycée La Salle de Lille",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16991",
+    "nom": "cycle préparatoire intégré de JUNIA HEI (associé avec le Lycée La Salle de Lille",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16994",
+    "nom": "cycle préparatoire intégré de l'ECAM Rennes - prépa PCSI-PS associée au Lycée As",
+    "etablissement": "ECAM Rennes - prépa PCSI-PS associée au Lycée Assomption",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17023",
+    "nom": "cycle préparatoire intégré de l'Icam Lille - La prépa professionnalisante (parte",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-complementaire",
+    "nom": "Phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 ouvre le 11 juin 2026 et se termine le 10 septembre 2026. Elle permet aux candidats sans proposition d'admissi"
+   },
+   {
+    "fiche_id": "idx:17024",
+    "nom": "cycle préparatoire intégré de l'Icam Lille - La prépa scientifique (prépa associ",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "idx:17028",
+    "nom": "cycle préparatoire intégré de l'Icam Strasbourg-Europe - La prépa scientifique (",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "idx:17085",
+    "nom": "cycle préparatoire JUNIA HEI associé au lycée Saint Joseph Pierre Rouge (Montpel",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17086",
+    "nom": "cycle préparatoire JUNIA HEI associé au Lycée Saint-Denis (Annonay) - prépa asso",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-017-v3",
+  "question": "Peux-tu m'aider : quel est le taux d'insertion professionnelle à 6 mois pour prépa ECG à Toulouse ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "inserjeunes_formation:cap:preparation-et-realisation-d-ouvrages-electriques",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — preparation et realisation d'ouvrages electriques (France) | Établissements/cohortes mesurés : 551 | Taux d'emploi 12 mois après diplô"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-humaines-et-sociales:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences humaines et sociales (Occitanie, cohorte 2024) | Niveau d'études : bac+3 | Effect"
+   },
+   {
+    "fiche_id": "idx:7700",
+    "nom": "RESPONSABLE PROJETS ET INGENIERIE EN FORMATION (GIPFCIP FORMAVIE, AQUITAINE, TOU",
+    "etablissement": "GIP FORMATION ET CERTIFICATION POUR L'INSERTION PROFESSIONNE",
+    "ville": "",
+    "region": null,
+    "domain": "education",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:electricien",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — electricien (France) | Établissements/cohortes mesurés : 1378 | Taux d'emploi 12 mois après diplôme : 31.8% (moyenne France) | Taux d'"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Formation d'ingénieur Bac + 5 - Bac général",
+    "etablissement": "La Prépa des INP - Groupe INP - Toulouse",
+    "ville": "Toulouse",
+    "region": "Occitanie",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:16948",
+    "nom": "cycle préparatoire aux études supérieures et à l'insertion professionnelle",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "lettres_arts",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:agent-de-proprete-et-d-hygiene",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — agent de proprete et d'hygiene (France) | Établissements/cohortes mesurés : 334 | Taux d'emploi 12 mois après diplôme : 19.4% (moyenne"
+   },
+   {
+    "fiche_id": "insersup:master-lmd:sciences-economiques-gestion:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Master LMD en Sciences économiques, gestion (Occitanie, cohorte 2024) | Niveau d'études : bac+5 | Effectif sortants :"
+   },
+   {
+    "fiche_id": "idx:28943",
+    "nom": "Diplôme d'Université - PAREO - CPESIP (Cycle préparatoire aux Etudes Supérieures",
+    "etablissement": "Université de la Réunion - Le Tampon",
+    "ville": "Le Tampon",
+    "region": "La Réunion",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": "CPESIP (Cycle préparatoire aux Etudes Supérieures et à l'Insertion Professionnelle)"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:conducteur-d-installations-de-production",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — conducteur d'installations de production (France) | Établissements/cohortes mesurés : 311 | Taux d'emploi 12 mois après diplôme : 17.0"
+   },
+   {
+    "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-fondamentales-et-applications:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Bachelor universitaire de technologie en Sciences fondamentales et applications (Occitanie, cohorte 2024) | Niveau d'"
+   },
+   {
+    "fiche_id": "idx:28944",
+    "nom": "Diplôme d'Université - PAREO - CPESIP (Cycle préparatoire aux Etudes Supérieures",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "ville": "Saint-Denis",
+    "region": "La Réunion",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": "CPESIP (Cycle préparatoire aux Etudes Supérieures et à l'Insertion Professionnelle)"
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:edition",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — edition (France) | Établissements/cohortes mesurés : 6 | Taux d'emploi 12 mois après diplôme : 43.5% (moyenne France) | Taux d'emploi "
+   },
+   {
+    "fiche_id": "insersup:master-lmd:sciences-fondamentales-et-applications:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Master LMD en Sciences fondamentales et applications (Occitanie, cohorte 2024) | Niveau d'études : bac+5 | Effectif s"
+   },
+   {
+    "fiche_id": "idx:881",
+    "nom": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la Valorisation de l'In",
+    "etablissement": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la ",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:proprete-de-l-environnement-urbain-collecte-et-recyclage",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — proprete de l'environnement urbain - collecte et recyclage (France) | Établissements/cohortes mesurés : 33 | Taux d'emploi 12 mois apr"
+   },
+   {
+    "fiche_id": "insersup:master-meef:sciences-humaines-et-sociales:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Master MEEF en Sciences humaines et sociales (Occitanie, cohorte 2024) | Niveau d'études : bac+5 | Effectif sortants "
+   },
+   {
+    "fiche_id": "idx:1234",
+    "nom": "CFA Relais Avenir Pro (Association pour la Promotion et la Valorisation de l'Ins",
+    "etablissement": "CFA Relais Avenir Pro (Association pour la Promotion et la V",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:assistant-e-technique-en-milieux-familial-et-collectif",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — assistant(e) technique en milieux familial et collectif (France) | Établissements/cohortes mesurés : 1633 | Taux d'emploi 12 mois aprè"
+   },
+   {
+    "fiche_id": "insersup:master-lmd:sciences-de-la-vie-de-la-terre-et-de-l-univers:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Master LMD en Sciences de la vie, de la terre et de l'univers (Occitanie, cohorte 2024) | Niveau d'études : bac+5 | E"
+   },
+   {
+    "fiche_id": "idx:4132",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:employe-de-vente-specialise-option-c-service-a-la-clientele",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — employe de vente specialise option c : service a la clientele (France) | Établissements/cohortes mesurés : 75 | Taux d'emploi 12 mois "
+   },
+   {
+    "fiche_id": "idx:4212",
+    "nom": "ACCOMPAGNEMENT, SOINS ET SERVICES A LA PERSONNE",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:employe-de-vente-specialise-option-b-produits-d-equipement-c",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — employe de vente specialise option b : produits d'equipement courant (France) | Établissements/cohortes mesurés : 930 | Taux d'emploi "
+   },
+   {
+    "fiche_id": "insersup:master-lmd:staps:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Master LMD en STAPS (Occitanie, cohorte 2024) | Niveau d'études : bac+5 | Effectif sortants : 125 | Poursuivants : 31"
+   },
+   {
+    "fiche_id": "idx:4559",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:employe-de-commerce-multi-specialites",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — employe de commerce multi-specialites (France) | Établissements/cohortes mesurés : 1193 | Taux d'emploi 12 mois après diplôme : 21.0% "
+   },
+   {
+    "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-economiques-gestion:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Bachelor universitaire de technologie en Sciences économiques, gestion (Occitanie, cohorte 2024) | Niveau d'études : "
+   },
+   {
+    "fiche_id": "idx:5363",
+    "nom": "CONCEPTION ET REALISATION DES SYSTEMES AUTOMATIQUES",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:serigraphie-industrielle",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — serigraphie industrielle (France) | Établissements/cohortes mesurés : 60 | Taux d'emploi 12 mois après diplôme : 28.7% (moyenne France"
+   },
+   {
+    "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-humaines-et-sociales:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Bachelor universitaire de technologie en Sciences humaines et sociales (Occitanie, cohorte 2024) | Niveau d'études : "
+   },
+   {
+    "fiche_id": "idx:5454",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:maintenance-de-batiments-de-collectivites",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — maintenance de batiments de collectivites (France) | Établissements/cohortes mesurés : 384 | Taux d'emploi 12 mois après diplôme : 12."
+   },
+   {
+    "fiche_id": "insersup:master-lmd:langues:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Master LMD en Langues (Occitanie, cohorte 2024) | Niveau d'études : bac+5 | Effectif sortants : 176 | Poursuivants : "
+   },
+   {
+    "fiche_id": "idx:6627",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION A MANAGEMENT D'UNITE DE RESTAURATIO",
+    "etablissement": "GIP - FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'A",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:cap:accompagnant-educatif-petite-enfance",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion CAP — accompagnant educatif petite enfance (France) | Établissements/cohortes mesurés : 1187 | Taux d'emploi 12 mois après diplôme : 44.5% ("
+   },
+   {
+    "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Diplôme d'ingénieurs en Sciences fondamentales et applications (Occitanie, cohorte 2024) | Niveau d'études : bac+5 | "
+   },
+   {
+    "fiche_id": "idx:6630",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION A MANAGEMENT D'UNITE DE RESTAURATIO",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:gestion-de-la-pme",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — gestion de la pme (France) | Établissements/cohortes mesurés : 1471 | Taux d'emploi 12 mois après diplôme : 62.8% (moyenne France) | T"
+   },
+   {
+    "fiche_id": "insersup:licence-generale:sciences-economiques-gestion:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence générale en Sciences économiques, gestion (Occitanie, cohorte 2024) | Niveau d'études : bac+3 | Effectif sort"
+   }
+  ]
+ },
+ {
+  "qid": "fact-018-v3",
+  "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour master MIAGE à Nantes ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — MIAGE - F",
+    "etablissement": "Université Toulouse Capitole",
+    "ville": "TOULOUSE CEDEX 9",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:12793",
+    "nom": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE — MIAGE",
+    "etablissement": "Nantes Université",
+    "ville": "NANTES",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Occitanie (2023) | Effectif pondéré régional : 398 388 | Salaire net médian annuel : 37 500 € | Salaire net méd"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Bretagne (2023) | Effectif pondéré régional : 197 004 | Salaire net médian annuel : 37 500 € | Salaire net médi"
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Bretagne (2023) | Effectif pondéré régional : 8 592 | Salaire net médian annuel : 32 500"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Occitanie (2023) | Effectif pondéré régional : 866 556 | Salaire net médian annuel : 17 000 € | Salaire ne"
+   },
+   {
+    "fiche_id": "insee_salaan:group_5:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et employés (groupe 5) en Bretagne (2023) | Effectif pondéré régional : 468 084 | Salaire net médian annuel : 17 000 € | Salaire net"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Île-de-France (2023) | Effectif pondéré régional : 1 323 348 | Salaire net médian annuel : 29 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Hauts-de-France (2023) | Effectif pondéré régional : 489 768 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel "
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Occitanie (2023) | Effectif pondéré régional : 609 912 | Salaire net médian annuel : 19 000"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 519 516 | Salaire net médian annuel : 27 000 € | Salaire net médian mensu"
+   },
+   {
+    "fiche_id": "insee_salaan:group_2:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Cadres et professions intellectuelles supérieures en Occitanie (2023) | Effectif pondéré régional : 33 540 | Salaire net médian annuel : 19 0"
+   },
+   {
+    "fiche_id": "insee_salaan:group_6:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Ouvriers et professions de services (groupe 6) en Bretagne (2023) | Effectif pondéré régional : 427 284 | Salaire net médian annuel : 21 000 "
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Île-de-France (2023) | Effectif pondéré régional : 2 145 348 | Salaire net médian annuel : 45 000 € | Salaire n"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Hauts-de-France (2023) | Effectif pondéré régional : 326 100 | Salaire net médian annuel : 37 500 € | Salaire n"
+   },
+   {
+    "fiche_id": "insee_salaan:group_3:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Professions intermédiaires en Nouvelle-Aquitaine (2023) | Effectif pondéré régional : 339 324 | Salaire net médian annuel : 37 500 € | Salair"
+   }
+  ]
+ },
+ {
+  "qid": "fact-019-v3",
+  "question": "Peux-tu m'aider : quel est le nombre de places pour master en intelligence artificielle à Strasbourg ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "INTELLIGENCE ARTIFICIELLE — None",
+    "etablissement": "Université Clermont Auvergne",
+    "ville": "AUBIERE",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:8999",
+    "nom": "CONTROLE DE GESTION ET AUDIT ORGANISATIONNEL — Gestion, audit et intelligence de",
+    "etablissement": "Université de Strasbourg",
+    "ville": "STRASBOURG",
+    "region": "Grand Est",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9459",
+    "nom": "DROIT DU NUMERIQUE — Droit de l'intelligence artificielle",
+    "etablissement": "Institut catholique de Paris",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9461",
+    "nom": "DROIT DU NUMERIQUE — Droit des activités numériques et de l'intelligence artific",
+    "etablissement": "Université de Caen Normandie",
+    "ville": "CAEN",
+    "region": "Normandie",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:9983",
+    "nom": "ECONOMIE APPLIQUEE — Double-diplôme Master Méthodes appliquées de la statistique",
+    "etablissement": "Université Paris-Est Créteil",
+    "ville": "CRETEIL CEDEX",
+    "region": "Île-de-France",
+    "domain": "eco_gestion",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:10148",
+    "nom": "ELECTRONIQUE, ENERGIE ELECTRIQUE, AUTOMATIQUE — Intelligence Artificielle et Aut",
+    "etablissement": "Université de Perpignan Via Domitia",
+    "ville": "PERPIGNAN",
+    "region": "Occitanie",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11104",
+    "nom": "IA - INTELLIGENCE ARTIFICIELLE / AI - ARTIFICIAL INTELLIGENCE — None",
+    "etablissement": "Institut national des sciences appliquées de Lyon",
+    "ville": "VILLEURBANNE CEDEX",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP37827",
+    "nom": "Développeur en intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP37827) — Développeur en intelligence artificielle (bac+3) | Niveau européen : Niveau 6 | Métiers visés (ROME) : M1805 Étud"
+   },
+   {
+    "fiche_id": "idx:11224",
+    "nom": "INFORMATIQUE — Algorithmes, Intelligence Artificielle, Interactions, Décisions (",
+    "etablissement": "Sorbonne Université",
+    "ville": "PARIS",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11227",
+    "nom": "INFORMATIQUE — Applications Réparties, Intelligence Artificielle et Sécurité (AR",
+    "etablissement": "Université d'Orléans",
+    "ville": "ORLEANS CEDEX",
+    "region": "Centre-Val de Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP41813",
+    "nom": "Chef de projet data et intelligence artificielle",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP41813) — Chef de projet data et intelligence artificielle (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : M1"
+   },
+   {
+    "fiche_id": "idx:11302",
+    "nom": "INFORMATIQUE — Ingénierie en intelligence artificielle",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "ville": "ST DENIS CEDEX",
+    "region": "Île-de-France",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11306",
+    "nom": "INFORMATIQUE — Intelligence artificielle",
+    "etablissement": "Le Mans Université",
+    "ville": "LE MANS",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11307",
+    "nom": "INFORMATIQUE — Intelligence artificielle",
+    "etablissement": "Le Mans Université",
+    "ville": "LE MANS CEDEX 9",
+    "region": "Pays de la Loire",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11308",
+    "nom": "INFORMATIQUE — Intelligence artificielle",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "ville": "REIMS CEDEX 2",
+    "region": "Grand Est",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP40551",
+    "nom": "Chef de projets en intelligence artificielle et sciences des données (MS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP40551) — Chef de projets en intelligence artificielle et sciences des données (MS) (bac+5) | Niveau européen : Niveau 7 | "
+   },
+   {
+    "fiche_id": "idx:11309",
+    "nom": "INFORMATIQUE — Intelligence Artificielle (IA)",
+    "etablissement": "Avignon Université",
+    "ville": "AVIGNON CEDEX",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rome_metier:M1889",
+    "nom": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier_detail",
+    "source": "rome_api_v4",
+    "extrait": "Métier ROME M1889 : Ingénieur / Ingénieure en Intelligence Artificielle (IA) | Compétences par enjeu : Data et Nouvelles technologies (Optimiser les p"
+   },
+   {
+    "fiche_id": "idx:11310",
+    "nom": "INFORMATIQUE — Intelligence Artificielle (IA)",
+    "etablissement": "Université Côte d'Azur",
+    "ville": "BIOT",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:11311",
+    "nom": "INFORMATIQUE — Intelligence Artificielle (IA)",
+    "etablissement": "Université de Rennes",
+    "ville": "RENNES",
+    "region": "Bretagne",
+    "domain": "sciences_fondamentales",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "rncp_blocs:RNCP39485",
+    "nom": "Intelligence artificielle (fiche nationale)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "competences_certif",
+    "source": "rncp_blocs",
+    "extrait": "Compétences certifiées (RNCP39485) — Intelligence artificielle (fiche nationale) (bac+5) | Niveau européen : Niveau 7 | Métiers visés (ROME) : H1206 M"
+   }
+  ]
+ },
+ {
+  "qid": "fact-020-v3",
+  "question": "Peux-tu m'aider : quel est les frais de scolarité annuels pour master de droit des affaires à Rennes ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "DROIT DES AFFAIRES — Droit fiscal des affaires",
+    "etablissement": "Université de Lille",
+    "ville": "LILLE",
+    "region": "Hauts-de-France",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5718",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE DE RENNES",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "correction:epita_couts_scolarite_2025",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "correction_factuelle",
+    "source": "corrections_factuelles_curated",
+    "extrait": "Correction factuelle — EPITA — coûts de scolarité cycle ingénieur | Information correcte (autorité) : Le coût annuel de scolarité de l'EPITA pour le c"
+   },
+   {
+    "fiche_id": "idx:9409",
+    "nom": "DROIT DES AFFAIRES — M1 Droit des affaires général",
+    "etablissement": "Université de Rennes",
+    "ville": "RENNES",
+    "region": "Bretagne",
+    "domain": "droit",
+    "source": "monmaster",
+    "extrait": null
+   },
+   {
+    "fiche_id": "correction:bba_inseec_couts_scolarite_2025",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "correction_factuelle",
+    "source": "corrections_factuelles_curated",
+    "extrait": "Correction factuelle — BBA INSEEC — coûts de scolarité | Information correcte (autorité) : Le coût annuel de scolarité du BBA INSEEC est d'environ 12 "
+   },
+   {
+    "fiche_id": "idx:5708",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "ASS PROMO GESTION CTRE ENS SUP A EVRY",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5709",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "CY CERGY PARIS UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5710",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "ECOLE SUPERIEURE DE LA BANQUE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5711",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "FORMASUP PARIS ILE-DE-FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5712",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "INSTITUT CATHOLIQUE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5713",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "ORGANI GEST INSTIT CATHO ETUDE SUPER",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5714",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNION UNIVERSITE ECONOMIE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5715",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE BOURGOGNE EUROPE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5716",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE CLERMONT AUVERGNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5717",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5719",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE DE STRASBOURG",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5720",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE GRENOBLE ALPES",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5721",
+    "nom": "DROIT DES AFFAIRES (MASTER)",
+    "etablissement": "UNIVERSITE JEAN MONNET",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "fact-021-v3",
+  "question": "Peux-tu m'aider : quel est le taux d'accès sur Parcoursup pour diplôme d'État infirmier à Montpellier ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Infirmier",
+    "etablissement": "MINISTERE DE LA SANTE ET DE LA PREVENTION",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28570",
+    "nom": "D.E Infirmier",
+    "etablissement": "IFSI CHU Montpellier",
+    "ville": "Montpellier",
+    "region": "Occitanie",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:consultation-offre",
+    "nom": "Consultation de l'offre de formation Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le 17 décembre 2025, les futurs étudiants peuvent consulter l'offre de formation Parcoursup 2026. Cette phase d'information préalable permet d'explore"
+   },
+   {
+    "fiche_id": "idx:4119",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "ECOLE INFIRMIERE ASSIST SOCIAL",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:fin-phase-complementaire",
+    "nom": "Fin de la phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 se termine le 10 septembre 2026. C'est la dernière échéance pour les candidats qui n'ont pas reçu de propositi"
+   },
+   {
+    "fiche_id": "idx:4414",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "ECOLE INFIRMIERE ASSIST SOCIAL",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-complementaire",
+    "nom": "Phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 ouvre le 11 juin 2026 et se termine le 10 septembre 2026. Elle permet aux candidats sans proposition d'admissi"
+   },
+   {
+    "fiche_id": "idx:4436",
+    "nom": "AIDE-SOIGNANT (DIPLÔME D'ETAT)",
+    "etablissement": "INSTIT FORM SOINS INFIRMIERS BLANCARDE",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17330",
+    "nom": "diplôme d'État d'infirmier",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "idx:17331",
+    "nom": "diplôme d'État d'infirmier de bloc opératoire",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "idx:17356",
+    "nom": "diplôme d'État infirmier en pratique avancée mention maladie rénale, dialyse, tr",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17357",
+    "nom": "diplôme d'État infirmier en pratique avancée mention mention urgences",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17358",
+    "nom": "diplôme d'État infirmier en pratique avancée mention oncologie et hémato-oncolog",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_mobilite_parcoursup",
+    "nom": "Aide à la mobilité Parcoursup (changement académie après bac)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la mobilité Parcoursup (changement académie après bac) | Organisme : Ministère de l'Enseignement supérieur | Public cible : Néo-b"
+   },
+   {
+    "fiche_id": "idx:17359",
+    "nom": "diplôme d'État infirmier en pratique avancée mention pathologies chroniques stab",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.561",
+    "nom": "aide-soignant/e",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : aide-soignant/e | Libellé : aide-soignante / aide-soignant | Synonymes : aide infirmier/ère, assistant/e en soins | Accroche : À l'hôpital, e"
+   },
+   {
+    "fiche_id": "idx:17360",
+    "nom": "diplôme d'État infirmier en pratique avancée mention psychiatrie et santé mental",
+    "etablissement": null,
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28411",
+    "nom": "D.E Infirmier",
+    "etablissement": "Centre de formation IFSI-IFAS Hopitaux civils de Colmar",
+    "ville": "Colmar",
+    "region": "Grand Est",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28412",
+    "nom": "D.E Infirmier",
+    "etablissement": "Ecole de formation sanitaire et sociale du CH de Pontivy",
+    "ville": "Pontivy",
+    "region": "Bretagne",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28413",
+    "nom": "D.E Infirmier",
+    "etablissement": "Ecole Rockefeller",
+    "ville": "Lyon 8e  Arrondissement",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:28414",
+    "nom": "D.E Infirmier",
+    "etablissement": "ERFPS CHU Rouen",
+    "ville": "Rouen",
+    "region": "Normandie",
+    "domain": "sante",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.38",
+    "nom": "infirmier/ère",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : infirmier/ère | Libellé : infirmière / infirmier | Accroche : L'infirmier ou l'infirmière dispense des soins de nature préventive, curative o"
+   }
+  ]
+ },
+ {
+  "qid": "fact-022-v3",
+  "question": "Peux-tu m'aider : quel est le taux d'insertion professionnelle à 6 mois pour DUT à Bourges ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "inserjeunes_formation:bts:edition",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — edition (France) | Établissements/cohortes mesurés : 6 | Taux d'emploi 12 mois après diplôme : 43.5% (moyenne France) | Taux d'emploi "
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-economiques-gestion:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences économiques, gestion (Normandie, cohorte 2024) | Niveau d'études : bac+3 | Effect"
+   },
+   {
+    "fiche_id": "idx:881",
+    "nom": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la Valorisation de l'In",
+    "etablissement": "CFA de l'Avenir Pro 62 (Association pour la Promotion et la ",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:negociation-et-digitalisation-de-la-relation-client",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — negociation et digitalisation de la relation client (France) | Établissements/cohortes mesurés : 1365 | Taux d'emploi 12 mois après di"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences fondamentales et applications (Grand Est, cohorte 2024) | Niveau d'études : bac+3"
+   },
+   {
+    "fiche_id": "idx:1234",
+    "nom": "CFA Relais Avenir Pro (Association pour la Promotion et la Valorisation de l'Ins",
+    "etablissement": "CFA Relais Avenir Pro (Association pour la Promotion et la V",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:assistant-de-manager:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — assistant de manager en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 16 | Taux d'emploi 12 mois : 54.0% (en CENTRE-VAL DE L"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences fondamentales et applications (Pays de la Loire, cohorte 2024) | Niveau d'études "
+   },
+   {
+    "fiche_id": "idx:4132",
+    "nom": "ACCOMPAGNANT EDUCATIF ET SOCIAL (DIPLOME D'ETAT)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "social",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-humaines-et-sociales:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Bachelor universitaire de technologie en Sciences humaines et sociales (Centre-Val de Loire, cohorte 2024) | Niveau d"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:droit-sciences-politiques:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Droit, sciences politiques (Nouvelle-Aquitaine, cohorte 2024) | Niveau d'études : bac+3 | "
+   },
+   {
+    "fiche_id": "idx:4212",
+    "nom": "ACCOMPAGNEMENT, SOINS ET SERVICES A LA PERSONNE",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "sante",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:gestion-de-la-pme",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — gestion de la pme (France) | Établissements/cohortes mesurés : 1471 | Taux d'emploi 12 mois après diplôme : 62.8% (moyenne France) | T"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-economiques-gestion:grand-est",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Grand Est",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences économiques, gestion (Grand Est, cohorte 2024) | Niveau d'études : bac+3 | Effect"
+   },
+   {
+    "fiche_id": "idx:4559",
+    "nom": "ANIMATION-GESTION DE PROJETS DANS LE SECTEUR SPORTIF (CS4)",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "sport",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bac-pro:gestion-administration:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BAC PRO — gestion-administration en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 147 | Taux d'emploi 12 mois : 40.2% (en CENTRE-V"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:lettres-sciences-du-langage-arts:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Lettres, sciences du langage, arts (Pays de la Loire, cohorte 2024) | Niveau d'études : ba"
+   },
+   {
+    "fiche_id": "idx:5363",
+    "nom": "CONCEPTION ET REALISATION DES SYSTEMES AUTOMATIQUES",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:negociation-et-relation-client:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — negociation et relation client en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 18 | Taux d'emploi 12 mois : 62.1% (en CENTR"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:bourgogne-franche-comte",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bourgogne-Franche-Comté",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences fondamentales et applications (Bourgogne-Franche-Comté, cohorte 2024) | Niveau d'"
+   },
+   {
+    "fiche_id": "idx:5454",
+    "nom": "CONSEIL ET COMMERCIALISATION DE SOLUTIONS TECHNIQUES",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "eco_gestion",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-economiques-gestion:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Bachelor universitaire de technologie en Sciences économiques, gestion (Centre-Val de Loire, cohorte 2024) | Niveau d"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-de-la-vie-de-la-terre-et-de-l-univers:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences de la vie, de la terre et de l'univers (Bretagne, cohorte 2024) | Niveau d'études"
+   },
+   {
+    "fiche_id": "idx:6627",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION A MANAGEMENT D'UNITE DE RESTAURATIO",
+    "etablissement": "GIP - FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'A",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:negociation-et-relation-client",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — negociation et relation client (France) | Établissements/cohortes mesurés : 482 | Taux d'emploi 12 mois après diplôme : 63.1% (moyenne"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:droit-sciences-politiques:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Droit, sciences politiques (Hauts-de-France, cohorte 2024) | Niveau d'études : bac+3 | Eff"
+   },
+   {
+    "fiche_id": "idx:6630",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION A MANAGEMENT D'UNITE DE RESTAURATIO",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:support-a-l-action-manageriale:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — support a l'action manageriale en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 46 | Taux d'emploi 12 mois : 64.3% (en CENTR"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences fondamentales et applications (Bretagne, cohorte 2024) | Niveau d'études : bac+3 "
+   },
+   {
+    "fiche_id": "idx:6756",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION ",
+    "etablissement": "GIP - FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'A",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:communication:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — communication en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 30 | Taux d'emploi 12 mois : 54.1% (en CENTRE-VAL DE LOIRE) |"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:droit-sciences-politiques:ile-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Île-de-France",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Droit, sciences politiques (Île-de-France, cohorte 2024) | Niveau d'études : bac+3 | Effec"
+   },
+   {
+    "fiche_id": "idx:6759",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION ",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:gestion-de-la-pme:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — gestion de la pme en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 67 | Taux d'emploi 12 mois : 64.9% (en CENTRE-VAL DE LOIR"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-humaines-et-sociales:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences humaines et sociales (Pays de la Loire, cohorte 2024) | Niveau d'études : bac+3 |"
+   },
+   {
+    "fiche_id": "idx:6868",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION C MANAGEMENT D'UNITE D'HEBERGEMENT",
+    "etablissement": "GIP FORMATION CONTINUE ET INSERTION PROFESSIONNELLE DE L'ACA",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation_region:bts:tourisme:centre-val-de-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Centre-Val de Loire",
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — tourisme en CENTRE-VAL DE LOIRE | Établissements/cohortes mesurés : 25 | Taux d'emploi 12 mois : 62.1% (en CENTRE-VAL DE LOIRE) | Taux"
+   },
+   {
+    "fiche_id": "insersup:licence-professionnelle:sciences-economiques-gestion:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "insertion_pro",
+    "source": "insersup_mesr",
+    "extrait": "Insertion professionnelle MESR — Licence professionnelle en Sciences économiques, gestion (Pays de la Loire, cohorte 2024) | Niveau d'études : bac+3 |"
+   },
+   {
+    "fiche_id": "idx:6870",
+    "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION C MANAGEMENT D'UNITE D'HEBERGEMENT",
+    "etablissement": "GROUPEMENT D'INTERET PUBLIC FORMATION CONTINUE ET INSERTION ",
+    "ville": "",
+    "region": null,
+    "domain": "tourisme_hotellerie",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "inserjeunes_formation:bts:conception-et-realisation-des-systemes-automatiques",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "formation_insertion",
+    "source": "inserjeunes_lycee_pro",
+    "extrait": "Insertion BTS — conception et realisation des systemes automatiques (France) | Établissements/cohortes mesurés : 652 | Taux d'emploi 12 mois après dip"
+   }
+  ]
+ },
+ {
+  "qid": "fact-023-v3",
+  "question": "Peux-tu m'aider : quel est le salaire médian à l'embauche après pour école d'ingénieurs post-bac à Annecy ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "cycle préparatoire intégré de l'École d'ingénieurs des sciences aérospatiales",
+    "etablissement": "École d'ingénieurs des sciences aérospatiales",
+    "ville": "",
+    "region": null,
+    "domain": "sciences_fondamentales",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:17014",
+    "nom": "cycle préparatoire intégré de l'ENSIBS - parcours école d'ingénieurs (PEI) A pos",
+    "etablissement": "ENSIBS -",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "onisep",
+    "extrait": null
+   },
+   {
+    "fiche_id": "insee_salaan:cs:38",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires PCS 38 : Ingénieurs et cadres techniques d'entreprises (France 2023) | Effectif pondéré : 1 765 764 | Salaire net médian annuel : 45 000 € | "
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:occitanie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Occitanie",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Occitanie (2023) | Effectif pondéré régional : 516 060 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 25"
+   },
+   {
+    "fiche_id": "insee_salaan:group_4:bretagne",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Bretagne",
+    "domain": "insee_salaire",
+    "source": "insee_salaan_2023",
+    "extrait": "Salaires Employés en Bretagne (2023) | Effectif pondéré régional : 295 044 | Salaire net médian annuel : 27 000 € | Salaire net médian mensuel : 2 250"
+   }
+  ]
+ },
+ {
+  "qid": "fact-024-v3",
+  "question": "Peux-tu m'aider : quelle est la date limite de confirmation des voeux sur Parcoursup en 2026 ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:ouverture-voeux",
+    "nom": "Ouverture de la phase d'inscription et formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026. Chaque candidat peut formuler jusqu'à 10 vœux pri"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+    "nom": "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution "
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+    "nom": "Calendrier général Parcoursup 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le calendrier Parcoursup 2026 se déroule en 6 phases clés : (1) consultation offre du 17 décembre 2025 au 19 janvier 2026 ; (2) inscription + formulat"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:consultation-offre",
+    "nom": "Consultation de l'offre de formation Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le 17 décembre 2025, les futurs étudiants peuvent consulter l'offre de formation Parcoursup 2026. Cette phase d'information préalable permet d'explore"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:fin-phase-complementaire",
+    "nom": "Fin de la phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 se termine le 10 septembre 2026. C'est la dernière échéance pour les candidats qui n'ont pas reçu de propositi"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-admission",
+    "nom": "Phase d'admission Parcoursup 2026 — début des réponses",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026. Les candidats reçoivent leurs propositions d'admission et doivent y répondre "
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:depot-candidatures",
+    "nom": "Phase de dépôt des candidatures MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "Les candidats déposent leurs candidatures sur MonMaster du 17 février au 17 mars 2026. Chaque candidat peut formuler jusqu'à 15 candidatures de Master"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:inscription-administrative",
+    "nom": "Inscription administrative dans l'établissement choisi (Parcoursup 2026)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Une fois une proposition d'admission acceptée définitivement sur Parcoursup, le candidat doit procéder à l'inscription administrative dans l'établisse"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+    "nom": "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesSer"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-complementaire",
+    "nom": "Phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 ouvre le 11 juin 2026 et se termine le 10 septembre 2026. Elle permet aux candidats sans proposition d'admissi"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:phase-complementaire",
+    "nom": "Phase complémentaire MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "La phase complémentaire MonMaster 2026 démarre le 19 juin 2026 et se termine le 19 juillet 2026. Elle permet aux candidats sans admission ou en attent"
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:phase-admission",
+    "nom": "Phase d'admission MonMaster 2026 — réponses des formations",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "La phase d'admission MonMaster 2026 commence le 3 juin 2026 et se prolonge jusqu'au 16 juin 2026 pour la première vague de réponses. Les candidats reç"
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:ouverture-inscription",
+    "nom": "Ouverture de la plateforme MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "MonMaster 2026 ouvre le 2 février 2026 pour l'année universitaire 2026-2027. Les candidats à un Master peuvent à partir de cette date créer leur compt"
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:inscription-administrative",
+    "nom": "Inscription administrative en Master post-MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "Une fois une admission acceptée définitivement sur MonMaster, le candidat procède à l'inscription administrative auprès de l'université d'accueil. Les"
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_mobilite_parcoursup",
+    "nom": "Aide à la mobilité Parcoursup (changement académie après bac)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la mobilité Parcoursup (changement académie après bac) | Organisme : Ministère de l'Enseignement supérieur | Public cible : Néo-b"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+    "nom": "Premier cycle d'attribution des logements CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le premier cycle d'attribution des logements CROUS pour la rentrée 2026 a lieu le 2 juin 2026. Les étudiants ayant fait leur DSE et saisi leurs vœux d"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:ouverture-dse",
+    "nom": "Ouverture du Dossier Social Étudiant (DSE) 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le Dossier Social Étudiant (DSE) 2026 ouvre le 2 mars 2026 sur la plateforme MesServices.Étudiants.gouv.fr. Le DSE est le dossier UNIQUE pour demander"
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:vue-ensemble-2026",
+    "nom": "Calendrier général MonMaster 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "Le calendrier MonMaster 2026 se déroule en 5 phases clés pour l'année universitaire 2026-2027 : (1) ouverture inscription + dossier commun le 2 févrie"
+   }
+  ]
+ },
+ {
+  "qid": "fact-025-v3",
+  "question": "Peux-tu m'aider : quelle est la date limite de confirmation des voeux sur Parcoursup en 2025 ?",
+  "category": "factuelle_precise",
+  "candidates": [
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+    "nom": "Date limite de confirmation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux et finaliser leur dossier (lettre de motivation, choix de spéciali"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+    "nom": "Date limite de formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026. Au-delà de cette date, il n'est plus possible d'ajouter de nouveaux vœu"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:ouverture-voeux",
+    "nom": "Ouverture de la phase d'inscription et formulation des vœux Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026. Chaque candidat peut formuler jusqu'à 10 vœux pri"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+    "nom": "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution "
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:consultation-offre",
+    "nom": "Consultation de l'offre de formation Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le 17 décembre 2025, les futurs étudiants peuvent consulter l'offre de formation Parcoursup 2026. Cette phase d'information préalable permet d'explore"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+    "nom": "Calendrier général Parcoursup 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Le calendrier Parcoursup 2026 se déroule en 6 phases clés : (1) consultation offre du 17 décembre 2025 au 19 janvier 2026 ; (2) inscription + formulat"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:inscription-administrative",
+    "nom": "Inscription administrative dans l'établissement choisi (Parcoursup 2026)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "Une fois une proposition d'admission acceptée définitivement sur Parcoursup, le candidat doit procéder à l'inscription administrative dans l'établisse"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:fin-phase-complementaire",
+    "nom": "Fin de la phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 se termine le 10 septembre 2026. C'est la dernière échéance pour les candidats qui n'ont pas reçu de propositi"
+   },
+   {
+    "fiche_id": "financement_dispositif:aide_mobilite_parcoursup",
+    "nom": "Aide à la mobilité Parcoursup (changement académie après bac)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "extrait": "Financement — Aide à la mobilité Parcoursup (changement académie après bac) | Organisme : Ministère de l'Enseignement supérieur | Public cible : Néo-b"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-admission",
+    "nom": "Phase d'admission Parcoursup 2026 — début des réponses",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026. Les candidats reçoivent leurs propositions d'admission et doivent y répondre "
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:depot-candidatures",
+    "nom": "Phase de dépôt des candidatures MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "Les candidats déposent leurs candidatures sur MonMaster du 17 février au 17 mars 2026. Chaque candidat peut formuler jusqu'à 15 candidatures de Master"
+   },
+   {
+    "fiche_id": "calendrier:parcoursup-2026:phase-complementaire",
+    "nom": "Phase complémentaire Parcoursup 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "parcoursup_calendrier_officiel",
+    "extrait": "La phase complémentaire Parcoursup 2026 ouvre le 11 juin 2026 et se termine le 10 septembre 2026. Elle permet aux candidats sans proposition d'admissi"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+    "nom": "Phase de saisie des vœux de logement CROUS 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescr"
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:inscription-administrative",
+    "nom": "Inscription administrative en Master post-MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "Une fois une admission acceptée définitivement sur MonMaster, le candidat procède à l'inscription administrative auprès de l'université d'accueil. Les"
+   },
+   {
+    "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+    "nom": "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "extrait": "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesSer"
+   },
+   {
+    "fiche_id": "idx:-1",
+    "nom": "Licence - Portail Histoire",
+    "etablissement": "Sorbonne université",
+    "ville": "Paris  6e  Arrondissement",
+    "region": "Île-de-France",
+    "domain": "sciences_humaines",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "apec_region:auvergne-rhône-alpes",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apec_region",
+    "source": "apec_observatoire_emploi_cadre_2026",
+    "extrait": "Marché du travail cadres en Auvergne-Rhône-Alpes (panel APEC 2026) | Recrutements 2025 : 34 100 (-4 % vs 2024) | Prévision 2026 : 35 260 (+3 %) — touj"
+   },
+   {
+    "fiche_id": "calendrier:monmaster-2026:phase-complementaire",
+    "nom": "Phase complémentaire MonMaster 2026",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "calendrier",
+    "source": "monmaster_calendrier_officiel",
+    "extrait": "La phase complémentaire MonMaster 2026 démarre le 19 juin 2026 et se termine le 19 juillet 2026. Elle permet aux candidats sans admission ou en attent"
+   },
+   {
+    "fiche_id": "apec_region:hauts-de-france",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Hauts-de-France",
+    "domain": "apec_region",
+    "source": "apec_observatoire_emploi_cadre_2026",
+    "extrait": "Marché du travail cadres en Hauts-de-France (panel APEC 2026) | Recrutements 2025 : 17 000 (-6 % — baisse plus intense que national) | Prévision 2026 "
+   },
+   {
+    "fiche_id": "apec_region:nouvelle-aquitaine",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Nouvelle-Aquitaine",
+    "domain": "apec_region",
+    "source": "apec_observatoire_emploi_cadre_2026",
+    "extrait": "Marché du travail cadres en Nouvelle-Aquitaine (panel APEC 2026) | Recrutements 2025 : 13 820 (+7 % — à contre-courant du national) | Prévision 2026 :"
+   },
+   {
+    "fiche_id": "apec_region:provence-alpes-côte-dazur-et-corse",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Provence-Alpes-Côte d'Azur & Corse",
+    "domain": "apec_region",
+    "source": "apec_observatoire_emploi_cadre_2026",
+    "extrait": "Marché du travail cadres en Provence-Alpes-Côte d'Azur & Corse (panel APEC 2026) | Recrutements 2025 : 18 090 (-6 %) | Prévision 2026 : 18 800 (+4 %) "
+   },
+   {
+    "fiche_id": "apec_region:pays-de-la-loire",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Pays de la Loire",
+    "domain": "apec_region",
+    "source": "apec_observatoire_emploi_cadre_2026",
+    "extrait": "Marché du travail cadres en Pays de la Loire (panel APEC 2026) | Recrutements 2025 : 14 670 (-1 % — moins marqué que national) | Prévision 2026 : 15 4"
+   },
+   {
+    "fiche_id": "apec_region:normandie",
+    "nom": "",
+    "etablissement": null,
+    "ville": null,
+    "region": "Normandie",
+    "domain": "apec_region",
+    "source": "apec_observatoire_emploi_cadre_2026",
+    "extrait": "Marché du travail cadres en Normandie (panel APEC 2026) | Recrutements 2025 : 6 070 (-7 % — recul nettement plus marqué que national) | Prévision 2026"
+   }
+  ]
+ },
+ {
+  "qid": "comp-001-v3",
+  "question": "Peux-tu m'aider : compare BUT Informatique et licence d'informatique sur le taux d'insertion et le coût, lequel est mieux ?",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Informatique",
+    "etablissement": "I.U.T. d'Illkirch",
+    "ville": "Illkirch-Graffenstaden",
+    "region": "Grand Est",
+    "domain": "autre",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "metier:MET.554",
+    "nom": "technicien/ne de maintenance en informatique",
+    "etablissement": null,
+    "ville": null,
+    "region": null,
+    "domain": "metier",
+    "source": "onisep_ideo_fiches",
+    "extrait": "Métier : technicien/ne de maintenance en informatique | Libellé : technicienne de maintenance en informatique / technicien de maintenance en informati"
+   },
+   {
+    "fiche_id": "idx:35019",
+    "nom": "Développeur intégrateur en informatique industrielle",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "data_ia",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:38407",
+    "nom": "Technicien informatique de proximité",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "services",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:38446",
+    "nom": "Technicien supérieur en automatique et informatique industrielle",
+    "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "rncp",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:635",
+    "nom": "Centre de Formations d'apprentis AFIA Informatique",
+    "etablissement": "Centre de Formations d'apprentis AFIA Informatique",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:648",
+    "nom": "Centre Européen de Formation informatique et du Multimédia de Tours",
+    "etablissement": "Centre Européen de Formation informatique et du Multimédia d",
+    "ville": "",
+    "region": "Centre-Val de Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1411",
+    "nom": "Ecole Pour l'informatique et les nouvelles technologies",
+    "etablissement": "Ecole Pour l'informatique et les nouvelles technologies",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1412",
+    "nom": "Ecole pour l'informatique et les nouvelles technologies (EPITECH Campus de Nice)",
+    "etablissement": "Ecole pour l'informatique et les nouvelles technologies (EPI",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1413",
+    "nom": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "etablissement": "Ecole Pour l'Informatique et les nouvellesTECHnologies",
+    "ville": "",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1432",
+    "nom": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "etablissement": "Ecole Supérieure d'Informatique et de Communication - ESIC",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1433",
+    "nom": "Ecole supérieure d'informatique Metz",
+    "etablissement": "Ecole supérieure d'informatique Metz",
+    "ville": "",
+    "region": "Grand Est",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1444",
+    "nom": "Ecole supérieure de génie informatique - Réseau des grandes écoles spécialisées",
+    "etablissement": "Ecole supérieure de génie informatique - Réseau des grandes ",
+    "ville": "",
+    "region": "Île-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1532",
+    "nom": "ENI ECOLE INFORMATIQUE",
+    "etablissement": "ENI ECOLE INFORMATIQUE",
+    "ville": "",
+    "region": "Pays de la Loire",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1541",
+    "nom": "EPITECH Lille - Ecole de l'innovation et de l'expertise informatique",
+    "etablissement": "EPITECH Lille - Ecole de l'innovation et de l'expertise info",
+    "ville": "",
+    "region": "Hauts-de-France",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1553",
+    "nom": "ESIEA - Ecole Supérieure d'Informatique Electronique Automatique",
+    "etablissement": "ESIEA - Ecole Supérieure d'Informatique Electronique Automat",
+    "ville": "",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:1554",
+    "nom": "ESPACE DES TECHNIQUES INFORMATIQUES INDUSTRIELLES ET COMMERCIALES (ETIIC)",
+    "etablissement": "ESPACE DES TECHNIQUES INFORMATIQUES INDUSTRIELLES ET COMMERC",
+    "ville": "",
+    "region": "Auvergne-Rhône-Alpes",
+    "domain": "apprentissage",
+    "source": "inserjeunes_cfa",
+    "extrait": null
+   }
+  ]
+ },
+ {
+  "qid": "comp-002-v3",
+  "question": "Peux-tu m'aider : compare prépa MPSI et BUT Génie électrique et informatique industrielle sur le taux d'insertion et le coût, lequel est mieux ?",
+  "category": "comparaison",
+  "candidates": [
+   {
+    "fiche_id": "idx:-1",
+    "nom": "BUT - Génie électrique et informatique industrielle",
+    "etablissement": "I.U.T de Bordeaux - Site de Gradignan",
+    "ville": "Gradignan",
+    "region": "Nouvelle-Aquitaine",
+    "domain": "ingenierie_industrielle",
+    "source": "parcoursup",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5950",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "CY CERGY PARIS UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5951",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "FORMASUP AUVERGNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5952",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "FORMASUP HAUTS DE FRANCE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5953",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "NANTES UNIVERSITE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5954",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "SAVOISIENNE DEVELOP TECHNIQUES NOUVELLES",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5955",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNION UNIVERSITE ECONOMIE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5956",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE AMIENS PICARDIE JULES VERNE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5957",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE BOURGOGNE EUROPE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5958",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE COTE D'AZUR",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5959",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE D ARTOIS",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5960",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE D'AIX MARSEILLE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5961",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE D'ANGERS",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5962",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE DE BORDEAUX",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5963",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE DE HAUTE ALSACE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   },
+   {
+    "fiche_id": "idx:5964",
+    "nom": "GENIE ELECTRIQUE ET INFORMATIQUE INDUSTRIELLE : AUTOMATISME ET INFORMATIQUE INDU",
+    "etablissement": "UNIVERSITE DE LILLE",
+    "ville": "",
+    "region": null,
+    "domain": "ingenierie_industrielle",
+    "source": "labonnealternance",
+    "extrait": null
+   }
+  ]
+ }
+]
