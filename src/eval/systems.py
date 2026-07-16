@@ -3,6 +3,7 @@ from pathlib import Path
 from abc import ABC, abstractmethod
 from mistralai.client import Mistral
 from src.rag.pipeline import OrientIAPipeline
+from src.rag.models import MISTRAL_MEDIUM
 
 
 # A minimal neutral prompt for the mistral_raw baseline.
@@ -103,7 +104,7 @@ class MistralRawSystem(System):
     """
     name = "mistral_raw"
 
-    def __init__(self, client: Mistral, model: str = "mistral-medium-latest"):
+    def __init__(self, client: Mistral, model: str = MISTRAL_MEDIUM):
         self.client = client
         self.model = model
 
@@ -147,7 +148,7 @@ class MistralWithCustomPromptSystem(System):
         client: Mistral,
         system_prompt: str,
         name: str,
-        model: str = "mistral-medium-latest",
+        model: str = MISTRAL_MEDIUM,
     ):
         self.client = client
         self.system_prompt = system_prompt
