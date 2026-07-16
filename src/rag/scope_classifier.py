@@ -42,6 +42,7 @@ import re
 import unicodedata
 from dataclasses import dataclass
 from typing import Literal
+from src.rag.models import MISTRAL_SMALL
 
 ScopeLabel = Literal["in_scope", "out_of_scope", "urgent", "identity", "greeting"]
 
@@ -424,7 +425,7 @@ class ScopeClassifier:
     def __init__(
         self,
         client=None,
-        model: str = "mistral-small-latest",
+        model: str = MISTRAL_SMALL,
         timeout_ms: int = 5000,
     ):
         self.client = client

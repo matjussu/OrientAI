@@ -6,6 +6,7 @@ from src.prompt.system import SYSTEM_PROMPT, build_user_prompt
 from src.rag.fact_card import format_sources_for_llm, SOURCE_LABEL_MAP
 from src.rag.intent import classify_intent, intent_to_format_guidance
 from src.rag.user_level import classify_user_level, level_to_guidance
+from src.rag.models import MISTRAL_MEDIUM
 
 
 # Mode récit — paramètres de génération sectionnée.
@@ -541,7 +542,7 @@ def generate(
     client: Mistral,
     retrieved: list[dict],
     question: str,
-    model: str = "mistral-medium-latest",
+    model: str = MISTRAL_MEDIUM,
     temperature: float = 0.3,
     inject_user_level: bool = True,
     system_prompt_override: str | None = None,
@@ -626,7 +627,7 @@ async def generate_stream(
     retrieved: list[dict],
     question: str,
     *,
-    model: str = "mistral-medium-latest",
+    model: str = MISTRAL_MEDIUM,
     temperature: float = 0.3,
     inject_user_level: bool = True,
     system_prompt_override: str | None = None,

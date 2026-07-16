@@ -42,6 +42,7 @@ from src.rag.narrative_query import (
 from src.rag.narrative_format import route_narrative_format, FormatDecision, TRAJECTOIRE, COMPARAISON
 from src.rag.narrative_structured import parse_narrative_response
 from src.prompt.system_narrative import NARRATIVE_FEW_SHOT_PREFIX, narrative_few_shot
+from src.rag.models import MISTRAL_MEDIUM
 from src.validator import (
     Validator,
     ValidatorResult,
@@ -241,7 +242,7 @@ class OrientIAPipeline:
         client: Mistral,
         fiches: list[dict],
         rerank_config: RerankConfig | None = None,
-        model: str = "mistral-medium-latest",
+        model: str = MISTRAL_MEDIUM,
         use_mmr: bool = False,
         mmr_lambda: float = DEFAULT_LAMBDA,
         use_intent: bool = False,

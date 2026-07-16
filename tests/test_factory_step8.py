@@ -55,10 +55,11 @@ def test_factory_router_uses_same_client_as_pipeline() -> None:
 
 
 def test_factory_router_model_default_is_mistral_small() -> None:
-    """Default router_model = mistral-small-latest (souverain léger)."""
+    """Default router_model = pin MISTRAL_SMALL (souverain léger, H1 lot 1.5)."""
     client = MagicMock()
     pipeline = make_production_pipeline(client, [{"id": "x"}])
-    assert pipeline.router_llm.model == "mistral-small-latest"
+    from src.rag.models import MISTRAL_SMALL
+    assert pipeline.router_llm.model == MISTRAL_SMALL
 
 
 def test_factory_router_model_can_be_overridden() -> None:

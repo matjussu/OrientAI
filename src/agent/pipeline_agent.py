@@ -42,6 +42,7 @@ from src.agent.tools.fetch_stat_from_source import (
 )
 from src.rag.generator import generate
 from src.rag.retriever import retrieve_top_k
+from src.rag.models import MISTRAL_MEDIUM
 
 
 @dataclass
@@ -117,7 +118,7 @@ class AgentPipeline:
     parallel_fact_check_workers: int = 3  # parallel fact-check Sprint 4 optim
     enable_fact_check: bool = False  # opt-in pour Sprint 4 bench
     fact_check_max_claims: int = 5  # cap claims fact-check pour budget
-    generation_model: str = "mistral-medium-latest"  # gen finale model
+    generation_model: str = MISTRAL_MEDIUM  # gen finale model
     # Sprint 7 Action 3 — anti-hallu LLM
     system_prompt_override: str | None = None  # None = SYSTEM_PROMPT v3.2 (default)
     # Pour activer v3.3 strict (R1-R6) : passer SYSTEM_PROMPT_V33_STRICT

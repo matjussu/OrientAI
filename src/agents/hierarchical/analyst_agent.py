@@ -20,6 +20,7 @@ from src.agent.retry import call_with_retry
 from src.agent.tool import Tool
 from src.agents.hierarchical.schemas import UserSessionProfile
 from src.agents.hierarchical.session import Session
+from src.rag.models import MISTRAL_SMALL
 
 
 ANALYST_SYSTEM_PROMPT = """Tu es AnalystAgent d'OrientIA. Ta seule mission est d'analyser
@@ -129,7 +130,7 @@ class AnalystAgent:
     """
 
     client: Mistral
-    model: str = "mistral-small-latest"
+    model: str = MISTRAL_SMALL
     timeout_ms: int = 30_000
     max_retries: int = 2
     initial_backoff: float = 1.5

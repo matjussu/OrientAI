@@ -18,6 +18,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass
+from src.rag.models import MISTRAL_SMALL
 
 
 LAYER3_SYSTEM_PROMPT = """Tu es un assistant d'audit factuel spécialisé dans l'orientation scolaire \
@@ -91,7 +92,7 @@ class Layer3Validator:
     def __init__(
         self,
         client=None,
-        model: str = "mistral-small-latest",
+        model: str = MISTRAL_SMALL,
         max_tokens: int = 600,
         timeout_ms: int = 5000,
     ):

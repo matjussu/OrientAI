@@ -21,6 +21,7 @@ from mistralai.client import Mistral
 
 from src.agent.retry import call_with_retry
 from src.agent.tool import ToolRegistry
+from src.rag.models import MISTRAL_LARGE
 
 
 DEFAULT_SYSTEM_PROMPT = (
@@ -51,7 +52,7 @@ class Agent:
 
     client: Mistral
     registry: ToolRegistry
-    model: str = "mistral-large-latest"
+    model: str = MISTRAL_LARGE
     system_prompt: str = DEFAULT_SYSTEM_PROMPT
     max_iterations: int = 5
     timeout_ms: int = 180_000  # ADR-047

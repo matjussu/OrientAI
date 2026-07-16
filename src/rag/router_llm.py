@@ -24,6 +24,7 @@ from src.agent.retry import call_with_retry
 from src.agent.tool import Tool
 from src.rag.intent import _strip_accents
 from src.rag.metadata_filter import FilterCriteria
+from src.rag.models import MISTRAL_SMALL
 
 
 # ────────────────────────── Constantes routing ──────────────────────────
@@ -617,7 +618,7 @@ class RouterLLM:
     """
 
     client: Mistral
-    model: str = "mistral-small-latest"
+    model: str = MISTRAL_SMALL
     max_retries: int = 2
     initial_backoff: float = 1.5
 

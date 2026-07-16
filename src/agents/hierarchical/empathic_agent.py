@@ -24,6 +24,7 @@ from mistralai.client import Mistral
 from src.agent.retry import call_with_retry
 from src.agents.hierarchical.schemas import EmpathicResponse, UserSessionProfile
 from src.agents.hierarchical.session import Session
+from src.rag.models import MISTRAL_MEDIUM
 
 
 _PROMPTS_DIR = Path(__file__).resolve().parents[3] / "prompts"
@@ -45,7 +46,7 @@ class EmpathicAgent:
     """
 
     client: Mistral
-    model: str = "mistral-medium-latest"
+    model: str = MISTRAL_MEDIUM
     temperature: float = 0.4
     max_tokens: int = 1500
     timeout_ms: int = 30_000

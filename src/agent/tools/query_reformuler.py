@@ -39,6 +39,7 @@ from mistralai.client import Mistral
 from src.agent.retry import call_with_retry
 from src.agent.tool import Tool
 from src.agent.tools.profile_clarifier import Profile
+from src.rag.models import MISTRAL_LARGE
 
 
 # --- Sub-query structured output ---
@@ -269,7 +270,7 @@ class QueryReformuler:
     """Wrapper haut niveau QueryReformuler."""
 
     client: Mistral
-    model: str = "mistral-large-latest"
+    model: str = MISTRAL_LARGE
     timeout_ms: int = 60_000
     max_retries: int = 3
     initial_backoff: float = 2.0

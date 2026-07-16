@@ -498,7 +498,8 @@ class TestClarifyNarrative:
         clarifier = ProfileClarifier(client=client)
         clarifier.clarify_narrative("recit")
         kwargs = client.chat.complete.call_args.kwargs
-        assert kwargs["model"] == "mistral-small-latest"
+        from src.rag.models import MISTRAL_SMALL
+        assert kwargs["model"] == MISTRAL_SMALL
         assert kwargs["temperature"] == 0.0
 
     def test_silent_fallback_on_no_tool_call(self):

@@ -1,5 +1,5 @@
 from unittest.mock import MagicMock, patch
-from src.rag.embeddings import embed_texts, fiche_to_text, _salary_fragment
+from src.rag.embeddings import embed_texts, fiche_to_text, _salary_fragment, EMBED_MODEL
 
 
 def test_dense_sigle_injection_parked_by_default():
@@ -76,7 +76,7 @@ def test_embed_texts_calls_mistral_api():
     result = embed_texts(mock_client, ["hello"])
     assert result == [[0.1, 0.2, 0.3]]
     mock_client.embeddings.create.assert_called_once_with(
-        model="mistral-embed", inputs=["hello"]
+        model=EMBED_MODEL, inputs=["hello"]
     )
 
 
