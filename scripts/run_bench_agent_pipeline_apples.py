@@ -3,7 +3,7 @@
 Triple-run IC95 sur 24 queries balanced subset. Pipeline agentique
 (disable FetchStat — économie budget+temps) + StatFactChecker post-hoc
 sur les outputs (apples-to-apples avec baseline PR #75 qui utilise
-StatFactChecker `src/rag/fact_checker.py`).
+StatFactChecker `src/experimental/fact_checker.py`).
 
 ## Subset balanced 24 queries
 
@@ -16,7 +16,7 @@ StatFactChecker `src/rag/fact_checker.py`).
 ## Fact-check apples-to-apples
 
 `StatFactChecker.verify(answer, sources_aggregated)` post-hoc sur
-chaque query × run. Identique à `src/rag/fact_checker.py` utilisé
+chaque query × run. Identique à `src/experimental/fact_checker.py` utilisé
 par baseline `bench_persona_complet_2026-04-26`.
 
 ## Output
@@ -53,7 +53,7 @@ from mistralai.client import Mistral  # noqa: E402
 from src.agent.cache import LRUCache  # noqa: E402
 from src.agent.pipeline_agent import AgentPipeline  # noqa: E402
 from src.config import load_config  # noqa: E402
-from src.rag.fact_checker import StatFactChecker  # noqa: E402
+from src.experimental.fact_checker import StatFactChecker  # noqa: E402
 
 from scripts.run_bench_persona_complet import _build_unified_queries  # noqa: E402
 

@@ -1066,6 +1066,16 @@ class OrientIAPipeline:
     ) -> tuple[str, dict]:
         """Boucle retry-with-hint anti-hallucination (chantier 1.B).
 
+        STATUT (H1 lot 1.4, 2026-07-16) : en PRODUCTION (strict_v4=True,
+        default factory), le tour 2 est court-circuité PAR DESIGN (garde-fou
+        Vague 0 ci-dessous : generate() v4 ignore le hint_block, regénérer
+        serait de la variance pure). Le chemin servi est donc single-shot :
+        génération -> validation -> policy aval. Cette boucle reste active
+        UNIQUEMENT en mode legacy strict_v4=False (scripts/mini_bench.py,
+        tests) — décision : conserver pour la comparabilité de bench, ne PAS
+        câbler le hint en v4 (pattern R3 revert : les règles additives de
+        correction ont déjà régressé 2 fois).
+
         ``narrative_mode`` (1d) propage la branche génération sectionnée jusqu'à
         ``generate()``. En mode récit, le pipeline tourne en strict_v4=True : le
         tour 2 retry-with-hint est de toute façon court-circuité (cf garde-fou

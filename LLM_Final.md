@@ -667,6 +667,31 @@ L'API en expose seulement `faithfulness_score` et `faithfulness_verdict` côté 
 
 ---
 
+## 13.bis Guardrails : statut au 2026-07-16 (H1 lot 1.4)
+
+Inventaire actif/dormant tranché à l'ordre 2026-07-16-0905, après l'audit du
+15/07 qui relevait des guardrails « présents dans le repo mais jamais servis ».
+
+**Actifs sur le chemin servi** (answer + answer/stream) :
+- règles regex anti-faits-obsolètes (`src/validator/rules.py`)
+- corpus check (`src/validator/corpus_check.py`)
+- règles de présence (`src/validator/presence.py`)
+- vérification déterministe chiffre-vs-source-citée (`src/validator/citation_check.py`, H1 lot 1.2)
+- policy aval alpha/beta/gamma (`src/validator/policy.py`) + post_process anti-hallu URL
+- layer3 LLM (opt-in, gaté par intent, n'escalade pas à flagged)
+
+**Dormants, statués** :
+- `fact_checker.py` : DÉPLACÉ vers `src/experimental/` — jamais câblé, besoin
+  chiffres couvert mécaniquement par citation_check (0 coût / 0 variance) ;
+  reste pertinent Phase 3 pour les claims qualitatifs avec le critic_loop.
+- `fetch_stat_from_source` : reste dans `src/agent/tools/` (zone Phase 3
+  explicitement non servie), bannière de statut ajoutée. Pas un guardrail prod.
+- retry-with-hint (`_generate_with_retry`) : le tour 2 est court-circuité PAR
+  DESIGN en strict_v4 (prod) — le chemin servi est single-shot + policy +
+  citation check. Boucle conservée uniquement pour le mode legacy de bench
+  (mini_bench, strict_v4=False). Décision : ne PAS câbler le hint en v4
+  (pattern R3 revert, les règles additives de correction ont régressé 2 fois).
+
 ## 14. Synthèse pour décideurs
 
 - **Le LLM en prod** est **Mistral Medium**, encadré par **2 LLM Mistral Small** (scope + router) et un **3e Mistral Small optionnel** (validator L3).

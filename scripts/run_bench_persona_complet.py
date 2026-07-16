@@ -38,7 +38,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from mistralai.client import Mistral  # noqa: E402
 from src.config import load_config  # noqa: E402
-from src.rag.fact_checker import StatFactChecker  # noqa: E402
+from src.experimental.fact_checker import StatFactChecker  # noqa: E402
 from src.rag.pipeline import OrientIAPipeline  # noqa: E402
 from scripts.run_bench_personas_v3 import PERSONAS  # noqa: E402
 from scripts.run_bench_dares_dedie import DARES_QUERIES  # noqa: E402
