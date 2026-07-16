@@ -45,9 +45,10 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 from mistralai.client import Mistral
+from src.rag.models import MISTRAL_SMALL
 
 
-FACT_CHECK_MODEL = "mistral-small-latest"
+FACT_CHECK_MODEL = MISTRAL_SMALL
 
 
 # --- Prompt fact-checker ---

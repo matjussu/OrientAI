@@ -16,11 +16,9 @@ from src.rag.models import MISTRAL_EMBED, MISTRAL_LARGE, MISTRAL_MEDIUM, MISTRAL
 ROOT = Path(__file__).resolve().parents[1]
 
 # Zones où AUCUN alias -latest ne doit exister (chemin servi + bench + Phase 3).
-# Exception temporaire : fact_checker.py, déplacé vers experimental/ par la
-# branche lot 1.4 — à pinner dans un suivi post-merge (1 ligne).
 _SCANNED = ("src",)
 _LATEST = re.compile(r'"mistral-[a-z0-9-]*-latest"|"[a-z]*-latest"')
-_EXCEPTIONS = {"fact_checker.py"}
+_EXCEPTIONS: set[str] = set()
 
 
 def test_aucun_alias_latest_dans_src():

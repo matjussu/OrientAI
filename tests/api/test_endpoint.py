@@ -81,9 +81,13 @@ def test_answer_ignores_unknown_field_audience(client):
 
 
 def test_answer_returns_none_when_last_validation_absent(client, mock_pipeline):
-    """Cas hors-scope : ScopeClassifier short-circuite, last_validation=None.
-    Le wrapper retourne faithfulness_score/verdict à null proprement."""
-    mock_pipeline.last_validation = None
+    """Cas hors-scope : ScopeClassifier short-circuite, trace.validation=None.
+    Le wrapper retourne faithfulness_score/verdict à null proprement.
+    (H1 lot 1.6 : le serveur lit la TRACE retournée, pas last_validation.)"""
+    from src.rag.pipeline import RequestTrace
+
+    text, sources, _ = mock_pipeline.answer.return_value
+    mock_pipeline.answer.return_value = (text, sources, RequestTrace())
     r = client.post("/answer", json={"question": "Question hors scope"})
     assert r.status_code == 200
     body = r.json()
