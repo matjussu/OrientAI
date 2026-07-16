@@ -1,0 +1,2281 @@
+[
+  {
+    "id": "G01",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Le taux d'accès en 2025 du Bachelor Cybersécurité et Ethical Hacking à l'EFREI Bordeaux est de 77 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S3 indique explicitement 'taux_acces_parcoursup_2025': 77.0 pour la formation 'Formation Bac + 3 - Bachelor Cybersécurité et Ethical Hacking' à EFREI Bordeaux"
+        }
+      ],
+      "n_claims": 1,
+      "n_supported": 1,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question posée avec le chiffre exact du taux d'accès 2025 (77%) fourni par la source S3 (fiche Parcoursup du Bachelor Cybersécurité et Ethical Hacking à EFREI Bordeaux). Tous les claims sont supportés."
+    }
+  },
+  {
+    "id": "G02",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "BUT Informatique à l'IUT Lyon1 Site de Bourg-en-Bresse : 72 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme 72 places pour cette formation à Bourg-en-Bresse"
+        },
+        {
+          "claim": "BUT Informatique à l'IUT Lyon1 Site de Villeurbanne Doua : 125 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme 125 places pour cette formation à Villeurbanne"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence de BUT Informatique à Lyon même (« Je n'ai pas de BUT Informatique **à Lyon** dans mes sources »), puis propose deux alternatives en Auvergne-Rhône-Alpes avec chiffres sourcés. Les deux formations proposées sont géographiquement proches (Bourg-en-Bresse et Villeurbanne sont dans la région lyonnaise) et directement pertinentes pour un candidat cherchant une informatique en région lyonnaise."
+    }
+  },
+  {
+    "id": "G03",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "100 % de bacheliers généraux admis en CPGE MPSI Lycée du Parc Lyon",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : bac_type_pct.general = 100.0"
+        },
+        {
+          "claim": "41 % de mentions Très bien parmi les admis",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : mentions_pct.tb = 41.0"
+        },
+        {
+          "claim": "2 % de mentions Bien parmi les admis",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : mentions_pct.b = 2.0"
+        },
+        {
+          "claim": "17 % de boursiers parmi les admis",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : boursiers_pct = 17.0"
+        },
+        {
+          "claim": "24 % de femmes parmi les admis",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : femmes_pct = 24.0"
+        }
+      ],
+      "n_claims": 5,
+      "n_supported": 5,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question sur les profils admis en CPGE MPSI au Lycée du Parc Lyon. Tous les chiffres cités (100%, 41%, 2%, 17%, 24%) sont exactement présents dans la source S1 fournie. La proposition de comparaison avec d'autres CPGE en région est une suggestion utile mais ne constitue pas une affirmation factuelle à vérifier."
+    }
+  },
+  {
+    "id": "G04",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 6,
+    "honesty_selfreported": 0.95,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Parcours d'Accès Spécifique Santé (PASS) à Sorbonne université a un taux d'accès de 36 % en 2025",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S1 : taux_acces_parcoursup_2025 = 36.0"
+        },
+        {
+          "claim": "Licence - Parcours d'Accès Spécifique Santé (PASS) à Université Paris Cité a un taux d'accès de 23 % en 2025",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S3 : taux_acces_parcoursup_2025 = 23.0"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit deux taux d'accès PASS vérifiés dans les sources Parcoursup 2025. Cependant, elle omet l'information obligatoire sur l'interdiction de redoublement en PASS (arrêté 2019), ce qui constitue une lacune pédagogique importante pour un lycéen en autonomie, mais ne crée pas d'inexactitude factuelle."
+    }
+  },
+  {
+    "id": "G05",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Bachelor universitaire de technologie en Sciences économiques, gestion : taux d'emploi salarié 6 mois après diplôme = 49%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte présente dans S1"
+        },
+        {
+          "claim": "Licence générale en Administration économique et sociale : taux d'emploi salarié 6 mois après diplôme = 61%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte présente dans S5"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement l'absence du BTS Comptabilité-Gestion dans ses sources et propose des alternatives en Île-de-France. Tous les chiffres avancés sont sourcés. Cependant, les alternatives proposées (Bachelor et Licence) ne sont pas des BTS et ne correspondent pas directement à la formation demandée, d'où une pertinence faible."
+    }
+  },
+  {
+    "id": "G06",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence Droit à Panthéon-Assas : 21% très bien",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 profil_admis.mentions_pct.tb = 21.0"
+        },
+        {
+          "claim": "Licence Droit à Panthéon-Assas : 57% bien",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 profil_admis.mentions_pct.b = 57.0"
+        },
+        {
+          "claim": "Licence Droit à Panthéon-Assas : 20% assez bien",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 profil_admis.mentions_pct.ab = 20.0"
+        },
+        {
+          "claim": "Licence Droit à Panthéon-Assas : 1% sans mention",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 profil_admis.mentions_pct.sans = 1.0"
+        },
+        {
+          "claim": "Licence Droit à Panthéon-Assas : 98% bac général",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 profil_admis.bac_type_pct.general = 98.0"
+        },
+        {
+          "claim": "Licence Droit à Panthéon-Assas : 2% bac technologique",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 profil_admis.bac_type_pct.techno = 2.0"
+        },
+        {
+          "claim": "Double diplôme Droit - Droits français et suisse : 29% très bien",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 profil_admis.mentions_pct.tb = 29.0"
+        },
+        {
+          "claim": "Double diplôme Droit - Droits français et suisse : 50% bien",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 profil_admis.mentions_pct.b = 50.0"
+        },
+        {
+          "claim": "Double diplôme Droit - Droits français et suisse : 14% assez bien",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 profil_admis.mentions_pct.ab = 14.0"
+        },
+        {
+          "claim": "Double diplôme Droit - Droits français et suisse : 100% bac général",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 profil_admis.bac_type_pct.general = 100.0"
+        }
+      ],
+      "n_claims": 10,
+      "n_supported": 10,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit directement les profils admis pour deux formations de Droit à Panthéon-Assas (Licence Droit et Double diplôme Droits français et suisse) avec tous les chiffres de mentions et types de bac correctement sourcés depuis Parcoursup 2025."
+    }
+  },
+  {
+    "id": "G07",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Centrale Lille Institut propose un master MIAS avec 10 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 : capacite=10"
+        },
+        {
+          "claim": "Centrale Lille Institut master MIAS a un taux d'admission de 10,9%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 : taux_admission=0.10869565217391304 ≈ 10.9%"
+        },
+        {
+          "claim": "CPI Lille (ENSC Lille) propose 48 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : nombre_places=48"
+        },
+        {
+          "claim": "CPI Lille (ENSC Lille) a un taux d'accès Parcoursup de 40%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : taux_acces_parcoursup_2025=40.0"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "La réponse divulgue explicitement l'absence de 'École d'ingénieur Centrale Lille' dans les sources et propose des alternatives pertinentes en Hauts-de-France (Centrale Lille Institut et CPI Lille). Tous les chiffres avancés pour les alternatives sont sourcés et corrects. Le disclaimer est clair et l'alternative est géographiquement et thématiquement proche."
+    }
+  },
+  {
+    "id": "G08",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 0,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "honest_refusal",
+      "answers_the_question": false,
+      "claims": [],
+      "n_claims": 0,
+      "n_supported": 0,
+      "groundedness": null,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "L'assistant refuse honnêtement de répondre faute de sources pertinentes et propose des alternatives appropriées (Parcoursup, ONISEP, CIO) sans avancer aucun chiffre ou affirmation factuelle non sourcée."
+    }
+  },
+  {
+    "id": "G09",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Taux d'accès 2025 : 28 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 contient taux_acces_parcoursup_2025: 28.0"
+        },
+        {
+          "claim": "145 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 contient nombre_places: 145"
+        },
+        {
+          "claim": "Taux d'emploi à 12 mois : 77,78 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 contient taux_emploi_12m: 0.7778 (soit 77,78%)"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit les trois chiffres clés du BUT Génie Civil Construction Durable à Lyon (IUT Lyon1 Villeurbanne Doua) directement depuis la fiche Parcoursup S1. Tous les claims sont numériquement supportés par les sources."
+    }
+  },
+  {
+    "id": "G10",
+    "category": "lyceen_parcoursup",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Très bien : 8 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S1, profil_admis.mentions_pct.tb = 8.0"
+        },
+        {
+          "claim": "Bien : 38 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S1, profil_admis.mentions_pct.b = 38.0"
+        },
+        {
+          "claim": "Assez bien : 42 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S1, profil_admis.mentions_pct.ab = 42.0"
+        },
+        {
+          "claim": "Sans mention : 11 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S1, profil_admis.mentions_pct.sans = 11.0"
+        },
+        {
+          "claim": "Formation : BUT - Informatique à l'I.U.T. 2 de Grenoble",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Source S1 confirme le nom et l'établissement"
+        }
+      ],
+      "n_claims": 5,
+      "n_supported": 5,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit directement les mentions au bac attendues pour le BUT Informatique à Grenoble, avec tous les chiffres exactement sourcés de S1. Tous les claims sont supportés."
+    }
+  },
+  {
+    "id": "G11",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 9,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Contremaîtres, agents de maîtrise : salaire net médian annuel 32 500 €",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte de S1 (INSEE SALAAN 2023)"
+        },
+        {
+          "claim": "Professions libérales (salariées) : salaire net médian annuel 27 000 €",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte de S2 (INSEE SALAAN 2023)"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement l'absence de données sur les salaires des Master Droit en région PACA, puis propose des alternatives (catégories PCS générales) avec chiffres sourcés. Cependant, l'alternative est peu pertinente : les catégories proposées (contremaîtres, professions libérales salariées) ne ciblent pas les juristes et ne correspondent pas à la région PACA demandée."
+    }
+  },
+  {
+    "id": "G12",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Master MATHEMATIQUES APPLIQUEES, STATISTIQUE — Data Science (DS) à Aix-Marseille existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent dans S4"
+        },
+        {
+          "claim": "Salaire médian à l'embauche pour Data Science est 2670 € net/mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 : salaire_median_embauche = 2670, salaire_net = true, salaire_horizon = 12m"
+        },
+        {
+          "claim": "Master QUALITE, HYGIENE, SECURITE à Aix-Marseille existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent dans S3"
+        },
+        {
+          "claim": "Salaire médian pour QUALITE, HYGIENE, SECURITE est 2250 € net/mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 : salaire_median_embauche = 2250, salaire_net = true, salaire_horizon = 12m"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant reconnaît explicitement l'absence de fiche métier spécifique pour 'Master Sciences fondamentales' et propose deux masters de Aix-Marseille du domaine sciences_fondamentales avec leurs salaires sourcés. Cependant, l'alternative est faible car les deux masters proposés (Data Science et Qualité-Hygiène-Sécurité) ne correspondent pas directement à une demande générique sur 'Sciences fondamentales' : ce sont des spécialités très différentes, et le second n'est pas vraiment un débouché typique de sciences fondamentales."
+    }
+  },
+  {
+    "id": "G13",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "BUT Carrières juridiques à l'IUT de Lille - site de Roubaix existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S1"
+        },
+        {
+          "claim": "BUT Carrières juridiques à l'IUT de Lille - site de Roubaix : taux d'accès de 59%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : taux_acces_parcoursup_2025 = 59.0"
+        },
+        {
+          "claim": "BUT Carrières juridiques à l'IUT de Lille - site de Roubaix : 190 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : nombre_places = 190"
+        },
+        {
+          "claim": "BUT Carrières juridiques à l'IUT de Troyes existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S5"
+        },
+        {
+          "claim": "BUT Carrières juridiques à l'IUT de Troyes : taux d'accès de 35%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : taux_acces_parcoursup_2025 = 35.0"
+        },
+        {
+          "claim": "BUT Carrières juridiques à l'IUT de Troyes : 84 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : nombre_places = 84"
+        },
+        {
+          "claim": "On peut candidater via Parcoursup en expliquant sa réorientation",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Affirmation procédurale non présente dans les sources (qui ne décrivent que les formations, pas les modalités de candidature)"
+        }
+      ],
+      "n_claims": 7,
+      "n_supported": 6,
+      "groundedness": 0.857,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse propose deux formations BUT Carrières juridiques avec chiffres exacts (taux d'accès et places) tous vérifiés dans les sources. Une affirmation procédurale sur la candidature Parcoursup n'est pas sourcée mais reste plausible et ne contredit pas les sources."
+    }
+  },
+  {
+    "id": "G14",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 6,
+    "honesty_selfreported": 0.85,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Le 'bac S' a été supprimé en 2021 (réforme Blanquer)",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Affirmation contextuelle sur la réforme du bac, non présente dans les sources fournies"
+        }
+      ],
+      "n_claims": 1,
+      "n_supported": 0,
+      "groundedness": 0.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant refuse explicitement de répondre à la question précise (taux L1 STAPS pour bac S mention bien) en signalant l'absence de données fiables, puis propose des alternatives pertinentes (ONISEP, Parcoursup, SCUIO, CIO). Cependant, il avance une affirmation factuelle (suppression du bac S en 2021) qui n'est pas supportée par les sources fournies. Les sources contiennent précisément les données demandées (S2 : 71.0% passent en L2 en 1 an pour bac S mention Bien), mais l'assistant choisit de ne pas les utiliser."
+    }
+  },
+  {
+    "id": "G15",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 8,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Biologiste en environnement est un métier accessible après un Master Sciences éco-gestion",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "Les sources S1, S3 décrivent des métiers ONISEP mais ne mentionnent pas le Master Sciences éco-gestion à Lyon ni son lien avec ces débouchés."
+        },
+        {
+          "claim": "Écotoxicologue est un métier accessible après un Master Sciences éco-gestion",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "S3 décrit le métier d'écotoxicologue mais ne le relie pas au Master Sciences éco-gestion à Lyon."
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 0,
+      "groundedness": 0.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement l'absence de données sur le Master Sciences éco-gestion à Lyon dans ses sources, puis propose des métiers environnementaux comme alternative. Cependant, les métiers proposés (biologiste, écotoxicologue) ne sont pas directement liés au Master demandé selon les sources fournies : les sources ne contiennent que des fiches métiers ONISEP sans mention de formations ou salaires. L'alternative est thématiquement faible (environnement vs éco-gestion) et non sourcée quant au lien avec la formation."
+    }
+  },
+  {
+    "id": "G16",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Master LMD en Lettres, sciences du langage, arts (Université Toulouse - Jean Jaurès et Montpellier 3) : taux d'emploi salarié de 45 % à 6 mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte présente dans S1 : 'Taux d'emploi salarié 6 mois après diplôme : 45%'"
+        },
+        {
+          "claim": "Master LMD en Lettres, sciences du langage, arts (Université Toulouse - Jean Jaurès et Montpellier 3) : taux d'emploi salarié de 57 % à 12 mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte présente dans S1 : 'Taux 12 mois : 57%'"
+        },
+        {
+          "claim": "Aucune autre donnée spécifique à Toulouse n'est disponible dans mes fiches",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Disclaimer explicite : l'assistant reconnaît l'absence de données plus spécifiques à Toulouse seul"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement que seules des données régionales (Occitanie) sont disponibles, pas de données Toulouse-spécifiques. Il propose l'alternative Master Lettres/arts Occitanie avec tous les chiffres sourcés (S1). C'est une réponse fidèle avec disclaimer clair."
+    }
+  },
+  {
+    "id": "G17",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Taux d'emploi à 12 mois : 84,69 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1, S2, S3, S5, S7 (taux_emploi_12m: 0.8469)"
+        },
+        {
+          "claim": "Salaire médian à l'embauche : 2040 € net/mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1, S2, S3, S5, S7 (salaire_median_embauche: 2040)"
+        },
+        {
+          "claim": "Ces masters forment aux métiers de l'enseignement primaire",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Le nom du diplôme 'MEEF 1ER DEGRE' et les sources confirment cette orientation"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence de fiche métier ('Je n'ai pas de fiche métier dans mes sources') puis propose une alternative bien sourcée : les données d'insertion du Master MEEF 1er degré à Lille. Tous les chiffres avancés sont présents dans les sources fournies. L'alternative est pertinente car elle répond directement à la question sur les débouchés du Master MEEF."
+    }
+  },
+  {
+    "id": "G18",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Portail L.AS Humanités - Accès Santé à Nantes Université existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S2"
+        },
+        {
+          "claim": "Licence - Portail L.AS Humanités - Accès Santé à Nantes Université a un taux d'accès de 71%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : taux_acces_parcoursup_2025 = 71.0"
+        },
+        {
+          "claim": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours IFMK à Le Mans Université existe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S3"
+        },
+        {
+          "claim": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours IFMK à Le Mans Université a un taux d'accès de 5%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 : taux_acces_parcoursup_2025 = 5.0"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse propose deux formations avec accès santé/paramédical et cite correctement les taux d'accès 2025 de Parcoursup. Tous les chiffres sont vérifiés dans les sources fournies. Les formations répondent à la question sur la réorientation après L1 médecine."
+    }
+  },
+  {
+    "id": "G19",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Chercheur / chercheuse en chimie : recherche fondamentale ou appliquée, souvent en laboratoire public ou privé",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 et S3 décrivent ce métier et ses contextes de travail"
+        },
+        {
+          "claim": "Ingénieur/e chimiste : R&D, production ou environnement dans l'industrie",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S4 et S6 mentionnent R&D, production et environnement comme domaines d'activité"
+        },
+        {
+          "claim": "Géochimiste : étude des composantes terrestres pour le climat ou les ressources naturelles",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 décrit exactement cette mission : 'étude des composantes de l'écorce terrestre' et 'changements climatiques ou gestion des ressources et des risques naturels'"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence de données chiffrées sur l'insertion après doctorat en chimie, puis propose une alternative pertinente (métiers accessibles) entièrement sourcée. Tous les claims factuels sur les métiers sont supportés par les sources ONISEP fournies."
+    }
+  },
+  {
+    "id": "G20",
+    "category": "reorientation",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "BUT - Informatique à l'I.U.T LITTORAL (CALAIS) : 66 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme 66 places"
+        },
+        {
+          "claim": "BUT - Informatique à l'I.U.T LITTORAL (CALAIS) : taux d'accès 53 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme taux_acces_parcoursup_2025 = 53.0"
+        },
+        {
+          "claim": "BUT - Informatique à l'IUT de Paris - Rives de Seine : 168 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme 168 places"
+        },
+        {
+          "claim": "BUT - Informatique à l'IUT de Paris - Rives de Seine : taux d'accès 10 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme taux_acces_parcoursup_2025 = 10.0"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement l'absence de 'passerelles BTS → BUT en informatique' dans ses sources, puis propose des formations BUT en informatique comme alternative. Tous les chiffres avancés sont sourcés. Cependant, l'alternative (formations BUT directes) n'adresse que partiellement la question initiale (passerelles depuis BTS), d'où une utilité limitée."
+    }
+  },
+  {
+    "id": "G21",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "L'actuaire conçoit et modifie des contrats d'assurance",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 : 'Afin de concevoir et/ou de modifier les contrats d'assurance'"
+        },
+        {
+          "claim": "L'actuaire mesure les risques pour son entreprise",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 : 'ou de mesurer les risques encourus par sa société'"
+        },
+        {
+          "claim": "L'actuaire utilise statistiques, algorithmes et modélisations",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 : 'l'actuaire manie statistiques, algoritmes et modélisations'"
+        },
+        {
+          "claim": "Son expertise aide les dirigeants à prendre des décisions éclairées",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 : 'Son expertise permet aux dirigeants de prendre des décisions éclairées'"
+        },
+        {
+          "claim": "L'actuaire fait de la tarification des produits ou services",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 : 'Définir la tarification des produits ou des services'"
+        },
+        {
+          "claim": "L'actuaire fait de la veille marché et concurrentielle",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 : 'Réaliser une veille de marché, une veille concurrentielle'"
+        },
+        {
+          "claim": "L'actuaire développe des outils de prévision des besoins",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 : 'Développer des outils de prévision des besoins'"
+        },
+        {
+          "claim": "L'actuaire optimise les performances",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 : 'Mettre en place des mesures visant l'optimisation des performances d'un site, d'une entreprise'"
+        }
+      ],
+      "n_claims": 8,
+      "n_supported": 8,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse décrit précisément les activités quotidiennes de l'actuaire en s'appuyant directement sur les sources fournies (S1, S2, S4). Tous les claims factuels sont supportés par les fiches métier ONISEP et France Travail."
+    }
+  },
+  {
+    "id": "G22",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "expert/e en sécurité informatique analyse la fiabilité des systèmes d'information et assure leur protection",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Étudier la fiabilité du système d'information d'une entreprise et en assurer la sûreté'"
+        },
+        {
+          "claim": "hacker éthique teste et identifie les failles des systèmes pour prévenir les attaques",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent dans S2 : 'testent et identifient les failles des systèmes et des réseaux informatiques des entreprises pour prévenir et neutraliser de potentielles attaques'"
+        },
+        {
+          "claim": "cryptologue chiffre/déchiffre des données sensibles via des algorithmes complexes",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent dans S5 : 'le cryptologue chiffre et déchiffre des informations numériques sensibles' et 'à partir d'algorithmes complexes'"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant reconnaît explicitement que la question porte sur 'développeur cybersécurité' (métier spécifique) mais divulgue que 'aucune compétence technique précise n'est listée dans mes sources'. Il propose alors trois métiers proches (expert sécurité informatique, hacker éthique, cryptologue) comme alternatives pertinentes et bien sourcées. C'est une réponse alternative disclaimed : le disclaimer est clair, et chaque affirmation factuelle sur les métiers proposés est supportée."
+    }
+  },
+  {
+    "id": "G23",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "L'Occitanie offrira 828 068 postes à pourvoir d'ici 2030",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Postes à pourvoir 2019-2030 : 828 068 postes'"
+        },
+        {
+          "claim": "Création nette de +181 075 emplois en Occitanie d'ici 2030",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Créations nettes : +181 075 postes'"
+        },
+        {
+          "claim": "Infirmiers, sages-femmes : 27 588 postes à pourvoir",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S4 : 'Postes à pourvoir 2019-2030 : 27 588 postes'"
+        },
+        {
+          "claim": "Infirmiers, sages-femmes : +12 237 créations nettes",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S4 : 'Créations/destructions nettes : +12 237 postes'"
+        },
+        {
+          "claim": "Ingénieurs et cadres techniques de l'industrie : 17 233 postes à pourvoir",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S5 : 'Postes à pourvoir 2019-2030 : 17 233 postes'"
+        },
+        {
+          "claim": "Ingénieurs et cadres techniques de l'industrie : +10 235 créations nettes",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S5 : 'Créations/destructions nettes : +10 235 postes'"
+        }
+      ],
+      "n_claims": 6,
+      "n_supported": 6,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question sur les métiers qui vont recruter en Occitanie en 2030. Tous les chiffres avancés (postes à pourvoir, créations nettes) sont explicitement présents dans les sources DARES fournies et correctement attribués."
+    }
+  },
+  {
+    "id": "G24",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 4,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "L'ingénieur en aéronautique conçoit, teste et fabrique des avions, hélicoptères, lanceurs spatiaux ou satellites, en civil comme en militaire",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 et S4 confirment : 'conçoit, teste, fabrique, entretient et commercialise des avions et des hélicoptères (civils ou militaires), mais aussi des lanceurs spatiaux, des satellites et des missiles'"
+        },
+        {
+          "claim": "L'aérodynamicien se concentre sur l'optimisation des profils d'engins pour améliorer leurs performances en vol",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 confirme : 'conçoit, développe et améliore les profils des engins propulsés dans l'espace aérien' avec objectif 'd'accroître leurs performances en dépensant moins d'énergie'"
+        },
+        {
+          "claim": "L'ingénieur production en aéronautique gère les lignes de production et allie compétences techniques et management",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S3 confirme : 'responsable de la gestion d'une ligne de production' et 'demande à la fois de hautes compétences techniques et une grande capacité à manager'"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question en décrivant le métier d'ingénieur en aéronautique et ses variantes. Tous les claims factuels sont explicitement supportés par les sources ONISEP fournies."
+    }
+  },
+  {
+    "id": "G25",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "L'infirmier ou l'infirmière dispense des soins de nature préventive, curative ou palliative pour promouvoir, maintenir et restaurer la santé des patients",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent textuellement dans S1"
+        },
+        {
+          "claim": "Les débouchés incluent l'hôpital, le libéral, le scolaire, l'humanitaire",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 mentionne 'À l'hôpital, en entreprise ou en libéral' ; S3 et S6 couvrent humanitaire et scolaire"
+        },
+        {
+          "claim": "L'infirmier humanitaire peut organiser les soins, mener une campagne de vaccinations, gérer un centre de nutrition",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent textuellement dans S3"
+        },
+        {
+          "claim": "L'infirmier scolaire existe comme spécialisation",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Confirmé par S4 et S6"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "La réponse divulgue explicitement que 'Les modalités de formation (durée, accès, frais) ne sont pas précisées dans mes sources', ce qui constitue un disclaimer clair de l'absence de la cible demandée (comment devenir infirmier). Elle propose ensuite des alternatives (spécialisations) clairement étiquetées et entièrement sourcées. Tous les claims factuels avancés sont supportés par les sources ONISEP fournies."
+    }
+  },
+  {
+    "id": "G26",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Un consultant en management intervient sur des enjeux comme la relation client, la stratégie de développement ou l'accompagnement d'actions de transformation",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 mentionne explicitement 'Relation client', 'Stratégie de développement' et 'Proposer et accompagner des actions de transformation organisationnelle'"
+        },
+        {
+          "claim": "Un consultant analyse les besoins des entreprises pour proposer des solutions d'amélioration",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 indique 'Analyser les besoins spécifiques des clients' et S3 dit 'recherche des solutions pour améliorer le fonctionnement des entreprises'"
+        },
+        {
+          "claim": "Un consultant couvre des domaines variés (RH, systèmes d'information, environnement) pour améliorer le fonctionnement des entreprises",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S3 énumère explicitement 'l'organisation, la relation client, les ressources humaines, les systèmes d'information, l'environnement, etc.'"
+        },
+        {
+          "claim": "Un consultant intervient notamment en optimisation des processus",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 mentionne 'Collaborer avec les équipes pour optimiser les processus' et 'Optimiser les méthodes de travail'"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse décrit précisément les fonctions d'un consultant en organisation et management en s'appuyant directement sur les fiches métiers ROME et ONISEP fournies. Tous les claims factuels sont soutenus par les sources."
+    }
+  },
+  {
+    "id": "G27",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "77 283 postes à pourvoir en France entre 2019 et 2030 pour les cadres de la banque et des assurances",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : 'Postes à pourvoir 2019-2030 : 77 283 postes (national)'"
+        },
+        {
+          "claim": "36 522 postes à pourvoir en Île-de-France",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : 'Postes à pourvoir 2019-2030 : 36 522 postes en Île-de-France'"
+        },
+        {
+          "claim": "Créations nettes : +618 postes au niveau national",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : 'Créations/destructions nettes 2019-2030 : +618 postes'"
+        },
+        {
+          "claim": "Créations nettes : +4 030 en Île-de-France",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : 'Créations/destructions nettes : +4 030 postes'"
+        },
+        {
+          "claim": "Départs en fin de carrière : 76 664 en France",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : 'Départs en fin de carrière : 76 664'"
+        },
+        {
+          "claim": "Départs en fin de carrière : 32 492 en Île-de-France",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : 'Départs en fin de carrière : 32 492'"
+        },
+        {
+          "claim": "Forte concentration du métier en région parisienne",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S5 indique que le métier est 'sur-représenté en Île-de-France (×3.13 vs France)'"
+        }
+      ],
+      "n_claims": 7,
+      "n_supported": 7,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit une analyse directe et précise des perspectives pour les cadres de la banque-assurance en 2030. Tous les chiffres cités (postes à pourvoir, créations nettes, départs en fin de carrière) sont explicitement présents dans les sources DARES fournies, tant au niveau national qu'en Île-de-France."
+    }
+  },
+  {
+    "id": "G28",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Le data scientist analyse et structure les données pour aider à la prise de décision stratégique (marketing, logistique, etc.)",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 mentionne 'traitement et à l'analyse de données' et 'aider sa direction ou les différents services (marketing, qualité, process...)' ; S4 (data analyst) mentionne aussi 'marketing, des relations clients, de la production, de la chaîne logistique'"
+        },
+        {
+          "claim": "Le data scientist a une vision globale des données de son entreprise pour orienter la direction",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 affirme explicitement : 'Grâce à une vision globale des données de son entreprise, le ou la data scientist (expert/e en mégadonnées) est capable d'aider sa direction'"
+        },
+        {
+          "claim": "Le métier ROME M1405 inclut la conception de modèles théoriques",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 liste explicitement 'Concevoir des modèles théoriques (calcul, simulation, modélisation)' dans les compétences du métier ROME M1405"
+        },
+        {
+          "claim": "Le métier ROME M1405 inclut la réalisation d'enquêtes statistiques",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 liste explicitement 'Réaliser des enquêtes statistiques selon les résultats issus des solutions de Data Science'"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse décrit les activités quotidiennes du data scientist en s'appuyant directement sur les fiches métiers ONISEP et ROME fournies. Tous les claims factuels sont explicitement soutenus par les sources citées."
+    }
+  },
+  {
+    "id": "G29",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 5,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "PCS 37 correspond à 'Cadres administratifs et commerciaux d'entreprises'",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Confirmé par S1"
+        },
+        {
+          "claim": "Le salaire net médian annuel pour PCS 37 est de 45 000 €",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte présente dans S1"
+        },
+        {
+          "claim": "Le salaire net médian mensuel pour PCS 37 est de 3 750 €",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Valeur exacte présente dans S1"
+        },
+        {
+          "claim": "Les données proviennent de l'INSEE 2023",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Source INSEE SALAAN 2023 confirmée"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question posée avec des chiffres (salaire médian annuel et mensuel) entièrement supportés par la source S1. Tous les claims factuels sont vérifiés et sourcés."
+    }
+  },
+  {
+    "id": "G30",
+    "category": "metier",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 1,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "9 990 recrutements en 2025 en Bretagne pour les cadres",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent exactement dans S1 : 'Recrutements 2025 : 9 990'"
+        },
+        {
+          "claim": "+5 % vs 2024 pour les recrutements 2025",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : '(+5 % vs 2024)'"
+        },
+        {
+          "claim": "À contre-courant du national (-3 %)",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'à contre-courant du national -3 %'"
+        },
+        {
+          "claim": "10 200 recrutements prévus en 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Prévision 2026 : 10 200'"
+        },
+        {
+          "claim": "+2 % pour 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : '(+2 %)'"
+        },
+        {
+          "claim": "Record 2023 de 10 290 recrutements",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'record 2023 (10 290)'"
+        },
+        {
+          "claim": "2 910 créations nettes de postes en 2025",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Créations nettes 2025 : 2 910 postes'"
+        },
+        {
+          "claim": "3 230 créations nettes en 2024",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : '(vs 3 230 en 2024)'"
+        },
+        {
+          "claim": "Exploitation tertiaire : 21 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Exploitation tertiaire 21 %'"
+        },
+        {
+          "claim": "Commercial-marketing : 16 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Commercial-marketing 16 %'"
+        },
+        {
+          "claim": "Études-R&D : 15 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Études-R&D 15 %'"
+        },
+        {
+          "claim": "Informatique : 14 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Informatique 14 %'"
+        }
+      ],
+      "n_claims": 12,
+      "n_supported": 12,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question sur le marché de l'emploi cadres en Bretagne. Tous les chiffres et affirmations factuelles sont explicitement présents dans la source S1 fournie. Aucune hallucination détectée."
+    }
+  },
+  {
+    "id": "G31",
+    "category": "calendaire",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Les candidats peuvent commencer à formuler leurs vœux à partir du 19 janvier 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Les candidats Parcoursup 2026 peuvent s'inscrire et formuler leurs vœux à partir du 19 janvier 2026'"
+        },
+        {
+          "claim": "10 vœux principaux possibles",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'Chaque candidat peut formuler jusqu'à 10 vœux principaux'"
+        },
+        {
+          "claim": "10 vœux supplémentaires en apprentissage possibles",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : '+ 10 vœux supplémentaires en apprentissage'"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question posée (date d'ouverture des vœux Parcoursup 2026). Tous les chiffres et dates avancés sont explicitement supportés par la source S1 fournie. La réponse est fidèle et bien sourcée."
+    }
+  },
+  {
+    "id": "G32",
+    "category": "calendaire",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "La date limite pour formuler les vœux est le 12 mars 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'La date limite pour formuler les vœux sur Parcoursup 2026 est le 12 mars 2026'"
+        },
+        {
+          "claim": "La date limite pour confirmer les vœux est le 1er avril 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S2 : 'Les candidats Parcoursup 2026 ont jusqu'au 1er avril 2026 pour confirmer leurs vœux'"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question posée en distinguant clairement deux étapes (formuler vs confirmer) avec deux dates précises, toutes deux explicitement sourcées et vérifiées dans les documents fournis."
+    }
+  },
+  {
+    "id": "G33",
+    "category": "calendaire",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "La phase complémentaire ouvre le 11 juin 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 et S3 : 'ouvre le 11 juin 2026'"
+        },
+        {
+          "claim": "La phase complémentaire se termine le 10 septembre 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1, S2 et S3 : 'se termine le 10 septembre 2026'"
+        },
+        {
+          "claim": "Elle permet de formuler 10 nouveaux vœux",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'formuler 10 nouveaux vœux dans les formations qui ont des places vacantes'"
+        },
+        {
+          "claim": "Les vœux concernent les formations avec des places vacantes",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Présent dans S1 : 'formations qui ont des places vacantes'"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question posée sur les dates de la phase complémentaire Parcoursup 2026. Tous les chiffres et affirmations factuelles sont explicitement supportés par les sources fournies (S1, S2, S3)."
+    }
+  },
+  {
+    "id": "G34",
+    "category": "calendaire",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Les candidatures se déroulent du 17 février au 17 mars 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme exactement : 'phase de candidature du 17 février au 17 mars'"
+        },
+        {
+          "claim": "Ouverture des inscriptions et dossier commun : 2 février 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme : 'MonMaster 2026 ouvre le 2 février 2026'"
+        },
+        {
+          "claim": "Phase complémentaire : 19 juin au 19 juillet 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 confirme : 'phase complémentaire MonMaster 2026 démarre le 19 juin 2026 et se termine le 19 juillet 2026'"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question sur le calendrier MonMaster 2026 pour les candidatures. Les trois dates principales (ouverture dossier, phase candidature, phase complémentaire) sont toutes explicitement présentes et correctes dans les sources fournies."
+    }
+  },
+  {
+    "id": "G35",
+    "category": "calendaire",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Les résultats d'admission Parcoursup sont publiés à partir du 2 juin 2026",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme : 'La phase principale d'admission Parcoursup 2026 commence le 2 juin 2026'"
+        },
+        {
+          "claim": "Cette phase principale dure jusqu'à mi-juillet",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme : 'Cette phase dure jusqu'à mi-juillet'"
+        },
+        {
+          "claim": "Les candidats doivent répondre sous 3 à 5 jours pour chaque proposition",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme : 'doivent y répondre dans les délais (3-5 jours selon la phase)'"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse répond directement à la question posée (date de publication des résultats Parcoursup 2026). Les trois affirmations factuelles (date du 2 juin, durée jusqu'à mi-juillet, délai de réponse 3-5 jours) sont toutes explicitement supportées par la source S1 du calendrier officiel Parcoursup."
+    }
+  },
+  {
+    "id": "G36",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Portail Sciences de la vie et de la terre existe à l'Université des Antilles - Pôle Guadeloupe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S1"
+        },
+        {
+          "claim": "Licence - Portail Sciences de la vie et de la terre : 100 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : nombre_places = 100"
+        },
+        {
+          "claim": "Licence - Portail Sciences de la vie et de la terre : taux d'accès 100 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : taux_acces_parcoursup_2025 = 100.0"
+        },
+        {
+          "claim": "Licence - Portail STAPS (APAS) existe à l'Université des Antilles - Pôle Guadeloupe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S2"
+        },
+        {
+          "claim": "Licence - Portail STAPS (APAS) : 50 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : nombre_places = 50"
+        },
+        {
+          "claim": "Licence - Portail STAPS (APAS) : taux d'accès 50 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : taux_acces_parcoursup_2025 = 50.0"
+        },
+        {
+          "claim": "Licence - Portail Économie et gestion existe à l'Université des Antilles - Pôle Guadeloupe",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S3"
+        },
+        {
+          "claim": "Licence - Portail Économie et gestion : 250 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 : nombre_places = 250"
+        },
+        {
+          "claim": "Licence - Portail Économie et gestion : taux d'accès 100 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 : taux_acces_parcoursup_2025 = 100.0"
+        }
+      ],
+      "n_claims": 9,
+      "n_supported": 9,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse énumère trois formations de licence à l'Université des Antilles - Pôle Guadeloupe avec leurs places et taux d'accès respectifs. Tous les chiffres cités sont directement extraits des sources fournies (S1, S2, S3) et correspondent exactement aux données Parcoursup 2025."
+    }
+  },
+  {
+    "id": "G37",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Portail Economie et gestion : 250 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme nombre_places: 250"
+        },
+        {
+          "claim": "Licence - Portail Economie et gestion : taux d'accès 100 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme taux_acces_parcoursup_2025: 100.0"
+        },
+        {
+          "claim": "BUT - Techniques de commercialisation : 40 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme nombre_places: 40"
+        },
+        {
+          "claim": "BUT - Techniques de commercialisation : taux d'accès 29 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme taux_acces_parcoursup_2025: 29.0"
+        },
+        {
+          "claim": "Formation d'ingénieur Bac + 5 : 24 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme nombre_places: 24"
+        },
+        {
+          "claim": "Formation d'ingénieur Bac + 5 : taux d'accès 46 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme taux_acces_parcoursup_2025: 46.0"
+        }
+      ],
+      "n_claims": 6,
+      "n_supported": 6,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse présente 3 formations en Martinique avec leurs chiffres clés (places et taux d'accès). Tous les chiffres cités sont exactement supportés par les sources fournies (S1, S2, S4)."
+    }
+  },
+  {
+    "id": "G38",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 3,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Histoire du droit et des institutions est un Master à l'Université de Strasbourg",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 confirme : type_diplome=Master, etablissement=UNIVERSITE DE STRASBOURG"
+        },
+        {
+          "claim": "Programme Grande École de l'EM Strasbourg est un diplôme conférant le grade de Master à l'Université de Strasbourg",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 confirme : type_diplome=Diplôme conférant le grade de Master, etablissement=UNIVERSITE DE STRASBOURG"
+        },
+        {
+          "claim": "Droit canonique est un Master à l'Université de Strasbourg",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S3 confirme : type_diplome=Master, etablissement=UNIVERSITE DE STRASBOURG"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence de données chiffrées (taux, frais, insertion) pour les masters à Strasbourg, puis propose trois formations de master réelles à Strasbourg issues des sources. Tous les claims factuels sont supportés. L'alternative est pertinente car elle répond directement à la question initiale avec des formations existantes au lieu demandé."
+    }
+  },
+  {
+    "id": "G39",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 0.9,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Master HISTOIRE — Histoire de l'espace insulaire est absent de la base de données vérifiée",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "L'assistant déclare explicitement que cette formation n'est pas dans sa base. Or, la source S3 contient exactement 'HISTOIRE — Histoire de l'espace insulaire et méditerranéen' de l'Université de Corse Pasquale Paoli."
+        }
+      ],
+      "n_claims": 1,
+      "n_supported": 0,
+      "groundedness": 0.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant refuse de répondre en prétendant que le Master HISTOIRE n'existe pas dans sa base, alors qu'il figure explicitement dans la source S3 fournie. C'est une erreur factuelle grave : la formation existe bel et bien en Corse (Université de Corse Pasquale Paoli, niveau bac+5, taux d'admission 11.86%, capacité 40). L'alternative proposée (ONISEP, Parcoursup, CIO) est pertinente mais le disclaimer est fondé sur une fausse prémisse."
+    }
+  },
+  {
+    "id": "G40",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "BUT Réseaux et télécommunications à l'I.U.T. de Béthune : 52 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme 52 places"
+        },
+        {
+          "claim": "BUT Réseaux et télécommunications à l'I.U.T. de Béthune : taux d'accès 64 %",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme taux_acces_parcoursup_2025 = 64.0"
+        },
+        {
+          "claim": "Master Réseaux et Télécommunication en alternance à l'Université de Lille : salaire médian 2220 € net/mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S4 confirme salaire_median_embauche = 2220, salaire_net = true, horizon 12m"
+        }
+      ],
+      "n_claims": 3,
+      "n_supported": 3,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence du BUT Réseaux et Télécommunications à Lille dans ses sources (« Je n'ai pas de BUT Réseaux et Télécommunications à Lille dans mes sources »), puis propose des alternatives en Hauts-de-France (Béthune pour le BUT, Lille pour le Master). Tous les chiffres avancés sont sourcés et corrects. L'alternative est pertinente car elle reste dans la même région et propose des formations proches thématiquement."
+    }
+  },
+  {
+    "id": "G41",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "INSA Toulouse propose une Formation d'ingénieur Bac + 5 - Bac Général avec 270 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 confirme 270 places pour INSA Toulouse Bac Général"
+        },
+        {
+          "claim": "INSA Toulouse Formation d'ingénieur Bac + 5 - Bac Général a un taux d'accès de 13%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 confirme taux_acces_parcoursup_2025 = 13.0"
+        },
+        {
+          "claim": "Université Toulouse III propose une Formation d'ingénieur Bac + 5 - CPI avec 33 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme 33 places pour CPI Université Toulouse III"
+        },
+        {
+          "claim": "Université Toulouse III Formation d'ingénieur Bac + 5 - CPI a un taux d'accès de 37%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 confirme taux_acces_parcoursup_2025 = 37.0"
+        },
+        {
+          "claim": "La Prépa des INP - Groupe INP - Toulouse propose une Formation d'ingénieur Bac + 5 - Bac général avec 100 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme 100 places pour La Prépa des INP"
+        },
+        {
+          "claim": "La Prépa des INP - Groupe INP - Toulouse a un taux d'accès de 28%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme taux_acces_parcoursup_2025 = 28.0"
+        }
+      ],
+      "n_claims": 6,
+      "n_supported": 6,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse présente trois formations d'ingénieur publiques à Toulouse avec les chiffres exacts (places et taux d'accès) tirés des sources Parcoursup 2025. Tous les claims factuels sont directement supportés par les sources fournies."
+    }
+  },
+  {
+    "id": "G42",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Licence - Psychologie - Entièrement en distanciel existe à l'Université de Rennes 2",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation S1 confirmée dans les sources"
+        },
+        {
+          "claim": "Taux d'accès de 11 % pour la Licence Psychologie distanciel",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : taux_acces_parcoursup_2025 = 11.0"
+        },
+        {
+          "claim": "200 places pour la Licence Psychologie distanciel",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : nombre_places = 200"
+        },
+        {
+          "claim": "Taux d'emploi à 6 mois de 60,61 % pour la Licence Psychologie distanciel",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : taux_emploi_6m = 0.6061 = 60.61%"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse identifie correctement une formation de psychologie à Rennes (Licence Psychologie distanciel à Rennes 2) et cite trois chiffres vérifiés dans S1 : taux d'accès 11%, 200 places, taux d'emploi 6m 60,61%. Tous les claims factuels sont sourcés."
+    }
+  },
+  {
+    "id": "G43",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Double Master Cryptographie - Sécurité à Université Paris Cité : 14 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : capacite = 14"
+        },
+        {
+          "claim": "Double Master Cryptographie - Sécurité à Université Paris Cité : salaire médian à l'embauche de 2850 € net/mois",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : salaire_median_embauche = 2850, salaire_net = true, salaire_horizon = 12m"
+        },
+        {
+          "claim": "Sécurité informatique, cybersécurité et cyber menaces au CNAM : 25 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : capacite = 25"
+        },
+        {
+          "claim": "Sécurité informatique, cybersécurité et cyber menaces au CNAM : taux d'admission de 24,5 %",
+          "is_numeric": true,
+          "supported_by_sources": false,
+          "note": "S5 : taux_admission = 0.24545454545454545 = 24.545%, arrondi à 24,5% mais la source indique 24.545%, pas exactement 24,5%. Cependant, l'arrondi est raisonnable. Techniquement supporté avec arrondi standard."
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse propose deux masters en Île-de-France avec chiffres vérifiés dans les sources. Cependant, elle omet de mentionner que le CNAM est localisé à PLOUFRAGAN (Bretagne), pas en Île-de-France selon S5, ce qui constitue une erreur géographique majeure non signalée à l'utilisateur."
+    }
+  },
+  {
+    "id": "G44",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT — Territoires et sociétés plurielles de l'océan Indien existe à l'Université de La Réunion",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S1"
+        },
+        {
+          "claim": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT a 25 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : capacite = 25"
+        },
+        {
+          "claim": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT a 115 candidats",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : n_candidats_pp = 115"
+        },
+        {
+          "claim": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT a 15 admis",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : n_acceptes_total = 15"
+        },
+        {
+          "claim": "GEOGRAPHIE, AMENAGEMENT, ENVIRONNEMENT ET DEVELOPPEMENT a rang dernier appelé 82",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 : rang_dernier_appele = 82"
+        },
+        {
+          "claim": "HISTOIRE — Océan Indien : sociétés, cultures, pouvoirs existe à l'Université de La Réunion",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "Formation présente dans S2"
+        },
+        {
+          "claim": "HISTOIRE — Océan Indien : sociétés, cultures, pouvoirs a 37 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : capacite = 37"
+        },
+        {
+          "claim": "HISTOIRE — Océan Indien : sociétés, cultures, pouvoirs a 79 candidats",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : n_candidats_pp = 79"
+        },
+        {
+          "claim": "HISTOIRE — Océan Indien : sociétés, cultures, pouvoirs a 18 admis",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : n_acceptes_total = 18"
+        },
+        {
+          "claim": "HISTOIRE — Océan Indien : sociétés, cultures, pouvoirs a rang dernier appelé 54",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : rang_dernier_appele = 54"
+        }
+      ],
+      "n_claims": 10,
+      "n_supported": 10,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse fournit deux formations de Master à l'Université de La Réunion avec tous les chiffres (places, candidats, admis, rang dernier appelé) correctement sourcés dans S1 et S2. Tous les claims factuels sont supportés."
+    }
+  },
+  {
+    "id": "G45",
+    "category": "geographique",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_unsupported",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "EKLYA School of Business Lyon - Ecully est une école de commerce privée",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S5 confirme : établissement privé, école de commerce"
+        },
+        {
+          "claim": "EKLYA School of Business Lyon - Ecully a un taux d'accès de 86%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : taux_acces_parcoursup_2025 = 86.0"
+        },
+        {
+          "claim": "EKLYA School of Business Lyon - Ecully a 45 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S5 : nombre_places = 45"
+        },
+        {
+          "claim": "ECE Lyon est une école de commerce",
+          "is_numeric": false,
+          "supported_by_sources": false,
+          "note": "S2 décrit ECE Lyon comme 'Formation d'ingénieur Bac + 5', domaine 'ingenierie_industrielle', pas une école de commerce"
+        },
+        {
+          "claim": "ECE Lyon a un taux d'accès de 98%",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : taux_acces_parcoursup_2025 = 98.0"
+        },
+        {
+          "claim": "ECE Lyon a 130 places",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S2 : nombre_places = 130"
+        }
+      ],
+      "n_claims": 6,
+      "n_supported": 5,
+      "groundedness": 0.833,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse présente ECE Lyon comme une 'école de commerce' alors que les sources la décrivent explicitement comme une 'Formation d'ingénieur' en ingénierie industrielle. C'est une erreur de catégorisation majeure : ECE est une école d'ingénieurs, pas une école de commerce. Les chiffres cités sont corrects mais l'établissement n'est pas pertinent pour la question posée."
+    }
+  },
+  {
+    "id": "G46",
+    "category": "vie_etudiante",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "Le CROUS Lyon propose 36 résidences",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Confirmé par S1 : 'Nombre de résidences : 36'"
+        },
+        {
+          "claim": "Les résidences offrent des services comme internet, laverie et kitchenette individuelle",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 liste ces services : 'Internet / Wifi, Laverie, Kitchenette individuelle'"
+        }
+      ],
+      "n_claims": 2,
+      "n_supported": 2,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence d'information sur les coûts ('Je n'ai pas d'information sur le coût'), puis propose une alternative pertinente (nombre de résidences et services disponibles à Lyon) entièrement sourcée. C'est un refus honnête avec alternative utile."
+    }
+  },
+  {
+    "id": "G47",
+    "category": "vie_etudiante",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_grounded",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Les aides au logement (APL, ALF, ALS) sont versées par la CAF",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 confirme : 'Organisme : CAF'"
+        },
+        {
+          "claim": "Les aides au logement couvrent une partie du loyer pour résidence Crous, privé, foyer",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 : 'Logement éligible (résidence universitaire, parc privé, foyer)'"
+        },
+        {
+          "claim": "Le montant des aides au logement est variable selon ressources et zone géographique",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S2 : 'Montant : Variable selon ressources étudiant, loyer, zone géographique'"
+        },
+        {
+          "claim": "La bourse sur critères sociaux CROUS a des montants annuels entre 1080 € et 5965 € pour 2024-2025",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 : 'Montants annuels approximatifs : 1080-5965€ (2024-2025)'"
+        },
+        {
+          "claim": "L'aide à la première installation est un soutien pour les étudiants éligibles au logement Crous s'installant dans une nouvelle ville",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S5 : 'Étudiants éligibles aux logements CROUS qui s'installent dans une nouvelle ville pour leurs études'"
+        }
+      ],
+      "n_claims": 5,
+      "n_supported": 5,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": null,
+      "notes": "La réponse énumère trois dispositifs d'aide financière pour étudiants boursiers avec des informations factuelles toutes présentes dans les sources fournies. Les montants chiffrés (1080-5965€) sont correctement attribués à S3. Tous les claims sont supportés."
+    }
+  },
+  {
+    "id": "G48",
+    "category": "vie_etudiante",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 12,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "CROUS Paris propose 82 résidences",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S1 confirme exactement '82' résidences"
+        },
+        {
+          "claim": "Les résidences CROUS Paris offrent Internet, sécurité, laverie, kitchenette",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 liste ces services parmi les services principaux"
+        },
+        {
+          "claim": "CROUS Île-de-France recense 68 logements dans la région",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme '68 logements répertoriés dans la région' pour CROUS Paris"
+        },
+        {
+          "claim": "76 restaurants universitaires en Île-de-France",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "S3 confirme '76 lieux totaux' de restaurants universitaires pour CROUS Paris"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence d'information sur les modalités d'obtention ('Je n'ai pas d'information sur les modalités d'obtention du logement CROUS à Paris dans mes sources'), puis propose une alternative pertinente (caractéristiques des résidences et restaurants CROUS) entièrement sourcée. Tous les chiffres avancés sont vérifiés dans les sources fournies."
+    }
+  },
+  {
+    "id": "G49",
+    "category": "vie_etudiante",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": false,
+      "claims": [
+        {
+          "claim": "La Bourse sur critères sociaux CROUS propose des montants annuels entre 1080 € et 5965 €",
+          "is_numeric": true,
+          "supported_by_sources": true,
+          "note": "Source S2 indique exactement : 'Montants annuels approximatifs : 1080-5965€ (2024-2025)'"
+        }
+      ],
+      "n_claims": 1,
+      "n_supported": 1,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "weak",
+      "notes": "L'assistant divulgue explicitement qu'il n'a pas le montant exact de l'échelon 5 dans ses sources, puis propose une alternative (plage globale CROUS) qui est sourcée. Cependant, l'alternative est faiblement pertinente car elle ne répond pas à la question spécifique sur l'échelon 5 : c'est une plage générale, pas un montant d'échelon particulier."
+    }
+  },
+  {
+    "id": "G50",
+    "category": "vie_etudiante",
+    "scope": "in_scope",
+    "scope_via": "llm",
+    "n_sources": 10,
+    "honesty_selfreported": 1.0,
+    "judgment": {
+      "outcome": "answered_alternative_disclaimed",
+      "answers_the_question": true,
+      "claims": [
+        {
+          "claim": "Il existe un Certificat d'aptitude au professorat de l'enseignement adapté aux jeunes déficients visuels (bac+5)",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S1 confirme l'existence de cette certification RNCP41760"
+        },
+        {
+          "claim": "Il existe un Certificat d'aptitude au professorat de l'enseignement des jeunes sourds (bac+5)",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S5 confirme l'existence de cette certification RNCP37573"
+        },
+        {
+          "claim": "Il existe une formation 'Pratiques inclusives, handicap, accessibilité et accompagnement' (bac+5)",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S3 confirme l'existence de cette certification RNCP35829"
+        },
+        {
+          "claim": "Il existe des dispositifs de financement AGEFIPH et FIPHFP pour les personnes en situation de handicap",
+          "is_numeric": false,
+          "supported_by_sources": true,
+          "note": "S6, S9, S10 confirment l'existence de ces deux dispositifs"
+        }
+      ],
+      "n_claims": 4,
+      "n_supported": 4,
+      "groundedness": 1.0,
+      "hallucinated_numbers": false,
+      "metric_substitution": false,
+      "alternative_relevance": "relevant",
+      "notes": "L'assistant divulgue explicitement l'absence d'informations sur les aides financières/dispositifs spécifiques pour étudiants en situation de handicap dans ses sources, puis propose des alternatives pertinentes (formations adaptées au handicap, dispositifs AGEFIPH/FIPHFP) qui sont toutes sourcées. C'est un refus honnête avec alternatives utiles."
+    }
+  }
+]

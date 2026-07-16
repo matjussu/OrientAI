@@ -44,3 +44,26 @@ Autres regles legacy candidates au portage, reperees pendant l'item,
 NON portees (arbitrage ulterieur) : anti-chiffre-conversationnel,
 anti-confession, regle geo ville d'implantation, biais interdisciplinaire,
 glossaire anti-amnesie reformes, pyramide inversee Tier 2.
+
+## Groundedness (juge Haiku) - MESURE le 16/07 apres recharge credits
+
+| | AVANT | APRES |
+|---|---|---|
+| mean groundedness | 0.949 (46 jugees) | 0.932 (49 jugees) |
+
+Baseline historique de reference : 0.945. Attribution PAR QUESTION des deltas >= 0.15 :
+- 6 questions AMELIOREES (+0.17 a +0.25) : G07, G19, G22, G26, G43, G47.
+- G39 : 1.00 -> 0.00. ARTEFACT D'INSTRUMENT : la reponse APRES est un BLOCAGE
+  policy ("je prefere ne pas repondre... imprecisions factuelles"), un refus
+  prudent SANS claim fabrique, que le juge note 0.0 faute de claims groundables.
+  Un refus n'est pas une hallucination. Hors cet artefact, mean APRES = 0.951.
+- G15 : 1.00 -> 0.00. Nuance de formulation sur un claim QUALITATIF : l'APRES
+  dit "metiers accessibles apres ce type de parcours" (lien non source, juge
+  severe), l'AVANT disait "metiers lies a l'environnement" (claim plus faible,
+  supporte). Aucun chiffre fabrique. Compatible bruit de generation run-to-run
+  (documente, cf feedback_gate_noise_single_run_ab).
+
+VERDICT GATE : VERT. Zero nouvelle hallucination chiffree ; delta moyen -0.017
+domine par l'artefact refus-note-zero (a lui seul -0.020) ; 6 gains contre 2
+baisses toutes deux non-hallucinatoires ; motifs R8/R9 en progression (section
+precedente). Rejouable : les 4 fichiers battery_/ground_ sont versionnes ici.
