@@ -22,7 +22,7 @@ from src.rag.intent import (
     intent_to_config,
     INTENT_FACTUAL_POINTED,
 )
-from src.rag.generator import generate, generate_stream, NARRATIVE_MAX_SOURCES
+from src.rag.generator import generate, generate_stream, NARRATIVE_MAX_SOURCES, V4_MAX_SOURCES
 from src.rag.fact_card import build_sources_index
 from src.lookup.structured_select import try_select_or_none, SelectResult
 from src.rag.metadata_filter import (
@@ -973,6 +973,7 @@ class OrientIAPipeline:
             # mais pas de 2e génération (le streaming est uni-directionnel).
             score, verdict = await asyncio.to_thread(
                 self._validate_for_stream, full_text, prepared.intent_label,
+                prepared.top, prepared.narrative_mode,
             )
             if score is not None:
                 event: dict = {"type": "faithfulness", "score": score}
@@ -1012,6 +1013,8 @@ class OrientIAPipeline:
         self,
         full_text: str,
         intent_label: str | None,
+        top: list[dict] | None = None,
+        narrative_mode: bool = False,
     ) -> tuple[float | None, str | None]:
         """Run validator + score mapping pour le path streaming.
 
@@ -1024,11 +1027,29 @@ class OrientIAPipeline:
         """
         if self.validator is None:
             return None, None
-        validation = self.validator.validate(full_text, intent=intent_label)
+        validation = self.validator.validate(
+            full_text, intent=intent_label,
+            fact_cards=self._fact_cards_for_validation(top, narrative_mode),
+        )
         self.last_validation = validation
         score = float(validation.honesty_score)
         verdict = "INFIDELE" if validation.flagged else "FIDELE"
         return score, verdict
+
+    @staticmethod
+    def _fact_cards_for_validation(
+        top: list[dict] | None,
+        narrative_mode: bool,
+    ) -> list:
+        """FactCards S1..SN telles que le LLM les a vues, pour le check
+        citation (H1 lot 1.2). max_sources DOIT suivre la branche génération
+        (V4_MAX_SOURCES en strict, NARRATIVE_MAX_SOURCES en récit), sinon la
+        numérotation S1..SN décale et le check compare aux mauvaises fiches."""
+        if not top:
+            return []
+        from src.validator.citation_check import cards_from_top_sources
+        max_sources = NARRATIVE_MAX_SOURCES if narrative_mode else V4_MAX_SOURCES
+        return cards_from_top_sources(top, max_sources)
 
     def _generate_with_retry(
         self,
@@ -1106,8 +1127,12 @@ class OrientIAPipeline:
             meta["wall_clock_s"] = round(time.time() - wall_t0, 2)
             return tour1_answer, meta
 
-        # Validation tour 1 — passe intent pour gating layer3 LLM
-        tour1_validation = self.validator.validate(tour1_answer, intent=intent)
+        # Validation tour 1 — passe intent pour gating layer3 LLM + les
+        # FactCards vues par le LLM pour le check citation (H1 lot 1.2)
+        fact_cards = self._fact_cards_for_validation(top, narrative_mode)
+        tour1_validation = self.validator.validate(
+            tour1_answer, intent=intent, fact_cards=fact_cards,
+        )
         self.last_validation = tour1_validation
         tour1_failed = extract_failed_claims(tour1_validation)
         meta["tour1_failed_claims"] = list(tour1_failed)
@@ -1162,7 +1187,9 @@ class OrientIAPipeline:
             narrative_mode=narrative_mode,
             narrative_decision=format_decision,
         )
-        tour2_validation = self.validator.validate(tour2_answer, intent=intent)
+        tour2_validation = self.validator.validate(
+            tour2_answer, intent=intent, fact_cards=fact_cards,
+        )
         tour2_failed = extract_failed_claims(tour2_validation)
         meta["tour2_failed_claims"] = list(tour2_failed)
 

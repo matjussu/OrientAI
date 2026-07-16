@@ -8,9 +8,12 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from src.validator.rules import Severity, Violation, apply_rules
+from src.validator.citation_check import CitationMismatch, check_citations
 from src.validator.corpus_check import CorpusWarning, check_claims_in_corpus
 from src.validator.layer3 import Layer3Validator, Layer3Warning
 from src.validator.presence import PresenceWarning, check_presence
+
+from src.rag.fact_card import FactCard
 
 
 @dataclass
@@ -20,7 +23,10 @@ class ValidatorResult:
     corpus_warnings: list[CorpusWarning] = field(default_factory=list)
     layer3_warnings: list[Layer3Warning] = field(default_factory=list)
     presence_warnings: list[PresenceWarning] = field(default_factory=list)
-    flagged: bool = False  # True si >= 1 violation BLOCKING ou corpus_warning
+    # H1 lot 1.2 — chiffres attribués à un tag [source SX] absents de la
+    # FactCard SX vue par le LLM (check déterministe, cf citation_check).
+    citation_mismatches: list[CitationMismatch] = field(default_factory=list)
+    flagged: bool = False  # True si >= 1 BLOCKING, corpus_warning ou citation_mismatch
 
     def summary(self) -> str:
         """Résumé lisible pour log / debug."""
@@ -99,6 +105,7 @@ class Validator:
         self,
         answer: str,
         intent: str | None = None,
+        fact_cards: list[FactCard] | None = None,
     ) -> ValidatorResult:
         """Valide une réponse pipeline.
 
@@ -107,6 +114,11 @@ class Validator:
             intent: intent classé (`factual_pointed`, `passerelles`, etc.) —
                 si fourni, gate l'appel layer3 LLM via `LAYER3_INTENTS`
                 allowlist. Si None : comportement legacy (run layer3 si dispo).
+            fact_cards: FactCards S1..SN telles que vues par le LLM (même
+                numérotation que la génération). Si fournies, active le check
+                déterministe chiffre-vs-source-citée (H1 lot 1.2) : tout
+                chiffre attribué à [source SX] absent de la carte SX flagge
+                la réponse (verdict INFIDELE côté API).
         """
         rule_violations = apply_rules(answer)
         corpus_warnings = check_claims_in_corpus(
@@ -123,12 +135,20 @@ class Validator:
         # V4 : règles de PRÉSENCE — flag si topic sans info obligatoire
         presence_warnings = check_presence(answer)
 
+        # H1 lot 1.2 — check déterministe chiffre-vs-source-citée. Actif
+        # seulement si l'appelant fournit les FactCards vues par le LLM.
+        citation_mismatches: list[CitationMismatch] = []
+        if fact_cards:
+            citation_mismatches = check_citations(answer, fact_cards)
+
         honesty_score = self._compute_honesty(
-            rule_violations, corpus_warnings, layer3_warnings, presence_warnings
+            rule_violations, corpus_warnings, layer3_warnings, presence_warnings,
+            citation_mismatches,
         )
         flagged = (
             any(v.severity == Severity.BLOCKING for v in rule_violations)
             or len(corpus_warnings) > 0
+            or len(citation_mismatches) > 0
         )
         # Couche 3 : n'escalade pas à `flagged` en v2 (= WARN severity
         # contribuant juste au score + β Warn footer via policy). Changer
@@ -140,6 +160,7 @@ class Validator:
             corpus_warnings=corpus_warnings,
             layer3_warnings=layer3_warnings,
             presence_warnings=presence_warnings,
+            citation_mismatches=citation_mismatches,
             flagged=flagged,
         )
 
@@ -149,6 +170,7 @@ class Validator:
         corpus_warnings: list[CorpusWarning],
         layer3_warnings: list[Layer3Warning] | None = None,
         presence_warnings: list[PresenceWarning] | None = None,
+        citation_mismatches: list[CitationMismatch] | None = None,
     ) -> float:
         score = 1.0
         for v in violations:
@@ -158,6 +180,10 @@ class Validator:
             score -= _LAYER3_PENALTY * len(layer3_warnings)
         if presence_warnings:
             score -= 0.05 * len(presence_warnings)
+        if citation_mismatches:
+            # Même gravité qu'un corpus_warning : un chiffre mal attribué à
+            # sa source casse la traçabilité autant qu'un claim non source.
+            score -= _CORPUS_PENALTY * len(citation_mismatches)
         return max(0.0, min(1.0, score))
 
 
