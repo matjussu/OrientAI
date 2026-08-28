@@ -1,0 +1,1412 @@
+# config/diverse_prompts_50.yaml
+# OrientIA Sprint 9-data — 51 prompts diversifiés × 20 itérations = 1020 Q&A target
+#
+# Source : draft v2 validé Matteo 2026-04-28 11:21 UTC Telegram
+#   commit ab0ab3d branche docs/sprint9-data-50-prompts-draft
+# ADR référence : 08-Decisions/2026-04-28-orientia-pivot-pipeline-agentique-claude.md
+#
+# Pour chaque prompt :
+#   - 5-6 questions_seed (étendu vs draft v2 à 3) intégrant :
+#     - 1-2 questions test set v3 (cf annexe draft v2 mapping Q1-Q10)
+#     - 1-2 variantes phrasing humain (argot/abréviations/syntaxe relaxée)
+#       inspiré profils Léo 17 / Sarah 20 / Thomas 23 / Catherine 52 / Dominique 48
+#     - Conserver les seeds originaux comme variantes formelles
+#
+# Convention `tone` : tutoiement par défaut jusqu'à 24/25 ans (proximité coach).
+# Vouvoiement uniquement pour : C8 (expat retour), D3 (Fonction Publique),
+# D7 (MBA), D8 (VAE), E1 (parent 45 ans), E6 (étudiant migrant statutaire).
+
+metadata:
+  version: 1
+  generated_at: '2026-04-28'
+  total_prompts: 51
+  iterations_per_prompt: 20
+  total_qa_target: 1020
+  source_doc: docs/sprint9-data-50-prompts-draft.md (commit ab0ab3d)
+  adr_ref: 08-Decisions/2026-04-28-orientia-pivot-pipeline-agentique-claude.md
+
+prompts:
+
+  # ───────────────────────────────────────────────────────────────────
+  # A. Lycéens post-bac (9 prompts) — Axe 1
+  # ───────────────────────────────────────────────────────────────────
+
+  - id: A1
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, terminale spé maths-physique ou maths/code, lycée public/privé,
+      profil scientifique solide mais pas attiré par prépa MPSI / CS pure.
+      ⚠️ FUSION A1+A7 (draft v2)
+    context: |
+      Cherche alternatives concrètes (BUT, écoles ingé post-bac, bachelors,
+      formations hybrides bio-info / finance quant / jeu vidéo / robotique).
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: concret_hybridation
+      style: non-mainstream
+    tone: tutoiement
+    sources_priority:
+      - "ONISEP (alternatives prépa, formations hybrides)"
+      - "Parcoursup (BUT, écoles ingé post-bac)"
+      - "InserJeunes (insertion BUT vs prépa→école)"
+      - "France Compétences"
+    questions_seed:
+      - "Je suis en terminale spé maths-physique mais je sature des maths abstraites, alternatives concrètes à la prépa MPSI ?"
+      - "Quelles écoles d'ingénieur post-bac valent le coup vs prépa ?"
+      - "Bio-info, finance quant, jeu vidéo : quelles voies post-bac précises ?"
+      - "Quelles sont les meilleures formations en cybersécurité en France ?"  # test_set_v3 Q2
+      - "Compare ENSEIRB-MATMECA et EPITA pour la cybersécurité"  # test_set_v3 Q3
+      - "Bon en code mais CS classique me lasse, y'a quoi d'autre comme voies ?"  # phrasing_humain (Léo)
+
+  - id: A2
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée public province, profil littéraire scientifique solide,
+      terminale spé SES-HG, indécis multi-domaines.
+    context: |
+      Hésite éco vs droit vs sciences-po vs IEP régional.
+    constraints:
+      region: hors_idf
+      budget: moderate
+      valeurs: utilité_sociale
+      style: pragmatique
+    tone: tutoiement
+    sources_priority:
+      - "Parcoursup (formations éco/droit)"
+      - "CIDJ (témoignages)"
+      - "ONISEP (fiches métiers droit/éco)"
+      - "Sciences-Po (concours commun IEP)"
+    questions_seed:
+      - "Je hésite entre éco-gestion, droit et sciences-po, comment choisir ?"
+      - "Sciences-Po Paris ou IEP région, quelle différence concrète ?"
+      - "Pour un profil SES-HG, quel master pro paie mieux à 5 ans : droit ou éco ?"
+      - "J'ai 11 de moyenne en terminale générale, est-ce que je peux intégrer HEC ?"  # test_set_v3 Q1
+      - "Tremplin/Passerelle pour HEC, c'est quoi exactement et c'est pour qui ?"  # phrasing_humain (Léo)
+      - "Sciences-Po ça vaut le coup ou c'est juste un nom ?"  # phrasing_humain
+
+  - id: A3
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée privé sous contrat, passion écriture/littérature,
+      terminale spé lettres, peur de débouchés.
+    context: |
+      Aime les lettres mais panique sur le "ça mène à rien" parental/social.
+    constraints:
+      region: hors_idf
+      budget: bas
+      valeurs: passion_créativité
+      bourse: probable
+    tone: tutoiement_doux
+    sources_priority:
+      - "ONISEP (débouchés lettres)"
+      - "CNED"
+      - "France Travail (métiers de l'écrit)"
+      - "édition/presse (taux insertion)"
+    questions_seed:
+      - "J'aime les lettres mais tout le monde dit que ça mène à rien, c'est vrai ?"
+      - "Quels métiers vraiment accessibles avec une licence de lettres modernes ?"
+      - "Master édition / journalisme / communication : lequel a le meilleur taux d'embauche ?"
+      - "Tout le monde dit que les lettres ça mène à rien, j'commence à m'inquiéter pour de vrai"  # phrasing_humain (Sarah-style)
+      - "Lettres modernes vs LLCER, c'est quoi la différence concrète ?"
+
+  - id: A4
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée public, série techno valorisée par profs mais dévalorisée
+      par parents (STMG/STI2D).
+    context: |
+      Veut continuer études (BTS/BUT) mais parents poussent BAC général
+      "pour se garder des options".
+    constraints:
+      region: variable
+      budget: moderate
+      famille: doute_techno
+      mobilite: possible
+    tone: tutoiement_valorisant
+    sources_priority:
+      - "ONISEP (filières techno→sup)"
+      - "Parcoursup (BTS/BUT)"
+      - "DARES (insertion BTS/BUT)"
+      - "témoignages BTS-BUT réussis"
+    questions_seed:
+      - "Je suis en STMG, est-ce que c'est handicapant pour la fac ou les écoles de commerce ?"
+      - "BTS ou BUT pour un STI2D ? Quelle différence concrète ?"
+      - "Mes parents pensent que la techno c'est moins bien, comment leur répondre avec des chiffres ?"
+      - "Mes parents veulent que j'aille en général mais STMG c'est ce qui me plaît"  # phrasing_humain
+      - "STI2D peut vraiment intégrer une école d'ingé après ?"
+
+  - id: A5
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée pro, formation tertiaire ou industrielle (bac pro).
+    context: |
+      Diplôme en poche, hésite continuer (BTS/CFA) vs entrer marché direct.
+    constraints:
+      region: variable
+      budget: bas
+      urgence: faim_indépendance
+      valeurs: travail_concret
+    tone: tutoiement_direct
+    sources_priority:
+      - "France Travail (insertion bac pro)"
+      - "alternance.emploi.gouv.fr"
+      - "1jeune1solution.gouv.fr"
+      - "CFA (apprentissage post-bac pro)"
+      - "DARES (taux emploi 6 mois post-bac pro)"
+      - "OPCO (aides reconversion)"
+    questions_seed:
+      - "Je sors d'un bac pro commerce, je continue en BTS ou je tente direct le marché ?"
+      - "Si je continue en alternance, comment trouver une entreprise ?"
+      - "Mon bac pro maintenance industrielle, quel BTS s'enchaîne vraiment ?"
+      - "BTS ou je commence à bosser direct, ça presse là j'ai besoin de fric"  # phrasing_humain
+      - "1jeune1solution c'est quoi exactement, y'a vraiment des aides utiles ?"
+
+  - id: A6
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée public, passion vivant et soin (terminale spé bio),
+      aime soin pas médecine.
+    context: |
+      Aime aider mais ne veut pas faire médecine (PASS/LAS angoissant +
+      écoles privées chères).
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: soin_humain
+      peurs: concours_pass_las
+    tone: tutoiement_rassurant
+    sources_priority:
+      - "ONISEP (paramédical)"
+      - "Parcoursup (IFSI infirmier, kiné, ostéo, sage-femme)"
+      - "CNED"
+      - "témoignages réorientation post-PASS"
+    questions_seed:
+      - "J'aime le soin mais PASS/LAS me terrorise, quelles alternatives santé ?"
+      - "Infirmier, kiné, ostéo : quelles différences concrètes au quotidien ?"
+      - "Je veux devenir médecin, comment faire ?"  # test_set_v3 Q7
+      - "J'ai 12 de moyenne générale en terminale, est-ce que j'ai mes chances en PASS ?"  # test_set_v3 Q8
+      - "Compare devenir infirmier et kinésithérapeute : études, salaires, débouchés."  # test_set_v3 Q9
+      - "Médecine ça me fait flipper mais j'veux quand même soigner les gens"  # phrasing_humain
+
+  - id: A8
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée public, boursière échelon 6-7 (renumérotation : ex-A8).
+    context: |
+      Études supérieures uniquement viables si proche domicile
+      (Bordeaux/Toulouse/Lyon/Lille selon perso) + bourses.
+    constraints:
+      region: hors_idf_proche_lycée
+      budget: très_bas
+      bourse: échelon_6_7
+      mobilite: max_50km
+      valeurs: emploi_rapide
+    tone: tutoiement_pragmatique
+    sources_priority:
+      - "CROUS (bourses + logement)"
+      - "Parcoursup (filière + carte régionale)"
+      - "France Travail (insertion régionale)"
+      - "DARES (BUT/BTS taux insertion)"
+    questions_seed:
+      - "Je suis boursière échelon 7, comment je peux faire des études sup en restant proche ?"
+      - "Quelles aides au logement étudiant existent au-delà de la bourse ?"
+      - "Pour mon profil, BUT près de chez moi vaut-il mieux que fac à Paris loin ?"
+      - "Quelles bonnes formations existent à Perpignan ?"  # test_set_v3 Q6
+      - "Bourse échelon 7 ça paye combien et c'est sur combien de temps ?"
+
+  - id: A9
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée adapté, handicap moteur (fauteuil roulant).
+    context: |
+      Études sup possibles mais besoin d'établissements accessibles +
+      accompagnement.
+    constraints:
+      region: variable
+      budget: moderate
+      handicap: moteur
+      valeurs: accessibilité
+      mobilite: transports_adaptés
+    tone: tutoiement_attentionné
+    sources_priority:
+      - "MonParcoursHandicap.gouv.fr"
+      - "ONISEP handicap"
+      - "AGEFIPH (insertion pro)"
+      - "MDPH"
+      - "témoignages associations étudiants handicapés"
+    questions_seed:
+      - "Je suis en fauteuil, quelles études sup sont vraiment accessibles ?"
+      - "Quels aménagements obtenir pour les concours et examens ?"
+      - "Quelles aides financières spécifiques au handicap pour les études ?"
+      - "MDPH ça sert à quoi pour les études sup, c'est obligatoire ?"
+      - "École d'ingé en fauteuil c'est faisable ou j'rêve ?"  # phrasing_humain
+
+  - id: A10
+    category: lyceen_post_bac
+    axe_couvert: 1
+    persona: |
+      17 ans, lycée international, double profil (français + 1 autre langue),
+      envie partir Erasmus dès L1.
+    context: |
+      Veut commencer études en France mais avec mobilité Erasmus précoce ou
+      Bachelor international.
+    constraints:
+      region: idf_ou_grande_ville
+      budget: moderate_high
+      valeurs: ouverture_internationale
+      langues: fr_en_autre
+    tone: tutoiement_ambitieux
+    sources_priority:
+      - "Campus France"
+      - "Erasmus+"
+      - "ONISEP (programmes internationaux)"
+      - "Parcoursup (Bachelor + échanges)"
+      - "écoles spécifiques (ESCP, Sciences-Po, ESSEC en BBA)"
+    questions_seed:
+      - "Je veux faire Erasmus dès la L1, c'est possible et où ?"
+      - "Bachelor international 3 ans (BBA, IBP) ou licence + Erasmus en L3 ?"
+      - "Mon double profil français-anglais comment le valoriser le mieux ?"
+      - "BBA vs licence + Erasmus pour bosser à l'étranger après, lequel paie mieux ?"
+      - "ESSEC BBA c'est encore considéré comme prestigieux ou c'est mort ?"
+
+  # ───────────────────────────────────────────────────────────────────
+  # B. Étudiants en réorientation (10 prompts) — Axe 1+2
+  # ───────────────────────────────────────────────────────────────────
+
+  - id: B1
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      18-19 ans, L1 droit en cours d'échec.
+    context: |
+      Sature de la fac, peu de soutien, questionne son choix initial.
+    constraints:
+      region: variable
+      budget: moderate
+      urgence: semestre_validé_à_perdre
+      valeurs: concret
+    tone: tutoiement_encourageant
+    sources_priority:
+      - "Parcoursup (Apb-réorientation)"
+      - "CIDJ (témoignages)"
+      - "ONISEP (passerelles L1→BTS/BUT)"
+      - "CNED (reprise études)"
+    questions_seed:
+      - "Ma L1 droit ne se passe pas bien, je veux changer mais j'ai peur de perdre une année"
+      - "Quelles passerelles existent du droit vers d'autres formations sans repartir de zéro ?"
+      - "Un BUT après L1 droit ratée, c'est crédible ?"
+      - "Je suis en L2 droit et je veux me réorienter vers l'informatique, comment ?"  # test_set_v3 Q5
+      - "L1 droit c'est l'enfer, j'tiens plus, j'fais quoi ?"  # phrasing_humain
+      - "Refaire Parcoursup en réo après une L1, ça pénalise ou pas ?"
+
+  - id: B2
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      18-19 ans, fin L1 PASS, échec ou écœurement.
+    context: |
+      PASS pas réussi, ne veut PAS refaire LAS, cherche reconversion santé
+      non-médecin ou hors santé.
+    constraints:
+      region: variable
+      budget: moderate
+      émotion: échec_difficile
+      valeurs: soin_alternative
+    tone: tutoiement_compatissant
+    sources_priority:
+      - "ONISEP (paramédical post-PASS)"
+      - "Parcoursup (passerelles PASS)"
+      - "témoignages réorientation post-PASS"
+      - "France Travail (métiers de la santé hors médecin)"
+    questions_seed:
+      - "J'ai raté PASS, je ne veux pas refaire LAS, quelles options ?"
+      - "Quelles formations valorisent vraiment ma L1 PASS pour les passerelles ?"
+      - "Comment se reconstruire psychologiquement après un échec PASS ?"
+      - "Je suis en L2 psychologie et je veux me réorienter vers l'orthophonie, comment ?"  # test_set_v3 Q10
+      - "Compare devenir infirmier et kinésithérapeute"  # test_set_v3 Q9 (cross A6)
+      - "PASS j'ai galéré, j'me sens nul, comment rebondir vraiment ?"  # phrasing_humain
+
+  - id: B3
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      19 ans, L1 STAPS, blessure sportive empêche pratique intense.
+    context: |
+      Blessure ferme la voie carrière sportive directe, cherche pivot
+      connexe (kiné, prof EPS, ergothérapie, sport management).
+    constraints:
+      region: variable
+      budget: moderate
+      condition: blessure
+      valeurs: sport_indirect
+    tone: tutoiement_redirection_positive
+    sources_priority:
+      - "ONISEP (kiné, ergo, prof EPS)"
+      - "Parcoursup (passerelles STAPS)"
+      - "France Travail (sport management)"
+      - "MEEF (prof EPS)"
+    questions_seed:
+      - "Ma blessure ferme la voie sportive, mais STAPS m'a appris des choses, comment réorienter ?"
+      - "Kinésithérapeute après L1 STAPS, comment ça marche ?"
+      - "Sport management : vrai débouché ou marché saturé ?"
+      - "STAPS sans pouvoir bouger c'est mort, j'fais quoi du coup ?"  # phrasing_humain
+      - "Prof EPS vs kiné post-STAPS, lequel paie mieux à 10 ans ?"
+
+  - id: B4
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      19 ans, fin de prépa MPSI, burn-out confirmé.
+    context: |
+      Concours moyen ou pas concours, équivalence L2 possible mais perdu.
+    constraints:
+      region: variable
+      budget: moderate
+      émotion: burnout_prépa
+      valeurs: rythme_humain
+    tone: tutoiement_déculpabilisant
+    sources_priority:
+      - "Parcoursup (équivalences prépa)"
+      - "ONISEP (post-prépa hors écoles)"
+      - "témoignages reconversion prépa"
+      - "fac sciences (équivalences L2/L3)"
+    questions_seed:
+      - "Ma prépa MPSI m'a cramée, où aller maintenant ?"
+      - "L'équivalence L2 prépa vers fac sciences, ça vaut quoi sur le marché ?"
+      - "Une école d'ingé via concours décalés ou je passe à autre chose totalement ?"
+      - "Prépa = burnout, j'fais quoi pour pas perdre 2 ans ?"  # phrasing_humain
+      - "Concours décalés c'est quoi exactement et c'est pour qui ?"
+
+  - id: B5
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      18-19 ans, BUT 1ère année (ex: GEA), réalise qu'il s'est trompé de spé.
+    context: |
+      Veut basculer dans un autre BUT ou autre formation court (BTS),
+      idéalement en gardant le crédit.
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: adapté_au_concret
+      urgence: réorientation_S2
+    tone: tutoiement_concret
+    sources_priority:
+      - "Parcoursup (réorientation BUT/BTS)"
+      - "IUTs spécifiques"
+      - "CIDJ (témoignages réorientation BUT)"
+      - "Apb-Replay"
+    questions_seed:
+      - "Je suis en BUT GEA mais je m'ennuie, comment basculer en BUT info ?"
+      - "Réorientation BUT en cours d'année, c'est faisable ?"
+      - "BTS plutôt que BUT, sortie 2 ans, ça dépaysage ou pas ?"
+      - "BUT GEA c'est chiant comme la pluie, j'change pour quoi ?"  # phrasing_humain
+      - "Validation des crédits BUT vers BTS, c'est automatique ?"
+
+  - id: B6
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      20 ans, L2 LLCER (anglais), cherche reconversion vers un métier concret.
+    context: |
+      Bon en langues mais marché du travail limité prof/traduction, veut
+      autre chose.
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: concret_marketable_langues_atout
+    tone: tutoiement_ouvert
+    sources_priority:
+      - "ONISEP (métiers langues+)"
+      - "France Travail (commerce international, marketing digital, RH internationales)"
+      - "masters spécialisés"
+    questions_seed:
+      - "Ma L2 anglais, comment je la valorise dans un métier concret ?"
+      - "Master commerce international vs marketing digital vs RH : que choisir ?"
+      - "Quelles écoles privées valent le coup pour mon profil langues ?"
+      - "Ma L2 langues va nulle part j'ai envie de tout plaquer"  # phrasing_humain (Sarah)
+      - "LLCER ça mène quelque part de concret, ou tout le monde me ment ?"  # phrasing_humain
+
+  - id: B7
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      19 ans, L1 bio, déçu par la pratique exclusivement labo/microscope.
+    context: |
+      Aime concept biologique mais pas la routine labo, cherche bio
+      appliqué (terrain, conseil, communication scientifique).
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: terrain_diversité
+      style: multidisciplinaire
+    tone: tutoiement_exploratoire
+    sources_priority:
+      - "ONISEP (bio terrain, écologie, conseil scientifique)"
+      - "Parcoursup (passerelles bio)"
+      - "France Travail (métiers environnement)"
+    questions_seed:
+      - "Bio en labo me lasse, mais j'aime le vivant, alternatives ?"
+      - "Métiers de l'écologie de terrain : vrai débouché ou tendance ?"
+      - "Communication scientifique, médiation, journalisme scientifique : combien ça paie ?"
+      - "Bio = labo = chiant, mais j'aime le vivant, j'fais quoi ?"  # phrasing_humain
+      - "Master gestion écologie terrain, c'est rentable ou militant pur ?"
+
+  - id: B8
+    category: etudiant_reorientation
+    axe_couvert: [1, 2]
+    persona: |
+      19 ans, école d'ingé post-bac (5 ans), 1ère année finie, dégoûté.
+    context: |
+      Choix orienté famille, ne se reconnaît pas dans la culture/contenus,
+      veut changer.
+    constraints:
+      region: variable
+      budget: moderate_école_payante_quitte
+      émotion: déception_familiale_à_gérer
+      valeurs: authenticité
+    tone: tutoiement_déculpabilisant
+    sources_priority:
+      - "Parcoursup (réorientation école→fac/BUT)"
+      - "témoignages reconversion ingé"
+      - "CIDJ"
+    questions_seed:
+      - "Je suis dans une école d'ingé que mes parents ont choisie, je veux partir, comment leur dire ?"
+      - "Quitter l'ingénieur après 1 an, équivalences vers la fac ou un BUT ?"
+      - "Y a-t-il vraiment un stigmate à quitter l'école d'ingé ?"
+      - "Mes parents ont payé 8k l'année et j'tiens plus, comment leur dire ?"  # phrasing_humain
+      - "Sortir d'une école d'ingé après 1 an ça compte sur le CV ou pas ?"
+
+  - id: B9
+    category: etudiant_reorientation
+    axe_couvert: [2]
+    persona: |
+      20-22 ans, fin de cursus court (BTS / BUT / LP en alternance,
+      commerce/RH/finance/IT/comptabilité). ⚠️ FUSION B9+C5 (draft v2)
+    context: |
+      Diplôme bac+2 ou bac+3 + 1 an d'expérience pro alternance, hésite
+      continuer (LP ou master selon niveau) vs entrée marché direct
+      (avec proposition d'embauche fréquente).
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: gain_court_terme_vs_long_terme
+      marche: tendances_secteur
+    tone: tutoiement_pragmatique
+    sources_priority:
+      - "APEC (gains carrière)"
+      - "DARES (LP/BTS/master ROI)"
+      - "France Travail (insertion BTS/BUT)"
+      - "témoignages anciens alternants"
+      - "écoles cibles spécifiques"
+    questions_seed:
+      - "J'ai mon BTS commerce, je continue en LP ou je tente le marché direct ?"
+      - "Ma boîte d'alternance veut m'embaucher, mais un master ferait-il vraiment la différence ?"
+      - "BTS+LP+1 an, gain salarial réel à 5 ans ?"
+      - "Master en alternance + emploi, c'est faisable concrètement ?"
+      - "Combien je perds réellement à pas faire le master, à 5 ans ?"
+      - "Ma boîte propose CDI 32k vs master gratos en alternance ailleurs, j'fais quoi ?"  # phrasing_humain
+
+  - id: B10
+    category: etudiant_reorientation
+    axe_couvert: [2]
+    persona: |
+      21-22 ans, fin licence pro alternance (RH, marketing, comptabilité,
+      IT, etc.) avec ambition master poussée.
+    context: |
+      Diplôme bac+3 + 1 an d'expérience pro, vise master en école ou
+      alternance, dilemme ROI long terme.
+    constraints:
+      region: variable
+      budget: moderate_high_école_master_payante
+      valeurs: retours_invest
+      marche: tendances_secteur
+    tone: tutoiement_pragmatique
+    sources_priority:
+      - "APEC (fin LP→emploi)"
+      - "DARES (LP vs master ROI)"
+      - "écoles cibles spécifiques"
+      - "France Travail"
+    questions_seed:
+      - "Si je vise un master, lequel et quelle école pour mon profil LP ?"
+      - "Master spécialisé externe (HEC, ESSEC) après mon LP : ça vaut le coup ?"
+      - "Master en alternance vs initial pour un profil LP ?"
+      - "MS HEC à 25k pour un profil LP, c'est rentable réellement ?"  # phrasing_humain
+      - "AST (Admission Sur Titre) pour les écoles de commerce, mon LP est éligible ?"
+
+  # ───────────────────────────────────────────────────────────────────
+  # C. Actifs jeunes 22-25 (7 prompts — C5 fusionné dans B9) — Axe 2+3
+  # ───────────────────────────────────────────────────────────────────
+
+  - id: C1
+    category: actif_jeune
+    axe_couvert: [2, 3]
+    persona: |
+      22 ans, BTS ou DUT/BUT non-tech (commerce, gestion, etc.), 1-2 ans
+      pro, veut basculer dev.
+    context: |
+      Auto-formé en code (HTML/CSS/JS), envisage formation pro courte
+      (bootcamp) ou retour études.
+    constraints:
+      region: variable
+      budget: à_financer
+      urgence: reconversion_rapide
+      valeurs: carrière_tech
+    tone: tutoiement_coach
+    sources_priority:
+      - "France Travail (formations dev)"
+      - "Pôle Emploi (CPF)"
+      - "bootcamps (Le Wagon, 42, Holberton)"
+      - "OPCO (aides reconversion)"
+      - "DARES (insertion dev junior)"
+      - "1jeune1solution.gouv.fr"
+    questions_seed:
+      - "J'ai un BTS commerce, je veux devenir dev, bootcamp ou licence pro ?"
+      - "Le 42 vs Le Wagon vs licence pro info : quel choix pour mon profil ?"
+      - "Quelles aides financières pour reconversion vers le dev quand je travaille ?"
+      - "Le 42 c'est gratuit ou il y a des coûts cachés ?"  # phrasing_humain
+      - "Bootcamp 8k€ ça vaut le coup vraiment, ou c'est arnaque déguisée ?"
+
+  - id: C2
+    category: actif_jeune
+    axe_couvert: [2, 3]
+    persona: |
+      24 ans, master école de commerce, 1-2 ans pro, lassée du commerce.
+    context: |
+      Veut basculer dans le sanitaire/social mais pas envie de refaire 5
+      ans d'études.
+    constraints:
+      region: idf_ou_grande_ville
+      budget: moderate_épargnée
+      valeurs: utilité_humaine
+      pression: famille_questionne_changement
+    tone: tutoiement_coach
+    sources_priority:
+      - "ONISEP (sanitaire-social bac+5 inclu reconversion)"
+      - "Parcoursup (IFSI/IFCS post-master)"
+      - "VAE pour santé"
+      - "France Travail (cadre de santé)"
+    questions_seed:
+      - "J'ai un master commerce mais je veux travailler dans la santé, par où commencer ?"
+      - "VAE pour devenir cadre de santé sans refaire 3 ans IFSI, c'est faisable ?"
+      - "Coordinateur santé / médico-social, ça correspond à mon profil bac+5 commerce ?"
+      - "Master commerce → santé sans refaire 5 ans, c'est un mythe ou possible ?"  # phrasing_humain
+      - "Cadre de santé à 25 ans avec mon profil bac+5 commerce, salaire réel ?"
+
+  - id: C3
+    category: actif_jeune
+    axe_couvert: [2, 3]
+    persona: |
+      23 ans, CAP coiffure + 5 ans pro, veut élargir compétences.
+    context: |
+      Bonne pratique mais veut entrepreneuriat (ouvrir salon) ou
+      reconversion management.
+    constraints:
+      region: variable
+      budget: bas_à_financer
+      valeurs: autonomie_pro
+      urgence: projet_à_5_ans
+    tone: tutoiement_coach
+    sources_priority:
+      - "OPCO (CAP→BP→BTS via VAE)"
+      - "Pôle Emploi (création entreprise)"
+      - "CMA (chambres des métiers)"
+      - "France Travail (BMA, BMS)"
+      - "alternance.emploi.gouv.fr"
+    questions_seed:
+      - "J'ai un CAP coiffure depuis 5 ans, comment ouvrir mon propre salon ?"
+      - "Quelles formations courtes pour devenir gérante de salon vs simple coiffeuse ?"
+      - "BP coiffure VAE vs BTS coiffure : quelle valeur ajoutée concrète ?"
+      - "Ouvrir mon salon à 25 ans avec un CAP, c'est faisable réellement ?"  # phrasing_humain
+      - "VAE BP coiffure ça coûte combien et combien de temps en réalité ?"
+
+  - id: C4
+    category: actif_jeune
+    axe_couvert: [2, 3]
+    persona: |
+      25 ans, master 2 sciences (bio, chimie, physique), 1 an galère.
+    context: |
+      Marché labo/recherche très saturé, doctorat impossible (pas de
+      financement), veut pivot vers data ou industrie pharma management.
+    constraints:
+      region: variable
+      budget: bas_galère
+      émotion: épuisement
+      valeurs: domaine_scientifique_si_possible
+    tone: tutoiement_coach_motivante
+    sources_priority:
+      - "APEC (master sciences→industrie)"
+      - "DARES (cadres industrie pharma/cosmétique)"
+      - "France Compétences (RNCP science→management)"
+      - "formations data conversion"
+    questions_seed:
+      - "Mon master 2 bio ne trouve pas de boulot, comment pivoter sans repartir à zéro ?"
+      - "Data analyst pour profil sciences, quelles formations courtes ?"
+      - "Industrie pharma management vs labo public, quelles formations valorisent mon profil ?"
+      - "M2 bio + 1 an galère, j'ai la rage, comment rebondir vraiment ?"  # phrasing_humain
+      - "Reconversion data via OpenClassrooms, c'est crédible ou diplôme à la c**?"
+
+  - id: C6
+    category: actif_jeune
+    axe_couvert: [2, 3]
+    persona: |
+      24 ans, 2-3 ans en cabinet conseil/finance, burn-out.
+    context: |
+      Pause récupération, cherche pivot vers domaine moins toxique mais
+      pas perdre les acquis bac+5.
+    constraints:
+      region: variable
+      budget: épargne_à_dépenser
+      émotion: rare_décision_émotionnelle
+      valeurs: équilibre_vie
+    tone: tutoiement_doux
+    sources_priority:
+      - "France Travail (gestion stress reconversion)"
+      - "PEC sabbatical"
+      - "Pôle Emploi formations"
+    questions_seed:
+      - "J'ai burn-out après 2 ans en cabinet, comment me reconvertir sans perdre mon CV ?"
+      - "Année sabbatique pour réorientation : conseils pratiques ?"
+      - "Métiers à fort sens et bon équilibre vie pro/perso pour profil bac+5 ?"
+      - "Cabinet de conseil m'a brisée, j'ai 24 ans, j'fais quoi ?"  # phrasing_humain
+      - "Reconversion impact / ESS pour profil consulting, salaire réaliste ?"
+
+  - id: C7
+    category: actif_jeune
+    axe_couvert: [2, 3]
+    persona: |
+      23 ans, doctorat 1ère ou 2e année arrêté (épuisement, financement
+      coupé, ras-le-bol).
+    context: |
+      Excellent niveau scientifique, mais doctorat ne va pas finir,
+      marché industrie attractif.
+    constraints:
+      region: variable
+      budget: bas_post-bourse_thèse
+      valeurs: application_concrète
+    tone: tutoiement_valorisant
+    sources_priority:
+      - "APEC (docteurs/chercheurs→industrie)"
+      - "DARES (parcours docteurs)"
+      - "forum L'Étudiant"
+      - "ABG (Association Bernard Grégory)"
+    questions_seed:
+      - "J'arrête mon doctorat, comment valoriser mes 2 ans de recherche en industrie ?"
+      - "Industrie pharma / cosmétique / agro : quelles entreprises recrutent les ex-doctorants ?"
+      - "Quelle est la différence salariale doctorat fini vs arrêté en début de carrière industrie ?"
+      - "ABG ça sert à quoi concrètement quand on est en thèse arrêtée ?"
+      - "Doctorat à moitié = stigmate ou expérience valorisable, vraiment ?"  # phrasing_humain
+
+  - id: C8
+    category: actif_jeune
+    axe_couvert: [2, 3]
+    persona: |
+      25 ans, BAC+5 obtenu à l'étranger (UK, US, Canada), retour France.
+    context: |
+      Diplôme étranger non automatiquement reconnu en France, démarches
+      complexes.
+    constraints:
+      region: idf_ou_grande_ville
+      budget: moderate
+      valeurs: carrière_continuité
+      urgence: job_dans_3_mois
+    tone: vouvoiement_structuré  # justifié : démarches administratives statutaires
+    sources_priority:
+      - "Campus France"
+      - "ENIC-NARIC (équivalences)"
+      - "APEC (recrutement profils internationaux)"
+      - "France Compétences (équivalences RNCP)"
+    questions_seed:
+      - "J'ai un master UK, comment je le fais reconnaître en France pour le marché du travail ?"
+      - "Mon profil international, quelles entreprises FR le valorisent vraiment ?"
+      - "Équivalence ENIC-NARIC vs validation par employeur, lequel est plus rapide ?"
+      - "Pourriez-vous m'expliquer la différence entre attestation comparabilité et reconnaissance formelle ?"
+      - "Combien de temps prend une demande ENIC-NARIC en moyenne en 2026 ?"
+
+  # ───────────────────────────────────────────────────────────────────
+  # D. Master + débouchés pro (8 prompts) — Axe 3
+  # ───────────────────────────────────────────────────────────────────
+
+  - id: D1
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      21-22 ans, fin L3 (lettres, sciences, éco, droit), choix master
+      imminent.
+    context: |
+      Master recherche vs master pro vs école spécialisée, vs alternance,
+      vs gap year.
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: long_terme_carrière
+      dispersion: trop_options
+    tone: tutoiement_méthodique
+    sources_priority:
+      - "Parcoursup (Mon Master)"
+      - "APEC"
+      - "DARES (master pro vs recherche insertion)"
+      - "école+alternance"
+    questions_seed:
+      - "L3 droit, master pro ou recherche, lequel paie plus à 5 ans ?"
+      - "Master en école privée (HEC, ESSEC) ou en université, vrai écart ROI ?"
+      - "Master en alternance vs initial, comment choisir avec mon profil ?"
+      - "Mon Master.fr ça marche vraiment ou c'est compliqué comme Parcoursup ?"
+      - "Gap year après L3 ou direct master, ça flingue mon dossier ?"  # phrasing_humain
+
+  - id: D2
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      22 ans, fin M1 école de commerce généraliste, choix M2
+      spécialisation.
+    context: |
+      Spé finance vs marketing vs RH vs entrepreneuriat, ou alors
+      mastère spé externe.
+    constraints:
+      region: idf_lyon
+      budget: élevé_école_payante
+      valeurs: carrière_top_tier
+      pression: promo_compétitive
+    tone: tutoiement_ambitieux
+    sources_priority:
+      - "APEC (master commerce spé→carrière)"
+      - "LinkedIn (alumni écoles)"
+      - "DARES (gains spécialisation)"
+      - "Top 5 mastères spé France"
+    questions_seed:
+      - "M1 commerce, je vise quelle spé pour le meilleur ROI à 5-10 ans ?"
+      - "Mastère spécialisé externe (HEC, ESSEC) après mon école : ça vaut le coup ?"
+      - "Finance vs entrepreneuriat à 5 ans : taux de succès et risques réels ?"
+      - "M1 finance, fintech vs banque traditionnelle pour la suite ?"  # phrasing_humain (Thomas)
+      - "Mastère spé HEC après ma propre école, c'est du double diplôme ?"
+
+  - id: D3
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      27 ans, BAC+5 secteur privé, veut reconversion fonction publique.
+    context: |
+      Lassé du privé (pression, mobilité), cherche stabilité publique,
+      hésite catégorie A vs B vs concours spécialisé.
+    constraints:
+      region: variable
+      budget: moderate
+      valeurs: stabilité_utilité_publique
+      marche: concours_2026_2027
+    tone: vouvoiement_pragmatique  # justifié : statutaire concours
+    sources_priority:
+      - "Place de l'Emploi Public"
+      - "Choisir le service public"
+      - "Fonction publique (catégorie A)"
+      - "CNFPT"
+      - "ENA/ENS PSL Saclay"
+      - "France Travail (intégration FP)"
+      - "DARES (FP vs privé carrière)"
+    questions_seed:
+      - "Avec mon bac+5, quels concours fonction publique sont les plus pertinents ?"
+      - "Catégorie A vs B : différences concrètes (salaire, missions, mobilité) ?"
+      - "Préparation concours : prépa privée, CNED, ou auto-formation ?"
+      - "Pourriez-vous comparer les concours d'inspecteur des finances et attaché territorial ?"
+      - "Place de l'Emploi Public est-il vraiment exhaustif sur les concours ouverts ?"
+
+  - id: D4
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      24 ans, école d'ingé sortie diplômée, hésite mastère spé pour
+      différenciation.
+    context: |
+      Mastère spécialisé (data science, finance, sustainability) après
+      école d'ingé classique : vrai gain ou marketing ?
+    constraints:
+      region: idf
+      budget: élevé_mastère_payant_12_25k
+      valeurs: carrière_dual_compétence
+    tone: tutoiement_critique
+    sources_priority:
+      - "APEC (gains mastère spé)"
+      - "CGE (Conférence Grandes Écoles)"
+      - "témoignages anciens"
+      - "classements indépendants"
+    questions_seed:
+      - "Mastère spé data science après école d'ingé, ROI réel sur 5 ans ?"
+      - "Quels sont les mastères spé qui valent vraiment leurs 15-25k€ ?"
+      - "Mastère spé en France vs MS étranger (UK, US) pour profil ingé ?"
+      - "MS data après école d'ingé, c'est juste un add-on marketing ou ça fait vraiment +10k€/an ?"  # phrasing_humain
+      - "CGE ça veut dire quoi exactement et c'est important pour les recruteurs ?"
+
+  - id: D5
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      23 ans, fin master 2 sciences/sciences sociales, choix doctorat ou
+      industrie direct.
+    context: |
+      Excellent dossier, tentation académique mais marché concours
+      universitaires bouché.
+    constraints:
+      region: variable
+      budget: à_financer_bourse_thèse
+      valeurs: passion_recherche_vs_pragmatisme
+    tone: tutoiement_analytique
+    sources_priority:
+      - "ABG (Bernard Grégory)"
+      - "CNRS (recrutement chercheurs)"
+      - "APEC (carrière docteurs)"
+      - "DARES (recrutements universités 2026)"
+    questions_seed:
+      - "Doctorat vs industrie direct, quel choix pour bon profil sciences ?"
+      - "Marché des concours universitaires en France 2026, vraiment bouché ?"
+      - "Doctorat industriel CIFRE, alternative concrète au doctorat académique ?"
+      - "CIFRE c'est quoi vraiment et c'est plus facile à décrocher qu'une bourse Région ?"
+      - "Si je fais 4 ans de thèse pour finir en industrie, j'ai pas perdu 4 ans en fait ?"  # phrasing_humain
+
+  - id: D6
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      22 ans, fin licence sciences-po IEP, choix master Sciences-Po
+      Paris vs école commerce M2.
+    context: |
+      Profil ambition publique mais hésite vers business + cosmopolite.
+    constraints:
+      region: idf
+      budget: très_élevé
+      valeurs: influence_société_vs_business
+      pression: réseau_à_construire
+    tone: tutoiement_stratégique
+    sources_priority:
+      - "APEC"
+      - "Sciences-Po Paris (carrières alumni)"
+      - "HEC/ESSEC/ESCP carrières alumni"
+      - "DARES (gain salarial à 10 ans)"
+    questions_seed:
+      - "Sciences-Po Paris master ou HEC/ESSEC : carrière + salaire à 10 ans ?"
+      - "Si je vise haute fonction publique, Sciences-Po est-il indispensable ?"
+      - "École commerce + Sciences-Po (en MS), réaliste à mon stade ?"
+      - "Sciences-Po vs HEC c'est encore le débat de mes parents, ça veut dire quoi en 2026 ?"  # phrasing_humain
+      - "Double diplôme Sciences-Po + HEC, c'est rare ou faisable ?"
+
+  - id: D7
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      25 ans, 3 ans pro post-école commerce, veut booster carrière via MBA.
+    context: |
+      MBA accélèrent réseau et salaire mais coût (60-130k€) et opportunité
+      (1-2 ans hors marché).
+    constraints:
+      region: idf_lyon_us_uk
+      budget: très_élevé_prêt_étudiant
+      valeurs: carrière_internationale
+    tone: vouvoiement_business  # justifié : statutaire corporate haut niveau
+    sources_priority:
+      - "APEC (MBA carrière)"
+      - "classements MBA (FT, QS)"
+      - "témoignages alumni MBA français"
+    questions_seed:
+      - "MBA à 25 ans, est-ce trop tôt pour un retour optimal ?"
+      - "INSEAD vs HEC vs Stanford à 25 ans : ROI estimé sur 10 ans ?"
+      - "Prêt étudiant 100k€ pour MBA, comment évaluer si ça vaut le coup pour mon profil ?"
+      - "Pourriez-vous m'éclairer sur les différences entre Executive MBA et MBA classique pour mon profil ?"
+      - "Le ranking FT 2026 vs QS 2026, lequel est vraiment fiable pour les MBA ?"
+
+  - id: D8
+    category: master_debouchés
+    axe_couvert: [3]
+    persona: |
+      30 ans, 5 ans pro, veut Bac+5 via VAE sans refaire école.
+    context: |
+      Marché demande Bac+5 pour postes seniors, pratique l'expérience
+      nécessite validation formelle.
+    constraints:
+      region: variable
+      budget: moderate_VAE_coût_modéré
+      urgence: promotion_à_5_ans
+      valeurs: reconnaissance_diplôme
+    tone: vouvoiement_structuré  # justifié : 30 ans + statutaire VAE
+    sources_priority:
+      - "France VAE"
+      - "France Compétences (RNCP)"
+      - "CNED"
+      - "France Travail (VAE accompagnement)"
+    questions_seed:
+      - "VAE master en RH, comment ça marche concrètement et combien de temps ?"
+      - "Coût + temps total VAE bac+5 pour profil expérimenté ?"
+      - "VAE est-elle vraiment reconnue par les recruteurs vs un master classique ?"
+      - "France VAE le portail unifié, je trouve compliqué — pouvez-vous m'expliquer le parcours type ?"
+      - "VAE en alternance avec un job CDI, c'est compatible ?"
+
+  # ───────────────────────────────────────────────────────────────────
+  # E. Cas familiaux/sociaux (8 prompts) — Transversal
+  # ───────────────────────────────────────────────────────────────────
+
+  - id: E1
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      Parent ~45 ans, premier enfant en terminale, méconnaissance Parcoursup.
+    context: |
+      Veut accompagner son enfant sans le pousser, hésite informer/éduquer/
+      rassurer.
+    constraints:
+      famille: parent_côté
+      budget: variable
+      valeurs: réussite_enfant_sans_pression
+      méconnaissance: filières_actuelles
+    tone: vouvoiement_attentionné  # justifié : profil parent 45 ans
+    sources_priority:
+      - "Parcoursup (parents)"
+      - "CIDJ (parents)"
+      - "ONISEP (parents)"
+    questions_seed:
+      - "Mon enfant fait Parcoursup, comment l'accompagner sans le stresser ?"
+      - "Quels sont les pièges classiques de Parcoursup que les parents doivent connaître ?"
+      - "Filière X au lycée → quelles voies post-bac envisager pour mon enfant ?"
+      - "Mon fils va sur Parcoursup, c'est moi qui panique plus que lui"  # phrasing_humain (Catherine)
+      - "Pourriez-vous m'expliquer simplement la différence entre les vœux et sous-vœux ?"
+
+  - id: E2
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      17 ans, lycée public, boursière échelon 7 maximum.
+    context: |
+      Très limitée géographiquement (proche domicile), budget zéro.
+    constraints:
+      region: proche_lycée
+      budget: très_bas
+      bourse: échelon_7
+      mobilite: transports_publics
+    tone: tutoiement_valorisant
+    sources_priority:
+      - "CROUS (bourses + logement)"
+      - "Pôle Emploi (formations financées)"
+      - "associations (École Z, Frateli, etc.)"
+      - "France Travail (apprentissage payé)"
+      - "1jeune1solution.gouv.fr"
+    questions_seed:
+      - "Boursière échelon 7, comment financer mes études supérieures sans bouger ?"
+      - "Apprentissage rémunéré post-bac, quelles aides cumulables ?"
+      - "Cumul bourse échelon 7 + APL : combien je peux toucher au total ?"
+      - "Pas un rond chez moi, j'fais comment vraiment pour étudier ?"  # phrasing_humain
+      - "Frateli ça marche pour qui exactement, j'suis éligible ?"
+
+  - id: E3
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      18-22 ans, handicap moteur (visible/non-visible).
+    context: |
+      Études sup envisageables mais besoin écoles accessibles +
+      accompagnement humain.
+    constraints:
+      handicap: moteur
+      region: variable
+      valeurs: autonomie_dignité
+      mobilite: transports_adaptés
+    tone: tutoiement_attentionné
+    sources_priority:
+      - "MonParcoursHandicap.gouv.fr"
+      - "ONISEP handicap"
+      - "AGEFIPH"
+      - "MDPH"
+      - "témoignages associations étudiants handicapés"
+    questions_seed:
+      - "Quelles écoles d'ingénieur sont vraiment accessibles aux étudiants en fauteuil ?"
+      - "Comment obtenir un assistant pédagogique en master ?"
+      - "Stage en entreprise avec mon handicap, comment trouver des entreprises ouvertes ?"
+      - "MonParcoursHandicap.gouv.fr, ça marche vraiment ou c'est juste une vitrine ?"
+      - "AGEFIPH pour un stagiaire, ça donne quoi concrètement ?"
+
+  - id: E4
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      17 ans, lycée Réunion / Antilles / Polynésie / Guyane / Mayotte.
+    context: |
+      Mobilité métropole pour études sup, choc culturel + financier potentiel.
+    constraints:
+      region: DOM-TOM_origine
+      budget: familial_modéré
+      mobilite: transition_vers_métropole
+      valeurs: retour_aux_sources_éventuel
+    tone: tutoiement_ouverture_culturelle
+    sources_priority:
+      - "Parcoursup (DOM-TOM aide mobilité)"
+      - "CROUS (logement métropole)"
+      - "France Travail (formations DOM-TOM)"
+      - "ONISEP (vie étudiante métropole)"
+    questions_seed:
+      - "Je suis à La Réunion en terminale, comment préparer mon arrivée à Paris ?"
+      - "Quelles aides spécifiques aux étudiants ultramarins en métropole ?"
+      - "Si je veux revenir aux Antilles plus tard, comment construire mon parcours ?"
+      - "Partir à Paris depuis La Réunion ça coûte combien en vrai par an ?"  # phrasing_humain
+      - "Aide mobilité Parcoursup DOM-TOM, c'est combien et comment l'obtenir ?"
+
+  - id: E5
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      18 ans, famille modeste province, prudence financière intuitive.
+    context: |
+      Conseille toujours BTS/BUT car "rapide et concret", famille craint
+      chômage avec longs études.
+    constraints:
+      region: province
+      budget: bas_familial
+      valeurs: emploi_stable_rapide
+      pression: famille_pragmatique
+    tone: tutoiement_équilibré
+    sources_priority:
+      - "DARES (insertion BTS/BUT)"
+      - "Parcoursup (parcours alternatives)"
+      - "témoignages anciens BTS/BUT vs licence générale"
+    questions_seed:
+      - "Ma famille me pousse BTS pour 'la sécurité', mais j'aimerais autre chose, comment décider ?"
+      - "BTS/BUT garantissent vraiment plus de sécurité ?"
+      - "Si je fais une licence puis master, le risque de chômage est-il vraiment plus élevé ?"
+      - "Mes parents veulent un BTS pour la sécurité mais j'ai envie de fac, j'fais comment ?"  # phrasing_humain
+      - "BTS vs licence à 5 ans, taux de chômage réel par filière ?"
+
+  - id: E6
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      19-23 ans, diplôme étranger (sub-saharien, Maghreb, Asie, Europe Est),
+      arrivée France.
+    context: |
+      Veut continuer études en France, équivalences complexes, démarches
+      administratives lourdes.
+    constraints:
+      pays_origine: variable
+      region: idf_ou_grande_ville
+      budget: bas
+      urgence: visa_étudiant
+    tone: vouvoiement_structuré  # justifié : démarches statutaires lourdes
+    sources_priority:
+      - "Campus France (équivalences pays origine)"
+      - "ENIC-NARIC"
+      - "CROUS (aides étudiants étrangers)"
+      - "DAEU (diplôme accès études universitaires)"
+    questions_seed:
+      - "J'ai un diplôme étranger, comment je le fais reconnaître pour entrer à la fac française ?"
+      - "Visa étudiant + études + travail à temps partiel, comment ça s'organise ?"
+      - "Quelles aides spécifiques aux étudiants étrangers (boursiers et non-boursiers) ?"
+      - "DAEU c'est quoi exactement et c'est pour qui ?"
+      - "Étranger non-francophone, quel niveau de français demande la fac française ?"
+
+  - id: E7
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      17 ans, terminale, conflit fort avec parent qui pousse vers droit/
+      médecine alors que passion arts.
+    context: |
+      Tension émotionnelle, peur de décevoir vs peur de regretter.
+    constraints:
+      region: variable
+      budget: moderate_parents_financent
+      valeurs: authenticité_vs_loyalité
+      émotion: angoisse_familiale
+    tone: tutoiement_soutenant
+    sources_priority:
+      - "ONISEP (filières arts)"
+      - "Beaux-Arts (concours, écoles)"
+      - "DARES (insertion arts)"
+      - "témoignages reconversion arts→stable"
+    questions_seed:
+      - "Mes parents me poussent vers le droit, mais je veux faire les Beaux-Arts, comment leur faire accepter ?"
+      - "Filières arts ont-elles vraiment des débouchés stables ?"
+      - "Si je fais arts, quelles voies hybrides existent pour rassurer mes parents ?"
+      - "Mon père veut médecine, ma mère droit, moi j'veux arts, comment j'survie à ça ?"  # phrasing_humain
+      - "Beaux-Arts ça mène quelque part de stable, ou c'est vraiment galère ?"
+
+  - id: E8
+    category: famille_social
+    axe_couvert: transversal
+    persona: |
+      18-22 ans, sportif niveau pro/semi-pro.
+    context: |
+      Peut-être sélectionné équipe nationale, gestion temps + concours
+      universitaires.
+    constraints:
+      region: proche_centre_entraînement
+      budget: modéré_sponsoring_partiel
+      valeurs: double_carrière
+      mobilite: contraintes_compétitions
+    tone: tutoiement_motivant
+    sources_priority:
+      - "INSEP (sport haut niveau études)"
+      - "Université Sportive Excellence"
+      - "AS-AOSI"
+      - "ONISEP (parcours sport-études)"
+    questions_seed:
+      - "Je suis en équipe de France junior, comment concilier études et entraînements ?"
+      - "Aménagements universitaires sport haut niveau, comment les obtenir ?"
+      - "Si ma carrière sportive ne décolle pas, quelles voies de reconversion via mes études ?"
+      - "INSEP c'est ouvert à qui exactement et c'est combien d'heures de sport par semaine ?"
+      - "Sport pro à 24 ans c'est presque cuit, j'fais quoi pour la suite vraiment ?"  # phrasing_humain
+
+  # ───────────────────────────────────────────────────────────────────
+  # F. Méta-questions conseil (6 prompts) — Transversal
+  # ───────────────────────────────────────────────────────────────────
+
+  - id: F1
+    category: meta_question
+    axe_couvert: transversal
+    persona: |
+      17-25 ans, conscient du marché, raisonneur économique.
+    context: |
+      Recherche profit + alignement intérêt, parfois en conflit.
+    constraints:
+      region: variable
+      valeurs: rentabilité_vs_passion
+      style: franc_du_collier
+    tone: tutoiement_équilibré
+    sources_priority:
+      - "APEC (salaires par métier)"
+      - "DARES (rémunérations sectorielles)"
+      - "France Travail (top métiers payés)"
+      - "LinkedIn Salary Insights"
+    questions_seed:
+      - "J'aime les sciences humaines mais je veux 4000€/mois à 30 ans, c'est conciliable ?"
+      - "Pour un profil littéraire, quels métiers paient le plus à 5 ans d'expérience ?"
+      - "Est-ce que la passion compte plus que l'argent à 25 ans ? Et après ?"
+      - "Tout l'monde dit suis ta passion, mais j'veux pas être pauvre, c'est compatible ?"  # phrasing_humain
+      - "4000€ net à 30 ans avec quelle voie c'est vraiment réaliste ?"
+
+  - id: F2
+    category: meta_question
+    axe_couvert: transversal
+    persona: |
+      17-22 ans, allergie cours magistraux abstraits.
+    context: |
+      Préfère apprendre par la pratique, terrain, application.
+    constraints:
+      region: variable
+      valeurs: concret_terrain
+      style: hands_on
+    tone: tutoiement_direct
+    sources_priority:
+      - "ONISEP (alternance, BUT, BTS)"
+      - "Parcoursup (formations terrain)"
+      - "France Travail (apprentissage)"
+      - "CFA"
+      - "alternance.emploi.gouv.fr"
+    questions_seed:
+      - "Je déteste les cours magistraux et la théorie, quelles formations sont 100% terrain ?"
+      - "L'apprentissage est-il vraiment plus concret que les études classiques ?"
+      - "Quelles études supérieures intègrent vraiment la pratique dès la 1ère année ?"
+      - "C'est quoi une licence universitaire en France ?"  # test_set_v3 Q4
+      - "Théorie en amphi 4 ans j'tiens pas, qu'est-ce qui existe d'autre vraiment ?"  # phrasing_humain
+
+  - id: F3
+    category: meta_question
+    axe_couvert: transversal
+    persona: |
+      18-22 ans, ambition financière forte, prêt à investir énergie.
+    context: |
+      Optimise pour le revenu de sortie, sans nécessairement passion
+      intrinsèque.
+    constraints:
+      region: idf_principalement
+      budget: à_investir
+      valeurs: performance_financière
+    tone: tutoiement_business
+    sources_priority:
+      - "APEC (top salaires sortie école)"
+      - "DARES (palmarès écoles par salaire)"
+      - "classements mondiaux écoles"
+    questions_seed:
+      - "Quelles études paient le mieux à la sortie en France en 2026 ?"
+      - "École de commerce vs ingé vs droit pour les hauts salaires : que choisir ?"
+      - "Top 10 des métiers les mieux payés à 25 ans en France actuellement ?"
+      - "Le mieux payé à 25 ans c'est quoi en France, sans BS marketing ?"  # phrasing_humain
+      - "HEC vs X vs Polytechnique en salaire à 5 ans, classement réel ?"
+
+  - id: F4
+    category: meta_question
+    axe_couvert: transversal
+    persona: |
+      18-25 ans, conscient du hype IA/data, sceptique.
+    context: |
+      Veut savoir si vraie carrière long terme ou bulle marketing.
+    constraints:
+      region: idf_lyon_principalement
+      budget: formation_à_évaluer
+      valeurs: lucidité_marché
+    tone: tutoiement_analytique
+    sources_priority:
+      - "APEC (data scientists insertion 2026)"
+      - "DARES (évolution emplois IA)"
+      - "articles tech (Stack Overflow, Hacker News)"
+      - "France Travail tendances métiers"
+    questions_seed:
+      - "Data scientist en 2026, vraie carrière ou bulle marketing ?"
+      - "IA / ML : quelles formations sont solides et quelles sont des arnaques ?"
+      - "Saturation prévue du marché data à 5 ans en France, c'est probable ?"
+      - "L'IA va remplacer les data scientists eux-mêmes, c'est un piège du coup ?"  # phrasing_humain
+      - "Bootcamp data 8k€ vs master data en école, ROI comparé honnêtement ?"
+
+  - id: F5
+    category: meta_question
+    axe_couvert: transversal
+    persona: |
+      17-22 ans, dilemma classique privé/public.
+    context: |
+      Privé coûte cher mais réseau + cadre, public moins cher mais
+      grand-anonymat.
+    constraints:
+      region: variable
+      budget: variable
+      valeurs: rapport_coût_qualité
+    tone: tutoiement_comparatif
+    sources_priority:
+      - "APEC (carrière privé vs public)"
+      - "DARES (taux insertion)"
+      - "classements indépendants (L'Étudiant, Le Monde)"
+      - "enquêtes alumni"
+    questions_seed:
+      - "École privée coûte 60k€, université publique presque rien, ça vaut vraiment la peine ?"
+      - "Réseau alumni école privée vs grande université publique : différence concrète à 5 ans ?"
+      - "Pour un profil moyen-supérieur, le privé apporte-t-il un vrai gain ?"
+      - "Privé à 60k€ c'est juste pour les riches, ou ça se rentabilise pour tout le monde ?"  # phrasing_humain
+      - "Public anonyme vs privé suivi, c'est aussi tranché que ça réellement ?"
+
+  - id: F6
+    category: meta_question
+    axe_couvert: transversal
+    persona: |
+      18-22 ans, fatigué des études, envie de respirer.
+    context: |
+      Gap year peut booster ou retarder, dépend du projet.
+    constraints:
+      region: variable
+      budget: à_financer_job_pays_aide
+      valeurs: expérience_humaine
+      pression: famille_inquiète
+    tone: tutoiement_équilibré
+    sources_priority:
+      - "Service Civique"
+      - "Erasmus+ stages"
+      - "WWOOF"
+      - "Parcoursup (césure)"
+      - "témoignages gap years réussis vs ratés"
+    questions_seed:
+      - "Gap year après le bac : freine ma carrière ou la booste vraiment ?"
+      - "Quelles options concrètes pour un gap year utile (Service Civique, voyage, stage) ?"
+      - "Comment expliquer un gap year aux recruteurs sans paraître flemmard ?"
+      - "Année sabbatique j'en peux plus, c'est mort pour Parcoursup ensuite ou pas ?"  # phrasing_humain
+      - "Service Civique c'est quoi exactement et ça paie combien ?"
+
+  # ───────────────────────────────────────────────────────────────────
+  # G. Profils non-cadre classique (3 prompts NOUVEAUX v2) — Transversal
+  # ───────────────────────────────────────────────────────────────────
+
+  - id: G1
+    category: profil_non_cadre
+    axe_couvert: transversal
+    persona: |
+      16-18 ans, sorti du système scolaire sans diplôme, perdu, souvent
+      en rupture familiale ou sociale.
+    context: |
+      Pas de diplôme, parfois domicile instable. Cherche un cadre qui
+      réintègre (Missions Locales, École de la 2e Chance, Service
+      Militaire Volontaire) avec accompagnement humain fort.
+    constraints:
+      age: 16_18
+      diplôme: aucun
+      émotion: rupture_perte_repères
+      urgence: réintégration
+      mobilite: limitée_souvent
+    tone: tutoiement_soutien_direct  # pas paternaliste
+    sources_priority:
+      - "Missions Locales (réseau national)"
+      - "reseau-e2c.fr (École de la 2e Chance)"
+      - "SMV (Service Militaire Volontaire)"
+      - "1jeune1solution.gouv.fr"
+      - "France Travail (Garantie Jeunes / Contrat d'Engagement Jeune)"
+    questions_seed:
+      - "J'ai arrêté l'école à 16 ans, qu'est-ce que je peux faire maintenant ?"
+      - "Mission Locale, E2C, SMV : c'est quoi la différence concrètement ?"
+      - "Sans diplôme, comment je peux gagner ma vie en repartant ?"
+      - "J'sais pas où aller, tout le monde dit que je suis foutu"  # phrasing_humain (Léo-style brut)
+      - "Le Service Militaire Volontaire, ça paie vraiment et ça donne quoi à la fin ?"
+      - "Contrat d'Engagement Jeune ça remplace la Garantie Jeune ou c'est différent ?"
+
+  - id: G2
+    category: profil_non_cadre
+    axe_couvert: transversal
+    persona: |
+      17-25 ans, capacités intellectuelles solides MAIS DYS (dyslexie,
+      dysorthographie, dyscalculie) ou TDAH.
+    context: |
+      Craint le système universitaire classique (amphis bondés bruyants,
+      évaluations écrites longues, prise de notes rapide). Cherche écoles
+      à fort accompagnement, contrôle continu, ou pédagogie alternative.
+    constraints:
+      neuroatypie: dys_ou_tdah
+      age: 17_25
+      valeurs: accompagnement_humain
+      craintes: amphis_bondés_évaluations_chronométrées
+    tone: tutoiement_déculpabilisant  # les neuroatypiques entendent souvent qu'ils "ne s'appliquent pas"
+    sources_priority:
+      - "MonParcoursHandicap.gouv.fr (RQTH étudiant + aménagements)"
+      - "MDPH (tiers temps + secrétariat)"
+      - "ONISEP (formations adaptées)"
+      - "Fédération Française des DYS"
+      - "associations (HyperSupers TDAH France, Apedys)"
+      - "écoles pédagogie active (Steiner-Waldorf supérieur, Mons en Bareul)"
+    questions_seed:
+      - "Je suis TDAH, comment survivre à la fac sans me cramer ?"
+      - "Dyslexique, quels aménagements je peux demander en école d'ingé ?"
+      - "Quelles formations sup ont vraiment un suivi adapté pour DYS / TDAH ?"
+      - "Tiers temps aux examens, c'est automatique ou faut le demander où ?"
+      - "J'ai un cerveau qui marche pas comme les autres, tout le monde me dit de m'appliquer mais ça suffit pas"  # phrasing_humain (brut)
+      - "MDPH RQTH étudiant, démarches concrètes et délais réels en 2026 ?"
+
+  - id: G3
+    category: profil_non_cadre
+    axe_couvert: transversal
+    persona: |
+      17 ans, lycée rural département isolé (Creuse, Lozère, Cantal,
+      Ariège, Aveyron, etc.), grande exploitation agricole familiale ou
+      village 500 habitants.
+    context: |
+      Auto-censure forte ("les grandes écoles c'est pour Paris, pas
+      pour moi"), transport (pas de permis, pas de gare proche), logement
+      métropole inconnu. Souvent 1ère génération étudiante de la famille.
+    constraints:
+      region: rural_isolé
+      transport: pas_permis
+      budget: bas
+      auto_censure: fort
+      premiere_generation_etudiante: probable
+    tone: tutoiement_valorisant_explicitement  # anti auto-censure
+    sources_priority:
+      - "1jeune1solution.gouv.fr (mobilité rurale)"
+      - "CROUS (logement métropole)"
+      - "Cordées de la Réussite"
+      - "Frateli"
+      - "Article 1"
+      - "Parcoursup (filières rurales/agricoles)"
+      - "ONISEP (témoignages 1ère génération étudiante)"
+      - "France Travail (aides mobilité rurale → métropole)"
+    questions_seed:
+      - "Je suis dans un village de 500 habitants, comment je fais pour étudier à Paris ou Toulouse ?"
+      - "Mes parents ont une ferme, est-ce que je dois reprendre l'exploitation ou partir étudier ?"
+      - "Sciences-Po Paris pour quelqu'un de rural, c'est vraiment possible ?"
+      - "Comment payer le permis ET le logement étudiant, c'est trop cher en cumul"
+      - "Personne dans ma famille n'a fait d'études, j'ai peur de pas y arriver à la fac"  # phrasing_humain (brut)
+      - "Quelles bonnes formations existent à Perpignan ?"  # test_set_v3 Q6
