@@ -347,13 +347,177 @@
     "text": "Financement — Aides au logement (APL, ALF, ALS) — étudiants | Organisme : CAF | Public cible : Étudiants locataires d'un logement éligible (résidence universitaire, parc privé, foyer) | Concerne : formation initiale (lycée, post-bac jusqu'au diplôme), formation continue (salariés, agents publics, indépendants) | Montant : Variable selon ressources étudiant, loyer, zone géographique. Simulateur disponible sur caf.fr | Conditions principales : Logement décent et conventionné (pour APL) ; Étudiant avec ressources sous plafond (déclaration annuelle) | Demande : caf.fr (compte personnel) | À noter : Cumulables avec bourse CROUS sur critères sociaux | Source officielle (montant exact année en cours) : https://www.caf.fr/allocataires/aides-et-demarches/conditions-d-attribution/logement"
   },
   {
+    "id": "financement_dispositif:atlas",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "atlas",
+    "nom": "Atlas — OPCO services financiers, conseil, assurance",
+    "organisme": "Atlas",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.opco-atlas.fr/",
+    "text": "Financement — Atlas — OPCO services financiers, conseil, assurance | Organisme : Atlas | Public cible : Salariés des branches : banque, assurance, expertise comptable, conseil, immobilier, recouvrement de créances | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Couvre ~640 000 salariés. Plan développement compétences employeur, alternance (apprentissage + contrat pro), Pro-A, CPF abondement | Source officielle (montant exact année en cours) : https://www.opco-atlas.fr/"
+  },
+  {
+    "id": "financement_dispositif:opco_2i",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "opco_2i",
+    "nom": "OPCO 2i — interindustriel (industries technologiques, métallurgie)",
+    "organisme": "OPCO 2i",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.opco2i.fr/",
+    "text": "Financement — OPCO 2i — interindustriel (industries technologiques, métallurgie) | Organisme : OPCO 2i | Public cible : Salariés des branches industries (métallurgie, plasturgie, chimie, pétrole, textile, papier-carton, intersecteurs) | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Couvre ~3 millions de salariés. Industrie 4.0, transition écologique, alternance forte (60% des contrats) | Source officielle (montant exact année en cours) : https://www.opco2i.fr/"
+  },
+  {
+    "id": "financement_dispositif:opco_mobilites",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "opco_mobilites",
+    "nom": "OPCO Mobilités — transports, logistique, automobile",
+    "organisme": "OPCO Mobilités",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.opcomobilites.fr/",
+    "text": "Financement — OPCO Mobilités — transports, logistique, automobile | Organisme : OPCO Mobilités | Public cible : Salariés des branches : transport routier, ferroviaire, aérien, maritime, fluvial, logistique, distribution automobile, services auto, écoles de conduite | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Couvre ~700 000 salariés. Verdissement flotte, électromobilité, formations sécurité (FCO transport) | Source officielle (montant exact année en cours) : https://www.opcomobilites.fr/"
+  },
+  {
+    "id": "financement_dispositif:opco_ep",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "opco_ep",
+    "nom": "OPCO EP — entreprises de proximité (artisanat, commerce, services)",
+    "organisme": "OPCO EP",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.opcoep.fr/",
+    "text": "Financement — OPCO EP — entreprises de proximité (artisanat, commerce, services) | Organisme : OPCO EP | Public cible : Salariés des branches : pharmacies d'officine, optique-lunetterie, audioprothèse, cabinets dentaires, médicaux, vétérinaires, fleuristes, sport, esthétique, instituts de beauté | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Couvre ~2 millions de salariés sur 50+ branches. CPF + alternance + formation continue | Source officielle (montant exact année en cours) : https://www.opcoep.fr/"
+  },
+  {
+    "id": "financement_dispositif:ocapiat",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "ocapiat",
+    "nom": "OCAPIAT — OPCO agriculture, agroalimentaire, pêche, territoires",
+    "organisme": "OCAPIAT",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.ocapiat.fr/",
+    "text": "Financement — OCAPIAT — OPCO agriculture, agroalimentaire, pêche, territoires | Organisme : OCAPIAT | Public cible : Salariés des branches : agriculture (production, services), agroalimentaire (industries laitières, viandes, vins), pêche, territoires ruraux | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Couvre ~1,2 million de salariés. Transitions agricoles, bio, transformation alimentaire | Source officielle (montant exact année en cours) : https://www.ocapiat.fr/"
+  },
+  {
+    "id": "financement_dispositif:uniformation",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "uniformation",
+    "nom": "Uniformation — OPCO Cohésion sociale (santé social privé)",
+    "organisme": "Uniformation",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.uniformation.fr/",
+    "text": "Financement — Uniformation — OPCO Cohésion sociale (santé social privé) | Organisme : Uniformation | Public cible : Salariés des branches : santé privée, médico-social, aide à domicile, mutualité, sport, animation, enseignement privé non-lucratif, personnels administratifs école | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Couvre ~1,8 million de salariés. Aide à domicile, AESH, formation aux métiers de l'autonomie | Source officielle (montant exact année en cours) : https://www.uniformation.fr/"
+  },
+  {
+    "id": "financement_dispositif:opco_sante",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "opco_sante",
+    "nom": "OPCO Santé — sanitaire, social, médico-social non-lucratif et privé à but non lucratif",
+    "organisme": "OPCO Santé",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.opco-sante.fr/",
+    "text": "Financement — OPCO Santé — sanitaire, social, médico-social non-lucratif et privé à but non lucratif | Organisme : OPCO Santé | Public cible : Salariés des branches sanitaire et sociale du secteur privé non lucratif (hôpitaux privés à but non lucratif, MAS, FAM, maisons de retraite, etc.) | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Couvre ~600 000 salariés. Métiers en tension : aides-soignant·es, infirmier·es, AS, ESF | Source officielle (montant exact année en cours) : https://www.opco-sante.fr/"
+  },
+  {
+    "id": "financement_dispositif:afpa",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "afpa",
+    "nom": "AFPA — Agence pour la Formation Professionnelle des Adultes",
+    "organisme": "AFPA",
+    "voies": [
+      "continue",
+      "reconversion"
+    ],
+    "source_officielle": "https://www.afpa.fr/",
+    "text": "Financement — AFPA — Agence pour la Formation Professionnelle des Adultes | Organisme : AFPA | Public cible : Demandeurs d'emploi, salariés en reconversion, jeunes en insertion (16-25 ans) | Concerne : formation continue (salariés, agents publics, indépendants), reconversion professionnelle (changement de métier) | À noter : Catalogue 200+ formations qualifiantes (titres pros niveau 3-5), centres en région, financements publics multiples (Pôle Emploi, conseils régionaux, OPCO). Formation rémunérée pour demandeurs d'emploi | Source officielle (montant exact année en cours) : https://www.afpa.fr/"
+  },
+  {
+    "id": "financement_dispositif:bourse_region_jeunes",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "bourse_region_jeunes",
+    "nom": "Bourses régionales pour les jeunes",
+    "organisme": "Conseils Régionaux (13 régions métropole + DROM)",
+    "voies": [
+      "initial",
+      "continue"
+    ],
+    "source_officielle": "https://www.aides-jeunes.fr/",
+    "text": "Financement — Bourses régionales pour les jeunes | Organisme : Conseils Régionaux (13 régions métropole + DROM) | Public cible : Étudiants/apprentis selon dispositifs régionaux variables | Concerne : formation initiale (lycée, post-bac jusqu'au diplôme), formation continue (salariés, agents publics, indépendants) | Montant : Variable selon région : ex Île-de-France (eAides 30-300€/an, Aide Mobilité Internationale 1000-2000€), Auvergne-Rhône-Alpes (Pass Étudiant), Hauts-de-France (Génération Hauts-de-France 200-1200€), Nouvelle-Aquitaine (NéoTrek 200-500€). Vérifier le portail aides-jeunes.fr ou site région d'origine. | À noter : 13 régions ont chacune leurs dispositifs : aides à la mobilité, aux livres, à l'achat informatique, à l'engagement (service civique régional), aux stages internationaux | Source officielle (montant exact année en cours) : https://www.aides-jeunes.fr/"
+  },
+  {
+    "id": "financement_dispositif:fonjep_jeunes_engagement",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "fonjep_jeunes_engagement",
+    "nom": "FONJEP — Fonds de coopération de la jeunesse et de l'éducation populaire",
+    "organisme": "FONJEP",
+    "voies": [
+      "initial",
+      "continue"
+    ],
+    "source_officielle": "https://www.fonjep.org/",
+    "text": "Financement — FONJEP — Fonds de coopération de la jeunesse et de l'éducation populaire | Organisme : FONJEP | Public cible : Jeunes 16-30 ans engagés dans associations d'éducation populaire, missions de jeunesse | Concerne : formation initiale (lycée, post-bac jusqu'au diplôme), formation continue (salariés, agents publics, indépendants) | À noter : Cofinance des postes salariés en associations jeunesse + dispositifs jeunesse (~7 000 postes en France) | Source officielle (montant exact année en cours) : https://www.fonjep.org/"
+  },
+  {
+    "id": "financement_dispositif:service_civique_indemnite",
+    "domain": "financement_etudes",
+    "source": "financement_dispositifs_curated",
+    "granularity": "dispositif",
+    "dispositif_id": "service_civique_indemnite",
+    "nom": "Service Civique — indemnité",
+    "organisme": "Agence du Service Civique",
+    "voies": [
+      "continue"
+    ],
+    "source_officielle": "https://www.service-civique.gouv.fr/",
+    "text": "Financement — Service Civique — indemnité | Organisme : Agence du Service Civique | Public cible : Jeunes 16-25 ans (jusqu'à 30 ans pour personnes en situation de handicap), missions d'intérêt général 6-12 mois | Concerne : formation continue (salariés, agents publics, indépendants) | Montants mensuels approximatifs : Cumulable avec bourse CROUS si étudiant·e | Conditions principales : 16-25 ans (30 ans handicap) ; Mission 24-48h/semaine sur 6-12 mois ; Pas besoin de diplôme spécifique | Source officielle (montant exact année en cours) : https://www.service-civique.gouv.fr/"
+  },
+  {
     "id": "financement_voie:continue",
     "domain": "financement_etudes",
     "source": "financement_dispositifs_curated",
     "granularity": "voie",
     "voie": "continue",
     "voie_label": "formation continue (salariés, agents publics, indépendants)",
-    "n_dispositifs": 10,
+    "n_dispositifs": 21,
     "dispositifs_ids": [
       "cpf",
       "cej",
@@ -364,9 +528,20 @@
       "constructys",
       "akto",
       "visale",
-      "apl_etudiant"
+      "apl_etudiant",
+      "atlas",
+      "opco_2i",
+      "opco_mobilites",
+      "opco_ep",
+      "ocapiat",
+      "uniformation",
+      "opco_sante",
+      "afpa",
+      "bourse_region_jeunes",
+      "fonjep_jeunes_engagement",
+      "service_civique_indemnite"
     ],
-    "text": "Dispositifs de financement pour formation continue (salariés, agents publics, indépendants) | 10 dispositifs principaux disponibles | Liste : Compte Personnel de Formation (CPF) (Caisse des Dépôts (gestion) / Ministère du Travail (cadre)) ; Contrat d'engagement jeune (CEJ) (Mission Locale ou France Travail (Pôle Emploi)) ; Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi (France Travail (Pôle Emploi)) ; Aide à la garde d'enfants pour parent isolé (AGEPI) (France Travail (Pôle Emploi)) ; Validation des acquis de l'expérience (VAE) (Ministère du Travail / France VAE (portail unique)) ; AFDAS (AFDAS) ; Constructys (Constructys) ; Akto (Akto) ; Visale (Action Logement) ; Aides au logement (APL, ALF, ALS) (CAF) | Pour le détail montant, conditions et démarches de chaque dispositif, voir la source officielle correspondante."
+    "text": "Dispositifs de financement pour formation continue (salariés, agents publics, indépendants) | 21 dispositifs principaux disponibles | Liste : Compte Personnel de Formation (CPF) (Caisse des Dépôts (gestion) / Ministère du Travail (cadre)) ; Contrat d'engagement jeune (CEJ) (Mission Locale ou France Travail (Pôle Emploi)) ; Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi (France Travail (Pôle Emploi)) ; Aide à la garde d'enfants pour parent isolé (AGEPI) (France Travail (Pôle Emploi)) ; Validation des acquis de l'expérience (VAE) (Ministère du Travail / France VAE (portail unique)) ; AFDAS (AFDAS) ; Constructys (Constructys) ; Akto (Akto) ; Visale (Action Logement) ; Aides au logement (APL, ALF, ALS) (CAF) ; Atlas (Atlas) ; OPCO 2i (OPCO 2i) ; OPCO Mobilités (OPCO Mobilités) ; OPCO EP (OPCO EP) ; OCAPIAT (OCAPIAT) ; Uniformation (Uniformation) ; OPCO Santé (OPCO Santé) ; AFPA (AFPA) ; Bourses régionales pour les jeunes (Conseils Régionaux (13 régions métropole + DROM)) ; FONJEP (FONJEP) ; Service Civique (Agence du Service Civique) | Pour le détail montant, conditions et démarches de chaque dispositif, voir la source officielle correspondante."
   },
   {
     "id": "financement_voie:handicap",
@@ -389,7 +564,7 @@
     "granularity": "voie",
     "voie": "initial",
     "voie_label": "formation initiale (lycée, post-bac jusqu'au diplôme)",
-    "n_dispositifs": 11,
+    "n_dispositifs": 13,
     "dispositifs_ids": [
       "bourse_crous_sup",
       "aide_mobilite_master",
@@ -401,9 +576,11 @@
       "aide_mobilite_parcoursup",
       "aide_premiere_installation",
       "visale",
-      "apl_etudiant"
+      "apl_etudiant",
+      "bourse_region_jeunes",
+      "fonjep_jeunes_engagement"
     ],
-    "text": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 11 dispositifs principaux disponibles | Liste : Bourse sur critères sociaux CROUS (CROUS) ; Aide à la mobilité Master (Ministère de l'Enseignement supérieur) ; Aide à la mobilité internationale (CROUS / Erasmus+) (CROUS + Union Européenne (Erasmus+)) ; Bourse de lycée (collégiens et lycéens) (Ministère de l'Éducation Nationale) ; Prime d'équipement bac pro / CAP (Ministère de l'Éducation Nationale) ; Aide au permis B pour apprentis (État (via le Centre de Formation d'Apprentis)) ; Prime à la naissance / PreParE pour étudiants parents (CAF) ; Aide à la mobilité Parcoursup (changement académie après bac) (Ministère de l'Enseignement supérieur) ; Aide à la première installation (CROUS) (CROUS) ; Visale (Action Logement) ; Aides au logement (APL, ALF, ALS) (CAF) | Pour le détail montant, conditions et démarches de chaque dispositif, voir la source officielle correspondante."
+    "text": "Dispositifs de financement pour formation initiale (lycée, post-bac jusqu'au diplôme) | 13 dispositifs principaux disponibles | Liste : Bourse sur critères sociaux CROUS (CROUS) ; Aide à la mobilité Master (Ministère de l'Enseignement supérieur) ; Aide à la mobilité internationale (CROUS / Erasmus+) (CROUS + Union Européenne (Erasmus+)) ; Bourse de lycée (collégiens et lycéens) (Ministère de l'Éducation Nationale) ; Prime d'équipement bac pro / CAP (Ministère de l'Éducation Nationale) ; Aide au permis B pour apprentis (État (via le Centre de Formation d'Apprentis)) ; Prime à la naissance / PreParE pour étudiants parents (CAF) ; Aide à la mobilité Parcoursup (changement académie après bac) (Ministère de l'Enseignement supérieur) ; Aide à la première installation (CROUS) (CROUS) ; Visale (Action Logement) ; Aides au logement (APL, ALF, ALS) (CAF) ; Bourses régionales pour les jeunes (Conseils Régionaux (13 régions métropole + DROM)) ; FONJEP (FONJEP) | Pour le détail montant, conditions et démarches de chaque dispositif, voir la source officielle correspondante."
   },
   {
     "id": "financement_voie:reconversion",
@@ -412,7 +589,7 @@
     "granularity": "voie",
     "voie": "reconversion",
     "voie_label": "reconversion professionnelle (changement de métier)",
-    "n_dispositifs": 12,
+    "n_dispositifs": 20,
     "dispositifs_ids": [
       "cpf",
       "cej",
@@ -425,8 +602,16 @@
       "constructys",
       "akto",
       "agefiph",
-      "rsa_jeune"
+      "rsa_jeune",
+      "atlas",
+      "opco_2i",
+      "opco_mobilites",
+      "opco_ep",
+      "ocapiat",
+      "uniformation",
+      "opco_sante",
+      "afpa"
     ],
-    "text": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 12 dispositifs principaux disponibles | Liste : Compte Personnel de Formation (CPF) (Caisse des Dépôts (gestion) / Ministère du Travail (cadre)) ; Contrat d'engagement jeune (CEJ) (Mission Locale ou France Travail (Pôle Emploi)) ; Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi (France Travail (Pôle Emploi)) ; Aide à la garde d'enfants pour parent isolé (AGEPI) (France Travail (Pôle Emploi)) ; Projet de transition professionnelle (PTP) (Transitions Pro (associations régionales paritaires)) ; Validation des acquis de l'expérience (VAE) (Ministère du Travail / France VAE (portail unique)) ; Pro-A (reconversion ou promotion par alternance) (OPCO (Opérateurs de compétences)) ; AFDAS (AFDAS) ; Constructys (Constructys) ; Akto (Akto) ; AGEFIPH (AGEFIPH (Association de gestion du fonds pour l'insertion professionnelle des personnes handicapées)) ; Revenu de solidarité active (RSA) jeunes 18-24 ans (CAF (Caisse d'Allocations Familiales)) | Pour le détail montant, conditions et démarches de chaque dispositif, voir la source officielle correspondante."
+    "text": "Dispositifs de financement pour reconversion professionnelle (changement de métier) | 20 dispositifs principaux disponibles | Liste : Compte Personnel de Formation (CPF) (Caisse des Dépôts (gestion) / Ministère du Travail (cadre)) ; Contrat d'engagement jeune (CEJ) (Mission Locale ou France Travail (Pôle Emploi)) ; Aide au retour à l'emploi formation (AREF) / Allocation formation Pôle Emploi (France Travail (Pôle Emploi)) ; Aide à la garde d'enfants pour parent isolé (AGEPI) (France Travail (Pôle Emploi)) ; Projet de transition professionnelle (PTP) (Transitions Pro (associations régionales paritaires)) ; Validation des acquis de l'expérience (VAE) (Ministère du Travail / France VAE (portail unique)) ; Pro-A (reconversion ou promotion par alternance) (OPCO (Opérateurs de compétences)) ; AFDAS (AFDAS) ; Constructys (Constructys) ; Akto (Akto) ; AGEFIPH (AGEFIPH (Association de gestion du fonds pour l'insertion professionnelle des personnes handicapées)) ; Revenu de solidarité active (RSA) jeunes 18-24 ans (CAF (Caisse d'Allocations Familiales)) ; Atlas (Atlas) ; OPCO 2i (OPCO 2i) ; OPCO Mobilités (OPCO Mobilités) ; OPCO EP (OPCO EP) ; OCAPIAT (OCAPIAT) ; Uniformation (Uniformation) ; OPCO Santé (OPCO Santé) ; AFPA (AFPA) | Pour le détail montant, conditions et démarches de chaque dispositif, voir la source officielle correspondante."
   }
 ]

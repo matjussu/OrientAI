@@ -328,6 +328,111 @@
       "demande": "caf.fr (compte personnel)",
       "source_officielle": "https://www.caf.fr/allocataires/aides-et-demarches/conditions-d-attribution/logement",
       "specificite": "Cumulables avec bourse CROUS sur critères sociaux"
+    },
+    {
+      "id": "atlas",
+      "nom": "Atlas — OPCO services financiers, conseil, assurance",
+      "organisme": "Atlas",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Salariés des branches : banque, assurance, expertise comptable, conseil, immobilier, recouvrement de créances",
+      "source_officielle": "https://www.opco-atlas.fr/",
+      "specificite": "Couvre ~640 000 salariés. Plan développement compétences employeur, alternance (apprentissage + contrat pro), Pro-A, CPF abondement"
+    },
+    {
+      "id": "opco_2i",
+      "nom": "OPCO 2i — interindustriel (industries technologiques, métallurgie)",
+      "organisme": "OPCO 2i",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Salariés des branches industries (métallurgie, plasturgie, chimie, pétrole, textile, papier-carton, intersecteurs)",
+      "source_officielle": "https://www.opco2i.fr/",
+      "specificite": "Couvre ~3 millions de salariés. Industrie 4.0, transition écologique, alternance forte (60% des contrats)"
+    },
+    {
+      "id": "opco_mobilites",
+      "nom": "OPCO Mobilités — transports, logistique, automobile",
+      "organisme": "OPCO Mobilités",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Salariés des branches : transport routier, ferroviaire, aérien, maritime, fluvial, logistique, distribution automobile, services auto, écoles de conduite",
+      "source_officielle": "https://www.opcomobilites.fr/",
+      "specificite": "Couvre ~700 000 salariés. Verdissement flotte, électromobilité, formations sécurité (FCO transport)"
+    },
+    {
+      "id": "opco_ep",
+      "nom": "OPCO EP — entreprises de proximité (artisanat, commerce, services)",
+      "organisme": "OPCO EP",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Salariés des branches : pharmacies d'officine, optique-lunetterie, audioprothèse, cabinets dentaires, médicaux, vétérinaires, fleuristes, sport, esthétique, instituts de beauté",
+      "source_officielle": "https://www.opcoep.fr/",
+      "specificite": "Couvre ~2 millions de salariés sur 50+ branches. CPF + alternance + formation continue"
+    },
+    {
+      "id": "ocapiat",
+      "nom": "OCAPIAT — OPCO agriculture, agroalimentaire, pêche, territoires",
+      "organisme": "OCAPIAT",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Salariés des branches : agriculture (production, services), agroalimentaire (industries laitières, viandes, vins), pêche, territoires ruraux",
+      "source_officielle": "https://www.ocapiat.fr/",
+      "specificite": "Couvre ~1,2 million de salariés. Transitions agricoles, bio, transformation alimentaire"
+    },
+    {
+      "id": "uniformation",
+      "nom": "Uniformation — OPCO Cohésion sociale (santé social privé)",
+      "organisme": "Uniformation",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Salariés des branches : santé privée, médico-social, aide à domicile, mutualité, sport, animation, enseignement privé non-lucratif, personnels administratifs école",
+      "source_officielle": "https://www.uniformation.fr/",
+      "specificite": "Couvre ~1,8 million de salariés. Aide à domicile, AESH, formation aux métiers de l'autonomie"
+    },
+    {
+      "id": "opco_sante",
+      "nom": "OPCO Santé — sanitaire, social, médico-social non-lucratif et privé à but non lucratif",
+      "organisme": "OPCO Santé",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Salariés des branches sanitaire et sociale du secteur privé non lucratif (hôpitaux privés à but non lucratif, MAS, FAM, maisons de retraite, etc.)",
+      "source_officielle": "https://www.opco-sante.fr/",
+      "specificite": "Couvre ~600 000 salariés. Métiers en tension : aides-soignant·es, infirmier·es, AS, ESF"
+    },
+    {
+      "id": "afpa",
+      "nom": "AFPA — Agence pour la Formation Professionnelle des Adultes",
+      "organisme": "AFPA",
+      "voies": ["continue", "reconversion"],
+      "public_cible": "Demandeurs d'emploi, salariés en reconversion, jeunes en insertion (16-25 ans)",
+      "source_officielle": "https://www.afpa.fr/",
+      "specificite": "Catalogue 200+ formations qualifiantes (titres pros niveau 3-5), centres en région, financements publics multiples (Pôle Emploi, conseils régionaux, OPCO). Formation rémunérée pour demandeurs d'emploi"
+    },
+    {
+      "id": "bourse_region_jeunes",
+      "nom": "Bourses régionales pour les jeunes",
+      "organisme": "Conseils Régionaux (13 régions métropole + DROM)",
+      "voies": ["initial", "continue"],
+      "public_cible": "Étudiants/apprentis selon dispositifs régionaux variables",
+      "montants_approximatifs": "Variable selon région : ex Île-de-France (eAides 30-300€/an, Aide Mobilité Internationale 1000-2000€), Auvergne-Rhône-Alpes (Pass Étudiant), Hauts-de-France (Génération Hauts-de-France 200-1200€), Nouvelle-Aquitaine (NéoTrek 200-500€). Vérifier le portail aides-jeunes.fr ou site région d'origine.",
+      "source_officielle": "https://www.aides-jeunes.fr/",
+      "specificite": "13 régions ont chacune leurs dispositifs : aides à la mobilité, aux livres, à l'achat informatique, à l'engagement (service civique régional), aux stages internationaux"
+    },
+    {
+      "id": "fonjep_jeunes_engagement",
+      "nom": "FONJEP — Fonds de coopération de la jeunesse et de l'éducation populaire",
+      "organisme": "FONJEP",
+      "voies": ["initial", "continue"],
+      "public_cible": "Jeunes 16-30 ans engagés dans associations d'éducation populaire, missions de jeunesse",
+      "specificite": "Cofinance des postes salariés en associations jeunesse + dispositifs jeunesse (~7 000 postes en France)",
+      "source_officielle": "https://www.fonjep.org/"
+    },
+    {
+      "id": "service_civique_indemnite",
+      "nom": "Service Civique — indemnité",
+      "organisme": "Agence du Service Civique",
+      "voies": ["continue"],
+      "public_cible": "Jeunes 16-25 ans (jusqu'à 30 ans pour personnes en situation de handicap), missions d'intérêt général 6-12 mois",
+      "montants_approximatifs_eur_mois": {"indemnite": 619, "annee": "2024", "note": "Cumulable avec bourse CROUS si étudiant·e"},
+      "conditions_cles": [
+        "16-25 ans (30 ans handicap)",
+        "Mission 24-48h/semaine sur 6-12 mois",
+        "Pas besoin de diplôme spécifique"
+      ],
+      "source_officielle": "https://www.service-civique.gouv.fr/"
     }
   ]
 }
