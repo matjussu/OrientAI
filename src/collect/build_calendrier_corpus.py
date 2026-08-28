@@ -78,9 +78,26 @@ from typing import Any
 OUT_PATH = Path("data/processed/calendrier_corpus.json")
 PARCOURSUP_URL = "https://www.parcoursup.fr/index.php?desc=calendrier"
 MONMASTER_URL = "https://information.monmaster.gouv.fr/calendrier/"
+DSE_URL = "https://www.etudiant.gouv.fr/fr/bourse-et-logement-constituez-votre-dossier-social-etudiant-dse-409"
+DSE_LOGEMENT_URL = "https://trouverunlogement.lescrous.fr/"
+DSE_PLATEFORME_URL = "https://messervices.etudiant.gouv.fr/"
 PARCOURSUP_OFFICIAL_RELEASE = "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
 MONMASTER_OFFICIAL_RELEASE = "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
+DSE_OFFICIAL_RELEASE = "https://www.lescrous.fr/dse/"
 LAST_UPDATED = "2026-05-08"
+
+
+_PLATFORM_DEFAULT_URLS: dict[str, str] = {
+    "Parcoursup": PARCOURSUP_URL,
+    "MonMaster": MONMASTER_URL,
+    "DSE": DSE_URL,
+}
+
+_PLATFORM_OFFICIAL_RELEASES: dict[str, str] = {
+    "Parcoursup": PARCOURSUP_OFFICIAL_RELEASE,
+    "MonMaster": MONMASTER_OFFICIAL_RELEASE,
+    "DSE": DSE_OFFICIAL_RELEASE,
+}
 
 
 def _entry(
@@ -108,12 +125,12 @@ def _entry(
         "date_fin": date_fin,
         "libelle": libelle,
         "text": text,
-        "url": url or (PARCOURSUP_URL if plateforme == "Parcoursup" else MONMASTER_URL),
+        "url": url or _PLATFORM_DEFAULT_URLS.get(plateforme, PARCOURSUP_URL),
         "provenance": {
             "tier": "tier_1",
-            "source_label": source_label or f"{plateforme} officiel ({plate_slug}.gouv.fr)",
+            "source_label": source_label or f"{plateforme} officiel",
             "last_updated": LAST_UPDATED,
-            "official_release": PARCOURSUP_OFFICIAL_RELEASE if plateforme == "Parcoursup" else MONMASTER_OFFICIAL_RELEASE,
+            "official_release": _PLATFORM_OFFICIAL_RELEASES.get(plateforme, ""),
         },
     }
 
@@ -234,6 +251,65 @@ MONMASTER_2026_ENTRIES: list[dict[str, Any]] = [
 ]
 
 
+# ─────────────── DSE (Dossier Social Étudiant) 2026 — bourse + logement CROUS ───────────────
+#
+# Sources WebSearch officielles (2026-05-08) :
+# - https://www.lescrous.fr/dse/
+# - https://www.etudiant.gouv.fr/fr/bourse-et-logement-constituez-votre-dossier-social-etudiant-dse-409
+# - https://messervices.etudiant.gouv.fr/
+# - https://www.education.gouv.fr/bo/2026/Hebdo9/ESRS2604201C (BO modalités bourses 2026-2027)
+#
+# Le DSE est le dossier UNIQUE pour demander à la fois la bourse sur critères
+# sociaux ET un logement en résidence CROUS. Plateforme : MesServices.etudiant.gouv.fr.
+
+DSE_2026_ENTRIES: list[dict[str, Any]] = [
+    _entry(
+        "ouverture-dse",
+        "DSE", "ouverture",
+        "Ouverture du Dossier Social Étudiant (DSE) 2026",
+        "Le Dossier Social Étudiant (DSE) 2026 ouvre le 2 mars 2026 sur la plateforme MesServices.Étudiants.gouv.fr. Le DSE est le dossier UNIQUE pour demander à la fois une bourse sur critères sociaux ET un logement en résidence CROUS pour l'année universitaire 2026-2027. Constituer son dossier dès l'ouverture est conseillé pour être prioritaire.",
+        date_debut="2026-03-02",
+        url=DSE_PLATEFORME_URL,
+        source_label="Étudiant.gouv (DSE officiel)",
+    ),
+    _entry(
+        "date-limite-recommandee",
+        "DSE", "deadline",
+        "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+        "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution de la bourse sur critères sociaux ET d'un logement en résidence CROUS. Au-delà du 31 mai, le DSE reste possible mais les chances d'obtenir un logement sont fortement réduites (places attribuées en priorité aux dossiers complets avant cette date).",
+        date_debut="2026-05-31",
+    ),
+    _entry(
+        "saisie-voeux-logement",
+        "DSE", "logement",
+        "Phase de saisie des vœux de logement CROUS 2026",
+        "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescrous.fr, toutes villes et CROUS confondus. Cette phase est OBLIGATOIRE en plus du DSE pour postuler à un logement spécifique en résidence universitaire. Les 10 vœux peuvent être hiérarchisés.",
+        date_debut="2026-05-05",
+        date_fin="2026-06-01",
+        url=DSE_LOGEMENT_URL,
+        source_label="trouverunlogement.lescrous.fr (CROUS)",
+    ),
+    _entry(
+        "premier-cycle-attribution-logement",
+        "DSE", "logement",
+        "Premier cycle d'attribution des logements CROUS 2026",
+        "Le premier cycle d'attribution des logements CROUS pour la rentrée 2026 a lieu le 2 juin 2026. Les étudiants ayant fait leur DSE et saisi leurs vœux de logement reçoivent les premières propositions. Deux autres cycles d'attribution suivent les semaines suivantes, jusqu'au 5 juillet 2026.",
+        date_debut="2026-06-02",
+        date_fin="2026-07-05",
+        url=DSE_LOGEMENT_URL,
+        source_label="lescrous.fr (CROUS officiel)",
+    ),
+    _entry(
+        "vue-ensemble-dse-2026",
+        "DSE", "general",
+        "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+        "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesServices.etudiant.gouv.fr ; (2) saisie des vœux de logement du 5 mai au 1er juin 2026 sur trouverunlogement.lescrous.fr (10 vœux max) ; (3) date limite recommandée 31 mai 2026 pour être prioritaire bourse + logement ; (4) cycles d'attribution logement du 2 juin au 5 juillet 2026. Le DSE est le dossier UNIQUE pour bourse sur critères sociaux ET logement en résidence universitaire.",
+        date_debut="2026-03-02",
+        date_fin="2026-07-05",
+    ),
+]
+
+
 # ─────────────── Vues d'ensemble (questions générales) ───────────────
 
 OVERVIEW_ENTRIES: list[dict[str, Any]] = [
@@ -257,10 +333,11 @@ OVERVIEW_ENTRIES: list[dict[str, Any]] = [
 
 
 def build_calendrier_corpus() -> list[dict[str, Any]]:
-    """Construit le corpus calendrier (Parcoursup + MonMaster + vues d'ensemble)."""
+    """Construit le corpus calendrier (Parcoursup + MonMaster + DSE + vues d'ensemble)."""
     entries = []
     entries.extend(PARCOURSUP_2026_ENTRIES)
     entries.extend(MONMASTER_2026_ENTRIES)
+    entries.extend(DSE_2026_ENTRIES)
     entries.extend(OVERVIEW_ENTRIES)
     return entries
 
@@ -273,8 +350,9 @@ def main() -> int:
         encoding="utf-8",
     )
     print(f"Calendrier corpus écrit : {OUT_PATH} ({len(entries)} entrées)")
-    print(f"  Parcoursup 2026 : {len(PARCOURSUP_2026_ENTRIES)} dates (dates officielles vérifiées WebSearch 2026-05-08)")
-    print(f"  MonMaster 2026  : {len(MONMASTER_2026_ENTRIES)} dates (dates officielles vérifiées WebSearch 2026-05-08)")
+    print(f"  Parcoursup 2026 : {len(PARCOURSUP_2026_ENTRIES)} dates (officielles WebSearch 2026-05-08)")
+    print(f"  MonMaster 2026  : {len(MONMASTER_2026_ENTRIES)} dates (officielles WebSearch 2026-05-08)")
+    print(f"  DSE CROUS 2026  : {len(DSE_2026_ENTRIES)} dates (bourse + logement, officielles)")
     print(f"  Vues d'ensemble : {len(OVERVIEW_ENTRIES)} entrées")
     return 0
 

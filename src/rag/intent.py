@@ -231,10 +231,10 @@ _PATTERNS_DOMAIN_METIER = [
 ]
 
 
-# Vague 3.4 (2026-05-08) — Calendrier Parcoursup/MonMaster.
+# Vague 3.4 (2026-05-08) — Calendrier Parcoursup/MonMaster + DSE CROUS.
 # Patterns ciblant les questions calendaires : "quand", "date", "phase",
 # "calendrier", "ouverture", "fermeture vœux", etc. Combiné avec les
-# plateformes Parcoursup/MonMaster pour discriminer.
+# plateformes Parcoursup/MonMaster/DSE/CROUS pour discriminer.
 _PATTERNS_DOMAIN_CALENDRIER = [
     # Question "quand" + plateforme
     re.compile(r"\bquand\s+.*?(parcoursup|monmaster|master|voeux|admission|inscription|phase)\b"),
@@ -247,7 +247,7 @@ _PATTERNS_DOMAIN_CALENDRIER = [
     re.compile(r"\bphase\s+(?:complementaire|principale|admission|reception)\b"),
     re.compile(r"\b(?:ouverture|fermeture)\s+(?:de\s+)?(?:la\s+)?(?:plateforme|inscriptions?|voeux)\b"),
     # Calendrier explicite
-    re.compile(r"\bcalendrier\s+(?:parcoursup|monmaster|master|admission|voeux|2026)\b"),
+    re.compile(r"\bcalendrier\s+(?:parcoursup|monmaster|master|admission|voeux|2026|dse|crous|bourse)\b"),
     # Voeux + temporel
     re.compile(r"\b(?:formuler|saisir|valider|confirmer)\s+(?:les?\s+)?voeux\b"),
     # Résultats / réponses Parcoursup
@@ -256,6 +256,20 @@ _PATTERNS_DOMAIN_CALENDRIER = [
     # MonMaster spécifique
     re.compile(r"\bmonmaster\b.*?(date|calendrier|phase|candidature[sx]?)"),
     re.compile(r"\bcandidatures?\s+master[sx]?\b"),
+    # Vague 3.4+ — DSE / Bourse / Logement CROUS (temporel uniquement,
+    # sinon "logement CROUS Lyon" → CROUS hint pour les questions de prix)
+    re.compile(r"\bquand\s+.*?(dse|dossier\s+social|bourse|logement\s+(?:crous|etudiant))\b"),
+    re.compile(r"\b(?:dse|dossier\s+social\s+etudiant)\s+.*?(quand|date|calendrier|2026|ouverture|fermeture|deadline|delai|periode)\b"),
+    re.compile(r"\b(?:bourse|logement)\s+crous\s+.*?(quand|date|calendrier|2026|delai|deadline|fermeture|periode)\b"),
+    re.compile(r"\b(?:date|calendrier|periode)\s+.*?(dse|bourse\s+crous|logement\s+crous|dossier\s+social)\b"),
+    # Demande bourse/logement (intention temporelle implicite : "comment faire")
+    # Déterminants français étendus (un/une/le/la/son/sa/mon/ma/du/de la)
+    re.compile(r"\bcomment\s+(?:demander|faire|remplir|constituer)\s+(?:un[e]?|le|la|son|sa|mon|ma|du)\s+(?:dse|dossier\s+social|bourse|logement\s+crous)\b"),
+    # Saisie vœux logement — gère ligature œ ET version normalisée oe
+    re.compile(r"\b(?:saisir|saisie)\s+(?:les\s+)?(?:voeux|vœux)\s+(?:de\s+)?logement\b"),
+    # Attribution logement CROUS
+    re.compile(r"\bcycle\s+d['e]?\s*attribution\s+(?:logement|crous)"),
+    re.compile(r"\battribution\s+(?:de[sx]?\s+)?logement[sx]?\s+(?:crous|universitaire)"),
 ]
 
 

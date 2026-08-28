@@ -13,7 +13,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -32,7 +32,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -51,7 +51,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -70,7 +70,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -89,7 +89,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -108,7 +108,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -127,7 +127,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -146,7 +146,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -165,7 +165,7 @@
     "url": "https://information.monmaster.gouv.fr/calendrier/",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "MonMaster officiel (monmaster.gouv.fr)",
+      "source_label": "MonMaster officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
     }
@@ -184,7 +184,7 @@
     "url": "https://information.monmaster.gouv.fr/calendrier/",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "MonMaster officiel (monmaster.gouv.fr)",
+      "source_label": "MonMaster officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
     }
@@ -203,7 +203,7 @@
     "url": "https://information.monmaster.gouv.fr/calendrier/",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "MonMaster officiel (monmaster.gouv.fr)",
+      "source_label": "MonMaster officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
     }
@@ -222,7 +222,7 @@
     "url": "https://information.monmaster.gouv.fr/calendrier/",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "MonMaster officiel (monmaster.gouv.fr)",
+      "source_label": "MonMaster officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
     }
@@ -241,7 +241,7 @@
     "url": "https://information.monmaster.gouv.fr/calendrier/",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "MonMaster officiel (monmaster.gouv.fr)",
+      "source_label": "MonMaster officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
     }
@@ -260,9 +260,104 @@
     "url": "https://information.monmaster.gouv.fr/calendrier/",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "MonMaster officiel (monmaster.gouv.fr)",
+      "source_label": "MonMaster officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
+    }
+  },
+  {
+    "id": "calendrier:dse-2026:ouverture-dse",
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "annee": 2026,
+    "plateforme": "DSE",
+    "phase": "ouverture",
+    "date_debut": "2026-03-02",
+    "date_fin": null,
+    "libelle": "Ouverture du Dossier Social Étudiant (DSE) 2026",
+    "text": "Le Dossier Social Étudiant (DSE) 2026 ouvre le 2 mars 2026 sur la plateforme MesServices.Étudiants.gouv.fr. Le DSE est le dossier UNIQUE pour demander à la fois une bourse sur critères sociaux ET un logement en résidence CROUS pour l'année universitaire 2026-2027. Constituer son dossier dès l'ouverture est conseillé pour être prioritaire.",
+    "url": "https://messervices.etudiant.gouv.fr/",
+    "provenance": {
+      "tier": "tier_1",
+      "source_label": "Étudiant.gouv (DSE officiel)",
+      "last_updated": "2026-05-08",
+      "official_release": "https://www.lescrous.fr/dse/"
+    }
+  },
+  {
+    "id": "calendrier:dse-2026:date-limite-recommandee",
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "annee": 2026,
+    "plateforme": "DSE",
+    "phase": "deadline",
+    "date_debut": "2026-05-31",
+    "date_fin": null,
+    "libelle": "Date limite recommandée DSE 2026 (priorité bourse + logement CROUS)",
+    "text": "La date limite recommandée pour finaliser son DSE 2026 est le 31 mai 2026. Les dossiers traités avant cette date sont prioritaires pour l'attribution de la bourse sur critères sociaux ET d'un logement en résidence CROUS. Au-delà du 31 mai, le DSE reste possible mais les chances d'obtenir un logement sont fortement réduites (places attribuées en priorité aux dossiers complets avant cette date).",
+    "url": "https://www.etudiant.gouv.fr/fr/bourse-et-logement-constituez-votre-dossier-social-etudiant-dse-409",
+    "provenance": {
+      "tier": "tier_1",
+      "source_label": "DSE officiel",
+      "last_updated": "2026-05-08",
+      "official_release": "https://www.lescrous.fr/dse/"
+    }
+  },
+  {
+    "id": "calendrier:dse-2026:saisie-voeux-logement",
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "annee": 2026,
+    "plateforme": "DSE",
+    "phase": "logement",
+    "date_debut": "2026-05-05",
+    "date_fin": "2026-06-01",
+    "libelle": "Phase de saisie des vœux de logement CROUS 2026",
+    "text": "Du 5 mai 2026 (10h) au 1er juin 2026 (10h, heure de Paris), les étudiants peuvent saisir jusqu'à 10 vœux de logement CROUS sur trouverunlogement.lescrous.fr, toutes villes et CROUS confondus. Cette phase est OBLIGATOIRE en plus du DSE pour postuler à un logement spécifique en résidence universitaire. Les 10 vœux peuvent être hiérarchisés.",
+    "url": "https://trouverunlogement.lescrous.fr/",
+    "provenance": {
+      "tier": "tier_1",
+      "source_label": "trouverunlogement.lescrous.fr (CROUS)",
+      "last_updated": "2026-05-08",
+      "official_release": "https://www.lescrous.fr/dse/"
+    }
+  },
+  {
+    "id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "annee": 2026,
+    "plateforme": "DSE",
+    "phase": "logement",
+    "date_debut": "2026-06-02",
+    "date_fin": "2026-07-05",
+    "libelle": "Premier cycle d'attribution des logements CROUS 2026",
+    "text": "Le premier cycle d'attribution des logements CROUS pour la rentrée 2026 a lieu le 2 juin 2026. Les étudiants ayant fait leur DSE et saisi leurs vœux de logement reçoivent les premières propositions. Deux autres cycles d'attribution suivent les semaines suivantes, jusqu'au 5 juillet 2026.",
+    "url": "https://trouverunlogement.lescrous.fr/",
+    "provenance": {
+      "tier": "tier_1",
+      "source_label": "lescrous.fr (CROUS officiel)",
+      "last_updated": "2026-05-08",
+      "official_release": "https://www.lescrous.fr/dse/"
+    }
+  },
+  {
+    "id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+    "domain": "calendrier",
+    "source": "dse_calendrier_officiel",
+    "annee": 2026,
+    "plateforme": "DSE",
+    "phase": "general",
+    "date_debut": "2026-03-02",
+    "date_fin": "2026-07-05",
+    "libelle": "Calendrier général DSE + logement CROUS 2026 (vue d'ensemble)",
+    "text": "Le calendrier du Dossier Social Étudiant (DSE) 2026 pour bourse et logement CROUS se déroule en 4 phases : (1) ouverture DSE le 2 mars 2026 sur MesServices.etudiant.gouv.fr ; (2) saisie des vœux de logement du 5 mai au 1er juin 2026 sur trouverunlogement.lescrous.fr (10 vœux max) ; (3) date limite recommandée 31 mai 2026 pour être prioritaire bourse + logement ; (4) cycles d'attribution logement du 2 juin au 5 juillet 2026. Le DSE est le dossier UNIQUE pour bourse sur critères sociaux ET logement en résidence universitaire.",
+    "url": "https://www.etudiant.gouv.fr/fr/bourse-et-logement-constituez-votre-dossier-social-etudiant-dse-409",
+    "provenance": {
+      "tier": "tier_1",
+      "source_label": "DSE officiel",
+      "last_updated": "2026-05-08",
+      "official_release": "https://www.lescrous.fr/dse/"
     }
   },
   {
@@ -279,7 +374,7 @@
     "url": "https://www.parcoursup.fr/index.php?desc=calendrier",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "Parcoursup officiel (parcoursup.gouv.fr)",
+      "source_label": "Parcoursup officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.education.gouv.fr/parcoursup-2026-ouverture-le-19-janvier-de-la-phase-d-inscription-et-de-formulation-des-voeux-468674"
     }
@@ -298,7 +393,7 @@
     "url": "https://information.monmaster.gouv.fr/calendrier/",
     "provenance": {
       "tier": "tier_1",
-      "source_label": "MonMaster officiel (monmaster.gouv.fr)",
+      "source_label": "MonMaster officiel",
       "last_updated": "2026-05-08",
       "official_release": "https://www.enseignementsup-recherche.gouv.fr/fr/mon-master-le-calendrier-de-la-procedure-pour-l-annee-universitaire-2026-2027-100230"
     }
