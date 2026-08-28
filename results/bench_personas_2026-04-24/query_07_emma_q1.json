@@ -1,0 +1,124 @@
+{
+  "idx_global": 7,
+  "persona_id": "emma",
+  "persona_description": "Emma, 22 ans, M1 Info (scope master-pro)",
+  "scope": "master_pro",
+  "query_id": "q1",
+  "query_type": "factuelle",
+  "query_text": "Quel est le salaire moyen d'un développeur débutant post M2 informatique en France ?",
+  "elapsed_s": 19.5,
+  "answer": "**TL;DR**\n1. Un développeur débutant post-M2 informatique gagne en moyenne **38-42k€ brut/an** en France (hors alternance).\n2. Les salaires varient fortement selon la spécialisation (data/IA > web) et la localisation (Île-de-France +15-20%).\n3. L’alternance en M2 booste le salaire d’embauche (+5-10k€/an) et l’insertion.\n\n---\n\n### **Plan A — Salaire moyen standard (hors spécialisation pointue)**\n**38-42k€ brut/an** (soit ~2 500-2 800€ net/mois) pour un poste de **développeur logiciel/concepteur** en sortie de M2 informatique classique (ex : Java, .NET, fullstack).\n*(connaissance générale : baromètres Michael Page 2024, APEC, Glassdoor France)*\n\n**Pour vous** : Si votre M2 est généraliste (ex : MIAGE, informatique fondamentale), visez cette fourchette en province. En Île-de-France, ajoutez **+5-7k€/an**.\n\n---\n\n### **Plan B — Spécialisations haut de gamme (data/IA/cyber)**\n**45-55k€ brut/an** (soit ~3 000-3 500€ net/mois) pour les profils **data scientist, ingénieur IA, ou expert cybersécurité** sortis de M2 labellisés (ex : Mines-Télécom, Polytechnique).\n*(connaissance générale : études Malt 2024, baromètre Syntec Numérique)*\n**Exemples de formations alignées** (si vous envisagez une spécialisation post-M2) :\n📍 **IMT Atlantique** (Brest) — bac+5, diplôme d’ingénieur CTI, spécialité Data/IA · [site officiel](https://www.imt-atlantique.fr)\n*Pour vous : accès possible via admissions parallèles (concours ou VAP) si vous avez un M1/M2 scientifique solide.*\n\n---\n\n### **Plan C — Alternance et leviers pour négocier +10-15%**\n- **Alternance en M2** : Un contrat pro/apprentissage chez un ESN (Capgemini, Atos) ou une scale-up (Doctolib, Back Market) mène souvent à une embauche à **40-48k€ brut** (contre 38k€ en hors-alternance).\n- **Thèse CIFRE** : 3 ans de R&D en entreprise (salaire ~2 100€ net/mois) + embauche à **45k€+** en sortie.\n- **Certifications cloud** (AWS/Azure) ou **contributions open-source** (GitHub) justifient une négociation à **+3-5k€/an**.\n\n*(connaissance générale : rapports CEREQ 2023 sur l’insertion des docteurs, offres d’emploi Welcome to the Jungle/LinkedIn)*\n\n---\n### **⚠ Attention aux pièges**\n- **ESN vs. Editeurs** : Les ESN (SSII) recrutent à 38-42k€ mais avec **turnover élevé** et missions variables. Les éditeurs de logiciels (SAP, Dassault Systèmes) ou fintechs paient souvent **+5-10k€** pour le même niveau.\n- **Localisation** : Un salaire à **35k€** en province peut équivaloir à **42k€** en Île-de-France après correction du coût de la vie (source : INSEE 2024).\n- **Titres RNCP privés** : Les formations type OpenClassrooms (Fiche 3/Fiche 7) mènent à des salaires **inférieurs de 10-15%** vs. un diplôme d’ingénieur CTI (ex : IMT, Fiche 1/4/5), à expérience égale.\n\n---\n**Question pour vous** :\nVotre priorité est-elle le salaire immédiat (→ ESN/alternance), la stabilité à long terme (→ éditeur de logiciels), ou l’expertise pointue (→ data/IA avec formation complémentaire) ?",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 0.8751,
+      "nom": "Ingénieur diplômé de l’Ecole nationale supérieure Mines-Télécom Atlantique Bretagne Pays de la Loire",
+      "etablissement": "INSTITUT MINES TELECOM - IMT ATLANTIQUE - BRETAGNE - PAYS DE LA LOIRE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8751,
+      "nom": "Ingénieur diplômé de l’Ecole nationale supérieure Mines-Télécom Atlantique Bretagne Pays de la Loire",
+      "etablissement": "INSTITUT MINES TELECOM - IMT ATLANTIQUE - BRETAGNE - PAYS DE LA LOIRE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8743,
+      "nom": "Expert en développement logiciel",
+      "etablissement": "OPENCLASSROOMS",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8697,
+      "nom": "Ingénieur diplômé de l’école nationale supérieure Mines- Télécom Lille Douai de l'Institut Mines-Tél",
+      "etablissement": "INSTITUT MINES TELECOM -  IMT NORD EUROPE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8672,
+      "nom": "Ingénieur diplômé de Télécom SudParis de l'Institut Mines-Télécom, spécialité informatique et réseau",
+      "etablissement": "INSTITUT MINES TELECOM - TELECOM SUDPARIS",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8669,
+      "nom": "Ingénieur diplômé de l'Université Paris XIII spécialité Informatique",
+      "etablissement": "UNIV PARIS XIII PARIS-NORD VILLETANEUSE - INSTITUT GALILEE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8036,
+      "nom": "Développeur concepteur logiciel",
+      "etablissement": "OPENCLASSROOMS",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8033,
+      "nom": "Testeur logiciel",
+      "etablissement": "M2I",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.7978,
+      "nom": "Développeur intégrateur en informatique industrielle",
+      "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.795,
+      "nom": "Concepteur développeur d'applications",
+      "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    }
+  ]
+}

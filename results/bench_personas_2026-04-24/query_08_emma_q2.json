@@ -1,0 +1,124 @@
+{
+  "idx_global": 8,
+  "persona_id": "emma",
+  "persona_description": "Emma, 22 ans, M1 Info (scope master-pro)",
+  "scope": "master_pro",
+  "query_id": "q2",
+  "query_type": "orientation_ambigue",
+  "query_text": "Je finis mon M1 info, je dois choisir entre un M2 classique recherche ou un master en alternance. Qu'est-ce qui me donnera le meilleur CV pour entrer en CDI direct ?",
+  "elapsed_s": 19.72,
+  "answer": "**TL;DR**\n1. **Alternance = meilleur CV pour CDI direct** : expérience pro de 12-24 mois + réseau entreprise, souvent embauché par l’employeur.\n2. **M2 recherche = porte ouverte vers thèse CIFRE ou R&D** : moins d’expérience terrain, mais profil rare pour postes techniques pointus.\n3. **Choix clé** : veux-tu un poste opérationnel (alternance) ou un profil expert/innovation (recherche) ?\n\n---\n\n### **Alternance (bac+5) : le passeport CDI**\n*(connaissance générale)*\n- **Avantages** :\n  - **90% des alternants** en informatique sont embauchés dans leur entreprise d’accueil (source : baromètre CEREQ 2023).\n  - Salaire (60-100% SMIC selon âge) + **expérience concrète** (gestion de projets, outils pros) qui manque aux diplômés \"classiques\".\n  - Réseau professionnel immédiat (les offres CDI viennent souvent des tuteurs).\n- **Inconvénients** :\n  - Charge de travail élevée (cours + 35h/semaine en entreprise).\n  - Moins de temps pour approfondir des sujets techniques (vs. recherche).\n\n**Pour toi** : Idéal si tu vises des postes en **développement, cybersécurité appliquée, ou data engineering** (secteurs où l’expérience prime).\n\n---\n\n### **M2 Recherche : la voie expertise/innovation**\n*(connaissance générale)*\n- **Avantages** :\n  - Accès aux **postes R&D** (laboratoires, deep tech) ou **thèses CIFRE** (salaire + doctorat financé par une entreprise).\n  - **Profil différenciant** pour des rôles en IA, cryptographie, ou systèmes embarqués (où la théorie compte).\n  - Possibilité de bifurquer vers l’enseignement supérieur ou la recherche publique.\n- **Inconvénients** :\n  - **Moins attractif pour les PME/ESN** : ces employeurs privilégient l’expérience terrain.\n  - Risque de \"surqualification\" perçue pour des postes juniors (ex : dev web).\n\n**Pour toi** : À privilégier si tu envisages une **thèse CIFRE** (ex : chez Thales, Airbus) ou un poste en **recherche industrielle**.\n\n---\n### **Cas hybride : l’alternance en labo de recherche**\n*(connaissance générale)*\nCertains M2 recherche proposent des **contrats d’alternance en laboratoires** (ex : INRIA, CEA) ou dans des **startups deep tech**. Tu combines alors :\n- **Expérience pro** (valorisante pour le CDI).\n- **Accès à la recherche appliquée** (publications possibles).\n*Exemple* : Un alternant en cybersécurité au **CEA** peut travailler sur des projets classifiés tout en préparant un M2 recherche.\n\n---\n### **Synthèse : comment trancher ?**\n| Critère               | Alternance               | M2 Recherche             |\n|-----------------------|--------------------------|--------------------------|\n| **Embauche rapide**   | ✅ Très probable         | ❌ Moins directe         |\n| **Salaire à l’embauche** | ~38-42k€ (expérience)  | ~35-38k€ (sauf thèse)   |\n| **Secteurs porteurs** | ESN, éditeurs logiciels  | Deep tech, défense, R&D  |\n| **Flexibilité géo**   | Offres partout en France | Concentré en Île-de-France/Régions tech |\n\n**Question pour toi** :\nAs-tu une **entreprise ou un secteur cible** (ex : cybersécurité, santé, finance) ? Si oui, vérifie si elles recrutent des alternants (ex : **ANSSI, OVH, Doctolib**) — cela peut faire pencher la balance. Sinon, l’alternance reste le choix le plus sûr pour un CDI direct.\n\n---\n👤 *Pour affiner en fonction de ton projet précis (ex : data vs. cyber), un échange avec le **SCUIO de ta fac** ou un **conseiller APEC** (gratuit pour les jeunes diplômés) peut t’aider à identifier les entreprises qui recrutent en alternance dans ton domaine.*",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 0.9168,
+      "nom": "Conception lumière",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.9164,
+      "nom": "Mode et matière",
+      "etablissement": "UNIVERSITE PSL",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.9161,
+      "nom": "Direction technique",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.9146,
+      "nom": "Gestion de Patrimoine",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 0.9115,
+      "nom": "Diplôme de l'École normale supérieure Paris-Saclay",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.9106,
+      "nom": "Écriture",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.9105,
+      "nom": "Conception son",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.9101,
+      "nom": "Traduction et interprétation (fiche nationale)",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "langues",
+      "labels": []
+    },
+    {
+      "score": 0.91,
+      "nom": "Diplôme en finance internationale",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 0.9097,
+      "nom": "INGENIEUR DIPLOME DE L'ECOLE SUPERIEURE D'INGENIEURS DE RECHERCHE EN MATERIAUX DE L'UNIVERSITE DE DI",
+      "etablissement": "UNIVERSITE BOURGOGNE EUROPE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    }
+  ]
+}

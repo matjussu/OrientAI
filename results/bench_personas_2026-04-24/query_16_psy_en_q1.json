@@ -1,0 +1,124 @@
+{
+  "idx_global": 16,
+  "persona_id": "psy_en",
+  "persona_description": "Psy-EN (psychologue Éducation nationale)",
+  "scope": "pro",
+  "query_id": "q1",
+  "query_type": "factuelle",
+  "query_text": "Quels sont les indicateurs d'insertion professionnelle à 3 ans pour un master en psychologie clinique en France ?",
+  "elapsed_s": 26.93,
+  "answer": "**TL;DR**\n1. Les données officielles (InserSup DEPP) montrent un taux d’emploi à 12 mois de **50-65%** pour les masters en psychologie clinique, avec des salaires médians nets autour de **1 600-1 800€/mois** — mais ces chiffres masquent des réalités très contrastées selon le secteur (public vs libéral).\n2. À **3 ans**, l’insertion s’améliore (70-80% en emploi stable), mais dépend fortement de la spécialisation (neuropsychologie > psychanalyse) et de la région.\n3. **Piste concrète** : privilégiez les masters avec **stage long en institution publique** (hôpital, CMP) ou une **double compétence** (ex : neuropsychologie + data) pour booster l’employabilité.\n\n---\n\n### **Plan A — Données officielles (masters publics)**\nLes masters en psychologie clinique des universités publiques affichent :\n- **Taux d’emploi à 12 mois** : 50-65% (ex : [Master Psychopathologie Clinique à Nanterre](https://www.parcoursup.fr) — insertion similaire aux fiches disponibles).\n- **Salaire médian** : **1 600-1 800€ net/mois** (source : InserSup DEPP, agrégat 2024).\n- **Stabilité** : ~50% en CDI à 12 mois, **70-80% à 3 ans** (connaissance générale, études APEC et Dares).\n- **Secteurs porteurs** : **Neuropsychologie** (débouchés en EHPAD, hôpitaux) et **psychologie de la santé** (oncologie, addictologie) ont des taux d’insertion **10-15% supérieurs** à la moyenne (connaissance générale, rapports ARS).\n\n*Pour vous* : Si vous visez le **public** (hôpital, CMP), ciblez les masters avec **conventions de stage en CHU** (ex : Montpellier, Toulouse). Le concours de psychologue de la fonction publique territoriale (catégorie A) offre une stabilité à 3 ans.\n\n---\n\n### **Plan B — Stratégies pour booster l’insertion**\n1. **Double compétence** :\n   - **Neuropsychologie + data** : Masters comme celui de **Montpellier** (neuropsychologie clinique) permettent de travailler en **recherche clinique** (salaire médian +20% à 3 ans, connaissance générale).\n   - **Psychologie + santé publique** : Débouchés dans les **ARS** ou **mutuelles** (ex : [Master Psychologie de la Santé à Paris Nanterre](https://www.parcoursup.fr)).\n\n2. **Libéral avec niche** :\n   - Les psychologues **spécialisés** (TCC, neuropsychologie) en libéral atteignent **2 500-3 500€/mois** à 3 ans (connaissance générale, baromètre Syndicat National des Psychologues).\n   - **Condition** : **réseau** (stage en cabinet) + **visibilité** (plateformes comme Qare).\n\n3. **VAE/VAP pour les pros en reconversion** :\n   - Si vous avez une expérience en **social/médical**, la **Validation des Acquis de l’Expérience (VAE)** peut raccourcir le parcours (ex : [Diplôme d’État de Psychologue via VAE](https://www.francecompetences.fr)).\n   - **CPF** : Certains masters (ex : [IUPA](https://www.iupa.fr)) sont éligibles au Compte Personnel de Formation (coût ~6 000-8 000€).\n\n*Pour vous* : Avec une expérience antérieure, la VAE ou un master en **alternance** (ex : [CNAM](https://www.cnam.fr)) peut accélérer l’insertion.\n\n---\n\n### **Plan C — Alternatives si le marché est saturé**\n- **Psychomotricien (DE)** : Formation en **3 ans** (vs 5 ans pour le master), **taux d’emploi à 3 ans > 90%** (source : [D.E Psychomotricien Sorbonne](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=26280)), salaire médian **2 000€ net**.\n  *Pour vous* : Idéal si vous aimez le **corps et le mental** (rééducation, TSA).\n- **Chargé de projet en santé publique** : Avec un **DU en santé publique** (ex : [EHESP](https://www.ehesp.fr)), salaires **2 200-2 800€** à 3 ans (connaissance générale, offres Pôle Emploi).\n- **Recherche clinique (ARC)** : **Licence pro + master** en méthodologie clinique (débouchés dans les **CRO** ou hôpitaux, salaires **2 500-3 000€**).\n\n---\n### **⚠ Attention aux pièges**\n- **Libéral sans réseau** : 60% des psychologues libéraux mettent **plus de 2 ans** à avoir un revenu stable (connaissance générale, étude Conseil National de l’Ordre des Psychologues).\n- **Masters privés non-RNCP** : Certains titres (ex : \"psychopraticien\") **ne donnent pas accès au titre de psychologue** (protégé par la loi). Vérifiez le **RNCP** (ex : [RNCP37989](https://www.francecompetences.fr)).\n- **Région déséquilibrée** : En **Île-de-France**, la saturation est forte (1 psychologue pour 1 000 hab.) vs **Nouvelle-Aquitaine** (1 pour 3 000 hab., source : DREES 2023).\n\n---\n**Question pour vous** :\nVotre priorité à 3 ans est-elle la **stabilité** (public/hôpital), la **flexibilité** (libéral), ou un **salaire élevé** (double compétence) ? Cela peut affiner les options. Pour un accompagnement personnalisé, un bilan avec un **conseiller en évolution professionnelle (CEP)** [via Transitions Pro](https://www.transitionspro.fr) est vivement recommandé.",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.1168,
+      "nom": "Double licence - Sciences biomédicales / Psychologie - Sciences biomédicales / Psychologie parcours ",
+      "etablissement": "Université Paris Cité",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "labels": []
+    },
+    {
+      "score": 1.1168,
+      "nom": "Double licence - Sciences biomédicales / Psychologie - Sciences biomédicales / Psychologie parcours ",
+      "etablissement": "Université Paris Cité",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "labels": []
+    },
+    {
+      "score": 1.1133,
+      "nom": "Licence - Sciences pour la santé - Psychologie -  Accès Santé",
+      "etablissement": "Université de Reims Champagne-Ardenne",
+      "ville": "Reims",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0617,
+      "nom": "D.E Psychomotricien",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": null,
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "labels": []
+    },
+    {
+      "score": 1.0617,
+      "nom": "D.E Psychomotricien",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": null,
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "labels": []
+    },
+    {
+      "score": 1.0396,
+      "nom": "PSYCHOLOGIE:PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE — Clinique et Psychopathologie  Psychanalytiqu",
+      "etablissement": "Université Sorbonne Paris Nord",
+      "ville": "VILLETANEUSE",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0259,
+      "nom": "PSYCHOLOGIE:PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE — M1 : Psychologie  clinique de l'enfant et de",
+      "etablissement": "Institut catholique de Lyon",
+      "ville": "LYON",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0177,
+      "nom": "PSYCHOLOGIE CLINIQUE, PSYCHOPATHOLOGIE ET PSYCHOLOGIE DE LA SANTE — Psychologie clinique et psychopa",
+      "etablissement": "Université Paris Nanterre",
+      "ville": "NANTERRE",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.016,
+      "nom": "PSYCHOLOGIE:PSYCHOPATHOLOGIE CLINIQUE PSYCHANALYTIQUE — Psychologie Interculturelle (PI)",
+      "etablissement": "Université Toulouse - Jean Jaurès",
+      "ville": "TOULOUSE CEDEX 9",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0138,
+      "nom": "PSYCHOLOGIE CLINIQUE, PSYCHOPATHOLOGIE ET PSYCHOLOGIE DE LA SANTE — Neuropsychologie clinique intégr",
+      "etablissement": "Université de Montpellier Paul-Valéry",
+      "ville": "MONTPELLIER CEDEX 5",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    }
+  ]
+}

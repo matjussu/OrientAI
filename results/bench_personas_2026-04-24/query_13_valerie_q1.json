@@ -1,0 +1,124 @@
+{
+  "idx_global": 13,
+  "persona_id": "valerie",
+  "persona_description": "Valérie, parent de lycéen (perspective externe)",
+  "scope": "parent",
+  "query_id": "q1",
+  "query_type": "factuelle",
+  "query_text": "Quel est le coût moyen d'une année d'école de commerce privée par rapport à une licence publique ?",
+  "elapsed_s": 17.16,
+  "answer": "**TL;DR**\n1. Une licence publique coûte **170 à 600€/an** (droits d’inscription + CVEC), une école de commerce privée **5 000 à 15 000€/an** (hors alternance).\n2. L’écart se creuse sur 5 ans : **~2 000€** en public vs **30 000–75 000€** en privé.\n3. L’alternance (à partir de bac+3) réduit fortement le coût du privé, mais exige un contrat pro.\n\n---\n\n### **Plan A — Licence publique : coût maîtrisé, sélectivité variable**\n📍 **Double licence Droit/Économie** (Paris Panthéon-Assas) — bac+3 public, **600€/an** (dont 243€ droits licence + 100€ CVEC), sélectivité 6% · [fiche Parcoursup](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23907&typeBac=0&originePc=0)\n*Pour toi : excellence académique à coût minimal, mais exige un dossier très solide (55% de mentions TB).*\n\n📍 **Licence Économie-Gestion (Commerce international)** (ICL-ESTICE, Lille) — bac+3 privé, **5 800€/an**, sélectivité 38% · [fiche Parcoursup](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=24397&typeBac=0&originePc=0)\n*Pour toi : coût privé \"entrée de gamme\", accessible avec un bac général (45% des admis ont mention AB).*\n\n---\n### **Plan B — École de commerce privée : investissement lourd, réseaux professionnels**\n📍 **Bachelor Commerce & Entrepreneuriat** (ESCP) — bac+3 privé, **12 000€/an**, sélectivité 37% · [fiche Parcoursup](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=26206&typeBac=0&originePc=0)\n*Pour toi : top 5 des écoles post-bac, mais budget élitiste (1% de boursiers). Réseau alumni puissant pour l’international.*\n\n📍 **Programme Grande École** (INSEEC) — bac+5 privé, **10 500€/an** (hors alternance), grade Master · [fiche ONISEP](https://www.onisep.fr/http/redirection/formation/slug/FOR.11693)\n*Pour toi : coût élevé, mais alternance possible dès bac+3 (frais pris en charge par l’entreprise).*\n\n---\n### **Plan C — Alternatives pour réduire la facture**\n1. **Alternance** : Dès bac+3, la plupart des écoles privées (ESCP, INSEEC) proposent des contrats pro où l’entreprise paie les frais de scolarité. *Exemple : 0€ à payer à l’INSEEC en alternance.*\n2. **Bourses** : Critères sociaux (CROUS) pour le public, aides spécifiques pour certaines écoles privées (ex : ESCP a des partenariats).\n3. **Passage public → privé** : Commence par une licence publique (ex : Assas), puis intègre une école privée en bac+3 via admissions parallèles (coût total divisé par 2).\n\n---\n**⚠ Attention aux pièges**\n- **Marketing des \"frais réduits\"** : Certaines écoles privées affichent des tarifs attractifs en 1ère année, puis augmentent fortement en master (ex : 6 000€ → 14 000€).\n- **Alternance ≠ garantie** : Trouver un contrat dépend du marché local (plus facile à Paris/Lyon qu’en province).\n- **Coût caché du public** : Logement + transport à Paris peuvent atteindre **10 000€/an** (vs 5 000€ en région).\n\n---\n**Question pour toi :**\nTon budget annuel maximal est-il plutôt dans la fourchette **2 000€** (public), **8 000€** (privé entrée de gamme), ou **15 000€+** (top écoles) ? Cela peut orienter vers des villes moins chères (ex : Lille vs Paris).",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.2181,
+      "nom": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en an",
+      "etablissement": "Université Paris Panthéon Assas",
+      "ville": "Paris  5e  Arrondissement",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "parcoursup",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 1.1072,
+      "nom": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière économie et droi",
+      "etablissement": "Université Paris Panthéon Assas",
+      "ville": "Paris  5e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 1.1044,
+      "nom": "Double licence - Droit / Economie et gestion -",
+      "etablissement": "Université Paris Panthéon Assas",
+      "ville": "Paris  5e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 1.0112,
+      "nom": "Licence - Economie et gestion - Parcours Commerce international et langues",
+      "etablissement": "ICL - ESTICE",
+      "ville": "Lille",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 1.0079,
+      "nom": "DROIT PRIVE — DROIT PRIVE  A DISTANCE",
+      "etablissement": "Université Jean Moulin - Lyon 3",
+      "ville": "LYON",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.9656,
+      "nom": "Formation des écoles de commerce et de management Bac + 3 - Commerce et entrepreneuriat",
+      "etablissement": "ESCP Business School",
+      "ville": "Paris 17e  Arrondissement",
+      "niveau": null,
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 0.9221,
+      "nom": "Diplôme en économie et finance",
+      "etablissement": "ETABLISSEMENT D ENSEIGNEMENT SUPERIEUR CONSULAIRE HAUTES ETUDES COMMERCIALES DE PARIS",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 0.916,
+      "nom": "Diplôme en Comptabilité et gestion financière",
+      "etablissement": "ETABLISSEMENT D ENSEIGNEMENT SUPERIEUR CONSULAIRE HAUTES ETUDES COMMERCIALES DE PARIS",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 0.9146,
+      "nom": "diplôme du programme grande école de l'INSEEC",
+      "etablissement": "INSEEC",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 0.9145,
+      "nom": "Diplome en gestion et administration des affaires",
+      "etablissement": "ETABLISSEMENT D ENSEIGNEMENT SUPERIEUR CONSULAIRE HAUTES ETUDES COMMERCIALES DE PARIS",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "eco_gestion",
+      "labels": []
+    }
+  ]
+}

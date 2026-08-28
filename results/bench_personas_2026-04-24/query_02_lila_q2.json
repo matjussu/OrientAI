@@ -1,0 +1,124 @@
+{
+  "idx_global": 2,
+  "persona_id": "lila",
+  "persona_description": "Lila, 17 ans, Terminale L indécise (scope initial)",
+  "scope": "initial",
+  "query_id": "q2",
+  "query_type": "orientation_ambigue",
+  "query_text": "J'hésite entre une fac de sciences humaines et une école de communication à Paris, pourquoi choisir l'une plutôt que l'autre ?",
+  "elapsed_s": 16.45,
+  "answer": "**TL;DR**\n1. **Sciences humaines** (ex : Sorbonne) = approche théorique, critique, et pluridisciplinaire (philosophie, sociologie, histoire), idéale pour la recherche, l’enseignement ou des métiers hybrides (journalisme scientifique, médiation culturelle).\n2. **École de communication** = formation professionnelle ciblée (stratégie digitale, RP, publicité), avec des débouchés directs en entreprise, mais souvent moins de recul analytique.\n3. **Critère clé** : veux-tu un métier opérationnel rapidement (communication) ou une expertise large avec des passerelles vers des secteurs variés (sciences humaines) ?\n\n---\n\n### **Tableau comparatif : Fac de sciences humaines vs École de communication**\n\n| Critère                | **Fac de sciences humaines** (ex : Sorbonne)                                                                 | **École de communication** (ex : CELSA, ISCOM)                                                                 |\n|------------------------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|\n| **Niveau / diplôme**   | Licence (bac+3) → Master (bac+5) **public**, grade Master délivré par l’État.                                | Bac+3 à bac+5, **privé ou public** (ex : CELSA = public, ISCOM = privé). Diplômes visés ou certifiés (RNCP).      |\n| **Sélectivité**        | **Très variable** : de modérée (licences classiques) à **extrême** (doubles diplômes comme [Sorbonne Sciences+Journalisme](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=43126&typeBac=0&originePc=0) : **11% d’admis**, mention TB requise). | **Sélective** : concours (écrits/oraux) ou dossier + entretien. Ex : CELSA ~15-20% d’admis, ISCOM ~30-40%.       |\n| **Coût**              | **Gratuit** (frais d’inscription ~200-400€/an).                                                             | **Variable** : public (CELSA ~600€/an) vs privé (ISCOM ~7 000-9 000€/an).                                       |\n| **Pédagogie**         | **Théorique** : cours magistraux, mémoires, analyse critique. Peu de stages obligatoires en licence.         | **Pratique** : projets concrets (campagnes, community management), stages longs (6 mois en M2), interventions pro. |\n| **Débouchés**          | **Large mais moins direct** : enseignement/recherche, journalisme (avec spécialisation), métiers culturels, concours administratifs. **Salaire médian** : ~1 800€ net (source : [InserSup DEPP](https://www.enseignementsup-recherche.gouv.fr/) pour Sorbonne). | **Ciblés et rapides** : chef de projet digital, chargé de com’, consultant RP, directeur artistique. **Salaire médian** : ~2 200-2 500€ net (enquête CELSA 2023). |\n| **Points forts**       | - **Flexibilité** : réorientation possible vers des masters pro (ex : [Communication interculturelle](https://www.onisep.fr/http/redirection/formation/slug/FOR.1018)).\n- **Culture générale** valorisée dans les métiers hybrides (ex : journalisme scientifique, éditorial). | - **Réseau professionnel** fort (alumnis en agences/grands groupes).\n- **Employabilité** : 85-90% en CDI à 6 mois (source : enquêtes écoles). |\n| **Points faibles**     | - **Insertion plus lente** sans spécialisation (master pro ou double compétence).\n- **Précarité** dans certains secteurs (ex : journalisme). | - **Coût élevé** en privé.\n- **Spécialisation précoce** : difficile de bifurquer vers d’autres domaines. |\n\n---\n\n### **Synthèse : Quelle voie selon ton profil ?**\n- **Choisis les sciences humaines** si :\n  Tu aimes l’analyse, l’écriture, ou vises des métiers où la **culture générale** est un atout (ex : journalisme, enseignement, médiation scientifique). **Prévois un master pro** pour concrétiser ton projet (ex : [Master Humanités et industries créatives](https://www.onisep.fr/http/redirection/formation/slug/FOR.4748)).\n  *Exemple concret* : La [Licence Sciences+Journalisme de Sorbonne](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=43126&typeBac=0&originePc=0) (11% d’admis) forme à des métiers hybrides, mais exige un excellent dossier.\n\n- **Choisis une école de communication** si :\n  Tu veux un **métier opérationnel** rapidement (stratégie digitale, RP) et acceptes une formation **spécialisée dès bac+3**. Privilégie le **public** (CELSA) pour éviter les frais élevés du privé.\n  *Attention* : Les écoles privées (type ISCOM) coûtent **7 000-9 000€/an** — vérifie ton budget ou les alternatives en alternance.\n\n---\n**⚠ Attention** :\n- Les **doubles diplômes** (ex : Sorbonne Sciences+Journalisme) sont **ultra-sélectifs** (11% d’admis, mention TB requise). Ne les vise qu’avec un dossier excellent.\n- En **communication**, le réseau compte autant que le diplôme : une école moins prestigieuse mais avec un bon stage vaut mieux qu’un master théorique sans expérience.\n\n**Question pour toi** :\nEst-ce que tu préfères **garder des portes ouvertes** (sciences humaines + spécialisation tardive) ou **te former à un métier précis** dès maintenant (communication) ? Si tu hésites encore, as-tu envisagé des **métiers hybrides** comme le **journalisme scientifique** ou la **médiation culturelle** ? *(connaissance générale : ces métiers combinent expertise scientifique et compétences en communication.)*",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.1144,
+      "nom": "Licence - Double diplôme - Licence Chimie - Double diplôme Sciences et Journalisme - Licence Science",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 1.0333,
+      "nom": "INFORMATION, COMMUNICATION — None",
+      "etablissement": "Université Sorbonne Nouvelle",
+      "ville": "PARIS",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.019,
+      "nom": "INFORMATION, COMMUNICATION — Communication des entreprises et des institutions (CEI)",
+      "etablissement": "Université Sorbonne Nouvelle",
+      "ville": "PARIS",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0169,
+      "nom": "INFORMATION, COMMUNICATION — Communication, innovation et planning stratégique",
+      "etablissement": "Conservatoire national des arts et métiers",
+      "ville": "PARIS",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 0.8541,
+      "nom": "diplôme des hautes études cinématographiques",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "communication",
+      "labels": []
+    },
+    {
+      "score": 0.8537,
+      "nom": "master mention humanités et industries créatives",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "communication",
+      "labels": []
+    },
+    {
+      "score": 0.852,
+      "nom": "scénariste",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "communication",
+      "labels": []
+    },
+    {
+      "score": 0.8502,
+      "nom": "communication",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "communication",
+      "labels": []
+    },
+    {
+      "score": 0.8499,
+      "nom": "communication interculturelle",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "communication",
+      "labels": []
+    },
+    {
+      "score": 0.8498,
+      "nom": "marketing et communication",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "communication",
+      "labels": []
+    }
+  ]
+}

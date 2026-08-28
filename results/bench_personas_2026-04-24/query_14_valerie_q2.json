@@ -1,0 +1,102 @@
+{
+  "idx_global": 14,
+  "persona_id": "valerie",
+  "query_id": "q2",
+  "query_type": "orientation_ambigue",
+  "query_text": "Mon fils veut faire STAPS mais je m'inquiète des débouchés. Est-ce un choix raisonnable aujourd'hui ?",
+  "elapsed_s": 12.77,
+  "answer": "**TL;DR**\n1. **STAPS n’est pas un choix *irraisonnable*** : 68% des diplômés trouvent un emploi en 12 mois (salaire ~1 700€ net), mais **les débouchés dépendent fortement de la spécialisation** (kiné, enseignement, santé).\n2. **Le risque ?** Une licence STAPS *générale* (sans projet précis) mène souvent à des métiers précaires (animateur sportif, coach) ou à une poursuite d’études longue (master obligatoire pour enseigner).\n3. **Solutions** :\n   - **Option 1** : STAPS *avec parcours kiné* (très sélectif mais débouchés assurés).\n   - **Option 2** : Alternatives plus sécurisantes (BTS Biologie médicale, IFSI infirmier) si le sport n’est pas une passion *professionnelle*.\n\n---\n\n### **Plan A — STAPS avec projet clair (kiné, enseignement, recherche)**\n📍 **[Licence STAPS parcours Kinésithérapie - Montpellier](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=31968&typeBac=0&originePc=0)**\n*Pour toi :* **4% d’admis** (mention B minimum requise), mais **accès direct aux écoles de kiné** (salaire ~2 500€ net après 5 ans d’études). *Idéal si ton fils vise un métier précis et a un bon dossier.*\n\n📍 **[Licence STAPS - Poitiers](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=20749&typeBac=0&originePc=0)**\n*Pour toi :* **22% d’admis** (plus accessible), mais **poursuite en master obligatoire** pour enseigner ou travailler dans le médical. *Moins risqué si le projet est flou.*\n\n---\n### **Plan B — Alternatives dans le médical/sportif (moins de risques)**\n📍 **[BTS Biologie médicale - Cachan](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11428&typeBac=0&originePc=0)**\n*Pour toi :* **25% d’admis**, débouchés **stables** (laboratoires, hôpitaux, salaire ~1 800€ net). *Si le sport est un loisir mais pas une vocation pro.*\n\n📍 **[IFSI Infirmier - Saintes](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23212&typeBac=0&originePc=0)**\n*Pour toi :* **55% d’admis**, **emploi garanti** (salaire ~2 000€ net, CDI). *Sécurité maximale, mais éloigné du sport.*\n\n---\n### **Plan C — Passerelle : STAPS + double compétence**\n*(connaissance générale)*\n- **STAPS + DU Métiers du sport** (ex : [DU Préparateur physique à Lyon 1](https://univ-lyon1.fr)) → **coaching pro/clubs**.\n- **STAPS + Licence Pro Management du sport** → **emplois dans les fédérations/collectivités**.\n*Piste si ton fils veut concilier passion et employabilité, mais nécessite un bac+3 minimum.*\n\n---\n### **⚠ Attention aux pièges**\n1. **STAPS \"générale\" = risque de précarité** : Sans spécialisation (kiné, enseignement), les diplômés deviennent souvent **auto-entrepreneurs** (coachs, animateurs) avec revenus irréguliers.\n2. **Concours kiné après STAPS : un leurre** : Seules **quelques écoles** (ex : Saint-Maurice) recrutent via STAPS. La plupart imposent une **1ère année de santé (L.AS/PASS)** ou un BTS.\n3. **Coût caché des études longues** : Kiné = **5 ans d’études** (3 ans STAPS + 2 ans école). Budget à prévoir (frais d’inscription écoles privées, logement).\n\n---\n### **Question pour vous**\nVotre fils a-t-il :\n- **Un projet précis** (kiné, professeur de sport, chercheur) ?\n- **Un niveau scolaire solide** (mention B minimum pour les parcours sélectifs) ?\n- **Une appétence pour les études longues** (5 ans pour kiné, master pour enseigner) ?\n\n*Si non, les alternatives (BTS, IFSI) offrent plus de sécurité. Un RDV avec le **Psy-EN** de son lycée peut l’aider à affiner son choix.* 👤",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.1152,
+      "nom": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours Sciences et Techniq",
+      "etablissement": "Université de Montpellier",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante"
+    },
+    {
+      "score": 1.1152,
+      "nom": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours Sciences et Techniq",
+      "etablissement": "Université de Montpellier",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante"
+    },
+    {
+      "score": 1.1137,
+      "nom": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours STAPS",
+      "etablissement": "Université de Poitiers",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sport"
+    },
+    {
+      "score": 1.1124,
+      "nom": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours STAPS - Préparation",
+      "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante"
+    },
+    {
+      "score": 1.1124,
+      "nom": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours STAPS - Préparation",
+      "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante"
+    },
+    {
+      "score": 1.1031,
+      "nom": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours STAPS  Limoges",
+      "etablissement": "Université de Limoges",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sport"
+    },
+    {
+      "score": 1.092,
+      "nom": "Licence - Sciences et Techniques des Activités Physiques et Sportives - Parcours STAPS",
+      "etablissement": "Université de Poitiers (Site d'Angoulême)",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sport"
+    },
+    {
+      "score": 1.0401,
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée polyvalent de Cachan",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante"
+    },
+    {
+      "score": 1.0401,
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée polyvalent de Cachan",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante"
+    },
+    {
+      "score": 1.0368,
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI CH Saintes",
+      "niveau": null,
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante"
+    }
+  ]
+}

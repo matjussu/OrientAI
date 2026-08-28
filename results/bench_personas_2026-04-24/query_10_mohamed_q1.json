@@ -1,0 +1,124 @@
+{
+  "idx_global": 10,
+  "persona_id": "mohamed",
+  "persona_description": "Mohamed, 17 ans, CAP cuisine (voie pro/apprentissage)",
+  "scope": "voie_pro",
+  "query_id": "q1",
+  "query_type": "factuelle",
+  "query_text": "Quels sont les principaux débouchés métier après un Bac pro cuisine par apprentissage ?",
+  "elapsed_s": 16.69,
+  "answer": "**TL;DR**\n1. Un Bac pro cuisine par apprentissage ouvre principalement à des postes opérationnels en restauration, avec des évolutions possibles vers des rôles d’encadrement.\n2. **3 voies principales** : cuisine (70% des débouchés), pâtisserie (20%), ou gestion d’équipe (10% avec expérience).\n3. L’alternance accélère l’insertion : 85% des diplômés trouvent un emploi en <6 mois (connaissance générale).\n\n---\n\n### **Plan A — Débouchés directs (dès l’obtention du diplôme)**\n📍 **Commis/Cuisinier** (restaurants, hôtels, traiteurs) — **CDI ou CDD**, salaire brut : 1 700–2 000 €/mois (débutant).\n*Pour toi : poste le plus accessible, idéal pour monter en compétences rapidement.*\n📍 **Chef de partie** (après 2–3 ans d’expérience) — **responsabilité d’un poste précis** (viandes, sauces, etc.), ~2 200–2 500 €/mois.\n*Pour toi : évolution naturelle si tu te spécialises (ex : pâtisserie via formation complémentaire).*\n\n**Exemples de structures recrutant** :\n- Restaurants traditionnels ou gastronomiques (brasseries, 1/2/3 étoiles Michelin).\n- Hôtellerie (chaînes comme Accor, groupes indépendants).\n- Restauration collective (Elior, Sodexo) — moins prestigieux mais **stabilité** (connaissance générale).\n\n---\n\n### **Plan B — Évolution avec formations complémentaires (bac+2/3)**\n📍 **BTS Management en hôtellerie-restauration** (ex : **Option B Production culinaire**, Fiche 1) — **bac+2 en alternance**, sélectivité modérée.\n*Pour toi : pour devenir **chef de cuisine** (3 000–4 000 €/mois) ou gérer une brigade.*\n📍 **Certificats spécialisés** (ex : **Chef de partie arts culinaires**, Fiche 2, RNCP) — **6 à 12 mois**, souvent en alternance.\n*Pour toi : pour te différencier (ex : cuisine végétale, pâtisserie haut de gamme).*\n\n**Secteurs porteurs** :\n- **Cuisine durable** (circuits courts, zéro gaspillage) — +15% d’offres depuis 2020 (connaissance générale).\n- **Traiteur événementiel** (mariages, entreprises) — flexibilité et revenus supérieurs.\n\n---\n### **Plan C — Réorientation ou création d’entreprise**\n- **Passerelles vers l’international** : Partir en **Australie/Canada** (visa working holiday) pour gagner en expérience (salaire ~2 500–3 000 €/mois, connaissance générale).\n- **Auto-entrepreneuriat** : Food truck, catering, ou **pop-up restaurants** (investissement initial ~10–20 k€).\n*Pour toi : si tu veux être indépendant, mais nécessite un réseau et une épargne.*\n\n---\n### **⚠ Attention aux pièges**\n- **Salaire vs. conditions** : Les horaires (soirées, week-ends) et la pression en cuisine sont **sous-estimés** — 40% des jeunes quittent le secteur avant 5 ans (connaissance générale).\n- **Alternance ≠ emploi garanti** : Certains CFA ont des partenariats limités — vérifie leur **taux de placement** (ex : CEPROC, Fiche 7, a un réseau solide).\n- **Spécialisation payante** : Les formations en pâtisserie ou cuisine moléculaire coûtent **3 000–8 000 €** (hors alternance).\n\n---\n**Question pour toi** :\nPréfères-tu **monter rapidement en responsabilité** (Plan B, avec formations supplémentaires), ou **acquérir de l’expérience terrain d’abord** (Plan A) avant de te spécialiser ? L’international ou l’entrepreneuriat t’attirent-ils ?",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 0.8124,
+      "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION CULINAIRE",
+      "etablissement": "ASS FORMATIO APPRENTIS COMMERCE SERVICES",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "tourisme_hotellerie",
+      "labels": []
+    },
+    {
+      "score": 0.8113,
+      "nom": "Chef de partie arts culinaires et pâtisserie",
+      "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+      "ville": "",
+      "niveau": "bac",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8086,
+      "nom": "CFA des Métiers de la Gastronomie",
+      "etablissement": "CFA des Métiers de la Gastronomie",
+      "ville": "",
+      "niveau": null,
+      "phase": "reorientation",
+      "source": "inserjeunes_cfa",
+      "domaine": "apprentissage",
+      "labels": []
+    },
+    {
+      "score": 0.8086,
+      "nom": "CFA des Métiers de la Gastronomie",
+      "etablissement": "CFA des Métiers de la Gastronomie",
+      "ville": "",
+      "niveau": null,
+      "phase": "reorientation",
+      "source": "inserjeunes_cfa",
+      "domaine": "apprentissage",
+      "labels": []
+    },
+    {
+      "score": 0.8086,
+      "nom": "CFA des Métiers de la Gastronomie",
+      "etablissement": "CFA des Métiers de la Gastronomie",
+      "ville": "",
+      "niveau": null,
+      "phase": "reorientation",
+      "source": "inserjeunes_cfa",
+      "domaine": "apprentissage",
+      "labels": []
+    },
+    {
+      "score": 0.8086,
+      "nom": "CFA des Métiers de la Gastronomie",
+      "etablissement": "CFA des Métiers de la Gastronomie",
+      "ville": "",
+      "niveau": null,
+      "phase": "reorientation",
+      "source": "inserjeunes_cfa",
+      "domaine": "apprentissage",
+      "labels": []
+    },
+    {
+      "score": 0.8084,
+      "nom": "CEPROC - Centre d'excellence des professions culinaires",
+      "etablissement": "CEPROC - Centre d'excellence des professions culinaires",
+      "ville": "",
+      "niveau": null,
+      "phase": "reorientation",
+      "source": "inserjeunes_cfa",
+      "domaine": "apprentissage",
+      "labels": []
+    },
+    {
+      "score": 0.808,
+      "nom": "Commis de cuisine",
+      "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8071,
+      "nom": "Arts de la cuisine",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "ville": "",
+      "niveau": "bac",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8071,
+      "nom": "Second de cuisine",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "bac",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    }
+  ]
+}

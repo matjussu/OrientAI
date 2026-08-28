@@ -1,0 +1,124 @@
+{
+  "idx_global": 3,
+  "persona_id": "lila",
+  "persona_description": "Lila, 17 ans, Terminale L indécise (scope initial)",
+  "scope": "initial",
+  "query_id": "q3",
+  "query_type": "contextuelle_riche",
+  "query_text": "Je suis en Terminale L, j'ai 14 de moyenne, j'aime écrire et j'aime l'histoire mais je ne veux pas être prof. Je cherche un parcours post-bac qui me laisse plusieurs options métiers ouvertes.",
+  "elapsed_s": 10.07,
+  "answer": "**TL;DR**\n1. Avec 14 de moyenne, la double licence **Histoire/Médias** (Sorbonne) est trop sélective (7% d’admission, 59% de mentions TB). **Histoire/LLCER Anglais** (Sorbonne) ou **Mondes anglophones** (Paris 8) sont plus réalistes (31-39% d’admission).\n2. Ces parcours ouvrent sur des métiers variés (journalisme, édition, communication, recherche) sans te fermer de portes.\n3. **Priorité** : Choisis entre un double diplôme exigeant (Sorbonne) ou un parcours plus flexible (Paris 8) avec des stages pour explorer.\n\n---\n\n### **Plan A — Réaliste : Double licence Histoire + Anglais (Sorbonne ou Paris 8)**\n📍 **[Histoire/LLCER Anglais](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9302&typeBac=0)** (Sorbonne, Paris) — bac+3 public, sélectivité 31%, 65 places\n*Pour toi : 43% des admis ont une mention B (comme toi avec 14/20). Débouchés en édition, traduction, ou concours (bibliothèques, patrimoine).*\n\n📍 **[Mondes anglophones](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=20910&typeBac=0)** (Paris 8, Saint-Denis) — bac+3 public, sélectivité 39%, 35 places\n*Pour toi : Moins sélective que la Sorbonne, plus ouverte aux bacs techno (12% des admis). Idéal si tu veux mixer histoire et communication.*\n\n**⚠ Attention** : La Sorbonne exige un dossier très solide (notes + lettre de motivation). Paris 8 est plus accessible mais moins prestigieuse.\n\n---\n### **Plan B — Ambitieux : Double licence Histoire/Médias (Sorbonne)**\n📍 **[Histoire et Médias](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=35152&typeBac=0)** (Sorbonne, Paris) — bac+3 public, **sélectivité 7%**, 25 places\n*Pour toi : 59% des admis ont une mention TB. Si tu vises cette voie, il te faut un dossier exceptionnel (16+ de moyenne, projets en lien avec les médias).*\n\n**Passerelle** : Si tu es pris·e en Histoire/LLCER Anglais (Plan A), tu peux tenter une réorientation en L2 vers Histoire/Médias après une année validée avec d’excellents résultats.\n\n---\n### **Plan C — Alternatives métiers : Journalisme ou Édition (après une licence)**\n*(connaissance générale)*\nSi tu veux **écrire sans être prof**, voici des pistes après une licence d’histoire/anglais :\n- **Écoles de journalisme** (ex : [CFJ](https://www.cfj-paris.com/), [ESJ Lille](https://www.esj-lille.fr/)) : accessibles sur concours après bac+3.\n- **Métiers de l’édition** (correcteur·rice, éditeur·rice) : stages en maison d’édition pendant tes études.\n- **Communication culturelle** : musées, médias, institutions (ex : chargé·e de projet en patrimoine).\n\n**Exemple concret** : Une licence Histoire + LLCER Anglais te permet de postuler à des masters en **journalisme culturel** ou **médiation du patrimoine**.\n\n---\n**Question pour toi** : Préfères-tu un parcours **exigeant mais prestigieux** (Sorbonne) ou **plus flexible avec des stages** (Paris 8) pour explorer les métiers de l’écriture ?\n\n👤 *Pour affiner ton projet, un RDV avec le·a Psy-EN de ton lycée ou le SCUIO de ta future fac peut t’aider à préciser tes options.*",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.1081,
+      "nom": "Double licence - Histoire / Langues, littératures et civilisations étrangères et régionales - HISTOI",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.1066,
+      "nom": "Double licence - Histoire / Langues, littératures et civilisations étrangères et régionales -  Parco",
+      "etablissement": "Université Paris 8",
+      "ville": "Saint-Denis",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.1064,
+      "nom": "Double licence - Histoire / Information et communication - Histoire et Médias",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0081,
+      "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — Lettres",
+      "etablissement": "Université de Perpignan Via Domitia",
+      "ville": "PERPIGNAN",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0078,
+      "nom": "METIERS DE L'ENSEIGNEMENT, DE L'EDUCATION ET DE LA FORMATION (MEEF), 2E DEGRE — Enseigner les Lettre",
+      "etablissement": "Aix-Marseille Université",
+      "ville": "MARSEILLE",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 0.918,
+      "nom": "Journaliste",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.9168,
+      "nom": "Écriture",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.8364,
+      "nom": "certificat d'aptitude aux fonctions de psychologue de l'éducation nationale spécialité éducation, dé",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 0.8064,
+      "nom": "Linguiste et exploitant en langues étrangères",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "langues",
+      "labels": []
+    },
+    {
+      "score": 0.8051,
+      "nom": "année de mise à niveau avant les licences avec une option 'accès santé' (L.AS)",
+      "etablissement": "L.AS",
+      "ville": "",
+      "niveau": null,
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "sport",
+      "labels": []
+    }
+  ]
+}

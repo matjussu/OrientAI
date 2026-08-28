@@ -1,0 +1,124 @@
+{
+  "idx_global": 6,
+  "persona_id": "theo",
+  "persona_description": "Théo, 19 ans, L2 Droit en échec (scope réorientation)",
+  "scope": "reorientation",
+  "query_id": "q3",
+  "query_type": "contextuelle_riche",
+  "query_text": "J'ai validé ma L1 de droit mais je galère en L2, je pense à me réorienter vers l'audiovisuel ou le commerce, si possible en alternance. J'habite à Bordeaux, quelles options concrètes ?",
+  "elapsed_s": 17.34,
+  "answer": "**TL;DR**\n1. **L’audiovisuel et le commerce en alternance depuis Bordeaux, c’est possible** — mais pas en direct : il faut d’abord valider un bac+2/3 technique (BTS, licence pro, bachelor) avant de viser un master ou une école.\n2. **Ton atout** : ta L1 de droit compte pour des admissions parallèles (ex : écoles de commerce en bac+2/3) ou des licences pro \"métiers du droit + audiovisuel\".\n3. **Calendrier clé** : candidater **dès maintenant** (mars-mai) pour une rentrée 2024 en alternance. Pôle Emploi et les CFA bordelais ont des offres.\n\n---\n\n### **Plan A — Réaliste : Licence pro ou BTS en alternance (2024-2025)**\n**Étape 1 → Valider un bac+3 pro en 1 an** (alternance possible) :\n📍 **Licence pro Métiers du numérique : conception, rédaction et réalisation web** (Univ. Bordeaux Montaigne) — bac+3 public, **alternance 100%**, débouchés : assistant réalisation, motion design · [fiche officielle](https://www.onisep.fr/http/redirection/formation/slug/FOR.10207)\n*Pour toi : ton L1 de droit te donne un bonus pour les licences pro \"droit + numérique\" (ex : gestion de projets culturels).*\n\n**Étape 2 → Poursuite en master** :\n- **Master Pro Audiovisuel** (Univ. Bordeaux Montaigne) après ta licence pro.\n- **Écoles de commerce en admission parallèle** (ex : KEDGE Bordeaux, concours Passerelle) avec ton bac+3.\n\n**Comment faire ?**\n- **Dossier maintenant** : Contacte le **CFA CODIS** (Bordeaux) pour les contrats pro en audiovisuel.\n- **Plateformes** : [La Bonne Alternance](https://labonnealternance.pole-emploi.fr/) (filtre \"Bordeaux\" + \"audiovisuel/commerce\").\n\n---\n\n### **Plan B — Ambitieux : École de commerce ou formation armée (sélective mais gratuite)**\n**Option 1 : École de commerce en alternance** (concours sélectif) :\n📍 **Bachelor KEDGE Bordeaux** — bac+3 privé (6k€/an), **alternance possible en 3e année**, grade Licence · [site officiel](https://www.kedge.edu/)\n*Pour toi : ton L1 de droit compte pour l’admission parallèle. Vise le concours **Passerelle Bachelor** (avril 2024).*\n\n**Option 2 : Formations gratuites du Ministère des Armées** (sélectif mais sans frais) :\n📍 **Linguiste et exploitant en langues étrangères** (Ministère des Armées, **Bordeaux-Mérignac**) — bac+2, **formation rémunérée**, débouchés : audiovisuel militaire (reportages, communication) · [fiche officielle](https://www.defense.gouv.fr/)\n*Pour toi : si tu parles anglais/espagnol, candidature sur [Parcours Défense](https://www.defense.gouv.fr/) avant juin 2024.*\n\n**Calendrier** :\n- **KEDGE** : Dossier avant **mi-avril** pour la rentrée 2024.\n- **Armées** : Tests en **mai-juin** (prévois 3 mois de délai administratif).\n\n---\n### **Plan C — Passerelle : VAE + expérience terrain**\nSi tu veux **éviter les études longues** :\n1. **Trouve un emploi en production audiovisuel** (ex : assistant de plateau) via des **boîtes d’intérim bordelaises** (Adecco, Randstad).\n2. **Valide tes compétences par la VAE** :\n   - **RNCP \"Réalisateur audiovisuel\"** (niveau bac+3) après 1 an d’expérience.\n   - **Contact** : [France VAE](https://www.francevae.fr/) pour monter ton dossier (gratuit si tu as moins de 28 ans).\n\n**Exemple concret** :\n- **Entreprise** : **Bordeaux Métropole** recrute des chargés de communication (alternance possible).\n- **Lien** : [Offres d’alternance Nouvelle-Aquitaine](https://www.nouvelle-aquitaine.fr/alternance).\n\n---\n⚠ **Attention** :\n- **Évite les formations privées non RNCP** en audiovisuel (ex : écoles à 8k€/an sans diplôme reconnu). Vérifie toujours le **numéro RNCP** sur [France Compétences](https://www.francecompetences.fr/).\n- **Alternance = contrat signé avant la rentrée** : commence tes recherches **maintenant** (mars-avril).\n\n---\n**Question pour toi** :\nPréfères-tu **un diplôme rapide en 1 an** (licence pro) pour entrer sur le marché du travail, ou **viser une école** (commerce/audiovisuel) avec un meilleur réseau mais plus longue ? *(Réponds en fonction de ton urgences financière et de ta mobilité géo.)*\n\n---\n👤 **Pour aller plus loin** :\n- **RDV avec le SCUIO de l’Univ. Bordeaux** (ils ont des listes d’alternances locales).\n- **Salon Studyrama Alternance Bordeaux** (18 mai 2024) : [inscription gratuite](https://www.studyrama.com/).",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.0054,
+      "nom": "DROIT DE LA PROPRIETE INTELLECTUELLE — Administration, usages et droit des institutions artistiques ",
+      "etablissement": "Université de Bordeaux",
+      "ville": "PESSAC",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "monmaster",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8484,
+      "nom": "Brevet de second polyvalent",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8356,
+      "nom": "Réalisateur audiovisuel",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8325,
+      "nom": "Brevet de second capitaine",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8291,
+      "nom": "master mention économie de l'entreprise et des marchés",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8287,
+      "nom": "diplôme de grand établissement mention économie et finance",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8278,
+      "nom": "mastère en droit des affaires - option contrats internationaux et compliance",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8058,
+      "nom": "Linguiste et exploitant en langues étrangères",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "langues",
+      "labels": []
+    },
+    {
+      "score": 0.7927,
+      "nom": "classe préparatoire économique et commerciale option technologique (2e année)",
+      "etablissement": "2e année",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.7641,
+      "nom": "licence mention économie et gestion",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    }
+  ]
+}

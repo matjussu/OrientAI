@@ -1,0 +1,124 @@
+{
+  "idx_global": 5,
+  "persona_id": "theo",
+  "persona_description": "Théo, 19 ans, L2 Droit en échec (scope réorientation)",
+  "scope": "reorientation",
+  "query_id": "q2",
+  "query_type": "orientation_ambigue",
+  "query_text": "Je n'aime pas du tout le droit, je ne veux pas redoubler. Qu'est-ce qui est le plus réaliste cette année pour me réorienter ?",
+  "elapsed_s": 16.59,
+  "answer": "**TL;DR**\n1. Si le droit ne te plaît pas, **pas besoin de redoubler** : des passerelles existent dès cette année vers des métiers valorisant tes compétences en langues, analyse ou gestion.\n2. **Priorité aux formations courtes (bac+2/3) avec débouchés concrets** : BTS, BUT, licences pro ou certifications RNCP (ex : linguiste, greffier, économie appliquée).\n3. **Étape clé** : identifie *un* domaine qui t’attire (langues, chiffres, social, tech) pour cibler la réorientation. Sans cela, je te propose des options polyvalentes ci-dessous.\n\n---\n\n### **Plan A — Réorientation rapide (2024-2025) : Formations courtes avec débouchés**\n**Option 1 : Métiers des langues (sans droit)**\n📍 **Linguiste et exploitant en langues étrangères** — [Ministère des Armées](https://www.defense.gouv.fr/) (recrutement niveau bac+2, **certificat RNCP**)\n*Pour toi* : Si tu aimes les langues et l’analyse (traduction, renseignement), formation **gratuite et rémunérée** (statut militaire ou contractuel). Sélectivité modérée (concours sur tests psychotechniques + langues).\n→ **Calendrier** : Candidatures ouvertes toute l’année via [le site du ministère](https://www.defense.gouv.fr/). Préparation possible en 3-6 mois (ex : CNED).\n\n📍 **BUT Métiers du Multimédia et de l’Internet (MMI)** — [IUT de Toulouse](https://iut.univ-tlse3.fr/) (bac+3 public, **sélectivité ~40%**)\n*Pour toi* : Si tu veux éviter le droit mais garder un côté \"analyse\" (création de contenus, gestion de projets web). Alternance possible dès la 2e année.\n→ **Parcoursup 2025** : [Fiche officielle](https://www.parcoursup.fr/) (recherche \"BUT MMI\").\n\n**Option 2 : Gestion/Économie (sans droit pur)**\n📍 **BTS Gestion de la PME** — [Lycée public près de chez toi](https://www.onisep.fr/) (bac+2, **sélectivité ~60%**, grade Licence via passerelles)\n*Pour toi* : Polyvalent (comptabilité, RH, logistique), **taux d’insertion ~70%** (source : [InserSup DEPP](https://www.education.gouv.fr/)). Idéal si tu aimes l’organisation sans la théorie juridique.\n→ **Parcoursup** : Vœux jusqu’à **mars 2025** (places souvent disponibles en phase complémentaire).\n\n---\n\n### **Plan B — Réorientation avec spécialisation (si tu veux un bac+3)**\n**Si tu as un bac général avec mentions B/TB** (profil des doubles licences ci-dessus, mais *sans le droit*) :\n📍 **Licence Économie et Mathématiques** — [Université Paris Dauphine](https://www.dauphine.fr/) (bac+3, **sélectivité ~25%**)\n*Pour toi* : Mix d’analyse quantitative et sciences sociales (débouchés : data, finance, conseil). **Pas de droit**, mais des outils concrets.\n→ **Alternative moins sélective** : [Licence MIASHS](https://www.onisep.fr/) (Maths-Informatique appliquées aux SHS) à Strasbourg ou Bordeaux.\n\n**Si tu préfères éviter l’université** :\n📍 **École de commerce post-bac** (ex : [BBA INSEEC](https://www.inseec.com/), **sélectivité ~30-40%**, coût ~8k€/an)\n*Pour toi* : Accès possible avec un dossier moyen (11-12 de moyenne) + entretien. **Attention** : budget élevé (bourses/alternance à prévoir).\n→ **Passerelle** : Après un BTS/BUT (Plan A), tu peux intégrer une école en 3e année via les admissions parallèles (concours Passerelle).\n\n---\n\n### **Plan C — Solutions immédiates (si tu veux quitter les études maintenant)**\n1. **Certifications professionnelles** (3-6 mois) :\n   - **RNCP \"Chargé de clientèle bancaire\"** (formation gratuite via Pôle Emploi ou OPCO).\n   - **Titre professionnel \"Assistant manager\"** (AFPA, [site officiel](https://www.afpa.fr/)).\n   *Pour toi* : Embauche rapide (CDD/CDI) avec évolution possible vers bac+3 en alternance.\n\n2. **Service civique** :\n   - Missions en **médiation culturelle**, **coopération internationale** (ex : [Uniscité](https://www.uniscite.fr/)) ou **environnement**.\n   *Pour toi* : 6-12 mois pour tester un secteur + indemnité (~600€/mois).\n\n---\n\n### **⚠ Attention aux pièges**\n- **Évite les doubles licences droit/langues** (Fiches 1-5) : même avec une option \"international\", le cœur reste juridique. Tu risquerais de redoubler.\n- **Méfie-toi des écoles privées non labellisées** (ex : \"écoles de commerce\" à 10k€/an sans grade Master). Vérifie toujours le **label RNCP** ou **grade Licence/Master** sur [France Compétences](https://www.francecompetences.fr/).\n\n---\n**Question pour toi** :\nQu’est-ce qui t’attire le plus parmi ces options ?\n- **Langues/analyse** (linguiste, MMI) ?\n- **Chiffres/gestion** (BTS PME, économie) ?\n- **Action terrain** (service civique, armée) ?\n→ Cela permettra d’affiner les formations ciblées (ex : si \"langues\", je peux te détailler les concours du Ministère des Armées ou les BTS Tourisme).",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.0926,
+      "nom": "Double licence - Droit / Langues étrangères appliquées - Double mention DROIT / LANGUES ÉTRANGÈRES A",
+      "etablissement": "Université de Poitiers",
+      "ville": "Poitiers",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 1.0926,
+      "nom": "Double licence - Langues, littératures et civilisations étrangères et régionales / Droit - Anglais -",
+      "etablissement": "Université d'Amiens",
+      "ville": "Amiens",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 1.0866,
+      "nom": "Double licence - Science politique / Droit -",
+      "etablissement": "Université Paris Panthéon Assas",
+      "ville": "Paris  5e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 1.0831,
+      "nom": "Double licence - Droit / Langues étrangères appliquées - Double Licence : Droit-Langues Option Droit",
+      "etablissement": "Université Grenoble Alpes",
+      "ville": "Saint-Martin-d'Hères",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 1.0822,
+      "nom": "Licence - Double diplôme - Licence Droit - Droits français et suisse",
+      "etablissement": "Université Paris Panthéon Assas",
+      "ville": "Paris  5e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8293,
+      "nom": "Brevet de second polyvalent",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8224,
+      "nom": "licence mention économie mathématiques (double diplôme licence - DU)",
+      "etablissement": "double diplôme licence - DU",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8201,
+      "nom": "Chef de service pénal",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.7861,
+      "nom": "Linguiste et exploitant en langues étrangères",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "langues",
+      "labels": []
+    },
+    {
+      "score": 0.7818,
+      "nom": "Greffier pénaliste",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    }
+  ]
+}

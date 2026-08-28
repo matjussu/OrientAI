@@ -1,0 +1,124 @@
+{
+  "idx_global": 17,
+  "persona_id": "psy_en",
+  "persona_description": "Psy-EN (psychologue Éducation nationale)",
+  "scope": "pro",
+  "query_id": "q2",
+  "query_type": "orientation_ambigue",
+  "query_text": "Une élève en 1ère S redouble avec 7 de moyenne en maths mais excellente en philo, comment la guider vers un post-bac réaliste ?",
+  "elapsed_s": 14.15,
+  "answer": "**TL;DR**\n1. Avec 7/20 en maths en 1ère S, les doubles licences scientifiques (biomédical/maths) ou les prépas ingé sont **inaccessibles** en direct (67% de mentions TB requises).\n2. **Priorité absolue** : rebondir sur ses points forts (philo) + éviter les filières à fort coefficient maths.\n3. **Plan A réaliste** : double licence philo/sciences (Sorbonne) ou LEA (langues + économie) — sélectivité modérée (21%), admis avec mentions B/AB.\n\n---\n\n### **Plan A — Réaliste : Double licence Philosophie-Sciences (Sorbonne) ou LEA**\n📍 **[Double licence Sciences-Philosophie](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=30860&typeBac=0&originePc=0)** (Sorbonne, Paris) — bac+3 public, **sélectivité 21%** (24 places).\n*Pour toi : 41% des admis ont la mention TB, mais 18% ont la mention B — cible réaliste si tu vises 14+ en philo et 10-12 en maths en Terminale. Débouchés : enseignement, recherche, métiers de la culture scientifique.*\n\n📍 **Licence LEA (Langues Étrangères Appliquées)** (ex : [Université Bordeaux Montaigne](https://www.u-bordeaux-montaigne.fr/)) — bac+3 public, **sélectivité ~40-60%** (connaissance générale).\n*Pour toi : 0 maths après le bac, mise en avant de tes compétences linguistiques/rédactionnelles. Débouchés : traduction, commerce international, communication.*\n\n---\n### **Plan B — Ambitieux : Double diplôme Philosophie-Maths (Sciences Po)**\n📍 **[Double diplôme Philosophie-Maths](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=32557&typeBac=0&originePc=0)** (Sciences Po, Paris) — bac+3 public, **sélectivité 15%** (27 places).\n*Pour toi : 65% de mentions TB — exige un 16+ en philo ET un rattrapage maths à 12+ en Terminale. Si tu es prête à bosser 2h/jour les maths l’an prochain, c’est jouable. Sinon, risque de découragement.*\n\n---\n### **Plan C — Passerelle : BTS + spécialisation progressive**\n(connaissance générale)\n- **BTS Communication** (public, sélectivité ~70%) → puis licence pro métiers du livre/édition (ex : [IUT Bordeaux](https://www.iut.u-bordeaux.fr/)).\n  *Pour toi : 0 maths, valorisation de ta philo via des projets rédactionnels. Débouchés : édition, médiation culturelle.*\n- **Classe prépa BL (Lettres et Sciences Sociales)** (ex : [Lycée Henri-IV](https://www.lyc-henri4.ac-paris.fr/)) → si tu montes à 12+ en maths en Terminale.\n  *Pour toi : 50% de philo/lettres, 50% de maths allégées. Débouchés : ENS, écoles de commerce (HEC via BCE).*\n\n---\n### **⚠ Attention aux pièges**\n- **Éviter absolument** : les doubles licences biomédicales/maths (67% de mentions TB) ou les prépas ingé (coefficient maths écrasant).\n- **Piège \"passion philo = fac de philo\"** : la licence mono-philo a un taux d’insertion de **44%** (source InserSup DEPP) — mieux vaut la coupler à une autre compétence (sciences, langues, droit).\n\n---\n**Question pour toi :**\n1. Es-tu prête à **travailler les maths 2h/jour en Terminale** pour viser Sciences Po (Plan B), ou préfères-tu une voie sans maths (Plan A) ?\n2. La mobilité géographique est-elle un frein ? (Les alternatives à Paris sont plus sélectives, mais Bordeaux/Lyon offrent des LEA moins tendues.)",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.0916,
+      "nom": "Double licence - Sciences biomédicales / Mathématiques - Sciences biomédicales / Mathématiques",
+      "etablissement": "Université Paris Cité",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "labels": []
+    },
+    {
+      "score": 1.0916,
+      "nom": "Double licence - Sciences biomédicales / Mathématiques - Sciences biomédicales / Mathématiques",
+      "etablissement": "Université Paris Cité",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "labels": []
+    },
+    {
+      "score": 1.084,
+      "nom": "Licence - Double diplôme - Licence Mathématiques - Sciences et Sciences sociales / Spécialité Mathém",
+      "etablissement": "Institut d'études politiques de Paris - Sciences Po",
+      "ville": "Paris  7e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0839,
+      "nom": "Licence - Double diplôme - Licence Mathématiques et informatique appliquées aux sciences humaines et",
+      "etablissement": "Institut d'études politiques de Paris - Sciences Po",
+      "ville": "Paris  7e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0793,
+      "nom": "Double licence - Sciences - Philosophie",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0791,
+      "nom": "Licence - Double diplôme - Licence Philosophie - Humanités littéraires et Sciences sociales / Filièr",
+      "etablissement": "Institut d'études politiques de Paris - Sciences Po",
+      "ville": "Paris  7e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "sciences_humaines",
+      "labels": []
+    },
+    {
+      "score": 1.0751,
+      "nom": "Formation d'ingénieur Bac + 5 - Bac Série générale avec 2 spécialités scientifiques mais sans la spé",
+      "etablissement": "ECE Paris",
+      "ville": "Paris 15e  Arrondissement",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "parcoursup",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 1.0735,
+      "nom": "Formation d'ingénieur Bac + 5 - Bac Série générale avec la spécialité Maths en Terminale + une spéci",
+      "etablissement": "ECE Paris",
+      "ville": "Paris 15e  Arrondissement",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "parcoursup",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8202,
+      "nom": "Mathématiques appliquées",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.8113,
+      "nom": "certificat d'aptitude aux fonctions de psychologue de l'éducation nationale spécialité éducation, dé",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "sciences_humaines",
+      "labels": []
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "idx_global": 4,
+  "persona_id": "theo",
+  "persona_description": "Théo, 19 ans, L2 Droit en échec (scope réorientation)",
+  "scope": "reorientation",
+  "query_id": "q1",
+  "query_type": "factuelle",
+  "query_text": "Quelles passerelles existent après une L1/L2 de droit pour aller vers un BTS ou une école de commerce ?",
+  "elapsed_s": 13.67,
+  "answer": "**TL;DR**\n1. Après une L1/L2 de droit, **3 passerelles principales** vers le commerce : admissions parallèles en école de commerce (bac+3), BTS en 1 an (accéléré), ou licences pro métiers du droit/commerce.\n2. **Écoles de commerce** : vises les concours **Passerelle/Tremplin** (bac+2/3) ou les IAE (moins chers, sélectifs sur dossier).\n3. **BTS** : possible en **1 an** (BTS MCO, NDRC) via des formations accélérées pour titulaires de bac+2. Calendrier serré (rentrée en septembre/octobre).\n\n---\n\n### **Étape 1 → BTS en 1 an (accéléré) : la voie express**\n📍 **BTS MCO (Management Commercial Opérationnel) ou NDRC (Négociation et Digitalisation de la Relation Client)** — bac+2 public, **formation accélérée en 1 an** pour titulaires de bac+2, sélectivité modérée (dossier + entretien).\n*Pour toi : idéal si tu veux un diplôme pro rapide et concret. Exemples : [BTS MCO en accéléré (Greta)](https://www.greta.fr) ou [BTS NDRC (CFA)](https://www.alternance.fr).*\n*(connaissance générale : ces BTS accélérés existent dans la plupart des académies, souvent proposés par les Greta ou CFA. Contacte le CFA de ta région pour les dates limites, généralement **juin-juillet** pour une rentrée en septembre.)*\n\n**Calendrier clé** :\n- **Mai-juin** : candidatures auprès des Greta/CFA (dossier + parfois tests).\n- **Septembre/octobre** : rentrée (pas de Parcoursup, démarches directes).\n\n---\n\n### **Étape 2 → École de commerce via admissions parallèles (bac+2/3)**\n#### **Option A : Concours Passerelle 1 (bac+2) ou Tremplin 1 (bac+3)**\n📍 **Concours Passerelle 1** — accès à **12 écoles** (ex : Burgundy School of Business, EM Normandie), **sélectivité ~20-30%** (épreuves écrites + oral).\n*Pour toi : si tu as un bon dossier (12+ de moyenne en L2), cible les écoles en province (moins chères, 6k-8k€/an).*\n- **Calendrier** :\n  - **Janvier-mars** : inscriptions sur [www.passerelle-esc.com](https://www.passerelle-esc.com).\n  - **Avril-mai** : concours (écrits + oraux).\n  - **Juillet** : résultats.\n\n📍 **Concours Tremplin 1** — accès à **5 écoles** (ex : Kedge, Audencia), **sélectivité ~15-25%** (dossier + TAGE MAGE + anglais).\n*Pour toi : plus exigeant, mais débouchés solides. Prépare le TAGE MAGE (3-6 mois de révision).*\n\n#### **Option B : IAE (Institut d’Administration des Entreprises)**\n📍 **Licence 3 IAE** (ex : IAE Paris, IAE Toulouse) — bac+3 public, **sélectivité ~30-50%** (dossier + score IAE Message), **coût : 200-600€/an**.\n*Pour toi : alternative publique et peu chère aux écoles de commerce. Le score IAE Message se prépare en 2-3 mois.*\n- **Calendrier** :\n  - **Mars-avril** : inscriptions sur [www.iae-message.fr](https://www.iae-message.fr).\n  - **Mai-juin** : concours.\n\n---\n### **Étape 3 → Licence pro (métiers du droit/commerce) : le compromis**\n📍 **Licence pro Métiers du droit et du commerce** (ex : Université de Strasbourg, Rennes 2) — bac+3 public, **sélectivité ~40-60%** (dossier + entretien), **alternance possible**.\n*Pour toi : mélange droit et commerce, idéal pour travailler dans des cabinets juridiques avec une dimension commerciale (ex : clerk, assistant juridique en entreprise).*\n- **Exemple** : [Licence pro Droit et Commerce (Rennes 2)](https://www.univ-rennes2.fr).\n- **Calendrier** : candidatures via **eCandidat** (plateforme des universités) **entre avril et juin**.\n\n---\n### **⚠ Attention aux pièges**\n1. **BTS accéléré** : certaines formations privées coûtent **3k-5k€/an** pour un diplôme public. Privilégie les **Greta/CFA publics** (gratuit ou <500€/an).\n2. **Écoles de commerce post-bac+2** : évite les écoles non reconnues par l’État (vérifie le **grade Master** ou le label **CGE** sur [www.cefdg.fr](https://www.cefdg.fr)).\n\n---\n**Question pour toi** :\n- Veux-tu un diplôme **rapide et pro** (BTS en 1 an) ou un **parcours plus long mais avec un meilleur réseau** (école de commerce) ?\n- Es-tu mobile géographiquement ? Certaines passerelles (IAE, écoles) sont plus accessibles en province.",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 0.989,
+      "nom": "Licence - Double diplôme - Licence Langues, littératures et civilisations étrangères et régionales -",
+      "etablissement": "Institut Catholique de Rennes",
+      "ville": "Bruz",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8256,
+      "nom": "Brevet de second polyvalent",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8219,
+      "nom": "diplôme en économie et finance",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.8209,
+      "nom": "Brevet de second capitaine",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.7954,
+      "nom": "classe préparatoire économique et commerciale générale (2e année)",
+      "etablissement": "2e année",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.7936,
+      "nom": "classe préparatoire économique et commerciale option technologique (2e année)",
+      "etablissement": "2e année",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.7927,
+      "nom": "classe préparatoire de lettres et sciences sociales (B/L, 2e année)",
+      "etablissement": "B/L, 2e année",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.7914,
+      "nom": "classe préparatoire économique et commerciale option technologique (2e et 3e année du dispositif pou",
+      "etablissement": "2e et 3e année du dispositif pour bac pro",
+      "ville": "",
+      "niveau": "bac+2",
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.7837,
+      "nom": "classe préparatoire de lettres et sciences sociales (B/L, 1re année)",
+      "etablissement": "B/L, 1re année",
+      "ville": "",
+      "niveau": null,
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "droit",
+      "labels": []
+    },
+    {
+      "score": 0.7605,
+      "nom": "Brevet d'officier chef de quart passerelle",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    }
+  ]
+}

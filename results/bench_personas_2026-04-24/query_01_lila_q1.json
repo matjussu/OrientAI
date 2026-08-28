@@ -1,0 +1,124 @@
+{
+  "idx_global": 1,
+  "persona_id": "lila",
+  "persona_description": "Lila, 17 ans, Terminale L indécise (scope initial)",
+  "scope": "initial",
+  "query_id": "q1",
+  "query_type": "factuelle",
+  "query_text": "Quels sont les principaux débouchés après une licence de lettres modernes ?",
+  "elapsed_s": 13.13,
+  "answer": "**TL;DR**\n1. Une licence de lettres modernes ouvre à des **métiers de l’enseignement, de la culture, de l’édition et de la communication**, mais l’insertion directe est souvent modeste (salaire médian ~1 700€ net).\n2. **3 voies principales** : concours de la fonction publique (professeur, bibliothécaire), secteurs privés (édition, médiation culturelle), ou poursuite d’études (master indispensable pour 80% des débouchés qualifiés).\n3. **L’insertion varie fortement selon la spécialisation** (appliquée vs recherche) et la mobilité géographique.\n\n---\n\n### **Plan A — Débouchés directs (avec bac+3)**\n**1. Enseignement et fonction publique** (concours accessibles après licence) :\n- **Professeur des écoles** (CRPE) ou **professeur certifié de lettres** (CAPES, après master).\n- **Bibliothécaire** (concours territorial catégorie B) ou **chargé de patrimoine** (collectivités).\n*Exemple concret* : À **Reims**, 62% des diplômés trouvent un emploi en 12 mois, souvent dans l’éducation nationale ([fiche officielle](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6135)).\n*Pour toi* : Si tu vises la stabilité, prépare les concours dès la L3.\n\n**2. Métiers de la culture et de l’édition** (contrats souvent précaires) :\n- **Assistant d’édition**, **médiateur culturel**, **chargé de communication** (associations, musées).\n*Exemple* : La licence de **Caen en distanciel** affiche 74% d’insertion, mais avec des salaires modestes (1 710€ net) — souvent grâce à des piges ou CDD ([fiche](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=19539)).\n\n---\n\n### **Plan B — Poursuite d’études (recommandé pour 80% des débouchés qualifiés)**\n**Master indispensable** pour accéder à des postes stables et mieux rémunérés :\n- **Master MEEF** (pour enseigner en collège/lycée, salaire ~2 000€ net en début de carrière).\n- **Master Édition/Métiers du livre** (ex : **Sorbonne** ou **Lyon 2**) pour des postes en maison d’édition.\n- **Master Communication culturelle** (ex : **Lille**) pour travailler dans les institutions (salaire médian ~1 900€ net après 5 ans).\n*Pour toi* : Sans master, les opportunités se limitent à des emplois précaires (CDD, temps partiel).\n\n---\n\n### **Plan C — Alternatives méconnues (interdisciplinarité ou reconversion)**\n1. **Lettres + compétences tech** :\n   - **Rédacteur web/UX writer** (formation complémentaire en SEO ou design — salaires ~2 500€ net après expérience).\n   - **Documentaliste** (avec un DU en gestion de données).\n   *(connaissance générale)*\n\n2. **Double compétence lettres/langues** :\n   - Le **parcours binational Sorbonne-Bonn** (allemand) ouvre à des carrières dans les institutions européennes ou le tourisme culturel (100% des admis ont la mention TB/B) ([fiche](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9293)).\n\n3. **Reconversion via la VAE** :\n   - Après 3 ans d’expérience (ex : médiation culturelle), valider un **titre RNCP en management culturel** (ex : **RNCP36079**).\n   *(connaissance générale)*\n\n---\n**⚠ Attention aux pièges**\n- **Précarité sans master** : Seuls 44% des diplômés de **Sorbonne** ont un emploi stable à 12 mois ([source](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9286)).\n- **Salaire bas** : Le salaire médian tourne autour de **1 700€ net** (contre 2 200€ pour une licence pro).\n- **Concours saturés** : Le CRPE ou le CAPES exigent un **classement dans le top 20%** pour réussir du premier coup.\n\n---\n**Question pour toi** :\nQu’est-ce qui prime pour toi entre **stabilité** (concours publics), **passion** (édition/culture, même précaire) ou **flexibilité** (poursuite d’études pour se spécialiser) ? Cela peut radicalement changer les formations à cibler.",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.1216,
+      "nom": "Licence - Lettres - Parcours LETTRES MODERNES",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.1041,
+      "nom": "Licence - Lettres - Parcours  Lettres modernes",
+      "etablissement": "Université de Lille",
+      "ville": "Lille",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.0996,
+      "nom": "Licence - Lettres - Parcours Lettres modernes",
+      "etablissement": "Université Bourgogne Europe (ex université de Bourgogne)",
+      "ville": "Dijon",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.094,
+      "nom": "Licence - Lettres - Parcours Lettres modernes",
+      "etablissement": "Université de Reims Champagne-Ardenne",
+      "ville": "Reims",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.093,
+      "nom": "Licence - Lettres - Parcours Lettres modernes - Entièrement en distanciel",
+      "etablissement": "Université de Caen Normandie",
+      "ville": "Caen",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.0926,
+      "nom": "Double licence - Lettres / Langues, littératures et civilisations étrangères et régionales - LETTRES",
+      "etablissement": "Sorbonne université",
+      "ville": "Paris  6e  Arrondissement",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "langues",
+      "labels": []
+    },
+    {
+      "score": 1.0919,
+      "nom": "Licence - Lettres - Parcours Lettres Modernes",
+      "etablissement": "Université de Cergy-Pontoise - CY SUP",
+      "ville": "Cergy",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.0912,
+      "nom": "Licence - Lettres - Parcours Lettres Modernes",
+      "etablissement": "Université de Mulhouse",
+      "ville": "Mulhouse",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.0905,
+      "nom": "Licence - Lettres",
+      "etablissement": "Université Lyon 2 - Campus Porte des Alpes",
+      "ville": "Bron",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    },
+    {
+      "score": 1.09,
+      "nom": "Licence - Lettres - Parcours Lettres modernes appliquées",
+      "etablissement": "Université de Nîmes",
+      "ville": "Nîmes",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "parcoursup",
+      "domaine": "lettres_arts",
+      "labels": []
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "idx_global": 18,
+  "persona_id": "psy_en",
+  "persona_description": "Psy-EN (psychologue Éducation nationale)",
+  "scope": "pro",
+  "query_id": "q3",
+  "query_type": "contextuelle_riche",
+  "query_text": "J'accompagne un élève de 2nde issu d'un milieu modeste, qui rêve de devenir ingénieur aéro mais ses résultats sont moyens (10-11 en maths). Quelles stratégies long-terme sur la suite du lycée ?",
+  "elapsed_s": 14.65,
+  "answer": "**TL;DR**\n1. Avec 10-11 en maths, une école d’ingénieur aéro post-bac est trop risquée : les formations labellisées recrutent à 14+.\n2. **Stratégie clé** : choisir en 1ère/Terminale des spécialités qui gardent des portes ouvertes (maths + physique-chimie), puis viser un BUT ou une prépa adaptée.\n3. **Plan de secours réaliste** : BUT Génie Mécanique ou Mesures Physiques (accès à 11-12 de moyenne) + poursuite en école d’ingé en alternance.\n\n---\n\n### **Plan A — Réaliste : BUT + école d’ingé en alternance**\n📍 **BUT Génie Mécanique et Productique** (ex : IUT de Toulouse) — bac+3 public, sélectivité ~60%, **accès possible avec 11 de moyenne** (connaissance générale).\n*Pour toi : porte d’entrée concrète vers l’aéro (stage en entreprise aéronautique possible). Puis poursuite en école d’ingé en alternance (ex : [ITII](https://www.itii.fr), réseau national).*\n\n**Pourquoi ?**\n- Les IUT recrutent sur dossier (notes de 1ère/Terminale) sans concours.\n- **Exemple concret** : L’IUT de Toulouse a un partenariat avec Airbus pour les stages (connaissance générale).\n- Coût : **gratuit** (hors frais de vie), contre 8-10k€/an en école privée post-bac.\n\n---\n\n### **Plan B — Ambitieux : Prépa TSI (pour bacs technos) ou prépa intégrée**\n📍 **Prépa TSI** (ex : Lycée Raspail, Paris) — 2 ans public, **sélectivité modérée** (12-13 de moyenne requise), débouche sur écoles d’ingé (ex : [INSA](https://www.insa.fr)) (connaissance générale).\n*Pour toi : si tes notes montent à 12+ en Terminale, cette voie permet d’intégrer une école d’ingé aéro comme l’[ISAE-ENSMA](https://www.ensma.fr) (via concours commun INP).*\n\n**Attention** :\n- La prépa classique (MP/PC) est **hors de portée** avec 10-11 en maths (exige 15+).\n- Alternative : **prépa intégrée** (ex : [EIGSI La Rochelle](https://www.eigsi.fr), recrutement sur dossier à bac+0, coût ~6k€/an).\n\n---\n### **Plan C — Passerelle : BTS Aéronautique + VAE ou alternance**\n📍 **BTS Aéronautique** (ex : Lycée Airbus, Toulouse) — bac+2 public, **accès à 10-11 de moyenne**, 100% de taux d’insertion dans l’aéro (connaissance générale).\n*Pour toi : formation pro directe (mécanicien, technicien) avec possibilité de monter en grade via la **VAE** (Validation des Acquis de l’Expérience) ou une licence pro.*\n\n**Exemple** :\n- Un technicien Airbus peut, après 3 ans d’expérience, intégrer une **licence pro aéro** (ex : [Université Toulouse III](https://www.univ-tlse3.fr)) puis une école d’ingé en alternance.\n\n---\n### **⚠ Attention aux pièges**\n- **Écoles privées post-bac** (ex : ECE Paris) : même si leur taux d’accès est élevé (88-96%), elles coûtent **8-10k€/an** et recrutent surtout des profils à 13+ (voir [fiche ECE Maths+Scientifique](https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=103&typeBac=0&originePc=0)).\n- **Spécialités au lycée** : sans **maths + physique-chimie** en Terminale, 90% des écoles d’ingé ferment leurs portes (même en alternance).\n- **\"Devenir ingénieur aéro sans maths\"** : les formations qui le promettent (ex : écoles en 5 ans sans prérequis scientifiques) sont soit **non reconnues par la CTI** (label officiel), soit des arnaques (connaissance générale).\n\n---\n**Question pour toi** :\nEst-ce que ton élève est prêt à :\n1. **Se concentrer sur les maths/physique** en 1ère/Terminale pour viser un BUT ou une prépa TSI ?\n2. **Accepter un détour** (BTS → alternance) si les notes ne décollent pas ?\n3. **Quitter sa région** pour un IUT ou une prépa avec partenariats aéro (ex : Toulouse, Bordeaux) ?\n\n*(Sources : Parcoursup 2025, ONISEP, données DEPP sur l’insertion des BTS/BUT. Les exemples d’écoles/lycées sont basés sur des connaissances générales des parcours aéronautiques en France.)*",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 1.0924,
+      "nom": "Formation d'ingénieur Bac + 5 - Bac Série générale avec la spécialité Maths en Terminale + une spéci",
+      "etablissement": "ECE Paris",
+      "ville": "Paris 15e  Arrondissement",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "parcoursup",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 1.0892,
+      "nom": "Formation d'ingénieur Bac + 5 - Bac série générale avec la spécialité Maths en Terminale + une spéci",
+      "etablissement": "ECE Paris",
+      "ville": "Paris 15e  Arrondissement",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "parcoursup",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 1.0874,
+      "nom": "Formation d'ingénieur Bac + 5 - Bac Série générale avec 2 spécialités scientifiques mais sans la spé",
+      "etablissement": "ECE Paris",
+      "ville": "Paris 15e  Arrondissement",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "parcoursup",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 1.0852,
+      "nom": "Formation d'ingénieur Bac + 5 - Bac série générale avec la spécialité Maths en Terminale + une spéci",
+      "etablissement": "ECE Lyon",
+      "ville": "Lyon 7e  Arrondissement",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "parcoursup",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.9086,
+      "nom": "Ingénieur diplômé de l'Institut Supérieur de l'Aéronautique et de l'Espace",
+      "etablissement": "INSTITUT SUPERIEUR DE L'AERONAUTIQUE ET DE L'ESPACE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.9079,
+      "nom": "Ingénieur diplômé de l'institut national des sciences appliquées de Rennes, spécialité mathéma",
+      "etablissement": "INSTITUT NATIONAL SCIENCES APPLIQUEES RENNES",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.906,
+      "nom": "INGENIEUR DIPLOME DE L'ECOLE NATIONALE SUPERIEURE D'ELECTRICITE ET DE MECANIQUE DE NANCY DE L'UNIVER",
+      "etablissement": "CFAI-APC LORRAINE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.9058,
+      "nom": "diplôme d'ingénieur de l'École nationale supérieure d'électronique, informatique, télécommunications",
+      "etablissement": "École nationale supérieure d'électronique",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "eco_gestion",
+      "labels": []
+    },
+    {
+      "score": 0.9054,
+      "nom": "INGENIEUR DIPLOME DE L'INSTITUT NATIONAL DES SCIENCES APPLIQUEES DE LYON, SPECIALITE GENIE ELECTRIQU",
+      "etablissement": "ECOLE CENTRALE DE LYON",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    },
+    {
+      "score": 0.905,
+      "nom": "INGENIEUR DIPLOME DE L'INSTITUT NATIONAL DES SCIENCES APPLIQUEES DE STRASBOURG, SPECIALITE MECANIQUE",
+      "etablissement": "CFAI ALSACE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "sciences_fondamentales",
+      "labels": []
+    }
+  ]
+}

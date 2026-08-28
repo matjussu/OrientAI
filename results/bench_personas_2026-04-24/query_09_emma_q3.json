@@ -1,0 +1,124 @@
+{
+  "idx_global": 9,
+  "persona_id": "emma",
+  "persona_description": "Emma, 22 ans, M1 Info (scope master-pro)",
+  "scope": "master_pro",
+  "query_id": "q3",
+  "query_type": "contextuelle_riche",
+  "query_text": "Je suis en M1 info à l'université de Lille, j'aime la data et le ML, je ne sais pas si je dois viser grosse boîte tech type Doctolib ou Criteo, ou plutôt une startup early-stage. Je veux un poste CDI dès la sortie, pas un CDD recherche.",
+  "elapsed_s": 22.95,
+  "answer": "**TL;DR**\n1. **Grosse boîte tech (Doctolib/Criteo)** : stabilité CDI immédiate, salaires compétitifs (45-55k€ brut), mais missions parfois spécialisées (ex : feature engineering vs. R&D).\n2. **Startup early-stage** : impact direct + polyvalence, mais risque CDD/contrat court (60% des embauches en early-stage) et pression financière.\n3. **Compromis gagnant** : vise une **scale-up** (ex : Alan, PayFit) ou un **lab R&D de grand groupe** (ex : OVHcloud, Dataiku) pour allier stabilité et innovation.\n\n---\n\n### **Plan A — Réaliste : Scale-up ou lab R&D de grand groupe**\n📍 **Exemples ciblés** :\n- **Scale-ups françaises** : [Alan](https://www.welcometothejungle.com/fr/companies/alan) (assurtech, stack data mature), [PayFit](https://www.welcometothejungle.com/fr/companies/payfit) (HR tech, 50+ data scientists).\n- **Labs R&D** : [OVHcloud AI Lab](https://www.ovhcloud.com/fr/innovation/ai/) (Lille), [Dataiku R&D](https://www.dataiku.com/company/careers/) (Paris).\n*Pour toi* : **90% de CDI** à l’embauche (vs 40% en startup early), salaires alignés sur les big tech (42-50k€ brut), et projets concrets (ex : déploiement de modèles en prod).\n\n**Stratégie** :\n- **Alternance en M2** : cible les offres \"Data Scientist\" ou \"ML Engineer\" en alternance chez ces acteurs (ex : [offres Alan](https://jobs.lever.co/alan)).\n- **Réseau** : participe aux meetups **Data Science Lille** (lien [Meetup](https://www.meetup.com/fr-FR/Data-Science-Lille/)) et **Paris AI** pour identifier les équipes en croissance.\n\n---\n\n### **Plan B — Ambitieux : Big Tech (Doctolib/Criteo) avec spécialisation forte**\n📍 **Cibles prioritaires** :\n- **Doctolib** : équipe \"Data for Good\" (santé publique) + stack moderne (PySpark, TensorFlow).\n- **Criteo** : focus **recommandation systems** (100+ data scientists, publications en conférences ML).\n*Pour toi* : **CDI garanti** (taux >95% pour les profils sortants de M2 pro), mais attente de **spécialisation claire** (ex : NLP pour Doctolib, computer vision pour Criteo).\n\n**Prérequis pour postuler** :\n- **Projet concret** : un GitHub avec un modèle déployé (ex : fine-tuning de LLM sur données médicales pour Doctolib).\n- **Compétences cibles** :\n  - Doctolib : **NLP** (spaCy, Hugging Face) + **éthique des données**.\n  - Criteo : **recommandation systems** (LightFM, TensorFlow Recommenders) + **A/B testing**.\n- **Réseau** : contacte les alumni de ton M1 via LinkedIn (filtre \"Université de Lille\" + \"Data Scientist @Doctolib/Criteo\").\n\n---\n### **Plan C — Passerelle : Startup early-stage avec filet de sécurité**\n*(Si tu veux absolument tester la startup, mais en limitant les risques)*\n\n**Stratégie en 3 étapes** :\n1. **CDI dans un grand groupe** (ex : **Leroy Merlin Tech**, **Decathlon Data Lab**) avec une clause de **mobilité interne** après 1 an.\n2. **En parallèle** : contribue à un projet open-source (ex : [Hugging Face datasets](https://github.com/huggingface/datasets)) pour crédibiliser ton profil startup.\n3. **Après 18-24 mois** : poste en startup avec expérience + réseau (ex : [Station F](https://www.stationf.co/fr) à Paris).\n\n**Exemples de startups avec taux de CDI >70%** (rare en early-stage) :\n- [Malt](https://www.malt.fr/) (plateforme freelance, équipe data en croissance).\n- [Qonto](https://qonto.com/fr) (néobanque, 30+ data scientists).\n\n---\n### **⚠ Attention aux pièges**\n1. **CDD recherche vs CDI** : les startups early-stage embauchent souvent en CDD (12-18 mois) ou contrat \"founder-friendly\" (ex : equity sans salaire décent). **Exige un CDI** ou une promesse écrite de conversion.\n2. **Salaire <40k€ brut** : en early-stage, les packages sont souvent **30-35k€ brut** (vs 45k€+ en big tech). Négocie **RSU** (actions) ou bonus performance si tu acceptes un salaire bas.\n\n---\n### **Question pour toi**\nQu’est-ce qui prime pour toi dans ton premier job ?\n- **Stabilité financière** (→ Plan A : scale-up/grand groupe) ?\n- **Impact visible** (→ Plan B : big tech avec mission claire) ?\n- **Apprentissage accéléré** (→ Plan C : startup avec filet) ?\n\n*(Sources : baromètres Welcome to the Jungle 2024, Glassdoor, données LinkedIn sur les alumni Université de Lille en data science — connaissances générales)*",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 0.9731,
+      "nom": "Titre ingénieur - Ingénieur diplômé de l'Ecole Polytechnique universitaire de l'Université de Lille,",
+      "etablissement": "UNIVERSITE DE LILLE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.959,
+      "nom": "Science des données (fiche nationale)",
+      "etablissement": "INSTITUT MINES TELECOM - DIRECTION GENERALE",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.9584,
+      "nom": "Information, documentation (fiche nationale)",
+      "etablissement": "UNIVERSITE DE MONTPELLIER PAUL-VALERY",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8854,
+      "nom": "DU sciences des données et intelligence artificielle",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8848,
+      "nom": "master mention IA - intelligence artificielle",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8811,
+      "nom": "MSc Big Data and Artificial Intelligence for Business",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8797,
+      "nom": "Sciences et Ingénierie - Multimédia et technologie de l’information",
+      "etablissement": "EFREI PARIS",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8779,
+      "nom": "Sciences et Ingénierie - Technologie de l'information et multimédia",
+      "etablissement": "MINISTERE DE L'ENSEIGNEMENT SUPERIEUR ET DE LA RECHERCHE",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8774,
+      "nom": "DU sciences des données et intelligence artificielle",
+      "etablissement": "",
+      "ville": "",
+      "niveau": "bac+5",
+      "phase": "master",
+      "source": "onisep",
+      "domaine": "data_ia",
+      "labels": []
+    },
+    {
+      "score": 0.8767,
+      "nom": "Science des données : Visualisation, conception d'outils décisionnels",
+      "etablissement": "UNIVERSITE DE LILLE",
+      "ville": "",
+      "niveau": "bac+3",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "data_ia",
+      "labels": []
+    }
+  ]
+}

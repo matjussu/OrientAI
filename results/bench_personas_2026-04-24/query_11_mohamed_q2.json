@@ -1,0 +1,124 @@
+{
+  "idx_global": 11,
+  "persona_id": "mohamed",
+  "persona_description": "Mohamed, 17 ans, CAP cuisine (voie pro/apprentissage)",
+  "scope": "voie_pro",
+  "query_id": "q2",
+  "query_type": "orientation_ambigue",
+  "query_text": "J'ai fini mon CAP cuisine, je ne suis plus sûr de vouloir rester en restauration. Qu'est-ce que je peux faire d'autre avec ce CAP ?",
+  "elapsed_s": 18.38,
+  "answer": "**TL;DR**\n1. Ton CAP Cuisine ouvre des portes **au-delà de la restauration pure** : logistique, commerce, gestion, ou même reconversion vers des métiers manuels connexes.\n2. **3 pistes concrètes** : travailler dans l’agroalimentaire (embauche facile), bifurquer vers le service/client (hôtel, événementiel), ou compléter par une formation courte pour élargir tes options.\n3. **Aucune perte de temps** : ton CAP compte comme expérience pro, et des passerelles existent sans reprendre des études longues.\n\n---\n\n### **Plan A — Immédiat : Métiers connexes *sans formation supplémentaire***\n📍 **Agent de production en agroalimentaire** (usines, traiteurs industriels) — CDI souvent accessible avec CAP Cuisine, salaires ~1 600-1 900€ brut (connaissance générale).\n*Pour toi : embauche rapide, horaires réguliers (vs restauration), et ton CAP est un atout pour les postes en transformation alimentaire.*\n\n📍 **Employé polyvalent en hôtel/résidence** (accueil, petit-déjeuner, entretien) — [fiche officielle](https://www.onisep.fr/http/redirection/formation/slug/FOR.1132) (Source : ONISEP FOR.1132).\n*Pour toi : utilise tes compétences service + cuisine, mais dans un cadre moins stressant qu’un restaurant.*\n\n---\n### **Plan B — Court terme : Formations rapides (<1 an) pour pivoter**\n📍 **Titre Pro Agent de restauration collective** (7 mois) — Certificat RNCP, financé par Pôle Emploi/OPCO si tu es en reconversion. [Détails](https://candidat.pole-emploi.fr/formation/agent-de-restauration-collective) (connaissance générale).\n*Pour toi : spécialisation vers les cantines/scolaires (horaires fixes, moins de pression qu’un resto).*\n\n📍 **CAP Commercialisation et services en hôtel-café-restaurant** (1 an en alternance) — [fiche ONISEP](https://www.onisep.fr/http/redirection/formation/slug/FOR.1132) (Source : ONISEP FOR.1132).\n*Pour toi : si tu aimes le contact client mais veux quitter les cuisines, ce CAP te forme à la gestion de salle/bar.*\n\n---\n### **Plan C — Reconversion : Métiers manuels ou administratifs avec ton expérience**\n- **Logistique/entrepôt** : ton CAP prouve ta rigueur et résistance physique → postes de préparateur de commandes (salaire ~1 700€ brut, embauche immédiate). (connaissance générale).\n- **Formation adulte** : un **BP Responsable d’exploitation agricole** (2 ans) pour travailler dans les fermes/AMAP (si tu aimes le concret mais veux sortir de la resto). (connaissance générale).\n- **Administration** : avec un **Titre Pro Secrétaire assistant** (6 mois), ton expérience en gestion de stocks/commandes (CAP Cuisine) est un plus. (connaissance générale).\n\n---\n⚠ **Attention** : Méfie-toi des formations privées payantes promettant une \"reconversion miracle\" en pâtisserie ou management hôtelier. Privilégie les certifications **RNCP** (reconnues par l’État) ou les dispositifs financés (Pôle Emploi, OPCO, GRETA).\n\n---\n**Question pour toi** :\nEst-ce que tu veux **quitter totalement l’univers de la restauration** (→ Plan C), ou simplement **changer de poste** dans ce secteur (→ Plan A) ? Ton choix déterminera si une formation complémentaire est utile.",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 0.8281,
+      "nom": "CAP production et service en restaurations (rapide, collective, cafétéria)",
+      "etablissement": "rapide, collective, cafétéria",
+      "ville": "",
+      "niveau": null,
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "tourisme_hotellerie",
+      "labels": []
+    },
+    {
+      "score": 0.8148,
+      "nom": "Cuisinier en restauration collective",
+      "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8139,
+      "nom": "Cuisinier",
+      "etablissement": "MINISTERE DES ARMEES",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8096,
+      "nom": "Employé polyvalent en restauration",
+      "etablissement": "MINISTERE DU TRAVAIL DU PLEIN EMPLOI ET DE L' INSERTION",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8083,
+      "nom": "Commercialisation et services en hôtel-café-restaurant",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    },
+    {
+      "score": 0.8057,
+      "nom": "Production et service en restauration (rapide, collective, cafétéria)",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8047,
+      "nom": "Production et service en restaurations (rapide, collective, cafétéria)",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8032,
+      "nom": "Cuisine",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8026,
+      "nom": "Cuisinier",
+      "etablissement": "HAUT COMMISSARIAT DE LA REPUBLIQUE EN POLYNESIE FRANCAISE",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle",
+      "labels": []
+    },
+    {
+      "score": 0.8004,
+      "nom": "Serveur en restauration",
+      "etablissement": "HAUT COMMISSARIAT DE LA REPUBLIQUE EN POLYNESIE FRANCAISE",
+      "ville": "",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "services",
+      "labels": []
+    }
+  ]
+}

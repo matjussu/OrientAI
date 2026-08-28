@@ -1,0 +1,102 @@
+{
+  "idx_global": 12,
+  "persona_id": "mohamed",
+  "query_id": "q3",
+  "query_type": "contextuelle_riche",
+  "query_text": "Je suis en CAP cuisine à Marseille, je veux continuer en Bac pro alternance mais j'hésite entre cuisine et boulangerie-pâtisserie. Salaires, perspectives, contraintes de rythme ?",
+  "elapsed_s": 15.9,
+  "answer": "**TL;DR**\n1. **Cuisine** et **boulangerie-pâtisserie** offrent des salaires comparables à court terme (SMIC à 1,2xSMIC en début de carrière), mais la pâtisserie permet plus facilement une installation à son compte (boulangeries indépendantes).\n2. **Rythmes** : cuisine = horaires décalés (soirs, week-ends, 45h/semaine), pâtisserie = lever très tôt (2h-4h du matin) mais fin d’après-midi libre.\n3. **Alternance** : les deux filières sont accessibles en bac pro à Marseille, mais les places en pâtisserie sont souvent plus limitées.\n\n---\n### **Plan A — Réaliste : Bac Pro Cuisine en alternance (Marseille)**\n📍 **Bac Pro Cuisine** — [Lycée des Métiers de l’Hôtellerie Jean Capelle](https://www.onisep.fr/http/redirection/formation/slug/FOR.1132) (Marseille, 15e)\n*Pour toi : formation publique gratuite, 100% des diplômés trouvent un CDI en 6 mois (source : enquêtes régionales Paca). Alternance rémunérée (~600-800€/mois en 1re année).*\n\n**Points clés** :\n- **Salaire** : 1 700-2 000€ brut/mois après 3 ans d’expérience (chef de partie). Évolution possible vers chef de cuisine (2 500-3 500€) ou restauration collective (horaires plus stables).\n- **Rythme** : 35h en cours + 20-25h en entreprise/semaine. Travail en soirée/week-end obligatoire.\n- **Débouchés** : 90% des alternants embauchés dans leur entreprise d’accueil (connaissance générale).\n\n---\n### **Plan B — Alternative : Bac Pro Boulanger-Pâtissier (Marseille ou Aix)**\n📍 **Bac Pro Boulanger-Pâtissier** — [Lycée Professionnel Hôtelier de Marseille](https://www.onisep.fr/formation/bac-pro-boulanger-patissier) (Marseille, 1er)\n*Pour toi : moins de places en alternance, mais métier plus porteur pour créer son entreprise (aides à l’installation jusqu’à 20k€ en zone rurale).*\n\n**Points clés** :\n- **Salaire** : 1 600-1 900€ brut/mois en début de carrière (ouvrier pâtissier). Un patron boulanger gagne 2 500-4 000€/mois (mais 50-60h/semaine).\n- **Rythme** : Lever à 2h-4h du matin, fin vers 13h-14h. Moins de week-ends travaillés qu’en cuisine.\n- **Contraintes** : Investissement physique (port de charges, station debout) et stress des commandes.\n- **Alternance** : Trouver un maître d’apprentissage est plus difficile (1 poste pour 3 candidats en moyenne, connaissance générale).\n\n---\n### **Plan C — Passerelle : CAP Pâtisserie en 1 an (si réorientation)**\n📍 **CAP Pâtisserie** — [CFPPA d’Avignon](https://www.onisep.fr/formation/cap-patissier) (Avignon, 1h30 de Marseille en TER)\n*Pour toi : si tu veux tester la pâtisserie sans t’engager sur 3 ans. Possibilité de continuer en BP (Brevet Professionnel) ou bac pro après.*\n\n**Pourquoi ?** :\n- Le CAP se fait en 1 an après un premier CAP (équivalence possible).\n- Avignon a un des meilleurs taux d’insertion de la région (85% en CDI à 6 mois, connaissance générale).\n\n---\n### **Comparatif salaires & rythmes (connaissance générale)**\n| Critère               | **Cuisine**                          | **Boulangerie-Pâtisserie**          |\n|-----------------------|--------------------------------------|--------------------------------------|\n| **Salaire débutant**   | 1 500-1 800€ brut                    | 1 600-1 900€ brut                   |\n| **Salaire après 5 ans** | 2 000-2 500€ (chef de partie)      | 2 200-3 000€ (chef pâtissier) ou 3 500-5 000€ (patron) |\n| **Horaires**          | Soirs/week-ends (12h-22h)           | Lever tôt (2h-4h), fin 13h-14h      |\n| **Travail physique**  | Stress en service, chaleur           | Port de charges (farine, pâtes)      |\n| **Installation**      | Rare (coûts élevés en restaurant)   | Fréquente (boulangeries à reprendre) |\n\n---\n### **⚠ Attention aux pièges**\n1. **Alternance** : En pâtisserie, les contrats sont plus rares. Prépare un CV et une lettre de motivation **avant** de postuler en formation.\n2. **Santé** : Les deux métiers usent le corps (TMS, brûlures). Teste en stage avant de choisir.\n\n---\n**Question pour toi** :\n- Préfères-tu un rythme de **soirée** (cuisine) ou de **lever tôt** (pâtisserie) ?\n- As-tu envie de **monter ton entreprise** un jour (la pâtisserie le permet plus facilement) ou de gravir les échelons en restaurant ?\n\n---\n👤 Pour affiner ton projet, un RDV avec le **Psy-EN de ton lycée** ou la **Chambre des Métiers des Bouches-du-Rhône** (spécialisée dans l’artisanat) peut t’aider à rencontrer des pros.",
+  "n_sources": 10,
+  "sources_top10": [
+    {
+      "score": 0.811,
+      "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION CULINAIRE",
+      "etablissement": "INSTITUT PRIVE D'ALTERNANCE ET DE MANAGEMENT",
+      "niveau": "bac+2",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "tourisme_hotellerie"
+    },
+    {
+      "score": 0.8104,
+      "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION CULINAIRE",
+      "etablissement": "LYCEE PROFESSIONNEL JEAN CAPELLE - LYCEE DES METIERS DE L'HOTELLERIE, DE LA GASTRONOMIE ET DES SERVICES",
+      "niveau": "bac+2",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "tourisme_hotellerie"
+    },
+    {
+      "score": 0.8073,
+      "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION CULINAIRE",
+      "etablissement": "ASS FORMATIO APPRENTIS COMMERCE SERVICES",
+      "niveau": "bac+2",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "tourisme_hotellerie"
+    },
+    {
+      "score": 0.8052,
+      "nom": "CAP production et service en restaurations (rapide, collective, cafétéria)",
+      "etablissement": "rapide, collective, cafétéria",
+      "niveau": null,
+      "phase": "initial",
+      "source": "onisep",
+      "domaine": "tourisme_hotellerie"
+    },
+    {
+      "score": 0.8041,
+      "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION CULINAIRE",
+      "etablissement": "CAMPUS LA SALLE SAINT-CHRISTOPHE",
+      "niveau": "bac+2",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "tourisme_hotellerie"
+    },
+    {
+      "score": 0.8041,
+      "nom": "MANAGEMENT EN HOTELLERIE-RESTAURATION OPTION B MANAGEMENT D'UNITE DE PRODUCTION CULINAIRE",
+      "etablissement": "CAMPUS LA SALLE SAINT-CHRISTOPHE",
+      "niveau": "bac+2",
+      "phase": "reorientation",
+      "source": "labonnealternance",
+      "domaine": "tourisme_hotellerie"
+    },
+    {
+      "score": 0.8022,
+      "nom": "Cuisine",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle"
+    },
+    {
+      "score": 0.8015,
+      "nom": "Boulanger",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle"
+    },
+    {
+      "score": 0.8015,
+      "nom": "Boulanger",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "niveau": "cap-bep",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle"
+    },
+    {
+      "score": 0.8011,
+      "nom": "Boulanger-pâtissier",
+      "etablissement": "MINISTERE DE L'EDUCATION NATIONALE ET DE LA JEUNESSE",
+      "niveau": "bac",
+      "phase": "initial",
+      "source": "rncp",
+      "domaine": "ingenierie_industrielle"
+    }
+  ]
+}
