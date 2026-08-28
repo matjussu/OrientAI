@@ -212,3 +212,85 @@ def test_all_baselines_share_identical_answer_signature():
         result = s.answer("Q1", "anything ?")
         assert isinstance(result, str)
         assert result  # non-empty
+
+
+# === Sprint 12 axe 2 — AgentPipelineSystem wrap test ===
+
+
+def test_agent_pipeline_system_returns_answer_text():
+    """AgentPipelineSystem wraps `pipeline.answer(query) → AgentAnswer`
+    and returns only `answer_text` to bench runner."""
+    from unittest.mock import MagicMock
+    from src.eval.systems import AgentPipelineSystem
+    from src.agent.pipeline_agent import AgentPipeline, AgentAnswer
+
+    # Mock pipeline avec spec=AgentPipeline pour passer isinstance check
+    mock_pipeline = MagicMock(spec=AgentPipeline)
+    mock_answer = AgentAnswer(
+        query="Quelles formations cyber ?",
+        answer_text="3 pistes : EFREI, ENSIBS, ESIEE.",
+        profile=None,
+        plan=None,
+        elapsed_total_s=42.0,
+    )
+    mock_pipeline.answer.return_value = mock_answer
+
+    sys = AgentPipelineSystem(pipeline=mock_pipeline)
+    assert sys.name == "agent_pipeline_v3_2"
+
+    result = sys.answer("Q1", "Quelles formations cyber ?")
+    assert result == "3 pistes : EFREI, ENSIBS, ESIEE."
+    mock_pipeline.answer.assert_called_once_with("Quelles formations cyber ?")
+
+
+def test_agent_pipeline_system_handles_pipeline_error():
+    """En cas d'erreur AgentPipeline, retour string non-crash pour ne
+    pas casser le runner bench (le judge verra réponse dégradée)."""
+    from unittest.mock import MagicMock
+    from src.eval.systems import AgentPipelineSystem
+    from src.agent.pipeline_agent import AgentPipeline, AgentAnswer
+
+    mock_pipeline = MagicMock(spec=AgentPipeline)
+    mock_answer = AgentAnswer(
+        query="Q",
+        answer_text="",
+        profile=None,
+        plan=None,
+        error="Mistral API timeout",
+    )
+    mock_pipeline.answer.return_value = mock_answer
+
+    sys = AgentPipelineSystem(pipeline=mock_pipeline)
+    result = sys.answer("Q1", "Q")
+    assert isinstance(result, str)
+    assert "pipeline_error" in result
+    assert "Mistral API timeout" in result
+
+
+def test_agent_pipeline_system_rejects_non_agent_pipeline_instance():
+    """Type check : refuse les non-AgentPipeline instances pour éviter
+    les surprises silencieuses au runner."""
+    import pytest
+    from src.eval.systems import AgentPipelineSystem
+
+    with pytest.raises(TypeError) as exc:
+        AgentPipelineSystem(pipeline="not_a_pipeline")
+    assert "AgentPipeline" in str(exc.value)
+
+
+def test_agent_pipeline_system_signature_matches_other_systems():
+    """Signature `answer(qid, question) → str` cohérente avec les autres
+    systems pour le runner bench."""
+    from unittest.mock import MagicMock
+    from src.eval.systems import AgentPipelineSystem
+    from src.agent.pipeline_agent import AgentPipeline, AgentAnswer
+
+    mock_pipeline = MagicMock(spec=AgentPipeline)
+    mock_pipeline.answer.return_value = AgentAnswer(
+        query="x", answer_text="ok", profile=None, plan=None,
+    )
+
+    sys = AgentPipelineSystem(pipeline=mock_pipeline)
+    result = sys.answer("Q1", "anything ?")
+    assert isinstance(result, str)
+    assert result

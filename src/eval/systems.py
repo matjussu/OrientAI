@@ -270,3 +270,68 @@ class HierarchicalSystem(System):
     def answer(self, qid: str, question: str) -> str:
         result = self.coordinator.respond_single_shot(question)
         return result.response_text
+
+
+# --- Sprint 12 axe 2 — Pipeline Sprint 1-4 axe B agentique standalone ---
+#
+# Wrapper bench autour de `pipeline_agent.AgentPipeline` Sprint 4 mergé
+# main (commit `3b75190`, 2026-04-26). Le pipeline existait déjà mais
+# n'était activé QU'À TRAVERS `HierarchicalSystem.respond_single_shot()`
+# Sprint 9 (qui ajoute couche conseiller persona + EmpathicAgent autour).
+#
+# Cette classe expose le pipeline AGENTIQUE PUR (Mistral Large
+# function-calling souverain : ProfileClarifier + QueryReformuler +
+# retrieval multi-corpus + génération Mistral medium + optionnel
+# FetchStatFromSource) pour bench standalone vs single-shot
+# `mistral_v3_2_no_rag`.
+#
+# Caveat latence ×3.2 documenté Sprint 4 verdict (39.87s avg vs 12.35s
+# baseline) — acceptable pour bench INRIA jury, mitigeable user-facing
+# Sprint 12+ via streaming user-side.
+#
+# Cf `docs/sprint12-axe-2-S0-prime-pipeline-existant-audit-2026-05-01.md`
+# pour l'audit qui a justifié l'activation standalone.
+
+class AgentPipelineSystem(System):
+    """Pipeline agentique Sprint 4 axe B (Mistral Large function-calling)
+    exposé en système standalone pour bench Sprint 12 axe 2.
+
+    Wrappe `src.agent.pipeline_agent.AgentPipeline.answer(query) → AgentAnswer`
+    et n'expose que le `answer_text` au runner bench (les métadonnées
+    profile/plan/sources/fact_check/timing restent dans l'AgentAnswer
+    interne — non utilisées par le runner mais préservées si on choisit
+    d'enrichir le verdict downstream).
+
+    Comportement bench :
+    - Construit avec un `AgentPipeline` instancié externalement (factory
+        au caller, comme `OurRagSystem`/`HierarchicalSystem`)
+    - `answer(qid, question) → str` retourne directement le texte
+    - Pas de fact_check par défaut (`enable_fact_check=False` côté
+        AgentPipeline) pour comparison apples-to-apples avec
+        `mistral_v3_2_no_rag` qui n'a pas de couche fact-check non plus
+    - Souveraineté : Mistral Large pour function-calling tools + Mistral
+        medium pour génération finale (cohérent intent INRIA)
+
+    Pas de side effect, pas de cache global (caller gère `LRUCache` côté
+    AgentPipeline si besoin reproducibilité bench).
+    """
+
+    name = "agent_pipeline_v3_2"
+
+    def __init__(self, pipeline):
+        from src.agent.pipeline_agent import AgentPipeline
+        if not isinstance(pipeline, AgentPipeline):
+            raise TypeError(
+                "AgentPipelineSystem expects an AgentPipeline instance "
+                "(src.agent.pipeline_agent.AgentPipeline)."
+            )
+        self.pipeline = pipeline
+
+    def answer(self, qid: str, question: str) -> str:
+        result = self.pipeline.answer(question)
+        if result.error:
+            # Pipeline error : retour message minimal pour ne pas casser
+            # le runner bench. Le caller (judge) verra une réponse
+            # dégradée et la notera bas.
+            return f"[pipeline_error: {result.error}]"
+        return result.answer_text

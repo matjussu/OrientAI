@@ -1,0 +1,834 @@
+{
+  "n_questions": 10,
+  "seed": 42,
+  "model_judge": "claude-sonnet-4-5",
+  "per_system_aggregated": {
+    "agent_pipeline_v3_2": {
+      "n": 10,
+      "total_avg": 12.6,
+      "total_min": 10,
+      "total_max": 16,
+      "criteria_avg": {
+        "neutralite": 2.6,
+        "realisme": 2.4,
+        "sourcage": 2.3,
+        "diversite_geo": 0.8,
+        "agentivite": 2.7,
+        "decouverte": 1.8
+      }
+    },
+    "our_rag_enriched": {
+      "n": 10,
+      "total_avg": 13.5,
+      "total_min": 11,
+      "total_max": 16,
+      "criteria_avg": {
+        "neutralite": 2.7,
+        "realisme": 2.5,
+        "sourcage": 2.0,
+        "diversite_geo": 1.4,
+        "agentivite": 3.0,
+        "decouverte": 1.9
+      }
+    },
+    "mistral_v3_2_no_rag": {
+      "n": 10,
+      "total_avg": 12.5,
+      "total_min": 9,
+      "total_max": 16,
+      "criteria_avg": {
+        "neutralite": 2.2,
+        "realisme": 2.6,
+        "sourcage": 1.3,
+        "diversite_geo": 1.5,
+        "agentivite": 2.7,
+        "decouverte": 2.2
+      }
+    }
+  },
+  "win_counts": {
+    "agent_pipeline_v3_2": 3,
+    "our_rag_enriched": 3,
+    "mistral_v3_2_no_rag": 3
+  },
+  "tie_count": 1,
+  "deltas": {
+    "agent_minus_rag_enriched": -0.9,
+    "agent_minus_baseline": 0.1,
+    "rag_enriched_minus_baseline": 1.0
+  },
+  "per_question_blinded": [
+    {
+      "qid": "A12",
+      "category": "biais_marketing",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "agent_pipeline_v3_2",
+        "C": "mistral_v3_2_no_rag"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 3,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 13,
+          "justification": "Bonne diversité géographique et agentivité, mais mélange écoles privées sans mentionner alternatives publiques accessibles"
+        },
+        "B": {
+          "neutralite": 1,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 10,
+          "justification": "Reconnaît ses limites et propose des pistes alternatives, mais géographie absente et faible couverture institutionnelle"
+        },
+        "C": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Excellent réalisme avec coûts précis et taux d'admission, mais sources vagues sans liens ONISEP vérifiables"
+        }
+      }
+    },
+    {
+      "qid": "A9",
+      "category": "biais_marketing",
+      "label_to_system": {
+        "A": "mistral_v3_2_no_rag",
+        "B": "our_rag_enriched",
+        "C": "agent_pipeline_v3_2"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 10,
+          "justification": "Bonnes options publiques et question ouverte, mais sources vagues et géographie limitée"
+        },
+        "B": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Excellente distinction RNCP/Master et réalisme sur sélectivité, manque diversité géographique"
+        },
+        "C": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 3,
+          "diversite_geo": 0,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Liens ONISEP précis et labels RNCP, mais aucune diversité géographique et peu d'options"
+        }
+      }
+    },
+    {
+      "qid": "B7",
+      "category": "realisme",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "mistral_v3_2_no_rag",
+        "C": "agent_pipeline_v3_2"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Excellente neutralité avec focus formations publiques, réalisme fort avec données de sélectivité précises, mais géographie limitée à Bordeaux"
+        },
+        "B": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Très réaliste avec seuils précis et nuances, mais mentionne établissement privé Stanislas et sources vagues"
+        },
+        "C": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 16,
+          "justification": "Formations publiques prioritaires, réalisme excellent, sourçage ONISEP exemplaire, diversité géographique correcte, agentivité forte"
+        }
+      }
+    },
+    {
+      "qid": "C6",
+      "category": "decouverte",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "mistral_v3_2_no_rag",
+        "C": "agent_pipeline_v3_2"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 12,
+          "justification": "Propose des métiers hybrides originaux avec une question finale ouverte, mais sources vagues et géographie limitée à Nice"
+        },
+        "B": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 13,
+          "justification": "Excellente découverte de métiers psychotech méconnus avec diversité géographique correcte, mais sources génériques et salaires invérifiables"
+        },
+        "C": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 15,
+          "justification": "Très réaliste sur les limites des sources, oriente vers institutions officielles ONISEP/CIO, encourage la réflexion personnelle"
+        }
+      }
+    },
+    {
+      "qid": "E6",
+      "category": "passerelles",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "agent_pipeline_v3_2",
+        "C": "mistral_v3_2_no_rag"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 16,
+          "justification": "Excellente priorisation des labels RNCP et sources ONISEP vérifiables, réalisme fort avec taux VAE et pièges détaillés, question ouverte pertinente sur le secteur d'application"
+        },
+        "B": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Bon ancrage institutionnel avec sources ONISEP et RNCP vérifiables, réalisme présent via VAE et pièges, mais géographie limitée et question finale bien ciblée"
+        },
+        "C": {
+          "neutralite": 1,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 9,
+          "justification": "Mélange non hiérarchisé de formations privées et labels CGE, sources vagues sans liens vérifiables, fourchettes salariales sans source, mais propose des options variées"
+        }
+      }
+    },
+    {
+      "qid": "E9",
+      "category": "passerelles",
+      "label_to_system": {
+        "A": "agent_pipeline_v3_2",
+        "B": "our_rag_enriched",
+        "C": "mistral_v3_2_no_rag"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 11,
+          "justification": "Encourage la réflexion et propose des options variées, mais reste vague sur les formations concrètes et les sources"
+        },
+        "B": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Mentionne des formations publiques précises avec liens Parcoursup et taux d'admission, bonne diversité géographique"
+        },
+        "C": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 15,
+          "justification": "Excellente découverte de niches (IA éducative), réalisme sur sélectivité et coûts, sources multiples et parcours diversifiés"
+        }
+      }
+    },
+    {
+      "qid": "F6",
+      "category": "comparaison",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "mistral_v3_2_no_rag",
+        "C": "agent_pipeline_v3_2"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 11,
+          "justification": "Excellente neutralité (CTI, public) et agentivité, mais sources vagues et comparaison limitée aux 2 villes mentionnées"
+        },
+        "B": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 12,
+          "justification": "Forte découverte des débouchés sectoriels et agentivité, mais sources non vérifiables et géographie limitée aux 2 INSA"
+        },
+        "C": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 2,
+          "decouverte": 1,
+          "total": 10,
+          "justification": "Bons labels officiels et liens ONISEP, mais peu de découverte de métiers et géographie restreinte à la comparaison demandée"
+        }
+      }
+    },
+    {
+      "qid": "H4",
+      "category": "honnetete",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "mistral_v3_2_no_rag",
+        "C": "agent_pipeline_v3_2"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Réponse complète avec cadre LMD officiel, cas concrets nuancés et question ouverte finale, mais source datée (2002) et peu de diversité géographique"
+        },
+        "B": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Explications structurées avec exemples concrets et nuances sur les pièges, mais aucune source citée et question finale moins engageante"
+        },
+        "C": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 15,
+          "justification": "Transparence maximale sur l'absence de sources, redirection vers institutions officielles vérifiables (ONISEP, CIO), mais peu de découverte de contenus nouveaux"
+        }
+      }
+    },
+    {
+      "qid": "H8",
+      "category": "honnetete",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "mistral_v3_2_no_rag",
+        "C": "agent_pipeline_v3_2"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Priorise le label officiel ANSSI, cite ONISEP et exemples concrets, mais diversité géographique limitée"
+        },
+        "B": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 16,
+          "justification": "Excellent sourçage ANSSI avec lien vérifiable, données d'insertion précises, plusieurs villes mentionnées, question ouverte finale"
+        },
+        "C": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Bonne explication du label officiel et sources ANSSI/ONISEP, mais aucune mention géographique, question finale engageante"
+        }
+      }
+    },
+    {
+      "qid": "Z2",
+      "category": "cross_domain",
+      "label_to_system": {
+        "A": "our_rag_enriched",
+        "B": "agent_pipeline_v3_2",
+        "C": "mistral_v3_2_no_rag"
+      },
+      "scores": {
+        "A": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 15,
+          "justification": "Excellente neutralité avec formations publiques et sources Parcoursup précises, mais vision erronée (STAPS/SV ne sont pas la voie kiné standard) et peu de découverte."
+        },
+        "B": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 11,
+          "justification": "Bonne neutralité et source ONISEP, mentionne les alternatives STAPS et spécialisations sportives, mais manque de données concrètes de sélectivité et aucune diversité géographique."
+        },
+        "C": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Très réaliste sur la sélectivité PASS/L.AS et mentionne plusieurs villes, mais sources vagues, et alerte pertinente sur les arnaques des écoles privées."
+        }
+      }
+    }
+  ],
+  "per_question_mapped": [
+    {
+      "qid": "A12",
+      "category": "biais_marketing",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 3,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 13,
+          "justification": "Bonne diversité géographique et agentivité, mais mélange écoles privées sans mentionner alternatives publiques accessibles"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 1,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 10,
+          "justification": "Reconnaît ses limites et propose des pistes alternatives, mais géographie absente et faible couverture institutionnelle"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Excellent réalisme avec coûts précis et taux d'admission, mais sources vagues sans liens ONISEP vérifiables"
+        }
+      }
+    },
+    {
+      "qid": "A9",
+      "category": "biais_marketing",
+      "scores_per_system": {
+        "mistral_v3_2_no_rag": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 10,
+          "justification": "Bonnes options publiques et question ouverte, mais sources vagues et géographie limitée"
+        },
+        "our_rag_enriched": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Excellente distinction RNCP/Master et réalisme sur sélectivité, manque diversité géographique"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 3,
+          "diversite_geo": 0,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Liens ONISEP précis et labels RNCP, mais aucune diversité géographique et peu d'options"
+        }
+      }
+    },
+    {
+      "qid": "B7",
+      "category": "realisme",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Excellente neutralité avec focus formations publiques, réalisme fort avec données de sélectivité précises, mais géographie limitée à Bordeaux"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Très réaliste avec seuils précis et nuances, mais mentionne établissement privé Stanislas et sources vagues"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 16,
+          "justification": "Formations publiques prioritaires, réalisme excellent, sourçage ONISEP exemplaire, diversité géographique correcte, agentivité forte"
+        }
+      }
+    },
+    {
+      "qid": "C6",
+      "category": "decouverte",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 12,
+          "justification": "Propose des métiers hybrides originaux avec une question finale ouverte, mais sources vagues et géographie limitée à Nice"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 13,
+          "justification": "Excellente découverte de métiers psychotech méconnus avec diversité géographique correcte, mais sources génériques et salaires invérifiables"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 15,
+          "justification": "Très réaliste sur les limites des sources, oriente vers institutions officielles ONISEP/CIO, encourage la réflexion personnelle"
+        }
+      }
+    },
+    {
+      "qid": "E6",
+      "category": "passerelles",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 16,
+          "justification": "Excellente priorisation des labels RNCP et sources ONISEP vérifiables, réalisme fort avec taux VAE et pièges détaillés, question ouverte pertinente sur le secteur d'application"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Bon ancrage institutionnel avec sources ONISEP et RNCP vérifiables, réalisme présent via VAE et pièges, mais géographie limitée et question finale bien ciblée"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 1,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 9,
+          "justification": "Mélange non hiérarchisé de formations privées et labels CGE, sources vagues sans liens vérifiables, fourchettes salariales sans source, mais propose des options variées"
+        }
+      }
+    },
+    {
+      "qid": "E9",
+      "category": "passerelles",
+      "scores_per_system": {
+        "agent_pipeline_v3_2": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 11,
+          "justification": "Encourage la réflexion et propose des options variées, mais reste vague sur les formations concrètes et les sources"
+        },
+        "our_rag_enriched": {
+          "neutralite": 2,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Mentionne des formations publiques précises avec liens Parcoursup et taux d'admission, bonne diversité géographique"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 15,
+          "justification": "Excellente découverte de niches (IA éducative), réalisme sur sélectivité et coûts, sources multiples et parcours diversifiés"
+        }
+      }
+    },
+    {
+      "qid": "F6",
+      "category": "comparaison",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 11,
+          "justification": "Excellente neutralité (CTI, public) et agentivité, mais sources vagues et comparaison limitée aux 2 villes mentionnées"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 1,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 3,
+          "total": 12,
+          "justification": "Forte découverte des débouchés sectoriels et agentivité, mais sources non vérifiables et géographie limitée aux 2 INSA"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 2,
+          "decouverte": 1,
+          "total": 10,
+          "justification": "Bons labels officiels et liens ONISEP, mais peu de découverte de métiers et géographie restreinte à la comparaison demandée"
+        }
+      }
+    },
+    {
+      "qid": "H4",
+      "category": "honnetete",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 14,
+          "justification": "Réponse complète avec cadre LMD officiel, cas concrets nuancés et question ouverte finale, mais source datée (2002) et peu de diversité géographique"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 1,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Explications structurées avec exemples concrets et nuances sur les pièges, mais aucune source citée et question finale moins engageante"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 15,
+          "justification": "Transparence maximale sur l'absence de sources, redirection vers institutions officielles vérifiables (ONISEP, CIO), mais peu de découverte de contenus nouveaux"
+        }
+      }
+    },
+    {
+      "qid": "H8",
+      "category": "honnetete",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 1,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 13,
+          "justification": "Priorise le label officiel ANSSI, cite ONISEP et exemples concrets, mais diversité géographique limitée"
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 16,
+          "justification": "Excellent sourçage ANSSI avec lien vérifiable, données d'insertion précises, plusieurs villes mentionnées, question ouverte finale"
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 3,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Bonne explication du label officiel et sources ANSSI/ONISEP, mais aucune mention géographique, question finale engageante"
+        }
+      }
+    },
+    {
+      "qid": "Z2",
+      "category": "cross_domain",
+      "scores_per_system": {
+        "our_rag_enriched": {
+          "neutralite": 3,
+          "realisme": 3,
+          "sourcage": 3,
+          "diversite_geo": 2,
+          "agentivite": 3,
+          "decouverte": 1,
+          "total": 15,
+          "justification": "Excellente neutralité avec formations publiques et sources Parcoursup précises, mais vision erronée (STAPS/SV ne sont pas la voie kiné standard) et peu de découverte."
+        },
+        "agent_pipeline_v3_2": {
+          "neutralite": 3,
+          "realisme": 2,
+          "sourcage": 2,
+          "diversite_geo": 0,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 11,
+          "justification": "Bonne neutralité et source ONISEP, mentionne les alternatives STAPS et spécialisations sportives, mais manque de données concrètes de sélectivité et aucune diversité géographique."
+        },
+        "mistral_v3_2_no_rag": {
+          "neutralite": 2,
+          "realisme": 3,
+          "sourcage": 1,
+          "diversite_geo": 2,
+          "agentivite": 2,
+          "decouverte": 2,
+          "total": 12,
+          "justification": "Très réaliste sur la sélectivité PASS/L.AS et mentionne plusieurs villes, mais sources vagues, et alerte pertinente sur les arnaques des écoles privées."
+        }
+      }
+    }
+  ]
+}
