@@ -2,7 +2,14 @@
 
 Système RAG spécialisé pour l'orientation académique et professionnelle française. Soumission au concours INRIA AI Grand Challenge. Stack Python 3.12, Mistral (gen + embed), FAISS, Anthropic + OpenAI (judges), FastAPI.
 
-**Statut au 2026-04-16** : Run F+G (100q × 7 systèmes × 3 juges) terminé. Pivot stratégique en cours vers la V2 (système agentic + corpus enrichi + RAFT + UX). Voir `docs/STRATEGIE_VISION_2026-04-16.md`.
+> **POINT DE REPRISE (05/09/2026), a lire AVANT tout le reste de ce fichier** :
+> `results/jarvis_analyse_2026-09-05/REPRISE.md`. Analyse complete de la chaine de reponse livree
+> le 05/09 (`RAPPORT.md` du meme dossier) : produit servi 2,04/5 contre 4,28 pour GPT-5.5 sans
+> donnees ; les fiches n'apportent rien en l'etat ; plan en lots 0-5 et 3 decisions a trancher.
+> Le statut ci-dessous, la matrice 7 systemes et la roadmap V2/RAFT datent d'avril et sont
+> **perimes** ; ce fichier sera reecrit au palier 3 du menage (avec le lot 0).
+
+**Statut au 2026-04-16 (perime, cf. ci-dessus)** : Run F+G (100q × 7 systèmes × 3 juges) terminé. Pivot stratégique en cours vers la V2 (système agentic + corpus enrichi + RAFT + UX). Voir `docs/STRATEGIE_VISION_2026-04-16.md`.
 
 ---
 
