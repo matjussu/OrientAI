@@ -1,0 +1,71 @@
+Tâche exécutée : LOT A, chronologie chiffrée des runs 1 à 10, run_F_robust, metrics_longitudinal, benchs persona/DARES/blocs d'avril 2026, en lecture seule (aucun fichier écrit).
+
+## 1. Tableau chronologique (lot A)
+
+Racine `R = /home/matteo_linux/projets/OrientIA`. Scores runs 1-10 agrégés par `cd R && source .venv/bin/activate && python -c "json.load(open('results/runN_*/scores/summary.json'))['by_system'][sys]['total']"` (commande reproduite en session, sortie ci-dessous arrondie à 2 décimales).
+
+| Date | Jalon | Mesuré | Set (n) | Juge | Métrique + résultat | Ce qui a changé | Preuve |
+|---|---|---|---|---|---|---|---|
+| 2026-04-10/11 | Run 1 strict_sourcing | our_rag vs mistral_raw (même prompt v1, sans RAG) vs chatgpt_recorded | 32 q (30 notées + 2 honnêteté), 7 catégories, seed 42, 1 passe | Claude Sonnet 4.5 (rubrique 6 critères x 0-3 = /18) | mistral_raw 16.19, our_rag 13.41, chatgpt 6.25 | Premier bench, prompt strict sourcing | `R/results/run1_strict_sourcing/scores/summary.json` ; juge : `R/src/eval/judge.py:113` ; commits 32b05fc, 46219b4 |
+| 2026-04-11 | Run 2 relaxed_sourcing | idem | 32 q | Claude Sonnet 4.5 | mistral_raw 16.09, our_rag 14.19, chatgpt 6.06 | Prompt : sourcing relâché (commit 8b1f14f) | `R/results/run2_relaxed_sourcing/scores/summary.json` |
+| 2026-04-11 | Run 3 ablation_no_labels | idem | 32 q | Claude Sonnet 4.5 | mistral_raw 16.22, our_rag 14.50, chatgpt 6.28 | Boosts labels neutralisés (secnumedu/cti/grade_master = 1.0) | `.../run3_ablation_no_labels/scores/summary.json` (clé `config`) |
+| 2026-04-11 | Run 4 data_expansion | idem | 32 q | Claude Sonnet 4.5 | mistral_raw 16.19, our_rag 14.44, chatgpt 6.47 | Corpus 1098 fiches | `.../run4_data_expansion/scores/summary.json` (`n_fiches`: 1098) |
+| 2026-04-11 | Run 5 rome_enriched | idem | 32 q | Claude Sonnet 4.5 | mistral_raw 15.84, our_rag 14.31, chatgpt 5.91 | Corpus 439 fiches + débouchés ROME | `.../run5_rome_enriched/scores/summary.json` (`experiment`: "ROME debouches enriched") |
+| 2026-04-11 | Run 6 full_stack | idem | 32 q | Claude Sonnet 4.5 | mistral_raw 15.91, our_rag 14.28, chatgpt 6.12 | Corpus 443 fiches, jointures strictes Parcoursup (commit 3ecfc44) | `.../run6_full_stack/scores/summary.json` |
+| 2026-04-11 | Run 7 phase1_densification | idem + juge v2 | 32 q | v1 Claude Sonnet 4.5 ; v2 = v1 repondéré sourçage par fact-check regex (pas d'appel LLM) | v1 : mistral_raw 16.25, our_rag 14.78 ; v2 : mistral_raw 15.66, our_rag 14.78, chatgpt 6.25 | format_context signal-first + prompt v3 + fact-check regex (commits 2c8c99f, 00f35fa, 6466e3f) | `.../run7_phase1_densification/scores/summary.json`, `summary_v2.json` ; `R/src/experimental/judge_v2/run_judge_v2.py:1-5` |
+| 2026-04-11 | Run 8 phase1c_prompt_v31 | idem | 32 q | v1 + v2 | v1 : mistral_raw 15.31, our_rag 15.16 ; v2 : 15.12 / 15.12 (parité) | Prompt v3.1 règles ciblées (commit 4180897) | `.../run8_phase1c_prompt_v31/scores/summary*.json` ; commit e60f2d5 "PARITY reached" |
+| 2026-04-13 | Run 9 phase1c_confirmation | idem | 32 q | v1 + v2 | v1 : our_rag 15.75 vs mistral_raw 15.50 ; v2 : 15.72 vs 15.34 | Rien (re-run de confirmation, appels parallélisés) | `.../run9_phase1c_confirmation/scores/summary*.json` ; commit 3ca166c |
+| 2026-04-13 | Run 10 phase_e_fair_baseline | idem | 32 q | v1 + v2 (v2 = fact-check Claude Haiku 4.5, commit 948e25e) | our_rag 16.59, mistral_raw 11.28, chatgpt 7.12 (v1 et v2 identiques) | mistral_raw passe du prompt v3.1 partagé à NEUTRAL_MISTRAL_PROMPT + règle tableau comparatif dans our_rag (commit b7d696b) | `.../run10_phase_e_fair_baseline/scores/summary.json` ; `R/results/scores/summary.json` (copie identique, diff vide) |
+| 2026-04-13 | Phase F.1/F.2 | dataset étendu 32 -> 100 (split dev/test), 7 systèmes | 100 q | (préparation) | non mesuré | commits 627af62, 546baeb, ed6c08c | git log 2026-04-13 |
+| 2026-04-15 | Run F, juge GPT-4o seul (préliminaire) | 7 systèmes blindés A-G | 100 q x 7, 1 passe | GPT-4o | our_rag 16.16, mistral_v3_2_no_rag 16.12, claude_v3_2_no_rag 14.70, mistral_neutral 14.56, claude_neutral 10.55, gpt4o_v3_2_no_rag 10.05, gpt4o_neutral 9.14 ; delta RAG +0.04 | MMR + intent classifier activés (F.3), juge multi | `R/results/run_F_robust/ANALYSIS_GPT4O.md:3-18,25` |
+| 2026-04-16 | Run F, dual judge | idem | 100 q x 7 (N = 700 labels) | Claude Sonnet 4.5 + GPT-4o | Claude : mistral_v3_2_no_rag 15.43, our_rag 15.16, claude_v3_2 13.71, mistral_neutral 11.72 ; delta RAG vs prompt-only : -0.27 (Claude), +0.04 (GPT-4o) ; kappa pondéré par critère 0.464 à 0.587 ; Pearson 0.747, Spearman 0.752 | Verdict : "RAG adds no value beyond prompt" | `R/results/run_F_robust/ANALYSIS_DUAL_JUDGE.md:3-6,13-21,35-38,48-63` ; commit 94ae20e |
+| 2026-04-17 | metrics_longitudinal (B3/B5/B6 déterministes) | actionnabilité /6, fraîcheur /3, précision citation | n non indiqué dans le fichier (B6 n=3 à 4 citations) ; corpus 443 fiches | Aucun (regex `R/src/eval/metrics_det.py`) | Vague A : B3 4.67, B5 2.50, B6 1.00, 1328 mots ; post-C : 5.17 / 1.83 / 1.00 / 1421 ; post-sanity UX : 5.33 / 2.67 / 1.00 / 780 ; post-Vague D : 4.83 / 2.33 / 1.00 / 661 | Vagues A à D données + prompt brièveté | `R/results/metrics_longitudinal.md:1-9` (mtime 2026-04-17, commit ef75980) |
+| 2026-04-24 | Bench personas v3 vs v2 | qualité réponse | 17 q (v3) vs 18 q (v2), 6 personas | "Notation humaine (Claudette)", grille 5 critères x 5 | global 4.19 -> 4.45 ; précision factuelle 3.22 -> 3.94 ; safety 4.89 -> 5.00 | fiche_to_text enrichie + prompt anti-hallucination | `R/results/bench_personas_v3_2026-04-24/_SYNTHESIS_V3_VS_V2.md:5,10,12,100` |
+| 2026-04-24 | Bench personas v4 vs v3 | idem | 17 q | Claudette grille + StatFactChecker Mistral Small | précision 3.94 -> 4.53 ; global 4.57 (+0.38) ; v2 -> v4 précision +1.31 | Ajout StatFactChecker aval (Mistral Small) | `R/results/bench_personas_v4_2026-04-24/_SYNTHESIS_V4_VS_V3.md:3,6,10,18,20` |
+| 2026-04-25 | Bench v5, v5 dedupe, v5 dedupe+reranker (triple run) | % stats verified / hallucinated | 18 q | StatFactChecker Mistral Small | v4 11.6 % halluc ; v5 15.2 % ; v5 dedupé 21.2 % ; v5 dedupé+RR triple-mean 13.6 % +-5.38pp (verified 46.0 % +-1.66pp) | dédup index + reranker ADR-049 | `R/results/bench_personas_v5plusplus_2026-04-25/_SYNTHESIS_V5_FINAL.md:14-20,66-73` |
+| 2026-04-25 | Bench v5++ FINAL (Phase B multi-corpus) | verified/halluc + grille | 18 q v4 + 8 q multi-domain = 26 q, single run | StatFactChecker + Claudette grille | v5++ 18q : verified 42.1 %, halluc 8.6 % ; 8q multi-d : verified 17.2 %, halluc 8.6 % ; multi-corpus 8/8 ; précision factuelle 8q 2.75 -> 4.125 ; 18q 4.53 -> 4.11 | 49 295 records, 7 domaines, reranker domain-aware ; verdict GO | `.../_SYNTHESIS_V5_FINAL.md:1-31,80-92` |
+| 2026-04-26 nuit | Bench v5+++ DARES (PR #70) | verified/halluc | 18 q, single puis triple run | StatFactChecker Mistral Small | single : verified 42.7 % (+3.2pp), halluc 18.2 % ; triple : 39.7 % +-7.71pp, 14.7 % +-8.46pp, delta verified +0.2pp | +111 cellules DARES, boost x1.5 ; domaine activé 0/18 | `R/docs/VERDICT_V5PLUSPLUSPLUS_DARES.md:3-6,36-45,95-118` |
+| 2026-04-26 nuit | Bench v5+++ blocs RNCP (PR #71) | idem | 18 q, single puis triple | StatFactChecker | single : verified 40.6 %, halluc 11.2 % (-6.8pp) ; triple : 43.7 % +-9.34pp, 12.6 % +-8.88pp (deltas +4.2 / -5.4pp, IC95 contient 0) | +4 891 cellules blocs, boost x1.5 | `R/docs/VERDICT_V5PLUSPLUSPLUS_BLOCS.md:3-15,75-84,144-171` |
+| 2026-04-26 matin | Bench DARES dédié A/B phaseB vs phaseC | idem | 10 q calibrées prospective, 2 runs (A/B) | StatFactChecker | phaseB verified 37.7 % / halluc 15.6 % ; x1.5 : 7.2 % / 39.8 % (-30.5pp / +24.2pp) ; x1.1 : 28.0 / 19.4 ; x1.0 shippé : 22.3 / 17.5 ; floor L2 4/10 top-K 100 % DARES | boost x1.5 -> x1.0 | `R/docs/VERDICT_BENCH_DARES_DEDIE.md:3-8,63-73,174-182` |
+| 2026-04-26 après-midi | Bench persona complet = baseline pré-agentique | idem + eval qualitative | 48 q (18 personas v4 + 10 DARES + 10 blocs + 10 user-naturel) x 3 runs | StatFactChecker (Mistral) ; eval qualitative Claude Sonnet 4.5 sur 18 personas run1 | global 39.4 % verified +-3.66pp, 17.9 % halluc +-3.90pp ; sous-suites : personas 44.7/13.4, DARES 23.2/30.9, blocs 23.0/17.4, user-naturel 48.7/17.1 ; eval Claude : 6/18 hallu détectées (33 %), 8 utile_partielle, 3 claire, 1 parse error, 89 % actionnable | index phaseD 54 297 vecteurs ; baseline figée pour la bascule agentique | `R/docs/VERDICT_BENCH_PERSONA_COMPLET_2026-04-26.md:3-9,17-19,74-80,84-118,143-156` |
+| 2026-04-27 | Sprint 7 bench final (mode baseline vs mode both = pipeline agentique avec critic) | verified/halluc | 38 q x 3 runs par mode | StatFactChecker | baseline : verified 30.8 % +-1.03, halluc 16.8 % +-8.19, 39.96 s ; both : verified 29.4 % +-12.07, halluc 25.6 % +-20.65, 41.91 s, 266 modifs critic ; delta verified -1.4pp, halluc +8.8pp | agent pipeline + critic ; note : "comparable baseline sprint5/6 39.4 %/17.9 % (24q figées)" | `R/results/sprint7_bench_final_2026-04-27/_VERDICT_DELTA.json` (clés `baseline_aggregate`, `both_aggregate`, `delta_*`, `comparable_baseline_sprint56`) |
+
+Non mesuré / non trouvé dans mon lot : aucun test avec des personnes réelles ; aucun kappa hors Run F ; aucune variance (runs multiples) sur les runs 1 à 10 ni sur Run F (1 passe chacun) ; `results/charts/` ne contient que 2 PNG radar (copies du run 10, taille identique 208819 octets), pas d'agrégat.
+
+## 2. Chiffres headline (fichier:ligne)
+
+- our_rag 16.59 vs mistral_raw 11.28 vs chatgpt 7.12 (Run 10) : `R/results/run10_phase_e_fair_baseline/scores/summary.json` clé `by_system.*.total` ; copie `R/results/scores/summary.json`.
+- Parité run 8 v2 : 15.12 / 15.12 : `R/results/run8_phase1c_prompt_v31/scores/summary_v2.json`.
+- Run F GPT-4o : our_rag 16.16 vs mistral_v3_2_no_rag 16.12, delta +0.04 : `ANALYSIS_GPT4O.md:12-13,25`.
+- Run F Claude : 15.16 vs 15.43, delta -0.27 ; moyenne des juges 15.66 vs 15.78 : `ANALYSIS_DUAL_JUDGE.md:13-14,35-36`.
+- Kappa pondéré neutralite 0.464, realisme 0.582, sourcage 0.557, diversite_geo 0.492, agentivite 0.480, decouverte 0.587 ; Pearson 0.747, Spearman 0.752 ; N=700 : `ANALYSIS_DUAL_JUDGE.md:50-63`.
+- Ecart vs baseline équitable +3.71 (Claude) / +1.60 (GPT-4o) : `ANALYSIS_DUAL_JUDGE.md:41-42,125-126`.
+- Coût Run F ~39 $ : `ANALYSIS_DUAL_JUDGE.md:156-162`.
+- B3 4.67 -> 5.33 -> 4.83, mots 1328 -> 661 : `R/results/metrics_longitudinal.md:5-9`.
+- Précision factuelle 3.22 -> 3.94 -> 4.53 (v2 -> v3 -> v4) : `_SYNTHESIS_V3_VS_V2.md:12`, `_SYNTHESIS_V4_VS_V3.md:10`.
+- Halluc 11.6 % (v4) -> 8.6 % (v5++ single) : `_SYNTHESIS_V5_FINAL.md:18,66-73`.
+- -6.8pp halluc blocs single, -5.4pp +-8.88 triple : `VERDICT_V5PLUSPLUSPLUS_BLOCS.md:14,163`.
+- +3.2pp verified DARES single, +0.2pp +-7.71 triple : `VERDICT_V5PLUSPLUSPLUS_DARES.md:39,117`.
+- -30.5pp verified / +24.2pp halluc DARES x1.5 ; x1.0 : 22.3 % / 17.5 % ; floor 4/10 : `VERDICT_BENCH_DARES_DEDIE.md:68-69,181`.
+- Baseline figée 39.4 % verified +-3.66pp / 17.9 % halluc +-3.90pp (48 q x 3) : `VERDICT_BENCH_PERSONA_COMPLET_2026-04-26.md:17-19,77-78,257-259`.
+- 6/18 hallucinations (33 %), 1 erreur réglementaire (RNCP psychologue niveau 6 au lieu de 7) : idem `:59-63,146,175`.
+- Sprint 7 : 30.8 % -> 29.4 % verified, 16.8 % -> 25.6 % halluc, 266 modifs critic : `_VERDICT_DELTA.json` (`delta_pct_verified_mean: -1.4`, `delta_pct_hallucinated_mean: 8.8`).
+
+## 3. Indices d'évaluation humaine
+
+- Aucune évaluation par des personnes réelles dans ce lot. La "Notation humaine (Claudette), grille stricte" (`_SYNTHESIS_V3_VS_V2.md:5`, `_SYNTHESIS_V4_VS_V3.md:6`, `_SYNTHESIS_V5_FINAL.md:22,175-176`) est faite par Claudette, un agent LLM ; le doc lui-même parle de "subjectivité Claudette".
+- `chatgpt_recorded` (runs 1 à 10) = 32 réponses ChatGPT enregistrées à la main (commit 9797cd1) ; c'est une collecte humaine, pas un jugement humain.
+- Eval qualitative "POV persona simulé" du 26/04 : Claude Sonnet 4.5 simule le persona (`VERDICT_BENCH_PERSONA_COMPLET_2026-04-26.md:67-72`), 18 evals, pas d'humain.
+- Commit 43a7f42 (18/04) mentionne "post-user-feedback" ; hors périmètre du lot, non vérifié ici.
+
+## 4. Ruptures de comparabilité constatées
+
+1. Runs 1-9 vs Run 10 : la baseline `mistral_raw` change de prompt (v3.1 partagé -> NEUTRAL_MISTRAL_PROMPT) et our_rag gagne une règle tableau comparatif dans le même commit b7d696b ; la chute 15.3 -> 11.28 de mistral_raw n'est pas comparable aux runs précédents. Le nom `mistral_raw` reste identique dans les JSON.
+2. Juge v2 : repondération regex (runs 7-9) puis fact-check Claude Haiku (run 10, commit 948e25e) sous le même label `summary_v2.json`.
+3. Runs 1-10 = 32 q, 3 systèmes, juge Claude seul ; Run F = 100 q, 7 systèmes, 2 juges ; le "fair baseline" de Run 10 (mistral_raw neutre 11.28) devient `mistral_neutral` à 11.72 (Claude) / 14.56 (GPT-4o) dans Run F ; les prompts our_rag ont aussi évolué (v3.1 -> v3.2, MMR, intent).
+4. Corpus mouvant sous les runs : 1098 fiches (run 4) -> 439 (run 5) -> 443 (run 6 à 17/04) -> 48 829 puis 49 295 records (25/04) -> 54 297 vecteurs (26/04). Aucun run ne mesure le même corpus deux fois avec le même juge sauf runs 8/9.
+5. Changement d'échelle et d'instrument à partir du 24/04 : rubrique /18 LLM-judge -> grille /5 Claudette + % verified/halluc StatFactChecker Mistral Small (regex + LLM sur stats chiffrées). Aucun pont entre les deux échelles.
+6. Set personas : 18 q v2 -> 17 q v3/v4 (1 timeout) -> 18 q v5 -> 26 q v5++ -> 48 q persona complet -> 38 q sprint 7 (`_VERDICT_DELTA.json` cite une "baseline sprint5/6 39.4 %/17.9 % (24q figées)" alors que 39.4/17.9 vient du bench 48 q du 26/04 : la note interne est incohérente sur le n).
+7. Single run vs triple run : plusieurs headline single-run (+3.2pp DARES, -6.8pp blocs, 8.6 % v5++) ont été révisés ou non confirmés en triple run ; v5++ n'a jamais été triple-runné (`_SYNTHESIS_V5_FINAL.md:26-31`).
+8. metrics_longitudinal : sans n de questions ni date dans le fichier, B6 sur 3 à 4 citations seulement.
+9. `results/scores/` et `results/charts/` à la racine sont des copies du run 10, pas un agrégat longitudinal.
