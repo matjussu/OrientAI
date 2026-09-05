@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "author": "Jarvis",
+    "date": "2026-09-05",
+    "persona": "lyceen Parcoursup + etudiant post-bac (licence/master/prepa/reorientation), pas adulte en reconversion",
+    "criteres": ["references", "comprehension", "expression", "couverture"],
+    "note": "Chaque item = une conversation. 'turns' est une liste de messages utilisateur joues en sequence ; la reponse du systeme au tour n est reinjectee en history au tour n+1."
+  },
+  "items": [
+    {"id": "L01", "persona": "lyceen", "tags": ["info", "geo", "anti-prepa"], "turns": ["Je suis en terminale generale spe maths et physique a Lyon, j'aime l'informatique mais je ne veux pas faire une prepa. Qu'est-ce que tu me conseilles ?"]},
+    {"id": "L02", "persona": "lyceen", "tags": ["but", "comparaison"], "turns": ["C'est quoi la difference entre un BUT et un BTS ? Lequel est le mieux pour continuer apres en ecole d'ingenieur ?"]},
+    {"id": "L03", "persona": "lyceen", "tags": ["sante", "pass-las", "geo"], "turns": ["Je veux devenir medecin, je suis a Bordeaux. PASS ou LAS ? Et est-ce que je peux faire la LAS avec une licence de psycho ?"]},
+    {"id": "L04", "persona": "lyceen", "tags": ["profil-faible", "reorientation-lycee"], "turns": ["J'ai 9 de moyenne generale en terminale STMG, je sais pas quoi faire l'annee prochaine. J'aime bien le commerce et parler aux gens."]},
+    {"id": "L05", "persona": "lyceen", "tags": ["parcoursup", "calendrier"], "turns": ["Quand est-ce que je dois avoir fini mes voeux Parcoursup cette annee ? Et combien je peux en mettre ?"]},
+    {"id": "L06", "persona": "lyceen", "tags": ["prepa", "ecoles", "comparaison"], "turns": ["Prepa MPSI a Louis-le-Grand ou ecole d'ingenieur post-bac type INSA Lyon, qu'est-ce qui est le plus sur pour finir ingenieur ?"]},
+    {"id": "L07", "persona": "lyceen", "tags": ["alternance", "bts"], "turns": ["Je suis en terminale pro MELEC et je veux faire un BTS en alternance dans l'electricite. Quelles options a Lille et comment trouver une entreprise ?"]},
+    {"id": "L08", "persona": "lyceen", "tags": ["droit", "debouches"], "turns": ["Une licence de droit, ca mene a quoi concretement a part avocat ? Est-ce que ca vaut le coup si je suis moyen a l'ecrit ?"]},
+    {"id": "L09", "persona": "lyceen", "tags": ["psycho", "selectivite", "taux"], "turns": ["Licence de psychologie a Paris : c'est vraiment bouche comme on dit ? J'ai 13 de moyenne, spe SES et HGGSP."]},
+    {"id": "L10", "persona": "lyceen", "tags": ["art", "design", "ecoles"], "turns": ["Je veux faire du design graphique. DNMADE, ecole privee genre Gobelins, ou licence arts plastiques ? Mes parents peuvent pas payer 10 000 euros par an."]},
+    {"id": "L11", "persona": "lyceen", "tags": ["staps", "metier"], "turns": ["Je suis sportif et je veux bosser dans le sport mais pas prof d'EPS. STAPS c'est la seule voie ?"]},
+    {"id": "L12", "persona": "lyceen", "tags": ["ingenieur", "bourse", "cout"], "turns": ["Je suis boursier echelon 6, je veux faire une ecole d'ingenieur. Est-ce que les ecoles privees sont hors de question pour moi ?"]},
+    {"id": "L13", "persona": "lyceen", "tags": ["multi-tour", "info", "reorientation"], "turns": [
+      "Je suis en terminale, spe maths et NSI, je vise une licence informatique a Toulouse.",
+      "Et si je rate ma premiere annee, qu'est-ce qui se passe ? Je peux me reorienter en BUT ?"
+    ]},
+    {"id": "L14", "persona": "lyceen", "tags": ["multi-tour", "sante", "profil"], "turns": [
+      "Bonjour, je veux etre infirmiere.",
+      "Je suis en terminale ST2S a Marseille avec 12 de moyenne. Quelles sont mes chances en IFSI et c'est quoi les criteres ?"
+    ]},
+    {"id": "L15", "persona": "lyceen", "tags": ["vague", "aucune-idee"], "turns": ["Je sais pas du tout quoi faire apres le bac. J'aime rien de special. Aide-moi."]},
+    {"id": "L16", "persona": "lyceen", "tags": ["eco-gestion", "comparaison"], "turns": ["Licence eco-gestion a Dauphine ou BUT GEA ? Je veux bosser en finance plus tard."]},
+    {"id": "L17", "persona": "lyceen", "tags": ["sciences-po", "concours"], "turns": ["Comment on rentre a Sciences Po Paris en 2026 ? Il y a encore un concours ou c'est que le dossier ?"]},
+    {"id": "L18", "persona": "lyceen", "tags": ["veto", "ecoles"], "turns": ["Je veux etre veterinaire. Est-ce que je peux entrer directement dans une ecole veto apres le bac ou il faut passer par la prepa ?"]},
+    {"id": "L19", "persona": "lyceen", "tags": ["langues", "debouches", "lea"], "turns": ["LEA anglais-espagnol, ca debouche sur quoi ? J'ai peur de me retrouver sans boulot."]},
+    {"id": "L20", "persona": "lyceen", "tags": ["archi"], "turns": ["Ecole d'architecture : comment ca marche sur Parcoursup, c'est selectif comment, et il y a des ecoles publiques a Nantes ?"]},
+    {"id": "L21", "persona": "lyceen", "tags": ["taux-insertion", "salaire", "bts"], "turns": ["BTS SIO option SLAM : c'est quoi le taux d'insertion et le salaire a la sortie ? Et apres je peux faire quoi ?"]},
+    {"id": "L22", "persona": "lyceen", "tags": ["oral", "lettre", "parcoursup"], "turns": ["Comment je fais une bonne lettre de motivation Parcoursup pour un BUT MMI ? Ils regardent quoi ?"]},
+    {"id": "L23", "persona": "lyceen", "tags": ["aero", "ingenieur", "geo"], "turns": ["Je veux bosser dans l'aeronautique, je suis a Toulouse. Formation post-bac la plus adaptee ?"]},
+    {"id": "L24", "persona": "lyceen", "tags": ["mineur-anxiete", "pression"], "turns": ["J'ai trop peur de me tromper de voie et de gacher ma vie. Comment on choisit ?"]},
+    {"id": "L25", "persona": "lyceen", "tags": ["multi-tour", "profil-complet", "ambiguite"], "turns": [
+      "Je veux faire des maths.",
+      "Enfin pas devenir prof, plutot un truc avec des maths appliquees, data ou finance. Terminale spe maths physique, 16 de moyenne, Rennes.",
+      "Entre licence MIASHS et prepa ECG, tu prends quoi a ma place ?"
+    ]},
+    {"id": "L26", "persona": "lyceen", "tags": ["cinema", "audiovisuel"], "turns": ["Je veux faire du cinema, monteur ou realisateur. BTS audiovisuel ou fac de cinema ? Et les ecoles comme la Femis c'est apres ?"]},
+    {"id": "L27", "persona": "lyceen", "tags": ["handicap", "amenagements"], "turns": ["Je suis dyslexique avec un PAP au lycee. Est-ce que les amenagements continuent a la fac et comment on les demande ?"]},
+    {"id": "L28", "persona": "lyceen", "tags": ["dut-vs-licence", "chimie"], "turns": ["J'adore la chimie. BUT chimie ou licence chimie pour aller vers la recherche ?"]},
+    {"id": "L29", "persona": "lyceen", "tags": ["bachelor", "prive", "arnaque"], "turns": ["Une ecole privee me propose un bachelor en marketing digital a 8000 euros par an, reconnu RNCP niveau 6. C'est serieux ou c'est une arnaque ?"]},
+    {"id": "L30", "persona": "lyceen", "tags": ["mobilite", "internat", "geo"], "turns": ["Je suis en zone rurale dans la Creuse, il y a rien pres de chez moi. Comment je fais pour etudier ailleurs sans que ca coute une fortune ?"]},
+
+    {"id": "E01", "persona": "etudiant", "tags": ["reorientation", "l1", "droit"], "turns": ["Je suis en L1 droit et je deteste ca. Je peux me reorienter en cours d'annee ou je dois attendre septembre ? Je suis a Montpellier."]},
+    {"id": "E02", "persona": "etudiant", "tags": ["master", "monmaster", "info"], "turns": ["Je finis ma L3 informatique a Lyon 1 avec 12,5 de moyenne. Quels masters en IA j'ai des chances d'avoir sur MonMaster ?"]},
+    {"id": "E03", "persona": "etudiant", "tags": ["master", "miage", "alternance"], "turns": ["Master MIAGE en alternance : quelles universites le proposent et c'est quoi le niveau d'entree ?"]},
+    {"id": "E04", "persona": "etudiant", "tags": ["prepa-echec", "reorientation"], "turns": ["J'ai fait une annee de prepa PCSI et j'arrete. Je peux rentrer en L2 directement ou je repars en L1 ?"]},
+    {"id": "E05", "persona": "etudiant", "tags": ["but-vers-ecole", "admissions-paralleles"], "turns": ["Je suis en BUT GEII 2e annee. Je veux integrer une ecole d'ingenieur apres, comment ca marche les admissions paralleles ?"]},
+    {"id": "E06", "persona": "etudiant", "tags": ["master-refus", "plan-b"], "turns": ["J'ai eu que des refus sur MonMaster en psycho. Il me reste quoi comme options pour la rentree ?"]},
+    {"id": "E07", "persona": "etudiant", "tags": ["insertion", "stats", "master"], "turns": ["Master de sociologie : taux d'insertion a 30 mois et salaire median, tu as des chiffres ?"]},
+    {"id": "E08", "persona": "etudiant", "tags": ["cesure", "procedure"], "turns": ["Je veux faire une annee de cesure apres ma L2 pour voyager et bosser. Comment on fait et est-ce que je garde ma place ?"]},
+    {"id": "E09", "persona": "etudiant", "tags": ["concours-enseignement", "capes"], "turns": ["Je veux devenir prof d'histoire-geo. Le concours c'est en M1 ou M2 maintenant ? Et c'est quoi le master a faire ?"]},
+    {"id": "E10", "persona": "etudiant", "tags": ["reorientation", "sante-vers-info"], "turns": ["J'ai rate PASS, je veux aller vers l'informatique. Je repars de zero en L1 ou il y a des passerelles ?"]},
+    {"id": "E11", "persona": "etudiant", "tags": ["multi-tour", "master", "geo"], "turns": [
+      "Je cherche un master en data science.",
+      "Je suis en L3 maths a Grenoble, 14 de moyenne, je veux rester dans la region si possible."
+    ]},
+    {"id": "E12", "persona": "etudiant", "tags": ["ecole-commerce", "aae", "cout"], "turns": ["Apres une licence d'eco, integrer une ecole de commerce via les admissions paralleles ca vaut le coup ? Ca coute combien et quelles ecoles sont credibles ?"]},
+    {"id": "E13", "persona": "etudiant", "tags": ["doctorat", "recherche"], "turns": ["Je suis en M1 biologie, je veux faire un doctorat. Comment on trouve un financement et c'est quoi le calendrier ?"]},
+    {"id": "E14", "persona": "etudiant", "tags": ["alternance", "master", "trouver-entreprise"], "turns": ["Je suis accepte en master marketing en alternance mais j'ai pas d'entreprise. Si je trouve pas d'ici septembre je perds ma place ?"]},
+    {"id": "E15", "persona": "etudiant", "tags": ["licence-pro", "bts"], "turns": ["Apres un BTS compta-gestion, licence pro ou DCG ? Je veux etre expert-comptable un jour."]},
+    {"id": "E16", "persona": "etudiant", "tags": ["etranger", "erasmus"], "turns": ["Je veux partir un semestre en Erasmus pendant ma L3 LLCER anglais. Comment ca marche et il y a des bourses ?"]},
+    {"id": "E17", "persona": "etudiant", "tags": ["reorientation-tardive", "m1"], "turns": ["Je suis en M1 droit des affaires et je me rends compte que je veux faire de l'urbanisme. C'est trop tard pour changer ?"]},
+    {"id": "E18", "persona": "etudiant", "tags": ["double-diplome", "ingenieur-manager"], "turns": ["Je suis en 2e annee a Centrale Nantes. Double diplome avec une ecole de commerce, ca sert vraiment ou c'est du marketing ?"]},
+    {"id": "E19", "persona": "etudiant", "tags": ["bourse", "crous", "aides"], "turns": ["Je passe en M1 et mes parents ont divorce, mes revenus ont change. Est-ce que je peux redemander une bourse en cours d'annee ?"]},
+    {"id": "E20", "persona": "etudiant", "tags": ["metier", "ux", "chemin"], "turns": ["Je suis en L2 psycho et je veux faire UX designer. Quel chemin le plus court ?"]},
+    {"id": "E21", "persona": "etudiant", "tags": ["fonction-publique", "concours"], "turns": ["Avec une L3 AES, quels concours de la fonction publique je peux passer directement ?"]},
+    {"id": "E22", "persona": "etudiant", "tags": ["master-selection", "criteres"], "turns": ["Comment les masters selectionnent sur MonMaster ? C'est que la moyenne ou la lettre compte ?"]},
+    {"id": "E23", "persona": "etudiant", "tags": ["multi-tour", "hesitation", "cyber"], "turns": [
+      "Je suis en BUT informatique 3e annee a Villetaneuse.",
+      "J'hesite entre chercher un boulot direct et faire un master cyber. Tu ferais quoi ?",
+      "Et le master cyber, il y en a en alternance en Ile-de-France ?"
+    ]},
+    {"id": "E24", "persona": "etudiant", "tags": ["sante", "kine", "reorientation"], "turns": ["J'ai fait une L1 STAPS et je veux faire kine. Je peux passer par STAPS ou il faut PASS ?"]},
+    {"id": "E25", "persona": "etudiant", "tags": ["archi-paysage", "master"], "turns": ["Licence de geographie validee, je veux faire paysagiste. Quel master ou ecole ?"]},
+    {"id": "E26", "persona": "etudiant", "tags": ["stat", "vrai-chiffre"], "turns": ["Quel pourcentage d'etudiants valident leur L1 en 1 an en France ? Et en licence de psycho specifiquement ?"]},
+    {"id": "E27", "persona": "etudiant", "tags": ["salaires", "ingenieur", "vs-master"], "turns": ["Ingenieur diplome d'ecole vs master universitaire en informatique : difference de salaire de depart reelle ?"]},
+    {"id": "E28", "persona": "etudiant", "tags": ["abandon", "detresse"], "turns": ["Je suis en L2 et j'ai plus envie de rien, je pense tout arreter. Je sais pas si c'est les etudes ou moi."]},
+    {"id": "E29", "persona": "etudiant", "tags": ["vae", "hors-persona-limite"], "turns": ["J'ai un BTS et 2 ans de boulot, je veux reprendre en licence pro. Je passe par Parcoursup ou pas ?"]},
+    {"id": "E30", "persona": "etudiant", "tags": ["master-etranger", "reconnaissance"], "turns": ["Je veux faire mon master en Belgique en logopedie. Le diplome est reconnu en France apres ?"]}
+  ]
+}
