@@ -15,8 +15,12 @@ pourrait jamais mesurer ce qu'il RATE). Le mode lexical déterministe est
 l'anti-biais.
 
 Sortie : scripts/relevance_set/candidates.json
-  [{qid, question, category, candidates: [{fiche_id, mode(s), rank, nom,
-    etablissement, ville, region, domain, extrait}]}]
+  {"_meta": {corpus_sha256, ...}, "questions": [{qid, question, category,
+    candidates: [{fiche_id, mode(s), nom, etablissement, ville, region, domain, extrait}]}]}
+
+Identite d'une fiche : `idx:<position dans formations.json>` pour les trois modes
+(src/eval/battery/corpus.py). Avant le 23/09, dense et bm25 rendaient `idx:-1` pour
+toute fiche sans champ `id` (38 596 sur 52 040) : 382 candidats confondus en un seul.
 
 Coût : ~390 embeddings de requêtes (~négligeable). Aucune génération.
 """
@@ -33,9 +37,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO))
 
-import src.observability  # noqa: F401
 from mistralai.client import Mistral
 
+import src.observability  # noqa: F401
+from src.eval.battery.corpus import Corpus, fiche_key
 from src.rag.factory import make_production_pipeline
 
 EVAL = REPO / "audit_empirique_2026-06-09/eval_set_full.json"
@@ -78,10 +83,6 @@ def _norm(s: str) -> str:
 def _terms(question: str) -> list[str]:
     words = re.findall(r"[a-zà-ÿ]{3,}", _norm(question))
     return [w for w in words if w not in _STOP]
-
-
-def _fiche_id(fiche: dict, idx: int) -> str:
-    return str(fiche.get("id") or f"idx:{idx}")
 
 
 def _fiche_summary(fiche: dict) -> dict:
@@ -130,7 +131,8 @@ def main() -> None:
     questions += MIAGE_QUESTIONS
     print(f"[mine] {len(questions)} questions retrieval-pertinentes")
 
-    fiches = json.loads(FICHES.read_text())
+    corpus = Corpus(FICHES)
+    fiches = corpus.fiches
     client = Mistral(api_key=os.environ["MISTRAL_API_KEY"])
     pipeline = make_production_pipeline(client, fiches)
     pipeline.load_index_from(str(INDEX))
@@ -139,17 +141,19 @@ def main() -> None:
 
     from src.rag.retriever import retrieve_top_k
 
+    meta = {"corpus_sha256": corpus.sha256, "cle": "idx:<position dans formations.json>",
+            "modes": {"dense": TOP_DENSE, "bm25": TOP_BM25, "lex": TOP_LEX}}
     out = []
     done_ids = set()
     if OUT.exists():
-        out = json.loads(OUT.read_text())
+        previous = json.loads(OUT.read_text())
+        corpus.assert_version(previous["_meta"]["corpus_sha256"], str(OUT))
+        out = previous["questions"]
         done_ids = {r["qid"] for r in out}
         print(f"[resume] {len(done_ids)} deja minees")
 
-    fid_by_index = {i: _fiche_id(f, i) for i, f in enumerate(fiches)}
-    index_by_fid = {}
-    for i, f in enumerate(fiches):
-        index_by_fid.setdefault(_fiche_id(f, i), i)
+    def save() -> None:
+        OUT.write_text(json.dumps({"_meta": meta, "questions": out}, ensure_ascii=False, indent=1))
 
     for n, q in enumerate(questions):
         if q["id"] in done_ids:
@@ -160,7 +164,7 @@ def main() -> None:
         # dense
         for rank, r in enumerate(retrieve_top_k(pipeline.client, pipeline.index, fiches, question, k=TOP_DENSE), 1):
             fiche = r.get("fiche") if isinstance(r, dict) and "fiche" in r else r
-            fid = _fiche_id(fiche, index_by_fid.get(_fiche_id(fiche, -1), -1))
+            fid = fiche_key(corpus.position_of(fiche))
             c = cand[fid]
             c["modes"].append(f"dense#{rank}")
             c["best_rank"] = min(c["best_rank"], rank)
@@ -171,7 +175,7 @@ def main() -> None:
             bm = pipeline._retrieve_with_bm25(question, k=TOP_BM25)
             for rank, r in enumerate(bm, 1):
                 fiche = r.get("fiche") if isinstance(r, dict) and "fiche" in r else r
-                fid = _fiche_id(fiche, -1)
+                fid = fiche_key(corpus.position_of(fiche))
                 c = cand[fid]
                 c["modes"].append(f"bm25#{rank}")
                 c["best_rank"] = min(c["best_rank"], rank)
@@ -181,7 +185,7 @@ def main() -> None:
 
         # lexical déterministe
         for rank, (i, _s) in enumerate(lexical_candidates(question, fiches), 1):
-            fid = fid_by_index[i]
+            fid = fiche_key(i)
             c = cand[fid]
             c["modes"].append(f"lex#{rank}")
             c["best_rank"] = min(c["best_rank"], rank)
@@ -197,10 +201,10 @@ def main() -> None:
             "candidates": candidates,
         })
         if (n + 1) % 20 == 0 or n == len(questions) - 1:
-            OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1))
+            save()
             print(f"[mine] {len(out)}/{len(questions)} (incremental save)")
 
-    OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    save()
     print(f"[done] {len(out)} questions -> {OUT}")
 
 

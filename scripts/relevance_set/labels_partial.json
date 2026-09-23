@@ -5,7 +5,7 @@
    "qid": "fact-016",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:27839",
      "grade": 2
     },
     {
@@ -52,11 +52,11 @@
    "qid": "fact-017",
    "relevant": [
     {
-     "fiche_id": "insersup:master-lmd:sciences-economiques-gestion:occitanie",
+     "fiche_id": "idx:46664",
      "grade": 1
     },
     {
-     "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-economiques-gestion:occitanie",
+     "fiche_id": "idx:46369",
      "grade": 1
     }
    ],
@@ -71,15 +71,15 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:12790",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_2:bretagne",
+     "fiche_id": "idx:46317",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_2:occitanie",
+     "fiche_id": "idx:46321",
      "grade": 1
     }
    ],
@@ -134,7 +134,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39485",
+     "fiche_id": "idx:41075",
      "grade": 1
     }
    ],
@@ -153,7 +153,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:9296",
      "grade": 1
     },
     {
@@ -240,7 +240,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.38",
+     "fiche_id": "idx:47234",
      "grade": 1
     }
    ],
@@ -251,11 +251,11 @@
    "qid": "fact-022",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26227",
      "grade": 2
     },
     {
-     "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-humaines-et-sociales:centre-val-de-loire",
+     "fiche_id": "idx:46387",
      "grade": 1
     }
    ],
@@ -266,11 +266,11 @@
    "qid": "fact-023",
    "relevant": [
     {
-     "fiche_id": "insee_salaan:cs:38",
+     "fiche_id": "idx:46295",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:17435",
      "grade": 1
     }
    ],
@@ -281,15 +281,15 @@
    "qid": "fact-024",
    "relevant": [
     {
-     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "fiche_id": "idx:38617",
      "grade": 2
     },
     {
-     "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+     "fiche_id": "idx:38618",
      "grade": 1
     },
     {
-     "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+     "fiche_id": "idx:38624",
      "grade": 1
     }
    ],
@@ -299,7 +299,7 @@
    "qid": "fact-025",
    "relevant": [
     {
-     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "fiche_id": "idx:38617",
      "grade": 1
     }
    ],
@@ -310,7 +310,7 @@
    "qid": "comp-001",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26384",
      "grade": 2
     }
    ],
@@ -321,7 +321,7 @@
    "qid": "comp-002",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26077",
      "grade": 2
     },
     {
@@ -392,47 +392,47 @@
    "qid": "comp-003",
    "relevant": [
     {
-     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-a-solutions-",
+     "fiche_id": "idx:43882",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-b-solutions-",
+     "fiche_id": "idx:43883",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:ile-de-france",
+     "fiche_id": "idx:45424",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:ile-de-france",
+     "fiche_id": "idx:45437",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bretagne",
+     "fiche_id": "idx:45420",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bretagne",
+     "fiche_id": "idx:45433",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bourgogne-franche-comte",
+     "fiche_id": "idx:45419",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bourgogne-franche-comte",
+     "fiche_id": "idx:45432",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:hauts-de-france",
+     "fiche_id": "idx:45423",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:hauts-de-france",
+     "fiche_id": "idx:45436",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:systemes-numeriques-option-a-informatique-et-reseaux",
+     "fiche_id": "idx:43886",
      "grade": 1
     }
    ],
@@ -443,7 +443,7 @@
    "qid": "comp-004",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:33381",
      "grade": 2
     }
    ],
@@ -454,11 +454,11 @@
    "qid": "comp-005",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:12807",
      "grade": 2
     },
     {
-     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:normandie",
+     "fiche_id": "idx:46403",
      "grade": 1
     }
    ],
@@ -469,7 +469,7 @@
    "qid": "fact-001",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26375",
      "grade": 1
     }
    ],
@@ -504,7 +504,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26101",
      "grade": 1
     },
     {
@@ -540,7 +540,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:electrotechnique-energie-equipements-communicants:ile-de-france",
+     "fiche_id": "idx:44340",
      "grade": 1
     }
    ],
@@ -583,7 +583,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26614",
      "grade": 1
     }
    ],
@@ -606,7 +606,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26277",
      "grade": 1
     }
    ],
@@ -643,11 +643,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:commerce-international:pays-de-la-loire",
+     "fiche_id": "idx:45016",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:commerce-international",
+     "fiche_id": "idx:43776",
      "grade": 1
     },
     {
@@ -674,59 +674,59 @@
    "qid": "fact-007",
    "relevant": [
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:grand-est",
+     "fiche_id": "idx:45021",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:communication",
+     "fiche_id": "idx:43778",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:bretagne",
+     "fiche_id": "idx:45019",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:normandie",
+     "fiche_id": "idx:45024",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:occitanie",
+     "fiche_id": "idx:45026",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:pays-de-la-loire",
+     "fiche_id": "idx:45027",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:nouvelle-aquitaine",
+     "fiche_id": "idx:45025",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:hauts-de-france",
+     "fiche_id": "idx:45022",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:ile-de-france",
+     "fiche_id": "idx:45023",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:centre-val-de-loire",
+     "fiche_id": "idx:45020",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:auvergne-rhone-alpes",
+     "fiche_id": "idx:45018",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:provence-alpes-cote-d-azur",
+     "fiche_id": "idx:45028",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_region_diplome:grand-est:bts",
+     "fiche_id": "idx:46207",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:23168",
      "grade": 1
     },
     {
@@ -753,11 +753,11 @@
    "qid": "fact-008",
    "relevant": [
     {
-     "fiche_id": "insee_salaan:group_3:bretagne",
+     "fiche_id": "idx:46323",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_2:bretagne",
+     "fiche_id": "idx:46317",
      "grade": 1
     }
    ],
@@ -780,7 +780,7 @@
    "qid": "fact-011",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29491",
      "grade": 1
     }
    ],
@@ -791,15 +791,15 @@
    "qid": "fact-012",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:32624",
      "grade": 1
     },
     {
-     "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:bretagne",
+     "fiche_id": "idx:46575",
      "grade": 1
     },
     {
-     "fiche_id": "insersup:licence-generale:sciences-de-la-vie-de-la-terre-et-de-l-univers:bretagne",
+     "fiche_id": "idx:46498",
      "grade": 1
     }
    ],
@@ -810,11 +810,11 @@
    "qid": "fact-013",
    "relevant": [
     {
-     "fiche_id": "insersup:licence-generale:staps:auvergne-rhone-alpes",
+     "fiche_id": "idx:46539",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:32811",
      "grade": 1
     },
     {
@@ -829,7 +829,7 @@
    "qid": "fact-014",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29438",
      "grade": 1
     }
    ],
@@ -879,11 +879,11 @@
    "qid": "geo-007",
    "relevant": [
     {
-     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:occitanie",
+     "fiche_id": "idx:46405",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:assistance-technique-d-ingenieur:occitanie",
+     "fiche_id": "idx:44930",
      "grade": 1
     }
    ],
@@ -898,11 +898,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:auvergne-rhone-alpes",
+     "fiche_id": "idx:46396",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:assistance-technique-d-ingenieur:auvergne-rhone-alpes",
+     "fiche_id": "idx:44926",
      "grade": 1
     }
    ],
@@ -913,7 +913,7 @@
    "qid": "geo-009",
    "relevant": [
     {
-     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:hauts-de-france",
+     "fiche_id": "idx:46401",
      "grade": 1
     }
    ],
@@ -923,7 +923,7 @@
    "qid": "geo-010",
    "relevant": [
     {
-     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:nouvelle-aquitaine",
+     "fiche_id": "idx:46404",
      "grade": 1
     }
    ],
@@ -994,7 +994,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:16297",
      "grade": 1
     }
    ],
@@ -1005,7 +1005,7 @@
    "qid": "geo-012",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:23379",
      "grade": 2
     }
    ],
@@ -1015,7 +1015,7 @@
    "qid": "geo-013",
    "relevant": [
     {
-     "fiche_id": "domtom_dispositif:drom_formations_universite_reunion",
+     "fiche_id": "idx:52005",
      "grade": 1
     },
     {
@@ -1030,11 +1030,11 @@
    "qid": "metier-001",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:35020",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP35687",
+     "fiche_id": "idx:38760",
      "grade": 2
     },
     {
@@ -1050,7 +1050,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37805",
+     "fiche_id": "idx:39681",
      "grade": 2
     },
     {
@@ -1058,11 +1058,11 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP35959",
+     "fiche_id": "idx:38866",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37674",
+     "fiche_id": "idx:39581",
      "grade": 2
     },
     {
@@ -1074,7 +1074,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41463",
+     "fiche_id": "idx:42848",
      "grade": 2
     },
     {
@@ -1086,7 +1086,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38436",
+     "fiche_id": "idx:40200",
      "grade": 2
     },
     {
@@ -1094,7 +1094,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39111",
+     "fiche_id": "idx:40762",
      "grade": 2
     },
     {
@@ -1118,7 +1118,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37625",
+     "fiche_id": "idx:39536",
      "grade": 2
     },
     {
@@ -1126,19 +1126,19 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39618",
+     "fiche_id": "idx:41181",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39261",
+     "fiche_id": "idx:40884",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39608",
+     "fiche_id": "idx:41171",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39609",
+     "fiche_id": "idx:41172",
      "grade": 2
     }
    ],
@@ -1148,19 +1148,19 @@
    "qid": "metier-002",
    "relevant": [
     {
-     "fiche_id": "metier:MET.512",
+     "fiche_id": "idx:47370",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.512",
+     "fiche_id": "idx:48445",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1405",
+     "fiche_id": "idx:50424",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39590",
+     "fiche_id": "idx:41154",
      "grade": 1
     },
     {
@@ -1175,67 +1175,67 @@
    "qid": "metier-003",
    "relevant": [
     {
-     "fiche_id": "metier:MET.38",
+     "fiche_id": "idx:47234",
      "grade": 2
     },
     {
-     "fiche_id": "dares_fap:V1Z",
+     "fiche_id": "idx:50778",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.38",
+     "fiche_id": "idx:48309",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:J1506",
+     "fiche_id": "idx:50071",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:28704",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.343",
+     "fiche_id": "idx:47201",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.343",
+     "fiche_id": "idx:48276",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.8198",
+     "fiche_id": "idx:47868",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.8198",
+     "fiche_id": "idx:48943",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:J1511",
+     "fiche_id": "idx:50076",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.8199",
+     "fiche_id": "idx:47869",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.8199",
+     "fiche_id": "idx:48944",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:J1512",
+     "fiche_id": "idx:50077",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:J1505",
+     "fiche_id": "idx:50070",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:V1Z:ile-de-france",
+     "fiche_id": "idx:51738",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:V1Z:bourgogne-franche-comte",
+     "fiche_id": "idx:51732",
      "grade": 1
     }
    ],
@@ -1246,23 +1246,23 @@
    "qid": "metier-004",
    "relevant": [
     {
-     "fiche_id": "metier:MET.29",
+     "fiche_id": "idx:47141",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:7241",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:J1404",
+     "fiche_id": "idx:50054",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.375",
+     "fiche_id": "idx:47232",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.280",
+     "fiche_id": "idx:47131",
      "grade": 1
     }
    ],
@@ -1272,31 +1272,31 @@
    "qid": "metier-005",
    "relevant": [
     {
-     "fiche_id": "metier:MET.33",
+     "fiche_id": "idx:47186",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.1264",
+     "fiche_id": "idx:46989",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.33",
+     "fiche_id": "idx:48261",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.1264",
+     "fiche_id": "idx:48064",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:9666",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_2:bretagne",
+     "fiche_id": "idx:46317",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_2:occitanie",
+     "fiche_id": "idx:46321",
      "grade": 1
     }
    ],
@@ -1307,107 +1307,107 @@
    "qid": "metier-006",
    "relevant": [
     {
-     "fiche_id": "dares_fap:W0Z",
+     "fiche_id": "idx:50783",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.557",
+     "fiche_id": "idx:47411",
      "grade": 2
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:bourgogne-franche-comte",
+     "fiche_id": "idx:51797",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:hauts-de-france",
+     "fiche_id": "idx:51802",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:occitanie",
+     "fiche_id": "idx:51806",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:grand-est",
+     "fiche_id": "idx:51801",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:ile-de-france",
+     "fiche_id": "idx:51803",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:bretagne",
+     "fiche_id": "idx:51798",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:normandie",
+     "fiche_id": "idx:51804",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:pays-de-la-loire",
+     "fiche_id": "idx:51807",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:auvergne-rhone-alpes",
+     "fiche_id": "idx:51796",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:W0Z:corse",
+     "fiche_id": "idx:51800",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:K2106",
+     "fiche_id": "idx:50237",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:K2107",
+     "fiche_id": "idx:50238",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:K2109",
+     "fiche_id": "idx:50240",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.766",
+     "fiche_id": "idx:47628",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.766",
+     "fiche_id": "idx:48703",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.880",
+     "fiche_id": "idx:47941",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.880",
+     "fiche_id": "idx:49016",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.277",
+     "fiche_id": "idx:47127",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.277",
+     "fiche_id": "idx:48202",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.937",
+     "fiche_id": "idx:48002",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.937",
+     "fiche_id": "idx:49077",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.8193",
+     "fiche_id": "idx:47863",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.8193",
+     "fiche_id": "idx:48938",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37469",
+     "fiche_id": "idx:39436",
      "grade": 1
     }
    ],
@@ -1418,7 +1418,7 @@
    "qid": "metier-007",
    "relevant": [
     {
-     "fiche_id": "metier:MET.760",
+     "fiche_id": "idx:47622",
      "grade": 2
     },
     {
@@ -1426,7 +1426,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:36439",
      "grade": 2
     },
     {
@@ -1450,7 +1450,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38957",
+     "fiche_id": "idx:40625",
      "grade": 2
     },
     {
@@ -1462,7 +1462,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39668",
+     "fiche_id": "idx:41219",
      "grade": 2
     },
     {
@@ -1470,7 +1470,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39141",
+     "fiche_id": "idx:40785",
      "grade": 2
     },
     {
@@ -1478,7 +1478,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39922",
+     "fiche_id": "idx:41422",
      "grade": 2
     },
     {
@@ -1490,7 +1490,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40532",
+     "fiche_id": "idx:41949",
      "grade": 2
     },
     {
@@ -1498,27 +1498,27 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39805",
+     "fiche_id": "idx:41335",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.760",
+     "fiche_id": "idx:48697",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.211",
+     "fiche_id": "idx:47074",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.920",
+     "fiche_id": "idx:47984",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.371",
+     "fiche_id": "idx:47229",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.492",
+     "fiche_id": "idx:47353",
      "grade": 1
     },
     {
@@ -1533,35 +1533,35 @@
    "qid": "metier-008",
    "relevant": [
     {
-     "fiche_id": "metier:MET.171",
+     "fiche_id": "idx:47029",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.171",
+     "fiche_id": "idx:48104",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:A1504",
+     "fiche_id": "idx:49183",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29887",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.323",
+     "fiche_id": "idx:47179",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.323",
+     "fiche_id": "idx:48254",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.7948",
+     "fiche_id": "idx:47728",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:A1305",
+     "fiche_id": "idx:49124",
      "grade": 1
     }
    ],
@@ -1600,7 +1600,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:33742",
      "grade": 1
     },
     {
@@ -1669,11 +1669,11 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40945",
+     "fiche_id": "idx:42351",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29838",
      "grade": 1
     },
     {
@@ -1700,7 +1700,7 @@
    "qid": "malform-001",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:34302",
      "grade": 2
     },
     {
@@ -1708,7 +1708,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40184",
+     "fiche_id": "idx:41641",
      "grade": 2
     },
     {
@@ -1716,7 +1716,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38294",
+     "fiche_id": "idx:40067",
      "grade": 2
     },
     {
@@ -1728,7 +1728,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39760",
+     "fiche_id": "idx:41298",
      "grade": 2
     },
     {
@@ -1744,7 +1744,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37652",
+     "fiche_id": "idx:39562",
      "grade": 2
     },
     {
@@ -1756,7 +1756,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42021",
+     "fiche_id": "idx:43398",
      "grade": 2
     },
     {
@@ -1768,19 +1768,19 @@
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38806",
+     "fiche_id": "idx:40499",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39594",
+     "fiche_id": "idx:41158",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38793",
+     "fiche_id": "idx:40487",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.885",
+     "fiche_id": "idx:47946",
      "grade": 1
     },
     {
@@ -1796,11 +1796,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.823",
+     "fiche_id": "idx:47890",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:E1125",
+     "fiche_id": "idx:49411",
      "grade": 1
     }
    ],
@@ -1811,7 +1811,7 @@
    "qid": "malform-002",
    "relevant": [
     {
-     "fiche_id": "rncp_blocs:RNCP41748",
+     "fiche_id": "idx:43132",
      "grade": 2
     },
     {
@@ -1819,7 +1819,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.132",
+     "fiche_id": "idx:46991",
      "grade": 1
     }
    ],
@@ -1881,23 +1881,23 @@
    "qid": "malform-004",
    "relevant": [
     {
-     "fiche_id": "rncp_blocs:RNCP40106",
+     "fiche_id": "idx:41568",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39998",
+     "fiche_id": "idx:41483",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37579",
+     "fiche_id": "idx:39507",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38599",
+     "fiche_id": "idx:40325",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1841",
+     "fiche_id": "idx:50542",
      "grade": 1
     },
     {
@@ -1905,11 +1905,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.718",
+     "fiche_id": "idx:47581",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.478",
+     "fiche_id": "idx:47337",
      "grade": 1
     },
     {
@@ -1921,7 +1921,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39548",
+     "fiche_id": "idx:41119",
      "grade": 1
     },
     {
@@ -1929,7 +1929,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41246",
+     "fiche_id": "idx:42646",
      "grade": 1
     },
     {
@@ -1941,11 +1941,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41378",
+     "fiche_id": "idx:42767",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40228",
+     "fiche_id": "idx:41673",
      "grade": 1
     },
     {
@@ -1953,7 +1953,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39837",
+     "fiche_id": "idx:41346",
      "grade": 1
     },
     {
@@ -1961,11 +1961,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42097",
+     "fiche_id": "idx:43474",
      "grade": 1
     },
     {
-     "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_professionnel|assez_bien",
+     "fiche_id": "idx:51939",
      "grade": 1
     },
     {
@@ -1973,7 +1973,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40573",
+     "fiche_id": "idx:41990",
      "grade": 1
     },
     {
@@ -1989,11 +1989,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39425",
+     "fiche_id": "idx:41021",
      "grade": 1
     },
     {
-     "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|assez_bien",
+     "fiche_id": "idx:51933",
      "grade": 1
     }
    ],
@@ -2004,7 +2004,7 @@
    "qid": "malform-005",
    "relevant": [
     {
-     "fiche_id": "metier:MET.760",
+     "fiche_id": "idx:47622",
      "grade": 2
     }
    ],
@@ -2015,19 +2015,19 @@
    "qid": "malform-006",
    "relevant": [
     {
-     "fiche_id": "inserjeunes_formation:bac-pro:commerce",
+     "fiche_id": "idx:43615",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-a-animation-et-ges",
+     "fiche_id": "idx:43661",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-b-prospection-clie",
+     "fiche_id": "idx:43662",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:18879",
      "grade": 1
     },
     {
@@ -2067,67 +2067,67 @@
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:martinique",
+     "fiche_id": "idx:44288",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:occitanie",
+     "fiche_id": "idx:44291",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:normandie",
+     "fiche_id": "idx:44289",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bretagne",
+     "fiche_id": "idx:44280",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guadeloupe",
+     "fiche_id": "idx:44283",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:grand-est",
+     "fiche_id": "idx:44282",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guyane",
+     "fiche_id": "idx:44284",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:la-reunion",
+     "fiche_id": "idx:44287",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:hauts-de-france",
+     "fiche_id": "idx:44285",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:nouvelle-aquitaine",
+     "fiche_id": "idx:44290",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:pays-de-la-loire",
+     "fiche_id": "idx:44292",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:ile-de-france",
+     "fiche_id": "idx:44286",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bourgogne-franche-comte",
+     "fiche_id": "idx:44279",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:centre-val-de-loire",
+     "fiche_id": "idx:44281",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:auvergne-rhone-alpes",
+     "fiche_id": "idx:44278",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:provence-alpes-cote-d-azur",
+     "fiche_id": "idx:44293",
      "grade": 1
     }
    ],
@@ -2215,7 +2215,7 @@
    "qid": "geo-003",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:21886",
      "grade": 2
     },
     {
@@ -2279,19 +2279,19 @@
      "grade": 1
     },
     {
-     "fiche_id": "domtom_dispositif:drom_formations_universite_reunion",
+     "fiche_id": "idx:52005",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:la-reunion",
+     "fiche_id": "idx:45472",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:la-reunion",
+     "fiche_id": "idx:45438",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:la-reunion",
+     "fiche_id": "idx:45425",
      "grade": 1
     }
    ],
@@ -2314,7 +2314,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "domtom_dispositif:drom_formations_universite_guyane",
+     "fiche_id": "idx:52004",
      "grade": 1
     }
    ],
@@ -2329,7 +2329,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "domtom_dispositif:drom_formations_cufr_mayotte",
+     "fiche_id": "idx:52002",
      "grade": 1
     }
    ],
@@ -2343,15 +2343,15 @@
      "grade": 2
     },
     {
-     "fiche_id": "dares_fap_region:M2Z:bretagne",
+     "fiche_id": "idx:51363",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:H0Z:bretagne",
+     "fiche_id": "idx:51159",
      "grade": 1
     },
     {
-     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:bretagne",
+     "fiche_id": "idx:46398",
      "grade": 1
     }
    ],
@@ -2362,67 +2362,67 @@
    "qid": "metier-009",
    "relevant": [
     {
-     "fiche_id": "metier:MET.871",
+     "fiche_id": "idx:47931",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.871",
+     "fiche_id": "idx:49006",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:K1104",
+     "fiche_id": "idx:50081",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.361",
+     "fiche_id": "idx:47221",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.361",
+     "fiche_id": "idx:48296",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41646",
+     "fiche_id": "idx:43031",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:16503",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39023",
+     "fiche_id": "idx:40686",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.634",
+     "fiche_id": "idx:48570",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.634",
+     "fiche_id": "idx:47495",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:K1107",
+     "fiche_id": "idx:50084",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37813",
+     "fiche_id": "idx:39686",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39025",
+     "fiche_id": "idx:40688",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39022",
+     "fiche_id": "idx:40685",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:J1131",
+     "fiche_id": "idx:50030",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38989",
+     "fiche_id": "idx:40653",
      "grade": 1
     }
    ],
@@ -2432,59 +2432,59 @@
    "qid": "metier-010",
    "relevant": [
     {
-     "fiche_id": "metier:MET.161",
+     "fiche_id": "idx:47018",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.161",
+     "fiche_id": "idx:48093",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38342",
+     "fiche_id": "idx:40113",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38343",
+     "fiche_id": "idx:40114",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:F1101",
+     "fiche_id": "idx:49457",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:33658",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37206",
+     "fiche_id": "idx:39302",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.8071",
+     "fiche_id": "idx:47790",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.648",
+     "fiche_id": "idx:47505",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.864",
+     "fiche_id": "idx:47924",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:F1102",
+     "fiche_id": "idx:49458",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:F1127",
+     "fiche_id": "idx:49483",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.258",
+     "fiche_id": "idx:47109",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39413",
+     "fiche_id": "idx:41012",
      "grade": 1
     }
    ],
@@ -2495,63 +2495,63 @@
    "qid": "metier-011",
    "relevant": [
     {
-     "fiche_id": "metier:MET.11",
+     "fiche_id": "idx:46966",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:M1203",
+     "fiche_id": "idx:50392",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:16752",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1211",
+     "fiche_id": "idx:50400",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.149",
+     "fiche_id": "idx:47004",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:L1Z:grand-est",
+     "fiche_id": "idx:51264",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1213",
+     "fiche_id": "idx:50402",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap:L1Z",
+     "fiche_id": "idx:50736",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.149",
+     "fiche_id": "idx:48079",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1202",
+     "fiche_id": "idx:50391",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.7772",
+     "fiche_id": "idx:47647",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.195",
+     "fiche_id": "idx:48130",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP36522",
+     "fiche_id": "idx:39074",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:L1Z:ile-de-france",
+     "fiche_id": "idx:51266",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.195",
+     "fiche_id": "idx:47055",
      "grade": 1
     }
    ],
@@ -2562,51 +2562,51 @@
    "qid": "metier-012",
    "relevant": [
     {
-     "fiche_id": "metier:MET.936",
+     "fiche_id": "idx:48001",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.936",
+     "fiche_id": "idx:49076",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:E1206",
+     "fiche_id": "idx:49421",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29345",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.928",
+     "fiche_id": "idx:47992",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39367",
+     "fiche_id": "idx:40969",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40917",
+     "fiche_id": "idx:42324",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.7901",
+     "fiche_id": "idx:47691",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41103",
+     "fiche_id": "idx:42507",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41742",
+     "fiche_id": "idx:43126",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41694",
+     "fiche_id": "idx:43078",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38244",
+     "fiche_id": "idx:40027",
      "grade": 1
     }
    ],
@@ -2616,23 +2616,23 @@
    "qid": "metier-013",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:28136",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41748",
+     "fiche_id": "idx:43132",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37675",
+     "fiche_id": "idx:39582",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.311",
+     "fiche_id": "idx:47166",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41744",
+     "fiche_id": "idx:43128",
      "grade": 2
     },
     {
@@ -2640,27 +2640,27 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.189",
+     "fiche_id": "idx:47048",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP35515",
+     "fiche_id": "idx:38725",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39695",
+     "fiche_id": "idx:41241",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.132",
+     "fiche_id": "idx:46991",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP36004",
+     "fiche_id": "idx:38883",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41552",
+     "fiche_id": "idx:42937",
      "grade": 1
     }
    ],
@@ -2671,27 +2671,27 @@
    "qid": "metier-014",
    "relevant": [
     {
-     "fiche_id": "metier:MET.885",
+     "fiche_id": "idx:47946",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.885",
+     "fiche_id": "idx:49021",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:E1125",
+     "fiche_id": "idx:49411",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:E1115",
+     "fiche_id": "idx:49401",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.823",
+     "fiche_id": "idx:47890",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42021",
+     "fiche_id": "idx:43398",
      "grade": 1
     },
     {
@@ -2699,7 +2699,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38294",
+     "fiche_id": "idx:40067",
      "grade": 1
     },
     {
@@ -2707,11 +2707,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:37679",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39594",
+     "fiche_id": "idx:41158",
      "grade": 1
     },
     {
@@ -2719,11 +2719,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40184",
+     "fiche_id": "idx:41641",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37652",
+     "fiche_id": "idx:39562",
      "grade": 1
     },
     {
@@ -2731,7 +2731,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38793",
+     "fiche_id": "idx:40487",
      "grade": 1
     },
     {
@@ -2751,7 +2751,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39760",
+     "fiche_id": "idx:41298",
      "grade": 1
     },
     {
@@ -2775,7 +2775,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38806",
+     "fiche_id": "idx:40499",
      "grade": 1
     }
    ],
@@ -2786,95 +2786,95 @@
    "qid": "metier-015",
    "relevant": [
     {
-     "fiche_id": "metier:MET.45",
+     "fiche_id": "idx:47306",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.45",
+     "fiche_id": "idx:48381",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:E1106",
+     "fiche_id": "idx:49392",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.677",
+     "fiche_id": "idx:48611",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38922",
+     "fiche_id": "idx:40593",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.253",
+     "fiche_id": "idx:48182",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.253",
+     "fiche_id": "idx:47107",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.385",
+     "fiche_id": "idx:48313",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42049",
+     "fiche_id": "idx:43426",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.677",
+     "fiche_id": "idx:47536",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:18750",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.385",
+     "fiche_id": "idx:47238",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39871",
+     "fiche_id": "idx:41379",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38950",
+     "fiche_id": "idx:40620",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40281",
+     "fiche_id": "idx:41723",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39736",
+     "fiche_id": "idx:41274",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:E1118",
+     "fiche_id": "idx:49404",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37033",
+     "fiche_id": "idx:39250",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39755",
+     "fiche_id": "idx:41293",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40793",
+     "fiche_id": "idx:42205",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39872",
+     "fiche_id": "idx:41380",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37034",
+     "fiche_id": "idx:39251",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40161",
+     "fiche_id": "idx:41619",
      "grade": 1
     }
    ],
@@ -2884,11 +2884,11 @@
    "qid": "metier-016",
    "relevant": [
     {
-     "fiche_id": "rome_metier:M1855",
+     "fiche_id": "idx:50556",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:11256",
      "grade": 1
     },
     {
@@ -2920,7 +2920,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38436",
+     "fiche_id": "idx:40200",
      "grade": 1
     },
     {
@@ -2936,7 +2936,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37674",
+     "fiche_id": "idx:39581",
      "grade": 1
     },
     {
@@ -2948,7 +2948,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP35687",
+     "fiche_id": "idx:38760",
      "grade": 1
     },
     {
@@ -2956,7 +2956,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41463",
+     "fiche_id": "idx:42848",
      "grade": 1
     },
     {
@@ -2964,7 +2964,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39111",
+     "fiche_id": "idx:40762",
      "grade": 1
     },
     {
@@ -2972,15 +2972,15 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37625",
+     "fiche_id": "idx:39536",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP35959",
+     "fiche_id": "idx:38866",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39618",
+     "fiche_id": "idx:41181",
      "grade": 1
     }
    ],
@@ -2991,19 +2991,19 @@
    "qid": "metier-017",
    "relevant": [
     {
-     "fiche_id": "rome_metier:M1405",
+     "fiche_id": "idx:50424",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.512",
+     "fiche_id": "idx:48445",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.512",
+     "fiche_id": "idx:47370",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:19846",
      "grade": 1
     },
     {
@@ -3011,7 +3011,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39590",
+     "fiche_id": "idx:41154",
      "grade": 1
     }
    ],
@@ -3021,19 +3021,19 @@
    "qid": "metier-018",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:28729",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.38",
+     "fiche_id": "idx:47234",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.8198",
+     "fiche_id": "idx:47868",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.8199",
+     "fiche_id": "idx:47869",
      "grade": 1
     }
    ],
@@ -3043,35 +3043,35 @@
    "qid": "metier-019",
    "relevant": [
     {
-     "fiche_id": "metier:MET.29",
+     "fiche_id": "idx:47141",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:J1404",
+     "fiche_id": "idx:50054",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.280",
+     "fiche_id": "idx:47131",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_3:bretagne",
+     "fiche_id": "idx:46323",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_3:occitanie",
+     "fiche_id": "idx:46327",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_3:hauts-de-france",
+     "fiche_id": "idx:46324",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_3:ile-de-france",
+     "fiche_id": "idx:46325",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_3:nouvelle-aquitaine",
+     "fiche_id": "idx:46326",
      "grade": 1
     }
    ],
@@ -3082,79 +3082,79 @@
    "qid": "metier-020",
    "relevant": [
     {
-     "fiche_id": "metier:MET.33",
+     "fiche_id": "idx:47186",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.33",
+     "fiche_id": "idx:48261",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.1264",
+     "fiche_id": "idx:46989",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.1264",
+     "fiche_id": "idx:48064",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:9666",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:K1903",
+     "fiche_id": "idx:50224",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap:P3Z",
+     "fiche_id": "idx:50751",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:P3Z:occitanie",
+     "fiche_id": "idx:51433",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:P3Z:bourgogne-franche-comte",
+     "fiche_id": "idx:51425",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:P3Z:ile-de-france",
+     "fiche_id": "idx:51430",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:P3Z:hauts-de-france",
+     "fiche_id": "idx:51429",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:P3Z:normandie",
+     "fiche_id": "idx:51431",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:P3Z:auvergne-rhone-alpes",
+     "fiche_id": "idx:51424",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.806",
+     "fiche_id": "idx:47781",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.1190",
+     "fiche_id": "idx:46980",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.333",
+     "fiche_id": "idx:47190",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.82",
+     "fiche_id": "idx:47870",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.92",
+     "fiche_id": "idx:47983",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.1192",
+     "fiche_id": "idx:46981",
      "grade": 1
     }
    ],
@@ -3165,55 +3165,55 @@
    "qid": "metier-021",
    "relevant": [
     {
-     "fiche_id": "metier:MET.557",
+     "fiche_id": "idx:47411",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38356",
+     "fiche_id": "idx:40126",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37469",
+     "fiche_id": "idx:39436",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37525",
+     "fiche_id": "idx:39473",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:K2106",
+     "fiche_id": "idx:50237",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.880",
+     "fiche_id": "idx:47941",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.766",
+     "fiche_id": "idx:47628",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.8193",
+     "fiche_id": "idx:47863",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.8193",
+     "fiche_id": "idx:48938",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.277",
+     "fiche_id": "idx:47127",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.277",
+     "fiche_id": "idx:48202",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.937",
+     "fiche_id": "idx:48002",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.937",
+     "fiche_id": "idx:49077",
      "grade": 1
     }
    ],
@@ -3224,43 +3224,43 @@
    "qid": "metier-022",
    "relevant": [
     {
-     "fiche_id": "metier:MET.760",
+     "fiche_id": "idx:47622",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.760",
+     "fiche_id": "idx:48697",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.211",
+     "fiche_id": "idx:47074",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.211",
+     "fiche_id": "idx:48149",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.371",
+     "fiche_id": "idx:47229",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.920",
+     "fiche_id": "idx:47984",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.920",
+     "fiche_id": "idx:49059",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.231",
+     "fiche_id": "idx:48168",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.492",
+     "fiche_id": "idx:47353",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:17566",
      "grade": 1
     },
     {
@@ -3322,55 +3322,55 @@
    "qid": "metier-023",
    "relevant": [
     {
-     "fiche_id": "metier:MET.171",
+     "fiche_id": "idx:47029",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.171",
+     "fiche_id": "idx:48104",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:A1504",
+     "fiche_id": "idx:49183",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.323",
+     "fiche_id": "idx:47179",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.323",
+     "fiche_id": "idx:48254",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:A1501",
+     "fiche_id": "idx:49180",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:A1305",
+     "fiche_id": "idx:49124",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:33834",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40580",
+     "fiche_id": "idx:41997",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40344",
+     "fiche_id": "idx:41784",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40358",
+     "fiche_id": "idx:41798",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.7948",
+     "fiche_id": "idx:47728",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.905",
+     "fiche_id": "idx:47968",
      "grade": 1
     }
    ],
@@ -3380,47 +3380,47 @@
    "qid": "metier-024",
    "relevant": [
     {
-     "fiche_id": "metier:MET.871",
+     "fiche_id": "idx:47931",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41646",
+     "fiche_id": "idx:43031",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39025",
+     "fiche_id": "idx:40688",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39022",
+     "fiche_id": "idx:40685",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39023",
+     "fiche_id": "idx:40686",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.871",
+     "fiche_id": "idx:49006",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:K1104",
+     "fiche_id": "idx:50081",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.361",
+     "fiche_id": "idx:47221",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.634",
+     "fiche_id": "idx:47495",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.361",
+     "fiche_id": "idx:48296",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:16503",
      "grade": 1
     }
    ],
@@ -3431,51 +3431,51 @@
    "qid": "metier-025",
    "relevant": [
     {
-     "fiche_id": "metier:MET.161",
+     "fiche_id": "idx:47018",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.161",
+     "fiche_id": "idx:48093",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:F1101",
+     "fiche_id": "idx:49457",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_2:bretagne",
+     "fiche_id": "idx:46317",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_2:occitanie",
+     "fiche_id": "idx:46321",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.258",
+     "fiche_id": "idx:47109",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:F1102",
+     "fiche_id": "idx:49458",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.864",
+     "fiche_id": "idx:47924",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.8071",
+     "fiche_id": "idx:47790",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:F1127",
+     "fiche_id": "idx:49483",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:F1121",
+     "fiche_id": "idx:49477",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.648",
+     "fiche_id": "idx:47505",
      "grade": 1
     }
    ],
@@ -3486,95 +3486,95 @@
    "qid": "metier-026",
    "relevant": [
     {
-     "fiche_id": "metier:MET.11",
+     "fiche_id": "idx:46966",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:M1203",
+     "fiche_id": "idx:50392",
      "grade": 2
     },
     {
-     "fiche_id": "dares_fap:L1Z",
+     "fiche_id": "idx:50736",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.11",
+     "fiche_id": "idx:48041",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:L1Z:bourgogne-franche-comte",
+     "fiche_id": "idx:51260",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:L1Z:ile-de-france",
+     "fiche_id": "idx:51266",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:L1Z:hauts-de-france",
+     "fiche_id": "idx:51265",
      "grade": 1
     },
     {
-     "fiche_id": "dares_fap_region:L1Z:occitanie",
+     "fiche_id": "idx:51269",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1211",
+     "fiche_id": "idx:50400",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.149",
+     "fiche_id": "idx:47004",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.149",
+     "fiche_id": "idx:48079",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1213",
+     "fiche_id": "idx:50402",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1225",
+     "fiche_id": "idx:50414",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1608",
+     "fiche_id": "idx:50469",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1202",
+     "fiche_id": "idx:50391",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1215",
+     "fiche_id": "idx:50404",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.195",
+     "fiche_id": "idx:47055",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.195",
+     "fiche_id": "idx:48130",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.7772",
+     "fiche_id": "idx:47647",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.7772",
+     "fiche_id": "idx:48722",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.8211",
+     "fiche_id": "idx:48955",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP36522",
+     "fiche_id": "idx:39074",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41644",
+     "fiche_id": "idx:43029",
      "grade": 1
     }
    ],
@@ -3585,51 +3585,51 @@
    "qid": "metier-027",
    "relevant": [
     {
-     "fiche_id": "metier:MET.936",
+     "fiche_id": "idx:48001",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29345",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40917",
+     "fiche_id": "idx:42324",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41103",
+     "fiche_id": "idx:42507",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39367",
+     "fiche_id": "idx:40969",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41742",
+     "fiche_id": "idx:43126",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41694",
+     "fiche_id": "idx:43078",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.936",
+     "fiche_id": "idx:49076",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:E1206",
+     "fiche_id": "idx:49421",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.928",
+     "fiche_id": "idx:47992",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.7901",
+     "fiche_id": "idx:47691",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38244",
+     "fiche_id": "idx:40027",
      "grade": 1
     }
    ],
@@ -3640,31 +3640,31 @@
    "qid": "metier-028",
    "relevant": [
     {
-     "fiche_id": "insee_salaan:cs:43",
+     "fiche_id": "idx:46297",
      "grade": 2
     },
     {
-     "fiche_id": "insee_salaan:group_3:bretagne",
+     "fiche_id": "idx:46323",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_3:occitanie",
+     "fiche_id": "idx:46327",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.189",
+     "fiche_id": "idx:47048",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.64",
+     "fiche_id": "idx:48575",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.782",
+     "fiche_id": "idx:48739",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.132",
+     "fiche_id": "idx:46991",
      "grade": 1
     }
    ],
@@ -3675,67 +3675,67 @@
    "qid": "metier-029",
    "relevant": [
     {
-     "fiche_id": "metier:MET.885",
+     "fiche_id": "idx:47946",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.823",
+     "fiche_id": "idx:47890",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:E1125",
+     "fiche_id": "idx:49411",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:E1115",
+     "fiche_id": "idx:49401",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:M1831",
+     "fiche_id": "idx:50532",
      "grade": 2
     },
     {
-     "fiche_id": "onisep_metier:MET.885",
+     "fiche_id": "idx:49021",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.823",
+     "fiche_id": "idx:48965",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40184",
+     "fiche_id": "idx:41641",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42021",
+     "fiche_id": "idx:43398",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38294",
+     "fiche_id": "idx:40067",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39594",
+     "fiche_id": "idx:41158",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39760",
+     "fiche_id": "idx:41298",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37652",
+     "fiche_id": "idx:39562",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38793",
+     "fiche_id": "idx:40487",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38806",
+     "fiche_id": "idx:40499",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38345",
+     "fiche_id": "idx:40116",
      "grade": 1
     },
     {
@@ -3751,7 +3751,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:19915",
      "grade": 1
     },
     {
@@ -3795,7 +3795,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:E1126",
+     "fiche_id": "idx:49412",
      "grade": 1
     }
    ],
@@ -3806,63 +3806,63 @@
    "qid": "metier-030",
    "relevant": [
     {
-     "fiche_id": "metier:MET.45",
+     "fiche_id": "idx:47306",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38922",
+     "fiche_id": "idx:40593",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42049",
+     "fiche_id": "idx:43426",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39871",
+     "fiche_id": "idx:41379",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40281",
+     "fiche_id": "idx:41723",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38950",
+     "fiche_id": "idx:40620",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39755",
+     "fiche_id": "idx:41293",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39736",
+     "fiche_id": "idx:41274",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40793",
+     "fiche_id": "idx:42205",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37033",
+     "fiche_id": "idx:39250",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39872",
+     "fiche_id": "idx:41380",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:36646",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:E1106",
+     "fiche_id": "idx:49392",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.385",
+     "fiche_id": "idx:47238",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.677",
+     "fiche_id": "idx:47536",
      "grade": 1
     }
    ],
@@ -3872,19 +3872,19 @@
    "qid": "reconv-001",
    "relevant": [
     {
-     "fiche_id": "financement_dispositif:cpf",
+     "fiche_id": "idx:43582",
      "grade": 2
     },
     {
-     "fiche_id": "financement_voie:reconversion",
+     "fiche_id": "idx:43593",
      "grade": 2
     },
     {
-     "fiche_id": "financement_dispositif:ptp_transitions_pro",
+     "fiche_id": "idx:43586",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.12",
+     "fiche_id": "idx:46982",
      "grade": 1
     },
     {
@@ -3915,23 +3915,23 @@
    "qid": "reconv-002",
    "relevant": [
     {
-     "fiche_id": "correction:vae_experience_liee_diplome",
+     "fiche_id": "idx:43520",
      "grade": 2
     },
     {
-     "fiche_id": "financement_dispositif:vae",
+     "fiche_id": "idx:43588",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:K2126",
+     "fiche_id": "idx:50257",
      "grade": 1
     },
     {
-     "fiche_id": "financement_voie:continue",
+     "fiche_id": "idx:43590",
      "grade": 1
     },
     {
-     "fiche_id": "financement_voie:reconversion",
+     "fiche_id": "idx:43593",
      "grade": 1
     }
    ],
@@ -3942,15 +3942,15 @@
    "qid": "reconv-003",
    "relevant": [
     {
-     "fiche_id": "financement_voie:reconversion",
+     "fiche_id": "idx:43593",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29856",
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.12",
+     "fiche_id": "idx:46982",
      "grade": 1
     }
    ],
@@ -3961,67 +3961,67 @@
    "qid": "reconv-004",
    "relevant": [
     {
-     "fiche_id": "onisep_metier:MET.29",
+     "fiche_id": "idx:48216",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.280",
+     "fiche_id": "idx:48206",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.877",
+     "fiche_id": "idx:49012",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.676",
+     "fiche_id": "idx:48610",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.276",
+     "fiche_id": "idx:48201",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.221",
+     "fiche_id": "idx:48157",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.875",
+     "fiche_id": "idx:49010",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.876",
+     "fiche_id": "idx:49011",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.282",
+     "fiche_id": "idx:48208",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.411",
+     "fiche_id": "idx:48339",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.415",
+     "fiche_id": "idx:48343",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.330",
+     "fiche_id": "idx:48262",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.281",
+     "fiche_id": "idx:48207",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.416",
+     "fiche_id": "idx:48344",
      "grade": 1
     },
     {
-     "fiche_id": "onisep_metier:MET.771",
+     "fiche_id": "idx:48709",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:17350",
      "grade": 1
     }
    ],
@@ -4032,43 +4032,43 @@
    "qid": "reconv-005",
    "relevant": [
     {
-     "fiche_id": "financement_dispositif:afe_pole_emploi",
+     "fiche_id": "idx:43567",
      "grade": 2
     },
     {
-     "fiche_id": "financement_voie:reconversion",
+     "fiche_id": "idx:43593",
      "grade": 2
     },
     {
-     "fiche_id": "financement_dispositif:cpf",
+     "fiche_id": "idx:43582",
      "grade": 2
     },
     {
-     "fiche_id": "financement_dispositif:ptp_transitions_pro",
+     "fiche_id": "idx:43586",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:proa",
+     "fiche_id": "idx:43585",
      "grade": 1
     },
     {
-     "fiche_id": "financement_voie:continue",
+     "fiche_id": "idx:43590",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:agepi",
+     "fiche_id": "idx:43569",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:vae",
+     "fiche_id": "idx:43588",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:agefiph",
+     "fiche_id": "idx:43568",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:cej",
+     "fiche_id": "idx:43580",
      "grade": 1
     }
    ],
@@ -4079,15 +4079,15 @@
    "qid": "reconv-006",
    "relevant": [
     {
-     "fiche_id": "financement_voie:reconversion",
+     "fiche_id": "idx:43593",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:proa",
+     "fiche_id": "idx:43585",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:ptp_transitions_pro",
+     "fiche_id": "idx:43586",
      "grade": 1
     }
    ],
@@ -4098,7 +4098,7 @@
    "qid": "reconv-007",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:187",
      "grade": 1
     },
     {
@@ -4141,7 +4141,7 @@
    "qid": "base-001",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26650",
      "grade": 1
     }
    ],
@@ -4211,43 +4211,43 @@
    "qid": "base-003",
    "relevant": [
     {
-     "fiche_id": "rncp_blocs:RNCP41813",
+     "fiche_id": "idx:43195",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38584",
+     "fiche_id": "idx:40312",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39485",
+     "fiche_id": "idx:41075",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39541",
+     "fiche_id": "idx:41115",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40551",
+     "fiche_id": "idx:41968",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42011",
+     "fiche_id": "idx:43388",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38587",
+     "fiche_id": "idx:40315",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37827",
+     "fiche_id": "idx:39698",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41068",
+     "fiche_id": "idx:42472",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:36611",
      "grade": 1
     },
     {
@@ -4298,35 +4298,35 @@
    "qid": "base-004",
    "relevant": [
     {
-     "fiche_id": "financement_dispositif:bourse_crous_sup",
+     "fiche_id": "idx:43578",
      "grade": 2
     },
     {
-     "fiche_id": "calendrier:dse-2026:ouverture-dse",
+     "fiche_id": "idx:52036",
      "grade": 2
     },
     {
-     "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+     "fiche_id": "idx:52039",
      "grade": 2
     },
     {
-     "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+     "fiche_id": "idx:52035",
      "grade": 1
     },
     {
-     "fiche_id": "financement_voie:initial",
+     "fiche_id": "idx:43592",
      "grade": 1
     },
     {
-     "fiche_id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+     "fiche_id": "idx:52037",
      "grade": 1
     },
     {
-     "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+     "fiche_id": "idx:52038",
      "grade": 1
     },
     {
-     "fiche_id": "financement_dispositif:bourse_lycee",
+     "fiche_id": "idx:43579",
      "grade": 1
     }
    ],
@@ -4398,7 +4398,7 @@
    "qid": "base-007",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26388",
      "grade": 1
     }
    ],
@@ -4409,7 +4409,7 @@
    "qid": "fact-001-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26385",
      "grade": 1
     },
     {
@@ -4476,7 +4476,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26101",
      "grade": 1
     },
     {
@@ -4535,7 +4535,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26680",
      "grade": 1
     }
    ],
@@ -4554,7 +4554,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26296",
      "grade": 1
     },
     {
@@ -4569,7 +4569,7 @@
    "qid": "fact-005-v1",
    "relevant": [
     {
-     "fiche_id": "correction:epita_couts_scolarite_2025",
+     "fiche_id": "idx:43517",
      "grade": 1
     }
    ],
@@ -4588,15 +4588,15 @@
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:commerce-international",
+     "fiche_id": "idx:43776",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:commerce-international:pays-de-la-loire",
+     "fiche_id": "idx:45016",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:11697",
      "grade": 1
     },
     {
@@ -4615,19 +4615,19 @@
    "qid": "fact-007-v1",
    "relevant": [
     {
-     "fiche_id": "inserjeunes_formation_region:bts:communication:grand-est",
+     "fiche_id": "idx:45021",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:communication",
+     "fiche_id": "idx:43778",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_region_diplome:grand-est:bts",
+     "fiche_id": "idx:46207",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:23168",
      "grade": 1
     }
    ],
@@ -4638,11 +4638,11 @@
    "qid": "fact-008-v1",
    "relevant": [
     {
-     "fiche_id": "insee_salaan:group_2:bretagne",
+     "fiche_id": "idx:46317",
      "grade": 1
     },
     {
-     "fiche_id": "insee_salaan:group_3:bretagne",
+     "fiche_id": "idx:46323",
      "grade": 1
     },
     {
@@ -4661,7 +4661,7 @@
    "qid": "fact-009-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:9879",
      "grade": 1
     },
     {
@@ -4684,7 +4684,7 @@
    "qid": "fact-010-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:32948",
      "grade": 1
     },
     {
@@ -4703,7 +4703,7 @@
    "qid": "fact-011-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29491",
      "grade": 1
     }
    ],
@@ -4714,11 +4714,11 @@
    "qid": "fact-012-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:32624",
      "grade": 1
     },
     {
-     "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:bretagne",
+     "fiche_id": "idx:46575",
      "grade": 1
     }
    ],
@@ -4729,11 +4729,11 @@
    "qid": "fact-013-v1",
    "relevant": [
     {
-     "fiche_id": "insersup:licence-generale:staps:auvergne-rhone-alpes",
+     "fiche_id": "idx:46539",
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:32811",
      "grade": 1
     }
    ],
@@ -4780,7 +4780,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29498",
      "grade": 1
     }
    ],
@@ -4791,7 +4791,7 @@
    "qid": "fact-015-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:17087",
      "grade": 1
     },
     {
@@ -4810,7 +4810,7 @@
    "qid": "fact-016-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:27839",
      "grade": 2
     },
     {
@@ -4832,11 +4832,11 @@
      "grade": 1
     },
     {
-     "fiche_id": "insersup:master-lmd:sciences-economiques-gestion:occitanie",
+     "fiche_id": "idx:46664",
      "grade": 1
     },
     {
-     "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-economiques-gestion:occitanie",
+     "fiche_id": "idx:46369",
      "grade": 1
     }
    ],
@@ -4847,7 +4847,7 @@
    "qid": "fact-018-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:12790",
      "grade": 1
     }
    ],
@@ -4874,7 +4874,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39485",
+     "fiche_id": "idx:41075",
      "grade": 1
     }
    ],
@@ -4893,7 +4893,7 @@
      "grade": 2
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:9310",
      "grade": 1
     },
     {
@@ -5004,7 +5004,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.38",
+     "fiche_id": "idx:47234",
      "grade": 1
     }
    ],
@@ -5015,19 +5015,19 @@
    "qid": "fact-022-v1",
    "relevant": [
     {
-     "fiche_id": "inserjeunes_formation_region:bts:negociation-et-relation-client:centre-val-de-loire",
+     "fiche_id": "idx:45374",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:negociation-et-digitalisation-de-la-relation-client:centre-val-de-loire",
+     "fiche_id": "idx:45360",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:gestion-de-la-pme:centre-val-de-loire",
+     "fiche_id": "idx:45196",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:tourisme:centre-val-de-loire",
+     "fiche_id": "idx:45507",
      "grade": 1
     }
    ],
@@ -5038,11 +5038,11 @@
    "qid": "fact-023-v1",
    "relevant": [
     {
-     "fiche_id": "insee_salaan:cs:38",
+     "fiche_id": "idx:46295",
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:16998",
      "grade": 1
     },
     {
@@ -5057,15 +5057,15 @@
    "qid": "fact-024-v1",
    "relevant": [
     {
-     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "fiche_id": "idx:38617",
      "grade": 2
     },
     {
-     "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+     "fiche_id": "idx:38624",
      "grade": 1
     },
     {
-     "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+     "fiche_id": "idx:38618",
      "grade": 1
     }
    ],
@@ -5076,15 +5076,15 @@
    "qid": "fact-025-v1",
    "relevant": [
     {
-     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "fiche_id": "idx:38617",
      "grade": 1
     },
     {
-     "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+     "fiche_id": "idx:38624",
      "grade": 1
     },
     {
-     "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+     "fiche_id": "idx:38618",
      "grade": 1
     }
    ],
@@ -5095,7 +5095,7 @@
    "qid": "comp-001-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26383",
      "grade": 2
     }
    ],
@@ -5106,7 +5106,7 @@
    "qid": "comp-002-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:26111",
      "grade": 2
     },
     {
@@ -5177,47 +5177,47 @@
    "qid": "comp-003-v1",
    "relevant": [
     {
-     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-a-solutions-",
+     "fiche_id": "idx:43882",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-b-solutions-",
+     "fiche_id": "idx:43883",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:ile-de-france",
+     "fiche_id": "idx:45424",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bretagne",
+     "fiche_id": "idx:45420",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:normandie",
+     "fiche_id": "idx:45426",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bourgogne-franche-comte",
+     "fiche_id": "idx:45419",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:ile-de-france",
+     "fiche_id": "idx:45437",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bourgogne-franche-comte",
+     "fiche_id": "idx:45432",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:hauts-de-france",
+     "fiche_id": "idx:45436",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bretagne",
+     "fiche_id": "idx:45433",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation:bts:systemes-numeriques-option-a-informatique-et-reseaux",
+     "fiche_id": "idx:43886",
      "grade": 1
     }
    ],
@@ -5228,11 +5228,11 @@
    "qid": "comp-004-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:33381",
      "grade": 2
     },
     {
-     "fiche_id": "insersup:diplome-vise-niveau-bac-3-grade-licence:droit-sciences-politiques:ile-de-france",
+     "fiche_id": "idx:46418",
      "grade": 1
     }
    ],
@@ -5243,11 +5243,11 @@
    "qid": "comp-005-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:12807",
      "grade": 2
     },
     {
-     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:normandie",
+     "fiche_id": "idx:46403",
      "grade": 1
     }
    ],
@@ -5258,7 +5258,7 @@
    "qid": "comp-006-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:33742",
      "grade": 1
     },
     {
@@ -5279,7 +5279,7 @@
    "qid": "comp-008-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:29953",
      "grade": 2
     },
     {
@@ -5287,7 +5287,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40945",
+     "fiche_id": "idx:42351",
      "grade": 1
     }
    ],
@@ -5298,43 +5298,43 @@
    "qid": "malform-001-v1",
    "relevant": [
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:34302",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.885",
+     "fiche_id": "idx:47946",
      "grade": 2
     },
     {
-     "fiche_id": "rome_metier:E1125",
+     "fiche_id": "idx:49411",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40184",
+     "fiche_id": "idx:41641",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38294",
+     "fiche_id": "idx:40067",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39760",
+     "fiche_id": "idx:41298",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38806",
+     "fiche_id": "idx:40499",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37652",
+     "fiche_id": "idx:39562",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42021",
+     "fiche_id": "idx:43398",
      "grade": 2
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39594",
+     "fiche_id": "idx:41158",
      "grade": 2
     },
     {
@@ -5354,7 +5354,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.823",
+     "fiche_id": "idx:47890",
      "grade": 1
     }
    ],
@@ -5388,7 +5388,7 @@
      "grade": 1
     },
     {
-     "fiche_id": "idx:-1",
+     "fiche_id": "idx:14478",
      "grade": 1
     },
     {
@@ -5419,71 +5419,71 @@
      "grade": 1
     },
     {
-     "fiche_id": "metier:MET.478",
+     "fiche_id": "idx:47337",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1841",
+     "fiche_id": "idx:50542",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1818",
+     "fiche_id": "idx:50519",
      "grade": 1
     },
     {
-     "fiche_id": "rome_metier:M1819",
+     "fiche_id": "idx:50520",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40106",
+     "fiche_id": "idx:41568",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39998",
+     "fiche_id": "idx:41483",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP38599",
+     "fiche_id": "idx:40325",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP37579",
+     "fiche_id": "idx:39507",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41246",
+     "fiche_id": "idx:42646",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41378",
+     "fiche_id": "idx:42767",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP42097",
+     "fiche_id": "idx:43474",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP40228",
+     "fiche_id": "idx:41673",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39893",
+     "fiche_id": "idx:41401",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39837",
+     "fiche_id": "idx:41346",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP39425",
+     "fiche_id": "idx:41021",
      "grade": 1
     },
     {
-     "fiche_id": "rncp_blocs:RNCP41030",
+     "fiche_id": "idx:42435",
      "grade": 1
     },
     {
-     "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_professionnel|assez_bien",
+     "fiche_id": "idx:51939",
      "grade": 1
     }
    ],
@@ -5494,11 +5494,11 @@
    "qid": "malform-005-v1",
    "relevant": [
     {
-     "fiche_id": "metier:MET.760",
+     "fiche_id": "idx:47622",
      "grade": 2
     },
     {
-     "fiche_id": "metier:MET.772",
+     "fiche_id": "idx:47635",
      "grade": 1
     }
    ],
@@ -5509,75 +5509,75 @@
    "qid": "malform-006-v1",
    "relevant": [
     {
-     "fiche_id": "inserjeunes_formation:bac-pro:commerce",
+     "fiche_id": "idx:43615",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-a-animation-et-ges",
+     "fiche_id": "idx:43661",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-b-prospection-clie",
+     "fiche_id": "idx:43662",
      "grade": 2
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:occitanie",
+     "fiche_id": "idx:44291",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:normandie",
+     "fiche_id": "idx:44289",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:martinique",
+     "fiche_id": "idx:44288",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:la-reunion",
+     "fiche_id": "idx:44287",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guyane",
+     "fiche_id": "idx:44284",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:grand-est",
+     "fiche_id": "idx:44282",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guadeloupe",
+     "fiche_id": "idx:44283",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bretagne",
+     "fiche_id": "idx:44280",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:nouvelle-aquitaine",
+     "fiche_id": "idx:44290",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:pays-de-la-loire",
+     "fiche_id": "idx:44292",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:ile-de-france",
+     "fiche_id": "idx:44286",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:hauts-de-france",
+     "fiche_id": "idx:44285",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:centre-val-de-loire",
+     "fiche_id": "idx:44281",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:auvergne-rhone-alpes",
+     "fiche_id": "idx:44278",
      "grade": 1
     },
     {
-     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bourgogne-franche-comte",
+     "fiche_id": "idx:44279",
      "grade": 1
     },
     {
@@ -5616,6 +5616,13 @@
  "_meta": {
   "lots_juges": "9/26 (coupure quota 16/07)",
   "run_id": "wf_1e24eb24-ae3",
-  "bug_connu": "fiche_id 'idx:-1' = bug du miner (fallback dense), labels concernes a rejuger apres fix"
+  "bug_connu": "corrige le 23/09 (migrate_labels_idx.py) ; recall = borne basse, cf docstring",
+  "corpus_sha256": "2e4276e6155baeba5bfd26e450f796e207e59c70793c40d0618e0d4fdc522e42",
+  "cle": "idx:<position dans formations.json>",
+  "migration_2026-09-23": {
+   "idx-1_signature": 79,
+   "idx": 485,
+   "id": 608
+  }
  }
 }

@@ -36,6 +36,7 @@ class RelevanceReport:
     recall_at_k: float | None
     ndcg_at_k: float | None
     k: int
+    ndcg_k: int
     misses: list[str] = field(default_factory=list)  # qids sans grade 2 dans le top-k
 
     def summary(self) -> str:
@@ -43,7 +44,7 @@ class RelevanceReport:
         n = "n/a" if self.ndcg_at_k is None else f"{self.ndcg_at_k:.3f}"
         return (
             f"recall@{self.k}={r} ({self.n_scored} questions scorees) | "
-            f"nDCG@{self.k}={n} | none_relevant={self.n_none_relevant} | "
+            f"nDCG@{self.ndcg_k}={n} | none_relevant={self.n_none_relevant} | "
             f"misses={len(self.misses)}"
         )
 
@@ -113,6 +114,7 @@ def evaluate(
         recall_at_k=(hits / n_scored) if n_scored else None,
         ndcg_at_k=(sum(ndcgs) / len(ndcgs)) if ndcgs else None,
         k=k,
+        ndcg_k=ndcg_k,
         misses=misses,
     )
 

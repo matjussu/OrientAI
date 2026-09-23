@@ -10,7 +10,12 @@ Deux modes de mesure :
                     par question. Pour les baselines et les gates de lot.
 
 Sortie : runs JSON {qid: [fiche_id ordonnés]} + rapport métriques
-(recall@5, nDCG@10) via src/eval/relevance_metrics.
+(recall@5, recall@10, nDCG@10) via src/eval/relevance_metrics.
+
+Identité d'une fiche : `idx:<position dans formations.json>`, retrouvée par
+identité d'objet (src/eval/battery/corpus.py). Avant le 23/09 ce script lisait
+le champ `id`, absent sur 38 596 fiches : ces fiches sortaient du classement sans
+lever d'erreur (RAPPORT 05/09 l.112). Les labels portent l'empreinte du corpus, vérifiée au chargement.
 
 Usage :
     PYTHONPATH=. python scripts/relevance_set/eval_retrieval.py \
@@ -28,9 +33,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO))
 
-import src.observability  # noqa: F401
 from mistralai.client import Mistral
 
+import src.observability  # noqa: F401
+from src.eval.battery.corpus import Corpus, fiche_key
 from src.eval.relevance_metrics import evaluate, load_labels
 from src.rag.factory import make_production_pipeline
 
@@ -48,38 +54,36 @@ def _load_env() -> None:
             os.environ.setdefault(k.strip(), v.strip())
 
 
-def _fiche_id(fiche: dict) -> str:
-    return str(fiche.get("id") or "")
+def _keys(corpus: Corpus, results: list) -> list[str]:
+    """Cles ordonnees. Un resultat hors corpus (fiche fabriquee par le pipeline) garde son rang
+    sous une cle qui ne peut matcher aucun label, au lieu d'etre retire ou de faire echouer la
+    question entiere (qui compterait alors comme un echec de retrieval)."""
+    keys = []
+    for rank, r in enumerate(results):
+        fiche = r.get("fiche") if isinstance(r, dict) and "fiche" in r else r
+        try:
+            keys.append(fiche_key(corpus.position_of(fiche)))
+        except KeyError:
+            keys.append(f"hors-corpus:{rank}")
+    return keys
 
 
-def run_raw(pipeline, fiches, question: str, n: int) -> list[str]:
+def run_raw(pipeline, corpus: Corpus, question: str, n: int) -> list[str]:
     from src.rag.mmr import mmr_select
     from src.rag.reranker import rerank
     from src.rag.retriever import retrieve_top_k
 
-    retrieved = retrieve_top_k(pipeline.client, pipeline.index, fiches, question, k=30)
+    retrieved = retrieve_top_k(pipeline.client, pipeline.index, corpus.fiches, question, k=30)
     reranked = rerank(retrieved, pipeline.rerank_config)
     top = mmr_select(reranked, k=n, lambda_=pipeline.mmr_lambda) if pipeline.use_mmr else reranked[:n]
-    out = []
-    for s in top:
-        fiche = s.get("fiche") if isinstance(s, dict) and "fiche" in s else s
-        fid = _fiche_id(fiche if isinstance(fiche, dict) else {})
-        if fid:
-            out.append(fid)
-    return out
+    return _keys(corpus, top)
 
 
-def run_serving(pipeline, question: str, n: int) -> list[str]:
+def run_serving(pipeline, corpus: Corpus, question: str, n: int) -> list[str]:
     prepared = pipeline._prepare_for_generation(question, 30, n, None, None)
     if not hasattr(prepared, "top"):  # court-circuit (scope/router)
         return []
-    out = []
-    for s in prepared.top[:n]:
-        fiche = s.get("fiche") if isinstance(s, dict) and "fiche" in s else s
-        fid = _fiche_id(fiche if isinstance(fiche, dict) else {})
-        if fid:
-            out.append(fid)
-    return out
+    return _keys(corpus, prepared.top[:n])
 
 
 def main() -> None:
@@ -88,16 +92,19 @@ def main() -> None:
     ap.add_argument("--mode", choices=["raw", "serving"], default="raw")
     ap.add_argument("--out", required=True)
     ap.add_argument("--top", type=int, default=10)
-    ap.add_argument("--recall-k", type=int, default=5)
+    ap.add_argument("--recall-k", default="5,10", help="cutoffs du recall, separes par des virgules")
     args = ap.parse_args()
 
     _load_env()
+    corpus = Corpus(FICHES)
+    corpus.assert_version(json.loads(Path(args.labels).read_text())["_meta"].get("corpus_sha256"), args.labels)
     labels = load_labels(args.labels)
-    cands = {c["qid"]: c["question"] for c in json.loads(CANDIDATES.read_text())}
+    candidates = json.loads(CANDIDATES.read_text())
+    corpus.assert_version(candidates["_meta"]["corpus_sha256"], str(CANDIDATES))
+    cands = {c["qid"]: c["question"] for c in candidates["questions"]}
 
-    fiches = json.loads(FICHES.read_text())
     client = Mistral(api_key=os.environ["MISTRAL_API_KEY"])
-    pipeline = make_production_pipeline(client, fiches)
+    pipeline = make_production_pipeline(client, corpus.fiches)
     pipeline.load_index_from(str(INDEX))
     pipeline._build_double_subindices()
 
@@ -113,8 +120,8 @@ def main() -> None:
         q = cands[ql.qid]
         try:
             runs[ql.qid] = (
-                run_raw(pipeline, fiches, q, args.top) if args.mode == "raw"
-                else run_serving(pipeline, q, args.top)
+                run_raw(pipeline, corpus, q, args.top) if args.mode == "raw"
+                else run_serving(pipeline, corpus, q, args.top)
             )
         except Exception as e:  # noqa: BLE001
             print(f"  [warn] {ql.qid}: {type(e).__name__}: {e}")
@@ -123,12 +130,15 @@ def main() -> None:
             out_path.write_text(json.dumps({"mode": args.mode, "runs": runs}, ensure_ascii=False))
             print(f"  {i+1}/{len(todo)}")
 
-    report = evaluate(runs, labels, k=args.recall_k, ndcg_k=args.top)
+    reports = {k: evaluate(runs, labels, k=int(k), ndcg_k=args.top) for k in args.recall_k.split(",")}
     out_path.write_text(json.dumps(
-        {"mode": args.mode, "report": report.summary(), "misses": report.misses, "runs": runs},
+        {"mode": args.mode, "corpus_sha256": corpus.sha256,
+         "reports": {k: r.summary() for k, r in reports.items()},
+         "misses": {k: r.misses for k, r in reports.items()}, "runs": runs},
         ensure_ascii=False, indent=1,
     ))
-    print(f"[report] {report.summary()}")
+    for r in reports.values():
+        print(f"[report] {r.summary()}")
     print(f"[done] -> {out_path}")
 
 
