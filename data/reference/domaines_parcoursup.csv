@@ -1,0 +1,20 @@
+regle;fili;filiere;intitule;domaine;motif
+S01;PASS;*;*;sante;Parcours d'accès spécifique santé : voie d'accès aux études de médecine, maïeutique, odontologie, pharmacie et kinésithérapie
+S02;Licence_Las;*;*;sante;Licence avec option accès santé : la fiche existe parce qu'elle ouvre l'accès aux études de santé, quelle que soit sa majeure
+S03;IFSI;*;*;sante;Institut de formation en soins infirmiers (diplôme d'État d'infirmier)
+S04;*;^d\.e secteur sanitaire$;*;sante;Diplômes d'État et certificats de capacité du secteur sanitaire (ergothérapeute, orthophoniste, manipulateur radio...)
+S05;*;*;kinésithérap|masso-kinésithérap|maïeutique|sage-femme|orthophon|orthopt|audioprothés|ergothérap|psychomotri|pédicure|manipulateur en électroradiologie|imagerie médicale et radiologie;sante;Intitulé d'une profession de santé réglementée
+I01;BUT;*;génie électrique et informatique industrielle;ingenierie_industrielle;GEII : spécialité électricité, électronique, automatismes ; l'informatique industrielle y est un volet, pas le coeur (décision Jarvis du 23/09)
+I02;BUT;*;^BUT - Informatique\b;informatique;BUT spécialité Informatique
+I03;BUT;*;^BUT - Science des données\b;data_ia;BUT spécialité Science des données
+I04;BUT;*;^BUT - Réseaux et télécommunications\b;informatique;BUT spécialité Réseaux et télécommunications (réseaux, télécoms, cybersécurité)
+I05;BTS;*;services informatiques aux organisations;informatique;BTS SIO
+I06;BTS;*;cybersécurité, informatique et réseaux, [ée]lectronique;informatique;BTS CIEL : informatique et réseaux ou électronique et réseaux, la cybersécurité est transverse
+I07;Ecole d'Ingénieur;*;généraliste;ingenierie_industrielle;École d'ingénieurs généraliste : une spécialité informatique parmi d'autres ne fait pas une école d'informatique
+I08;*;*;cybersécurité|cyber-sécurité|\bcyber\b|sécurité informatique|sécurité des systèmes d'information;cyber;Intitulé centré sur la cybersécurité
+I09;*;*;intelligence artificielle|sciences? des données|data science|\bdata\b|big data;data_ia;Intitulé centré sur les données ou l'intelligence artificielle
+I10;*;*;\binformatiques?\b|\bMIASHS\b|développeur|développement web|\bMP2I\b;informatique;Intitulé centré sur l'informatique (dont MIASHS et doubles licences maths-informatique)
+M01;CPGE;^classe préparatoire scientifique$;*;sciences_fondamentales;Classe préparatoire scientifique (MPSI, PCSI, PTSI, BCPST, TSI, TPC)
+M02;*;^cupge - sciences, technologie, santé$;*;sciences_fondamentales;Cycle universitaire préparatoire aux grandes écoles, sciences
+M03;Licence;*;mathématique;sciences_fondamentales;Licence de mathématiques
+I11;*;*;services numériques aux organisations|infrastructures numériques;informatique;Certificat de spécialisation SNO et DEUST Infrastructures numériques : support et réseaux informatiques

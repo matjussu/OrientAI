@@ -1,0 +1,62 @@
+{
+  "parcoursup_2025": {
+    "chemin": "data/raw/parcoursup_2025.csv",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/exports/csv?delimiter=%3B",
+    "producteur": "MESR (SIES), jeu fr-esr-parcoursup, session 2025",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "5bb0e6604c7d87a01d7bbcae4aa00cab3677e59679cdda38add2af2aa0f87807",
+    "octets": 12880730,
+    "lignes": 14252
+  },
+  "parcoursup_2024": {
+    "chemin": "data/raw/parcoursup_2024.csv",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup_2024/exports/csv?delimiter=%3B",
+    "producteur": "MESR (SIES), jeu fr-esr-parcoursup_2024, session 2024",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "6314f2b5cf5788f1299836c3fd4fcea40ba34323eb60b6b7f6507b0f6488450b",
+    "octets": 12533244,
+    "lignes": 14079
+  },
+  "parcoursup_2023": {
+    "chemin": "data/raw/parcoursup_2023.csv",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup_2023/exports/csv?delimiter=%3B",
+    "producteur": "MESR (SIES), jeu fr-esr-parcoursup_2023, session 2023",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "6944b1265f07329de58578eb2af193b4d8de1a7744549c3e1c18091203175bbe",
+    "octets": 12459075,
+    "lignes": 13869
+  },
+  "cartographie_parcoursup_2025": {
+    "chemin": "data/raw/cartographie_parcoursup_2025.csv",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-cartographie_formations_parcoursup/exports/csv?delimiter=%3B&where=annee%3D%222025%22",
+    "producteur": "MESR (SIES), jeu fr-esr-cartographie_formations_parcoursup, année 2025",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "d148d030183c0e74792f3ac4c6a25ae98c36c9b4fcd8869ddec8e002c7165822",
+    "octets": 15943671,
+    "lignes": 25827
+  },
+  "insee_cog_communes_2025": {
+    "chemin": "data/raw/insee_cog/v_commune_2025.csv",
+    "url": "https://www.insee.fr/fr/statistiques/fichier/8377162/v_commune_2025.csv",
+    "producteur": "INSEE, Code officiel géographique 2025, communes",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "3f8d2913fb0bdee1f72f54706854dc0cd626ed4089bd5761ec9292db0cb12e7e",
+    "octets": 3569959,
+    "lignes": 37548
+  },
+  "insee_cog_comer_2025": {
+    "chemin": "data/raw/insee_cog/v_commune_comer_2025.csv",
+    "url": "https://www.insee.fr/fr/statistiques/fichier/8377162/v_commune_comer_2025.csv",
+    "producteur": "INSEE, Code officiel géographique 2025, collectivités d'outre-mer",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "678217ac84a7bf393571ec1541af23d6794cd545ffc8f8def2fded30bac8aae7",
+    "octets": 8029,
+    "lignes": 95
+  }
+}
