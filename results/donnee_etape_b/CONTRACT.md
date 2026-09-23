@@ -1,7 +1,8 @@
 # Contrat des champs de l'étape B (coût, alternance, insertion, santé)
 
-Version 1.3, 23/09/2026, Claudette. La v1.3 ajoute le champ `sante` (sous-lot B-2, ordre
-2026-09-23-1252) en section 10, sans changer la forme des champs de B-1. Historique : v1 envoyée à
+Version 1.3.1, 23/09/2026, Claudette. La v1.3 ajoute le champ `sante` (sous-lot B-2, ordre
+2026-09-23-1252) en section 10, sans changer la forme des champs de B-1 ; la v1.3.1 liste les écarts
+entre la forme annoncée et la forme livrée (section 10 bis). Historique : v1 envoyée à
 Jarvis au commit 93d34e2 ; écarts v1 -> v1.1 en section 0 bis, v1.2 en section 0. Périmètre B-1
 confirmé par Matteo le 23/09 (Telegram 10584, relayé par Jarvis) : B1 coûts, B5 alternance, B3
 insertion ; B-2 : B2 santé. B4, B6, B7, B8 et B3 bis sont hors périmètre.
@@ -513,3 +514,37 @@ Réforme : une voie unique remplaçant PASS et LAS a été annoncée le 17/04/20
   Guyancourt, Versailles Saint Quentin en Yvelines, Université Paris-Saclay » sont rattachées à
   l'UVSQ (dont l'UFR Simone Veil - Santé publie ses propres capacités, à vérifier). Hors panel dans
   les deux cas : le classement ne change pas.
+
+## 10 bis. Écarts de la forme livrée (v1.3.1, après la collecte)
+
+- **Empreinte** : `passage_universite` et `capacites_universite` disponibles portent
+  `source.sha256` (document verrouillé, clés `univ_*` du verrou) ; le contrôle
+  `sante_*_sans_url_ou_empreinte` l'exige.
+- **Une filière publiée dans un autre document** (kinésithérapie à Bordeaux et à Lyon 1) porte
+  `par_filiere.<f>.rentree` et `par_filiere.<f>.source_id` ; `valeur.sources_complementaires` liste
+  ces documents (id, url, sha256, filières). Le texte dit la rentrée de la filière quand elle diffère
+  (« kinésithérapie 110 ... (rentrée 2025/2026) »).
+- **`somme_de`** : quand `PASS`, `LAS` ou `total` est une somme de lignes publiées (LAS1 + LAS2/3,
+  deux facultés à Lyon 1), les lignes additionnées sont nommées par leur chemin dans `detail`
+  (séparateur « > ») ; l'audit refait la somme.
+- **`note`** : précision de périmètre recopiée dans le texte (LAS des universités partenaires
+  comprises à Montpellier et à Sorbonne Paris Nord, places réservées par convention exclues, rentrée
+  2024 à Aix-Marseille, libellé « 2025/2026 » ambigu à Toulouse).
+- **Non disponible d'une université du panel** : `source.id` = null, `source.urls_consultees` = les
+  pages lues, `collecte` = date de lecture (Paris-Saclay).
+- **Rentrées livrées** : 2026-2027 (ou 2026) pour 7 universités ; Toulouse 2025/2026 (dernier
+  document publié) ; Aix-Marseille rentrée 2024 (dernière délibération trouvée) ; Paris-Saclay non
+  disponible.
+- **`passage_universite`** : aucune des 10 universités ne publie de taux de passage constaté sur
+  les pages consultées ; 800 fiches en `non_disponible`. Écartés : Montpellier « minimum pass rate
+  5.8% » (minimum théorique 2021-22, places / inscrits), Paris Cité « environ 50% des étudiants admis
+  en filière de santé provenaient du PASS » (répartition des admis, pas un taux de passage).
+- **Lecture visuelle** : deux documents sans couche texte exploitable (Nantes, scan ; Lyon 1 MMOP,
+  couche texte corrompue) ; extraits transcrits de l'image par Claudette, audit NON MESURÉ sur
+  l'extrait (les sommes restent vérifiées).
+- **Fiche concept** : `domain: "concept_sante"`, `subject`, `text` (lu par `fiche_to_text` par le
+  chemin des fiches annexes), `annonce.sources` (L'Etudiant, Service-Public A18890). Le CNESER du
+  07/07/2026 n'est que dans `recherches` (presse, non vérifiée en source primaire), pas dans le texte.
+- **Témoin L6211-1** : la source lue `code_travail_l6211_1` porte `temoins` (code.travail.gouv.fr,
+  relu par Jarvis) ; l'étape B-2 le reporte sur les 526 coûts d'apprentissage sans réécrire B-1.
+

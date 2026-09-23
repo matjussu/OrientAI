@@ -4148,3 +4148,24 @@ chiffre de la formation. Détail et traces : `results/donnee_etape_b/RAPPORT.md`
 Le remplissage de l'insertion baisse dans l'explorateur (santé 207 -> 2, maths 149 -> 12) : ce sont
 les approximations retirées, pas une perte. Le texte s'allonge encore (médiane 3 316 -> 3 804
 caractères) : pas de ré-embedding avec ce texte avant l'étape D.
+
+## ADR-065 : Donnée verticale, étape B-2 : accès aux études de santé, chaque chiffre avec sa portée (ordre 2026-09-23-1252, 23/09/2026)
+
+### Contexte
+
+Pour un candidat PASS/LAS, le chiffre qui compte est le passage en MMOPK (Matteo, 23/09). Le corpus
+B-1 n'en portait aucun sur ses 800 fiches PASS et LAS.
+
+### Décision
+
+Champ `sante` (contrat v1.3.1, section 10) : taux national SIES dit comme national, places MMOPK
+publiées par les 10 universités qui reçoivent le plus de vœux (documents verrouillés, relus un par
+un), taux de passage d'une université seulement s'il est publié par elle (aucun ne l'est), fiche
+concept sur la réforme 2027 (annonce, aucun texte au Journal officiel au 23/09/2026).
+
+### Conséquence à surveiller
+
+Deux documents du panel (Nantes, Lyon 1) n'ont pas de couche texte : leurs extraits sont relus à
+l'image, l'audit les rend NON MESURÉ. Aix-Marseille (rentrée 2024) et Toulouse (2025/2026) ne
+publient pas plus récent ; Paris-Saclay ne publie rien de chiffré. À relire quand les universités
+publieront la rentrée suivante, et la fiche réforme à mettre à jour dès qu'un texte paraît.

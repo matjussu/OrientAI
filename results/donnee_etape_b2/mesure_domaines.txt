@@ -1,0 +1,2 @@
+formations_etape_b1.json {"informatique": {"fiches_pass_las": 37}, "maths": {"fiches_pass_las": 58}, "sante": {"fiches_pass_las": 800}}
+formations_etape_b2.json {"informatique": {"fiches_pass_las": 37, "avec_passage_national": 37, "avec_capacites": 6}, "maths": {"fiches_pass_las": 58, "avec_passage_national": 58, "avec_capacites": 11}, "sante": {"fiches_pass_las": 800, "avec_passage_national": 800, "avec_capacites": 216}}

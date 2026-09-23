@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "ecarts": [
+      "Université de Bordeaux: extrait absent de univ_bordeaux_mmop_2026_2027 : 'Médecine 426'",
+      "Université de Bordeaux:medecine:total: 425 absent des extraits de univ_bordeaux_mmop_2026_2027"
+    ],
+    "non_mesure": [
+      "univ_lyon1_mmop_2026_2027",
+      "univ_nantes_mmopk_2026_2027"
+    ],
+    "valeurs_capacites": 171,
+    "lignes_sies": 8
+  },
+  "corpus": {
+    "fiches": 800,
+    "ecarts": [],
+    "capacites": 216,
+    "passage_universite": 0
+  },
+  "verdict": "ROUGE",
+  "saboter": "extrait"
+}
