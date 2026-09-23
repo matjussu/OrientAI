@@ -12,7 +12,7 @@ corpus est écrit à part.
 | | |
 |---|---|
 | Nouveau corpus | `data/processed/formations_etape_a.json` (hors git), 53 281 fiches |
-| sha256 | `f0aeeb308c45827affa01942c579c206a88372054fab47842667e667cc5e0fc7` |
+| sha256 | `9eae9c25108b7269ea6780ffef7430ef0db9ca3e7ce71c2372635b38a436a540` |
 | Commande | `python -m src.collect.corpus_etape_a --reference <formations.json de la prod>` |
 | Déterminisme | deux constructions sur les mêmes bruts donnent le même fichier, octet pour octet (vérifié le 23/09) |
 | Sources brutes | `data/raw/` (hors git), empreintes dans `data/reference/sources_officielles.json` ; `python -m src.collect.sources_officielles --telecharger` les rapatrie, le pipeline refuse un fichier dont l'empreinte a changé |
@@ -29,12 +29,14 @@ depuis git par `--revision-texte origin/main`. « Après » = corpus de l'étape
 
 ### 1. Contrôles du texte, toutes les fiches Parcoursup
 
-`python -m src.eval.donnee.controles --corpus <corpus> [--revision-texte origin/main]`,
+`python -m src.eval.donnee.controles --corpus <corpus> [--revision-texte origin/main]` (10 contrôles),
 traces `controles_avant.json` et `controles_apres.json`.
 
 | Défaut | Avant (13 011 fiches) | Après (14 252 fiches) |
 |---|---|---|
 | taux d'accès écrit sans définition | 12 996 | 0 |
+| formation post-bac lue « Phase : master » | 594 | 0 |
+| niveau qui contredit la filière (licence ou BTS en bac+5...) | 106 | 0 |
 | session non dite | 12 996 | 0 |
 | répartition des candidats appelée « taux d'accès par profil » | 12 901 | 0 |
 | « même académie » appelée « Île-de-France » hors Île-de-France | 10 255 | 0 |
@@ -90,6 +92,13 @@ brut du pipeline. Tirage à graine fixe (20260923) : 17 informatique, 16 santé,
   Deux champs officiels jamais ingérés ont été ajoutés : les mentions « très bien avec
   félicitations » et « non renseignée ». Sans eux, la répartition par mention ne sommait à 100
   que sur 89,6 % des lignes ; avec eux, sur 100 %. L'effectif d'admis (`acc_tot`) est aussi ajouté.
+- **Niveau et phase** (résidu relevé par Jarvis à la vérification) : toute fiche Parcoursup est
+  en phase « initial » et le texte dit « Accès : après le bac, sur Parcoursup » et « Diplôme
+  visé : bac+N ». Le niveau vient de l'intitulé quand il l'écrit (« Formation d'ingénieur
+  Bac + 5 »), sinon de la filière (BTS bac+2 ; BUT, licence, LAS, PASS bac+3), sinon de
+  l'heuristique historique (2 385 fiches). `infer_niveau` classait en bac+5 toute formation dont
+  l'intitulé contient « ingénieur » ou « master », dont 70 licences « Sciences pour
+  l'ingénieur » et 33 BTS ; 261 niveaux de fiches existantes changent.
 - **A1 bis définitions** : chaque indicateur écrit porte sa définition. Pour le taux d'accès,
   c'est la description officielle, mot pour mot. Pour les autres indicateurs, ce sont les
   libellés officiels des champs (métadonnées de l'API lues le 23/09).

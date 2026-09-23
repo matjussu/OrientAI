@@ -157,6 +157,9 @@ def blocs_parcoursup(fiche: dict) -> dict[str, list[str]]:
     if intitule and intitule.strip() != (fiche.get("nom") or "").strip():
         identite.append(f"Intitulé officiel : {intitule}")
     identite.extend(_lieu(fiche))
+    identite.append("Accès : après le bac, sur Parcoursup")
+    if fiche.get("niveau"):
+        identite.append(f"Diplôme visé : {fiche['niveau']}")
     if fiche.get("selectivite_code"):
         identite.append(f"Sélectivité (Parcoursup) : {fiche['selectivite_code']}")
 

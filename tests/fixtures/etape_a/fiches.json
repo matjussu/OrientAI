@@ -163,6 +163,7 @@
    "filiere_detaillee": "Informatique",
    "type_formation": "BUT (bachelor universitaire de technologie)",
    "precision_formation": "spécialité Informatique",
+   "niveau_origine": "filiere",
    "domaine_regle": "I02"
   },
   "36433": {
@@ -367,6 +368,7 @@
    "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
    "type_formation": "PASS (parcours d'accès spécifique santé)",
    "precision_formation": "option sciences infirmières (Parcours Sciences infirmières)",
+   "niveau_origine": "filiere",
    "domaine_regle": "S01"
   },
   "2139": {
@@ -540,6 +542,7 @@
    "filiere_detaillee": "Génie électrique et informatique industrielle",
    "type_formation": "BUT (bachelor universitaire de technologie)",
    "precision_formation": "spécialité Génie électrique et informatique industrielle",
+   "niveau_origine": "filiere",
    "domaine_regle": "I01"
   },
   "22946": {
@@ -699,6 +702,7 @@
    "filiere_detaillee": "Organisateur de réception",
    "type_formation": "Organisateur de réception",
    "precision_formation": null,
+   "niveau_origine": "heuristique",
    "domaine_regle": "anterieur"
   },
   "9517": {
@@ -872,6 +876,7 @@
    "filiere_detaillee": "Gestion des entreprises et des administrations",
    "type_formation": "BUT (bachelor universitaire de technologie)",
    "precision_formation": "spécialité Gestion des entreprises et des administrations",
+   "niveau_origine": "filiere",
    "domaine_regle": "anterieur"
   },
   "39316": {
@@ -1032,6 +1037,7 @@
    "filiere_detaillee": "Mathématiques",
    "type_formation": "LAS (licence avec option accès santé)",
    "precision_formation": "majeure Mathématiques",
+   "niveau_origine": "filiere",
    "domaine_regle": "S02"
   },
   "23244": {
@@ -1237,6 +1243,7 @@
    "filiere_detaillee": "D.E Infirmier",
    "type_formation": "IFSI (institut de formation en soins infirmiers), diplôme d'État d'infirmier",
    "precision_formation": null,
+   "niveau_origine": "heuristique",
    "domaine_regle": "S03"
   },
   "36000": {
@@ -1397,6 +1404,7 @@
    "filiere_detaillee": "MP2I",
    "type_formation": "CPGE (classe préparatoire aux grandes écoles)",
    "precision_formation": "voie MP2I (mathématiques, physique, ingénierie et informatique)",
+   "niveau_origine": "cpge",
    "domaine_regle": "I10"
   },
   "2623": {
@@ -1556,6 +1564,7 @@
    "filiere_detaillee": "Architecture",
    "type_formation": "Architecture",
    "precision_formation": null,
+   "niveau_origine": "heuristique",
    "domaine_regle": "anterieur"
   },
   "29180": {
@@ -1763,7 +1772,504 @@
    "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
    "type_formation": "PASS (parcours d'accès spécifique santé)",
    "precision_formation": "option Droit (enseignement à distance)",
+   "niveau_origine": "filiere",
    "domaine_regle": "S01"
+  },
+  "36348": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé",
+   "etablissement": "ISIS - Partenaire INSA",
+   "ville": "Castres",
+   "region": "Occitanie",
+   "departement": "Tarn",
+   "rncp": null,
+   "cod_uai": "0811293I",
+   "cod_aff_form": "36348",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 72.0,
+   "nombre_places": 17,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": "Cycle préparatoire intégré - Accès Santé",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 72.0,
+    "places": 17,
+    "volumes": {
+     "voeux_totaux": 160,
+     "voeux_phase_principale": 160,
+     "classes_phase_principale": 115,
+     "admis_total": 16
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 75.0,
+      "places": 7,
+      "voeux_totaux": 132,
+      "voeux_phase_principale": 66,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 33.0,
+      "pct_bours": 0.0,
+      "pct_f": 50.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 62.0,
+      "places": 10,
+      "voeux_totaux": 148,
+      "voeux_phase_principale": 148,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 18.0,
+      "pct_b": 64.0,
+      "pct_bours": 0.0,
+      "pct_f": 77.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 72.0,
+      "places": 17,
+      "voeux_totaux": 160,
+      "voeux_phase_principale": 160,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 7.0,
+      "pct_b": 27.0,
+      "pct_bours": 0.0,
+      "pct_f": 56.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 7.0,
+     "b": 27.0,
+     "ab": 60.0,
+     "sans": 7.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 0.0,
+    "femmes_pct": 56.0,
+    "neobacheliers_pct": 94.0,
+    "origine_academique_idf_pct": 60.0
+   },
+   "propositions_totales": 84,
+   "pct_acceptes_debut_pp": 6.0,
+   "fili_code": "Licence_Las",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "sante",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -3.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 75.0,
+     "end_value": 72.0,
+     "interpretation": "taux d'accès stable 2023→2025 (75% → 72%)"
+    },
+    "places": {
+     "direction": "up",
+     "delta": 10,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 7,
+     "end_value": 17,
+     "interpretation": "places en hausse 2023→2025 (7 → 17) : ouverture de capacité"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 28,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 132,
+     "end_value": 160,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Licence",
+   "ville_source": "Castres",
+   "code_insee": "81065",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "81",
+   "academie": "Toulouse",
+   "intitule_officiel": "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé",
+   "form_lib_voe_acc": "Formations  des écoles d'ingénieurs",
+   "filiere_detaillee": "Formation d'ingénieur Bac + 5",
+   "type_formation": "LAS (licence avec option accès santé)",
+   "precision_formation": "majeure Formation d'ingénieur Bac + 5",
+   "niveau_origine": "intitule",
+   "domaine_regle": "S02"
+  },
+  "39331": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique",
+   "etablissement": "Université Paris Panthéon Assas",
+   "ville": "Paris",
+   "region": "Île-de-France",
+   "departement": "Paris",
+   "rncp": null,
+   "cod_uai": "0756305W",
+   "cod_aff_form": "39331",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 15.0,
+   "nombre_places": 35,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": "Collège d'économie filière ingénierie en analyse économique",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 15.0,
+    "places": 35,
+    "volumes": {
+     "voeux_totaux": 2046,
+     "voeux_phase_principale": 2046,
+     "classes_phase_principale": 600,
+     "admis_total": 36
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 19.0,
+      "places": 35,
+      "voeux_totaux": 1774,
+      "voeux_phase_principale": 1774,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 57.0,
+      "pct_b": 43.0,
+      "pct_bours": 27.0,
+      "pct_f": 36.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 12.0,
+      "places": 35,
+      "voeux_totaux": 2228,
+      "voeux_phase_principale": 2228,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 35.0,
+      "pct_b": 58.0,
+      "pct_bours": 32.0,
+      "pct_f": 32.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 15.0,
+      "places": 35,
+      "voeux_totaux": 2046,
+      "voeux_phase_principale": 2046,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 56.0,
+      "pct_b": 41.0,
+      "pct_bours": 11.0,
+      "pct_f": 53.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 56.0,
+     "b": 41.0,
+     "ab": 4.0,
+     "sans": 0.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 11.0,
+    "femmes_pct": 53.0,
+    "neobacheliers_pct": 75.0,
+    "origine_academique_idf_pct": 74.0
+   },
+   "propositions_totales": 198,
+   "pct_acceptes_debut_pp": 3.0,
+   "fili_code": "Licence",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "eco_gestion",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -4.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 19.0,
+     "end_value": 15.0,
+     "interpretation": "taux d'accès stable 2023→2025 (19% → 15%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 35,
+     "end_value": 35,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 272,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1774,
+     "end_value": 2046,
+     "interpretation": null
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 807,
+    "taux_emploi_6m": 0.4522,
+    "taux_emploi_12m": 0.4766,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "Licence",
+   "ville_source": "Paris  5e  Arrondissement",
+   "code_insee": "75056",
+   "arrondissement": "5e arrondissement",
+   "code_insee_arrondissement": "75105",
+   "code_departement": "75",
+   "academie": "Paris",
+   "intitule_officiel": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique",
+   "form_lib_voe_acc": "Licence - Droit-économie-gestion",
+   "filiere_detaillee": "Economie et gestion",
+   "type_formation": "Licence",
+   "precision_formation": "mention Economie et gestion",
+   "niveau_origine": "filiere",
+   "domaine_regle": "anterieur"
+  },
+  "11824": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BTS - Production - Assistance technique d'ingénieur",
+   "etablissement": "Lycée Acajou 2",
+   "ville": "Le Lamentin",
+   "region": "Martinique",
+   "departement": "Martinique",
+   "rncp": null,
+   "cod_uai": "9720695Y",
+   "cod_aff_form": "11824",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 100.0,
+   "nombre_places": 12,
+   "statut": "Public",
+   "niveau": "bac+2",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 100.0,
+    "places": 12,
+    "volumes": {
+     "voeux_totaux": 63,
+     "voeux_phase_principale": 53,
+     "classes_phase_principale": 53,
+     "admis_total": 4
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 67.0,
+      "places": 24,
+      "voeux_totaux": 107,
+      "voeux_phase_principale": 99,
+      "pct_bg": 25.0,
+      "pct_bt": 12.0,
+      "pct_bp": 62.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 62.0,
+      "pct_f": 0.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 48.0,
+      "places": 24,
+      "voeux_totaux": 78,
+      "voeux_phase_principale": 65,
+      "pct_bg": 0.0,
+      "pct_bt": 80.0,
+      "pct_bp": 20.0,
+      "pct_tb": 0.0,
+      "pct_b": 10.0,
+      "pct_bours": 40.0,
+      "pct_f": 10.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 100.0,
+      "places": 12,
+      "voeux_totaux": 63,
+      "voeux_phase_principale": 53,
+      "pct_bg": 25.0,
+      "pct_bt": 75.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 25.0,
+      "pct_f": 25.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 0.0,
+     "ab": 0.0,
+     "sans": 100.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 25.0,
+     "techno": 75.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 20.0,
+     "techno": 44.0,
+     "pro": 36.0
+    },
+    "boursiers_pct": 25.0,
+    "femmes_pct": 25.0,
+    "neobacheliers_pct": 100.0,
+    "origine_academique_idf_pct": 100.0
+   },
+   "propositions_totales": 44,
+   "pct_acceptes_debut_pp": 0.0,
+   "fili_code": "BTS",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "up",
+     "delta_pp": 33.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 67.0,
+     "end_value": 100.0,
+     "interpretation": "taux d'accès en hausse 2023→2025 (67% → 100%) : formation devenue plus accessible"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -12,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 24,
+     "end_value": 12,
+     "interpretation": "places en baisse 2023→2025 (24 → 12) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "down",
+     "delta": -44,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 107,
+     "end_value": 63,
+     "interpretation": "popularité en baisse 2023→2025 (107 → 63 vœux) : attrait en repli"
+    }
+   },
+   "type_diplome": "BTS",
+   "ville_source": "Le Lamentin",
+   "code_insee": "97213",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "972",
+   "academie": "Martinique",
+   "intitule_officiel": "BTS - Production - Assistance technique d'ingénieur",
+   "form_lib_voe_acc": "BTS - Production",
+   "filiere_detaillee": "Assistance technique d'ingénieur",
+   "type_formation": "BTS (brevet de technicien supérieur)",
+   "precision_formation": "spécialité Assistance technique d'ingénieur",
+   "niveau_origine": "filiere",
+   "domaine_regle": "anterieur"
   }
  },
  "avant": {
@@ -3187,6 +3693,454 @@
      "interpretation": null
     }
    }
+  },
+  "36348": {
+   "source": "parcoursup",
+   "phase": "master",
+   "nom": "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé",
+   "etablissement": "ISIS - Partenaire INSA",
+   "ville": "Castres",
+   "region": "Occitanie",
+   "departement": "Tarn",
+   "rncp": null,
+   "cod_uai": "0811293I",
+   "cod_aff_form": "36348",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 72.0,
+   "nombre_places": 17,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": "Cycle préparatoire intégré - Accès Santé",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 72.0,
+    "places": 17,
+    "volumes": {
+     "voeux_totaux": 160,
+     "voeux_phase_principale": 160,
+     "classes_phase_principale": 115
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 75.0,
+      "places": 7,
+      "voeux_totaux": 132,
+      "voeux_phase_principale": 66,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 33.0,
+      "pct_bours": 0.0,
+      "pct_f": 50.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 62.0,
+      "places": 10,
+      "voeux_totaux": 148,
+      "voeux_phase_principale": 148,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 18.0,
+      "pct_b": 64.0,
+      "pct_bours": 0.0,
+      "pct_f": 77.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 72.0,
+      "places": 17,
+      "voeux_totaux": 160,
+      "voeux_phase_principale": 160,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 7.0,
+      "pct_b": 27.0,
+      "pct_bours": 0.0,
+      "pct_f": 56.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 7.0,
+     "b": 27.0,
+     "ab": 60.0,
+     "sans": 7.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 0.0,
+    "femmes_pct": 56.0,
+    "neobacheliers_pct": 94.0,
+    "origine_academique_idf_pct": 60.0
+   },
+   "propositions_totales": 84,
+   "pct_acceptes_debut_pp": 6.0,
+   "fili_code": "Licence_Las",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -3.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 75.0,
+     "end_value": 72.0,
+     "interpretation": "taux d'accès stable 2023→2025 (75% → 72%)"
+    },
+    "places": {
+     "direction": "up",
+     "delta": 10,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 7,
+     "end_value": 17,
+     "interpretation": "places en hausse 2023→2025 (7 → 17) : ouverture de capacité"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 28,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 132,
+     "end_value": 160,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Licence"
+  },
+  "39331": {
+   "source": "parcoursup",
+   "phase": "master",
+   "nom": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique",
+   "etablissement": "Université Paris Panthéon Assas",
+   "ville": "Paris  5e  Arrondissement",
+   "region": "Île-de-France",
+   "departement": "Paris",
+   "rncp": null,
+   "cod_uai": "0756305W",
+   "cod_aff_form": "39331",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 15.0,
+   "nombre_places": 35,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": "Collège d'économie filière ingénierie en analyse économique",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 15.0,
+    "places": 35,
+    "volumes": {
+     "voeux_totaux": 2046,
+     "voeux_phase_principale": 2046,
+     "classes_phase_principale": 600
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 19.0,
+      "places": 35,
+      "voeux_totaux": 1774,
+      "voeux_phase_principale": 1774,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 57.0,
+      "pct_b": 43.0,
+      "pct_bours": 27.0,
+      "pct_f": 36.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 12.0,
+      "places": 35,
+      "voeux_totaux": 2228,
+      "voeux_phase_principale": 2228,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 35.0,
+      "pct_b": 58.0,
+      "pct_bours": 32.0,
+      "pct_f": 32.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 15.0,
+      "places": 35,
+      "voeux_totaux": 2046,
+      "voeux_phase_principale": 2046,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 56.0,
+      "pct_b": 41.0,
+      "pct_bours": 11.0,
+      "pct_f": 53.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 56.0,
+     "b": 41.0,
+     "ab": 4.0,
+     "sans": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 11.0,
+    "femmes_pct": 53.0,
+    "neobacheliers_pct": 75.0,
+    "origine_academique_idf_pct": 74.0
+   },
+   "propositions_totales": 198,
+   "pct_acceptes_debut_pp": 3.0,
+   "fili_code": "Licence",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "eco_gestion",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -4.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 19.0,
+     "end_value": 15.0,
+     "interpretation": "taux d'accès stable 2023→2025 (19% → 15%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 35,
+     "end_value": 35,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 272,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1774,
+     "end_value": 2046,
+     "interpretation": null
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 807,
+    "taux_emploi_6m": 0.4522,
+    "taux_emploi_12m": 0.4766,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "Licence"
+  },
+  "11824": {
+   "source": "parcoursup",
+   "phase": "master",
+   "nom": "BTS - Production - Assistance technique d'ingénieur",
+   "etablissement": "Lycée Acajou 2",
+   "ville": "Le Lamentin",
+   "region": "Martinique",
+   "departement": "Martinique",
+   "rncp": null,
+   "cod_uai": "9720695Y",
+   "cod_aff_form": "11824",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 100.0,
+   "nombre_places": 12,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 100.0,
+    "places": 12,
+    "volumes": {
+     "voeux_totaux": 63,
+     "voeux_phase_principale": 53,
+     "classes_phase_principale": 53
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 67.0,
+      "places": 24,
+      "voeux_totaux": 107,
+      "voeux_phase_principale": 99,
+      "pct_bg": 25.0,
+      "pct_bt": 12.0,
+      "pct_bp": 62.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 62.0,
+      "pct_f": 0.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 48.0,
+      "places": 24,
+      "voeux_totaux": 78,
+      "voeux_phase_principale": 65,
+      "pct_bg": 0.0,
+      "pct_bt": 80.0,
+      "pct_bp": 20.0,
+      "pct_tb": 0.0,
+      "pct_b": 10.0,
+      "pct_bours": 40.0,
+      "pct_f": 10.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 100.0,
+      "places": 12,
+      "voeux_totaux": 63,
+      "voeux_phase_principale": 53,
+      "pct_bg": 25.0,
+      "pct_bt": 75.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 25.0,
+      "pct_f": 25.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 0.0,
+     "ab": 0.0,
+     "sans": 100.0
+    },
+    "bac_type_pct": {
+     "general": 25.0,
+     "techno": 75.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 20.0,
+     "techno": 44.0,
+     "pro": 36.0
+    },
+    "boursiers_pct": 25.0,
+    "femmes_pct": 25.0,
+    "neobacheliers_pct": 100.0,
+    "origine_academique_idf_pct": 100.0
+   },
+   "propositions_totales": 44,
+   "pct_acceptes_debut_pp": 0.0,
+   "fili_code": "BTS",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "up",
+     "delta_pp": 33.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 67.0,
+     "end_value": 100.0,
+     "interpretation": "taux d'accès en hausse 2023→2025 (67% → 100%) : formation devenue plus accessible"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -12,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 24,
+     "end_value": 12,
+     "interpretation": "places en baisse 2023→2025 (24 → 12) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "down",
+     "delta": -44,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 107,
+     "end_value": 63,
+     "interpretation": "popularité en baisse 2023→2025 (107 → 63 vœux) : attrait en repli"
+    }
+   },
+   "type_diplome": "BTS"
   }
  },
  "textes_avant": {
@@ -3198,6 +4152,9 @@
   "39316": "Formation : Licence - Mathématiques -  Accès Santé | Établissement : Université d'Orléans | Ville : Orléans | Diplôme : Licence | Niveau : bac+3 | Phase : initial | Statut : Public | Domaine : sciences_fondamentales | Département : Loiret | Région : Centre-Val de Loire | Admission : taux d'accès 77% — 40 places | Profil des admis (Parcoursup 2025) : mentions au bac : 9 % très bien, 12 % bien, 32 % assez bien, 47 % sans mention — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 18 % boursiers, 50 % femmes, 85 % néobacheliers, 82 % origine académique Île-de-France",
   "23244": "Formation : D.E Infirmier | Établissement : Centre de formation IFSI-IFAS Hopitaux civils de Colmar | Ville : Colmar | Diplôme : Diplôme d'État infirmier | Phase : initial | Statut : Public | Domaine : sante | Département : Haut-Rhin | Région : Grand Est | Admission : taux d'accès 49% — 138 places | Profil des admis (Parcoursup 2025) : mentions au bac : 6 % très bien, 21 % bien, 49 % assez bien, 25 % sans mention — type de bac admis : 41 % bac général, 37 % bac techno, 23 % bac pro — taux d'accès par profil : 49 % pour bac général, 34 % pour bac techno, 17 % pour bac pro — profil démographique : 18 % boursiers, 90 % femmes, 74 % néobacheliers, 85 % origine académique Île-de-France | Métiers possibles : Médecin généraliste / Médecin spécialiste, Médecin de prévention et santé publique, Sage-femme, Professions paramédicales (aide-soignant, auxiliaire de puériculture), Pharmacien / Préparateur en pharmacie, Audioprothésiste / Opticien / Orthoptiste / Podologue, Infirmier / Infirmière diplômé(e) d'État, Cadre de santé / Directeur de soins, Kinésithérapeute / Ergothérapeute, Orthophoniste",
   "36000": "Formation : CPGE - MP2I | Établissement : Lycée Alain René Lesage | Ville : Vannes | Diplôme : CPGE | Phase : initial | Statut : Public | Domaine : sciences_fondamentales | Département : Morbihan | Région : Bretagne | Admission : taux d'accès 38% — 48 places | Profil des admis (Parcoursup 2025) : mentions au bac : 33 % très bien, 51 % bien, 15 % assez bien — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 3 % boursiers, 22 % femmes, 98 % néobacheliers, 54 % origine académique Île-de-France",
-  "2623": "Formation : Architecture | Établissement : Ecole Nationale Supérieure d'Architecture de Marseille | Ville : Marseille  3e  Arrondissement | Phase : initial | Statut : Public | Domaine : lettres_arts | Département : Bouches-du-Rhône | Région : Provence-Alpes-Côte d'Azur | Admission : taux d'accès 13% — 175 places | Profil des admis (Parcoursup 2025) : mentions au bac : 19 % très bien, 64 % bien, 15 % assez bien, 1 % sans mention — type de bac admis : 75 % bac général, 18 % bac techno, 7 % bac pro — taux d'accès par profil : 83 % pour bac général, 12 % pour bac techno, 4 % pour bac pro — profil démographique : 23 % boursiers, 70 % femmes, 75 % néobacheliers, 36 % origine académique Île-de-France"
+  "2623": "Formation : Architecture | Établissement : Ecole Nationale Supérieure d'Architecture de Marseille | Ville : Marseille  3e  Arrondissement | Phase : initial | Statut : Public | Domaine : lettres_arts | Département : Bouches-du-Rhône | Région : Provence-Alpes-Côte d'Azur | Admission : taux d'accès 13% — 175 places | Profil des admis (Parcoursup 2025) : mentions au bac : 19 % très bien, 64 % bien, 15 % assez bien, 1 % sans mention — type de bac admis : 75 % bac général, 18 % bac techno, 7 % bac pro — taux d'accès par profil : 83 % pour bac général, 12 % pour bac techno, 4 % pour bac pro — profil démographique : 23 % boursiers, 70 % femmes, 75 % néobacheliers, 36 % origine académique Île-de-France",
+  "36348": "Formation : Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé | Établissement : ISIS - Partenaire INSA | Ville : Castres | Diplôme : Licence | Niveau : bac+5 | Phase : master | Statut : Public | Domaine : ingenierie_industrielle | Département : Tarn | Région : Occitanie | Admission : taux d'accès 72% — 17 places | Profil des admis (Parcoursup 2025) : mentions au bac : 7 % très bien, 27 % bien, 60 % assez bien, 7 % sans mention — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 56 % femmes, 94 % néobacheliers, 60 % origine académique Île-de-France | Détail : Cycle préparatoire intégré - Accès Santé | Signature école : Institut National des Sciences Appliquées, spécialités informatique cybersécurité génie civil mécanique mathématiques chimie",
+  "39331": "Formation : Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique | Établissement : Université Paris Panthéon Assas | Ville : Paris  5e  Arrondissement | Diplôme : Licence | Niveau : bac+5 | Phase : master | Statut : Public | Domaine : eco_gestion | Département : Paris | Région : Île-de-France | Admission : taux d'accès 15% — 35 places | Profil des admis (Parcoursup 2025) : mentions au bac : 56 % très bien, 41 % bien, 4 % assez bien — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 11 % boursiers, 53 % femmes, 75 % néobacheliers, 74 % origine académique Île-de-France | Détail : Collège d'économie filière ingénierie en analyse économique | Insertion apprentissage (Inserjeunes CFA, cumul récent) : taux emploi 6 mois 45%, 12 mois 48%",
+  "11824": "Formation : BTS - Production - Assistance technique d'ingénieur | Établissement : Lycée Acajou 2 | Ville : Le Lamentin | Diplôme : BTS | Niveau : bac+5 | Phase : master | Statut : Public | Domaine : ingenierie_industrielle | Département : Martinique | Région : Martinique | Admission : taux d'accès 100% — 12 places | Profil des admis (Parcoursup 2025) : mentions au bac : 100 % sans mention — type de bac admis : 25 % bac général, 75 % bac techno — taux d'accès par profil : 20 % pour bac général, 44 % pour bac techno, 36 % pour bac pro — profil démographique : 25 % boursiers, 25 % femmes, 100 % néobacheliers, 100 % origine académique Île-de-France"
  }
 }

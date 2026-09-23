@@ -37,6 +37,8 @@ def test_controles_mordent_sur_le_texte_de_main():
     for cod, texte in FIXTURES["textes_avant"].items():
         trouves.update(controler(FIXTURES["avant"][cod], texte))
     for defaut in (
+        "post_bac_lu_comme_master",
+        "niveau_contredit_la_filiere",
         "repartition_nommee_taux_acces",
         "meme_academie_nommee_ile_de_france",
         "insersup_attribue_a_inserjeunes",
@@ -116,3 +118,17 @@ def test_fiche_non_parcoursup_inchangee():
     t = fiche_to_text(fiche)
     assert t.startswith("Formation : M | Établissement : E | Ville : V")
     assert "Définitions" not in t and "Source : Parcoursup" not in t
+
+
+def test_ecole_post_bac_pas_lue_comme_master():
+    """LAS cycle préparatoire intégré ISIS Castres : accès post-bac, diplôme visé bac+5."""
+    ancien = FIXTURES["textes_avant"]["36348"]
+    assert "Phase : master" in ancien  # le défaut existait bien sur la vraie fiche
+    t = fiche_to_text(APRES["36348"])
+    assert "Phase :" not in t
+    assert "Accès : après le bac, sur Parcoursup" in t and "Diplôme visé : bac+5" in t
+
+
+@pytest.mark.parametrize("cod,niveau", [("39331", "bac+3"), ("11824", "bac+2")])
+def test_niveau_de_la_filiere(cod, niveau):
+    assert f"Diplôme visé : {niveau}" in fiche_to_text(APRES[cod])

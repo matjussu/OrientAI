@@ -17,6 +17,7 @@ from collections import Counter
 from collections.abc import Callable
 from pathlib import Path
 
+from src.collect.types_formation import NIVEAU_PAR_FILI
 from src.eval.donnee.texte import charger_fiche_to_text
 
 # Mot qui doit figurer dans le texte pour que le type de formation soit dit.
@@ -50,6 +51,13 @@ def controler(fiche: dict, texte: str) -> list[str]:
         defauts.append("academie_non_nommee")
     if "taux d'accès" in texte and "session 2025" not in texte:
         defauts.append("session_non_dite")
+    if "Phase : master" in texte:
+        defauts.append("post_bac_lu_comme_master")
+    attendu = NIVEAU_PAR_FILI.get(fiche.get("fili_code") or "")
+    if attendu and not re.search(r"bac\s*\+\s*\d", fiche.get("nom") or "", re.IGNORECASE) \
+            and re.search(r"(?:Niveau|Diplôme visé) : bac\+\d", texte) \
+            and not re.search(rf"(?:Niveau|Diplôme visé) : {re.escape(attendu)}\b", texte):
+        defauts.append("niveau_contredit_la_filiere")
     return defauts
 
 

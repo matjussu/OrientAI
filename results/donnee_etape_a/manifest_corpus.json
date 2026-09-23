@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-09-23T10:26:03+02:00",
+  "genere_le": "2026-09-23T10:37:44+02:00",
   "commande": "python -m src.collect.corpus_etape_a",
   "reference": {
     "chemin": "../OrientIA/data/processed/formations.json",
@@ -8,7 +8,7 @@
   },
   "sortie": {
     "chemin": "/home/matteo_linux/projets/OrientIA-etape-a/data/processed/formations_etape_a.json",
-    "sha256": "f0aeeb308c45827affa01942c579c206a88372054fab47842667e667cc5e0fc7",
+    "sha256": "9eae9c25108b7269ea6780ffef7430ef0db9ca3e7ce71c2372635b38a436a540",
     "fiches": 53281
   },
   "sources": {

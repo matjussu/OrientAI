@@ -549,9 +549,9 @@ def fiche_to_text(fiche: dict) -> str:
         ])
     if fiche.get("type_diplome"):
         parts.append(f"Diplôme : {fiche['type_diplome']}")
-    if fiche.get("niveau"):
+    if fiche.get("niveau") and not blocs:
         parts.append(f"Niveau : {fiche['niveau']}")
-    if fiche.get("phase"):
+    if fiche.get("phase") and not blocs:  # Parcoursup : accès et diplôme visé dans `blocs`
         parts.append(f"Phase : {fiche['phase']}")
     if fiche.get("statut"):
         parts.append(f"Statut : {fiche['statut']}")

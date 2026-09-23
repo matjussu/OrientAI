@@ -4081,6 +4081,8 @@ Détail et traces : `results/donnee_etape_a/RAPPORT.md`.
 2. **Domaines** : table de correspondance versionnée `data/reference/domaines_parcoursup.csv`
    (règles numérotées, première qui s'applique gagne, identifiant écrit dans `domaine_regle`).
    Elle couvre les trois domaines de la démo ; hors table, une fiche garde son domaine.
+   Toute fiche Parcoursup est en phase « initial » ; son niveau vient de l'intitulé quand il
+   l'écrit, sinon de la filière officielle, pas des mots « ingénieur » ou « master ».
 3. **Identité** : une formation Parcoursup est identifiée par son `cod_aff_form`, jamais par la
    clé (intitulé, établissement, ville) qui fusionnait les options PASS.
 4. **Sources** : jeux officiels bruts hors git, empreintes verrouillées dans

@@ -15,6 +15,8 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
+from src.collect.niveau import infer_niveau
+
 # Développé des sigles de voies de CPGE scientifiques. Non établi à l'étape A : écrit de
 # mémoire, pas relu contre les arrêtés de programme ; à vérifier avant l'étape D (format).
 _CPGE_VOIES = {
@@ -93,3 +95,28 @@ def decrire(fili: str | None, nom: str | None, intitule_complet: str | None,
     if fili == "Autre formation" and detail:
         return TypeFormation(detail)
     return None
+
+
+# Niveau du diplôme visé par filière très agrégée Parcoursup. Remplace, pour ces filières,
+# `infer_niveau`, qui cherche « ingénieur » ou « master » dans l'intitulé : mesuré le
+# 23/09/2026, 70 licences « Sciences pour l'ingénieur », 21 LAS et 33 BTS y passaient en bac+5.
+NIVEAU_PAR_FILI = {"BTS": "bac+2", "BUT": "bac+3", "Licence": "bac+3", "Licence_Las": "bac+3", "PASS": "bac+3"}
+_BAC_PLUS = re.compile(r"\bbac\s*\+\s*(\d)\b", re.IGNORECASE)
+
+
+def niveau_vise(fili: str | None, nom: str | None) -> tuple[str | None, str]:
+    """(niveau du diplôme visé, origine) pour une formation Parcoursup.
+
+    Ordre : niveau écrit dans l'intitulé (« Formation d'ingénieur Bac + 5 ») ; sinon niveau
+    de la filière (`NIVEAU_PAR_FILI`) ; une CPGE ne délivre pas de diplôme de niveau, donc
+    None ; sinon l'heuristique historique `infer_niveau`. Le premier « Bac + N » de l'intitulé
+    est le niveau visé ; une condition d'accès (« réservée aux BAC +1 ») vient toujours après.
+    """
+    m = _BAC_PLUS.search(nom or "")
+    if m:
+        return f"bac+{m.group(1)}", "intitule"
+    if fili in NIVEAU_PAR_FILI:
+        return NIVEAU_PAR_FILI[fili], "filiere"
+    if fili == "CPGE":
+        return None, "cpge"
+    return infer_niveau(nom or ""), "heuristique"

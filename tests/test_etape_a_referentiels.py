@@ -13,7 +13,7 @@ import pytest
 
 from src.collect.communes import ReferentielCommunes, cle_nom
 from src.collect.domaines import charger_table, classer
-from src.collect.types_formation import decrire
+from src.collect.types_formation import decrire, niveau_vise
 
 FIXTURES = Path(__file__).parent / "fixtures/etape_a"
 
@@ -166,3 +166,15 @@ def test_type_en_clair(fili, nom, complet, detail, libelle, precision):
 
 def test_cpge_voie_developpee():
     assert decrire("CPGE", "CPGE - MP2I", None, "MP2I").precision.startswith("voie MP2I (")
+
+
+@pytest.mark.parametrize("fili,nom,attendu", [
+    ("Licence", "Licence - Sciences pour l'ingénieur", ("bac+3", "filiere")),      # heuristique : bac+5
+    ("BTS", "BTS - Production - Assistance technique d'ingénieur", ("bac+2", "filiere")),
+    ("Licence_Las", "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé", ("bac+5", "intitule")),
+    ("Ecole d'Ingénieur", "Formation d'ingénieur Bac + 5 - Voie d'accès réservée aux BAC +1 uniquement", ("bac+5", "intitule")),
+    ("CPGE", "CPGE - MPSI", (None, "cpge")),
+    ("Autre formation", "C.M.I - Cursus Master en Ingénierie - Informatique", ("bac+5", "heuristique")),
+])
+def test_niveau_vise(fili, nom, attendu):
+    assert niveau_vise(fili, nom) == attendu

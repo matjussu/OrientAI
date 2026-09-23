@@ -53,7 +53,7 @@ from src.collect.parcoursup import (
 )
 from src.collect.sources_officielles import RACINE, charger_verrou, chemin_verifie
 from src.collect.trends import compute_trends, load_historical_snapshots
-from src.collect.types_formation import decrire
+from src.collect.types_formation import decrire, niveau_vise
 
 REFERENCE = RACINE / "data/processed/formations.json"
 SORTIE = RACINE / "data/processed/formations_etape_a.json"
@@ -143,6 +143,11 @@ class ConstructeurEtapeA:
         type_formation = decrire(ligne.get("fili"), fiche.get("nom"), intitule_complet, filiere_detaillee)
         fiche["type_formation"] = type_formation.libelle if type_formation else None
         fiche["precision_formation"] = type_formation.precision if type_formation else None
+        # Parcoursup est la plateforme d'admission post-bac : toute formation y est en phase
+        # « initial ». La phase « master » venait du niveau bac+5 (`_infer_phase`), et faisait
+        # lire une école d'ingénieurs post-bac comme un master.
+        fiche["niveau"], fiche["niveau_origine"] = niveau_vise(ligne.get("fili"), fiche.get("nom"))
+        fiche["phase"] = "initial"
 
         intitule = " ".join(x for x in (fiche.get("nom"), intitule_complet, _clean_str(ligne.get("detail_forma"))) if x)
         classe = classer(self.regles, ligne.get("fili"), filiere, intitule)

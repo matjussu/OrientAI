@@ -26,8 +26,11 @@ from src.eval.donnee.texte import charger_fiche_to_text
 SORTIE = Path("tests/fixtures/etape_a")
 # BUT Informatique, PASS option sciences infirmières (Lille), BUT GEII avec InserSup, fiche
 # sans taux 2025, fiches parisiennes (arrondissement), LAS majeure maths, IFSI, CPGE MP2I,
-# fiche marseillaise (arrondissement, académie Aix-Marseille), PASS à distance créé en A4.
-CODES = ["7596", "36433", "2139", "22946", "9517", "39316", "23244", "36000", "2623", "29180"]
+# fiche marseillaise (arrondissement, académie Aix-Marseille), PASS à distance créé en A4,
+# puis trois fiches que l'ancien texte lisait « Phase : master » (LAS cycle préparatoire ISIS,
+# licence et BTS classés bac+5 par l'heuristique).
+CODES = ["7596", "36433", "2139", "22946", "9517", "39316", "23244", "36000", "2623", "29180",
+         "36348", "39331", "11824"]
 COMMUNES = {"Aubière", "Lille", "Saint-Étienne", "Schœlcher", "Vandœuvre-lès-Nancy", "Borgo", "Montluçon"}
 
 
