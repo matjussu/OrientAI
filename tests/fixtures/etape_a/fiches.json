@@ -1,0 +1,4160 @@
+{
+ "provenance": {
+  "reference": "../OrientIA/data/processed/formations.json",
+  "etape_a": "data/processed/formations_etape_a.json",
+  "revision_texte_avant": "89e0f27"
+ },
+ "apres": {
+  "7596": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BUT - Informatique",
+   "etablissement": "I.U.T Clermont Auvergne - site d'Aubière",
+   "ville": "Aubière",
+   "region": "Auvergne-Rhône-Alpes",
+   "departement": "Puy-de-dôme",
+   "rncp": null,
+   "cod_uai": "0632085Z",
+   "cod_aff_form": "7596",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=7596&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 34.0,
+   "nombre_places": 96,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 34.0,
+    "places": 96,
+    "volumes": {
+     "voeux_totaux": 1017,
+     "voeux_phase_principale": 976,
+     "classes_phase_principale": 375,
+     "admis_total": 97
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 46.0,
+      "places": 124,
+      "voeux_totaux": 1203,
+      "voeux_phase_principale": 1195,
+      "pct_bg": 81.0,
+      "pct_bt": 19.0,
+      "pct_bp": 0.0,
+      "pct_tb": 3.0,
+      "pct_b": 25.0,
+      "pct_bours": 23.0,
+      "pct_f": 11.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 38.0,
+      "places": 96,
+      "voeux_totaux": 937,
+      "voeux_phase_principale": 914,
+      "pct_bg": 87.0,
+      "pct_bt": 13.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 23.0,
+      "pct_bours": 13.0,
+      "pct_f": 7.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 34.0,
+      "places": 96,
+      "voeux_totaux": 1017,
+      "voeux_phase_principale": 976,
+      "pct_bg": 84.0,
+      "pct_bt": 15.0,
+      "pct_bp": 1.0,
+      "pct_tb": 4.0,
+      "pct_b": 20.0,
+      "pct_bours": 26.0,
+      "pct_f": 7.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 4.0,
+     "b": 20.0,
+     "ab": 55.0,
+     "sans": 20.0,
+     "tbf": 1.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 84.0,
+     "techno": 15.0,
+     "pro": 1.0
+    },
+    "acces_pct": {
+     "general": 85.0,
+     "techno": 14.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 26.0,
+    "femmes_pct": 7.0,
+    "neobacheliers_pct": 88.0,
+    "origine_academique_idf_pct": 62.0
+   },
+   "propositions_totales": 295,
+   "pct_acceptes_debut_pp": 73.0,
+   "fili_code": "BUT",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "informatique",
+   "form_lib_voe_acc": "BUT - Production",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=7596&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "down",
+     "delta_pp": -12.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 46.0,
+     "end_value": 34.0,
+     "interpretation": "taux d'accès en baisse 2023→2025 (46% → 34%) : formation devenue plus sélective"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -28,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 124,
+     "end_value": 96,
+     "interpretation": "places en baisse 2023→2025 (124 → 96) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": -186,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1203,
+     "end_value": 1017,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "BUT",
+   "ville_source": "Aubière",
+   "code_insee": "63014",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "63",
+   "academie": "Clermont-Ferrand",
+   "intitule_officiel": "BUT - Informatique",
+   "filiere_detaillee": "Informatique",
+   "type_formation": "BUT (bachelor universitaire de technologie)",
+   "precision_formation": "spécialité Informatique",
+   "niveau_origine": "filiere",
+   "domaine_regle": "I02"
+  },
+  "36433": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+   "etablissement": "Université de Lille",
+   "ville": "Lille",
+   "region": "Hauts-de-France",
+   "departement": "Nord",
+   "rncp": null,
+   "cod_uai": "0597239Y",
+   "cod_aff_form": "36433",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36433&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 6.0,
+   "nombre_places": 60,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": "Parcours Sciences infirmières",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 6.0,
+    "places": 60,
+    "volumes": {
+     "voeux_totaux": 7769,
+     "voeux_phase_principale": 7769,
+     "classes_phase_principale": 7720,
+     "admis_total": 60
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 15.0,
+      "places": 60,
+      "voeux_totaux": 6009,
+      "voeux_phase_principale": 6009,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 53.0,
+      "pct_b": 36.0,
+      "pct_bours": 35.0,
+      "pct_f": 87.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 12.0,
+      "places": 60,
+      "voeux_totaux": 6660,
+      "voeux_phase_principale": 6660,
+      "pct_bg": 93.0,
+      "pct_bt": 7.0,
+      "pct_bp": 0.0,
+      "pct_tb": 44.0,
+      "pct_b": 25.0,
+      "pct_bours": 34.0,
+      "pct_f": 90.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 6.0,
+      "places": 60,
+      "voeux_totaux": 7769,
+      "voeux_phase_principale": 7769,
+      "pct_bg": 93.0,
+      "pct_bt": 7.0,
+      "pct_bp": 0.0,
+      "pct_tb": 52.0,
+      "pct_b": 16.0,
+      "pct_bours": 10.0,
+      "pct_f": 88.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 52.0,
+     "b": 16.0,
+     "ab": 0.0,
+     "sans": 0.0,
+     "tbf": 33.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 93.0,
+     "techno": 7.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 93.0,
+     "techno": 7.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 10.0,
+    "femmes_pct": 88.0,
+    "neobacheliers_pct": 97.0,
+    "origine_academique_idf_pct": 93.0
+   },
+   "propositions_totales": 415,
+   "pct_acceptes_debut_pp": 68.0,
+   "fili_code": "PASS",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation non sélective",
+   "domaine": "sante",
+   "match_method": "parcoursup_only",
+   "labels": [],
+   "debouches": [
+    {
+     "code_rome": "J1102",
+     "libelle": "Médecin généraliste / Médecin spécialiste"
+    },
+    {
+     "code_rome": "J1103",
+     "libelle": "Médecin de prévention et santé publique"
+    },
+    {
+     "code_rome": "J1104",
+     "libelle": "Sage-femme"
+    },
+    {
+     "code_rome": "J1201",
+     "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+    },
+    {
+     "code_rome": "J1304",
+     "libelle": "Pharmacien / Préparateur en pharmacie"
+    },
+    {
+     "code_rome": "J1401",
+     "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+    },
+    {
+     "code_rome": "J1501",
+     "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+    },
+    {
+     "code_rome": "J1502",
+     "libelle": "Cadre de santé / Directeur de soins"
+    },
+    {
+     "code_rome": "J1505",
+     "libelle": "Kinésithérapeute / Ergothérapeute"
+    },
+    {
+     "code_rome": "J1506",
+     "libelle": "Orthophoniste"
+    }
+   ],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025",
+    "debouches": "rome_4_0"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09",
+    "rome": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36433&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -9.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 15.0,
+     "end_value": 6.0,
+     "interpretation": "taux d'accès stable 2023→2025 (15% → 6%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 60,
+     "end_value": 60,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "up",
+     "delta": 1760,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 6009,
+     "end_value": 7769,
+     "interpretation": "popularité en hausse 2023→2025 (6009 → 7769 vœux) : attrait renforcé"
+    }
+   },
+   "ville_source": "Lille",
+   "code_insee": "59350",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "59",
+   "academie": "Lille",
+   "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option sciences infirmières - Parcours Sciences infirmières",
+   "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+   "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+   "type_formation": "PASS (parcours d'accès spécifique santé)",
+   "precision_formation": "option sciences infirmières (Parcours Sciences infirmières)",
+   "niveau_origine": "filiere",
+   "domaine_regle": "S01"
+  },
+  "2139": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BUT - Génie électrique et informatique industrielle",
+   "etablissement": "I.U.T Clermont Auvergne - site de Montluçon",
+   "ville": "Montluçon",
+   "region": "Auvergne-Rhône-Alpes",
+   "departement": "Allier",
+   "rncp": null,
+   "cod_uai": "0031134S",
+   "cod_aff_form": "2139",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2139&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 87.0,
+   "nombre_places": 39,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 87.0,
+    "places": 39,
+    "volumes": {
+     "voeux_totaux": 443,
+     "voeux_phase_principale": 327,
+     "classes_phase_principale": 286,
+     "admis_total": 30
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 84.0,
+      "places": 52,
+      "voeux_totaux": 523,
+      "voeux_phase_principale": 469,
+      "pct_bg": 40.0,
+      "pct_bt": 48.0,
+      "pct_bp": 12.0,
+      "pct_tb": 4.0,
+      "pct_b": 24.0,
+      "pct_bours": 20.0,
+      "pct_f": 11.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 80.0,
+      "places": 52,
+      "voeux_totaux": 389,
+      "voeux_phase_principale": 348,
+      "pct_bg": 56.0,
+      "pct_bt": 44.0,
+      "pct_bp": 0.0,
+      "pct_tb": 6.0,
+      "pct_b": 0.0,
+      "pct_bours": 25.0,
+      "pct_f": 7.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 87.0,
+      "places": 39,
+      "voeux_totaux": 443,
+      "voeux_phase_principale": 327,
+      "pct_bg": 60.0,
+      "pct_bt": 40.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 8.0,
+      "pct_bours": 16.0,
+      "pct_f": 0.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 8.0,
+     "ab": 52.0,
+     "sans": 40.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 60.0,
+     "techno": 40.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 59.0,
+     "techno": 40.0,
+     "pro": 2.0
+    },
+    "boursiers_pct": 16.0,
+    "femmes_pct": 0.0,
+    "neobacheliers_pct": 83.0,
+    "origine_academique_idf_pct": 64.0
+   },
+   "propositions_totales": 313,
+   "pct_acceptes_debut_pp": 63.0,
+   "fili_code": "BUT",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2139&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": 3.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 84.0,
+     "end_value": 87.0,
+     "interpretation": "taux d'accès stable 2023→2025 (84% → 87%)"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -13,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 52,
+     "end_value": 39,
+     "interpretation": "places en baisse 2023→2025 (52 → 39) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": -80,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 523,
+     "end_value": 443,
+     "interpretation": null
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 1040,
+    "taux_emploi_6m": 0.6875,
+    "taux_emploi_12m": 0.7778,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "BUT",
+   "ville_source": "Montluçon",
+   "code_insee": "03185",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "03",
+   "academie": "Clermont-Ferrand",
+   "intitule_officiel": "BUT - Génie électrique et informatique industrielle",
+   "form_lib_voe_acc": "BUT - Production",
+   "filiere_detaillee": "Génie électrique et informatique industrielle",
+   "type_formation": "BUT (bachelor universitaire de technologie)",
+   "precision_formation": "spécialité Génie électrique et informatique industrielle",
+   "niveau_origine": "filiere",
+   "domaine_regle": "I01"
+  },
+  "22946": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Certificat de Spécialisation - Organisateur de réception",
+   "etablissement": "Lycée polyvalent Leopold Elfort",
+   "ville": "Mana",
+   "region": "Guyane",
+   "departement": "Guyane",
+   "rncp": null,
+   "cod_uai": "9730421V",
+   "cod_aff_form": "22946",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=22946&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": null,
+   "nombre_places": 16,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": null,
+    "places": 16,
+    "volumes": {
+     "voeux_totaux": 1,
+     "voeux_phase_principale": 0,
+     "classes_phase_principale": 0,
+     "admis_total": 0
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 100.0,
+      "places": 15,
+      "voeux_totaux": 2,
+      "voeux_phase_principale": 2,
+      "pct_bg": 0.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 0.0,
+      "pct_f": 0.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 100.0,
+      "places": 16,
+      "voeux_totaux": 14,
+      "voeux_phase_principale": 9,
+      "pct_bg": 0.0,
+      "pct_bt": 0.0,
+      "pct_bp": 100.0,
+      "pct_tb": 0.0,
+      "pct_b": 33.0,
+      "pct_bours": 33.0,
+      "pct_f": 67.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": null,
+      "places": 16,
+      "voeux_totaux": 1,
+      "voeux_phase_principale": 0,
+      "pct_bg": 0.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 0.0,
+      "pct_f": 0.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 0.0,
+     "ab": 0.0,
+     "sans": 0.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 0.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 0.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 0.0,
+    "femmes_pct": 0.0,
+    "neobacheliers_pct": 0.0,
+    "origine_academique_idf_pct": 0.0
+   },
+   "propositions_totales": 0,
+   "pct_acceptes_debut_pp": 0.0,
+   "fili_code": "Autre formation",
+   "fili_groupe": null,
+   "selectivite_code": "formation sélective",
+   "domaine": "autre",
+   "form_lib_voe_acc": "Certificat de Spécialisation",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=22946&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": 0.0,
+     "start_year": 2023,
+     "end_year": 2024,
+     "start_value": 100.0,
+     "end_value": 100.0,
+     "interpretation": "taux d'accès stable 2023→2024 (100% → 100%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 1,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 15,
+     "end_value": 16,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "down",
+     "delta": -1,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 2,
+     "end_value": 1,
+     "interpretation": "popularité en baisse 2023→2025 (2 → 1 vœux) : attrait en repli"
+    }
+   },
+   "ville_source": "Mana",
+   "code_insee": "97306",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "973",
+   "academie": "Guyane",
+   "intitule_officiel": "Certificat de Spécialisation - Organisateur de réception",
+   "filiere_detaillee": "Organisateur de réception",
+   "type_formation": "Organisateur de réception",
+   "precision_formation": null,
+   "niveau_origine": "heuristique",
+   "domaine_regle": "anterieur"
+  },
+  "9517": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BUT - Gestion des entreprises et des administrations",
+   "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+   "ville": "Paris",
+   "region": "Île-de-France",
+   "departement": "Paris",
+   "rncp": null,
+   "cod_uai": "0754247J",
+   "cod_aff_form": "9517",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9517&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 6.0,
+   "nombre_places": 168,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 6.0,
+    "places": 168,
+    "volumes": {
+     "voeux_totaux": 11844,
+     "voeux_phase_principale": 11844,
+     "classes_phase_principale": 1511,
+     "admis_total": 178
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 13.0,
+      "places": 168,
+      "voeux_totaux": 4765,
+      "voeux_phase_principale": 4765,
+      "pct_bg": 52.0,
+      "pct_bt": 48.0,
+      "pct_bp": 0.0,
+      "pct_tb": 7.0,
+      "pct_b": 38.0,
+      "pct_bours": 32.0,
+      "pct_f": 56.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 14.0,
+      "places": 168,
+      "voeux_totaux": 5121,
+      "voeux_phase_principale": 5121,
+      "pct_bg": 51.0,
+      "pct_bt": 49.0,
+      "pct_bp": 0.0,
+      "pct_tb": 6.0,
+      "pct_b": 39.0,
+      "pct_bours": 33.0,
+      "pct_f": 54.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 6.0,
+      "places": 168,
+      "voeux_totaux": 11844,
+      "voeux_phase_principale": 11844,
+      "pct_bg": 46.0,
+      "pct_bt": 54.0,
+      "pct_bp": 0.0,
+      "pct_tb": 5.0,
+      "pct_b": 41.0,
+      "pct_bours": 27.0,
+      "pct_f": 62.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 5.0,
+     "b": 41.0,
+     "ab": 39.0,
+     "sans": 13.0,
+     "tbf": 1.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 46.0,
+     "techno": 54.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 48.0,
+     "techno": 52.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 27.0,
+    "femmes_pct": 62.0,
+    "neobacheliers_pct": 83.0,
+    "origine_academique_idf_pct": 96.0
+   },
+   "propositions_totales": 473,
+   "pct_acceptes_debut_pp": 52.0,
+   "fili_code": "BUT",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "eco_gestion",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9517&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -7.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 13.0,
+     "end_value": 6.0,
+     "interpretation": "taux d'accès stable 2023→2025 (13% → 6%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 168,
+     "end_value": 168,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "up",
+     "delta": 7079,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 4765,
+     "end_value": 11844,
+     "interpretation": "popularité en hausse 2023→2025 (4765 → 11844 vœux) : attrait renforcé"
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 894,
+    "taux_emploi_6m": 0.4919,
+    "taux_emploi_12m": 0.5503,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "BUT",
+   "ville_source": "Paris 16e  Arrondissement",
+   "code_insee": "75056",
+   "arrondissement": "16e arrondissement",
+   "code_insee_arrondissement": "75116",
+   "code_departement": "75",
+   "academie": "Paris",
+   "intitule_officiel": "BUT - Gestion des entreprises et des administrations",
+   "form_lib_voe_acc": "BUT - Service",
+   "filiere_detaillee": "Gestion des entreprises et des administrations",
+   "type_formation": "BUT (bachelor universitaire de technologie)",
+   "precision_formation": "spécialité Gestion des entreprises et des administrations",
+   "niveau_origine": "filiere",
+   "domaine_regle": "anterieur"
+  },
+  "39316": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Licence - Mathématiques -  Accès Santé",
+   "etablissement": "Université d'Orléans",
+   "ville": "Orléans",
+   "region": "Centre-Val de Loire",
+   "departement": "Loiret",
+   "rncp": null,
+   "cod_uai": "0450855K",
+   "cod_aff_form": "39316",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39316&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 77.0,
+   "nombre_places": 40,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 77.0,
+    "places": 40,
+    "volumes": {
+     "voeux_totaux": 341,
+     "voeux_phase_principale": 341,
+     "classes_phase_principale": 341,
+     "admis_total": 40
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 99.0,
+      "places": 40,
+      "voeux_totaux": 279,
+      "voeux_phase_principale": 229,
+      "pct_bg": 97.0,
+      "pct_bt": 3.0,
+      "pct_bp": 0.0,
+      "pct_tb": 6.0,
+      "pct_b": 19.0,
+      "pct_bours": 19.0,
+      "pct_f": 38.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 87.0,
+      "places": 40,
+      "voeux_totaux": 367,
+      "voeux_phase_principale": 367,
+      "pct_bg": 97.0,
+      "pct_bt": 3.0,
+      "pct_bp": 0.0,
+      "pct_tb": 3.0,
+      "pct_b": 21.0,
+      "pct_bours": 33.0,
+      "pct_f": 48.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 77.0,
+      "places": 40,
+      "voeux_totaux": 341,
+      "voeux_phase_principale": 341,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 9.0,
+      "pct_b": 12.0,
+      "pct_bours": 18.0,
+      "pct_f": 50.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 9.0,
+     "b": 12.0,
+     "ab": 32.0,
+     "sans": 47.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 18.0,
+    "femmes_pct": 50.0,
+    "neobacheliers_pct": 85.0,
+    "origine_academique_idf_pct": 82.0
+   },
+   "propositions_totales": 182,
+   "pct_acceptes_debut_pp": 2.0,
+   "fili_code": "Licence_Las",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation non sélective",
+   "domaine": "sante",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39316&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "down",
+     "delta_pp": -22.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 99.0,
+     "end_value": 77.0,
+     "interpretation": "taux d'accès en baisse 2023→2025 (99% → 77%) : formation devenue plus sélective"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 40,
+     "end_value": 40,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 62,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 279,
+     "end_value": 341,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Licence",
+   "ville_source": "Orléans",
+   "code_insee": "45234",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "45",
+   "academie": "Orléans-Tours",
+   "intitule_officiel": "Licence - Mathématiques -  Accès Santé (LAS)",
+   "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+   "filiere_detaillee": "Mathématiques",
+   "type_formation": "LAS (licence avec option accès santé)",
+   "precision_formation": "majeure Mathématiques",
+   "niveau_origine": "filiere",
+   "domaine_regle": "S02"
+  },
+  "23244": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "D.E Infirmier",
+   "etablissement": "Centre de formation IFSI-IFAS Hopitaux civils de Colmar",
+   "ville": "Colmar",
+   "region": "Grand Est",
+   "departement": "Haut-Rhin",
+   "rncp": null,
+   "cod_uai": "0681686N",
+   "cod_aff_form": "23244",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23244&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 49.0,
+   "nombre_places": 138,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 49.0,
+    "places": 138,
+    "volumes": {
+     "voeux_totaux": 3414,
+     "voeux_phase_principale": 3414,
+     "classes_phase_principale": 2866,
+     "admis_total": 136
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 58.0,
+      "places": 120,
+      "voeux_totaux": 3316,
+      "voeux_phase_principale": 3316,
+      "pct_bg": 47.0,
+      "pct_bt": 22.0,
+      "pct_bp": 31.0,
+      "pct_tb": 6.0,
+      "pct_b": 22.0,
+      "pct_bours": 25.0,
+      "pct_f": 87.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 52.0,
+      "places": 120,
+      "voeux_totaux": 3293,
+      "voeux_phase_principale": 3293,
+      "pct_bg": 35.0,
+      "pct_bt": 36.0,
+      "pct_bp": 28.0,
+      "pct_tb": 3.0,
+      "pct_b": 27.0,
+      "pct_bours": 25.0,
+      "pct_f": 85.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 49.0,
+      "places": 138,
+      "voeux_totaux": 3414,
+      "voeux_phase_principale": 3414,
+      "pct_bg": 41.0,
+      "pct_bt": 37.0,
+      "pct_bp": 23.0,
+      "pct_tb": 6.0,
+      "pct_b": 21.0,
+      "pct_bours": 18.0,
+      "pct_f": 90.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 6.0,
+     "b": 21.0,
+     "ab": 49.0,
+     "sans": 25.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 41.0,
+     "techno": 37.0,
+     "pro": 23.0
+    },
+    "acces_pct": {
+     "general": 49.0,
+     "techno": 34.0,
+     "pro": 17.0
+    },
+    "boursiers_pct": 18.0,
+    "femmes_pct": 90.0,
+    "neobacheliers_pct": 74.0,
+    "origine_academique_idf_pct": 85.0
+   },
+   "propositions_totales": 1370,
+   "pct_acceptes_debut_pp": 51.0,
+   "fili_code": "IFSI",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "sante",
+   "match_method": "parcoursup_only",
+   "labels": [],
+   "debouches": [
+    {
+     "code_rome": "J1102",
+     "libelle": "Médecin généraliste / Médecin spécialiste"
+    },
+    {
+     "code_rome": "J1103",
+     "libelle": "Médecin de prévention et santé publique"
+    },
+    {
+     "code_rome": "J1104",
+     "libelle": "Sage-femme"
+    },
+    {
+     "code_rome": "J1201",
+     "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+    },
+    {
+     "code_rome": "J1304",
+     "libelle": "Pharmacien / Préparateur en pharmacie"
+    },
+    {
+     "code_rome": "J1401",
+     "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+    },
+    {
+     "code_rome": "J1501",
+     "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+    },
+    {
+     "code_rome": "J1502",
+     "libelle": "Cadre de santé / Directeur de soins"
+    },
+    {
+     "code_rome": "J1505",
+     "libelle": "Kinésithérapeute / Ergothérapeute"
+    },
+    {
+     "code_rome": "J1506",
+     "libelle": "Orthophoniste"
+    }
+   ],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025",
+    "debouches": "rome_4_0"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09",
+    "rome": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23244&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -9.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 58.0,
+     "end_value": 49.0,
+     "interpretation": "taux d'accès stable 2023→2025 (58% → 49%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 18,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 120,
+     "end_value": 138,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 98,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 3316,
+     "end_value": 3414,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Diplôme d'État infirmier",
+   "ville_source": "Colmar",
+   "code_insee": "68066",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "68",
+   "academie": "Strasbourg",
+   "intitule_officiel": "D.E Infirmier",
+   "form_lib_voe_acc": "D.E secteur sanitaire",
+   "filiere_detaillee": "D.E Infirmier",
+   "type_formation": "IFSI (institut de formation en soins infirmiers), diplôme d'État d'infirmier",
+   "precision_formation": null,
+   "niveau_origine": "heuristique",
+   "domaine_regle": "S03"
+  },
+  "36000": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "CPGE - MP2I",
+   "etablissement": "Lycée Alain René Lesage",
+   "ville": "Vannes",
+   "region": "Bretagne",
+   "departement": "Morbihan",
+   "rncp": null,
+   "cod_uai": "0560051B",
+   "cod_aff_form": "36000",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36000&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 38.0,
+   "nombre_places": 48,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 38.0,
+    "places": 48,
+    "volumes": {
+     "voeux_totaux": 1204,
+     "voeux_phase_principale": 1181,
+     "classes_phase_principale": 451,
+     "admis_total": 40
+    },
+    "internat_disponible": true,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 37.0,
+      "places": 48,
+      "voeux_totaux": 1454,
+      "voeux_phase_principale": 1454,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 65.0,
+      "pct_b": 25.0,
+      "pct_bours": 15.0,
+      "pct_f": 8.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 54.0,
+      "places": 48,
+      "voeux_totaux": 819,
+      "voeux_phase_principale": 819,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 31.0,
+      "pct_b": 58.0,
+      "pct_bours": 12.0,
+      "pct_f": 21.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 38.0,
+      "places": 48,
+      "voeux_totaux": 1204,
+      "voeux_phase_principale": 1181,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 33.0,
+      "pct_b": 51.0,
+      "pct_bours": 3.0,
+      "pct_f": 22.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 33.0,
+     "b": 51.0,
+     "ab": 15.0,
+     "sans": 0.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 3.0,
+    "femmes_pct": 22.0,
+    "neobacheliers_pct": 98.0,
+    "origine_academique_idf_pct": 54.0
+   },
+   "propositions_totales": 281,
+   "pct_acceptes_debut_pp": 35.0,
+   "fili_code": "CPGE",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "informatique",
+   "form_lib_voe_acc": "Classe préparatoire scientifique",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36000&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": 1.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 37.0,
+     "end_value": 38.0,
+     "interpretation": "taux d'accès stable 2023→2025 (37% → 38%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 48,
+     "end_value": 48,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": -250,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1454,
+     "end_value": 1204,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "CPGE",
+   "ville_source": "Vannes",
+   "code_insee": "56260",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "56",
+   "academie": "Rennes",
+   "intitule_officiel": "CPGE - MP2I",
+   "filiere_detaillee": "MP2I",
+   "type_formation": "CPGE (classe préparatoire aux grandes écoles)",
+   "precision_formation": "voie MP2I (mathématiques, physique, ingénierie et informatique)",
+   "niveau_origine": "cpge",
+   "domaine_regle": "I10"
+  },
+  "2623": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Architecture",
+   "etablissement": "Ecole Nationale Supérieure d'Architecture de Marseille",
+   "ville": "Marseille",
+   "region": "Provence-Alpes-Côte d'Azur",
+   "departement": "Bouches-du-Rhône",
+   "rncp": null,
+   "cod_uai": "0130236L",
+   "cod_aff_form": "2623",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2623&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 13.0,
+   "nombre_places": 175,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 13.0,
+    "places": 175,
+    "volumes": {
+     "voeux_totaux": 2971,
+     "voeux_phase_principale": 2971,
+     "classes_phase_principale": 671,
+     "admis_total": 173
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 15.0,
+      "places": 175,
+      "voeux_totaux": 2832,
+      "voeux_phase_principale": 2832,
+      "pct_bg": 85.0,
+      "pct_bt": 9.0,
+      "pct_bp": 6.0,
+      "pct_tb": 32.0,
+      "pct_b": 59.0,
+      "pct_bours": 21.0,
+      "pct_f": 73.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 15.0,
+      "places": 175,
+      "voeux_totaux": 2894,
+      "voeux_phase_principale": 2894,
+      "pct_bg": 85.0,
+      "pct_bt": 8.0,
+      "pct_bp": 6.0,
+      "pct_tb": 31.0,
+      "pct_b": 56.0,
+      "pct_bours": 14.0,
+      "pct_f": 80.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 13.0,
+      "places": 175,
+      "voeux_totaux": 2971,
+      "voeux_phase_principale": 2971,
+      "pct_bg": 75.0,
+      "pct_bt": 18.0,
+      "pct_bp": 7.0,
+      "pct_tb": 19.0,
+      "pct_b": 64.0,
+      "pct_bours": 23.0,
+      "pct_f": 70.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 19.0,
+     "b": 64.0,
+     "ab": 15.0,
+     "sans": 1.0,
+     "tbf": 1.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 75.0,
+     "techno": 18.0,
+     "pro": 7.0
+    },
+    "acces_pct": {
+     "general": 83.0,
+     "techno": 12.0,
+     "pro": 4.0
+    },
+    "boursiers_pct": 23.0,
+    "femmes_pct": 70.0,
+    "neobacheliers_pct": 75.0,
+    "origine_academique_idf_pct": 36.0
+   },
+   "propositions_totales": 357,
+   "pct_acceptes_debut_pp": 47.0,
+   "fili_code": "Autre formation",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "lettres_arts",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2623&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -2.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 15.0,
+     "end_value": 13.0,
+     "interpretation": "taux d'accès stable 2023→2025 (15% → 13%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 175,
+     "end_value": 175,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 139,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 2832,
+     "end_value": 2971,
+     "interpretation": null
+    }
+   },
+   "ville_source": "Marseille  3e  Arrondissement",
+   "code_insee": "13055",
+   "arrondissement": "3e arrondissement",
+   "code_insee_arrondissement": "13203",
+   "code_departement": "13",
+   "academie": "Aix-Marseille",
+   "intitule_officiel": "Architecture",
+   "form_lib_voe_acc": "Formations Bac + 5",
+   "filiere_detaillee": "Architecture",
+   "type_formation": "Architecture",
+   "precision_formation": null,
+   "niveau_origine": "heuristique",
+   "domaine_regle": "anterieur"
+  },
+  "29180": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+   "etablissement": "Université de Lille",
+   "ville": "Lille",
+   "region": "Hauts-de-France",
+   "departement": "Nord",
+   "rncp": null,
+   "cod_uai": "0597239Y",
+   "cod_aff_form": "29180",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29180&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 50.0,
+   "nombre_places": 150,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": "Enseignement à distance",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 50.0,
+    "places": 150,
+    "volumes": {
+     "voeux_totaux": 3769,
+     "voeux_phase_principale": 3769,
+     "classes_phase_principale": 3743,
+     "admis_total": 152
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 83.0,
+      "places": 150,
+      "voeux_totaux": 2769,
+      "voeux_phase_principale": 2727,
+      "pct_bg": 88.0,
+      "pct_bt": 9.0,
+      "pct_bp": 3.0,
+      "pct_tb": 4.0,
+      "pct_b": 15.0,
+      "pct_bours": 25.0,
+      "pct_f": 74.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 48.0,
+      "places": 150,
+      "voeux_totaux": 3255,
+      "voeux_phase_principale": 3255,
+      "pct_bg": 90.0,
+      "pct_bt": 8.0,
+      "pct_bp": 2.0,
+      "pct_tb": 6.0,
+      "pct_b": 22.0,
+      "pct_bours": 30.0,
+      "pct_f": 75.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 50.0,
+      "places": 150,
+      "voeux_totaux": 3769,
+      "voeux_phase_principale": 3769,
+      "pct_bg": 95.0,
+      "pct_bt": 5.0,
+      "pct_bp": 0.0,
+      "pct_tb": 2.0,
+      "pct_b": 16.0,
+      "pct_bours": 25.0,
+      "pct_f": 73.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 2.0,
+     "b": 16.0,
+     "ab": 35.0,
+     "sans": 46.0,
+     "tbf": 0.0,
+     "non_renseignee": 1.0
+    },
+    "bac_type_pct": {
+     "general": 95.0,
+     "techno": 5.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 96.0,
+     "techno": 3.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 25.0,
+    "femmes_pct": 73.0,
+    "neobacheliers_pct": 73.0,
+    "origine_academique_idf_pct": 89.0
+   },
+   "propositions_totales": 1352,
+   "pct_acceptes_debut_pp": 3.0,
+   "fili_code": "PASS",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation non sélective",
+   "trends": {
+    "taux_acces": {
+     "direction": "down",
+     "delta_pp": -33.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 83.0,
+     "end_value": 50.0,
+     "interpretation": "taux d'accès en baisse 2023→2025 (83% → 50%) : formation devenue plus sélective"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 150,
+     "end_value": 150,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "up",
+     "delta": 1000,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 2769,
+     "end_value": 3769,
+     "interpretation": "popularité en hausse 2023→2025 (2769 → 3769 vœux) : attrait renforcé"
+    }
+   },
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025",
+    "herite_de": {
+     "cod_aff_form": "36433",
+     "champs": [
+      "domaine",
+      "debouches"
+     ]
+    }
+   },
+   "collected_at": {
+    "parcoursup": "2026-09-23"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29180&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "domaine": "sante",
+   "debouches": [
+    {
+     "code_rome": "J1102",
+     "libelle": "Médecin généraliste / Médecin spécialiste"
+    },
+    {
+     "code_rome": "J1103",
+     "libelle": "Médecin de prévention et santé publique"
+    },
+    {
+     "code_rome": "J1104",
+     "libelle": "Sage-femme"
+    },
+    {
+     "code_rome": "J1201",
+     "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+    },
+    {
+     "code_rome": "J1304",
+     "libelle": "Pharmacien / Préparateur en pharmacie"
+    },
+    {
+     "code_rome": "J1401",
+     "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+    },
+    {
+     "code_rome": "J1501",
+     "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+    },
+    {
+     "code_rome": "J1502",
+     "libelle": "Cadre de santé / Directeur de soins"
+    },
+    {
+     "code_rome": "J1505",
+     "libelle": "Kinésithérapeute / Ergothérapeute"
+    },
+    {
+     "code_rome": "J1506",
+     "libelle": "Orthophoniste"
+    }
+   ],
+   "ville_source": "Lille",
+   "code_insee": "59350",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "59",
+   "academie": "Lille",
+   "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option Droit - enseignement à distance - Enseignement à distance",
+   "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+   "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+   "type_formation": "PASS (parcours d'accès spécifique santé)",
+   "precision_formation": "option Droit (enseignement à distance)",
+   "niveau_origine": "filiere",
+   "domaine_regle": "S01"
+  },
+  "36348": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé",
+   "etablissement": "ISIS - Partenaire INSA",
+   "ville": "Castres",
+   "region": "Occitanie",
+   "departement": "Tarn",
+   "rncp": null,
+   "cod_uai": "0811293I",
+   "cod_aff_form": "36348",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 72.0,
+   "nombre_places": 17,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": "Cycle préparatoire intégré - Accès Santé",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 72.0,
+    "places": 17,
+    "volumes": {
+     "voeux_totaux": 160,
+     "voeux_phase_principale": 160,
+     "classes_phase_principale": 115,
+     "admis_total": 16
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 75.0,
+      "places": 7,
+      "voeux_totaux": 132,
+      "voeux_phase_principale": 66,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 33.0,
+      "pct_bours": 0.0,
+      "pct_f": 50.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 62.0,
+      "places": 10,
+      "voeux_totaux": 148,
+      "voeux_phase_principale": 148,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 18.0,
+      "pct_b": 64.0,
+      "pct_bours": 0.0,
+      "pct_f": 77.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 72.0,
+      "places": 17,
+      "voeux_totaux": 160,
+      "voeux_phase_principale": 160,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 7.0,
+      "pct_b": 27.0,
+      "pct_bours": 0.0,
+      "pct_f": 56.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 7.0,
+     "b": 27.0,
+     "ab": 60.0,
+     "sans": 7.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 0.0,
+    "femmes_pct": 56.0,
+    "neobacheliers_pct": 94.0,
+    "origine_academique_idf_pct": 60.0
+   },
+   "propositions_totales": 84,
+   "pct_acceptes_debut_pp": 6.0,
+   "fili_code": "Licence_Las",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "sante",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -3.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 75.0,
+     "end_value": 72.0,
+     "interpretation": "taux d'accès stable 2023→2025 (75% → 72%)"
+    },
+    "places": {
+     "direction": "up",
+     "delta": 10,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 7,
+     "end_value": 17,
+     "interpretation": "places en hausse 2023→2025 (7 → 17) : ouverture de capacité"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 28,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 132,
+     "end_value": 160,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Licence",
+   "ville_source": "Castres",
+   "code_insee": "81065",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "81",
+   "academie": "Toulouse",
+   "intitule_officiel": "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé",
+   "form_lib_voe_acc": "Formations  des écoles d'ingénieurs",
+   "filiere_detaillee": "Formation d'ingénieur Bac + 5",
+   "type_formation": "LAS (licence avec option accès santé)",
+   "precision_formation": "majeure Formation d'ingénieur Bac + 5",
+   "niveau_origine": "intitule",
+   "domaine_regle": "S02"
+  },
+  "39331": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique",
+   "etablissement": "Université Paris Panthéon Assas",
+   "ville": "Paris",
+   "region": "Île-de-France",
+   "departement": "Paris",
+   "rncp": null,
+   "cod_uai": "0756305W",
+   "cod_aff_form": "39331",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 15.0,
+   "nombre_places": 35,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": "Collège d'économie filière ingénierie en analyse économique",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 15.0,
+    "places": 35,
+    "volumes": {
+     "voeux_totaux": 2046,
+     "voeux_phase_principale": 2046,
+     "classes_phase_principale": 600,
+     "admis_total": 36
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 19.0,
+      "places": 35,
+      "voeux_totaux": 1774,
+      "voeux_phase_principale": 1774,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 57.0,
+      "pct_b": 43.0,
+      "pct_bours": 27.0,
+      "pct_f": 36.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 12.0,
+      "places": 35,
+      "voeux_totaux": 2228,
+      "voeux_phase_principale": 2228,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 35.0,
+      "pct_b": 58.0,
+      "pct_bours": 32.0,
+      "pct_f": 32.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 15.0,
+      "places": 35,
+      "voeux_totaux": 2046,
+      "voeux_phase_principale": 2046,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 56.0,
+      "pct_b": 41.0,
+      "pct_bours": 11.0,
+      "pct_f": 53.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 56.0,
+     "b": 41.0,
+     "ab": 4.0,
+     "sans": 0.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 11.0,
+    "femmes_pct": 53.0,
+    "neobacheliers_pct": 75.0,
+    "origine_academique_idf_pct": 74.0
+   },
+   "propositions_totales": 198,
+   "pct_acceptes_debut_pp": 3.0,
+   "fili_code": "Licence",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "eco_gestion",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -4.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 19.0,
+     "end_value": 15.0,
+     "interpretation": "taux d'accès stable 2023→2025 (19% → 15%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 35,
+     "end_value": 35,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 272,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1774,
+     "end_value": 2046,
+     "interpretation": null
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 807,
+    "taux_emploi_6m": 0.4522,
+    "taux_emploi_12m": 0.4766,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "Licence",
+   "ville_source": "Paris  5e  Arrondissement",
+   "code_insee": "75056",
+   "arrondissement": "5e arrondissement",
+   "code_insee_arrondissement": "75105",
+   "code_departement": "75",
+   "academie": "Paris",
+   "intitule_officiel": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique",
+   "form_lib_voe_acc": "Licence - Droit-économie-gestion",
+   "filiere_detaillee": "Economie et gestion",
+   "type_formation": "Licence",
+   "precision_formation": "mention Economie et gestion",
+   "niveau_origine": "filiere",
+   "domaine_regle": "anterieur"
+  },
+  "11824": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BTS - Production - Assistance technique d'ingénieur",
+   "etablissement": "Lycée Acajou 2",
+   "ville": "Le Lamentin",
+   "region": "Martinique",
+   "departement": "Martinique",
+   "rncp": null,
+   "cod_uai": "9720695Y",
+   "cod_aff_form": "11824",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 100.0,
+   "nombre_places": 12,
+   "statut": "Public",
+   "niveau": "bac+2",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 100.0,
+    "places": 12,
+    "volumes": {
+     "voeux_totaux": 63,
+     "voeux_phase_principale": 53,
+     "classes_phase_principale": 53,
+     "admis_total": 4
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 67.0,
+      "places": 24,
+      "voeux_totaux": 107,
+      "voeux_phase_principale": 99,
+      "pct_bg": 25.0,
+      "pct_bt": 12.0,
+      "pct_bp": 62.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 62.0,
+      "pct_f": 0.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 48.0,
+      "places": 24,
+      "voeux_totaux": 78,
+      "voeux_phase_principale": 65,
+      "pct_bg": 0.0,
+      "pct_bt": 80.0,
+      "pct_bp": 20.0,
+      "pct_tb": 0.0,
+      "pct_b": 10.0,
+      "pct_bours": 40.0,
+      "pct_f": 10.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 100.0,
+      "places": 12,
+      "voeux_totaux": 63,
+      "voeux_phase_principale": 53,
+      "pct_bg": 25.0,
+      "pct_bt": 75.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 25.0,
+      "pct_f": 25.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 0.0,
+     "ab": 0.0,
+     "sans": 100.0,
+     "tbf": 0.0,
+     "non_renseignee": 0.0
+    },
+    "bac_type_pct": {
+     "general": 25.0,
+     "techno": 75.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 20.0,
+     "techno": 44.0,
+     "pro": 36.0
+    },
+    "boursiers_pct": 25.0,
+    "femmes_pct": 25.0,
+    "neobacheliers_pct": 100.0,
+    "origine_academique_idf_pct": 100.0
+   },
+   "propositions_totales": 44,
+   "pct_acceptes_debut_pp": 0.0,
+   "fili_code": "BTS",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "up",
+     "delta_pp": 33.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 67.0,
+     "end_value": 100.0,
+     "interpretation": "taux d'accès en hausse 2023→2025 (67% → 100%) : formation devenue plus accessible"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -12,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 24,
+     "end_value": 12,
+     "interpretation": "places en baisse 2023→2025 (24 → 12) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "down",
+     "delta": -44,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 107,
+     "end_value": 63,
+     "interpretation": "popularité en baisse 2023→2025 (107 → 63 vœux) : attrait en repli"
+    }
+   },
+   "type_diplome": "BTS",
+   "ville_source": "Le Lamentin",
+   "code_insee": "97213",
+   "arrondissement": null,
+   "code_insee_arrondissement": null,
+   "code_departement": "972",
+   "academie": "Martinique",
+   "intitule_officiel": "BTS - Production - Assistance technique d'ingénieur",
+   "form_lib_voe_acc": "BTS - Production",
+   "filiere_detaillee": "Assistance technique d'ingénieur",
+   "type_formation": "BTS (brevet de technicien supérieur)",
+   "precision_formation": "spécialité Assistance technique d'ingénieur",
+   "niveau_origine": "filiere",
+   "domaine_regle": "anterieur"
+  }
+ },
+ "avant": {
+  "7596": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BUT - Informatique",
+   "etablissement": "I.U.T Clermont Auvergne - site d'Aubière",
+   "ville": "Aubière",
+   "region": "Auvergne-Rhône-Alpes",
+   "departement": "Puy-de-dôme",
+   "rncp": null,
+   "cod_uai": "0632085Z",
+   "cod_aff_form": "7596",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=7596&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 34.0,
+   "nombre_places": 96,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 34.0,
+    "places": 96,
+    "volumes": {
+     "voeux_totaux": 1017,
+     "voeux_phase_principale": 976,
+     "classes_phase_principale": 375
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 46.0,
+      "places": 124,
+      "voeux_totaux": 1203,
+      "voeux_phase_principale": 1195,
+      "pct_bg": 81.0,
+      "pct_bt": 19.0,
+      "pct_bp": 0.0,
+      "pct_tb": 3.0,
+      "pct_b": 25.0,
+      "pct_bours": 23.0,
+      "pct_f": 11.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 38.0,
+      "places": 96,
+      "voeux_totaux": 937,
+      "voeux_phase_principale": 914,
+      "pct_bg": 87.0,
+      "pct_bt": 13.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 23.0,
+      "pct_bours": 13.0,
+      "pct_f": 7.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 34.0,
+      "places": 96,
+      "voeux_totaux": 1017,
+      "voeux_phase_principale": 976,
+      "pct_bg": 84.0,
+      "pct_bt": 15.0,
+      "pct_bp": 1.0,
+      "pct_tb": 4.0,
+      "pct_b": 20.0,
+      "pct_bours": 26.0,
+      "pct_f": 7.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 4.0,
+     "b": 20.0,
+     "ab": 55.0,
+     "sans": 20.0
+    },
+    "bac_type_pct": {
+     "general": 84.0,
+     "techno": 15.0,
+     "pro": 1.0
+    },
+    "acces_pct": {
+     "general": 85.0,
+     "techno": 14.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 26.0,
+    "femmes_pct": 7.0,
+    "neobacheliers_pct": 88.0,
+    "origine_academique_idf_pct": 62.0
+   },
+   "propositions_totales": 295,
+   "pct_acceptes_debut_pp": 73.0,
+   "fili_code": "BUT",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "autre",
+   "form_lib_voe_acc": "BUT - Production",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=7596&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "down",
+     "delta_pp": -12.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 46.0,
+     "end_value": 34.0,
+     "interpretation": "taux d'accès en baisse 2023→2025 (46% → 34%) : formation devenue plus sélective"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -28,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 124,
+     "end_value": 96,
+     "interpretation": "places en baisse 2023→2025 (124 → 96) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": -186,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1203,
+     "end_value": 1017,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "BUT"
+  },
+  "36433": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+   "etablissement": "Université de Lille",
+   "ville": "Lille",
+   "region": "Hauts-de-France",
+   "departement": "Nord",
+   "rncp": null,
+   "cod_uai": "0597239Y",
+   "cod_aff_form": "36433",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36433&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 6.0,
+   "nombre_places": 60,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": "Parcours Sciences infirmières",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 6.0,
+    "places": 60,
+    "volumes": {
+     "voeux_totaux": 7769,
+     "voeux_phase_principale": 7769,
+     "classes_phase_principale": 7720
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 15.0,
+      "places": 60,
+      "voeux_totaux": 6009,
+      "voeux_phase_principale": 6009,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 53.0,
+      "pct_b": 36.0,
+      "pct_bours": 35.0,
+      "pct_f": 87.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 12.0,
+      "places": 60,
+      "voeux_totaux": 6660,
+      "voeux_phase_principale": 6660,
+      "pct_bg": 93.0,
+      "pct_bt": 7.0,
+      "pct_bp": 0.0,
+      "pct_tb": 44.0,
+      "pct_b": 25.0,
+      "pct_bours": 34.0,
+      "pct_f": 90.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 6.0,
+      "places": 60,
+      "voeux_totaux": 7769,
+      "voeux_phase_principale": 7769,
+      "pct_bg": 93.0,
+      "pct_bt": 7.0,
+      "pct_bp": 0.0,
+      "pct_tb": 52.0,
+      "pct_b": 16.0,
+      "pct_bours": 10.0,
+      "pct_f": 88.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 52.0,
+     "b": 16.0,
+     "ab": 0.0,
+     "sans": 0.0
+    },
+    "bac_type_pct": {
+     "general": 93.0,
+     "techno": 7.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 93.0,
+     "techno": 7.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 10.0,
+    "femmes_pct": 88.0,
+    "neobacheliers_pct": 97.0,
+    "origine_academique_idf_pct": 93.0
+   },
+   "propositions_totales": 415,
+   "pct_acceptes_debut_pp": 68.0,
+   "fili_code": "PASS",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation non sélective",
+   "domaine": "sante",
+   "match_method": "parcoursup_only",
+   "labels": [],
+   "debouches": [
+    {
+     "code_rome": "J1102",
+     "libelle": "Médecin généraliste / Médecin spécialiste"
+    },
+    {
+     "code_rome": "J1103",
+     "libelle": "Médecin de prévention et santé publique"
+    },
+    {
+     "code_rome": "J1104",
+     "libelle": "Sage-femme"
+    },
+    {
+     "code_rome": "J1201",
+     "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+    },
+    {
+     "code_rome": "J1304",
+     "libelle": "Pharmacien / Préparateur en pharmacie"
+    },
+    {
+     "code_rome": "J1401",
+     "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+    },
+    {
+     "code_rome": "J1501",
+     "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+    },
+    {
+     "code_rome": "J1502",
+     "libelle": "Cadre de santé / Directeur de soins"
+    },
+    {
+     "code_rome": "J1505",
+     "libelle": "Kinésithérapeute / Ergothérapeute"
+    },
+    {
+     "code_rome": "J1506",
+     "libelle": "Orthophoniste"
+    }
+   ],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025",
+    "debouches": "rome_4_0"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09",
+    "rome": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36433&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -9.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 15.0,
+     "end_value": 6.0,
+     "interpretation": "taux d'accès stable 2023→2025 (15% → 6%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 60,
+     "end_value": 60,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "up",
+     "delta": 1760,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 6009,
+     "end_value": 7769,
+     "interpretation": "popularité en hausse 2023→2025 (6009 → 7769 vœux) : attrait renforcé"
+    }
+   }
+  },
+  "2139": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BUT - Génie électrique et informatique industrielle",
+   "etablissement": "I.U.T Clermont Auvergne - site de Montluçon",
+   "ville": "Montluçon",
+   "region": "Auvergne-Rhône-Alpes",
+   "departement": "Allier",
+   "rncp": null,
+   "cod_uai": "0031134S",
+   "cod_aff_form": "2139",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2139&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 87.0,
+   "nombre_places": 39,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 87.0,
+    "places": 39,
+    "volumes": {
+     "voeux_totaux": 443,
+     "voeux_phase_principale": 327,
+     "classes_phase_principale": 286
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 84.0,
+      "places": 52,
+      "voeux_totaux": 523,
+      "voeux_phase_principale": 469,
+      "pct_bg": 40.0,
+      "pct_bt": 48.0,
+      "pct_bp": 12.0,
+      "pct_tb": 4.0,
+      "pct_b": 24.0,
+      "pct_bours": 20.0,
+      "pct_f": 11.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 80.0,
+      "places": 52,
+      "voeux_totaux": 389,
+      "voeux_phase_principale": 348,
+      "pct_bg": 56.0,
+      "pct_bt": 44.0,
+      "pct_bp": 0.0,
+      "pct_tb": 6.0,
+      "pct_b": 0.0,
+      "pct_bours": 25.0,
+      "pct_f": 7.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 87.0,
+      "places": 39,
+      "voeux_totaux": 443,
+      "voeux_phase_principale": 327,
+      "pct_bg": 60.0,
+      "pct_bt": 40.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 8.0,
+      "pct_bours": 16.0,
+      "pct_f": 0.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 8.0,
+     "ab": 52.0,
+     "sans": 40.0
+    },
+    "bac_type_pct": {
+     "general": 60.0,
+     "techno": 40.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 59.0,
+     "techno": 40.0,
+     "pro": 2.0
+    },
+    "boursiers_pct": 16.0,
+    "femmes_pct": 0.0,
+    "neobacheliers_pct": 83.0,
+    "origine_academique_idf_pct": 64.0
+   },
+   "propositions_totales": 313,
+   "pct_acceptes_debut_pp": 63.0,
+   "fili_code": "BUT",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2139&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": 3.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 84.0,
+     "end_value": 87.0,
+     "interpretation": "taux d'accès stable 2023→2025 (84% → 87%)"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -13,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 52,
+     "end_value": 39,
+     "interpretation": "places en baisse 2023→2025 (52 → 39) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": -80,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 523,
+     "end_value": 443,
+     "interpretation": null
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 1040,
+    "taux_emploi_6m": 0.6875,
+    "taux_emploi_12m": 0.7778,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "BUT"
+  },
+  "22946": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Certificat de Spécialisation - Organisateur de réception",
+   "etablissement": "Lycée polyvalent Leopold Elfort",
+   "ville": "Mana",
+   "region": "Guyane",
+   "departement": "Guyane",
+   "rncp": null,
+   "cod_uai": "9730421V",
+   "cod_aff_form": "22946",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=22946&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": null,
+   "nombre_places": 16,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": null,
+    "places": 16,
+    "volumes": {
+     "voeux_totaux": 1,
+     "voeux_phase_principale": 0,
+     "classes_phase_principale": 0
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 100.0,
+      "places": 15,
+      "voeux_totaux": 2,
+      "voeux_phase_principale": 2,
+      "pct_bg": 0.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 0.0,
+      "pct_f": 0.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 100.0,
+      "places": 16,
+      "voeux_totaux": 14,
+      "voeux_phase_principale": 9,
+      "pct_bg": 0.0,
+      "pct_bt": 0.0,
+      "pct_bp": 100.0,
+      "pct_tb": 0.0,
+      "pct_b": 33.0,
+      "pct_bours": 33.0,
+      "pct_f": 67.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": null,
+      "places": 16,
+      "voeux_totaux": 1,
+      "voeux_phase_principale": 0,
+      "pct_bg": 0.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 0.0,
+      "pct_f": 0.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 0.0,
+     "ab": 0.0,
+     "sans": 0.0
+    },
+    "bac_type_pct": {
+     "general": 0.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 0.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 0.0,
+    "femmes_pct": 0.0,
+    "neobacheliers_pct": 0.0,
+    "origine_academique_idf_pct": 0.0
+   },
+   "propositions_totales": 0,
+   "pct_acceptes_debut_pp": 0.0,
+   "fili_code": "Autre formation",
+   "fili_groupe": null,
+   "selectivite_code": "formation sélective",
+   "domaine": "autre",
+   "form_lib_voe_acc": "Certificat de Spécialisation",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=22946&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": 0.0,
+     "start_year": 2023,
+     "end_year": 2024,
+     "start_value": 100.0,
+     "end_value": 100.0,
+     "interpretation": "taux d'accès stable 2023→2024 (100% → 100%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 1,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 15,
+     "end_value": 16,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "down",
+     "delta": -1,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 2,
+     "end_value": 1,
+     "interpretation": "popularité en baisse 2023→2025 (2 → 1 vœux) : attrait en repli"
+    }
+   }
+  },
+  "9517": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "BUT - Gestion des entreprises et des administrations",
+   "etablissement": "IUT de Paris - Rives de Seine - Université Paris Cité",
+   "ville": "Paris 16e  Arrondissement",
+   "region": "Île-de-France",
+   "departement": "Paris",
+   "rncp": null,
+   "cod_uai": "0754247J",
+   "cod_aff_form": "9517",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9517&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 6.0,
+   "nombre_places": 168,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 6.0,
+    "places": 168,
+    "volumes": {
+     "voeux_totaux": 11844,
+     "voeux_phase_principale": 11844,
+     "classes_phase_principale": 1511
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 13.0,
+      "places": 168,
+      "voeux_totaux": 4765,
+      "voeux_phase_principale": 4765,
+      "pct_bg": 52.0,
+      "pct_bt": 48.0,
+      "pct_bp": 0.0,
+      "pct_tb": 7.0,
+      "pct_b": 38.0,
+      "pct_bours": 32.0,
+      "pct_f": 56.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 14.0,
+      "places": 168,
+      "voeux_totaux": 5121,
+      "voeux_phase_principale": 5121,
+      "pct_bg": 51.0,
+      "pct_bt": 49.0,
+      "pct_bp": 0.0,
+      "pct_tb": 6.0,
+      "pct_b": 39.0,
+      "pct_bours": 33.0,
+      "pct_f": 54.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 6.0,
+      "places": 168,
+      "voeux_totaux": 11844,
+      "voeux_phase_principale": 11844,
+      "pct_bg": 46.0,
+      "pct_bt": 54.0,
+      "pct_bp": 0.0,
+      "pct_tb": 5.0,
+      "pct_b": 41.0,
+      "pct_bours": 27.0,
+      "pct_f": 62.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 5.0,
+     "b": 41.0,
+     "ab": 39.0,
+     "sans": 13.0
+    },
+    "bac_type_pct": {
+     "general": 46.0,
+     "techno": 54.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 48.0,
+     "techno": 52.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 27.0,
+    "femmes_pct": 62.0,
+    "neobacheliers_pct": 83.0,
+    "origine_academique_idf_pct": 96.0
+   },
+   "propositions_totales": 473,
+   "pct_acceptes_debut_pp": 52.0,
+   "fili_code": "BUT",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "eco_gestion",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9517&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -7.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 13.0,
+     "end_value": 6.0,
+     "interpretation": "taux d'accès stable 2023→2025 (13% → 6%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 168,
+     "end_value": 168,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "up",
+     "delta": 7079,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 4765,
+     "end_value": 11844,
+     "interpretation": "popularité en hausse 2023→2025 (4765 → 11844 vœux) : attrait renforcé"
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 894,
+    "taux_emploi_6m": 0.4919,
+    "taux_emploi_12m": 0.5503,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "BUT"
+  },
+  "39316": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Licence - Mathématiques -  Accès Santé",
+   "etablissement": "Université d'Orléans",
+   "ville": "Orléans",
+   "region": "Centre-Val de Loire",
+   "departement": "Loiret",
+   "rncp": null,
+   "cod_uai": "0450855K",
+   "cod_aff_form": "39316",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39316&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 77.0,
+   "nombre_places": 40,
+   "statut": "Public",
+   "niveau": "bac+3",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 77.0,
+    "places": 40,
+    "volumes": {
+     "voeux_totaux": 341,
+     "voeux_phase_principale": 341,
+     "classes_phase_principale": 341
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 99.0,
+      "places": 40,
+      "voeux_totaux": 279,
+      "voeux_phase_principale": 229,
+      "pct_bg": 97.0,
+      "pct_bt": 3.0,
+      "pct_bp": 0.0,
+      "pct_tb": 6.0,
+      "pct_b": 19.0,
+      "pct_bours": 19.0,
+      "pct_f": 38.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 87.0,
+      "places": 40,
+      "voeux_totaux": 367,
+      "voeux_phase_principale": 367,
+      "pct_bg": 97.0,
+      "pct_bt": 3.0,
+      "pct_bp": 0.0,
+      "pct_tb": 3.0,
+      "pct_b": 21.0,
+      "pct_bours": 33.0,
+      "pct_f": 48.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 77.0,
+      "places": 40,
+      "voeux_totaux": 341,
+      "voeux_phase_principale": 341,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 9.0,
+      "pct_b": 12.0,
+      "pct_bours": 18.0,
+      "pct_f": 50.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 9.0,
+     "b": 12.0,
+     "ab": 32.0,
+     "sans": 47.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 18.0,
+    "femmes_pct": 50.0,
+    "neobacheliers_pct": 85.0,
+    "origine_academique_idf_pct": 82.0
+   },
+   "propositions_totales": 182,
+   "pct_acceptes_debut_pp": 2.0,
+   "fili_code": "Licence_Las",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation non sélective",
+   "domaine": "sciences_fondamentales",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39316&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "down",
+     "delta_pp": -22.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 99.0,
+     "end_value": 77.0,
+     "interpretation": "taux d'accès en baisse 2023→2025 (99% → 77%) : formation devenue plus sélective"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 40,
+     "end_value": 40,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 62,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 279,
+     "end_value": 341,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Licence"
+  },
+  "23244": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "D.E Infirmier",
+   "etablissement": "Centre de formation IFSI-IFAS Hopitaux civils de Colmar",
+   "ville": "Colmar",
+   "region": "Grand Est",
+   "departement": "Haut-Rhin",
+   "rncp": null,
+   "cod_uai": "0681686N",
+   "cod_aff_form": "23244",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23244&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 49.0,
+   "nombre_places": 138,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 49.0,
+    "places": 138,
+    "volumes": {
+     "voeux_totaux": 3414,
+     "voeux_phase_principale": 3414,
+     "classes_phase_principale": 2866
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 58.0,
+      "places": 120,
+      "voeux_totaux": 3316,
+      "voeux_phase_principale": 3316,
+      "pct_bg": 47.0,
+      "pct_bt": 22.0,
+      "pct_bp": 31.0,
+      "pct_tb": 6.0,
+      "pct_b": 22.0,
+      "pct_bours": 25.0,
+      "pct_f": 87.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 52.0,
+      "places": 120,
+      "voeux_totaux": 3293,
+      "voeux_phase_principale": 3293,
+      "pct_bg": 35.0,
+      "pct_bt": 36.0,
+      "pct_bp": 28.0,
+      "pct_tb": 3.0,
+      "pct_b": 27.0,
+      "pct_bours": 25.0,
+      "pct_f": 85.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 49.0,
+      "places": 138,
+      "voeux_totaux": 3414,
+      "voeux_phase_principale": 3414,
+      "pct_bg": 41.0,
+      "pct_bt": 37.0,
+      "pct_bp": 23.0,
+      "pct_tb": 6.0,
+      "pct_b": 21.0,
+      "pct_bours": 18.0,
+      "pct_f": 90.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 6.0,
+     "b": 21.0,
+     "ab": 49.0,
+     "sans": 25.0
+    },
+    "bac_type_pct": {
+     "general": 41.0,
+     "techno": 37.0,
+     "pro": 23.0
+    },
+    "acces_pct": {
+     "general": 49.0,
+     "techno": 34.0,
+     "pro": 17.0
+    },
+    "boursiers_pct": 18.0,
+    "femmes_pct": 90.0,
+    "neobacheliers_pct": 74.0,
+    "origine_academique_idf_pct": 85.0
+   },
+   "propositions_totales": 1370,
+   "pct_acceptes_debut_pp": 51.0,
+   "fili_code": "IFSI",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "sante",
+   "match_method": "parcoursup_only",
+   "labels": [],
+   "debouches": [
+    {
+     "code_rome": "J1102",
+     "libelle": "Médecin généraliste / Médecin spécialiste"
+    },
+    {
+     "code_rome": "J1103",
+     "libelle": "Médecin de prévention et santé publique"
+    },
+    {
+     "code_rome": "J1104",
+     "libelle": "Sage-femme"
+    },
+    {
+     "code_rome": "J1201",
+     "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+    },
+    {
+     "code_rome": "J1304",
+     "libelle": "Pharmacien / Préparateur en pharmacie"
+    },
+    {
+     "code_rome": "J1401",
+     "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+    },
+    {
+     "code_rome": "J1501",
+     "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+    },
+    {
+     "code_rome": "J1502",
+     "libelle": "Cadre de santé / Directeur de soins"
+    },
+    {
+     "code_rome": "J1505",
+     "libelle": "Kinésithérapeute / Ergothérapeute"
+    },
+    {
+     "code_rome": "J1506",
+     "libelle": "Orthophoniste"
+    }
+   ],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025",
+    "debouches": "rome_4_0"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09",
+    "rome": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23244&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -9.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 58.0,
+     "end_value": 49.0,
+     "interpretation": "taux d'accès stable 2023→2025 (58% → 49%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 18,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 120,
+     "end_value": 138,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 98,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 3316,
+     "end_value": 3414,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Diplôme d'État infirmier"
+  },
+  "36000": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "CPGE - MP2I",
+   "etablissement": "Lycée Alain René Lesage",
+   "ville": "Vannes",
+   "region": "Bretagne",
+   "departement": "Morbihan",
+   "rncp": null,
+   "cod_uai": "0560051B",
+   "cod_aff_form": "36000",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36000&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 38.0,
+   "nombre_places": 48,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 38.0,
+    "places": 48,
+    "volumes": {
+     "voeux_totaux": 1204,
+     "voeux_phase_principale": 1181,
+     "classes_phase_principale": 451
+    },
+    "internat_disponible": true,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 37.0,
+      "places": 48,
+      "voeux_totaux": 1454,
+      "voeux_phase_principale": 1454,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 65.0,
+      "pct_b": 25.0,
+      "pct_bours": 15.0,
+      "pct_f": 8.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 54.0,
+      "places": 48,
+      "voeux_totaux": 819,
+      "voeux_phase_principale": 819,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 31.0,
+      "pct_b": 58.0,
+      "pct_bours": 12.0,
+      "pct_f": 21.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 38.0,
+      "places": 48,
+      "voeux_totaux": 1204,
+      "voeux_phase_principale": 1181,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 33.0,
+      "pct_b": 51.0,
+      "pct_bours": 3.0,
+      "pct_f": 22.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 33.0,
+     "b": 51.0,
+     "ab": 15.0,
+     "sans": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 3.0,
+    "femmes_pct": 22.0,
+    "neobacheliers_pct": 98.0,
+    "origine_academique_idf_pct": 54.0
+   },
+   "propositions_totales": 281,
+   "pct_acceptes_debut_pp": 35.0,
+   "fili_code": "CPGE",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "sciences_fondamentales",
+   "form_lib_voe_acc": "Classe préparatoire scientifique",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36000&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": 1.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 37.0,
+     "end_value": 38.0,
+     "interpretation": "taux d'accès stable 2023→2025 (37% → 38%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 48,
+     "end_value": 48,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": -250,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1454,
+     "end_value": 1204,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "CPGE"
+  },
+  "2623": {
+   "source": "parcoursup",
+   "phase": "initial",
+   "nom": "Architecture",
+   "etablissement": "Ecole Nationale Supérieure d'Architecture de Marseille",
+   "ville": "Marseille  3e  Arrondissement",
+   "region": "Provence-Alpes-Côte d'Azur",
+   "departement": "Bouches-du-Rhône",
+   "rncp": null,
+   "cod_uai": "0130236L",
+   "cod_aff_form": "2623",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2623&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 13.0,
+   "nombre_places": 175,
+   "statut": "Public",
+   "niveau": null,
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 13.0,
+    "places": 175,
+    "volumes": {
+     "voeux_totaux": 2971,
+     "voeux_phase_principale": 2971,
+     "classes_phase_principale": 671
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 15.0,
+      "places": 175,
+      "voeux_totaux": 2832,
+      "voeux_phase_principale": 2832,
+      "pct_bg": 85.0,
+      "pct_bt": 9.0,
+      "pct_bp": 6.0,
+      "pct_tb": 32.0,
+      "pct_b": 59.0,
+      "pct_bours": 21.0,
+      "pct_f": 73.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 15.0,
+      "places": 175,
+      "voeux_totaux": 2894,
+      "voeux_phase_principale": 2894,
+      "pct_bg": 85.0,
+      "pct_bt": 8.0,
+      "pct_bp": 6.0,
+      "pct_tb": 31.0,
+      "pct_b": 56.0,
+      "pct_bours": 14.0,
+      "pct_f": 80.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 13.0,
+      "places": 175,
+      "voeux_totaux": 2971,
+      "voeux_phase_principale": 2971,
+      "pct_bg": 75.0,
+      "pct_bt": 18.0,
+      "pct_bp": 7.0,
+      "pct_tb": 19.0,
+      "pct_b": 64.0,
+      "pct_bours": 23.0,
+      "pct_f": 70.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 19.0,
+     "b": 64.0,
+     "ab": 15.0,
+     "sans": 1.0
+    },
+    "bac_type_pct": {
+     "general": 75.0,
+     "techno": 18.0,
+     "pro": 7.0
+    },
+    "acces_pct": {
+     "general": 83.0,
+     "techno": 12.0,
+     "pro": 4.0
+    },
+    "boursiers_pct": 23.0,
+    "femmes_pct": 70.0,
+    "neobacheliers_pct": 75.0,
+    "origine_academique_idf_pct": 36.0
+   },
+   "propositions_totales": 357,
+   "pct_acceptes_debut_pp": 47.0,
+   "fili_code": "Autre formation",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "lettres_arts",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2623&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -2.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 15.0,
+     "end_value": 13.0,
+     "interpretation": "taux d'accès stable 2023→2025 (15% → 13%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 175,
+     "end_value": 175,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 139,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 2832,
+     "end_value": 2971,
+     "interpretation": null
+    }
+   }
+  },
+  "36348": {
+   "source": "parcoursup",
+   "phase": "master",
+   "nom": "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé",
+   "etablissement": "ISIS - Partenaire INSA",
+   "ville": "Castres",
+   "region": "Occitanie",
+   "departement": "Tarn",
+   "rncp": null,
+   "cod_uai": "0811293I",
+   "cod_aff_form": "36348",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 72.0,
+   "nombre_places": 17,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": "Cycle préparatoire intégré - Accès Santé",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 72.0,
+    "places": 17,
+    "volumes": {
+     "voeux_totaux": 160,
+     "voeux_phase_principale": 160,
+     "classes_phase_principale": 115
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 75.0,
+      "places": 7,
+      "voeux_totaux": 132,
+      "voeux_phase_principale": 66,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 33.0,
+      "pct_bours": 0.0,
+      "pct_f": 50.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 62.0,
+      "places": 10,
+      "voeux_totaux": 148,
+      "voeux_phase_principale": 148,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 18.0,
+      "pct_b": 64.0,
+      "pct_bours": 0.0,
+      "pct_f": 77.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 72.0,
+      "places": 17,
+      "voeux_totaux": 160,
+      "voeux_phase_principale": 160,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 7.0,
+      "pct_b": 27.0,
+      "pct_bours": 0.0,
+      "pct_f": 56.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 7.0,
+     "b": 27.0,
+     "ab": 60.0,
+     "sans": 7.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 0.0,
+    "femmes_pct": 56.0,
+    "neobacheliers_pct": 94.0,
+    "origine_academique_idf_pct": 60.0
+   },
+   "propositions_totales": 84,
+   "pct_acceptes_debut_pp": 6.0,
+   "fili_code": "Licence_Las",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -3.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 75.0,
+     "end_value": 72.0,
+     "interpretation": "taux d'accès stable 2023→2025 (75% → 72%)"
+    },
+    "places": {
+     "direction": "up",
+     "delta": 10,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 7,
+     "end_value": 17,
+     "interpretation": "places en hausse 2023→2025 (7 → 17) : ouverture de capacité"
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 28,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 132,
+     "end_value": 160,
+     "interpretation": null
+    }
+   },
+   "type_diplome": "Licence"
+  },
+  "39331": {
+   "source": "parcoursup",
+   "phase": "master",
+   "nom": "Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique",
+   "etablissement": "Université Paris Panthéon Assas",
+   "ville": "Paris  5e  Arrondissement",
+   "region": "Île-de-France",
+   "departement": "Paris",
+   "rncp": null,
+   "cod_uai": "0756305W",
+   "cod_aff_form": "39331",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 15.0,
+   "nombre_places": 35,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": "Collège d'économie filière ingénierie en analyse économique",
+   "admission": {
+    "session": 2025,
+    "taux_acces": 15.0,
+    "places": 35,
+    "volumes": {
+     "voeux_totaux": 2046,
+     "voeux_phase_principale": 2046,
+     "classes_phase_principale": 600
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 19.0,
+      "places": 35,
+      "voeux_totaux": 1774,
+      "voeux_phase_principale": 1774,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 57.0,
+      "pct_b": 43.0,
+      "pct_bours": 27.0,
+      "pct_f": 36.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 12.0,
+      "places": 35,
+      "voeux_totaux": 2228,
+      "voeux_phase_principale": 2228,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 35.0,
+      "pct_b": 58.0,
+      "pct_bours": 32.0,
+      "pct_f": 32.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 15.0,
+      "places": 35,
+      "voeux_totaux": 2046,
+      "voeux_phase_principale": 2046,
+      "pct_bg": 100.0,
+      "pct_bt": 0.0,
+      "pct_bp": 0.0,
+      "pct_tb": 56.0,
+      "pct_b": 41.0,
+      "pct_bours": 11.0,
+      "pct_f": 53.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 56.0,
+     "b": 41.0,
+     "ab": 4.0,
+     "sans": 0.0
+    },
+    "bac_type_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 100.0,
+     "techno": 0.0,
+     "pro": 0.0
+    },
+    "boursiers_pct": 11.0,
+    "femmes_pct": 53.0,
+    "neobacheliers_pct": 75.0,
+    "origine_academique_idf_pct": 74.0
+   },
+   "propositions_totales": 198,
+   "pct_acceptes_debut_pp": 3.0,
+   "fili_code": "Licence",
+   "fili_groupe": "Tous les candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "eco_gestion",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39331&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "stable",
+     "delta_pp": -4.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 19.0,
+     "end_value": 15.0,
+     "interpretation": "taux d'accès stable 2023→2025 (19% → 15%)"
+    },
+    "places": {
+     "direction": "stable",
+     "delta": 0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 35,
+     "end_value": 35,
+     "interpretation": null
+    },
+    "voeux": {
+     "direction": "stable",
+     "delta": 272,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 1774,
+     "end_value": 2046,
+     "interpretation": null
+    }
+   },
+   "insertion_pro": {
+    "source": "insersup_mesr",
+    "granularite": "discipline_region",
+    "match_score": 0.7,
+    "cohorte": "2024",
+    "nombre_sortants": 807,
+    "taux_emploi_6m": 0.4522,
+    "taux_emploi_12m": 0.4766,
+    "taux_emploi_18m": null,
+    "taux_emploi_24m": null,
+    "taux_emploi_30m": null,
+    "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+   },
+   "type_diplome": "Licence"
+  },
+  "11824": {
+   "source": "parcoursup",
+   "phase": "master",
+   "nom": "BTS - Production - Assistance technique d'ingénieur",
+   "etablissement": "Lycée Acajou 2",
+   "ville": "Le Lamentin",
+   "region": "Martinique",
+   "departement": "Martinique",
+   "rncp": null,
+   "cod_uai": "9720695Y",
+   "cod_aff_form": "11824",
+   "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "taux_acces_parcoursup_2025": 100.0,
+   "nombre_places": 12,
+   "statut": "Public",
+   "niveau": "bac+5",
+   "detail": null,
+   "admission": {
+    "session": 2025,
+    "taux_acces": 100.0,
+    "places": 12,
+    "volumes": {
+     "voeux_totaux": 63,
+     "voeux_phase_principale": 53,
+     "classes_phase_principale": 53
+    },
+    "internat_disponible": null,
+    "historique": {
+     "2023": {
+      "year": 2023,
+      "taux_acces": 67.0,
+      "places": 24,
+      "voeux_totaux": 107,
+      "voeux_phase_principale": 99,
+      "pct_bg": 25.0,
+      "pct_bt": 12.0,
+      "pct_bp": 62.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 62.0,
+      "pct_f": 0.0
+     },
+     "2024": {
+      "year": 2024,
+      "taux_acces": 48.0,
+      "places": 24,
+      "voeux_totaux": 78,
+      "voeux_phase_principale": 65,
+      "pct_bg": 0.0,
+      "pct_bt": 80.0,
+      "pct_bp": 20.0,
+      "pct_tb": 0.0,
+      "pct_b": 10.0,
+      "pct_bours": 40.0,
+      "pct_f": 10.0
+     },
+     "2025": {
+      "year": 2025,
+      "taux_acces": 100.0,
+      "places": 12,
+      "voeux_totaux": 63,
+      "voeux_phase_principale": 53,
+      "pct_bg": 25.0,
+      "pct_bt": 75.0,
+      "pct_bp": 0.0,
+      "pct_tb": 0.0,
+      "pct_b": 0.0,
+      "pct_bours": 25.0,
+      "pct_f": 25.0
+     }
+    }
+   },
+   "profil_admis": {
+    "mentions_pct": {
+     "tb": 0.0,
+     "b": 0.0,
+     "ab": 0.0,
+     "sans": 100.0
+    },
+    "bac_type_pct": {
+     "general": 25.0,
+     "techno": 75.0,
+     "pro": 0.0
+    },
+    "acces_pct": {
+     "general": 20.0,
+     "techno": 44.0,
+     "pro": 36.0
+    },
+    "boursiers_pct": 25.0,
+    "femmes_pct": 25.0,
+    "neobacheliers_pct": 100.0,
+    "origine_academique_idf_pct": 100.0
+   },
+   "propositions_totales": 44,
+   "pct_acceptes_debut_pp": 0.0,
+   "fili_code": "BTS",
+   "fili_groupe": "Autres candidats",
+   "selectivite_code": "formation sélective",
+   "domaine": "ingenierie_industrielle",
+   "debouches": [],
+   "provenance": {
+    "admission": "parcoursup_2025",
+    "profil_admis": "parcoursup_2025"
+   },
+   "collected_at": {
+    "parcoursup": "2026-06-09"
+   },
+   "merge_confidence": {
+    "parcoursup": 1.0
+   },
+   "retrieval_eligible": true,
+   "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11824&typeBac=0&originePc=0",
+   "url_type": "direct_parcoursup",
+   "trends": {
+    "taux_acces": {
+     "direction": "up",
+     "delta_pp": 33.0,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 67.0,
+     "end_value": 100.0,
+     "interpretation": "taux d'accès en hausse 2023→2025 (67% → 100%) : formation devenue plus accessible"
+    },
+    "places": {
+     "direction": "down",
+     "delta": -12,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 24,
+     "end_value": 12,
+     "interpretation": "places en baisse 2023→2025 (24 → 12) : fermeture partielle"
+    },
+    "voeux": {
+     "direction": "down",
+     "delta": -44,
+     "start_year": 2023,
+     "end_year": 2025,
+     "start_value": 107,
+     "end_value": 63,
+     "interpretation": "popularité en baisse 2023→2025 (107 → 63 vœux) : attrait en repli"
+    }
+   },
+   "type_diplome": "BTS"
+  }
+ },
+ "textes_avant": {
+  "7596": "Formation : BUT - Informatique | Établissement : I.U.T Clermont Auvergne - site d'Aubière | Ville : Aubière | Diplôme : BUT | Niveau : bac+3 | Phase : initial | Statut : Public | Domaine : autre | Département : Puy-de-dôme | Région : Auvergne-Rhône-Alpes | Admission : taux d'accès 34% — 96 places | Profil des admis (Parcoursup 2025) : mentions au bac : 4 % très bien, 20 % bien, 55 % assez bien, 20 % sans mention — type de bac admis : 84 % bac général, 15 % bac techno, 1 % bac pro — taux d'accès par profil : 85 % pour bac général, 14 % pour bac techno — profil démographique : 26 % boursiers, 7 % femmes, 88 % néobacheliers, 62 % origine académique Île-de-France",
+  "36433": "Formation : Licence - Parcours d'Accès Spécifique Santé (PASS) | Établissement : Université de Lille | Ville : Lille | Niveau : bac+3 | Phase : initial | Statut : Public | Domaine : sante | Département : Nord | Région : Hauts-de-France | Admission : taux d'accès 6% — 60 places | Profil des admis (Parcoursup 2025) : mentions au bac : 52 % très bien, 16 % bien — type de bac admis : 93 % bac général, 7 % bac techno — taux d'accès par profil : 93 % pour bac général, 7 % pour bac techno — profil démographique : 10 % boursiers, 88 % femmes, 97 % néobacheliers, 93 % origine académique Île-de-France | Détail : Parcours Sciences infirmières | Métiers possibles : Médecin généraliste / Médecin spécialiste, Médecin de prévention et santé publique, Sage-femme, Professions paramédicales (aide-soignant, auxiliaire de puériculture), Pharmacien / Préparateur en pharmacie, Audioprothésiste / Opticien / Orthoptiste / Podologue, Infirmier / Infirmière diplômé(e) d'État, Cadre de santé / Directeur de soins, Kinésithérapeute / Ergothérapeute, Orthophoniste",
+  "2139": "Formation : BUT - Génie électrique et informatique industrielle | Établissement : I.U.T Clermont Auvergne - site de Montluçon | Ville : Montluçon | Diplôme : BUT | Niveau : bac+3 | Phase : initial | Statut : Public | Domaine : ingenierie_industrielle | Département : Allier | Région : Auvergne-Rhône-Alpes | Admission : taux d'accès 87% — 39 places | Profil des admis (Parcoursup 2025) : mentions au bac : 8 % bien, 52 % assez bien, 40 % sans mention — type de bac admis : 60 % bac général, 40 % bac techno — taux d'accès par profil : 59 % pour bac général, 40 % pour bac techno, 2 % pour bac pro — profil démographique : 16 % boursiers, 83 % néobacheliers, 64 % origine académique Île-de-France | Insertion apprentissage (Inserjeunes CFA, cumul récent) : taux emploi 6 mois 69%, 12 mois 78%",
+  "22946": "Formation : Certificat de Spécialisation - Organisateur de réception | Établissement : Lycée polyvalent Leopold Elfort | Ville : Mana | Phase : initial | Statut : Public | Domaine : autre | Département : Guyane | Région : Guyane | Admission : 16 places",
+  "9517": "Formation : BUT - Gestion des entreprises et des administrations | Établissement : IUT de Paris - Rives de Seine - Université Paris Cité | Ville : Paris 16e  Arrondissement | Diplôme : BUT | Niveau : bac+3 | Phase : initial | Statut : Public | Domaine : eco_gestion | Département : Paris | Région : Île-de-France | Admission : taux d'accès 6% — 168 places | Profil des admis (Parcoursup 2025) : mentions au bac : 5 % très bien, 41 % bien, 39 % assez bien, 13 % sans mention — type de bac admis : 46 % bac général, 54 % bac techno — taux d'accès par profil : 48 % pour bac général, 52 % pour bac techno — profil démographique : 27 % boursiers, 62 % femmes, 83 % néobacheliers, 96 % origine académique Île-de-France | Insertion apprentissage (Inserjeunes CFA, cumul récent) : taux emploi 6 mois 49%, 12 mois 55%",
+  "39316": "Formation : Licence - Mathématiques -  Accès Santé | Établissement : Université d'Orléans | Ville : Orléans | Diplôme : Licence | Niveau : bac+3 | Phase : initial | Statut : Public | Domaine : sciences_fondamentales | Département : Loiret | Région : Centre-Val de Loire | Admission : taux d'accès 77% — 40 places | Profil des admis (Parcoursup 2025) : mentions au bac : 9 % très bien, 12 % bien, 32 % assez bien, 47 % sans mention — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 18 % boursiers, 50 % femmes, 85 % néobacheliers, 82 % origine académique Île-de-France",
+  "23244": "Formation : D.E Infirmier | Établissement : Centre de formation IFSI-IFAS Hopitaux civils de Colmar | Ville : Colmar | Diplôme : Diplôme d'État infirmier | Phase : initial | Statut : Public | Domaine : sante | Département : Haut-Rhin | Région : Grand Est | Admission : taux d'accès 49% — 138 places | Profil des admis (Parcoursup 2025) : mentions au bac : 6 % très bien, 21 % bien, 49 % assez bien, 25 % sans mention — type de bac admis : 41 % bac général, 37 % bac techno, 23 % bac pro — taux d'accès par profil : 49 % pour bac général, 34 % pour bac techno, 17 % pour bac pro — profil démographique : 18 % boursiers, 90 % femmes, 74 % néobacheliers, 85 % origine académique Île-de-France | Métiers possibles : Médecin généraliste / Médecin spécialiste, Médecin de prévention et santé publique, Sage-femme, Professions paramédicales (aide-soignant, auxiliaire de puériculture), Pharmacien / Préparateur en pharmacie, Audioprothésiste / Opticien / Orthoptiste / Podologue, Infirmier / Infirmière diplômé(e) d'État, Cadre de santé / Directeur de soins, Kinésithérapeute / Ergothérapeute, Orthophoniste",
+  "36000": "Formation : CPGE - MP2I | Établissement : Lycée Alain René Lesage | Ville : Vannes | Diplôme : CPGE | Phase : initial | Statut : Public | Domaine : sciences_fondamentales | Département : Morbihan | Région : Bretagne | Admission : taux d'accès 38% — 48 places | Profil des admis (Parcoursup 2025) : mentions au bac : 33 % très bien, 51 % bien, 15 % assez bien — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 3 % boursiers, 22 % femmes, 98 % néobacheliers, 54 % origine académique Île-de-France",
+  "2623": "Formation : Architecture | Établissement : Ecole Nationale Supérieure d'Architecture de Marseille | Ville : Marseille  3e  Arrondissement | Phase : initial | Statut : Public | Domaine : lettres_arts | Département : Bouches-du-Rhône | Région : Provence-Alpes-Côte d'Azur | Admission : taux d'accès 13% — 175 places | Profil des admis (Parcoursup 2025) : mentions au bac : 19 % très bien, 64 % bien, 15 % assez bien, 1 % sans mention — type de bac admis : 75 % bac général, 18 % bac techno, 7 % bac pro — taux d'accès par profil : 83 % pour bac général, 12 % pour bac techno, 4 % pour bac pro — profil démographique : 23 % boursiers, 70 % femmes, 75 % néobacheliers, 36 % origine académique Île-de-France",
+  "36348": "Formation : Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé | Établissement : ISIS - Partenaire INSA | Ville : Castres | Diplôme : Licence | Niveau : bac+5 | Phase : master | Statut : Public | Domaine : ingenierie_industrielle | Département : Tarn | Région : Occitanie | Admission : taux d'accès 72% — 17 places | Profil des admis (Parcoursup 2025) : mentions au bac : 7 % très bien, 27 % bien, 60 % assez bien, 7 % sans mention — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 56 % femmes, 94 % néobacheliers, 60 % origine académique Île-de-France | Détail : Cycle préparatoire intégré - Accès Santé | Signature école : Institut National des Sciences Appliquées, spécialités informatique cybersécurité génie civil mécanique mathématiques chimie",
+  "39331": "Formation : Licence - Double diplôme - Licence Economie et gestion - Collège d'économie filière ingénierie en analyse économique | Établissement : Université Paris Panthéon Assas | Ville : Paris  5e  Arrondissement | Diplôme : Licence | Niveau : bac+5 | Phase : master | Statut : Public | Domaine : eco_gestion | Département : Paris | Région : Île-de-France | Admission : taux d'accès 15% — 35 places | Profil des admis (Parcoursup 2025) : mentions au bac : 56 % très bien, 41 % bien, 4 % assez bien — type de bac admis : 100 % bac général — taux d'accès par profil : 100 % pour bac général — profil démographique : 11 % boursiers, 53 % femmes, 75 % néobacheliers, 74 % origine académique Île-de-France | Détail : Collège d'économie filière ingénierie en analyse économique | Insertion apprentissage (Inserjeunes CFA, cumul récent) : taux emploi 6 mois 45%, 12 mois 48%",
+  "11824": "Formation : BTS - Production - Assistance technique d'ingénieur | Établissement : Lycée Acajou 2 | Ville : Le Lamentin | Diplôme : BTS | Niveau : bac+5 | Phase : master | Statut : Public | Domaine : ingenierie_industrielle | Département : Martinique | Région : Martinique | Admission : taux d'accès 100% — 12 places | Profil des admis (Parcoursup 2025) : mentions au bac : 100 % sans mention — type de bac admis : 25 % bac général, 75 % bac techno — taux d'accès par profil : 20 % pour bac général, 44 % pour bac techno, 36 % pour bac pro — profil démographique : 25 % boursiers, 25 % femmes, 100 % néobacheliers, 100 % origine académique Île-de-France"
+ }
+}

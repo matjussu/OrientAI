@@ -433,7 +433,8 @@ def _summarize_profil_admis(profil: Any) -> str | None:
         parts: list[str] = []
         mentions = profil.get("mentions_pct")
         if isinstance(mentions, dict):
-            labels = {"tb": "très bien", "b": "bien", "ab": "assez bien", "sans": "sans mention"}
+            labels = {"tbf": "très bien avec félicitations", "tb": "très bien", "b": "bien",
+                      "ab": "assez bien", "sans": "sans mention", "non_renseignee": "mention non renseignée"}
             items = [f"{labels.get(k, k)} {_fmt_pct(v)}"
                      for k, v in mentions.items() if _fmt_pct(v) is not None]
             if items:

@@ -48,6 +48,23 @@ Set de pertinence (`scripts/relevance_set/`, `STATE.md` y dit tout) :
 Dette laissee au lot retrieval : le RRF de la prod reste casse (`_orig_index` absent cote dense,
 RAPPORT l.107). Le lot 0 ne l'a pas corrige, pour que `local` reste le code servi.
 
+## 0 bis. Donnee verticale, etape A livree le 23/09/2026 (Claudette, ordre 2026-09-23-0958)
+
+Rapport complet, chiffres et traces : `results/donnee_etape_a/RAPPORT.md`. ADR-063.
+
+- Nouveau corpus **a part** : `data/processed/formations_etape_a.json` (hors git), sha256
+  `9eae9c25108b`, 53 281 fiches dont 14 252 Parcoursup (13 011 avant). La reference de la prod
+  (`2e4276e6155b`) est intacte. Rejouer : `python -m src.collect.sources_officielles --telecharger`
+  puis `python -m src.collect.corpus_etape_a --reference <formations.json de la prod>`.
+- Texte Parcoursup (`src/rag/texte_parcoursup.py`, appele par `fiche_to_text`) : 0 defaut sur les 10
+  controles (`python -m src.eval.donnee.controles`) contre 12 996 fiches en defaut avant.
+- Banc vertical : chiffres attendus presents dans le texte de leur fiche 317/341 -> 336/341
+  (temoin 6 %) ; audit de 50 fiches contre l'API officielle : 0 ecart non explique.
+- **Piege** : le texte est 4 fois plus long (bloc de definitions commun). Ne pas re-embedder
+  avec ce texte sans mesurer le recall.
+- Dette restante : texte MonMaster sans capacite d'accueil (5 chiffres du banc) ; 53 domaines hors
+  verticale non revus ; developpe des voies de CPGE a verifier ; RRF prod toujours casse.
+
 ## 1. Ce qui est etabli (mesure dans la nuit du 4 au 5 septembre 2026)
 
 Source : `RAPPORT.md` (ce dossier, chaque chiffre cite fichier et ligne), version lisible :

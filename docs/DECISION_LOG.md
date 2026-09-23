@@ -4057,3 +4057,51 @@ visuel plateforme) → besoin d'une sortie STRUCTURÉE exploitable par le front.
 - LOT jugé : `audit_empirique_2026-06-09/results/gate_narrative_forme_LOT.md`
 - Mémoires transverses : `feedback_prompt_additive_vs_anchored` (anti-ancrage),
   `feedback_plan_review_prior_art` (intent_type = prior art réutilisé)
+
+---
+
+## ADR-063 — Donnée verticale, étape A : texte défini et sourcé, domaines par table, identité Parcoursup = cod_aff_form (ordre 2026-09-23-0958, 23/09/2026)
+
+### Contexte
+
+Mesure du 23/09 sur le corpus de la prod (sha256 `2e4276e6155b`) : le texte que lit le modèle
+se trompait sur presque toutes les fiches Parcoursup. La répartition des candidats appelables y
+était présentée comme un « taux d'accès par profil » (12 901 fiches), la part d'admis de la même
+académie comme une part d'« Île-de-France » (10 255), et l'insertion InserSup comme de
+l'« apprentissage Inserjeunes » (3 509). Aucun indicateur n'était défini ni daté. Les domaines
+venaient d'un classement par mots-clés (0 BUT Informatique classé informatique), les villes
+n'étaient pas normalisées, et 1 241 formations sur 14 252 manquaient, dont 244 options PASS.
+Détail et traces : `results/donnee_etape_a/RAPPORT.md`.
+
+### Décision
+
+1. **Texte** : les fiches Parcoursup sont rédigées par `src/rag/texte_parcoursup.py`, appelé par
+   `fiche_to_text` (point d'entrée inchangé). Chaque indicateur porte le libellé du jeu officiel
+   et sa définition, la session et la source sont dites, une valeur absente n'est pas écrite.
+2. **Domaines** : table de correspondance versionnée `data/reference/domaines_parcoursup.csv`
+   (règles numérotées, première qui s'applique gagne, identifiant écrit dans `domaine_regle`).
+   Elle couvre les trois domaines de la démo ; hors table, une fiche garde son domaine.
+   Toute fiche Parcoursup est en phase « initial » ; son niveau vient de l'intitulé quand il
+   l'écrit, sinon de la filière officielle, pas des mots « ingénieur » ou « master ».
+3. **Identité** : une formation Parcoursup est identifiée par son `cod_aff_form`, jamais par la
+   clé (intitulé, établissement, ville) qui fusionnait les options PASS.
+4. **Sources** : jeux officiels bruts hors git, empreintes verrouillées dans
+   `data/reference/sources_officielles.json` ; une source modifiée arrête le pipeline.
+5. **Nouveau corpus à part** (`formations_etape_a.json`), la référence de la prod reste intacte ;
+   la prod ne change qu'au lot suivant, une fois le gain mesuré au banc.
+
+### Alternatives rejetées
+
+1. **Rejouer `run_merge_v3` entier** : impossible en l'état, les bruts de juin ne sont plus sur
+   le disque ; et le dédoublonnage de `stage_dedup` est la cause de la perte des options.
+2. **Corriger les libellés sans changer les données** : ne nommait pas l'option PASS, qui
+   n'existe dans aucun champ du jeu fr-esr-parcoursup ; elle vient de la Cartographie 2025.
+3. **Reclasser toutes les formations par la cascade actuelle** : aurait changé 53 fiches hors du
+   périmètre sans revue (toutes vers `social`) ; signalé, non appliqué.
+
+### Conséquence à surveiller
+
+Le texte Parcoursup passe d'une médiane de 711 à 2 981 caractères, avec un bloc de définitions
+commun à toutes les fiches. `fiche_to_text` sert aussi à l'embedding : ne pas ré-embedder avec ce
+texte sans mesurer le recall. Un texte d'embedding distinct est à trancher à l'étape D ou au lot
+retrieval.

@@ -1,0 +1,681 @@
+{
+  "date": "2026-09-23T10:39:37+02:00",
+  "temoin": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/records",
+  "corpus": "data/processed/formations_etape_a.json",
+  "graine": 20260923,
+  "revision_texte": "code courant",
+  "fiches": 50,
+  "par_verticale": {
+    "informatique": 17,
+    "sante": 16,
+    "maths": 17
+  },
+  "ecarts_non_expliques": 0,
+  "ecarts_expliques": 9,
+  "valeurs_officielles_absentes_du_texte": 0,
+  "lignes": [
+    {
+      "cod_aff_form": "3224",
+      "verticale": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "precision": "spécialité Services informatiques aux organisations",
+      "etablissement": "Lycée saint bénigne",
+      "ville": "Dijon",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3224&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "2588",
+      "verticale": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "precision": "spécialité Services informatiques aux organisations",
+      "etablissement": "Lycée Marie Curie",
+      "ville": "Marseille",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2588&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Marseille",
+          "officiel": "Marseille  5e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "3050",
+      "verticale": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "precision": "spécialité Services informatiques aux organisations",
+      "etablissement": "Lycée Fenelon",
+      "ville": "La Rochelle",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3050&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "3423",
+      "verticale": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "precision": "spécialité Services informatiques aux organisations",
+      "etablissement": "Lycée Bertran De Born",
+      "ville": "Périgueux",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3423&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "8622",
+      "verticale": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "precision": "spécialité Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée polyvalent Niépce-Balleure",
+      "ville": "Chalon-sur-Saône",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8622&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "25822",
+      "verticale": "informatique",
+      "nom": "Formation valant grade de licence - Mathématique - Informatique - Paris - Talents",
+      "precision": null,
+      "etablissement": "Université Paris-Dauphine",
+      "ville": "Paris",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=25822&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Paris",
+          "officiel": "Paris 16e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "36278",
+      "verticale": "informatique",
+      "nom": "Licence professionnelle - Métiers de l'informatique : Applications web - Entièrement en distanciel",
+      "precision": null,
+      "etablissement": "Université de Limoges",
+      "ville": "Limoges",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36278&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "4098",
+      "verticale": "informatique",
+      "nom": "BUT - Informatique",
+      "precision": "spécialité Informatique",
+      "etablissement": "I.U.T de Toulouse",
+      "ville": "Toulouse",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4098&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "2213",
+      "verticale": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "precision": "spécialité Services informatiques aux organisations",
+      "etablissement": "Lycée Honoré d'Estienne d'Orves (Beau-Site)",
+      "ville": "Nice",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=2213&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "10468",
+      "verticale": "informatique",
+      "nom": "BUT - Science des données",
+      "precision": "spécialité Science des données",
+      "etablissement": "I.U.T. d'Avignon",
+      "ville": "Avignon",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=10468&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "9160",
+      "verticale": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "precision": "spécialité Services informatiques aux organisations",
+      "etablissement": "Ecole Nationale De Commerce",
+      "ville": "Paris",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9160&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Paris",
+          "officiel": "Paris 17e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "5201",
+      "verticale": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "precision": "spécialité Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée de Borda",
+      "ville": "Dax",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=5201&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "10548",
+      "verticale": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "precision": "spécialité Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "LGT Jean de Lattre de Tassigny",
+      "ville": "La Roche-sur-Yon",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=10548&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "42873",
+      "verticale": "informatique",
+      "nom": "Formation d'ingénieur Bac + 5 - Double diplôme : ingénieur CY Tech + diplôme établissement partenaire",
+      "precision": null,
+      "etablissement": "Sciences Po Saint-Germain-en-Laye – Institut d'études politiques",
+      "ville": "Saint-Germain-en-Laye",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=42873&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "22934",
+      "verticale": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - Parcours Armée de Terre",
+      "precision": "spécialité Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée Edouard Branly",
+      "ville": "Lyon",
+      "lien_form_psup": null,
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Lyon",
+          "officiel": "Lyon 5e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "42726",
+      "verticale": "informatique",
+      "nom": "Certificat de Spécialisation - Cybersécurité",
+      "precision": null,
+      "etablissement": "Lycée professionnel Leonard De Vinci",
+      "ville": "Bagneux",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=42726&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "47187",
+      "verticale": "informatique",
+      "nom": "Double licence - Economie / Informatique - Intelligence Artificielle : Sciences des Données et des Organisations",
+      "precision": "mention Economie",
+      "etablissement": "Université d'Orléans",
+      "ville": "Orléans",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=47187&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "11023",
+      "verticale": "maths",
+      "nom": "CPGE - PCSI",
+      "precision": "voie PCSI (physique, chimie et sciences de l'ingénieur)",
+      "etablissement": "Lycée Michelet",
+      "ville": "Vanves",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11023&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "8782",
+      "verticale": "maths",
+      "nom": "CPGE - TSI",
+      "precision": "voie TSI (technologie et sciences industrielles)",
+      "etablissement": "Lycée Monge",
+      "ville": "Chambéry",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8782&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "11672",
+      "verticale": "maths",
+      "nom": "CPGE - PCSI",
+      "precision": "voie PCSI (physique, chimie et sciences de l'ingénieur)",
+      "etablissement": "Lycée Francois René De Chateaubriand",
+      "ville": "Rennes",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11672&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "11161",
+      "verticale": "maths",
+      "nom": "CPGE - PTSI",
+      "precision": "voie PTSI (physique, technologie et sciences de l'ingénieur)",
+      "etablissement": "Lycée Le Corbusier",
+      "ville": "Aubervilliers",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=11161&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "4824",
+      "verticale": "maths",
+      "nom": "CPGE - PCSI",
+      "precision": "voie PCSI (physique, chimie et sciences de l'ingénieur)",
+      "etablissement": "Lycée Descartes",
+      "ville": "Tours",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4824&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "3452",
+      "verticale": "maths",
+      "nom": "CPGE - BCPST",
+      "precision": "voie BCPST (biologie, chimie, physique et sciences de la Terre)",
+      "etablissement": "Lycée Victor Hugo",
+      "ville": "Besançon",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3452&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "10586",
+      "verticale": "maths",
+      "nom": "CPGE - BCPST",
+      "precision": "voie BCPST (biologie, chimie, physique et sciences de la Terre)",
+      "etablissement": "Lycée Camille Guérin",
+      "ville": "Poitiers",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=10586&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "9954",
+      "verticale": "maths",
+      "nom": "CPGE - MPSI",
+      "precision": "voie MPSI (mathématiques, physique et sciences de l'ingénieur)",
+      "etablissement": "Lycée Militaire de Saint-Cyr",
+      "ville": "Saint-Cyr-l'École",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9954&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Saint-Cyr-l'École",
+          "officiel": "Saint-Cyr-l'Ecole",
+          "explication": "libellé de la commune dans le COG INSEE (accents, CEDEX, espaces)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "5953",
+      "verticale": "maths",
+      "nom": "CPGE - MPSI",
+      "precision": "voie MPSI (mathématiques, physique et sciences de l'ingénieur)",
+      "etablissement": "Lycée général et technologique Henri Bergson",
+      "ville": "Angers",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=5953&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "4928",
+      "verticale": "maths",
+      "nom": "CPGE - PTSI",
+      "precision": "voie PTSI (physique, technologie et sciences de l'ingénieur)",
+      "etablissement": "Lycée VAUCANSON",
+      "ville": "Grenoble",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=4928&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "10050",
+      "verticale": "maths",
+      "nom": "CPGE - PTSI",
+      "precision": "voie PTSI (physique, technologie et sciences de l'ingénieur)",
+      "etablissement": "Lycée Jules Ferry",
+      "ville": "Versailles",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=10050&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "3025",
+      "verticale": "maths",
+      "nom": "CPGE - MPSI",
+      "precision": "voie MPSI (mathématiques, physique et sciences de l'ingénieur)",
+      "etablissement": "Lycée Jean Dautet",
+      "ville": "La Rochelle",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3025&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "9808",
+      "verticale": "maths",
+      "nom": "CPGE - MPSI",
+      "precision": "voie MPSI (mathématiques, physique et sciences de l'ingénieur)",
+      "etablissement": "Lycée Jacques Amyot",
+      "ville": "Melun",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9808&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "6435",
+      "verticale": "maths",
+      "nom": "CPGE - MPSI",
+      "precision": "voie MPSI (mathématiques, physique et sciences de l'ingénieur)",
+      "etablissement": "Lycée Alain René Lesage",
+      "ville": "Vannes",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=6435&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "9103",
+      "verticale": "maths",
+      "nom": "CPGE - PTSI",
+      "precision": "voie PTSI (physique, technologie et sciences de l'ingénieur)",
+      "etablissement": "Lycée Raspail",
+      "ville": "Paris",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9103&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Paris",
+          "officiel": "Paris 14e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "48593",
+      "verticale": "maths",
+      "nom": "Licence - Mathématiques - Entièrement en distanciel",
+      "precision": "mention Mathématiques",
+      "etablissement": "Aix-Marseille Université",
+      "ville": "Marseille",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=48593&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Marseille",
+          "officiel": "Marseille  7e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "7326",
+      "verticale": "maths",
+      "nom": "CPGE - MPSI",
+      "precision": "voie MPSI (mathématiques, physique et sciences de l'ingénieur)",
+      "etablissement": "Lycée Robespierre",
+      "ville": "Arras",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=7326&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "36348",
+      "verticale": "sante",
+      "nom": "Formation d'ingénieur Bac + 5 -  Cycle préparatoire intégré - Accès Santé",
+      "precision": "majeure Formation d'ingénieur Bac + 5",
+      "etablissement": "ISIS - Partenaire INSA",
+      "ville": "Castres",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36348&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "23263",
+      "verticale": "sante",
+      "nom": "D.E Infirmier",
+      "precision": null,
+      "etablissement": "IFSI CH Chateauroux Le Blanc",
+      "ville": "Châteauroux",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23263&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "9118",
+      "verticale": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "precision": "spécialité Opticien-Lunetier",
+      "etablissement": "Lycée Fresnel",
+      "ville": "Paris",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=9118&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Paris",
+          "officiel": "Paris 15e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "26985",
+      "verticale": "sante",
+      "nom": "Licence - Portail Langues étrangères appliquées - Anglais-Italien",
+      "precision": "majeure Langues étrangères appliquées - Anglais-Italien",
+      "etablissement": "Université Angers",
+      "ville": "Angers",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=26985&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "23172",
+      "verticale": "sante",
+      "nom": "D.E Infirmier",
+      "precision": null,
+      "etablissement": "IFSI CH Narbonne",
+      "ville": "Narbonne",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23172&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "27623",
+      "verticale": "sante",
+      "nom": "Licence - Portail Philosophie",
+      "precision": "majeure Philosophie",
+      "etablissement": "Université Bourgogne Europe (ex université de Bourgogne)",
+      "ville": "Dijon",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=27623&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "31855",
+      "verticale": "sante",
+      "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+      "precision": "option Sciences de la vie et de la terre dispensée sur le campus de Nîmes",
+      "etablissement": "Université de Montpellier, Antenne de Nîmes",
+      "ville": "Nîmes",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=31855&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "31856",
+      "verticale": "sante",
+      "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+      "precision": "option Mathématique et informatique appliquées aux sciences humaines et sociales dispensée sur le campus de Nîmes",
+      "etablissement": "Université de Montpellier, Antenne de Nîmes",
+      "ville": "Nîmes",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=31856&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "28046",
+      "verticale": "sante",
+      "nom": "Certificat de capacité d'Orthophoniste",
+      "precision": null,
+      "etablissement": "Unité de Formation et de Recherche des Sciences Médicales Université de Rennes (EPE)",
+      "ville": "Rennes",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=28046&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "23061",
+      "verticale": "sante",
+      "nom": "D.E Infirmier",
+      "precision": null,
+      "etablissement": "IFSI Bicetre (AP-HP)",
+      "ville": "Le Kremlin-Bicêtre",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23061&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "27291",
+      "verticale": "sante",
+      "nom": "Licence - Portail Physique, chimie",
+      "precision": "majeure Physique, chimie",
+      "etablissement": "Université Marie et Louis Pasteur - Université de Franche-Comté",
+      "ville": "Besançon",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=27291&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "23257",
+      "verticale": "sante",
+      "nom": "D.E Infirmier",
+      "precision": null,
+      "etablissement": "Institut de formation soins infirmiers             Ecole d'aide-soignants",
+      "ville": "Montauban",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23257&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "46371",
+      "verticale": "sante",
+      "nom": "DTS Imagerie médicale et radiologie thérapeutique",
+      "precision": null,
+      "etablissement": "Lycée Francois Truffaut",
+      "ville": "Beauvais",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=46371&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "23393",
+      "verticale": "sante",
+      "nom": "D.E Infirmier",
+      "precision": null,
+      "etablissement": "IFMS - NORD FRANCHE-COMTE",
+      "ville": "Montbéliard",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=23393&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "39486",
+      "verticale": "sante",
+      "nom": "Licence - Portail Economie et gestion - Eco de l'environnement et aménagement du territoire/Expertise éco,financière et managériale/Préparation aux métiers de l'enseignement - Guadeloupe",
+      "precision": "majeure Economie et gestion - Eco de l'environnement et aménagement du territoire/Expertise éco,financière et managériale/Préparation aux métiers de l'enseignement - Guadeloupe",
+      "etablissement": "Université des Antilles - Pôle Guadeloupe",
+      "ville": "Pointe-à-Pitre",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39486&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [],
+      "absents_du_texte": []
+    },
+    {
+      "cod_aff_form": "29392",
+      "verticale": "sante",
+      "nom": "Licence - Portail Psychologie - Sciences Psychologiques",
+      "precision": "majeure Psychologie - Sciences Psychologiques",
+      "etablissement": "Université Paris Cité",
+      "ville": "Paris",
+      "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29392&typeBac=0&originePc=0",
+      "ecarts_non_expliques": [],
+      "ecarts_expliques": [
+        {
+          "champ": "ville",
+          "corpus": "Paris",
+          "officiel": "Paris  6e  Arrondissement",
+          "explication": "arrondissement ramené à la commune (COG INSEE)"
+        }
+      ],
+      "absents_du_texte": []
+    }
+  ]
+}
