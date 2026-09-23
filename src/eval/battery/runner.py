@@ -130,9 +130,18 @@ def assert_same_battery(run_dir: Path, battery_path: Path) -> None:
                          f"({manifest.get('battery_path', 'src/eval/battery/battery.json')}) : choisir un autre --tag")
 
 
+def code_state() -> dict:
+    """Commit du code charge. A lire AU LANCEMENT : un commit fait pendant un passage long ne
+    change pas le code deja importe (23/09 : manifeste ecrit apres un commit intermediaire)."""
+    return {"git_commit": _git("rev-parse", "HEAD"),
+            "git_dirty": bool(_git("status", "--porcelain", "--", "src"))}
+
+
 def update_manifest(run_dir: Path, corpus_sha256: str | None, event: dict,
-                    battery_path: Path = BATTERY_PATH) -> dict:
-    """Ecrit ce qui fixe le resultat d'un passage : code, batterie, corpus, modeles, couts."""
+                    battery_path: Path = BATTERY_PATH, code: dict | None = None) -> dict:
+    """Ecrit ce qui fixe le resultat d'un passage : code, batterie, corpus, modeles, couts.
+    Chaque etape porte le commit du code qui l'a jouee."""
+    code = code or code_state()
     path = run_dir / "manifest.json"
     assert_same_battery(run_dir, battery_path)
     sha = battery_sha256(battery_path)
@@ -141,8 +150,7 @@ def update_manifest(run_dir: Path, corpus_sha256: str | None, event: dict,
     else:
         manifest = {
             "created": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
-            "git_commit": _git("rev-parse", "HEAD"),
-            "git_dirty": bool(_git("status", "--porcelain", "--", "src")),
+            **code,
             "battery_path": _relative(battery_path),
             "battery_sha256": sha,
             "corpus_sha256": corpus_sha256,
@@ -151,6 +159,7 @@ def update_manifest(run_dir: Path, corpus_sha256: str | None, event: dict,
         }
     if corpus_sha256 and not manifest.get("corpus_sha256"):
         manifest["corpus_sha256"] = corpus_sha256
-    manifest["events"].append({"at": dt.datetime.now().astimezone().isoformat(timespec="seconds"), **event})
+    manifest["events"].append({"at": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+                               **code, **event})
     path.write_text(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n")
     return manifest

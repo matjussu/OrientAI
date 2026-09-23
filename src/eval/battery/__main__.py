@@ -67,12 +67,14 @@ def cmd_run(args) -> None:
     from src.eval.battery.runner import (
         assert_same_battery,
         by_turn,
+        code_state,
         load_battery,
         play,
         read_jsonl,
         update_manifest,
     )
 
+    code = code_state()
     names = args.systems.split(",")
     unknown = set(names) - set(registry.SYSTEMS)
     if unknown:
@@ -97,19 +99,20 @@ def cmd_run(args) -> None:
         system = registry.build(name, corpus=corpus, local_run=local_run)
         stats = play(system, battery, run_dir / f"{name}.jsonl", workers=args.workers)
         print(f"[{name}] {stats}")
-        update_manifest(run_dir, corpus.sha256 if corpus else None, {"step": "run", **stats}, battery_path)
+        update_manifest(run_dir, corpus.sha256 if corpus else None, {"step": "run", **stats}, battery_path, code)
 
 
 def cmd_judge(args) -> None:
     from src.eval.battery.judge import judge_run
-    from src.eval.battery.runner import update_manifest
+    from src.eval.battery.runner import code_state, update_manifest
 
+    code = code_state()
     require_keys(set(JUDGE_KEYS[args.judge]))
     run_dir = run_dir_of(args)
     stats = judge_run(run_dir, args.systems.split(","), args.judge, sample=args.sample, workers=args.workers)
     print(f"[juge] {stats}")
     if (run_dir / "manifest.json").exists():
-        update_manifest(run_dir, None, {"step": "judge", **stats}, battery_of(args, run_dir))
+        update_manifest(run_dir, None, {"step": "judge", **stats}, battery_of(args, run_dir), code)
 
 
 def cmd_report(args) -> None:

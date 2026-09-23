@@ -26,6 +26,12 @@ from src.eval.battery.runner import read_jsonl
 
 CRITERIA = ["references", "comprehension", "expression", "couverture"]
 
+# Plafond de sortie du juge, reflexion adaptative comprise. 1 200 (valeur du 05/09) tronquait le
+# JSON sur les reponses longues et fautives : 10 verdicts illisibles sur 67 pour mistral-large-2512
+# le 23/09, tous coupes au milieu de `erreur_detail`. Meme cause pour les 8 verdicts manquants du
+# 05/09 (0 a 3 par systeme) : les 8 `_raw` s'arretent avant l'accolade finale (mesure du 23/09).
+JUDGE_MAX_TOKENS = 4000
+
 RUBRIC = """Tu es un conseiller d'orientation senior du systeme francais (Parcoursup, MonMaster, universites,
 IUT, BTS, CPGE, ecoles, RNCP, insertion). Nous sommes en septembre 2026. Tu evalues en aveugle la
 reponse d'un assistant a un jeune (lyceen ou etudiant). Tu ne sais pas quel systeme l'a produite.
@@ -101,7 +107,7 @@ class OpusJudge:
 
     def __call__(self, prompt: str) -> tuple[dict, dict]:
         r = self.client.messages.create(
-            model=self.model, max_tokens=1200, system=RUBRIC,
+            model=self.model, max_tokens=JUDGE_MAX_TOKENS, system=RUBRIC,
             messages=[{"role": "user", "content": prompt}],
             thinking={"type": "adaptive"}, output_config={"effort": "medium"},
         )
