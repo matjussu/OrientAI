@@ -140,7 +140,21 @@ taux d'appel de l'outil.
   titres, etablissements et villes, exactement comme le `build_prompt` du lot 0, identique pour les 9
   combinaisons. **Limite** : le juge ne voit pas le contenu des fiches ; `erreur_factuelle` se juge donc sur
   sa propre connaissance, et l'exactitude des chiffres est couverte par le critere 1 (deterministe).
-- Lots d'environ 25 tours par sous-agent ; un fichier de verdict par tour (`judge/<id_opaque>.json`).
+- **Juge retenu (v0.2, ecrit le 23/09/2026 17:25, avant la lecture de tout verdict retenu ; demande de Matteo)** :
+  Opus 5.5 (`claude-opus-5-5`), **effort `low`**, agent `juge-aveugle` (`~/projets/.claude/agents/`,
+  commit f4363a5 de ce depot), lance par `claude -p --model claude-opus-5-5 --effort low
+  --setting-sources project --strict-mcp-config`, outils Read et Write seulement, sans CLAUDE.md.
+  Abonnement Claude, pas l'API : le lanceur refuse de demarrer si `ANTHROPIC_API_KEY` est dans
+  l'environnement (temoin `cle_api=0` dans chaque trace ; le lanceur ne source aucun `.env`, celui
+  d'OrientIA contient une cle), et le levier a ete vu rougir. `modelUsage` de chaque sortie = claude-opus-5-5
+  seul, verifie.
+- **Verdicts ecartes** : les 8 premiers juges tournaient sur Opus 5.5 avec l'effort par defaut (high). Ils ont
+  ete arretes avant la fin ; leurs 20 verdicts sont gardes dans `judge/abandon_effort_defaut/` et n'entrent
+  dans aucun calcul. Seul controle fait sur les verdicts du lot 01 retenu : 25 fichiers lisibles sur 25
+  (`valid_scores`), sans lecture des notes.
+- **Limite** : effort faible = moins de verification par verdict ; le taux d'accord du rejugement dit ce que
+  ce reglage coute.
+- Lots d'environ 25 tours par juge ; un fichier de verdict par tour (`judge/verdicts/<id_opaque>.json`).
 - **Charge (v0.1)** : le juge ne note que la generation 1 (9 x 79 = 711 reponses) ; le rejugement de 20 %
   porte sur celle-ci. Le critere 1 (sans juge) utilise les 2 generations. Juger la generation 2 demanderait
   une v0.2 annoncee avant.
