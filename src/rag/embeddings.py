@@ -537,7 +537,7 @@ def fiche_to_text(fiche: dict) -> str:
 
     # Fiches Parcoursup : type, lieu, admission, définitions et source rédigés par
     # `texte_parcoursup` (étape A, 23/09/2026). Autres sources : comportement v4 inchangé.
-    parcoursup = (fiche.get("source") or "").lower() == "parcoursup"
+    parcoursup = (fiche.get("source") or "").lower() in ("parcoursup", "parcoursup_apprentissage")
     blocs = blocs_parcoursup(fiche) if parcoursup else None
     parts = [f"Formation : {fiche.get('nom', '')}"]
     if blocs:
@@ -568,6 +568,8 @@ def fiche_to_text(fiche: dict) -> str:
     # v3 — stats admission retrievables
     if blocs:
         parts.extend(blocs["admission"])
+        # Étape B-1 : coût, alternance, insertion, chacun avec sa source (vide avant l'étape B).
+        parts.extend(blocs["complements"])
     else:
         adm = _format_admission_stats(fiche)
         if adm:
@@ -595,7 +597,9 @@ def fiche_to_text(fiche: dict) -> str:
             parts.append(f"Métiers possibles : {', '.join(libelles)}")
 
     # v3 — Insertion pro retrievable (taux emploi + salaire Céreq ou horizons CFA)
-    ip = fiche.get("insertion_pro")
+    # Une fiche de l'étape B porte `insertion` (diplôme x établissement), écrit dans `complements` :
+    # l'ancien `insertion_pro` (discipline x région, score de correspondance 0,7) n'est plus lu.
+    ip = fiche.get("insertion_pro") if "insertion" not in fiche else None
     if ip:
         ip_text = _format_insertion_pro(ip)
         if ip_text:

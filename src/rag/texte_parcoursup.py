@@ -12,6 +12,7 @@ Règles d'écriture :
 from __future__ import annotations
 
 import math
+import re
 
 SESSION = 2025
 SOURCE = (
@@ -147,6 +148,7 @@ def blocs_parcoursup(fiche: dict) -> dict[str, list[str]]:
 
     - `identite` : type, lieu, académie (après le nom de la formation) ;
     - `admission` : chiffres d'admission, définitions, évolution ;
+    - `complements` : coût, alternance, insertion (étape B-1 ; vide sur un corpus antérieur) ;
     - `fin` : lien vers la fiche officielle et source.
     """
     identite: list[str] = []
@@ -162,6 +164,15 @@ def blocs_parcoursup(fiche: dict) -> dict[str, list[str]]:
         identite.append(f"Diplôme visé : {fiche['niveau']}")
     if fiche.get("selectivite_code"):
         identite.append(f"Sélectivité (Parcoursup) : {fiche['selectivite_code']}")
+
+    if fiche.get("source") == "parcoursup_apprentissage":
+        return {
+            "identite": identite,
+            "admission": blocs_apprentissage(fiche),
+            "complements": blocs_complements(fiche),
+            "fin": ([f"Fiche Parcoursup : {fiche['lien_form_psup']}"] if fiche.get("lien_form_psup") else [])
+            + [f"Source : {SOURCE_APPRENTISSAGE}"],
+        }
 
     admission: list[str] = []
     ligne, definis = _admission(fiche)
@@ -183,4 +194,225 @@ def blocs_parcoursup(fiche: dict) -> dict[str, list[str]]:
     if fiche.get("lien_form_psup"):
         fin.append(f"Fiche Parcoursup : {fiche['lien_form_psup']}")
     fin.append(f"Source : {SOURCE}")
-    return {"identite": identite, "admission": admission, "fin": fin}
+    return {"identite": identite, "admission": admission, "complements": blocs_complements(fiche), "fin": fin}
+
+
+# ── Étape B-1 : coût, alternance, insertion (contrat results/donnee_etape_b/CONTRACT.md) ──────
+# Chaque champ est une enveloppe {statut, valeur, raison, source, millesime, collecte,
+# rattachement}. Une donnée non disponible est écrite comme telle, avec sa raison : le modèle ne
+# doit pas combler un trou par un chiffre de mémoire.
+
+
+# Définitions des indicateurs d'insertion, reprises des descriptions des champs des jeux InserSup
+# et InserJeunes (API, métadonnées lues le 23/09/2026). Le « taux de sortants en emploi stable »
+# d'InserSup n'a pas de description publiée : il reste dans la donnée, il n'est pas écrit dans le
+# texte (sa valeur dépasse souvent le taux d'emploi, son dénominateur n'est donc pas le même, et
+# on ne l'écrit pas sans savoir lequel).
+DEFINITIONS_INSERTION = {
+    "taux_emploi_salarie_fr": (
+        "taux d'emploi salarié en France (InserSup) : part des diplômés en emploi salarié en France "
+        "parmi l'ensemble des diplômés actifs (en emploi ou en recherche) ou inactifs, 6, 12 ou 18 "
+        "mois après le diplôme"
+    ),
+    "salaire_median": "salaire (InserSup) : salaire mensuel net médian en équivalent temps plein, 12 mois après le diplôme",
+    "sortants": "diplômés sortis des études (InserSup) : nombre de sortants 12 mois après le diplôme",
+    "inserjeunes_taux_emploi": (
+        "taux d'emploi (InserJeunes) : parmi les lycéens et étudiants inscrits en dernière année "
+        "d'un cycle d'études professionnel de niveau CAP à BTS et qui ne sont plus en formation en "
+        "France à la rentrée suivante, part de ceux qui sont en emploi salarié 6 ou 12 mois après "
+        "leur sortie d'études (cumul sur deux cohortes de sortants)"
+    ),
+    "inserjeunes_poursuite": (
+        "taux de poursuite d'études (InserJeunes) : parmi les lycéens et étudiants inscrits en "
+        "dernière année d'un cycle d'études professionnel de niveau CAP à BTS, part de ceux qui sont "
+        "toujours en formation en France à la rentrée suivante, y compris en cas de redoublement "
+        "(cumul sur deux années scolaires)"
+    ),
+}
+
+
+def _eur(n) -> str | None:
+    n = _nombre(n)
+    return None if n is None else f"{n} euros"
+
+
+def _taux_fr(val) -> str | None:
+    if isinstance(val, bool) or not isinstance(val, (int, float)) or math.isnan(val):
+        return None
+    # Le taux est écrit comme la source le publie (44,83 reste 44,83), à la virgule française.
+    return (repr(float(val)).rstrip("0").rstrip(".") if val != int(val) else str(int(val))).replace(".", ",") + " %"
+
+
+_SOURCES_COURTES = {
+    "tableau_droits_2026_2027": "tableau ministériel des droits de scolarité 2026-2027",
+    "service_public_f36520": "Service-Public, fiche F36520",
+}
+
+
+def _source_courte(champ: dict) -> str:
+    source = champ.get("source") or {}
+    return _SOURCES_COURTES.get(source.get("id"), source.get("libelle") or "")
+
+
+def _cout(fiche: dict) -> str | None:
+    champ = fiche.get("cout")
+    if not isinstance(champ, dict):
+        return None
+    if champ.get("statut") != "disponible":
+        return f"Coût : non disponible ({champ.get('raison')})"
+    v = champ["valeur"]
+    source = champ["source"]["id"]
+    if source.startswith("onisep"):
+        morceaux = []
+        if v.get("scolarite_total_eur") is not None:
+            morceaux.append(f"{_eur(v['scolarite_total_eur'])} pour l'ensemble de la formation")
+        if v.get("fourchette_eur"):
+            bas, haut = v["fourchette_eur"]
+            morceaux.append(f"de {_eur(bas)} à {_eur(haut)} selon la situation")
+        if v.get("scolarite_annuel_eur") is not None:
+            morceaux.append(f"soit {_eur(v['scolarite_annuel_eur'])} par an")
+        if v.get("gratuit_en_apprentissage"):
+            morceaux.append("gratuit en apprentissage")
+        if v.get("gratuit_boursiers"):
+            morceaux.append("gratuit pour les boursiers")
+        texte = v.get("texte_source") or ""
+        # Onisep publie un « coût de scolarité » ; s'il ne cite ni droits d'inscription ni CVEC,
+        # on ne sait pas s'ils s'y ajoutent, et le texte le dit plutôt que de laisser lire « gratuit ».
+        reserve = (
+            "" if re.search(r"droit|cvec", texte, re.IGNORECASE)
+            else ". Le texte Onisep ne dit pas si des droits d'inscription ou la CVEC s'y ajoutent"
+        )
+        # Règle « même famille » : Onisep publie ce coût pour toutes les formations de ce type au même
+        # lieu, pas nommément pour celle-ci ; le texte le dit.
+        famille = (
+            ". Ce coût est celui que l'Onisep publie pour toutes les formations de ce type dans cet établissement"
+            if champ.get("rattachement") == "onisep_uai_famille" else ""
+        )
+        return (
+            f"Coût de scolarité (Onisep, tarif {v.get('annee_tarif')}) : " + ", ".join(morceaux)
+            + f". Texte publié par l'Onisep : « {texte} »" + famille + reserve
+        )
+    morceaux = []
+    droits = v.get("droits_inscription_eur")
+    if droits == 0:
+        morceaux.append("pas de droits d'inscription dans un BTS public")
+    elif droits is not None:
+        morceaux.append(f"droits d'inscription {_eur(droits)} par an (taux normal fixé par l'État)")
+    if v.get("cvec_eur") is not None:
+        morceaux.append(f"contribution vie étudiante et de campus (CVEC) {_eur(v['cvec_eur'])}")
+    else:
+        morceaux.append("CVEC non disponible")
+    return f"Coût (établissement public, année {v.get('annee_tarif')}, {_source_courte(champ)}) : " + " ; ".join(morceaux)
+
+
+def _alternance(fiche: dict) -> str | None:
+    champ = fiche.get("alternance")
+    if not isinstance(champ, dict):
+        return None
+    if champ.get("statut") != "disponible":
+        return f"Alternance : non disponible ({champ.get('raison')})"
+    formations = champ["valeur"]["formations"]
+    if not formations:
+        return (
+            f"Alternance (Parcoursup apprentissage, {champ.get('millesime')}) : aucune formation "
+            "en apprentissage du même diplôme dans le même établissement ou la même commune"
+        )
+    lieux = []
+    for f in formations:
+        places = f" ({f['capacite']} places)" if f.get("capacite") is not None else ""
+        lieux.append(f"{f.get('etablissement')} à {f.get('ville')}{places}")
+    return (
+        f"Alternance (Parcoursup apprentissage, {champ.get('millesime')}) : ce diplôme existe aussi "
+        "en apprentissage, même établissement ou même commune : " + " ; ".join(lieux)
+    )
+
+
+def _ligne_insertion(ligne: dict, dispositif: str) -> str:
+    p = ligne["perimetre"]
+    ind = ligne["indicateurs"]
+    bits = []
+    if dispositif == "InserSup":
+        for cle, mots in (("taux_emploi_salarie_fr_6m", "6 mois"), ("taux_emploi_salarie_fr_12m", "12 mois"),
+                          ("taux_emploi_salarie_fr_18m", "18 mois")):
+            t = _taux_fr(ind.get(cle))
+            if t:
+                bits.append(f"taux d'emploi salarié en France à {mots} {t}")
+        if ind.get("salaire_median_net_12m_eur") is not None:
+            bits.append(f"salaire net médian à 12 mois {ind['salaire_median_net_12m_eur']} euros par mois")
+        if ligne.get("effectif_sortants") is not None:
+            bits.append(f"{ligne['effectif_sortants']} diplômés sortis des études")
+        return f"{p['diplome']}, {p['etablissement']} (tous sites de l'établissement) : " + ", ".join(bits)
+    for cle, mots in (("taux_emploi_6m", "taux d'emploi à 6 mois"), ("taux_emploi_12m", "taux d'emploi à 12 mois"),
+                      ("taux_poursuite_etudes", "taux de poursuite d'études")):
+        t = _taux_fr(ind.get(cle))
+        if t:
+            bits.append(f"{mots} {t}")
+    return f"{p['diplome']} : " + (", ".join(bits) if bits else "taux non diffusés")
+
+
+def _insertion(fiche: dict) -> list[str]:
+    champ = fiche.get("insertion")
+    if not isinstance(champ, dict):
+        return []
+    if champ.get("statut") != "disponible":
+        return [f"Insertion professionnelle : non disponible ({champ.get('raison')})"]
+    v = champ["valeur"]
+    dispositif = v["dispositif"]
+    promo = v["promotion"].replace(",", " et ")
+    entete = (
+        f"Insertion professionnelle ({dispositif}, promotion {promo}, ensemble des régimes)"
+        if dispositif == "InserSup" else f"Insertion professionnelle ({dispositif}, {promo}, voie scolaire)"
+    )
+    lignes = " ; ".join(_ligne_insertion(ligne, dispositif) for ligne in v["lignes"])
+    if dispositif == "InserSup":
+        avec_salaire = any(l["indicateurs"].get("salaire_median_net_12m_eur") is not None for l in v["lignes"])
+        cles = ("taux_emploi_salarie_fr",) + (("salaire_median",) if avec_salaire else ()) + ("sortants",)
+    else:
+        cles = ("inserjeunes_taux_emploi", "inserjeunes_poursuite")
+    return [f"{entete} : {lignes}", "Définitions (libellés officiels) : " + " ; ".join(DEFINITIONS_INSERTION[k] for k in cles)]
+
+
+def blocs_complements(fiche: dict) -> list[str]:
+    """Coût, alternance et insertion d'une fiche (étape B-1), dans cet ordre."""
+    sortie = [x for x in (_cout(fiche), _alternance(fiche)) if x]
+    sortie.extend(_insertion(fiche))
+    return sortie
+
+
+# Libellés officiels du jeu fr-esr-parcoursup-apprentissage (API, métadonnées lues le 23/09/2026).
+DEFINITIONS_APPRENTISSAGE = {
+    "capacite": "capacité : capacité de l'établissement par formation",
+    "candidats": "candidats : effectif total des candidats pour la formation",
+    "propositions": (
+        "propositions : effectif total des candidats ayant reçu une proposition d'admission de la "
+        "part de l'établissement"
+    ),
+    "recherche_contrat": "vœux en recherche de contrat : nombre de vœux placés en « Recherche de contrat » par la formation",
+}
+
+
+def blocs_apprentissage(fiche: dict) -> list[str]:
+    """Chiffres d'une formation en apprentissage : pas de taux d'accès (non publié)."""
+    a = fiche.get("apprentissage") or {}
+    morceaux, definis = [], []
+    for cle, gabarit, definition in (
+        ("capacite", "{} places", "capacite"), ("candidats", "{} candidats", "candidats"),
+        ("propositions", "{} propositions d'admission", "propositions"),
+        ("voeux_recherche_contrat", "{} vœux en recherche de contrat", "recherche_contrat"),
+    ):
+        n = _nombre(a.get(cle))
+        if n is not None:
+            morceaux.append(gabarit.format(n))
+            definis.append(definition)
+    sortie = ["Voie : apprentissage (formation en alternance, inscrite sur Parcoursup apprentissage)"]
+    if morceaux:
+        sortie.append(f"Admission (Parcoursup apprentissage, session {a.get('session', SESSION)}) : " + " ; ".join(morceaux))
+        sortie.append("Définitions (libellés officiels Parcoursup apprentissage) : " + " ; ".join(DEFINITIONS_APPRENTISSAGE[k] for k in definis))
+    sortie.append("Taux d'accès : non publié pour les formations en apprentissage")
+    return sortie
+
+
+SOURCE_APPRENTISSAGE = (
+    f"Parcoursup apprentissage, session {SESSION} : jeu open data fr-esr-parcoursup-apprentissage "
+    "du ministère de l'Enseignement supérieur (SIES)"
+)
