@@ -203,7 +203,20 @@ def test_fiche_apprentissage_creee(par_code):
     assert fiche["apprentissage"]["candidats"] == int(ligne["voe_tot"])
     assert fiche["apprentissage"]["voeux_recherche_contrat"] == int(ligne["nb_rech_con"])
     assert fiche["taux_acces_parcoursup_2025"] is None and "alternance" not in fiche
-    assert fiche["cout"]["statut"] == fiche["insertion"]["statut"] == "non_disponible"
+    assert fiche["cout"]["statut"] == "disponible" and fiche["cout"]["source"]["id"] == "code_travail_l6211_1"
+    assert fiche["cout"]["valeur"]["gratuit_pour_l_apprenti"] is True
+    assert fiche["insertion"]["statut"] == "non_disponible"
+
+
+def test_texte_apprentissage_cite_le_code_du_travail(par_code):
+    t = fiche_to_text(par_code["28094"])
+    assert "« La formation est gratuite pour l'apprenti et pour son représentant légal. »" in t
+    assert "Code du travail, article L6211-1" in t and "ne dit rien des autres frais" in t
+
+
+def test_regle_apprentissage_jamais_sur_une_fiche_scolaire(par_code):
+    assert all(f["cout"]["source"]["id"] != "code_travail_l6211_1"
+               for f in par_code.values() if f["source"] == "parcoursup")
 
 
 # ── insertion ────────────────────────────────────────────────────────────────────────────────
@@ -329,3 +342,60 @@ def test_controle_raison_manquante(par_code):
 def test_non_disponible_exige_une_raison(ref):
     with pytest.raises(ValueError):
         ref.non_disponible("")
+
+
+# ── alternance : texte regroupé (retour de Jarvis du 23/09/2026 sur la PR #179) ──────────────
+def _avec_formations(fiche: dict, formations: list[dict]) -> dict:
+    """Levier explicite : remplace la liste des formations rattachées d'une fiche réelle."""
+    f = copy.deepcopy(fiche)
+    f["alternance"]["valeur"] = {"existe_en_apprentissage": True, "formations": formations}
+    return f
+
+
+def _formation(cod, etab, cap, cfa=None, precision=None, par="commune"):
+    return {"cod_aff_form": cod, "etablissement": etab, "ville": "Paris", "capacite": cap,
+            "cfa_partenaire": cfa, "precision": precision, "rattachee_par": par}
+
+
+def test_partenaire_lu_dans_le_libelle_complet():
+    from src.collect.alternance import partenaire
+    base = {"g_ea_lib_vx": "Lycée Raspail", "lib_for_voe_ins": "BTS - Production - Electrotechnique - en apprentissage"}
+    assert partenaire(base | {"lib_comp_voe_ins": "Lycée Raspail - CFA académique de Paris - BTS - Production - Electrotechnique - en apprentissage"}) == "CFA académique de Paris"
+    assert partenaire(base | {"lib_comp_voe_ins": "CFA X - Lycée Raspail - BTS - Production - Electrotechnique - en apprentissage"}) == "CFA X"
+    assert partenaire(base | {"lib_comp_voe_ins": "Lycée Raspail - BTS - Production - Electrotechnique - en apprentissage"}) is None
+
+
+def test_meme_etablissement_deux_cfa_regroupes(par_code):
+    f = _avec_formations(par_code["8882"], [_formation("1", "Lycée R", 10, "CFA A"), _formation("2", "Lycée R", 10, "CFA B")])
+    t = fiche_to_text(f)
+    assert "Lycée R à Paris (2 formations, 20 places : avec CFA A : 10 places / avec CFA B : 10 places)" in t
+    assert controler_etape_b(f, t) == []
+
+
+def test_formations_indistinctes_nommees_par_numero(par_code):
+    f = _avec_formations(par_code["8882"], [_formation("44011", "CFA E", 30), _formation("44105", "CFA E", 30)])
+    t = fiche_to_text(f)
+    assert "le jeu ouvert ne dit pas ce qui les distingue" in t and "n° 44011" in t and "n° 44105" in t
+    assert "alternance_doublon" not in controler_etape_b(f, t)
+
+
+def test_plus_de_cinq_etablissements_resume(par_code):
+    fs = [_formation(str(i), f"Lycée {i}", 10) for i in range(6)] + [_formation("9", "Lycée Saint Michel", 12, par="uai")]
+    f = _avec_formations(par_code["8882"], fs)
+    t = fiche_to_text(f)
+    assert "7 formations en apprentissage du même diplôme dans 7 établissements de la même commune (Paris), 72 places au total" in t
+    assert "dans le même établissement : Lycée Saint Michel à Paris (12 places)" in t
+    assert "Lycée 3" not in t and controler_etape_b(f, t) == []
+
+
+@pytest.mark.parametrize("ajout, defaut", [
+    (" ; ".join(f"Lycée {i} à Paris (10 places)" for i in range(6)), "alternance_liste_trop_longue"),
+    ("INSTA à Paris (120 places) ; INSTA à Paris (120 places)", "alternance_doublon"),
+])
+def test_controle_alternance_rougit(par_code, ajout, defaut):
+    """Texte de l'ancienne forme (liste plate), réécrit par levier : le contrôle doit le voir."""
+    f = par_code["8882"]
+    t = fiche_to_text(f)
+    ancien = next(p for p in t.split(" | ") if p.startswith("Alternance"))
+    t = t.replace(ancien, "Alternance (Parcoursup apprentissage, session 2025) : ce diplôme existe aussi en apprentissage, même établissement ou même commune : " + ajout)
+    assert defaut in controler_etape_b(f, t)

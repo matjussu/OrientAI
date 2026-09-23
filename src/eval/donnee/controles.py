@@ -67,6 +67,9 @@ CHAMPS_B = ("cout", "alternance", "insertion")
 # ne porte pas le champ `alternance` (contrat, section 4).
 CHAMPS_B_PAR_SOURCE = {"parcoursup": CHAMPS_B, "parcoursup_apprentissage": ("cout", "insertion")}
 _LIGNE_COUT = re.compile(r"Coût[^|]*")
+# Au-delà, le texte doit résumer (`texte_parcoursup.MAX_ETABLISSEMENTS_LISTES`) ; la valeur est
+# recopiée ici pour que le contrôle ne dépende pas du code qu'il contrôle.
+MAX_ENTREES_ALTERNANCE = 5
 
 
 def controler_etape_b(fiche: dict, texte: str) -> list[str]:
@@ -96,10 +99,23 @@ def controler_etape_b(fiche: dict, texte: str) -> list[str]:
                 if m and f"{m} euros" not in ligne:
                     defauts.append("cout_montant_non_ecrit")
                     break
-            if not re.search(r"Onisep, tarif \d{4}|tableau ministériel|Service-Public", ligne):
+            if not re.search(r"Onisep, tarif \d{4}|tableau ministériel|Service-Public|Code du travail, article L6211-1", ligne):
                 defauts.append("cout_sans_source")
         elif "non disponible" not in ligne:
             defauts.append("cout_non_disponible_non_dit")
+    ligne_alt = next((m for m in texte.split(" | ") if m.startswith("Alternance")), "")
+    if ligne_alt and " : " in ligne_alt:
+        # Entrées listées : établissements séparés par « ; », variantes d'un établissement par « / ».
+        corps = ligne_alt.split(" : ", 1)[1]
+        # La phrase d'introduction est retirée : collée à la première entrée, elle cacherait un
+        # doublon qui la concerne (trouvé par test_controle_alternance_rougit, 23/09/2026).
+        corps = re.sub(r"^ce diplôme existe aussi en apprentissage, même établissement ou même commune : ", "", corps)
+        etablissements = [e.strip() for e in re.split(r" ; (?:dans le même établissement : )?", corps)]
+        if len([e for e in etablissements if "places" in e or "capacité" in e]) > MAX_ENTREES_ALTERNANCE:
+            defauts.append("alternance_liste_trop_longue")
+        variantes = [v.strip() for e in etablissements for v in re.split(r" / |\(\d+ formations[^:]*: ", e)]
+        if len(etablissements) != len(set(etablissements)) or len(variantes) != len(set(variantes)):
+            defauts.append("alternance_doublon")
     if "insertion" in fiche and ("médiane régionale" in texte or "Insertion pro (source" in texte):
         defauts.append("insertion_approchee_ecrite")
     if "emploi stable" in texte:

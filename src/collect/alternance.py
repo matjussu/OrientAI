@@ -53,6 +53,22 @@ def cle_diplome(filiere_agregee: str | None, filiere_detaillee: str | None) -> t
     return _norme(filiere_agregee), _norme(filiere_detaillee)
 
 
+def partenaire(ligne: dict) -> str | None:
+    """Ce que le libellé complet Parcoursup ajoute à l'établissement, le plus souvent le CFA
+    partenaire (« Lycée Raspail - CFA académique de Paris - BTS ... »). Deux formes existent,
+    établissement avant ou après le partenaire. Mesure du 23/09/2026 : 1 535 formations sur 11 536
+    en ont un ; c'est lui qui distingue, dans une même commune, deux formations du même lycée."""
+    comp, etab, form = (" ".join((ligne.get(k) or "").split()) for k in ("lib_comp_voe_ins", "g_ea_lib_vx", "lib_for_voe_ins"))
+    milieu = comp[: -len(form) - 3] if form and comp.endswith(" - " + form) else comp
+    if not milieu or milieu == etab:
+        return None
+    if milieu.startswith(etab + " - "):
+        return milieu[len(etab) + 3:]
+    if milieu.endswith(" - " + etab):
+        return milieu[: -len(etab) - 3]
+    return milieu
+
+
 def _entier(v) -> int | None:
     if v is None or (isinstance(v, str) and not v.strip()):
         return None
@@ -103,6 +119,8 @@ class Alternance:
                 "etablissement": _texte(ligne.get("g_ea_lib_vx")),
                 "ville": ligne.get("_ville"),
                 "capacite": _entier(ligne.get("capa_fin")),
+                "cfa_partenaire": partenaire(ligne),
+                "precision": _texte(ligne.get("detail_forma")),
                 "rattachee_par": par,
             })
         formations.sort(key=lambda f: (f["rattachee_par"] != "uai", f["cod_aff_form"]))

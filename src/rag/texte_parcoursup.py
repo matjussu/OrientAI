@@ -262,6 +262,12 @@ def _cout(fiche: dict) -> str | None:
         return f"Coût : non disponible ({champ.get('raison')})"
     v = champ["valeur"]
     source = champ["source"]["id"]
+    if source == "code_travail_l6211_1":
+        return (
+            f"Coût de la formation en apprentissage (Code du travail, article L6211-1) : « {v.get('texte_source')} » "
+            "Cette phrase porte sur la formation seulement ; elle ne dit rien des autres frais (logement, "
+            "transport, équipement)"
+        )
     if source.startswith("onisep"):
         morceaux = []
         if v.get("scolarite_total_eur") is not None:
@@ -305,6 +311,44 @@ def _cout(fiche: dict) -> str | None:
     return f"Coût (établissement public, année {v.get('annee_tarif')}, {_source_courte(champ)}) : " + " ; ".join(morceaux)
 
 
+# Au-delà de ce nombre d'établissements, le texte résume au lieu de lister (demande de Jarvis du
+# 23/09/2026 : une liste de 27 formations pour un BTS SIO à Paris noyait le reste de la fiche).
+MAX_ETABLISSEMENTS_LISTES = 5
+
+
+def _places(formations: list[dict]) -> str:
+    connues = [f["capacite"] for f in formations if f.get("capacite") is not None]
+    if not connues:
+        return "capacité non publiée"
+    total = sum(connues)
+    manque = len(formations) - len(connues)
+    return f"{total} places" + (f" (capacité non publiée pour {manque})" if manque else "")
+
+
+def _variante(f: dict) -> str:
+    """Ce qui distingue une formation d'une autre du même établissement."""
+    if f.get("cfa_partenaire") and f.get("precision"):
+        return f"avec {f['cfa_partenaire']}, {f['precision']}"
+    if f.get("cfa_partenaire"):
+        return f"avec {f['cfa_partenaire']}"
+    if f.get("precision"):
+        return f["precision"]
+    return f"formation Parcoursup n° {f['cod_aff_form']}"
+
+
+def _etablissement(nom_lieu: str, formations: list[dict]) -> str:
+    if len(formations) == 1:
+        f = formations[0]
+        detail = [x for x in (f.get("cfa_partenaire") and f"avec {f['cfa_partenaire']}", f.get("precision")) if x]
+        return f"{nom_lieu} ({', '.join(detail + [_places(formations)])})"
+    variantes = [f"{_variante(f)} : {_places([f])}" for f in formations]
+    # Deux formations que rien ne distingue dans le jeu ouvert restent deux formations : elles sont
+    # nommées par leur numéro Parcoursup, et le texte dit que la différence n'est pas publiée.
+    muettes = all(v.startswith("formation Parcoursup n°") for v in variantes)
+    reserve = ", le jeu ouvert ne dit pas ce qui les distingue" if muettes else ""
+    return f"{nom_lieu} ({len(formations)} formations{reserve}, {_places(formations)} : " + " / ".join(variantes) + ")"
+
+
 def _alternance(fiche: dict) -> str | None:
     champ = fiche.get("alternance")
     if not isinstance(champ, dict):
@@ -312,19 +356,29 @@ def _alternance(fiche: dict) -> str | None:
     if champ.get("statut") != "disponible":
         return f"Alternance : non disponible ({champ.get('raison')})"
     formations = champ["valeur"]["formations"]
+    entete = f"Alternance (Parcoursup apprentissage, {champ.get('millesime')})"
     if not formations:
         return (
-            f"Alternance (Parcoursup apprentissage, {champ.get('millesime')}) : aucune formation "
-            "en apprentissage du même diplôme dans le même établissement ou la même commune"
+            f"{entete} : aucune formation en apprentissage du même diplôme dans le même établissement "
+            "ou la même commune"
         )
-    lieux = []
+    groupes: dict[str, list[dict]] = {}
     for f in formations:
-        places = f" ({f['capacite']} places)" if f.get("capacite") is not None else ""
-        lieux.append(f"{f.get('etablissement')} à {f.get('ville')}{places}")
-    return (
-        f"Alternance (Parcoursup apprentissage, {champ.get('millesime')}) : ce diplôme existe aussi "
-        "en apprentissage, même établissement ou même commune : " + " ; ".join(lieux)
+        groupes.setdefault(f"{f.get('etablissement')} à {f.get('ville')}", []).append(f)
+    if len(groupes) <= MAX_ETABLISSEMENTS_LISTES:
+        return (
+            f"{entete} : ce diplôme existe aussi en apprentissage, même établissement ou même commune : "
+            + " ; ".join(_etablissement(lieu, fs) for lieu, fs in groupes.items())
+        )
+    villes = sorted({f.get("ville") for f in formations if f.get("ville")})
+    resume = (
+        f"{entete} : {len(formations)} formations en apprentissage du même diplôme dans "
+        f"{len(groupes)} établissements de la même commune ({', '.join(villes)}), {_places(formations)} au total"
     )
+    memes = {lieu: fs for lieu, fs in groupes.items() if any(f.get("rattachee_par") == "uai" for f in fs)}
+    if memes:
+        resume += " ; dans le même établissement : " + " ; ".join(_etablissement(lieu, fs) for lieu, fs in memes.items())
+    return resume
 
 
 def _ligne_insertion(ligne: dict, dispositif: str) -> str:
