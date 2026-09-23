@@ -1,0 +1,5621 @@
+{
+ "n_questions": 135,
+ "labels": [
+  {
+   "qid": "fact-016",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:16735",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16736",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16990",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16991",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16992",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16993",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17023",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17024",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16994",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule la fiche Parcoursup du lycee Baggio (Lille) porte le taux d'acces ; les prepas integrees lilloises et la fiche PCSI generique sont des appuis partiels."
+  },
+  {
+   "qid": "fact-017",
+   "relevant": [
+    {
+     "fiche_id": "insersup:master-lmd:sciences-economiques-gestion:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-economiques-gestion:occitanie",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche prepa ECG ni stat d'insertion CPGE : seules les stats insertion eco-gestion en Occitanie sont partiellement utiles (bon domaine et bonne region, pas la bonne formation)."
+  },
+  {
+   "qid": "fact-018",
+   "relevant": [
+    {
+     "fiche_id": "idx:12793",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_2:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_2:occitanie",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La fiche MIAGE Nantes est l'ancre exacte ; aucune fiche salaire cadres pour Pays de la Loire dans les candidates, les fiches cadres (group 2) d'autres regions sont la bonne categorie de stat mais pas le bon lieu."
+  },
+  {
+   "qid": "fact-019",
+   "relevant": [
+    {
+     "fiche_id": "idx:11104",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11224",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11227",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11302",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11306",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11307",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11308",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11309",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11310",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11311",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:10148",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39485",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucun master IA a Strasbourg dans les candidates ; idx:8999 (Strasbourg) est un master audit-gestion, homonymie sur 'intelligence', ecarte. Les masters droit de l'IA sont un autre domaine."
+  },
+  {
+   "qid": "fact-020",
+   "relevant": [
+    {
+     "fiche_id": "idx:9409",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:5718",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5708",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5709",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5710",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5711",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5712",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5713",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5714",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5715",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5716",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5717",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5719",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5720",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5721",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les corrections frais EPITA/INSEEC concernent d'autres etablissements, ecartees malgre le theme 'frais de scolarite'."
+  },
+  {
+   "qid": "fact-021",
+   "relevant": [
+    {
+     "fiche_id": "idx:28570",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:28411",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28412",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28413",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28414",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17330",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.38",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les diplomes IBODE et IPA (pratique avancee) sont des specialisations post-DE, pas la formation Parcoursup demandee ; PASS Nimes est une autre filiere."
+  },
+  {
+   "qid": "fact-022",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-humaines-et-sociales:centre-val-de-loire",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "BUT = successeur du DUT : la fiche BUT GEA de l'IUT de Bourges matche formation+lieu ; la stat insertion BUT en Centre-Val de Loire est regionale, pas Bourges precisement. Les stats BTS/bac pro sont un autre diplome."
+  },
+  {
+   "qid": "fact-023",
+   "relevant": [
+    {
+     "fiche_id": "insee_salaan:cs:38",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune ecole d'ingenieurs post-bac a Annecy dans les candidates ; la fiche INSEE PCS 38 (ingenieurs) est la bonne categorie de salaire mais nationale, pas Annecy."
+  },
+  {
+   "qid": "fact-024",
+   "relevant": [
+    {
+     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "grade": 2
+    },
+    {
+     "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+     "grade": 1
+    },
+    {
+     "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "fact-025",
+   "relevant": [
+    {
+     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Question sur 2025 mais le corpus ne couvre que le calendrier 2026 : la fiche confirmation 2026 est le meilleur appui partiel (meme jalon, mauvaise annee), pas un grade 2."
+  },
+  {
+   "qid": "comp-001",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule l'option BUT Informatique est couverte (IUT Valence) ; aucune fiche licence d'informatique dans les candidates, le reste est du bruit CFA/RNCP."
+  },
+  {
+   "qid": "comp-002",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:5950",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5951",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5952",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5953",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5954",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5955",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5956",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5957",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5958",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5959",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5960",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5961",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5962",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5963",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5964",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche prepa MPSI dans les candidates ; les offres alternance GEII (labonnealternance) sont des variantes du BUT GEII sans les stats demandees, grade 1."
+  },
+  {
+   "qid": "comp-003",
+   "relevant": [
+    {
+     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-a-solutions-",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-b-solutions-",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:systemes-numeriques-option-a-informatique-et-reseaux",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les stats insertion France du BTS SIO (options A et B) repondent directement pour l'option BTS SIO ; aucune fiche BUT Informatique dans les candidates. BTS SN-IR = BTS voisin, pas SIO. idx:-1 (DROIT COMPARE) = collision lexicale sur 'compare'."
+  },
+  {
+   "qid": "comp-004",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule l'option Sciences Po est couverte (bachelor IEP Menton) ; aucune licence de droit dans les candidates, les masters 'droit compare' sont une collision lexicale sur 'compare'."
+  },
+  {
+   "qid": "comp-005",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:normandie",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "MIAGE Antilles = option exacte (pas de lieu contraint) ; la stat insertion diplome d'ingenieurs est la bonne option mais limitee a la Normandie, donc partielle."
+  },
+  {
+   "qid": "fact-001",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucun BUT Informatique a Lyon dans le lot, seul le meme BUT en Martinique est partiel; les masters informatique lyonnais ne repondent pas a une question de taux d'acces post-bac."
+  },
+  {
+   "qid": "fact-002",
+   "relevant": [
+    {
+     "fiche_id": "idx:26097",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26119",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5950",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5977",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5978",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5979",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5951",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5952",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5953",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5954",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5955",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5956",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5957",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5958",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:electrotechnique-energie-equipements-communicants:ile-de-france",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche ne porte la statistique d'insertion du BUT GEII : les fiches formation (meme en Ile-de-France) et la stat bac pro electrotechnique IDF restent partielles."
+  },
+  {
+   "qid": "fact-003",
+   "relevant": [
+    {
+     "fiche_id": "idx:26656",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8005",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8020",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8032",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8046",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8057",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26611",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26673",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Le salaire median demande n'existe dans aucune candidate : les fiches BUT TC Bordeaux exactes restent grade 1 car elles ne portent pas la statistique."
+  },
+  {
+   "qid": "fact-004",
+   "relevant": [
+    {
+     "fiche_id": "idx:26288",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:6225",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6236",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "idx:26288 est le BUT GEA de l'IUT de Lille (Villeneuve-d'Ascq = metropole lilloise), source parcoursup qui porte la capacite d'accueil."
+  },
+  {
+   "qid": "fact-005",
+   "relevant": [],
+   "none_relevant": true,
+   "note": "Aucune candidate ne concerne le BTS SIO ni Toulouse ; les corrections EPITA/INSEEC portent sur d'autres ecoles."
+  },
+  {
+   "qid": "fact-006",
+   "relevant": [
+    {
+     "fiche_id": "idx:22979",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:22988",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:23040",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:23117",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:31516",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:commerce-international:pays-de-la-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:commerce-international",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4877",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4878",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4879",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4880",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les fiches parcoursup BTS CI a Nantes portent le taux d'acces demande ; les masters LEA commerce international a Nantes sont une autre formation, omis."
+  },
+  {
+   "qid": "fact-007",
+   "relevant": [
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:grand-est",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:communication",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:normandie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:pays-de-la-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:nouvelle-aquitaine",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:centre-val-de-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:auvergne-rhone-alpes",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:provence-alpes-cote-d-azur",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_region_diplome:grand-est:bts",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6356",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6361",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4953",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4996",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La fiche Grand Est est la meilleure disponible mais donne un taux a 12 mois au grain regional, pas la stat a 6 mois pour Strasbourg, donc grade 1 strict ; les BTS 'etudes de realisation d'un projet de communication' sont une filiere industries graphiques, omis."
+  },
+  {
+   "qid": "fact-008",
+   "relevant": [
+    {
+     "fiche_id": "insee_salaan:group_3:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_2:bretagne",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucun salaire par formation : seuls les salaires INSEE Bretagne des CSP plausibles apres licence info (cadres, professions intermediaires) sont un proxy partiel ; les masters info a Rennes ne repondent pas a la question."
+  },
+  {
+   "qid": "fact-009",
+   "relevant": [],
+   "none_relevant": true,
+   "note": "Uniquement des masters de droit a Montpellier : aucune fiche de la licence de droit ni de capacite d'accueil, trou de corpus."
+  },
+  {
+   "qid": "fact-010",
+   "relevant": [],
+   "none_relevant": true,
+   "note": "Rien sur une licence de psychologie ni sur Bourges ; les corrections de frais EPITA/INSEEC concernent d'autres etablissements."
+  },
+  {
+   "qid": "fact-011",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La double licence Eco/MIASHS est a Toulouse, pas a Annecy : base d'alternative seulement."
+  },
+  {
+   "qid": "fact-012",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:licence-generale:sciences-de-la-vie-de-la-terre-et-de-l-univers:bretagne",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Pas de stat insertion pour la licence generale de maths en Bretagne : le portail MPMEI Brest et les insersup Bretagne voisines (licence pro sciences fondamentales, licence generale SVT) sont partiels."
+  },
+  {
+   "qid": "fact-013",
+   "relevant": [
+    {
+     "fiche_id": "insersup:licence-generale:staps:auvergne-rhone-alpes",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:32811",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "InserSup licence generale STAPS en Auvergne-Rhone-Alpes est la statistique demandee au seul grain disponible (region contenant Lyon) ; les fiches INSEE presentes couvrent d'autres regions, omises."
+  },
+  {
+   "qid": "fact-014",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La double licence Droit/Eco-gestion d'Assas n'est pas la licence economie-gestion simple demandee ; les masters d'economie franciliens sont hors sujet."
+  },
+  {
+   "qid": "fact-015",
+   "relevant": [
+    {
+     "fiche_id": "idx:16717",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16718",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17084",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17090",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16949",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16950",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16952",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17042",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune CPGE MPSI localisee a Bordeaux : fiches MPSI generiques sans lieu et cycles preparatoires integres bordelais (JUNIA, ECAM, ISEP, BCPST) comme alternatives partielles ; 'g2c agathe prepa' est un CFA, homonymie."
+  },
+  {
+   "qid": "geo-007",
+   "relevant": [
+    {
+     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:assistance-technique-d-ingenieur:occitanie",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche ecole d'ingenieur nommee en Occitanie dans les candidates : seulement des stats insertion diplome ingenieur / BTS ATI regionaux, jamais de grade 2."
+  },
+  {
+   "qid": "geo-008",
+   "relevant": [
+    {
+     "fiche_id": "idx:28081",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:auvergne-rhone-alpes",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:assistance-technique-d-ingenieur:auvergne-rhone-alpes",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Le CUPGE Lyon 1 est une prepa aux concours d'ecoles d'ingenieurs dans la bonne region, pas une ecole d'ingenieur elle-meme : 1."
+  },
+  {
+   "qid": "geo-009",
+   "relevant": [
+    {
+     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:hauts-de-france",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "geo-010",
+   "relevant": [
+    {
+     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:nouvelle-aquitaine",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "DEIS 'ingenierie sociale' = homonymie trompeuse, omis."
+  },
+  {
+   "qid": "geo-011",
+   "relevant": [
+    {
+     "fiche_id": "idx:20541",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20563",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20578",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20579",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20586",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20625",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20640",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20645",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20650",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20659",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20664",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20666",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20710",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20714",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20719",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "idx:-1 = fiche ONISEP nationale du BTSA sans lieu, base utile mais lieu Bretagne non garanti : 1."
+  },
+  {
+   "qid": "geo-012",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "geo-013",
+   "relevant": [
+    {
+     "fiche_id": "domtom_dispositif:drom_formations_universite_reunion",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:15687",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La fiche Universite de La Reunion decrit l'offre de l'etablissement, pas la liste des licences scientifiques elle-meme (doute 2/1 -> 1) ; le Passeport Mobilite aide a PARTIR en metropole, contraire a l'intention, omis."
+  },
+  {
+   "qid": "metier-001",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP35687",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:5608",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:11256",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:15895",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37805",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:16779",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP35959",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37674",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17297",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17298",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41463",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17299",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:29855",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38436",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:29856",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39111",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:34323",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:34324",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:34334",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:34335",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:34336",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37625",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:34353",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39618",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39261",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39608",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39609",
+     "grade": 2
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-002",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.512",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.512",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1405",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39590",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34924",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La fiche IDEO du metier data scientist contient le salaire debutant : 2 ; les autres anchrent le metier sans donnee salaire : 1."
+  },
+  {
+   "qid": "metier-003",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.38",
+     "grade": 2
+    },
+    {
+     "fiche_id": "dares_fap:V1Z",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.38",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:J1506",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.343",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.343",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.8198",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.8198",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:J1511",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.8199",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.8199",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:J1512",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:J1505",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:V1Z:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:V1Z:bourgogne-franche-comte",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "DARES national V1Z = la statistique de debouches directe : 2 ; les declinaisons regionales (lieu non demande) et specialisations infirmieres : 1."
+  },
+  {
+   "qid": "metier-004",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.29",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:J1404",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.375",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.280",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-005",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.33",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.1264",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.33",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.1264",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_2:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_2:occitanie",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "INSEE groupe 2 (cadres) = proxy salaire du bon domaine mais pas le salaire avocat debutant : 1 ; groupes employes/ouvriers/intermediaires = mauvaise categorie, omis."
+  },
+  {
+   "qid": "metier-006",
+   "relevant": [
+    {
+     "fiche_id": "dares_fap:W0Z",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.557",
+     "grade": 2
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:grand-est",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:normandie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:pays-de-la-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:auvergne-rhone-alpes",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:W0Z:corse",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:K2106",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:K2107",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:K2109",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.766",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.766",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.880",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.880",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.277",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.277",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.937",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.937",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.8193",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.8193",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37469",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Enseignant de la conduite automobile = homonymie hors intention scolaire probable, omis."
+  },
+  {
+   "qid": "metier-007",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.760",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:6471",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:6517",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17566",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17788",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17789",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17790",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38957",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17910",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17911",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39668",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17986",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39141",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:18038",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39922",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:26755",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:26756",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40532",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:36058",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39805",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.760",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.211",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.920",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.371",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.492",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17922",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Supmeca (mecanique, non aero-specifique) : 1 ; roboticien et ecole performance industrielle generique omis."
+  },
+  {
+   "qid": "metier-008",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.171",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.171",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:A1504",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.323",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.323",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.7948",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:A1305",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les certifications RNCP d'auxiliaire veterinaire (autre metier, aucune donnee salaire veto) sont omises."
+  },
+  {
+   "qid": "comp-006",
+   "relevant": [
+    {
+     "fiche_id": "idx:29906",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:29953",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:30082",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:30228",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:30245",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:19951",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:19961",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:7004",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:15977",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:19783",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29838",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29839",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune statistique d'insertion propre a INSA Lyon ou UTC dans les candidates ; les fiches ingenieur des deux ecoles comparees = 2, les stats BTS/bac pro et masters droit 'compare' = bruit."
+  },
+  {
+   "qid": "comp-007",
+   "relevant": [],
+   "none_relevant": true,
+   "note": "Question generique sans ecole nommee ; les candidates (masters patrimoine, CFA Valbonne) sont du pur bruit lexical."
+  },
+  {
+   "qid": "comp-008",
+   "relevant": [
+    {
+     "fiche_id": "idx:17708",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17709",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17710",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17711",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17712",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17713",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:19951",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:19961",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40945",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:7004",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:15977",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:18052",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:19783",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Polytech Lyon (ecole polytechnique universitaire Lyon I) compte comme option 'Polytech' exacte ; masters droit compare = homonymie."
+  },
+  {
+   "qid": "malform-001",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:15708",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40184",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:16028",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38294",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:16770",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:16773",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39760",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:16774",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:17292",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:18740",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37652",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:18760",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:20080",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42021",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:30607",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:33704",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38806",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39594",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38793",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.885",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8375",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9041",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16036",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.823",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:E1125",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Formations jeux video = 2 ; fiches metier et masters (pas directement post-bac) et bachelor business/esport = 1 ; ludothecaire et MFR = bruit."
+  },
+  {
+   "qid": "malform-002",
+   "relevant": [
+    {
+     "fiche_id": "rncp_blocs:RNCP41748",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:8091",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.132",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les masters 'etudes sur le genre' sont une homonymie thematique ('genre le social'), hors intention travail social."
+  },
+  {
+   "qid": "malform-003",
+   "relevant": [
+    {
+     "fiche_id": "idx:14370",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14371",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14374",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14396",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14409",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14440",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14450",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14456",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14509",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14532",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28938",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Intention = acces a la licence de psycho : aucune licence psycho dans les candidates, les masters psycho et le DU PAREO en fac de psycho = 1 ; calendrier MonMaster = bruit."
+  },
+  {
+   "qid": "malform-004",
+   "relevant": [
+    {
+     "fiche_id": "rncp_blocs:RNCP40106",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39998",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37579",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38599",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1841",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6453",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.718",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.478",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8501",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11224",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39548",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11234",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41246",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11244",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11245",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41378",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40228",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11277",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39837",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11365",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42097",
+     "grade": 1
+    },
+    {
+     "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_professionnel|assez_bien",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11378",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40573",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11381",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11389",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11390",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39425",
+     "grade": 1
+    },
+    {
+     "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_l|assez_bien",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Rien ne repond directement (pas de BUT/licence info post-bac ni stat de reussite en info) : masters, titres RNCP, metiers info et stats parcours sciences = 1 ; parcours sante/STAPS = bruit."
+  },
+  {
+   "qid": "malform-005",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.760",
+     "grade": 2
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule la fiche ingenieur aeronautique est pertinente ; 'cmt' a attire une homonymie chimie CMT et un bloc metiers animaliers hors sujet."
+  },
+  {
+   "qid": "malform-006",
+   "relevant": [
+    {
+     "fiche_id": "inserjeunes_formation:bac-pro:commerce",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-a-animation-et-ges",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-b-prospection-clie",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:342",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1372",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1375",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1383",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4628",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4881",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4885",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4912",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4913",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:martinique",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:normandie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guadeloupe",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:grand-est",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guyane",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:la-reunion",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:nouvelle-aquitaine",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:pays-de-la-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:centre-val-de-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:auvergne-rhone-alpes",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:provence-alpes-cote-d-azur",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Stats nationales insertion/poursuite du bac pro commerce (et ses options A/B actuelles) = 2 ; variantes regionales sans lieu demande et formations commerce de poursuite = 1."
+  },
+  {
+   "qid": "geo-001",
+   "relevant": [
+    {
+     "fiche_id": "idx:21710",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21821",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25372",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25439",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:26375",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:31326",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:31350",
+     "grade": 2
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "geo-002",
+   "relevant": [
+    {
+     "fiche_id": "idx:21647",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21658",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21806",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21849",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25379",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25451",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:32471",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:11417",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:12807",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Masters info Antilles = bon domaine et lieu mais pas un acces direct post-bac, donc 1."
+  },
+  {
+   "qid": "geo-003",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21739",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21750",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21765",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21773",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21861",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21870",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21882",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:21886",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25369",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25457",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25478",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:31319",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:11372",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17774",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:32131",
+     "grade": 1
+    },
+    {
+     "fiche_id": "domtom_dispositif:drom_formations_universite_reunion",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:systemes-numeriques-option-a-informatique-et-reseaux:la-reunion",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:la-reunion",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:la-reunion",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Stats BTS info a La Reunion = 1 (stat, pas fiche formation) ; stats bac pro (pre-bac) et BTS SN option electronique = bruit."
+  },
+  {
+   "qid": "geo-004",
+   "relevant": [
+    {
+     "fiche_id": "idx:25462",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:31318",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:26120",
+     "grade": 1
+    },
+    {
+     "fiche_id": "domtom_dispositif:drom_formations_universite_guyane",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "BUT GEII Kourou = informatique industrielle adjacente, pas un BUT Informatique strict, donc 1."
+  },
+  {
+   "qid": "geo-005",
+   "relevant": [
+    {
+     "fiche_id": "idx:25518",
+     "grade": 2
+    },
+    {
+     "fiche_id": "domtom_dispositif:drom_formations_cufr_mayotte",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "geo-006",
+   "relevant": [
+    {
+     "fiche_id": "idx:6421",
+     "grade": 2
+    },
+    {
+     "fiche_id": "dares_fap_region:M2Z:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:H0Z:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:bretagne",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Une seule vraie ecole d'ingenieurs bretonne (ENSIBS) dans les candidates ; les stats DARES/InserSup ingenieurs en Bretagne sont utiles mais ne listent pas d'ecoles."
+  },
+  {
+   "qid": "metier-009",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.871",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.871",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:K1104",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.361",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.361",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41646",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39023",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.634",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.634",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:K1107",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37813",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39025",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39022",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:J1131",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38989",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-010",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.161",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.161",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38342",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38343",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:F1101",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37206",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.8071",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.648",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.864",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:F1102",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:F1127",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.258",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39413",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "DEA (RNCP38342) = le diplome d'Etat exact pour devenir architecte, donc 2 ; ROME F1101 sans info etudes = 1."
+  },
+  {
+   "qid": "metier-011",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.11",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:M1203",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1211",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.149",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:L1Z:grand-est",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1213",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap:L1Z",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.149",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1202",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.7772",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.195",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP36522",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:L1Z:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.195",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule la fiche ONISEP ideo comptable porte un salaire debutant ; ROME/DARES = bon metier ou bon domaine mais pas la statistique salaire demandee."
+  },
+  {
+   "qid": "metier-012",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.936",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.936",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:E1206",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.928",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39367",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40917",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.7901",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41103",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41742",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41694",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38244",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-013",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41748",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37675",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.311",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41744",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:25253",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.189",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP35515",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39695",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.132",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP36004",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41552",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Travailleur social = famille de metiers : les 3 DE canoniques (ASS, educateur specialise, CESF) = 2, les autres metiers/certifs du social = 1."
+  },
+  {
+   "qid": "metier-014",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.885",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.885",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:E1125",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:E1115",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.823",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42021",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:18971",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38294",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34958",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39594",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:37267",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40184",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37652",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8263",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38793",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8363",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8364",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8368",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8370",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39760",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8375",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8376",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8380",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9041",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11059",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38806",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Question salaire generique jeu video : seule la fiche ONISEP ideo concepteur jeux video (section salaire debutant) = 2, le reste = bon domaine sans donnee salaire."
+  },
+  {
+   "qid": "metier-015",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.45",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.45",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:E1106",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.677",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38922",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.253",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.253",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.385",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42049",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.677",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.385",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39871",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38950",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40281",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39736",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:E1118",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37033",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39755",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40793",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39872",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37034",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40161",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-016",
+   "relevant": [
+    {
+     "fiche_id": "rome_metier:M1855",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5608",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11256",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:15895",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16779",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17297",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17298",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17299",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38436",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29855",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29856",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34323",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37674",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34324",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34334",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP35687",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34335",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41463",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34336",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39111",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34353",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37625",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP35959",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39618",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune candidate ne porte une donnee salaire : tout est formation/certif ou fiche ROME du bon metier, donc grade 1 partout (trou de corpus sur le salaire dev web)."
+  },
+  {
+   "qid": "metier-017",
+   "relevant": [
+    {
+     "fiche_id": "rome_metier:M1405",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.512",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.512",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34924",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39590",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-018",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.38",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.8198",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.8199",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-019",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.29",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:J1404",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.280",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:nouvelle-aquitaine",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Kine = profession intermediaire : seules les stats INSEE group_3 sont du bon groupe (grade 1), les groupes employes/ouvriers/cadres sont du bruit."
+  },
+  {
+   "qid": "metier-020",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.33",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.33",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.1264",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.1264",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:K1903",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap:P3Z",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:P3Z:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:P3Z:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:P3Z:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:P3Z:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:P3Z:normandie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:P3Z:auvergne-rhone-alpes",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.806",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.1190",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.333",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.82",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.92",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.1192",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "DARES P3Z = perspective emploi du droit incluant les avocats mais agregee (pas avocat seul), donc 1 ; les juristes = metiers voisins."
+  },
+  {
+   "qid": "metier-021",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.557",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38356",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37469",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37525",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:K2106",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.880",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.766",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.8193",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.8193",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.277",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.277",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.937",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.937",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Intention probable = enseignant scolaire : professeur des ecoles + master MEEF = 2 ; enseignant conduite auto et moniteur equestre = homonymie, omis."
+  },
+  {
+   "qid": "metier-022",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.760",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.760",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.211",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.211",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.371",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.920",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.920",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.231",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.492",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6471",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6517",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17566",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17788",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17789",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17790",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17910",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17911",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17986",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:18038",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26755",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26756",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:36058",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-023",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.171",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.171",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:A1504",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.323",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.323",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:A1501",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:A1305",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40580",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40344",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40358",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.7948",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.905",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "metier-024",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.871",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41646",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39025",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39022",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39023",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.871",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:K1104",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.361",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.634",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.361",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "RNCP39023 (licence bac+3) = etape du parcours mais insuffisante seule pour le titre de psychologue, donc 1."
+  },
+  {
+   "qid": "metier-025",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.161",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.161",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:F1101",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_2:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_2:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.258",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:F1102",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.864",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.8071",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:F1127",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:F1121",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.648",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Architecte IOT = homonymie informatique exclue; seul le groupe INSEE 2 (cadres) correspond au statut d'architecte, les autres groupes PCS sont du bruit."
+  },
+  {
+   "qid": "metier-026",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.11",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:M1203",
+     "grade": 2
+    },
+    {
+     "fiche_id": "dares_fap:L1Z",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.11",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:L1Z:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:L1Z:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:L1Z:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "dares_fap_region:L1Z:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1211",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.149",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.149",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1213",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1225",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1608",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1202",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1215",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.195",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.195",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.7772",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.7772",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.8211",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP36522",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41644",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "DARES national L1Z (prospective 2030) repond directement aux debouches; les metiers voisins (chef, expert, auditeur) sont les evolutions de carriere donc 1."
+  },
+  {
+   "qid": "metier-027",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.936",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40917",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41103",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39367",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41742",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41694",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.936",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:E1206",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.928",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.7901",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38244",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "RNCP38244 (UI/webdesign sans UX) et UI designer = voisins, pas la cible UX exacte."
+  },
+  {
+   "qid": "metier-028",
+   "relevant": [
+    {
+     "fiche_id": "insee_salaan:cs:43",
+     "grade": 2
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.189",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.64",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.782",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.132",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "PCS 43 = exactement les professions du travail social (grade 2 malgre mediane vs debutant); les BUT carrieres sociales et le juriste en droit social ne repondent pas a une question de salaire."
+  },
+  {
+   "qid": "metier-029",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.885",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.823",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:E1125",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:E1115",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:M1831",
+     "grade": 2
+    },
+    {
+     "fiche_id": "onisep_metier:MET.885",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.823",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40184",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42021",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38294",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39594",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39760",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37652",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38793",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38806",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38345",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:18971",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:37267",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:34958",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8263",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8363",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8364",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8368",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8370",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8375",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8376",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8380",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9041",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11059",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:E1126",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Question aux debouches d'une famille de metiers : les fiches metiers JV exactes = 2, formations et certifs JV (elles listent les metiers vises) = 1; E1126 jeux de societe = voisin limite."
+  },
+  {
+   "qid": "metier-030",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.45",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38922",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42049",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39871",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40281",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38950",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39755",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39736",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40793",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37033",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39872",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:E1106",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.385",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.677",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "reconv-001",
+   "relevant": [
+    {
+     "fiche_id": "financement_dispositif:cpf",
+     "grade": 2
+    },
+    {
+     "fiche_id": "financement_voie:reconversion",
+     "grade": 2
+    },
+    {
+     "fiche_id": "financement_dispositif:ptp_transitions_pro",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.12",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11227",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11266",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11306",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11307",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11333",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les fiches marketing/vente matchent le metier SOURCE (vente) et non la cible informatique, exclues; masters info = formations du bon domaine mais peu adaptees au CPF donc 1."
+  },
+  {
+   "qid": "reconv-002",
+   "relevant": [
+    {
+     "fiche_id": "correction:vae_experience_liee_diplome",
+     "grade": 2
+    },
+    {
+     "fiche_id": "financement_dispositif:vae",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:K2126",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_voie:continue",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_voie:reconversion",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "MET.825 consultant en validation = homonymie (validation industrielle/qualification), exclu."
+  },
+  {
+   "qid": "reconv-003",
+   "relevant": [
+    {
+     "fiche_id": "financement_voie:reconversion",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.12",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Le Bachelor EFREI (Parcoursup) est une formation developpeur mais inadaptee au profil 35 ans sans diplome, donc 1; developpeur economique/commercial = homonymies exclues."
+  },
+  {
+   "qid": "reconv-004",
+   "relevant": [
+    {
+     "fiche_id": "onisep_metier:MET.29",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.280",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.877",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.676",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.276",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.221",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.875",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.876",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.282",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.411",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.415",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.330",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.281",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.416",
+     "grade": 1
+    },
+    {
+     "fiche_id": "onisep_metier:MET.771",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche sur la demarche de reconversion elle-meme : que des fiches metiers paramedicaux (panorama utile mais partiel), donc aucun grade 2."
+  },
+  {
+   "qid": "reconv-005",
+   "relevant": [
+    {
+     "fiche_id": "financement_dispositif:afe_pole_emploi",
+     "grade": 2
+    },
+    {
+     "fiche_id": "financement_voie:reconversion",
+     "grade": 2
+    },
+    {
+     "fiche_id": "financement_dispositif:cpf",
+     "grade": 2
+    },
+    {
+     "fiche_id": "financement_dispositif:ptp_transitions_pro",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:proa",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_voie:continue",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:agepi",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:vae",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:agefiph",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:cej",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "PTP/Pro-A/OPCO ciblent les salaries et non les demandeurs d'emploi : PTP et Pro-A gardes en 1 (dispositifs reconversion), OPCO sectoriels exclus."
+  },
+  {
+   "qid": "reconv-006",
+   "relevant": [
+    {
+     "fiche_id": "financement_voie:reconversion",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:proa",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:ptp_transitions_pro",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche ne definit l'AFEST (trou de corpus probable) : seuls les dispositifs de reconversion en entreprise voisins (Pro-A, PTP) servent de base d'alternative."
+  },
+  {
+   "qid": "reconv-007",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:187",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5131",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5223",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6127",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6130",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:7166",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:7207",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8998",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche ne garantit des cours du soir : formations gestion en formation continue/alternance = partiel seulement, aucun grade 2."
+  },
+  {
+   "qid": "base-001",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche generale definissant le BUT et sa duree : un exemple de BUT concret = partiel."
+  },
+  {
+   "qid": "base-002",
+   "relevant": [
+    {
+     "fiche_id": "idx:1411",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1412",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1413",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1432",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1433",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1444",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1532",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1541",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1553",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:1740",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:2736",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5955",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:6420",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche ne traite la procedure de reorientation elle-meme : les ecoles info sont des destinations possibles (grade 1), pas de grade 2."
+  },
+  {
+   "qid": "base-003",
+   "relevant": [
+    {
+     "fiche_id": "rncp_blocs:RNCP41813",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38584",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39485",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39541",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40551",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42011",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38587",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37827",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41068",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:18931",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:33301",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:36542",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:37181",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:10148",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11104",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11224",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11227",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11302",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11306",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Grade 2 = blocs RNCP bac+5 IA listant les metiers vises ROME ; masters IA et certifs bac+3 = grade 1 ; masters droit du numerique omis (intention technique probable)."
+  },
+  {
+   "qid": "base-004",
+   "relevant": [
+    {
+     "fiche_id": "financement_dispositif:bourse_crous_sup",
+     "grade": 2
+    },
+    {
+     "fiche_id": "calendrier:dse-2026:ouverture-dse",
+     "grade": 2
+    },
+    {
+     "fiche_id": "calendrier:dse-2026:vue-ensemble-dse-2026",
+     "grade": 2
+    },
+    {
+     "fiche_id": "calendrier:dse-2026:date-limite-recommandee",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_voie:initial",
+     "grade": 1
+    },
+    {
+     "fiche_id": "calendrier:dse-2026:premier-cycle-attribution-logement",
+     "grade": 1
+    },
+    {
+     "fiche_id": "calendrier:dse-2026:saisie-voeux-logement",
+     "grade": 1
+    },
+    {
+     "fiche_id": "financement_dispositif:bourse_lycee",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Centre de Formation de la Bourse du Travail = homonymie trompeuse, omis."
+  },
+  {
+   "qid": "base-005",
+   "relevant": [],
+   "none_relevant": true,
+   "note": "Alternance Rhone-Alpes n'est qu'un nom d'organisme CFA et les fiches avantages sociaux sont des homonymies : rien n'explique l'alternance."
+  },
+  {
+   "qid": "base-006",
+   "relevant": [
+    {
+     "fiche_id": "idx:15684",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:15691",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:15692",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:15693",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16647",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16710",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16989",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:18423",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:20051",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28081",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28084",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28085",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Que des fiches de prepas (pas d'ecoles cibles ni de fiche debouches post-CPGE) : grade 1 partout ; prepas concours professeurs des ecoles / ATSEM = homonymie, omises."
+  },
+  {
+   "qid": "base-007",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La fiche BUT Informatique illustre une des deux options comparees mais n'explique pas la difference licence/BUT."
+  },
+  {
+   "qid": "fact-001-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:21679",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:21743",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:21817",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:25350",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:25357",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:25362",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:25443",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:25468",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucun BUT Informatique a Lyon dans les candidates : BUT Info Vannes (autre ville) et BTS info a Lyon (formation voisine) = grade 1 seulement."
+  },
+  {
+   "qid": "fact-002-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:26097",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:26119",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:5977",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:5978",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:5950",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5979",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26118",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5951",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5952",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5953",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5954",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26704",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:32438",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Grade 2 = BUT GEII en proche banlieue parisienne (Villetaneuse, Cachan, Creteil, Nanterre, analogie Villeurbanne/Lyon) ; grande couronne (Cergy, Saclay) et autres regions = grade 1."
+  },
+  {
+   "qid": "fact-003-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:8005",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:8020",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:8032",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:8046",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:8057",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les 5 parcours BUT TC de l'Universite de Bordeaux = formation et lieu exacts ; BTS CCST ailleurs = ni la formation ni la ville, omis."
+  },
+  {
+   "qid": "fact-004-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:6225",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:6236",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:4667",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Grade 2 = parcours BUT GEA de l'Universite de Lille ; les masters eco-gestion lillois ne repondent pas a une question de places en BUT, omis."
+  },
+  {
+   "qid": "fact-005-v1",
+   "relevant": [
+    {
+     "fiche_id": "correction:epita_couts_scolarite_2025",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule la correction EPITA touche des frais de scolarite en informatique (mais pas le BTS SIO Toulouse) ; INSEEC = autre domaine, omis."
+  },
+  {
+   "qid": "fact-006-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:22979",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:22977",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:commerce-international",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:commerce-international:pays-de-la-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11697",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:12250",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Grade 2 = BTS Commerce International ENC-ENACOM a Nantes (fiche Parcoursup) ; stats inserjeunes des autres regions omises (mauvais lieu et mauvaise stat)."
+  },
+  {
+   "qid": "fact-007-v1",
+   "relevant": [
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:communication:grand-est",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:communication",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_region_diplome:grand-est:bts",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Pas de fiche Strasbourg : la stat regionale Grand Est (qui couvre Strasbourg, taux 12 mois faute de 6 mois) est la meilleure reponse du corpus ; autres regions omises."
+  },
+  {
+   "qid": "fact-008-v1",
+   "relevant": [
+    {
+     "fiche_id": "insee_salaan:group_2:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insee_salaan:group_3:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11248",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11311",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune stat salaire specifique aux diplomes de licence info a Rennes : INSEE Bretagne cadres/professions intermediaires = meilleur partiel ; groupes ouvriers/employes et autres regions omis."
+  },
+  {
+   "qid": "fact-009-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9296",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9488",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8105",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune licence de droit a Montpellier dans les candidates : uniquement des masters droit montpellierains (grade 1) ; les masters finance tagges droit omis."
+  },
+  {
+   "qid": "fact-010-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14396",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14437",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune licence de psychologie ni fiche frais pertinente ; plus proches = licence mineure psycho (Toulouse) et masters psycho (autres villes), les corrections frais INSEEC/EPITA concernent d'autres ecoles."
+  },
+  {
+   "qid": "fact-011-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule fiche MIASHS du lot (double licence a Toulouse, pas Annecy) ; le master management d'Annecy n'est pas MIASHS."
+  },
+  {
+   "qid": "fact-012-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:licence-professionnelle:sciences-fondamentales-et-applications:bretagne",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La fiche formation Brest (portail MPMEI) ne porte pas la statistique demandee ; la stat insersup Bretagne est du bon domaine mais licence pro et 12/24 mois, pas licence generale a 6 mois."
+  },
+  {
+   "qid": "fact-013-v1",
+   "relevant": [
+    {
+     "fiche_id": "insersup:licence-generale:staps:auvergne-rhone-alpes",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La stat insersup licence STAPS est regionale (AURA, qui contient Lyon) = granularite maximale du corpus, donc 2 ; la fiche formation Lyon 1 ne porte pas le salaire."
+  },
+  {
+   "qid": "fact-014-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:30995",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:32423",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:30751",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:30752",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29438",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29446",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29651",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:29658",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:26701",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Grade 2 reserve aux licences eco-gestion simples intra-Paris ; doubles licences, CMI et Nanterre = variantes partielles."
+  },
+  {
+   "qid": "fact-015-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17084",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17090",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune CPGE MPSI a Bordeaux dans les candidates ; les cycles prepa integres JUNIA a Bordeaux sont des alternatives voisines, la 'prepa' CFA g2c est une homonymie."
+  },
+  {
+   "qid": "fact-016-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:16992",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:16993",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false
+  },
+  {
+   "qid": "fact-017-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:27387",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:master-lmd:sciences-economiques-gestion:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "insersup:bachelor-universitaire-de-technologie:sciences-economiques-gestion:occitanie",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Pas de prepa ECG a Toulouse ni de stat d'insertion post-prepa ; ECG a Meaux et stats eco-gestion Occitanie = proxies partiels, la Prepa des INP (scientifique) n'est pas une ECG."
+  },
+  {
+   "qid": "fact-018-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seule fiche MIAGE (Rennes, pas Nantes) ; aucune stat salaire pour les Pays de la Loire ou l'informatique dans les candidates."
+  },
+  {
+   "qid": "fact-019-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:11313",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11104",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11224",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:10148",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39485",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucun master IA a Strasbourg dans les candidates ; masters IA d'autres villes + fiche nationale RNCP = alternatives, les masters droit de l'IA et les fiches Strasbourg hors-IA sont ecartes."
+  },
+  {
+   "qid": "fact-020-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:5718",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:9409",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9280",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9296",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9307",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9337",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9350",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9351",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9369",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9373",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9391",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9926",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Deux fiches master droit des affaires a Rennes (5718 alternance, 9409 M1) = cibles directes ; les autres masters droit des affaires sont des alternatives hors Rennes."
+  },
+  {
+   "qid": "fact-021-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:28570",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:28413",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28416",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28417",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28418",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28436",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28443",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28444",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28448",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28597",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28603",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28624",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28666",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28667",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:28671",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.38",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "IFSI CHU Montpellier = match exact ; les autres D.E Infirmier sont la meme formation ailleurs, la PASS n'est pas le D.E infirmier."
+  },
+  {
+   "qid": "fact-022-v1",
+   "relevant": [
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:negociation-et-relation-client:centre-val-de-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:negociation-et-digitalisation-de-la-relation-client:centre-val-de-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:gestion-de-la-pme:centre-val-de-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:tourisme:centre-val-de-loire",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune stat DUT/BUT ni fiche Bourges ; les stats BTS en Centre-Val de Loire (diplome bac+2 voisin, bonne region) sont les seuls proxies partiels."
+  },
+  {
+   "qid": "fact-023-v1",
+   "relevant": [
+    {
+     "fiche_id": "insee_salaan:cs:38",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:17014",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La stat INSEE PCS 38 (salaire ingenieurs) est la bonne statistique mais France entiere alors qu'Annecy est contraint, donc 1 ; aucune ecole d'ingenieurs post-bac a Annecy dans les candidates."
+  },
+  {
+   "qid": "fact-024-v1",
+   "relevant": [
+    {
+     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "grade": 2
+    },
+    {
+     "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+     "grade": 1
+    },
+    {
+     "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "date-limite-voeux (formulation, 12 mars) est la confusion la plus proche de la confirmation (1er avril) ; les autres jalons calendrier et les calendriers DSE/MonMaster n'apportent rien."
+  },
+  {
+   "qid": "fact-025-v1",
+   "relevant": [
+    {
+     "fiche_id": "calendrier:parcoursup-2026:date-limite-confirmation",
+     "grade": 1
+    },
+    {
+     "fiche_id": "calendrier:parcoursup-2026:vue-ensemble-2026",
+     "grade": 1
+    },
+    {
+     "fiche_id": "calendrier:parcoursup-2026:date-limite-voeux",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La question demande 2025 mais le corpus ne couvre que le calendrier 2026 : la bonne statistique au mauvais millesime, donc pas de grade 2."
+  },
+  {
+   "qid": "comp-001-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    }
+   ],
+   "none_relevant": false,
+   "note": "Seul le BUT Informatique (Castres) est une option exacte ; aucune fiche licence informatique ni statistique d'insertion parmi les candidates, les masters INFORMATIQUE ne repondent pas a la comparaison post-bac."
+  },
+  {
+   "qid": "comp-002-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:26118",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:5950",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5951",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5952",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5953",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5954",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5955",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5956",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5957",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5958",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5959",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5960",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5961",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5962",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:5963",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche prepa MPSI dans les candidates ; les fiches labonnealternance GEII AII sont le bon champ mais formation/niveau incertains, donc grade 1."
+  },
+  {
+   "qid": "comp-003-v1",
+   "relevant": [
+    {
+     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-a-solutions-",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:services-informatiques-aux-organisations-option-b-solutions-",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:normandie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-a-solutions-:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bts:services-informatiques-aux-organisations-option-b-solutions-:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bts:systemes-numeriques-option-a-informatique-et-reseaux",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les stats nationales BTS SIO (options A et B) repondent pour une option de la comparaison ; aucune fiche BUT Informatique presente ; BTS SN = formation voisine (grade 1 national, regionales omises)."
+  },
+  {
+   "qid": "comp-004-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "insersup:diplome-vise-niveau-bac-3-grade-licence:droit-sciences-politiques:ile-de-france",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La fiche insersup melange droit et sciences politiques et n'est qu'une tranche regionale ; les masters droit international ont matche sur le mot compare (bruit)."
+  },
+  {
+   "qid": "comp-005-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "insersup:diplome-d-ingenieurs:sciences-fondamentales-et-applications:normandie",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "La stat insersup ingenieurs est la bonne famille de statistique pour l'option ecole d'ingenieurs mais limitee a la Normandie et a une discipline, donc grade 1."
+  },
+  {
+   "qid": "comp-006-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:7004",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Aucune fiche de la formation d'ingenieur INSA Lyon ou UTC avec insertion/cout ; seules deux fiches rattachees aux bons etablissements (titres RNCP/mastere annexes), grade 1."
+  },
+  {
+   "qid": "comp-007-v1",
+   "relevant": [],
+   "none_relevant": true,
+   "note": "Question de conseil generique (proximite vs reputation) : aucune candidate (masters patrimoine, metiers logistique) n'apporte quoi que ce soit."
+  },
+  {
+   "qid": "comp-008-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:7004",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40945",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "idx:30010 (IPSA) et idx:10689 (Universite Polytechnique Hauts-de-France) sont des homonymies trompeuses de Polytech ; aucune fiche du reseau Polytech presente."
+  },
+  {
+   "qid": "malform-001-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:-1",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.885",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rome_metier:E1125",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40184",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38294",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39760",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38806",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37652",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42021",
+     "grade": 2
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39594",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:8362",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:8375",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:9041",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:11059",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.823",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Ludothecaire (MET.639) est une homonymie jeu trompeuse ; les masters jeux video sont grade 1 car non accessibles directement post-bac."
+  },
+  {
+   "qid": "malform-002-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:4072",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:8091",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les fiches Etudes sur le genre ont matche sur le tic de langage genre de la question (bruit) ; seul le DE Accompagnant educatif et social repond au social."
+  },
+  {
+   "qid": "malform-003-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:32864",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:29642",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:-1",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:14396",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "idx:32864 est bien une licence de psychologie Parcoursup mais dans une faculte libre privee (pas une fac publique typique) ; les masters psycho sont grade 1 (mauvais niveau d'entree)."
+  },
+  {
+   "qid": "malform-004-v1",
+   "relevant": [
+    {
+     "fiche_id": "idx:32617",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:32438",
+     "grade": 2
+    },
+    {
+     "fiche_id": "idx:29596",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:32143",
+     "grade": 1
+    },
+    {
+     "fiche_id": "metier:MET.478",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1841",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1818",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rome_metier:M1819",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40106",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39998",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP38599",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP37579",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41246",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41378",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP42097",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP40228",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39893",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39837",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP39425",
+     "grade": 1
+    },
+    {
+     "fiche_id": "rncp_blocs:RNCP41030",
+     "grade": 1
+    },
+    {
+     "fiche_id": "parcours:sciences_et_sciences_de_l'ingénieur|bac_professionnel|assez_bien",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Intention : etudes d'informatique accessibles malgre le doute sur le niveau ; les licences portail info post-bac sont grade 2, metiers et titres RNCP info grade 1, stats parcours sante/STAPS omises (mauvaise filiere)."
+  },
+  {
+   "qid": "malform-005-v1",
+   "relevant": [
+    {
+     "fiche_id": "metier:MET.760",
+     "grade": 2
+    },
+    {
+     "fiche_id": "metier:MET.772",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Hotesse de l'air est un metier du transport aerien, voisin de l'aeronautique demandee ; aucune formation aeronautique dans les candidates."
+  },
+  {
+   "qid": "malform-006-v1",
+   "relevant": [
+    {
+     "fiche_id": "inserjeunes_formation:bac-pro:commerce",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-a-animation-et-ges",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation:bac-pro:metiers-du-commerce-et-de-la-vente-option-b-prospection-clie",
+     "grade": 2
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:occitanie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:normandie",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:martinique",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:la-reunion",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guyane",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:grand-est",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:guadeloupe",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bretagne",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:nouvelle-aquitaine",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:pays-de-la-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:ile-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:hauts-de-france",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:centre-val-de-loire",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:auvergne-rhone-alpes",
+     "grade": 1
+    },
+    {
+     "fiche_id": "inserjeunes_formation_region:bac-pro:commerce:bourgogne-franche-comte",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:18879",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:23008",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:23068",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:23109",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:30299",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:30339",
+     "grade": 1
+    },
+    {
+     "fiche_id": "idx:342",
+     "grade": 1
+    }
+   ],
+   "none_relevant": false,
+   "note": "Les stats nationales insertion/poursuite du bac pro commerce (et ses successeurs metiers du commerce et de la vente) repondent directement au que faire apres ; les BTS/bachelors commerce sont des options de poursuite partielles (grade 1)."
+  }
+ ],
+ "_meta": {
+  "lots_juges": "9/26 (coupure quota 16/07)",
+  "run_id": "wf_1e24eb24-ae3",
+  "bug_connu": "fiche_id 'idx:-1' = bug du miner (fallback dense), labels concernes a rejuger apres fix"
+ }
+}
