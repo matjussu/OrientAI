@@ -70,6 +70,9 @@ data/processed/formations_unified.pre_d5_backup.json
 # Étape A donnée verticale (2026-09-23) — régénérable via `python -m src.collect.corpus_etape_a`
 data/processed/formations_etape_a.json
 data/processed/formations_etape_a.manifest.json
+# Étape B-1 donnée verticale (2026-09-23) — régénérable via `python -m src.collect.pipeline_donnee`
+data/processed/formations_etape_b1.json
+data/processed/formations_etape_b1.manifest.json
 # Phase D archive — snapshots binaires des promotions corpus (v3.2, v5, v6...)
 data/archive/
 
