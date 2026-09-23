@@ -1,0 +1,1076 @@
+{
+  "genere_le": "2026-09-23T11:31:03+02:00",
+  "corpus": "data/processed/formations_etape_b1.json",
+  "n": 50,
+  "graine": 20260923,
+  "sabotage": "cout",
+  "parmi": "tout",
+  "temoins": {
+    "onisep": "https://api.opendata.onisep.fr/downloads/605344579a7d7/605344579a7d7.json",
+    "tableau": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "apprentissage_insersup": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets",
+    "inserjeunes": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets"
+  },
+  "droits_lus_dans_le_tableau": {
+    "cpge": 178,
+    "licence": 178,
+    "but_dans_le_groupe": 1
+  },
+  "par_statut": {
+    "cout": {
+      "non_disponible": 15,
+      "disponible": 35
+    },
+    "alternance": {
+      "disponible": 43,
+      "null": 7
+    },
+    "insertion": {
+      "disponible": 5,
+      "non_disponible": 45
+    }
+  },
+  "fiches_en_ecart": 35,
+  "resultats": [
+    {
+      "cod_aff_form": "36038",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Formation Bac + 3 - Bachelor Développeur web et application",
+      "etablissement": "EFREI Bordeaux",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "11237",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BUT - Réseaux et télécommunications",
+      "etablissement": "I.U.T de Villetaneuse - Université Sorbonne Paris Nord",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "44678",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Certificat de Spécialisation - Services numériques aux organisations",
+      "etablissement": "Lycée professionnel Jean Moulin",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "35359",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Licence - Informatique",
+      "etablissement": "Université Lyon 2 - Campus Porte des Alpes",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "3647",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BUT - Réseaux et télécommunications",
+      "etablissement": "I.U.T de Valence",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "28094",
+      "source": "parcoursup_apprentissage",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+      "etablissement": "Lycée Notre Dame Du Roc",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": null,
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": null,
+        "alternance": null,
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "36974",
+      "source": "parcoursup_apprentissage",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+      "etablissement": "Lycée Suzanne Valadon",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": null,
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": null,
+        "alternance": null,
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "8882",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Saint Michel",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "cout": [
+          "montant 2997 absent du texte Onisep"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "6944",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée Frédéric OZANAM",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "cout": [
+          "montant 4143 absent du texte Onisep"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "33179",
+      "source": "parcoursup_apprentissage",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+      "etablissement": "AFTEC FORMATION",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": null,
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": null,
+        "alternance": null,
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "6269",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée Henri Loritz",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 1 != tableau 0"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "48320",
+      "source": "parcoursup_apprentissage",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+      "etablissement": "EC.SECONDAIRE ET TECHN.PRIVEE VIDAL",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": null,
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": null,
+        "alternance": null,
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "11045",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée St Gabriel",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "47794",
+      "source": "parcoursup_apprentissage",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+      "etablissement": "Bordeaux YNOV campus",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": null,
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": null,
+        "alternance": null,
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "29862",
+      "source": "parcoursup_apprentissage",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+      "etablissement": "CFA CMA 35",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": null,
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": null,
+        "alternance": null,
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "43392",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée Pape Clement",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 1 != tableau 0"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "20262",
+      "source": "parcoursup_apprentissage",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - en apprentissage",
+      "etablissement": "Lycée Elisa LEMONNIER",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": null,
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": null,
+        "alternance": null,
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "35812",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Portail Sciences de la vie",
+      "etablissement": "Université Paris Cité",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "28109",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Portail Sciences et Techniques des Activités Physiques et Sportives",
+      "etablissement": "Université Paris Cité",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "28085",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Certificat de capacité d'Orthoptiste",
+      "etablissement": "UFR de Médecine",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "montant 1036 absent du texte Onisep"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "6232",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+      "etablissement": "I.U.T. Laval",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "24759",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "FCIL - secrétariat médical",
+      "etablissement": "Lycée professionnel Saint Joseph",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "montant 991 absent du texte Onisep"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "23039",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI du Gipes d'Avignon",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "montant 1 absent du texte Onisep"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "49964",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Diététique et nutrition",
+      "etablissement": "Lycée Philippe de Girard",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 1 != tableau 0"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "39960",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Portail Langues étrangères appliquées - Affaires et Commerce International",
+      "etablissement": "Institut national universitaire Champollion - Campus de Rodez",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "35902",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+      "etablissement": "Université Claude Bernard Lyon 1",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "4591",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Humanités - Parcours Etude et pratique du français (préparation à l'entrée aux écoles d'orthophonie)",
+      "etablissement": "Université Paul Valery - Montpellier 3",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "11614",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée Jean Monnet",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 1 != tableau 0"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "29221",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Sciences pour la santé - Mathématiques et Santé -  Accès Santé",
+      "etablissement": "Université de Strasbourg",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "25263",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI CHU Poitiers",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "35917",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Portail Informatique - Programmation informatique pour l'entreprise et l'innovation technologique",
+      "etablissement": "Institut national universitaire Champollion",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "31930",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Portail Physique, Chimie, Mécanique, Mathématiques (PCMM)",
+      "etablissement": "Université Grenoble Alpes",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "38009",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Portail Psychologie",
+      "etablissement": "Université Bourgogne Europe (ex université de Bourgogne)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "26838",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+      "etablissement": "Université de Bordeaux - Bordeaux Métropole",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2873",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "Licence - Portail Mathématiques",
+      "etablissement": "Université de Caen Normandie",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "4288",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PTSI",
+      "etablissement": "Lycée Gustave Eiffel",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2414",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - TSI",
+      "etablissement": "Lycée Les Lombards",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2628",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Notre Dame De Sion",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "7917",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "Lycée Kléber",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "7603",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Godefroy De Bouillon",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10436",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "Lycée St Joseph",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "32675",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+      "etablissement": "Université de Guyane",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "32742",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+      "etablissement": "Université de Lorraine - UFR Mathématiques, Informatique, Mécanique - Site de Metz (57)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "10050",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PTSI",
+      "etablissement": "Lycée Jules Ferry",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "4961",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Ecole des Pupilles de l'Air - lycée de la défense",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "11005",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "Lycée Louis Pasteur",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "8690",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Montesquieu",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "9467",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Stanislas",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "cout": [
+          "montant 2980 absent du texte Onisep"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "36345",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CUPGE - Parcours mathématiques-physique",
+      "etablissement": "Université de Bretagne Sud - Site de Lorient",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "35942",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+      "etablissement": "Université des Antilles - Pôle Guadeloupe",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {
+        "cout": [
+          "droits 179 != tableau 178"
+        ]
+      }
+    }
+  ]
+}

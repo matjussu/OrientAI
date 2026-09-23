@@ -1,11 +1,41 @@
 # Contrat des champs de l'étape B-1 (coût, alternance, insertion)
 
-Version 1, 23/09/2026, Claudette. Périmètre B-1 confirmé par Matteo le 23/09 (Telegram 10584,
+Version 1.1, 23/09/2026, Claudette (v1 envoyée à Jarvis au commit 93d34e2 ; les écarts entre la v1
+et la forme livrée sont listés en section 0). Périmètre B-1 confirmé par Matteo le 23/09 (Telegram 10584,
 relayé par Jarvis) : B1 coûts, B5 alternance, B3 insertion. B4, B6, B7, B8 et B3 bis sont hors
 périmètre.
 
 Ce document fixe la forme des champs **avant** le code. L'explorateur se branche dessus ; tout
 changement de forme passe par une nouvelle version de ce fichier, annoncée à Jarvis.
+
+## 0. Changements de la version 1.1 (forme livrée)
+
+Réponses de Jarvis aux questions Q1 à Q3 (23/09, 10h50) et défauts trouvés à la relecture :
+
+- **Droits d'inscription** : source = tableau ministériel 2026-2027 republié par l'Université de Reims
+  (PDF sha256 `b2b8c9c003d29331...`, relu le 23/09 : 178 euros pour le « cycle de licence », BUT
+  listé, et pour la CPGE de lycée public). Appliqué aussi à la licence professionnelle et au DEUST
+  publics (même groupe du tableau), reconnus par `type_formation`. BTS public : 0 euro de droits,
+  Service-Public F36520 ; CVEC du BTS non écrite. IFSI : 0 euro seulement quand la ligne Onisep le
+  dit (Q3).
+- **`cout.valeur`** gagne `cvec_source` (id de la source de la CVEC, distincte de celle des droits),
+  `onisep_action` et `onisep_intitule` (la ligne Onisep citée, pour l'audit).
+- **Règle « même famille »** réservée aux CPGE et BTS, sur au moins deux lignes Onisep unanimes (tarif
+  du lycée). Ailleurs, elle donnait le coût d'une autre formation (relecture du 23/09).
+- **Intitulés** : deux options différentes d'un diplôme (option A / option B) ne se rattachent jamais.
+- **`alternance.rattachement`** : une seule valeur, `meme_diplome_meme_uai_ou_meme_commune` ; chaque
+  formation rattachée dit `rattachee_par` (`uai` ou `commune`). Une fiche d'apprentissage ne porte
+  pas le champ `alternance` (elle EST une formation en alternance).
+- **`insertion.valeur`** : `{dispositif, promotion, regime, lignes: [...]}`, une ligne par diplôme
+  source (un BTS SIO a deux lignes InserJeunes, options A et B). Section 5 mise à jour.
+- **Taux publiés tels quels** (44,83 reste 44,83), jamais arrondis.
+- **Une insertion dont tous les taux sont non diffusés** (`nd`) est `non_disponible`, avec l'effectif
+  dans la raison : sinon le remplissage compterait des fiches sans aucun chiffre.
+- **Taux d'emploi stable** : gardé dans la donnée, **pas écrit dans le texte**. InserSup ne publie pas
+  sa définition, et sa valeur dépasse souvent le taux d'emploi (84,6 % contre 44,8 % sur un BUT) :
+  son dénominateur n'est pas le même, et on ne l'écrit pas sans le connaître.
+- La granularité `discipline_etablissement` n'est pas produite : l'extrait InserSup verrouillé n'a
+  que des lignes par diplôme ou par type de diplôme.
 
 ## 1. Où vivent les champs
 
@@ -47,8 +77,8 @@ Règles :
   on a regardé) ; `source: null` quand aucune source n'existe pour ce type de formation.
 - Aucune valeur n'est estimée, extrapolée ou héritée d'une formation voisine sans que
   `rattachement` le dise.
-- Montants en euros entiers, taux en pourcentage (0 à 100, un décimal au plus), comme le texte
-  les affichera.
+- Montants en euros entiers ; taux en pourcentage (0 à 100) tels que la source les publie, sans
+  arrondi.
 
 ## 3. `cout` (B1)
 
@@ -70,13 +100,14 @@ Règles :
 
 ### Règles par cas, dans l'ordre d'application
 
-| Cas | Valeur | Source (`source.id`) | Rattachement |
-|---|---|---|---|
-| Ligne ONISEP rattachée avec un `AF coût scolarité` renseigné | montants parsés + `texte_source` | `onisep_ideo_actions_es` | `onisep_uai_intitule` |
-| Établissement public, licence / LAS / PASS / BUT à l'université | 178 € + CVEC 105 € | `service_public_f36520` | `constante_type_statut` |
-| BTS en lycée public | 0 € de droits (phrase de la page) ; CVEC : voir question Q2 | `service_public_f36520` | `constante_type_statut` |
-| Diplôme d'ingénieur public, cursus débuté après le 01/09/2018 | 2 620 € + CVEC 105 € | `service_public_f36520` | `constante_type_statut` |
-| Tout le reste (privé sans ligne ONISEP, CPGE publique, IFSI sans ligne ONISEP...) | aucune | `onisep_ideo_actions_es` si cherché | `non_disponible` |
+| Ordre | Cas | Valeur | Source (`source.id`) | Rattachement |
+|---|---|---|---|---|
+| 1 | Établissement public : licence, LAS, PASS, BUT, licence pro, DEUST | droits 178 € + CVEC 105 € | `tableau_droits_2026_2027` (CVEC : `cvec_source` = `service_public_f36520`) | `constante_type_statut` |
+| 1 | CPGE de lycée public | droits 178 € + CVEC 105 € | idem | `constante_type_statut` |
+| 1 | BTS en lycée public | droits 0 € ; CVEC non écrite (non lue) | `service_public_f36520` | `constante_type_statut` |
+| 2 | Ligne Onisep du même UAI et de la même famille, intitulé correspondant (score >= 0,8, meilleur score unique en coût, options identiques) | montants parsés + `texte_source` | `onisep_ideo_actions_es` | `onisep_uai_intitule` |
+| 3 | CPGE ou BTS : au moins deux lignes Onisep de la famille au même UAI, toutes avec le même coût | idem | `onisep_ideo_actions_es` | `onisep_uai_famille` |
+| sinon | tout le reste (dont école d'ingénieurs publique : aucune mesure ne couvre son cycle post-bac) | aucune, raison écrite | `onisep_ideo_actions_es` si cherché | `onisep_uai`, `onisep_uai_intitule` ou `onisep_uai_famille` |
 
 Mesures sur lesquelles ces règles reposent :
 - Montants publics : Service-Public F36520, page « vérifié le 20 août 2026 », lue le 23/09/2026
@@ -155,13 +186,13 @@ non publié pour l'apprentissage ».
 "valeur": {
   "existe_en_apprentissage": true,
   "formations": [                        // formations d'apprentissage rattachées
-    {"cod_aff_form": "26599", "etablissement": "...", "ville": "...", "capacite": 18}
+    {"cod_aff_form": "26599", "etablissement": "...", "ville": "...", "capacite": 18, "rattachee_par": "uai"}
   ]
 }
 ```
 
-- `rattachement` : `meme_diplome_meme_commune` (même diplôme et même spécialité, même commune
-  INSEE) ou `meme_diplome_meme_uai`. Pas de rattachement régional ni national : « ce BTS existe en
+- `rattachement` : `meme_diplome_meme_uai_ou_meme_commune` (même filière agrégée et même spécialité,
+  même UAI ou même commune INSEE) ; chaque formation rattachée dit `rattachee_par` (`uai` ou `commune`). Pas de rattachement régional ni national : « ce BTS existe en
   apprentissage à 300 km » n'est pas une information sur cette fiche.
 - Sans formation rattachée : `statut: "disponible"`, `existe_en_apprentissage: false`, avec
   `rattachement` qui dit le critère employé. C'est une donnée mesurée (on a cherché dans le jeu
@@ -180,23 +211,27 @@ livraison ; `source` permet de les séparer.
 ```jsonc
 {
   "dispositif": "InserSup",             // "InserSup" | "InserJeunes"
-  "perimetre": {                         // ce que la ligne source décrit, en clair
-    "etablissement": "Université Côte d'Azur",
-    "diplome": "BUT Informatique",       // libellé de la ligne source
-    "granularite": "diplome_etablissement"
-  },
-  "promotion": "2024",                   // InserSup : promo ; InserJeunes : "cumul 2023-2024"
-  "regime": "ensemble",                  // InserSup : ensemble des régimes, sauf mention
-  "effectif_sortants": 46,
-  "indicateurs": {                       // null = non publié par la source (secret statistique)
-    "taux_emploi_salarie_fr_6m": 50.0,
-    "taux_emploi_salarie_fr_12m": 58.7,
-    "taux_emploi_salarie_fr_18m": 56.5,
-    "taux_emploi_stable_12m": 51.9,
-    "salaire_median_net_12m_eur": null,
-    "taux_poursuite_etudes": null        // InserJeunes seulement
-  },
-  "non_diffuse": ["salaire_median_net_12m_eur"]  // publiés « nd » par la source
+  "promotion": "2024",                   // InserSup : "2024", "2023,2024" (cumulée)... ; InserJeunes : "cumul 2023-2024"
+  "regime": "ensemble",                  // InserSup : ensemble des régimes ; InserJeunes : "voie scolaire"
+  "lignes": [{                           // une ligne par diplôme source (options d'un BTS : une par option)
+    "perimetre": {                       // ce que la ligne source décrit, en clair
+      "etablissement": "Université Grenoble Alpes",   // InserSup : l'établissement d'inscription, tous sites
+      "diplome": "RESEAUX ET TELECOMMUNICATIONS",     // libellé de la ligne source
+      "type_diplome": "Bachelor universitaire de technologie",
+      "granularite": "diplome_etablissement",
+      "code_diplome_sise": "2400229"                  // InserJeunes : code_formation_mefstat11
+    },
+    "effectif_sortants": 29,             // null pour InserJeunes (non publié)
+    "effectif_poursuivants": 150,        // InserSup seulement
+    "indicateurs": {                     // valeur publiée telle quelle ; null = non publié (secret statistique)
+      "taux_emploi_salarie_fr_6m": 41.38,
+      "taux_emploi_salarie_fr_12m": 44.83,
+      "taux_emploi_salarie_fr_18m": 58.62,
+      "taux_emploi_stable_12m": 84.62,   // gardé, non écrit dans le texte (section 0)
+      "salaire_median_net_12m_eur": null
+    },                                   // InserJeunes : taux_emploi_6m, taux_emploi_12m, taux_poursuite_etudes
+    "non_diffuse": ["salaire_median_net_12m_eur"]
+  }]
 }
 ```
 

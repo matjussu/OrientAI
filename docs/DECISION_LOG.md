@@ -4105,3 +4105,45 @@ Le texte Parcoursup passe d'une médiane de 711 à 2 981 caractères, avec un bl
 commun à toutes les fiches. `fiche_to_text` sert aussi à l'embedding : ne pas ré-embedder avec ce
 texte sans mesurer le recall. Un texte d'embedding distinct est à trancher à l'étape D ou au lot
 retrieval.
+
+## ADR-064 : Donnée verticale, étape B-1 : coût, alternance et insertion, chaque valeur sourcée ou « non disponible » (ordre 2026-09-23-1044, 23/09/2026)
+
+### Contexte
+
+Mesure du 23/09 sur le corpus de l'étape A (2 395 fiches Parcoursup des trois domaines de la démo) :
+aucun coût (0 champ coût dans toute la base), aucune alternance, et une insertion sur 482 fiches
+seulement, qui était une médiane InserSup discipline x région rattachée avec un score de 0,7, pas un
+chiffre de la formation. Détail et traces : `results/donnee_etape_b/RAPPORT.md`, forme des champs :
+`results/donnee_etape_b/CONTRACT.md` (v1.1).
+
+### Décision
+
+1. **Enveloppe commune** `{statut, valeur, raison, source, millesime, collecte, rattachement}`
+   (`src/collect/valeur_sourcee.py`) sur `cout`, `alternance`, `insertion`. Le champ est toujours
+   présent ; `non_disponible` dit pourquoi, et le texte lu par le modèle l'écrit.
+2. **Coût** : la constante légale prime pour le public (tableau ministériel des droits 2026-2027,
+   CVEC de Service-Public) ; sinon la ligne Onisep du même lieu et du même intitulé, texte gardé mot
+   pour mot ; tarif commun du lycée seulement pour les CPGE et BTS. Aucun montant d'une autre formation.
+3. **Alternance** : une formation en apprentissage est une AUTRE formation Parcoursup (0 identifiant
+   commun sur 11 536) : fiches `parcoursup_apprentissage` à part, et rattachement des fiches scolaires
+   au même UAI ou dans la même commune, jamais plus loin.
+4. **Insertion** : diplôme x établissement seulement (InserSup par l'identifiant Paysage, InserJeunes
+   par l'UAI du lycée). L'ancienne insertion discipline x région n'est plus écrite. Taux publiés tels
+   quels ; un indicateur sans définition publiée (emploi stable) n'est pas écrit.
+5. **Une commande** (`python -m src.collect.pipeline_donnee`) rejoue les étapes A et B-1 sur des bruts
+   verrouillés ; nouveau corpus à part (`formations_etape_b1.json`).
+
+### Alternatives rejetées
+
+1. **Garder l'insertion discipline x région comme repli** : c'est l'approximation que le projet veut
+   éliminer (un chiffre qui n'est pas celui de la formation, présenté à côté des siens).
+2. **Tarif commun « même famille » pour tous les types** : donnait à un IFSI le coût du diplôme de
+   puéricultrice et à un bachelor celui du diplôme d'ingénieur de l'école (relecture du 23/09).
+3. **Recalculer un taux d'accès pour l'apprentissage** (propositions / candidats) : ce n'est pas la
+   définition officielle du taux d'accès ; non publié, donc non écrit.
+
+### Conséquence à surveiller
+
+Le remplissage de l'insertion baisse dans l'explorateur (santé 207 -> 2, maths 149 -> 12) : ce sont
+les approximations retirées, pas une perte. Le texte s'allonge encore (médiane 3 316 -> 3 804
+caractères) : pas de ré-embedding avec ce texte avant l'étape D.

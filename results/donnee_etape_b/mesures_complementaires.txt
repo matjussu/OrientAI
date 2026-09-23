@@ -1,0 +1,43 @@
+Mesures complémentaires, 23/09/2026. Population : fiches des trois domaines selon l'explorateur de Jarvis (export_data.py), rejoué sur les corpus A (9eae9c25108b) et B-1 (44a385c53c95).
+
+1. Fiches : Parcoursup 2395 ; apprentissage 517 (526 dans le corpus selon la table de domaines, 517 retenues par l'explorateur)
+
+2. Coût, fiches Parcoursup, par règle :
+   ('disponible', 'constante_type_statut', 'tableau_droits_2026_2027') 1289
+   ('disponible', 'onisep_uai_intitule', 'onisep_ideo_actions_es') 483
+   ('disponible', 'constante_type_statut', 'service_public_f36520') 327
+   ('non_disponible', 'onisep_uai_intitule', 'onisep_ideo_actions_es') 219
+   ('non_disponible', 'onisep_uai', 'onisep_ideo_actions_es') 75
+   ('non_disponible', 'onisep_uai_famille', 'onisep_ideo_actions_es') 2
+
+   Raisons des coûts non disponibles :
+   114 aucune formation Onisep de ce lieu ne correspond à cet intitulé
+   83 l'Onisep ne publie pas de coût lisible pour cette formation
+   75 aucune formation de ce lieu d'enseignement dans le jeu Onisep
+   22 plusieurs formations Onisep de même intitulé à ce lieu, avec des coûts différents
+   2 l'Onisep ne publie pas de coût pour les formations de ce type à ce lieu
+
+3. Alternance, fiches Parcoursup : existe en apprentissage au même UAI ou dans la même commune : 170 / 2395
+   dont rattachées par l'UAI seulement / par la commune seulement / les deux : [(('uai',), 140), (('commune',), 25), (('commune', 'uai'), 5)]
+
+4. Insertion, fiches Parcoursup :
+   ('non_disponible', None) 2176
+   ('disponible', 'InserJeunes') 140
+   ('disponible', 'InserSup') 79
+   Raisons (non disponible) :
+   513 l'insertion d'une LAS n'est pas mesurée en tant que telle : elle ouvre l'accès aux études de santé, et InserSu
+   488 aucune source nationale récente ne publie l'insertion par institut pour les formations paramédicales
+   287 l'insertion professionnelle n'est pas mesurée pour une première année d'accès aux études de santé
+   284 InserJeunes ne publie pas ce BTS pour ce lycée (effectif trop faible ou lycée hors dispositif)
+   165 une classe préparatoire ne délivre pas de diplôme : aucun dispositif d'insertion ne la couvre
+   69 aucune source d'insertion par formation rattachée pour ce type de formation
+   35 établissement de la formation non identifié dans la cartographie Parcoursup
+   30 InserSup ne publie pas ce diplôme pour cet établissement (effectif trop faible ou diplôme absent du dispositif
+   25 InserSup ne diffuse aucun taux pour ce diplôme dans cet établissement (2 sortants, effectif trop faible)
+   24 InserSup ne diffuse aucun taux pour ce diplôme dans cet établissement (9 sortants, effectif trop faible)
+   23 10 diplômes d'ingénieur de cette école dans InserSup : impossible de dire lequel suit cette formation post-bac
+   22 InserSup ne diffuse aucun taux pour ce diplôme dans cet établissement (8 sortants, effectif trop faible)
+   Avant (corpus A) : fiches avec l'ancien insertion_pro (InserSup discipline x région, score 0,7) : 482
+
+5. Longueur du texte lu par le modèle (caractères, fiches Parcoursup des 3 domaines) :
+   avant : médiane 3316 max 4256 ; après : médiane 3804 max 5857

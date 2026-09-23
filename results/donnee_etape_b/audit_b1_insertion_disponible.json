@@ -1,0 +1,610 @@
+{
+  "genere_le": "2026-09-23T11:29:36+02:00",
+  "corpus": "data/processed/formations_etape_b1.json",
+  "n": 32,
+  "graine": 20260923,
+  "sabotage": null,
+  "parmi": "insertion_disponible",
+  "temoins": {
+    "onisep": "https://api.opendata.onisep.fr/downloads/605344579a7d7/605344579a7d7.json",
+    "tableau": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "apprentissage_insersup": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets",
+    "inserjeunes": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets"
+  },
+  "droits_lus_dans_le_tableau": {
+    "cpge": 178,
+    "licence": 178,
+    "but_dans_le_groupe": 1
+  },
+  "par_statut": {
+    "cout": {
+      "disponible": 29,
+      "non_disponible": 3
+    },
+    "alternance": {
+      "disponible": 32
+    },
+    "insertion": {
+      "disponible": 32
+    }
+  },
+  "fiches_en_ecart": 0,
+  "resultats": [
+    {
+      "cod_aff_form": "2588",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Marie Curie",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "2213",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Honoré d'Estienne d'Orves (Beau-Site)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "2010",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Joseph-Marie Carriat",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "11128",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Montalembert",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "7002",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Licence - Informatique",
+      "etablissement": "Université Polytechnique Hauts-de-France",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "6847",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Henri Wallon",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5834",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Polyvalent Chevrollier",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5693",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Saint-Paul Bourdon Blanc",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5605",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée général et technologique Carcouët",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "9831",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Institution Saint Aspais",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "39213",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Licence - Informatique - Portail René Descartes",
+      "etablissement": "Aix-Marseille Université - Site d'Aix-en-Provence (Montperrin)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "4974",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BUT - Réseaux et télécommunications",
+      "etablissement": "IUT 1 GRENOBLE - ENEPS",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5909",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "LGT Sainte-Marie / ESUPEC",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5527",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée St Pierre La Joliverie",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5469",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée général et technologique La Colinière",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10358",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+      "etablissement": "I.U.T de Toulon",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "6232",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+      "etablissement": "I.U.T. Laval",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "4977",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée Andre Argouges",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "6305",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+      "etablissement": "I.U.T de Nancy-Brabois - Université de Lorraine",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "7598",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique Parcours diététique et nutrition",
+      "etablissement": "I.U.T Clermont Auvergne - site d'Aubière",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "3716",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique Parcours diététique et nutrition",
+      "etablissement": "I.U.T d'Evreux",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10409",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée du Val d'Argens",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "28557",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Licence - Portail Sciences biomédicales",
+      "etablissement": "Université Paris Cité",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "2155",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée Valery Larbaud",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "7977",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée ORT STRASBOURG",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10929",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Institut et Campus d'Optique (ICO)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5866",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique parcours biologie médicale et biotechnologie",
+      "etablissement": "I.U.T. Angers-Cholet - Site d'Angers",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "16136",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Prothésiste dentaire",
+      "etablissement": "Lycée Hector Guimard",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "11510",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BUT - Génie biologique Parcours diététique et nutrition",
+      "etablissement": "I.U.T. de Créteil-Vitry - Site de Créteil- UPEC",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5966",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Ecole Supérieure d'Optique de l'Ouest (LTP ESOO)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "47245",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "Double licence - Sciences biomédicales / Mathématiques - Sciences biomédicales / Mathématiques",
+      "etablissement": "Université Paris Cité",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "47334",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "Licence - Portail Mathématiques, Physique, Mécanique",
+      "etablissement": "Sorbonne université",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    }
+  ]
+}

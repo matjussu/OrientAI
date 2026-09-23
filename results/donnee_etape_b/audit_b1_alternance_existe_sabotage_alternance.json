@@ -1,0 +1,695 @@
+{
+  "genere_le": "2026-09-23T11:32:31+02:00",
+  "corpus": "data/processed/formations_etape_b1.json",
+  "n": 30,
+  "graine": 20260923,
+  "sabotage": "alternance",
+  "parmi": "alternance_existe",
+  "temoins": {
+    "onisep": "https://api.opendata.onisep.fr/downloads/605344579a7d7/605344579a7d7.json",
+    "tableau": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "apprentissage_insersup": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets",
+    "inserjeunes": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets"
+  },
+  "droits_lus_dans_le_tableau": {
+    "cpge": 178,
+    "licence": 178,
+    "but_dans_le_groupe": 1
+  },
+  "par_statut": {
+    "cout": {
+      "disponible": 25,
+      "non_disponible": 5
+    },
+    "alternance": {
+      "disponible": 30
+    },
+    "insertion": {
+      "non_disponible": 19,
+      "disponible": 11
+    }
+  },
+  "fiches_en_ecart": 30,
+  "resultats": [
+    {
+      "cod_aff_form": "4954",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée Portes De L'Oisans",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 5 != officielle 4"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "9030",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée des Métiers Dorian",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 16 != officielle 15"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "9183",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée Henri Bergson-Jacquard",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 21 != officielle 20"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "3453",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée Victor Hugo",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 5 != officielle 4"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "5201",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée de Borda",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 6 != officielle 5"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "7420",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Baudimont Saint-Charles",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 21 != officielle 20"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "8223",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée La Martinière Duchère",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 31 != officielle 30"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "6399",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée Raymond-Poincaré",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 5 != officielle 4"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "34323",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée Charles Carnus",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 4 != officielle 3"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "42708",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Certificat de Spécialisation - Cybersécurité",
+      "etablissement": "Lycée polyvalent Nicolas Appert",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 5 != officielle 4"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2062",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée Condorcet",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 4 != officielle 3"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "7811",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Marie Curie",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 5 != officielle 4"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "16124",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée Rempart (Rue Du)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 16 != officielle 15"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "10118",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Saint Joseph",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 9 != officielle 8"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "9027",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Lycée des Métiers Dorian",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 16 != officielle 15"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2903",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée Marie Curie",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 17 != officielle 16"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "23938",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Pôle de formations Pasteur",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 61 != officielle 60"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "16136",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Prothésiste dentaire",
+      "etablissement": "Lycée Hector Guimard",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 16 != officielle 15"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2586",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée Marie Curie",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 11 != officielle 10"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2198",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée Jules Ferry",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 15 != officielle 14"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "10929",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Institut et Campus d'Optique (ICO)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 61 != officielle 60"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "20049",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Diététique et nutrition",
+      "etablissement": "Lycée des Métiers de l'Hôtellerie Guillaume TIREL",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 61 != officielle 60"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "9444",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée ESTBA",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 17 != officielle 16"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "6672",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée Saint André",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 13 != officielle 12"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "30129",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Institution Saint Jean -Lycée d'enseignement général et technologique privé",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 25 != officielle 24"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "17776",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Prothésiste dentaire",
+      "etablissement": "Lycée Pierre Mendes France",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 3 != officielle 2"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "10401",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée Costebelle",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 3 != officielle 2"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "2662",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Biologie médicale",
+      "etablissement": "Lycée technologique privé Chimie et Biologie La Forbine",
+      "statuts": {
+        "cout": "non_disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 16 != officielle 15"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "20273",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Prothésiste dentaire",
+      "etablissement": "Lycée Rempart (Rue Du)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 19 != officielle 18"
+        ]
+      }
+    },
+    {
+      "cod_aff_form": "4977",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée Andre Argouges",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "constante_type_statut",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {
+        "alternance": [
+          "capacité 6 != officielle 5"
+        ]
+      }
+    }
+  ]
+}
