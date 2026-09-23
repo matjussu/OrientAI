@@ -15,7 +15,7 @@ haute à récupération correcte** : le banc ne mesure pas la capacité à trouv
 l'étape 1 (gain sur le critère 1) : aucune n'a un IC95 de dP entièrement au-dessus de 0. La règle prévoit
 alors de garder la référence (§10.5).
 
-Ce résultat ne dit pas que les autres combinaisons sont pires en tout : la section 3 rapporte un écart
+Ce résultat ne dit pas que les autres combinaisons sont pires en tout : la section 4 rapporte un écart
 large et hors du bruit en faveur de GLM 5.2 sur les erreurs factuelles et la qualité jugée. La règle,
 validée avant les résultats, ne récompense que le critère 1 ; ce constat est donc à trancher par Matteo,
 pas par la règle.
