@@ -3,6 +3,51 @@
 A lire en premier par quiconque reprend le projet (Matteo, Ella, Claudette, Jarvis apres /clear).
 Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par quoi on commence.
 
+## 0. Lot 0 livre le 23/09/2026 (Claudette, ordre 2026-09-23-0817)
+
+Le banc est versionne dans `src/eval/battery/` (README dans ce dossier). Une commande :
+`python -m src.eval.battery bench --tag <nom> --systems local,mistral_large_norag`. Chaque passage
+ecrit `results/battery/<tag>/` avec un manifeste (commit, sha de la batterie et du corpus, modeles,
+couts). Les scripts de ce dossier (`run_battery.py`, `judge.py`, `aggregate.py`, `spike_agent.py`,
+`smoke.py`, `battery.json`) y ont ete deplaces ; les runs bruts du 05/09 restent ici, dans `runs/`.
+
+Mesures du 23/09 (traces : `results/battery/2026-09-23_lot0/REPORT.md` et `manifest.json`) :
+
+| systeme | moy. 4 criteres | refus | err. fact. (juge) | chiffres adosses a une fiche (temoin de hasard) |
+|---|---|---|---|---|
+| local (prod) | 1,99 | 33 % | 24 % | 58 % (38 %) sur 438 chiffres |
+| mistral-large-2512 sans fiche | 3,20 | 0 % | 94 % | 0 % par construction, 805 chiffres |
+
+- **local = la prod** : empreinte de provenance identique a `/health` le 23/09 a 06:49Z (prompt
+  `601adcee86b9`, corpus `2e4276e6155b`, index `8c91dfcf5323`, modeles epingles).
+- **Delta local contre 05/09 (2,04) : -0,06, du bruit.** Tours apparies : IC95 [-0,14 ; +0,03],
+  59 tours sur 67 a 0,25 pres alors que 66 reponses sur 67 ont change (temperature 0,3). Le drapeau
+  `erreur_factuelle` du juge est instable d'un passage a l'autre (11 puis 16 tours, 7 en commun) :
+  ne pas conclure sur l'ecart d'un seul passage.
+- **Mistral Large sans donnees** : mieux note que le produit servi (3,20) mais le juge releve une
+  erreur factuelle sur 94 % des tours, et aucun chiffre n'est montrable. Ses reponses font 604 mots
+  en mediane (le prompt en demande 250 a 450) : plus de faits exposes au juge.
+- **Controle des chiffres (nouveau)** : part des chiffres cites presents dans une fiche que le
+  systeme a exposee, comparaison typee (%, EUR, places), toujours publiee avec son temoin de hasard.
+  Sur les runs du 05/09 : local 61 % (32 %), claude_ctx 80 % (28 %), agent_sonnet 42 % (13 %),
+  agent_mistral 63 % (21 %), GPT et Sonnet sans fiche 0 % (`results/battery/2026-09-05_runs-jarvis/`).
+- **Juge** : les 8 verdicts manquants du 05/09 etaient des JSON tronques (plafond de 1 200 tokens) ;
+  corrige a 4 000.
+
+Set de pertinence (`scripts/relevance_set/`, `STATE.md` y dit tout) :
+- **`eval_retrieval.py` vit dans `scripts/relevance_set/eval_retrieval.py`**. Il venait du WIP `c7402d3`
+  et n'etait pas sur main avant ce lot : le RAPPORT le citait sans chemin.
+- La cle d'identite est corrigee (position dans `formations.json`, sha du corpus verifie). Le bug
+  touchait les modes dense ET bm25 du miner. Les 1 172 references des 135 labels migrent, 0 perdue.
+- **recall@10 = 0,419 en raw, 0,616 en serving** (recall@5 : 0,314 et 0,547), sur 86 questions
+  scorables. **Ce sont des bornes basses** : 49 % du pool re-mine n'a jamais ete juge. L'ancienne cle
+  aurait rendu 0,198 en raw, et non 0 comme l'ecrivait le RAPPORT l.112.
+- **Pas de recall sur golden_qa** : ses 676 entrees n'ont aucune verite terrain de pertinence
+  (question et reponse, aucun identifiant de fiche). Erreur du RAPPORT du 05/09 (l.112 et 176).
+
+Dette laissee au lot retrieval : le RRF de la prod reste casse (`_orig_index` absent cote dense,
+RAPPORT l.107). Le lot 0 ne l'a pas corrige, pour que `local` reste le code servi.
+
 ## 1. Ce qui est etabli (mesure dans la nuit du 4 au 5 septembre 2026)
 
 Source : `RAPPORT.md` (ce dossier, chaque chiffre cite fichier et ligne), version lisible :
@@ -42,14 +87,14 @@ mesure.
 
 Ce qui reste valide : le corpus (52 040 fiches, muet mais reel), l'infra (pipeline, 3 202 tests,
 Langfuse), le controle deterministe des chiffres du lot 1 de juillet (`src/eval/`), le banc gratuit de
-676 questions embarquees (`golden_qa.index`), la note de vision fondateur du 16/07 (vault) pour le
+676 questions embarquees (`golden_qa.index`, mais sans verite terrain de pertinence : cf section 0), la note de vision fondateur du 16/07 (vault) pour le
 cap produit.
 
 ## 3. Ou vit chaque chose
 
 - **Rapport technique et traces** : ce dossier sur `main` (merge 05/09). Runs bruts dans `runs/`,
-  jugements dans `AGGREGATE_*.md`, 11 rapports de scouts dans `scouts/`, batterie `battery.json`,
-  scripts `run_battery.py`, `judge.py`, `aggregate.py`, `spike_agent.py`.
+  jugements dans `AGGREGATE_*.md`, 11 rapports de scouts dans `scouts/`. Batterie et scripts
+  deplaces le 23/09 dans `src/eval/battery/` (section 0).
 - **Branche d'experimentation** `jarvis/analyse-2026-09-05` : meme contenu, posee sur le WIP
   `c7402d3` de Claudette. Ne pas merger (elle porte le WIP), on peut la supprimer une fois ce dossier
   sur main.
@@ -68,11 +113,13 @@ cap produit.
 
 1. **Trancher les 3 decisions** (Matteo + Ella, section 8 du rapport) : modele de generation
    (reco A : Sonnet 5), lookup structure + embedding hors Mistral (reco : lot 1 puis lot 3), ce qu'on
-   vend (chiffres verifies + eval publique).
-2. **Lot 0 sans attendre** : le banc devient le gate. Integrer batterie + juge + agregation dans
+   vend (chiffres verifies + eval publique). **Tranchees le 23/09** (ordre 2026-09-23-0817) :
+   generation Mistral ou open-weights, jamais un modele americain proprietaire ; recherche
+   structuree a la place du RAG plat ; on vend la plateforme, argument « chaque chiffre verifiable ».
+2. **Lot 0 sans attendre** (livre le 23/09, section 0) : le banc devient le gate. Integrer batterie + juge + agregation dans
    `src/eval/battery/`, brancher le controle deterministe des chiffres cites, reparer
    `eval_retrieval.py` (ids `idx:NNNNN` vs `fiche.id` absent sur 38 596 fiches) et mesurer recall@10
-   sur les 676 questions. Cout ~3 USD par passage. Dispatch a Claudette par Jarvis via `/order`.
+   sur les 676 questions (impossible : pas de verite terrain, mesure faite sur le set de pertinence). Cout ~3 USD par passage. Dispatch a Claudette par Jarvis via `/order`.
 3. **Palier 3 du menage** en meme temps que le lot 0 : reecrire `CLAUDE.md`, regrouper `docs/`
    (87 fichiers), traiter `raw_responses_*_bak` et `sprint*_2026-04-2x.json`, consolider ou jeter le
    WIP de `OrientAI_Platform`.
