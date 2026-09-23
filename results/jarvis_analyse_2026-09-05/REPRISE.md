@@ -18,12 +18,12 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
   alternance, insertion (B-1), puis sante (B-2). Mis de cote : Parcoursup 2026, specialites, fiches
   Parcoursup, suite d'etudes, insertion ARS regionale (`_orientai-ref/verticale-2026-09/CAHIER-DES-CHARGES-donnee.md` §4).
 - **Fait** : lot 0 (banc, section 0), etape A (texte des fiches, section 0 bis), B-1 (section 0 ter),
-  B-2 (section 0 quater). Tout est merge sur main (a0ee8a6).
-- **Etape C construite, en attente de validation** (ordres 2026-09-23-1358 et -1424 ; PR du contrat #182
-  et PR de construction, a merger ensemble apres validation de Matteo dans l'explorateur). Base SQLite
-  derivee du corpus B-2 : 3 945 formations, 172 981 valeurs sourcees, gate C 20/20, audit tout vert,
-  8 sabotages rouges chacun sur sa cible (section 0 quinquies). Puis D (grille formats x modeles jouee
-  au banc). Detail en section 4, dettes en section 5.
+  B-2 (section 0 quater), C (section 0 quinquies). Tout est merge sur main (98e9b09).
+- **Etape C validee par Matteo et mergee** (ordres 2026-09-23-1358 et -1424 ; #183, 98e9b09, qui embarque
+  le contrat #182 ; Telegram 10623). Base SQLite derivee du corpus B-2 : 3 945 formations, 172 981 valeurs
+  sourcees, gate C 20/20, audit tout vert, 8 sabotages rouges chacun sur sa cible (section 0 quinquies).
+- **Etape D en cours** (ordre 2026-09-23-1515) : grille 3 formats x 3 modeles jouee au banc vertical,
+  protocole ecrit avant tout appel payant. Detail en section 4, dettes en section 5.
 - **Validation** : Matteo valide chaque etape dans l'explorateur prive de Jarvis (avant/apres, sources
   cliquables, signalements) ; rien n'est merge sans son go.
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
@@ -251,8 +251,7 @@ cap produit.
 Les 3 decisions du 05/09 sont tranchees (ordre 2026-09-23-0817, voir « Etat au 23/09 »), le lot 0 et
 les etapes A, B-1, B-2 sont faites. Ordre de la suite (cahier des charges §5-6, cap de Matteo) :
 
-1. **Etape C, base structuree** (construite, section 0 quinquies ; reste la validation de Matteo dans
-   l'explorateur et le merge des deux PR) : les chiffres du corpus (admission, cout, alternance, insertion,
+1. **Etape C, base structuree** (faite, validee et mergee le 23/09, #183, 98e9b09, section 0 quinquies) : les chiffres du corpus (admission, cout, alternance, insertion,
    sante) interrogeables par outils, avec leur source, au lieu du texte seul. Estimation du cahier des
    charges (non mesuree) : 2 a 3 jours.
 2. **Etape D, meilleur format pour le modele** : grille 3 formats x 2-3 modeles (Mistral ou
