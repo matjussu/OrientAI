@@ -1,7 +1,9 @@
 # Etape D : protocole de la grille formats x modeles (v0.1, 23/09/2026)
 
 v0.1 (23/09, avant tout appel payant) : amendements de Jarvis sur la v0 (5ab87d0) inscrits en section 8
-(contexte neutre du juge, juge sur la generation 1) ; titre du rapport en section 10.
+(contexte neutre du juge, juge sur la generation 1) ; titre du rapport en section 10 ; garde-fou forme
+(etape 3 bis de la section 10, demande de Matteo, Telegram 10634-10635) ; prix Medium et GLM gardes
+« supposes », go de Matteo tel quel.
 
 Ordre 2026-09-23-1515. Ecrit AVANT tout appel payant, avec les precisions de Matteo relayees par Jarvis
 (Telegram 10630-10631). Toute modification apres le premier appel payant = nouvelle version annoncee
@@ -160,6 +162,11 @@ Reference R = A x mistral-medium-2604. Pour chaque combinaison X :
    borne basse de l'IC95 bootstrap de dE est > 0, **ou** si dE depasse le taux de desaccord du juge sur
    erreur_factuelle (section 8).
 3. **Garde-fou refus** : meme regle sur le taux de refus.
+3 bis. **Garde-fou forme** (demande de Matteo, 23/09) : X est **ecartee** si, sur au moins un des criteres
+   `expression`, `comprehension` ou `couverture` du juge (generation 1), la moyenne baisse par rapport a R
+   avec une borne HAUTE de l'IC95 bootstrap apparie < 0, **ou** d'un ecart plus grand que l'ecart absolu
+   moyen du rejugement de 20 % sur ce critere. `references` reste un critere secondaire, publie : il
+   recoupe le critere 1.
 4. **Choix** : parmi les X qui gagnent et ne sont pas ecartees, la meilleure P. Si l'IC95 de l'ecart entre
    deux candidates contient 0 (egalite), on prend la plus simple puis la moins chere : format A, puis B,
    puis C ; a format egal, le cout par tour mesure le plus bas.
