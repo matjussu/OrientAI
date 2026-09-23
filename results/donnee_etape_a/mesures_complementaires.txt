@@ -1,0 +1,16 @@
+# Mesures complementaires etape A, 23/09/2026 (commande : voir RAPPORT.md)
+BUT Informatique: 49 fiches, domaines {'informatique': 49}
+BUT Réseaux et télécommunications: 30 fiches, domaines {'informatique': 30}
+BUT Science des données: 15 fiches, domaines {'data_ia': 15}
+BUT Génie électrique et informatique industrielle: 53 fiches, domaines {'ingenierie_industrielle': 53}
+PASS: fiches 287 | reference: 43 | option non precisee: 0
+PASS Universite de Lille: 13 ['option Chimie', 'option Droit (enseignement à distance)', 'option Economie et management', 'option Mathématiques', 'option Philosophie', 'option Physique', 'option Physique, chimie', 'option Psychologie', 'option Sciences de la vie', 'option Sciences du médicament', 'option Sciences et Techniques des Activités Physiques et Sportives', 'option Sciences sanitaires et sociales', 'option sciences infirmières (Parcours Sciences infirmières)']
+LAS: fiches 513 | reference: 286 | sans majeure: 0
+Fiches sans type en clair: 0
+Villes: sans code INSEE 27 | avec arrondissement 1666 | ville changee vs source 2032
+Longueur texte Parcoursup (caracteres): avant mediane 711 max 1542 | apres mediane 2981 max 4229
+Autres sources, textes modifies / total: {'monmaster': (7369, 7573)}
+Autres sources, total fiches: 39029 | textes modifies: 7369
+MonMaster, segments modifies: {('Insertion apprentissage', 'Insertion professionnelle'): 7369} | diffs hors insertion: 0
+Exemple avant: ['Insertion apprentissage (Inserjeunes CFA, cumul récent) : taux emploi 6 mois 49%, 12 mois 71%']
+Exemple apres: ["Insertion professionnelle (InserSup, ministère de l'Enseignement supérieur ; diplômés 2024 ; chiffre de l'établissement pour ce type de diplôme et cette discipline) : taux d'emploi salarié en France 6 mois 49%, 12 mois 71%. Définition : part des diplômés en emploi salarié en France parmi l'ensemble des diplômés actifs (en emploi ou en recherche) ou inactifs, N mois après le diplôme."]

@@ -1,0 +1,171 @@
+{
+ "mesure": "fiches du corpus de reference dont le domaine change, corpus etape A final",
+ "changements": 1051,
+ "par_regle": {
+  "S02": 284,
+  "I06": 269,
+  "I10": 189,
+  "I05": 172,
+  "I02": 49,
+  "I11": 33,
+  "I04": 30,
+  "I08": 8,
+  "M03": 6,
+  "M01": 5,
+  "M02": 4,
+  "I01": 1,
+  "I09": 1
+ },
+ "transitions": [
+  {
+   "avant": "cyber",
+   "apres": "informatique",
+   "n": 269
+  },
+  {
+   "avant": "autre",
+   "apres": "informatique",
+   "n": 256
+  },
+  {
+   "avant": "sciences_fondamentales",
+   "apres": "informatique",
+   "n": 132
+  },
+  {
+   "avant": "sciences_fondamentales",
+   "apres": "sante",
+   "n": 117
+  },
+  {
+   "avant": "sciences_humaines",
+   "apres": "sante",
+   "n": 34
+  },
+  {
+   "avant": "droit",
+   "apres": "sante",
+   "n": 31
+  },
+  {
+   "avant": "langues",
+   "apres": "sante",
+   "n": 31
+  },
+  {
+   "avant": "communication",
+   "apres": "informatique",
+   "n": 30
+  },
+  {
+   "avant": "sport",
+   "apres": "sante",
+   "n": 25
+  },
+  {
+   "avant": "eco_gestion",
+   "apres": "sante",
+   "n": 23
+  },
+  {
+   "avant": "ingenierie_industrielle",
+   "apres": "informatique",
+   "n": 22
+  },
+  {
+   "avant": "sciences_humaines",
+   "apres": "informatique",
+   "n": 22
+  },
+  {
+   "avant": "ingenierie_industrielle",
+   "apres": "sante",
+   "n": 9
+  },
+  {
+   "avant": "lettres_arts",
+   "apres": "sante",
+   "n": 8
+  },
+  {
+   "avant": "ingenierie_industrielle",
+   "apres": "cyber",
+   "n": 7
+  },
+  {
+   "avant": "lettres_arts",
+   "apres": "sciences_fondamentales",
+   "n": 5
+  },
+  {
+   "avant": "eco_gestion",
+   "apres": "informatique",
+   "n": 5
+  },
+  {
+   "avant": "ingenierie_industrielle",
+   "apres": "sciences_fondamentales",
+   "n": 4
+  },
+  {
+   "avant": "eco_gestion",
+   "apres": "sciences_fondamentales",
+   "n": 4
+  },
+  {
+   "avant": "langues",
+   "apres": "informatique",
+   "n": 3
+  },
+  {
+   "avant": "droit",
+   "apres": "informatique",
+   "n": 2
+  },
+  {
+   "avant": "autre",
+   "apres": "sante",
+   "n": 2
+  },
+  {
+   "avant": "communication",
+   "apres": "sante",
+   "n": 2
+  },
+  {
+   "avant": "education",
+   "apres": "sante",
+   "n": 2
+  },
+  {
+   "avant": "langues",
+   "apres": "ingenierie_industrielle",
+   "n": 1
+  },
+  {
+   "avant": "sciences_fondamentales",
+   "apres": "cyber",
+   "n": 1
+  },
+  {
+   "avant": "lettres_arts",
+   "apres": "informatique",
+   "n": 1
+  },
+  {
+   "avant": "sante",
+   "apres": "sciences_fondamentales",
+   "n": 1
+  },
+  {
+   "avant": "ingenierie_industrielle",
+   "apres": "data_ia",
+   "n": 1
+  },
+  {
+   "avant": "sciences_humaines",
+   "apres": "sciences_fondamentales",
+   "n": 1
+  }
+ ]
+}
