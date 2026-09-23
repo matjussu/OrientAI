@@ -167,6 +167,12 @@ Telegram 10619). ADR-066. Rapport : `results/donnee_etape_c/RAPPORT.md`.
 - A savoir : 4 formations ont leur GPS officiel a plus de 40 km de leur commune (psup:35500, PASS de Rennes,
   GPS pres de Vannes : hypothese site / siege non etablie) ; 18 masters sans coordonnees ; l'historique
   2023-2024 n'existe que pour les 11 champs que le corpus porte.
+- **Correctif du 23/09 (`fix/base-c-insertion`, contrat C v1.4)** : la base mergee (sha `3e9dfaff7e8b`) avait
+  perdu tous les indicateurs InserSup (0 taux sur 108 lignes, lus sous les noms InserJeunes) ; l'audit ne
+  lisait pas `insertion_ligne`. Corrige : chaque indicateur officiel a sa colonne, une cle sans colonne arrete
+  la construction, l'audit compare les tables annexes et controle l'inventaire des tables (24/24, 12
+  sabotages rouges sur leur cible ; rejoue sur l'ancienne base, le controle d'insertion rougit avec 947
+  ecarts). Nouvelle base : sha `9667b95521c2`, empreinte `6dfa2e8d684d`, gate C 20/20.
 
 ## 1. Ce qui est etabli (mesure dans la nuit du 4 au 5 septembre 2026)
 

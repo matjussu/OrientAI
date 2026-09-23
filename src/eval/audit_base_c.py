@@ -38,6 +38,25 @@ CIBLES = {
     "valeur": "base_contre_corpus", "source": "construction", "portee": "portee_sante",
     "geo": "coordonnees_contre_brut", "perimetre": "couverture_gate", "absent": "completude",
     "insee": "insee_apprentissage", "null_muet": "construction",
+    "insertion": "insertion_contre_corpus", "indicateur_inconnu": "construction",
+    "alternance": "alternance_contre_corpus", "table_orpheline": "inventaire_tables",
+}
+
+# Tables dont chaque contrôle compare le contenu à une référence (corpus, brut, identité). Une table
+# qu'aucun contrôle ne déclare est rouge dans inventaire_tables : le 23/09, insertion_ligne n'était lue
+# par aucun contrôle, et ses 108 lignes InserSup avaient perdu tous leurs taux sans qu'un audit 18/18
+# ne le voie.
+TABLES_PAR_CONTROLE = {
+    "base_contre_corpus": ["formation", "valeur", "champ"],
+    "valeurs_contre_bruts": ["valeur"], "sessions_absentes_contre_bruts": ["valeur"],
+    "coordonnees_contre_brut": ["lieu"], "taux_entre_0_et_100": ["valeur"],
+    "source_de_chaque_chiffre": ["source", "valeur"], "url_de_chaque_source": ["source"],
+    "portee_sante": ["valeur", "champ"], "aucun_taux_calcule_monmaster": ["champ"], "aucun_lieu_a_zero": ["lieu"],
+    "completude": ["formation", "champ", "valeur"], "details_sous_groupe_disponible": ["valeur"],
+    "insee_apprentissage": ["lieu"], "temoin_psup_7596": ["valeur", "source"], "couverture_gate": ["formation"],
+    "export_aller_retour": ["valeur", "formation"],
+    "insertion_contre_corpus": ["insertion_ligne"], "alternance_contre_corpus": ["alternance_lien"],
+    "concepts_contre_corpus": ["concept"], "communes_contre_brut": ["commune"], "meta_contre_entrees": ["meta"],
 }
 
 
@@ -87,6 +106,7 @@ class Audit:
         self.con = sqlite3.connect(f"file:{base}?mode=ro", uri=True)
         self.con.row_factory = sqlite3.Row
         self.corpus = json.loads(corpus.read_bytes()) if corpus else None
+        self.corpus_path = corpus
         self.gate = json.loads(gate.read_bytes()) if gate and gate.exists() else None
         self.export = export
         self.controles: dict[str, dict] = {}
@@ -96,6 +116,8 @@ class Audit:
 
     def noter(self, nom: str, vert: bool, compares: int, **details) -> None:
         # Une comparaison sur zéro élément ne prouve rien : elle est rouge (règle 9 de Claudette).
+        # `tables` : les tables dont ce contrôle compare le contenu (lu par inventaire_tables).
+        details.setdefault("tables", TABLES_PAR_CONTROLE.get(nom, []))
         self.controles[nom] = {"vert": bool(vert) and compares > 0, "compares": compares, **details}
 
     # 1. Base contre corpus, 100 %, dans les deux sens
@@ -363,6 +385,146 @@ class Audit:
                    valeurs_base=len(self.valeurs), ecarts=len(ecarts), exemples=[str(e) for e in ecarts[:3]],
                    meta_complete=ok_meta, octets=self.export.stat().st_size)
 
+    # 9. Tables annexes contre le corpus, dans les deux sens (ajout du 23/09, fix/base-c-insertion)
+    def _fiches_postbac(self) -> dict[str, dict]:
+        fiches = {}
+        for f in self.corpus:
+            if f.get("source") == "parcoursup":
+                fiches[f"psup:{f['cod_aff_form']}"] = f
+            elif f.get("source") == "parcoursup_apprentissage":
+                fiches[f"psup_app:{f['cod_aff_form']}"] = f
+        return fiches
+
+    def insertion_contre_corpus(self) -> None:
+        fiches = self._fiches_postbac()
+        base = {}
+        for r in self.con.execute("SELECT * FROM insertion_ligne"):
+            base[(r["id"], r["rang"])] = dict(r)
+        colonnes = [c for c in next(iter(base.values()), {}) if c not in ("id", "rang", "source_id")]
+        compares, ecarts, vues, par_colonne = 0, [], set(), {}
+        for fid, form in self.formations.items():
+            f = fiches.get(fid)
+            env = (f or {}).get("insertion")
+            if not isinstance(env, dict) or env.get("statut") != "disponible":
+                continue
+            val = env["valeur"]
+            for rang, lg in enumerate(val.get("lignes") or [], 1):
+                b = base.get((fid, rang))
+                vues.add((fid, rang))
+                if b is None:
+                    ecarts.append({"cle": [fid, rang], "base": None, "corpus": "ligne"})
+                    continue
+                per = lg.get("perimetre") or {}
+                attendu = {"dispositif": val.get("dispositif"), "promotion": val.get("promotion"),
+                           "regime": val.get("regime"), "granularite": per.get("granularite"),
+                           "etablissement": per.get("etablissement"), "diplome": per.get("diplome"),
+                           "effectif_sortants": lg.get("effectif_sortants"),
+                           "effectif_poursuivants": lg.get("effectif_poursuivants"),
+                           **(lg.get("indicateurs") or {}),
+                           "non_diffuse": json.dumps(lg.get("non_diffuse") or [], ensure_ascii=False),
+                           "perimetre_json": json.dumps(per, ensure_ascii=False, sort_keys=True)}
+                # Chaque clé du corpus doit avoir sa colonne : une clé sans colonne est un écart, pas un oubli.
+                for k, v in attendu.items():
+                    if k not in b:
+                        ecarts.append({"cle": [fid, rang, k], "base": "colonne absente", "corpus": v})
+                        continue
+                    compares += 1
+                    if v is None or isinstance(v, str):
+                        ok = b[k] == v or (v is None and b[k] is None)
+                    else:
+                        ok = egal(b[k], v)
+                    if not ok:
+                        ecarts.append({"cle": [fid, rang, k], "base": b[k], "corpus": v})
+                    elif v is not None and not isinstance(v, str):
+                        par_colonne[k] = par_colonne.get(k, 0) + 1
+                # Une colonne remplie dans la base sans valeur au corpus est aussi un écart.
+                for k in colonnes:
+                    if k not in attendu and b[k] is not None:
+                        ecarts.append({"cle": [fid, rang, k], "base": b[k], "corpus": "absent"})
+        en_trop = sorted(set(base) - vues)
+        self.noter("insertion_contre_corpus", not ecarts and not en_trop, compares, lignes_base=len(base),
+                   lignes_vues=len(vues), ecarts=len(ecarts), exemples=[str(e) for e in ecarts[:5]],
+                   lignes_base_sans_corpus=len(en_trop), valeurs_numeriques_par_colonne=dict(sorted(par_colonne.items())))
+
+    def alternance_contre_corpus(self) -> None:
+        fiches = self._fiches_postbac()
+        base = {(r["id"], r["id_apprentissage"]): dict(r) for r in self.con.execute("SELECT * FROM alternance_lien")}
+        compares, ecarts, vues = 0, [], set()
+        for fid, form in self.formations.items():
+            env = (fiches.get(fid) or {}).get("alternance")
+            if form["espace"] != "psup" or not isinstance(env, dict) or env.get("statut") != "disponible":
+                continue
+            for x in env["valeur"].get("formations") or []:
+                cle = (fid, f"psup_app:{x['cod_aff_form']}")
+                vues.add(cle)
+                b = base.get(cle)
+                if b is None:
+                    ecarts.append({"cle": list(cle), "base": None})
+                    continue
+                for kb, kc in (("etablissement", "etablissement"), ("commune", "ville"), ("capacite", "capacite"),
+                               ("cfa_partenaire", "cfa_partenaire"), ("precision", "precision"),
+                               ("rattachee_par", "rattachee_par")):
+                    compares += 1
+                    v = x.get(kc)
+                    ok = egal(b[kb], v) if isinstance(v, (int, float)) and not isinstance(v, bool) else b[kb] == v
+                    if not ok:
+                        ecarts.append({"cle": list(cle) + [kb], "base": b[kb], "corpus": v})
+        en_trop = sorted(set(base) - vues)
+        self.noter("alternance_contre_corpus", not ecarts and not en_trop, compares, liens_base=len(base),
+                   liens_corpus=len(vues), ecarts=len(ecarts), exemples=[str(e) for e in ecarts[:5]],
+                   liens_base_sans_corpus=len(en_trop))
+
+    def concepts_contre_corpus(self) -> None:
+        corpus = {f["id"]: f for f in self.corpus if f.get("source") == "concept"}
+        base = {r["concept_id"]: dict(r) for r in self.con.execute("SELECT * FROM concept")}
+        ecarts, compares = [], 0
+        for cid in sorted(set(corpus) | set(base)):
+            c, b = corpus.get(cid), base.get(cid)
+            if c is None or b is None:
+                ecarts.append({"concept": cid, "base": b is not None, "corpus": c is not None})
+                continue
+            for kb, v in (("texte", c.get("text") or ""), ("statut_reglementaire", c.get("statut_reglementaire")),
+                          ("verifie_le", c.get("verifie_le"))):
+                compares += 1
+                if b[kb] != v:
+                    ecarts.append({"concept": cid, "champ": kb})
+        self.noter("concepts_contre_corpus", not ecarts, compares, concepts=len(base), ecarts=ecarts[:5])
+
+    def communes_contre_brut(self) -> None:
+        brut = {c["code"]: c for c in json.loads(chemin_verifie("geo_api_communes").read_bytes())}
+        base = {r["code_insee"]: dict(r) for r in self.con.execute("SELECT * FROM commune")}
+        ecarts, compares = [], 0
+        for code in sorted(set(brut) | set(base)):
+            c, b = brut.get(code), base.get(code)
+            if c is None or b is None:
+                ecarts.append({"code": code, "base": b is not None, "brut": c is not None})
+                continue
+            ctr = (c.get("centre") or {}).get("coordinates") or [None, None]
+            compares += 1
+            if b["nom"] != c["nom"] or b["code_departement"] != c.get("codeDepartement") or not (
+                    (b["lat"] is None and ctr[1] is None) or (egal(b["lat"], ctr[1]) and egal(b["lon"], ctr[0]))):
+                ecarts.append({"code": code, "base": [b["nom"], b["lat"], b["lon"]], "brut": [c["nom"], ctr[1], ctr[0]]})
+        self.noter("communes_contre_brut", not ecarts, compares, communes_base=len(base), ecarts=len(ecarts),
+                   exemples=[str(e) for e in ecarts[:5]])
+
+    def meta_contre_entrees(self, corpus_path: Path | None) -> None:
+        meta = {r["cle"]: json.loads(r["valeur"]) for r in self.con.execute("SELECT cle, valeur FROM meta")}
+        entrees = meta.get("entrees") or {}
+        lu = (entrees.get("corpus") or {}).get("sha256")
+        reel = None if corpus_path is None else __import__("hashlib").sha256(corpus_path.read_bytes()).hexdigest()
+        n_fiches_ok = reel is not None and (entrees.get("corpus") or {}).get("fiches") == len(self.corpus or [])
+        self.noter("meta_contre_entrees", lu is not None and lu == reel and n_fiches_ok, 1 if lu else 0,
+                   sha_meta=(lu or "")[:12], sha_corpus_audite=(reel or "")[:12], fiches_ok=n_fiches_ok)
+
+    # 10. Inventaire : chaque table de la base est comparée par au moins un contrôle
+    def inventaire_tables(self) -> None:
+        tables = sorted(r[0] for r in self.con.execute("SELECT name FROM sqlite_master WHERE type = 'table'"))
+        couvertes = {t for c in self.controles.values() for t in (c.get("tables") or [])
+                     if c.get("vert") is not None and c.get("compares", 0) > 0}
+        orphelines = [t for t in tables if t not in couvertes]
+        self.noter("inventaire_tables", not orphelines, len(tables), tables=[], tables_base=tables,
+                   non_couvertes=orphelines)
+
     def tout(self) -> dict:
         if self.corpus is not None:
             self.base_contre_corpus()
@@ -373,6 +535,13 @@ class Audit:
         self.temoin()
         self.couverture_gate()
         self.export_aller_retour()
+        if self.corpus is not None:
+            self.insertion_contre_corpus()
+            self.alternance_contre_corpus()
+            self.concepts_contre_corpus()
+        self.communes_contre_brut()
+        self.meta_contre_entrees(self.corpus_path)
+        self.inventaire_tables()  # en dernier : lit les tables déclarées par tous les autres contrôles
         juges = {k: v for k, v in self.controles.items() if v["vert"] is not None}
         return {"verts": sum(v["vert"] for v in juges.values()), "juges": len(juges), "controles": self.controles}
 

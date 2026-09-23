@@ -69,5 +69,39 @@
   "rouge_sur_sa_cible": true,
   "resultat": "construction refusée",
   "erreur": "sqlite3.IntegrityError: CHECK constraint failed: statut = 'disponible' OR (raison IS NOT NULL AND raison <> '')"
+ },
+ "insertion": {
+  "description": "un taux d'emploi InserSup à 6 mois modifié (+1) : psup:7596, ligne 1",
+  "cible": "insertion_contre_corpus",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "insertion_contre_corpus"
+  ]
+ },
+ "indicateur_inconnu": {
+  "description": "un indicateur d'insertion sans colonne ajouté (doit être refusé à la construction)",
+  "cible": "construction",
+  "rouge_sur_sa_cible": true,
+  "resultat": "construction refusée",
+  "erreur": "ValueError: psup:7596 insertion ligne 1 : clés sans colonne ['taux_emploi_inconnu_6m']"
+ },
+ "alternance": {
+  "description": "un lien d'alternance supprimé",
+  "cible": "alternance_contre_corpus",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "alternance_contre_corpus"
+  ]
+ },
+ "table_orpheline": {
+  "description": "une table que l'audit ne connaît pas ajoutée à la base",
+  "cible": "inventaire_tables",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "inventaire_tables"
+  ]
  }
 }

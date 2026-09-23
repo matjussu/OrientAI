@@ -70,7 +70,21 @@ SABOTAGES = {
     "absent": "une ligne non disponible supprimée",
     "insee": "normalisation « 0NN » des départements d'apprentissage retirée",
     "null_muet": "une valeur NULL sans raison insérée (doit être refusée par les contraintes)",
+    "insertion": "un taux d'emploi InserSup à 6 mois modifié (+1) : psup:7596, ligne 1",
+    "indicateur_inconnu": "un indicateur d'insertion sans colonne ajouté (doit être refusé à la construction)",
+    "alternance": "un lien d'alternance supprimé",
+    "table_orpheline": "une table que l'audit ne connaît pas ajoutée à la base",
 }
+
+# Noms officiels des enveloppes d'insertion du corpus (contrat B v1.2) : InserJeunes (lycée pro, BTS) et
+# InserSup (supérieur) ne partagent pas leurs définitions, chaque indicateur garde sa colonne.
+# Inventaire mesuré le 23/09 sur formations_etape_b2.json : 3 102 lignes InserJeunes, 2 097 InserSup.
+INDICATEURS_INSERTION = {
+    "taux_emploi_6m", "taux_emploi_12m", "taux_poursuite_etudes",  # InserJeunes
+    "taux_emploi_salarie_fr_6m", "taux_emploi_salarie_fr_12m", "taux_emploi_salarie_fr_18m",  # InserSup
+    "taux_emploi_stable_12m", "salaire_median_net_12m_eur",  # InserSup
+}
+CLES_LIGNE_INSERTION = {"perimetre", "effectif_sortants", "effectif_poursuivants", "indicateurs", "non_diffuse"}
 
 
 def _maintenant() -> str:
@@ -492,18 +506,27 @@ class Constructeur:
         self.l.valeur.append(_v(id_, "insertion", SANS_SESSION, num=len(lignes), unite="lignes",
                                 texte=val.get("dispositif"), **commun))
         for rang, lg in enumerate(lignes, 1):
-            ind = lg.get("indicateurs") or {}
+            ind = dict(lg.get("indicateurs") or {})
+            if self.sabotage == "indicateur_inconnu" and id_ == "psup:7596" and rang == 1:
+                ind["taux_emploi_inconnu_6m"] = 50.0
             per = lg.get("perimetre") or {}
-            self.l.insertion_ligne.append({
+            # Une clé que la table ne sait pas porter arrête la construction : le 23/09, les 5 indicateurs
+            # InserSup étaient lus sous les noms InserJeunes et perdus sans erreur sur 108 lignes.
+            inconnues = sorted(set(lg) - CLES_LIGNE_INSERTION) + sorted(set(ind) - INDICATEURS_INSERTION)
+            if inconnues:
+                raise ValueError(f"{id_} insertion ligne {rang} : clés sans colonne {inconnues}")
+            ligne = {
                 "id": id_, "rang": rang, "dispositif": val.get("dispositif"), "promotion": val.get("promotion"),
                 "regime": val.get("regime"), "granularite": per.get("granularite"), "etablissement": per.get("etablissement"),
                 "diplome": per.get("diplome"), "effectif_sortants": _num(lg.get("effectif_sortants")),
-                "taux_emploi_6m": _num(ind.get("taux_emploi_6m")), "taux_emploi_12m": _num(ind.get("taux_emploi_12m")),
-                "taux_emploi_18m": _num(ind.get("taux_emploi_18m")), "taux_emploi_24m": _num(ind.get("taux_emploi_24m")),
-                "taux_emploi_30m": _num(ind.get("taux_emploi_30m")), "taux_poursuite_etudes": _num(ind.get("taux_poursuite_etudes")),
+                "effectif_poursuivants": _num(lg.get("effectif_poursuivants")),
+                **{k: _num(ind.get(k)) for k in sorted(INDICATEURS_INSERTION)},
                 "non_diffuse": json.dumps(lg.get("non_diffuse") or [], ensure_ascii=False),
                 "perimetre_json": json.dumps(per, ensure_ascii=False, sort_keys=True), "source_id": sid,
-            })
+            }
+            if self.sabotage == "insertion" and id_ == "psup:7596" and rang == 1 and ligne["taux_emploi_salarie_fr_6m"] is not None:
+                ligne["taux_emploi_salarie_fr_6m"] += 1
+            self.l.insertion_ligne.append(ligne)
 
     def sante(self, f: dict, id_: str) -> None:
         s = f.get("sante") or {}
@@ -667,6 +690,8 @@ class Constructeur:
             del self.l.valeur[cible]
         if self.sabotage == "null_muet":
             self.l.valeur.append(_v(self.l.formation[0]["id"], "taux_acces", "1999", statut="non_disponible"))
+        if self.sabotage == "alternance":
+            del self.l.alternance_lien[0]
         return self.l
 
 
@@ -868,6 +893,10 @@ def main(argv: list[str] | None = None) -> int:
             "sabotage": sabotage, "entrees": entrees, "comptes_construction": dict(sorted(lignes.comptes.items())),
             "exclusions": list(EXCLUSIONS)}
     ecrire_sqlite(lignes, sources, c.champs, meta, base)
+    if sabotage == "table_orpheline":
+        with sqlite3.connect(base) as con:
+            con.execute("CREATE TABLE fantome (cle TEXT PRIMARY KEY, valeur NUMERIC)")
+            con.execute("INSERT INTO fantome VALUES ('psup:7596', 42)")
     empreinte, comptes = empreinte_canonique(base)
     export_meta = {"genere_le": _maintenant(), "corpus_sha256": entrees["corpus"]["sha256"][:12],
                    "base_empreinte": empreinte[:12], "commande": meta["commande"], "sabotage": sabotage,

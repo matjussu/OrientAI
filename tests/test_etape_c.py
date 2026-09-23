@@ -290,3 +290,62 @@ def test_cas_test_rennes_rend_vide_puis_laval():
         assert large["resultats"][0]["id"] == "psup:6231" and large["resultats"][0]["distance_km"] == 69.2
     finally:
         b.fermer()
+
+
+# ── Insertion : chaque indicateur officiel a sa colonne (fix du 23/09) ─────────────────────
+def _constructeur_nu(sabotage=None):
+    """Constructeur sans bruts : seule la méthode `insertion` est exercée."""
+    c = bc.Constructeur.__new__(bc.Constructeur)
+    c.l, c.sabotage = bc.Lignes(), sabotage
+    return c
+
+
+def _fiche_insersup(**indicateurs):
+    ind = {"taux_emploi_salarie_fr_6m": 64.71, "taux_emploi_salarie_fr_12m": 70.59, "taux_emploi_salarie_fr_18m": 61.76,
+           "taux_emploi_stable_12m": 75.0, "salaire_median_net_12m_eur": None, **indicateurs}
+    return {"insertion": {"statut": "disponible", "millesime": "promotion 2024", "rattachement": "paysage_etablissement",
+                          "source": {"id": "insersup"},
+                          "valeur": {"dispositif": "InserSup", "promotion": "2024", "regime": "ensemble", "lignes": [
+                              {"perimetre": {"etablissement": "UCA", "diplome": "INFORMATIQUE"}, "effectif_sortants": 34,
+                               "effectif_poursuivants": 54, "indicateurs": ind,
+                               "non_diffuse": ["salaire_median_net_12m_eur"]}]}}}
+
+
+def test_insertion_insersup_garde_ses_taux_sous_leur_nom_officiel():
+    c = _constructeur_nu()
+    c.insertion(_fiche_insersup(), "psup:7596")
+    (ligne,) = c.l.insertion_ligne
+    assert (ligne["taux_emploi_salarie_fr_6m"], ligne["taux_emploi_salarie_fr_12m"], ligne["taux_emploi_salarie_fr_18m"]) \
+        == (64.71, 70.59, 61.76)
+    assert ligne["taux_emploi_stable_12m"] == 75.0 and ligne["effectif_poursuivants"] == 54
+    # Les colonnes InserJeunes restent vides : les définitions diffèrent, pas de fusion.
+    assert ligne["taux_emploi_6m"] is None and ligne["taux_emploi_12m"] is None
+
+
+def test_insertion_colonnes_du_schema_egales_aux_cles_construites():
+    con = sqlite3.connect(":memory:")
+    con.executescript(SCHEMA)
+    colonnes = {r[1] for r in con.execute("PRAGMA table_info(insertion_ligne)")}
+    c = _constructeur_nu()
+    c.insertion(_fiche_insersup(), "psup:7596")
+    assert set(c.l.insertion_ligne[0]) == colonnes
+
+
+def test_insertion_indicateur_inconnu_arrete_la_construction():
+    with pytest.raises(ValueError, match="clés sans colonne"):
+        _constructeur_nu().insertion(_fiche_insersup(taux_emploi_nouveau_24m=50.0), "psup:1")
+
+
+def test_insertion_levier_indicateur_inconnu_arrete_la_construction():
+    with pytest.raises(ValueError, match="taux_emploi_inconnu_6m"):
+        _constructeur_nu("indicateur_inconnu").insertion(_fiche_insersup(), "psup:7596")
+
+
+@pytest.mark.skipif(not VRAIE_BASE.exists(), reason="base de l'étape C non construite")
+def test_temoin_insersup_psup_7596_dans_la_vraie_base():
+    # Témoin : jeu officiel InserSup relu par Jarvis le 23/09 (34 sortants ; 64,71 / 70,59 / 61,76).
+    con = sqlite3.connect(VRAIE_BASE)
+    r = con.execute("SELECT effectif_sortants, taux_emploi_salarie_fr_6m, taux_emploi_salarie_fr_12m, "
+                    "taux_emploi_salarie_fr_18m FROM insertion_ligne WHERE id = 'psup:7596' AND rang = 1").fetchone()
+    con.close()
+    assert r == (34, 64.71, 70.59, 61.76)

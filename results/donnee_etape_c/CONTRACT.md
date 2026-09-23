@@ -1,5 +1,13 @@
 # Contrat de l'étape C : la base structurée
 
+**Version 1.4** (23/09, correctif `fix/base-c-insertion`, après la mise en service) : la table
+`insertion_ligne` perdait tous les indicateurs InserSup. Ils étaient lus sous les noms InserJeunes, alors
+que le corpus les nomme `taux_emploi_salarie_fr_*`. Mesure sur la base mergée (sha `3e9dfaff7e8b`) :
+0 taux sur les 108 lignes InserSup, `effectif_poursuivants` perdu sur les 108. L'audit ne lisait pas cette
+table. Correctif : chaque indicateur officiel a sa colonne (section 4) et une clé sans colonne arrête la
+construction ; la base en clair distingue InserSup et InserJeunes (section 7) ; l'audit compare les tables
+annexes et contrôle l'inventaire des tables (section 11). Forme de l'export : section 16.
+
 **Version 1.3.1** (23/09, construction) : forme livrée de l'export (section 9), convenue avec Jarvis.
 
 **Version 1** (23/09, ordre 2026-09-23-1424) : Matteo a tranché les six questions, « go reco pour
@@ -208,9 +216,15 @@ lieu(id, rang, commune, code_insee, arrondissement, code_departement, departemen
      lat, lon, precision_geo, source_id)                  PK(id, rang)
 valeur(id, champ, session, valeur_num, valeur_texte, unite, statut, raison, source_id, millesime,
        identifiant_source, rattachement, portee)          PK(id, champ, session)
-insertion_ligne(id, rang, dispositif, promotion, regime, perimetre, granularite, diplome,
-                effectif_sortants, taux_emploi_6m, taux_emploi_12m, taux_emploi_18m,
-                taux_emploi_24m, taux_poursuite_etudes, non_diffuse, source_id)   PK(id, rang)
+insertion_ligne(id, rang, dispositif, promotion, regime, granularite, etablissement, diplome,
+                effectif_sortants, effectif_poursuivants,
+                taux_emploi_6m, taux_emploi_12m, taux_poursuite_etudes,             -- InserJeunes
+                taux_emploi_salarie_fr_6m, taux_emploi_salarie_fr_12m,
+                taux_emploi_salarie_fr_18m, taux_emploi_stable_12m,
+                salaire_median_net_12m_eur,                                         -- InserSup
+                non_diffuse, perimetre_json, source_id)   PK(id, rang)
+                -- v1.4 : noms officiels de chaque dispositif, jamais fusionnés ; une clé du corpus
+                -- sans colonne arrête la construction
 alternance_lien(id, id_apprentissage, rattachee_par, cfa_partenaire, capacite, precision)
 concept(concept_id PK, titre, texte, statut_reglementaire, verifie_le, sources_json)
 v_formation (vue)  -- une ligne par formation, colonnes session 2025 + historique, pour filtrer
@@ -381,8 +395,12 @@ le 23/09/2026.
 
 | Colonne | Ce qu'elle dit | D'où | Ce qu'elle ne dit pas |
 |---|---|---|---|
-| Taux d'emploi à 6, 12, 18, 24 mois | part des diplômés en emploi salarié en France | InserSup (licences, BUT, masters), InserJeunes (BTS) | la qualité de l'emploi ; le lien avec le diplôme |
-| Poursuite d'études | part des sortants qui continuent leurs études | InserJeunes | |
+| Taux d'emploi salarié en France à 6, 12, 18 mois (InserSup) | libellé officiel repris par le texte A : « part des diplômés en emploi salarié en France parmi l'ensemble des diplômés actifs (en emploi ou en recherche) ou inactifs » | InserSup (licences, BUT, masters, écoles) | l'emploi non salarié ou à l'étranger ; la qualité de l'emploi ; le lien avec le diplôme |
+| Taux d'emploi stable à 12 mois (InserSup) | **définition non publiée par InserSup** (contrat B, section 0) ; sa valeur dépasse souvent le taux d'emploi, son dénominateur est donc autre. Gardé dans la base, jamais écrit au modèle | InserSup | tant que la définition n'est pas lue, rien |
+| Salaire médian net à 12 mois (InserSup) | salaire médian net, 12 mois après le diplôme (définition exacte non relue à la source, à vérifier) ; souvent « non diffusé » | InserSup | le salaire d'un individu |
+| Diplômés sortis, poursuivants (InserSup) | nombre de diplômés sortis des études ; nombre qui ont continué | InserSup | un taux : ce sont des effectifs |
+| Taux d'emploi à 6 et 12 mois (InserJeunes) | part des sortants en emploi salarié en France | InserJeunes (BTS) | la même chose qu'InserSup : la population et la définition diffèrent, les deux ne se comparent pas |
+| Poursuite d'études (InserJeunes) | part des sortants qui continuent leurs études | InserJeunes | |
 | Portée | la formation elle-même, ou le même diplôme dans l'établissement | | |
 
 ### Santé (PASS et LAS)
@@ -680,6 +698,12 @@ vérification indépendante de Jarvis, avant/après dans l'explorateur.
    d'Aubière, taux d'accès 34 %, 96 places (chiffres du banc, vérifiés contre l'API officielle le
    23/09), doit sortir avec sa source cliquable.
 8. **Déterminisme** : deux constructions donnent la même empreinte canonique.
+8 bis. **Tables annexes et inventaire (v1.4)** : `insertion_ligne` et `alternance_lien` comparées au
+   corpus B-2 dans les deux sens, chaque clé du corpus devant avoir sa colonne ; `concept` contre la
+   fiche concept du corpus ; `commune` contre le brut geo.api ; `meta` contre le sha du corpus audité.
+   Le contrôle `inventaire_tables` rougit si une table de la base n'est comparée par aucun contrôle.
+   Sabotages ajoutés : `insertion` (un taux InserSup modifié), `indicateur_inconnu` (refus à la
+   construction), `alternance` (un lien supprimé), `table_orpheline` (une table inconnue de l'audit).
 9. **Le gate C** : 20 requêtes justes.
 10. **Rien d'autre ne bouge** : la suite de tests reste verte, le corpus B-2 garde son sha, la prod
    n'est pas touchée.
@@ -759,3 +783,17 @@ néo-bacheliers », `pct_bt_denominateur`), C12 étendu à l'apprentissage, C03 
 - **Historique** : les 12 champs sans historique dans le corpus (dont admis, propositions, mentions
   AB et TBF, part de néo-bacheliers, accès des terminales) n'ont que la session 2025, et le catalogue
   le déclare (`sessions = psup=2025`) : conséquence de Q6 = B.
+
+## 16. Correctif v1.4 : insertion (23/09, `fix/base-c-insertion`)
+
+- **Forme de l'export** : dans `formations[].insertion[]`, les clés suivent les colonnes de
+  `insertion_ligne` (section 4) : `effectif_poursuivants`, `taux_emploi_salarie_fr_6m`,
+  `taux_emploi_salarie_fr_12m`, `taux_emploi_salarie_fr_18m`, `taux_emploi_stable_12m`,
+  `salaire_median_net_12m_eur` apparaissent ; `taux_emploi_18m`, `taux_emploi_24m` et `taux_emploi_30m`
+  disparaissent (aucun dispositif du corpus ne les porte : 0 ligne sur 407). Le reste de l'export ne
+  change pas.
+- **Mesures** (audit du 23/09 sur la base reconstruite) : 407 lignes d'insertion, 5 507 valeurs
+  comparées au corpus, 0 écart ; les 108 lignes InserSup portent leurs trois taux d'emploi salarié,
+  leur taux d'emploi stable et leurs deux effectifs ; 503 liens d'alternance, 3 018 valeurs, 0 écart.
+  Rejoué sur l'ancienne base, le même contrôle rougit (947 écarts) : il voit le défaut qu'il vise.
+- **Rien d'autre ne bouge** : 3 945 formations et 172 981 valeurs, comme avant ; corpus B-2 inchangé.
