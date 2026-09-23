@@ -1,0 +1,71 @@
+{
+  "genere_le": "2026-09-23T14:51:23+02:00",
+  "commande": "python -m src.collect.base_etape_c",
+  "contrat": "results/donnee_etape_c/CONTRACT.md v1.2",
+  "sabotage": null,
+  "entrees": {
+    "corpus": {
+      "chemin": "/home/matteo_linux/projets/OrientIA-etape-c/data/processed/formations_etape_b2.json",
+      "sha256": "2e6a93a5cda6d26119259248d0e7bbe7d103037608d471604aa359c66ce73c07",
+      "fiches": 53808
+    },
+    "verrou": {
+      "sha256": "6d1f7343f40e3b147102b63c26bf89944a31402a6d03ccf4c7250360ec0bb435"
+    },
+    "table_domaines": {
+      "sha256": "1fc3a447dfbfc539db54f7bd56475a9fbeab607ab3aaf61060fe782450d74e6c"
+    },
+    "table_types": {
+      "sha256": "9fe5c13fce6bfac5f4e189185dcd1c1ab8d2094ac7b2a2c88917073dcd621266"
+    },
+    "table_champs": {
+      "sha256": "b2dbb987f775e08f9c666d95affbc6d08528d4fd9239c32010e4fe1ff185b368"
+    },
+    "bruts": {
+      "parcoursup_2025": "5bb0e6604c7d87a01d7bbcae4aa00cab3677e59679cdda38add2af2aa0f87807",
+      "parcoursup_apprentissage_2025": "f628835107411e69e990a8615a908b29b724249a0b087e44b7163bdf48cc0e4f",
+      "monmaster_2025": "1c82acd573e8c765988795bfb2e56182af5b713d3da1d9e35bd2b9c6a282da72",
+      "geo_api_communes": "f1721245c89e8a836b087a45e6bfb16eb222fae3d29ae8a2513657ecb560463c",
+      "insee_cog_communes_2025": "3f8d2913fb0bdee1f72f54706854dc0cd626ed4089bd5761ec9292db0cb12e7e"
+    }
+  },
+  "comptes_construction": {
+    "exclues:M01:Ecole normale supérieure Paris Saclay": 5,
+    "fiches_postbac": 3465,
+    "insee_du_corpus:psup": 2938,
+    "insee_du_corpus:psup_app": 84,
+    "insee_non_resolus:psup": 1,
+    "insee_resolus_etape_c:psup_app": 442,
+    "lieux_au_centre_de_commune": 12,
+    "lieux_masters_non_resolus": 18
+  },
+  "exclusions": [
+    {
+      "regle": "M01",
+      "filiere_commence_par": "Ecole normale supérieure Paris Saclay",
+      "motif": "préparation ENS arts et design classée en prépa scientifique par la règle M01 (défaut de la table A)"
+    }
+  ],
+  "sortie": {
+    "chemin": "/home/matteo_linux/projets/OrientIA-etape-c/data/processed/base_etape_c.sqlite",
+    "sha256_fichier": "3e9dfaff7e8b4400c834c4aa386bdc4a34fb1f3a7653d590e25a3ca56033eed3",
+    "empreinte_canonique": "39f774bd5cbbdd2c2bf3ab0746f7dd4946710e3f0c8865b501a3a7c63a704733",
+    "lignes": {
+      "source": 23,
+      "champ": 85,
+      "formation": 3945,
+      "lieu": 3996,
+      "valeur": 172981,
+      "insertion_ligne": 407,
+      "alternance_lien": 503,
+      "concept": 1,
+      "commune": 34969
+    }
+  },
+  "exports": {
+    "json_octets": 13786516,
+    "json_sha256": "30decf6a8e0b5c45564b52176e4b26674583bae52cf060ec6b2dcb8add9a9e9a",
+    "csv_octets": 2079816,
+    "csv_sha256": "1a55d8ce23e6fb4595ba0eaafb215c9f6bde6375f087c6d56e41b060b4797164"
+  }
+}

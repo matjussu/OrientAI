@@ -74,6 +74,7 @@ data/processed/formations_etape_a.manifest.json
 data/processed/formations_etape_b1.json
 data/processed/formations_etape_b1.manifest.json
 data/processed/formations_etape_b2.json
+data/processed/base_etape_c*
 data/processed/formations_etape_b2.manifest.json
 # Phase D archive — snapshots binaires des promotions corpus (v3.2, v5, v6...)
 data/archive/

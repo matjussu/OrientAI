@@ -1,0 +1,24 @@
+# Sortie de prototype_jetable_moteurs.py, 23/09/2026 (WSL2, Python 3.12, duckdb 1.5.5 installé hors dépôt dans le scratchpad)
+# temps d'import mesurés à part : python -c 'import sqlite3' contre 'import duckdb' (processus neuf, date +%s%N)
+import sqlite3 ms 118 import duckdb ms 545
+lignes 2912 prov 17472
+sqlite ms/req 0.461
+duckdb ms/req 5.031 0
+taille sqlite Ko 4748 duckdb Ko 1292
+export json Ko 865 gz Ko 110
+sans gps parmi 3 domaines 13 ['psup:22934', 'psup_app:44367', 'psup_app:45640', 'psup_app:48918', 'psup_app:48922', 'psup_app:49281', 'psup_app:31204', 'psup_app:49011', 'psup_app:27407', 'psup_app:16504']
+sans insee 434
+
+[exited with code 0]
+
+# poids installés et WASM (curl + gzip, 23/09/2026)
+duckdb wheel installée : 59 Mo (du -sh)
+sql.js 1.13.0 sql-wasm.wasm : 659806 octets (323036 gzip) ; sql-wasm.js 48788
+@duckdb/duckdb-wasm 1.29.0 duckdb-eh.wasm : 35659694 octets (7093195 gzip) ; duckdb-mvp.wasm 40621595
+explorateur actuel data_b2.json : 21327984 octets
+
+# Sortie de prototype_jetable_taille.py
+fiches 3470 valeurs numeriques 194213
+sqlite Mo 19.9
+export json Mo 9.07 gz Mo 0.45
+parse ms 111

@@ -19,8 +19,11 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
   Parcoursup, suite d'etudes, insertion ARS regionale (`_orientai-ref/verticale-2026-09/CAHIER-DES-CHARGES-donnee.md` §4).
 - **Fait** : lot 0 (banc, section 0), etape A (texte des fiches, section 0 bis), B-1 (section 0 ter),
   B-2 (section 0 quater). Tout est merge sur main (a0ee8a6).
-- **Prochaine etape : C, base structuree**, puis D (grille formats x modeles jouee au banc). Detail en
-  section 4, dettes en section 5.
+- **Etape C construite, en attente de validation** (ordres 2026-09-23-1358 et -1424 ; PR du contrat #182
+  et PR de construction, a merger ensemble apres validation de Matteo dans l'explorateur). Base SQLite
+  derivee du corpus B-2 : 3 945 formations, 172 981 valeurs sourcees, gate C 20/20, audit tout vert,
+  8 sabotages rouges chacun sur sa cible (section 0 quinquies). Puis D (grille formats x modeles jouee
+  au banc). Detail en section 4, dettes en section 5.
 - **Validation** : Matteo valide chaque etape dans l'explorateur prive de Jarvis (avant/apres, sources
   cliquables, signalements) ; rien n'est merge sans son go.
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
@@ -143,6 +146,28 @@ Rapport, chiffres et traces : `results/donnee_etape_b2/RAPPORT.md`. Forme des ch
 - **Une commande rejoue toute la donnee** : `python -m src.collect.pipeline_donnee` (controle des 22
   empreintes, puis A, B-1, B-2). Bruts verrouilles dans `data/reference/sources_officielles.json`.
 
+## 0 quinquies. Donnee verticale, etape C (base structuree) construite le 23/09/2026 (Claudette, ordres 2026-09-23-1358 et -1424)
+
+Contrat v1.3.1 : `results/donnee_etape_c/CONTRACT.md` (decisions de Matteo Q1-Q6 « go reco pour tout »,
+Telegram 10619). ADR-066. Rapport : `results/donnee_etape_c/RAPPORT.md`.
+
+- Une commande : `python -m src.collect.base_etape_c` (etape 5 de `pipeline_donnee`). Sorties hors git :
+  `data/processed/base_etape_c.sqlite`, son manifeste (copie dans `results/donnee_etape_c/manifest_base.json`),
+  l'export de l'explorateur (13,8 Mo) et un CSV pour tableur.
+- Contenu : 3 465 formations post-bac (table de domaines A, maths par M01-M03, 5 fiches ENS arts et design
+  exclues par regle comptee) + 480 masters info et maths (MonMaster 2025, nouveau brut verrouille) ;
+  172 981 valeurs, chacune avec source, millesime, identifiant de ligne source et portee ; « non disponible »
+  porte sa raison (contraintes CHECK). Chiffres lus dans le corpus (Q6 = B), coordonnees dans les bruts.
+- Interrogation : `src/base_c/outils.py`, fonctions a filtres fermes (chercher_formations, chercher_masters,
+  lire_fiche, trouver_commune, lister_valeurs) ; `*_min` inclusif, `*_max` strict, distance a vol d'oiseau.
+- Gate C (20 requetes de Jarvis, sha `227a2c9bfaf6`) : 20/20, 69 valeurs a l'egalite stricte ;
+  `python -m src.eval.gate_c --requetes <fichier>`. Temoins : perimetre de l'explorateur 16/20, valeur sabotee 19/20.
+- Audit : `python -m src.eval.audit_base_c` (100 % des valeurs contre le corpus et contre les bruts, dans
+  les deux sens) et `--sabotages` (8 leviers `ORIENTIA_SABOTAGE_C`, chacun rouge sur son controle).
+- A savoir : 4 formations ont leur GPS officiel a plus de 40 km de leur commune (psup:35500, PASS de Rennes,
+  GPS pres de Vannes : hypothese site / siege non etablie) ; 18 masters sans coordonnees ; l'historique
+  2023-2024 n'existe que pour les 11 champs que le corpus porte.
+
 ## 1. Ce qui est etabli (mesure dans la nuit du 4 au 5 septembre 2026)
 
 Source : `RAPPORT.md` (ce dossier, chaque chiffre cite fichier et ligne), version lisible :
@@ -220,7 +245,8 @@ cap produit.
 Les 3 decisions du 05/09 sont tranchees (ordre 2026-09-23-0817, voir « Etat au 23/09 »), le lot 0 et
 les etapes A, B-1, B-2 sont faites. Ordre de la suite (cahier des charges §5-6, cap de Matteo) :
 
-1. **Etape C, base structuree** : les chiffres du corpus (admission, cout, alternance, insertion,
+1. **Etape C, base structuree** (construite, section 0 quinquies ; reste la validation de Matteo dans
+   l'explorateur et le merge des deux PR) : les chiffres du corpus (admission, cout, alternance, insertion,
    sante) interrogeables par outils, avec leur source, au lieu du texte seul. Estimation du cahier des
    charges (non mesuree) : 2 a 3 jours.
 2. **Etape D, meilleur format pour le modele** : grille 3 formats x 2-3 modeles (Mistral ou
@@ -248,6 +274,9 @@ l'explorateur, validation de Matteo avant merge.
 | Pas de `.venv` dans `~/projets/OrientIA` : le recreer (`uv venv` + `requirements.lock`) | constat du 23/09 apres retrait du worktree B-2 |
 | Menage : `DEPLOY_LOT1_RUN_ME.sh` non suivi a jeter ; branche `jarvis/analyse-2026-09-05` a ne jamais merger, a supprimer | `git status`, `git branch -a` le 23/09 |
 | Texte MonMaster sans capacite d'accueil (5 chiffres du banc absents) ; 53 domaines hors verticale non revus | section 0 bis |
+| Table A, regle M01 : 5 fiches « ENS Paris-Saclay arts et design » classees prepa scientifique (exclues par C, a corriger dans la table) | `src/collect/base_etape_c.py` EXCLUSIONS ; CONTRACT.md de C section 2 |
+| 18 masters sans coordonnees (lieux MonMaster qui ne sont pas des communes, Evry fusionnee absente du COG) | `results/donnee_etape_c/audit/audit.json`, info_lieux_sans_coordonnees |
+| B-1 : 442 fiches d'apprentissage sur 526 sans code INSEE (departement ecrit sur 3 chiffres, « 044 ») ; MonMaster du corpus : 75 masters info/maths 2025 manquants sur 480 | `results/donnee_etape_c/mesures_contrat/mesures_contrat.json` (CONTRACT.md de C, section 13) ; contourne dans C par normalisation, a corriger dans B-1 |
 | Points ouverts de B-1 (droits IFSI, ecoles d'ingenieurs a plusieurs diplomes) et de B-2 (section 0 quater) | RAPPORT de chaque etape |
 
 Suite de tests : 3 485 reussis, 45 ignores, 0 echec (branche B-2, commit b9554e4, 23/09/2026, meme

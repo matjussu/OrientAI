@@ -1,0 +1,492 @@
+{
+ "entrees": {
+  "corpus_sha256_12": "2e6a93a5cda6",
+  "gate_sha256_12": "227a2c9bfaf6"
+ },
+ "corpus_par_source": {
+  "parcoursup": 14252,
+  "monmaster": 7573,
+  "rncp": 5181,
+  "rncp_blocs": 4891,
+  "onisep": 4758,
+  "inserjeunes_cfa": 4065,
+  "labonnealternance": 4008,
+  "inserjeunes_lycee_pro": 2693,
+  "rome_api_v4": 1584,
+  "dares_metiers_2030": 1160,
+  "onisep_ideo_fiches": 1075,
+  "onisep_metiers": 1075,
+  "parcoursup_apprentissage": 526,
+  "insersup_mesr": 368,
+  "ip_doc_doctorat": 240,
+  "mesri_parcours_bacheliers_licence": 151,
+  "insee_salaan_2023": 59,
+  "crous_combine_logements_restos": 45,
+  "financement_dispositifs_curated": 28,
+  "onisep_formations_extended": 20,
+  "domtom_curated": 16,
+  "apec_observatoire_emploi_cadre_2026": 13,
+  "parcoursup_calendrier_officiel": 9,
+  "monmaster_calendrier_officiel": 7,
+  "corrections_factuelles_curated": 5,
+  "dse_calendrier_officiel": 5,
+  "concept": 1
+ },
+ "perimetre": {
+  "fiches": 3470,
+  "par_source": {
+   "parcoursup": 2944,
+   "parcoursup_apprentissage": 526
+  },
+  "par_domaine": {
+   "informatique": 1276,
+   "sante": 1512,
+   "data_ia": 44,
+   "cyber": 64,
+   "sciences_fondamentales": 574
+  },
+  "par_fili": {
+   "BTS": 985,
+   "Licence_Las": 513,
+   "CPGE": 490,
+   "Autre formation": 394,
+   "IFSI": 344,
+   "PASS": 287,
+   "Licence": 284,
+   "BUT": 131,
+   "Ecole d'Ingénieur": 40,
+   "Ecole de Commerce": 2
+  },
+  "par_regle": {
+   "S02": 513,
+   "I06": 458,
+   "M01": 449,
+   "I05": 416,
+   "S03": 344,
+   "S01": 287,
+   "I10": 276,
+   "S04": 185,
+   "anterieur": 170,
+   "M03": 106,
+   "I08": 64,
+   "I02": 50,
+   "I11": 40,
+   "I04": 36,
+   "I09": 26,
+   "M02": 19,
+   "S05": 16,
+   "I03": 15
+  }
+ },
+ "regles_maths_detail": {
+  "M01": {
+   "PCSI": 138,
+   "MPSI": 124,
+   "PTSI": 67,
+   "BCPST": 54,
+   "TSI": 48,
+   "TB": 8,
+   "Ecole normale supérieure Paris Saclay – arts et design": 5,
+   "TPC": 5
+  },
+  "M02": {
+   "Cycle Universitaire Préparatoire aux Grandes Ecoles": 3,
+   "Classe Préparatoire Universitaire - Physique - Chimie": 1,
+   "Cursus préparatoire aux concours des grandes écoles d'ingénieurs": 1,
+   "Cycle préparatoire Physique Chimie, parcours renforcé": 1,
+   "Cycle Universitaire de Préparation aux Grandes Ecoles Scientifiques": 1,
+   "Cycle universitaire préparatoire aux grandes écoles": 1,
+   "Cycle Universitaire Préparatoire aux Grandes Ecoles - Mathématiques et Physique": 1,
+   "Cycle universitaire préparatoire aux grandes écoles - Mécanique": 1,
+   "Cycle universitaire préparatoire aux grandes écoles - Physique": 1,
+   "Cycle Universitaire Préparatoire aux Grandes Ecoles - Physique et Mathématiques": 1,
+   "Mathématique - Préparation aux écoles d'ingénieurs": 1,
+   "Parcours mathématiques-physique": 1,
+   "Parcours scientifique renforcé": 1,
+   "Prep'ISIMA": 1,
+   "Sciences de la Vie et de la Terre : préparation aux concours B Agro et Véto (Sites Saint Charles)": 1,
+   "Sciences de la Vie/Sciences de l'environnement (SVSE) option Prépa concours Agro Véto (PCAV)": 1,
+   "Sciences pour l'ingénieur": 1
+  },
+  "M03": {
+   "Mathématiques": 90,
+   "Physique": 5,
+   "Economie": 3,
+   "Mathématiques, Physique et Sciences pour l'Ingénieur": 2,
+   "Physique, chimie": 2,
+   "Sciences biomédicales": 1,
+   "Economie, Mathématiques": 1,
+   "Mathématiques, Sciences de la vie": 1,
+   "Chimie": 1
+  }
+ },
+ "exclus_sciences_fondamentales_hors_regle_maths": {
+  "fiches": 630,
+  "top_filieres": [
+   [
+    "Licence / Sciences de la vie",
+    67
+   ],
+   [
+    "Licence / Chimie",
+    45
+   ],
+   [
+    "CPGE / ECG - Mathématiques appliquées + ESH",
+    43
+   ],
+   [
+    "Licence / Physique",
+    41
+   ],
+   [
+    "Licence / Physique, chimie",
+    39
+   ],
+   [
+    "BTS / Analyses biologiques, biotechnologiques, agricoles et environnementales",
+    30
+   ],
+   [
+    "BTS / Métiers de la chimie",
+    29
+   ],
+   [
+    "BUT / Mesures physiques",
+    29
+   ],
+   [
+    "Licence / Sciences de la vie et de la terre",
+    29
+   ],
+   [
+    "BTS / Métiers du Végétal : Alimentation, Ornement, Environnement",
+    27
+   ],
+   [
+    "CPGE / ECG - Mathématiques approfondies + HGG",
+    23
+   ],
+   [
+    "Licence / Sciences de la terre",
+    21
+   ]
+  ]
+ },
+ "sante_par_regle_anterieure": {
+  "fiches": 167,
+  "top_filieres": [
+   [
+    "BTS / Diététique et nutrition",
+    38
+   ],
+   [
+    "BTS / Biologie médicale",
+    36
+   ],
+   [
+    "BTS / Opticien-Lunetier",
+    30
+   ],
+   [
+    "BUT / Génie biologique parcours biologie médicale et biotechnologie",
+    19
+   ],
+   [
+    "BUT / Génie biologique Parcours diététique et nutrition",
+    11
+   ],
+   [
+    "Autre formation / FCIL",
+    9
+   ],
+   [
+    "BTS / Prothésiste dentaire",
+    7
+   ],
+   [
+    "Autre formation / Formation Bac+6",
+    6
+   ],
+   [
+    "Licence / Sciences et Techniques des Activités Physiques et Sportives",
+    5
+   ],
+   [
+    "Licence / Sciences biomédicales",
+    4
+   ]
+  ]
+ },
+ "remplissage": {
+  "cout_disponible": 3080,
+  "alternance_disponible": 2944,
+  "insertion_disponible": 275,
+  "champ_sante": 800,
+  "debouches_non_vides": 1341,
+  "insertion_pro_heritee_du_corpus_historique": 494,
+  "provenance_herite_de": 532,
+  "historique_nb_sessions": {
+   "3": 2698,
+   "2": 126,
+   "1": 120,
+   "0": 526
+  },
+  "statut": {
+   "Privé": 780,
+   "Public": 2690
+  }
+ },
+ "valeurs_distinctes": {
+  "filiere_detaillee": 148,
+  "filiere_sans_suffixe_apprentissage": 137,
+  "type_formation": 72,
+  "filieres_avec_suffixe_apprentissage": 525
+ },
+ "identifiants": {
+  "doublons": 0,
+  "cod_aff_form_communs_parcoursup_apprentissage": 0
+ },
+ "admission_2025_contre_brut": {
+  "compares": {
+   "taux_acces_ens": 14237,
+   "capa_fin": 14252,
+   "voe_tot": 14252
+  },
+  "ecarts": {}
+ },
+ "pct_bt_denominateur": {
+  "lignes_discriminantes": 6264,
+  "egal_acc_bt_sur_acc_neobac": 6264,
+  "egal_acc_bt_sur_acc_tot": 1481
+ },
+ "filiere_detaillee_contre_fil_lib_voe_acc": 0,
+ "geographie": {
+  "parcoursup_2025_avec_g_olocalisation": 14214,
+  "parcoursup_2025_lignes": 14252,
+  "comparees_a_la_cartographie": 14214,
+  "ecart_max_km": 0.0,
+  "apprentissage_brut_lignes": 11536,
+  "apprentissage_fiches_avec_g_olocalisation": 516,
+  "perimetre_sans_coordonnees": [
+   "psup:22934",
+   "psup:50180",
+   "psup_app:16504",
+   "psup_app:27407",
+   "psup_app:31204",
+   "psup_app:44367",
+   "psup_app:48918",
+   "psup_app:48922",
+   "psup_app:49010",
+   "psup_app:49011",
+   "psup_app:49281",
+   "psup_app:49282"
+  ],
+  "perimetre_sans_code_insee": {
+   "parcoursup": 1,
+   "parcoursup_apprentissage": 442
+  },
+  "apprentissage_sans_insee_forme_departement": {
+   "3": 442
+  }
+ },
+ "cas_test_rennes": {
+  "centre_rennes_geo_api": [
+   -1.6884,
+   48.1159
+  ],
+  "communes_geo_api": 34969,
+  "but_informatique_france": 49,
+  "a_moins_de_50_km": [],
+  "les_3_plus_proches": [
+   [
+    69.2,
+    "psup:6231",
+    "I.U.T. Laval",
+    39.0
+   ],
+   [
+    96.6,
+    "psup:6467",
+    "I.U.T de Vannes",
+    45.0
+   ],
+   [
+    99.9,
+    "psup:5482",
+    "I.U.T. Nantes",
+    30.0
+   ]
+  ]
+ },
+ "communes_homonymes": {
+  "noms_portes_par_plusieurs_communes": 1441,
+  "saint_denis": 4
+ },
+ "masters": {
+  "corpus_monmaster": 7573,
+  "corpus_par_session": {
+   "2025": 7031,
+   "2024": 542
+  },
+  "corpus_url_type": {
+   "fallback_search": 7573
+  },
+  "officiel_2025_lignes": 8167,
+  "officiel_2025_info_maths": 480,
+  "presents_dans_le_corpus": 405,
+  "absents_du_corpus": 75,
+  "ecarts_sur_les_presents": {
+   "capacite": 0,
+   "n_candidats_pp": 0,
+   "alternance": 0
+  },
+  "corpus_info_maths_ville_avec_cedex": 80,
+  "corpus_info_maths_par_secteur": {
+   "Mathématiques": 150,
+   "Informatique": 272,
+   "Mathématique et informatique": 17,
+   "Mathématiques appliquées et sciences sociales": 17
+  }
+ },
+ "gate": {
+  "C01": {
+   "attendus": 5,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C02": {
+   "attendus": 2,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C03": {
+   "attendus": 3,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C04": {
+   "attendus": 11,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C05": {
+   "attendus": 2,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C06": {
+   "attendus": 7,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C07": {
+   "attendus": 4,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C08": {
+   "attendus": 16,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C09": {
+   "attendus": 4,
+   "frontiere": 1,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C10": {
+   "attendus": 3,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C11": {
+   "attendus": 3,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C12": {
+   "attendus": 3,
+   "frontiere": 1,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C13": {
+   "attendus": 4,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C14": {
+   "attendus": 0,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C15": {
+   "attendus": 13,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C16": {
+   "attendus": 3,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C17": {
+   "attendus": 3,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C18": {
+   "attendus": 6,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C19": {
+   "attendus": 6,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  },
+  "C20": {
+   "attendus": 7,
+   "frontiere": 0,
+   "hors_corpus": [],
+   "hors_perimetre": []
+  }
+ },
+ "temoin_perimetre_explorateur": {
+  "fiches": 2912,
+  "attendus_du_gate_hors_perimetre": [
+   "psup:10257",
+   "psup:11880",
+   "psup:14543",
+   "psup:18673",
+   "psup:19594",
+   "psup:20093",
+   "psup:3921",
+   "psup:4217",
+   "psup:43006",
+   "psup:5292",
+   "psup:6735",
+   "psup:6842",
+   "psup:8225"
+  ]
+ }
+}

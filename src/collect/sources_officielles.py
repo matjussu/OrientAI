@@ -171,6 +171,20 @@ SOURCES: dict[str, Source] = {
             "https://sante.utoulouse.fr/medias/fichier/2025-2026-numerus-apertus-pass-las_1759410255556-pdf",
             "Université de Toulouse, Faculté de santé, numerus apertus PASS-LAS 2025/2026 (21/07/2025)", "document public de l'université",
         ),
+        # ── étape C : base structurée (contrat results/donnee_etape_c/CONTRACT.md v1) ──
+        # MonMaster en JSON : `modalite_enseignement` y est une liste, que le CSV aplatit.
+        Source(
+            "monmaster_2025", "data/raw/monmaster_2025.json",
+            f"{_ESR}/fr-esr-mon_master/exports/json?where=session%3D%222025%22",
+            "MESR (SIES), jeu fr-esr-mon_master, session 2025", "Licence Ouverte v2.0",
+        ),
+        # Centre des communes (champ `centre`) pour la distance « à moins de N km de ».
+        Source(
+            "geo_api_communes", "data/raw/geo_api_communes.json",
+            "https://geo.api.gouv.fr/communes?fields=code,nom,centre,codeDepartement,codeRegion&format=json",
+            "DINUM (Etalab), API Découpage administratif geo.api.gouv.fr, communes et leur centre",
+            "Licence Ouverte v2.0",
+        ),
     )
 }
 
@@ -185,11 +199,13 @@ class EmpreinteDivergente(RuntimeError):
 
 def empreinte(chemin: Path) -> dict:
     data = chemin.read_bytes()
-    return {
-        "sha256": hashlib.sha256(data).hexdigest(),
-        "octets": len(data),
-        "lignes": max(data.count(b"\n") - 1, 0),  # hors ligne d'en-tête
-    }
+    if chemin.suffix == ".json":
+        # Un export JSON est un tableau sur une seule ligne : on compte ses éléments.
+        contenu = json.loads(data)
+        lignes = len(contenu) if isinstance(contenu, list) else 1
+    else:
+        lignes = max(data.count(b"\n") - 1, 0)  # hors ligne d'en-tête
+    return {"sha256": hashlib.sha256(data).hexdigest(), "octets": len(data), "lignes": lignes}
 
 
 def charger_verrou() -> dict:

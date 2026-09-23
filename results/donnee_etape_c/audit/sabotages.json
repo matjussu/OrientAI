@@ -1,0 +1,73 @@
+{
+ "valeur": {
+  "description": "deux taux d'accès 2025 modifiés (+1) : psup:7596 (témoin) et psup:11236 (gate C05)",
+  "cible": "base_contre_corpus",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "base_contre_corpus",
+   "temoin_psup_7596",
+   "valeurs_contre_bruts"
+  ]
+ },
+ "source": {
+  "description": "la source d'une valeur disponible effacée de la table source",
+  "cible": "construction",
+  "rouge_sur_sa_cible": true,
+  "resultat": "construction refusée",
+  "erreur": "sqlite3.IntegrityError: FOREIGN KEY constraint failed"
+ },
+ "portee": {
+  "description": "un taux national de santé présenté comme propre à l'université",
+  "cible": "portee_sante",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "portee_sante"
+  ]
+ },
+ "geo": {
+  "description": "une coordonnée décalée d'un degré de latitude (environ 111 km)",
+  "cible": "coordonnees_contre_brut",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "coordonnees_contre_brut"
+  ]
+ },
+ "perimetre": {
+  "description": "périmètre remplacé par le classement par mots-clés de l'explorateur",
+  "cible": "couverture_gate",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "couverture_gate"
+  ]
+ },
+ "absent": {
+  "description": "une ligne non disponible supprimée",
+  "cible": "completude",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "base_contre_corpus",
+   "completude"
+  ]
+ },
+ "insee": {
+  "description": "normalisation « 0NN » des départements d'apprentissage retirée",
+  "cible": "insee_apprentissage",
+  "rouge_sur_sa_cible": true,
+  "resultat": "base construite",
+  "controles_rouges": [
+   "insee_apprentissage"
+  ]
+ },
+ "null_muet": {
+  "description": "une valeur NULL sans raison insérée (doit être refusée par les contraintes)",
+  "cible": "construction",
+  "rouge_sur_sa_cible": true,
+  "resultat": "construction refusée",
+  "erreur": "sqlite3.IntegrityError: CHECK constraint failed: statut = 'disponible' OR (raison IS NOT NULL AND raison <> '')"
+ }
+}
