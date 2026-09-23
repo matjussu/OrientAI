@@ -1,4 +1,7 @@
-# Etape D : protocole de la grille formats x modeles (v0, 23/09/2026)
+# Etape D : protocole de la grille formats x modeles (v0.1, 23/09/2026)
+
+v0.1 (23/09, avant tout appel payant) : amendements de Jarvis sur la v0 (5ab87d0) inscrits en section 8
+(contexte neutre du juge, juge sur la generation 1) ; titre du rapport en section 10.
 
 Ordre 2026-09-23-1515. Ecrit AVANT tout appel payant, avec les precisions de Matteo relayees par Jarvis
 (Telegram 10630-10631). Toute modification apres le premier appel payant = nouvelle version annoncee
@@ -118,7 +121,14 @@ taux d'appel de l'outil.
   opaque ; la correspondance vers combinaison vit dans `label_mapping.json`, jamais montree aux juges. Les
   titres des fiches exposees sont les memes pour les 9, ils ne revelent donc ni le format ni le modele.
   Limite : le style d'un modele peut se reconnaitre, on ne peut pas l'effacer.
+- **Contexte du juge neutre (v0.1)** : pour les 9 combinaisons, le juge recoit le MEME rendu des 8 fiches
+  exposees (la carte B complete), jamais le format lu par la combinaison ; pour C, les appels d'outil et leurs
+  resultats sont retires du transcript juge, seule la reponse finale reste. Un test verifie que deux
+  combinaisons d'une meme conversation donnent au juge un contexte identique octet pour octet (hors reponse).
 - Lots d'environ 25 tours par sous-agent ; un fichier de verdict par tour (`judge/<id_opaque>.json`).
+- **Charge (v0.1)** : le juge ne note que la generation 1 (9 x 79 = 711 reponses) ; le rejugement de 20 %
+  porte sur celle-ci. Le critere 1 (sans juge) utilise les 2 generations. Juger la generation 2 demanderait
+  une v0.2 annoncee avant.
 - **Instabilite du juge mesuree** : un echantillon stratifie de 20 % des tours (graine fixe, au moins 15 par
   combinaison) est rejuge par d'autres sous-agents. Publies : accord brut et kappa de Cohen sur
   erreur_factuelle et sur refus, ecart absolu moyen par critere. Sans cette mesure, pas de conclusion sur la
@@ -155,6 +165,7 @@ Reference R = A x mistral-medium-2604. Pour chaque combinaison X :
    puis C ; a format egal, le cout par tour mesure le plus bas.
 5. **Aucune candidate** : on garde R (A x Medium). En cas de doute, A et Medium.
 
+Titre du rapport : il dit que le resultat est une **borne haute a recuperation correcte** (section 3).
 Le rapport publie la matrice P, dP et IC95, le temoin de hasard, dE, refus, et l'application de chaque
 etape de la regle, combinaison par combinaison.
 
