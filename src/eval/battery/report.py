@@ -16,6 +16,7 @@ import statistics as st
 from collections import Counter
 from pathlib import Path
 
+from src.eval.battery.config import BATTERY_PATH
 from src.eval.battery.judge import CRITERIA, load_verdicts
 from src.eval.battery.numbers import NumberChecker, NumberSummary
 from src.eval.battery.runner import by_turn, load_battery, read_jsonl
@@ -91,13 +92,14 @@ def check_numbers(run_dir: Path, systems: list[str], corpus, out_dir: Path, anch
 
 
 def build_report(run_dir: Path, corpus, judge_name: str = "opus", title: str = "",
-                 anchor: bool = True, out_dir: Path | None = None) -> str:
+                 anchor: bool = True, out_dir: Path | None = None,
+                 battery_path: Path = BATTERY_PATH) -> str:
     """Ecrit REPORT.md et les numbers_*.jsonl dans `out_dir` (par defaut le dossier du passage,
     un autre dossier pour rapporter sur des runs historiques sans les toucher)."""
     run_dir = Path(run_dir)
     out_dir = Path(out_dir or run_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    battery = {it["id"]: it for it in load_battery()}
+    battery = {it["id"]: it for it in load_battery(battery_path)}
     systems = [s for s in SYSTEMS if (run_dir / f"{s}.jsonl").exists()]
     runs = {s: by_turn(read_jsonl(run_dir / f"{s}.jsonl")) for s in systems}
     verdicts = {s: load_verdicts(run_dir, judge_name, s) for s in systems}

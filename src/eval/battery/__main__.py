@@ -16,7 +16,7 @@ import os
 import sys
 from pathlib import Path
 
-from src.eval.battery.config import REPO, RESULTS_DIR
+from src.eval.battery.config import BATTERY_PATH, REPO, RESULTS_DIR
 
 # Cles requises par famille de modele. Verifiees AVANT le premier appel : sans elles chaque tour
 # echoue en 0 s et le passage produit un JSONL d'erreurs (05/09 : 67 erreurs d'auth).
@@ -49,10 +49,29 @@ def run_dir_of(args) -> Path:
     return RESULTS_DIR / args.tag
 
 
+def battery_of(args, run_dir: Path) -> Path:
+    """--battery explicite, sinon celle du manifeste du passage, sinon la batterie par defaut."""
+    from src.eval.battery.runner import read_manifest
+
+    if args.battery:
+        return Path(args.battery)
+    recorded = read_manifest(run_dir).get("battery_path")
+    if recorded:
+        return Path(recorded) if Path(recorded).is_absolute() else REPO / recorded
+    return BATTERY_PATH
+
+
 def cmd_run(args) -> None:
     from src.eval.battery import systems as registry
     from src.eval.battery.corpus import Corpus
-    from src.eval.battery.runner import by_turn, load_battery, play, read_jsonl, update_manifest
+    from src.eval.battery.runner import (
+        assert_same_battery,
+        by_turn,
+        load_battery,
+        play,
+        read_jsonl,
+        update_manifest,
+    )
 
     names = args.systems.split(",")
     unknown = set(names) - set(registry.SYSTEMS)
@@ -60,7 +79,12 @@ def cmd_run(args) -> None:
         sys.exit(f"systemes inconnus : {', '.join(sorted(unknown))} (connus : {', '.join(registry.SYSTEMS)})")
     require_keys({f for n in names for f in SYSTEM_KEYS[n]})
     run_dir = run_dir_of(args)
-    battery = load_battery()
+    battery_path = battery_of(args, run_dir)
+    try:
+        assert_same_battery(run_dir, battery_path)
+    except ValueError as e:
+        sys.exit(str(e))
+    battery = load_battery(battery_path)
     if args.only:
         keep = set(args.only.split(","))
         battery = [it for it in battery if it["id"] in keep]
@@ -73,7 +97,7 @@ def cmd_run(args) -> None:
         system = registry.build(name, corpus=corpus, local_run=local_run)
         stats = play(system, battery, run_dir / f"{name}.jsonl", workers=args.workers)
         print(f"[{name}] {stats}")
-        update_manifest(run_dir, corpus.sha256 if corpus else None, {"step": "run", **stats})
+        update_manifest(run_dir, corpus.sha256 if corpus else None, {"step": "run", **stats}, battery_path)
 
 
 def cmd_judge(args) -> None:
@@ -85,15 +109,17 @@ def cmd_judge(args) -> None:
     stats = judge_run(run_dir, args.systems.split(","), args.judge, sample=args.sample, workers=args.workers)
     print(f"[juge] {stats}")
     if (run_dir / "manifest.json").exists():
-        update_manifest(run_dir, None, {"step": "judge", **stats})
+        update_manifest(run_dir, None, {"step": "judge", **stats}, battery_of(args, run_dir))
 
 
 def cmd_report(args) -> None:
     from src.eval.battery.corpus import Corpus
     from src.eval.battery.report import build_report
 
-    print(build_report(run_dir_of(args), Corpus(), judge_name=args.judge, title=args.title,
-                       anchor=not args.no_anchor, out_dir=args.out or None))
+    run_dir = run_dir_of(args)
+    print(build_report(run_dir, Corpus(), judge_name=args.judge, title=args.title,
+                       anchor=not args.no_anchor, out_dir=args.out or None,
+                       battery_path=battery_of(args, run_dir)))
 
 
 def cmd_bench(args) -> None:
@@ -111,6 +137,7 @@ def main(argv=None) -> None:
         p.add_argument("--tag", default="", help="nom du passage, dossier results/battery/<tag>")
         p.add_argument("--run-dir", default="", help="dossier de passage explicite (prime sur --tag)")
         p.add_argument("--judge", default="opus", choices=["opus", "gpt"])
+        p.add_argument("--battery", default="", help="chemin d'une autre batterie (meme format)")
         if name != "report":
             p.add_argument("--systems", required=True, help="liste separee par des virgules")
             p.add_argument("--workers", type=int, default=3)

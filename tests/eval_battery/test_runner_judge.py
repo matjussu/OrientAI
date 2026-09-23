@@ -87,3 +87,18 @@ def test_verdict_of_a_replaced_answer_is_ignored(tmp_path):
     stale = {"id": "L01", "turn": 0, "answer_sha": answer_sha({"answer": ""}), **scores}
     (tmp_path / "judge_opus_local.jsonl").write_text(json.dumps(stale) + "\n")
     assert load_verdicts(tmp_path, "opus", "local") == {}
+
+
+def test_a_run_dir_refuses_a_second_battery(tmp_path):
+    import pytest
+
+    from src.eval.battery.runner import assert_same_battery, update_manifest
+    first, second = tmp_path / "a.json", tmp_path / "b.json"
+    first.write_text('{"items": []}')
+    second.write_text('{"items": [], "autre": 1}')
+    run_dir = tmp_path / "run"
+    run_dir.mkdir()
+    update_manifest(run_dir, None, {"step": "run"}, first)
+    assert_same_battery(run_dir, first)
+    with pytest.raises(ValueError):
+        assert_same_battery(run_dir, second)

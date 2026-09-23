@@ -104,24 +104,53 @@ def play(system, battery: list[dict], out: Path, workers: int = 3, log=print) ->
     return stats
 
 
+def _relative(path: Path) -> str:
+    path = Path(path).resolve()
+    return str(path.relative_to(REPO)) if path.is_relative_to(REPO) else str(path)
+
+
 def _git(*args: str) -> str:
-    return subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True).stdout.strip()
+    return subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True, check=False).stdout.strip()
 
 
-def update_manifest(run_dir: Path, corpus_sha256: str | None, event: dict) -> dict:
+def battery_sha256(path: Path) -> str:
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def read_manifest(run_dir: Path) -> dict:
+    path = Path(run_dir) / "manifest.json"
+    return json.loads(path.read_text()) if path.exists() else {}
+
+
+def assert_same_battery(run_dir: Path, battery_path: Path) -> None:
+    """Un dossier de passage = une batterie. A appeler AVANT de jouer."""
+    manifest = read_manifest(run_dir)
+    if manifest and manifest["battery_sha256"] != battery_sha256(battery_path):
+        raise ValueError(f"{run_dir} a ete joue sur une autre batterie "
+                         f"({manifest.get('battery_path', 'src/eval/battery/battery.json')}) : choisir un autre --tag")
+
+
+def update_manifest(run_dir: Path, corpus_sha256: str | None, event: dict,
+                    battery_path: Path = BATTERY_PATH) -> dict:
     """Ecrit ce qui fixe le resultat d'un passage : code, batterie, corpus, modeles, couts."""
     path = run_dir / "manifest.json"
-    manifest = json.loads(path.read_text()) if path.exists() else {
-        "created": dt.datetime.now().isoformat(timespec="seconds"),
-        "git_commit": _git("rev-parse", "HEAD"),
-        "git_dirty": bool(_git("status", "--porcelain", "--", "src")),
-        "battery_sha256": hashlib.sha256(BATTERY_PATH.read_bytes()).hexdigest(),
-        "corpus_sha256": corpus_sha256,
-        "models": MODELS,
-        "events": [],
-    }
+    assert_same_battery(run_dir, battery_path)
+    sha = battery_sha256(battery_path)
+    if path.exists():
+        manifest = json.loads(path.read_text())
+    else:
+        manifest = {
+            "created": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+            "git_commit": _git("rev-parse", "HEAD"),
+            "git_dirty": bool(_git("status", "--porcelain", "--", "src")),
+            "battery_path": _relative(battery_path),
+            "battery_sha256": sha,
+            "corpus_sha256": corpus_sha256,
+            "models": MODELS,
+            "events": [],
+        }
     if corpus_sha256 and not manifest.get("corpus_sha256"):
         manifest["corpus_sha256"] = corpus_sha256
-    manifest["events"].append({"at": dt.datetime.now().isoformat(timespec="seconds"), **event})
+    manifest["events"].append({"at": dt.datetime.now().astimezone().isoformat(timespec="seconds"), **event})
     path.write_text(json.dumps(manifest, ensure_ascii=False, indent=1) + "\n")
     return manifest
