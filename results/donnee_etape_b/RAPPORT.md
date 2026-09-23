@@ -13,7 +13,7 @@ Aucun appel LLM, aucun ré-embedding, coût API nul, aucun déploiement. Le corp
 | | |
 |---|---|
 | Nouveau corpus | `data/processed/formations_etape_b1.json` (hors git), 53 807 fiches (53 281 de l'étape A + 526 formations en apprentissage) |
-| sha256 | `44a385c53c95...` (valeur complète dans `manifest_corpus.json`) |
+| sha256 | `9863d2b40d3f...` (valeur complète dans `manifest_corpus.json`) |
 | Une commande | `python -m src.collect.pipeline_donnee` : contrôle des empreintes des bruts, étape A, étape B-1 |
 | Déterminisme | deux constructions sur les mêmes bruts donnent le même fichier (vérifié le 23/09, sha identique) ; le pipeline complet reproduit aussi l'étape A à l'identique (`9eae9c25108b`) |
 | Sources brutes | `data/raw/` (hors git), 4 sources ajoutées au verrou `data/reference/sources_officielles.json` : Onisep Idéo-Actions ES (ODbL), Parcoursup apprentissage 2025, InserSup (diplômés, promos 2023 et 2024, filtre écrit dans l'URL), InserJeunes BTS |
@@ -44,6 +44,38 @@ présente sur chaque fiche concernée : `non_disponible` est explicite et dit po
   par l'UAI, 797 par Paysage), donc « tous sites de l'université », écrit tel quel ; InserJeunes par
   UAI du lycée pour les BTS, une ligne par option. PASS, LAS, CPGE, IFSI et paramédical :
   `non_disponible` avec la raison.
+- **Coût des formations en apprentissage** : « La formation est gratuite pour l'apprenti et pour son
+  représentant légal. » (Code du travail, article L6211-1), citée mot pour mot, avec la précision que
+  la phrase ne porte que sur la formation (pas le logement, le transport, l'équipement).
+
+## Correction après la vérification de Jarvis (23/09 après-midi)
+
+Jarvis (0 écart sur 127 vérifications de son côté) a relevé des listes d'alternance interminables
+dans les grandes villes (jusqu'à 27 formations pour un BTS SIO à Paris) et des doublons apparents.
+
+- **Cause des doublons, mesurée** : ce ne sont pas des options. C'est le même lycée associé à deux
+  CFA partenaires (Lycée Raspail : « CFA académique de Paris » et « CFA Métiers de l'énergie »). Le
+  partenaire se lit dans le libellé complet Parcoursup (`lib_comp_voe_ins`), présent sur 1 535
+  formations d'apprentissage sur 11 536 ; il est désormais gardé (`cfa_partenaire`) et écrit. Restent
+  de vraies formations distinctes à libellés publics identiques (Of-Cfa Elysées Apprentissage, n° 44011
+  et 44105, UAI différents) : nommées par leur numéro, avec « le jeu ouvert ne dit pas ce qui les
+  distingue ».
+- **Texte** regroupé par établissement ; au-delà de 5 établissements, un résumé (« 27 formations en
+  apprentissage du même diplôme dans 25 établissements de la même commune (Paris), 1235 places au
+  total »), en gardant celles du même établissement. 14 fiches des 3 domaines passent en résumé.
+- **Contrôle ajouté** (`alternance_liste_trop_longue`, `alternance_doublon`) : 0 défaut sur le nouveau
+  texte ; rejoué sur le texte d'avant la correction (`--revision-texte HEAD`, trace
+  `controles_alternance_texte_avant_correction.json`) : 199 listes trop longues et 79 doublons sur tout
+  le corpus. Un test a montré que la première version du contrôle ne voyait pas un doublon portant sur
+  la première entrée (phrase d'introduction collée) : corrigé, c'est pourquoi le compte est passé de
+  72 à 79.
+- **Coût de l'apprentissage** (retour de Matteo) : règle légale ci-dessus, source primaire lue sur
+  Légifrance. Légifrance refuse les requêtes de script (403) : l'audit vérifie la phrase contre sa
+  propre copie et sa présence mot pour mot dans le texte, pas contre la page en ligne.
+- **IFSI** : recherche courte en sources primaires, non tranchée. La page du ministère « Formations de
+  santé : accès simplifié aux IFSI » dit en substance que l'université ne peut exiger aucun droit de
+  l'étudiant infirmier inscrit ; le tableau des droits 2026-2027 liste le « Diplôme d'État
+  d'infirmier » à 178 euros. La réserve reste écrite telle quelle.
 
 ## Mesures avant / après
 
@@ -59,6 +91,7 @@ Population des gates : les 3 domaines tels que les définit l'explorateur de Jar
 | santé | 1 310 | 0 | 1 184 | 0 | 1 310 | 207 | 2 |
 | maths | 426 | 0 | 398 | 0 | 426 | 149 | 12 |
 
+- **Formations en apprentissage** : 517 / 517 avec un coût (règle légale).
 - **Gate coût tenue** : 2 395 / 2 395 fiches portent `cout` (disponible ou non disponible avec raison),
   0 absente (`manifest_corpus.json`, `remplissage`). Disponible : 2 099 (87,6 %) ; 1 616 par constante
   légale, 483 par Onisep. Non disponible : 296, raisons dans `mesures_complementaires.txt`.
@@ -93,7 +126,7 @@ d'insertion) : rien à signaler sur `battery_verticale.json`.
 
 ### Longueur du texte
 
-Médiane 3 316 caractères avant, 3 804 après (max 5 857), fiches Parcoursup des 3 domaines. Même
+Médiane 3 316 caractères avant, 3 804 après (max 4 884), fiches Parcoursup des 3 domaines. Même
 réserve qu'à l'étape A : pas de ré-embedding avec ce texte, l'étape D fixera le texte d'embedding.
 
 ## Audit d'exactitude
@@ -108,7 +141,7 @@ différents, aucune formation en apprentissage au même UAI).
 |---|---|---|---|
 | Tirage au hasard, 3 domaines, graine 20260923 | 50 | 0 | `audit_b1.json` |
 | Ciblé : insertion disponible | 32 | 0 | `audit_b1_insertion_disponible.json` |
-| Ciblé : alternance existante | 30 | 0 | `audit_b1_alternance_existe.json` |
+| Ciblé : alternance existante (résumé au-delà de 5 établissements : nombre et places vérifiés) | 30 | 0 | `audit_b1_alternance_existe.json` |
 | Ciblé : coût Onisep | 45 | 0 | `audit_b1_cout_onisep.json` |
 | Relecture à la main de 30 coûts Onisep | 30 | 0 (30 conformes) | `relecture_30_couts.md` |
 
@@ -116,7 +149,7 @@ Les tirages ciblés complètent le tirage au hasard, qui ne contenait que 5 inse
 
 **Contrôle positif** (`--sabotage cout|alternance|insertion`, altération de +1 en mémoire, sorties
 suffixées) : l'audit échoue à chaque fois, et chaque valeur sabotée est retrouvée. 35 / 35 coûts
-disponibles du tirage au hasard, 45 / 45 coûts Onisep, 32 / 32 insertions, 30 / 30 alternances,
+disponibles du tirage au hasard (42 / 42 avec les 7 formations en apprentissage), 45 / 45 coûts Onisep, 32 / 32 insertions, 30 / 30 alternances,
 9 et 5 sur le tirage au hasard (toutes les fiches qui portaient une valeur à saboter).
 
 Défauts trouvés en chemin et corrigés (ils sont la raison d'être de l'audit, il faut les dire) :
@@ -133,23 +166,26 @@ Défauts trouvés en chemin et corrigés (ils sont la raison d'être de l'audit,
 
 ## Tests
 
-`tests/test_etape_b1.py` : 75 tests sur des lignes réelles extraites des bruts (`tests/fixtures/etape_b/`,
+`tests/test_etape_b1.py` : 83 tests sur des lignes réelles extraites des bruts (`tests/fixtures/etape_b/`,
 rejouable par `extraire.py`), dont les falsifications des contrôles. Suite complète, exécutée comme
-la CI (`OFFLINE_JUDGE_TESTS=1`, sans clés) : 3 419 passés, 48 ignorés. Sans ces réglages, un test du
+la CI (`OFFLINE_JUDGE_TESTS=1`, sans clés) : 3 433 passés, 48 ignorés. Sans ces réglages, un test du
 juge appelle un vrai modèle et échoue de façon non déterministe (hors de ce lot).
 
-## Points ouverts, à trancher par Jarvis ou Matteo
+## Points ouverts (réponses de Jarvis et Matteo du 23/09 entre crochets)
 
 1. **IFSI et droits d'inscription** : le tableau ministériel liste le « Diplôme d'État d'infirmier »
    dans le groupe du cycle de licence (178 euros). Le texte ne dit rien des droits d'un IFSI (règle Q3 :
    seulement la ligne Onisep, « 0 euros » de coût de scolarité), avec la réserve écrite. À préciser
    avec une source sur l'inscription universitaire des étudiants en IFSI avant de l'écrire.
+   [Recherche courte faite, contradiction entre deux sources primaires : réserve gardée.]
 2. **LAS et insertion** : non disponible par choix du contrat (une LAS ouvre l'accès aux études de
    santé). InserSup a des lignes « licence Droit » ou « licence Biologie » pour la plupart de leurs
    universités ; on pourrait les montrer comme l'insertion de la majeure, dit tel quel. Non fait sans
-   accord.
+   accord. [Matteo : non disponible. Le chiffre utile est le passage en MMOPK, pour B-2, seulement
+   quand l'université le publie elle-même.]
 3. **Écoles d'ingénieurs** : 36 fiches des 3 domaines sans insertion parce que l'école a plusieurs
    diplômes d'ingénieur dans InserSup. Les relier par spécialité demande une table écrite à la main.
+   [Jarvis : non disponible en B-1, table plus tard si la démo en a besoin.]
 4. **Explorateur** : les fiches d'apprentissage n'ont ni `debouches` ni `historique` : elles
    apparaissent en `no_debouches` et `hist_court` dans l'explorateur, attendu.
 

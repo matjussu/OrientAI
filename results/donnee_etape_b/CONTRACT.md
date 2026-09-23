@@ -1,14 +1,28 @@
 # Contrat des champs de l'étape B-1 (coût, alternance, insertion)
 
-Version 1.1, 23/09/2026, Claudette (v1 envoyée à Jarvis au commit 93d34e2 ; les écarts entre la v1
-et la forme livrée sont listés en section 0). Périmètre B-1 confirmé par Matteo le 23/09 (Telegram 10584,
+Version 1.2, 23/09/2026, Claudette (v1 envoyée à Jarvis au commit 93d34e2 ; les écarts entre la v1
+et la forme livrée sont listés en section 0, ceux de la v1.2 en tête de cette section). Périmètre B-1 confirmé par Matteo le 23/09 (Telegram 10584,
 relayé par Jarvis) : B1 coûts, B5 alternance, B3 insertion. B4, B6, B7, B8 et B3 bis sont hors
 périmètre.
 
 Ce document fixe la forme des champs **avant** le code. L'explorateur se branche dessus ; tout
 changement de forme passe par une nouvelle version de ce fichier, annoncée à Jarvis.
 
-## 0. Changements de la version 1.1 (forme livrée)
+## 0. Changements de la version 1.2 (vérification de Jarvis et retours de Matteo, 23/09 après-midi)
+
+- **`alternance.valeur.formations[]`** gagne `cfa_partenaire` (ce que le libellé complet Parcoursup
+  ajoute à l'établissement, le plus souvent le CFA) et `precision` (`detail_forma`). Mesure : les
+  doublons apparents d'une même commune étaient le même lycée avec deux CFA partenaires, pas deux
+  options ; il reste des formations distinctes à libellés publics identiques, nommées par leur numéro.
+- **Texte de l'alternance** regroupé par établissement ; au-delà de 5 établissements, un résumé
+  (nombre de formations, d'établissements, total des places, et celles du même établissement).
+- **Coût des formations en apprentissage** : `disponible`, `source.id` = `code_travail_l6211_1`,
+  `rattachement` = `regle_legale_apprentissage`, `valeur.gratuit_pour_l_apprenti` = true et
+  `texte_source` = « La formation est gratuite pour l'apprenti et pour son représentant légal. »
+  (article L6211-1, version en vigueur depuis le 3 août 2023, lu sur Légifrance le 23/09/2026). Le
+  texte dit que cette phrase ne porte que sur la formation.
+
+## 0 bis. Changements de la version 1.1 (forme livrée)
 
 Réponses de Jarvis aux questions Q1 à Q3 (23/09, 10h50) et défauts trouvés à la relecture :
 

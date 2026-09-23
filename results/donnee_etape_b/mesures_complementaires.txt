@@ -1,6 +1,6 @@
-Mesures complémentaires, 23/09/2026. Population : fiches des trois domaines selon l'explorateur de Jarvis (export_data.py), rejoué sur les corpus A (9eae9c25108b) et B-1 (44a385c53c95).
+Mesures complémentaires, 23/09/2026. Population : fiches des trois domaines selon l'explorateur de Jarvis (export_data.py), rejoué sur les corpus A (9eae9c25108b) et B-1 (9863d2b40d3f).
 
-1. Fiches : Parcoursup 2395 ; apprentissage 517 (526 dans le corpus selon la table de domaines, 517 retenues par l'explorateur)
+1. Fiches : Parcoursup 2395 ; apprentissage 517 (526 dans le corpus selon la table de domaines)
 
 2. Coût, fiches Parcoursup, par règle :
    ('disponible', 'constante_type_statut', 'tableau_droits_2026_2027') 1289
@@ -9,16 +9,17 @@ Mesures complémentaires, 23/09/2026. Population : fiches des trois domaines sel
    ('non_disponible', 'onisep_uai_intitule', 'onisep_ideo_actions_es') 219
    ('non_disponible', 'onisep_uai', 'onisep_ideo_actions_es') 75
    ('non_disponible', 'onisep_uai_famille', 'onisep_ideo_actions_es') 2
-
    Raisons des coûts non disponibles :
    114 aucune formation Onisep de ce lieu ne correspond à cet intitulé
    83 l'Onisep ne publie pas de coût lisible pour cette formation
    75 aucune formation de ce lieu d'enseignement dans le jeu Onisep
    22 plusieurs formations Onisep de même intitulé à ce lieu, avec des coûts différents
    2 l'Onisep ne publie pas de coût pour les formations de ce type à ce lieu
+   Fiches d'apprentissage : Counter({('disponible', 'regle_legale_apprentissage'): 517})
 
 3. Alternance, fiches Parcoursup : existe en apprentissage au même UAI ou dans la même commune : 170 / 2395
-   dont rattachées par l'UAI seulement / par la commune seulement / les deux : [(('uai',), 140), (('commune',), 25), (('commune', 'uai'), 5)]
+   rattachement : [(('uai',), 140), (('commune',), 25), (('commune', 'uai'), 5)]
+   fiches résumées (plus de 5 établissements) : 14 ; maximum d'établissements : 25
 
 4. Insertion, fiches Parcoursup :
    ('non_disponible', None) 2176
@@ -40,4 +41,4 @@ Mesures complémentaires, 23/09/2026. Population : fiches des trois domaines sel
    Avant (corpus A) : fiches avec l'ancien insertion_pro (InserSup discipline x région, score 0,7) : 482
 
 5. Longueur du texte lu par le modèle (caractères, fiches Parcoursup des 3 domaines) :
-   avant : médiane 3316 max 4256 ; après : médiane 3804 max 5857
+   avant : médiane 3316 max 4256 ; après : médiane 3804 max 4884

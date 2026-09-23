@@ -4124,6 +4124,7 @@ chiffre de la formation. Détail et traces : `results/donnee_etape_b/RAPPORT.md`
 2. **Coût** : la constante légale prime pour le public (tableau ministériel des droits 2026-2027,
    CVEC de Service-Public) ; sinon la ligne Onisep du même lieu et du même intitulé, texte gardé mot
    pour mot ; tarif commun du lycée seulement pour les CPGE et BTS. Aucun montant d'une autre formation.
+   Formation en apprentissage : gratuite pour l'apprenti (Code du travail, article L6211-1, cité).
 3. **Alternance** : une formation en apprentissage est une AUTRE formation Parcoursup (0 identifiant
    commun sur 11 536) : fiches `parcoursup_apprentissage` à part, et rattachement des fiches scolaires
    au même UAI ou dans la même commune, jamais plus loin.

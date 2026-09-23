@@ -54,7 +54,7 @@ Rapport, chiffres et traces : `results/donnee_etape_b/RAPPORT.md`. Forme des cha
 `results/donnee_etape_b/CONTRACT.md` (v1.1). ADR-064. **En attente de la validation de Matteo dans
 l'explorateur ; B-2 (sante) ne commence qu'apres.**
 
-- Nouveau corpus a part : `data/processed/formations_etape_b1.json` (hors git), sha256 `44a385c53c95`,
+- Nouveau corpus a part : `data/processed/formations_etape_b1.json` (hors git), sha256 `9863d2b40d3f`,
   53 807 fiches (+526 formations en apprentissage). Rejouer tout : `python -m src.collect.pipeline_donnee`
   (bruts verrouilles, `--telecharger` pour les rapatrier).
 - Champs `cout`, `alternance`, `insertion`, enveloppe commune, toujours presents, « non disponible »
@@ -65,6 +65,9 @@ l'explorateur ; B-2 (sante) ne commence qu'apres.**
   sabotages tous rouges.
 - Points ouverts (RAPPORT, fin) : droits d'inscription des IFSI, insertion des LAS, ecoles
   d'ingenieurs a plusieurs diplomes.
+- Dette (hors lot) : `tests/test_judge_faithfulness.py` appelle un vrai modele des qu'il n'est pas
+  lance comme la CI ; la suite complete se joue avec `OFFLINE_JUDGE_TESTS=1` et sans cles (3 419+
+  passes). Le rendre hors-ligne par defaut.
 
 ## 0 bis. Donnee verticale, etape A livree le 23/09/2026 (Claudette, ordre 2026-09-23-0958)
 

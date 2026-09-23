@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-09-23T11:31:20+02:00",
+  "genere_le": "2026-09-23T12:01:22+02:00",
   "corpus": "data/processed/formations_etape_b1.json",
   "n": 50,
   "graine": 20260923,
@@ -18,8 +18,8 @@
   },
   "par_statut": {
     "cout": {
-      "non_disponible": 15,
-      "disponible": 35
+      "non_disponible": 8,
+      "disponible": 42
     },
     "alternance": {
       "disponible": 43,
@@ -129,12 +129,12 @@
       "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
       "etablissement": "Lycée Notre Dame Du Roc",
       "statuts": {
-        "cout": "non_disponible",
+        "cout": "disponible",
         "alternance": null,
         "insertion": "non_disponible"
       },
       "rattachements": {
-        "cout": null,
+        "cout": "regle_legale_apprentissage",
         "alternance": null,
         "insertion": null
       },
@@ -151,12 +151,12 @@
       "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
       "etablissement": "Lycée Suzanne Valadon",
       "statuts": {
-        "cout": "non_disponible",
+        "cout": "disponible",
         "alternance": null,
         "insertion": "non_disponible"
       },
       "rattachements": {
-        "cout": null,
+        "cout": "regle_legale_apprentissage",
         "alternance": null,
         "insertion": null
       },
@@ -213,12 +213,12 @@
       "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
       "etablissement": "AFTEC FORMATION",
       "statuts": {
-        "cout": "non_disponible",
+        "cout": "disponible",
         "alternance": null,
         "insertion": "non_disponible"
       },
       "rattachements": {
-        "cout": null,
+        "cout": "regle_legale_apprentissage",
         "alternance": null,
         "insertion": null
       },
@@ -257,12 +257,12 @@
       "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
       "etablissement": "EC.SECONDAIRE ET TECHN.PRIVEE VIDAL",
       "statuts": {
-        "cout": "non_disponible",
+        "cout": "disponible",
         "alternance": null,
         "insertion": "non_disponible"
       },
       "rattachements": {
-        "cout": null,
+        "cout": "regle_legale_apprentissage",
         "alternance": null,
         "insertion": null
       },
@@ -297,12 +297,12 @@
       "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
       "etablissement": "Bordeaux YNOV campus",
       "statuts": {
-        "cout": "non_disponible",
+        "cout": "disponible",
         "alternance": null,
         "insertion": "non_disponible"
       },
       "rattachements": {
-        "cout": null,
+        "cout": "regle_legale_apprentissage",
         "alternance": null,
         "insertion": null
       },
@@ -319,12 +319,12 @@
       "nom": "BTS - Services - Services informatiques aux organisations - en apprentissage",
       "etablissement": "CFA CMA 35",
       "statuts": {
-        "cout": "non_disponible",
+        "cout": "disponible",
         "alternance": null,
         "insertion": "non_disponible"
       },
       "rattachements": {
-        "cout": null,
+        "cout": "regle_legale_apprentissage",
         "alternance": null,
         "insertion": null
       },
@@ -359,12 +359,12 @@
       "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - en apprentissage",
       "etablissement": "Lycée Elisa LEMONNIER",
       "statuts": {
-        "cout": "non_disponible",
+        "cout": "disponible",
         "alternance": null,
         "insertion": "non_disponible"
       },
       "rattachements": {
-        "cout": null,
+        "cout": "regle_legale_apprentissage",
         "alternance": null,
         "insertion": null
       },

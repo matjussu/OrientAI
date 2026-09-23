@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-09-23T11:26:32+02:00",
+  "genere_le": "2026-09-23T11:58:35+02:00",
   "commande": "python -m src.collect.corpus_etape_b",
   "entree": {
     "chemin": "/home/matteo_linux/projets/OrientIA-etape-b/data/processed/formations_etape_a.json",
@@ -8,7 +8,7 @@
   },
   "sortie": {
     "chemin": "/home/matteo_linux/projets/OrientIA-etape-b/data/processed/formations_etape_b1.json",
-    "sha256": "44a385c53c958419aab69993d9099b4089aa8547910b9a8b5d1633d3e0abd837",
+    "sha256": "9863d2b40d3fd8fc81ec084718eb2524c080345d5dd81ece49a682699b3b6ba9",
     "fiches": 53807
   },
   "sources": {
@@ -40,7 +40,7 @@
     },
     "parcoursup_apprentissage": {
       "cout": {
-        "non_disponible": 526
+        "disponible": 526
       },
       "alternance": {
         "absent": 526
@@ -55,7 +55,7 @@
       "disponible:constante_type_statut": 9228,
       "non_disponible:onisep_uai_intitule": 2511,
       "disponible:onisep_uai_intitule": 1788,
-      "non_disponible:None": 526,
+      "disponible:regle_legale_apprentissage": 526,
       "non_disponible:onisep_uai": 510,
       "non_disponible:onisep_uai_famille": 132,
       "disponible:onisep_uai_famille": 83

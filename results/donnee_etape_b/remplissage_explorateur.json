@@ -15,9 +15,9 @@
       "classement": "automatique par mots-cles sur nom + detail + filiere (une fiche peut etre dans plusieurs domaines)"
     },
     "apres": {
-      "genere": "2026-09-23 11:28",
+      "genere": "2026-09-23 12:02",
       "source": "/home/matteo_linux/projets/OrientIA-etape-b/data/processed/formations_etape_b1.json",
-      "source_sha256": "44a385c53c95",
+      "source_sha256": "9863d2b40d3f",
       "session": "Parcoursup 2025",
       "n": 2912,
       "par_domaine": {
@@ -90,18 +90,17 @@
       },
       "parcoursup_apprentissage:informatique": {
         "fiches": 515,
-        "cout": 0,
+        "cout": 515,
         "alternance": 515,
         "insertion": 0
       },
       "parcoursup_apprentissage:sante": {
         "fiches": 2,
-        "cout": 0,
+        "cout": 2,
         "alternance": 2,
         "insertion": 0
       },
       "flags_parcoursup_apprentissage": {
-        "no_cout": 517,
         "no_insertion": 517,
         "no_debouches": 517,
         "no_places": 2
