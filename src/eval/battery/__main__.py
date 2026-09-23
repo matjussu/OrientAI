@@ -124,6 +124,7 @@ def main(argv=None) -> None:
             p.add_argument("--no-anchor", action="store_true", help="sans l'ancrage corpus BM25 (plus rapide)")
             p.add_argument("--out", default="", help="dossier du rapport (defaut : celui du passage)")
     args = ap.parse_args(argv)
+    sys.stdout.reconfigure(line_buffering=True)  # progression lisible meme redirigee vers un fichier
     load_env()
     args.fn(args)
 

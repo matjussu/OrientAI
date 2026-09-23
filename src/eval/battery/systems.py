@@ -28,9 +28,14 @@ def _source_view(fiche: dict) -> dict:
             "ville": fiche.get("ville"), "source": fiche.get("source")}
 
 
-def _mistral_client():
+# Delai des appels directs a Mistral (hors pipeline, qui garde son client de prod). Le defaut du
+# SDK a coupe 2 tours de mistral-large-2512 sur 67 le 23/09 (ReadTimeout, reponses de ~20 s).
+MISTRAL_TIMEOUT_MS = 120_000
+
+
+def _mistral_client(timeout_ms: int | None = None):
     from mistralai.client import Mistral
-    return Mistral(api_key=os.environ["MISTRAL_API_KEY"])
+    return Mistral(api_key=os.environ["MISTRAL_API_KEY"], timeout_ms=timeout_ms)
 
 
 class LocalSystem:
@@ -148,7 +153,7 @@ class MistralSystem:
     def __init__(self, name: str, model: str):
         self.name = name
         self.model = model
-        self.client = _mistral_client()
+        self.client = _mistral_client(MISTRAL_TIMEOUT_MS)
 
     def ask(self, question: str, history: list[dict], key=None) -> dict:
         msgs = [{"role": "system", "content": SYSTEM_PROMPT_BASELINE}, *history,

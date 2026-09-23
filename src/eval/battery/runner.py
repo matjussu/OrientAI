@@ -1,9 +1,10 @@
 """Joue la batterie sur un systeme et ecrit `<run_dir>/<systeme>.jsonl`, un tour par ligne.
 
 Reprise : les conversations deja completes dans le fichier sont sautees ; une conversation
-interrompue est rejouee en entier (l'historique d'un tour depend des reponses precedentes).
-Un tour en erreur est garde avec son erreur et la batterie continue : le rapport compte les
-erreurs, il ne les masque pas.
+interrompue ou dont un tour est en erreur est rejouee en entier (l'historique d'un tour depend
+des reponses precedentes, et une panne de transport n'est pas une reponse du systeme).
+Pendant un passage, un tour en erreur est garde avec son erreur et la batterie continue ; le
+nombre d'erreurs est ecrit dans le manifeste, et le rapport compte celles qui restent.
 """
 from __future__ import annotations
 
@@ -55,11 +56,14 @@ def play_conversation(system, item: dict) -> list[dict]:
 
 
 def complete_conversations(records: list[dict], battery: list[dict]) -> set[str]:
+    """Conversations dont tous les tours sont presents et sans erreur."""
     n_turns = {it["id"]: len(it["turns"]) for it in battery}
     seen: dict[str, set[int]] = {}
+    failed = {r["id"] for r in records if r.get("error")}
     for r in records:
         seen.setdefault(r["id"], set()).add(r["turn"])
-    return {cid for cid, turns in seen.items() if len(turns) == n_turns.get(cid, -1)}
+    return {cid for cid, turns in seen.items()
+            if len(turns) == n_turns.get(cid, -1) and cid not in failed}
 
 
 def play(system, battery: list[dict], out: Path, workers: int = 3, log=print) -> dict:

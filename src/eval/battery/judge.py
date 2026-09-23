@@ -8,10 +8,13 @@
 Chaque critere de 1 a 5, plus `refus`, `erreur_factuelle` (+ detail) et `cause_echec`.
 Le juge est un outil interne : Opus est autorise ici, la contrainte « pas de modele americain
 proprietaire » porte sur le produit (ordre 2026-09-23-0817). Sortie :
-`<run_dir>/judge_<juge>_<systeme>.jsonl`, reprise sur les tours deja juges.
+`<run_dir>/judge_<juge>_<systeme>.jsonl`, reprise sur les tours deja juges. Chaque verdict porte
+l'empreinte de la reponse jugee : un tour rejoue (apres une panne) est rejuge, et son ancien
+verdict est ignore.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import random
 import time
@@ -53,6 +56,10 @@ Puis :
 
 Reponds UNIQUEMENT en JSON : {"references":n,"comprehension":n,"expression":n,"couverture":n,
 "refus":bool,"erreur_factuelle":bool,"erreur_detail":"...","cause_echec":"...","commentaire":"..."}"""
+
+
+def answer_sha(rec: dict) -> str:
+    return hashlib.sha256((rec.get("answer") or "").encode()).hexdigest()[:12]
 
 
 def build_prompt(rec: dict) -> str:
@@ -137,9 +144,13 @@ def judge_run(run_dir: Path, systems: list[str], judge_name: str = "opus", sampl
             random.Random(7).shuffle(records)
             records = records[:sample]
         out = run_dir / f"judge_{judge_name}_{system}.jsonl"
-        done = {(v["id"], v["turn"]) for v in read_jsonl(out) if not v.get("_parse_error")
-                and not v.get("_error")}
-        jobs += [(system, out, r) for r in records if (r["id"], r["turn"]) not in done]
+        done = {(v["id"], v["turn"], v.get("answer_sha")) for v in read_jsonl(out)
+                if not v.get("_parse_error") and not v.get("_error")}
+        jobs += [(system, out, r) for r in records if not r.get("error")
+                 and (r["id"], r["turn"], answer_sha(r)) not in done]
+    skipped = sum(bool(r.get("error")) for s in systems for r in read_jsonl(run_dir / f"{s}.jsonl"))
+    if skipped:
+        log(f"  {skipped} tours en erreur non juges : rejouer le run d'abord")
     log(f"[juge {judge_name}] {len(jobs)} evaluations")
 
     tokens_in = tokens_out = failures = 0
@@ -156,8 +167,8 @@ def judge_run(run_dir: Path, systems: list[str], judge_name: str = "opus", sampl
             tokens_out += usage.get("out", 0)
             failures += bool(verdict.get("_error") or verdict.get("_parse_error"))
             with open(out, "a") as fh:
-                fh.write(json.dumps({"id": rec["id"], "turn": rec["turn"], "system": system, **verdict},
-                                    ensure_ascii=False) + "\n")
+                fh.write(json.dumps({"id": rec["id"], "turn": rec["turn"], "system": system,
+                                     "answer_sha": answer_sha(rec), **verdict}, ensure_ascii=False) + "\n")
             log(f"  {system} {rec['id']}.{rec['turn']} -> "
                 + "/".join(str(verdict.get(c)) for c in CRITERIA))
     cost = price_usd(judge.model, tokens_in, tokens_out)
@@ -167,9 +178,16 @@ def judge_run(run_dir: Path, systems: list[str], judge_name: str = "opus", sampl
 
 
 def load_verdicts(run_dir: Path, judge_name: str, system: str) -> dict[tuple[str, int], dict]:
-    """Derniers verdicts valides par tour (un tour rejuge apres une panne garde le bon)."""
+    """Verdicts valides de la reponse ACTUELLE de chaque tour. Les verdicts sans empreinte
+    (runs du 05/09) sont acceptes tels quels : ces runs n'ont jamais ete rejoues."""
+    current = {(r["id"], r["turn"]): answer_sha(r)
+               for r in read_jsonl(Path(run_dir) / f"{system}.jsonl")}
     out = {}
     for v in read_jsonl(Path(run_dir) / f"judge_{judge_name}_{system}.jsonl"):
-        if all(isinstance(v.get(c), (int, float)) for c in CRITERIA):
-            out[(v["id"], v["turn"])] = v
+        if not all(isinstance(v.get(c), (int, float)) for c in CRITERIA):
+            continue
+        key = (v["id"], v["turn"])
+        if "answer_sha" in v and v["answer_sha"] != current.get(key):
+            continue
+        out[key] = v
     return out

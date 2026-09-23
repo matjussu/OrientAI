@@ -10,7 +10,6 @@ les fiches lues sont toutes deux exposees au modele : leurs positions sont enreg
 from __future__ import annotations
 
 import json
-import os
 
 import numpy as np
 
@@ -193,8 +192,8 @@ class MistralAgent:
     name = "agent_mistral"
 
     def __init__(self, corpus, model: str | None = None):
-        from mistralai.client import Mistral
-        self.client = Mistral(api_key=os.environ["MISTRAL_API_KEY"])
+        from src.eval.battery.systems import MISTRAL_TIMEOUT_MS, _mistral_client
+        self.client = _mistral_client(MISTRAL_TIMEOUT_MS)
         self.corpus = corpus
         self.tools = CorpusTools(corpus)
         self.model = model or MODELS["mistral_medium"]
