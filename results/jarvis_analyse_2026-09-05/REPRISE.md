@@ -241,7 +241,7 @@ l'explorateur, validation de Matteo avant merge.
 |---|---|
 | Build Railway rouge a chaque merge (`formations.json` est gitignore) : la prod reste figee au lot 1 de juillet (`/health` prompt `601adcee86b9`). A regler avant la demo | `gh pr checks 180` : « orientia-api Deployment failed » ; section 0 pour `/health` |
 | RRF de la prod casse (`_orig_index` absent cote dense) | RAPPORT du 05/09 l.107, section 0 |
-| Le Mistral du pipeline ne remonte pas ses tokens | releve par Jarvis (23/09) ; **pas de trace dans le depot, a mesurer** |
+| Le Mistral du pipeline ne remonte pas ses tokens | `results/battery/2026-09-23_lot0/manifest.json` l.22-24 : `local` (mistral-medium-2604) a `tokens_in`, `tokens_out`, `cost_usd` a null, alors que `mistral_large_norag` a les siens (l.42-43) |
 | 2 385 niveaux bac+N encore deduits par l'heuristique historique | `results/donnee_etape_a/RAPPORT.md` l.99 |
 | 252 questions du set de pertinence a labelliser (recall@10 actuel = borne basse) | `scripts/relevance_set/STATE.md` l.41 |
 | Test du juge qui appelle un vrai modele hors CI : lancer la suite avec `OFFLINE_JUDGE_TESTS=1` et sans cles, le rendre hors ligne par defaut | `results/donnee_etape_b/RAPPORT.md` l.171 |
