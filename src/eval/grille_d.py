@@ -150,8 +150,10 @@ class Joueur:
                     rec.update(r, erreur="coupee" if r["finish_reason"] == "length" else None)
                     break
                 except Exception as e:  # noqa: BLE001 - tracé tel quel, le tour est rejoué au prochain lancement
-                    if essais < 3:
-                        time.sleep(5 * essais)
+                    limite = "429" in str(e)
+                    # 429 mesuré le 23/09 sur zai-glm-5-2 (78 tours sur 158) : attente plus longue, plus d'essais.
+                    if essais < (8 if limite else 3):
+                        time.sleep(min(120, 10 * 2 ** (essais - 1)) if limite else 5 * essais)
                         continue
                     rec.update(answer="", erreur=f"{type(e).__name__}: {e}")
                     break
@@ -178,7 +180,20 @@ def jouer(format_: str, modele: str, generation: int, ids_conversations: list[st
     dossier = dossier or SORTIE / "runs" / f"{format_}-{modele}"
     dossier.mkdir(parents=True, exist_ok=True)
     sortie = dossier / f"g{generation}.jsonl"
-    faits = {r["id"] for r in _lire(sortie) if not r.get("erreur")}
+    # Une conversation est faite si TOUS ses tours sont joués sans erreur ; les autres sont retirées du
+    # fichier et rejouées en entier (l'historique d'un tour dépend des réponses précédentes).
+    existants = _lire(sortie)
+    tours = {i["id"]: len(i["turns"]) for i in banc["items"]}
+    ok: dict[str, int] = {}
+    for r in existants:
+        if not r.get("erreur"):
+            ok[r["id"]] = ok.get(r["id"], 0) + 1
+    faits = {c for c, n in ok.items() if n == tours.get(c)}
+    if any(r["id"] not in faits for r in existants):
+        (dossier / f"g{generation}.erreurs.jsonl").open("a", encoding="utf-8").writelines(
+            json.dumps(r, ensure_ascii=False) + "\n" for r in existants if r["id"] not in faits)
+        sortie.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in existants if r["id"] in faits),
+                          encoding="utf-8")
     items = [i for i in banc["items"] if (ids_conversations is None or i["id"] in ids_conversations)
              and i["id"] not in faits]
     t0 = time.time()
@@ -222,10 +237,12 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--format", choices=FORMATS, required=True)
     r.add_argument("--modele", choices=MODELES, required=True)
     r.add_argument("--generation", type=int, default=1)
+    r.add_argument("--workers", type=int, default=3)
     sub.add_parser("sonde")
     args = ap.parse_args(argv)
     if args.cmd == "run":
-        print(json.dumps(jouer(args.format, args.modele, args.generation), ensure_ascii=False, indent=1))
+        print(json.dumps(jouer(args.format, args.modele, args.generation, workers=args.workers), ensure_ascii=False,
+                         indent=1))
         return 0
     for modele in MODELES:
         m = jouer("C", modele, 1, ids_conversations=list(SONDE), dossier=SORTIE / "sonde_outil" / modele)

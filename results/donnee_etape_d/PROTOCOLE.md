@@ -95,6 +95,11 @@ Regle fixee maintenant, quel que soit le resultat de la sonde :
 Si la sonde montre qu'un modele ne sait pas du tout appeler l'outil via l'API (0 appel valide sur 5), je le
 signale avant la grille au lieu de jouer 79 tours degeneres.
 
+**Resultat de la sonde et decision (v0.2, 23/09)** : Medium 0/6 et Large 0/6 tours avec appel, GLM 4/6 (detail :
+`sonde_outil/RESUME.md`). Option (a) retenue par Jarvis : C est joue tel quel ; C x Medium et C x Large sont
+nommes « carte courte seule (l'outil n'a pas ete appele) », avec le taux d'appel par modele en tete de la
+ligne C. Pas de consigne d'outil renforcee : ajuster le prompt de C seul casserait la comparaison.
+
 ## 7. Criteres
 
 **Critere 1, sans juge : part des chiffres attendus cites justes.**
@@ -131,6 +136,10 @@ taux d'appel de l'outil.
   exposees (la carte B complete), jamais le format lu par la combinaison ; pour C, les appels d'outil et leurs
   resultats sont retires du transcript juge, seule la reponse finale reste. Un test verifie que deux
   combinaisons d'une meme conversation donnent au juge un contexte identique octet pour octet (hors reponse).
+- **Contexte retenu (v0.2, accord de Jarvis du 23/09)** : le juge recoit la liste des 8 fiches exposees en
+  titres, etablissements et villes, exactement comme le `build_prompt` du lot 0, identique pour les 9
+  combinaisons. **Limite** : le juge ne voit pas le contenu des fiches ; `erreur_factuelle` se juge donc sur
+  sa propre connaissance, et l'exactitude des chiffres est couverte par le critere 1 (deterministe).
 - Lots d'environ 25 tours par sous-agent ; un fichier de verdict par tour (`judge/<id_opaque>.json`).
 - **Charge (v0.1)** : le juge ne note que la generation 1 (9 x 79 = 711 reponses) ; le rejugement de 20 %
   porte sur celle-ci. Le critere 1 (sans juge) utilise les 2 generations. Juger la generation 2 demanderait
