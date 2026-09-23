@@ -83,12 +83,18 @@ class Joueur:
         from mistralai.client import Mistral
         self.format, self.modele, self.formats, self.exposition = format_, modele, formats, exposition
         self.client = Mistral(api_key=os.environ["MISTRAL_API_KEY"], timeout_ms=TIMEOUT_MS)
+        self.precalculer(sorted({i for c in exposition["conversations"].values() for i in c["exposees"]}))
+
+    def precalculer(self, ids: list[str]) -> None:
+        """Rendus calculés dans le fil principal : la connexion SQLite ne se partage pas entre fils."""
+        self.rendus = {"A": {i: f"[fiche {i}]\n{self.formats.texte_a(i)}" for i in ids},
+                       "B": {i: self.formats.carte_b(i) for i in ids},
+                       "C": {i: self.formats.carte_c(i) for i in ids}}
 
     def bloc_fiches(self, ids: list[str]) -> str:
         if not ids:
             return "\n\n<fiches>(aucune fiche pour cette question)</fiches>"
-        rendu = {"A": self.formats.texte_a, "B": self.formats.carte_b, "C": self.formats.carte_c}[self.format]
-        corps = "\n\n---\n\n".join(rendu(i) if self.format != "A" else f"[fiche {i}]\n{rendu(i)}" for i in ids)
+        corps = "\n\n---\n\n".join(self.rendus[self.format][i] for i in ids)
         return (PHRASE_OUTIL if self.format == "C" else "") + f"\n\n<fiches>\n{corps}\n</fiches>"
 
     def outil(self, ids: list[str], args) -> tuple[str, str | None]:
@@ -99,7 +105,7 @@ class Joueur:
             return "erreur : arguments illisibles, attendu {\"id\": \"psup:7596\"}", "arguments_invalides"
         if id_ not in ids:
             return FICHE_ABSENTE, "identifiant_inconnu"
-        return self.formats.carte_b(id_), None
+        return self.rendus["B"][id_], None
 
     def tour(self, systeme: str, historique: list[dict], question: str, ids: list[str]) -> dict:
         msgs = [{"role": "system", "content": systeme}, *historique, {"role": "user", "content": question}]

@@ -115,6 +115,7 @@ def _joueur(reel):
     from src.eval.grille_d import Joueur
     j = Joueur.__new__(Joueur)
     j.format, j.modele, j.formats = "C", "test", _formats(reel)
+    j.precalculer(["psup:7596"])
     return j
 
 
