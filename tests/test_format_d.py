@@ -108,3 +108,42 @@ def test_exposition_deterministe_et_comptes(reel):
 def fd_n():
     from src.eval.exposition_d import N_EXPOSEES
     return N_EXPOSEES
+
+
+# ── Runner : l'outil du format C reste dans l'exposition (protocole §4 et §6) ─────────────────
+def _joueur(reel):
+    from src.eval.grille_d import Joueur
+    j = Joueur.__new__(Joueur)
+    j.format, j.modele, j.formats = "C", "test", _formats(reel)
+    return j
+
+
+def test_outil_rend_la_carte_b_d_une_fiche_exposee(reel):
+    j = _joueur(reel)
+    texte, erreur = j.outil(["psup:7596"], '{"id": "psup:7596"}')
+    assert erreur is None and texte == j.formats.carte_b("psup:7596")
+
+
+def test_outil_refuse_une_fiche_hors_exposition_et_des_arguments_illisibles(reel):
+    from src.eval.grille_d import FICHE_ABSENTE
+    j = _joueur(reel)
+    assert j.outil(["psup:7596"], '{"id": "psup:11236"}') == (FICHE_ABSENTE, "identifiant_inconnu")
+    assert j.outil(["psup:7596"], "pas du json")[1] == "arguments_invalides"
+
+
+def test_bloc_fiches_seul_c_decrit_l_outil(reel):
+    from src.eval.grille_d import PHRASE_OUTIL
+    j = _joueur(reel)
+    assert PHRASE_OUTIL in j.bloc_fiches(["psup:7596"])
+    j.format = "B"
+    assert PHRASE_OUTIL not in j.bloc_fiches(["psup:7596"])
+    assert "aucune fiche" in j.bloc_fiches([])
+
+
+def test_texte_reponse_separe_raisonnement_et_texte():
+    from types import SimpleNamespace as NS
+    from src.eval.grille_d import texte_reponse
+    msg = NS(content=[{"type": "thinking", "thinking": "..."}, {"type": "text", "text": "Bonjour"}])
+    texte, pensee = texte_reponse(msg)
+    assert texte == "Bonjour" and pensee > 0
+    assert texte_reponse(NS(content="ok")) == ("ok", 0)
