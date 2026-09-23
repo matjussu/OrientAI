@@ -50,6 +50,9 @@ TABLEAU_PDF = "https://www.univ-reims.fr/media-files/65970/i02-droits-inscriptio
 DOMAINES_INFO = {"informatique", "cyber", "data_ia"}
 REGLES_MATHS = {"M01", "M02", "M03"}
 SOURCES = ("parcoursup", "parcoursup_apprentissage")
+# Recopiée ici indépendamment du pipeline (Code du travail, article L6211-1, lu sur Légifrance le
+# 23/09/2026 ; Légifrance refuse les requêtes de script, l'audit ne peut pas la relire en ligne).
+PHRASE_L6211_1 = "La formation est gratuite pour l'apprenti et pour son représentant légal."
 
 
 def verticale(fiche: dict) -> str | None:
@@ -147,6 +150,16 @@ def auditer_cout(fiche: dict, texte: str, t: Temoins) -> list[str]:
     ecarts = []
     if cout["statut"] == "disponible":
         v = cout["valeur"]
+        if cout["rattachement"] == "regle_legale_apprentissage":
+            # Légifrance refuse les requêtes de script (403, 23/09/2026) : la phrase de l'article est
+            # vérifiée telle qu'elle a été lue, et sa présence mot pour mot dans le texte du modèle.
+            if fiche.get("source") != "parcoursup_apprentissage":
+                ecarts.append("règle de l'apprentissage appliquée à une formation scolaire")
+            if v["texte_source"] != PHRASE_L6211_1:
+                ecarts.append(f"phrase « {v['texte_source']} » != article L6211-1 lu le 23/09/2026")
+            if f"« {v['texte_source']} »" not in texte or "L6211-1" not in texte:
+                ecarts.append("phrase du Code du travail non citée dans le texte")
+            return ecarts
         if cout["rattachement"] == "constante_type_statut":
             droits = t.droits_tableau()
             attendu = {"tableau_droits_2026_2027": droits["cpge"] if fiche.get("fili_code") == "CPGE" else droits["licence"],
@@ -206,8 +219,15 @@ def auditer_alternance(fiche: dict, texte: str) -> list[str]:
             ecarts.append(f"capacité {f['capacite']} != officielle {o['capa_fin']}")
         if f["rattachee_par"] == "uai" and o["cod_uai"] != fiche.get("cod_uai"):
             ecarts.append(f"rattachée par l'UAI mais UAI {o['cod_uai']} != {fiche.get('cod_uai')}")
-        if f["cod_aff_form"] and f.get("etablissement") and f["etablissement"] not in texte:
+        # Au-delà de 5 établissements, le texte résume : seules les formations du même établissement
+        # (rattachées par l'UAI) doivent y être nommées ; le compte et les places sont vérifiés plus bas.
+        nommee = len({(x.get("etablissement"), x.get("ville")) for x in formations}) <= 5 or f["rattachee_par"] == "uai"
+        if nommee and f.get("etablissement") and f["etablissement"] not in texte:
             ecarts.append("formation d'apprentissage rattachée non écrite dans le texte")
+    if len({(x.get("etablissement"), x.get("ville")) for x in formations}) > 5:
+        places = sum(x["capacite"] for x in formations if x.get("capacite") is not None)
+        if f"{len(formations)} formations en apprentissage" not in texte or f"{places} places" not in texte:
+            ecarts.append("résumé de l'alternance : nombre de formations ou total des places absent du texte")
     if not formations:
         # Même diplôme, même UAI : l'API ne doit rien rendre (le cas « même commune » n'est pas
         # interrogeable sans le référentiel des communes ; il est couvert par les tests).
@@ -282,6 +302,8 @@ def saboter(fiche: dict, levier: str) -> None:
             v[cle] += 1
         elif v.get("fourchette_eur"):  # coût publié en fourchette seulement
             v["fourchette_eur"][0] += 1
+        elif v.get("gratuit_pour_l_apprenti"):  # règle légale de l'apprentissage
+            v["texte_source"] = v["texte_source"].replace("gratuite", "payante")
     elif levier == "alternance" and fiche.get("source") == "parcoursup_apprentissage":
         fiche["apprentissage"]["candidats"] = (fiche["apprentissage"]["candidats"] or 0) + 1
     elif levier == "alternance" and fiche["alternance"]["valeur"]["formations"]:

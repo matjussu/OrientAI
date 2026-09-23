@@ -40,7 +40,14 @@ TABLEAU_DROITS_2026 = SourceLue(
     "document administratif public",
     "2026-09-23",
 )
-SOURCES_LUES = {s.id: s for s in (SERVICE_PUBLIC_F36520, TABLEAU_DROITS_2026)}
+CODE_TRAVAIL_L6211_1 = SourceLue(
+    "code_travail_l6211_1",
+    "Code du travail, article L6211-1 (version en vigueur depuis le 3 août 2023), Légifrance",
+    "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006178183",
+    "texte officiel",
+    "2026-09-23",
+)
+SOURCES_LUES = {s.id: s for s in (SERVICE_PUBLIC_F36520, TABLEAU_DROITS_2026, CODE_TRAVAIL_L6211_1)}
 
 
 class Referentiel:

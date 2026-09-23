@@ -82,10 +82,7 @@ class ConstructeurEtapeB1:
                 fiche["insertion"] = self.insertion.calculer(fiche)
             sortie.append(fiche)
         for fiche in self.alternance.fiches(self.regles):
-            fiche["cout"] = self.cout.ref.non_disponible(
-                "le coût d'une formation en apprentissage n'est pas publié dans les jeux ouverts "
-                "utilisés (le jeu Onisep Idéo-Actions exclut l'apprentissage)"
-            )
+            fiche["cout"] = self.cout.calculer(fiche)
             fiche["insertion"] = self.insertion.calculer(fiche)
             sortie.append(fiche)
         return sortie

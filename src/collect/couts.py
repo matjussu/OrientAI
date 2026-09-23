@@ -36,6 +36,10 @@ CVEC_EUR = 105
 # droits d'inscription. » Rien n'est dit de la CVEC en BTS : elle reste non écrite.
 DROITS_BTS_PUBLIC_EUR = 0
 
+# Code du travail, article L6211-1 (version en vigueur depuis le 3 août 2023, lu sur Légifrance le
+# 23/09/2026) : phrase recopiée telle quelle. Elle porte sur la formation seulement.
+GRATUITE_APPRENTISSAGE = "La formation est gratuite pour l'apprenti et pour son représentant légal."
+
 FILIERES_CYCLE_LICENCE = frozenset({"Licence", "Licence_Las", "PASS", "BUT"})
 # Diplômes du même groupe du tableau, rangés par Parcoursup en « Autre formation » : reconnus par
 # leur type en clair (`type_formation`, étape A), jamais par un mot de l'intitulé.
@@ -225,6 +229,10 @@ class CalculCout:
         return self.ref.disponible(valeur, "onisep_ideo_actions_es", lu.annee, rattachement)
 
     def calculer(self, fiche: dict) -> dict:
+        if fiche.get("source") == "parcoursup_apprentissage":
+            valeur = _valeur_vide() | {"gratuit_pour_l_apprenti": True, "texte_source": GRATUITE_APPRENTISSAGE}
+            return self.ref.disponible(valeur, "code_travail_l6211_1", "version en vigueur depuis le 3 août 2023",
+                                       "regle_legale_apprentissage")
         constante = self._constante(fiche)
         if constante:
             return constante
