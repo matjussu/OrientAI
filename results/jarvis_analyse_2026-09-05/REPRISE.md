@@ -18,14 +18,20 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
   alternance, insertion (B-1), puis sante (B-2). Mis de cote : Parcoursup 2026, specialites, fiches
   Parcoursup, suite d'etudes, insertion ARS regionale (`_orientai-ref/verticale-2026-09/CAHIER-DES-CHARGES-donnee.md` §4).
 - **Fait** : lot 0 (banc, section 0), etape A (texte des fiches, section 0 bis), B-1 (section 0 ter),
-  B-2 (section 0 quater), C (section 0 quinquies). Tout est merge sur main (98e9b09).
+  B-2 (section 0 quater), C (section 0 quinquies), correctif C (#184). Merge sur main : 0d55da4.
 - **Etape C validee par Matteo et mergee** (ordres 2026-09-23-1358 et -1424 ; #183, 98e9b09, qui embarque
   le contrat #182 ; Telegram 10623). Base SQLite derivee du corpus B-2 : 3 945 formations, 172 981 valeurs
-  sourcees, gate C 20/20, audit tout vert, 8 sabotages rouges chacun sur sa cible (section 0 quinquies).
+  sourcees, gate C 20/20, audit tout vert (section 0 quinquies). Correctif insertion InserSup (#184,
+  0d55da4, contrat C v1.4) : base `data/processed/base_etape_c.sqlite` sha `9667b95521c2`, audit 24/24,
+  12 sabotages rouges sur leur cible.
 - **Etape D jouee, en attente de validation** (ordre 2026-09-23-1515, section 0 sexies) : grille 3 formats x
   3 modeles, 2 generations, juge a l'aveugle. Regle ecrite : on garde A x mistral-medium-2604. Constat hors
   regle a trancher par Matteo : GLM 5.2 fait nettement moins d'erreurs factuelles (-27 pts) a critere 1
-  equivalent. Detail en section 4, dettes en section 5.
+  equivalent. **Etat au soir du 23/09** : PR #185 (branche `feat/etape-d-grille`) ouverte, NON mergee,
+  verifiee par Jarvis ; worktree `~/projets/OrientIA-etape-d` en place (son data/processed porte des COPIES
+  du corpus B-2 et de la base C corrigee, et un .venv) ; presentee a Matteo (Telegram 10652), en attente de
+  sa decision sur GLM et de son go de merge ; banc de confirmation Medium contre GLM propose, NON lance.
+  Detail en section 4, dettes en section 5.
 - **Validation** : Matteo valide chaque etape dans l'explorateur prive de Jarvis (avant/apres, sources
   cliquables, signalements) ; rien n'est merge sans son go.
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
