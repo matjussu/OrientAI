@@ -102,3 +102,29 @@ def test_a_run_dir_refuses_a_second_battery(tmp_path):
     assert_same_battery(run_dir, first)
     with pytest.raises(ValueError):
         assert_same_battery(run_dir, second)
+
+
+def test_selection_keeps_conversations_outside_it(tmp_path):
+    out = tmp_path / "echo.jsonl"
+    play(EchoSystem(), BATTERY, out, workers=1, log=lambda *_: None)
+    system = EchoSystem()
+    play(system, BATTERY, out, workers=1, log=lambda *_: None, selection=["L01"])
+    assert system.calls == []
+    assert sorted((r["id"], r["turn"]) for r in read_jsonl(out)) == [("L01", 0), ("L13", 0), ("L13", 1)]
+
+
+def test_empty_answer_is_an_error_not_an_answer(tmp_path):
+    class Silent(EchoSystem):
+        def ask(self, question, history, key=None):
+            return {"answer": "  ", "sources": [], "source_positions": []}
+
+    stats = play(Silent(), BATTERY[:1], tmp_path / "s.jsonl", workers=1, log=lambda *_: None)
+    assert stats["errors"] == 1
+
+
+def test_scores_outside_1_to_5_or_boolean_are_not_verdicts():
+    from src.eval.battery.judge import valid_scores
+    ok = {"references": 3, "comprehension": 4, "expression": 5, "couverture": 1}
+    assert valid_scores(ok)
+    assert not valid_scores({**ok, "references": 0})
+    assert not valid_scores({**ok, "couverture": True})

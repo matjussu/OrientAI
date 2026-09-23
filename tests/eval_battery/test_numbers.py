@@ -71,10 +71,31 @@ def test_no_claim_gives_no_rate_not_a_neutral_value():
 
 
 def test_chance_rate_is_none_without_any_exposed_fiche():
-    assert NumberChecker(corpus()).chance_rate(["87 %"], [[]]) is None
+    assert NumberChecker(corpus()).chance_rate(["87 %"], [[]], ["L01"]) is None
 
 
-def test_chance_rate_uses_another_turn_fiches():
+def test_chance_rate_uses_another_conversation_fiches():
     checker = NumberChecker(corpus())
-    # tour 1 cite la valeur de sa propre fiche ; le temoin le confronte a la fiche de l'autre tour
-    assert checker.chance_rate(["87 %", "32 %"], [[0], [2]]) == 0.0
+    # chaque tour cite la valeur de sa propre fiche ; le temoin le confronte a l'autre conversation
+    assert checker.chance_rate(["87 %", "32 %"], [[0], [2]], ["L01", "L02"]) == 0.0
+
+
+def test_falsification_chance_rate_never_draws_from_the_same_conversation():
+    checker = NumberChecker(corpus())
+    # deux tours de la meme conversation sur la meme fiche : tirer dedans donnerait 100 %
+    assert checker.chance_rate(["87 %", "87 %", "32 %"], [[0], [0], [2]], ["L13", "L13", "L02"]) == 0.0
+
+
+def test_chance_rate_ignores_turns_without_fiches():
+    checker = NumberChecker(corpus())
+    # le tour sans fiche vaut 0 adosse par construction : le temoin ne doit pas lui en preter
+    assert checker.chance_rate(["87 %", "87 %"], [[], [2]], ["L01", "L02"]) == 0.0
+
+
+def test_falsification_percent_written_in_text_is_not_rescaled():
+    fiche = {"nom": "Licence", "source": "onisep", "detail": "Taux de reussite en L1 : 0,5 % des inscrits."}
+    values = fiche_values(fiche)
+    if not values["pct"]:
+        import pytest
+        pytest.skip("la FactCard n'expose pas ce texte : cas non atteignable par ce chemin")
+    assert 0.5 in values["pct"] and 50.0 not in values["pct"]

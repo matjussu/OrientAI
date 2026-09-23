@@ -10,10 +10,10 @@ Note du juge de 1 a 5. **Chiffres adosses** = part des chiffres cites (%, EUR, p
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | local | 67 | 0 | 2.04 | 2.04 | 2.07 | 2.15 | 1.9 | 40 % | 16 % | 420 | 61 % (32 %) | 6 % | 33 % |
 | claude_norag | 64/67 | 0 | 3.98 | 3.47 | 4.14 | 4.27 | 4.03 | 0 % | 41 % | 99 | 0 % (n/a) | 7 % | 93 % |
-| claude_ctx | 65/67 | 0 | 3.64 | 3.35 | 3.89 | 3.35 | 3.97 | 0 % | 34 % | 361 | 80 % (28 %) | 1 % | 19 % |
+| claude_ctx | 65/67 | 0 | 3.64 | 3.35 | 3.89 | 3.35 | 3.97 | 0 % | 34 % | 361 | 80 % (30 %) | 1 % | 19 % |
 | gpt_norag | 67 | 0 | 4.28 | 3.9 | 4.1 | 4.64 | 4.49 | 0 % | 1 % | 91 | 0 % (n/a) | 4 % | 96 % |
-| agent_sonnet | 66/67 | 0 | 4.01 | 3.56 | 4.23 | 4.12 | 4.12 | 0 % | 21 % | 424 | 42 % (13 %) | 26 % | 32 % |
-| agent_mistral | 65/67 | 0 | 3.28 | 2.77 | 3.37 | 3.62 | 3.38 | 5 % | 62 % | 648 | 63 % (21 %) | 6 % | 30 % |
+| agent_sonnet | 66/67 | 0 | 4.01 | 3.56 | 4.23 | 4.12 | 4.12 | 0 % | 21 % | 424 | 42 % (7 %) | 26 % | 32 % |
+| agent_mistral | 65/67 | 0 | 3.28 | 2.77 | 3.37 | 3.62 | 3.38 | 5 % | 62 % | 648 | 63 % (15 %) | 6 % | 30 % |
 
 Positions des fiches exposees : local : 53 fiches exposees a signature ambigue, 0 introuvables ; claude_ctx : 53 fiches exposees a signature ambigue, 0 introuvables ; agent_sonnet : 0 fiches exposees a signature ambigue, 8 introuvables ; agent_mistral : 0 fiches exposees a signature ambigue, 8 introuvables. Une signature ambigue compte toutes ses fiches (leger biais favorable au taux adosse) ; une fiche introuvable n'en compte aucune.
 
@@ -38,9 +38,9 @@ Chiffres adosses par domaine :
 
 | domaine | local | claude_norag | claude_ctx | gpt_norag | agent_sonnet | agent_mistral |
 |---|---|---|---|---|---|---|
-| arts-design-archi | 48 % (21) | 0 % (9) | 73 % (30) | 0 % (7) | 63 % (43) | 76 % (54) |
-| droit-eco-gestion | 58 % (65) | 0 % (15) | 81 % (43) | 0 % (16) | 43 % (46) | 41 % (74) |
-| informatique | 69 % (120) | 0 % (19) | 74 % (93) | 0 % (20) | 41 % (125) | 66 % (201) |
+| arts-design-archi | 52 % (21) | 0 % (9) | 73 % (30) | 0 % (7) | 63 % (43) | 78 % (54) |
+| droit-eco-gestion | 58 % (65) | 0 % (15) | 84 % (43) | 0 % (16) | 43 % (46) | 41 % (74) |
+| informatique | 69 % (120) | 0 % (19) | 74 % (93) | 0 % (20) | 41 % (125) | 67 % (201) |
 | ingenieur | 100 % (16) | 0 % (10) | 74 % (23) | 0 % (6) | 27 % (30) | 45 % (56) |
 | lettres-langues-shs | 33 % (92) | 0 % (13) | 76 % (46) | 0 % (10) | 59 % (51) | 53 % (75) |
 | maths-sciences | 77 % (26) | 0 % (3) | 92 % (36) | 0 % (6) | 0 % (30) | 75 % (51) |

@@ -71,6 +71,7 @@ def cmd_run(args) -> None:
         load_battery,
         play,
         read_jsonl,
+        read_manifest,
         update_manifest,
     )
 
@@ -87,17 +88,22 @@ def cmd_run(args) -> None:
     except ValueError as e:
         sys.exit(str(e))
     battery = load_battery(battery_path)
+    selection = [it["id"] for it in battery]
     if args.only:
         keep = set(args.only.split(","))
-        battery = [it for it in battery if it["id"] in keep]
+        selection = [cid for cid in selection if cid in keep]
     if args.limit:
-        battery = battery[: args.limit]
+        selection = selection[: args.limit]
 
     corpus = Corpus() if set(names) & registry.NEEDS_CORPUS else None
+    recorded = read_manifest(run_dir).get("corpus_sha256")
+    if corpus and recorded and recorded != corpus.sha256:
+        sys.exit(f"{run_dir} a ete joue sur le corpus {recorded[:12]}, le corpus actuel est "
+                 f"{corpus.sha256[:12]} : choisir un autre --tag")
     for name in names:
         local_run = by_turn(read_jsonl(run_dir / "local.jsonl")) if name == "claude_ctx" else None
         system = registry.build(name, corpus=corpus, local_run=local_run)
-        stats = play(system, battery, run_dir / f"{name}.jsonl", workers=args.workers)
+        stats = play(system, battery, run_dir / f"{name}.jsonl", workers=args.workers, selection=selection)
         print(f"[{name}] {stats}")
         update_manifest(run_dir, corpus.sha256 if corpus else None, {"step": "run", **stats}, battery_path, code)
 

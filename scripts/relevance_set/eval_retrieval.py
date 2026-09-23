@@ -116,6 +116,7 @@ def main() -> None:
 
     todo = [ql for ql in labels if ql.qid in cands and ql.qid not in runs]
     print(f"[eval] {len(todo)} questions a mesurer (mode {args.mode})")
+    failed = []
     for i, ql in enumerate(todo):
         q = cands[ql.qid]
         try:
@@ -124,11 +125,18 @@ def main() -> None:
                 else run_serving(pipeline, corpus, q, args.top)
             )
         except Exception as e:  # noqa: BLE001
-            print(f"  [warn] {ql.qid}: {type(e).__name__}: {e}")
-            runs[ql.qid] = []
+            # une panne (timeout API) n'est pas un echec de retrieval : la question n'est pas
+            # enregistree, la relance la rejouera
+            print(f"  [panne] {ql.qid}: {type(e).__name__}: {e}")
+            failed.append(ql.qid)
         if (i + 1) % 25 == 0:
             out_path.write_text(json.dumps({"mode": args.mode, "runs": runs}, ensure_ascii=False))
             print(f"  {i+1}/{len(todo)}")
+
+    if failed:
+        out_path.write_text(json.dumps({"mode": args.mode, "runs": runs}, ensure_ascii=False))
+        sys.exit(f"{len(failed)} questions en panne ({', '.join(failed[:10])}) : relancer, "
+                 "la reprise ne rejoue qu'elles. Pas de rapport sur une mesure incomplete.")
 
     reports = {k: evaluate(runs, labels, k=int(k), ndcg_k=args.top) for k in args.recall_k.split(",")}
     out_path.write_text(json.dumps(

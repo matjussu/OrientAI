@@ -15,6 +15,8 @@ import numpy as np
 
 from src.eval.battery.config import MODELS
 from src.eval.battery.corpus import norm
+from src.eval.battery.runner import IncompleteAnswer
+from src.eval.battery.systems import check_complete
 
 MAX_STEPS = 8
 TOOL_RESULT_CHARS = 6000
@@ -180,11 +182,14 @@ class SonnetAgent:
             turn.tokens_in += r.usage.input_tokens
             turn.tokens_out += r.usage.output_tokens
             msgs = msgs + [{"role": "assistant", "content": r.content}]
+            check_complete(r.stop_reason, self.model)
             if r.stop_reason != "tool_use":
                 break
             msgs = msgs + [{"role": "user", "content": [
                 {"type": "tool_result", "tool_use_id": b.id, "content": turn.record(self.tools, b.name, b.input)}
                 for b in r.content if b.type == "tool_use"]}]
+        else:
+            raise IncompleteAnswer(f"{MAX_STEPS} etapes d'outils sans reponse finale")
         return turn.result("".join(b.text for b in r.content if getattr(b, "type", "") == "text"), self.model)
 
 
@@ -208,6 +213,7 @@ class MistralAgent:
             turn.tokens_in += r.usage.prompt_tokens
             turn.tokens_out += r.usage.completion_tokens
             m = r.choices[0].message
+            check_complete(r.choices[0].finish_reason, self.model)
             msgs.append({"role": "assistant", "content": m.content or "", "tool_calls": m.tool_calls})
             if not m.tool_calls:
                 break
@@ -216,6 +222,8 @@ class MistralAgent:
                 args = json.loads(args) if isinstance(args, str) else args
                 msgs.append({"role": "tool", "name": tc.function.name, "tool_call_id": tc.id,
                              "content": turn.record(self.tools, tc.function.name, args)})
+        else:
+            raise IncompleteAnswer(f"{MAX_STEPS} etapes d'outils sans reponse finale")
         answer = m.content if isinstance(m.content, str) else "".join(
             getattr(p, "text", "") for p in (m.content or []))
         return turn.result(answer, self.model)

@@ -14,13 +14,13 @@ verdict est ignore.
 """
 from __future__ import annotations
 
-import hashlib
 import json
 import random
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+from src.eval.battery.answers import answer_sha
 from src.eval.battery.config import MODELS, price_usd
 from src.eval.battery.runner import read_jsonl
 
@@ -64,10 +64,6 @@ Reponds UNIQUEMENT en JSON : {"references":n,"comprehension":n,"expression":n,"c
 "refus":bool,"erreur_factuelle":bool,"erreur_detail":"...","cause_echec":"...","commentaire":"..."}"""
 
 
-def answer_sha(rec: dict) -> str:
-    return hashlib.sha256((rec.get("answer") or "").encode()).hexdigest()[:12]
-
-
 def build_prompt(rec: dict) -> str:
     history = ""
     if rec["history"]:
@@ -84,6 +80,12 @@ def build_prompt(rec: dict) -> str:
             f"REPONSE DE L'ASSISTANT :\n{rec['answer'] or '(vide / erreur)'}{context}")
 
 
+def valid_scores(verdict: dict) -> bool:
+    """Les 4 criteres presents, entiers ou reels de 1 a 5 (un booleen n'est pas une note)."""
+    return all(isinstance(verdict.get(c), (int, float)) and not isinstance(verdict.get(c), bool)
+               and 1 <= verdict[c] <= 5 for c in CRITERIA)
+
+
 def parse_verdict(text: str) -> dict:
     """JSON du juge, tolerant aux blocs ```json. Un verdict illisible est marque, jamais invente."""
     text = text.strip()
@@ -92,7 +94,7 @@ def parse_verdict(text: str) -> dict:
         verdict = json.loads(text[start:end + 1])
     except ValueError:
         return {"_raw": text, "_parse_error": True}
-    if not all(isinstance(verdict.get(c), (int, float)) for c in CRITERIA):
+    if not valid_scores(verdict):
         return {**verdict, "_parse_error": True}
     return verdict
 
@@ -142,11 +144,11 @@ def judge_run(run_dir: Path, systems: list[str], judge_name: str = "opus", sampl
     judge = JUDGES[judge_name]()
     jobs = []
     for system in systems:
-        records = read_jsonl(run_dir / f"{system}.jsonl")
+        records = sorted(read_jsonl(run_dir / f"{system}.jsonl"), key=lambda r: (r["id"], r["turn"]))
         if not records:
             log(f"  absent : {system}.jsonl")
             continue
-        if sample:
+        if sample:  # meme echantillon a chaque lancement : l'ordre du fichier depend de la concurrence
             random.Random(7).shuffle(records)
             records = records[:sample]
         out = run_dir / f"judge_{judge_name}_{system}.jsonl"
@@ -190,7 +192,7 @@ def load_verdicts(run_dir: Path, judge_name: str, system: str) -> dict[tuple[str
                for r in read_jsonl(Path(run_dir) / f"{system}.jsonl")}
     out = {}
     for v in read_jsonl(Path(run_dir) / f"judge_{judge_name}_{system}.jsonl"):
-        if not all(isinstance(v.get(c), (int, float)) for c in CRITERIA):
+        if not valid_scores(v):
             continue
         key = (v["id"], v["turn"])
         if "answer_sha" in v and v["answer_sha"] != current.get(key):

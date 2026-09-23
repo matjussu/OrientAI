@@ -16,6 +16,7 @@ import statistics as st
 from collections import Counter
 from pathlib import Path
 
+from src.eval.battery.answers import answer_sha
 from src.eval.battery.config import BATTERY_PATH
 from src.eval.battery.judge import CRITERIA, load_verdicts
 from src.eval.battery.numbers import NumberChecker, NumberSummary
@@ -72,7 +73,7 @@ def check_numbers(run_dir: Path, systems: list[str], corpus, out_dir: Path, anch
             base = records
         summary = NumberSummary()
         ambiguous = missing = 0
-        lines = []
+        per_turn = []
         for key, rec in sorted(records.items()):
             source = rec if "source_positions" in rec else base.get(key, rec)
             positions, amb, miss = exposed_positions(source, corpus)
@@ -81,13 +82,14 @@ def check_numbers(run_dir: Path, systems: list[str], corpus, out_dir: Path, anch
             exposed_by_turn[key] = positions
             checks = checker.check(rec.get("answer") or "", positions, anchor=anchor)
             summary.add(checks, exposed=bool(positions))
-            lines.append(json.dumps({"id": key[0], "turn": key[1], "exposed": len(positions),
-                                     "checks": checks}, ensure_ascii=False))
-        (out_dir / f"numbers_{system}.jsonl").write_text("\n".join(lines) + "\n")
+            per_turn.append({"id": key[0], "turn": key[1], "exposed": len(positions), "checks": checks})
+        (out_dir / f"numbers_{system}.jsonl").write_text("\n".join(json.dumps(t, ensure_ascii=False)
+                                                                  for t in per_turn) + "\n")
         keys = sorted(records)
         chance = checker.chance_rate([records[k].get("answer") or "" for k in keys],
-                                     [exposed_by_turn[k] for k in keys])
-        out[system] = {"summary": summary, "chance": chance, "ambiguous": ambiguous, "missing": missing}
+                                     [exposed_by_turn[k] for k in keys], [k[0] for k in keys])
+        out[system] = {"summary": summary, "chance": chance, "ambiguous": ambiguous, "missing": missing,
+                       "per_turn": per_turn}
     return out
 
 
@@ -106,6 +108,9 @@ def build_report(run_dir: Path, corpus, judge_name: str = "opus", title: str = "
     numbers = check_numbers(run_dir, systems, corpus, out_dir, anchor=anchor)
     manifest_path = run_dir / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+    if manifest.get("corpus_sha256"):
+        # les positions des runs ne designent les bonnes fiches que sur ce corpus
+        corpus.assert_version(manifest["corpus_sha256"], str(run_dir))
 
     lines: list[str] = []
     w = lines.append
@@ -170,8 +175,7 @@ def build_report(run_dir: Path, corpus, judge_name: str = "opus", title: str = "
     for d in domains:
         cells = []
         for s in numbers:
-            per_turn = read_jsonl(out_dir / f"numbers_{s}.jsonl")
-            checks = [c for t in per_turn if battery[t["id"]]["domaine"] == d for c in t["checks"]]
+            checks = [c for t in numbers[s]["per_turn"] if battery[t["id"]]["domaine"] == d for c in t["checks"]]
             ok = sum(c["status"] == "adosse" for c in checks)
             cells.append(f"{_pct(ok / len(checks))} ({len(checks)})" if checks else "")
         w(f"| {d} | " + " | ".join(cells) + " |")
@@ -199,8 +203,16 @@ def build_report(run_dir: Path, corpus, judge_name: str = "opus", title: str = "
         local, ctx = verdicts["local"], verdicts["claude_ctx"]
         keys = sorted(set(local) & set(ctx))
         w("## local contre claude_ctx, memes fiches (isole la generation)\n")
+        stale = [k for k, r in runs["claude_ctx"].items() if r.get("local_answer_sha")
+                 and r["local_answer_sha"] != answer_sha(runs["local"].get(k, {}))]
+        if stale:
+            w(f"**Attention** : {len(stale)} tours de claude_ctx ont ete joues sur une version anterieure "
+              "de local (local rejoue depuis) : la comparaison melange deux jeux de fiches.\n")
         for c in CRITERIA:
             d = [ctx[k][c] - local[k][c] for k in keys]
+            if not d:
+                w("- aucun tour juge en commun")
+                break
             w(f"- {c} : delta moyen {_mean(d):+} ; ctx meilleur sur {sum(x > 0 for x in d)}, "
               f"pire sur {sum(x < 0 for x in d)} (n={len(d)})")
         w("")

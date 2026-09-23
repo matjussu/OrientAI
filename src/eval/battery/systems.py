@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import os
 
+from src.eval.battery.answers import answer_sha
 from src.eval.battery.config import (
     CORPUS_PATH,
     HISTORY_WINDOW,
@@ -21,6 +22,14 @@ from src.eval.battery.config import (
     SYSTEM_PROMPT_BASELINE,
     SYSTEM_PROMPT_CTX,
 )
+
+
+def check_complete(stop_reason: str | None, model: str) -> None:
+    """Refuse une reponse coupee par le plafond de tokens (Anthropic `max_tokens`, OpenAI et
+    Mistral `length`) : jugee telle quelle, elle compterait comme une mauvaise reponse."""
+    if stop_reason in ("max_tokens", "length"):
+        from src.eval.battery.runner import IncompleteAnswer
+        raise IncompleteAnswer(f"{model} : reponse coupee ({stop_reason})")
 
 
 def _source_view(fiche: dict) -> dict:
@@ -119,13 +128,17 @@ class ClaudeSystem:
 
     def ask(self, question: str, history: list[dict], key=None) -> dict:
         system, sources, positions = self._system_prompt(key)
+        # Le tour de `local` dont on a repris les fiches : si local est rejoue ensuite, le rapport
+        # voit que ce tour de claude_ctx porte sur d'anciennes fiches.
+        local_sha = answer_sha(self.local_run.get(key, {})) if self.local_run is not None else None
         r = self.client.messages.create(
             model=self.model, max_tokens=2000, system=system,
             messages=history + [{"role": "user", "content": question}],
             thinking={"type": "adaptive"}, output_config={"effort": "medium"},
         )
+        check_complete(r.stop_reason, self.model)
         return {"answer": "".join(b.text for b in r.content if b.type == "text"),
-                "sources": sources, "source_positions": positions,
+                "sources": sources, "source_positions": positions, "local_answer_sha": local_sha,
                 "usage": {"in": r.usage.input_tokens, "out": r.usage.output_tokens},
                 "model": self.model}
 
@@ -142,6 +155,7 @@ class OpenAISystem:
         msgs = [{"role": "system", "content": SYSTEM_PROMPT_BASELINE}, *history,
                 {"role": "user", "content": question}]
         r = self.client.chat.completions.create(model=self.model, messages=msgs)
+        check_complete(r.choices[0].finish_reason, self.model)
         return {"answer": r.choices[0].message.content, "sources": [], "source_positions": [],
                 "usage": {"in": r.usage.prompt_tokens, "out": r.usage.completion_tokens},
                 "model": self.model}
@@ -159,6 +173,7 @@ class MistralSystem:
         msgs = [{"role": "system", "content": SYSTEM_PROMPT_BASELINE}, *history,
                 {"role": "user", "content": question}]
         r = self.client.chat.complete(model=self.model, messages=msgs, temperature=0.3)
+        check_complete(r.choices[0].finish_reason, self.model)
         return {"answer": r.choices[0].message.content, "sources": [], "source_positions": [],
                 "usage": {"in": r.usage.prompt_tokens, "out": r.usage.completion_tokens},
                 "model": self.model}

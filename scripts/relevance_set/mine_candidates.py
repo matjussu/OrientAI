@@ -113,7 +113,7 @@ def lexical_candidates(question: str, fiches: list[dict]) -> list[tuple[int, flo
         ))
         hits = sum(1 for t in terms if t in hay)
         if hits >= 2:
-            scores.append((i, hits + 0.001 * len(hay[:1])))
+            scores.append((i, hits))
     scores.sort(key=lambda x: -x[1])
     return scores[:TOP_LEX]
 

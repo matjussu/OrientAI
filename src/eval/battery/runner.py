@@ -34,6 +34,11 @@ def by_turn(records: list[dict]) -> dict[tuple[str, int], dict]:
     return {(r["id"], r["turn"]): r for r in records}
 
 
+class IncompleteAnswer(RuntimeError):
+    """Reponse coupee (plafond de tokens, boucle d'outils epuisee) ou vide : c'est une panne du
+    passage, pas une reponse du systeme. Le tour part en erreur et sera rejoue."""
+
+
 def play_conversation(system, item: dict) -> list[dict]:
     history: list[dict] = []
     records = []
@@ -41,6 +46,8 @@ def play_conversation(system, item: dict) -> list[dict]:
         t0 = time.time()
         try:
             result, error = system.ask(question, history, key=(item["id"], turn)), None
+            if not (result.get("answer") or "").strip():
+                raise IncompleteAnswer("reponse vide")
         except Exception as e:  # noqa: BLE001 - une panne d'API ne doit pas arreter la batterie
             result = {"answer": "", "sources": [], "source_positions": []}
             error = f"{type(e).__name__}: {e}\n{traceback.format_exc()[-800:]}"
@@ -66,14 +73,20 @@ def complete_conversations(records: list[dict], battery: list[dict]) -> set[str]
             if len(turns) == n_turns.get(cid, -1) and cid not in failed}
 
 
-def play(system, battery: list[dict], out: Path, workers: int = 3, log=print) -> dict:
-    """Joue les conversations manquantes, rend le cout du passage."""
+def play(system, battery: list[dict], out: Path, workers: int = 3, log=print,
+         selection: list[str] | None = None) -> dict:
+    """Joue les conversations manquantes de `selection` (toute la batterie par defaut), rend le
+    cout du passage. `battery` est toujours la batterie COMPLETE : les conversations hors
+    selection gardent leurs tours tels quels."""
     existing = read_jsonl(out)
     done = complete_conversations(existing, battery)
-    if len(done) < len({r["id"] for r in existing}):
-        # conversations interrompues : on les retire pour les rejouer d'un bloc
-        out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in existing if r["id"] in done))
-    todo = [it for it in battery if it["id"] not in done]
+    wanted = set(selection) if selection is not None else {it["id"] for it in battery}
+    todo = [it for it in battery if it["id"] in wanted and it["id"] not in done]
+    replayed = {it["id"] for it in todo}
+    kept = [r for r in existing if r["id"] not in replayed]
+    if len(kept) < len(existing):
+        # conversations interrompues ou en erreur : retirees pour etre rejouees d'un bloc
+        out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in kept))
     log(f"[{system.name}] {len(todo)} conversations a jouer ({len(done)} deja faites)")
 
     tokens_in = tokens_out = errors = 0

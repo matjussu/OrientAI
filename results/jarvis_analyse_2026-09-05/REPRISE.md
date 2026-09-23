@@ -15,7 +15,7 @@ Mesures du 23/09 (traces : `results/battery/2026-09-23_lot0/REPORT.md` et `manif
 
 | systeme | moy. 4 criteres | refus | err. fact. (juge) | chiffres adosses a une fiche (temoin de hasard) |
 |---|---|---|---|---|
-| local (prod) | 1,99 | 33 % | 24 % | 58 % (38 %) sur 438 chiffres |
+| local (prod) | 1,99 | 33 % | 24 % | 58 % (33 %) sur 438 chiffres |
 | mistral-large-2512 sans fiche | 3,20 | 0 % | 94 % | 0 % par construction, 805 chiffres |
 
 - **local = la prod** : empreinte de provenance identique a `/health` le 23/09 a 06:49Z (prompt
@@ -29,8 +29,8 @@ Mesures du 23/09 (traces : `results/battery/2026-09-23_lot0/REPORT.md` et `manif
   en mediane (le prompt en demande 250 a 450) : plus de faits exposes au juge.
 - **Controle des chiffres (nouveau)** : part des chiffres cites presents dans une fiche que le
   systeme a exposee, comparaison typee (%, EUR, places), toujours publiee avec son temoin de hasard.
-  Sur les runs du 05/09 : local 61 % (32 %), claude_ctx 80 % (28 %), agent_sonnet 42 % (13 %),
-  agent_mistral 63 % (21 %), GPT et Sonnet sans fiche 0 % (`results/battery/2026-09-05_runs-jarvis/`).
+  Sur les runs du 05/09 : local 61 % (32 %), claude_ctx 80 % (30 %), agent_sonnet 42 % (7 %),
+  agent_mistral 63 % (15 %), GPT et Sonnet sans fiche 0 % (`results/battery/2026-09-05_runs-jarvis/`).
 - **Juge** : les 8 verdicts manquants du 05/09 etaient des JSON tronques (plafond de 1 200 tokens) ;
   corrige a 4 000.
 

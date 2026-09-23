@@ -1,7 +1,7 @@
 """Constantes du banc : chemins, modeles epingles, prix, prompts.
 
 Tout ce qui fixe le resultat d'un passage vit ici, pour que le manifeste d'un run
-puisse le recopier tel quel (cf runner.write_manifest).
+puisse le recopier tel quel (cf runner.update_manifest).
 """
 from __future__ import annotations
 

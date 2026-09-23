@@ -21,7 +21,7 @@ montants, des places contre `nombre_places`. Sans typage, n'importe quel entier 
 retrouve dans une fiche.
 
 Chaque taux est publie a cote de son temoin de hasard (`chance_rate`) : le meme calcul avec les
-fiches d'un AUTRE tour. Un taux adosse proche de son temoin ne mesure rien.
+fiches d'une AUTRE conversation. Un taux adosse proche de son temoin ne mesure rien.
 """
 from __future__ import annotations
 
@@ -78,9 +78,13 @@ def extract_claims(answer: str) -> list[NumberClaim]:
     return claims
 
 
-def _as_percent(v: float) -> set[float]:
-    p = v * 100 if 0 < v <= 1 else v  # ratios du corpus (taux_emploi 0.86) cites en %
+def _percent_forms(p: float) -> set[float]:
     return {p, float(round(p)), round(p, 1)}
+
+
+def _ratio_as_percent(v: float) -> set[float]:
+    """Champ numerique taux_/part_ : les ratios du corpus (taux_emploi 0.86) sont cites en %."""
+    return _percent_forms(v * 100 if 0 < v <= 1 else v)
 
 
 def fiche_values(fiche: dict) -> dict[str, set[float]]:
@@ -91,7 +95,7 @@ def fiche_values(fiche: dict) -> dict[str, set[float]]:
         if isinstance(v, bool) or not isinstance(v, (int, float)):
             continue
         if name.startswith(("taux_", "part_")):
-            out["pct"] |= _as_percent(float(v))
+            out["pct"] |= _ratio_as_percent(float(v))
         elif name.startswith(("salaire_", "frais_")):
             out["eur"].add(float(v))
         elif name == "nombre_places":
@@ -100,7 +104,8 @@ def fiche_values(fiche: dict) -> dict[str, set[float]]:
     texts += [v for v in vars(card.chiffres).values() if isinstance(v, str)]
     for text in filter(None, texts):
         for m in _PCT.finditer(text):
-            out["pct"] |= _as_percent(float(m.group(1).replace(",", ".")))
+            # deja ecrit en % dans le texte : « 0,5 % » reste 0,5, jamais 50
+            out["pct"] |= _percent_forms(float(m.group(1).replace(",", ".")))
         for m in _EUR.finditer(text):
             out["eur"].add(_to_float(m.group(1)))
     return out
@@ -148,21 +153,27 @@ class NumberChecker:
             out.append({"value": c.value, "unit": c.unit, "status": status, "line": c.line[:240]})
         return out
 
-    def chance_rate(self, answers: list[str], exposed: list[list[int]], seed: int = 7) -> float | None:
-        """Temoin de hasard du taux adosse : chaque reponse contre les fiches d'un autre tour.
+    def chance_rate(self, answers: list[str], exposed: list[list[int]], conversations: list[str],
+                    seed: int = 7) -> float | None:
+        """Temoin de hasard du taux adosse : chaque reponse contre les fiches d'un tour d'une AUTRE
+        conversation (les tours d'une meme conversation exposent des fiches voisines).
+
+        Sa population est celle ou le taux adosse peut etre non nul : les tours qui ont expose des
+        fiches. Rapporte sur tous les chiffres cites, comme le taux adosse, pour rester comparable.
         None si aucun tour n'expose de fiche (le taux adosse est alors 0 par construction)."""
-        pool = [e for e in exposed if e]
-        if not pool:
+        turns = [(a, e, c) for a, e, c in zip(answers, exposed, conversations) if e]
+        if not turns:
             return None
         rng = random.Random(seed)
-        n = hit = 0
-        for answer, own in zip(answers, exposed):
-            others = [e for e in pool if e is not own] or pool
+        n_claims = sum(len(extract_claims(a)) for a in answers)
+        hit = 0
+        for answer, _, conversation in turns:
+            others = [e for _, e, c in turns if c != conversation]
+            if not others:
+                continue
             values = self.values_of(rng.choice(others))
-            for c in extract_claims(answer):
-                n += 1
-                hit += _found(c, values)
-        return hit / n if n else None
+            hit += sum(_found(c, values) for c in extract_claims(answer))
+        return hit / n_claims if n_claims else None
 
 
 @dataclass

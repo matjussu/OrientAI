@@ -8,7 +8,7 @@ Note du juge de 1 a 5. **Chiffres adosses** = part des chiffres cites (%, EUR, p
 
 | systeme | tours | erreurs | moy. 4 | references | comprehension | expression | couverture | refus | err. fact. | chiffres cites | adosses (hasard) | corpus seul | non retrouves |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| local | 67 | 0 | 1.99 | 1.91 | 2.06 | 2.07 | 1.9 | 33 % | 24 % | 438 | 58 % (38 %) | 5 % | 37 % |
+| local | 67 | 0 | 1.99 | 1.91 | 2.06 | 2.07 | 1.9 | 33 % | 24 % | 438 | 58 % (33 %) | 5 % | 37 % |
 | mistral_large_norag | 67 | 0 | 3.2 | 2.42 | 3.22 | 3.51 | 3.64 | 0 % | 94 % | 805 | 0 % (n/a) | 7 % | 93 % |
 
 **Corpus seul** : chiffre absent des fiches exposees mais present dans une des 5 fiches que la ligne designe (BM25). Indicatif : calibre le 23/09, cet ancrage ne retrouve que 37 a 60 % des chiffres adosses et coincide par hasard sur ~15 % des chiffres. **Non retrouve** ne veut pas dire faux.
