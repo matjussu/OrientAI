@@ -426,10 +426,107 @@ def _insertion(fiche: dict) -> list[str]:
     return [f"{entete} : {lignes}", "Définitions (libellés officiels) : " + " ; ".join(DEFINITIONS_INSERTION[k] for k in cles)]
 
 
+# ── Étape B-2 : accès aux études de santé (contrat, section 10) ─────────────────────────────
+# Le chiffre national vient avant celui de l'université, et chaque phrase qui porte un taux dit sa
+# portée (« au niveau national », « publié par l'université ») : demande de Jarvis du 23/09/2026.
+_FILIERES_MMOPK = (("medecine", "médecine"), ("pharmacie", "pharmacie"), ("odontologie", "odontologie"),
+                   ("maieutique", "maïeutique"), ("kinesitherapie", "kinésithérapie"))
+_MMOPK = "MMOPK (médecine, maïeutique, odontologie, pharmacie ou kinésithérapie)"
+
+
+def _sante_national(champ: dict) -> str | None:
+    if champ.get("statut") != "disponible":
+        return None
+    v = champ["valeur"]
+    voie = v["voie"]
+    filieres = ", ".join(
+        f"{mot} {_taux_fr(v['par_filiere_1_ou_2_ans_pct'][cle])}"
+        for cle, mot in _FILIERES_MMOPK if v["par_filiere_1_ou_2_ans_pct"].get(cle) is not None
+    )
+    return (
+        f"Accès aux études de santé, chiffre national : au niveau national (SIES, Note Flash n°31 de "
+        f"novembre 2025, session {v['session_resultats']}, {v['cohorte']}), "
+        f"{_taux_fr(v['admis_mmopk_1_ou_2_ans_pct'])} des néo-bacheliers inscrits en {voie} sont admis en "
+        f"{_MMOPK} en 1 ou 2 ans, dont {_taux_fr(v['admis_mmopk_1_an_pct'])} dès la première année ; "
+        f"au niveau national, par filière : {filieres} ; ce chiffre national ne décrit pas cette "
+        f"université en particulier"
+    )
+
+
+def _sante_universite(champ: dict) -> str | None:
+    if champ.get("statut") != "disponible":
+        return f"Taux de passage en MMOPK propre à l'université : non disponible ({champ.get('raison')})"
+    v = champ["valeur"]
+    voie = "PASS et LAS confondus" if v["voie"] == "PASS+LAS" else v["voie"]
+    definition = v.get("definition_publiee") or "définition non publiée par l'université"
+    return (
+        f"Taux de passage en MMOPK publié par l'université : l'{v['universite']} publie pour sa part "
+        f"{_taux_fr(v['taux_pct'])} ({voie}, année {v['annee']}, publié par l'université ; {definition})"
+        if v["universite"].startswith("Université") else
+        f"Taux de passage en MMOPK publié par l'université : {v['universite']} publie pour sa part "
+        f"{_taux_fr(v['taux_pct'])} ({voie}, année {v['annee']}, publié par l'université ; {definition})"
+    )
+
+
+def _places_filiere(d: dict) -> str:
+    voies = [f"{mot} {d[cle]}" for cle, mot in (("PASS", "PASS"), ("LAS", "LAS"), ("passerelles", "passerelles"),
+                                                   ("autres", "autres voies")) if d.get(cle) is not None]
+    total = d.get("total")
+    if total is not None:
+        return f"{total}" + (f" (dont {', '.join(voies)})" if voies else "")
+    return ", ".join(voies)
+
+
+def _sante_capacites(champ: dict, voie_fiche: str) -> str:
+    if champ.get("statut") != "disponible":
+        return f"Places en MMOPK de l'université : non disponible ({champ.get('raison')})"
+    v = champ["valeur"]
+    filieres = [
+        f"{mot} {_places_filiere(d)}" + (f" (rentrée {d['rentree']})" if d.get("rentree") and d["rentree"] != v["rentree"] else "")
+        for cle, mot in _FILIERES_MMOPK if (d := v["par_filiere"].get(cle))
+    ]
+    phrase = (
+        f"Places en MMOPK, {v['universite']}, rentrée {v['rentree']} (publiées par l'université) : "
+        + " ; ".join(filieres)
+        + (f" ; total {v['total']} places" if v.get("total") is not None else "")
+    )
+    if voie_fiche == "LAS" and "LAS" in v.get("voies_publiees", []):
+        phrase += " ; les places LAS sont ouvertes aux étudiants de LAS de l'université, toutes mentions confondues"
+    if v.get("note"):
+        phrase += f" ; précision : {v['note']}"
+    return phrase
+
+
+def _sante_reforme(champ: dict) -> str | None:
+    if champ.get("statut") != "disponible":
+        return None
+    j = champ["valeur"]["verifie_le"].split("-")
+    return (
+        "Réforme : une voie unique remplaçant PASS et LAS a été annoncée par le gouvernement le 17/04/2026 "
+        "pour la rentrée 2027 ; aucun décret ni arrêté publié au Journal officiel à la date du "
+        f"{j[2]}/{j[1]}/{j[0]} (voir la fiche « Réforme de l'accès aux études de santé »)"
+    )
+
+
+def _sante(fiche: dict) -> list[str]:
+    champ = fiche.get("sante")
+    if not isinstance(champ, dict):
+        return []
+    voie = "PASS" if fiche.get("fili_code") == "PASS" else "LAS"
+    sortie = [
+        _sante_national(champ.get("passage_national") or {}),
+        _sante_universite(champ.get("passage_universite") or {}),
+        _sante_capacites(champ.get("capacites_universite") or {}, voie),
+        _sante_reforme(champ.get("reforme_2027") or {}),
+    ]
+    return [x for x in sortie if x]
+
+
 def blocs_complements(fiche: dict) -> list[str]:
-    """Coût, alternance et insertion d'une fiche (étape B-1), dans cet ordre."""
+    """Coût, alternance et insertion d'une fiche (étape B-1), puis accès santé (étape B-2)."""
     sortie = [x for x in (_cout(fiche), _alternance(fiche)) if x]
     sortie.extend(_insertion(fiche))
+    sortie.extend(_sante(fiche))
     return sortie
 
 
