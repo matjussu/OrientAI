@@ -172,15 +172,15 @@ def test_fiche_to_text_sprint12_d1_includes_profil_admis():
     text = fiche_to_text(fiche)
     # Profil des admis section présente
     assert "Profil des admis" in text
-    # Mentions au bac présentes (skip ab=0 et sans=0)
-    assert "45 % très bien" in text
-    assert "30 % bien" in text
-    # Type bac présent (skip pro=0)
+    # Mentions au bac présentes (seules les clés renseignées)
+    assert "45 % mention très bien" in text
+    assert "30 % mention bien" in text
+    # Type de bac présent
     assert "80 % bac général" in text
-    assert "15 % bac techno" in text
-    # Démographie présente (skip ce qui = 0)
-    assert "20 % boursiers" in text
-    assert "24 % femmes" in text
+    assert "15 % bac technologique" in text
+    # Démographie présente, nommée selon le libellé officiel
+    assert "20 % de boursiers parmi les admis néo-bacheliers" in text
+    assert "24 % de filles parmi les admis" in text
 
 
 # ---------- Sprint 12 D1 — _format_profil_admis helper unit tests ----------
@@ -200,14 +200,23 @@ def test_format_profil_admis_riche_complet():
         "neobacheliers_pct": 77.0,
         "origine_academique_idf_pct": 58.0,
     }
-    out = _format_profil_admis(pa)
+    out = _format_profil_admis(pa, "Bordeaux")
     assert out is not None
-    assert out.startswith("Profil des admis (Parcoursup 2025) :")
-    # 4 sections séparées par " — "
-    assert "mentions au bac : 4 % très bien, 12 % bien, 29 % assez bien, 54 % sans mention" in out
-    assert "type de bac admis : 71 % bac général, 17 % bac techno, 12 % bac pro" in out
-    assert "taux d'accès par profil : 79 % pour bac général, 14 % pour bac techno, 6 % pour bac pro" in out
-    assert "profil démographique : 21 % boursiers, 10 % femmes, 77 % néobacheliers, 58 % origine académique Île-de-France" in out
+    assert out.startswith("Profil des admis (Parcoursup, session 2025) :")
+    assert ("répartition des admis néo-bacheliers par mention au bac : 4 % mention très bien, "
+            "12 % mention bien, 29 % mention assez bien, 54 % sans mention") in out
+    assert ("répartition des admis néo-bacheliers par type de bac : 71 % bac général, "
+            "17 % bac technologique, 12 % bac professionnel") in out
+    # acces_pct est une RÉPARTITION des candidats appelables, pas un taux d'accès par profil
+    assert ("répartition des candidats de terminale qui étaient en position de recevoir une "
+            "proposition en phase principale : 79 % terminale générale, 14 % terminale "
+            "technologique, 6 % terminale professionnelle") in out
+    assert "21 % de boursiers parmi les admis néo-bacheliers" in out
+    assert "10 % de filles parmi les admis" in out
+    assert "77 % de néo-bacheliers parmi les admis" in out
+    assert "58 % des admis néo-bacheliers viennent de la même académie (académie de Bordeaux)" in out
+    assert "taux d'accès par profil" not in out
+    assert "Île-de-France" not in out
 
 
 def test_format_profil_admis_partiel_mentions_seule():
@@ -222,11 +231,11 @@ def test_format_profil_admis_partiel_mentions_seule():
     }
     out = _format_profil_admis(pa)
     assert out is not None
-    assert "mentions au bac" in out
-    # Pas de section vide (skip)
-    assert "type de bac admis" not in out
-    assert "taux d'accès par profil" not in out
-    assert "profil démographique" not in out
+    assert "par mention au bac" in out
+    # Groupes tout à zéro ou vides omis
+    assert "par type de bac" not in out
+    assert "en position de recevoir" not in out
+    assert "boursiers" not in out and "filles" not in out
 
 
 def test_format_profil_admis_partiel_bac_type_seul():
@@ -236,9 +245,9 @@ def test_format_profil_admis_partiel_bac_type_seul():
     }
     out = _format_profil_admis(pa)
     assert out is not None
-    assert "type de bac admis" in out
+    assert "par type de bac" in out
     assert "65 % bac général" in out
-    assert "mentions au bac" not in out
+    assert "par mention au bac" not in out
 
 
 def test_format_profil_admis_tous_zeros_returns_none():
@@ -270,10 +279,10 @@ def test_format_profil_admis_valeurs_limites():
     }
     out = _format_profil_admis(pa)
     assert out is not None
-    assert "100 % très bien" in out
+    assert "100 % mention très bien" in out
     # 0.5 → round(0.5) = 0 (banker's rounding) ou 1 selon Python ; les deux acceptables
     # le test ne fixe pas le comportement exact pour ce edge case
-    assert "1 % boursiers" in out
+    assert "1 % de boursiers" in out
 
 
 def test_format_profil_admis_type_invalid_returns_none():
@@ -291,8 +300,8 @@ def test_format_profil_admis_sous_champ_invalid_skip_silently():
     }
     out = _format_profil_admis(pa)
     assert out is not None
-    assert "type de bac admis" in out
-    assert "mentions au bac" not in out
+    assert "par type de bac" in out
+    assert "par mention au bac" not in out
 
 
 # -------- Chantier C+ 2026-05-13 — Exploitation champ `text` pour fiches annexes --------

@@ -4,6 +4,7 @@ from mistralai.client import Mistral
 
 from src.rag.sigle_expand import sigle_injection_text
 from src.rag.models import MISTRAL_EMBED
+from src.rag.texte_parcoursup import blocs_parcoursup
 
 
 EMBED_MODEL = MISTRAL_EMBED
@@ -83,6 +84,12 @@ def _format_insertion_pro(ip: dict) -> str | None:
         if fragments:
             return f"Insertion pro (source Céreq, {cohorte}) : " + " — ".join(fragments)
 
+    # Schéma InserSup (MESR) : mêmes clés d'horizon que le schéma CFA, source différente.
+    # Avant l'étape A (23/09/2026), ce bloc tombait dans la branche CFA et s'affichait
+    # « Insertion apprentissage (Inserjeunes CFA) » : 3 509 fiches Parcoursup mal sourcées.
+    if source in _SOURCES_INSERSUP and any(ip.get(k) is not None for k, _ in _HORIZONS_INSERSUP):
+        return _format_insersup(ip)
+
     # Schéma CFA Inserjeunes (horizons 6/12/18/24 mois, apprentissage)
     if "taux_emploi_6m" in ip or "valeur_ajoutee_emploi_6m" in ip:
         annee = ip.get("annee") or "cumul récent"
@@ -126,6 +133,57 @@ def _format_insertion_pro(ip: dict) -> str | None:
     return None
 
 
+_SOURCES_INSERSUP = ("insersup_mesr", "insersup")
+_HORIZONS_INSERSUP = (
+    ("taux_emploi_6m", 6), ("taux_emploi_12m", 12), ("taux_emploi_18m", 18),
+    ("taux_emploi_24m", 24), ("taux_emploi_30m", 30),
+)
+# Portée du chiffre selon le niveau de rattachement (`insersup_attach.attach_insersup_to_fiches`).
+# Pour la région et la France entière, la valeur est la médiane des lignes InserSup du même
+# type de diplôme et de la même discipline (`build_insersup_corpus._aggregate_taux_emploi`).
+_GRANULARITE_INSERSUP = {
+    "etablissement_x_discipline": "chiffre de l'établissement pour ce type de diplôme et cette discipline",
+    "discipline_region": (
+        "médiane régionale pour ce type de diplôme et cette discipline, pas un chiffre propre à "
+        "cette formation"
+    ),
+    "discipline_nationale": (
+        "médiane nationale pour ce type de diplôme et cette discipline, pas un chiffre propre à "
+        "cette formation"
+    ),
+}
+
+
+def _format_insersup(ip: dict) -> str | None:
+    """Insertion InserSup, avec sa source, sa promotion, sa portée et sa définition officielle.
+
+    Définition : description du champ `tx_sortants_en_emploi_sal_fr_*` du jeu fr-esr-insersup
+    (API data.enseignementsup-recherche.gouv.fr, lue le 23/09/2026).
+    """
+    horizons = [
+        f"{mois} mois {pct}"
+        for cle, mois in _HORIZONS_INSERSUP
+        if (pct := _safe_pct(ip.get(cle)))
+    ]
+    fragments = ["taux d'emploi salarié en France " + ", ".join(horizons)] if horizons else []
+    sf = _salary_fragment(ip)
+    if sf:
+        fragments.append(sf)
+    if not fragments:
+        return None
+    contexte = ["InserSup, ministère de l'Enseignement supérieur"]
+    if ip.get("cohorte"):
+        contexte.append(f"diplômés {ip['cohorte']}")
+    portee = _GRANULARITE_INSERSUP.get(ip.get("granularite") or "")
+    if portee:
+        contexte.append(portee)
+    definition = (
+        "Définition : part des diplômés en emploi salarié en France parmi l'ensemble des "
+        "diplômés actifs (en emploi ou en recherche) ou inactifs, N mois après le diplôme."
+    )
+    return f"Insertion professionnelle ({' ; '.join(contexte)}) : " + " — ".join(fragments) + ". " + definition
+
+
 def _salary_fragment(ip: dict) -> str | None:
     """Fragment verbatim salaire net médian (order C2b). None si pas de salaire.
 
@@ -148,112 +206,92 @@ def _salary_fragment(ip: dict) -> str | None:
     return frag
 
 
-def _format_profil_admis(profil_admis: dict | None) -> str | None:
-    """Formate le dict `profil_admis` Parcoursup en verbatim embeddable.
+def _groupe_pct(valeurs: dict | None, libelles: tuple[tuple[str, str], ...]) -> list[str]:
+    """Pourcentages d'une répartition, zéros compris, si au moins une valeur est non nulle.
 
-    **Sprint 12 D1 (2026-05-01)** — exposition au RAG du champ profil
-    historiquement présent dans les fiches mais ignoré par fiche_to_text.
-    Élimine empiriquement ~30 % des hallu Sprint 11 P1.1 sur "qui est
-    admis dans cette formation ?" (taux profil-spécifiques inventés
-    faute de source exposée).
+    Un groupe tout à zéro est le placeholder que Parcoursup pose quand il n'y a pas d'admis
+    néo-bachelier : on ne l'écrit pas. Dans un groupe renseigné, 0 % est une vraie valeur
+    (« 0 % bac pro ») et s'écrit.
+    """
+    if not isinstance(valeurs, dict):
+        return []
+    presents = [(lib, v) for k, lib in libelles if isinstance((v := valeurs.get(k)), (int, float))]
+    if not any(v > 0 for _, v in presents):
+        return []
+    return [f"{round(v)} % {lib}" for lib, v in presents]
 
-    Couverture corpus : 18,9 % des fiches (10 502 / 55 606) ont au moins
-    une stat non-zéro (cf `docs/sprint12-D1-profil-admis-audit-champs-2026-05-01.md`).
-    Le reste a soit un dict absent, soit un placeholder tout-zéros que
-    Parcoursup n'a pas rempli pour la formation. Skip silencieux dans
-    les deux cas pour ne pas polluer l'embedding avec "0 % boursiers"
-    non-informatif.
 
-    Sous-champs supportés (3 dicts imbriqués + 4 scalaires) :
-    - `mentions_pct` {tb, b, ab, sans} : % admis par mention bac
-    - `bac_type_pct` {general, techno, pro} : % admis par type bac
-    - `acces_pct` {general, techno, pro} : taux d'accès profil-spécifique
-        (≠ taux_acces_parcoursup_2025 global déjà exposé)
-    - `boursiers_pct`, `femmes_pct`, `neobacheliers_pct`,
-        `origine_academique_idf_pct` : scalaires démographiques
+def _format_profil_admis(profil_admis: dict | None, academie: str | None = None) -> str | None:
+    """Profil des admis Parcoursup, chaque part nommée selon le libellé du jeu officiel.
 
-    Format de sortie (exemple EFREI Bordeaux Bachelor cyber) :
-        "Profil des admis (Parcoursup 2025) : mentions au bac : 4 %
-         très bien, 12 % bien, 29 % assez bien, 54 % sans mention —
-         type de bac admis : 71 % bac général, 17 % bac techno, 12 %
-         bac pro — taux d'accès par profil : 79 % pour bac général,
-         14 % pour bac techno, 6 % pour bac pro — profil démographique :
-         21 % boursiers, 10 % femmes, 77 % néobacheliers, 58 % origine
-         académique Île-de-France"
-
-    Valeurs déjà en pourcentage (e.g. `27.0` = 27 %, pas ratio 0-1) →
-    pas de conversion `_safe_pct` ratio→%.
+    Libellés du jeu fr-esr-parcoursup 2025 (lus le 23/09/2026) :
+    - `mentions_pct` <- pct_tbf / pct_tb / pct_b / pct_ab / pct_sansmention /
+      pct_mention_nonrenseignee : « % d'admis néo bacheliers avec mention ... au bac » ;
+    - `bac_type_pct` <- pct_bg / pct_bt / pct_bp : « % d'admis néo bacheliers généraux ... » ;
+    - `acces_pct` <- part_acces_gen / _tec / _pro : « Part des terminales générales (...) qui
+      étaient en position de recevoir une proposition en phase principale ». C'est une
+      RÉPARTITION des candidats en position d'être appelés (somme entre 98 et 102 sur 99,2 %
+      des 14 252 lignes, mesure du 23/09), pas un taux d'accès par profil comme l'écrivait la
+      version précédente ;
+    - `origine_academique_idf_pct` <- pct_aca_orig_idf : « % d'admis néo bacheliers issus de la
+      même académie (Paris/Créteil/Versailles réunies) ». Ce n'est PAS une part d'élèves
+      franciliens : hors Île-de-France, c'est la part venant de l'académie de l'établissement.
     """
     if not isinstance(profil_admis, dict):
         return None
 
     fragments: list[str] = []
+    mentions = _groupe_pct(profil_admis.get("mentions_pct"), (
+        ("tbf", "mention très bien avec félicitations"), ("tb", "mention très bien"), ("b", "mention bien"),
+        ("ab", "mention assez bien"), ("sans", "sans mention"), ("non_renseignee", "mention non renseignée"),
+    ))
+    if mentions:
+        fragments.append("répartition des admis néo-bacheliers par mention au bac : " + ", ".join(mentions))
+    bacs = _groupe_pct(profil_admis.get("bac_type_pct"), (
+        ("general", "bac général"), ("techno", "bac technologique"), ("pro", "bac professionnel"),
+    ))
+    if bacs:
+        fragments.append("répartition des admis néo-bacheliers par type de bac : " + ", ".join(bacs))
+    acces = _groupe_pct(profil_admis.get("acces_pct"), (
+        ("general", "terminale générale"), ("techno", "terminale technologique"), ("pro", "terminale professionnelle"),
+    ))
+    if acces:
+        fragments.append(
+            "répartition des candidats de terminale qui étaient en position de recevoir une "
+            "proposition en phase principale : " + ", ".join(acces)
+        )
 
-    # 1. Mentions au bac (dict {tb, b, ab, sans})
-    mentions = profil_admis.get("mentions_pct")
-    if isinstance(mentions, dict):
-        parts_m: list[str] = []
-        for k, lib in (
-            ("tb", "très bien"),
-            ("b", "bien"),
-            ("ab", "assez bien"),
-            ("sans", "sans mention"),
-        ):
-            v = mentions.get(k)
-            if isinstance(v, (int, float)) and v > 0:
-                parts_m.append(f"{int(round(v))} % {lib}")
-        if parts_m:
-            fragments.append("mentions au bac : " + ", ".join(parts_m))
+    def _pos(cle: str) -> int | None:
+        v = profil_admis.get(cle)
+        return round(v) if isinstance(v, (int, float)) and v > 0 else None
 
-    # 2. Type de bac (admis) — dict {general, techno, pro}
-    bt = profil_admis.get("bac_type_pct")
-    if isinstance(bt, dict):
-        parts_bt: list[str] = []
-        for k, lib in (
-            ("general", "bac général"),
-            ("techno", "bac techno"),
-            ("pro", "bac pro"),
-        ):
-            v = bt.get(k)
-            if isinstance(v, (int, float)) and v > 0:
-                parts_bt.append(f"{int(round(v))} % {lib}")
-        if parts_bt:
-            fragments.append("type de bac admis : " + ", ".join(parts_bt))
-
-    # 3. Taux d'accès par profil bac — dict {general, techno, pro}
-    # ≠ taux_acces_parcoursup_2025 global, profil-spécifique discriminant
-    ac = profil_admis.get("acces_pct")
-    if isinstance(ac, dict):
-        parts_ac: list[str] = []
-        for k, lib in (
-            ("general", "bac général"),
-            ("techno", "bac techno"),
-            ("pro", "bac pro"),
-        ):
-            v = ac.get(k)
-            if isinstance(v, (int, float)) and v > 0:
-                parts_ac.append(f"{int(round(v))} % pour {lib}")
-        if parts_ac:
-            fragments.append("taux d'accès par profil : " + ", ".join(parts_ac))
-
-    # 4. Scalaires démographiques (boursiers / femmes / néo / IDF)
-    scalaires: list[str] = []
-    for key, lib in (
-        ("boursiers_pct", "boursiers"),
-        ("femmes_pct", "femmes"),
-        ("neobacheliers_pct", "néobacheliers"),
-        ("origine_academique_idf_pct", "origine académique Île-de-France"),
-    ):
-        v = profil_admis.get(key)
-        if isinstance(v, (int, float)) and v > 0:
-            scalaires.append(f"{int(round(v))} % {lib}")
-    if scalaires:
-        fragments.append("profil démographique : " + ", ".join(scalaires))
+    if (v := _pos("boursiers_pct")) is not None:
+        fragments.append(f"{v} % de boursiers parmi les admis néo-bacheliers")
+    if (v := _pos("femmes_pct")) is not None:
+        fragments.append(f"{v} % de filles parmi les admis")
+    if (v := _pos("neobacheliers_pct")) is not None:
+        fragments.append(f"{v} % de néo-bacheliers parmi les admis")
+    if (v := _pos("origine_academique_idf_pct")) is not None:
+        fragments.append(f"{v} % des admis néo-bacheliers viennent de la même académie{_precision_academie(academie)}")
 
     if not fragments:
         return None
+    return "Profil des admis (Parcoursup, session 2025) : " + " — ".join(fragments)
 
-    return "Profil des admis (Parcoursup 2025) : " + " — ".join(fragments)
+
+_ACADEMIES_IDF = {"paris", "créteil", "versailles"}
+
+
+def _precision_academie(academie: str | None) -> str:
+    """Nomme l'académie ; en Île-de-France, rappelle que les trois académies sont réunies."""
+    if not academie:
+        return ""
+    nom = academie.strip()
+    de = "d'" if nom[:1].upper() in "AEIOUÉÈÎ" else "de "
+    if nom.lower() in _ACADEMIES_IDF:
+        return (f" (académie {de}{nom} ; pour ce chiffre, les académies de Paris, Créteil et "
+                "Versailles sont comptées comme une seule)")
+    return f" (académie {de}{nom})"
 
 
 def _format_admission_stats(fiche: dict) -> str | None:
@@ -497,12 +535,18 @@ def fiche_to_text(fiche: dict) -> str:
             inj = sigle_injection_text(fiche) if _DENSE_SIGLE_INJECTION else ""
             return f"{embed_text} | {inj}" if inj else embed_text
 
-    # Comportement v4 inchangé pour fiches Parcoursup (domain absent)
-    parts = [
-        f"Formation : {fiche.get('nom', '')}",
-        f"Établissement : {fiche.get('etablissement', '')}",
-        f"Ville : {fiche.get('ville', '')}",
-    ]
+    # Fiches Parcoursup : type, lieu, admission, définitions et source rédigés par
+    # `texte_parcoursup` (étape A, 23/09/2026). Autres sources : comportement v4 inchangé.
+    parcoursup = (fiche.get("source") or "").lower() == "parcoursup"
+    blocs = blocs_parcoursup(fiche) if parcoursup else None
+    parts = [f"Formation : {fiche.get('nom', '')}"]
+    if blocs:
+        parts.extend(blocs["identite"])
+    else:
+        parts.extend([
+            f"Établissement : {fiche.get('etablissement', '')}",
+            f"Ville : {fiche.get('ville', '')}",
+        ])
     if fiche.get("type_diplome"):
         parts.append(f"Diplôme : {fiche['type_diplome']}")
     if fiche.get("niveau"):
@@ -522,14 +566,16 @@ def fiche_to_text(fiche: dict) -> str:
         parts.append(f"Région : {fiche['region']}")
 
     # v3 — stats admission retrievables
-    adm = _format_admission_stats(fiche)
-    if adm:
-        parts.append(adm)
+    if blocs:
+        parts.extend(blocs["admission"])
+    else:
+        adm = _format_admission_stats(fiche)
+        if adm:
+            parts.append(adm)
 
-    # Sprint 12 D1 — profil_admis Parcoursup retrievable (mentions, bac type,
-    # taux d'accès profil-spécifique, démographie). Skip silencieux quand
-    # placeholder tout-zéros (~ 81 % du corpus).
-    pa_text = _format_profil_admis(fiche.get("profil_admis"))
+    # Sprint 12 D1 — profil_admis Parcoursup retrievable (mentions, type de bac,
+    # répartition des candidats appelables, démographie). Groupe tout à zéro omis.
+    pa_text = _format_profil_admis(fiche.get("profil_admis"), fiche.get("academie"))
     if pa_text:
         parts.append(pa_text)
 
@@ -579,6 +625,8 @@ def fiche_to_text(fiche: dict) -> str:
     if inj:
         parts.append(inj)
 
+    if blocs:
+        parts.extend(blocs["fin"])
     return " | ".join(parts)
 
 
