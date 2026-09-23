@@ -27,7 +27,18 @@ RACINE = Path(__file__).resolve().parents[2]
 VERROU = RACINE / "data/reference/sources_officielles.json"
 
 _ESR = "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets"
+_DEPP = "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets"
 _INSEE = "https://www.insee.fr/fr/statistiques/fichier/8377162"
+_ONISEP = "https://api.opendata.onisep.fr/downloads"
+
+# InserSup : 1 036 781 lignes au 29/07/2026, toutes les ventilations croisées. On ne garde que la
+# ligne « ensemble » (genre, nationalité, régime) des diplômés des deux dernières promotions : ce
+# sont les seuls chiffres que le texte cite. Le filtre fait partie de l'URL, donc du verrou.
+_INSERSUP_FILTRE = (
+    'genre%3D%22ensemble%22%20and%20nationalite%3D%22ensemble%22%20and%20'
+    'regime_inscription%3D%22ensemble%22%20and%20obtention_diplome%3D%22dipl%C3%B4m%C3%A9%22%20and%20'
+    '(promo%3D%222024%22%20or%20promo%3D%222023%22)'
+)
 
 
 @dataclass(frozen=True)
@@ -74,6 +85,30 @@ SOURCES: dict[str, Source] = {
             f"{_INSEE}/v_commune_comer_2025.csv",
             "INSEE, Code officiel géographique 2025, collectivités d'outre-mer",
             "Licence Ouverte v2.0",
+        ),
+        # ── étape B-1 ────────────────────────────────────────────────────────────────
+        Source(
+            "onisep_ideo_actions_es", "data/raw/onisep/ideo_actions_es.csv",
+            f"{_ONISEP}/605344579a7d7/605344579a7d7.csv",
+            "Onisep, Idéo-Actions de formation initiale, univers enseignement supérieur", "ODbL",
+        ),
+        Source(
+            "parcoursup_apprentissage_2025", "data/raw/parcoursup_apprentissage_2025.csv",
+            f"{_ESR}/fr-esr-parcoursup-apprentissage/exports/csv"
+            "?delimiter=%3B&where=session%3D%222025%22",
+            "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025", "Licence Ouverte v2.0",
+        ),
+        Source(
+            "insersup", "data/raw/insersup_diplomes_ensemble_2023_2024.csv",
+            f"{_ESR}/fr-esr-insersup/exports/csv?delimiter=%3B&where={_INSERSUP_FILTRE}",
+            "MESR (SIES), jeu fr-esr-insersup (dispositif InserSup), diplômés, promos 2023 et 2024",
+            "Licence Ouverte v2.0",
+        ),
+        Source(
+            "inserjeunes_bts", "data/raw/inserjeunes_lycee_pro_bts.csv",
+            f"{_DEPP}/fr-en-inserjeunes-lycee_pro-formation-fine/exports/csv"
+            "?delimiter=%3B&where=type_diplome%3D%22BTS%22",
+            "DEPP-DARES, jeu fr-en-inserjeunes-lycee_pro-formation-fine, BTS", "Licence Ouverte v2.0",
         ),
     )
 }
