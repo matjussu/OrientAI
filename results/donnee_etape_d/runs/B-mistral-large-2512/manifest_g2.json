@@ -1,0 +1,28 @@
+{
+ "format": "B",
+ "modele": "mistral-large-2512",
+ "generation": 2,
+ "protocole": "PROTOCOLE.md v0.1",
+ "commit": "d7d74a89c84e390bccb59d112c70f7a6ef348edd",
+ "git_dirty": false,
+ "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+ "base_sha256": "9667b95521c23a468799bc6265f3e02e09d6237d9c2598644bd211ef85135cd6",
+ "corpus_sha256": "2e6a93a5cda6d26119259248d0e7bbe7d103037608d471604aa359c66ce73c07",
+ "exposition_sha256": "47ab40ae0e6a252d34135396fb56483ff8dce2bd5ea7be7206433e1e8f5a3b63",
+ "temperature": 0.3,
+ "tours": 79,
+ "erreurs": 0,
+ "modeles_rendus": [
+  "mistral-large-2512"
+ ],
+ "tokens_in": 1511503,
+ "tokens_out": 145668,
+ "cout_usd": 0.9743,
+ "prix_usd_par_million": [
+  0.5,
+  1.5
+ ],
+ "prix_source": "mistral.ai/pricing lu le 23/09, exemple de la FAQ, version non précisée",
+ "secondes_tours": 2196.9,
+ "secondes_mur": 734.3
+}

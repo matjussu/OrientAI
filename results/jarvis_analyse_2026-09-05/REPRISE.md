@@ -22,8 +22,10 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
 - **Etape C validee par Matteo et mergee** (ordres 2026-09-23-1358 et -1424 ; #183, 98e9b09, qui embarque
   le contrat #182 ; Telegram 10623). Base SQLite derivee du corpus B-2 : 3 945 formations, 172 981 valeurs
   sourcees, gate C 20/20, audit tout vert, 8 sabotages rouges chacun sur sa cible (section 0 quinquies).
-- **Etape D en cours** (ordre 2026-09-23-1515) : grille 3 formats x 3 modeles jouee au banc vertical,
-  protocole ecrit avant tout appel payant. Detail en section 4, dettes en section 5.
+- **Etape D jouee, en attente de validation** (ordre 2026-09-23-1515, section 0 sexies) : grille 3 formats x
+  3 modeles, 2 generations, juge a l'aveugle. Regle ecrite : on garde A x mistral-medium-2604. Constat hors
+  regle a trancher par Matteo : GLM 5.2 fait nettement moins d'erreurs factuelles (-27 pts) a critere 1
+  equivalent. Detail en section 4, dettes en section 5.
 - **Validation** : Matteo valide chaque etape dans l'explorateur prive de Jarvis (avant/apres, sources
   cliquables, signalements) ; rien n'est merge sans son go.
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
@@ -174,6 +176,24 @@ Telegram 10619). ADR-066. Rapport : `results/donnee_etape_c/RAPPORT.md`.
   sabotages rouges sur leur cible ; rejoue sur l'ancienne base, le controle d'insertion rougit avec 947
   ecarts). Nouvelle base : sha `9667b95521c2`, empreinte `6dfa2e8d684d`, gate C 20/20.
 
+## 0 sexies. Etape D, format de fiche x modele, jouee le 23/09/2026 (Claudette, ordre 2026-09-23-1515)
+
+Protocole : `results/donnee_etape_d/PROTOCOLE.md` v0.2 (ecrit avant tout appel payant). Rapport :
+`results/donnee_etape_d/RAPPORT.md`. Une commande rejoue l'analyse : `python -m src.eval.rapport_d`.
+
+- Grille : formats A (texte actuel), B (carte structuree depuis la base C), C (carte courte + outil
+  `lire_fiche`) x Medium 3.5, Large 3, GLM 5.2 (`zai-glm-5-2`), 2 generations, memes 8 fiches exposees par
+  conversation (borne haute a recuperation correcte). Juge : Opus 5.5 effort low a l'aveugle, 711 verdicts,
+  144 rejuges (accord 82 % sur l'erreur factuelle, kappa 0,63). Cout 13,0 USD.
+- **Critere 1** (chiffres attendus cites justes sur 323) : R = A x Medium 0,810 (temoin 0,068) ; aucune
+  combinaison au-dessus hors du bruit. **Decision selon la regle : on garde A x Medium.**
+- **Constat hors regle** : A x GLM 0,783 (dans le bruit) mais erreur factuelle 16,5 % contre 43,0 %
+  (dE -26,6 pts [-37,2 ; -15,6]) et note moyenne 3,89 contre 3,50. A trancher par Matteo ; banc de
+  confirmation propose, non lance.
+- **Pour le cerveau** : Medium 3.5 n'appelle pas l'outil, meme force, avec ce prompt et 8 cartes ; Large 3
+  sait mais ne le fait pas en auto ; GLM l'appelle de lui-meme (33 % des tours, 0 erreur).
+- Format B : n'aide pas (critere 1 plus bas pour les 3 modeles). Carte courte seule : -15 a -18 pts.
+
 ## 1. Ce qui est etabli (mesure dans la nuit du 4 au 5 septembre 2026)
 
 Source : `RAPPORT.md` (ce dossier, chaque chiffre cite fichier et ligne), version lisible :
@@ -254,8 +274,8 @@ les etapes A, B-1, B-2 sont faites. Ordre de la suite (cahier des charges §5-6,
 1. **Etape C, base structuree** (faite, validee et mergee le 23/09, #183, 98e9b09, section 0 quinquies) : les chiffres du corpus (admission, cout, alternance, insertion,
    sante) interrogeables par outils, avec leur source, au lieu du texte seul. Estimation du cahier des
    charges (non mesuree) : 2 a 3 jours.
-2. **Etape D, meilleur format pour le modele** : grille 3 formats x 2-3 modeles (Mistral ou
-   open-weights) jouee au banc ; texte d'embedding distinct du texte lu (le texte des fiches est 4 fois
+2. **Etape D, meilleur format pour le modele** (jouee, section 0 sexies ; reste la validation de Matteo et
+   sa decision sur le constat GLM) ; texte d'embedding distinct du texte lu (le texte des fiches est 4 fois
    plus long qu'avant l'etape A, pas de re-embedding sans mesure).
 3. **Le « cerveau »** : outils de recherche structuree branches sur la base C, clarification quand la
    question est vague, ton de conseiller ; mesure au banc face a un modele generaliste sans donnees
@@ -283,6 +303,10 @@ l'explorateur, validation de Matteo avant merge.
 | 18 masters sans coordonnees (lieux MonMaster qui ne sont pas des communes, Evry fusionnee absente du COG) | `results/donnee_etape_c/audit/audit.json`, info_lieux_sans_coordonnees |
 | B-1 : 442 fiches d'apprentissage sur 526 sans code INSEE (departement ecrit sur 3 chiffres, « 044 ») ; MonMaster du corpus : 75 masters info/maths 2025 manquants sur 480 | `results/donnee_etape_c/mesures_contrat/mesures_contrat.json` (CONTRACT.md de C, section 13) ; contourne dans C par normalisation, a corriger dans B-1 |
 | Points ouverts de B-1 (droits IFSI, ecoles d'ingenieurs a plusieurs diplomes) et de B-2 (section 0 quater) | RAPPORT de chaque etape |
+| Rattachement d'insertion trop large : une double licence ou un parcours porte l'insertion InserSup d'un diplome plus large (ex. psup:28456, double licence Lettres-Informatique, insertion de la licence LETTRES) | verification de Jarvis sur #184, 23/09 |
+| Base C : pas de niveau (bac+N), pas de capacites MMOPK « autres voies », pas de precision textuelle des capacites (Lyon Est / Sud), pas de part « mention non renseignee » ; insertion des masters non collectee | `results/donnee_etape_d/RAPPORT.md` section 7 et controle A dans B |
+| Medium 3.5 n'appelle pas l'outil avec un prompt charge (meme force) : bloquant pour le cerveau si Medium reste le modele | `results/donnee_etape_d/sonde_outil/RESUME.md` |
+| GLM 5.2 via l'API Mistral : 78 erreurs 429 sur 158 tours (A et B) en generation 1, a regler avant une demo si GLM est retenu | `results/donnee_etape_d/RAPPORT.md` section 6 |
 
 Suite de tests : 3 485 reussis, 45 ignores, 0 echec (branche B-2, commit b9554e4, 23/09/2026, meme
 code que main a0ee8a6).
