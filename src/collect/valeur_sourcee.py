@@ -20,6 +20,8 @@ class SourceLue:
     url: str
     licence: str
     lue_le: str
+    # Autres pages où le même texte a été lu (source seconde, quand la première refuse les scripts).
+    temoins: tuple[dict, ...] = ()
 
 
 # Pages dont les montants sont recopiés dans le code (`src.collect.couts`).
@@ -46,6 +48,11 @@ CODE_TRAVAIL_L6211_1 = SourceLue(
     "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006178183",
     "texte officiel",
     "2026-09-23",
+    # Légifrance refuse les lectures automatiques ; Jarvis a relu la phrase mot pour mot sur le code
+    # du travail numérique (version mise à jour le 03/08/2023) le 23/09/2026.
+    temoins=({"url": "https://code.travail.gouv.fr/code-du-travail/l6211-1",
+              "libelle": "Code du travail numérique, article L6211-1 (version mise à jour le 03/08/2023)",
+              "lue_le": "2026-09-23", "lue_par": "Jarvis"},),
 )
 SOURCES_LUES = {s.id: s for s in (SERVICE_PUBLIC_F36520, TABLEAU_DROITS_2026, CODE_TRAVAIL_L6211_1)}
 
@@ -60,7 +67,10 @@ class Referentiel:
         """(bloc `source`, date de collecte) d'une source connue ; KeyError sinon."""
         if source_id in SOURCES_LUES:
             s = SOURCES_LUES[source_id]
-            return {"id": s.id, "libelle": s.libelle, "url": s.url, "licence": s.licence}, s.lue_le
+            bloc = {"id": s.id, "libelle": s.libelle, "url": s.url, "licence": s.licence}
+            if s.temoins:
+                bloc["temoins"] = [dict(t) for t in s.temoins]
+            return bloc, s.lue_le
         s = SOURCES[source_id]
         collecte = self.verrou[source_id]["telecharge_le"]
         return {"id": s.nom, "libelle": s.producteur, "url": s.url, "licence": s.licence}, collecte

@@ -1,0 +1,2582 @@
+{
+ "pass_lille": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+  "etablissement": "Université de Lille",
+  "ville": "Lille",
+  "region": "Hauts-de-France",
+  "departement": "Nord",
+  "rncp": null,
+  "cod_uai": "0597239Y",
+  "cod_aff_form": "36433",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36433&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 6.0,
+  "nombre_places": 60,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": "Parcours Sciences infirmières",
+  "admission": {
+   "session": 2025,
+   "taux_acces": 6.0,
+   "places": 60,
+   "volumes": {
+    "voeux_totaux": 7769,
+    "voeux_phase_principale": 7769,
+    "classes_phase_principale": 7720,
+    "admis_total": 60
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 15.0,
+     "places": 60,
+     "voeux_totaux": 6009,
+     "voeux_phase_principale": 6009,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 53.0,
+     "pct_b": 36.0,
+     "pct_bours": 35.0,
+     "pct_f": 87.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 12.0,
+     "places": 60,
+     "voeux_totaux": 6660,
+     "voeux_phase_principale": 6660,
+     "pct_bg": 93.0,
+     "pct_bt": 7.0,
+     "pct_bp": 0.0,
+     "pct_tb": 44.0,
+     "pct_b": 25.0,
+     "pct_bours": 34.0,
+     "pct_f": 90.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 6.0,
+     "places": 60,
+     "voeux_totaux": 7769,
+     "voeux_phase_principale": 7769,
+     "pct_bg": 93.0,
+     "pct_bt": 7.0,
+     "pct_bp": 0.0,
+     "pct_tb": 52.0,
+     "pct_b": 16.0,
+     "pct_bours": 10.0,
+     "pct_f": 88.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 52.0,
+    "b": 16.0,
+    "ab": 0.0,
+    "sans": 0.0,
+    "tbf": 33.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 93.0,
+    "techno": 7.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 93.0,
+    "techno": 7.0,
+    "pro": 0.0
+   },
+   "boursiers_pct": 10.0,
+   "femmes_pct": 88.0,
+   "neobacheliers_pct": 97.0,
+   "origine_academique_idf_pct": 93.0
+  },
+  "propositions_totales": 415,
+  "pct_acceptes_debut_pp": 68.0,
+  "fili_code": "PASS",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "domaine": "sante",
+  "match_method": "parcoursup_only",
+  "labels": [],
+  "debouches": [
+   {
+    "code_rome": "J1102",
+    "libelle": "Médecin généraliste / Médecin spécialiste"
+   },
+   {
+    "code_rome": "J1103",
+    "libelle": "Médecin de prévention et santé publique"
+   },
+   {
+    "code_rome": "J1104",
+    "libelle": "Sage-femme"
+   },
+   {
+    "code_rome": "J1201",
+    "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+   },
+   {
+    "code_rome": "J1304",
+    "libelle": "Pharmacien / Préparateur en pharmacie"
+   },
+   {
+    "code_rome": "J1401",
+    "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+   },
+   {
+    "code_rome": "J1501",
+    "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+   },
+   {
+    "code_rome": "J1502",
+    "libelle": "Cadre de santé / Directeur de soins"
+   },
+   {
+    "code_rome": "J1505",
+    "libelle": "Kinésithérapeute / Ergothérapeute"
+   },
+   {
+    "code_rome": "J1506",
+    "libelle": "Orthophoniste"
+   }
+  ],
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "debouches": "rome_4_0"
+  },
+  "collected_at": {
+   "parcoursup": "2026-06-09",
+   "rome": "2026-06-09"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=36433&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": -9.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 15.0,
+    "end_value": 6.0,
+    "interpretation": "taux d'accès stable 2023→2025 (15% → 6%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 60,
+    "end_value": 60,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "up",
+    "delta": 1760,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 6009,
+    "end_value": 7769,
+    "interpretation": "popularité en hausse 2023→2025 (6009 → 7769 vœux) : attrait renforcé"
+   }
+  },
+  "ville_source": "Lille",
+  "code_insee": "59350",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "59",
+  "academie": "Lille",
+  "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option sciences infirmières - Parcours Sciences infirmières",
+  "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+  "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+  "type_formation": "PASS (parcours d'accès spécifique santé)",
+  "precision_formation": "option sciences infirmières (Parcours Sciences infirmières)",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S01",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion professionnelle n'est pas mesurée pour une première année d'accès aux études de santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "las_lille": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Portail Droit",
+  "etablissement": "Université de Lille",
+  "ville": "Lille",
+  "region": "Hauts-de-France",
+  "departement": "Nord",
+  "rncp": null,
+  "cod_uai": "0597239Y",
+  "cod_aff_form": "29709",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29709&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 53.0,
+  "nombre_places": 30,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": null,
+  "admission": {
+   "session": 2025,
+   "taux_acces": 53.0,
+   "places": 30,
+   "volumes": {
+    "voeux_totaux": 1403,
+    "voeux_phase_principale": 1403,
+    "classes_phase_principale": 1390,
+    "admis_total": 34
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 57.0,
+     "places": 30,
+     "voeux_totaux": 989,
+     "voeux_phase_principale": 989,
+     "pct_bg": 93.0,
+     "pct_bt": 3.0,
+     "pct_bp": 3.0,
+     "pct_tb": 3.0,
+     "pct_b": 10.0,
+     "pct_bours": 48.0,
+     "pct_f": 80.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 40.0,
+     "places": 30,
+     "voeux_totaux": 1210,
+     "voeux_phase_principale": 1210,
+     "pct_bg": 96.0,
+     "pct_bt": 4.0,
+     "pct_bp": 0.0,
+     "pct_tb": 8.0,
+     "pct_b": 29.0,
+     "pct_bours": 33.0,
+     "pct_f": 64.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 53.0,
+     "places": 30,
+     "voeux_totaux": 1403,
+     "voeux_phase_principale": 1403,
+     "pct_bg": 92.0,
+     "pct_bt": 4.0,
+     "pct_bp": 4.0,
+     "pct_tb": 4.0,
+     "pct_b": 33.0,
+     "pct_bours": 29.0,
+     "pct_f": 82.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 4.0,
+    "b": 33.0,
+    "ab": 25.0,
+    "sans": 38.0,
+    "tbf": 0.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 92.0,
+    "techno": 4.0,
+    "pro": 4.0
+   },
+   "acces_pct": {
+    "general": 94.0,
+    "techno": 4.0,
+    "pro": 1.0
+   },
+   "boursiers_pct": 29.0,
+   "femmes_pct": 82.0,
+   "neobacheliers_pct": 71.0,
+   "origine_academique_idf_pct": 88.0
+  },
+  "propositions_totales": 490,
+  "pct_acceptes_debut_pp": 29.0,
+  "fili_code": "Licence_Las",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": -4.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 57.0,
+    "end_value": 53.0,
+    "interpretation": "taux d'accès stable 2023→2025 (57% → 53%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 30,
+    "end_value": 30,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "up",
+    "delta": 414,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 989,
+    "end_value": 1403,
+    "interpretation": "popularité en hausse 2023→2025 (989 → 1403 vœux) : attrait renforcé"
+   }
+  },
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "herite_de": {
+    "cod_aff_form": "20947",
+    "champs": [
+     "domaine",
+     "insertion_pro",
+     "type_diplome"
+    ]
+   }
+  },
+  "collected_at": {
+   "parcoursup": "2026-09-23"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29709&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "domaine": "sante",
+  "insertion_pro": {
+   "source": "insersup_mesr",
+   "granularite": "discipline_region",
+   "match_score": 0.7,
+   "cohorte": "2024",
+   "nombre_sortants": 481,
+   "taux_emploi_6m": 0.4444,
+   "taux_emploi_12m": 0.5287,
+   "taux_emploi_18m": null,
+   "taux_emploi_24m": null,
+   "taux_emploi_30m": null,
+   "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+  },
+  "type_diplome": "Licence",
+  "ville_source": "Lille",
+  "code_insee": "59350",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "59",
+  "academie": "Lille",
+  "intitule_officiel": "Licence - Droit -  Accès Santé (LAS)",
+  "form_lib_voe_acc": "Licence - Droit-économie-gestion",
+  "filiere_detaillee": "Droit",
+  "type_formation": "LAS (licence avec option accès santé)",
+  "precision_formation": "majeure Droit",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S02",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion d'une LAS n'est pas mesurée en tant que telle : elle ouvre l'accès aux études de santé, et InserSup ne distingue pas la licence suivie avec l'option santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "las_nanterre": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Portail Psychologie",
+  "etablissement": "Université Paris Nanterre",
+  "ville": "Nanterre",
+  "region": "Ile-de-France",
+  "departement": "Hauts-de-Seine",
+  "rncp": null,
+  "cod_uai": "0921204J",
+  "cod_aff_form": "27226",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=27226&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 9.0,
+  "nombre_places": 35,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": null,
+  "admission": {
+   "session": 2025,
+   "taux_acces": 9.0,
+   "places": 35,
+   "volumes": {
+    "voeux_totaux": 5981,
+    "voeux_phase_principale": 5981,
+    "classes_phase_principale": 5981,
+    "admis_total": 35
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 11.0,
+     "places": 35,
+     "voeux_totaux": 3566,
+     "voeux_phase_principale": 3566,
+     "pct_bg": 87.0,
+     "pct_bt": 7.0,
+     "pct_bp": 7.0,
+     "pct_tb": 10.0,
+     "pct_b": 47.0,
+     "pct_bours": 50.0,
+     "pct_f": 88.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 12.0,
+     "places": 35,
+     "voeux_totaux": 4404,
+     "voeux_phase_principale": 4404,
+     "pct_bg": 91.0,
+     "pct_bt": 4.0,
+     "pct_bp": 4.0,
+     "pct_tb": 22.0,
+     "pct_b": 57.0,
+     "pct_bours": 43.0,
+     "pct_f": 89.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 9.0,
+     "places": 35,
+     "voeux_totaux": 5981,
+     "voeux_phase_principale": 5981,
+     "pct_bg": 91.0,
+     "pct_bt": 9.0,
+     "pct_bp": 0.0,
+     "pct_tb": 18.0,
+     "pct_b": 50.0,
+     "pct_bours": 32.0,
+     "pct_f": 89.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 18.0,
+    "b": 50.0,
+    "ab": 32.0,
+    "sans": 0.0,
+    "tbf": 0.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 91.0,
+    "techno": 9.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 97.0,
+    "techno": 2.0,
+    "pro": 1.0
+   },
+   "boursiers_pct": 32.0,
+   "femmes_pct": 89.0,
+   "neobacheliers_pct": 63.0,
+   "origine_academique_idf_pct": 86.0
+  },
+  "propositions_totales": 230,
+  "pct_acceptes_debut_pp": 3.0,
+  "fili_code": "Licence_Las",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": -2.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 11.0,
+    "end_value": 9.0,
+    "interpretation": "taux d'accès stable 2023→2025 (11% → 9%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 35,
+    "end_value": 35,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "up",
+    "delta": 2415,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 3566,
+    "end_value": 5981,
+    "interpretation": "popularité en hausse 2023→2025 (3566 → 5981 vœux) : attrait renforcé"
+   }
+  },
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "herite_de": {
+    "cod_aff_form": "11086",
+    "champs": [
+     "domaine",
+     "insertion_pro",
+     "type_diplome"
+    ]
+   }
+  },
+  "collected_at": {
+   "parcoursup": "2026-09-23"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=27226&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "domaine": "sante",
+  "insertion_pro": {
+   "source": "insersup_mesr",
+   "granularite": "discipline_region",
+   "match_score": 0.7,
+   "cohorte": "2024",
+   "nombre_sortants": 2559,
+   "taux_emploi_6m": 0.5405,
+   "taux_emploi_12m": 0.5667,
+   "taux_emploi_18m": null,
+   "taux_emploi_24m": null,
+   "taux_emploi_30m": null,
+   "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+  },
+  "type_diplome": "Licence",
+  "ville_source": "Nanterre",
+  "code_insee": "92050",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "92",
+  "academie": "Versailles",
+  "intitule_officiel": "Licence - Psychologie -  Accès Santé (LAS)",
+  "form_lib_voe_acc": "Licence - Sciences humaines et sociales",
+  "filiere_detaillee": "Psychologie",
+  "type_formation": "LAS (licence avec option accès santé)",
+  "precision_formation": "majeure Psychologie",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S02",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion d'une LAS n'est pas mesurée en tant que telle : elle ouvre l'accès aux études de santé, et InserSup ne distingue pas la licence suivie avec l'option santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "pass_grenoble": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+  "etablissement": "Université Grenoble Alpes",
+  "ville": "Saint-Martin-d'Hères",
+  "region": "Auvergne-Rhône-Alpes",
+  "departement": "Isère",
+  "rncp": null,
+  "cod_uai": "0383546Y",
+  "cod_aff_form": "30790",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=30790&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 83.0,
+  "nombre_places": 850,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": "Sciences",
+  "admission": {
+   "session": 2025,
+   "taux_acces": 83.0,
+   "places": 850,
+   "volumes": {
+    "voeux_totaux": 4954,
+    "voeux_phase_principale": 4675,
+    "classes_phase_principale": 4581,
+    "admis_total": 802
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 87.0,
+     "places": 850,
+     "voeux_totaux": 4851,
+     "voeux_phase_principale": 4607,
+     "pct_bg": 92.0,
+     "pct_bt": 7.0,
+     "pct_bp": 1.0,
+     "pct_tb": 13.0,
+     "pct_b": 21.0,
+     "pct_bours": 17.0,
+     "pct_f": 65.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 77.0,
+     "places": 850,
+     "voeux_totaux": 5007,
+     "voeux_phase_principale": 4794,
+     "pct_bg": 93.0,
+     "pct_bt": 6.0,
+     "pct_bp": 1.0,
+     "pct_tb": 11.0,
+     "pct_b": 25.0,
+     "pct_bours": 17.0,
+     "pct_f": 64.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 83.0,
+     "places": 850,
+     "voeux_totaux": 4954,
+     "voeux_phase_principale": 4675,
+     "pct_bg": 91.0,
+     "pct_bt": 8.0,
+     "pct_bp": 1.0,
+     "pct_tb": 10.0,
+     "pct_b": 16.0,
+     "pct_bours": 17.0,
+     "pct_f": 62.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 10.0,
+    "b": 16.0,
+    "ab": 32.0,
+    "sans": 41.0,
+    "tbf": 1.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 91.0,
+    "techno": 8.0,
+    "pro": 1.0
+   },
+   "acces_pct": {
+    "general": 96.0,
+    "techno": 3.0,
+    "pro": 1.0
+   },
+   "boursiers_pct": 17.0,
+   "femmes_pct": 62.0,
+   "neobacheliers_pct": 77.0,
+   "origine_academique_idf_pct": 68.0
+  },
+  "propositions_totales": 3535,
+  "pct_acceptes_debut_pp": 58.0,
+  "fili_code": "PASS",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "domaine": "sante",
+  "match_method": "parcoursup_only",
+  "labels": [],
+  "debouches": [
+   {
+    "code_rome": "J1102",
+    "libelle": "Médecin généraliste / Médecin spécialiste"
+   },
+   {
+    "code_rome": "J1103",
+    "libelle": "Médecin de prévention et santé publique"
+   },
+   {
+    "code_rome": "J1104",
+    "libelle": "Sage-femme"
+   },
+   {
+    "code_rome": "J1201",
+    "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+   },
+   {
+    "code_rome": "J1304",
+    "libelle": "Pharmacien / Préparateur en pharmacie"
+   },
+   {
+    "code_rome": "J1401",
+    "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+   },
+   {
+    "code_rome": "J1501",
+    "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+   },
+   {
+    "code_rome": "J1502",
+    "libelle": "Cadre de santé / Directeur de soins"
+   },
+   {
+    "code_rome": "J1505",
+    "libelle": "Kinésithérapeute / Ergothérapeute"
+   },
+   {
+    "code_rome": "J1506",
+    "libelle": "Orthophoniste"
+   }
+  ],
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "debouches": "rome_4_0"
+  },
+  "collected_at": {
+   "parcoursup": "2026-06-09",
+   "rome": "2026-06-09"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=30790&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": -4.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 87.0,
+    "end_value": 83.0,
+    "interpretation": "taux d'accès stable 2023→2025 (87% → 83%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 850,
+    "end_value": 850,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "stable",
+    "delta": 103,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 4851,
+    "end_value": 4954,
+    "interpretation": null
+   }
+  },
+  "ville_source": "Saint-Martin-d'Hères",
+  "code_insee": "38421",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "38",
+  "academie": "Grenoble",
+  "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option Sciences",
+  "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+  "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+  "type_formation": "PASS (parcours d'accès spécifique santé)",
+  "precision_formation": "option Sciences",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S01",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion professionnelle n'est pas mesurée pour une première année d'accès aux études de santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "pass_orsay": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+  "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+  "ville": "Orsay",
+  "region": "Île-de-France",
+  "departement": "Essonne",
+  "rncp": null,
+  "cod_uai": "0912409Z",
+  "cod_aff_form": "45076",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=45076&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 25.0,
+  "nombre_places": 100,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": "option Sciences Infirmières",
+  "admission": {
+   "session": 2025,
+   "taux_acces": 25.0,
+   "places": 100,
+   "volumes": {
+    "voeux_totaux": 12298,
+    "voeux_phase_principale": 12298,
+    "classes_phase_principale": 12298,
+    "admis_total": 97
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2024": {
+     "year": 2024,
+     "taux_acces": 31.0,
+     "places": 100,
+     "voeux_totaux": 10274,
+     "voeux_phase_principale": 10274,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 14.0,
+     "pct_b": 52.0,
+     "pct_bours": 31.0,
+     "pct_f": 77.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 25.0,
+     "places": 100,
+     "voeux_totaux": 12298,
+     "voeux_phase_principale": 12298,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 32.0,
+     "pct_b": 38.0,
+     "pct_bours": 27.0,
+     "pct_f": 80.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 32.0,
+    "b": 38.0,
+    "ab": 26.0,
+    "sans": 2.0,
+    "tbf": 1.0,
+    "non_renseignee": 1.0
+   },
+   "bac_type_pct": {
+    "general": 100.0,
+    "techno": 0.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 100.0,
+    "techno": 0.0,
+    "pro": 0.0
+   },
+   "boursiers_pct": 27.0,
+   "femmes_pct": 80.0,
+   "neobacheliers_pct": 88.0,
+   "origine_academique_idf_pct": 87.0
+  },
+  "propositions_totales": 1101,
+  "pct_acceptes_debut_pp": 3.0,
+  "fili_code": "PASS",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "domaine": "sante",
+  "match_method": "parcoursup_only",
+  "labels": [],
+  "debouches": [
+   {
+    "code_rome": "J1102",
+    "libelle": "Médecin généraliste / Médecin spécialiste"
+   },
+   {
+    "code_rome": "J1103",
+    "libelle": "Médecin de prévention et santé publique"
+   },
+   {
+    "code_rome": "J1104",
+    "libelle": "Sage-femme"
+   },
+   {
+    "code_rome": "J1201",
+    "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+   },
+   {
+    "code_rome": "J1304",
+    "libelle": "Pharmacien / Préparateur en pharmacie"
+   },
+   {
+    "code_rome": "J1401",
+    "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+   },
+   {
+    "code_rome": "J1501",
+    "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+   },
+   {
+    "code_rome": "J1502",
+    "libelle": "Cadre de santé / Directeur de soins"
+   },
+   {
+    "code_rome": "J1505",
+    "libelle": "Kinésithérapeute / Ergothérapeute"
+   },
+   {
+    "code_rome": "J1506",
+    "libelle": "Orthophoniste"
+   }
+  ],
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "debouches": "rome_4_0"
+  },
+  "collected_at": {
+   "parcoursup": "2026-06-09",
+   "rome": "2026-06-09"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=45076&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": -6.0,
+    "start_year": 2024,
+    "end_year": 2025,
+    "start_value": 31.0,
+    "end_value": 25.0,
+    "interpretation": "taux d'accès stable 2024→2025 (31% → 25%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2024,
+    "end_year": 2025,
+    "start_value": 100,
+    "end_value": 100,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "stable",
+    "delta": 2024,
+    "start_year": 2024,
+    "end_year": 2025,
+    "start_value": 10274,
+    "end_value": 12298,
+    "interpretation": null
+   }
+  },
+  "ville_source": "Orsay",
+  "code_insee": "91471",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "91",
+  "academie": "Versailles",
+  "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option Sciences de la vie - option Sciences Infirmières",
+  "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+  "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+  "type_formation": "PASS (parcours d'accès spécifique santé)",
+  "precision_formation": "option Sciences de la vie (option Sciences Infirmières)",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S01",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion professionnelle n'est pas mesurée pour une première année d'accès aux études de santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "pass_nimes": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+  "etablissement": "Université de Montpellier, Antenne de Nîmes",
+  "ville": "Nîmes",
+  "region": "Occitanie",
+  "departement": "Gard",
+  "rncp": null,
+  "cod_uai": "0301577B",
+  "cod_aff_form": "31852",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=31852&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 51.0,
+  "nombre_places": 25,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": null,
+  "admission": {
+   "session": 2025,
+   "taux_acces": 51.0,
+   "places": 25,
+   "volumes": {
+    "voeux_totaux": 2502,
+    "voeux_phase_principale": 2502,
+    "classes_phase_principale": 2502,
+    "admis_total": 25
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 78.0,
+     "places": 25,
+     "voeux_totaux": 2852,
+     "voeux_phase_principale": 2843,
+     "pct_bg": 95.0,
+     "pct_bt": 0.0,
+     "pct_bp": 5.0,
+     "pct_tb": 5.0,
+     "pct_b": 11.0,
+     "pct_bours": 26.0,
+     "pct_f": 33.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 55.0,
+     "places": 25,
+     "voeux_totaux": 2753,
+     "voeux_phase_principale": 2753,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 17.0,
+     "pct_b": 33.0,
+     "pct_bours": 17.0,
+     "pct_f": 62.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 51.0,
+     "places": 25,
+     "voeux_totaux": 2502,
+     "voeux_phase_principale": 2502,
+     "pct_bg": 94.0,
+     "pct_bt": 6.0,
+     "pct_bp": 0.0,
+     "pct_tb": 6.0,
+     "pct_b": 22.0,
+     "pct_bours": 17.0,
+     "pct_f": 40.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 6.0,
+    "b": 22.0,
+    "ab": 50.0,
+    "sans": 17.0,
+    "tbf": 6.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 94.0,
+    "techno": 6.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 98.0,
+    "techno": 1.0,
+    "pro": 0.0
+   },
+   "boursiers_pct": 17.0,
+   "femmes_pct": 40.0,
+   "neobacheliers_pct": 72.0,
+   "origine_academique_idf_pct": 83.0
+  },
+  "propositions_totales": 913,
+  "pct_acceptes_debut_pp": 28.0,
+  "fili_code": "PASS",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "domaine": "sante",
+  "match_method": "parcoursup_only",
+  "labels": [],
+  "debouches": [
+   {
+    "code_rome": "J1102",
+    "libelle": "Médecin généraliste / Médecin spécialiste"
+   },
+   {
+    "code_rome": "J1103",
+    "libelle": "Médecin de prévention et santé publique"
+   },
+   {
+    "code_rome": "J1104",
+    "libelle": "Sage-femme"
+   },
+   {
+    "code_rome": "J1201",
+    "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+   },
+   {
+    "code_rome": "J1304",
+    "libelle": "Pharmacien / Préparateur en pharmacie"
+   },
+   {
+    "code_rome": "J1401",
+    "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+   },
+   {
+    "code_rome": "J1501",
+    "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+   },
+   {
+    "code_rome": "J1502",
+    "libelle": "Cadre de santé / Directeur de soins"
+   },
+   {
+    "code_rome": "J1505",
+    "libelle": "Kinésithérapeute / Ergothérapeute"
+   },
+   {
+    "code_rome": "J1506",
+    "libelle": "Orthophoniste"
+   }
+  ],
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "debouches": "rome_4_0"
+  },
+  "collected_at": {
+   "parcoursup": "2026-06-09",
+   "rome": "2026-06-09"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=31852&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "trends": {
+   "taux_acces": {
+    "direction": "down",
+    "delta_pp": -27.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 78.0,
+    "end_value": 51.0,
+    "interpretation": "taux d'accès en baisse 2023→2025 (78% → 51%) : formation devenue plus sélective"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 25,
+    "end_value": 25,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "stable",
+    "delta": -350,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 2852,
+    "end_value": 2502,
+    "interpretation": null
+   }
+  },
+  "ville_source": "Nîmes",
+  "code_insee": "30189",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "30",
+  "academie": "Montpellier",
+  "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option Physique dispensée sur le campus de Nîmes",
+  "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+  "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+  "type_formation": "PASS (parcours d'accès spécifique santé)",
+  "precision_formation": "option Physique dispensée sur le campus de Nîmes",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S01",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion professionnelle n'est pas mesurée pour une première année d'accès aux études de santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "las_guyancourt": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Portail Administration économique et sociale",
+  "etablissement": "Ecole Universitaire de premier cycle - Campus de Guyancourt, Versailles Saint Quentin en Yvelines, Université Paris-Saclay",
+  "ville": "Guyancourt",
+  "region": "Île-de-France",
+  "departement": "Yvelines",
+  "rncp": null,
+  "cod_uai": "0912413D",
+  "cod_aff_form": "29004",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29004&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 16.0,
+  "nombre_places": 7,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": null,
+  "admission": {
+   "session": 2025,
+   "taux_acces": 16.0,
+   "places": 7,
+   "volumes": {
+    "voeux_totaux": 441,
+    "voeux_phase_principale": 441,
+    "classes_phase_principale": 424,
+    "admis_total": 7
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 19.0,
+     "places": 7,
+     "voeux_totaux": 555,
+     "voeux_phase_principale": 555,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 0.0,
+     "pct_b": 40.0,
+     "pct_bours": 20.0,
+     "pct_f": 100.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 13.0,
+     "places": 7,
+     "voeux_totaux": 365,
+     "voeux_phase_principale": 365,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 0.0,
+     "pct_b": 0.0,
+     "pct_bours": 43.0,
+     "pct_f": 86.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 16.0,
+     "places": 7,
+     "voeux_totaux": 441,
+     "voeux_phase_principale": 441,
+     "pct_bg": 86.0,
+     "pct_bt": 14.0,
+     "pct_bp": 0.0,
+     "pct_tb": 14.0,
+     "pct_b": 0.0,
+     "pct_bours": 57.0,
+     "pct_f": 100.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 14.0,
+    "b": 0.0,
+    "ab": 57.0,
+    "sans": 29.0,
+    "tbf": 0.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 86.0,
+    "techno": 14.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 83.0,
+    "techno": 10.0,
+    "pro": 7.0
+   },
+   "boursiers_pct": 57.0,
+   "femmes_pct": 100.0,
+   "neobacheliers_pct": 100.0,
+   "origine_academique_idf_pct": 100.0
+  },
+  "propositions_totales": 41,
+  "pct_acceptes_debut_pp": 14.0,
+  "fili_code": "Licence_Las",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "domaine": "sante",
+  "debouches": [],
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025"
+  },
+  "collected_at": {
+   "parcoursup": "2026-06-09"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29004&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": -3.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 19.0,
+    "end_value": 16.0,
+    "interpretation": "taux d'accès stable 2023→2025 (19% → 16%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 7,
+    "end_value": 7,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "stable",
+    "delta": -114,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 555,
+    "end_value": 441,
+    "interpretation": null
+   }
+  },
+  "type_diplome": "Licence",
+  "ville_source": "Guyancourt",
+  "code_insee": "78297",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "78",
+  "academie": "Versailles",
+  "intitule_officiel": "Licence - Administration économique et sociale -  Accès Santé (LAS)",
+  "form_lib_voe_acc": "Licence - Droit-économie-gestion",
+  "filiere_detaillee": "Administration économique et sociale",
+  "type_formation": "LAS (licence avec option accès santé)",
+  "precision_formation": "majeure Administration économique et sociale",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S02",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion d'une LAS n'est pas mesurée en tant que telle : elle ouvre l'accès aux études de santé, et InserSup ne distingue pas la licence suivie avec l'option santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "pass_aubenas": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+  "etablissement": "PASS Aubenas – Université Claude Bernard Lyon 1",
+  "ville": "Aubenas",
+  "region": "Auvergne-Rhône-Alpes",
+  "departement": "Ardèche",
+  "rncp": null,
+  "cod_uai": "0071480W",
+  "cod_aff_form": "48859",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=48859&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 17.0,
+  "nombre_places": 20,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": "Sciences du Vivant et Environnement (Campus d'Aubenas) - proposée par l'Université Claude Bernard Lyon 1",
+  "admission": {
+   "session": 2025,
+   "taux_acces": 17.0,
+   "places": 20,
+   "volumes": {
+    "voeux_totaux": 1356,
+    "voeux_phase_principale": 1356,
+    "classes_phase_principale": 1356,
+    "admis_total": 19
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2025": {
+     "year": 2025,
+     "taux_acces": 17.0,
+     "places": 20,
+     "voeux_totaux": 1356,
+     "voeux_phase_principale": 1356,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 13.0,
+     "pct_b": 33.0,
+     "pct_bours": 20.0,
+     "pct_f": 63.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 13.0,
+    "b": 33.0,
+    "ab": 33.0,
+    "sans": 20.0,
+    "tbf": 0.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 100.0,
+    "techno": 0.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 98.0,
+    "techno": 2.0,
+    "pro": 0.0
+   },
+   "boursiers_pct": 20.0,
+   "femmes_pct": 63.0,
+   "neobacheliers_pct": 79.0,
+   "origine_academique_idf_pct": 87.0
+  },
+  "propositions_totales": 131,
+  "pct_acceptes_debut_pp": 0.0,
+  "fili_code": "PASS",
+  "fili_groupe": null,
+  "selectivite_code": "formation non sélective",
+  "domaine": "sante",
+  "match_method": "parcoursup_only",
+  "labels": [],
+  "debouches": [
+   {
+    "code_rome": "J1102",
+    "libelle": "Médecin généraliste / Médecin spécialiste"
+   },
+   {
+    "code_rome": "J1103",
+    "libelle": "Médecin de prévention et santé publique"
+   },
+   {
+    "code_rome": "J1104",
+    "libelle": "Sage-femme"
+   },
+   {
+    "code_rome": "J1201",
+    "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+   },
+   {
+    "code_rome": "J1304",
+    "libelle": "Pharmacien / Préparateur en pharmacie"
+   },
+   {
+    "code_rome": "J1401",
+    "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+   },
+   {
+    "code_rome": "J1501",
+    "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+   },
+   {
+    "code_rome": "J1502",
+    "libelle": "Cadre de santé / Directeur de soins"
+   },
+   {
+    "code_rome": "J1505",
+    "libelle": "Kinésithérapeute / Ergothérapeute"
+   },
+   {
+    "code_rome": "J1506",
+    "libelle": "Orthophoniste"
+   }
+  ],
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "debouches": "rome_4_0"
+  },
+  "collected_at": {
+   "parcoursup": "2026-06-09",
+   "rome": "2026-06-09"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=48859&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "ville_source": "Aubenas",
+  "code_insee": "07019",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "07",
+  "academie": "Grenoble",
+  "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option Sciences du Vivant et Environnement (Campus d'Aubenas) - proposée par l'Université Claude Bernard Lyon 1",
+  "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+  "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+  "type_formation": "PASS (parcours d'accès spécifique santé)",
+  "precision_formation": "option Sciences du Vivant et Environnement (Campus d'Aubenas) (proposée par l'Université Claude Bernard Lyon 1)",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S01",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion professionnelle n'est pas mesurée pour une première année d'accès aux études de santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "las_agen": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Portail Droit",
+  "etablissement": "Université de Bordeaux - Antenne d'Agen",
+  "ville": "Agen",
+  "region": "Nouvelle Aquitaine",
+  "departement": "Lot-et-Garonne",
+  "rncp": null,
+  "cod_uai": "0470947Z",
+  "cod_aff_form": "26607",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=26607&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 67.0,
+  "nombre_places": 30,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": "Université de Bordeaux - Antenne d'Agen",
+  "admission": {
+   "session": 2025,
+   "taux_acces": 67.0,
+   "places": 30,
+   "volumes": {
+    "voeux_totaux": 813,
+    "voeux_phase_principale": 813,
+    "classes_phase_principale": 808,
+    "admis_total": 24
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 67.0,
+     "places": 30,
+     "voeux_totaux": 736,
+     "voeux_phase_principale": 717,
+     "pct_bg": 84.0,
+     "pct_bt": 11.0,
+     "pct_bp": 5.0,
+     "pct_tb": 0.0,
+     "pct_b": 5.0,
+     "pct_bours": 16.0,
+     "pct_f": 71.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 47.0,
+     "places": 30,
+     "voeux_totaux": 695,
+     "voeux_phase_principale": 679,
+     "pct_bg": 79.0,
+     "pct_bt": 11.0,
+     "pct_bp": 11.0,
+     "pct_tb": 0.0,
+     "pct_b": 16.0,
+     "pct_bours": 21.0,
+     "pct_f": 79.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 67.0,
+     "places": 30,
+     "voeux_totaux": 813,
+     "voeux_phase_principale": 813,
+     "pct_bg": 61.0,
+     "pct_bt": 28.0,
+     "pct_bp": 11.0,
+     "pct_tb": 0.0,
+     "pct_b": 0.0,
+     "pct_bours": 22.0,
+     "pct_f": 79.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 0.0,
+    "b": 0.0,
+    "ab": 28.0,
+    "sans": 72.0,
+    "tbf": 0.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 61.0,
+    "techno": 28.0,
+    "pro": 11.0
+   },
+   "acces_pct": {
+    "general": 81.0,
+    "techno": 13.0,
+    "pro": 6.0
+   },
+   "boursiers_pct": 22.0,
+   "femmes_pct": 79.0,
+   "neobacheliers_pct": 75.0,
+   "origine_academique_idf_pct": 89.0
+  },
+  "propositions_totales": 251,
+  "pct_acceptes_debut_pp": 4.0,
+  "fili_code": "Licence_Las",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": 0.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 67.0,
+    "end_value": 67.0,
+    "interpretation": "taux d'accès stable 2023→2025 (67% → 67%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 30,
+    "end_value": 30,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "stable",
+    "delta": 77,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 736,
+    "end_value": 813,
+    "interpretation": null
+   }
+  },
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "herite_de": {
+    "cod_aff_form": "26328",
+    "champs": [
+     "domaine",
+     "insertion_pro",
+     "type_diplome"
+    ]
+   }
+  },
+  "collected_at": {
+   "parcoursup": "2026-09-23"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=26607&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "domaine": "sante",
+  "insertion_pro": {
+   "source": "insersup_mesr",
+   "granularite": "discipline_region",
+   "match_score": 0.7,
+   "cohorte": "2024",
+   "nombre_sortants": 411,
+   "taux_emploi_6m": 0.4931,
+   "taux_emploi_12m": 0.6123,
+   "taux_emploi_18m": null,
+   "taux_emploi_24m": null,
+   "taux_emploi_30m": null,
+   "url_source": "https://www.data.gouv.fr/datasets/insertion-professionnelle-des-diplomes-des-etablissements-denseignement-superieur-dispositif-insersup"
+  },
+  "type_diplome": "Licence",
+  "ville_source": "Agen",
+  "code_insee": "47001",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "47",
+  "academie": "Bordeaux",
+  "intitule_officiel": "Licence - Droit - Université de Bordeaux - Antenne d'Agen -  Accès Santé (LAS)",
+  "form_lib_voe_acc": "Licence - Droit-économie-gestion",
+  "filiere_detaillee": "Droit",
+  "type_formation": "LAS (licence avec option accès santé)",
+  "precision_formation": "majeure Droit - Université de Bordeaux - Antenne d'Agen",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S02",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion d'une LAS n'est pas mesurée en tant que telle : elle ouvre l'accès aux études de santé, et InserSup ne distingue pas la licence suivie avec l'option santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "pass_toulouse": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+  "etablissement": "Université Toulouse III - Université Toulouse",
+  "ville": "Toulouse",
+  "region": "Occitanie",
+  "departement": "Haute-Garonne",
+  "rncp": null,
+  "cod_uai": "0313218E",
+  "cod_aff_form": "29843",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29843&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 21.0,
+  "nombre_places": 36,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": "Gestion appliquée aux SHS",
+  "admission": {
+   "session": 2025,
+   "taux_acces": 21.0,
+   "places": 36,
+   "volumes": {
+    "voeux_totaux": 4031,
+    "voeux_phase_principale": 4031,
+    "classes_phase_principale": 4031,
+    "admis_total": 39
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 27.0,
+     "places": 36,
+     "voeux_totaux": 3021,
+     "voeux_phase_principale": 3021,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 29.0,
+     "pct_b": 49.0,
+     "pct_bours": 23.0,
+     "pct_f": 78.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 25.0,
+     "places": 36,
+     "voeux_totaux": 3262,
+     "voeux_phase_principale": 3262,
+     "pct_bg": 98.0,
+     "pct_bt": 2.0,
+     "pct_bp": 0.0,
+     "pct_tb": 35.0,
+     "pct_b": 42.0,
+     "pct_bours": 28.0,
+     "pct_f": 80.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 21.0,
+     "places": 36,
+     "voeux_totaux": 4031,
+     "voeux_phase_principale": 4031,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 33.0,
+     "pct_b": 51.0,
+     "pct_bours": 23.0,
+     "pct_f": 79.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 33.0,
+    "b": 51.0,
+    "ab": 10.0,
+    "sans": 3.0,
+    "tbf": 3.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 100.0,
+    "techno": 0.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 100.0,
+    "techno": 0.0,
+    "pro": 0.0
+   },
+   "boursiers_pct": 23.0,
+   "femmes_pct": 79.0,
+   "neobacheliers_pct": 100.0,
+   "origine_academique_idf_pct": 92.0
+  },
+  "propositions_totales": 215,
+  "pct_acceptes_debut_pp": 0.0,
+  "fili_code": "PASS",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "domaine": "sante",
+  "match_method": "parcoursup_only",
+  "labels": [],
+  "debouches": [
+   {
+    "code_rome": "J1102",
+    "libelle": "Médecin généraliste / Médecin spécialiste"
+   },
+   {
+    "code_rome": "J1103",
+    "libelle": "Médecin de prévention et santé publique"
+   },
+   {
+    "code_rome": "J1104",
+    "libelle": "Sage-femme"
+   },
+   {
+    "code_rome": "J1201",
+    "libelle": "Professions paramédicales (aide-soignant, auxiliaire de puériculture)"
+   },
+   {
+    "code_rome": "J1304",
+    "libelle": "Pharmacien / Préparateur en pharmacie"
+   },
+   {
+    "code_rome": "J1401",
+    "libelle": "Audioprothésiste / Opticien / Orthoptiste / Podologue"
+   },
+   {
+    "code_rome": "J1501",
+    "libelle": "Infirmier / Infirmière diplômé(e) d'État"
+   },
+   {
+    "code_rome": "J1502",
+    "libelle": "Cadre de santé / Directeur de soins"
+   },
+   {
+    "code_rome": "J1505",
+    "libelle": "Kinésithérapeute / Ergothérapeute"
+   },
+   {
+    "code_rome": "J1506",
+    "libelle": "Orthophoniste"
+   }
+  ],
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "debouches": "rome_4_0"
+  },
+  "collected_at": {
+   "parcoursup": "2026-06-09",
+   "rome": "2026-06-09"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=29843&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "trends": {
+   "taux_acces": {
+    "direction": "stable",
+    "delta_pp": -6.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 27.0,
+    "end_value": 21.0,
+    "interpretation": "taux d'accès stable 2023→2025 (27% → 21%)"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 36,
+    "end_value": 36,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "up",
+    "delta": 1010,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 3021,
+    "end_value": 4031,
+    "interpretation": "popularité en hausse 2023→2025 (3021 → 4031 vœux) : attrait renforcé"
+   }
+  },
+  "ville_source": "Toulouse",
+  "code_insee": "31555",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "31",
+  "academie": "Toulouse",
+  "intitule_officiel": "Licence - Parcours d'Accès Spécifique Santé (PASS) - option Sciences sociales - Gestion appliquée aux SHS",
+  "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+  "filiere_detaillee": "Parcours d'Accès Spécifique Santé (PASS)",
+  "type_formation": "PASS (parcours d'accès spécifique santé)",
+  "precision_formation": "option Sciences sociales (Gestion appliquée aux SHS)",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S01",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion professionnelle n'est pas mesurée pour une première année d'accès aux études de santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ },
+ "las_nantes": {
+  "source": "parcoursup",
+  "phase": "initial",
+  "nom": "Licence - Portail Chimie - Chimie",
+  "etablissement": "Nantes Université",
+  "ville": "Nantes",
+  "region": "Pays-de-la-Loire",
+  "departement": "Loire-Atlantique",
+  "rncp": null,
+  "cod_uai": "0442953W",
+  "cod_aff_form": "32035",
+  "lien_form_psup": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=32035&typeBac=0&originePc=0",
+  "taux_acces_parcoursup_2025": 53.0,
+  "nombre_places": 36,
+  "statut": "Public",
+  "niveau": "bac+3",
+  "detail": "Chimie",
+  "admission": {
+   "session": 2025,
+   "taux_acces": 53.0,
+   "places": 36,
+   "volumes": {
+    "voeux_totaux": 961,
+    "voeux_phase_principale": 961,
+    "classes_phase_principale": 961,
+    "admis_total": 36
+   },
+   "internat_disponible": null,
+   "historique": {
+    "2023": {
+     "year": 2023,
+     "taux_acces": 69.0,
+     "places": 36,
+     "voeux_totaux": 881,
+     "voeux_phase_principale": 881,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 19.0,
+     "pct_b": 66.0,
+     "pct_bours": 3.0,
+     "pct_f": 64.0
+    },
+    "2024": {
+     "year": 2024,
+     "taux_acces": 67.0,
+     "places": 36,
+     "voeux_totaux": 880,
+     "voeux_phase_principale": 880,
+     "pct_bg": 97.0,
+     "pct_bt": 3.0,
+     "pct_bp": 0.0,
+     "pct_tb": 21.0,
+     "pct_b": 59.0,
+     "pct_bours": 18.0,
+     "pct_f": 67.0
+    },
+    "2025": {
+     "year": 2025,
+     "taux_acces": 53.0,
+     "places": 36,
+     "voeux_totaux": 961,
+     "voeux_phase_principale": 961,
+     "pct_bg": 100.0,
+     "pct_bt": 0.0,
+     "pct_bp": 0.0,
+     "pct_tb": 30.0,
+     "pct_b": 37.0,
+     "pct_bours": 10.0,
+     "pct_f": 72.0
+    }
+   }
+  },
+  "profil_admis": {
+   "mentions_pct": {
+    "tb": 30.0,
+    "b": 37.0,
+    "ab": 33.0,
+    "sans": 0.0,
+    "tbf": 0.0,
+    "non_renseignee": 0.0
+   },
+   "bac_type_pct": {
+    "general": 100.0,
+    "techno": 0.0,
+    "pro": 0.0
+   },
+   "acces_pct": {
+    "general": 100.0,
+    "techno": 0.0,
+    "pro": 0.0
+   },
+   "boursiers_pct": 10.0,
+   "femmes_pct": 72.0,
+   "neobacheliers_pct": 83.0,
+   "origine_academique_idf_pct": 97.0
+  },
+  "propositions_totales": 481,
+  "pct_acceptes_debut_pp": 75.0,
+  "fili_code": "Licence_Las",
+  "fili_groupe": "Tous les candidats",
+  "selectivite_code": "formation non sélective",
+  "trends": {
+   "taux_acces": {
+    "direction": "down",
+    "delta_pp": -16.0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 69.0,
+    "end_value": 53.0,
+    "interpretation": "taux d'accès en baisse 2023→2025 (69% → 53%) : formation devenue plus sélective"
+   },
+   "places": {
+    "direction": "stable",
+    "delta": 0,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 36,
+    "end_value": 36,
+    "interpretation": null
+   },
+   "voeux": {
+    "direction": "stable",
+    "delta": 80,
+    "start_year": 2023,
+    "end_year": 2025,
+    "start_value": 881,
+    "end_value": 961,
+    "interpretation": null
+   }
+  },
+  "provenance": {
+   "admission": "parcoursup_2025",
+   "profil_admis": "parcoursup_2025",
+   "herite_de": {
+    "cod_aff_form": "32033",
+    "champs": [
+     "domaine",
+     "type_diplome"
+    ]
+   }
+  },
+  "collected_at": {
+   "parcoursup": "2026-09-23"
+  },
+  "merge_confidence": {
+   "parcoursup": 1.0
+  },
+  "retrieval_eligible": true,
+  "url_canonical": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=32035&typeBac=0&originePc=0",
+  "url_type": "direct_parcoursup",
+  "domaine": "sante",
+  "type_diplome": "Licence",
+  "ville_source": "Nantes",
+  "code_insee": "44109",
+  "arrondissement": null,
+  "code_insee_arrondissement": null,
+  "code_departement": "44",
+  "academie": "Nantes",
+  "intitule_officiel": "Licence - Chimie - Chimie -  Accès Santé (LAS)",
+  "form_lib_voe_acc": "Licence - Sciences - technologies - santé",
+  "filiere_detaillee": "Chimie",
+  "type_formation": "LAS (licence avec option accès santé)",
+  "precision_formation": "majeure Chimie - Chimie",
+  "niveau_origine": "filiere",
+  "domaine_regle": "S02",
+  "cout": {
+   "statut": "disponible",
+   "valeur": {
+    "droits_inscription_eur": 178,
+    "cvec_eur": 105,
+    "cvec_source": "service_public_f36520",
+    "scolarite_total_eur": null,
+    "scolarite_annuel_eur": null,
+    "fourchette_eur": null,
+    "annee_tarif": "2026-2027",
+    "gratuit_en_apprentissage": null,
+    "gratuit_boursiers": null,
+    "texte_source": null
+   },
+   "raison": null,
+   "source": {
+    "id": "tableau_droits_2026_2027",
+    "libelle": "Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...)",
+    "url": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "licence": "document administratif public"
+   },
+   "millesime": "2026-2027",
+   "collecte": "2026-09-23",
+   "rattachement": "constante_type_statut"
+  },
+  "alternance": {
+   "statut": "disponible",
+   "valeur": {
+    "existe_en_apprentissage": false,
+    "formations": []
+   },
+   "raison": null,
+   "source": {
+    "id": "parcoursup_apprentissage_2025",
+    "libelle": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "licence": "Licence Ouverte v2.0"
+   },
+   "millesime": "session 2025",
+   "collecte": "2026-09-23",
+   "rattachement": "meme_diplome_meme_uai_ou_meme_commune"
+  },
+  "insertion": {
+   "statut": "non_disponible",
+   "raison": "l'insertion d'une LAS n'est pas mesurée en tant que telle : elle ouvre l'accès aux études de santé, et InserSup ne distingue pas la licence suivie avec l'option santé",
+   "source": null,
+   "millesime": null,
+   "collecte": null,
+   "rattachement": null
+  }
+ }
+}

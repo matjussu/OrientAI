@@ -1,0 +1,21 @@
+{
+  "sources": {
+    "ecarts": [
+      "Université de Lille:medecine:PASS: 277 absent des extraits de univ_lille_mmopk_2026"
+    ],
+    "non_mesure": [
+      "univ_lyon1_mmop_2026_2027",
+      "univ_nantes_mmopk_2026_2027"
+    ],
+    "valeurs_capacites": 171,
+    "lignes_sies": 8
+  },
+  "corpus": {
+    "fiches": 800,
+    "ecarts": [],
+    "capacites": 216,
+    "passage_universite": 0
+  },
+  "verdict": "ROUGE",
+  "saboter": "capacite"
+}

@@ -110,6 +110,67 @@ SOURCES: dict[str, Source] = {
             "?delimiter=%3B&where=type_diplome%3D%22BTS%22",
             "DEPP-DARES, jeu fr-en-inserjeunes-lycee_pro-formation-fine, BTS", "Licence Ouverte v2.0",
         ),
+        # ── étape B-2 : santé (documents lus, chiffres recopiés dans src.collect.sante*) ──
+        Source(
+            "sies_nf_2025_31", "data/raw/sante/nf-sies-2025-31.pdf",
+            "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-11/nf-sies-2025-31-38644.pdf",
+            "MESRE-SIES, Note Flash n°31 (novembre 2025), parcours et réussite des étudiants en première année d'études de santé, session 2024", "publication statistique publique",
+        ),
+        Source(
+            "univ_paris_cite_jpo_2026", "data/raw/sante/paris_cite_jpo_2026.pdf",
+            "https://u-paris.fr/sante/wp-content/uploads/sites/19/2026/02/Acce%CC%80s-Sante%CC%81-PASS-JPO-7-fe%CC%81vrier-2026.pdf",
+            "Université Paris Cité, Faculté de Santé, diaporama « Accès Santé PASS/L.AS », journée portes ouvertes du 07/02/2026", "document public de l'université",
+        ),
+        Source(
+            "univ_spn_mmop_2026_2027", "data/raw/sante/spn_mmop_2026_2027.pdf",
+            "https://smbh.univ-paris13.fr/images/Formations/Passerelles_sante/CA_rentree_2026.pdf",
+            "Université Sorbonne Paris Nord, UFR SMBH, capacités d'accueil en 2e année MMOP pour 2026-2027", "document public de l'université",
+        ),
+        Source(
+            "univ_lille_mmopk_2026", "data/raw/sante/lille_mmopk_2026.pdf",
+            "https://ufr3s.univ-lille.fr/fileufr3s/user_upload/ufr3s-formations/pass-las/generalites/2026-27-numerus-apertus.pdf",
+            "Université de Lille, UFR3S, capacités d'accueil en 2e année MMOPK pour la rentrée 2026", "document public de l'université",
+        ),
+        Source(
+            "univ_lyon1_mmop_2026_2027", "data/raw/sante/lyon1_mmop_2026_2027.pdf",
+            "https://lyon-sud.univ-lyon1.fr/medias/fichier/capacites-d-accueil-mmop-2026-2027_1774602177702-pdf",
+            "Université Claude Bernard Lyon 1, délibération du CA du 23/09/2025, capacités d'accueil MMOP 2026-2027", "document public de l'université",
+        ),
+        Source(
+            "univ_lyon1_kine_2026_2027", "data/raw/sante/lyon1_kine_2026_2027.pdf",
+            "https://lyon-sud.univ-lyon1.fr/medias/fichier/capacites-d-accueil-kine-2026-2027_1774602187382-pdf",
+            "Université Claude Bernard Lyon 1, délibération du CA du 25/11/2025, capacités d'accueil en kinésithérapie 2026-2027", "document public de l'université",
+        ),
+        Source(
+            "univ_montpellier_mmop_2026_2027", "data/raw/sante/montpellier_mmop_2026_2027.pdf",
+            "https://sciences.edu.umontpellier.fr/files/2025/10/CAPACITES-ACCUEIL-MMOP-votees-2025-2026.pdf",
+            "Université de Montpellier, répartition des capacités d'accueil par filière MMOP (places ouvertes en DFGS2 en 2026-2027)", "document public de l'université",
+        ),
+        Source(
+            "univ_bordeaux_mmop_2026_2027", "data/raw/sante/bordeaux_mmop_2026_2027.pdf",
+            "https://sante.u-bordeaux.fr/application/files/4417/7444/3955/Capacites_daccueil_MMOP_2026_27.pdf",
+            "Université de Bordeaux, capacités d'accueil MMOP rentrée 2026/27 (document du 25/11/2025)", "document public de l'université",
+        ),
+        Source(
+            "univ_bordeaux_kine_2025_2026", "data/raw/sante/bordeaux_kine_2025_2026.pdf",
+            "https://sante.u-bordeaux.fr/application/files/8517/5214/1803/Capacites_daccueil_Kinesitherapie_2025-2026.pdf",
+            "Université de Bordeaux, capacité d'accueil en kinésithérapie 2025/2026", "document public de l'université",
+        ),
+        Source(
+            "univ_nantes_mmopk_2026_2027", "data/raw/sante/nantes_mmopk_2026_2027.pdf",
+            "https://medecine.univ-nantes.fr/medias/fichier/capacite-accueil-mmopk-2026-2027_1763540007643-pdf",
+            "Nantes Université, délibération du Conseil académique n°CAC_250919-05 (19/09/2025), capacités d'accueil MMOP-K 2026-2027", "document public de l'université",
+        ),
+        Source(
+            "univ_amu_mmop_rentree_2024", "data/raw/sante/amu_mmop_rentree_2024.pdf",
+            "https://daji.univ-amu.fr/sites/daji.univ-amu.fr/files/ca_deliberations/ca2023_09_18_05_capacites_daccueil_0.pdf",
+            "Aix-Marseille Université, délibération du CA du 19/09/2023, capacités d'accueil MMOP pour la rentrée 2024", "document public de l'université",
+        ),
+        Source(
+            "univ_toulouse_mmopk_2025_2026", "data/raw/sante/toulouse_mmopk_2025_2026.pdf",
+            "https://sante.utoulouse.fr/medias/fichier/2025-2026-numerus-apertus-pass-las_1759410255556-pdf",
+            "Université de Toulouse, Faculté de santé, numerus apertus PASS-LAS 2025/2026 (21/07/2025)", "document public de l'université",
+        ),
     )
 }
 

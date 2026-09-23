@@ -1,9 +1,11 @@
-# Contrat des champs de l'étape B-1 (coût, alternance, insertion)
+# Contrat des champs de l'étape B (coût, alternance, insertion, santé)
 
-Version 1.2, 23/09/2026, Claudette (v1 envoyée à Jarvis au commit 93d34e2 ; les écarts entre la v1
-et la forme livrée sont listés en section 0, ceux de la v1.2 en tête de cette section). Périmètre B-1 confirmé par Matteo le 23/09 (Telegram 10584,
-relayé par Jarvis) : B1 coûts, B5 alternance, B3 insertion. B4, B6, B7, B8 et B3 bis sont hors
-périmètre.
+Version 1.3.1, 23/09/2026, Claudette. La v1.3 ajoute le champ `sante` (sous-lot B-2, ordre
+2026-09-23-1252) en section 10, sans changer la forme des champs de B-1 ; la v1.3.1 liste les écarts
+entre la forme annoncée et la forme livrée (section 10 bis). Historique : v1 envoyée à
+Jarvis au commit 93d34e2 ; écarts v1 -> v1.1 en section 0 bis, v1.2 en section 0. Périmètre B-1
+confirmé par Matteo le 23/09 (Telegram 10584, relayé par Jarvis) : B1 coûts, B5 alternance, B3
+insertion ; B-2 : B2 santé. B4, B6, B7, B8 et B3 bis sont hors périmètre.
 
 Ce document fixe la forme des champs **avant** le code. L'explorateur se branche dessus ; tout
 changement de forme passe par une nouvelle version de ce fichier, annoncée à Jarvis.
@@ -325,3 +327,224 @@ la répartition des `rattachement`.
   relus à la main contre la ligne ONISEP ; contrôle positif (l'audit rougit sur une valeur
   sabotée par levier).
 - Banc vertical non régressé (présence des chiffres attendus dans le texte des fiches).
+
+## 10. `sante` (B2, version 1.3, sous-lot B-2)
+
+### Fiches concernées
+
+Les fiches Parcoursup `fili_code` in (`PASS`, `Licence_Las`) : 800 dans le corpus B-1 (287 PASS,
+513 LAS ; mesure du 23/09/2026 sur `formations_etape_b1.json`, sha256 `9863d2b40d3f...`). Le
+champ `sante` y est **toujours présent**. Aucune autre fiche ne le porte (IFSI et paramédical
+n'accèdent pas à MMOPK par cette voie).
+
+Corpus de sortie : `data/processed/formations_etape_b2.json` + manifeste ; B-1 reste la référence
+avant/après et n'est jamais réécrit.
+
+### Forme : quatre sous-champs, chacun avec l'enveloppe de la section 2
+
+```jsonc
+"sante": {
+  "passage_national":      { /* enveloppe */ },
+  "passage_universite":    { /* enveloppe */ },
+  "capacites_universite":  { /* enveloppe */ },
+  "reforme_2027":          { /* enveloppe */ }
+}
+```
+
+L'enveloppe gagne un attribut obligatoire pour ces quatre sous-champs :
+`"portee": "nationale" | "universite"`. Il est posé **même** quand `statut == "non_disponible"`
+(on dit à quelle échelle on a cherché).
+
+#### a) `passage_national` (portée `nationale`)
+
+Source : SIES, Note Flash n°31 (novembre 2025), session 2024, lue par moi dans le PDF (URL, sha256
+et date de lecture au verrou). La fiche reçoit la ligne de **sa voie** (PASS ou LAS).
+
+```jsonc
+"valeur": {
+  "voie": "PASS",                               // "PASS" | "LAS", celle de la fiche
+  "cohorte": "néo-bacheliers inscrits en 2022", // tel que le PDF la nomme
+  "session_resultats": 2024,
+  "admis_mmopk_1_ou_2_ans_pct": 47.5,
+  "admis_mmopk_1_an_pct": 33.8,                 // null si le PDF ne le donne pas pour la voie
+  "par_filiere_1_ou_2_ans_pct": {               // null par filière si non publié ; clés fixes
+    "medecine": 29.4, "pharmacie": 7.9, "odontologie": 3.6, "maieutique": 2.4, "kinesitherapie": 4.2
+  },
+  "ensemble_pass_las_pct": 40.1,
+  "definition": "..."                           // définition recopiée du PDF, pas résumée
+}
+```
+
+- `millesime` : `"session 2024 (cohorte 2022)"` ; `rattachement` : `voie_nationale`.
+- Les valeurs listées ci-dessus sont celles de `sources-donnees.md` §1.1 ; elles seront **relues dans
+  le PDF** avant d'être écrites dans le code, et tout écart te sera signalé.
+
+#### b) `passage_universite` (portée `universite`)
+
+Uniquement si l'université du panel le publie elle-même sur ses pages. Jamais déduit, jamais repris
+du « taux de passage en 2e année » des fiches Parcoursup (31,0 %, probablement national, voir
+`sources-donnees.md` §1.3), jamais pris sur un site de prépa ou de presse.
+
+```jsonc
+"valeur": {
+  "universite": "Université de Lille",
+  "voie": "PASS",                    // "PASS" | "LAS" | "PASS+LAS" : ce que la page publie
+  "annee": "2024-2025",              // année que la page date
+  "taux_pct": 38.2,                  // tel que publié
+  "definition_publiee": "...",       // la phrase de la page qui dit ce qui est compté, mot pour mot
+  "texte_source": "..."              // extrait de la page, pour l'audit
+}
+```
+
+- `source` : `{id: "univ_<slug>_passage", libelle, url, date_lecture, sha256}` : une page HTML ou
+  un PDF, dont l'empreinte est prise au moment de la lecture.
+- Rendu dans le texte : « publié par l'université X, année Y ».
+- `non_disponible` : raison = « l'université ne publie pas de taux de passage sur les pages
+  consultées », avec `source.url` = la ou les pages consultées.
+- Sur une page qui ne dit pas ce qu'elle compte (admis en 1 an ? inscrits ou présents ?), le taux
+  est gardé avec `definition_publiee: null` et le texte dit « définition non publiée ». Je te le
+  signale au cas par cas plutôt que de l'écarter en silence.
+
+#### c) `capacites_universite` (portée `universite`)
+
+La rentrée la plus récente que l'université publie (2026-2027, ou 2027-2028 si déjà publiée, comme
+à Clermont), depuis ses pages uniquement.
+
+```jsonc
+"valeur": {
+  "universite": "Université de Lille",
+  "rentree": "2026-2027",            // telle que la page la date
+  "total": 1234,                     // null si la page ne donne pas le total
+  "par_filiere": {                   // clés fixes ; null si la filière n'est pas publiée
+    "medecine":       {"total": 500, "PASS": 300, "LAS": 150, "passerelles": 50, "autres": null},
+    "pharmacie":      {...}, "odontologie": {...}, "maieutique": {...}, "kinesitherapie": {...}
+  },
+  "voies_publiees": ["PASS", "LAS", "passerelles"],   // les voies telles que la page les découpe
+  "texte_source": "..."              // extrait, ou référence de page du PDF
+}
+```
+
+- Nombres **tels que publiés**. Si la page ventile autrement (LAS1 / LAS2-3 à Clermont), la
+  ventilation publiée est gardée dans `par_filiere.<f>.detail` et les clés `PASS` / `LAS` ne sont
+  remplies que si la page les donne ou si la somme est exacte et dite (`"somme_de": ["LAS1",
+  "LAS2-3"]`).
+- `rattachement` : `universite_de_la_fiche` (table de normalisation des établissements, écrite dans
+  le code et publiée, ci-dessous).
+- `non_disponible` : université hors panel (« hors du panel de 10 universités collectées à la main »)
+  ou université du panel sans page trouvée (avec les URL consultées).
+
+#### d) `reforme_2027`
+
+Pointe vers une fiche concept unique, `source: "concept"`, `id: "reforme_sante_2027"`, ajoutée au
+corpus :
+
+```jsonc
+{
+  "source": "concept", "id": "reforme_sante_2027",
+  "titre": "Réforme de l'accès aux études de santé : voie unique annoncée pour la rentrée 2027",
+  "annonce": {"date": "2026-04-17", "par": "...", "source": {url L'Etudiant, date_lecture}},
+  "statut_reglementaire": "annonce",        // "annonce" | "texte_publie"
+  "texte_publie": null,                     // {nature, date_jo, nor, url} si publié
+  "verifie_le": "2026-09-2x",               // date de ma recherche sur Légifrance et le site du ministère
+  "recherches": [{"lieu": "Légifrance", "requete": "...", "resultat": "..."}]
+}
+```
+
+Sur la fiche PASS/LAS : `valeur: {concept_id: "reforme_sante_2027", statut_reglementaire,
+verifie_le}`, `portee: "nationale"`.
+
+### Table de normalisation et panel de 10 universités
+
+Le panel est mesuré sur le corpus B-1, puis **figé dans le code** (liste + mesure au manifeste).
+Normalisation des libellés d'établissement Parcoursup vers l'université qui publie les capacités :
+sites, antennes et composantes rattachés par motif (par exemple « Aix-Marseille Université - Site de
+... », « Université de Montpellier, Antenne de Nîmes », « Ecole Universitaire de premier cycle -
+Campus d'Orsay Université Paris-Saclay », « PASS Aubenas - Université Claude Bernard Lyon 1 »).
+
+Mesure (23/09/2026, `formations_etape_b1.json`, somme de `admission.volumes.voeux_totaux` des fiches
+PASS + LAS, 800 fiches, 1 618 000 vœux) :
+
+| Rang | Université | Vœux PASS + LAS | dont PASS | dont LAS | Fiches | Part |
+|---|---|---|---|---|---|---|
+| 1 | Université Paris Cité | 194 591 | 145 047 | 49 544 | 32 | 12,0 % |
+| 2 | Université Sorbonne Paris Nord | 117 859 | 99 672 | 18 187 | 18 | 7,3 % |
+| 3 | Université de Lille | 106 288 | 82 672 | 23 616 | 24 | 6,6 % |
+| 4 | Université Claude Bernard Lyon 1 | 96 247 | 80 939 | 15 308 | 20 | 5,9 % |
+| 5 | Université de Montpellier | 95 375 | 85 761 | 9 614 | 27 | 5,9 % |
+| 6 | Aix-Marseille Université | 81 194 | 48 827 | 32 367 | 33 | 5,0 % |
+| 7 | Université Paris-Saclay | 81 100 | 71 786 | 9 314 | 15 | 5,0 % |
+| 8 | Université Toulouse III | 78 181 | 65 905 | 12 276 | 24 | 4,8 % |
+| 9 | Université de Bordeaux | 61 767 | 43 736 | 18 031 | 16 | 3,8 % |
+| 10 | Nantes Université | 48 161 | 36 171 | 11 990 | 22 | 3,0 % |
+| 11 | Sorbonne Université | 42 702 | 24 304 | 18 398 | 17 | 2,6 % |
+| 12 | UVSQ | 42 367 | 34 126 | 8 241 | 14 | 2,6 % |
+
+Le panel couvre 59,4 % des vœux et 231 fiches sur 800. Un vœu n'est pas un candidat : un même
+candidat forme plusieurs vœux (options PASS, LAS) ; c'est la mesure que l'ordre demande.
+
+### Texte lu par le modèle (bloc santé des fiches PASS/LAS)
+
+```
+Accès aux études de santé (MMOPK), chiffre NATIONAL (SIES, session 2024, néo-bacheliers inscrits en 2022) : 47,5 % des étudiants de PASS admis en médecine, pharmacie, odontologie, maïeutique ou kinésithérapie en 1 ou 2 ans ; ce n'est pas un chiffre propre à cette université.
+Taux de passage publié par l'Université X (année Y) : Z %, <définition publiée>.   | ou : Taux de passage propre à l'université : non publié par l'université.
+Places en MMOPK à l'Université X, rentrée 2026-2027 (site de l'université) : médecine N (dont PASS a, LAS b, passerelles c), pharmacie ...   | ou : non disponible (<raison>).
+Réforme : une voie unique remplaçant PASS et LAS a été annoncée le 17/04/2026 pour la rentrée 2027 ; texte réglementaire non publié à la date du JJ/MM/2026 (voir fiche « Réforme 2027 »).
+```
+
+### Contrôles ajoutés (rougissent)
+
+- Un taux de passage apparaît dans le bloc santé sans sa portée (« NATIONAL » ou « publié par
+  l'université ») sur la même phrase.
+- Un `passage_universite` `disponible` sans `source.url` ou sans `source.sha256`.
+- Une fiche PASS/LAS sans le champ `sante` ou sans l'un des quatre sous-champs.
+- Le 31,0 % des fiches Parcoursup apparaît comme chiffre d'une université.
+- Contrôle positif : chacun est sabotable par levier et doit rougir.
+
+### Questions ouvertes
+
+- **Q1 LAS hors université de santé** : une partie des LAS est portée par une université sans
+  faculté de santé (Paris Nanterre, Lyon 3, Paris 8...), dont les places MMOPK sont celles d'une
+  faculté partenaire. La donnée ne dit pas laquelle. Je propose : pour ces LAS, national seulement,
+  `capacites_universite` `non_disponible` (« faculté de santé partenaire non identifiée dans la
+  donnée »). Relier chaque LAS à son partenaire demanderait une collecte en plus, hors B-2.
+- **Q2 LAS du panel** : pour une LAS de l'université du panel, les places « LAS » publiées sont
+  celles de toute l'université (toutes mentions de LAS confondues), pas celles de cette mention.
+  Le texte le dira.
+- **Q3 EUPC Guyancourt** : deux fiches LAS « Ecole Universitaire de premier cycle - Campus de
+  Guyancourt, Versailles Saint Quentin en Yvelines, Université Paris-Saclay » sont rattachées à
+  l'UVSQ (dont l'UFR Simone Veil - Santé publie ses propres capacités, à vérifier). Hors panel dans
+  les deux cas : le classement ne change pas.
+
+## 10 bis. Écarts de la forme livrée (v1.3.1, après la collecte)
+
+- **Empreinte** : `passage_universite` et `capacites_universite` disponibles portent
+  `source.sha256` (document verrouillé, clés `univ_*` du verrou) ; le contrôle
+  `sante_*_sans_url_ou_empreinte` l'exige.
+- **Une filière publiée dans un autre document** (kinésithérapie à Bordeaux et à Lyon 1) porte
+  `par_filiere.<f>.rentree` et `par_filiere.<f>.source_id` ; `valeur.sources_complementaires` liste
+  ces documents (id, url, sha256, filières). Le texte dit la rentrée de la filière quand elle diffère
+  (« kinésithérapie 110 ... (rentrée 2025/2026) »).
+- **`somme_de`** : quand `PASS`, `LAS` ou `total` est une somme de lignes publiées (LAS1 + LAS2/3,
+  deux facultés à Lyon 1), les lignes additionnées sont nommées par leur chemin dans `detail`
+  (séparateur « > ») ; l'audit refait la somme.
+- **`note`** : précision de périmètre recopiée dans le texte (LAS des universités partenaires
+  comprises à Montpellier et à Sorbonne Paris Nord, places réservées par convention exclues, rentrée
+  2024 à Aix-Marseille, libellé « 2025/2026 » ambigu à Toulouse).
+- **Non disponible d'une université du panel** : `source.id` = null, `source.urls_consultees` = les
+  pages lues, `collecte` = date de lecture (Paris-Saclay).
+- **Rentrées livrées** : 2026-2027 (ou 2026) pour 7 universités ; Toulouse 2025/2026 (dernier
+  document publié) ; Aix-Marseille rentrée 2024 (dernière délibération trouvée) ; Paris-Saclay non
+  disponible.
+- **`passage_universite`** : aucune des 10 universités ne publie de taux de passage constaté sur
+  les pages consultées ; 800 fiches en `non_disponible`. Écartés : Montpellier « minimum pass rate
+  5.8% » (minimum théorique 2021-22, places / inscrits), Paris Cité « environ 50% des étudiants admis
+  en filière de santé provenaient du PASS » (répartition des admis, pas un taux de passage).
+- **Lecture visuelle** : deux documents sans couche texte exploitable (Nantes, scan ; Lyon 1 MMOP,
+  couche texte corrompue) ; extraits transcrits de l'image par Claudette, audit NON MESURÉ sur
+  l'extrait (les sommes restent vérifiées).
+- **Fiche concept** : `domain: "concept_sante"`, `subject`, `text` (lu par `fiche_to_text` par le
+  chemin des fiches annexes), `annonce.sources` (L'Etudiant, Service-Public A18890). Le CNESER du
+  07/07/2026 n'est que dans `recherches` (presse, non vérifiée en source primaire), pas dans le texte.
+- **Témoin L6211-1** : la source lue `code_travail_l6211_1` porte `temoins` (code.travail.gouv.fr,
+  relu par Jarvis) ; l'étape B-2 le reporte sur les 526 coûts d'apprentissage sans réécrire B-1.
+

@@ -125,12 +125,59 @@ def controler_etape_b(fiche: dict, texte: str) -> list[str]:
     return defauts
 
 
+# ── étape B-2 : accès aux études de santé (contrat, section 10) ────────────────────────────
+SOUS_CHAMPS_SANTE = ("passage_national", "passage_universite", "capacites_universite", "reforme_2027")
+# Portée écrite dans la même proposition qu'un taux (demande de Jarvis, 23/09/2026).
+_PORTEE = re.compile(r"au niveau national|publié par l'université|publie pour sa part")
+_TAUX = re.compile(r"\d+(?:,\d+)? %")
+# Le « taux de passage en 2ème année » des fiches Parcoursup PASS : 31,0 % dans trois universités
+# différentes (sources-donnees.md §1.3), probablement national ; jamais un chiffre d'université.
+_TAUX_PARCOURSUP_31 = re.compile(r"\b31(?:,0)? %")
+
+
+def controler_sante(fiche: dict, texte: str, exiger: bool = False) -> list[str]:
+    """Défauts de l'étape B-2 sur une fiche PASS/LAS. `exiger` : le corpus est un corpus B-2
+    (il porte la fiche concept), une fiche PASS/LAS sans `sante` y est alors un défaut."""
+    if fiche.get("source") != "parcoursup" or fiche.get("fili_code") not in ("PASS", "Licence_Las"):
+        return []
+    champ = fiche.get("sante")
+    if not isinstance(champ, dict):
+        return ["sante_absent"] if exiger else []
+    defauts = []
+    for nom in SOUS_CHAMPS_SANTE:
+        v = champ.get(nom)
+        if not isinstance(v, dict) or v.get("statut") not in ("disponible", "non_disponible"):
+            defauts.append(f"sante_{nom}_absent")
+        elif v.get("portee") not in ("nationale", "universite"):
+            defauts.append(f"sante_{nom}_sans_portee")
+        elif v["statut"] == "non_disponible" and not v.get("raison"):
+            defauts.append(f"sante_{nom}_non_disponible_sans_raison")
+    for nom in ("passage_universite", "capacites_universite"):
+        v = champ.get(nom) or {}
+        if v.get("statut") == "disponible":
+            source = v.get("source") or {}
+            if not (source.get("url") and source.get("sha256")):
+                defauts.append(f"sante_{nom}_sans_url_ou_empreinte")
+    segments = [seg for seg in texte.split(" | ") if "MMOPK" in seg]
+    for seg in segments:
+        for proposition in seg.split(" ; "):
+            if _TAUX.search(proposition) and not _PORTEE.search(proposition):
+                defauts.append("sante_taux_sans_portee")
+            if _TAUX_PARCOURSUP_31.search(proposition) and "au niveau national" not in proposition:
+                defauts.append("sante_31_pourcent_attribue_a_l_universite")
+    if isinstance(champ.get("passage_national"), dict) and champ["passage_national"].get("statut") == "disponible" \
+            and not any("au niveau national" in seg for seg in segments):
+        defauts.append("sante_national_non_ecrit")
+    return sorted(set(defauts))
+
+
 def bilan(corpus: list[dict], fiche_to_text: Callable[[dict], str]) -> dict:
     fiches = [f for f in corpus if f.get("source") in CHAMPS_B_PAR_SOURCE]
+    exiger_sante = any(f.get("source") == "concept" and f.get("id") == "reforme_sante_2027" for f in corpus)
     compte: Counter = Counter()
     for f in fiches:
         texte = fiche_to_text(f)
-        compte.update(controler(f, texte) + controler_etape_b(f, texte))
+        compte.update(controler(f, texte) + controler_etape_b(f, texte) + controler_sante(f, texte, exiger_sante))
     return {"fiches": dict(Counter(f["source"] for f in fiches)), "defauts": dict(compte.most_common())}
 
 

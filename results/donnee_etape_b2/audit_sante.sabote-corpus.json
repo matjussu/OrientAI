@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "ecarts": [],
+    "non_mesure": [
+      "univ_lyon1_mmop_2026_2027",
+      "univ_nantes_mmopk_2026_2027"
+    ],
+    "valeurs_capacites": 171,
+    "lignes_sies": 8
+  },
+  "corpus": {
+    "fiches": 800,
+    "ecarts": [
+      "36348: passage_national différent de la table SIES",
+      "36348: taux national 25.7 non écrit"
+    ],
+    "capacites": 216,
+    "passage_universite": 0
+  },
+  "verdict": "ROUGE",
+  "saboter": "corpus"
+}
