@@ -3,7 +3,8 @@
 1. contrôle des empreintes des fichiers bruts contre le verrou (`src.collect.sources_officielles`) ;
 2. étape A : `data/processed/formations.json` (référence prod, lu seulement) -> `formations_etape_a.json` ;
 3. étape B-1 : `formations_etape_a.json` -> `formations_etape_b1.json` ;
-4. étape B-2 : `formations_etape_b1.json` -> `formations_etape_b2.json` (santé).
+4. étape B-2 : `formations_etape_b1.json` -> `formations_etape_b2.json` (santé) ;
+5. étape C : `formations_etape_b2.json` -> `base_etape_c.sqlite` (base structurée) et ses exports.
 
 Chaque étape écrit son manifeste. Une empreinte divergente arrête tout avant la première écriture.
 
@@ -15,7 +16,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from src.collect import corpus_etape_a, corpus_etape_b, corpus_etape_b2, sources_officielles
+from src.collect import base_etape_c, corpus_etape_a, corpus_etape_b, corpus_etape_b2, sources_officielles
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -31,7 +32,9 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     if corpus_etape_b.main([]) != 0:
         return 1
-    return corpus_etape_b2.main([])
+    if corpus_etape_b2.main([]) != 0:
+        return 1
+    return base_etape_c.main([])
 
 
 if __name__ == "__main__":

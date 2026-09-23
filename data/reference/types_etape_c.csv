@@ -1,0 +1,13 @@
+regle;fili;type_formation;type;motif
+T01;PASS;*;pass;Parcours d'accès spécifique santé
+T02;Licence_Las;*;las;Licence avec option accès santé (le filtre « licence » l'inclut, règle du gate C)
+T03;Licence;*;licence;Licence générale
+T04;BUT;*;but;Bachelor universitaire de technologie
+T05;BTS;*;bts;Brevet de technicien supérieur
+T06;CPGE;*;cpge;Classe préparatoire aux grandes écoles
+T07;IFSI;*;ifsi;Institut de formation en soins infirmiers
+T08;Ecole d'Ingénieur;*;ecole_ingenieur;Bachelor ou cycle d'ingénieur recrutant après le bac
+T09;*;^(D\.E |Certificat de capacité|DTS );diplome_sante;Diplôme d'État, certificat de capacité ou DTS d'une profession de santé
+T10;*;(?i)^(cycle universitaire pr[ée]paratoire|cycle universitaire de pr[ée]paration|classe pr[ée]paratoire universitaire|cursus pr[ée]paratoire aux concours);cupge;Cycle ou classe préparatoire universitaire aux grandes écoles
+T11;*;(?i)^titre professionnel|\(bac ?\+ ?[23]\)|^(concepteur|développeur|administrateur|coordinateur|gestionnaire|technicien) ;titre_pro;Titre professionnel ou certification RNCP de niveau bac+2 ou bac+3
+T99;*;*;autre;Tout le reste (certificats de spécialisation, formations d'établissement, écoles de commerce, licences professionnelles hors Parcoursup licence)

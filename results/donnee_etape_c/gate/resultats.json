@@ -1,0 +1,4588 @@
+{
+ "gate": {
+  "chemin": "../_orientai-ref/verticale-2026-09/gate_c/requetes_gate_c.json",
+  "sha256": "227a2c9bfaf6dad20d1ee7385da41703bd4b192712bb5924cfa5b96b84b1a4da"
+ },
+ "base": "/home/matteo_linux/projets/OrientIA-etape-c/data/processed/base_etape_c.sqlite",
+ "justes": 20,
+ "total": 20,
+ "requetes": [
+  {
+   "id": "C01",
+   "question": "Quelles formations en informatique (BUT Informatique, licence Informatique, BTS SIO) a moins de 80 km de Rodez ?",
+   "domaine": "informatique",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "but",
+       "licence",
+       "bts"
+      ],
+      "filieres": [
+       "Informatique",
+       "Services informatiques aux organisations"
+      ],
+      "apprentissage": false,
+      "pres_de": {
+       "code_insee": "12202",
+       "rayon_km": 80
+      }
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "bts",
+       "but",
+       "las",
+       "licence"
+      ],
+      "filieres": [
+       "Informatique",
+       "Services informatiques aux organisations"
+      ],
+      "apprentissage": false,
+      "pres_de": {
+       "code_insee": "12202",
+       "commune": "Rodez",
+       "rayon_km": 80.0,
+       "mesure": "à vol d'oiseau, jusqu'au centre de la commune"
+      }
+     },
+     "nb_resultats": 5,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type bts ou but ou las ou licence ; filière Informatique ou Services informatiques aux organisations ; hors apprentissage ; à moins de 80 km de Rodez (12202), à vol d'oiseau [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:2495",
+     "intitule": "BUT - Informatique",
+     "etablissement": "I.U.T de Rodez",
+     "commune": "Rodez",
+     "distance_km": 0.5,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 49,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=2495;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 52,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=2495;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:10310",
+     "intitule": "Licence - Portail Informatique - Programmation informatique pour l'entreprise et l'innovation technologique",
+     "etablissement": "Institut national universitaire Champollion",
+     "commune": "Albi",
+     "distance_km": 59.7,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 79,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=10310;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 57,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=10310;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:35917",
+     "intitule": "Licence - Portail Informatique - Programmation informatique pour l'entreprise et l'innovation technologique",
+     "etablissement": "Institut national universitaire Champollion",
+     "commune": "Albi",
+     "distance_km": 59.7,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 55,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35917;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 3,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35917;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:2951",
+     "intitule": "BTS - Services - Services informatiques aux organisations",
+     "etablissement": "Lycée Jean Monnet - Mermoz",
+     "commune": "Aurillac",
+     "distance_km": 64.8,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 82,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=2951;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 24,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=2951;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:5801",
+     "intitule": "BTS - Services - Services informatiques aux organisations",
+     "etablissement": "Lycée Emile Peytavin",
+     "commune": "Mende",
+     "distance_km": 74.5,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 80,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=5801;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 18,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=5801;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:35917",
+    "psup:2495",
+    "psup:10310",
+    "psup:2951",
+    "psup:5801"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C02",
+   "question": "Quels BUT Informatique des Hauts-de-France ont au moins 35 % de bacheliers technologiques parmi leurs admis neo-bacheliers ?",
+   "domaine": "informatique",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "but"
+      ],
+      "filieres": [
+       "Informatique"
+      ],
+      "regions": [
+       "Hauts-de-France"
+      ],
+      "part_bac_techno_min": 35
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "but"
+      ],
+      "filieres": [
+       "Informatique"
+      ],
+      "regions": [
+       "Hauts-de-France"
+      ],
+      "part_bac_techno_min": 35
+     },
+     "nb_resultats": 2,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type but ; filière Informatique ; région Hauts-de-France ; part_bac_techno >= 35 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:6888",
+     "intitule": "BUT - Informatique",
+     "etablissement": "Institut universitaire de technologie de Lille - Université de Lille",
+     "commune": "Villeneuve-d'Ascq",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 18,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6888;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 136,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6888;champ=capa_fin"
+      },
+      "part_bac_techno@2025": {
+       "valeur": 36,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6888;champ=pct_bt"
+      }
+     }
+    },
+    {
+     "id": "psup:7520",
+     "intitule": "BUT - Informatique",
+     "etablissement": "I.U.T. de Lens",
+     "commune": "Lens",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 51,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=7520;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 78,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=7520;champ=capa_fin"
+      },
+      "part_bac_techno@2025": {
+       "valeur": 38,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=7520;champ=pct_bt"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:6888",
+    "psup:7520"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C03",
+   "question": "Je suis en bac pro CIEL : quels BTS SIO ou BTS CIEL option A (informatique et reseaux) a moins de 30 km de Rennes, avec leurs places et la part de bac pro parmi les admis neo-bacheliers ?",
+   "domaine": "informatique",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "bts"
+      ],
+      "filieres": [
+       "Services informatiques aux organisations",
+       "Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux"
+      ],
+      "apprentissage": false,
+      "pres_de": {
+       "code_insee": "35238",
+       "rayon_km": 30
+      },
+      "champs": [
+       "places",
+       "part_bac_pro"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "bts"
+      ],
+      "filieres": [
+       "Services informatiques aux organisations",
+       "Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux"
+      ],
+      "apprentissage": false,
+      "pres_de": {
+       "code_insee": "35238",
+       "commune": "Rennes",
+       "rayon_km": 30.0,
+       "mesure": "à vol d'oiseau, jusqu'au centre de la commune"
+      }
+     },
+     "nb_resultats": 3,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type bts ; filière Services informatiques aux organisations ou Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux ; hors apprentissage ; à moins de 30 km de Rennes (35238), à vol d'oiseau [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:4774",
+     "intitule": "BTS - Services - Services informatiques aux organisations",
+     "etablissement": "Lycée Victor et Hélène BASCH",
+     "commune": "Rennes",
+     "distance_km": 1.1,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 35,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4774;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 35,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4774;champ=capa_fin"
+      },
+      "part_bac_pro@2025": {
+       "valeur": 33,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4774;champ=pct_bp"
+      }
+     }
+    },
+    {
+     "id": "psup:4694",
+     "intitule": "BTS - Services - Services informatiques aux organisations",
+     "etablissement": "Lycée / Pôle Sup de La Salle - Groupe Saint Jean",
+     "commune": "Rennes",
+     "distance_km": 1.8,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 87,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4694;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 33,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4694;champ=capa_fin"
+      },
+      "part_bac_pro@2025": {
+       "valeur": 40,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4694;champ=pct_bp"
+      }
+     }
+    },
+    {
+     "id": "psup:17725",
+     "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+     "etablissement": "Lycée Bréquigny",
+     "commune": "Rennes",
+     "distance_km": 3.4,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 38,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=17725;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 30,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=17725;champ=capa_fin"
+      },
+      "part_bac_pro@2025": {
+       "valeur": 39,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=17725;champ=pct_bp"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:17725",
+    "psup:4774",
+    "psup:4694"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 6,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C04",
+   "question": "Je veux faire de l'info en alternance pour etre paye : quels BUT Informatique ou BTS SIO en apprentissage dans le Nord (59) ?",
+   "domaine": "informatique",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "but",
+       "bts"
+      ],
+      "filieres": [
+       "Informatique",
+       "Services informatiques aux organisations"
+      ],
+      "apprentissage": true,
+      "departements": [
+       "59"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "bts",
+       "but"
+      ],
+      "filieres": [
+       "Informatique",
+       "Services informatiques aux organisations"
+      ],
+      "apprentissage": true,
+      "departements": [
+       "59"
+      ]
+     },
+     "nb_resultats": 11,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type bts ou but ; filière Informatique ou Services informatiques aux organisations ; en apprentissage ; département 59 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup_app:16775",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Lycée Notre-Dame De Grace",
+     "commune": "Maubeuge",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 12,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=16775;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:18950",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Lycée Gaston Berger",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 48,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=18950;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:22088",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Lycée Henri Wallon",
+     "commune": "Valenciennes",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 15,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=22088;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:25559",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "AFPI ALTERNANCE CFAI LILLE METROPOLE",
+     "commune": "Marcq-en-Barœul",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 13,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=25559;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:34108",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Campus Eductive Lille VAUBAN",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=34108;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:38810",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Lycée Gaston Berger",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 10,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=38810;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:42427",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Diderot Education Lille (Cours Diderot - EDNH - EGPN)",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=42427;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:44394",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Lycée Dampierre",
+     "commune": "Valenciennes",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 15,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=44394;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:47164",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "My Digital School - Ecole multimédia de LILLE",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=47164;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:47661",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "ECOR / ECAR LILLE",
+     "commune": "Villeneuve-d'Ascq",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 60,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=47661;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup_app:47883",
+     "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+     "etablissement": "Lille YNOV Campus",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=47883;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup_app:18950",
+    "psup_app:34108",
+    "psup_app:44394",
+    "psup_app:16775",
+    "psup_app:38810",
+    "psup_app:47883",
+    "psup_app:22088",
+    "psup_app:25559",
+    "psup_app:42427",
+    "psup_app:47164",
+    "psup_app:47661"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C05",
+   "question": "Les BUT Informatique de Seine-Saint-Denis : comment a evolue leur taux d'acces de 2023 a 2025 ?",
+   "domaine": "informatique",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "but"
+      ],
+      "filieres": [
+       "Informatique"
+      ],
+      "departements": [
+       "93"
+      ],
+      "champs": [
+       "taux_acces@2023",
+       "taux_acces@2024",
+       "taux_acces@2025"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "but"
+      ],
+      "filieres": [
+       "Informatique"
+      ],
+      "departements": [
+       "93"
+      ]
+     },
+     "nb_resultats": 2,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type but ; filière Informatique ; département 93 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:11236",
+     "intitule": "BUT - Informatique",
+     "etablissement": "I.U.T de Villetaneuse - Université Sorbonne Paris Nord",
+     "commune": "Villetaneuse",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 13,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11236;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 104,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11236;champ=capa_fin"
+      },
+      "taux_acces@2023": {
+       "valeur": 19,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2023",
+       "millesime": "session 2023",
+       "identifiant": "cod_aff_form=11236;champ=taux_acces_ens"
+      },
+      "taux_acces@2024": {
+       "valeur": 15,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2024",
+       "millesime": "session 2024",
+       "identifiant": "cod_aff_form=11236;champ=taux_acces_ens"
+      }
+     }
+    },
+    {
+     "id": "psup:11349",
+     "intitule": "BUT - Informatique",
+     "etablissement": "I.U.T. de Montreuil",
+     "commune": "Montreuil",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 14,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11349;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 88,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11349;champ=capa_fin"
+      },
+      "taux_acces@2023": {
+       "valeur": 24,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2023",
+       "millesime": "session 2023",
+       "identifiant": "cod_aff_form=11349;champ=taux_acces_ens"
+      },
+      "taux_acces@2024": {
+       "valeur": 18,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2024",
+       "millesime": "session 2024",
+       "identifiant": "cod_aff_form=11349;champ=taux_acces_ens"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:11236",
+    "psup:11349"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 6,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C06",
+   "question": "Quelles formations en informatique existent en Martinique apres le bac ?",
+   "domaine": "informatique",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "but",
+       "licence",
+       "bts"
+      ],
+      "filieres": [
+       "Informatique",
+       "Services informatiques aux organisations",
+       "Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+       "Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux"
+      ],
+      "apprentissage": false,
+      "departements": [
+       "972"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "bts",
+       "but",
+       "las",
+       "licence"
+      ],
+      "filieres": [
+       "Informatique",
+       "Services informatiques aux organisations",
+       "Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+       "Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux"
+      ],
+      "apprentissage": false,
+      "departements": [
+       "972"
+      ]
+     },
+     "nb_resultats": 7,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type bts ou but ou las ou licence ; filière Informatique ou Services informatiques aux organisations ou Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux ou Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux ; hors apprentissage ; département 972 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:11796",
+     "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+     "etablissement": "Lycée Joseph Gaillard",
+     "commune": "Fort-de-France",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 50,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11796;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 24,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11796;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:11801",
+     "intitule": "BTS - Services - Services informatiques aux organisations",
+     "etablissement": "Lycée Joseph Gaillard",
+     "commune": "Fort-de-France",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 41,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11801;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 26,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11801;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:11808",
+     "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+     "etablissement": "Lycée Frantz Fanon",
+     "commune": "La Trinité",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 63,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11808;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 26,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11808;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:11820",
+     "intitule": "BTS - Services - Services informatiques aux organisations",
+     "etablissement": "Lycée AMEP",
+     "commune": "Fort-de-France",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 100,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11820;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11820;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:35520",
+     "intitule": "BUT - Informatique",
+     "etablissement": "I.U.T de la Martinique",
+     "commune": "Schœlcher",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 44,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35520;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 22,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35520;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:35928",
+     "intitule": "Licence - Informatique - Parcours Sciences du numérique",
+     "etablissement": "INSTITUT CATHOLIQUE EUROPEEN DES AMERIQUES",
+     "commune": "Fort-de-France",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 100,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35928;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 25,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35928;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:36110",
+     "intitule": "Licence - Informatique",
+     "etablissement": "Université des Antilles - Pôle Martinique",
+     "commune": "Schœlcher",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 100,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=36110;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 45,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=36110;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:35520",
+    "psup:36110",
+    "psup:35928",
+    "psup:11796",
+    "psup:11820",
+    "psup:11801",
+    "psup:11808"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C07",
+   "question": "Je suis en L3 MIASHS a Toulouse : quels masters MIAGE en Occitanie, lesquels sont en alternance, avec leur capacite et leur nombre de candidats ?",
+   "domaine": "informatique",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_masters",
+     "arguments": {
+      "mention_contient": "MIAGE",
+      "regions_academiques": [
+       "Occitanie"
+      ],
+      "champs": [
+       "alternance",
+       "capacite",
+       "candidats_pp"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_masters",
+     "filtres_appliques": {
+      "session": "2025",
+      "regions_academiques": [
+       "Occitanie"
+      ],
+      "mention_contient": "MIAGE"
+     },
+     "nb_resultats": 4,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "mention contenant « MIAGE » ; région académique Occitanie [chercher_masters, session 2025]",
+   "rendues": [
+    {
+     "id": "mm:1602749UAIG8",
+     "intitule": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE - Ingénierie d'Affaires Numériques (IAN)",
+     "etablissement": "Université de Toulouse",
+     "commune": "Toulouse",
+     "distance_km": null,
+     "valeurs": {
+      "capacite@2025": {
+       "valeur": 17,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UAIG8;champ=col"
+      },
+      "candidats_pp@2025": {
+       "valeur": 522,
+       "unite": "candidats",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UAIG8;champ=n_can_pp"
+      },
+      "alternance@2025": {
+       "valeur": 0,
+       "unite": "0/1",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UAIG8;champ=alternance"
+      }
+     }
+    },
+    {
+     "id": "mm:1602749UI1XD",
+     "intitule": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE - Ingénierie des Données et Protection (IDP)",
+     "etablissement": "Université de Toulouse",
+     "commune": "Toulouse",
+     "distance_km": null,
+     "valeurs": {
+      "capacite@2025": {
+       "valeur": 17,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UI1XD;champ=col"
+      },
+      "candidats_pp@2025": {
+       "valeur": 482,
+       "unite": "candidats",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UI1XD;champ=n_can_pp"
+      },
+      "alternance@2025": {
+       "valeur": 0,
+       "unite": "0/1",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UI1XD;champ=alternance"
+      }
+     }
+    },
+    {
+     "id": "mm:1602749UV67P",
+     "intitule": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE - MIAGE - Formation Initiale",
+     "etablissement": "Université Toulouse Capitole",
+     "commune": "Toulouse",
+     "distance_km": null,
+     "valeurs": {
+      "capacite@2025": {
+       "valeur": 65,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UV67P;champ=col"
+      },
+      "candidats_pp@2025": {
+       "valeur": 564,
+       "unite": "candidats",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UV67P;champ=n_can_pp"
+      },
+      "alternance@2025": {
+       "valeur": 0,
+       "unite": "0/1",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UV67P;champ=alternance"
+      }
+     }
+    },
+    {
+     "id": "mm:1602749UXARB",
+     "intitule": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE - Ingénierie de la Transformation Numérique (ITN)",
+     "etablissement": "Université de Toulouse",
+     "commune": "Toulouse",
+     "distance_km": null,
+     "valeurs": {
+      "capacite@2025": {
+       "valeur": 17,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UXARB;champ=col"
+      },
+      "candidats_pp@2025": {
+       "valeur": 362,
+       "unite": "candidats",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UXARB;champ=n_can_pp"
+      },
+      "alternance@2025": {
+       "valeur": 0,
+       "unite": "0/1",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "monmaster_2025",
+       "millesime": "session 2025",
+       "identifiant": "ifc=1602749UXARB;champ=alternance"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "mm:1602749UXARB",
+    "mm:1602749UAIG8",
+    "mm:1602749UV67P",
+    "mm:1602749UI1XD"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 12,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C08",
+   "question": "PASS ou LAS a Rennes : quelles formations existent, avec leurs places et leur taux d'acces ?",
+   "domaine": "sante",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "pass",
+       "las"
+      ],
+      "communes": [
+       "35238"
+      ],
+      "champs": [
+       "places",
+       "taux_acces"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "las",
+       "pass"
+      ],
+      "communes": [
+       "35238"
+      ]
+     },
+     "nb_resultats": 16,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type las ou pass ; commune 35238 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:26778",
+     "intitule": "Licence - Portail Physique, Chimie, Sciences de la Terre et Mécanique (PCSTM)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 98,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26778;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 80,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26778;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:27343",
+     "intitule": "Licence - Portail Portail Droit Science politique - Rennes",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 59,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27343;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27343;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:27346",
+     "intitule": "Licence - Portail Portail Biologie Environnement Chimie du vivant",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 60,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27346;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 160,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27346;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:27361",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 26,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27361;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27361;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:27362",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 56,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27362;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27362;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:27363",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 13,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27363;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27363;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:27611",
+     "intitule": "Licence - Portail Psychologie",
+     "etablissement": "Université de Rennes 2",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 16,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27611;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27611;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:28355",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 27,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28355;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28355;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:28719",
+     "intitule": "Licence - Portail Portail Mathématiques et applications",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 95,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28719;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28719;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:29014",
+     "intitule": "Licence - Portail Sciences et Techniques des Activités Physiques et Sportives",
+     "etablissement": "Université de Rennes 2",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 11,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29014;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 30,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29014;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:29329",
+     "intitule": "Licence - Portail Portail Economie gestion",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 35,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29329;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29329;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:32647",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 39,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=32647;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 160,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=32647;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:35500",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 17,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35500;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 22,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35500;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:35809",
+     "intitule": "Licence - Portail Philosophie",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 100,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35809;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35809;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:35847",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 10,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35847;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 70,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35847;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:43495",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 63,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=43495;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 80,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=43495;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:27611",
+    "psup:35500",
+    "psup:27343",
+    "psup:27361",
+    "psup:27362",
+    "psup:29329",
+    "psup:35847",
+    "psup:27346",
+    "psup:28719",
+    "psup:32647",
+    "psup:26778",
+    "psup:27363",
+    "psup:28355",
+    "psup:35809",
+    "psup:43495",
+    "psup:29014"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 32,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C09",
+   "question": "Je suis en ST2S : quels IFSI a moins de 60 km de Limoges, du plus accessible au moins accessible ?",
+   "domaine": "sante",
+   "mode": "exact",
+   "ordre": true,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "ifsi"
+      ],
+      "pres_de": {
+       "code_insee": "87085",
+       "rayon_km": 60
+      },
+      "tri": {
+       "champ": "taux_acces",
+       "sens": "desc"
+      }
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "ifsi"
+      ],
+      "pres_de": {
+       "code_insee": "87085",
+       "commune": "Limoges",
+       "rayon_km": 60.0,
+       "mesure": "à vol d'oiseau, jusqu'au centre de la commune"
+      },
+      "tri": {
+       "champ": "taux_acces",
+       "sens": "desc"
+      }
+     },
+     "nb_resultats": 4,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type ifsi ; à moins de 60 km de Limoges (87085), à vol d'oiseau ; trié par taux_acces décroissant [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:23157",
+     "intitule": "D.E Infirmier",
+     "etablissement": "IFSI Croix Rouge Française Limoges",
+     "commune": "Limoges",
+     "distance_km": 7.1,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 68,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23157;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 129,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23157;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:38428",
+     "intitule": "D.E Infirmier",
+     "etablissement": "IFSI CHU Limoges - Antenne de Saint Yrieix la Perche",
+     "commune": "Saint-Yrieix-la-Perche",
+     "distance_km": 39.3,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 65,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=38428;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=38428;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:34537",
+     "intitule": "D.E Infirmier",
+     "etablissement": "IFSI du CHHC-Université de Limoges",
+     "commune": "Limoges",
+     "distance_km": 4.6,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 36,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=34537;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 30,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=34537;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:23156",
+     "intitule": "D.E Infirmier",
+     "etablissement": "IFSI CHU Limoges",
+     "commune": "Limoges",
+     "distance_km": 4.3,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 30,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23156;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 117,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23156;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:23157",
+    "psup:38428",
+    "psup:34537",
+    "psup:23156"
+   ],
+   "frontiere": [
+    "psup:23155"
+   ],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": true,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C10",
+   "question": "Bac pro ASSP : quels sont les 3 IFSI du Nord qui admettent la plus grande part de bacheliers professionnels parmi leurs admis neo-bacheliers ?",
+   "domaine": "sante",
+   "mode": "exact",
+   "ordre": true,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "ifsi"
+      ],
+      "departements": [
+       "59"
+      ],
+      "tri": {
+       "champ": "part_bac_pro",
+       "sens": "desc"
+      },
+      "limite": 3
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "ifsi"
+      ],
+      "departements": [
+       "59"
+      ],
+      "tri": {
+       "champ": "part_bac_pro",
+       "sens": "desc"
+      }
+     },
+     "nb_resultats": 15,
+     "tronque": true,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type ifsi ; département 59 ; trié par part_bac_pro décroissant [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:23133",
+     "intitule": "D.E Infirmier",
+     "etablissement": "IFSI CH d'Armentières",
+     "commune": "Armentières",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 48,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23133;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 90,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23133;champ=capa_fin"
+      },
+      "part_bac_pro@2025": {
+       "valeur": 29,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23133;champ=pct_bp"
+      }
+     }
+    },
+    {
+     "id": "psup:23130",
+     "intitule": "D.E Infirmier",
+     "etablissement": "IFSI Valentine Labbé",
+     "commune": "La Madeleine",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 35,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23130;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 93,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23130;champ=capa_fin"
+      },
+      "part_bac_pro@2025": {
+       "valeur": 25,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23130;champ=pct_bp"
+      }
+     }
+    },
+    {
+     "id": "psup:23137",
+     "intitule": "D.E Infirmier",
+     "etablissement": "IFSI du Centre Daumezon Saint André Lez Lille",
+     "commune": "Saint-André-lez-Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 47,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23137;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 101,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23137;champ=capa_fin"
+      },
+      "part_bac_pro@2025": {
+       "valeur": 25,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=23137;champ=pct_bp"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:23133",
+    "psup:23130",
+    "psup:23137"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": true,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C11",
+   "question": "Ou se former au diplome d'Etat d'ergotherapeute en Normandie ?",
+   "domaine": "sante",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "filieres": [
+       "D.E Ergothérapeute"
+      ],
+      "regions": [
+       "Normandie"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "filieres": [
+       "D.E Ergothérapeute"
+      ],
+      "regions": [
+       "Normandie"
+      ]
+     },
+     "nb_resultats": 3,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "filière D.E Ergothérapeute ; région Normandie [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:26037",
+     "intitule": "D.E Ergothérapeute",
+     "etablissement": "ERFPS CHU Rouen",
+     "commune": "Rouen",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 11,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26037;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 18,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26037;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:26094",
+     "intitule": "D.E Ergothérapeute",
+     "etablissement": "Instituts de formation La Musse",
+     "commune": "Saint-Sébastien-de-Morsent",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 29,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26094;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 34,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26094;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:26258",
+     "intitule": "D.E Ergothérapeute",
+     "etablissement": "IFRES d'Alençon",
+     "commune": "Alençon",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 25,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26258;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 44,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26258;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:26037",
+    "psup:26094",
+    "psup:26258"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C12",
+   "question": "Manipulateur radio : quels DE et DTS imagerie a moins de 50 km de Lyon, avec leur taux d'acces ?",
+   "domaine": "sante",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "filieres": [
+       "D.E manipulateur/trice en électroradiologie médicale",
+       "DTS Imagerie médicale et radiologie thérapeutique"
+      ],
+      "pres_de": {
+       "code_insee": "69123",
+       "rayon_km": 50
+      },
+      "champs": [
+       "taux_acces"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "filieres": [
+       "D.E manipulateur/trice en électroradiologie médicale",
+       "DTS Imagerie médicale et radiologie thérapeutique"
+      ],
+      "pres_de": {
+       "code_insee": "69123",
+       "commune": "Lyon",
+       "rayon_km": 50.0,
+       "mesure": "à vol d'oiseau, jusqu'au centre de la commune"
+      }
+     },
+     "nb_resultats": 4,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "filière D.E manipulateur/trice en électroradiologie médicale ou DTS Imagerie médicale et radiologie thérapeutique ; à moins de 50 km de Lyon (69123), à vol d'oiseau [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup_app:46954",
+     "intitule": "D.E manipulateur/trice en électroradiologie médicale - en apprentissage",
+     "etablissement": "Ecole Rockefeller",
+     "commune": "Lyon",
+     "distance_km": 3.8,
+     "valeurs": {
+      "places@2025": {
+       "valeur": 45,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_apprentissage_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=46954;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:19420",
+     "intitule": "D.E manipulateur/trice en électroradiologie médicale",
+     "etablissement": "INSTITUT FORM CARRIERES SANTE HCL SECTEUR EST - MANIPULATEUR D'ELECTRORADIOLOGIE MEDICALE",
+     "commune": "Lyon",
+     "distance_km": 4.3,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 14,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19420;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 48,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19420;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:8225",
+     "intitule": "DTS Imagerie médicale et radiologie thérapeutique",
+     "etablissement": "Lycée La Martinière Duchère",
+     "commune": "Lyon",
+     "distance_km": 4.3,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 21,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=8225;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 25,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=8225;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:5292",
+     "intitule": "DTS Imagerie médicale et radiologie thérapeutique",
+     "etablissement": "Lycée Honore D'Urfe",
+     "commune": "Saint-Étienne",
+     "distance_km": 49.7,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 12,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=5292;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=5292;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:8225",
+    "psup:19420",
+    "psup_app:46954"
+   ],
+   "frontiere": [
+    "psup:5292"
+   ],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C13",
+   "question": "Quelles formations d'orthophoniste ont un taux d'acces inferieur a 8 % ?",
+   "domaine": "sante",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "filieres": [
+       "Certificat de capacité d'Orthophoniste"
+      ],
+      "taux_acces_max": 8
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "filieres": [
+       "Certificat de capacité d'Orthophoniste"
+      ],
+      "taux_acces_max": 8
+     },
+     "nb_resultats": 4,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "filière Certificat de capacité d'Orthophoniste ; taux_acces < 8 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:26393",
+     "intitule": "Certificat de capacité d'Orthophoniste",
+     "etablissement": "FACULTE DE SANTE UNIVERSITE TOULOUSE 3",
+     "commune": "Toulouse",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 6,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26393;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 45,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26393;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:26460",
+     "intitule": "Certificat de capacité d'Orthophoniste",
+     "etablissement": "Université de Bordeaux - Bordeaux Métropole - Site Carreire",
+     "commune": "Bordeaux",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 6,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26460;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 36,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26460;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:28046",
+     "intitule": "Certificat de capacité d'Orthophoniste",
+     "etablissement": "Unité de Formation et de Recherche des Sciences Médicales Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 7,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28046;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 25,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28046;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:28053",
+     "intitule": "Certificat de capacité d'Orthophoniste",
+     "etablissement": "Unité de formation et de recherche de médecine Université de Montpellier",
+     "commune": "Montpellier",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 4,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28053;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 38,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28053;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:28046",
+    "psup:26393",
+    "psup:26460",
+    "psup:28053"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C14",
+   "question": "Y a-t-il un PASS a Poitiers ?",
+   "domaine": "sante",
+   "mode": "vide",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "pass"
+      ],
+      "communes": [
+       "86194"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "pass"
+      ],
+      "communes": [
+       "86194"
+      ]
+     },
+     "nb_resultats": 0,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type pass ; commune 86194 [chercher_formations, session 2025]",
+   "rendues": [],
+   "attendues": [],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C15",
+   "question": "Le PASS de Lille : quelle part des etudiants passe en medecine, maieutique, odontologie, pharmacie ou kine ?",
+   "domaine": "sante",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "pass"
+      ],
+      "communes": [
+       "59350"
+      ],
+      "champs": [
+       "passage_mmopk_1_ou_2_ans_national"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "pass"
+      ],
+      "communes": [
+       "59350"
+      ]
+     },
+     "nb_resultats": 13,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type pass ; commune 59350 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:27163",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 17,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27163;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 360,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=27163;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29178",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 17,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29178;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 120,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29178;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29179",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 38,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29179;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 70,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29179;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29180",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 50,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29180;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 150,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29180;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29181",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 26,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29181;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 125,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29181;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29183",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 48,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29183;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 105,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29183;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29184",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 54,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29184;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 105,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29184;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29185",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 43,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29185;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 105,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29185;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29186",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 54,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29186;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 105,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29186;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29697",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 10,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29697;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 120,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29697;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:29705",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 22,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29705;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 105,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=29705;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:30027",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 29,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=30027;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 200,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=30027;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    },
+    {
+     "id": "psup:36433",
+     "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 6,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=36433;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 60,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=36433;champ=capa_fin"
+      },
+      "passage_mmopk_1_ou_2_ans_national": {
+       "valeur": 47.5,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "nationale",
+       "source_id": "sies_nf_2025_31",
+       "millesime": "session 2024 (néo-bacheliers inscrits en 2022)",
+       "identifiant": "voie=PASS;cohorte=néo-bacheliers inscrits en 2022"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:27163",
+    "psup:29180",
+    "psup:29705",
+    "psup:29183",
+    "psup:29184",
+    "psup:29185",
+    "psup:29181",
+    "psup:29186",
+    "psup:29697",
+    "psup:30027",
+    "psup:29178",
+    "psup:29179",
+    "psup:36433"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 13,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C16",
+   "question": "Quelles licences de mathematiques a moins de 30 km de Rennes ?",
+   "domaine": "maths",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "licence"
+      ],
+      "filieres": [
+       "Mathématiques"
+      ],
+      "pres_de": {
+       "code_insee": "35238",
+       "rayon_km": 30
+      }
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "las",
+       "licence"
+      ],
+      "filieres": [
+       "Mathématiques"
+      ],
+      "pres_de": {
+       "code_insee": "35238",
+       "commune": "Rennes",
+       "rayon_km": 30.0,
+       "mesure": "à vol d'oiseau, jusqu'au centre de la commune"
+      }
+     },
+     "nb_resultats": 3,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type las ou licence ; filière Mathématiques ; à moins de 30 km de Rennes (35238), à vol d'oiseau [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:19164",
+     "intitule": "Licence - Mathématiques - Parcours DEFI Mathématiques",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": 3.5,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 62,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19164;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 48,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19164;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:28719",
+     "intitule": "Licence - Portail Portail Mathématiques et applications",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": 3.5,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 95,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28719;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=28719;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:19305",
+     "intitule": "Licence - Portail Portail Mathématiques et applications",
+     "etablissement": "Université de Rennes (EPE)",
+     "commune": "Rennes",
+     "distance_km": 3.5,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 98,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19305;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 175,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19305;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:19164",
+    "psup:28719",
+    "psup:19305"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C17",
+   "question": "Ou faire une licence MIASHS dans les Hauts-de-France ?",
+   "domaine": "maths",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "licence"
+      ],
+      "filieres": [
+       "Mathématiques et informatique appliquées aux sciences humaines et sociales"
+      ],
+      "regions": [
+       "Hauts-de-France"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "las",
+       "licence"
+      ],
+      "filieres": [
+       "Mathématiques et informatique appliquées aux sciences humaines et sociales"
+      ],
+      "regions": [
+       "Hauts-de-France"
+      ]
+     },
+     "nb_resultats": 3,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type las ou licence ; filière Mathématiques et informatique appliquées aux sciences humaines et sociales ; région Hauts-de-France [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:35489",
+     "intitule": "Licence - Portail Mathématiques et informatique appliquées aux sciences humaines et sociales - Mathématiques, économie, finances",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 78,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35489;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 35,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=35489;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:7044",
+     "intitule": "Licence - Portail Mathématiques et informatique appliquées aux sciences humaines et sociales - Mathématiques, économie, finances",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 82,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=7044;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 140,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=7044;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:7089",
+     "intitule": "Licence - Mathématiques et informatique appliquées aux sciences humaines et sociales - Parcours Sciences cognitives",
+     "etablissement": "Université de Lille",
+     "commune": "Lille",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 91,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=7089;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 65,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=7089;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:7044",
+    "psup:35489",
+    "psup:7089"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C18",
+   "question": "12 de moyenne : quelles prepas MPSI, MP2I ou PCSI a moins de 50 km de Valenciennes ont un taux d'acces d'au moins 50 % ?",
+   "domaine": "maths",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "cpge"
+      ],
+      "filieres": [
+       "MPSI",
+       "MP2I",
+       "PCSI"
+      ],
+      "taux_acces_min": 50,
+      "pres_de": {
+       "code_insee": "59606",
+       "rayon_km": 50
+      }
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "cpge"
+      ],
+      "filieres": [
+       "MPSI",
+       "MP2I",
+       "PCSI"
+      ],
+      "pres_de": {
+       "code_insee": "59606",
+       "commune": "Valenciennes",
+       "rayon_km": 50.0,
+       "mesure": "à vol d'oiseau, jusqu'au centre de la commune"
+      },
+      "taux_acces_min": 50
+     },
+     "nb_resultats": 6,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type cpge ; filière MPSI ou MP2I ou PCSI ; à moins de 50 km de Valenciennes (59606), à vol d'oiseau ; taux_acces >= 50 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:6842",
+     "intitule": "CPGE - PCSI",
+     "etablissement": "Lycée Henri Wallon",
+     "commune": "Valenciennes",
+     "distance_km": 0.5,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 57,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6842;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 96,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6842;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:6735",
+     "intitule": "CPGE - PCSI",
+     "etablissement": "Lycée Albert Chatelet",
+     "commune": "Douai",
+     "distance_km": 30.6,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 50,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6735;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 48,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6735;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:43006",
+     "intitule": "CPGE - PCSI",
+     "etablissement": "Lycée Saint Rémi",
+     "commune": "Roubaix",
+     "distance_km": 43.8,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 53,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=43006;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 24,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=43006;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:6900",
+     "intitule": "CPGE - MPSI",
+     "etablissement": "Lycée Saint Rémi",
+     "commune": "Roubaix",
+     "distance_km": 43.8,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 66,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6900;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 42,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6900;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:6988",
+     "intitule": "CPGE - MPSI",
+     "etablissement": "Lycée polyvalent privé La Salle",
+     "commune": "Lille",
+     "distance_km": 44.4,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 81,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6988;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 48,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=6988;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:39819",
+     "intitule": "CPGE - MP2I",
+     "etablissement": "Lycée Frédéric OZANAM",
+     "commune": "Lille",
+     "distance_km": 44.7,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 59,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=39819;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 32,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=39819;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:6842",
+    "psup:6900",
+    "psup:6735",
+    "psup:6988",
+    "psup:39819",
+    "psup:43006"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C19",
+   "question": "Je suis en STI2D : quelles prepas TSI en Occitanie ?",
+   "domaine": "maths",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "cpge"
+      ],
+      "filieres": [
+       "TSI"
+      ],
+      "regions": [
+       "Occitanie"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "cpge"
+      ],
+      "filieres": [
+       "TSI"
+      ],
+      "regions": [
+       "Occitanie"
+      ]
+     },
+     "nb_resultats": 6,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type cpge ; filière TSI ; région Occitanie [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:10257",
+     "intitule": "CPGE - TSI",
+     "etablissement": "Lycée Louis Rascol",
+     "commune": "Albi",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 54,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=10257;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 40,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=10257;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:14543",
+     "intitule": "CPGE - TSI - (en 3 ans, destinée aux bacs professionnels)",
+     "etablissement": "Lycée Emmanuel d'Alzon",
+     "commune": "Nîmes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 96,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=14543;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=14543;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:18673",
+     "intitule": "CPGE - TSI",
+     "etablissement": "Lycée Emmanuel d'Alzon",
+     "commune": "Nîmes",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 89,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=18673;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 48,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=18673;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:20093",
+     "intitule": "CPGE - TSI",
+     "etablissement": "Lycée Irene et Frederic Joliot Curie",
+     "commune": "Sète",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 74,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=20093;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 30,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=20093;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:3921",
+     "intitule": "CPGE - TSI",
+     "etablissement": "Lycée Jean-Baptiste Dumas",
+     "commune": "Alès",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 69,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=3921;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 35,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=3921;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:4217",
+     "intitule": "CPGE - TSI",
+     "etablissement": "Lycée Pierre-Paul Riquet",
+     "commune": "Saint-Orens-de-Gameville",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 79,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4217;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 35,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=4217;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:3921",
+    "psup:10257",
+    "psup:20093",
+    "psup:4217",
+    "psup:14543",
+    "psup:18673"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  },
+  {
+   "id": "C20",
+   "question": "A La Reunion, quelles prepas scientifiques (MPSI, MP2I, PCSI) et licences de maths ?",
+   "domaine": "maths",
+   "mode": "exact",
+   "ordre": false,
+   "filtres": [
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "cpge"
+      ],
+      "filieres": [
+       "MPSI",
+       "MP2I",
+       "PCSI"
+      ],
+      "departements": [
+       "974"
+      ]
+     }
+    },
+    {
+     "outil": "chercher_formations",
+     "arguments": {
+      "types": [
+       "licence"
+      ],
+      "filieres": [
+       "Mathématiques"
+      ],
+      "departements": [
+       "974"
+      ]
+     }
+    }
+   ],
+   "filtres_appliques": [
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "cpge"
+      ],
+      "filieres": [
+       "MPSI",
+       "MP2I",
+       "PCSI"
+      ],
+      "departements": [
+       "974"
+      ]
+     },
+     "nb_resultats": 5,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    },
+    {
+     "outil": "chercher_formations",
+     "filtres_appliques": {
+      "session": "2025",
+      "types": [
+       "las",
+       "licence"
+      ],
+      "filieres": [
+       "Mathématiques"
+      ],
+      "departements": [
+       "974"
+      ]
+     },
+     "nb_resultats": 2,
+     "tronque": false,
+     "ecartees_non_disponible": 0
+    }
+   ],
+   "filtres_en_clair": "type cpge ; filière MPSI ou MP2I ou PCSI ; département 974 [chercher_formations, session 2025] PUIS type las ou licence ; filière Mathématiques ; département 974 [chercher_formations, session 2025]",
+   "rendues": [
+    {
+     "id": "psup:11879",
+     "intitule": "CPGE - MPSI",
+     "etablissement": "Lycée Leconte de Lisle",
+     "commune": "Saint-Denis",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 52,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11879;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 48,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11879;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:11880",
+     "intitule": "CPGE - PCSI",
+     "etablissement": "Lycée Leconte de Lisle",
+     "commune": "Saint-Denis",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 81,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11880;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 36,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=11880;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:13218",
+     "intitule": "CPGE - MPSI",
+     "etablissement": "Lycée Catholique St Charles",
+     "commune": "Saint-Pierre",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 74,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=13218;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 42,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=13218;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:19594",
+     "intitule": "CPGE - PCSI",
+     "etablissement": "Lycée Roland Garros",
+     "commune": "Le Tampon",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 79,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19594;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 35,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=19594;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:36001",
+     "intitule": "CPGE - MP2I",
+     "etablissement": "Lycée Leconte de Lisle",
+     "commune": "Saint-Denis",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 70,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=36001;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 24,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=36001;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:26387",
+     "intitule": "Licence - Portail Mathématiques",
+     "etablissement": "Université de La Réunion - Saint Denis",
+     "commune": "Saint-Denis",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 100,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26387;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 106,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=26387;champ=capa_fin"
+      }
+     }
+    },
+    {
+     "id": "psup:30772",
+     "intitule": "Licence - Portail Mathématiques",
+     "etablissement": "Université de La Réunion - Saint Denis",
+     "commune": "Saint-Denis",
+     "distance_km": null,
+     "valeurs": {
+      "taux_acces@2025": {
+       "valeur": 100,
+       "unite": "%",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=30772;champ=taux_acces_ens"
+      },
+      "places@2025": {
+       "valeur": 20,
+       "unite": "places",
+       "statut": "disponible",
+       "raison": null,
+       "portee": "formation",
+       "source_id": "parcoursup_2025",
+       "millesime": "session 2025",
+       "identifiant": "cod_aff_form=30772;champ=capa_fin"
+      }
+     }
+    }
+   ],
+   "attendues": [
+    "psup:30772",
+    "psup:26387",
+    "psup:36001",
+    "psup:13218",
+    "psup:19594",
+    "psup:11879",
+    "psup:11880"
+   ],
+   "frontiere": [],
+   "verdict": {
+    "juste": true,
+    "manquantes": [],
+    "en_trop": [],
+    "ordre_ok": null,
+    "valeurs_verifiees": 0,
+    "valeurs_ecarts": []
+   }
+  }
+ ]
+}

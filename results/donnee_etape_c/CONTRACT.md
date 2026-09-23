@@ -1,5 +1,14 @@
 # Contrat de l'étape C : la base structurée
 
+**Version 1.3.1** (23/09, construction) : forme livrée de l'export (section 9), convenue avec Jarvis.
+
+**Version 1** (23/09, ordre 2026-09-23-1424) : Matteo a tranché les six questions, « go reco pour
+tout » (Telegram 10619). Q1 : MonMaster 2025 re-téléchargé et verrouillé, les 480 masters entrent.
+Q2 : maths tel quel, BCPST, TB et les 2 cycles Agro-Véto compris. Q3 : les 167 paramédicales
+entrent. Q4 : débouchés hors base. Q5 : vol d'oiseau, dit dans la réponse. Q6 = B : chiffres lus
+dans le corpus, bruts pour les coordonnées et pour l'audit. ADR-066. La section 12 est gardée comme
+trace des questions posées.
+
 **Version 0.1** (23/09, après relecture de Jarvis) :
 - bornes des filtres écrites, inclusif ou strict (section 8) ;
 - liste exacte des voies de CPGE qui entrent par la règle M01, avec un défaut de la table A trouvé
@@ -517,33 +526,47 @@ les formations écartées faute de valeur (`ecartees_non_disponible`).
 
 - **Fichier** : `data/processed/base_etape_c.explorateur.json` (hors git, régénéré par la même
   commande que la base), avec son sha256 dans le manifeste.
-- **Format** : un seul JSON, en colonnes compactes pour rester lisible sur iPhone :
+- **Format livré (v1.3.1, convenu avec Jarvis le 23/09 : v1.1 millésime, v1.2 communes, v1.3
+  dictionnaires, v1.3.1 identifiant vide)** : un seul JSON.
 
 ```jsonc
 {
-  "meta": {"genere_le": "...", "corpus_sha256": "2e6a93a5cda6", "base_empreinte": "...",
-           "commande": "python -m src.collect.base_etape_c", "perimetre": "..."},
-  "champs": {"taux_acces": {"libelle": "Taux d'accès", "unite": "%", "definition": "...",
-             "ne_dit_pas": "...", "portee_par_defaut": "formation"}, ...},   // table champ, la base en clair
-  "sources": {"parcoursup_2025": {"libelle": "...", "url": "...", "licence": "...", "collecte": "2026-09-23"}, ...},
+  "meta": {"genere_le": "...", "corpus_sha256": "2e6a93a5cda6", "base_empreinte": "...", "commande": "...",
+           "perimetre": "...", "n_formations": 3945, "n_valeurs": 172981, "n_communes": 34969,
+           "format": "contrat v1.3.1 section 9"},              // n_* : témoin de complétude pour l'écran
+  "dico": {"sources": ["parcoursup_2025", ...], "millesimes": ["session 2025", ...],
+           "raisons": ["formation absente du jeu Parcoursup 2023", ...], "portees": ["formation", ...]},
+  "champs": {"taux_acces": {"libelle", "definition", "ne_dit_pas", "unite", "portee", "parent", "type_valeur",
+             "nom_officiel": "psup=taux_acces_ens", "sessions": "psup=2023,2024,2025", "espaces": "psup", "types": ""}, ...},
+  "sources": {"parcoursup_2025": {"libelle", "url", "licence", "collecte"}, ...},
   "formations": [
-    {"id": "psup:7596", "intitule": "...", "etablissement": "...", "type": "but", "filiere": "Informatique",
-     "apprentissage": 0, "statut": "Public", "domaine": "informatique", "commune": "Aubière",
-     "code_insee": "63014", "departement": "63", "region": "...", "lat": 45.76, "lon": 3.11,
-     "precision_geo": "formation", "lien": "https://dossierappel.parcoursup.fr/...",
-     "v": {"taux_acces@2025": [34, "parcoursup_2025", "cod_aff_form=7596"],
-           "cout.droits_inscription": [178, "tableau_droits_2026_2027", "..."],
-           "insertion.taux_emploi_12m": [null, null, null, "raison en clair"]}}   // [valeur, source, identifiant, raison?, portee?]
+    {"id": "psup:7596", "espace": "psup", "intitule", "etablissement", "uai", "statut", "statut_detaille", "type",
+     "type_libelle", "filiere", "specialite", "apprentissage", "selectivite", "domaine", "domaine_regle",
+     "region_academique", "lien_officiel", "derniere_session",
+     "lieux": [{"libelle", "commune", "code_insee", "code_departement", "region", "lat", "lon", "precision_geo"}],
+     "v": {"taux_acces@2025": [34, 0, 0, null, null, 0], ...},
+     "insertion": [...], "alternance_liens": [...]}             // présents seulement quand non vides
   ],
   "concepts": [...],
-  "gate": {...}                                                                // section 10
+  "communes": {"cols": ["code_insee", "nom", "departement", "lat", "lon"], "rows": [...]}
 }
 ```
 
-- **Taille** : de l'ordre de 9 Mo, 0,45 Mo compressé (prototype de taille sur les 3 470 fiches et
-  194 213 valeurs, provenance non encore incluse). Le format compact ci-dessus remplace le nom de
-  source répété par une clé courte. La cible est **moins de 12 Mo** non compressé : **supposé**, à
-  mesurer en phase 2. L'explorateur charge déjà 21,3 Mo aujourd'hui.
+  - `v[champ@session]` (ou `v[champ]` sans session : coût, santé, insertion, alternance) =
+    `[valeur, i_source, i_millesime, identifiant, i_raison, i_portee]`, 6 éléments toujours présents.
+    `i_*` = indice dans `dico`, ou null. Non disponible = valeur null et raison non nulle.
+  - `identifiant` : **null** = à reconstruire par la règle
+    `<cod_aff_form pour psup et psup_app | ifc pour mm>=<partie de l'id après « : »>;champ=<nom officiel pour l'espace>` ;
+    **""** = aucune ligne source ne porte ce chiffre ; sinon la chaîne telle quelle (coûts Onisep,
+    santé par université...).
+  - `lieux` : rang 1 = lieu Parcoursup (siège) ; un master peut en avoir plusieurs. L'écran affiche le
+    rang 1 et mesure la distance au lieu le plus proche, comme `pres_de`.
+  - Le rejeu du gate n'est pas dans ce fichier : il est dans `results/donnee_etape_c/gate/resultats.json`
+    (dans git), parce qu'il se joue après la construction.
+- **Taille mesurée** : 13,8 Mo (1,36 Mo compressé), sous la limite de 16 Mo par fichier d'un artifact.
+  La v1.2 faisait 26,1 Mo : les chaînes répétées (identifiants 5,8 Mo, sources 3,2 Mo, millésimes
+  2,8 Mo, portées 2,0 Mo) sont passées en dictionnaires. Marge : 2,2 Mo ; au-delà, découper en deux
+  fichiers.
 - **La source cliquable de chaque chiffre** vient de `sources[source].url`, plus le lien officiel de
   la formation. L'identifiant de la ligne source s'affiche à côté (`cod_aff_form=7596`), pour qu'un
   humain retrouve la ligne dans le fichier officiel.
@@ -661,7 +684,7 @@ vérification indépendante de Jarvis, avant/après dans l'explorateur.
 10. **Rien d'autre ne bouge** : la suite de tests reste verte, le corpus B-2 garde son sha, la prod
    n'est pas touchée.
 
-## 12. Questions ouvertes pour Matteo (courtes, avec une option recommandée)
+## 12. Questions posées à Matteo (tranchées le 23/09, v1 : option recommandée partout)
 
 **Q1. Les masters.** Le corpus a 405 des 480 masters d'info et de maths de 2025. Il en manque 75, et
 on n'a pas gardé le fichier d'origine.
@@ -712,3 +735,27 @@ néo-bacheliers », `pct_bt_denominateur`), C12 étendu à l'apprentissage, C03 
   texte reste celui de B-2.
 - Le branchement dans le produit servi : lot « cerveau », après mesure au banc.
 - Le déploiement : la prod reste au lot 1 de juillet.
+
+## 15. Écarts de la forme livrée (v1.3.1, construction du 23/09)
+
+- **Tables ajoutées** : `commune` (34 969 centres de geo.api.gouv.fr, pour `pres_de` et
+  `trouver_commune` sans appel réseau) et `meta` (entrées et comptes de construction). Colonnes
+  ajoutées : `lieu.libelle` (nom du site), `formation.region_academique` (masters).
+- **Contrainte ajoutée** : un identifiant sans source est refusé (`CHECK (source_id IS NOT NULL OR
+  identifiant_source IS NULL)`). Origine : la maquette de Jarvis a montré qu'une session absente
+  recevait un identifiant pointant vers une ligne inexistante ; corrigé à la source.
+- **Sabotages** : 8 au lieu de 7, `null_muet` ajouté (une valeur NULL sans raison, refusée par le
+  CHECK). `valeur` touche deux chiffres, voulus : psup:7596 (témoin de l'audit) et psup:11236 (gate C05).
+- **Géographie** :
+  - 4 lieux ont leur GPS officiel à plus de 40 km du centre de leur commune (liste dans l'audit,
+    non jugée). Hypothèse non établie : GPS = site d'enseignement, commune = siège. L'écran de
+    Jarvis le signale au conditionnel.
+  - 18 masters n'ont aucune coordonnée (`audit.json`, `info_lieux_sans_coordonnees`) : lieux
+    MonMaster qui ne sont pas des communes (« MARNE-LA-VALLÉE », 3 ; « FUTUROSCOPE CHASSENEUIL », 8),
+    département incohérent (« SAINT QUENTIN (23) », 2), Nouméa hors geo.api (1), et « EVRY (91) » (4) :
+    le COG 2025 ne porte ni commune ni commune déléguée « Évry » dans l'Essonne (fusion de 2019 dans
+    Évry-Courcouronnes). Le rattachement à Évry-Courcouronnes est probable mais serait une déduction :
+    non fait. Rien n'est deviné.
+- **Historique** : les 12 champs sans historique dans le corpus (dont admis, propositions, mentions
+  AB et TBF, part de néo-bacheliers, accès des terminales) n'ont que la session 2025, et le catalogue
+  le déclare (`sessions = psup=2025`) : conséquence de Q6 = B.

@@ -218,5 +218,25 @@
     "sha256": "a186f73e0d8bdf3b9ebf7c076512003c1d0914cd797b1c551266aee64db26b7c",
     "octets": 156803,
     "lignes": 698
+  },
+  "monmaster_2025": {
+    "chemin": "data/raw/monmaster_2025.json",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-mon_master/exports/json?where=session%3D%222025%22",
+    "producteur": "MESR (SIES), jeu fr-esr-mon_master, session 2025",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "1c82acd573e8c765988795bfb2e56182af5b713d3da1d9e35bd2b9c6a282da72",
+    "octets": 31451134,
+    "lignes": 8167
+  },
+  "geo_api_communes": {
+    "chemin": "data/raw/geo_api_communes.json",
+    "url": "https://geo.api.gouv.fr/communes?fields=code,nom,centre,codeDepartement,codeRegion&format=json",
+    "producteur": "DINUM (Etalab), API Découpage administratif geo.api.gouv.fr, communes et leur centre",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "f1721245c89e8a836b087a45e6bfb16eb222fae3d29ae8a2513657ecb560463c",
+    "octets": 4755082,
+    "lignes": 34969
   }
 }

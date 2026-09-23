@@ -1,0 +1,173 @@
+{
+ "verts": 18,
+ "juges": 18,
+ "controles": {
+  "base_contre_corpus": {
+   "vert": true,
+   "compares": 166261,
+   "ecarts": 0,
+   "exemples": [],
+   "manquantes_dans_la_base": 0,
+   "exemples_manquantes": [],
+   "valeurs_base_sans_correspondant_corpus": 0,
+   "exemples_sans_corpus": [],
+   "formations_absentes_du_corpus": 0
+  },
+  "valeurs_contre_bruts": {
+   "vert": true,
+   "compares": 137145,
+   "par_espace": {
+    "psup": 128229,
+    "psup_app": 3156,
+    "mm": 5760
+   },
+   "ecarts": 0,
+   "exemples": [],
+   "ecarts_de_presence": 0,
+   "exemples_presence": []
+  },
+  "sessions_absentes_contre_bruts": {
+   "vert": true,
+   "compares": 137145,
+   "ecarts": 0
+  },
+  "coordonnees_contre_brut": {
+   "vert": true,
+   "compares": 3453,
+   "ecarts": 0,
+   "exemples": []
+  },
+  "taux_entre_0_et_100": {
+   "vert": true,
+   "compares": 103479,
+   "hors_bornes": 0,
+   "exemples": []
+  },
+  "source_de_chaque_chiffre": {
+   "vert": true,
+   "compares": 162828,
+   "sans_source": 0
+  },
+  "url_de_chaque_source": {
+   "vert": true,
+   "compares": 23,
+   "sources_sans_url": [
+    "reforme_sante_2027"
+   ],
+   "note": "une source sans URL (fiche concept) est listée, pas jugée"
+  },
+  "portee_sante": {
+   "vert": true,
+   "compares": 14943,
+   "ecarts": 0,
+   "exemples": []
+  },
+  "aucun_taux_calcule_monmaster": {
+   "vert": true,
+   "compares": 85,
+   "champs": []
+  },
+  "aucun_lieu_a_zero": {
+   "vert": true,
+   "compares": 3996,
+   "lieux_a_zero": 0
+  },
+  "completude": {
+   "vert": true,
+   "compares": 155200,
+   "manquantes": 0,
+   "exemples_manquantes": [],
+   "en_trop": 0,
+   "exemples_en_trop": []
+  },
+  "details_sous_groupe_disponible": {
+   "vert": true,
+   "compares": 17781,
+   "orphelins": 0
+  },
+  "distance_identites": {
+   "vert": true,
+   "compares": 2,
+   "un_degre_km": 111.19492664455873,
+   "pole_equateur_km": 10007.543398010284
+  },
+  "insee_apprentissage": {
+   "vert": true,
+   "compares": 526,
+   "sans_code_insee": 0
+  },
+  "info_sites_loin_de_leur_commune": {
+   "vert": null,
+   "liste": [
+    {
+     "id": "psup:28062",
+     "commune_siege": "Rennes",
+     "km": 44.8
+    },
+    {
+     "id": "psup:35500",
+     "commune_siege": "Rennes",
+     "km": 94.7
+    },
+    {
+     "id": "psup:39284",
+     "commune_siege": "Paris",
+     "km": 216.4
+    },
+    {
+     "id": "psup:42672",
+     "commune_siege": "Paris",
+     "km": 8050.0
+    }
+   ],
+   "note": "supposé, non établi : la coordonnée officielle désignerait le site d'enseignement et la commune le siège administratif (ex. psup:35500, PASS de Rennes, GPS près de Vannes). Fiches officielles non relues."
+  },
+  "info_lieux_sans_coordonnees": {
+   "vert": null,
+   "formations_avec_un_lieu_non_resolu": 18,
+   "masters_sans_aucune_coordonnee": 18
+  },
+  "temoin_psup_7596": {
+   "vert": true,
+   "compares": 2,
+   "attendu": {
+    "id": "psup:7596",
+    "taux_acces@2025": 34,
+    "places@2025": 96
+   },
+   "lu": {
+    "taux_acces@2025": {
+     "valeur": 34,
+     "source": "parcoursup_2025",
+     "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/exports/csv?delimiter=%3B"
+    },
+    "places@2025": {
+     "valeur": 96,
+     "source": "parcoursup_2025",
+     "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/exports/csv?delimiter=%3B"
+    }
+   }
+  },
+  "couverture_gate": {
+   "vert": true,
+   "compares": 106,
+   "absents": []
+  },
+  "export_aller_retour": {
+   "vert": true,
+   "compares": 172981,
+   "valeurs_base": 172981,
+   "ecarts": 0,
+   "exemples": [],
+   "meta_complete": true,
+   "octets": 13786516
+  },
+  "determinisme": {
+   "vert": true,
+   "compares": 1,
+   "empreinte_1": "39f774bd5cbbdd2c2bf3ab0746f7dd4946710e3f0c8865b501a3a7c63a704733",
+   "empreinte_2": "39f774bd5cbbdd2c2bf3ab0746f7dd4946710e3f0c8865b501a3a7c63a704733",
+   "fichier_identique_octet_pour_octet": true
+  }
+ }
+}

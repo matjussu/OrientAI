@@ -4169,3 +4169,29 @@ Deux documents du panel (Nantes, Lyon 1) n'ont pas de couche texte : leurs extra
 l'image, l'audit les rend NON MESURÉ. Aix-Marseille (rentrée 2024) et Toulouse (2025/2026) ne
 publient pas plus récent ; Paris-Saclay ne publie rien de chiffré. À relire quand les universités
 publieront la rentrée suivante, et la fiche réforme à mettre à jour dès qu'un texte paraît.
+
+## ADR-066 : Donnée verticale, étape C : une base SQLite dérivée, une ligne par chiffre, interrogée par des fonctions à filtres fermés (ordres 2026-09-23-1358 et 2026-09-23-1424, 23/09/2026)
+
+### Contexte
+
+Les chiffres du corpus B-2 ne sont lisibles qu'en texte. Pour répondre à « BUT informatique à moins de
+50 km de Rennes avec plus de 50 % d'accès », le modèle doit pouvoir filtrer, et chaque chiffre rendu
+doit rester sourcé. Contrat : `results/donnee_etape_c/CONTRACT.md` (v1). Décisions de Matteo sur les
+six questions : « go reco pour tout » (Telegram 10619, 23/09).
+
+### Décision
+
+- SQLite (module standard ; 0,46 ms par requête contre 5,0 ms pour DuckDB, mesure du contrat §3),
+  dérivée du corpus B-2 par `python -m src.collect.base_etape_c`, étape 5 de `pipeline_donnee`.
+- Une table `valeur` : une ligne par chiffre, avec source, millésime, identifiant de la ligne
+  source, portée, statut ; « non disponible » porte sa raison (contraintes CHECK).
+- Périmètre : la table de domaines de l'étape A (informatique, cyber, data/IA, santé, et maths par
+  les règles M01-M03), plus les 480 masters info et maths du jeu MonMaster 2025 verrouillé.
+- Chiffres lus dans le corpus (Q6 = B) ; bruts pour les coordonnées et comme témoin de l'audit.
+- Le modèle interroge par des fonctions typées à filtres fermés, pas en SQL libre.
+
+### Conséquence à surveiller
+
+Deux chemins coexistent pour les masters (brut MonMaster) et pour le post-bac (corpus). Le jour où
+le corpus est régénéré, la base l'est aussi (même pipeline). Défauts amont laissés en dette : B-1
+(département d'apprentissage sur 3 chiffres), table A (5 fiches ENS arts et design en M01).
