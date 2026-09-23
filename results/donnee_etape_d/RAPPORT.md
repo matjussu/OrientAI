@@ -146,6 +146,17 @@ Le cerveau reposera entièrement sur l'appel d'outils ; c'est le résultat le pl
 - Juge sans le contenu des fiches, effort `low`, génération 1 seule ; notes non comparables au lot 0.
 - Attendus « effectif » : vœux, candidats et propositions forment une seule unité (v0.2), le témoin de
   hasard en mesure le coût.
+- **Biais de l'extracteur typé contre les tableaux** (trouvé par la vérification indépendante de Jarvis,
+  23/09) : le critère 1 exige l'unité juste après le nombre ; un chiffre écrit dans un tableau markdown
+  (`| Candidats | 3 779 |`, unité dans l'en-tête) n'est pas compté. Mesure (`biais_tableaux.json`, g1 et
+  g2) : C × GLM écrit des tableaux dans 47 réponses et perd 7,0 pts (0,729, 0,799 en comptant les lignes de
+  tableau) ; A × GLM et B × GLM n'en écrivent aucun (0 pt) ; les autres perdent 2,0 à 4,8 pts, R 2,0 pts
+  (0,810, 0,830). Le classement ne change pas : personne ne dépasse R, et l'écart de C × GLM à R passe de
+  8 à 3 pts. Compter les lignes de tableau accepte aussi des coïncidences (un « 33 » de colonne places
+  pour un attendu à 33 %) : ce n'est pas un instrument de remplacement, c'est la mesure du biais. La
+  règle reste appliquée avec l'instrument écrit au protocole. Le recomptage de Jarvis, avec un
+  extracteur sans unité, aboutit à la même conclusion (net du témoin : R 0,706, C × GLM 0,693, A × GLM
+  0,680).
 
 ## 8. Traces
 
