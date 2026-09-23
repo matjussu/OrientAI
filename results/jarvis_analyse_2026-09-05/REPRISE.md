@@ -306,6 +306,7 @@ l'explorateur, validation de Matteo avant merge.
 | Rattachement d'insertion trop large : une double licence ou un parcours porte l'insertion InserSup d'un diplome plus large (ex. psup:28456, double licence Lettres-Informatique, insertion de la licence LETTRES) | verification de Jarvis sur #184, 23/09 |
 | Base C : pas de niveau (bac+N), pas de capacites MMOPK « autres voies », pas de precision textuelle des capacites (Lyon Est / Sud), pas de part « mention non renseignee » ; insertion des masters non collectee | `results/donnee_etape_d/RAPPORT.md` section 7 et controle A dans B |
 | Medium 3.5 n'appelle pas l'outil avec un prompt charge (meme force) : bloquant pour le cerveau si Medium reste le modele | `results/donnee_etape_d/sonde_outil/RESUME.md` |
+| Extracteur du critere 1 (`src/eval/critere_d.py`) aveugle aux chiffres en tableau markdown (unite dans l'en-tete) : C x GLM -7 pts. A corriger avant le banc du cerveau, sans penaliser un modele qui repond en tableau ni compter les coincidences | `results/donnee_etape_d/biais_tableaux.json`, RAPPORT D section 7 |
 | GLM 5.2 via l'API Mistral : 78 erreurs 429 sur 158 tours (A et B) en generation 1, a regler avant une demo si GLM est retenu | `results/donnee_etape_d/RAPPORT.md` section 6 |
 
 Suite de tests : 3 485 reussis, 45 ignores, 0 echec (branche B-2, commit b9554e4, 23/09/2026, meme
