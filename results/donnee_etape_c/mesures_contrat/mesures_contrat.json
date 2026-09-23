@@ -78,6 +78,48 @@
    "I03": 15
   }
  },
+ "regles_maths_detail": {
+  "M01": {
+   "PCSI": 138,
+   "MPSI": 124,
+   "PTSI": 67,
+   "BCPST": 54,
+   "TSI": 48,
+   "TB": 8,
+   "Ecole normale supérieure Paris Saclay – arts et design": 5,
+   "TPC": 5
+  },
+  "M02": {
+   "Cycle Universitaire Préparatoire aux Grandes Ecoles": 3,
+   "Classe Préparatoire Universitaire - Physique - Chimie": 1,
+   "Cursus préparatoire aux concours des grandes écoles d'ingénieurs": 1,
+   "Cycle préparatoire Physique Chimie, parcours renforcé": 1,
+   "Cycle Universitaire de Préparation aux Grandes Ecoles Scientifiques": 1,
+   "Cycle universitaire préparatoire aux grandes écoles": 1,
+   "Cycle Universitaire Préparatoire aux Grandes Ecoles - Mathématiques et Physique": 1,
+   "Cycle universitaire préparatoire aux grandes écoles - Mécanique": 1,
+   "Cycle universitaire préparatoire aux grandes écoles - Physique": 1,
+   "Cycle Universitaire Préparatoire aux Grandes Ecoles - Physique et Mathématiques": 1,
+   "Mathématique - Préparation aux écoles d'ingénieurs": 1,
+   "Parcours mathématiques-physique": 1,
+   "Parcours scientifique renforcé": 1,
+   "Prep'ISIMA": 1,
+   "Sciences de la Vie et de la Terre : préparation aux concours B Agro et Véto (Sites Saint Charles)": 1,
+   "Sciences de la Vie/Sciences de l'environnement (SVSE) option Prépa concours Agro Véto (PCAV)": 1,
+   "Sciences pour l'ingénieur": 1
+  },
+  "M03": {
+   "Mathématiques": 90,
+   "Physique": 5,
+   "Economie": 3,
+   "Mathématiques, Physique et Sciences pour l'Ingénieur": 2,
+   "Physique, chimie": 2,
+   "Sciences biomédicales": 1,
+   "Economie, Mathématiques": 1,
+   "Mathématiques, Sciences de la vie": 1,
+   "Chimie": 1
+  }
+ },
  "exclus_sciences_fondamentales_hors_regle_maths": {
   "fiches": 630,
   "top_filieres": [

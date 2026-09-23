@@ -95,6 +95,8 @@ def main() -> None:
         "par_fili": dict(C.Counter(f["fili_code"] for f in peri).most_common()),
         "par_regle": dict(C.Counter(f.get("domaine_regle") for f in peri).most_common()),
     }
+    m["regles_maths_detail"] = {r: dict(C.Counter(f["filiere_detaillee"] for f in peri if f.get("domaine_regle") == r).most_common())
+                                for r in sorted(REGLES_MATHS)}
     anterieur = [f for f in corpus if f["source"] in ("parcoursup", "parcoursup_apprentissage")
                  and f.get("domaine") == "sciences_fondamentales" and f.get("domaine_regle") not in REGLES_MATHS]
     m["exclus_sciences_fondamentales_hors_regle_maths"] = {

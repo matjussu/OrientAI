@@ -1,5 +1,10 @@
 # Contrat de l'étape C : la base structurée
 
+**Version 0.1** (23/09, après relecture de Jarvis) :
+- bornes des filtres écrites, inclusif ou strict (section 8) ;
+- liste exacte des voies de CPGE qui entrent par la règle M01, avec un défaut de la table A trouvé
+  en la mesurant (section 2).
+
 Version 0, 23/09/2026, Claudette (ordre 2026-09-23-1358, phase 1 : le contrat seul, aucun code de
 construction). Ce document fixe l'architecture **avant** le code. La phase 2, un ordre séparé, le
 construit tel quel : toute question qu'elle rouvre passe par une nouvelle version de ce fichier,
@@ -110,6 +115,21 @@ mathématiques).
 | **Total post-bac** | **3 470** | santé 1 512, informatique 1 276, maths 574, cyber 64, data/IA 44 |
 | Masters (Q1) | 480 si le brut MonMaster est verrouillé, 405 si on garde le corpus | secteurs Informatique, Mathématiques, Mathématique et informatique, Mathématiques appliquées et sciences sociales |
 | Fiche concept | 1 | `concept:reforme_sante_2027` (table `concept`, section 4) |
+
+**Ce qui entre par les règles de maths** (mesure du 23/09 sur le corpus B-2) :
+- M01, 449 fiches :
+  - PCSI 138, MPSI 124, PTSI 67, TSI 48, TPC 5 ;
+  - BCPST 54 et TB 8 (voies à dominante biologie, Q2) ;
+  - **5 fiches « École normale supérieure Paris-Saclay, arts et design »**, classées là par erreur :
+    la règle M01 vise la filière « classe préparatoire scientifique », et Parcoursup y range aussi
+    cette préparation. C'est un défaut de la table A, à corriger dans la table (ajouter une
+    exclusion), pas dans C. Tant qu'il n'est pas corrigé, la phase 2 les exclut par une règle écrite
+    et comptée.
+- MP2I (41 fiches) n'est pas dans M01 : la voie entre par la règle informatique I10, et elle est donc
+  bien dans le périmètre.
+- M02, 19 fiches : CUPGE et cycles préparatoires universitaires scientifiques. Deux sont orientés
+  concours Agro-Véto (biologie).
+- M03, 106 fiches : licences de mathématiques.
 
 Par filière Parcoursup : BTS 985, LAS 513, CPGE 490, autres formations 394 (diplômes d'État de
 santé, titres professionnels, écoles), IFSI 344, PASS 287, licence 284, BUT 131, école
@@ -417,9 +437,11 @@ def chercher_formations(
     departements: list[str] | None = None,
     regions: list[str] | None = None,
     pres_de: PresDe | None = None,                      # {code_insee, rayon_km <= 300}
-    taux_acces_min: float | None = None, taux_acces_max: float | None = None,
-    places_min: int | None = None,
-    part_bac_techno_min: float | None = None, part_bac_pro_min: float | None = None,
+    taux_acces_min: float | None = None,                # >= (inclusif)
+    taux_acces_max: float | None = None,                # <  (strict)
+    places_min: int | None = None,                      # >=
+    part_bac_techno_min: float | None = None,           # >=, part parmi les admis néo-bacheliers
+    part_bac_pro_min: float | None = None,              # >=, idem
     session: Literal[2023, 2024, 2025] = 2025,
     champs: list[str] | None = None,                    # chiffres à rendre en plus du jeu par défaut
     tri: Tri | None = None,                             # {champ, sens}, champ dans une liste fermée
@@ -439,6 +461,19 @@ def lire_fiche(id: str) -> FicheComplete:
     """Tout ce que la base sait de la formation, chaque chiffre avec sa source, son millésime, sa
     portée ; lignes non disponibles incluses, avec leur raison."""
 ```
+
+**Bornes des filtres, fixées une fois pour toutes** :
+- `*_min` est **inclusif** (>=). « Au moins 50 % » s'écrit `taux_acces_min=50`, et une formation à
+  exactement 50 % passe (C18).
+- `*_max` est **strict** (<). « Inférieur à 8 % » s'écrit `taux_acces_max=8`, et une formation à
+  exactement 8 % ne passe pas (C13).
+- La règle vaut pour tous les seuils : taux d'accès, places, parts de bac, capacité des masters.
+- `pres_de` : distance <= rayon (inclusif), comparée en kilomètres non arrondis ; l'arrondi à 0,1 km
+  sert seulement à l'affichage.
+- Les chiffres sont comparés tels que publiés, sans arrondi : un taux de 7,9 passe `taux_acces_max=8`.
+
+La docstring de chaque paramètre répète sa borne, et un test par borne pose une formation
+exactement sur le seuil.
 
 Filtres **génériques uniquement** : aucune branche de code ne connaît une requête du gate (règle de
 Jarvis). Un filtre qui porte sur un champ dit toujours sa règle pour les `non_disponible` : une
@@ -461,7 +496,7 @@ les formations écartées faute de valeur (`ecartees_non_disponible`).
 | C10 | `chercher_formations(types=[ifsi], departements=[59], tri={part_bac_pro, desc}, limite=3)` |
 | C11 | `chercher_formations(filieres=[D.E Ergothérapeute], regions=[Normandie])` |
 | C12 | `chercher_formations(filieres=[D.E manipulateur/trice en électroradiologie médicale, DTS Imagerie médicale et radiologie thérapeutique], pres_de={69123, 50}, champs=[taux_acces])` : apprentissage inclus (gate v2 : psup_app:46954 ajouté aux attendus ; son taux d'accès est « ne s'applique pas ») |
-| C13 | `chercher_formations(filieres=[Certificat de capacité d'Orthophoniste], taux_acces_max=8 (strict))` |
+| C13 | `chercher_formations(filieres=[Certificat de capacité d'Orthophoniste], taux_acces_max=8)` (strict par convention) |
 | C14 | `chercher_formations(types=[pass], communes=[86194])` : attendu vide |
 | C15 | `chercher_formations(types=[pass], communes=[59350], champs=[passage_mmopk_1_ou_2_ans_national])` |
 | C16 | `chercher_formations(types=[licence], filieres=[Mathématiques], pres_de={35238, 30})` |
@@ -665,6 +700,7 @@ mesuré).
 | B-1 : les 526 fiches d'apprentissage ont un département sur trois chiffres ; 442 n'ont pas de code INSEE. La base contourne par normalisation ; la correction est à faire dans B-1 | `mesures_contrat.json`, `geographie.perimetre_sans_code_insee` et `apprentissage_sans_insee_forme_departement` |
 | MonMaster du corpus : 75 masters info/maths 2025 manquants, 542 masters de la session 2024, lien Onisep de recherche au lieu de la fiche, villes avec CEDEX (80 sur 456 masters info/maths du corpus) | `masters`, dont `corpus_info_maths_ville_avec_cedex` |
 | Le classement par mots-clés de l'explorateur manque 13 fiches attendues par le gate (zone de Jarvis, signalé) | `temoin_perimetre_explorateur` |
+| Table A, règle M01 : 5 fiches « ENS Paris-Saclay, arts et design » classées en prépa scientifique | section 2 ; `mesures_contrat.json`, `regles_maths_detail.M01` |
 
 Traité pendant le contrat, par Jarvis dans le gate v2 : le libellé de C02 et C10 (« parmi les admis
 néo-bacheliers », `pct_bt_denominateur`), C12 étendu à l'apprentissage, C03 passé sur `pct_bp`.
