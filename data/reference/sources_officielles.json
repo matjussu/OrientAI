@@ -58,5 +58,45 @@
     "sha256": "678217ac84a7bf393571ec1541af23d6794cd545ffc8f8def2fded30bac8aae7",
     "octets": 8029,
     "lignes": 95
+  },
+  "onisep_ideo_actions_es": {
+    "chemin": "data/raw/onisep/ideo_actions_es.csv",
+    "url": "https://api.opendata.onisep.fr/downloads/605344579a7d7/605344579a7d7.csv",
+    "producteur": "Onisep, Idéo-Actions de formation initiale, univers enseignement supérieur",
+    "licence": "ODbL",
+    "telecharge_le": "2026-09-23",
+    "sha256": "8be533eb71b00ee31e273af61145b83b7be38c84297bfb39269c2730fab0425f",
+    "octets": 27039419,
+    "lignes": 28588
+  },
+  "parcoursup_apprentissage_2025": {
+    "chemin": "data/raw/parcoursup_apprentissage_2025.csv",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup-apprentissage/exports/csv?delimiter=%3B&where=session%3D%222025%22",
+    "producteur": "MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "f628835107411e69e990a8615a908b29b724249a0b087e44b7163bdf48cc0e4f",
+    "octets": 7075498,
+    "lignes": 11536
+  },
+  "insersup": {
+    "chemin": "data/raw/insersup_diplomes_ensemble_2023_2024.csv",
+    "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-insersup/exports/csv?delimiter=%3B&where=genre%3D%22ensemble%22%20and%20nationalite%3D%22ensemble%22%20and%20regime_inscription%3D%22ensemble%22%20and%20obtention_diplome%3D%22dipl%C3%B4m%C3%A9%22%20and%20(promo%3D%222024%22%20or%20promo%3D%222023%22)",
+    "producteur": "MESR (SIES), jeu fr-esr-insersup (dispositif InserSup), diplômés, promos 2023 et 2024",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "4845bf46822621cfcec540c66a6dbabb96cb117510379f3a693ee2d5ddb9253e",
+    "octets": 13554033,
+    "lignes": 20166
+  },
+  "inserjeunes_bts": {
+    "chemin": "data/raw/inserjeunes_lycee_pro_bts.csv",
+    "url": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-inserjeunes-lycee_pro-formation-fine/exports/csv?delimiter=%3B&where=type_diplome%3D%22BTS%22",
+    "producteur": "DEPP-DARES, jeu fr-en-inserjeunes-lycee_pro-formation-fine, BTS",
+    "licence": "Licence Ouverte v2.0",
+    "telecharge_le": "2026-09-23",
+    "sha256": "54543bde79c287dc34e144f716146fb7f278f01c56ba34cccdb93a36bc9bf547",
+    "octets": 6631951,
+    "lignes": 35679
   }
 }

@@ -48,6 +48,27 @@ Set de pertinence (`scripts/relevance_set/`, `STATE.md` y dit tout) :
 Dette laissee au lot retrieval : le RRF de la prod reste casse (`_orig_index` absent cote dense,
 RAPPORT l.107). Le lot 0 ne l'a pas corrige, pour que `local` reste le code servi.
 
+## 0 ter. Donnee verticale, etape B-1 livree le 23/09/2026 (Claudette, ordre 2026-09-23-1044)
+
+Rapport, chiffres et traces : `results/donnee_etape_b/RAPPORT.md`. Forme des champs :
+`results/donnee_etape_b/CONTRACT.md` (v1.1). ADR-064. **En attente de la validation de Matteo dans
+l'explorateur ; B-2 (sante) ne commence qu'apres.**
+
+- Nouveau corpus a part : `data/processed/formations_etape_b1.json` (hors git), sha256 `9863d2b40d3f`,
+  53 807 fiches (+526 formations en apprentissage). Rejouer tout : `python -m src.collect.pipeline_donnee`
+  (bruts verrouilles, `--telecharger` pour les rapatrier).
+- Champs `cout`, `alternance`, `insertion`, enveloppe commune, toujours presents, « non disponible »
+  avec raison. Sur les 2 395 fiches Parcoursup des 3 domaines : cout disponible 2 099, alternance
+  existante 170, insertion propre a la formation 219 (l'ancienne insertion discipline x region, 482
+  fiches, n'est plus ecrite).
+- Controles 0 defaut, banc 336/341 inchange, audit independant 0 ecart sur 50 fiches + 107 ciblees,
+  sabotages tous rouges.
+- Points ouverts (RAPPORT, fin) : droits d'inscription des IFSI, insertion des LAS, ecoles
+  d'ingenieurs a plusieurs diplomes.
+- Dette (hors lot) : `tests/test_judge_faithfulness.py` appelle un vrai modele des qu'il n'est pas
+  lance comme la CI ; la suite complete se joue avec `OFFLINE_JUDGE_TESTS=1` et sans cles (3 419+
+  passes). Le rendre hors-ligne par defaut.
+
 ## 0 bis. Donnee verticale, etape A livree le 23/09/2026 (Claudette, ordre 2026-09-23-0958)
 
 Rapport complet, chiffres et traces : `results/donnee_etape_a/RAPPORT.md`. ADR-063.

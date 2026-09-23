@@ -1,0 +1,141 @@
+{
+  "chiffres_attendus": 341,
+  "fiches_introuvables": [],
+  "chiffres_mesures": 341,
+  "presents": 336,
+  "part_presents": 0.9853,
+  "temoin_hasard": 0.0645,
+  "par_domaine": {
+    "informatique": {
+      "presents": 145,
+      "total": 148
+    },
+    "maths": {
+      "presents": 72,
+      "total": 74
+    },
+    "sante": {
+      "presents": 119,
+      "total": 119
+    }
+  },
+  "par_champ": {
+    "taux_acces_parcoursup_2025": {
+      "presents": 130,
+      "total": 130
+    },
+    "nombre_places": {
+      "presents": 130,
+      "total": 130
+    },
+    "profil_admis.bac_type_pct.techno": {
+      "presents": 12,
+      "total": 12
+    },
+    "profil_admis.bac_type_pct.pro": {
+      "presents": 10,
+      "total": 10
+    },
+    "capacite": {
+      "presents": 4,
+      "total": 9
+    },
+    "n_candidats_pp": {
+      "presents": 9,
+      "total": 9
+    },
+    "admission.volumes.voeux_totaux": {
+      "presents": 7,
+      "total": 7
+    },
+    "insertion_pro.salaire_median_embauche": {
+      "presents": 6,
+      "total": 6
+    },
+    "profil_admis.neobacheliers_pct": {
+      "presents": 4,
+      "total": 4
+    },
+    "insertion_pro.taux_emploi_12m": {
+      "presents": 4,
+      "total": 4
+    },
+    "profil_admis.mentions_pct.tb": {
+      "presents": 3,
+      "total": 3
+    },
+    "admission.volumes.voeux_phase_principale": {
+      "presents": 3,
+      "total": 3
+    },
+    "propositions_totales": {
+      "presents": 3,
+      "total": 3
+    },
+    "taux.passage_l2_1an_pct": {
+      "presents": 2,
+      "total": 2
+    },
+    "taux.obtention_3ans_pct": {
+      "presents": 2,
+      "total": 2
+    },
+    "admission.historique.2023.taux_acces": {
+      "presents": 2,
+      "total": 2
+    },
+    "profil_admis.mentions_pct.sans": {
+      "presents": 2,
+      "total": 2
+    },
+    "admission.historique.2024.taux_acces": {
+      "presents": 1,
+      "total": 1
+    },
+    "admission.historique.2023.voeux_totaux": {
+      "presents": 1,
+      "total": 1
+    },
+    "admission.volumes.classes_phase_principale": {
+      "presents": 1,
+      "total": 1
+    }
+  },
+  "absents": [
+    {
+      "fiche": "mm:1603218DIU47",
+      "champ": "capacite",
+      "valeur": 125,
+      "unite": "places"
+    },
+    {
+      "fiche": "mm:1703280SZ5TP",
+      "champ": "capacite",
+      "valeur": 33,
+      "unite": "places"
+    },
+    {
+      "fiche": "mm:1702989AKG3I",
+      "champ": "capacite",
+      "valeur": 19,
+      "unite": "places"
+    },
+    {
+      "fiche": "mm:1603284ASFLI",
+      "champ": "capacite",
+      "valeur": 32,
+      "unite": "places"
+    },
+    {
+      "fiche": "mm:1503297UWETR",
+      "champ": "capacite",
+      "valeur": 54,
+      "unite": "places"
+    }
+  ],
+  "entrees": {
+    "banc": "/home/matteo_linux/projets/_orientai-ref/verticale-2026-09/battery_verticale.json",
+    "corpus": "data/processed/formations_etape_a.json",
+    "revision_texte": "code courant"
+  }
+}

@@ -61,12 +61,77 @@ def controler(fiche: dict, texte: str) -> list[str]:
     return defauts
 
 
+# ── étape B-1 : coût, alternance, insertion (contrat results/donnee_etape_b/CONTRACT.md) ─────
+CHAMPS_B = ("cout", "alternance", "insertion")
+# Champs attendus par source : une fiche d'apprentissage EST une formation en alternance, elle
+# ne porte pas le champ `alternance` (contrat, section 4).
+CHAMPS_B_PAR_SOURCE = {"parcoursup": CHAMPS_B, "parcoursup_apprentissage": ("cout", "insertion")}
+_LIGNE_COUT = re.compile(r"Coût[^|]*")
+# Au-delà, le texte doit résumer (`texte_parcoursup.MAX_ETABLISSEMENTS_LISTES`) ; la valeur est
+# recopiée ici pour que le contrôle ne dépende pas du code qu'il contrôle.
+MAX_ENTREES_ALTERNANCE = 5
+
+
+def controler_etape_b(fiche: dict, texte: str) -> list[str]:
+    """Défauts de l'étape B-1. Muet sur une fiche qui ne porte aucun champ B (corpus antérieur)."""
+    if not any(c in fiche for c in CHAMPS_B):
+        return []
+    defauts = []
+    attendus = CHAMPS_B_PAR_SOURCE.get(fiche.get("source") or "", CHAMPS_B)
+    for champ in attendus:
+        valeur = fiche.get(champ)
+        if not isinstance(valeur, dict) or valeur.get("statut") not in ("disponible", "non_disponible"):
+            defauts.append(f"{champ}_absent")
+        elif valeur["statut"] == "non_disponible" and not valeur.get("raison"):
+            defauts.append(f"{champ}_non_disponible_sans_raison")
+        elif valeur["statut"] == "disponible" and not (valeur.get("source") and valeur.get("millesime") and valeur.get("collecte")):
+            defauts.append(f"{champ}_sans_source_millesime_collecte")
+    cout = fiche.get("cout")
+    if isinstance(cout, dict):
+        ligne = (_LIGNE_COUT.search(texte) or [""])[0]
+        if not ligne:
+            defauts.append("cout_non_ecrit")
+        elif cout.get("statut") == "disponible":
+            v = cout["valeur"]
+            montants = [v.get("droits_inscription_eur"), v.get("scolarite_total_eur"), v.get("scolarite_annuel_eur"),
+                        *(v.get("fourchette_eur") or [])]
+            for m in montants:
+                if m and f"{m} euros" not in ligne:
+                    defauts.append("cout_montant_non_ecrit")
+                    break
+            if not re.search(r"Onisep, tarif \d{4}|tableau ministériel|Service-Public|Code du travail, article L6211-1", ligne):
+                defauts.append("cout_sans_source")
+        elif "non disponible" not in ligne:
+            defauts.append("cout_non_disponible_non_dit")
+    ligne_alt = next((m for m in texte.split(" | ") if m.startswith("Alternance")), "")
+    if ligne_alt and " : " in ligne_alt:
+        # Entrées listées : établissements séparés par « ; », variantes d'un établissement par « / ».
+        corps = ligne_alt.split(" : ", 1)[1]
+        # La phrase d'introduction est retirée : collée à la première entrée, elle cacherait un
+        # doublon qui la concerne (trouvé par test_controle_alternance_rougit, 23/09/2026).
+        corps = re.sub(r"^ce diplôme existe aussi en apprentissage, même établissement ou même commune : ", "", corps)
+        etablissements = [e.strip() for e in re.split(r" ; (?:dans le même établissement : )?", corps)]
+        if len([e for e in etablissements if "places" in e or "capacité" in e]) > MAX_ENTREES_ALTERNANCE:
+            defauts.append("alternance_liste_trop_longue")
+        variantes = [v.strip() for e in etablissements for v in re.split(r" / |\(\d+ formations[^:]*: ", e)]
+        if len(etablissements) != len(set(etablissements)) or len(variantes) != len(set(variantes)):
+            defauts.append("alternance_doublon")
+    if "insertion" in fiche and ("médiane régionale" in texte or "Insertion pro (source" in texte):
+        defauts.append("insertion_approchee_ecrite")
+    if "emploi stable" in texte:
+        defauts.append("emploi_stable_sans_definition")
+    if "non disponible ()" in texte or "non disponible (None)" in texte:
+        defauts.append("non_disponible_sans_raison_dans_le_texte")
+    return defauts
+
+
 def bilan(corpus: list[dict], fiche_to_text: Callable[[dict], str]) -> dict:
-    fiches = [f for f in corpus if f.get("source") == "parcoursup"]
+    fiches = [f for f in corpus if f.get("source") in CHAMPS_B_PAR_SOURCE]
     compte: Counter = Counter()
     for f in fiches:
-        compte.update(controler(f, fiche_to_text(f)))
-    return {"fiches_parcoursup": len(fiches), "defauts": dict(compte.most_common())}
+        texte = fiche_to_text(f)
+        compte.update(controler(f, texte) + controler_etape_b(f, texte))
+    return {"fiches": dict(Counter(f["source"] for f in fiches)), "defauts": dict(compte.most_common())}
 
 
 def main(argv: list[str] | None = None) -> int:

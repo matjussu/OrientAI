@@ -1,0 +1,844 @@
+{
+  "genere_le": "2026-09-23T12:00:50+02:00",
+  "corpus": "data/processed/formations_etape_b1.json",
+  "n": 45,
+  "graine": 20260923,
+  "sabotage": null,
+  "parmi": "cout_onisep",
+  "temoins": {
+    "onisep": "https://api.opendata.onisep.fr/downloads/605344579a7d7/605344579a7d7.json",
+    "tableau": "https://www.univ-reims.fr/media-files/65970/i02-droits-inscription-2025-2026.pdf",
+    "apprentissage_insersup": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets",
+    "inserjeunes": "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets"
+  },
+  "droits_lus_dans_le_tableau": {
+    "cpge": 178,
+    "licence": 178,
+    "but_dans_le_groupe": 1
+  },
+  "par_statut": {
+    "cout": {
+      "disponible": 45
+    },
+    "alternance": {
+      "disponible": 45
+    },
+    "insertion": {
+      "disponible": 8,
+      "non_disponible": 37
+    }
+  },
+  "fiches_en_ecart": 0,
+  "resultats": [
+    {
+      "cod_aff_form": "11286",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée ORT DANIEL MAYER",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "25049",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "EFREI Paris",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10679",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Beaupeyrat",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "21211",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Saint Luc Cambrai",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "48170",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Licence - Mathématiques - Parcours Intelligence Artificielle et Sciences des Données",
+      "etablissement": "ICES - Institut Catholique de Vendée",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "2850",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Sainte Ursule",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "35154",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Formation Bac + 3",
+      "etablissement": "ESAIP Angers",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "18885",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux",
+      "etablissement": "Lycée Saint-Louis",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10139",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Institut Catholique Supérieur Saint André",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10231",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Saint Remi",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "9508",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "Lycée Le Rebours",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "4106",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+      "etablissement": "Institut Limayrac",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "29940",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "INSTA",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "13531",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "BTS - Services - Services informatiques aux organisations",
+      "etablissement": "LYCEE TECHNOLOGIQUE PRIVE ROBERT SCHUMAN",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "48341",
+      "source": "parcoursup",
+      "domaine": "informatique",
+      "nom": "Formation Bac + 3",
+      "etablissement": "EPITA Paris",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23281",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI Campus Picpus (AP-HP)",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23161",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI de Vienne",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23277",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI Grand Hôpital Est Francilien-Site de Formation Coulommiers",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5400",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Lycée Saint-Gabriel",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23105",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI Croix Rouge Française Moulins",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23127",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI Thonon Les Bains",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23081",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "Institut de Formation en Soins Infirmiers - ABBEVILLE",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "26462",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "Certificat de capacité d'Orthophoniste",
+      "etablissement": "UNITE DE FORMATION ET DE RECHERCHE SANTE",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23938",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Opticien-Lunetier",
+      "etablissement": "Pôle de formations Pasteur",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23068",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI CH La Palmosa de Menton",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23126",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI CH Annecy-Genevois",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5807",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "BTS - Services - Diététique et nutrition",
+      "etablissement": "Lycée polyvalent Notre-Dame",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "uai_specialite"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "13896",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "DTS Imagerie médicale et radiologie thérapeutique",
+      "etablissement": "Lycée NEOSUP Ecole Maso",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23039",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI du Gipes d'Avignon",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "23090",
+      "source": "parcoursup",
+      "domaine": "sante",
+      "nom": "D.E Infirmier",
+      "etablissement": "IFSI CH Paray Le Monial",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "8292",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "Lycée Aux Lazaristes",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "8296",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - BCPST",
+      "etablissement": "Lycée Assomption Bellevue",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "6900",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Saint Rémi",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10073",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "Lycée Sainte Geneviève",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "48172",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "Licence - Mathématiques - Parcours Préparatoire au Professorat",
+      "etablissement": "ICES - Institut Catholique de Vendée",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": "paysage_etablissement"
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "2340",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "Institut Supérieur Saint-Denis",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5911",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PTSI",
+      "etablissement": "LPO SAINT AUBIN LA SALLE",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10072",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Sainte Geneviève",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5493",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "LGT Saint-Stanislas",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "5492",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "LGT Saint-Stanislas",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "43006",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - PCSI",
+      "etablissement": "Lycée Saint Rémi",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "6896",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Notre-Dame De Grace",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "10491",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "LGT PRIVE SAINT-FRANCOIS D'ASSISE",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "7975",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée ORT STRASBOURG",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    },
+    {
+      "cod_aff_form": "30164",
+      "source": "parcoursup",
+      "domaine": "maths",
+      "nom": "CPGE - MPSI",
+      "etablissement": "Lycée Sainte-Marie",
+      "statuts": {
+        "cout": "disponible",
+        "alternance": "disponible",
+        "insertion": "non_disponible"
+      },
+      "rattachements": {
+        "cout": "onisep_uai_intitule",
+        "alternance": "meme_diplome_meme_uai_ou_meme_commune",
+        "insertion": null
+      },
+      "ecarts": {}
+    }
+  ]
+}
