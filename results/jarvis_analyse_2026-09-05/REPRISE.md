@@ -19,8 +19,11 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
   Parcoursup, suite d'etudes, insertion ARS regionale (`_orientai-ref/verticale-2026-09/CAHIER-DES-CHARGES-donnee.md` §4).
 - **Fait** : lot 0 (banc, section 0), etape A (texte des fiches, section 0 bis), B-1 (section 0 ter),
   B-2 (section 0 quater). Tout est merge sur main (a0ee8a6).
-- **Prochaine etape : C, base structuree**, puis D (grille formats x modeles jouee au banc). Detail en
-  section 4, dettes en section 5.
+- **Etape C en cours, contrat v0** (ordre 2026-09-23-1358, phase 1 : contrat seul, aucun code de
+  construction) : `results/donnee_etape_c/CONTRACT.md`, 6 questions ouvertes pour Matteo (section 12
+  du contrat), gate C de Jarvis v2 (20 requetes, sha `227a2c9bfaf6`). La construction (phase 2) est un
+  ordre separe, apres validation du contrat. Puis D (grille formats x modeles jouee au banc). Detail
+  en section 4, dettes en section 5.
 - **Validation** : Matteo valide chaque etape dans l'explorateur prive de Jarvis (avant/apres, sources
   cliquables, signalements) ; rien n'est merge sans son go.
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
@@ -220,7 +223,9 @@ cap produit.
 Les 3 decisions du 05/09 sont tranchees (ordre 2026-09-23-0817, voir « Etat au 23/09 »), le lot 0 et
 les etapes A, B-1, B-2 sont faites. Ordre de la suite (cahier des charges §5-6, cap de Matteo) :
 
-1. **Etape C, base structuree** : les chiffres du corpus (admission, cout, alternance, insertion,
+1. **Etape C, base structuree** (en cours : contrat v0 dans `results/donnee_etape_c/CONTRACT.md`,
+   SQLite derivee du corpus B-2, fonctions a filtres fermes pour le modele, export pour
+   l'explorateur) : les chiffres du corpus (admission, cout, alternance, insertion,
    sante) interrogeables par outils, avec leur source, au lieu du texte seul. Estimation du cahier des
    charges (non mesuree) : 2 a 3 jours.
 2. **Etape D, meilleur format pour le modele** : grille 3 formats x 2-3 modeles (Mistral ou
@@ -248,6 +253,7 @@ l'explorateur, validation de Matteo avant merge.
 | Pas de `.venv` dans `~/projets/OrientIA` : le recreer (`uv venv` + `requirements.lock`) | constat du 23/09 apres retrait du worktree B-2 |
 | Menage : `DEPLOY_LOT1_RUN_ME.sh` non suivi a jeter ; branche `jarvis/analyse-2026-09-05` a ne jamais merger, a supprimer | `git status`, `git branch -a` le 23/09 |
 | Texte MonMaster sans capacite d'accueil (5 chiffres du banc absents) ; 53 domaines hors verticale non revus | section 0 bis |
+| B-1 : 442 fiches d'apprentissage sur 526 sans code INSEE (departement ecrit sur 3 chiffres, « 044 ») ; MonMaster du corpus : 75 masters info/maths 2025 manquants sur 480 | `results/donnee_etape_c/mesures_contrat/mesures_contrat.json` (CONTRACT.md de C, section 13) |
 | Points ouverts de B-1 (droits IFSI, ecoles d'ingenieurs a plusieurs diplomes) et de B-2 (section 0 quater) | RAPPORT de chaque etape |
 
 Suite de tests : 3 485 reussis, 45 ignores, 0 echec (branche B-2, commit b9554e4, 23/09/2026, meme
