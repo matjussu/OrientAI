@@ -1,4 +1,4 @@
-# Etape D : protocole de la grille formats x modeles (v0.1, 23/09/2026)
+# Etape D : protocole de la grille formats x modeles (v0.2, 23/09/2026)
 
 v0.1 (23/09, avant tout appel payant) : amendements de Jarvis sur la v0 (5ab87d0) inscrits en section 8
 (contexte neutre du juge, juge sur la generation 1) ; titre du rapport en section 10 ; garde-fou forme
@@ -103,6 +103,10 @@ signale avant la grille au lieu de jouer 79 tours degeneres.
   places et comptes, 0,5 ; euros, 0,5).
 - L'extracteur de `numbers.py` ne lit que %, euros et places ; il est etendu (module separe, `numbers.py`
   intouche) a voeux, candidats et propositions, avec un test par unite et un test de falsification.
+- **v0.2 (23/09, avant tout calcul du critere 1)** : voeux, candidats et propositions forment **une seule
+  unite « effectif »**. Raison mesuree : le texte A lui-meme ecrit « 1017 candidats » pour le champ voeux
+  (psup:7596), une comparaison mot a mot rejetterait une citation juste. Le temoin de hasard dit ce que
+  ce regroupement coute. Code : `src/eval/critere_d.py`.
 - **Temoin de hasard** : les memes reponses confrontees aux chiffres attendus d'une AUTRE conversation
   (graine 7). Publie a cote de chaque taux ; on lit l'ecart au temoin.
 - Aussi, deterministes : taux de chiffres « adosses » aux fiches exposees (`NumberChecker.check`, avec son
