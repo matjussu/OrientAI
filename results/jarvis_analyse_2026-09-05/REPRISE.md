@@ -1,9 +1,32 @@
-# Point de reprise OrientAI, ecrit le 05/09/2026 (Jarvis)
+# Point de reprise OrientAI, ecrit le 05/09/2026 (Jarvis), mis a jour le 23/09/2026 (Claudette)
 
 A lire en premier par quiconque reprend le projet (Matteo, Ella, Claudette, Jarvis apres /clear).
 Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par quoi on commence.
 
-## 0. Lot 0 livre le 23/09/2026 (Claudette, ordre 2026-09-23-0817)
+## Etat au 23/09/2026 (lire d'abord)
+
+- **Cap** (Matteo, 23/09) : reussir une demo devant des investisseurs dans quelques mois (date non
+  fixee), avec des reponses nettement meilleures et un projet techniquement propre. On vend la
+  plateforme ; son argument : chaque chiffre est verifiable.
+- **Perimetre** : Informatique + Sante (PASS, LAS, IFSI, paramedical, acces medecine), avec les maths
+  en porte d'entree. Pas d'Info-com en informatique ; GEII en ingenierie industrielle ; ECG et ecoles
+  qui « exigent la spe maths » hors maths.
+- **Modele de generation** : Mistral ou open-weights de tout pays, **jamais un modele americain
+  proprietaire**. Le juge du banc est un outil interne (Opus autorise). Recherche structuree pour les
+  chiffres, recherche semantique pour les textes (decisions de l'ordre 2026-09-23-0817).
+- **Etape B reduite** (« ne pas etre trop gourmand », Matteo, 23/09, Telegram 10584) : cout,
+  alternance, insertion (B-1), puis sante (B-2). Mis de cote : Parcoursup 2026, specialites, fiches
+  Parcoursup, suite d'etudes, insertion ARS regionale (`_orientai-ref/verticale-2026-09/CAHIER-DES-CHARGES-donnee.md` §4).
+- **Fait** : lot 0 (banc, section 0), etape A (texte des fiches, section 0 bis), B-1 (section 0 ter),
+  B-2 (section 0 quater). Tout est merge sur main (a0ee8a6).
+- **Prochaine etape : C, base structuree**, puis D (grille formats x modeles jouee au banc). Detail en
+  section 4, dettes en section 5.
+- **Validation** : Matteo valide chaque etape dans l'explorateur prive de Jarvis (avant/apres, sources
+  cliquables, signalements) ; rien n'est merge sans son go.
+- **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
+  `2e4276e6155b`). Les corpus A, B-1 et B-2 sont a part, hors git (section 3).
+
+## 0. Lot 0 livre et merge le 23/09/2026 (Claudette, ordre 2026-09-23-0817, #177, 89e0f27)
 
 Le banc est versionne dans `src/eval/battery/` (README dans ce dossier). Une commande :
 `python -m src.eval.battery bench --tag <nom> --systems local,mistral_large_norag`. Chaque passage
@@ -48,28 +71,7 @@ Set de pertinence (`scripts/relevance_set/`, `STATE.md` y dit tout) :
 Dette laissee au lot retrieval : le RRF de la prod reste casse (`_orig_index` absent cote dense,
 RAPPORT l.107). Le lot 0 ne l'a pas corrige, pour que `local` reste le code servi.
 
-## 0 ter. Donnee verticale, etape B-1 livree le 23/09/2026 (Claudette, ordre 2026-09-23-1044)
-
-Rapport, chiffres et traces : `results/donnee_etape_b/RAPPORT.md`. Forme des champs :
-`results/donnee_etape_b/CONTRACT.md` (v1.1). ADR-064. **En attente de la validation de Matteo dans
-l'explorateur ; B-2 (sante) ne commence qu'apres.**
-
-- Nouveau corpus a part : `data/processed/formations_etape_b1.json` (hors git), sha256 `9863d2b40d3f`,
-  53 807 fiches (+526 formations en apprentissage). Rejouer tout : `python -m src.collect.pipeline_donnee`
-  (bruts verrouilles, `--telecharger` pour les rapatrier).
-- Champs `cout`, `alternance`, `insertion`, enveloppe commune, toujours presents, « non disponible »
-  avec raison. Sur les 2 395 fiches Parcoursup des 3 domaines : cout disponible 2 099, alternance
-  existante 170, insertion propre a la formation 219 (l'ancienne insertion discipline x region, 482
-  fiches, n'est plus ecrite).
-- Controles 0 defaut, banc 336/341 inchange, audit independant 0 ecart sur 50 fiches + 107 ciblees,
-  sabotages tous rouges.
-- Points ouverts (RAPPORT, fin) : droits d'inscription des IFSI, insertion des LAS, ecoles
-  d'ingenieurs a plusieurs diplomes.
-- Dette (hors lot) : `tests/test_judge_faithfulness.py` appelle un vrai modele des qu'il n'est pas
-  lance comme la CI ; la suite complete se joue avec `OFFLINE_JUDGE_TESTS=1` et sans cles (3 419+
-  passes). Le rendre hors-ligne par defaut.
-
-## 0 bis. Donnee verticale, etape A livree le 23/09/2026 (Claudette, ordre 2026-09-23-0958)
+## 0 bis. Donnee verticale, etape A livree et mergee le 23/09/2026 (Claudette, ordre 2026-09-23-0958, #178, 7aeed78)
 
 Rapport complet, chiffres et traces : `results/donnee_etape_a/RAPPORT.md`. ADR-063.
 
@@ -85,6 +87,61 @@ Rapport complet, chiffres et traces : `results/donnee_etape_a/RAPPORT.md`. ADR-0
   avec ce texte sans mesurer le recall.
 - Dette restante : texte MonMaster sans capacite d'accueil (5 chiffres du banc) ; 53 domaines hors
   verticale non revus ; developpe des voies de CPGE a verifier ; RRF prod toujours casse.
+
+## 0 ter. Donnee verticale, etape B-1 livree et mergee le 23/09/2026 (Claudette, ordre 2026-09-23-1044)
+
+Rapport, chiffres et traces : `results/donnee_etape_b/RAPPORT.md`. Forme des champs :
+`results/donnee_etape_b/CONTRACT.md` (v1.2 pour B-1). ADR-064. **Validee par Matteo dans
+l'explorateur et mergee** (#179, 7629780).
+
+- Corpus a part : `data/processed/formations_etape_b1.json` (hors git), sha256 `9863d2b40d3f`,
+  53 807 fiches (+526 formations en apprentissage). C'est la reference avant/apres de B-2.
+- Champs `cout`, `alternance`, `insertion`, enveloppe commune, toujours presents, « non disponible »
+  avec raison. Sur les 2 395 fiches Parcoursup des 3 domaines : cout disponible 2 099, alternance
+  existante 170, insertion propre a la formation 219 (l'ancienne insertion discipline x region, 482
+  fiches, n'est plus ecrite).
+- **Cout de l'apprentissage** (v1.2, ajout valide par Matteo) : gratuit pour l'apprenti sur les 526
+  fiches d'apprentissage, source Code du travail article L6211-1 (« La formation est gratuite pour
+  l'apprenti et pour son representant legal. »). Second temoin en ligne (code.travail.gouv.fr) ajoute
+  en B-2. IFSI : droits en reserve, deux sources officielles se contredisent.
+- Alternance : listes regroupees par etablissement, resumees au-dela de 5, CFA partenaires nommes.
+  Insertion des LAS : « non disponible » (valide par Matteo : pour un candidat PASS/LAS, le chiffre
+  qui compte est le passage en MMOPK, traite en B-2).
+- Controles 0 defaut, banc 336/341 inchange, audit independant 0 ecart sur 50 fiches + 107 ciblees,
+  sabotages tous rouges ; verification de Jarvis 127/127 contre les sources publiques.
+
+## 0 quater. Donnee verticale, etape B-2 (sante) livree et mergee le 23/09/2026 (Claudette, ordre 2026-09-23-1252)
+
+Rapport, chiffres et traces : `results/donnee_etape_b2/RAPPORT.md`. Forme des champs :
+`results/donnee_etape_b/CONTRACT.md` v1.3.1 (sections 10 et 10 bis). ADR-065. Validee par Matteo
+(Telegram 10605) et mergee (#180, a0ee8a6).
+
+- Corpus a part : `data/processed/formations_etape_b2.json` (hors git), sha256 `2e6a93a5cda6`,
+  53 808 fiches (B-1 + la fiche concept `reforme_sante_2027`). B-1 n'est pas reecrit.
+- Les 800 fiches PASS (287) et LAS (513) portent `sante`, quatre sous-champs, chacun avec sa portee
+  (`nationale` | `universite`) :
+  - passage national (SIES, Note Flash n°31, novembre 2025, session 2024) : 800/800. PASS 47,5 %,
+    LAS 25,7 % d'admis en MMOPK en 1 ou 2 ans, par filiere, en 1 an, en 2 ans ;
+  - places MMOPK publiees par l'universite : 216 fiches, 9 universites sur 10 du panel (les 10 qui
+    recoivent le plus de voeux PASS + LAS, 59,4 % des voeux) ;
+  - taux de passage publie par l'universite : **0**, aucune du panel n'en publie (2 chiffres ecartes :
+    Montpellier minimum theorique 2021, Paris Cite repartition des admis) ;
+  - reforme 2027 : fiche concept, annonce du 17/04/2026, **aucun decret ni arrete au Journal officiel
+    au 23/09/2026** (recherche Legifrance avec temoin positif).
+- Texte lu par le modele : chiffre national d'abord, portee dite dans chaque proposition qui porte un
+  taux ; un controle rougit sinon.
+- Verification : 49 tests B-2, 8 controles sante qui rougissent sur levier, audit vert sur 171 valeurs
+  de capacites et 8 lignes SIES (5 sabotages rouges), banc 336/341 inchange ; Jarvis : 89 valeurs
+  relues a la main, 0 ecart.
+- **Points ouverts** (RAPPORT, fin) :
+  - Aix-Marseille : rentree 2024 seulement (derniere deliberation trouvee) ;
+  - Toulouse : libelle « 2025/2026 » ambigu ;
+  - Paris-Saclay : non disponible (rien de chiffre sur ses pages, deliberations en HTTP 403) ;
+  - Nantes (scan) et Lyon 1 (couche texte corrompue) : relus a l'image, audit NON MESURE ;
+  - rafraichir le panel a chaque publication de rentree (kine de Bordeaux en 2025/2026) et la fiche
+    reforme des qu'un texte parait.
+- **Une commande rejoue toute la donnee** : `python -m src.collect.pipeline_donnee` (controle des 22
+  empreintes, puis A, B-1, B-2). Bruts verrouilles dans `data/reference/sources_officielles.json`.
 
 ## 1. Ce qui est etabli (mesure dans la nuit du 4 au 5 septembre 2026)
 
@@ -123,7 +180,7 @@ mesure.
 | Bancs `results/_archive_pre_2026-06/`, `run1..run10`, `run_F_robust` | historiques, non comparables entre eux ni avec la batterie 2026-09-05 |
 | `LLM_Final.md`, README (corpus "47k") | chiffres perimes, corpus reel 52 040 |
 
-Ce qui reste valide : le corpus (52 040 fiches, muet mais reel), l'infra (pipeline, 3 202 tests,
+Ce qui reste valide : le corpus (52 040 fiches, muet mais reel), l'infra (pipeline, 3 485 tests au 23/09,
 Langfuse), le controle deterministe des chiffres du lot 1 de juillet (`src/eval/`), le banc gratuit de
 676 questions embarquees (`golden_qa.index`, mais sans verite terrain de pertinence : cf section 0), la note de vision fondateur du 16/07 (vault) pour le
 cap produit.
@@ -136,6 +193,17 @@ cap produit.
 - **Branche d'experimentation** `jarvis/analyse-2026-09-05` : meme contenu, posee sur le WIP
   `c7402d3` de Claudette. Ne pas merger (elle porte le WIP), on peut la supprimer une fois ce dossier
   sur main.
+- **Corpus de la donnee verticale** (`data/processed/`, hors git, regenerables par
+  `python -m src.collect.pipeline_donnee`) :
+  - `formations.json` : prod, sha256 `2e4276e6155b`, **ne pas toucher** ;
+  - `formations_etape_a.json` : `9eae9c25108b` (53 281 fiches) ;
+  - `formations_etape_b1.json` : `9863d2b40d3f` (53 807) ;
+  - `formations_etape_b2.json` : `2e6a93a5cda6` (53 808), le plus recent.
+  Chacun a son manifeste `.manifest.json`. Bruts dans `data/raw/` (dont `data/raw/sante/` : note SIES
+  et 11 documents d'universites), 22 empreintes au verrou.
+- **Zone de reference de Jarvis** (lecture seule) : `~/projets/_orientai-ref/verticale-2026-09/`
+  (cahier des charges, `sources-donnees.md`, banc `battery_verticale.json` de 57 conversations,
+  explorateur `explorateur/export_data.py`).
 - **QG partage** : https://orientai-hq.vercel.app (repo `~/projets/orientai-hq`, remote prive
   `matjussu/orientai-hq` depuis le 05/09). `content/decisions.json` porte les 3 decisions,
   `content/chantiers.json` les lots 0-5 (statut `propose`).
@@ -149,19 +217,41 @@ cap produit.
 
 ## 4. Par quoi on commence
 
-1. **Trancher les 3 decisions** (Matteo + Ella, section 8 du rapport) : modele de generation
-   (reco A : Sonnet 5), lookup structure + embedding hors Mistral (reco : lot 1 puis lot 3), ce qu'on
-   vend (chiffres verifies + eval publique). **Tranchees le 23/09** (ordre 2026-09-23-0817) :
-   generation Mistral ou open-weights, jamais un modele americain proprietaire ; recherche
-   structuree a la place du RAG plat ; on vend la plateforme, argument « chaque chiffre verifiable ».
-2. **Lot 0 sans attendre** (livre le 23/09, section 0) : le banc devient le gate. Integrer batterie + juge + agregation dans
-   `src/eval/battery/`, brancher le controle deterministe des chiffres cites, reparer
-   `eval_retrieval.py` (ids `idx:NNNNN` vs `fiche.id` absent sur 38 596 fiches) et mesurer recall@10
-   sur les 676 questions (impossible : pas de verite terrain, mesure faite sur le set de pertinence). Cout ~3 USD par passage. Dispatch a Claudette par Jarvis via `/order`.
-3. **Palier 3 du menage** en meme temps que le lot 0 : reecrire `CLAUDE.md`, regrouper `docs/`
-   (87 fichiers), traiter `raw_responses_*_bak` et `sprint*_2026-04-2x.json`, consolider ou jeter le
-   WIP de `OrientAI_Platform`.
-4. Recharger les credits OpenAI si on veut completer le contre-juge (non bloquant).
+Les 3 decisions du 05/09 sont tranchees (ordre 2026-09-23-0817, voir « Etat au 23/09 »), le lot 0 et
+les etapes A, B-1, B-2 sont faites. Ordre de la suite (cahier des charges §5-6, cap de Matteo) :
+
+1. **Etape C, base structuree** : les chiffres du corpus (admission, cout, alternance, insertion,
+   sante) interrogeables par outils, avec leur source, au lieu du texte seul. Estimation du cahier des
+   charges (non mesuree) : 2 a 3 jours.
+2. **Etape D, meilleur format pour le modele** : grille 3 formats x 2-3 modeles (Mistral ou
+   open-weights) jouee au banc ; texte d'embedding distinct du texte lu (le texte des fiches est 4 fois
+   plus long qu'avant l'etape A, pas de re-embedding sans mesure).
+3. **Le « cerveau »** : outils de recherche structuree branches sur la base C, clarification quand la
+   question est vague, ton de conseiller ; mesure au banc face a un modele generaliste sans donnees
+   (Mistral Large seul : 3,20 mais 94 % de tours avec erreur factuelle, section 0).
+4. **Proprete et mise en ligne** : reparer le build Railway (section 5), menage du depot (palier 3 :
+   reecrire `CLAUDE.md`, regrouper `docs/`), puis deploy.
+
+Chaque etape : contrat d'abord, audit d'exactitude avec controle positif, avant/apres dans
+l'explorateur, validation de Matteo avant merge.
+
+## 5. Dettes (regroupees au 23/09/2026)
+
+| Dette | Trace |
+|---|---|
+| Build Railway rouge a chaque merge (`formations.json` est gitignore) : la prod reste figee au lot 1 de juillet (`/health` prompt `601adcee86b9`). A regler avant la demo | `gh pr checks 180` : « orientia-api Deployment failed » ; section 0 pour `/health` |
+| RRF de la prod casse (`_orig_index` absent cote dense) | RAPPORT du 05/09 l.107, section 0 |
+| Le Mistral du pipeline ne remonte pas ses tokens | `results/battery/2026-09-23_lot0/manifest.json` l.22-24 : `local` (mistral-medium-2604) a `tokens_in`, `tokens_out`, `cost_usd` a null, alors que `mistral_large_norag` a les siens (l.42-43) |
+| 2 385 niveaux bac+N encore deduits par l'heuristique historique | `results/donnee_etape_a/RAPPORT.md` l.99 |
+| 252 questions du set de pertinence a labelliser (recall@10 actuel = borne basse) | `scripts/relevance_set/STATE.md` l.41 |
+| Test du juge qui appelle un vrai modele hors CI : lancer la suite avec `OFFLINE_JUDGE_TESTS=1` et sans cles, le rendre hors ligne par defaut | `results/donnee_etape_b/RAPPORT.md` l.171 |
+| Pas de `.venv` dans `~/projets/OrientIA` : le recreer (`uv venv` + `requirements.lock`) | constat du 23/09 apres retrait du worktree B-2 |
+| Menage : `DEPLOY_LOT1_RUN_ME.sh` non suivi a jeter ; branche `jarvis/analyse-2026-09-05` a ne jamais merger, a supprimer | `git status`, `git branch -a` le 23/09 |
+| Texte MonMaster sans capacite d'accueil (5 chiffres du banc absents) ; 53 domaines hors verticale non revus | section 0 bis |
+| Points ouverts de B-1 (droits IFSI, ecoles d'ingenieurs a plusieurs diplomes) et de B-2 (section 0 quater) | RAPPORT de chaque etape |
+
+Suite de tests : 3 485 reussis, 45 ignores, 0 echec (branche B-2, commit b9554e4, 23/09/2026, meme
+code que main a0ee8a6).
 
 Regle du projet a garder en tete (regle 13 Jarvis/Claudette) : une affirmation qui porte une decision
 cite sa mesure. Le rapport est ecrit comme ca ; les lots doivent l'etre aussi.
