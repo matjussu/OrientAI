@@ -1,6 +1,6 @@
 {
- "verts": 18,
- "juges": 18,
+ "verts": 24,
+ "juges": 24,
  "controles": {
   "base_contre_corpus": {
    "vert": true,
@@ -11,7 +11,12 @@
    "exemples_manquantes": [],
    "valeurs_base_sans_correspondant_corpus": 0,
    "exemples_sans_corpus": [],
-   "formations_absentes_du_corpus": 0
+   "formations_absentes_du_corpus": 0,
+   "tables": [
+    "formation",
+    "valeur",
+    "champ"
+   ]
   },
   "valeurs_contre_bruts": {
    "vert": true,
@@ -24,29 +29,45 @@
    "ecarts": 0,
    "exemples": [],
    "ecarts_de_presence": 0,
-   "exemples_presence": []
+   "exemples_presence": [],
+   "tables": [
+    "valeur"
+   ]
   },
   "sessions_absentes_contre_bruts": {
    "vert": true,
    "compares": 137145,
-   "ecarts": 0
+   "ecarts": 0,
+   "tables": [
+    "valeur"
+   ]
   },
   "coordonnees_contre_brut": {
    "vert": true,
    "compares": 3453,
    "ecarts": 0,
-   "exemples": []
+   "exemples": [],
+   "tables": [
+    "lieu"
+   ]
   },
   "taux_entre_0_et_100": {
    "vert": true,
    "compares": 103479,
    "hors_bornes": 0,
-   "exemples": []
+   "exemples": [],
+   "tables": [
+    "valeur"
+   ]
   },
   "source_de_chaque_chiffre": {
    "vert": true,
    "compares": 162828,
-   "sans_source": 0
+   "sans_source": 0,
+   "tables": [
+    "source",
+    "valeur"
+   ]
   },
   "url_de_chaque_source": {
    "vert": true,
@@ -54,23 +75,36 @@
    "sources_sans_url": [
     "reforme_sante_2027"
    ],
-   "note": "une source sans URL (fiche concept) est listée, pas jugée"
+   "note": "une source sans URL (fiche concept) est listée, pas jugée",
+   "tables": [
+    "source"
+   ]
   },
   "portee_sante": {
    "vert": true,
    "compares": 14943,
    "ecarts": 0,
-   "exemples": []
+   "exemples": [],
+   "tables": [
+    "valeur",
+    "champ"
+   ]
   },
   "aucun_taux_calcule_monmaster": {
    "vert": true,
    "compares": 85,
-   "champs": []
+   "champs": [],
+   "tables": [
+    "champ"
+   ]
   },
   "aucun_lieu_a_zero": {
    "vert": true,
    "compares": 3996,
-   "lieux_a_zero": 0
+   "lieux_a_zero": 0,
+   "tables": [
+    "lieu"
+   ]
   },
   "completude": {
    "vert": true,
@@ -78,23 +112,35 @@
    "manquantes": 0,
    "exemples_manquantes": [],
    "en_trop": 0,
-   "exemples_en_trop": []
+   "exemples_en_trop": [],
+   "tables": [
+    "formation",
+    "champ",
+    "valeur"
+   ]
   },
   "details_sous_groupe_disponible": {
    "vert": true,
    "compares": 17781,
-   "orphelins": 0
+   "orphelins": 0,
+   "tables": [
+    "valeur"
+   ]
   },
   "distance_identites": {
    "vert": true,
    "compares": 2,
    "un_degre_km": 111.19492664455873,
-   "pole_equateur_km": 10007.543398010284
+   "pole_equateur_km": 10007.543398010284,
+   "tables": []
   },
   "insee_apprentissage": {
    "vert": true,
    "compares": 526,
-   "sans_code_insee": 0
+   "sans_code_insee": 0,
+   "tables": [
+    "lieu"
+   ]
   },
   "info_sites_loin_de_leur_commune": {
    "vert": null,
@@ -146,12 +192,19 @@
      "source": "parcoursup_2025",
      "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/exports/csv?delimiter=%3B"
     }
-   }
+   },
+   "tables": [
+    "valeur",
+    "source"
+   ]
   },
   "couverture_gate": {
    "vert": true,
    "compares": 106,
-   "absents": []
+   "absents": [],
+   "tables": [
+    "formation"
+   ]
   },
   "export_aller_retour": {
    "vert": true,
@@ -160,13 +213,99 @@
    "ecarts": 0,
    "exemples": [],
    "meta_complete": true,
-   "octets": 13786516
+   "octets": 13837412,
+   "tables": [
+    "valeur",
+    "formation"
+   ]
+  },
+  "insertion_contre_corpus": {
+   "vert": true,
+   "compares": 5507,
+   "lignes_base": 407,
+   "lignes_vues": 407,
+   "ecarts": 0,
+   "exemples": [],
+   "lignes_base_sans_corpus": 0,
+   "valeurs_numeriques_par_colonne": {
+    "effectif_poursuivants": 108,
+    "effectif_sortants": 108,
+    "taux_emploi_12m": 45,
+    "taux_emploi_6m": 45,
+    "taux_emploi_salarie_fr_12m": 108,
+    "taux_emploi_salarie_fr_18m": 108,
+    "taux_emploi_salarie_fr_6m": 108,
+    "taux_emploi_stable_12m": 108,
+    "taux_poursuite_etudes": 256
+   },
+   "tables": [
+    "insertion_ligne"
+   ]
+  },
+  "alternance_contre_corpus": {
+   "vert": true,
+   "compares": 3018,
+   "liens_base": 503,
+   "liens_corpus": 503,
+   "ecarts": 0,
+   "exemples": [],
+   "liens_base_sans_corpus": 0,
+   "tables": [
+    "alternance_lien"
+   ]
+  },
+  "concepts_contre_corpus": {
+   "vert": true,
+   "compares": 3,
+   "concepts": 1,
+   "ecarts": [],
+   "tables": [
+    "concept"
+   ]
+  },
+  "communes_contre_brut": {
+   "vert": true,
+   "compares": 34969,
+   "communes_base": 34969,
+   "ecarts": 0,
+   "exemples": [],
+   "tables": [
+    "commune"
+   ]
+  },
+  "meta_contre_entrees": {
+   "vert": true,
+   "compares": 1,
+   "sha_meta": "2e6a93a5cda6",
+   "sha_corpus_audite": "2e6a93a5cda6",
+   "fiches_ok": true,
+   "tables": [
+    "meta"
+   ]
+  },
+  "inventaire_tables": {
+   "vert": true,
+   "compares": 10,
+   "tables": [],
+   "tables_base": [
+    "alternance_lien",
+    "champ",
+    "commune",
+    "concept",
+    "formation",
+    "insertion_ligne",
+    "lieu",
+    "meta",
+    "source",
+    "valeur"
+   ],
+   "non_couvertes": []
   },
   "determinisme": {
    "vert": true,
    "compares": 1,
-   "empreinte_1": "39f774bd5cbbdd2c2bf3ab0746f7dd4946710e3f0c8865b501a3a7c63a704733",
-   "empreinte_2": "39f774bd5cbbdd2c2bf3ab0746f7dd4946710e3f0c8865b501a3a7c63a704733",
+   "empreinte_1": "6dfa2e8d684d54f246b1f41676c7981196afb0469969864cd0fe1cc5f2e90680",
+   "empreinte_2": "6dfa2e8d684d54f246b1f41676c7981196afb0469969864cd0fe1cc5f2e90680",
    "fichier_identique_octet_pour_octet": true
   }
  }
