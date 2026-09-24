@@ -37,6 +37,34 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
   `2e4276e6155b`). Les corpus A, B-1 et B-2 sont a part, hors git (section 3).
 
+## Reprise au 24/09/2026
+
+Carry-over de Claudette du 23/09 au soir (eod-recap envoye a Jarvis a 20h52), recopie ici le 24/09 : apres
+un /clear, la trace la plus fraiche n'etait que dans le journal de Jarvis, pas dans ce fichier.
+
+1. Lire ce fichier sur la branche `feat/etape-d-grille` (worktree `~/projets/OrientIA-etape-d`), pas sur
+   main : sur main, D n'existe pas encore. Rapport : `results/donnee_etape_d/RAPPORT.md` ; protocole :
+   `PROTOCOLE.md` v0.2.
+2. PR #185 ouverte, NON mergee. Merge seulement sur merge-approval relaye par Jarvis
+   (`gh pr merge 185 --merge`). Apres le merge : fast-forward du checkout principal, puis retrait annonce
+   du worktree `OrientIA-etape-d`. Son `data/processed` ne contient que des COPIES (corpus B-2
+   `2e6a93a5cda6`, base C `9667b95521c2`) et son propre `.venv` ; rien a recopier.
+3. Decision en attente de Matteo : adopter GLM 5.2 ou garder Medium. Reco : banc de confirmation
+   A x Medium contre A x GLM, 2 generations jugees, juge qui VOIT les fiches. Non lance. Ne rien lancer
+   sans ordre.
+4. Si GLM est retenu : regler les 429 (1 fil a suffi en g1) et le prix de GLM, non publie, suppose
+   1 / 4 USD par million de tokens.
+5. Dettes pour le cerveau (section 5) : extracteur du critere 1 aveugle aux tableaux ; Medium sans appel
+   d'outil ; manques de la base C (niveau bac+N, autres voies, precision des capacites, mention non
+   renseignee, insertion des masters) ; rattachement d'insertion trop large (doubles licences,
+   psup:28456).
+6. Pieges d'outillage : le juge tourne en `claude -p` (l'agent `juge-aveugle` n'est charge qu'au
+   demarrage d'une session). Le lanceur refuse de demarrer si `ANTHROPIC_API_KEY` est presente. Ne jamais
+   sourcer le `.env` d'OrientIA dans ce shell, il contient une cle. La generation Mistral, elle, a besoin
+   du `.env` (`set -a ; . ../OrientIA/.env`).
+7. Checkout principal `~/projets/OrientIA` : main `0d55da4`, pas de `.venv`, `DEPLOY_LOT1_RUN_ME.sh` non
+   suivi (dette connue, ne pas y toucher).
+
 ## 0. Lot 0 livre et merge le 23/09/2026 (Claudette, ordre 2026-09-23-0817, #177, 89e0f27)
 
 Le banc est versionne dans `src/eval/battery/` (README dans ce dossier). Une commande :
