@@ -136,6 +136,10 @@ Le cerveau reposera entièrement sur l'appel d'outils ; c'est le résultat le pl
   gel du protocole, critère 1 de la génération 1 seulement (`lecture_preliminaire_g1.json`, 305cf42).
 - **Coût** : grille 12,9 USD (18 passages), sonde 0,10 USD, prix de Medium et GLM supposés. Seuil de 35 USD
   non atteint.
+  **Correction du 24/09/2026 (banc E, prix publiés relevés sur docs.mistral.ai)** : Medium 1,5 / 7,5 USD par million
+  (supposé 0,4 / 2,0), GLM 5.2 1,4 / 4,4 (supposé 1 / 4), Large 0,5 / 1,5 (confirmé). Coût réel de la grille :
+  **23,25 USD** (Medium 11,18, GLM 8,39, Large 3,69). Par tour en A : Medium 0,0206, GLM 0,0146, soit 0,71 fois Medium ;
+  la section 4 (« environ 2 fois celui de Medium ») est donc fausse dans l'autre sens. Détail : `results/banc_e/RAPPORT.md`.
 
 ## 7. Limites
 

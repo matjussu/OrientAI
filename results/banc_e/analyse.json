@@ -1,0 +1,666 @@
+{
+ "protocole_sha256": "a2362320acd7311094d07ea9c53e56816c7d4604d9d746b800f853ef3690c91b",
+ "genere_le": "2026-09-24T16:53:32",
+ "exposition_sha256": "47ab40ae0e6a252d34135396fb56483ff8dce2bd5ea7be7206433e1e8f5a3b63",
+ "completude_generation": {
+  "A-mistral-medium-2604/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  },
+  "A-zai-glm-5-2/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  },
+  "A-zai-glm-5-3/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  },
+  "A-mistral-small-2603/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  },
+  "C-mistral-medium-2604/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  },
+  "C-zai-glm-5-2/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  },
+  "C-zai-glm-5-3/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  },
+  "C-mistral-small-2603/g1": {
+   "tours": 79,
+   "doublons": 0,
+   "erreurs": 0,
+   "vert": true
+  }
+ },
+ "completude_generation_verte": true,
+ "completude_juge": {
+  "A-mistral-medium-2604": {
+   "1": 79
+  },
+  "A-zai-glm-5-2": {
+   "1": 79
+  },
+  "A-zai-glm-5-3": {
+   "1": 79
+  },
+  "A-mistral-small-2603": {
+   "1": 79
+  },
+  "C-mistral-medium-2604": {
+   "1": 79
+  },
+  "C-zai-glm-5-2": {
+   "1": 79
+  },
+  "C-zai-glm-5-3": {
+   "1": 79
+  },
+  "C-mistral-small-2603": {
+   "1": 79
+  }
+ },
+ "completude_juge_verte": true,
+ "rejuges": 0,
+ "accord_juge": {
+  "n": 0,
+  "erreur_factuelle": {
+   "accord": null,
+   "kappa": null,
+   "desaccord": null,
+   "taux_passe1": null,
+   "taux_passe2": null
+  },
+  "refus": {
+   "accord": null,
+   "kappa": null,
+   "desaccord": null,
+   "taux_passe1": null,
+   "taux_passe2": null
+  },
+  "references": {
+   "ecart_absolu_moyen": null
+  },
+  "comprehension": {
+   "ecart_absolu_moyen": null
+  },
+  "expression": {
+   "ecart_absolu_moyen": null
+  },
+  "couverture": {
+   "ecart_absolu_moyen": null
+  }
+ },
+ "matrice": {
+  "A-mistral-medium-2604": {
+   "P_g1": 0.8173374613003096,
+   "P": 0.8173374613003096,
+   "temoin_g1": 0.06832298136645963,
+   "juge": {
+    "references": 2.9746835443037973,
+    "comprehension": 3.3037974683544302,
+    "expression": 3.1772151898734178,
+    "couverture": 3.7848101265822787,
+    "moyenne_4": 3.310126582278481,
+    "erreur_factuelle": 0.759493670886076,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 536,
+   "secondes_mediane": 9.54,
+   "cout_usd_par_tour": 0.02103,
+   "cout_usd_total": 1.661,
+   "prix_source": "docs.mistral.ai/models/mistral-medium-3-5-26-04, lu le 24/09",
+   "tours_avec_appel_outil": 0.0,
+   "appels_outil": 0,
+   "appels_outil_erreurs": 0,
+   "n429": 0,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 252.5,
+     "tours_par_minute": 18.8
+    }
+   ],
+   "modeles_rendus": [
+    "mistral-medium-2604"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": true
+  },
+  "A-zai-glm-5-2": {
+   "P_g1": 0.7770897832817337,
+   "P": 0.7770897832817337,
+   "temoin_g1": 0.052795031055900624,
+   "juge": {
+    "references": 3.4683544303797467,
+    "comprehension": 3.911392405063291,
+    "expression": 3.911392405063291,
+    "couverture": 4.037974683544304,
+    "moyenne_4": 3.8322784810126582,
+    "erreur_factuelle": 0.3037974683544304,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 340,
+   "secondes_mediane": 3.91,
+   "cout_usd_par_tour": 0.01452,
+   "cout_usd_total": 1.147,
+   "prix_source": "docs.mistral.ai/models/zai-glm-5-2, lu le 24/09",
+   "tours_avec_appel_outil": 0.0,
+   "appels_outil": 0,
+   "appels_outil_erreurs": 0,
+   "n429": 40,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 476.8,
+     "tours_par_minute": 9.9
+    }
+   ],
+   "modeles_rendus": [
+    "zai-glm-5-2"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": true
+  },
+  "A-zai-glm-5-3": {
+   "P_g1": 0.8173374613003096,
+   "P": 0.8173374613003096,
+   "temoin_g1": 0.06521739130434782,
+   "juge": {
+    "references": 4.1265822784810124,
+    "comprehension": 4.658227848101266,
+    "expression": 4.253164556962025,
+    "couverture": 4.582278481012659,
+    "moyenne_4": 4.405063291139241,
+    "erreur_factuelle": 0.3037974683544304,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 400,
+   "secondes_mediane": 11.97,
+   "cout_usd_par_tour": 0.02155,
+   "cout_usd_total": 1.703,
+   "prix_source": "docs.mistral.ai/models/zai-glm-5-3, lu le 24/09",
+   "tours_avec_appel_outil": 0.0,
+   "appels_outil": 0,
+   "appels_outil_erreurs": 0,
+   "n429": 0,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 342.5,
+     "tours_par_minute": 13.8
+    }
+   ],
+   "modeles_rendus": [
+    "zai-glm-5-3"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": true
+  },
+  "A-mistral-small-2603": {
+   "P_g1": 0.6934984520123839,
+   "P": 0.6934984520123839,
+   "temoin_g1": 0.08074534161490683,
+   "juge": {
+    "references": 2.3797468354430378,
+    "comprehension": 2.8354430379746836,
+    "expression": 2.8354430379746836,
+    "couverture": 3.4683544303797467,
+    "moyenne_4": 2.8797468354430378,
+    "erreur_factuelle": 0.8734177215189873,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 638,
+   "secondes_mediane": 10.19,
+   "cout_usd_par_tour": 0.00212,
+   "cout_usd_total": 0.167,
+   "prix_source": "docs.mistral.ai/models/mistral-small-4-0-26-03, lu le 24/09",
+   "tours_avec_appel_outil": 0.0,
+   "appels_outil": 0,
+   "appels_outil_erreurs": 0,
+   "n429": 0,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 267.3,
+     "tours_par_minute": 17.7
+    }
+   ],
+   "modeles_rendus": [
+    "mistral-small-2603"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": false
+  },
+  "C-mistral-medium-2604": {
+   "P_g1": 0.7678018575851393,
+   "P": 0.7678018575851393,
+   "temoin_g1": 0.059006211180124224,
+   "juge": {
+    "references": 3.088607594936709,
+    "comprehension": 3.3544303797468356,
+    "expression": 3.2658227848101267,
+    "couverture": 3.8354430379746836,
+    "moyenne_4": 3.386075949367089,
+    "erreur_factuelle": 0.6582278481012658,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 478,
+   "secondes_mediane": 8.7,
+   "cout_usd_par_tour": 0.02122,
+   "cout_usd_total": 1.676,
+   "prix_source": "docs.mistral.ai/models/mistral-medium-3-5-26-04, lu le 24/09",
+   "tours_avec_appel_outil": 0.6329113924050633,
+   "appels_outil": 117,
+   "appels_outil_erreurs": 0,
+   "n429": 0,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 239.5,
+     "tours_par_minute": 19.8
+    }
+   ],
+   "modeles_rendus": [
+    "mistral-medium-2604"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": true
+  },
+  "C-zai-glm-5-2": {
+   "P_g1": 0.7616099071207431,
+   "P": 0.7616099071207431,
+   "temoin_g1": 0.049689440993788817,
+   "juge": {
+    "references": 3.6455696202531644,
+    "comprehension": 3.8987341772151898,
+    "expression": 3.7848101265822787,
+    "couverture": 4.10126582278481,
+    "moyenne_4": 3.8575949367088604,
+    "erreur_factuelle": 0.3924050632911392,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 350,
+   "secondes_mediane": 4.19,
+   "cout_usd_par_tour": 0.01632,
+   "cout_usd_total": 1.29,
+   "prix_source": "docs.mistral.ai/models/zai-glm-5-2, lu le 24/09",
+   "tours_avec_appel_outil": 0.6708860759493671,
+   "appels_outil": 144,
+   "appels_outil_erreurs": 0,
+   "n429": 89,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 889.0,
+     "tours_par_minute": 5.3
+    }
+   ],
+   "modeles_rendus": [
+    "zai-glm-5-2"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": true
+  },
+  "C-zai-glm-5-3": {
+   "P_g1": 0.804953560371517,
+   "P": 0.804953560371517,
+   "temoin_g1": 0.06832298136645963,
+   "juge": {
+    "references": 4.2405063291139244,
+    "comprehension": 4.620253164556962,
+    "expression": 4.30379746835443,
+    "couverture": 4.632911392405063,
+    "moyenne_4": 4.449367088607595,
+    "erreur_factuelle": 0.12658227848101267,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 397,
+   "secondes_mediane": 11.56,
+   "cout_usd_par_tour": 0.02742,
+   "cout_usd_total": 2.166,
+   "prix_source": "docs.mistral.ai/models/zai-glm-5-3, lu le 24/09",
+   "tours_avec_appel_outil": 0.9113924050632911,
+   "appels_outil": 223,
+   "appels_outil_erreurs": 0,
+   "n429": 0,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 354.5,
+     "tours_par_minute": 13.4
+    }
+   ],
+   "modeles_rendus": [
+    "zai-glm-5-3"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": true
+  },
+  "C-mistral-small-2603": {
+   "P_g1": 0.6656346749226006,
+   "P": 0.6656346749226006,
+   "temoin_g1": 0.062111801242236024,
+   "juge": {
+    "references": 2.4936708860759493,
+    "comprehension": 2.8987341772151898,
+    "expression": 2.8987341772151898,
+    "couverture": 3.430379746835443,
+    "moyenne_4": 2.930379746835443,
+    "erreur_factuelle": 0.8860759493670886,
+    "refus": 0.0,
+    "n": 79
+   },
+   "tours": 79,
+   "defauts_g1": 0.0,
+   "mots_mediane": 612,
+   "secondes_mediane": 9.06,
+   "cout_usd_par_tour": 0.00204,
+   "cout_usd_total": 0.161,
+   "prix_source": "docs.mistral.ai/models/mistral-small-4-0-26-03, lu le 24/09",
+   "tours_avec_appel_outil": 0.5063291139240507,
+   "appels_outil": 101,
+   "appels_outil_erreurs": 1,
+   "n429": 0,
+   "debit": [
+    {
+     "workers": 3,
+     "tours": 79,
+     "secondes_mur": 253.2,
+     "tours_par_minute": 18.7
+    }
+   ],
+   "modeles_rendus": [
+    "mistral-small-2603"
+   ],
+   "commits": [
+    "3ab65d7"
+   ],
+   "git_dirty": true
+  }
+ },
+ "decision": {
+  "reference": "A-mistral-medium-2604",
+  "lignes": {
+   "A-mistral-medium-2604": {
+    "etape0_ecartee": false,
+    "motifs_etape0": [],
+    "P": 0.8173374613003096,
+    "dP": 0.0,
+    "P_ou_tableau": 0.8359133126934984,
+    "dP_ou_tableau": 0.0,
+    "etape1_non_inferieure": true,
+    "signalee_biais_tableaux": false,
+    "erreur_factuelle": 0.759493670886076,
+    "moyenne_4": 3.310126582278481,
+    "dE_contre_R": null,
+    "bat_R": false,
+    "cout_usd_par_tour": 0.02103
+   },
+   "A-zai-glm-5-2": {
+    "etape0_ecartee": false,
+    "motifs_etape0": [],
+    "P": 0.7770897832817337,
+    "dP": -0.04024767801857587,
+    "P_ou_tableau": 0.7894736842105263,
+    "dP_ou_tableau": -0.04643962848297212,
+    "etape1_non_inferieure": false,
+    "signalee_biais_tableaux": false,
+    "erreur_factuelle": 0.3037974683544304,
+    "moyenne_4": 3.8322784810126582,
+    "dE_contre_R": {
+     "delta": -0.4556962025316456,
+     "ic95": [
+      -0.5822784810126582,
+      -0.32530120481927716
+     ]
+    },
+    "bat_R": true,
+    "cout_usd_par_tour": 0.01452
+   },
+   "A-zai-glm-5-3": {
+    "etape0_ecartee": false,
+    "motifs_etape0": [],
+    "P": 0.8173374613003096,
+    "dP": 0.0,
+    "P_ou_tableau": 0.8421052631578947,
+    "dP_ou_tableau": 0.006191950464396245,
+    "etape1_non_inferieure": true,
+    "signalee_biais_tableaux": false,
+    "erreur_factuelle": 0.3037974683544304,
+    "moyenne_4": 4.405063291139241,
+    "dE_contre_R": {
+     "delta": -0.4556962025316456,
+     "ic95": [
+      -0.5866666666666667,
+      -0.3246753246753247
+     ]
+    },
+    "bat_R": true,
+    "cout_usd_par_tour": 0.02155
+   },
+   "A-mistral-small-2603": {
+    "etape0_ecartee": true,
+    "motifs_etape0": [
+     "mots médians 638"
+    ],
+    "P": 0.6934984520123839,
+    "dP": -0.12383900928792568,
+    "P_ou_tableau": 0.7213622291021672,
+    "dP_ou_tableau": -0.11455108359133126,
+    "etape1_non_inferieure": false,
+    "signalee_biais_tableaux": false,
+    "erreur_factuelle": 0.8734177215189873,
+    "moyenne_4": 2.8797468354430378,
+    "dE_contre_R": {
+     "delta": 0.11392405063291133,
+     "ic95": [
+      -0.013157894736842146,
+      0.24
+     ]
+    },
+    "bat_R": false,
+    "cout_usd_par_tour": 0.00212
+   },
+   "C-mistral-medium-2604": {
+    "etape0_ecartee": false,
+    "motifs_etape0": [],
+    "P": 0.7678018575851393,
+    "dP": -0.049535603715170295,
+    "P_ou_tableau": 0.7832817337461301,
+    "dP_ou_tableau": -0.05263157894736836,
+    "etape1_non_inferieure": false,
+    "signalee_biais_tableaux": false,
+    "erreur_factuelle": 0.6582278481012658,
+    "moyenne_4": 3.3860759493670884,
+    "dE_contre_R": {
+     "delta": -0.10126582278481022,
+     "ic95": [
+      -0.253012048192771,
+      0.04938271604938271
+     ]
+    },
+    "bat_R": false,
+    "cout_usd_par_tour": 0.02122
+   },
+   "C-zai-glm-5-2": {
+    "etape0_ecartee": false,
+    "motifs_etape0": [],
+    "P": 0.7616099071207431,
+    "dP": -0.05572755417956654,
+    "P_ou_tableau": 0.826625386996904,
+    "dP_ou_tableau": -0.009287925696594423,
+    "etape1_non_inferieure": false,
+    "signalee_biais_tableaux": true,
+    "erreur_factuelle": 0.3924050632911392,
+    "moyenne_4": 3.857594936708861,
+    "dE_contre_R": {
+     "delta": -0.3670886075949368,
+     "ic95": [
+      -0.5061728395061729,
+      -0.22222222222222227
+     ]
+    },
+    "bat_R": true,
+    "cout_usd_par_tour": 0.01632
+   },
+   "C-zai-glm-5-3": {
+    "etape0_ecartee": false,
+    "motifs_etape0": [],
+    "P": 0.804953560371517,
+    "dP": -0.012383900928792602,
+    "P_ou_tableau": 0.8390092879256966,
+    "dP_ou_tableau": 0.003095975232198178,
+    "etape1_non_inferieure": true,
+    "signalee_biais_tableaux": false,
+    "erreur_factuelle": 0.12658227848101267,
+    "moyenne_4": 4.449367088607595,
+    "dE_contre_R": {
+     "delta": -0.6329113924050633,
+     "ic95": [
+      -0.7466666666666667,
+      -0.5185185185185186
+     ]
+    },
+    "bat_R": true,
+    "cout_usd_par_tour": 0.02742
+   },
+   "C-mistral-small-2603": {
+    "etape0_ecartee": true,
+    "motifs_etape0": [
+     "mots médians 612"
+    ],
+    "P": 0.6656346749226006,
+    "dP": -0.15170278637770895,
+    "P_ou_tableau": 0.6873065015479877,
+    "dP_ou_tableau": -0.14860681114551078,
+    "etape1_non_inferieure": false,
+    "signalee_biais_tableaux": false,
+    "erreur_factuelle": 0.8860759493670886,
+    "moyenne_4": 2.930379746835443,
+    "dE_contre_R": {
+     "delta": 0.12658227848101256,
+     "ic95": [
+      0.02564102564102566,
+      0.22499999999999998
+     ]
+    },
+    "bat_R": false,
+    "cout_usd_par_tour": 0.00204
+   }
+  },
+  "candidates_classees": [
+   "C-zai-glm-5-3",
+   "A-zai-glm-5-3"
+  ],
+  "choix": "C-zai-glm-5-3",
+  "raison": "1re du classement : C-zai-glm-5-3",
+  "generation_2": {
+   "declenchee": false,
+   "combinaisons": [
+    "C-zai-glm-5-3",
+    "A-zai-glm-5-3"
+   ],
+   "comparaison": {
+    "critere": "erreur_factuelle",
+    "delta": -0.17721518987341772,
+    "ic95": [
+     -0.30864197530864196,
+     -0.04999999999999999
+    ]
+   },
+   "raison": "IC95 de erreur_factuelle (C-zai-glm-5-3 - A-zai-glm-5-3) = [-0.309 ; -0.050]"
+  },
+  "temoin_souverain": {
+   "A-mistral-small-2603": {
+    "etape0_ok": false,
+    "etape1_ok": false,
+    "dE_contre_choix": {
+     "delta": 0.7468354430379747,
+     "ic95": [
+      0.646341463414634,
+      0.8395061728395061
+     ]
+    },
+    "equivalent_souverain": false
+   },
+   "C-mistral-small-2603": {
+    "etape0_ok": false,
+    "etape1_ok": false,
+    "dE_contre_choix": {
+     "delta": 0.7594936708860759,
+     "ic95": [
+      0.6710526315789473,
+      0.8461538461538461
+     ]
+    },
+    "equivalent_souverain": false
+   }
+  }
+ },
+ "export": {
+  "octets": 2789120,
+  "n_reponses": 632
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "format": "C",
+ "modele": "mistral-small-2603",
+ "generation": 1,
+ "protocole": "results/banc_e/PROTOCOLE.md v0.3",
+ "serveur": "https://api.eu.mistral.ai",
+ "commit": "3ab65d7e594367d026e0f68a9405b270a55495cb",
+ "git_dirty": true,
+ "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+ "base_sha256": "9667b95521c23a468799bc6265f3e02e09d6237d9c2598644bd211ef85135cd6",
+ "corpus_sha256": "2e6a93a5cda6d26119259248d0e7bbe7d103037608d471604aa359c66ce73c07",
+ "exposition_sha256": "47ab40ae0e6a252d34135396fb56483ff8dce2bd5ea7be7206433e1e8f5a3b63",
+ "temperature": 0.3,
+ "tours": 79,
+ "erreurs": 0,
+ "modeles_rendus": [
+  "mistral-small-2603"
+ ],
+ "tokens_in": 652349,
+ "tokens_out": 105633,
+ "cout_usd": 0.1612,
+ "prix_usd_par_million": [
+  0.15,
+  0.6
+ ],
+ "prix_source": "docs.mistral.ai/models/mistral-small-4-0-26-03, lu le 24/09",
+ "n429": 0,
+ "secondes_tours": 746.1,
+ "passages": [
+  {
+   "workers": 3,
+   "debut": "2026-09-24T08:49:15.929+00:00",
+   "fin": "2026-09-24T08:53:29.338+00:00",
+   "secondes_mur": 253.2,
+   "tours_joues": 79
+  }
+ ]
+}
