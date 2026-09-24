@@ -1,0 +1,1 @@
+{"references":2,"comprehension":3,"expression":4,"couverture":3,"refus":false,"erreur_factuelle":false,"erreur_detail":"","cause_echec":"retrieval","commentaire":"L'Université de Poitiers a un PASS, mais la fiche n'a pas été retrouvée. La réponse suggère donc à tort de quitter Poitiers et cite Orsay. Il faut récupérer le PASS de Poitiers pour une vraie comparaison locale."}

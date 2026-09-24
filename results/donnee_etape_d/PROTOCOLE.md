@@ -171,6 +171,8 @@ taux d'appel de l'outil.
   tokens (mistral.ai/pricing, lu le 23/09, exemple de la FAQ, version non precisee) ; `mistral-medium-2604`
   0,4 / 2,0 et `zai-glm-5-2` **non publies sur la page lue : supposes**, a confirmer par Matteo ou par la
   console Mistral. Le cout rapporte est tokens x prix, avec le prix marque « suppose » quand il l'est.
+- **Correction du 24/09/2026** : prix publies (docs.mistral.ai, lus au banc E) : `mistral-medium-2604` 1,5 / 7,5,
+  `zai-glm-5-2` 1,4 / 4,4, `mistral-large-2512` 0,5 / 1,5. Cout reel de D : 23,25 USD (voir `results/banc_e/RAPPORT.md`).
 - Estimation non mesuree : 8 fiches x ~3 800 caracteres (mediane du texte A mesuree sur les 309 fiches
   Parcoursup attendues) donnent ~9 000 tokens d'entree par tour, soit ~0,7 M par combinaison. Les tokens
   de raisonnement de Medium et GLM ne sont pas connus.

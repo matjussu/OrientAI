@@ -1,0 +1,1 @@
+{"references":4,"comprehension":4,"expression":4,"couverture":4,"refus":false,"erreur_factuelle":true,"erreur_detail":"Le DTS IMRT n'est pas recent (2022) : il existe depuis bien avant (arrete de 2012, anciennement DTS electroradiologie).","cause_echec":"aucune","commentaire":"Comparaison chiffree claire a Lyon ; corriger l'historique du DTS et garder le tutoiement."}

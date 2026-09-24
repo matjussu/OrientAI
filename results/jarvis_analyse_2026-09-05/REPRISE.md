@@ -37,6 +37,34 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
   `2e4276e6155b`). Les corpus A, B-1 et B-2 sont a part, hors git (section 3).
 
+## Reprise au 24/09/2026, soir : banc E (modèle de la démo)
+
+Ordre 2026-09-24-1020, branche `feat/banc-confirmation-modeles` (worktree `~/projets/OrientIA-etape-e`). Rapport :
+`results/banc_e/RAPPORT.md` ; protocole `results/banc_e/PROTOCOLE.md` v0.3.2.
+
+1. **Décision (règle écrite, g1)** : C x GLM 5.3 (`zai-glm-5-3`, carte courte + `lire_fiche`, consigne d'outil
+   explicite). Erreur factuelle jugée avec les fiches 12,7 % contre 75,9 % pour la prod (dE -63,3 pts, IC95
+   [-74,7 ; -51,9]), critère 1 0,805 contre 0,817. Pas de g2. Vérifié indépendamment par Jarvis. Décision à présenter
+   à Matteo par Jarvis ; rien n'est branché en prod.
+2. **Rejugement minimal** (amendement v0.3.2) : 5 lots `g1_rejugemin_*` prêts ; lancés seulement sur le go de Matteo
+   (quota de l'abonnement). Section 8 du rapport à compléter ensuite.
+3. **Juge** : transport par stdin obligatoire (lanceur `results/banc_e/judge/traces_lanceur/juge_stdin_v2.sh`) ; la
+   lecture par tranches produit des lectures partielles (témoin `8bf2a1383d`). Binaire nvm en chemin absolu : le PATH
+   retombe sur `/usr/bin/claude` 2.1.126 pendant les mises à jour automatiques (400 sur Opus 5.5).
+4. **Prix publiés** (24/09) : Medium 3.5 1,5 / 7,5 ; GLM 5.2 et 5.3 1,4 / 4,4 ; Small 4 0,15 / 0,6. Coût réel de D :
+   23,25 USD (et non 12,9). Banc E : 10,44 USD.
+5. **Dettes pour le cerveau, chacune avec sa mesure** :
+   - Medium ignore `tool_choice` any/required sur l'API Mistral (0 appel sur 8, `diag_outil/RESUME.md`) : ne jamais
+     compter sur le forçage générique ; forcer par nom de fonction si besoin.
+   - Débit de GLM 5.2 : 5 à 10 tours/min à 3 fils, 129 erreurs 429 sur 158 tours ; GLM 5.3 : 13 à 14 tours/min,
+     0 erreur 429 (manifestes `results/banc_e/runs/*/manifest_g1.json`).
+   - Latence de GLM 5.3 en C : 11,6 s médiane par tour (contre 9,5 s pour la prod).
+   - Extracteur du critère 1 aveugle aux tableaux : C x GLM 5.2 écarté à l'étape 1 mais passe en comptant les
+     tableaux (0,827 contre 0,836).
+   - Exposition oracle (attendus + BM25) : borne haute ; la recherche réelle reste à mesurer au lot « cerveau ».
+   - Dettes de D toujours ouvertes : manques de la base C (niveau bac+N, autres voies, précision des capacités,
+     mention non renseignée, insertion des masters), rattachement d'insertion trop large (doubles licences, psup:28456).
+
 ## Reprise au 24/09/2026
 
 Carry-over de Claudette du 23/09 au soir (eod-recap envoye a Jarvis a 20h52), recopie ici le 24/09 : apres
