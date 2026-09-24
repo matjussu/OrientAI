@@ -261,6 +261,11 @@ def main(argv: list[str] | None = None) -> int:
         doc["export"] = rd.exporter(banc, expo, v and {k[:3]: x for k, x in v.items() if k[3] == 1},
                                     r and {k[:3]: x for k, x in r.items() if k[3] == 1}, checker, position, matrice,
                                     E / "export/banc_e.explorateur.json")
+        # L'exporteur de D écrit son propre protocole dans meta (« PROTOCOLE.md v0.2 ») : corrigé ici pour E.
+        chemin = E / "export/banc_e.explorateur.json"
+        ex = json.loads(chemin.read_text(encoding="utf-8"))
+        ex["meta"]["protocole"] = "results/banc_e/PROTOCOLE.md v0.3.2"
+        chemin.write_text(json.dumps(ex, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (E / "analyse.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1, default=str) + "\n", encoding="utf-8")
     print(json.dumps({"generation_verte": doc["completude_generation_verte"], "juge_vert": doc["completude_juge_verte"],
                       "choix": decision["choix"], "g2": decision["generation_2"]}, ensure_ascii=False, default=str))
