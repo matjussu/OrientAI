@@ -1,4 +1,4 @@
-# Banc E : confirmation du modèle de la démo, protocole v0.3 (24/09/2026, GO de Jarvis à 10h42)
+# Banc E : confirmation du modèle de la démo, protocole v0.3.1 (24/09/2026, GO de Jarvis à 10h42 ; amendement 11 à 11h25)
 
 Ordre 2026-09-24-1020 (Jarvis, décisions de Matteo Telegram 10666, 10674, 10676, 10678). Écrit **avant** tout
 appel de grille ; seul le diagnostic de l'outil (`diag_outil/RESUME.md`, 0,47 USD) a été joué. Hérite de
@@ -152,3 +152,22 @@ GLM 5.3 estimée à 150 k, 3 fois celle de GLM 5.2 d'après le diagnostic) :
 
 `diag_outil/`, `runs/<format>-<modele>/g<n>.jsonl` et `manifest_g<n>.json`, `judge/`, `analyse.json`, `RAPPORT.md`,
 export explorateur (format de D, onglet comparatif).
+
+## 11. Amendement v0.3.1 (24/09/2026, 11h25, écrit avant la lecture de tout verdict retenu ; demande de Jarvis)
+
+**Transport du lot vers le juge.** Mesures du 24/09 sur la génération 1 :
+- En JSON, chaque prompt tient sur une ligne de 27 000 à 39 000 tokens, au-dessus des 25 000 que l'outil Read accepte
+  par lecture : 9 verdicts sur 24 (lots 001 à 004). Déplacés dans `judge/abandon_format_json/`, jamais lus.
+- En texte multiligne lu par tranches (Read avec offset), le juge d'effort low déclare des lectures partielles des
+  fiches (1 tâche sur 6 sur g1_lot_001), ce qui fausse le critère principal (erreur factuelle jugée avec les
+  fiches). Les 14 verdicts rendus ainsi sont déplacés dans `judge/abandon_transport_read/`, jamais lus.
+- **Transport retenu : le lot entier passé sur stdin** de `claude -p` (`judge/traces_lanceur/juge_stdin.sh`), fiches
+  comprises, sans lecture de fichier. Témoins : g1_lot_001 (422 k caractères) 6/6 verdicts valides, 0 lecture
+  partielle déclarée, `modelUsage` = claude-opus-5-5 seul, 31 s, 216 k tokens de contexte ; g1_lot_102, le plus gros
+  lot (484 k caractères), 6/6 valides, 32 s, 243 k tokens. Ces 12 verdicts de test restent dans
+  `judge/verdicts_test_stdin/` et n'entrent dans aucun calcul : les 106 lots et les 22 lots de rejugement sont tous
+  rejoués en stdin, dans les mêmes conditions.
+- Inchangé : agent `juge-aveugle`, Opus 5.5 effort low, abonnement, garde `ANTHROPIC_API_KEY`, rubrique, contenu des
+  lots (mot pour mot celui des `.json`), aveugle, rejugement.
+- Incident sans effet sur les verdicts : 4 lots ont rendu un 400 (« Claude Code 2.1.126 does not support this
+  model ») pendant la mise à jour automatique de Claude Code (11:16) ; version 2.1.281 ensuite.

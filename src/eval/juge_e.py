@@ -35,6 +35,18 @@ def prompt_juge(rec: dict, item: dict, formations: dict[str, dict], cartes: dict
             + f"\n\n{PHRASE_JUGE}\n\nCONTENU DES FICHES :\n{corps if corps else '(aucune fiche)'}")
 
 
+def texte_lot(taches: list[dict]) -> str:
+    """Le lot lu par le juge, en texte multiligne. Mesure du 24/09 (lots g1_lot_001 à 004) : en JSON, chaque prompt
+    tient sur une seule ligne de 27 000 à 39 000 tokens, au-dessus des 25 000 que l'outil Read accepte par lecture ;
+    les juges n'ont pu noter que 9 tâches sur 24. En texte, le juge lit par tranches de lignes. Contenu identique
+    au JSON (rubrique et prompts mot pour mot)."""
+    parties = [f"RUBRIQUE (consignes du juge, à appliquer telles quelles) :\n{RUBRIC}\n\n"
+               f"TACHES : {len(taches)}, oid dans l'ordre : {', '.join(t['oid'] for t in taches)}\n"]
+    for t in taches:
+        parties.append(f"\n=== TACHE oid={t['oid']} ===\n{t['prompt']}\n=== FIN TACHE oid={t['oid']} ===\n")
+    return "".join(parties)
+
+
 def _cartes(ids: set[str]) -> dict[str, str]:
     from src.base_c.outils import Base
     from src.eval.format_d import Formats
@@ -76,8 +88,10 @@ def preparer(generation: int, banc: dict, base_path: Path, graine: str, combinai
     (JUGE / "lots").mkdir(parents=True, exist_ok=True)
     for nom, groupe in (("lot", lots), ("rejuge", relots)):
         for k, lot in enumerate(groupe, 1):
-            (JUGE / "lots" / f"g{generation}_{nom}_{k:03d}.json").write_text(json.dumps(
+            base = JUGE / "lots" / f"g{generation}_{nom}_{k:03d}"
+            base.with_suffix(".json").write_text(json.dumps(
                 {"rubrique": RUBRIC, "taches": lot}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+            base.with_suffix(".txt").write_text(texte_lot(lot), encoding="utf-8")
     mp = JUGE / "label_mapping.json"
     ancien = json.loads(mp.read_text(encoding="utf-8")) if mp.exists() else {}
     mp.write_text(json.dumps({**ancien, **mapping}, ensure_ascii=False, indent=1, sort_keys=True) + "\n",

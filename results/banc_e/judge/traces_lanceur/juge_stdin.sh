@@ -1,5 +1,7 @@
 #!/bin/bash
-# usage : juge_un.sh <lot.json> <dossier_sortie>   (banc E, protocole v0.3 section 5 ; copie du lanceur de D)
+# usage : juge_stdin.sh <lot.json> <dossier_sortie>   (banc E, protocole v0.3.1 : lot passé en entier sur stdin)
+# Le juge reçoit rubrique et tâches (fiches comprises) dans son contexte, sans lecture par tranches : l'outil Read
+# plafonne à 25 000 tokens par lecture et, en tranches, un juge effort low a déclaré des lectures partielles.
 J=/home/matteo_linux/projets/OrientIA-etape-e/results/banc_e/judge
 S=/tmp/claude-1000/-home-matteo-linux-projets/527a18a3-94b3-4344-abd5-281bb782718d/scratchpad/juge
 mkdir -p $S $J/$2
@@ -13,6 +15,6 @@ import json
 t=open('/home/matteo_linux/projets/.claude/agents/juge-aveugle.md').read()
 print(json.dumps({'juge':{'description':'juge aveugle','prompt':t.split('---',2)[2].strip(),'tools':['Read','Write'],'model':'claude-opus-5-5'}}))")
 nom=$(basename $1 .json)
-timeout 2400 claude -p "Lot : $J/lots/${1%.json}.txt (texte multiligne : lis-le par tranches de lignes avec offset et limit)
-Dossier de sortie : $J/$2/" --agents "$AG" --agent juge --model claude-opus-5-5 --effort low --setting-sources project --strict-mcp-config --disable-slash-commands --no-session-persistence --permission-mode acceptEdits --allowedTools Read Write --output-format json > $S/juge_$nom.json 2>&1
+timeout 2400 claude -p "Le lot est entièrement contenu dans ce message, après cette ligne : ne lis aucun fichier, lis le lot ci-dessous en entier (rubrique puis chaque tâche avec toutes ses fiches).
+Dossier de sortie : $J/$2/" --agents "$AG" --agent juge --model claude-opus-5-5 --effort low --setting-sources project --strict-mcp-config --disable-slash-commands --no-session-persistence --permission-mode acceptEdits --allowedTools Read Write --output-format json < $J/lots/$nom.txt > $S/juge_stdin_$nom.json 2>&1
 echo "$nom exit $? cle_api=$NCLE $(date +%H:%M:%S)"
