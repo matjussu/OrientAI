@@ -171,3 +171,15 @@ export explorateur (format de D, onglet comparatif).
   lots (mot pour mot celui des `.json`), aveugle, rejugement.
 - Incident sans effet sur les verdicts : 4 lots ont rendu un 400 (« Claude Code 2.1.126 does not support this
   model ») pendant la mise à jour automatique de Claude Code (11:16) ; version 2.1.281 ensuite.
+
+## 12. Amendement v0.3.2 (24/09/2026, 16h40, écrit avant le jeu du rejugement ; choix de Jarvis, option 2)
+
+**Rejugement réduit.** Le rejugement de 20 % des tours (22 lots, 128 tâches) n'entre pas dans la règle de décision
+(section 6) : il mesure le bruit aléatoire du juge. La décision de g1 est déjà rendue (C x GLM 5.3, dE -63,3 pts,
+IC95 [-74,7 ; -51,9] ; vérification indépendante de Jarvis sur les verdicts bruts, chiffres identiques). Le rejugement
+est réduit à **la référence et au choix, 15 tours chacun**, soit 30 tâches en **5 lots de 6** (`g1_rejugemin_*`), pour
+publier l'accord d'un juge dont la configuration a changé depuis D (fiches vues, transport stdin) et n'a jamais été
+mesurée. Les 15 tours de chaque combinaison sont les 15 premiers (ordre des oid) de l'échantillon tiré le 24/09 avant
+tout résultat (`rejuges_g1.json`, 16 par combinaison) ; l'ordre dans les lots est mélangé (graine
+`banc-e-2026-09-24|rejuge-min`). Même transport stdin (lanceur v2), même juge. Le rejugement ne peut pas changer la
+décision ; il ne détecte pas non plus un biais systématique du juge (c'est le même juge), seulement son instabilité.
