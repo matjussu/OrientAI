@@ -1,4 +1,4 @@
-# Banc E : confirmation du modèle de la démo, protocole v0.3 (24/09/2026)
+# Banc E : confirmation du modèle de la démo, protocole v0.3 (24/09/2026, GO de Jarvis à 10h42)
 
 Ordre 2026-09-24-1020 (Jarvis, décisions de Matteo Telegram 10666, 10674, 10676, 10678). Écrit **avant** tout
 appel de grille ; seul le diagnostic de l'outil (`diag_outil/RESUME.md`, 0,47 USD) a été joué. Hérite de
@@ -20,8 +20,9 @@ Avec un juge qui voit le contenu des fiches, ce qui manquait à D pour trancher 
 | Mistral Small 4 | `mistral-small-2603` | témoin souverain (aussi servi par Cloud Temple, SecNumCloud), modèle auxiliaire en prod | 0,15 / 0,6 |
 
 Prix lus le 24/09/2026 sur docs.mistral.ai/models : `mistral-medium-3-5-26-04`, `zai-glm-5-2`, `zai-glm-5-3`,
-`mistral-small-4-0-26-03` (texte brut de la page, relevé par curl). La correspondance Medium 3.5 = `mistral-medium-2604`
-est déduite du slug de version (26.04) : **supposée**. Présence des 4 identifiants : GET /v1/models sur
+`mistral-small-4-0-26-03` (texte brut de la page, relevé par curl ; relus par Jarvis le 24/09). Medium 3.5 =
+`mistral-medium-2604` : mesuré, GET /v1/models (Jarvis, 24/09 10h) rend pour `mistral-medium-2604` les alias
+« mistral-medium-3-5 » et « mistral-medium-3.5 ». Présence des 4 identifiants : GET /v1/models sur
 api.eu.mistral.ai (Jarvis, 24/09 10h20), et modèle rendu = modèle demandé sur les 53 appels du diagnostic.
 Endpoint unique : `server_url="https://api.eu.mistral.ai"` (celui visé en prod). Le modèle rendu est vérifié à chaque
 réponse ; un écart arrête le run.
@@ -61,10 +62,10 @@ même prompt système, température 0,3, même fenêtre d'historique, même bouc
   chiffre avec session, source, définition), **identique pour les 8 combinaisons**. C'est le « contexte neutre »
   écrit en D v0.1 et abandonné en v0.2. Un test vérifie, octet pour octet, que deux combinaisons d'une même
   conversation donnent au juge le même contexte, réponse exceptée (repris de `tests/test_juge_d.py`).
-- **Une phrase d'accompagnement**, à valider avec ce protocole : « Les fiches ci-dessous sont les données
-  officielles montrées à l'assistant. Un chiffre ou un fait qui les contredit est une erreur factuelle. » Sans elle,
-  le juge n'a aucune consigne sur l'usage des fiches ; avec elle, `erreur_factuelle` couvre les contradictions avec
-  les fiches en plus de sa propre connaissance.
+- **Une phrase d'accompagnement** (validée par Jarvis, GO du 24/09, forme complétée par lui), la même pour les 8
+  combinaisons : « Les fiches ci-dessous sont les données officielles montrées à l'assistant. Un chiffre ou un fait
+  qui les contredit est une erreur factuelle. Une information absente des fiches n'est pas une erreur en soi :
+  juge-la sur tes connaissances. »
 - **Taille des lots** : 6 tâches par lot au lieu de 25. Mesure : la carte B fait 6 908 caractères en médiane, soit
   55 360 caractères de fiches par tâche en médiane (93 208 au maximum). 25 tâches dépasseraient le contexte du juge.
   Lots mélangés comme en D (jamais une conversation entière dans un lot, pour ne pas faire de jugement comparatif).
@@ -72,6 +73,9 @@ même prompt système, température 0,3, même fenêtre d'historique, même bouc
   atteinte en D ; la reprise se fait par tâches manquantes, contrôlée sur les fichiers.
 - Conséquence : les notes et `erreur_factuelle` **ne sont pas comparables à D**. On compare les 8 combinaisons de E
   entre elles, R comprise.
+
+**Portée** : l'exposition reste celle de D (attendus + BM25, 8 fiches, gelée), donc une **borne haute de la
+recherche**. Le banc compare les modèles à recherche égale ; il ne mesure pas le produit de bout en bout.
 
 ## 6. Critères et règle de décision (écrite avant, seuils chiffrés)
 
