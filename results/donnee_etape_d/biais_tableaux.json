@@ -1,0 +1,56 @@
+{
+ "A-mistral-medium-2604": {
+  "P_type": 0.81,
+  "plus_tableau": 0.02,
+  "P_type_ou_tableau": 0.83,
+  "reponses_avec_tableau": 47
+ },
+ "A-mistral-large-2512": {
+  "P_type": 0.772,
+  "plus_tableau": 0.034,
+  "P_type_ou_tableau": 0.807,
+  "reponses_avec_tableau": 98
+ },
+ "A-zai-glm-5-2": {
+  "P_type": 0.783,
+  "plus_tableau": 0.0,
+  "P_type_ou_tableau": 0.783,
+  "reponses_avec_tableau": 0
+ },
+ "B-mistral-medium-2604": {
+  "P_type": 0.782,
+  "plus_tableau": 0.028,
+  "P_type_ou_tableau": 0.81,
+  "reponses_avec_tableau": 75
+ },
+ "B-mistral-large-2512": {
+  "P_type": 0.676,
+  "plus_tableau": 0.048,
+  "P_type_ou_tableau": 0.724,
+  "reponses_avec_tableau": 109
+ },
+ "B-zai-glm-5-2": {
+  "P_type": 0.709,
+  "plus_tableau": 0.0,
+  "P_type_ou_tableau": 0.709,
+  "reponses_avec_tableau": 0
+ },
+ "C-mistral-medium-2604": {
+  "P_type": 0.656,
+  "plus_tableau": 0.02,
+  "P_type_ou_tableau": 0.676,
+  "reponses_avec_tableau": 39
+ },
+ "C-mistral-large-2512": {
+  "P_type": 0.627,
+  "plus_tableau": 0.031,
+  "P_type_ou_tableau": 0.658,
+  "reponses_avec_tableau": 59
+ },
+ "C-zai-glm-5-2": {
+  "P_type": 0.729,
+  "plus_tableau": 0.07,
+  "P_type_ou_tableau": 0.799,
+  "reponses_avec_tableau": 47
+ }
+}

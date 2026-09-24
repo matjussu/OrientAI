@@ -1,0 +1,98 @@
+{
+ "nature": "lecture preliminaire, generation 1 seule, critere 1 deterministe ; ni IC, ni dP, ni juge, ni decision",
+ "demandee_par": "Matteo via Jarvis, Telegram 10647, 23/09 18:14, apres le gel du protocole (v0.2, 095b590)",
+ "calculee_le": "2026-09-23T18:15:14",
+ "reserve": "\"non retrouve\" ne veut pas dire faux : le chiffre n est pas dans les fiches exposees (numbers.py, sans ancrage)",
+ "matrice": {
+  "A-mistral-medium-2604": {
+   "cites_justes": 265,
+   "attendus": 323,
+   "P": 0.82,
+   "temoin": 0.068,
+   "chiffres_cites": 1443,
+   "non_retrouves_dans_les_fiches": 406,
+   "part_non_retrouves": 0.281,
+   "tours_avec_appel_outil": 0
+  },
+  "A-mistral-large-2512": {
+   "cites_justes": 242,
+   "attendus": 323,
+   "P": 0.749,
+   "temoin": 0.093,
+   "chiffres_cites": 1992,
+   "non_retrouves_dans_les_fiches": 900,
+   "part_non_retrouves": 0.452,
+   "tours_avec_appel_outil": 0
+  },
+  "A-zai-glm-5-2": {
+   "cites_justes": 252,
+   "attendus": 323,
+   "P": 0.78,
+   "temoin": 0.065,
+   "chiffres_cites": 919,
+   "non_retrouves_dans_les_fiches": 209,
+   "part_non_retrouves": 0.227,
+   "tours_avec_appel_outil": 0
+  },
+  "B-mistral-medium-2604": {
+   "cites_justes": 250,
+   "attendus": 323,
+   "P": 0.774,
+   "temoin": 0.087,
+   "chiffres_cites": 1637,
+   "non_retrouves_dans_les_fiches": 564,
+   "part_non_retrouves": 0.345,
+   "tours_avec_appel_outil": 0
+  },
+  "B-mistral-large-2512": {
+   "cites_justes": 214,
+   "attendus": 323,
+   "P": 0.663,
+   "temoin": 0.093,
+   "chiffres_cites": 2116,
+   "non_retrouves_dans_les_fiches": 1078,
+   "part_non_retrouves": 0.509,
+   "tours_avec_appel_outil": 0
+  },
+  "B-zai-glm-5-2": {
+   "cites_justes": 240,
+   "attendus": 323,
+   "P": 0.743,
+   "temoin": 0.062,
+   "chiffres_cites": 790,
+   "non_retrouves_dans_les_fiches": 221,
+   "part_non_retrouves": 0.28,
+   "tours_avec_appel_outil": 0
+  },
+  "C-mistral-medium-2604": {
+   "cites_justes": 213,
+   "attendus": 323,
+   "P": 0.659,
+   "temoin": 0.05,
+   "chiffres_cites": 981,
+   "non_retrouves_dans_les_fiches": 358,
+   "part_non_retrouves": 0.365,
+   "tours_avec_appel_outil": 0
+  },
+  "C-mistral-large-2512": {
+   "cites_justes": 211,
+   "attendus": 323,
+   "P": 0.653,
+   "temoin": 0.062,
+   "chiffres_cites": 1522,
+   "non_retrouves_dans_les_fiches": 852,
+   "part_non_retrouves": 0.56,
+   "tours_avec_appel_outil": 4
+  },
+  "C-zai-glm-5-2": {
+   "cites_justes": 239,
+   "attendus": 323,
+   "P": 0.74,
+   "temoin": 0.056,
+   "chiffres_cites": 812,
+   "non_retrouves_dans_les_fiches": 204,
+   "part_non_retrouves": 0.251,
+   "tours_avec_appel_outil": 30
+  }
+ }
+}

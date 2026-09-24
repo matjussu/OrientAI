@@ -1,0 +1,28 @@
+{
+ "format": "C",
+ "modele": "mistral-medium-2604",
+ "generation": 1,
+ "protocole": "PROTOCOLE.md v0.1",
+ "commit": "d8022526a56cda687dd36ece0239d03e8a6a5662",
+ "git_dirty": false,
+ "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+ "base_sha256": "9667b95521c23a468799bc6265f3e02e09d6237d9c2598644bd211ef85135cd6",
+ "corpus_sha256": "2e6a93a5cda6d26119259248d0e7bbe7d103037608d471604aa359c66ce73c07",
+ "exposition_sha256": "47ab40ae0e6a252d34135396fb56483ff8dce2bd5ea7be7206433e1e8f5a3b63",
+ "temperature": 0.3,
+ "tours": 79,
+ "erreurs": 0,
+ "modeles_rendus": [
+  "mistral-medium-2604"
+ ],
+ "tokens_in": 265121,
+ "tokens_out": 77983,
+ "cout_usd": 0.262,
+ "prix_usd_par_million": [
+  0.4,
+  2.0
+ ],
+ "prix_source": "supposé (config du banc), non publié sur la page lue le 23/09",
+ "secondes_tours": 615.6,
+ "secondes_mur": 207.9
+}

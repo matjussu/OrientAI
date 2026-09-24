@@ -1,0 +1,1806 @@
+{
+ "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+ "base_sha256": "9667b95521c23a468799bc6265f3e02e09d6237d9c2598644bd211ef85135cd6",
+ "conversations": {
+  "V-INF-01": {
+   "attendues": [
+    "psup:7596",
+    "psup:47455",
+    "psup:47147"
+   ],
+   "cible_par_attendu": [
+    "psup:7596",
+    "psup:7596",
+    "psup:47455",
+    "psup:47455",
+    "psup:47147",
+    "psup:47147"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30987",
+    "psup:30989",
+    "psup:5411",
+    "psup:27545"
+   ],
+   "exposees": [
+    "psup:30989",
+    "psup:27545",
+    "psup:7596",
+    "psup:5411",
+    "psup:47455",
+    "psup:30987",
+    "psup:39126",
+    "psup:47147"
+   ]
+  },
+  "V-INF-02": {
+   "attendues": [
+    "psup:7520",
+    "psup:7347",
+    "psup:7485"
+   ],
+   "cible_par_attendu": [
+    "psup:7520",
+    "psup:7520",
+    "psup:7520",
+    "psup:7347",
+    "psup:7347",
+    "psup:7347",
+    "psup:7485",
+    "psup:7485",
+    "psup:7485",
+    null,
+    null,
+    null,
+    null
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:27781",
+    "psup:7484",
+    "psup:7488",
+    "psup:27783"
+   ],
+   "exposees": [
+    "psup:27783",
+    "psup:39126",
+    "psup:27781",
+    "psup:7485",
+    "psup:7488",
+    "psup:7520",
+    "psup:7484",
+    "psup:7347"
+   ]
+  },
+  "V-INF-03": {
+   "attendues": [
+    "psup:17725",
+    "psup:4774",
+    "psup:4694"
+   ],
+   "cible_par_attendu": [
+    "psup:17725",
+    "psup:17725",
+    "psup:17725",
+    "psup:4774",
+    "psup:4774",
+    "psup:4774",
+    "psup:4694",
+    "psup:4694",
+    "psup:4694"
+   ],
+   "distracteurs": [
+    "psup_app:49281",
+    "psup_app:43796",
+    "psup_app:40984",
+    "psup_app:6756",
+    "psup:5979"
+   ],
+   "exposees": [
+    "psup:17725",
+    "psup_app:40984",
+    "psup_app:6756",
+    "psup_app:43796",
+    "psup_app:49281",
+    "psup:4694",
+    "psup:4774",
+    "psup:5979"
+   ]
+  },
+  "V-INF-04": {
+   "attendues": [
+    "psup:4188",
+    "psup:4098"
+   ],
+   "cible_par_attendu": [
+    "psup:4188",
+    "psup:4188",
+    "psup:4098",
+    "psup:4098",
+    null,
+    null,
+    null
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "mm:1702599BZ461",
+    "psup:32711",
+    "mm:1604352FHSG6",
+    "psup:39183",
+    "psup:10924"
+   ],
+   "exposees": [
+    "mm:1702599BZ461",
+    "psup:4098",
+    "psup:4188",
+    "psup:10924",
+    "psup:32711",
+    "mm:1604352FHSG6",
+    "psup:39126",
+    "psup:39183"
+   ]
+  },
+  "V-INF-05": {
+   "attendues": [
+    "psup:23855"
+   ],
+   "cible_par_attendu": [
+    null,
+    null,
+    null,
+    null,
+    "psup:23855",
+    "psup:23855"
+   ],
+   "distracteurs": [
+    "psup:26996",
+    "psup:5886",
+    "psup:30085",
+    "psup:24139",
+    "psup:13003",
+    "psup:27640",
+    "psup:48340"
+   ],
+   "exposees": [
+    "psup:26996",
+    "psup:48340",
+    "psup:13003",
+    "psup:27640",
+    "psup:24139",
+    "psup:23855",
+    "psup:30085",
+    "psup:5886"
+   ]
+  },
+  "V-INF-06": {
+   "attendues": [
+    "psup:8275",
+    "psup:8343",
+    "psup:35359"
+   ],
+   "cible_par_attendu": [
+    "psup:8275",
+    "psup:8275",
+    "psup:8275",
+    "psup:8343",
+    "psup:8343",
+    "psup:8343",
+    "psup:35359",
+    "psup:35359"
+   ],
+   "distracteurs": [
+    "psup:8276",
+    "psup:8278",
+    "psup:39126",
+    "psup:28180",
+    "psup:2032"
+   ],
+   "exposees": [
+    "psup:8275",
+    "psup:8343",
+    "psup:8278",
+    "psup:8276",
+    "psup:28180",
+    "psup:35359",
+    "psup:39126",
+    "psup:2032"
+   ]
+  },
+  "V-INF-07": {
+   "attendues": [
+    "psup:32116",
+    "psup:32042",
+    "psup:39126",
+    "psup:5482"
+   ],
+   "cible_par_attendu": [
+    "psup:32116",
+    "psup:32116",
+    "psup:32116",
+    "psup:32042",
+    "psup:32042",
+    "psup:39126",
+    "psup:39126",
+    "psup:5482",
+    "psup:5482"
+   ],
+   "distracteurs": [
+    "psup:32122",
+    "mm:1702989AKG3I",
+    "psup:43498",
+    "psup:44428"
+   ],
+   "exposees": [
+    "psup:5482",
+    "psup:32122",
+    "psup:32116",
+    "psup:43498",
+    "mm:1702989AKG3I",
+    "psup:39126",
+    "psup:32042",
+    "psup:44428"
+   ]
+  },
+  "V-INF-08": {
+   "attendues": [
+    "mm:1603218DH2WG",
+    "mm:1603218DIU47"
+   ],
+   "cible_par_attendu": [
+    "mm:1603218DH2WG",
+    "mm:1603218DH2WG",
+    "mm:1603218DH2WG",
+    "mm:1603218DH2WG",
+    "mm:1603218DIU47",
+    "mm:1603218DIU47",
+    null,
+    null
+   ],
+   "distracteurs": [
+    "psup_app:48107",
+    "psup_app:49188",
+    "psup:48585",
+    "psup_app:47794",
+    "psup_app:46107",
+    "psup_app:47463"
+   ],
+   "exposees": [
+    "psup:48585",
+    "psup_app:47794",
+    "psup_app:46107",
+    "mm:1603218DH2WG",
+    "psup_app:47463",
+    "mm:1603218DIU47",
+    "psup_app:49188",
+    "psup_app:48107"
+   ]
+  },
+  "V-INF-09": {
+   "attendues": [
+    "psup:6888",
+    "psup:7520",
+    "psup:7192"
+   ],
+   "cible_par_attendu": [
+    "psup:6888",
+    "psup:6888",
+    "psup:7520",
+    "psup:7520",
+    "psup:7192",
+    "psup:7192"
+   ],
+   "distracteurs": [
+    "mm:1506012KW5HC",
+    "psup:23028",
+    "psup:7128",
+    "mm:1501350CY7FX",
+    "mm:1506012KG183"
+   ],
+   "exposees": [
+    "psup:7128",
+    "psup:6888",
+    "psup:7192",
+    "psup:23028",
+    "mm:1501350CY7FX",
+    "psup:7520",
+    "mm:1506012KW5HC",
+    "mm:1506012KG183"
+   ]
+  },
+  "V-INF-10": {
+   "attendues": [
+    "psup:36041",
+    "psup:4345",
+    "psup:4320"
+   ],
+   "cible_par_attendu": [
+    "psup:36041",
+    "psup:36041",
+    "psup:4345",
+    "psup:4345",
+    "psup:4320",
+    "psup:4320",
+    "psup:4320"
+   ],
+   "distracteurs": [
+    "psup:36038",
+    "psup:48585",
+    "psup:30824",
+    "psup_app:50252",
+    "psup:36040"
+   ],
+   "exposees": [
+    "psup:30824",
+    "psup:4320",
+    "psup:36040",
+    "psup:36041",
+    "psup:48585",
+    "psup:4345",
+    "psup:36038",
+    "psup_app:50252"
+   ]
+  },
+  "V-INF-11": {
+   "attendues": [
+    "psup:2701",
+    "psup:2815",
+    "psup:39214",
+    "psup:39215"
+   ],
+   "cible_par_attendu": [
+    "psup:2701",
+    "psup:2701",
+    "psup:2815",
+    "psup:2815",
+    "psup:39214",
+    "psup:39214",
+    "psup:39215",
+    "psup:39215"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:5886",
+    "psup:30085",
+    "psup_app:50252"
+   ],
+   "exposees": [
+    "psup:39215",
+    "psup:39214",
+    "psup_app:50252",
+    "psup:2815",
+    "psup:39126",
+    "psup:30085",
+    "psup:2701",
+    "psup:5886"
+   ]
+  },
+  "V-INF-12": {
+   "attendues": [
+    "psup:35520",
+    "psup:36110",
+    "psup:11801"
+   ],
+   "cible_par_attendu": [
+    "psup:35520",
+    "psup:35520",
+    "psup:36110",
+    "psup:36110",
+    "psup:11801",
+    "psup:11801"
+   ],
+   "distracteurs": [
+    "psup:30085",
+    "psup:24139",
+    "psup:13003",
+    "psup:27640",
+    "psup:5886"
+   ],
+   "exposees": [
+    "psup:5886",
+    "psup:24139",
+    "psup:11801",
+    "psup:13003",
+    "psup:36110",
+    "psup:27640",
+    "psup:35520",
+    "psup:30085"
+   ]
+  },
+  "V-INF-13": {
+   "attendues": [
+    "psup:11236",
+    "psup:11349"
+   ],
+   "cible_par_attendu": [
+    "psup:11236",
+    "psup:11236",
+    "psup:11236",
+    "psup:11236",
+    "psup:11236",
+    "psup:11236",
+    "psup:11349",
+    "psup:11349",
+    "psup:11349"
+   ],
+   "distracteurs": [
+    "psup:29030",
+    "psup:29029",
+    "psup:29028",
+    "psup:29026",
+    "psup:28999",
+    "psup:28683"
+   ],
+   "exposees": [
+    "psup:29026",
+    "psup:28683",
+    "psup:29030",
+    "psup:11349",
+    "psup:11236",
+    "psup:29029",
+    "psup:29028",
+    "psup:28999"
+   ]
+  },
+  "V-INF-14": {
+   "attendues": [
+    "mm:1602749UV67P",
+    "mm:1702989AKG3I",
+    "mm:1601877WG3VE"
+   ],
+   "cible_par_attendu": [
+    "mm:1602749UV67P",
+    "mm:1602749UV67P",
+    "mm:1702989AKG3I",
+    "mm:1702989AKG3I",
+    "mm:1601877WG3VE",
+    "mm:1601877WG3VE",
+    "mm:1602749UV67P",
+    "mm:1602749UV67P",
+    "mm:1601877WG3VE"
+   ],
+   "distracteurs": [
+    "psup:27932",
+    "mm:1501350CY7FX",
+    "mm:1602749UAIG8",
+    "mm:1602749UXARB",
+    "mm:1703389KEB7S"
+   ],
+   "exposees": [
+    "mm:1501350CY7FX",
+    "mm:1702989AKG3I",
+    "mm:1602749UXARB",
+    "mm:1602749UV67P",
+    "mm:1601877WG3VE",
+    "mm:1703389KEB7S",
+    "psup:27932",
+    "mm:1602749UAIG8"
+   ]
+  },
+  "V-INF-15": {
+   "attendues": [
+    "psup:31726",
+    "psup:31257",
+    "psup:4524"
+   ],
+   "cible_par_attendu": [
+    "psup:31726",
+    "psup:31726",
+    "psup:31257",
+    "psup:31257",
+    "psup:4524",
+    "psup:4524"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30987",
+    "psup:30989",
+    "psup:5886",
+    "psup:27915"
+   ],
+   "exposees": [
+    "psup:5886",
+    "psup:31726",
+    "psup:27915",
+    "psup:39126",
+    "psup:4524",
+    "psup:30987",
+    "psup:30989",
+    "psup:31257"
+   ]
+  },
+  "V-INF-16": {
+   "attendues": [
+    "psup:2495",
+    "psup:10310",
+    "psup:39586",
+    "psup:34323"
+   ],
+   "cible_par_attendu": [
+    "psup:2495",
+    "psup:2495",
+    "psup:10310",
+    "psup:10310",
+    "psup:39586",
+    "psup:39586",
+    "psup:34323",
+    "psup:34323"
+   ],
+   "distracteurs": [
+    "mm:1601717XBH7Y",
+    "psup:39126",
+    "psup:4124",
+    "psup_app:48946"
+   ],
+   "exposees": [
+    "psup:39126",
+    "mm:1601717XBH7Y",
+    "psup:10310",
+    "psup_app:48946",
+    "psup:4124",
+    "psup:39586",
+    "psup:2495",
+    "psup:34323"
+   ]
+  },
+  "V-INF-17": {
+   "attendues": [],
+   "cible_par_attendu": [],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30987",
+    "psup:5886",
+    "psup:30989",
+    "mm:1800626FTB13",
+    "mm:1604794M1WFQ",
+    "mm:1602817T8CS4",
+    "psup_app:44153"
+   ],
+   "exposees": [
+    "mm:1602817T8CS4",
+    "psup_app:44153",
+    "psup:39126",
+    "mm:1604794M1WFQ",
+    "mm:1800626FTB13",
+    "psup:30987",
+    "psup:30989",
+    "psup:5886"
+   ]
+  },
+  "V-INF-18": {
+   "attendues": [],
+   "cible_par_attendu": [],
+   "distracteurs": [
+    "psup:35595",
+    "psup:35683",
+    "psup:44428",
+    "psup:39030",
+    "psup:39396",
+    "psup:26879",
+    "mm:1900276A534L",
+    "psup:10310"
+   ],
+   "exposees": [
+    "psup:39396",
+    "psup:35683",
+    "psup:10310",
+    "psup:44428",
+    "psup:39030",
+    "psup:26879",
+    "psup:35595",
+    "mm:1900276A534L"
+   ]
+  },
+  "V-INF-19": {
+   "attendues": [
+    "psup:5482",
+    "psup:32042",
+    "psup:5469",
+    "psup:5605"
+   ],
+   "cible_par_attendu": [
+    "psup:5482",
+    "psup:5482",
+    "psup:32042",
+    "psup:32042",
+    "psup:5469",
+    "psup:5469",
+    "psup:5605",
+    "psup:5605"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:5886",
+    "mm:1702599BZ461",
+    "psup:30085"
+   ],
+   "exposees": [
+    "psup:5482",
+    "mm:1702599BZ461",
+    "psup:5886",
+    "psup:39126",
+    "psup:5605",
+    "psup:30085",
+    "psup:5469",
+    "psup:32042"
+   ]
+  },
+  "V-INF-20": {
+   "attendues": [
+    "psup:16148",
+    "psup:7963",
+    "psup:7951"
+   ],
+   "cible_par_attendu": [
+    "psup:16148",
+    "psup:16148",
+    "psup:16148",
+    "psup:7963",
+    "psup:7963",
+    "psup:7963",
+    "psup:7951",
+    "psup:7951",
+    "psup:7951"
+   ],
+   "distracteurs": [
+    "psup:44428",
+    "psup_app:50252",
+    "psup:48340",
+    "psup:47595",
+    "psup:44399"
+   ],
+   "exposees": [
+    "psup:7951",
+    "psup_app:50252",
+    "psup:44399",
+    "psup:48340",
+    "psup:7963",
+    "psup:44428",
+    "psup:16148",
+    "psup:47595"
+   ]
+  },
+  "V-INF-21": {
+   "attendues": [
+    "psup:31941"
+   ],
+   "cible_par_attendu": [
+    "psup:31941",
+    "psup:31941",
+    "psup:31941",
+    "psup:31941",
+    "psup:31941",
+    "psup:31941"
+   ],
+   "distracteurs": [
+    "psup:29571",
+    "psup:32345",
+    "psup:5886",
+    "psup:32344",
+    "psup:31939",
+    "psup_app:46628",
+    "psup:35779"
+   ],
+   "exposees": [
+    "psup:35779",
+    "psup:29571",
+    "psup:32345",
+    "psup:32344",
+    "psup:31941",
+    "psup:5886",
+    "psup:31939",
+    "psup_app:46628"
+   ]
+  },
+  "V-MAT-01": {
+   "attendues": [
+    "psup:8182",
+    "psup:31680",
+    "psup:8550",
+    "psup:39554"
+   ],
+   "cible_par_attendu": [
+    "psup:8182",
+    "psup:8182",
+    "psup:31680",
+    "psup:31680",
+    "psup:8550",
+    "psup:8550",
+    "psup:39554",
+    "psup:39554"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30987",
+    "psup:5886",
+    "psup:48065"
+   ],
+   "exposees": [
+    "psup:31680",
+    "psup:8182",
+    "psup:5886",
+    "psup:39126",
+    "psup:30987",
+    "psup:8550",
+    "psup:39554",
+    "psup:48065"
+   ]
+  },
+  "V-MAT-02": {
+   "attendues": [
+    "psup:4671",
+    "psup:19164"
+   ],
+   "cible_par_attendu": [
+    "psup:4671",
+    "psup:4671",
+    "psup:19164",
+    "psup:19164",
+    "psup:19164"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30989",
+    "psup:48065",
+    "psup:30987",
+    "psup:23028",
+    "psup:5886"
+   ],
+   "exposees": [
+    "psup:23028",
+    "psup:39126",
+    "psup:48065",
+    "psup:30989",
+    "psup:4671",
+    "psup:30987",
+    "psup:5886",
+    "psup:19164"
+   ]
+  },
+  "V-MAT-03": {
+   "attendues": [
+    "psup:7089",
+    "psup:35489"
+   ],
+   "cible_par_attendu": [
+    "psup:7089",
+    "psup:7089",
+    "psup:35489",
+    "psup:35489"
+   ],
+   "distracteurs": [
+    "psup:21025",
+    "psup:23028",
+    "psup:5886",
+    "psup:15536",
+    "psup:48585",
+    "psup:44428"
+   ],
+   "exposees": [
+    "psup:44428",
+    "psup:35489",
+    "psup:48585",
+    "psup:15536",
+    "psup:5886",
+    "psup:21025",
+    "psup:7089",
+    "psup:23028"
+   ]
+  },
+  "V-MAT-04": {
+   "attendues": [
+    "psup:47242",
+    "psup:47258"
+   ],
+   "cible_par_attendu": [
+    "psup:47242",
+    "psup:47242",
+    "psup:47258",
+    "psup:47258"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30989",
+    "psup:23028",
+    "psup:39284",
+    "mm:2500048CHZXD",
+    "psup:5886"
+   ],
+   "exposees": [
+    "psup:30989",
+    "psup:47258",
+    "mm:2500048CHZXD",
+    "psup:23028",
+    "psup:47242",
+    "psup:5886",
+    "psup:39126",
+    "psup:39284"
+   ]
+  },
+  "V-MAT-05": {
+   "attendues": [
+    "psup:32112",
+    "psup:39817",
+    "psup:6780",
+    "psup:6988"
+   ],
+   "cible_par_attendu": [
+    "psup:32112",
+    "psup:32112",
+    "psup:39817",
+    "psup:39817",
+    "psup:39817",
+    "psup:6780",
+    "psup:6780",
+    "psup:6988",
+    "psup:6988",
+    "psup:6988"
+   ],
+   "distracteurs": [
+    "psup:23028",
+    "psup:12860",
+    "psup:28906",
+    "psup:23855"
+   ],
+   "exposees": [
+    "psup:6780",
+    "psup:23855",
+    "psup:12860",
+    "psup:6988",
+    "psup:39817",
+    "psup:23028",
+    "psup:32112",
+    "psup:28906"
+   ]
+  },
+  "V-MAT-06": {
+   "attendues": [
+    "psup:32743",
+    "psup:31687"
+   ],
+   "cible_par_attendu": [
+    "psup:32743",
+    "psup:32743",
+    "psup:31687",
+    "psup:31687"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:35942",
+    "psup:30989",
+    "psup:32675",
+    "psup:35932",
+    "psup:32740"
+   ],
+   "exposees": [
+    "psup:35942",
+    "psup:31687",
+    "psup:39126",
+    "psup:32675",
+    "psup:32740",
+    "psup:32743",
+    "psup:30989",
+    "psup:35932"
+   ]
+  },
+  "V-MAT-07": {
+   "attendues": [
+    "psup:4036",
+    "psup:31831"
+   ],
+   "cible_par_attendu": [
+    "psup:4036",
+    "psup:4036",
+    "psup:31831",
+    "psup:31831"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:5886",
+    "psup:30987",
+    "psup:30989",
+    "psup:48065",
+    "psup:30085"
+   ],
+   "exposees": [
+    "psup:30987",
+    "psup:39126",
+    "psup:4036",
+    "psup:48065",
+    "psup:30085",
+    "psup:31831",
+    "psup:5886",
+    "psup:30989"
+   ]
+  },
+  "V-MAT-08": {
+   "attendues": [
+    "psup:4217"
+   ],
+   "cible_par_attendu": [
+    "psup:4217",
+    "psup:4217",
+    "psup:4217",
+    null,
+    null
+   ],
+   "distracteurs": [
+    "psup:26467",
+    "psup_app:50252",
+    "psup:23028",
+    "psup:21025",
+    "psup:15536",
+    "psup:8641",
+    "psup:23167"
+   ],
+   "exposees": [
+    "psup:23028",
+    "psup_app:50252",
+    "psup:26467",
+    "psup:21025",
+    "psup:8641",
+    "psup:23167",
+    "psup:4217",
+    "psup:15536"
+   ]
+  },
+  "V-MAT-09": {
+   "attendues": [
+    "mm:1601962N73AH",
+    "mm:1603284ASFLI"
+   ],
+   "cible_par_attendu": [
+    "mm:1601962N73AH",
+    "mm:1601962N73AH",
+    "mm:1601962N73AH",
+    "mm:1601962N73AH",
+    "mm:1603284ASFLI",
+    "mm:1603284ASFLI",
+    "mm:1603284ASFLI"
+   ],
+   "distracteurs": [
+    "mm:1701990PLUI6",
+    "mm:1703353WK73P",
+    "mm:1501354G4ZQE",
+    "psup:28322",
+    "mm:1501637PWENB",
+    "mm:1604352FHSG6"
+   ],
+   "exposees": [
+    "mm:1501637PWENB",
+    "mm:1501354G4ZQE",
+    "psup:28322",
+    "mm:1603284ASFLI",
+    "mm:1604352FHSG6",
+    "mm:1701990PLUI6",
+    "mm:1601962N73AH",
+    "mm:1703353WK73P"
+   ]
+  },
+  "V-MAT-10": {
+   "attendues": [
+    "psup:36001",
+    "psup:11879",
+    "psup:26387"
+   ],
+   "cible_par_attendu": [
+    "psup:36001",
+    "psup:36001",
+    "psup:11879",
+    "psup:11879",
+    "psup:26387",
+    "psup:26387"
+   ],
+   "distracteurs": [
+    "psup:11880",
+    "psup:5886",
+    "psup:27543",
+    "psup:28309",
+    "psup:39126"
+   ],
+   "exposees": [
+    "psup:39126",
+    "psup:26387",
+    "psup:5886",
+    "psup:36001",
+    "psup:27543",
+    "psup:11880",
+    "psup:11879",
+    "psup:28309"
+   ]
+  },
+  "V-MAT-11": {
+   "attendues": [],
+   "cible_par_attendu": [],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30989",
+    "psup:30987",
+    "psup:26458",
+    "psup:26457",
+    "psup:5677",
+    "psup:5678",
+    "psup_app:50252"
+   ],
+   "exposees": [
+    "psup:26457",
+    "psup:26458",
+    "psup:5677",
+    "psup:30987",
+    "psup:30989",
+    "psup:39126",
+    "psup:5678",
+    "psup_app:50252"
+   ]
+  },
+  "V-MAT-12": {
+   "attendues": [],
+   "cible_par_attendu": [],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30989",
+    "psup:30987",
+    "psup:29400",
+    "psup:29394",
+    "psup:26879",
+    "psup:5886",
+    "psup:48065"
+   ],
+   "exposees": [
+    "psup:48065",
+    "psup:39126",
+    "psup:29394",
+    "psup:5886",
+    "psup:26879",
+    "psup:30989",
+    "psup:30987",
+    "psup:29400"
+   ]
+  },
+  "V-MAT-13": {
+   "attendues": [
+    "psup:7916",
+    "psup:31686",
+    "psup:39956",
+    "psup:8061"
+   ],
+   "cible_par_attendu": [
+    "psup:7916",
+    "psup:7916",
+    "psup:31686",
+    "psup:31686",
+    "psup:39956",
+    "psup:39956",
+    "psup:8061",
+    "psup:8061"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:5886",
+    "psup:30989",
+    "psup:30987"
+   ],
+   "exposees": [
+    "psup:7916",
+    "psup:30987",
+    "psup:8061",
+    "psup:31686",
+    "psup:5886",
+    "psup:39956",
+    "psup:30989",
+    "psup:39126"
+   ]
+  },
+  "V-MAT-14": {
+   "attendues": [
+    "mm:1503297UWETR"
+   ],
+   "cible_par_attendu": [
+    "mm:1503297UWETR",
+    "mm:1503297UWETR",
+    "mm:1503297UWETR",
+    "mm:1503297UWETR"
+   ],
+   "distracteurs": [
+    "psup:5886",
+    "psup:30987",
+    "psup:39126",
+    "psup:30989",
+    "psup_app:50278",
+    "psup_app:26278",
+    "psup:49496"
+   ],
+   "exposees": [
+    "psup:30987",
+    "psup:39126",
+    "psup_app:26278",
+    "mm:1503297UWETR",
+    "psup:5886",
+    "psup:30989",
+    "psup_app:50278",
+    "psup:49496"
+   ]
+  },
+  "V-MAT-15": {
+   "attendues": [
+    "psup:35631"
+   ],
+   "cible_par_attendu": [
+    "psup:35631",
+    "psup:35631",
+    "psup:35631",
+    "psup:35631",
+    "psup:35631"
+   ],
+   "distracteurs": [
+    "psup:27886",
+    "psup:27885",
+    "psup:27884",
+    "psup:32465",
+    "psup:35638",
+    "psup:27847",
+    "psup:27843"
+   ],
+   "exposees": [
+    "psup:32465",
+    "psup:35638",
+    "psup:27847",
+    "psup:27884",
+    "psup:27885",
+    "psup:27843",
+    "psup:35631",
+    "psup:27886"
+   ]
+  },
+  "V-SAN-01": {
+   "attendues": [
+    "psup:32647",
+    "psup:27346",
+    "psup:26778"
+   ],
+   "cible_par_attendu": [
+    "psup:32647",
+    "psup:32647",
+    "psup:27346",
+    "psup:27346",
+    "psup:26778",
+    "psup:26778"
+   ],
+   "distracteurs": [
+    "psup_app:49281",
+    "psup:27362",
+    "psup:27361",
+    "psup:35500",
+    "psup:35847"
+   ],
+   "exposees": [
+    "psup:27361",
+    "psup_app:49281",
+    "psup:26778",
+    "psup:27362",
+    "psup:35500",
+    "psup:32647",
+    "psup:27346",
+    "psup:35847"
+   ]
+  },
+  "V-SAN-02": {
+   "attendues": [
+    "psup:36433",
+    "psup:28998"
+   ],
+   "cible_par_attendu": [
+    "psup:36433",
+    "psup:36433",
+    "psup:36433",
+    "psup:28998",
+    "psup:28998"
+   ],
+   "distracteurs": [
+    "psup:29180",
+    "psup:23028",
+    "psup:29571",
+    "psup:28683",
+    "psup:28685",
+    "psup:28681"
+   ],
+   "exposees": [
+    "psup:28681",
+    "psup:29571",
+    "psup:36433",
+    "psup:28683",
+    "psup:23028",
+    "psup:28685",
+    "psup:29180",
+    "psup:28998"
+   ]
+  },
+  "V-SAN-03": {
+   "attendues": [
+    "psup:23156",
+    "psup:23157",
+    "psup:38428",
+    "psup:34537"
+   ],
+   "cible_par_attendu": [
+    "psup:23156",
+    "psup:23156",
+    "psup:23156",
+    "psup:23157",
+    "psup:23157",
+    "psup:23157",
+    "psup:38428",
+    "psup:38428",
+    "psup:34537",
+    "psup:34537"
+   ],
+   "distracteurs": [
+    "psup:44428",
+    "psup:23272",
+    "psup:32711",
+    "psup:28906"
+   ],
+   "exposees": [
+    "psup:38428",
+    "psup:23272",
+    "psup:23156",
+    "psup:23157",
+    "psup:32711",
+    "psup:44428",
+    "psup:28906",
+    "psup:34537"
+   ]
+  },
+  "V-SAN-04": {
+   "attendues": [
+    "psup:23251",
+    "psup:23250",
+    "psup:34634"
+   ],
+   "cible_par_attendu": [
+    "psup:23251",
+    "psup:23251",
+    "psup:23251",
+    "psup:23250",
+    "psup:23250",
+    "psup:23250",
+    "psup:34634",
+    "psup:34634"
+   ],
+   "distracteurs": [
+    "psup:27529",
+    "mm:1601717XZFAW",
+    "psup:39570",
+    "psup:39396",
+    "mm:1601717XBH7Y"
+   ],
+   "exposees": [
+    "psup:27529",
+    "psup:39396",
+    "psup:34634",
+    "mm:1601717XZFAW",
+    "psup:39570",
+    "mm:1601717XBH7Y",
+    "psup:23251",
+    "psup:23250"
+   ]
+  },
+  "V-SAN-05": {
+   "attendues": [
+    "psup:48327",
+    "psup:29843",
+    "psup:43211"
+   ],
+   "cible_par_attendu": [
+    "psup:48327",
+    "psup:48327",
+    "psup:29843",
+    "psup:29843",
+    "psup:43211",
+    "psup:43211"
+   ],
+   "distracteurs": [
+    "psup:23471",
+    "psup:47481",
+    "psup:2519",
+    "psup:43359",
+    "psup:28727"
+   ],
+   "exposees": [
+    "psup:2519",
+    "psup:47481",
+    "psup:48327",
+    "psup:43359",
+    "psup:29843",
+    "psup:23471",
+    "psup:28727",
+    "psup:43211"
+   ]
+  },
+  "V-SAN-06": {
+   "attendues": [
+    "psup:28053",
+    "psup:26393",
+    "psup:28055"
+   ],
+   "cible_par_attendu": [
+    "psup:28053",
+    "psup:28053",
+    "psup:28053",
+    "psup:26393",
+    "psup:26393",
+    "psup:28055",
+    "psup:28055"
+   ],
+   "distracteurs": [
+    "psup:23028",
+    "psup:23208",
+    "psup:15051",
+    "psup:23391",
+    "psup:21025"
+   ],
+   "exposees": [
+    "psup:23391",
+    "psup:23028",
+    "psup:21025",
+    "psup:15051",
+    "psup:28053",
+    "psup:28055",
+    "psup:26393",
+    "psup:23208"
+   ]
+  },
+  "V-SAN-07": {
+   "attendues": [
+    "psup:19420",
+    "psup:8225"
+   ],
+   "cible_par_attendu": [
+    "psup:19420",
+    "psup:19420",
+    "psup:8225",
+    "psup:8225"
+   ],
+   "distracteurs": [
+    "psup:3199",
+    "psup:9764",
+    "psup:10535",
+    "psup:6807",
+    "psup:3846",
+    "psup:19432"
+   ],
+   "exposees": [
+    "psup:6807",
+    "psup:3846",
+    "psup:19420",
+    "psup:19432",
+    "psup:9764",
+    "psup:3199",
+    "psup:8225",
+    "psup:10535"
+   ]
+  },
+  "V-SAN-08": {
+   "attendues": [
+    "psup:26280",
+    "psup:26071"
+   ],
+   "cible_par_attendu": [
+    "psup:26280",
+    "psup:26280",
+    "psup:26071",
+    "psup:26071"
+   ],
+   "distracteurs": [
+    "psup:26647",
+    "mm:1604352FHSG6",
+    "mm:1501273UE85Q",
+    "mm:1702599BZ461",
+    "psup:10924",
+    "psup:29026"
+   ],
+   "exposees": [
+    "psup:26280",
+    "mm:1702599BZ461",
+    "mm:1604352FHSG6",
+    "psup:26647",
+    "mm:1501273UE85Q",
+    "psup:29026",
+    "psup:10924",
+    "psup:26071"
+   ]
+  },
+  "V-SAN-09": {
+   "attendues": [
+    "psup:28736",
+    "psup:28739"
+   ],
+   "cible_par_attendu": [
+    "psup:28736",
+    "psup:28736",
+    "psup:28739",
+    "psup:28739"
+   ],
+   "distracteurs": [
+    "psup:39126",
+    "psup:30989",
+    "psup:5886",
+    "psup:30987",
+    "psup:48065",
+    "psup:27915"
+   ],
+   "exposees": [
+    "psup:27915",
+    "psup:28739",
+    "psup:28736",
+    "psup:30989",
+    "psup:30987",
+    "psup:5886",
+    "psup:48065",
+    "psup:39126"
+   ]
+  },
+  "V-SAN-10": {
+   "attendues": [
+    "psup:30790",
+    "psup:30911",
+    "psup:31941"
+   ],
+   "cible_par_attendu": [
+    "psup:30790",
+    "psup:30790",
+    "psup:30790",
+    "psup:30911",
+    "psup:30911",
+    "psup:31941",
+    "psup:31941"
+   ],
+   "distracteurs": [
+    "psup:4996",
+    "psup:31048",
+    "psup:31066",
+    "psup:31069",
+    "psup:31045"
+   ],
+   "exposees": [
+    "psup:31066",
+    "psup:31048",
+    "psup:31941",
+    "psup:30911",
+    "psup:4996",
+    "psup:31045",
+    "psup:31069",
+    "psup:30790"
+   ]
+  },
+  "V-SAN-11": {
+   "attendues": [
+    "psup:43048",
+    "psup:43039",
+    "psup:43064"
+   ],
+   "cible_par_attendu": [
+    "psup:43048",
+    "psup:43048",
+    "psup:43039",
+    "psup:43039",
+    "psup:43064",
+    "psup:43064"
+   ],
+   "distracteurs": [
+    "mm:1900276AMYW7",
+    "psup:6330",
+    "psup:13055",
+    "mm:1801069NJBI7",
+    "psup:43043"
+   ],
+   "exposees": [
+    "mm:1801069NJBI7",
+    "psup:43039",
+    "psup:43064",
+    "psup:43043",
+    "psup:6330",
+    "psup:13055",
+    "mm:1900276AMYW7",
+    "psup:43048"
+   ]
+  },
+  "V-SAN-12": {
+   "attendues": [
+    "psup:26636",
+    "psup:26648"
+   ],
+   "cible_par_attendu": [
+    "psup:26636",
+    "psup:26636",
+    "psup:26648",
+    "psup:26648"
+   ],
+   "distracteurs": [
+    "psup:39030",
+    "psup:48340",
+    "psup_app:48715",
+    "psup:44399",
+    "psup_app:49614",
+    "psup:48341"
+   ],
+   "exposees": [
+    "psup_app:49614",
+    "psup:48341",
+    "psup:39030",
+    "psup:26636",
+    "psup:48340",
+    "psup:44399",
+    "psup_app:48715",
+    "psup:26648"
+   ]
+  },
+  "V-SAN-13": {
+   "attendues": [
+    "psup:23137",
+    "psup:23142",
+    "psup:23939"
+   ],
+   "cible_par_attendu": [
+    "psup:23137",
+    "psup:23137",
+    "psup:23137",
+    "psup:23142",
+    "psup:23142",
+    "psup:23142",
+    "psup:23939",
+    "psup:23939",
+    "psup:23939"
+   ],
+   "distracteurs": [
+    "psup:23131",
+    "psup:25294",
+    "psup:35947",
+    "psup_app:46632",
+    "psup_app:46631"
+   ],
+   "exposees": [
+    "psup:25294",
+    "psup:23939",
+    "psup:23131",
+    "psup:35947",
+    "psup_app:46632",
+    "psup:23142",
+    "psup:23137",
+    "psup_app:46631"
+   ]
+  },
+  "V-SAN-14": {
+   "attendues": [
+    "psup:26037",
+    "psup:26258",
+    "psup:26094"
+   ],
+   "cible_par_attendu": [
+    "psup:26037",
+    "psup:26037",
+    "psup:26258",
+    "psup:26258",
+    "psup:26094",
+    "psup:26094"
+   ],
+   "distracteurs": [
+    "psup:26092",
+    "psup:23229",
+    "psup:23028",
+    "psup:9616",
+    "psup:23208"
+   ],
+   "exposees": [
+    "psup:26037",
+    "psup:23028",
+    "psup:9616",
+    "psup:26094",
+    "psup:26092",
+    "psup:26258",
+    "psup:23208",
+    "psup:23229"
+   ]
+  },
+  "V-SAN-15": {
+   "attendues": [
+    "psup:4526",
+    "psup:15945"
+   ],
+   "cible_par_attendu": [
+    "psup:4526",
+    "psup:4526",
+    "psup:15945",
+    "psup:15945"
+   ],
+   "distracteurs": [
+    "psup:3716",
+    "psup:4866",
+    "psup:10356",
+    "psup:8276",
+    "psup:7598",
+    "psup:3443"
+   ],
+   "exposees": [
+    "psup:8276",
+    "psup:4866",
+    "psup:7598",
+    "psup:10356",
+    "psup:3443",
+    "psup:4526",
+    "psup:3716",
+    "psup:15945"
+   ]
+  },
+  "V-SAN-16": {
+   "attendues": [
+    "psup:28999"
+   ],
+   "cible_par_attendu": [
+    null,
+    null,
+    null,
+    "psup:28999",
+    "psup:28999",
+    "psup:28999"
+   ],
+   "distracteurs": [
+    "psup:23028",
+    "psup:23208",
+    "psup:26467",
+    "psup_app:32094",
+    "mm:1703012APRVJ",
+    "psup:32711",
+    "mm:1501481V2TMV"
+   ],
+   "exposees": [
+    "psup:32711",
+    "psup:28999",
+    "psup:23028",
+    "psup_app:32094",
+    "psup:26467",
+    "mm:1703012APRVJ",
+    "psup:23208",
+    "mm:1501481V2TMV"
+   ]
+  },
+  "V-SAN-17": {
+   "attendues": [],
+   "cible_par_attendu": [],
+   "distracteurs": [
+    "psup:44428",
+    "psup:23028",
+    "psup:15536",
+    "psup:28906",
+    "psup:28290",
+    "psup:23391",
+    "psup:28450",
+    "psup:48585"
+   ],
+   "exposees": [
+    "psup:28450",
+    "psup:23391",
+    "psup:15536",
+    "psup:48585",
+    "psup:28906",
+    "psup:28290",
+    "psup:23028",
+    "psup:44428"
+   ]
+  },
+  "V-SAN-18": {
+   "attendues": [],
+   "cible_par_attendu": [],
+   "distracteurs": [],
+   "exposees": []
+  },
+  "V-SAN-19": {
+   "attendues": [
+    "psup:23084",
+    "psup:23086",
+    "psup:23083",
+    "psup:23085"
+   ],
+   "cible_par_attendu": [
+    "psup:23084",
+    "psup:23084",
+    "psup:23084",
+    "psup:23086",
+    "psup:23086",
+    "psup:23086",
+    "psup:23083",
+    "psup:23083",
+    "psup:23083",
+    "psup:23085",
+    "psup:23085",
+    "psup:23085"
+   ],
+   "distracteurs": [
+    "psup_app:37373",
+    "psup_app:37156",
+    "psup:38009",
+    "psup:27623"
+   ],
+   "exposees": [
+    "psup:23084",
+    "psup:27623",
+    "psup:23083",
+    "psup:23085",
+    "psup_app:37373",
+    "psup:23086",
+    "psup_app:37156",
+    "psup:38009"
+   ]
+  },
+  "V-SAN-20": {
+   "attendues": [
+    "psup:36255",
+    "psup:35410",
+    "psup:26686"
+   ],
+   "cible_par_attendu": [
+    "psup:36255",
+    "psup:36255",
+    "psup:35410",
+    "psup:35410",
+    "psup:26686",
+    "psup:26686"
+   ],
+   "distracteurs": [
+    "psup:24139",
+    "psup:26996",
+    "psup:13003",
+    "psup:27640",
+    "psup:29646"
+   ],
+   "exposees": [
+    "psup:26686",
+    "psup:26996",
+    "psup:24139",
+    "psup:27640",
+    "psup:13003",
+    "psup:36255",
+    "psup:29646",
+    "psup:35410"
+   ]
+  },
+  "V-SAN-21": {
+   "attendues": [
+    "psup:31766"
+   ],
+   "cible_par_attendu": [
+    "psup:31766",
+    "psup:31766",
+    "psup:31766",
+    "psup:31766",
+    "psup:31766"
+   ],
+   "distracteurs": [
+    "psup:31765",
+    "psup:26972",
+    "psup:27198",
+    "psup:27202",
+    "psup:36147",
+    "psup:26974",
+    "psup:26975"
+   ],
+   "exposees": [
+    "psup:26975",
+    "psup:31766",
+    "psup:27198",
+    "psup:36147",
+    "psup:31765",
+    "psup:27202",
+    "psup:26974",
+    "psup:26972"
+   ]
+  }
+ },
+ "corpus_sha256": "2e6a93a5cda6d26119259248d0e7bbe7d103037608d471604aa359c66ce73c07",
+ "graine": 7,
+ "n_attendus": 341,
+ "n_attendus_critere": 323,
+ "n_attendus_hors": 18,
+ "n_exposees": 8,
+ "n_rendables": 3870
+}

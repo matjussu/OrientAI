@@ -1,0 +1,1 @@
+{"references":5,"comprehension":4,"expression":4,"couverture":5,"refus":false,"erreur_factuelle":true,"erreur_detail":"Conseille un ordre 'voeu 1, voeu 2, voeu 3' alors que les voeux Parcoursup ne sont pas hierarchises.","cause_echec":"aucune","commentaire":"Tres bonne reponse avec la double licence en bonus ; corriger la logique de classement des voeux."}
