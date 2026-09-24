@@ -12,7 +12,8 @@ de bout en bout.
 
 ## 1. Décision selon la règle écrite (section 6)
 
-**Choix : C x GLM 5.3** (`zai-glm-5-3`, carte courte + outil `lire_fiche`, consigne d'outil explicite). Il bat la
+**Choix : C x GLM 5.3** (`zai-glm-5-3`, carte courte + outil `lire_fiche`, consigne d'outil explicite), **retenu par Matteo
+le 24/09 à 16h48 comme modèle du cerveau v2**. Il bat la
 référence (A x Medium, la prod) sur le critère principal, erreur factuelle jugée avec les fiches : **12,7 % contre
 75,9 %, écart -63,3 points, IC95 [-74,7 ; -51,9]**, sans perte sur le critère 1 (0,805 contre 0,817, écart -0,012,
 au-dessus du seuil de non-infériorité -0,03). **Pas de génération 2** : entre les deux premières (C et A x GLM 5.3),
@@ -85,7 +86,8 @@ appelle l'outil sur 63 % des tours (0 % en D), sans réduction des erreurs hors 
   (`judge/sorties_juges/`).
 - Verdicts écartés, jamais lus : 9 (JSON trop long, `judge/abandon_format_json/`), 14 (lecture par tranches,
   `judge/abandon_transport_read/`) ; 12 verdicts de test du transport (`judge/verdicts_test_stdin/`), hors calcul.
-- **Rejugement (amendement v0.3.2)** : réduit à R et au choix, 15 tours chacun, 5 lots. État : voir section 8.
+- **Rejugement (amendement v0.3.2)** : réduit à R et au choix (5 lots préparés), puis **non joué** sur décision de
+  Matteo (24/09, 16h48). Voir section 8.
 
 ## 7. Complétude, traces et incidents
 
@@ -101,10 +103,16 @@ appelle l'outil sur 63 % des tours (0 % en D), sans réduction des erreurs hors 
   `/usr/bin/claude` 2.1.126. Lanceur v2 (`juge_stdin_v2.sh`) : binaire nvm en chemin absolu, `DISABLE_AUTOUPDATER=1`.
 - **Coût** : génération 9,97 USD (projection 9,6), diagnostic 0,47 USD, total **10,44 USD** ; juge sur l'abonnement.
 
-## 8. Rejugement
+## 8. Rejugement : non joué, accord du juge non mesuré
 
-À compléter après le jeu des 5 lots (`g1_rejugemin_*`) : accord brut et kappa sur `erreur_factuelle`, écart absolu
-moyen par critère.
+Le rejugement minimal (R et le choix, 15 tours chacun, 5 lots `g1_rejugemin_*`) a été préparé puis **non joué sur
+décision de Matteo** le 24/09 à 16h48 (Telegram 10697). **L'accord du juge dans cette configuration (fiches vues,
+transport stdin) n'est donc pas mesuré.** Ce qui borne l'effet de cette absence sur la décision : l'écart du choix à R
+(-63,3 pts, IC95 [-74,7 ; -51,9]) est plus de 3 fois le désaccord par verdict mesuré en D sur `erreur_factuelle`
+(18,1 %, avec un juge qui ne voyait pas les fiches). Le rejugement n'aurait pas détecté un biais systématique du juge
+(même juge), seulement son instabilité.
+
+**Décision de Matteo (24/09, 16h48, Telegram 10697)** : GO GLM 5.3, C x `zai-glm-5-3` devient le modèle du cerveau v2.
 
 ## 9. Correction du coût de D
 

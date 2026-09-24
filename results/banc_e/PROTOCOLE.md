@@ -1,4 +1,4 @@
-# Banc E : confirmation du modèle de la démo, protocole v0.3.1 (24/09/2026, GO de Jarvis à 10h42 ; amendement 11 à 11h25)
+# Banc E : confirmation du modèle de la démo, protocole v0.3.2 (24/09/2026, GO de Jarvis à 10h42 ; amendements 11 à 11h25 et 12 à 16h40, rejugement non joué sur décision de Matteo à 16h48)
 
 Ordre 2026-09-24-1020 (Jarvis, décisions de Matteo Telegram 10666, 10674, 10676, 10678). Écrit **avant** tout
 appel de grille ; seul le diagnostic de l'outil (`diag_outil/RESUME.md`, 0,47 USD) a été joué. Hérite de
@@ -183,3 +183,7 @@ mesurée. Les 15 tours de chaque combinaison sont les 15 premiers (ordre des oid
 tout résultat (`rejuges_g1.json`, 16 par combinaison) ; l'ordre dans les lots est mélangé (graine
 `banc-e-2026-09-24|rejuge-min`). Même transport stdin (lanceur v2), même juge. Le rejugement ne peut pas changer la
 décision ; il ne détecte pas non plus un biais systématique du juge (c'est le même juge), seulement son instabilité.
+
+**Décision du 24/09/2026 à 16h48 (Matteo, Telegram 10697, relayée par Jarvis)** : rejugement minimal préparé, **non
+joué** sur décision de Matteo. Les 5 lots `g1_rejugemin_*` sont gardés, jamais joués. **L'accord du juge dans cette
+configuration (fiches vues, transport stdin) n'est pas mesuré.**

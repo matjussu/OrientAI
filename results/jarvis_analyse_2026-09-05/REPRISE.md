@@ -44,10 +44,10 @@ Ordre 2026-09-24-1020, branche `feat/banc-confirmation-modeles` (worktree `~/pro
 
 1. **Décision (règle écrite, g1)** : C x GLM 5.3 (`zai-glm-5-3`, carte courte + `lire_fiche`, consigne d'outil
    explicite). Erreur factuelle jugée avec les fiches 12,7 % contre 75,9 % pour la prod (dE -63,3 pts, IC95
-   [-74,7 ; -51,9]), critère 1 0,805 contre 0,817. Pas de g2. Vérifié indépendamment par Jarvis. Décision à présenter
-   à Matteo par Jarvis ; rien n'est branché en prod.
-2. **Rejugement minimal** (amendement v0.3.2) : 5 lots `g1_rejugemin_*` prêts ; lancés seulement sur le go de Matteo
-   (quota de l'abonnement). Section 8 du rapport à compléter ensuite.
+   [-74,7 ; -51,9]), critère 1 0,805 contre 0,817. Pas de g2. Vérifié indépendamment par Jarvis. **GO de Matteo le
+   24/09 à 16h48 (Telegram 10697) : C x zai-glm-5-3 = modèle du cerveau v2.** Rien n'est branché en prod.
+2. **Rejugement** : 5 lots minimaux `g1_rejugemin_*` préparés, **non joués** sur décision de Matteo (24/09, 16h48).
+   Accord du juge dans cette configuration non mesuré (rapport, section 8).
 3. **Juge** : transport par stdin obligatoire (lanceur `results/banc_e/judge/traces_lanceur/juge_stdin_v2.sh`) ; la
    lecture par tranches produit des lectures partielles (témoin `8bf2a1383d`). Binaire nvm en chemin absolu : le PATH
    retombe sur `/usr/bin/claude` 2.1.126 pendant les mises à jour automatiques (400 sur Opus 5.5).
