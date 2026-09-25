@@ -233,6 +233,7 @@
   ],
   "plafonds_note": "openai 15 -> 9,5 USD le 25/09 a 12h04 (protocole v0.3, GO Jarvis)"
  },
+ "ic95": "Wilson (score), z = 1,96",
  "runs": {
   "chatgpt_web__vertical": {
    "n_tours": 34,
@@ -255,16 +256,21 @@
      "appels": 69
     }
    },
-   "juge_n": 0,
+   "juge_n": 34,
    "juge_moyennes": {
-    "references": null,
-    "comprehension": null,
-    "expression": null,
-    "couverture": null
+    "references": 4.206,
+    "comprehension": 4.765,
+    "expression": 4.265,
+    "couverture": 4.882
    },
-   "juge_moyenne_4": null,
+   "juge_moyenne_4": 4.529,
    "refus": 0,
-   "erreurs_fait": 0,
+   "erreurs_fait": 8,
+   "erreurs_fait_part": 0.2353,
+   "erreurs_fait_ic95_wilson": [
+    0.1244,
+    0.4
+   ],
    "critere1": {
     "taux": 0.3412698412698413,
     "attendus": 126,
@@ -326,6 +332,8 @@
    "juge_moyenne_4": null,
    "refus": 0,
    "erreurs_fait": 0,
+   "erreurs_fait_part": null,
+   "erreurs_fait_ic95_wilson": null,
    "critere1": null,
    "adosses": {
     "statut": "mesuré",
@@ -372,16 +380,21 @@
      "non_mesures": 0
     }
    },
-   "juge_n": 0,
+   "juge_n": 79,
    "juge_moyennes": {
-    "references": null,
-    "comprehension": null,
-    "expression": null,
-    "couverture": null
+    "references": 2.013,
+    "comprehension": 2.215,
+    "expression": 2.949,
+    "couverture": 1.937
    },
-   "juge_moyenne_4": null,
-   "refus": 0,
-   "erreurs_fait": 0,
+   "juge_moyenne_4": 2.278,
+   "refus": 25,
+   "erreurs_fait": 18,
+   "erreurs_fait_part": 0.2278,
+   "erreurs_fait_ic95_wilson": [
+    0.1493,
+    0.3317
+   ],
    "critere1": {
     "taux": 0.2786377708978328,
     "attendus": 323,
@@ -396,6 +409,74 @@
     "taux": 0.7265822784810126,
     "temoin_hasard": 0.4278481012658228,
     "tours_avec_fiches": 77
+   }
+  },
+  "prod__vertical_echantillon25": {
+   "n_tours": 34,
+   "n_conversations": 25,
+   "erreurs_exec": 0,
+   "court_circuits": [
+    [
+     "securite",
+     1
+    ],
+    [
+     "routeur",
+     1
+    ]
+   ],
+   "sources_mediane": 7.0,
+   "structured_part": 0.029411764705882353,
+   "latence_mediane": 6.825,
+   "latence_p90": 9.5,
+   "mots_mediane": 84.5,
+   "cout_usd": 0.4351,
+   "tokens": {
+    "mistral-embed-2312": {
+     "entree": 2971,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "entree": 228085,
+     "sortie": 8499,
+     "non_mesures": 0
+    },
+    "mistral-small-2603": {
+     "entree": 177150,
+     "sortie": 3850,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 34,
+   "juge_moyennes": {
+    "references": 1.882,
+    "comprehension": 2.176,
+    "expression": 3.029,
+    "couverture": 1.853
+   },
+   "juge_moyenne_4": 2.235,
+   "refus": 14,
+   "erreurs_fait": 7,
+   "erreurs_fait_part": 0.2059,
+   "erreurs_fait_ic95_wilson": [
+    0.1035,
+    0.368
+   ],
+   "critere1": {
+    "taux": 0.23015873015873015,
+    "attendus": 126,
+    "hors_base_c": 11,
+    "conversations": 25,
+    "temoin_hasard": 0.02702702702702703,
+    "taux_sans_correction_tableaux": 0.23015873015873015
+   },
+   "adosses": {
+    "statut": "mesuré",
+    "chiffres_cites": 174,
+    "taux": 0.6666666666666666,
+    "temoin_hasard": 0.25287356321839083,
+    "tours_avec_fiches": 33
    }
   }
  }

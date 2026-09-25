@@ -1,0 +1,1 @@
+{"references":3,"comprehension":3,"expression":4,"couverture":2,"refus":false,"erreur_factuelle":false,"erreur_detail":"","cause_echec":"retrieval","commentaire":"La réponse ne compare pas PASS, LAS et STAPS alors que c'était la question. Les données de Toulouse existaient pourtant : 28 places en kiné, 23 par PASS et 5 par LAS."}

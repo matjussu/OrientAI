@@ -108,3 +108,30 @@ def adosses(records: list[dict], version: str) -> dict:
 
 def lire_banc(chemin: Path) -> dict:
     return json.loads(Path(chemin).read_text(encoding="utf-8"))
+
+
+def detail_par_tour(banc: dict, reponses: dict[tuple[str, int], str], tableaux: bool = True,
+                    exposition: dict | None = None) -> dict[tuple[str, int], dict]:
+    """Par tour : les chiffres attendus posés à ce tour, et s'ils sont cités justes (dans ce tour ou un suivant,
+    même règle que `critere1`). Les attendus hors base C sont listés avec `trouve: None` (hors critère)."""
+    exposition = exposition or json.loads(EXPOSITION.read_text(encoding="utf-8"))
+    out: dict[tuple[str, int], dict] = {}
+    for item in banc["items"]:
+        if not all((item["id"], t) in reponses for t in range(len(item["turns"]))):
+            continue
+        cibles = exposition["conversations"][item["id"]]["cible_par_attendu"]
+        for t in range(len(item["turns"])):
+            out[(item["id"], t)] = {"attendus": 0, "cites_justes": 0, "hors_base_c": 0, "detail": []}
+        for a, cible in zip(item["attendus"]["chiffres"], cibles):
+            fiche = a.get("fiche") or {}
+            libelle = f"{fiche.get('nom')} | {fiche.get('etablissement')}"
+            case = out[(item["id"], a["tour"])]
+            if cible is None:
+                case["hors_base_c"] += 1
+                case["detail"].append([a["valeur"], a["unite"], libelle, None])
+                continue
+            ok = cite(a, [reponses[(item["id"], t)] for t in range(a["tour"], len(item["turns"]))], tableaux)
+            case["attendus"] += 1
+            case["cites_justes"] += ok
+            case["detail"].append([a["valeur"], a["unite"], libelle, ok])
+    return out

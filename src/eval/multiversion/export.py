@@ -75,7 +75,64 @@ def _tour(x: dict, juge: dict | None, chiffres: list | None) -> dict:
     }
 
 
+def wilson(k: int, n: int, z: float = 1.96) -> list[float] | None:
+    """IC95 de Wilson d'une proportion k/n (choisi plutôt que le bootstrap : fermé, déterministe, correct aux
+    petits effectifs et près de 0 %)."""
+    if n == 0:
+        return None
+    import math
+    p = k / n
+    centre = (p + z * z / (2 * n)) / (1 + z * z / n)
+    demi = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / (1 + z * z / n)
+    return [round(max(0.0, centre - demi), 4), round(min(1.0, centre + demi), 4)]
+
+
+def _synthese(version: str, banc: str, recs: list[dict], verdicts: dict, detail_c1: dict | None) -> tuple[list, dict]:
+    ok = [r for r in recs if not r.get("error")]
+    ad = adosses(ok, version)
+    par_tour = ad.pop("par_tour", {})
+    c1 = None
+    if banc == "vertical":
+        b = lire_banc(BANCS[banc])
+        rep = {(r["id"], r["turn"]): r["answer"] for r in ok}
+        plein = critere1(b, rep)
+        c1 = {k: v for k, v in plein.items() if k != "par_conversation"} | {
+            "taux_sans_correction_tableaux": critere1(b, rep, tableaux=False)["taux"]}
+    tours = []
+    for r in recs:
+        t = _tour(r, verdicts.get((version, banc, r["id"], r["turn"])),
+                  [[c["value"], c["unit"], c["status"]] for c in par_tour.get((r["id"], r["turn"]), [])]
+                  if par_tour else None)
+        if detail_c1 is not None:
+            t["critere1"] = detail_c1.get((r["id"], r["turn"]))
+        tours.append(t)
+    juges = [t["juge"] for t in tours if t["juge"]]
+    n_fait = sum(1 for j in juges if j["erreur_factuelle"])
+    synth = {
+        "n_tours": len(tours), "n_conversations": len({t["id"] for t in tours}),
+        "erreurs_exec": sum(1 for t in tours if t["erreur_exec"]),
+        "court_circuits": collections.Counter(t["court_circuit"] for t in tours if t["court_circuit"]).most_common(),
+        "sources_mediane": statistics.median(len(t["sources"]) for t in tours) if tours else None,
+        "structured_part": (sum(1 for t in tours if t["structured"]) / len(tours)) if version == "prod" and tours else None,
+        "latence_mediane": statistics.median([t["latence"] for t in tours]) if tours else None,
+        "latence_p90": _p90([t["latence"] for t in tours]),
+        "mots_mediane": statistics.median(t["mots"] for t in tours) if tours else None,
+        "cout_usd": round(sum(t["cout_usd"] or 0 for t in tours), 4),
+        "tokens": {m: {k: sum((t["tokens"].get(m) or {}).get(k, 0) for t in tours)
+                       for k in (("appels",) if m == "openai-web-search" else ("entree", "sortie", "non_mesures"))}
+                   for m in sorted({m for t in tours for m in t["tokens"]})},
+        "juge_n": len(juges), "juge_moyennes": {c: _moy([j[c] for j in juges]) for c in CRITERES},
+        "juge_moyenne_4": _moy([_moy([j[c] for c in CRITERES]) for j in juges]),
+        "refus": sum(1 for j in juges if j["refus"]), "erreurs_fait": n_fait,
+        "erreurs_fait_part": round(n_fait / len(juges), 4) if juges else None,
+        "erreurs_fait_ic95_wilson": wilson(n_fait, len(juges)),
+        "critere1": c1, "adosses": ad,
+    }
+    return tours, synth
+
+
 def exporter(tag: str) -> dict:
+    from src.eval.multiversion.mesures import detail_par_tour
     dossier = RESULTATS / tag
     (dossier / "export").mkdir(exist_ok=True)
     verdicts = {}
@@ -86,43 +143,17 @@ def exporter(tag: str) -> dict:
                 v = json.loads(line)
                 verdicts[(v["version"], v["banc"], v["id"], v["turn"])] = v
     budget = json.loads((dossier / "budget.json").read_text()) if (dossier / "budget.json").exists() else {}
-    rapport = {"tag": tag, "budget": budget, "runs": {}}
+    echantillon = RESULTATS / "echantillon_vertical_25.json"
+    ids_ech = set(json.loads(echantillon.read_text())["ids"]) if echantillon.exists() else None
+    rapport = {"tag": tag, "budget": budget, "ic95": "Wilson (score), z = 1,96", "runs": {}}
     for f in sorted(dossier.glob("*__*.jsonl")):
         version, banc = f.stem.split("__")
         recs = [json.loads(x) for x in f.read_text(encoding="utf-8").splitlines() if x.strip()]
-        ok = [r for r in recs if not r.get("error")]
-        ad = adosses(ok, version)
-        par_tour = ad.pop("par_tour", {})
-        c1 = None
+        detail = None
         if banc == "vertical":
-            b = lire_banc(BANCS[banc])
-            rep = {(r["id"], r["turn"]): r["answer"] for r in ok}
-            c1 = critere1(b, rep)
-            c1_sans = critere1(b, rep, tableaux=False)
-            c1 = {k: v for k, v in c1.items() if k != "par_conversation"} | {
-                "taux_sans_correction_tableaux": c1_sans["taux"]}
-        tours = [_tour(r, verdicts.get((version, banc, r["id"], r["turn"])),
-                       [[c["value"], c["unit"], c["status"]] for c in par_tour.get((r["id"], r["turn"]), [])]
-                       if par_tour else None) for r in recs]
-        juges = [t["juge"] for t in tours if t["juge"]]
-        synth = {
-            "n_tours": len(tours), "n_conversations": len({t["id"] for t in tours}),
-            "erreurs_exec": sum(1 for t in tours if t["erreur_exec"]),
-            "court_circuits": collections.Counter(t["court_circuit"] for t in tours if t["court_circuit"]).most_common(),
-            "sources_mediane": statistics.median(len(t["sources"]) for t in tours) if tours else None,
-            "structured_part": (sum(1 for t in tours if t["structured"]) / len(tours)) if version == "prod" and tours else None,
-            "latence_mediane": statistics.median([t["latence"] for t in tours]) if tours else None,
-            "latence_p90": _p90([t["latence"] for t in tours]),
-            "mots_mediane": statistics.median(t["mots"] for t in tours) if tours else None,
-            "cout_usd": round(sum(t["cout_usd"] or 0 for t in tours), 4),
-            "tokens": {m: {k: sum((t["tokens"].get(m) or {}).get(k, 0) for t in tours)
-                           for k in (("appels",) if m == "openai-web-search" else ("entree", "sortie", "non_mesures"))}
-                       for m in sorted({m for t in tours for m in t["tokens"]})},
-            "juge_n": len(juges), "juge_moyennes": {c: _moy([j[c] for j in juges]) for c in CRITERES},
-            "juge_moyenne_4": _moy([_moy([j[c] for c in CRITERES]) for j in juges]),
-            "refus": sum(1 for j in juges if j["refus"]), "erreurs_fait": sum(1 for j in juges if j["erreur_factuelle"]),
-            "critere1": c1, "adosses": ad,
-        }
+            detail = detail_par_tour(lire_banc(BANCS[banc]),
+                                     {(r["id"], r["turn"]): r["answer"] for r in recs if not r.get("error")})
+        tours, synth = _synthese(version, banc, recs, verdicts, detail)
         meta = {"version": version, "banc": banc, "source": f"results/multiversion/{tag}/{f.name}",
                 "empreinte_fichier": hashlib.sha256(f.read_bytes()).hexdigest()[:12],
                 "runs": [r for r in budget.get("runs", []) if r.get("version") == version and r.get("banc") == banc]}
@@ -130,6 +161,11 @@ def exporter(tag: str) -> dict:
         out.write_text(json.dumps({"meta": meta, "synthese": synth, "tours": tours}, ensure_ascii=False,
                                   separators=(",", ":"), default=str), encoding="utf-8")
         rapport["runs"][f"{version}__{banc}"] = synth
+        if version == "prod" and banc == "vertical" and ids_ech:
+            # Même base que chatgpt_web : les 25 conversations de l'échantillon figé (protocole v0.3).
+            sous = [r for r in recs if r["id"] in ids_ech]
+            _, synth_e = _synthese(version, banc, sous, verdicts, detail)
+            rapport["runs"]["prod__vertical_echantillon25"] = synth_e
     (dossier / "RAPPORT.json").write_text(json.dumps(rapport, ensure_ascii=False, indent=1, default=str) + "\n",
                                           encoding="utf-8")
     return rapport
