@@ -250,12 +250,12 @@ class Constructeur:
     def _charger_pages(self) -> None:
         """Relevé des pages publiques, vérifié fichier par fichier contre le manifeste versionné (comme les bruts
         verrouillés : un sha divergent lève avant toute écriture)."""
-        from src.collect.pages_publiques import lire_mm, lire_psup, pourcentage_affiche
+        from src.collect.pages_publiques import lire_mm, lire_psup, pourcentage_affiche, texte_page
         self.lire_mm, self.pourcentage = lire_mm, pourcentage_affiche
         m = json.loads(MANIFESTE_PAGES.read_text(encoding="utf-8"))
         self.releve_pages = m["bilan"]
         self.manifeste_pages = m["manifeste"]
-        self.pages_psup, self.pages_mm = {}, {}
+        self.pages_psup, self.pages_mm, self.presentes = {}, {}, {}
         for nom, e in self.manifeste_pages.items():
             if not e.get("sha256"):
                 continue
@@ -263,7 +263,9 @@ class Constructeur:
             if hashlib.sha256(corps).hexdigest() != e["sha256"]:
                 raise ValueError(f"page publique {nom} : sha256 différent du manifeste {MANIFESTE_PAGES}")
             if nom.startswith("psup/"):
-                self.pages_psup[nom[5:-5]] = (lire_psup(corps.decode("utf-8", errors="replace")), e["releve_le"])
+                h = corps.decode("utf-8", errors="replace")
+                self.pages_psup[nom[5:-5]] = (lire_psup(h), e["releve_le"])
+                self.presentes[nom[5:-5]] = bool(self._EN_TETE_SESSION.search(texte_page(h)))
             else:
                 self.pages_mm[nom[3:-5]] = (json.loads(corps).get("content", []), e["releve_le"])
 
@@ -282,6 +284,10 @@ class Constructeur:
         "repartition_admis_bac_techno": "repartition_admis_bac_techno",
         "repartition_admis_bac_pro": "repartition_admis_bac_pro", "repartition_admis_autres": "repartition_admis_autres",
     }
+    # Une page qui répond sans aucun contenu de formation (coquille de 468 caractères au 25/09) : formation absente de
+    # la session en cours. Établi le 25/09 sur 10 pages : aucune dans la cartographie ESR 2026, 9 dans celle de 2025 ;
+    # témoin : 5 pages pleines sur 5 dans la cartographie 2026 (results/concordance/pages_vides.json).
+    _EN_TETE_SESSION = re.compile(r"\d+\s+places en 20\d\d")
 
     def page_postbac(self, id_: str, espace: str, cod: str) -> None:
         lu, releve_le = self.pages_psup.get(cod, (None, None))
@@ -289,6 +295,15 @@ class Constructeur:
         for nom, c in self.champs.items():
             officiel = par_espace(c["nom_officiel"]).get(espace, "")
             if not officiel.startswith(PREFIXE_PAGE):
+                continue
+            if nom == "fiche_publique_annee_en_cours":
+                if lu is None:
+                    self.l.valeur.append(_v(id_, nom, "2026", statut="non_disponible", raison=raison_absente,
+                                            source_id="page_publique_parcoursup", identifiant=f"g_ta_cod={cod}"))
+                else:
+                    self.l.valeur.append(_v(id_, nom, "2026", texte="présente" if self.presentes.get(cod) else "absente",
+                                            source_id="page_publique_parcoursup", millesime=f"relevé du {releve_le[:10]}",
+                                            identifiant=f"g_ta_cod={cod}"))
                 continue
             for s in sessions_du_champ(c, espace):
                 cle = self.PAGE_PSUP[nom]
@@ -352,12 +367,20 @@ class Constructeur:
                                             raison="la fiche publique n'affiche pas ce chiffre pour ce master", **base))
                 else:
                     self.l.valeur.append(_v(id_, nom, s, num=v["valeur"], **base))
+            # Une seule capacité par master : celle de la campagne en cours quand la fiche existe.
+            self.l.valeur.append(_v(id_, "capacite_accueil", "2025", statut="non_disponible", unite="places",
+                                    raison="la fiche publique affiche la capacité de la campagne en cours (2026)",
+                                    source_id="page_publique_monmaster", identifiant=ident))
             return
+        self.l.valeur.append(_v(id_, "capacite_accueil", "2026", statut="non_disponible", unite="places",
+                                raison="master absent de MonMaster 2026 : capacité de la campagne 2025 (open data) en 2025",
+                                source_id="page_publique_monmaster", identifiant=ident))
         # Sans fiche 2026 : l'open data 2025, avec la règle de la page (contrat §4), présentée comme telle.
         n = (m.get("n_can_pp") or 0) + (m.get("n_can_pc") or 0)
         rang = m.get("rang_dernier_appele_pc") if m.get("rang_dernier_appele_pc") is not None else m.get("rang_dernier_appele_pp")
         calc = {"capacite_accueil": m.get("col"), "candidatures_campagne_precedente": n or None, "rang_dernier_appele": rang,
                 "taux_acces": self.pourcentage(rang / n) if rang is not None and n and m.get("alternance") != "1" else None}
+        calc["taux_candidatures_classees"] = calc["taux_propositions_parmi_classes"] = None
         if m.get("alternance") == "1" and n:
             calc["taux_candidatures_classees"] = self.pourcentage(m["n_clas_total"] / n) if m.get("n_clas_total") is not None else None
             calc["taux_propositions_parmi_classes"] = (self.pourcentage(m["n_prop_total"] / m["n_clas_total"])
@@ -367,8 +390,12 @@ class Constructeur:
             base = dict(unite=c["unite"], source_id="monmaster_2025", millesime=f"session 2025 ; {self.PAGE_MM_DEPUIS_OPEN_DATA}",
                         identifiant=ident)
             if v is None:
-                self.l.valeur.append(_v(id_, nom, "2025", statut="non_disponible",
-                                        raison="master absent de MonMaster 2026 et open data 2025 incomplète", **base))
+                hors_alt = nom.startswith(("taux_candidatures", "taux_propositions")) and m.get("alternance") != "1"
+                acces_alt = nom == "taux_acces" and m.get("alternance") == "1"
+                raison = ("taux propre aux masters en alternance" if hors_alt else
+                          "taux d'accès non affiché pour un master en alternance (règle de la page)" if acces_alt else
+                          "master absent de MonMaster 2026 et open data 2025 incomplète")
+                self.l.valeur.append(_v(id_, nom, "2025", statut="non_disponible", raison=raison, **base))
             else:
                 self.l.valeur.append(_v(id_, nom, "2025", num=_num(v), **base))
 

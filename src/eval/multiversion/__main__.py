@@ -25,6 +25,7 @@ def main(argv: list[str] | None = None) -> int:
     j.add_argument("--consigne-nommage", action="store_true", help="ajoute la consigne de nommage des chiffres (25/09)")
     p = sub.add_parser("rapport", help="critère 1, adossés, juge, coûts + export explorateur")
     p.add_argument("--tag", required=True)
+    p.add_argument("--juge", default="judge", help="passage du juge (judge_v2 : rejugement du 25/09)")
     a = ap.parse_args(argv)
 
     if a.cmd == "run":
@@ -45,7 +46,7 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(r, ensure_ascii=False))
         return 0
     from src.eval.multiversion.export import exporter
-    rapport = exporter(a.tag)
+    rapport = exporter(a.tag, a.juge)
     print(json.dumps({k: {x: v[x] for x in ("n_tours", "erreurs_exec", "cout_usd", "latence_p90", "juge_moyenne_4",
                                               "critere1", "structured_part")}
                       for k, v in rapport["runs"].items()}, ensure_ascii=False, indent=1, default=str))

@@ -103,5 +103,11 @@
   "controles_rouges": [
    "inventaire_tables"
   ]
+ },
+ "concordance_valeur": {
+  "description": "un chiffre de page publique modifié (+1) : candidats ayant postulé de psup:7596",
+  "cible": "src/eval/concordance.py : témoin « valeur » joué par défaut à chaque contrôle (ecarts.json, temoins)",
+  "rouge_sur_sa_cible": null,
+  "resultat": "cible hors audit, jouée par son propre contrôle"
  }
 }

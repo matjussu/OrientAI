@@ -198,3 +198,7 @@ Ajouts :
   coïncidence de valeur avec un champ caché serait classée ainsi.
 - **Sorties du constructeur** : dans le worktree, les 4 sorties de la base étaient des liens vers la base du dépôt
   principal ; déliées avant toute construction, pour ne pas l'écraser.
+- **Pages vides : cause établie (25/09, 15h)** : 273 pages, 0 pleine à la relecture, 0 dans la cartographie ESR 2026,
+  264 dans celle de 2025, témoin 20/20 pages pleines dans 2026 (`pages_vides.json`). Le marqueur
+  `fiche_publique_annee_en_cours` s'étend à Parcoursup et à l'apprentissage (texte, montré, aucun chiffre ajouté).
+- **Places 2025, ajout A** : 240 écarts page contre open data (228 IFSI), pas 4 ; cause non établie (`RAPPORT.md` §4).

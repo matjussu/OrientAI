@@ -41,6 +41,10 @@ CIBLES = {
     "insertion": "insertion_contre_corpus", "indicateur_inconnu": "construction",
     "alternance": "alternance_contre_corpus", "table_orpheline": "inventaire_tables",
 }
+# Leviers dont la cible est un contrôle hors de cet audit : listés dans le résultat, joués là où vit leur cible.
+CIBLES_HORS_AUDIT = {
+    "concordance_valeur": "src/eval/concordance.py : témoin « valeur » joué par défaut à chaque contrôle (ecarts.json, temoins)",
+}
 
 # Tables dont chaque contrôle compare le contenu à une référence (corpus, brut, identité). Une table
 # qu'aucun contrôle ne déclare est rouge dans inventaire_tables : le 23/09, insertion_ligne n'était lue
@@ -74,6 +78,12 @@ def lire(obj, chemin: str):
         else:
             return None
     return obj
+
+
+def de_la_page(b: dict | None) -> bool:
+    """Valeur lue sur la page publique (concordance du 25/09) : elle n'a pas d'équivalent dans le corpus ni dans les
+    bruts open data, elle est vérifiée par src/eval/concordance.py contre la page elle-même."""
+    return bool(b) and (b.get("source_id") or "").startswith("page_publique")
 
 
 def pour_espace(texte: str, espace: str) -> str | None:
@@ -150,6 +160,9 @@ class Audit:
                     brut = lire(f, ch.replace("{s}", s))
                     cle = (fid, nom, s)
                     b = self.valeurs.get(cle)
+                    if de_la_page(b):
+                        attendues.add(cle)
+                        continue
                     if c["type_valeur"] == "groupe":
                         env = brut if isinstance(brut, dict) else None
                         statut_corpus = (env or {}).get("statut")
@@ -187,7 +200,8 @@ class Audit:
                     elif not egal(b["valeur_num"], v):
                         ecarts.append({"cle": cle, "base": b["valeur_num"], "corpus": v})
         # Sens base -> corpus : toute valeur post-bac de la base a été vue ci-dessus.
-        sans_corpus = [k for k in self.valeurs if k[0].split(":")[0] in ("psup", "psup_app") and k not in attendues]
+        sans_corpus = [k for k in self.valeurs if k[0].split(":")[0] in ("psup", "psup_app") and k not in attendues
+                       and not de_la_page(self.valeurs[k])]
         self.noter("base_contre_corpus", not ecarts and not manquantes_base and not sans_corpus and not orphelines, compares,
                    ecarts=len(ecarts), exemples=[str(e) for e in ecarts[:5]], manquantes_dans_la_base=len(manquantes_base),
                    exemples_manquantes=[str(m) for m in manquantes_base[:5]],
@@ -205,7 +219,7 @@ class Audit:
             c = self.champs[nom]
             espace, ident = fid.split(":", 1)
             off = pour_espace(c["nom_officiel"], espace)
-            if not off or s == SANS_SESSION:
+            if not off or s == SANS_SESSION or off.startswith("page:") or de_la_page(b):
                 continue
             if espace == "psup":
                 ligne = bruts[s].get(ident)
@@ -569,6 +583,10 @@ def sabotages(corpus: Path, gate: Path) -> dict:
     out = {}
     with tempfile.TemporaryDirectory() as tmp:
         for nom in SABOTAGES:
+            if nom in CIBLES_HORS_AUDIT:
+                out[nom] = {"description": SABOTAGES[nom], "cible": CIBLES_HORS_AUDIT[nom], "rouge_sur_sa_cible": None,
+                            "resultat": "cible hors audit, jouée par son propre contrôle"}
+                continue
             env = {**os.environ, "ORIENTIA_SABOTAGE_C": nom}
             p = subprocess.run([sys.executable, "-m", "src.collect.base_etape_c", "--sortie", tmp], cwd=RACINE,
                                env=env, capture_output=True, text=True)
@@ -603,9 +621,11 @@ def main(argv: list[str] | None = None) -> int:
         s = sabotages(args.corpus, args.gate)
         (args.sortie / "sabotages.json").write_text(json.dumps(s, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         for nom, r in s.items():
-            print(f"{'ROUGE sur sa cible' if r['rouge_sur_sa_cible'] else 'VERT (défaut non vu)'} : {nom} -> {r['cible']}  "
+            etat = ("HORS AUDIT" if r["rouge_sur_sa_cible"] is None else
+                    "ROUGE sur sa cible" if r["rouge_sur_sa_cible"] else "VERT (défaut non vu)")
+            print(f"{etat} : {nom} -> {r['cible']}  "
                   f"{r.get('controles_rouges') or r.get('erreur')}")
-        return 0 if all(r["rouge_sur_sa_cible"] for r in s.values()) else 1
+        return 0 if all(r["rouge_sur_sa_cible"] for r in s.values() if r["rouge_sur_sa_cible"] is not None) else 1
     r = Audit(args.base, args.corpus, args.gate, args.export).tout()
     if not args.sans_determinisme:
         r["controles"]["determinisme"] = determinisme(args.base)

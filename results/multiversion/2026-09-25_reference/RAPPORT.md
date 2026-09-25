@@ -89,3 +89,36 @@ python -m src.eval.multiversion rapport --tag <tag>
 
 Une version = un module `src/eval/multiversion/versions/<v>.py`. Si le juge, la rubrique ou un banc change, on
 rejuge les réponses stockées ici ; on ne les régénère pas.
+
+## Addendum du 25/09/2026 (15h30) : rejugement avec les chiffres de la page publique
+
+Ordre `2026-09-25-1320-claudette-orientai-concordance-page-publique`, contrat `results/concordance/CONTRAT.md`. Les 113
+réponses stockées (gelées au commit 1bd16ef, sha inchangés) sont rejugées une fois, **sans régénération**, par le même
+juge (Opus 5.5 effort low, stdin), avec deux changements : les fiches de référence portent les chiffres et les libellés
+de la page publique (base C concordante, contrôle 100 % vert : `results/concordance/ecarts.json`), et la consigne
+« Un chiffre officiel correctement nommé n'est pas une erreur ; un chiffre d'un autre indicateur présenté sous un nom
+qui ne lui correspond pas en est une. » est ajoutée. Nouvelle graine, verdicts dans `judge_v2/` (le premier passage,
+`judge/`, reste intact). 113 verdicts sur 113. Chiffres : `RAPPORT.json` (avant) et `RAPPORT_judge_v2.json` (après).
+
+| | prod, 79 tours | prod, échantillon 25 | ChatGPT + recherche, échantillon 25 |
+|---|---|---|---|
+| **Erreur de fait, avant** | 22,8 % (18/79) [14,9 ; 33,2] | 20,6 % (7/34) [10,4 ; 36,8] | 23,5 % (8/34) [12,4 ; 40,0] |
+| **Erreur de fait, après** | **31,6 % (25/79) [22,5 ; 42,6]** | **29,4 % (10/34) [16,8 ; 46,2]** | **0 % (0/34) [0 ; 10,2]** |
+| Juge 4 critères, avant / après | 2,28 / 2,26 | 2,24 / 2,25 | 4,53 / 4,67 |
+| Refus, avant / après | 25 / 26 | 14 / 13 | 0 / 0 |
+
+Lecture (détail des verdicts, `judge/verdicts.jsonl` contre `judge_v2/verdicts.jsonl` ; classement par lecture des
+`erreur_detail`, pas par un second juge) :
+1. **Les 8 « erreurs » de ChatGPT étaient des écarts de définition** : 8 sur 8 disparaissent (propositions et admis
+   de la page comparés au bilan final de l'open data). Sur l'échantillon, ChatGPT avec recherche ne fait plus d'erreur
+   de fait relevée par le juge ; la borne haute de l'IC reste à 10,2 % (34 tours).
+2. **La prod monte de 18 à 25** : 10 nouvelles, 3 retirées. Environ 7 des nouvelles sont le même phénomène dans l'autre
+   sens : la prod cite des chiffres de l'open data au bilan final ou d'un autre indicateur sous le nom d'un indicateur
+   de la page (« 212 propositions » contre « 917 candidats ayant pu recevoir une proposition », « 38 % de bacheliers
+   technologiques » contre 35 % dans la répartition des admis, 209 places d'IFSI contre 188). Les 3 autres nouvelles et
+   les 3 retirées sont des absences affirmées à tort ou leur contraire : variance d'un juge à un passage.
+3. L'écart entre prod et ChatGPT sur l'erreur de fait est maintenant **mesurable** sur l'échantillon (IC disjoints :
+   [16,8 ; 46,2] contre [0 ; 10,2]), alors qu'il ne l'était pas au premier passage.
+
+Limites : un seul passage de chaque côté ; l'aveugle reste imparfait (style) ; le juge est Opus avec des fiches de
+référence, pas une vérification humaine.

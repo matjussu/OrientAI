@@ -1,0 +1,2147 @@
+{
+ "genere_le": "2026-09-25",
+ "regle": "fiche_publique_annee_en_cours = absente : jamais présentée comme actuelle ; chiffres de la session 2025",
+ "comptes": {
+  "mm": 82,
+  "psup": 135,
+  "psup_app": 138
+ },
+ "formations": {
+  "mm": [
+   {
+    "id": "mm:1501273U8MQB",
+    "intitule": "MATHEMATIQUES - Mathématiques",
+    "etablissement": "CY Cergy Paris Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1501273UCDJA",
+    "intitule": "MATHEMATIQUES - Mathématiques pour l’apprentissage, le calcul et l’intelligence artificielle",
+    "etablissement": "CY Cergy Paris Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1501273UE85Q",
+    "intitule": "MATHEMATIQUES - Mathématiques appliquées à l'ingénierie financière",
+    "etablissement": "CY Cergy Paris Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1501284FV8F1",
+    "intitule": "MATHEMATIQUES ET INFORMATIQUE APPLIQUEES AUX SCIENCES HUMAINES ET SOCIALES -MIASHS",
+    "etablissement": "Université de Montpellier Paul-Valéry",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1501354G4ZQE",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - M1 Formation à l'enseignement supérieur en Mathématique - Site Orsay (PR1093)",
+    "etablissement": "Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1501637PBQNE",
+    "intitule": "INFORMATIQUE - M1 Master parisien de recherche en Informatique (Mpri) - campus orsay (PR1176)",
+    "etablissement": "Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1501637PCXLA",
+    "intitule": "INFORMATIQUE - M1 Informatique pour la Science des Données - par alternance (PR792)",
+    "etablissement": "Université Paris-Saclay",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1501637PVE4C",
+    "intitule": "INFORMATIQUE - M1 Internet Of Things (PR1059)",
+    "etablissement": "Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1502308UNTIE",
+    "intitule": "INFORMATIQUE - Informatique et Big Data",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1502308US8KT",
+    "intitule": "INFORMATIQUE - Informatique et Big Data",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1502382ZPYUH",
+    "intitule": "INFORMATIQUE - Architecte des données",
+    "etablissement": "La Rochelle Université",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1502413HGD4I",
+    "intitule": "MATHEMATIQUES ET INFORMATIQUE APPLIQUEES AUX SCIENCES HUMAINES ET SOCIALES -MIASHS - Méthodes quantitatives et modélisation pour l'entreprise - en alternance",
+    "etablissement": "Université de Lille",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1502413HQM4A",
+    "intitule": "MATHEMATIQUES ET INFORMATIQUE APPLIQUEES AUX SCIENCES HUMAINES ET SOCIALES -MIASHS - Méthodes quantitatives et modélisation pour l'entreprise",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1502489RK8YJ",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS",
+    "etablissement": "École nationale des ponts et chaussées",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1502890B861Z",
+    "intitule": "INFORMATIQUE - Imagine",
+    "etablissement": "Université de Montpellier",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1502890BMN8A",
+    "intitule": "INFORMATIQUE - Intelligence artificielle et science des données",
+    "etablissement": "Université de Montpellier",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1502890BR8AX",
+    "intitule": "INFORMATIQUE - Génie logiciel",
+    "etablissement": "Université de Montpellier",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1502890BW51J",
+    "intitule": "INFORMATIQUE - Algorithmique",
+    "etablissement": "Université de Montpellier",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1503059K1GSU",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Cybersécurité et sciences des données",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1503059KP1MJ",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Cybersécurité et sciences des données",
+    "etablissement": "Université Paris 8 - Vincennes - Saint-Denis",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1503268MZREL",
+    "intitule": "CALCUL HAUTE PERFORMANCE, SIMULATION",
+    "etablissement": "Université de Perpignan Via Domitia",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1503297UWETR",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1503397CS4TN",
+    "intitule": "MATHEMATIQUES",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1506012K2HRC",
+    "intitule": "INFORMATIQUE - Cloud computing and cybersecurity",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1506012K2ZBY",
+    "intitule": "INFORMATIQUE - Réalité virtuelle et augmentée",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1506012KFCHS",
+    "intitule": "INFORMATIQUE - Internet of things and cybersecurity",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1506012KJA2X",
+    "intitule": "INFORMATIQUE - Cloud computing and cybersecurity - en alternance",
+    "etablissement": "Université de Lille",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1506012KV6AC",
+    "intitule": "INFORMATIQUE - E-services",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1506012KVZHX",
+    "intitule": "INFORMATIQUE - Internet of things and cybersecurity - en alternance",
+    "etablissement": "Université de Lille",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1506012KW5HC",
+    "intitule": "INFORMATIQUE - E-services - en alternance",
+    "etablissement": "Université de Lille",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1601717X1PUW",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Recherche opérationnelle Optimisation (RO)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1601717XBMNU",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Sciences et Ingénierie des Données (SID)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1601717XXUAR",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Interactions de l’Informatique et des Mathématiques pour l’Intelligence Artificielle (IMA)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1601837CHIFE",
+    "intitule": "RESEAUX ET TELECOMMUNICATION - Électronique, systèmes embarqués et télécommunications",
+    "etablissement": "Université Savoie Mont Blanc",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1601864GFSJ4",
+    "intitule": "INFORMATIQUE - COMPUTER GRAPHICS",
+    "etablissement": "Université de Limoges",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1601864GIMKD",
+    "intitule": "INFORMATIQUE - INFORMATION SECURITY",
+    "etablissement": "Université de Limoges",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1601916NEJ7U",
+    "intitule": "INFORMATIQUE - Données et Sytèmes Connectés (DSC)",
+    "etablissement": "Université Jean Monnet",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1601916NGH87",
+    "intitule": "INFORMATIQUE",
+    "etablissement": "Université Claude Bernard - Lyon 1",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1602488K138D",
+    "intitule": "INFORMATIQUE - Recherche opérationnelle Optimisation (RO)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1602488KCNQ2",
+    "intitule": "INFORMATIQUE - Interactions Homme Machine (IHM)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1602488KD1ZE",
+    "intitule": "INFORMATIQUE - Computer Science for Aerospace (CSA)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1602488KG1K5",
+    "intitule": "INFORMATIQUE - Interactions de l’Informatique et des Mathématiques pour l’Intelligence Artificielle (IMA)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1602488KIZGW",
+    "intitule": "INFORMATIQUE - Systèmes Embarqués Connectés : Infrastructures et Logiciels (SECIL)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1602488KK415",
+    "intitule": "INFORMATIQUE - Sciences du Logiciel (SDL)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1602488KYPRC",
+    "intitule": "INFORMATIQUE - Intelligence Artificielle : Fondements et Applications (IAFA)",
+    "etablissement": "Université de Toulouse",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1602648JDJZ8",
+    "intitule": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE - M1 - Méthodes informatiques appliquées à la Gestion des Entreprises",
+    "etablissement": "Université Grenoble Alpes",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1602966EDQSH",
+    "intitule": "TRAITEMENT DU SIGNAL ET DES IMAGES - M1 Signal and ImaGe processing Methods and Applications",
+    "etablissement": "Institut polytechnique de Grenoble",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1702076HHR5P",
+    "intitule": "SCIENCE DES DONNEES - Apprentissage Automatique pour l'Intelligence Artificielle",
+    "etablissement": "Université de Rouen Normandie",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1702076HNIP5",
+    "intitule": "SCIENCE DES DONNEES - Systèmes Intelligents Mobiles et Embarqués",
+    "etablissement": "Université de Rouen Normandie",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1702500UR5PT",
+    "intitule": "RESEAUX ET TELECOMMUNICATION - Télécommunications, Réseaux et Cybersécurité",
+    "etablissement": "Université de Bretagne Occidentale",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1702598ANWAH",
+    "intitule": "INFORMATIQUE - Informatique avancée et applications (à distance)",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1702598AWRVU",
+    "intitule": "INFORMATIQUE - Développement et validation logiciel (à distance)",
+    "etablissement": "Université Marie et Louis Pasteur",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1702599BC5ZL",
+    "intitule": "INFORMATIQUE - LSE - logiciel pour systèmes embarqués",
+    "etablissement": "Université de Bretagne Occidentale",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1702599BTC2Y",
+    "intitule": "INFORMATIQUE - SIIA : Systèmes Interactifs Intelligents et Autonomes",
+    "etablissement": "Université de Bretagne Occidentale",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1702599BVG3I",
+    "intitule": "INFORMATIQUE - ILIADE - Ingénierie du Logiciel, Applications aux Données Environnementales",
+    "etablissement": "Université de Bretagne Occidentale",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1702599BZ461",
+    "intitule": "INFORMATIQUE - TIIL-A technologies de l'information et ingénierie du logiciel par l'alternance",
+    "etablissement": "Université de Bretagne Occidentale",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1702707U6ADZ",
+    "intitule": "ACTUARIAT",
+    "etablissement": "Université de Bretagne Occidentale",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1702917XY3EN",
+    "intitule": "INFORMATIQUE - Informatique",
+    "etablissement": "Université Bourgogne Europe",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1703012APRVJ",
+    "intitule": "TRAITEMENT DU SIGNAL ET DES IMAGES - Imagerie et technologie pour la médecine",
+    "etablissement": "Université Clermont Auvergne",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1703416PPINY",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Mathématiques fondamentales",
+    "etablissement": "Université de Bretagne Occidentale",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1800154TAPES",
+    "intitule": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE",
+    "etablissement": "Université de Lorraine",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1800319XD5AQ",
+    "intitule": "INFORMATIQUE - Intelligence artificielle",
+    "etablissement": "Université de Reims Champagne-Ardenne",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1800330J63DA",
+    "intitule": "ACTUARIAT - SARADS",
+    "etablissement": "Université de Poitiers",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1800386V4ZC2",
+    "intitule": "INFORMATIQUE",
+    "etablissement": "Université de Lorraine",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1800386VJIT1",
+    "intitule": "INFORMATIQUE",
+    "etablissement": "Université de Lorraine",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1800406S6YW8",
+    "intitule": "INFORMATIQUE - Data Sciences For Societal Challenges",
+    "etablissement": "Université de Tours",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1800803Y5LPB",
+    "intitule": "MATHEMATIQUES APPLIQUEES, STATISTIQUE - Ingénierie mathématique et sciences actuarielles (IMSA)",
+    "etablissement": "Aix-Marseille Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1801030V36EW",
+    "intitule": "INFORMATIQUE - E-SANTE",
+    "etablissement": "Université de Picardie Jules-Verne",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1801030V7WRN",
+    "intitule": "INFORMATIQUE - E-SANTE",
+    "etablissement": "Université de Picardie Jules-Verne",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1801069NECFI",
+    "intitule": "INFORMATIQUE - Infrastructures Cloud & Systèmes distribués (SYRIUS)",
+    "etablissement": "Avignon Université",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1801069NGFCQ",
+    "intitule": "INFORMATIQUE - Ingénierie du Logiciel de la Société Numérique (ILSEN)",
+    "etablissement": "Avignon Université",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1801069NJBI7",
+    "intitule": "INFORMATIQUE - Artificial Intelligence Connected Industrie (AI4CI)",
+    "etablissement": "Avignon Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1801069NNXK8",
+    "intitule": "INFORMATIQUE - Infrastructures Cloud & Systèmes distribués (SYRIUS)",
+    "etablissement": "Avignon Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1801069NPCGW",
+    "intitule": "INFORMATIQUE - Ingénierie du Logiciel de la Société Numérique (ILSEN)",
+    "etablissement": "Avignon Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1801069NSEYH",
+    "intitule": "INFORMATIQUE - Intelligence Artificielle (IA)",
+    "etablissement": "Avignon Université",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:1801069NZLQ8",
+    "intitule": "INFORMATIQUE - Intelligence Artificielle (IA)",
+    "etablissement": "Avignon Université",
+    "apprentissage": true
+   },
+   {
+    "id": "mm:1900676KVTK8",
+    "intitule": "METHODES INFORMATIQUES APPLIQUEES A LA GESTION DES ENTREPRISES-MIAGE",
+    "etablissement": "Université de la Nouvelle-Calédonie",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:2000156V83T7",
+    "intitule": "INFORMATIQUE - M1 - Digital Skills for Health Transformation",
+    "etablissement": "Institut polytechnique de Paris",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:2000280E6RMJ",
+    "intitule": "INFORMATIQUE - TECHNOLOGIES NOUVELLES DES SYSTÈMES D'INFORMATION & DÉCISIONNELS",
+    "etablissement": "Institut national des sciences appliquées Hauts-de-France",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:2000280E8IM1",
+    "intitule": "INFORMATIQUE - Sciences et Technologies de Métavers - STM",
+    "etablissement": "Institut national des sciences appliquées Hauts-de-France",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:2500052G1RM7",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Ingéniérie statistique et informatique de la finance et de l'assurance et du risque",
+    "etablissement": "Université Paris Cité",
+    "apprentissage": false
+   },
+   {
+    "id": "mm:2500052G768L",
+    "intitule": "MATHEMATIQUES ET APPLICATIONS - Mathématiques Fondamentales et Appliquées",
+    "etablissement": "Université Paris Cité",
+    "apprentissage": false
+   }
+  ],
+  "psup": [
+   {
+    "id": "psup:10916",
+    "intitule": "Licence - Portail Mathématiques-Physique (MP)",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:13055",
+    "intitule": "CUPGE - Classe Préparatoire Universitaire - Physique - Chimie",
+    "etablissement": "Université de Lorraine - Faculté des Sciences et Technologies - site de Nancy (54)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:14513",
+    "intitule": "Licence - Double diplôme - Licence Economie et gestion - Double diplôme Licence Informatique et management et Diplôme universitaire Innovation et cybersécurité",
+    "etablissement": "Université Paris- Est-Créteil Val de Marne - UPEC (Paris 12)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:15536",
+    "intitule": "C.M.I - Cursus Master en Ingénierie - Informatique - Ingénierie des contenus numériques",
+    "etablissement": "La Rochelle Université",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:19430",
+    "intitule": "D.E manipulateur/trice en électroradiologie médicale",
+    "etablissement": "IFMEM CHU BORDEAUX",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:22030",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - Parcours Marine Nationale / Maistrance - Défense",
+    "etablissement": "Lycée Rouvière",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:22934",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - Parcours Armée de Terre",
+    "etablissement": "Lycée Edouard Branly",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:23034",
+    "intitule": "D.E Infirmier",
+    "etablissement": "IFSI Hôpital Nord",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:23037",
+    "intitule": "D.E Infirmier",
+    "etablissement": "IFSI Hop Ste Marguerite",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:23267",
+    "intitule": "D.E Infirmier",
+    "etablissement": "IFSI CH Amboise",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:24139",
+    "intitule": "Licence - Sciences du langage - Parcours Sciences du langage mineures au choix (Lettres ou Didactique du français langue étrangère et secondes ou Langues ou Informatique ou Renforcée ou Langues régionales)",
+    "etablissement": "Université Sorbonne Nouvelle Paris 3",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:25265",
+    "intitule": "D.E Infirmier",
+    "etablissement": "IFSI CROIX-ROUGE COMPETENCE LE MANS",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:26392",
+    "intitule": "Licence - Mathématiques et informatique appliquées aux sciences humaines et sociales",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:26728",
+    "intitule": "Licence - Portail Economie et gestion - Marketing vente, Economie appliquée, Comptabilité Finance, Management des organisations,",
+    "etablissement": "Université de Bretagne Sud - Site de Vannes",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:26801",
+    "intitule": "Licence - Portail Sciences de la vie - Licence Sciences de la vie",
+    "etablissement": "Université de Rouen Normandie - Campus Evreux",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27089",
+    "intitule": "Licence - Economie et gestion - Parcours Cursus master en ingénierie (CMI) : Data science for social Sciences",
+    "etablissement": "Université Paris Nanterre",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27091",
+    "intitule": "Double licence - Mathématiques / Physique, chimie -  Double licence Mathématiques - Physique, chimie",
+    "etablissement": "Université Gustave Eiffel",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27116",
+    "intitule": "Licence - Portail Portail CB  : Chimie - Biologie",
+    "etablissement": "Unité de Formation et de Recherche de Sciences de l' Université de Versailles Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27118",
+    "intitule": "Licence - Portail Portail BI : Biologie - Informatique",
+    "etablissement": "Unité de Formation et de Recherche de Sciences de l' Université de Versailles Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27228",
+    "intitule": "Licence - Portail Sciences et Techniques des Activités Physiques et Sportives",
+    "etablissement": "Université Paris Nanterre",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27542",
+    "intitule": "Licence - Portail Droit",
+    "etablissement": "Université de la Réunion - Le Tampon",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27543",
+    "intitule": "Licence - Portail Droit",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27545",
+    "intitule": "Licence - Portail Sciences pour la santé",
+    "etablissement": "Université de la Réunion - Le Tampon",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27556",
+    "intitule": "Licence - Portail Sciences sociales",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27558",
+    "intitule": "Licence - Portail Chimie",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27560",
+    "intitule": "Licence - Portail Sciences de la vie",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27562",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27564",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27567",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27568",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de la Réunion - Le Tampon",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27570",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de la Réunion - Le Tampon",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27743",
+    "intitule": "Licence - Portail Droit - Droit Limoges",
+    "etablissement": "Université de Limoges",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27870",
+    "intitule": "Licence - Portail Mathématiques",
+    "etablissement": "Université du littoral - Site de Calais -",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27912",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27922",
+    "intitule": "Licence - Portail Physique-Chimie-Sciences de la Terre (PCST)",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:27992",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Nantes Université",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28239",
+    "intitule": "BTS - Services - Services informatiques aux organisations",
+    "etablissement": "Lycée privé polyvalent SAINT LAZARE",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28279",
+    "intitule": "Licence - Portail Géographie et aménagement - Parcours Géographie",
+    "etablissement": "Université Paris- Est-Créteil Val de Marne - UPEC (Paris 12)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28280",
+    "intitule": "Licence - Portail Philosophie - Parcours Philosophie",
+    "etablissement": "Université Paris- Est-Créteil Val de Marne - UPEC (Paris 12)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28281",
+    "intitule": "Licence - Portail Science politique - Parcours Science politique internationale",
+    "etablissement": "Institut d'études politiques de Fontainebleau - UPEC",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28294",
+    "intitule": "Licence - Portail Lettres - Parcours Lettres modernes",
+    "etablissement": "Université Paris- Est-Créteil Val de Marne - UPEC (Paris 12)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28308",
+    "intitule": "Licence - Portail Economie et gestion",
+    "etablissement": "Université de la Réunion - Le Tampon",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28309",
+    "intitule": "Licence - Portail Economie et gestion",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28450",
+    "intitule": "Licence - Economie et gestion - Economie et management de la santé -  Accès Santé",
+    "etablissement": "Université Paris- Est-Créteil Val de Marne - UPEC (Paris 12)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28471",
+    "intitule": "Licence - Portail Mathématiques-Informatique (MI)",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28473",
+    "intitule": "Licence - Portail Mathématiques-Physique (MP)",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28660",
+    "intitule": "Licence - Portail Droit",
+    "etablissement": "Université Polytechnique Hauts-de-France",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28668",
+    "intitule": "Licence - Portail Sciences de la vie - Biotechnologies et Agroalimentaire (Cambrai)",
+    "etablissement": "Université Polytechnique Hauts-de-France - Site de CAMBRAI",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28706",
+    "intitule": "Licence - Portail Philosophie - Sciences Sociales",
+    "etablissement": "Université d'Amiens",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28941",
+    "intitule": "Licence - Portail Droit, Sciences et Innovation - Licence Double-Diplôme Droit, Sciences et Innovation",
+    "etablissement": "Université Paris-Saclay, Campus d'Orsay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:28947",
+    "intitule": "Licence - Portail Langues, littératures et civilisations étrangères et régionales - Anglais",
+    "etablissement": "Facultés libres de l'Ouest - UCO ANGERS",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29004",
+    "intitule": "Licence - Portail Administration économique et sociale",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus de Guyancourt, Versailles Saint Quentin en Yvelines, Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29005",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29018",
+    "intitule": "Licence - Portail Science politique",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29020",
+    "intitule": "Licence - Portail Droit",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29041",
+    "intitule": "Licence - Portail Sciences et Techniques des Activités Physiques et Sportives",
+    "etablissement": "Université Gustave Eiffel",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29049",
+    "intitule": "Licence - Portail Sociologie - Sociologie quantitative",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29166",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29175",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29271",
+    "intitule": "Licence - Portail Economie et Gestion / Gestion",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29646",
+    "intitule": "Licence - Portail Physique, chimie - Parcours Physique (tronc commun MPC : Mathématiques Physique Chimie)",
+    "etablissement": "Université Savoie Mont Blanc - Bourget-du-Lac",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29653",
+    "intitule": "Licence - Portail Mathématiques - (tronc commun MPC : Mathématiques Physiques Chimie)",
+    "etablissement": "Université Savoie Mont Blanc - Bourget-du-Lac",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29655",
+    "intitule": "Licence - Portail Sciences de la terre",
+    "etablissement": "Université Savoie Mont Blanc - Bourget-du-Lac",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29659",
+    "intitule": "Licence - Portail Mathématiques - (tronc commun MISPI : Mathématiques Informatique Sciences pour l'ingénieur)",
+    "etablissement": "Université Savoie Mont Blanc - Bourget-du-Lac",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29663",
+    "intitule": "Licence - Portail Sciences pour l'ingénieur - Electronique, télécommunications et réseaux (tronc commun MISPI : Mathématiques Informatique Sciences pour l'ingénieur)",
+    "etablissement": "Université Savoie Mont Blanc - Bourget-du-Lac",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29665",
+    "intitule": "Licence - Portail Informatique - (tronc commun MISPI : Mathématiques Informatique Sciences pour l'ingénieur)",
+    "etablissement": "Université Savoie Mont Blanc - Bourget-du-Lac",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29676",
+    "intitule": "Licence - Portail Géographie et aménagement",
+    "etablissement": "Université Savoie Mont Blanc - Bourget-du-Lac",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:29791",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:30772",
+    "intitule": "Licence - Portail Mathématiques",
+    "etablissement": "Université de La Réunion - Saint Denis",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:30837",
+    "intitule": "Licence - Portail Informatique",
+    "etablissement": "Avignon Université",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:31069",
+    "intitule": "Licence - Portail Musicologie - Musicologie - Grenoble",
+    "etablissement": "Université Grenoble Alpes",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32138",
+    "intitule": "Licence - Portail Sociologie",
+    "etablissement": "Université de Limoges",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32218",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de Tours",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32344",
+    "intitule": "Licence - Mathématiques -  Accès Santé",
+    "etablissement": "Université Gustave Eiffel",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32345",
+    "intitule": "Licence - Informatique -  Accès Santé",
+    "etablissement": "Université Gustave Eiffel",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32398",
+    "intitule": "Licence - Portail Sciences de la terre - Terre / Envrionnement",
+    "etablissement": "Université Paris Cité",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32417",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université du littoral - Site de Dunkerque",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32503",
+    "intitule": "Licence - Sciences pour la santé - Licence accès santé première année PCSTI -  Accès Santé",
+    "etablissement": "Université de Cergy-Pontoise - CY SUP",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32595",
+    "intitule": "Licence - Portail Mathématiques Informatique (MI)",
+    "etablissement": "Unité de Formation et de Recherche de Sciences de l' Université de Versailles Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32599",
+    "intitule": "Licence - Portail Mathématiques Physique Chimie (MPC)",
+    "etablissement": "Unité de Formation et de Recherche de Sciences de l' Université de Versailles Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32603",
+    "intitule": "Licence - Sciences pour la santé - Rééducation Réadaptation -  Accès Santé",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32675",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université de Guyane",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32680",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de Versailles - Saint Quentin en Yvelines",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32704",
+    "intitule": "D.E Infirmier - Réservé aux personnes en situation de handicap",
+    "etablissement": "IFSI Santélys Formation",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32734",
+    "intitule": "Licence - Mathématiques et informatique appliquées aux sciences humaines et sociales - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université de Pau et des pays de l'Adour - Collège STEE (Pau)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32739",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Universite Jean Monnet, Saint-Etienne",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32740",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université des Antilles - Pôle Martinique",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32741",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université de Perpignan Via Domitia",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32742",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université de Lorraine - UFR Mathématiques, Informatique, Mécanique - Site de Metz (57)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32743",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université Angers",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:32814",
+    "intitule": "Licence - Portail Pluridisciplinaire - Projet personnel",
+    "etablissement": "Université Polytechnique Hauts-de-France",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:33152",
+    "intitule": "Formation Bac + 3 - Bachelor Informatique et technologies de l’information, Parcours Bachelor en Economie, Sciences et Technologies multimédia (BESTm)",
+    "etablissement": "ESIEE Paris",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:33455",
+    "intitule": "Formation des écoles de commerce et de management Bac + 4 - Bachelor (BBA) Data, IA et Management",
+    "etablissement": "Audencia",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:35406",
+    "intitule": "Licence - Portail Sciences et Techniques des Activités Physiques et Sportives - Tronc Commun STAPS",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:35413",
+    "intitule": "Licence - Portail Droit - Parcours Droit",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:35489",
+    "intitule": "Licence - Portail Mathématiques et informatique appliquées aux sciences humaines et sociales - Mathématiques, économie, finances",
+    "etablissement": "Université de Lille",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:35633",
+    "intitule": "Licence - Portail Informatique",
+    "etablissement": "Universite Jean Monnet, Saint-Etienne",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:35846",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université de Rennes (EPE) - Antenne de Vannes",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:35932",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université d'Amiens",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:35942",
+    "intitule": "Licence - Mathématiques - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université des Antilles - Pôle Guadeloupe",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:36219",
+    "intitule": "Certificat de Spécialisation - Services numériques aux organisations",
+    "etablissement": "Lycée professionnel Guynemer",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:36265",
+    "intitule": "Licence - Mathématiques et informatique appliquées aux sciences humaines et sociales - Parcours Préparatoire au Professorat des Ecoles (PPPE)",
+    "etablissement": "Université de Caen Normandie",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:36327",
+    "intitule": "D.E Infirmier",
+    "etablissement": "PROJET PROFESSIONNEL PLUS",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:36387",
+    "intitule": "Licence - Portail Sciences des systèmes communicants - Sciences numériques, informatique embarqué et objets communicants",
+    "etablissement": "Université de Bretagne Sud - Site de Lorient",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:36394",
+    "intitule": "Licence - Portail Sciences pour la santé - Réadaptation : accès Ergothérapie, Orthoptie et Masso-kinésithérapie",
+    "etablissement": "Université Clermont Auvergne",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:36457",
+    "intitule": "Certificat de Spécialisation - Services numériques aux organisations",
+    "etablissement": "Lycée Felix Le Dantec",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39030",
+    "intitule": "Formation Bac + 3",
+    "etablissement": "3iL",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39114",
+    "intitule": "Certificat de Spécialisation - Services numériques aux organisations",
+    "etablissement": "Lycée professionnel Le Dolmen",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39184",
+    "intitule": "Licence - Portail Chimie - Physique-Chimie-Sciences de la Terre (PCST) - parcours préparation à l'entrée à des Ecoles de Kinésithérapie en IDF",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus d'Orsay Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39217",
+    "intitule": "Licence - Informatique - Portail René Descartes",
+    "etablissement": "Aix-Marseille Université - Site de Marseille Luminy",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39239",
+    "intitule": "Licence - Sciences pour l'ingénieur - Portail Marie Curie",
+    "etablissement": "Aix-Marseille Université - Site de Marseille Saint-Jérôme",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39274",
+    "intitule": "Licence - Portail Sciences de la vie et de la terre - Ecologie, Environnement",
+    "etablissement": "Université des Antilles - Pôle Martinique",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39320",
+    "intitule": "Formation Bac + 3 - Bachelor Cybersécurité des systèmes industriels et urbains",
+    "etablissement": "Lycée Emmanuel d'Alzon",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39373",
+    "intitule": "Licence - Portail Histoire",
+    "etablissement": "Ecole Universitaire de premier cycle - Campus de Guyancourt, Versailles Saint Quentin en Yvelines, Université Paris-Saclay",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39694",
+    "intitule": "D.E Infirmier",
+    "etablissement": "IFSI - Groupe Hospitalier de la Région de Mulhouse et Sud-Alsace - annexe de Thann",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39812",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Nantes Université",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:39928",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+    "etablissement": "Lycée Bel Air",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:40499",
+    "intitule": "D.E Ergothérapeute",
+    "etablissement": "INSTITUT DE FORMATION DES ERGOTHERAPEUTES",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:40982",
+    "intitule": "D.E Infirmier",
+    "etablissement": "Institut de formation en soins infirmiers antenne de Romilly-sur-Seine",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:41890",
+    "intitule": "Certificat de Spécialisation - Services numériques aux organisations",
+    "etablissement": "Lycée professionnel Cevenol",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:42873",
+    "intitule": "Formation d'ingénieur Bac + 5 - Double diplôme : ingénieur CY Tech + diplôme établissement partenaire",
+    "etablissement": "Sciences Po Saint-Germain-en-Laye – Institut d'études politiques",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:43232",
+    "intitule": "Licence - Portail Langues étrangères appliquées - LEA anglais / allemand",
+    "etablissement": "Le Mans Université",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:43234",
+    "intitule": "Licence - Portail Langues étrangères appliquées - LEA anglais / espagnol",
+    "etablissement": "Le Mans Université",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:44399",
+    "intitule": "Formation Bac + 3",
+    "etablissement": "EPITA Paris",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:4499",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+    "etablissement": "Lycée Jean Mermoz",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:46516",
+    "intitule": "D.E manipulateur/trice en électroradiologie médicale",
+    "etablissement": "IFMEM CHU BORDEAUX - Antenne de Bayonne",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:47190",
+    "intitule": "Formation Bac + 3",
+    "etablissement": "ESEO Angers",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:47231",
+    "intitule": "Licence - Parcours d'Accès Spécifique Santé (PASS)",
+    "etablissement": "Université d'Orléans",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:48174",
+    "intitule": "Licence - Physique - Parcours  Physique médicale",
+    "etablissement": "ICES - Institut Catholique de Vendée",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:48585",
+    "intitule": "C.M.I - Cursus Master en Ingénierie - Mathématiques - Ingénierie de la Statistique et Informatique (ISI)",
+    "etablissement": "Université de Bordeaux - Bordeaux Métropole",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:48707",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux",
+    "etablissement": "Lycée La Mennais",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:48757",
+    "intitule": "Certificat de Spécialisation - Services numériques aux organisations",
+    "etablissement": "Lycée professionnel Cluny Ste Suzanne",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:4904",
+    "intitule": "BTS - Services - Biologie médicale",
+    "etablissement": "Lycée Marmoutier",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:6330",
+    "intitule": "CUPGE - Classe Préparatoire Universitaire Mathématiques - Physique - Informatique",
+    "etablissement": "Université de Lorraine - Faculté des Sciences et Technologies - site de Nancy (54)",
+    "apprentissage": false
+   },
+   {
+    "id": "psup:7011",
+    "intitule": "Licence - Sciences pour l'ingénieur - Parcours Génie Electrique Informatique Industrielle",
+    "etablissement": "Université Polytechnique Hauts-de-France",
+    "apprentissage": false
+   }
+  ],
+  "psup_app": [
+   {
+    "id": "psup_app:14776",
+    "intitule": "BUT - Réseaux et télécommunications - en apprentissage",
+    "etablissement": "I.U.T De Rouen - Site d'Elbeuf",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:15570",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "PROMEO CFAI Picardie - Site de Compiègne",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:16504",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA - Société d'enseignement professionnel du rhône (SEPR)",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:17310",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "UTEC Avon- Fontainebleau",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:19190",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée Vauvenargues",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:20213",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "CFA de l'Ain - AFPMA APPRENTISSAGE",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:22144",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - en apprentissage",
+    "etablissement": "CFA INDUSTRIE MIDI-PYRENEES",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:25867",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée Fenelon Sup La Plaine Monceau",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:27407",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA Fab'Academy du Pôle formation - UIMM Centre de Nantes",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:28531",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Lycée Sainte Anne",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:28785",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Lycée professionnel Lachaux",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:29857",
+    "intitule": "Formation professionnelle - Titre professionnel - Technicien Supérieur en Automatique et Informatique Industrielle (Bac +2) - en apprentissage",
+    "etablissement": "Pôle formation UIMM Bretagne - CFA de l'Industrie QUIMPER",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:30020",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "CFA Diginamic",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:30347",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "CFA INDUSTRIE MIDI-PYRENEES",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:30969",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée Rempart (Rue Du)",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:31204",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Lycée Marguerite Jauzelon",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:32749",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFAI Lorraine - Site de Yutz",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:32796",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFAPAG",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:33030",
+    "intitule": "Formation professionnelle - Gestionnaire en maintenance et support informatique (Bac +2) - en apprentissage",
+    "etablissement": "CESI Campus d'Orléans",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:33199",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée Les Lombards",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:33288",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée Vaucanson",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:33570",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Keyce International Academy",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:33762",
+    "intitule": "Formation professionnelle - Titre professionnel - Technicien Supérieur en Automatique et Informatique Industrielle (Bac +2) - en apprentissage",
+    "etablissement": "Pôle formation UIMM Bretagne - CFA de l'Industrie BRUZ",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:34108",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Campus Eductive Lille VAUBAN",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:34623",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "ALPES DEVELOPPEMENT FORMATION",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:36971",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Centre de formation d apprentis CIFEP CHAMBERY",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:37224",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "POLE BTS ALTERNANCE BREST",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:37332",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "KEYCE ACADEMY",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:37527",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Pôle formation UIMM Bretagne - CFA de l'Industrie BRUZ",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:37853",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA INDUSTRIE MIDI-PYRENEES",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:38132",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA de la CCI du Maine et Loire - Espace Formation - Site Saumur",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:38189",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA 3 IFA",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:38392",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "SITE DE FORMATION D'APPRENTIS KEYCE ACADEMY OPEN I.T TOULOUSE",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:38783",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "EC SUP DE COMMERCE ET GESTION",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:38810",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Lycée Gaston Berger",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:39520",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "ESTIAM",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:40135",
+    "intitule": "Certificat de Spécialisation - Services numériques aux organisations - en apprentissage",
+    "etablissement": "Lycée Jean Renou",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:40604",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Of-Cfa Elysées Apprentissage",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:40984",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "POLE BTS ALTERNANCE RENNES",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:40985",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "POLE BTS ALTERNANCE ANGERS",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:40987",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "CFA Pôle BTS alternance de Caen ST CONTEST",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:42321",
+    "intitule": "Formation professionnelle - Développeur intégrateur de solutions intranet/internet (Bac +2) - en apprentissage",
+    "etablissement": "Purple Campus Carcassonne",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:42442",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - en apprentissage",
+    "etablissement": "CFAPAG",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:42443",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "CFAPAG",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:42705",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage - Entièrement en distanciel",
+    "etablissement": "KYAD CENTER",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:43596",
+    "intitule": "Formation professionnelle - Développeur intégrateur de solutions intranet/internet (Bac +2) - en apprentissage",
+    "etablissement": "CAMPUS-CCI Eure-et-Loir",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:44153",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Ecole Européenne des Métiers de l'Internet",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:44158",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Of-Cfa Elysées Apprentissage",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:44367",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Pôle formation UIMM Bretagne - CFA de l'Industrie BREST",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:44802",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Of-Cfa International Business Software Global Services",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:44916",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "First Avenir",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45103",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée Charles De Foucauld",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45132",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Ecole technique supérieure privée Sup'Etixs",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45253",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Organisme de formation - Centre de formation d'apprentis EPSYL académie",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45255",
+    "intitule": "Certificat de Spécialisation - Cybersécurité - en apprentissage",
+    "etablissement": "Lycée Gustave Eiffel",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45263",
+    "intitule": "Certificat de Spécialisation - Cybersécurité - en apprentissage",
+    "etablissement": "Lycée professionnel Maximilien de Robespierre",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45460",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "HECTEN",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45640",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA ECOLE SUPERIEURE D INFORMATIQUE ET D INTELLIGENCE ARTIFICIELLE",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45649",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "HECTEN",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45792",
+    "intitule": "Formation professionnelle - Développeur commercial et marketing (Bac +3) - en apprentissage",
+    "etablissement": "ISTEC - Ecole Supérieure de Commerce et de Marketing",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45793",
+    "intitule": "Formation professionnelle - Développeur de solutions numériques sécurisées (Bac +3) - en apprentissage",
+    "etablissement": "ESIEE IT Site de Pontoise CFA CCI Paris Ile-de-France",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45841",
+    "intitule": "D.E Ergothérapeute - en apprentissage",
+    "etablissement": "Institut de formation d'ergotherapie centre hospitalier de Laval",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:45918",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "CFA ECOLE SUPERIEURE D INFORMATIQUE ET D INTELLIGENCE ARTIFICIELLE",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46104",
+    "intitule": "Formation professionnelle - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "CESI Campus de Nancy",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46106",
+    "intitule": "Formation professionnelle - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "CESI Campus de Strasbourg",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46107",
+    "intitule": "Formation professionnelle - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "CESI Campus de Bordeaux",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46113",
+    "intitule": "Formation professionnelle - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "CESI Campus de Lille",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46382",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "INSTA",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46444",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "HORUS FORMATION",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46583",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "ECP Apprentissage",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46620",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis de ARINFO - ECOLE DES METIERS DU NUMERIQUE NANTES",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46621",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis de ARINFO - ECOLE DES METIERS DU NUMERIQUE NANTES",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46623",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Saint-Nazaire",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46624",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Saint-Nazaire",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46626",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Angers",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46627",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Angers",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46628",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - La Roche-sur-Yon",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46629",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - La Roche-sur-Yon",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46631",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Le Mans",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46632",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Le Mans",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46646",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "IEF - Institut européen de formation",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46720",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "ARINFO I-MAGINER",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46759",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Antenne CFA ARINFO I-maginer Vannes",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46761",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Antenne CFA ARINFO I-maginer Vannes",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46779",
+    "intitule": "Licence professionnelle - En apprentissage - Métiers de l'informatique: Conception, Développement et Test de logiciels, Parcours « UHA 4.0 »",
+    "etablissement": "Université de Mulhouse",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46807",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Site de formation ARINFO I-maginer Rennes",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46809",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Site de formation ARINFO I-maginer Rennes",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46916",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - en apprentissage",
+    "etablissement": "Lycée professionnel Galilee",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:46935",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA Tertiaire skillfor",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47011",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "ARINFO I-maginer - Niort",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47012",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "ARINFO I-maginer - Niort",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47018",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "OF-CFA I-maginer Arinfo Ecole des Métiers du Numérique",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47019",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "OF-CFA I-maginer Arinfo Ecole des Métiers du Numérique",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47463",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "WILL SCHOOL",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47661",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "ECOR / ECAR LILLE",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47790",
+    "intitule": "Formation professionnelle - Titre professionnel - Technicien Supérieur en Automatique et Informatique Industrielle (Bac +2) - en apprentissage",
+    "etablissement": "Pôle formation UIMM Bretagne - CFA de l'Industrie LORIENT",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:47965",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "CFA CIFA PME PERIGUEUX - BOULAZAC",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48411",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis MY DIGITAL SCHOOL de Nancy",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48648",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "LGT Livet",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48661",
+    "intitule": "Certificat de Spécialisation - Services numériques aux organisations - en apprentissage",
+    "etablissement": "Lycée professionnel les Palmiers",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48735",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "ERUDIS FORMATION",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48750",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis Ecole supérieure compétences métiers Nice",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48813",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "INSEEC BTS PARIS",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48907",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "ARINFO I-MAGINER",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48918",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Ecole privée de commerce Sophia YNOV campus Valbonne",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48922",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Ecole privée de commerce Sophia YNOV campus Valbonne",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48949",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - en apprentissage",
+    "etablissement": "PROMEO CFAI Picardie - Site de Compiègne",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48982",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "ARINFO I-MAGINER",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48984",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "ARINFO I-MAGINER",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:48986",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA EPB",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49015",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "INSEEC Lyon",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49086",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "My Business School Campus de Marseille",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49133",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Site de formation d'apprentis AURLOM PREPA Nice",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49144",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "CFA DELTA - SUP'IPGV",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49167",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Institut des Compétences et des Métiers de Demain",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49188",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "INSEEC Bordeaux",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49236",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Ecole technique privée - MY DIGITAL SCHOOL ST MARTIN D'HERES",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49265",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Institution Saint Jean -Lycée d'enseignement général et technologique privé",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49279",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Laval",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49392",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Ecole technique supérieure privée Sup'Etixs",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49409",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Aureïs formation",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49417",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Organisme de formation-Centre de formation d'apprentis d'Institut International des Nouvelles Technologies",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49459",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée Paul Cornu",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49519",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de ARINFO I-maginer - Laval",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49646",
+    "intitule": "Formation professionnelle - Administrateur systèmes,réseaux et cybersécurité (Bac +3) - en apprentissage",
+    "etablissement": "FACULTE DES METIERS - Campus de Lorient - CCI 56",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49666",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "OF-CFA Agence Nationale pour la Formation vers l'Emploi",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49706",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "Centre de formation d'apprentis EXCELLENTIA FORMATION",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49748",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Ecole de Commerce Européenne",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49890",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option B : Electronique et réseaux - en apprentissage",
+    "etablissement": "Lycée Raymond Queneau",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49935",
+    "intitule": "DSP - Développement et exploitation de parcs informatiques - en apprentissage",
+    "etablissement": "CNAM Centre-Val de Loire - Vierzon",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49956",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Site de formation School of Impact",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:49985",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Site de formation d'apprentis Genius Académie - Massy",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:50152",
+    "intitule": "Formation professionnelle - Titre professionnel - Développeur web et web mobile (Bac +2) - en apprentissage",
+    "etablissement": "Site de formation de PREPAVENIR FORMATION",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:50159",
+    "intitule": "Formation professionnelle - Titre professionnel - Concepteur développeur d'applications (Bac +3) - en apprentissage",
+    "etablissement": "Site de formation de PREPAVENIR FORMATION",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:50303",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Site de formation d'apprentis de l'Institut national supérieur des technologies avancées",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:50316",
+    "intitule": "BTS - Services - Services informatiques aux organisations - en apprentissage",
+    "etablissement": "ESCCOM Nice",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:50434",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée professionnel Galilee",
+    "apprentissage": true
+   },
+   {
+    "id": "psup_app:5120",
+    "intitule": "BTS - Production - Cybersécurité, Informatique et réseaux, ELectronique - Option A : Informatique et réseaux - en apprentissage",
+    "etablissement": "Lycée du Gresivaudan (LGM)",
+    "apprentissage": true
+   }
+  ]
+ }
+}

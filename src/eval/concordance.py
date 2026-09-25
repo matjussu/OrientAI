@@ -44,8 +44,8 @@ DOUBLONS = {
 CAUSES = {
     "page_introuvable": "la page publique n'a pas pu être relevée (statut HTTP au manifeste)",
     "page_sans_bloc_acces": "la page n'affiche pas le bloc des chiffres d'accès (ex. formation en apprentissage, ou nouvelle)",
-    "page_vide": "la page répond mais sans aucun contenu de formation (coquille de 468 caractères au 25/09) ; supposé : "
-                 "formation absente de la session en cours, non vérifié",
+    "page_vide": "la page répond sans aucun contenu de formation : formation absente de la session en cours (établi le 25/09 "
+                 "par la cartographie ESR 2026, results/concordance/pages_vides.json) ; le modèle doit la voir « absente »",
     "master_sans_fiche_annee_en_cours": "le master n'a pas de fiche MonMaster de la campagne en cours",
 }
 
@@ -168,6 +168,9 @@ def controler(base_chemin: Path) -> dict:
             page = chiffres_page_psup(h)
             if not page:
                 cause = "page_sans_bloc_acces" if re.search(r"[0-9]+\s+places en 20[0-9]{2}", texte(h)) else "page_vide"
+                marque = (vue.get("fiche_publique_annee_en_cours@2026") or {}).get("valeur")
+                if cause == "page_vide" and marque != "absente":
+                    cause = "ecart_inexplique"  # une formation absente présentée comme actuelle
                 cases[cause] += 1
                 ecarts.append({"id": f["id"], "cause": cause})
                 continue
@@ -251,7 +254,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--base", type=Path, default=RACINE / "data/processed/base_etape_c.sqlite")
     ap.add_argument("--sortie", type=Path, default=RACINE / "results/concordance")
     ap.add_argument("--sans-temoins", action="store_true")
+    ap.add_argument("--pages-vides", action="store_true", help="établit la cause des pages vides (réseau, lecture seule)")
     a = ap.parse_args(argv)
+    if a.pages_vides:
+        r = etablir_pages_vides(a.sortie)
+        print(json.dumps({k: v for k, v in r.items() if k not in ("codes", "relecture")}, ensure_ascii=False))
+        return 0 if r["etabli"] else 1
     r = controler(a.base)
     avant = RACINE.parent / "OrientIA/data/processed/base_etape_c.sqlite"
     r["chiffres_vus_par_le_modele"] = {"apres": compte_vus(a.base),
@@ -265,6 +273,52 @@ def main(argv: list[str] | None = None) -> int:
     print(json.dumps({k: v for k, v in r.items() if k not in ("ecarts", "doublons_montres")} |
                      {"doublons_montres": len(r["doublons_montres"])}, ensure_ascii=False))
     return 0 if r["vert"] else 1
+
+
+
+def etablir_pages_vides(sortie: Path, n_temoins: int = 20) -> dict:
+    """Cause des pages Parcoursup vides (contrat §12, demande de Jarvis) : chaque page vide est relue une fois (si
+    elle revient pleine, c'est un défaut de relevé) puis cherchée dans la cartographie ESR 2025 et 2026 ; un témoin
+    de pages pleines, tirées avec une graine fixe, doit être dans la cartographie 2026. Écrit `pages_vides.json`."""
+    import random
+    import time
+    import urllib.parse
+    import urllib.request
+    manifeste = json.loads(MANIFESTE.read_text(encoding="utf-8"))["manifeste"]
+    vides, pleines = [], []
+    for nom, e in sorted(manifeste.items()):
+        if not nom.startswith("psup/") or not e.get("sha256"):
+            continue
+        h = (CACHE / nom).read_bytes().decode("utf-8", errors="replace")
+        (pleines if chiffres_page_psup(h) or re.search(r"[0-9]+\s+places en 20[0-9]{2}", texte(h)) else vides).append(nom[5:-5])
+    url_esr = ("https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/"
+               "fr-esr-cartographie_formations_parcoursup/records")
+
+    def presents(annee: str, codes: list[str]) -> set[str]:
+        vus = set()
+        for i in range(0, len(codes), 50):
+            q = urllib.parse.urlencode({"where": f'annee="{annee}" and gta in ({",".join(chr(34) + c + chr(34) for c in codes[i:i + 50])})',
+                                        "select": "gta", "limit": 100})
+            r = urllib.request.urlopen(urllib.request.Request(f"{url_esr}?{q}", headers={"User-Agent": "Mozilla/5.0"}), timeout=30)
+            vus |= {x["gta"] for x in json.load(r)["results"]}
+            time.sleep(1.5)
+        return vus
+
+    relues = {}
+    from src.collect.pages_publiques import URL_PSUP
+    for code in vides:
+        time.sleep(1.5)
+        h = urllib.request.urlopen(urllib.request.Request(URL_PSUP.format(code), headers={"User-Agent": "Mozilla/5.0"}),
+                                   timeout=30).read().decode("utf-8", errors="replace")
+        relues[code] = {"caracteres_texte": len(texte(h)), "pleine_a_la_relecture": bool(chiffres_page_psup(h))}
+    temoins = sorted(random.Random("pages-vides-2026-09-25").sample(pleines, min(n_temoins, len(pleines))))
+    r = {"pages_vides": len(vides), "codes": vides, "relecture": relues,
+         "dans_cartographie_2026": sorted(presents("2026", vides)), "dans_cartographie_2025": sorted(presents("2025", vides)),
+         "temoin_pages_pleines": {"codes": temoins, "dans_cartographie_2026": sorted(presents("2026", temoins))}}
+    r["etabli"] = (not r["dans_cartographie_2026"] and not any(x["pleine_a_la_relecture"] for x in relues.values())
+                   and len(r["temoin_pages_pleines"]["dans_cartographie_2026"]) == len(temoins))
+    (sortie / "pages_vides.json").write_text(json.dumps(r, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return r
 
 
 if __name__ == "__main__":
