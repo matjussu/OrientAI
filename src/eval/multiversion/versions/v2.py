@@ -24,6 +24,18 @@ from src.v2.pipeline import MODELE, MODELE_FILTRE, SERVEUR, EtatConversation, Pi
 RACINE = Path(__file__).resolve().parents[4]
 
 
+def _cle_mistral() -> str:
+    """La seule clé lue : MISTRAL_API_KEY, de l'environnement sinon du .env, sans charger les autres variables du
+    .env dans le processus (piège de la section 14 du contrat du cerveau)."""
+    if os.environ.get("MISTRAL_API_KEY"):
+        return os.environ["MISTRAL_API_KEY"]
+    from dotenv import dotenv_values
+    cle = dotenv_values(RACINE / ".env").get("MISTRAL_API_KEY")
+    if not cle:
+        raise SystemExit("MISTRAL_API_KEY absente de l'environnement et du .env")
+    return cle
+
+
 def _cle(history: list[dict]) -> str:
     return hashlib.sha256(json.dumps(history, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
 
@@ -43,8 +55,7 @@ class V2:
     def _fil(self) -> tuple[ClientCompte, Pipeline]:
         if getattr(self._local, "pipeline", None) is None:
             from mistralai.client import Mistral
-            client = ClientCompte(Mistral(api_key=os.environ["MISTRAL_API_KEY"], server_url=SERVEUR,
-                                          timeout_ms=180_000))
+            client = ClientCompte(Mistral(api_key=_cle_mistral(), server_url=SERVEUR, timeout_ms=180_000))
             self._local.client, self._local.pipeline = client, Pipeline(client, outils=self.outils)
         return self._local.client, self._local.pipeline
 
