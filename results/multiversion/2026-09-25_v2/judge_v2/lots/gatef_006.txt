@@ -1,0 +1,301 @@
+RUBRIQUE (consignes du juge, à appliquer telles quelles) :
+Tu es un conseiller d'orientation senior du systeme francais (Parcoursup, MonMaster, universites,
+IUT, BTS, CPGE, ecoles, RNCP, insertion). Nous sommes en septembre 2026. Tu evalues en aveugle la
+reponse d'un assistant a un jeune (lyceen ou etudiant). Tu ne sais pas quel systeme l'a produite.
+
+Note chaque critere de 1 (mauvais) a 5 (excellent) :
+- references : les formations, etablissements, dispositifs, chiffres cites sont-ils pertinents et
+  corrects POUR CE PROFIL ? 1 = references absentes ou hors sujet ou fausses ; 3 = correctes mais
+  generiques ou incompletes (il manque l'evidence : ex. pas de Licence Informatique pour un lyceen
+  qui la demande dans une ville qui en a une) ; 5 = les bonnes references, precises, avec chiffres utiles.
+  Une reponse qui ne cite aucune reference concrete ne peut pas depasser 2.
+- comprehension : la reponse tient-elle compte du niveau, du lieu, des contraintes, de l'implicite ?
+  Si le profil est trop vague, poser UNE bonne question de clarification vaut 4-5.
+- expression : francais naturel, tutoiement coherent, structure lisible, pas de contradiction
+  interne, pas de jargon technique ("source S3", JSON, balises). Longueur adaptee.
+- couverture : 5 = repond pleinement ; 3 = repond partiellement puis renvoie ailleurs ;
+  1 = refuse ou dit "je n'ai pas cette information" alors que la question est standard.
+
+Puis :
+- refus : true si la reponse esquive l'essentiel de la question.
+- erreur_factuelle : true si tu es SUR qu'un fait cite est faux (formation inexistante, chiffre
+  invraisemblable, procedure fausse). Donne le detail. Dans le doute, false.
+- cause_echec : si references < 3 ou couverture < 3, ta meilleure hypothese :
+  "data_absente" (l'info ne semble pas exister dans une base de fiches), "retrieval" (l'info existe
+  surement dans une base Parcoursup/MonMaster mais n'a pas ete trouvee), "generation" (l'info etait
+  la ou est de culture generale, mais la redaction l'a mal exploitee), "format" (probleme de forme
+  seulement). Sinon "aucune".
+- commentaire : 1-2 phrases, la chose la plus importante a corriger.
+
+Reponds UNIQUEMENT en JSON : {"references":n,"comprehension":n,"expression":n,"couverture":n,
+"refus":bool,"erreur_factuelle":bool,"erreur_detail":"...","cause_echec":"...","commentaire":"..."}
+
+TACHES : 2, oid dans l'ordre : fd30b926e1, aae3acf53e
+
+=== TACHE oid=fd30b926e1 ===
+PROFIL : gate_f ; tags : nom
+
+QUESTION DU JEUNE :
+Terminale a Paris, bon dossier (16). Double licence maths-info a Paris Cité ou le portail maths-info, c'est quoi la différence et c'est lequel le plus dur a avoir ?
+
+REPONSE DE L'ASSISTANT :
+Tu as raison : j'avais additionné des chiffres, ce que je ne dois pas faire. Voici la réponse réécrite avec les chiffres tels que l'outil les rend.
+
+## La différence de nature
+
+- **Double licence Informatique / Mathématiques – Mathématiques et informatique fondamentales** (Université Paris Cité, campus Grands Moulins) : un cursus renforcé où tu vises **les deux licences en même temps**. Volume horaire plus lourd, et la fiche Parcoursup la marque **« formation sélective »**.
+- **Portail Mathématiques – Mathématiques et Informatique** (Université Paris Cité, campus Saint-Germain-des-Prés) : une **porte d'entrée commune** en L1. Tu fais une première année partagée, puis tu te réorientes vers la licence maths ou la licence info. C'est le schéma classique « portail » : on choisit sa mention après, pas avant.
+
+## Les chiffres, côte à côte (session 2025)
+
+| | Double licence | Portail maths-info |
+|---|---|---|
+| Places | 57 | 200 |
+| Candidats ayant postulé | 3 390 | 5 990 |
+| Taux d'accès | 23 % | 21 % |
+| Admis néo-bacheliers | 85 % | 57 % |
+| Mention très bien avec félicitations | 6 % | 0 % |
+| Mention très bien | 38 % | 11 % |
+| Mention bien | 46 % | 39 % |
+| Mention assez bien | 8 % | 32 % |
+| Sans mention | 2 % | 19 % |
+| Boursiers | 14 % | 32 % |
+
+## Lequel est le plus dur ?
+
+Sur le **taux d'accès**, elles sont presque identiques (23 % contre 21 %) — attention, ce n'est pas une probabilité d'être admis, c'est la part des candidats qui ont reçu une proposition jusqu'au rang du dernier appelé.
+
+Mais le **profil recruté** raconte autre chose : à la double licence, les mentions des admis se concentrent sur « bien » (46 %) et « très bien » (38 %, dont 6 % avec félicitations), avec seulement 2 % sans mention. Au portail, le profil est plus étalé : 11 % de très bien, 39 % de bien, 32 % d'assez bien et 19 % sans mention. La double licence est officiellement sélective et recrute clairement parmi les dossiers les plus solides ; le portail est marqué « non sélective » mais avec 5 990 candidats pour 200 places, l'entonnoir est réel aussi.
+
+Avec une moyenne de 16 en terminale, tu es dans le profil attendu des deux. La vraie question n'est donc pas l'admission mais **l'après** : la double licence, c'est un double volume de travail dès la L1, à ne choisir que si tu es solide et motivé sur les deux matières. Le portail te laisse un an pour confirmer ton choix.
+
+Tu veux que je regarde aussi le portail maths-info de Sorbonne université, pour comparer les trois ?
+
+Les fiches ci-dessous sont des données officielles de référence pour cette question ; l'assistant ne les a pas forcément eues. Un chiffre ou un fait qui les contredit est une erreur factuelle. Une information absente des fiches n'est pas une erreur en soi : juge-la sur tes connaissances. Un chiffre officiel correctement nommé n'est pas une erreur ; un chiffre d'un autre indicateur présenté sous un nom qui ne lui correspond pas en est une.
+
+CONTENU DES FICHES :
+[fiche psup:47242] Double licence - Informatique / Mathématiques - Mathématiques et informatique fondamentales - Campus Grands Moulins | mention Informatique | Université Paris Cité | Paris (Paris) | Public | formation sélective | fiche officielle : https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=47242&typeBac=0&originePc=0
+- Existe en alternance : non (session 2025, S1). Définition : Pour une formation Parcoursup : la même formation existe aussi en apprentissage (liste dans le détail). Ne dit pas : Qu'un employeur est garanti
+- Candidats classés par la formation : 1145 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions faites
+- Candidats ayant choisi d'intégrer la formation : 64 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre d'admis au bilan final (fin de procédure)
+- Candidats ayant postulé : 3390 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Les candidats de la phase complémentaire
+- Candidats ayant pu recevoir une proposition d'admission : 767 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions envoyées ; le nombre d'admis
+- CVEC : 105 euros (2026-2027, S3). Définition : CVEC (détail du coût, présent seulement quand la source le publie)
+- Droits d'inscription annuels : 178 euros (2026-2027, S4). Définition : Droits d'inscription annuels (détail du coût, présent seulement quand la source le publie)
+- Fiche publique de la session en cours : présente (relevé du 2026-09-25, S2). Définition : « présente » si la formation a une fiche publique de la session en cours (Parcoursup 2026, MonMaster 2026), « absente » sinon : ses chiffres sont alors ceux de la session 2025, jamais actuels
+- Accès des terminales (general) : 100 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (pro) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (techno) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Part des admis dès l'ouverture de la phase principale : 37 % (session 2025, S5). Définition : Part des admis qui ont accepté la proposition dès le début de la phase principale
+- Part de boursiers : 14 % (session 2025, S5) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part de boursiers du secondaire parmi les admis néo-bacheliers (qui viennent d'avoir leur bac)
+- Part de filles : 22 % (session 2025, S5) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part des femmes parmi les admis
+- Part d'admis de la même académie : 70 % (session 2025, S5). Définition : Part des admis néo-bacheliers issus de la même académie (Paris, Créteil et Versailles réunies). Ne dit pas : Que la formation refuse les autres académies
+- Part mention assez bien : 8 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention assez bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention bien : 46 % (session 2025, S5) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part des admis ayant eu leur bac mention bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part sans mention : 2 % (session 2025, S5). Définition : Part des admis ayant eu leur bac sans mention, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien : 38 % (session 2025, S5) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part des admis ayant eu leur bac mention très bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien avec félicitations : 6 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention très bien avec félicitations, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part de néo-bacheliers : 85 % (session 2025, S5). Définition : Libellé officiel : % d'admis néo bacheliers
+- Places : 57 places (session 2025, page relevée le 2026-09-25, S2) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Libellé officiel : capacité de l'établissement par formation. Ne dit pas : Le nombre d'admis réels, qui peut être plus haut ou plus bas
+- Répartition des admis, autres diplômes : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac général : 100 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac professionnel : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac technologique : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Taux d'accès : 23 % (session 2025, S5) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : la part des candidats qui ont reçu une proposition. Ne dit pas : Pas la chance d'un candidat en particulier ; pas places divisées par vœux
+- Candidats en phase principale : non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Libellé officiel : effectif total des candidats en phase principale. Ne dit pas : Les candidats de la phase complémentaire
+- Insertion (InserSup, promotion 2023,2024, INFORMATIQUE, Université Paris Cité, S8) : taux d'emploi salarié en France à 6 mois 13,64 % ; taux d'emploi salarié en France à 12 mois 27,27 % ; taux d'emploi salarié en France à 18 mois 36,36 % ; diplômés sortis des études, suivis à 12 mois 22 diplômés ; diplômés qui poursuivent 329 diplômés
+Sources : S1 MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025 ; S2 Fiches publiques Parcoursup (dossierappel.parcoursup.fr), relevé OrientAI ; S3 Service-Public, fiche F36520 « Droits d'inscription » (page « vérifié le 20 août 2026 »), d'après l'arrêté du 19 avril 2019 ; S4 Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...) ; S5 MESR (SIES), jeu fr-esr-parcoursup, session 2025 ; S6 MESR (SIES), jeu fr-esr-parcoursup_2024, session 2024 ; S7 MESR (SIES), jeu fr-esr-parcoursup_2023, session 2023 ; S8 MESR (SIES), jeu fr-esr-insersup (dispositif InserSup), diplômés, promos 2023 et 2024
+
+[fiche psup:47258] Licence - Portail Mathématiques - Mathématiques et Informatique - Campus Saint-Germain-des-Prés | mention Mathématiques | Université Paris Cité | Paris (Paris) | Public | formation non sélective | fiche officielle : https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=47258&typeBac=0&originePc=0
+- Existe en alternance : non (session 2025, S1). Définition : Pour une formation Parcoursup : la même formation existe aussi en apprentissage (liste dans le détail). Ne dit pas : Qu'un employeur est garanti
+- Candidats classés par la formation : non disponible (session 2025, page relevée le 2026-09-25, la page publique n'affiche pas ce chiffre pour cette formation). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions faites
+- Candidats ayant choisi d'intégrer la formation : 193 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre d'admis au bilan final (fin de procédure)
+- Candidats ayant postulé : 5990 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Les candidats de la phase complémentaire
+- Candidats ayant pu recevoir une proposition d'admission : 1280 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions envoyées ; le nombre d'admis
+- CVEC : 105 euros (2026-2027, S3). Définition : CVEC (détail du coût, présent seulement quand la source le publie)
+- Droits d'inscription annuels : 178 euros (2026-2027, S4). Définition : Droits d'inscription annuels (détail du coût, présent seulement quand la source le publie)
+- Fiche publique de la session en cours : présente (relevé du 2026-09-25, S2). Définition : « présente » si la formation a une fiche publique de la session en cours (Parcoursup 2026, MonMaster 2026), « absente » sinon : ses chiffres sont alors ceux de la session 2025, jamais actuels
+- Insertion professionnelle : non disponible (promotion 2023,2024, InserSup ne diffuse aucun taux pour ce diplôme dans cet établissement (8 sortants, effectif trop faible)). Définition : Taux d'emploi des diplômés (InserSup, InserJeunes), une ligne par diplôme source, dans la table insertion_ligne. Ne dit pas : La qualité de l'emploi ; le lien avec le diplôme
+- Accès des terminales (general) : 100 % (session 2025, S6). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (pro) : 0 % (session 2025, S6). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (techno) : 0 % (session 2025, S6). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Part des admis dès l'ouverture de la phase principale : 21 % (session 2025, S6). Définition : Part des admis qui ont accepté la proposition dès le début de la phase principale
+- Part de boursiers : 32 % (session 2025, S6) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part de boursiers du secondaire parmi les admis néo-bacheliers (qui viennent d'avoir leur bac)
+- Part de filles : 69 % (session 2025, S6) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part des femmes parmi les admis
+- Part d'admis de la même académie : 78 % (session 2025, S6). Définition : Part des admis néo-bacheliers issus de la même académie (Paris, Créteil et Versailles réunies). Ne dit pas : Que la formation refuse les autres académies
+- Part mention assez bien : 32 % (session 2025, S6). Définition : Part des admis ayant eu leur bac mention assez bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention bien : 39 % (session 2025, S6) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part des admis ayant eu leur bac mention bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part sans mention : 19 % (session 2025, S6). Définition : Part des admis ayant eu leur bac sans mention, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien : 11 % (session 2025, S6) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Part des admis ayant eu leur bac mention très bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien avec félicitations : 0 % (session 2025, S6). Définition : Part des admis ayant eu leur bac mention très bien avec félicitations, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part de néo-bacheliers : 57 % (session 2025, S6). Définition : Libellé officiel : % d'admis néo bacheliers
+- Places : 200 places (session 2025, page relevée le 2026-09-25, S2) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Libellé officiel : capacité de l'établissement par formation. Ne dit pas : Le nombre d'admis réels, qui peut être plus haut ou plus bas
+- Répartition des admis, autres diplômes : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac général : 99 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac professionnel : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac technologique : 1 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Taux d'accès : 21 % (session 2025, S6) ; non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : la part des candidats qui ont reçu une proposition. Ne dit pas : Pas la chance d'un candidat en particulier ; pas places divisées par vœux
+- Candidats en phase principale : non disponible (session 2024, formation absente du jeu Parcoursup 2024) ; non disponible (session 2023, formation absente du jeu Parcoursup 2023). Définition : Libellé officiel : effectif total des candidats en phase principale. Ne dit pas : Les candidats de la phase complémentaire
+Sources : S1 MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025 ; S2 Fiches publiques Parcoursup (dossierappel.parcoursup.fr), relevé OrientAI ; S3 Service-Public, fiche F36520 « Droits d'inscription » (page « vérifié le 20 août 2026 »), d'après l'arrêté du 19 avril 2019 ; S4 Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...) ; S5 MESR (SIES), jeu fr-esr-insersup (dispositif InserSup), diplômés, promos 2023 et 2024 ; S6 MESR (SIES), jeu fr-esr-parcoursup, session 2025 ; S7 MESR (SIES), jeu fr-esr-parcoursup_2024, session 2024 ; S8 MESR (SIES), jeu fr-esr-parcoursup_2023, session 2023
+=== FIN TACHE oid=fd30b926e1 ===
+
+=== TACHE oid=aae3acf53e ===
+PROFIL : gate_f ; tags : nom
+
+QUESTION DU JEUNE :
+je suis au lycée a Lyon, 17 de moyenne spé maths physique + maths expertes. MPSI ou MP2I au Parc ? j'aime bien l'info mais la physique aussi
+
+REPONSE DE L'ASSISTANT :
+Bonne nouvelle : avec 17 de moyenne en maths, physique et maths expertes, tu as le profil pour viser les deux. Voici les chiffres au Lycée du Parc, puis mon avis sur le choix.
+
+**Les chiffres (session 2025)**
+
+| | MPSI – Lycée du Parc | MP2I – Lycée du Parc |
+|---|---|---|
+| Places | 142 | 47 |
+| Candidats ayant postulé | 7 967 | 2 944 |
+| Taux d'accès | 10 % | 11 % |
+| Admis issus du bac général | 100 % | 100 % |
+
+Le taux d'accès, c'est la part des candidats qui ont reçu une proposition jusqu'au rang du dernier appelé — pas tes chances personnelles. Il est très bas pour les deux (10–11 %), et stable sur 2023–2025 (11–12 %). Les deux sont très sélectives ; la MP2I a 3 fois moins de places mais aussi beaucoup moins de candidats.
+
+**MPSI ou MP2I, pour toi ?**
+
+- **MP2I** (maths, physique, informatique, ingénierie) a été créée exactement pour des profils comme le tien : l'informatique y est une vraie discipline dès la première année (algorithmique, programmation). Elle mène en 2e année vers MP2I*/MPI, très recherchée pour les écoles d'info et les cursus où maths et informatique se combinent.
+- **MPSI** garde la physique et les maths comme cœur du programme, avec peu d'informatique. Elle mène vers MP*/MP ou PSI, et reste la voie classique vers les grandes écoles généralistes (X, Mines, Centrale…).
+
+Si tu aimes **les deux** à peu près pareil, la MP2I est le choix le plus fidèle à ce que tu décris : tu ne sacrifies ni la physique ni l'info. Si au fond la physique et les maths te parlent plus que la programmation, la MPSI reste la voie reine.
+
+Un point pratique : sur Parcoursup tu peux mettre les deux vœux au Parc, et tu as aussi d'autres MP2I à Lyon (Aux Lazaristes, La Martinière Monplaisir) et d'autres MPSI (Jean Perrin, Aux Lazaristes, La Martinière Monplaisir) — utile pour élargir tes chances. Tu veux que je compare les chiffres de ces autres classes prépas lyonnaises ?
+
+Les fiches ci-dessous sont des données officielles de référence pour cette question ; l'assistant ne les a pas forcément eues. Un chiffre ou un fait qui les contredit est une erreur factuelle. Une information absente des fiches n'est pas une erreur en soi : juge-la sur tes connaissances. Un chiffre officiel correctement nommé n'est pas une erreur ; un chiffre d'un autre indicateur présenté sous un nom qui ne lui correspond pas en est une.
+
+CONTENU DES FICHES :
+[fiche psup:31680] CPGE - MP2I | voie MP2I (mathématiques, physique, ingénierie et informatique) | Lycée du Parc | Lyon (Rhône) | Public | formation sélective | fiche officielle : https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=31680&typeBac=0&originePc=0
+- Existe en alternance : non (session 2025, S1). Définition : Pour une formation Parcoursup : la même formation existe aussi en apprentissage (liste dans le détail). Ne dit pas : Qu'un employeur est garanti
+- Candidats classés par la formation : 800 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions faites
+- Candidats ayant choisi d'intégrer la formation : 50 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre d'admis au bilan final (fin de procédure)
+- Candidats ayant postulé : 2944 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Les candidats de la phase complémentaire
+- Candidats ayant pu recevoir une proposition d'admission : 313 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions envoyées ; le nombre d'admis
+- CVEC : 105 euros (2026-2027, S3). Définition : CVEC (détail du coût, présent seulement quand la source le publie)
+- Droits d'inscription annuels : 178 euros (2026-2027, S4). Définition : Droits d'inscription annuels (détail du coût, présent seulement quand la source le publie)
+- Fiche publique de la session en cours : présente (relevé du 2026-09-25, S2). Définition : « présente » si la formation a une fiche publique de la session en cours (Parcoursup 2026, MonMaster 2026), « absente » sinon : ses chiffres sont alors ceux de la session 2025, jamais actuels
+- Insertion professionnelle : non disponible (une classe préparatoire ne délivre pas de diplôme : aucun dispositif d'insertion ne la couvre). Définition : Taux d'emploi des diplômés (InserSup, InserJeunes), une ligne par diplôme source, dans la table insertion_ligne. Ne dit pas : La qualité de l'emploi ; le lien avec le diplôme
+- Accès des terminales (general) : 100 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (pro) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (techno) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Part des admis dès l'ouverture de la phase principale : 30 % (session 2025, S5). Définition : Part des admis qui ont accepté la proposition dès le début de la phase principale
+- Part de boursiers : 24 % (session 2025, S5) ; 24 % (session 2024, S6) ; 16 % (session 2023, S7). Définition : Part de boursiers du secondaire parmi les admis néo-bacheliers (qui viennent d'avoir leur bac)
+- Part de filles : 19 % (session 2025, S5) ; 17 % (session 2024, S6) ; 21 % (session 2023, S7). Définition : Part des femmes parmi les admis
+- Part d'admis de la même académie : 42 % (session 2025, S5). Définition : Part des admis néo-bacheliers issus de la même académie (Paris, Créteil et Versailles réunies). Ne dit pas : Que la formation refuse les autres académies
+- Part mention assez bien : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention assez bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention bien : 11 % (session 2025, S5) ; 11 % (session 2024, S6) ; 0 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part sans mention : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac sans mention, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien : 47 % (session 2025, S5) ; 67 % (session 2024, S6) ; 42 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention très bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien avec félicitations : 42 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention très bien avec félicitations, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part de néo-bacheliers : 96 % (session 2025, S5). Définition : Libellé officiel : % d'admis néo bacheliers
+- Places : 47 places (session 2025, page relevée le 2026-09-25, S2) ; 47 places (session 2024, S6) ; 48 places (session 2023, S7). Définition : Libellé officiel : capacité de l'établissement par formation. Ne dit pas : Le nombre d'admis réels, qui peut être plus haut ou plus bas
+- Répartition des admis, autres diplômes : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac général : 100 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac professionnel : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac technologique : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Taux d'accès : 11 % (session 2025, S5) ; 11 % (session 2024, S6) ; 12 % (session 2023, S7). Définition : la part des candidats qui ont reçu une proposition. Ne dit pas : Pas la chance d'un candidat en particulier ; pas places divisées par vœux
+- Candidats en phase principale : 2628 candidats (session 2024, S6) ; 2439 candidats (session 2023, S7). Définition : Libellé officiel : effectif total des candidats en phase principale. Ne dit pas : Les candidats de la phase complémentaire
+Sources : S1 MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025 ; S2 Fiches publiques Parcoursup (dossierappel.parcoursup.fr), relevé OrientAI ; S3 Service-Public, fiche F36520 « Droits d'inscription » (page « vérifié le 20 août 2026 »), d'après l'arrêté du 19 avril 2019 ; S4 Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...) ; S5 MESR (SIES), jeu fr-esr-parcoursup, session 2025 ; S6 MESR (SIES), jeu fr-esr-parcoursup_2024, session 2024 ; S7 MESR (SIES), jeu fr-esr-parcoursup_2023, session 2023
+
+[fiche psup:39554] CPGE - MP2I | voie MP2I (mathématiques, physique, ingénierie et informatique) | Lycée La Martiniere Monplaisir | Lyon (Rhône) | Public | formation sélective | fiche officielle : https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=39554&typeBac=0&originePc=0
+- Existe en alternance : non (session 2025, S1). Définition : Pour une formation Parcoursup : la même formation existe aussi en apprentissage (liste dans le détail). Ne dit pas : Qu'un employeur est garanti
+- Candidats classés par la formation : 700 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions faites
+- Candidats ayant choisi d'intégrer la formation : 47 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre d'admis au bilan final (fin de procédure)
+- Candidats ayant postulé : 2299 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Les candidats de la phase complémentaire
+- Candidats ayant pu recevoir une proposition d'admission : 399 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions envoyées ; le nombre d'admis
+- CVEC : 105 euros (2026-2027, S3). Définition : CVEC (détail du coût, présent seulement quand la source le publie)
+- Droits d'inscription annuels : 178 euros (2026-2027, S4). Définition : Droits d'inscription annuels (détail du coût, présent seulement quand la source le publie)
+- Fiche publique de la session en cours : présente (relevé du 2026-09-25, S2). Définition : « présente » si la formation a une fiche publique de la session en cours (Parcoursup 2026, MonMaster 2026), « absente » sinon : ses chiffres sont alors ceux de la session 2025, jamais actuels
+- Insertion professionnelle : non disponible (une classe préparatoire ne délivre pas de diplôme : aucun dispositif d'insertion ne la couvre). Définition : Taux d'emploi des diplômés (InserSup, InserJeunes), une ligne par diplôme source, dans la table insertion_ligne. Ne dit pas : La qualité de l'emploi ; le lien avec le diplôme
+- Accès des terminales (general) : 100 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (pro) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (techno) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Part des admis dès l'ouverture de la phase principale : 26 % (session 2025, S5). Définition : Part des admis qui ont accepté la proposition dès le début de la phase principale
+- Part de boursiers : 9 % (session 2025, S5) ; 25 % (session 2024, S6) ; 13 % (session 2023, S7). Définition : Part de boursiers du secondaire parmi les admis néo-bacheliers (qui viennent d'avoir leur bac)
+- Part de filles : 21 % (session 2025, S5) ; 17 % (session 2024, S6) ; 15 % (session 2023, S7). Définition : Part des femmes parmi les admis
+- Part d'admis de la même académie : 66 % (session 2025, S5). Définition : Part des admis néo-bacheliers issus de la même académie (Paris, Créteil et Versailles réunies). Ne dit pas : Que la formation refuse les autres académies
+- Part mention assez bien : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention assez bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention bien : 25 % (session 2025, S5) ; 32 % (session 2024, S6) ; 26 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part sans mention : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac sans mention, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien : 70 % (session 2025, S5) ; 55 % (session 2024, S6) ; 67 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention très bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien avec félicitations : 2 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention très bien avec félicitations, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part de néo-bacheliers : 94 % (session 2025, S5). Définition : Libellé officiel : % d'admis néo bacheliers
+- Places : 48 places (session 2025, page relevée le 2026-09-25, S2) ; 48 places (session 2024, S6) ; 48 places (session 2023, S7). Définition : Libellé officiel : capacité de l'établissement par formation. Ne dit pas : Le nombre d'admis réels, qui peut être plus haut ou plus bas
+- Répartition des admis, autres diplômes : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac général : 100 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac professionnel : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac technologique : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Taux d'accès : 17 % (session 2025, S5) ; 20 % (session 2024, S6) ; 26 % (session 2023, S7). Définition : la part des candidats qui ont reçu une proposition. Ne dit pas : Pas la chance d'un candidat en particulier ; pas places divisées par vœux
+- Candidats en phase principale : 1899 candidats (session 2024, S6) ; 2061 candidats (session 2023, S7). Définition : Libellé officiel : effectif total des candidats en phase principale. Ne dit pas : Les candidats de la phase complémentaire
+Sources : S1 MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025 ; S2 Fiches publiques Parcoursup (dossierappel.parcoursup.fr), relevé OrientAI ; S3 Service-Public, fiche F36520 « Droits d'inscription » (page « vérifié le 20 août 2026 »), d'après l'arrêté du 19 avril 2019 ; S4 Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...) ; S5 MESR (SIES), jeu fr-esr-parcoursup, session 2025 ; S6 MESR (SIES), jeu fr-esr-parcoursup_2024, session 2024 ; S7 MESR (SIES), jeu fr-esr-parcoursup_2023, session 2023
+
+[fiche psup:8182] CPGE - MPSI | voie MPSI (mathématiques, physique et sciences de l'ingénieur) | Lycée du Parc | Lyon (Rhône) | Public | formation sélective | fiche officielle : https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8182&typeBac=0&originePc=0
+- Existe en alternance : non (session 2025, S1). Définition : Pour une formation Parcoursup : la même formation existe aussi en apprentissage (liste dans le détail). Ne dit pas : Qu'un employeur est garanti
+- Candidats classés par la formation : 1595 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions faites
+- Candidats ayant choisi d'intégrer la formation : 150 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre d'admis au bilan final (fin de procédure)
+- Candidats ayant postulé : 7967 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Les candidats de la phase complémentaire
+- Candidats ayant pu recevoir une proposition d'admission : 814 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions envoyées ; le nombre d'admis
+- CVEC : 105 euros (2026-2027, S3). Définition : CVEC (détail du coût, présent seulement quand la source le publie)
+- Droits d'inscription annuels : 178 euros (2026-2027, S4). Définition : Droits d'inscription annuels (détail du coût, présent seulement quand la source le publie)
+- Fiche publique de la session en cours : présente (relevé du 2026-09-25, S2). Définition : « présente » si la formation a une fiche publique de la session en cours (Parcoursup 2026, MonMaster 2026), « absente » sinon : ses chiffres sont alors ceux de la session 2025, jamais actuels
+- Insertion professionnelle : non disponible (une classe préparatoire ne délivre pas de diplôme : aucun dispositif d'insertion ne la couvre). Définition : Taux d'emploi des diplômés (InserSup, InserJeunes), une ligne par diplôme source, dans la table insertion_ligne. Ne dit pas : La qualité de l'emploi ; le lien avec le diplôme
+- Accès des terminales (general) : 100 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (pro) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (techno) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Part des admis dès l'ouverture de la phase principale : 48 % (session 2025, S5). Définition : Part des admis qui ont accepté la proposition dès le début de la phase principale
+- Part de boursiers : 17 % (session 2025, S5) ; 16 % (session 2024, S6) ; 20 % (session 2023, S7). Définition : Part de boursiers du secondaire parmi les admis néo-bacheliers (qui viennent d'avoir leur bac)
+- Part de filles : 24 % (session 2025, S5) ; 22 % (session 2024, S6) ; 26 % (session 2023, S7). Définition : Part des femmes parmi les admis
+- Part d'admis de la même académie : 20 % (session 2025, S5). Définition : Part des admis néo-bacheliers issus de la même académie (Paris, Créteil et Versailles réunies). Ne dit pas : Que la formation refuse les autres académies
+- Part mention assez bien : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention assez bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention bien : 2 % (session 2025, S5) ; 2 % (session 2024, S6) ; 0 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part sans mention : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac sans mention, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien : 41 % (session 2025, S5) ; 38 % (session 2024, S6) ; 39 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention très bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien avec félicitations : 58 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention très bien avec félicitations, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part de néo-bacheliers : 99 % (session 2025, S5). Définition : Libellé officiel : % d'admis néo bacheliers
+- Places : 142 places (session 2025, page relevée le 2026-09-25, S2) ; 142 places (session 2024, S6) ; 142 places (session 2023, S7). Définition : Libellé officiel : capacité de l'établissement par formation. Ne dit pas : Le nombre d'admis réels, qui peut être plus haut ou plus bas
+- Répartition des admis, autres diplômes : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac général : 100 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac professionnel : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac technologique : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Taux d'accès : 10 % (session 2025, S5) ; 11 % (session 2024, S6) ; 12 % (session 2023, S7). Définition : la part des candidats qui ont reçu une proposition. Ne dit pas : Pas la chance d'un candidat en particulier ; pas places divisées par vœux
+- Candidats en phase principale : 7220 candidats (session 2024, S6) ; 7065 candidats (session 2023, S7). Définition : Libellé officiel : effectif total des candidats en phase principale. Ne dit pas : Les candidats de la phase complémentaire
+Sources : S1 MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025 ; S2 Fiches publiques Parcoursup (dossierappel.parcoursup.fr), relevé OrientAI ; S3 Service-Public, fiche F36520 « Droits d'inscription » (page « vérifié le 20 août 2026 »), d'après l'arrêté du 19 avril 2019 ; S4 Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...) ; S5 MESR (SIES), jeu fr-esr-parcoursup, session 2025 ; S6 MESR (SIES), jeu fr-esr-parcoursup_2024, session 2024 ; S7 MESR (SIES), jeu fr-esr-parcoursup_2023, session 2023
+
+[fiche psup:8550] CPGE - MPSI | voie MPSI (mathématiques, physique et sciences de l'ingénieur) | Lycée La Martiniere Monplaisir | Lyon (Rhône) | Public | formation sélective | fiche officielle : https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=8550&typeBac=0&originePc=0
+- Existe en alternance : non (session 2025, S1). Définition : Pour une formation Parcoursup : la même formation existe aussi en apprentissage (liste dans le détail). Ne dit pas : Qu'un employeur est garanti
+- Candidats classés par la formation : 1850 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions faites
+- Candidats ayant choisi d'intégrer la formation : 93 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre d'admis au bilan final (fin de procédure)
+- Candidats ayant postulé : 4968 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Les candidats de la phase complémentaire
+- Candidats ayant pu recevoir une proposition d'admission : 1248 candidats (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : Le nombre de propositions envoyées ; le nombre d'admis
+- CVEC : 105 euros (2026-2027, S3). Définition : CVEC (détail du coût, présent seulement quand la source le publie)
+- Droits d'inscription annuels : 178 euros (2026-2027, S4). Définition : Droits d'inscription annuels (détail du coût, présent seulement quand la source le publie)
+- Fiche publique de la session en cours : présente (relevé du 2026-09-25, S2). Définition : « présente » si la formation a une fiche publique de la session en cours (Parcoursup 2026, MonMaster 2026), « absente » sinon : ses chiffres sont alors ceux de la session 2025, jamais actuels
+- Insertion professionnelle : non disponible (une classe préparatoire ne délivre pas de diplôme : aucun dispositif d'insertion ne la couvre). Définition : Taux d'emploi des diplômés (InserSup, InserJeunes), une ligne par diplôme source, dans la table insertion_ligne. Ne dit pas : La qualité de l'emploi ; le lien avec le diplôme
+- Accès des terminales (general) : 100 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (pro) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Accès des terminales (techno) : 0 % (session 2025, S5). Définition : Libellé officiel : part des terminales de cette série qui étaient en position de recevoir une proposition en phase principale. Ne dit pas : La répartition des admis
+- Part des admis dès l'ouverture de la phase principale : 21 % (session 2025, S5). Définition : Part des admis qui ont accepté la proposition dès le début de la phase principale
+- Part de boursiers : 14 % (session 2025, S5) ; 17 % (session 2024, S6) ; 12 % (session 2023, S7). Définition : Part de boursiers du secondaire parmi les admis néo-bacheliers (qui viennent d'avoir leur bac)
+- Part de filles : 22 % (session 2025, S5) ; 41 % (session 2024, S6) ; 30 % (session 2023, S7). Définition : Part des femmes parmi les admis
+- Part d'admis de la même académie : 50 % (session 2025, S5). Définition : Part des admis néo-bacheliers issus de la même académie (Paris, Créteil et Versailles réunies). Ne dit pas : Que la formation refuse les autres académies
+- Part mention assez bien : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention assez bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention bien : 22 % (session 2025, S5) ; 16 % (session 2024, S6) ; 12 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part sans mention : 0 % (session 2025, S5). Définition : Part des admis ayant eu leur bac sans mention, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien : 69 % (session 2025, S5) ; 76 % (session 2024, S6) ; 67 % (session 2023, S7). Définition : Part des admis ayant eu leur bac mention très bien, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part mention très bien avec félicitations : 9 % (session 2025, S5). Définition : Part des admis ayant eu leur bac mention très bien avec félicitations, parmi les admis néo-bacheliers (qui viennent d'avoir leur bac). Ne dit pas : Le niveau réel en maths
+- Part de néo-bacheliers : 91 % (session 2025, S5). Définition : Libellé officiel : % d'admis néo bacheliers
+- Places : 96 places (session 2025, page relevée le 2026-09-25, S2) ; 96 places (session 2024, S6) ; 96 places (session 2023, S7). Définition : Libellé officiel : capacité de l'établissement par formation. Ne dit pas : Le nombre d'admis réels, qui peut être plus haut ou plus bas
+- Répartition des admis, autres diplômes : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac général : 100 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac professionnel : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Répartition des admis, bac technologique : 0 % (session 2025, page relevée le 2026-09-25, S2). Définition : Chiffre affiché sur la fiche publique Parcoursup (arrêté à la fin de la phase principale, mi-juillet, d'après la page). Ne dit pas : La part parmi les néo-bacheliers seulement
+- Taux d'accès : 25 % (session 2025, S5) ; 16 % (session 2024, S6) ; 19 % (session 2023, S7). Définition : la part des candidats qui ont reçu une proposition. Ne dit pas : Pas la chance d'un candidat en particulier ; pas places divisées par vœux
+- Candidats en phase principale : 4591 candidats (session 2024, S6) ; 4555 candidats (session 2023, S7). Définition : Libellé officiel : effectif total des candidats en phase principale. Ne dit pas : Les candidats de la phase complémentaire
+Sources : S1 MESR (SIES), jeu fr-esr-parcoursup-apprentissage, session 2025 ; S2 Fiches publiques Parcoursup (dossierappel.parcoursup.fr), relevé OrientAI ; S3 Service-Public, fiche F36520 « Droits d'inscription » (page « vérifié le 20 août 2026 »), d'après l'arrêté du 19 avril 2019 ; S4 Tableau ministériel « Montant des droits de scolarité au titre de l'année universitaire 2026-2027, établissements publics relevant du ministre chargé de l'enseignement supérieur », republié par l'Université de Reims (PDF sha256 b2b8c9c003d29331...) ; S5 MESR (SIES), jeu fr-esr-parcoursup, session 2025 ; S6 MESR (SIES), jeu fr-esr-parcoursup_2024, session 2024 ; S7 MESR (SIES), jeu fr-esr-parcoursup_2023, session 2023
+=== FIN TACHE oid=aae3acf53e ===
