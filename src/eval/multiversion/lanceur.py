@@ -136,9 +136,14 @@ def _jouer_conversation(version, item: dict, banc: str) -> list[dict]:
         try:
             r, erreur = version.ask(question, history), None
             if not (r.get("reponse") or "").strip():
-                raise RuntimeError("reponse vide")
+                # L'usage et la trace d'une réponse vide sont gardés : jetés, le coût du tour disparaissait du
+                # registre (constaté au palier 0 du v2, 25/09).
+                vide = RuntimeError("reponse vide")
+                vide.usage, vide.trace = r.get("usage") or {}, r.get("trace") or {}
+                raise vide
         except Exception as e:  # noqa: BLE001 - une panne n'arrête pas le banc, elle est gardée et comptée
-            r = {"reponse": "", "sources": [], "source_positions": [], "usage": getattr(e, "usage", {}) or {}}
+            r = {"reponse": "", "sources": [], "source_positions": [], "usage": getattr(e, "usage", {}) or {},
+                 "trace": getattr(e, "trace", {}) or {}}
             erreur = f"{type(e).__name__}: {e}\n{traceback.format_exc()[-800:]}"
         c, nm = cout(r.get("usage") or {})
         tours.append({"id": item["id"], "turn": turn, "persona": item["persona"], "domaine": item.get("domaine"),

@@ -262,7 +262,7 @@ class Outils:
         schema = SCHEMAS[nom]
         try:
             args = json.loads(arguments) if isinstance(arguments, str) else (arguments or {})
-            params = schema.model_validate(args)
+            params = schema.model_validate(_objets_decodes(args, schema))
         except ValueError as e:
             texte = (_erreur_validation(e, schema) if isinstance(e, ValidationError)
                      else "erreur : arguments illisibles (JSON attendu)")
@@ -470,6 +470,26 @@ class Outils:
         else:
             profil = p.model_dump(exclude_none=True)
         return Resultat(texte="Profil enregistré : " + json.dumps(profil, ensure_ascii=False), meta={"profil": profil})
+
+
+def _objets_decodes(args: dict, schema: type[BaseModel]) -> dict:
+    """GLM 5.3 envoie parfois un paramètre objet ou liste sous forme de chaîne JSON (« pres_de »: "{\"commune\": ...}",
+    constaté au palier 0 du 25/09 : 4 appels refusés de suite sur F-R01). Une chaîne qui se lit comme un objet ou une
+    liste JSON, pour un paramètre qui n'est pas une chaîne, est décodée ; tout le reste passe tel quel à Pydantic."""
+    if not isinstance(args, dict):
+        return args
+    out = dict(args)
+    for k, v in args.items():
+        champ = schema.model_fields.get(k)
+        if champ is None or not isinstance(v, str) or v.strip()[:1] not in ("{", "["):
+            continue
+        if champ.annotation in (str, str | None):
+            continue
+        try:
+            out[k] = json.loads(v)
+        except ValueError:
+            pass
+    return out
 
 
 def _fr(v) -> str:

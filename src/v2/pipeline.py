@@ -31,6 +31,7 @@ FENETRE_HISTORIQUE = 6          # messages rejoués, comme la plateforme (src/ev
 MESSAGE_PLAFOND = ("plafond de 6 recherches atteint pour ce message : cet appel n'a pas été exécuté. Réponds avec ce "
                    "que tu as déjà, et dis-le à l'élève.")
 IDS_CITES = ("trouver_formation", "lire_fiche", "comparer")
+RELANCE_VIDE = "Rédige maintenant ta réponse à l'élève avec ce que tu as, sans appeler d'outil."
 
 
 @dataclass
@@ -122,9 +123,15 @@ class Pipeline:
             permis = compteur["outils"] < PLAFOND_OUTILS
             r = self._appel(msgs, permis, trace)
             m = r.choices[0].message
-            texte, _ = texte_reponse(m)
+            texte, pensee = texte_reponse(m)
+            trace["appels_modele"][-1]["caracteres_texte"], trace["appels_modele"][-1]["raisonnement"] = len(texte), pensee
             if not m.tool_calls or not permis:
-                return texte
+                if texte.strip() or trace.get("relance_vide"):
+                    return texte
+                # Réponse vide sans appel d'outil (constaté au palier 0 du 25/09, après le plafond) : une relance.
+                trace["relance_vide"] = True
+                msgs.append({"role": "user", "content": RELANCE_VIDE})
+                continue
             msgs.append({"role": "assistant", "content": texte, "tool_calls": m.tool_calls})
             for tc in m.tool_calls:
                 nom, brut = tc.function.name, tc.function.arguments

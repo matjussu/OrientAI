@@ -382,3 +382,20 @@ def test_adosses_v2_recompte_depuis_la_trace():
     assert r["chiffres_cites"] == 4
     assert r["non_adosses"] == [{"id": "c", "turn": 1, "valeur": 12.0, "unite": "pct"}]
     assert [c["status"] for c in r["par_tour"][("c", 0)]] == ["adosse", "eleve"]
+
+
+@base_requise
+def test_objet_envoye_en_chaine_json_est_decode(outils):
+    """GLM 5.3 envoie « pres_de » en chaîne JSON (palier 0, 25/09) : accepté, et une vraie chaîne reste une chaîne."""
+    r = outils.executer("chercher_formations", {"types": ["but"], "filieres": ["Informatique"],
+                                               "pres_de": json.dumps({"commune": "Lens", "rayon_km": 60})})
+    assert r.erreur is None and "psup:7520" in r.ids
+    r = outils.executer("trouver_formation", {"texte": "[BUT] info Lens"})
+    assert r.erreur is None and r.meta["requete_normalisee"] == "but info lens"
+
+
+def test_reponse_vide_relancee_une_fois():
+    p, modele, _ = _pipeline([_msg(""), _msg("Voici une première orientation.")])
+    r = p.repondre("question", EtatConversation())
+    assert r["reponse"] == "Voici une première orientation." and r["trace"]["relance_vide"]
+    assert modele.recus[1]["messages"][-1]["content"].startswith("Rédige maintenant ta réponse")
