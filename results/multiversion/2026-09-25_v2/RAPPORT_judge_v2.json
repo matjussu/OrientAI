@@ -1,0 +1,392 @@
+{
+ "tag": "2026-09-25_v2",
+ "juge": "judge_v2",
+ "budget": {
+  "plafonds_usd": {
+   "openai": 9.5,
+   "mistral": 0.5
+  },
+  "depense_usd": {
+   "mistral": 10.525068
+  },
+  "max_conversation_usd": {
+   "mistral": 0.38921135
+  },
+  "non_mesures": 0,
+  "runs": [
+   {
+    "at": "2026-09-25T18:12:55+00:00",
+    "version": "v2",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "79d5ccdbf0f6fb6885dfc85bbbb0ca2c97b50b1b",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt_sha": "913df039941d",
+     "src_v2_sha": "d681afedb69a",
+     "base_empreinte": "bfb26cdddfc6"
+    },
+    "tours_joues": 3,
+    "erreurs": 2,
+    "cout_usd": 0.0235,
+    "secondes": 53,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2__gatef.jsonl"
+   },
+   {
+    "hors_tours": "diagnostic à la main de F-R01 (usage exact relevé par ClientCompte)",
+    "usage": {
+     "mistral-small-2603": {
+      "appels": 1,
+      "entree": 2088,
+      "sortie": 27,
+      "non_mesures": 0
+     },
+     "zai-glm-5-3": {
+      "appels": 6,
+      "entree": 31595,
+      "sortie": 2216,
+      "non_mesures": 0
+     }
+    },
+    "cout_usd": 0.054313
+   },
+   {
+    "hors_tours": "ESTIMATION majorante de l'usage perdu des 2 tours vides du premier passage (1,5 x le diagnostic par tour ; usage jeté par le lanceur, corrigé ensuite)",
+    "usage": {
+     "mistral-small-2603": {
+      "appels": 2,
+      "entree": 8352,
+      "sortie": 108,
+      "non_mesures": 0
+     },
+     "zai-glm-5-3": {
+      "appels": 12,
+      "entree": 94785,
+      "sortie": 6648,
+      "non_mesures": 0
+     }
+    },
+    "cout_usd": 0.163268
+   },
+   {
+    "at": "2026-09-25T18:15:18+00:00",
+    "version": "v2",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "1fa22d0af57ebcd6ef85d63ea2a685c2e1546396",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt_sha": "913df039941d",
+     "src_v2_sha": "392cfc8f46fd",
+     "base_empreinte": "bfb26cdddfc6"
+    },
+    "tours_joues": 2,
+    "erreurs": 0,
+    "cout_usd": 0.0824,
+    "secondes": 17,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2__gatef.jsonl"
+   },
+   {
+    "at": "2026-09-25T18:22:23+00:00",
+    "version": "v2",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "ad74e979fb08b69871d23898bf2210452427d947",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt_sha": "913df039941d",
+     "src_v2_sha": "7ecb8a12ad1d",
+     "base_empreinte": "bfb26cdddfc6"
+    },
+    "tours_joues": 32,
+    "erreurs": 0,
+    "cout_usd": 1.1609,
+    "secondes": 312,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2__gatef.jsonl"
+   },
+   {
+    "at": "2026-09-25T18:32:23+00:00",
+    "version": "v2",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "52a0b14beec98d16d3fb15ebfca2f59ee8cfc11b",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt_sha": "913df039941d",
+     "src_v2_sha": "9a18c9bd356a",
+     "base_empreinte": "bfb26cdddfc6"
+    },
+    "tours_joues": 32,
+    "erreurs": 0,
+    "cout_usd": 1.537,
+    "secondes": 215,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2__gatef.jsonl"
+   },
+   {
+    "at": "2026-09-25T18:45:49+00:00",
+    "version": "v2",
+    "banc": "vertical",
+    "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+    "git_commit": "52a0b14beec98d16d3fb15ebfca2f59ee8cfc11b",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt_sha": "913df039941d",
+     "src_v2_sha": "9a18c9bd356a",
+     "base_empreinte": "bfb26cdddfc6"
+    },
+    "tours_joues": 79,
+    "erreurs": 0,
+    "cout_usd": 4.389,
+    "secondes": 668,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2__vertical.jsonl"
+   },
+   {
+    "at": "2026-09-25T18:57:06+00:00",
+    "version": "v2",
+    "banc": "lot0",
+    "banc_sha256": "5b268bf34d916e2d17fe2c784015a0acd184f537ec3f0d2dc2f95f5883c2a9dd",
+    "git_commit": "dd2276fc5edd691dd58e90d82a0eaefeb61bbbc6",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt_sha": "913df039941d",
+     "src_v2_sha": "9a18c9bd356a",
+     "base_empreinte": "bfb26cdddfc6"
+    },
+    "tours_joues": 67,
+    "erreurs": 0,
+    "cout_usd": 3.1148,
+    "secondes": 624,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2__lot0.jsonl"
+   }
+  ],
+  "estimations": []
+ },
+ "ic95": "Wilson (score), z = 1,96",
+ "runs": {
+  "v2__gatef": {
+   "n_tours": 32,
+   "n_conversations": 30,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 8.0,
+   "structured_part": null,
+   "latence_mediane": 13.995000000000001,
+   "latence_p90": 31.58,
+   "mots_mediane": 329.0,
+   "cout_usd": 1.537,
+   "tokens": {
+    "mistral-small-2603": {
+     "entree": 67672,
+     "sortie": 1058,
+     "non_mesures": 0
+    },
+    "zai-glm-5-3": {
+     "entree": 762322,
+     "sortie": 104301,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 32,
+   "juge_moyennes": {
+    "references": 4.188,
+    "comprehension": 4.406,
+    "expression": 4.375,
+    "couverture": 4.438
+   },
+   "juge_moyenne_4": 4.352,
+   "refus": 0,
+   "erreurs_fait": 6,
+   "erreurs_fait_part": 0.1875,
+   "erreurs_fait_ic95_wilson": [
+    0.0889,
+    0.3531
+   ],
+   "critere1": null,
+   "adosses": {
+    "statut": "mesuré (valeurs des outils tracées)",
+    "chiffres_cites": 388,
+    "taux": 1.0,
+    "non_adosses": []
+   }
+  },
+  "v2__lot0": {
+   "n_tours": 67,
+   "n_conversations": 60,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 0,
+   "structured_part": null,
+   "latence_mediane": 22.41,
+   "latence_p90": 49.54,
+   "mots_mediane": 339,
+   "cout_usd": 3.1148,
+   "tokens": {
+    "mistral-small-2603": {
+     "entree": 143630,
+     "sortie": 2106,
+     "non_mesures": 0
+    },
+    "zai-glm-5-3": {
+     "entree": 1234224,
+     "sortie": 310023,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 0,
+   "juge_moyennes": {
+    "references": null,
+    "comprehension": null,
+    "expression": null,
+    "couverture": null
+   },
+   "juge_moyenne_4": null,
+   "refus": 0,
+   "erreurs_fait": 0,
+   "erreurs_fait_part": null,
+   "erreurs_fait_ic95_wilson": null,
+   "critere1": null,
+   "adosses": {
+    "statut": "mesuré (valeurs des outils tracées)",
+    "chiffres_cites": 223,
+    "taux": 1.0,
+    "non_adosses": []
+   }
+  },
+  "v2__vertical": {
+   "n_tours": 79,
+   "n_conversations": 57,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 8,
+   "structured_part": null,
+   "latence_mediane": 19.94,
+   "latence_p90": 43.47,
+   "mots_mediane": 346,
+   "cout_usd": 4.389,
+   "tokens": {
+    "mistral-small-2603": {
+     "entree": 176443,
+     "sortie": 2456,
+     "non_mesures": 0
+    },
+    "zai-glm-5-3": {
+     "entree": 2044576,
+     "sortie": 340597,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 79,
+   "juge_moyennes": {
+    "references": 3.886,
+    "comprehension": 4.443,
+    "expression": 4.456,
+    "couverture": 4.278
+   },
+   "juge_moyenne_4": 4.266,
+   "refus": 2,
+   "erreurs_fait": 15,
+   "erreurs_fait_part": 0.1899,
+   "erreurs_fait_ic95_wilson": [
+    0.1186,
+    0.2899
+   ],
+   "critere1": {
+    "taux": 0.6191950464396285,
+    "attendus": 323,
+    "hors_base_c": 18,
+    "conversations": 57,
+    "temoin_hasard": 0.055900621118012424,
+    "taux_sans_correction_tableaux": 0.5820433436532507
+   },
+   "adosses": {
+    "statut": "mesuré (valeurs des outils tracées)",
+    "chiffres_cites": 856,
+    "taux": 1.0,
+    "non_adosses": []
+   }
+  },
+  "v2__vertical_echantillon25": {
+   "n_tours": 34,
+   "n_conversations": 25,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 7.0,
+   "structured_part": null,
+   "latence_mediane": 19.94,
+   "latence_p90": 67.26,
+   "mots_mediane": 350.0,
+   "cout_usd": 2.1571,
+   "tokens": {
+    "mistral-small-2603": {
+     "entree": 77216,
+     "sortie": 1046,
+     "non_mesures": 0
+    },
+    "zai-glm-5-3": {
+     "entree": 1014036,
+     "sortie": 164824,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 34,
+   "juge_moyennes": {
+    "references": 3.882,
+    "comprehension": 4.471,
+    "expression": 4.441,
+    "couverture": 4.353
+   },
+   "juge_moyenne_4": 4.287,
+   "refus": 0,
+   "erreurs_fait": 5,
+   "erreurs_fait_part": 0.1471,
+   "erreurs_fait_ic95_wilson": [
+    0.0645,
+    0.3013
+   ],
+   "critere1": {
+    "taux": 0.6666666666666666,
+    "attendus": 126,
+    "hors_base_c": 11,
+    "conversations": 25,
+    "temoin_hasard": 0.05405405405405406,
+    "taux_sans_correction_tableaux": 0.626984126984127
+   },
+   "adosses": {
+    "statut": "mesuré (valeurs des outils tracées)",
+    "chiffres_cites": 366,
+    "taux": 1.0,
+    "non_adosses": []
+   }
+  }
+ }
+}

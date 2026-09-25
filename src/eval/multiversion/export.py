@@ -178,11 +178,11 @@ def exporter(tag: str, dossier_juge: str = "judge") -> dict:
         out.write_text(json.dumps({"meta": meta, "synthese": synth, "tours": tours}, ensure_ascii=False,
                                   separators=(",", ":"), default=str), encoding="utf-8")
         rapport["runs"][f"{version}__{banc}"] = synth
-        if version == "prod" and banc == "vertical" and ids_ech:
+        if version in ("prod", "v2") and banc == "vertical" and ids_ech:
             # Même base que chatgpt_web : les 25 conversations de l'échantillon figé (protocole v0.3).
             sous = [r for r in recs if r["id"] in ids_ech]
             _, synth_e = _synthese(version, banc, sous, verdicts, detail)
-            rapport["runs"]["prod__vertical_echantillon25"] = synth_e
+            rapport["runs"][f"{version}__vertical_echantillon25"] = synth_e
     (dossier / f"RAPPORT{suffixe}.json").write_text(json.dumps(rapport, ensure_ascii=False, indent=1, default=str) + "\n",
                                           encoding="utf-8")
     return rapport
