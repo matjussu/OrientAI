@@ -1,0 +1,212 @@
+{
+ "tag": "2026-09-25_v2",
+ "fichier": "v2__gatef.jsonl",
+ "gate_f_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+ "questions_jouees": 3,
+ "questions": 30,
+ "criteres": {
+  "1_fiches_attendues": {
+   "trouvees": 6,
+   "attendues": 8,
+   "part": 0.75,
+   "vert": false
+  },
+  "2_cites_hors_resultats": {
+   "nombre": 0,
+   "vert": true,
+   "temoin_positif": {
+    "question": "F-R01",
+    "etablissement_ajoute": "institut national d enseignement superieur et de recherche en alimentation sante animale sciences agronomiques et de l environnement",
+    "compte": 1
+   }
+  },
+  "3_clarification": {
+   "ok": 1,
+   "questions": 1,
+   "vert": false
+  },
+  "4_adosses": {
+   "chiffres": 11,
+   "non_adosses": 0,
+   "vert": true,
+   "detail": []
+  }
+ },
+ "vert": false,
+ "lignes": [
+  {
+   "id": "F-R01",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 5,
+   "trouvees": 3,
+   "manquantes": [
+    "psup:2951",
+    "psup:5801"
+   ],
+   "cites_hors_resultats": [],
+   "chiffres": 6,
+   "non_adosses": 0,
+   "appels_outils": 7
+  },
+  {
+   "id": "F-R02",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R03",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R04",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R06",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R07",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R08",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R09",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R10",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R12",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R16",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-R18",
+   "famille": "recherche",
+   "joue": false
+  },
+  {
+   "id": "F-NINF-01",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 3,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 5,
+   "non_adosses": 0,
+   "appels_outils": 4
+  },
+  {
+   "id": "F-NINF-07",
+   "famille": "nom",
+   "joue": false
+  },
+  {
+   "id": "F-NINF-13",
+   "famille": "nom",
+   "joue": false
+  },
+  {
+   "id": "F-NINF-15",
+   "famille": "nom",
+   "joue": false
+  },
+  {
+   "id": "F-NSAN-10",
+   "famille": "nom",
+   "joue": false
+  },
+  {
+   "id": "F-NMAT-01",
+   "famille": "nom",
+   "joue": false
+  },
+  {
+   "id": "F-NMAT-04",
+   "famille": "nom",
+   "joue": false
+  },
+  {
+   "id": "F-NINF-21",
+   "famille": "nom",
+   "joue": false
+  },
+  {
+   "id": "F-QINF-17",
+   "famille": "clarification",
+   "joue": true,
+   "cites_hors_resultats": [],
+   "questions_posees": 0,
+   "caracteres_avant_premiere_question": 1956,
+   "clarification_ok": true,
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-QINF-18",
+   "famille": "clarification",
+   "joue": false
+  },
+  {
+   "id": "F-QSAN-18",
+   "famille": "clarification",
+   "joue": false
+  },
+  {
+   "id": "F-QMAT-11",
+   "famille": "clarification",
+   "joue": false
+  },
+  {
+   "id": "F-QMAT-12",
+   "famille": "clarification",
+   "joue": false
+  },
+  {
+   "id": "F-MINF-19",
+   "famille": "multi-tour",
+   "joue": false
+  },
+  {
+   "id": "F-MMAT-13",
+   "famille": "multi-tour",
+   "joue": false
+  },
+  {
+   "id": "F-HSAN-09",
+   "famille": "honnetete",
+   "joue": false
+  },
+  {
+   "id": "F-HSAN-02",
+   "famille": "honnetete",
+   "joue": false
+  },
+  {
+   "id": "F-HSAN-21",
+   "famille": "honnetete",
+   "joue": false
+  }
+ ]
+}
