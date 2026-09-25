@@ -3,7 +3,9 @@
 Copie versionnée du plan du cerveau v2 d'OrientAI, pour qu'il vive à côté du code (étape 0 de la
 feuille de route, section 13 du contrat).
 
-- `CONTRAT-cerveau.md` : contrat v1.1, validé par Matteo le 24/09/2026 à 17h12 (Telegram 10703).
+- `CONTRAT-cerveau.md` : contrat v1.2 du 25/09/2026 (Jarvis), dont les 7 choix ont été validés par Matteo le
+  24/09/2026 à 17h12 (Telegram 10703). La v1.2 remplace la v1.1 versée par #187 : référence de mesure
+  ChatGPT avec recherche web, objectif recadré, chiffres de la base alignés sur la page publique (#189).
   Architecture en 4 étages, catalogue d'outils, cibles, feuille de route (section 13), méthode de
   travail et pièges d'outillage (section 14).
 - `gate_f/requetes_gate_f.json` : les 30 questions-tests du gate F, écrites avant le code.
@@ -11,12 +13,12 @@ feuille de route, section 13 du contrat).
 
 ## Source et empreintes
 
-Source de travail : `~/projets/_orientai-ref/cerveau-2026-09/` (hors dépôt). Copies octet pour octet
-au 25/09/2026, sha256 mesurés sur la source et sur la branche :
+Source de travail : `~/projets/_orientai-ref/cerveau-2026-09/` (hors dépôt). Copies octet pour octet,
+sha256 mesurés sur la source et sur la branche (contrat v1.2 le 25/09/2026 au soir, gate F inchangé depuis #187) :
 
 | Fichier | sha256 |
 |---|---|
-| `CONTRAT-cerveau.md` | `0a5d35dc4ccd04f997ccdaa63aca9d22847d8d9760d452424a021266e5ea9062` |
+| `CONTRAT-cerveau.md` | `07dee32b0949a490876389ef9e71406a320e7134aee9163bb300880f15fc1b41` |
 | `gate_f/requetes_gate_f.json` | `5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3` |
 | `gate_f/build_gate_f.py` | `8357e2f67cabd0b9379e5c2fe541b706c38f2db2ab019812939a4fdb61444988` |
 

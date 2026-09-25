@@ -1,0 +1,5 @@
+# Dépendances de l'évaluation seulement (lanceur multi-version, juges, ChatGPT de référence).
+# Hors image de prod : le Dockerfile installe requirements.lock, pas ce fichier.
+# openai : version installée à la main dans .venv le 25/09/2026 pour la référence ChatGPT + web (#188).
+-r requirements.txt
+openai==3.19.2
