@@ -17,7 +17,7 @@ import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
 
-from src.base_c import SANS_SESSION, haversine_km
+from src.base_c import SANS_SESSION, haversine_km, montre_au_modele
 from src.collect.communes import cle_nom
 
 BASE_DEFAUT = Path(__file__).resolve().parents[2] / "data/processed/base_etape_c.sqlite"
@@ -26,12 +26,16 @@ TYPES = ("pass", "las", "licence", "but", "bts", "cpge", "cupge", "ifsi", "diplo
          "ecole_ingenieur", "titre_pro", "master", "autre")
 # « licence » inclut la LAS : une LAS est une licence avec option accès santé (règle du gate C).
 DEPLIAGE_TYPES = {"licence": ("licence", "las")}
-TRIS_POSTBAC = ("taux_acces", "places", "voeux_totaux", "part_bac_general", "part_bac_techno", "part_bac_pro", "distance")
-TRIS_MASTERS = ("capacite", "candidats_pp", "acceptes_total", "distance")
+# Les tris et les seuils peuvent porter sur un champ non montré (open data gardée pour les filtres, contrat de
+# concordance du 25/09) ; sa valeur n'est jamais renvoyée.
+TRIS_POSTBAC = ("taux_acces", "places", "candidats_ont_postule", "part_bac_general_neobacheliers_bilan_final",
+                "part_bac_techno_neobacheliers_bilan_final", "part_bac_pro_neobacheliers_bilan_final", "distance")
+TRIS_MASTERS = ("candidatures_campagne_precedente", "taux_acces", "acceptes_total", "distance")
 LIMITE_MAX = 50
 RAYON_MAX_KM = 300.0
 CHAMPS_DEFAUT_POSTBAC = ("taux_acces", "places")
-CHAMPS_DEFAUT_MASTERS = ("capacite", "candidats_pp")
+# « @* » : la session que porte la formation (capacité de la campagne en cours, ou 2025 sans fiche en cours).
+CHAMPS_DEFAUT_MASTERS = ("capacite_accueil@*", "candidatures_campagne_precedente", "taux_acces")
 
 
 class FiltreInvalide(ValueError):
@@ -132,7 +136,29 @@ def _parse_champ(base: Base, texte: str, session_defaut: str) -> tuple[str, str 
         raise FiltreInvalide(f"champ {nom!r} inconnu")
     if r["sessions"] == SANS_SESSION:
         return nom, SANS_SESSION
+    if s == "*":
+        return nom, None
     return nom, s or session_defaut
+
+
+def _regles(base: Base) -> dict[str, str]:
+    return {r["champ"]: r["montre_au_modele"] for r in base.con.execute("SELECT champ, montre_au_modele FROM champ")}
+
+
+def _montrees(regles: dict[str, str], espace: str, valeurs: dict[str, dict]) -> dict[str, dict]:
+    """Les seules valeurs qui sortent vers le modèle (une par notion, contrat de concordance §7).
+
+    Levier de falsification du contrôle de concordance : ORIENTIA_SABOTAGE_CONCORDANCE=doublon remet dans la sortie
+    un doublon (les admis au bilan final), que `src/eval/concordance.py` doit voir."""
+    import os
+    if os.environ.get("ORIENTIA_SABOTAGE_CONCORDANCE") == "doublon":
+        regles = {**regles, "admis_bilan_final": "1"}
+    out = {}
+    for cle, v in valeurs.items():
+        champ, _, session = cle.partition("@")
+        if montre_au_modele(regles.get(champ, "0"), espace, session or SANS_SESSION):
+            out[cle] = v
+    return out
 
 
 def _cle(champ: str, session: str | None) -> str:
@@ -225,7 +251,7 @@ def _rechercher(base: Base, *, espaces: tuple[str, ...], types, filieres, intitu
         lignes = gardees
 
     demandes = [_parse_champ(base, c, session) for c in (champs or [])]
-    defaut = [(c, session) for c in champs_defaut]
+    defaut = [_parse_champ(base, c, session) for c in champs_defaut]
     a_rendre = list(dict.fromkeys(defaut + demandes + [(c, session) for c in champs_seuils]))
     if tri and tri["champ"] != "distance":
         a_rendre.append((tri["champ"], session))
@@ -258,11 +284,12 @@ def _rechercher(base: Base, *, espaces: tuple[str, ...], types, filieres, intitu
     lieux = {i: [dict(l) for l in base.con.execute("SELECT commune, code_insee, code_departement, region, precision_geo "
                                                    "FROM lieu WHERE id = ? ORDER BY rang", (i,))] for i in ids}
     resultats = []
+    regles = _regles(base)
     for r in lignes:
         item = {"id": r["id"], "intitule": r["intitule"], "etablissement": r["etablissement"], "type": r["type"],
                 "filiere": r["filiere"], "apprentissage": bool(r["apprentissage"]),
                 "commune": (lieux[r["id"]] or [{}])[0].get("commune"), "lieux": lieux[r["id"]],
-                "lien_officiel": r["lien_officiel"], "valeurs": vals[r["id"]]}
+                "lien_officiel": r["lien_officiel"], "valeurs": _montrees(regles, r["espace"], vals[r["id"]])}
         if pres_de:
             item["distance_km"] = round(distances[r["id"]], 1) if distances.get(r["id"]) is not None else None
         resultats.append(item)
@@ -289,8 +316,8 @@ def chercher_formations(base: Base, *, types: list[str] | None = None, filieres:
     if session not in ("2023", "2024", "2025"):
         raise FiltreInvalide("session : 2023, 2024 ou 2025")
     seuils = [(c, s, b) for c, s, b in (("taux_acces", "min", taux_acces_min), ("taux_acces", "max", taux_acces_max),
-                                         ("places", "min", places_min), ("part_bac_techno", "min", part_bac_techno_min),
-                                         ("part_bac_pro", "min", part_bac_pro_min)) if b is not None]
+                                         ("places", "min", places_min), ("part_bac_techno_neobacheliers_bilan_final", "min", part_bac_techno_min),
+                                         ("part_bac_pro_neobacheliers_bilan_final", "min", part_bac_pro_min)) if b is not None]
     return _rechercher(base, espaces=("psup", "psup_app"), types=types, filieres=filieres,
                        intitule_contient=intitule_contient, apprentissage=apprentissage, statut=statut,
                        communes=communes, departements=departements, regions=regions, regions_academiques=None,
@@ -307,7 +334,7 @@ def chercher_masters(base: Base, *, mention_contient: str | None = None, secteur
     res = _rechercher(base, espaces=("mm",), types=None, filieres=None, intitule_contient=mention_contient,
                       apprentissage=alternance, statut=None, communes=None, departements=departements, regions=None,
                       regions_academiques=regions_academiques, pres_de=pres_de,
-                      seuils=[("capacite", "min", capacite_min)] if capacite_min is not None else [],
+                      seuils=[("capacite_campagne_2025", "min", capacite_min)] if capacite_min is not None else [],
                       session="2025", champs=champs, tri=tri, limite=limite,
                       champs_defaut=CHAMPS_DEFAUT_MASTERS, tris_admis=TRIS_MASTERS, secteurs=secteurs)
     if "apprentissage" in res["filtres_appliques"]:
@@ -328,6 +355,7 @@ def lire_fiche(base: Base, id_: str) -> dict:
             "valeur": r["valeur_num"] if r["valeur_num"] is not None else r["valeur_texte"], "unite": r["unite"],
             "statut": r["statut"], "raison": r["raison"], "portee": r["portee"], "source_id": r["source_id"],
             "millesime": r["millesime"], "identifiant": r["identifiant_source"], "rattachement": r["rattachement"]}
+    valeurs = _montrees(_regles(base), f["espace"], valeurs)
     sids = sorted({v["source_id"] for v in valeurs.values() if v["source_id"]})
     return {
         "formation": dict(f),

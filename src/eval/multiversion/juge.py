@@ -28,6 +28,9 @@ from src.eval.multiversion.mesures import EXPOSITION
 PHRASE_JUGE = ("Les fiches ci-dessous sont des données officielles de référence pour cette question ; l'assistant ne "
                "les a pas forcément eues. Un chiffre ou un fait qui les contredit est une erreur factuelle. Une "
                "information absente des fiches n'est pas une erreur en soi : juge-la sur tes connaissances.")
+# Rejugement du 25/09 (contrat de concordance §8) : consigne ajoutée mot pour mot, fiches de la base concordante.
+CONSIGNE_NOMMAGE = ("Un chiffre officiel correctement nommé n'est pas une erreur ; un chiffre d'un autre indicateur "
+                    "présenté sous un nom qui ne lui correspond pas en est une.")
 TAILLE_LOT = {"vertical": 6, "lot0": 12}
 _PROVENANCE = re.compile(r"[?&]utm_source=[^)\s\]]+")
 
@@ -36,13 +39,14 @@ def neutraliser(texte: str) -> str:
     return _PROVENANCE.sub("", texte or "")
 
 
-def prompt_juge(rec: dict, item: dict, cartes: list[str] | None) -> str:
+def prompt_juge(rec: dict, item: dict, cartes: list[str] | None, consigne: bool = False) -> str:
     p = build_prompt({"persona": item["persona"], "tags": item.get("tags", []), "question": rec["question"],
                       "history": [{**m, "content": neutraliser(m["content"])} for m in rec["history"]],
                       "answer": neutraliser(rec["answer"]), "sources": []})
     if cartes is None:
         return p
-    return p + f"\n\n{PHRASE_JUGE}\n\nCONTENU DES FICHES :\n" + "\n\n".join(cartes)
+    phrase = PHRASE_JUGE + (f" {CONSIGNE_NOMMAGE}" if consigne else "")
+    return p + f"\n\n{phrase}\n\nCONTENU DES FICHES :\n" + "\n\n".join(cartes)
 
 
 def _cartes_vertical() -> dict[str, list[str]]:
@@ -54,10 +58,11 @@ def _cartes_vertical() -> dict[str, list[str]]:
     return {cid: [f.carte_b(i) for i in c["exposees"]] for cid, c in expo.items()}
 
 
-def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",)) -> dict:
+def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",), dossier_juge: str = "judge",
+             consigne: bool = False) -> dict:
     """`bancs` : bancs jugés (décision du 25/09 : vertical seulement ; lot0 plus tard, sur les réponses stockées)."""
     dossier = RESULTATS / tag
-    juge = dossier / "judge"
+    juge = dossier / dossier_juge
     if (juge / "label_mapping.json").exists():
         raise SystemExit(f"{juge}/label_mapping.json existe déjà : un seul passage, pas de nouvelle préparation")
     cartes = _cartes_vertical()
@@ -76,7 +81,7 @@ def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",)) -> d
             mapping[oid] = {"version": version, "banc": banc, "id": rec["id"], "turn": rec["turn"]}
             item = items[banc][rec["id"]]
             taches[banc].append({"oid": oid, "prompt": prompt_juge(
-                rec, item, cartes[rec["id"]] if banc == "vertical" else None)})
+                rec, item, cartes[rec["id"]] if banc == "vertical" else None, consigne)})
     (juge / "lots").mkdir(parents=True, exist_ok=True)
     n_lots = 0
     for banc, ts in taches.items():
@@ -95,8 +100,8 @@ def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",)) -> d
             "par_banc": {b: len(t) for b, t in taches.items()}}
 
 
-def collecter(tag: str) -> dict:
-    juge = RESULTATS / tag / "judge"
+def collecter(tag: str, dossier_juge: str = "judge") -> dict:
+    juge = RESULTATS / tag / dossier_juge
     mapping = json.loads((juge / "label_mapping.json").read_text(encoding="utf-8"))
     lignes, illisibles = [], []
     for p in sorted((juge / "verdicts").glob("*.json")) if (juge / "verdicts").exists() else []:
@@ -111,9 +116,9 @@ def collecter(tag: str) -> dict:
             "illisibles": illisibles}
 
 
-def lanceur_shell(tag: str) -> Path:
+def lanceur_shell(tag: str, dossier_juge: str = "judge") -> Path:
     """Écrit le lanceur d'un lot (repris de results/banc_e/judge/traces_lanceur/juge_stdin_v2.sh, chemins du tag)."""
-    juge = (RESULTATS / tag / "judge").resolve()
+    juge = (RESULTATS / tag / dossier_juge).resolve()
     script = juge / "juge_stdin.sh"
     modele = Path(__file__).resolve().parents[3] / "results/banc_e/judge/traces_lanceur/juge_stdin_v2.sh"
     texte = modele.read_text(encoding="utf-8")

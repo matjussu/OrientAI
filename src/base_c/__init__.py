@@ -60,7 +60,9 @@ CREATE TABLE champ (
     chemin_corpus TEXT NOT NULL,
     libelle TEXT NOT NULL,
     definition TEXT NOT NULL,
-    ne_dit_pas TEXT NOT NULL
+    ne_dit_pas TEXT NOT NULL,
+    montre_au_modele TEXT NOT NULL,
+    libelle_page TEXT NOT NULL
 );
 CREATE TABLE formation (
     id TEXT PRIMARY KEY,
@@ -214,3 +216,28 @@ def normaliser_departement(code: str | None) -> str | None:
     if d.isdigit() and len(d) == 1:
         return d.zfill(2)
     return d or None
+
+
+def _par_espace(texte: str) -> dict[str, str]:
+    if not texte:
+        return {}
+    if "=" not in texte.split(" ", 1)[0]:
+        return {"*": texte}
+    return dict(part.split("=", 1) for part in texte.split("|"))
+
+
+def montre_au_modele(regle: str, espace: str, session: str) -> bool:
+    """Un chiffre sort-il vers le modèle (et donc l'élève) ? Règle de la table `champ` (concordance du 25/09,
+    results/concordance/CONTRAT.md) : par espace, « 1 » (toutes sessions), « 0 » (jamais) ou une liste de sessions
+    (« 2023,2024 »). Un espace absent de la règle n'est pas montré : un oubli cache au lieu d'exposer un doublon."""
+    r = _par_espace(regle)
+    v = r.get(espace, r.get("*"))
+    if v is None or v == "0":
+        return False
+    return v == "1" or session in v.split(",")
+
+
+def libelle_page(texte: str, espace: str) -> str:
+    """Libellé exact de la page publique pour cet espace (vide si le chiffre vient de l'open data)."""
+    r = _par_espace(texte)
+    return r.get(espace, r.get("*", ""))

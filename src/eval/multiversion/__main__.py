@@ -21,6 +21,8 @@ def main(argv: list[str] | None = None) -> int:
     j.add_argument("--tag", required=True)
     j.add_argument("--graine", default="multiversion-2026-09-25")
     j.add_argument("--bancs", default="vertical", help="bancs jugés, séparés par des virgules")
+    j.add_argument("--dossier", default="judge", help="dossier du passage (judge_v2 pour un rejugement)")
+    j.add_argument("--consigne-nommage", action="store_true", help="ajoute la consigne de nommage des chiffres (25/09)")
     p = sub.add_parser("rapport", help="critère 1, adossés, juge, coûts + export explorateur")
     p.add_argument("--tag", required=True)
     a = ap.parse_args(argv)
@@ -37,8 +39,9 @@ def main(argv: list[str] | None = None) -> int:
         return 1 if stats["arret"] else 0
     if a.cmd == "juger":
         from src.eval.multiversion import juge
-        r = {"preparer": lambda: juge.preparer(a.tag, a.graine, tuple(a.bancs.split(","))), "collecter": lambda: juge.collecter(a.tag),
-             "lanceur": lambda: {"script": str(juge.lanceur_shell(a.tag))}}[a.etape]()
+        r = {"preparer": lambda: juge.preparer(a.tag, a.graine, tuple(a.bancs.split(",")), a.dossier, a.consigne_nommage),
+             "collecter": lambda: juge.collecter(a.tag, a.dossier),
+             "lanceur": lambda: {"script": str(juge.lanceur_shell(a.tag, a.dossier))}}[a.etape]()
         print(json.dumps(r, ensure_ascii=False))
         return 0
     from src.eval.multiversion.export import exporter
