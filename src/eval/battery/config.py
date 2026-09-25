@@ -25,14 +25,23 @@ MODELS = {
     "mistral_large": "mistral-large-2512",
 }
 
-# USD par million de tokens (entree, sortie). Suivi budgetaire seulement, jamais une mesure :
-# les prix marques "suppose" n'ont pas ete verifies sur une facture.
+# USD par million de tokens (entree, sortie), prix PUBLIES (pas une facture). Un prix non relu sur la page
+# publiee est marque "suppose".
 PRICES = {
-    "claude-sonnet-5": (2.0, 10.0),
-    "claude-opus-5": (5.0, 25.0),
-    "gpt-5.5": (2.5, 15.0),            # suppose
-    "mistral-medium-2604": (0.4, 2.0),  # suppose
-    "mistral-large-2512": (0.5, 1.5),   # suppose
+    "claude-sonnet-5": (2.0, 10.0),     # suppose (non relu depuis le 05/09)
+    "claude-opus-5": (5.0, 25.0),       # suppose (non relu depuis le 05/09)
+    # developers.openai.com/api/docs/pricing, tableau standard, lu le 25/09/2026 (2,5 / 15 = batch). Avant le
+    # 25/09 ce fichier portait 2,5 / 15 « suppose » : les couts gpt-5.5 affiches avant cette date valent x2.
+    "gpt-5.5": (5.0, 30.0),
+    # docs.mistral.ai/models, lus le 24/09/2026 (results/banc_e/PROTOCOLE.md section 2). Medium etait suppose
+    # 0,4 / 2,0 : les couts Medium affiches avant le 24/09 sont sous-estimes x3,75.
+    "mistral-medium-2604": (1.5, 7.5),
+    "mistral-small-2603": (0.15, 0.6),
+    "mistral-large-2512": (0.5, 1.5),   # mistral.ai/pricing lu le 23/09 (src/eval/grille_d.py), version non precisee
+    "mistral-embed-2312": (0.1, 0.0),   # docs.mistral.ai/models/mistral-embed-23-12, lu le 25/09/2026
+    # Recherche web de la Responses API : 10 USD pour 1 000 appels « search » (page de prix, lue le 25/09/2026).
+    # Compte en « entree » = nombre d'appels : 10 000 USD par million d'appels = 0,01 USD l'appel.
+    "openai-web-search": (10_000.0, 0.0),
 }
 
 # Historique rejoue a chaque tour, en messages (le serving garde les 6 derniers).

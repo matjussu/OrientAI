@@ -42,6 +42,21 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
   `2e4276e6155b`). Les corpus A, B-1 et B-2 sont a part, hors git (section 3).
 
+## Reprise au 25/09/2026 : étape 1, instrument multi-version et référence figée (Claudette, ordre 2026-09-25-1126)
+
+- **Instrument** : `python -m src.eval.multiversion run|juger|rapport`, versions branchables
+  (`src/eval/multiversion/versions/` : `prod`, `chatgpt`, `chatgpt_web` ; le v2 s'y ajoute sans toucher au lanceur).
+  Protocole v0.3 : `results/multiversion/PROTOCOLE.md`.
+- **Référence figée** (gelée avant jugement, commit 1bd16ef) : `results/multiversion/2026-09-25_reference/`
+  (`RAPPORT.md`, `MANIFESTE.json`, exports au format état des lieux dans `export/`). Échantillon de comparaison figé :
+  `results/multiversion/echantillon_vertical_25.json` (25 conversations, 34 tours).
+- **Mesures** (RAPPORT.md §1) : erreur de fait prod 22,8 % [14,9 ; 33,2] sur 79 tours, 20,6 % sur l'échantillon ;
+  ChatGPT + recherche 23,5 % [12,4 ; 40,0] sur l'échantillon. Juge 4 critères : prod 2,24, ChatGPT 4,53. Critère 1 :
+  prod 0,23, ChatGPT 0,34 (échantillon). Les erreurs de la prod sont des absences affirmées à tort, celles de ChatGPT
+  des chiffres précis décalés.
+- **Coûts** : OpenAI 7,07 USD, Mistral 1,94 USD, juge sur l'abonnement (un passage, vertical seulement).
+- **Suite** : étape 3 (v2 minimal), mesurée par ce même instrument sur la même base.
+
 ## Reprise au 24/09/2026, soir : banc E (modèle de la démo)
 
 Ordre 2026-09-24-1020, branche `feat/banc-confirmation-modeles` (worktree `~/projets/OrientIA-etape-e`). Rapport :
@@ -373,7 +388,11 @@ l'explorateur, validation de Matteo avant merge.
 | Rattachement d'insertion trop large : une double licence ou un parcours porte l'insertion InserSup d'un diplome plus large (ex. psup:28456, double licence Lettres-Informatique, insertion de la licence LETTRES) | verification de Jarvis sur #184, 23/09 |
 | Base C : pas de niveau (bac+N), pas de capacites MMOPK « autres voies », pas de precision textuelle des capacites (Lyon Est / Sud), pas de part « mention non renseignee » ; insertion des masters non collectee | `results/donnee_etape_d/RAPPORT.md` section 7 et controle A dans B |
 | Medium 3.5 n'appelle pas l'outil avec un prompt charge (meme force) : bloquant pour le cerveau si Medium reste le modele | `results/donnee_etape_d/sonde_outil/RESUME.md` |
-| Extracteur du critere 1 (`src/eval/critere_d.py`) aveugle aux chiffres en tableau markdown (unite dans l'en-tete) : C x GLM -7 pts. A corriger avant le banc du cerveau, sans penaliser un modele qui repond en tableau ni compter les coincidences | `results/donnee_etape_d/biais_tableaux.json`, RAPPORT D section 7 |
+| ~~Extracteur du critere 1 aveugle aux tableaux~~ **corrigé le 25/09** dans `numbers.py` (unité de la colonne, sinon de la ligne ; sans unité, rien) et utilisé par le critère 1 de l'instrument ; `critere_d.py` inchangé pour que D et E restent rejouables. Sur E, C x GLM 5.3 passe de 0,805 à 0,836, témoin inchangé | `tests/eval_battery/test_numbers_tableaux.py` (levier ORIENTIA_NUMBERS_SANS_TABLEAUX=1), `tests/eval_multiversion/test_mesures.py` |
+| Prod : « [source S1] » affiché en clair à l'élève ; absences affirmées à tort (« aucune formation à Paris ») | `results/multiversion/2026-09-25_reference/RAPPORT.md` section 2 |
+| `openai` absent de `requirements.txt` / `requirements.lock` alors que l'éval l'importe (installé à la main dans le venv local le 25/09, 3.19.2) | à déclarer dans un manifeste d'éval, hors prod |
+| Latence prod p90 9,3-9,6 s le 25/09 contre 6,8 s le 23/09 (même mesure en processus) : non expliqué | RAPPORT multiversion section 3 |
+| Repère de latence de l'état des lieux du 24/09 calculé avec un p90 à rang trop bas (6,24 au lieu de 6,82) : corrigé par Jarvis dans build_etat_lieux.py ; le contrat §8 cite encore 6,2 s | PROTOCOLE multiversion, amendement p90 |
 | GLM 5.2 via l'API Mistral : 78 erreurs 429 sur 158 tours (A et B) en generation 1, a regler avant une demo si GLM est retenu | `results/donnee_etape_d/RAPPORT.md` section 6 |
 
 Suite de tests : 3 485 reussis, 45 ignores, 0 echec (branche B-2, commit b9554e4, 23/09/2026, meme

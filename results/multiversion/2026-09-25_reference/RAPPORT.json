@@ -1,0 +1,483 @@
+{
+ "tag": "2026-09-25_reference",
+ "budget": {
+  "plafonds_usd": {
+   "openai": 9.5,
+   "mistral": 8.0
+  },
+  "depense_usd": {
+   "mistral": 1.940127,
+   "openai": 7.07118
+  },
+  "max_conversation_usd": {
+   "mistral": 0.041232000000000005,
+   "openai": 0.50749
+  },
+  "non_mesures": 0,
+  "runs": [
+   {
+    "hors_tours": "chauffe prod",
+    "usage": {
+     "mistral-small-2603": {
+      "appels": 3,
+      "entree": 6690,
+      "sortie": 167,
+      "non_mesures": 0
+     },
+     "mistral-embed-2312": {
+      "appels": 2,
+      "entree": 24,
+      "sortie": 0,
+      "non_mesures": 0
+     },
+     "mistral-medium-2604": {
+      "appels": 1,
+      "entree": 6409,
+      "sortie": 52,
+      "non_mesures": 0
+     }
+    },
+    "cout_usd": 0.01111
+   },
+   {
+    "at": "2026-09-25T11:42:44+00:00",
+    "version": "prod",
+    "banc": "lot0",
+    "banc_sha256": "5b268bf34d916e2d17fe2c784015a0acd184f537ec3f0d2dc2f95f5883c2a9dd",
+    "git_commit": "26a526e784c010dabe05111c7eff5b6c47667f52",
+    "git_dirty": true,
+    "empreinte": {
+     "prompt": "601adcee86b9",
+     "corpus": "2e4276e6155b",
+     "index": "8c91dfcf5323",
+     "model_gen": "mistral-medium-2604",
+     "model_aux": "mistral-small-2603",
+     "model_embed": "mistral-embed-2312"
+    },
+    "tours_joues": 1,
+    "erreurs": 0,
+    "cout_usd": 0.0122,
+    "secondes": 6,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "prod__lot0.jsonl"
+   },
+   {
+    "at": "2026-09-25T11:44:18+00:00",
+    "version": "chatgpt_web",
+    "banc": "vertical",
+    "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+    "git_commit": "26a526e784c010dabe05111c7eff5b6c47667f52",
+    "git_dirty": true,
+    "empreinte": {
+     "modele": "gpt-5.5",
+     "prompt_systeme": "SYSTEM_PROMPT_BASELINE",
+     "outil": "web_search",
+     "localisation": "FR"
+    },
+    "tours_joues": 2,
+    "erreurs": 0,
+    "cout_usd": 0.3956,
+    "secondes": 54,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "chatgpt_web__vertical.jsonl"
+   },
+   {
+    "hors_tours": "chauffe prod",
+    "usage": {
+     "mistral-small-2603": {
+      "appels": 3,
+      "entree": 6690,
+      "sortie": 164,
+      "non_mesures": 0
+     },
+     "mistral-embed-2312": {
+      "appels": 2,
+      "entree": 24,
+      "sortie": 0,
+      "non_mesures": 0
+     },
+     "mistral-medium-2604": {
+      "appels": 1,
+      "entree": 6409,
+      "sortie": 166,
+      "non_mesures": 0
+     }
+    },
+    "cout_usd": 0.011963
+   },
+   {
+    "at": "2026-09-25T11:55:52+00:00",
+    "version": "prod",
+    "banc": "lot0",
+    "banc_sha256": "5b268bf34d916e2d17fe2c784015a0acd184f537ec3f0d2dc2f95f5883c2a9dd",
+    "git_commit": "b6103e049f8f1ad9d9a3d13f43fc219ff9093255",
+    "git_dirty": false,
+    "empreinte": {
+     "prompt": "601adcee86b9",
+     "corpus": "2e4276e6155b",
+     "index": "8c91dfcf5323",
+     "model_gen": "mistral-medium-2604",
+     "model_aux": "mistral-small-2603",
+     "model_embed": "mistral-embed-2312"
+    },
+    "tours_joues": 67,
+    "erreurs": 0,
+    "cout_usd": 0.8619,
+    "secondes": 464,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "prod__lot0.jsonl"
+   },
+   {
+    "hors_tours": "chauffe prod",
+    "usage": {
+     "mistral-small-2603": {
+      "appels": 3,
+      "entree": 6690,
+      "sortie": 172,
+      "non_mesures": 0
+     },
+     "mistral-embed-2312": {
+      "appels": 2,
+      "entree": 24,
+      "sortie": 0,
+      "non_mesures": 0
+     },
+     "mistral-medium-2604": {
+      "appels": 1,
+      "entree": 6409,
+      "sortie": 157,
+      "non_mesures": 0
+     }
+    },
+    "cout_usd": 0.0119
+   },
+   {
+    "at": "2026-09-25T12:05:17+00:00",
+    "version": "prod",
+    "banc": "vertical",
+    "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+    "git_commit": "b6103e049f8f1ad9d9a3d13f43fc219ff9093255",
+    "git_dirty": true,
+    "empreinte": {
+     "prompt": "601adcee86b9",
+     "corpus": "2e4276e6155b",
+     "index": "8c91dfcf5323",
+     "model_gen": "mistral-medium-2604",
+     "model_aux": "mistral-small-2603",
+     "model_embed": "mistral-embed-2312"
+    },
+    "tours_joues": 79,
+    "erreurs": 0,
+    "cout_usd": 1.031,
+    "secondes": 547,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "prod__vertical.jsonl"
+   },
+   {
+    "at": "2026-09-25T12:11:34+00:00",
+    "version": "chatgpt_web",
+    "banc": "vertical",
+    "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+    "git_commit": "829f1fb673f50d0ded6afdefef5c4b7854ce6c56",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "gpt-5.5",
+     "prompt_systeme": "SYSTEM_PROMPT_BASELINE",
+     "outil": "web_search",
+     "localisation": "FR"
+    },
+    "tours_joues": 34,
+    "erreurs": 0,
+    "cout_usd": 6.6756,
+    "secondes": 329,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "chatgpt_web__vertical.jsonl"
+   }
+  ],
+  "estimations": [
+   {
+    "at": "2026-09-25T11:43:15+00:00",
+    "apres": "essai prod L01 (1 tour, 0,012241 USD, tokens reels : 2 appels small, 2 embed, 1 medium stream)",
+    "prod_vertical_usd": 0.967,
+    "prod_lot0_usd": 0.808,
+    "prod_total_avec_marge_x1_5_usd": 2.662,
+    "hypothese": "cout par tour de L01 (premier tour, sans historique) ; les tours suivants portent l'historique : marge x1,5 supposee",
+    "plafond_mistral_usd": 8.0,
+    "sous_plafond": true
+   },
+   {
+    "at": "2026-09-25T11:44:41+00:00",
+    "apres": "essai chatgpt_web V-INF-02 (2 tours : 0,26631 + 0,12925 USD ; entree 34 834 et 17 976 tokens dont contenu de recherche, 4 et 1 recherches)",
+    "cout_moyen_tour_usd": 0.1978,
+    "chatgpt_web_vertical_usd": 15.62,
+    "chatgpt_web_lot0_usd": 13.25,
+    "chatgpt_web_total_usd": 28.88,
+    "plafond_openai_usd": 15.0,
+    "sous_plafond": false,
+    "hypothese": "moyenne de 2 tours seulement : dispersion forte (x2 entre les deux) ; supposee representative"
+   },
+   {
+    "at": "2026-09-25T11:55:54+00:00",
+    "apres": "prod x lot0 (67 tours, 0.8619 USD reels)",
+    "cout_moyen_tour_usd": 0.01286,
+    "cout_moyen_tour_suite_usd": 0.01381,
+    "prod_vertical_usd": 1.091,
+    "mistral_depense_usd": 0.897256,
+    "sous_plafond": true
+   }
+  ],
+  "plafonds_note": "openai 15 -> 9,5 USD le 25/09 a 12h04 (protocole v0.3, GO Jarvis)"
+ },
+ "ic95": "Wilson (score), z = 1,96",
+ "runs": {
+  "chatgpt_web__vertical": {
+   "n_tours": 34,
+   "n_conversations": 25,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 3.5,
+   "structured_part": null,
+   "latence_mediane": 27.0,
+   "latence_p90": 36.86,
+   "mots_mediane": 350.5,
+   "cout_usd": 6.6756,
+   "tokens": {
+    "gpt-5.5": {
+     "entree": 907306,
+     "sortie": 48303,
+     "non_mesures": 0
+    },
+    "openai-web-search": {
+     "appels": 69
+    }
+   },
+   "juge_n": 34,
+   "juge_moyennes": {
+    "references": 4.206,
+    "comprehension": 4.765,
+    "expression": 4.265,
+    "couverture": 4.882
+   },
+   "juge_moyenne_4": 4.529,
+   "refus": 0,
+   "erreurs_fait": 8,
+   "erreurs_fait_part": 0.2353,
+   "erreurs_fait_ic95_wilson": [
+    0.1244,
+    0.4
+   ],
+   "critere1": {
+    "taux": 0.3412698412698413,
+    "attendus": 126,
+    "hors_base_c": 11,
+    "conversations": 25,
+    "temoin_hasard": 0.018018018018018018,
+    "taux_sans_correction_tableaux": 0.3412698412698413
+   },
+   "adosses": {
+    "statut": "non calculable (sources web, pas nos fiches)",
+    "chiffres_cites": 198,
+    "taux": null
+   }
+  },
+  "prod__lot0": {
+   "n_tours": 67,
+   "n_conversations": 60,
+   "erreurs_exec": 0,
+   "court_circuits": [
+    [
+     "securite",
+     2
+    ],
+    [
+     "routeur",
+     1
+    ]
+   ],
+   "sources_mediane": 10,
+   "structured_part": 0.0,
+   "latence_mediane": 6.3,
+   "latence_p90": 9.63,
+   "mots_mediane": 92,
+   "cout_usd": 0.8619,
+   "tokens": {
+    "mistral-embed-2312": {
+     "entree": 4653,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "entree": 446818,
+     "sortie": 18157,
+     "non_mesures": 0
+    },
+    "mistral-small-2603": {
+     "entree": 339305,
+     "sortie": 6966,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 0,
+   "juge_moyennes": {
+    "references": null,
+    "comprehension": null,
+    "expression": null,
+    "couverture": null
+   },
+   "juge_moyenne_4": null,
+   "refus": 0,
+   "erreurs_fait": 0,
+   "erreurs_fait_part": null,
+   "erreurs_fait_ic95_wilson": null,
+   "critere1": null,
+   "adosses": {
+    "statut": "mesuré",
+    "chiffres_cites": 479,
+    "taux": 0.569937369519833,
+    "temoin_hasard": 0.36325678496868474,
+    "tours_avec_fiches": 64
+   }
+  },
+  "prod__vertical": {
+   "n_tours": 79,
+   "n_conversations": 57,
+   "erreurs_exec": 0,
+   "court_circuits": [
+    [
+     "securite",
+     2
+    ],
+    [
+     "routeur",
+     1
+    ]
+   ],
+   "sources_mediane": 10,
+   "structured_part": 0.02531645569620253,
+   "latence_mediane": 6.58,
+   "latence_p90": 9.34,
+   "mots_mediane": 85,
+   "cout_usd": 1.031,
+   "tokens": {
+    "mistral-embed-2312": {
+     "entree": 6509,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "entree": 541671,
+     "sortie": 20170,
+     "non_mesures": 0
+    },
+    "mistral-small-2603": {
+     "entree": 407752,
+     "sortie": 8954,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 79,
+   "juge_moyennes": {
+    "references": 2.013,
+    "comprehension": 2.215,
+    "expression": 2.949,
+    "couverture": 1.937
+   },
+   "juge_moyenne_4": 2.278,
+   "refus": 25,
+   "erreurs_fait": 18,
+   "erreurs_fait_part": 0.2278,
+   "erreurs_fait_ic95_wilson": [
+    0.1493,
+    0.3317
+   ],
+   "critere1": {
+    "taux": 0.2786377708978328,
+    "attendus": 323,
+    "hors_base_c": 18,
+    "conversations": 57,
+    "temoin_hasard": 0.021739130434782608,
+    "taux_sans_correction_tableaux": 0.2786377708978328
+   },
+   "adosses": {
+    "statut": "mesuré",
+    "chiffres_cites": 395,
+    "taux": 0.7265822784810126,
+    "temoin_hasard": 0.4278481012658228,
+    "tours_avec_fiches": 77
+   }
+  },
+  "prod__vertical_echantillon25": {
+   "n_tours": 34,
+   "n_conversations": 25,
+   "erreurs_exec": 0,
+   "court_circuits": [
+    [
+     "securite",
+     1
+    ],
+    [
+     "routeur",
+     1
+    ]
+   ],
+   "sources_mediane": 7.0,
+   "structured_part": 0.029411764705882353,
+   "latence_mediane": 6.825,
+   "latence_p90": 9.5,
+   "mots_mediane": 84.5,
+   "cout_usd": 0.4351,
+   "tokens": {
+    "mistral-embed-2312": {
+     "entree": 2971,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "entree": 228085,
+     "sortie": 8499,
+     "non_mesures": 0
+    },
+    "mistral-small-2603": {
+     "entree": 177150,
+     "sortie": 3850,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 34,
+   "juge_moyennes": {
+    "references": 1.882,
+    "comprehension": 2.176,
+    "expression": 3.029,
+    "couverture": 1.853
+   },
+   "juge_moyenne_4": 2.235,
+   "refus": 14,
+   "erreurs_fait": 7,
+   "erreurs_fait_part": 0.2059,
+   "erreurs_fait_ic95_wilson": [
+    0.1035,
+    0.368
+   ],
+   "critere1": {
+    "taux": 0.23015873015873015,
+    "attendus": 126,
+    "hors_base_c": 11,
+    "conversations": 25,
+    "temoin_hasard": 0.02702702702702703,
+    "taux_sans_correction_tableaux": 0.23015873015873015
+   },
+   "adosses": {
+    "statut": "mesuré",
+    "chiffres_cites": 174,
+    "taux": 0.6666666666666666,
+    "temoin_hasard": 0.25287356321839083,
+    "tours_avec_fiches": 33
+   }
+  }
+ }
+}

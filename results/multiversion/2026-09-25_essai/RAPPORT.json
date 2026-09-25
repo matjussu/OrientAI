@@ -1,0 +1,99 @@
+{
+ "tag": "2026-09-25_essai",
+ "budget": {},
+ "runs": {
+  "chatgpt_web__vertical": {
+   "n_tours": 2,
+   "n_conversations": 1,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 3.5,
+   "structured_part": null,
+   "latence_mediane": 27.19,
+   "latence_p90": 19.92,
+   "mots_mediane": 326.5,
+   "cout_usd": 0.3956,
+   "tokens": {
+    "gpt-5.5": {
+     "entree": 52810,
+     "sortie": 2717,
+     "non_mesures": 0
+    },
+    "openai-web-search": {
+     "entree": 5,
+     "sortie": 0,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 0,
+   "juge_moyennes": {
+    "references": null,
+    "comprehension": null,
+    "expression": null,
+    "couverture": null
+   },
+   "juge_moyenne_4": null,
+   "refus": 0,
+   "erreurs_fait": 0,
+   "critere1": {
+    "taux": 0.006191950464396285,
+    "attendus": 323,
+    "hors_base_c": 18,
+    "temoin_hasard": 0.0,
+    "taux_sans_correction_tableaux": 0.006191950464396285
+   },
+   "adosses": {
+    "statut": "non calculable (sources web, pas nos fiches)",
+    "chiffres_cites": 5,
+    "taux": null
+   }
+  },
+  "prod__lot0": {
+   "n_tours": 1,
+   "n_conversations": 1,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 4,
+   "structured_part": 0.0,
+   "latence_mediane": 5.85,
+   "latence_p90": 5.85,
+   "mots_mediane": 82,
+   "cout_usd": 0.0122,
+   "tokens": {
+    "mistral-embed-2312": {
+     "entree": 102,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "entree": 6485,
+     "sortie": 223,
+     "non_mesures": 0
+    },
+    "mistral-small-2603": {
+     "entree": 5092,
+     "sortie": 111,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 0,
+   "juge_moyennes": {
+    "references": null,
+    "comprehension": null,
+    "expression": null,
+    "couverture": null
+   },
+   "juge_moyenne_4": null,
+   "refus": 0,
+   "erreurs_fait": 0,
+   "critere1": null,
+   "adosses": {
+    "statut": "mesuré",
+    "chiffres_cites": 4,
+    "taux": 1.0,
+    "temoin_hasard": 0.0,
+    "tours_avec_fiches": 1
+   }
+  }
+ }
+}

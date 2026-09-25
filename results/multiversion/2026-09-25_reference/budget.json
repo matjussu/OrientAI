@@ -1,0 +1,233 @@
+{
+ "plafonds_usd": {
+  "openai": 9.5,
+  "mistral": 8.0
+ },
+ "depense_usd": {
+  "mistral": 1.940127,
+  "openai": 7.07118
+ },
+ "max_conversation_usd": {
+  "mistral": 0.041232000000000005,
+  "openai": 0.50749
+ },
+ "non_mesures": 0,
+ "runs": [
+  {
+   "hors_tours": "chauffe prod",
+   "usage": {
+    "mistral-small-2603": {
+     "appels": 3,
+     "entree": 6690,
+     "sortie": 167,
+     "non_mesures": 0
+    },
+    "mistral-embed-2312": {
+     "appels": 2,
+     "entree": 24,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "appels": 1,
+     "entree": 6409,
+     "sortie": 52,
+     "non_mesures": 0
+    }
+   },
+   "cout_usd": 0.01111
+  },
+  {
+   "at": "2026-09-25T11:42:44+00:00",
+   "version": "prod",
+   "banc": "lot0",
+   "banc_sha256": "5b268bf34d916e2d17fe2c784015a0acd184f537ec3f0d2dc2f95f5883c2a9dd",
+   "git_commit": "26a526e784c010dabe05111c7eff5b6c47667f52",
+   "git_dirty": true,
+   "empreinte": {
+    "prompt": "601adcee86b9",
+    "corpus": "2e4276e6155b",
+    "index": "8c91dfcf5323",
+    "model_gen": "mistral-medium-2604",
+    "model_aux": "mistral-small-2603",
+    "model_embed": "mistral-embed-2312"
+   },
+   "tours_joues": 1,
+   "erreurs": 0,
+   "cout_usd": 0.0122,
+   "secondes": 6,
+   "arret": null,
+   "restantes": 0,
+   "fichier": "prod__lot0.jsonl"
+  },
+  {
+   "at": "2026-09-25T11:44:18+00:00",
+   "version": "chatgpt_web",
+   "banc": "vertical",
+   "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+   "git_commit": "26a526e784c010dabe05111c7eff5b6c47667f52",
+   "git_dirty": true,
+   "empreinte": {
+    "modele": "gpt-5.5",
+    "prompt_systeme": "SYSTEM_PROMPT_BASELINE",
+    "outil": "web_search",
+    "localisation": "FR"
+   },
+   "tours_joues": 2,
+   "erreurs": 0,
+   "cout_usd": 0.3956,
+   "secondes": 54,
+   "arret": null,
+   "restantes": 0,
+   "fichier": "chatgpt_web__vertical.jsonl"
+  },
+  {
+   "hors_tours": "chauffe prod",
+   "usage": {
+    "mistral-small-2603": {
+     "appels": 3,
+     "entree": 6690,
+     "sortie": 164,
+     "non_mesures": 0
+    },
+    "mistral-embed-2312": {
+     "appels": 2,
+     "entree": 24,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "appels": 1,
+     "entree": 6409,
+     "sortie": 166,
+     "non_mesures": 0
+    }
+   },
+   "cout_usd": 0.011963
+  },
+  {
+   "at": "2026-09-25T11:55:52+00:00",
+   "version": "prod",
+   "banc": "lot0",
+   "banc_sha256": "5b268bf34d916e2d17fe2c784015a0acd184f537ec3f0d2dc2f95f5883c2a9dd",
+   "git_commit": "b6103e049f8f1ad9d9a3d13f43fc219ff9093255",
+   "git_dirty": false,
+   "empreinte": {
+    "prompt": "601adcee86b9",
+    "corpus": "2e4276e6155b",
+    "index": "8c91dfcf5323",
+    "model_gen": "mistral-medium-2604",
+    "model_aux": "mistral-small-2603",
+    "model_embed": "mistral-embed-2312"
+   },
+   "tours_joues": 67,
+   "erreurs": 0,
+   "cout_usd": 0.8619,
+   "secondes": 464,
+   "arret": null,
+   "restantes": 0,
+   "fichier": "prod__lot0.jsonl"
+  },
+  {
+   "hors_tours": "chauffe prod",
+   "usage": {
+    "mistral-small-2603": {
+     "appels": 3,
+     "entree": 6690,
+     "sortie": 172,
+     "non_mesures": 0
+    },
+    "mistral-embed-2312": {
+     "appels": 2,
+     "entree": 24,
+     "sortie": 0,
+     "non_mesures": 0
+    },
+    "mistral-medium-2604": {
+     "appels": 1,
+     "entree": 6409,
+     "sortie": 157,
+     "non_mesures": 0
+    }
+   },
+   "cout_usd": 0.0119
+  },
+  {
+   "at": "2026-09-25T12:05:17+00:00",
+   "version": "prod",
+   "banc": "vertical",
+   "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+   "git_commit": "b6103e049f8f1ad9d9a3d13f43fc219ff9093255",
+   "git_dirty": true,
+   "empreinte": {
+    "prompt": "601adcee86b9",
+    "corpus": "2e4276e6155b",
+    "index": "8c91dfcf5323",
+    "model_gen": "mistral-medium-2604",
+    "model_aux": "mistral-small-2603",
+    "model_embed": "mistral-embed-2312"
+   },
+   "tours_joues": 79,
+   "erreurs": 0,
+   "cout_usd": 1.031,
+   "secondes": 547,
+   "arret": null,
+   "restantes": 0,
+   "fichier": "prod__vertical.jsonl"
+  },
+  {
+   "at": "2026-09-25T12:11:34+00:00",
+   "version": "chatgpt_web",
+   "banc": "vertical",
+   "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+   "git_commit": "829f1fb673f50d0ded6afdefef5c4b7854ce6c56",
+   "git_dirty": false,
+   "empreinte": {
+    "modele": "gpt-5.5",
+    "prompt_systeme": "SYSTEM_PROMPT_BASELINE",
+    "outil": "web_search",
+    "localisation": "FR"
+   },
+   "tours_joues": 34,
+   "erreurs": 0,
+   "cout_usd": 6.6756,
+   "secondes": 329,
+   "arret": null,
+   "restantes": 0,
+   "fichier": "chatgpt_web__vertical.jsonl"
+  }
+ ],
+ "estimations": [
+  {
+   "at": "2026-09-25T11:43:15+00:00",
+   "apres": "essai prod L01 (1 tour, 0,012241 USD, tokens reels : 2 appels small, 2 embed, 1 medium stream)",
+   "prod_vertical_usd": 0.967,
+   "prod_lot0_usd": 0.808,
+   "prod_total_avec_marge_x1_5_usd": 2.662,
+   "hypothese": "cout par tour de L01 (premier tour, sans historique) ; les tours suivants portent l'historique : marge x1,5 supposee",
+   "plafond_mistral_usd": 8.0,
+   "sous_plafond": true
+  },
+  {
+   "at": "2026-09-25T11:44:41+00:00",
+   "apres": "essai chatgpt_web V-INF-02 (2 tours : 0,26631 + 0,12925 USD ; entree 34 834 et 17 976 tokens dont contenu de recherche, 4 et 1 recherches)",
+   "cout_moyen_tour_usd": 0.1978,
+   "chatgpt_web_vertical_usd": 15.62,
+   "chatgpt_web_lot0_usd": 13.25,
+   "chatgpt_web_total_usd": 28.88,
+   "plafond_openai_usd": 15.0,
+   "sous_plafond": false,
+   "hypothese": "moyenne de 2 tours seulement : dispersion forte (x2 entre les deux) ; supposee representative"
+  },
+  {
+   "at": "2026-09-25T11:55:54+00:00",
+   "apres": "prod x lot0 (67 tours, 0.8619 USD reels)",
+   "cout_moyen_tour_usd": 0.01286,
+   "cout_moyen_tour_suite_usd": 0.01381,
+   "prod_vertical_usd": 1.091,
+   "mistral_depense_usd": 0.897256,
+   "sous_plafond": true
+  }
+ ],
+ "plafonds_note": "openai 15 -> 9,5 USD le 25/09 a 12h04 (protocole v0.3, GO Jarvis)"
+}
