@@ -37,6 +37,9 @@ PRICES = {
     # 0,4 / 2,0 : les couts Medium affiches avant le 24/09 sont sous-estimes x3,75.
     "mistral-medium-2604": (1.5, 7.5),
     "mistral-small-2603": (0.15, 0.6),
+    # docs.mistral.ai/models/zai-glm-5-3, lu le 25/09/2026 à 17h18 UTC (CONTRAT-etape3 section 9) : 1,4 entrée
+    # (0,14 en cache, non compté : coût surestimé), 4,4 sortie.
+    "zai-glm-5-3": (1.4, 4.4),
     "mistral-large-2512": (0.5, 1.5),   # mistral.ai/pricing lu le 23/09 (src/eval/grille_d.py), version non precisee
     "mistral-embed-2312": (0.1, 0.0),   # docs.mistral.ai/models/mistral-embed-23-12, lu le 25/09/2026
     # Recherche web de la Responses API : 10 USD pour 1 000 appels « search » (page de prix, lue le 25/09/2026).

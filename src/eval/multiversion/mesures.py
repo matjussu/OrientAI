@@ -88,6 +88,8 @@ def adosses(records: list[dict], version: str) -> dict:
     - version dont les sources ne sont pas nos fiches (chatgpt_web) : non calculable, jamais 0 %."""
     from src.eval.battery.corpus import Corpus
     from src.eval.battery.numbers import NumberChecker, NumberSummary, extract_claims
+    if version == "v2":
+        return adosses_v2(records)
     if version == "chatgpt_web":
         n = sum(len(extract_claims(r["answer"])) for r in records)
         return {"statut": "non calculable (sources web, pas nos fiches)", "chiffres_cites": n, "taux": None}
@@ -104,6 +106,37 @@ def adosses(records: list[dict], version: str) -> dict:
     return {"statut": "sans fiche : 0 % par construction" if not resume.turns_exposing_fiches else "mesuré",
             "chiffres_cites": resume.n_claims, "taux": resume.rate("adosse"), "temoin_hasard": temoin,
             "tours_avec_fiches": resume.turns_exposing_fiches, "par_tour": par_tour}
+
+
+def adosses_v2(records: list[dict]) -> dict:
+    """v2 : chiffres affichés adossés aux valeurs que les outils ont rendues dans la conversation (gardées par la trace
+    de chaque appel), ou écrits par l'élève (choix C4). Recompté ici avec l'extraction et la tolérance de `numbers.py`,
+    sans passer par `src/v2/verificateur.py`. Les fiches ne sont pas des positions du corpus : pas de témoin de
+    hasard par permutation de fiches, le taux est une garantie structurelle vérifiée a posteriori."""
+    from src.eval.battery.numbers import _TOLERANCE, extract_claims
+    par_conv: dict[str, list[dict]] = {}
+    for r in sorted(records, key=lambda r: (r["id"], r["turn"])):
+        par_conv.setdefault(r["id"], []).append(r)
+    n, fautes, par_tour = 0, [], {}
+    for tours in par_conv.values():
+        valeurs, eleve = [], []
+        for t in tours:
+            for appel in (t.get("trace") or {}).get("outils", []):
+                valeurs += appel.get("valeurs") or []
+            eleve += [(c.value, c.unit) for c in extract_claims(t["question"])]
+            checks = []
+            for c in extract_claims(t["answer"]):
+                tol = _TOLERANCE[c.unit]
+                ok = any(v["unite"] == c.unit and abs(v["valeur"] - c.value) <= tol for v in valeurs)
+                el = not ok and any(u == c.unit and abs(x - c.value) <= tol for x, u in eleve)
+                checks.append({"value": c.value, "unit": c.unit, "line": c.line,
+                               "status": "adosse" if ok else ("eleve" if el else "non_retrouve")})
+                n += 1
+                if not ok and not el:
+                    fautes.append({"id": t["id"], "turn": t["turn"], "valeur": c.value, "unite": c.unit})
+            par_tour[(t["id"], t["turn"])] = checks
+    return {"statut": "mesuré (valeurs des outils tracées)", "chiffres_cites": n,
+            "taux": (n - len(fautes)) / n if n else None, "non_adosses": fautes, "par_tour": par_tour}
 
 
 def lire_banc(chemin: Path) -> dict:

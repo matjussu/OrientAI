@@ -72,6 +72,19 @@ def _tour(x: dict, juge: dict | None, chiffres: list | None) -> dict:
         "juge": None if not juge else {k: juge.get(k) for k in (*CRITERES, "refus", "erreur_factuelle", "erreur_detail",
                                                                 "cause_echec", "commentaire")},
         "chiffres": chiffres,
+        # Cerveau v2 : les étages de la trace (CONTRAT-etape3 section 2), pour l'onglet de l'explorateur.
+        "v2": None if x.get("version") != "v2" else {
+            "filtre": tr.get("filtre"), "court_circuit": tr.get("court_circuit"), "etapes": tr.get("etapes"),
+            "outils": [{k: a.get(k) for k in ("nom", "arguments", "execute", "ids_rendus", "erreur", "secondes")}
+                       | {"nb_resultats": (a.get("meta") or {}).get("nb_resultats"),
+                          "tronque": (a.get("meta") or {}).get("tronque"), "nb_valeurs": len(a.get("valeurs") or [])}
+                       for a in tr.get("outils") or []],
+            "profil_avant": tr.get("profil_avant"), "profil_apres": tr.get("profil_apres"),
+            "brouillons": tr.get("brouillons"), "phrases_retirees": tr.get("phrases_retirees"),
+            "verifications": [{k: len(v.get(k) or []) for k in ("adosses", "eleve", "non_adosses")}
+                              | {"non_adosses_detail": v.get("non_adosses")} for v in tr.get("verifications") or []],
+            "plafond_atteint": tr.get("plafond_atteint"), "garantie_adosses": tr.get("garantie_adosses"),
+            "latence_s": tr.get("latence_s"), "appels_modele": len(tr.get("appels_modele") or [])},
     }
 
 

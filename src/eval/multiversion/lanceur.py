@@ -22,9 +22,11 @@ from src.eval.battery.runner import code_state, complete_conversations, read_jso
 BANCS = {
     "vertical": Path.home() / "projets/_orientai-ref/verticale-2026-09/battery_verticale.json",
     "lot0": REPO / "src/eval/battery/battery.json",
+    # Gate F du cerveau v2 (contrat du cerveau, section 9), écrit avant le code (étape 3).
+    "gatef": REPO / "docs/cerveau/gate_f/requetes_gate_f.json",
 }
 # sha256 fixés au protocole (section 3) : un banc modifié n'est pas le même instrument.
-BANCS_SHA = {"vertical": "f467374be3d7", "lot0": "5b268bf34d91"}
+BANCS_SHA = {"vertical": "f467374be3d7", "lot0": "5b268bf34d91", "gatef": "5c78dc6e9001"}
 RESULTATS = REPO / "results/multiversion"
 PLAFONDS_USD = {"openai": 9.5, "mistral": 8.0}  # protocole v0.3, plafond OpenAI date du 25/09 12h04
 
@@ -56,7 +58,12 @@ def charger_banc(nom: str) -> tuple[list[dict], str]:
     sha = hashlib.sha256(p.read_bytes()).hexdigest()
     if not sha.startswith(BANCS_SHA[nom]):
         raise SystemExit(f"banc {nom} modifié : sha {sha[:12]}, protocole {BANCS_SHA[nom]}")
-    return json.loads(p.read_text(encoding="utf-8"))["items"], sha
+    doc = json.loads(p.read_text(encoding="utf-8"))
+    if nom == "gatef":
+        # Le gate F écrit ses tours sous « tours » : lus comme les « turns » des bancs, rien d'autre ne change.
+        return [{"id": q["id"], "persona": "gate_f", "domaine": q.get("domaine"), "tags": [q["famille"]],
+                 "turns": q["tours"]} for q in doc["questions"]], sha
+    return doc["items"], sha
 
 
 class Budget:
@@ -174,6 +181,7 @@ def jouer(version, banc: str, tag: str, limite: list[str] | None = None, log=pri
     log(f"[{version.nom} x {banc}] {len(todo)} conversations à jouer ({len(faites)} déjà faites)")
 
     arret, joues, erreurs, cout_run = None, 0, 0, 0.0
+    run_tours: list[dict] = []
     t0 = time.time()
     verrou = threading.Lock()
     with open(sortie, "a") as fh, ThreadPoolExecutor(max_workers=version.fils) as pool:
@@ -214,6 +222,10 @@ def jouer(version, banc: str, tag: str, limite: list[str] | None = None, log=pri
                     f"{len(rec['answer'])}c fiches={len(rec['sources'])} {rec['cout_usd']:.4f}$")
             fh.flush()
             budget.ajouter_conversation(par_f, sum(r["non_mesures"] for r in tours))
+            run_tours.extend(tours)
+            # Arrêt propre à une version (v2 : pannes, garantie rouge ; CONTRAT-etape3 section 9).
+            if arret is None and hasattr(version, "arret"):
+                arret = version.arret(run_tours)
             soumettre()
 
     stats = {"at": dt.datetime.now().astimezone().isoformat(timespec="seconds"), "version": version.nom,

@@ -11,11 +11,13 @@ def main(argv: list[str] | None = None) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("run", help="joue une version sur un banc")
     r.add_argument("--version", required=True)
-    r.add_argument("--banc", required=True, choices=["vertical", "lot0"])
+    r.add_argument("--banc", required=True, choices=["vertical", "lot0", "gatef"])
     r.add_argument("--tag", required=True)
     r.add_argument("--limite", default="", help="ids de conversations séparés par des virgules (défaut : tout)")
     r.add_argument("--empreinte-prod", default="", help="URL /health : l'empreinte de la version doit y être égale")
     r.add_argument("--budget-tag", default="", help="registre de budget d'un autre tag (essai à blanc)")
+    r.add_argument("--plafond-mistral", type=float, default=None,
+                   help="plafond Mistral cumulé du registre, en USD (paliers du v2 : CONTRAT-etape3 section 9)")
     j = sub.add_parser("juger", help="prépare ou collecte le juge")
     j.add_argument("etape", choices=["preparer", "collecter", "lanceur"])
     j.add_argument("--tag", required=True)
@@ -29,14 +31,16 @@ def main(argv: list[str] | None = None) -> int:
     a = ap.parse_args(argv)
 
     if a.cmd == "run":
-        from src.eval.multiversion.lanceur import jouer
+        from src.eval.multiversion.lanceur import PLAFONDS_USD, jouer
         from src.eval.multiversion.versions import charger
         attendue = None
         if a.empreinte_prod:
             import urllib.request
             attendue = json.load(urllib.request.urlopen(a.empreinte_prod, timeout=30))["provenance"]
         stats = jouer(charger(a.version), a.banc, a.tag, [x for x in a.limite.split(",") if x] or None,
-                      empreinte_attendue=attendue, budget_tag=a.budget_tag or None)
+                      empreinte_attendue=attendue, budget_tag=a.budget_tag or None,
+                      plafonds=({**PLAFONDS_USD, "mistral": a.plafond_mistral} if a.plafond_mistral is not None
+                                else PLAFONDS_USD))
         return 1 if stats["arret"] else 0
     if a.cmd == "juger":
         from src.eval.multiversion import juge
