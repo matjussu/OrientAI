@@ -1,8 +1,12 @@
 # Contrat de l'étape 3 : le v2 minimal du cerveau
 
-Version v0, 25/09/2026, Claudette. Ordre `2026-09-25-1907-claudette-orientai-etape3-v2-minimal` (go de Matteo le
-25/09 à 19h06, Telegram 10778). Écrit AVANT toute ligne de code du v2 (section 14.1 du contrat du cerveau). À relire
-par Jarvis ; les choix de la section 10 sont à trancher par Matteo. Aucun appel payant avant la validation.
+Version v1, 25/09/2026, Claudette. Ordre `2026-09-25-1907-claudette-orientai-etape3-v2-minimal` (go de Matteo le
+25/09 à 19h06, Telegram 10778). Écrit AVANT toute ligne de code du v2 (section 14.1 du contrat du cerveau).
+
+v1 (25/09, 19h55, avant tout code et tout appel payant) : relu par Jarvis (recompte indépendant, 25/09 19h28) ;
+**choix tranchés par Matteo le 25/09 à 19h47 (Telegram 10783)**, section 10 bis. Changements : insertion dans
+l'essentiel (section 4), « rien de 2026 » précisé et aucun filtre ajouté (section 5), prompt v0 et tests ajustés
+(sections 7 et 8), budget validé (section 9). v0 : version soumise (PR #191, 4244fb2).
 
 Contrat parent : `docs/cerveau/CONTRAT-cerveau.md` v1.2 (sha256 `07dee32b0949...`), sections 2, 3, 6, 10 et 13
 (étape 3). Ce document les précise ; en cas de contradiction, le parent gagne, sauf décision datée de Matteo citée ici.
@@ -13,8 +17,11 @@ Contrat parent : `docs/cerveau/CONTRAT-cerveau.md` v1.2 (sha256 `07dee32b0949...
   réponse), une boucle écrite par nous (pas de framework), Pydantic pour décrire et valider chaque outil et le profil.
 - 3 outils nouveaux (`trouver_formation`, `comparer`, `mettre_a_jour_profil`) et `lire_fiche` réduit à l'essentiel
   par défaut, détail à la demande.
-- **L'essentiel est mesuré, pas choisi au jugé** (section 4) : 10 notions couvrent 292 des 304 chiffres attendus du
-  banc vertical que la base rend (96,1 %), et ramènent une fiche Parcoursup de 43 à 10 valeurs en médiane.
+- **L'essentiel est mesuré, pas choisi au jugé** (section 4) : 6 notions couvrent 292 des 304 chiffres attendus du
+  banc vertical que la base rend (96,1 %) ; l'essentiel retenu (11 notions) ramène une fiche Parcoursup de 43 à 11
+  valeurs en médiane.
+- Le modèle voit exactement ce que `lire_fiche` montre aujourd'hui (#189), réduit à l'essentiel : aucun filtre
+  « 2026 » (décision de Matteo, section 5).
 - La prod n'est pas touchée : pas de route d'API à cette étape (choix C5), la v2 se joue par le lanceur de l'étape 1.
 - Gate de l'étape 3 = gate F (30 questions) ; les bancs sont joués et montrés contre la référence figée, leurs
   planchers (section 8 du parent) sont le gate de l'étape 4 (section 9).
@@ -171,7 +178,7 @@ Part cumulée par notion (sur les 304 attendus rendus, `egal` + `ecart`) :
 | part_mention_tb, part_mention_sans_mention | 2 + 2 | 99,7 % |
 | voeux_phase_principale (2023) | 1 | 100 % |
 
-**Seuil proposé : 95 % des attendus rendus**, atteint à la 6e notion. **Essentiel proposé (choix C1)** :
+**Seuil : 95 % des attendus rendus**, atteint à la 6e notion. **Essentiel retenu (choix C1 a et C2, Matteo 10783)** :
 
 - les 6 notions du seuil, toutes sessions montrées : `taux_acces`, `places`, `capacite_accueil`,
   `repartition_admis_bac_techno`, `repartition_admis_bac_pro`, `candidats_ont_postule` ;
@@ -180,14 +187,17 @@ Part cumulée par notion (sur les 304 attendus rendus, `egal` + `ecart`) :
 - pour les fiches santé, 3 notions de portée nationale, gardées pour le gate F et non pour le banc (F-HSAN-02 : « donner
   le chiffre NATIONAL en le disant national ») : `passage_mmopk_1_ou_2_ans_national` (47,5 %),
   `passage_pass_las_ensemble_national`, `sante.reforme_2027` ;
+- l'insertion (choix C2) : l'entrée `insertion` et ses lignes InserSup ou InserJeunes (1 ligne en médiane par fiche,
+  `results/concordance/ecarts.json`, `lignes_insertion_par_fiche_mediane`) ;
 - toujours : l'identité de la formation (intitulé, établissement, type, statut, apprentissage, sélectivité, lien
   officiel, dernière session), ses lieux, la raison de tout « non disponible » sur une notion de l'essentiel, et la
   liste des notions non rendues (pour que le modèle sache qu'il peut demander `detail=True`).
 
-Effet mesuré (même commande, les 3 945 fiches) : Parcoursup 43 valeurs en médiane aujourd'hui (max 77) contre 10 (max
-13) ; MonMaster 18 contre 3 ; apprentissage 11 contre 1. Couverture : 292 des 304 attendus rendus (96,1 %), 292 des
-323 rendables (90,4 %). Ce qui sort de l'essentiel et reste dans `detail=True` : part de néobacheliers, mentions,
-propositions, boursiers, femmes, même académie, coût, insertion, capacités santé par université.
+Effet mesuré (même commande, les 3 945 fiches, rejouée le 25/09 après C2, sortie sha256 `e0e4ff8d4c3f`) : Parcoursup
+43 entrées de `valeurs` en médiane aujourd'hui (max 77) contre 11 (max 14) ; MonMaster 18 contre 4 ; apprentissage 11
+contre 2. Couverture : 292 des 304 attendus rendus (96,1 %), 292 des 323 rendables (90,4 %) ; l'insertion n'en ajoute
+aucun (0 attendu rendu). Ce qui sort de l'essentiel et reste dans `detail=True` : part de néobacheliers, mentions,
+propositions, boursiers, femmes, même académie, coût, capacités santé par université, présence de la fiche en cours.
 
 Le chiffre de 43 compte les entrées de `valeurs` rendues par `lire_fiche`, textes compris (coût en détails,
 alternance, présence de la fiche en cours) ; les « 41 chiffres » de #189 comptent autrement (chiffres vus, script
@@ -195,26 +205,28 @@ alternance, présence de la fiche en cours) ; les « 41 chiffres » de #189 comp
 
 Ce que la mesure n'établit pas : l'insertion et le coût n'ont aucun attendu rendu dans le banc (insertion des masters
 non collectée, coût jamais demandé en chiffre) ; leur place dans l'essentiel est une question de produit, pas de banc
-(choix C2). L'apprentissage n'a aucun attendu : l'essentiel n'y garde que `places`.
+(tranchée par C2). L'apprentissage n'a aucun attendu : l'essentiel n'y garde que `places` et l'insertion.
 
-## 5. « Rien de 2026 » contre la base actuelle
+## 5. « Rien de 2026 » : ce que voit le modèle
 
-Décision de Matteo du 25/09 à 18h55 (Telegram 10773, relayée par Jarvis) : le modèle ne voit que la session 2025 ou
-d'avant. Relevé sur la base de main (`lire_fiche` sur les 3 945 fiches, 25/09), quatre familles d'entrées la
-contredisent aujourd'hui (les chiffres de page « session 2025, page relevée le 2026-09-25 » sont de 2025 : seule la
-date du relevé est en 2026) :
+**Décision de Matteo, 25/09 à 19h47 (Telegram 10783)** : « Ok alors pour 2026 on garde ce que l'on a le but n'est pas de régresser les infos donc on laisse comment le modèle peut voir actuellement si go pour tout je suis d'accord avec toi » Elle précise celle du 25/09 à 18h55 (Telegram
+10773) : « rien de 2026 » veut dire ne pas **ajouter** de données 2026, pas retirer ce qui est déjà montré ; le but
+est de ne pas régresser.
 
-| entrée | où | pourquoi elle existe |
+Conséquence : **`src/v2` n'ajoute aucun filtre sur l'année.** Le modèle voit ce que `lire_fiche` montre aujourd'hui
+(colonne `montre_au_modele` de #189, inchangée), réduit par l'essentiel de la section 4 et complet avec `detail=True`.
+Relevé du 25/09 (`lire_fiche` sur les 3 945 fiches), pour mémoire de ce qui reste visible et daté 2026 ou 2026-2027 :
+
+| entrée | où | nature |
 |---|---|---|
-| `capacite_accueil@2026` | 398 masters (disponible), montrée au modèle | #189 : la page MonMaster affiche la capacité de la campagne en cours ; `capacite_accueil@2025` n'est disponible que pour 82 masters, alors que l'open data 2025 (`capacite_campagne_2025`) existe pour les 480, masqué |
-| `capacites_mmopk_*`, `sante.capacites_universite` | 183 fiches santé (panel de 10 universités), montrées | capacités d'accueil en 2e année de santé, « rentrée 2026 », pages des universités |
-| `fiche_publique_annee_en_cours@2026` | les 3 945 fiches, montrée | présence de la formation sur la plateforme en cours (relevé du 25/09) ; pas un chiffre |
-| `cout.*` (droits d'inscription, CVEC) | post-bac, montré | tarif de l'année universitaire 2026-2027 ; pas de l'open data Parcoursup |
+| `capacite_accueil@2026` | 398 masters, dans l'essentiel | capacité de la campagne en cours, affichée par la page MonMaster (#189) ; `capacite_accueil@2025` disponible pour 82 masters |
+| `capacites_mmopk_*`, `sante.capacites_universite` | 183 fiches santé, en détail | capacités en 2e année de santé, « rentrée 2026 », pages des universités |
+| `fiche_publique_annee_en_cours@2026` | les 3 945 fiches, en détail | présence de la formation sur la plateforme en cours ; pas un chiffre |
+| `cout.*` | post-bac, en détail | tarif de l'année universitaire 2026-2027 |
 
-`sante.reforme_2027` (texte de la réforme des études de santé, relevé le 23/09/2026) n'est pas une statistique de
-2026 : il reste montré sauf avis contraire (C3).
-
-Le v2 ne touche pas la base : il filtre dans `src/v2/outils.py`, et la règle est testée. Arbitrage : choix C3.
+Restent **non montrés**, comme aujourd'hui : `places_annee_en_cours` et `voeux_confirmes_annee_en_cours` (places et
+vœux 2026 de l'en-tête de la page Parcoursup). Les statistiques d'admission montrées sont de la session 2025 ou
+d'avant ; le prompt v0 demande de toujours dire l'année ou la session d'un chiffre telle que l'outil la rend.
 
 ## 6. Le vérificateur (`src/v2/verificateur.py`)
 
@@ -238,7 +250,8 @@ Le v2 ne touche pas la base : il filtre dans `src/v2/outils.py`, et la règle es
 
 Texte joint : `docs/cerveau/etape3/prompt_conseiller_v0.txt` (versionné, `src/v2/prompt.py` le lit tel quel). Simple
 par construction : les règles d'usage des outils de la section 3 du parent, la règle de clarification (section 5 du
-parent), le traitement hors domaine (Q4), la lecture du taux d'accès, les chiffres nationaux, « rien de 2026 ». Pas
+parent), le traitement hors domaine (Q4), la lecture du taux d'accès, les chiffres nationaux, l'année ou la session
+de chaque chiffre dite telle que l'outil la rend (section 5). Pas
 d'exemple de réponse, pas de gabarit de forme : c'est l'étape 4.
 
 ## 8. Code et tests (phase B)
@@ -255,7 +268,7 @@ d'exemple de réponse, pas de gabarit de forme : c'est l'étape 4.
   (`extra="forbid"`, fusion) ; plafond de 6 (un faux modèle qui demande 8 appels : 6 exécutés, 2 refusés, réponse
   finale sans outil) ; et **un test de sabotage par garantie** (règle 9, levier par variable
   `ORIENTIA_SABOTAGE_V2`) : un vérificateur qui laisse passer un chiffre inventé doit rougir ; un « essentiel par
-  défaut » qui rend toute la fiche doit rougir ; un filtre « rien de 2026 » désactivé doit rougir ; une phrase non
+  défaut » qui rend toute la fiche doit rougir ; une phrase non
   adossée gardée après réécriture doit rougir.
 - Aucun test ne charge le `.env` ; les tests qui appellent un modèle utilisent un faux client.
 
@@ -310,7 +323,7 @@ contrat. Ce qui demande le go de Matteo au moment de le lancer : le juge (quota 
 
 Tout amendement de cette section se date avant la lecture des résultats qu'il concerne.
 
-## 10. Choix soumis à Matteo
+## 10. Choix soumis à Matteo (v0, tels que soumis ; décisions en 10 bis)
 
 | # | Question | Options | Reco |
 |---|---|---|---|
@@ -320,6 +333,20 @@ Tout amendement de cette section se date avant la lecture des résultats qu'il c
 | C4 | Chiffre cité par l'élève | a) accepté s'il vient d'un message de l'élève, tracé « dit par l'élève », sans source ; b) traité comme non adossé | **a** : F-HSAN-02 et F-NINF-21 demandent de commenter le chiffre de l'élève |
 | C5 | Route d'API `/v2/answer/stream` à cette étape | a) aucune route : v2 jouée par le lanceur seulement ; b) route présente, désactivée par défaut | **a** : zéro surface ajoutée à la prod tant que le v2 ne la bat pas ; la route vient avec la mise en prod |
 | C6 | Juger le lot 0 | a) non : mesures déterministes seulement (la référence ne l'a pas jugé en judge_v2) ; b) oui : 67 verdicts de plus sur le quota | **a** : pas de point de comparaison jugé côté prod |
+
+## 10 bis. Décisions de Matteo, 25/09 à 19h47 (Telegram 10783, relayé par Jarvis)
+
+Citation : « Ok alors pour 2026 on garde ce que l'on a le but n'est pas de régresser les infos donc on laisse comment le modèle peut voir actuellement si go pour tout je suis d'accord avec toi »
+
+| # | Décision | Effet dans ce contrat |
+|---|---|---|
+| C1 | **a** : essentiel de la section 4 | section 4 |
+| C2 | **insertion dans l'essentiel, coût en `detail=True`** | section 4 : 11 notions, mesure rejouée |
+| C3 | **ni a ni b** : aucun filtre « 2026 » ajouté ; le modèle voit ce que `lire_fiche` montre aujourd'hui | section 5 réécrite ; test de sabotage du filtre retiré (section 8) ; prompt v0 (section 7) |
+| C4 | **a** : chiffre dit par l'élève accepté, tracé sans source | section 6 |
+| C5 | **a** : pas de route d'API | section 1 |
+| C6 | **a** : lot 0 non jugé | section 9 |
+| budget | **validé** : 15 USD Mistral par paliers (0,50 / 4 / 15), arrêts automatiques | section 9 ; juge (111 verdicts) sur go séparé de Matteo au moment de le lancer |
 
 ## 11. Ce que ce contrat n'établit pas
 

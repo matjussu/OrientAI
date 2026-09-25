@@ -70,12 +70,14 @@ CORRESPONDANCE = {
 }
 
 
-# Proposition « essentiel par défaut » soumise à Matteo (CONTRAT-etape3, section 4) : notions gardées, toutes sessions
-# montrées. Les notions de santé nationales viennent du gate F (F-HSAN-02 : chiffre national dit national), pas du banc.
+# « Essentiel par défaut » (CONTRAT-etape3, section 4 ; choix C1 et C2 de Matteo, 25/09, Telegram 10783) : notions
+# gardées, toutes sessions montrées. Les notions de santé nationales viennent du gate F (F-HSAN-02 : chiffre national
+# dit national), l'insertion du choix C2 ; ni l'une ni l'autre n'a d'attendu rendu au banc.
 ESSENTIEL = {
     "taux_acces", "places", "capacite_accueil", "repartition_admis_bac_general", "repartition_admis_bac_techno",
     "repartition_admis_bac_pro", "candidats_ont_postule",
     "passage_mmopk_1_ou_2_ans_national", "passage_pass_las_ensemble_national", "sante.reforme_2027",
+    "insertion",
 }
 
 
