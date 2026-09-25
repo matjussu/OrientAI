@@ -1,5 +1,10 @@
 # Point de reprise OrientAI, ecrit le 05/09/2026 (Jarvis), mis a jour le 23/09/2026 (Claudette)
 
+> **Plan de référence du cerveau v2 (depuis le 25/09/2026)** : `docs/cerveau/` - contrat v1.1
+> (`CONTRAT-cerveau.md`, validé par Matteo le 24/09, feuille de route section 13, méthode section 14)
+> et gate F (`gate_f/requetes_gate_f.json`, 30 questions-tests). Ce fichier reste le journal de
+> reprise ; en cas d'écart, c'est `docs/cerveau/` qui fait foi pour le plan.
+
 A lire en premier par quiconque reprend le projet (Matteo, Ella, Claudette, Jarvis apres /clear).
 Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par quoi on commence.
 

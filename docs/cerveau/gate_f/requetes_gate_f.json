@@ -1,0 +1,735 @@
+{
+ "meta": {
+  "version": "v0",
+  "ecrit_le": "2026-09-24",
+  "n": 30,
+  "familles": {
+   "recherche": 12,
+   "nom": 8,
+   "clarification": 5,
+   "multi-tour": 2,
+   "honnetete": 3
+  },
+  "entrees": {
+   "gate_c": "227a2c9bfaf6",
+   "banc": "f467374be3d7"
+  },
+  "controle": "102 fiches attendues, toutes présentes dans la base C"
+ },
+ "questions": [
+  {
+   "id": "F-R01",
+   "famille": "recherche",
+   "source": "gate C C01 (banc V-INF-16)",
+   "domaine": "informatique",
+   "tours": [
+    "Quelles formations en informatique (BUT Informatique, licence Informatique, BTS SIO) a moins de 80 km de Rodez ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:35917",
+     "psup:2495",
+     "psup:10310",
+     "psup:2951",
+     "psup:5801"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 hors apprentissage ; fili BUT, Licence ou Licence_Las avec fil_lib_voe_acc = Informatique, ou BTS SIO ; distance <= 80 km du centre de Rodez (INSEE 12202).",
+    "reference_geo": {
+     "commune": "Rodez",
+     "code_insee": "12202",
+     "rayon_km": 80
+    }
+   }
+  },
+  {
+   "id": "F-R02",
+   "famille": "recherche",
+   "source": "gate C C02 (banc V-INF-02)",
+   "domaine": "informatique",
+   "tours": [
+    "Quels BUT Informatique des Hauts-de-France ont au moins 35 % de bacheliers technologiques parmi leurs admis neo-bacheliers ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:6888",
+     "psup:7520"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 ; BUT Informatique ; region Hauts-de-France ; pct_bt >= 35 (libelle officiel : % d'admis neo bacheliers technologiques ; denominateur acc_neobac, verifie le 23/09 sur 9 385 lignes discriminantes sur 9 385).",
+    "reference_geo": null
+   }
+  },
+  {
+   "id": "F-R03",
+   "famille": "recherche",
+   "source": "gate C C03 (banc V-INF-03)",
+   "domaine": "informatique",
+   "tours": [
+    "Je suis en bac pro CIEL : quels BTS SIO ou BTS CIEL option A (informatique et reseaux) a moins de 30 km de Rennes, avec leurs places et la part de bac pro parmi les admis neo-bacheliers ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:17725",
+     "psup:4774",
+     "psup:4694"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 hors apprentissage ; BTS SIO ou BTS CIEL option A ; distance <= 30 km du centre de Rennes (INSEE 35238) ; valeurs capa_fin et pct_bp (% d'admis neo bacheliers professionnels). acc_bp (effectif) abandonne le 23/09 : absent du corpus B-2 (signale par Claudette), le gate ne doit pas imposer l'architecture.",
+    "reference_geo": {
+     "commune": "Rennes",
+     "code_insee": "35238",
+     "rayon_km": 30
+    }
+   }
+  },
+  {
+   "id": "F-R04",
+   "famille": "recherche",
+   "source": "gate C C04 (banc V-INF-09)",
+   "domaine": "informatique",
+   "tours": [
+    "Je veux faire de l'info en alternance pour etre paye : quels BUT Informatique ou BTS SIO en apprentissage dans le Nord (59) ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup_app:18950",
+     "psup_app:34108",
+     "psup_app:44394",
+     "psup_app:16775",
+     "psup_app:38810",
+     "psup_app:47883",
+     "psup_app:22088",
+     "psup_app:25559",
+     "psup_app:42427",
+     "psup_app:47164",
+     "psup_app:47661"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup apprentissage session 2025 ; fili 2_BUT avec fil_lib_voe_acc commencant par Informatique (exclut GEII), ou fili 1_BTS SIO ; departement 059.",
+    "reference_geo": null
+   }
+  },
+  {
+   "id": "F-R06",
+   "famille": "recherche",
+   "source": "gate C C06 (banc V-INF-12)",
+   "domaine": "informatique",
+   "tours": [
+    "Quelles formations en informatique existent en Martinique apres le bac ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:35520",
+     "psup:36110",
+     "psup:35928",
+     "psup:11796",
+     "psup:11820",
+     "psup:11801",
+     "psup:11808"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 hors apprentissage ; BUT Informatique, licence Informatique (Licence ou Licence_Las), BTS SIO, BTS CIEL (options A et B) ; departement 972.",
+    "reference_geo": null
+   }
+  },
+  {
+   "id": "F-R07",
+   "famille": "recherche",
+   "source": "gate C C07 (banc V-INF-14)",
+   "domaine": "informatique",
+   "tours": [
+    "Je suis en L3 MIASHS a Toulouse : quels masters MIAGE en Occitanie, lesquels sont en alternance, avec leur capacite et leur nombre de candidats ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "mm:1602749UXARB",
+     "mm:1602749UAIG8",
+     "mm:1602749UV67P",
+     "mm:1602749UI1XD"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "MonMaster session 2025 ; mention contenant MIAGE ; region academique Occitanie ; valeurs alternance (0/1), col (capacite), n_can_pp (candidats en phase principale). Au 23/09, aucun n'est marque en alternance : la base doit le dire, pas l'inventer.",
+    "reference_geo": null
+   }
+  },
+  {
+   "id": "F-R08",
+   "famille": "recherche",
+   "source": "gate C C08 (banc V-SAN-01)",
+   "domaine": "sante",
+   "tours": [
+    "PASS ou LAS a Rennes : quelles formations existent, avec leurs places et leur taux d'acces ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:27611",
+     "psup:35500",
+     "psup:27343",
+     "psup:27361",
+     "psup:27362",
+     "psup:29329",
+     "psup:35847",
+     "psup:27346",
+     "psup:28719",
+     "psup:32647",
+     "psup:26778",
+     "psup:27363",
+     "psup:28355",
+     "psup:35809",
+     "psup:43495",
+     "psup:29014"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 ; fili PASS ou Licence_Las ; ville_etab = Rennes ; valeurs capa_fin et taux_acces_ens.",
+    "reference_geo": null
+   }
+  },
+  {
+   "id": "F-R09",
+   "famille": "recherche",
+   "source": "gate C C09 (banc V-SAN-03)",
+   "domaine": "sante",
+   "tours": [
+    "Je suis en ST2S : quels IFSI a moins de 60 km de Limoges, du plus accessible au moins accessible ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:23157",
+     "psup:38428",
+     "psup:34537",
+     "psup:23156"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 ; fili IFSI ; distance <= 60 km du centre de Limoges (INSEE 87085) ; tri par taux_acces_ens decroissant.",
+    "reference_geo": {
+     "commune": "Limoges",
+     "code_insee": "87085",
+     "rayon_km": 60
+    }
+   }
+  },
+  {
+   "id": "F-R10",
+   "famille": "recherche",
+   "source": "gate C C10 (banc V-SAN-13)",
+   "domaine": "sante",
+   "tours": [
+    "Bac pro ASSP : quels sont les 3 IFSI du Nord qui admettent la plus grande part de bacheliers professionnels parmi leurs admis neo-bacheliers ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:23133",
+     "psup:23130",
+     "psup:23137"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 ; fili IFSI ; departement 59 ; tri par pct_bp (% d'admis neo bacheliers professionnels, denominateur acc_neobac, verifie sur 7 768 lignes sur 7 768) decroissant ; 3 premiers.",
+    "reference_geo": null
+   }
+  },
+  {
+   "id": "F-R12",
+   "famille": "recherche",
+   "source": "gate C C12 (banc V-SAN-07)",
+   "domaine": "sante",
+   "tours": [
+    "Manipulateur radio : quels DE et DTS imagerie a moins de 50 km de Lyon, avec leur taux d'acces ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:8225",
+     "psup:19420",
+     "psup_app:46954"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025, jeu principal ET jeu apprentissage (la question ne l'exclut pas ; ajoute le 23/09 sur remarque de Claudette) ; D.E manipulateur ERM ou DTS Imagerie medicale (suffixe en apprentissage retire) ; distance <= 50 km du centre de Lyon (INSEE 69123). Le taux d'acces n'est pas publie en apprentissage.",
+    "reference_geo": {
+     "commune": "Lyon",
+     "code_insee": "69123",
+     "rayon_km": 50
+    }
+   }
+  },
+  {
+   "id": "F-R16",
+   "famille": "recherche",
+   "source": "gate C C16 (banc V-MAT-02)",
+   "domaine": "maths",
+   "tours": [
+    "Quelles licences de mathematiques a moins de 30 km de Rennes ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:19164",
+     "psup:28719",
+     "psup:19305"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 ; fili Licence ou Licence_Las ; fil_lib_voe_acc = Mathematiques ; distance <= 30 km du centre de Rennes.",
+    "reference_geo": {
+     "commune": "Rennes",
+     "code_insee": "35238",
+     "rayon_km": 30
+    }
+   }
+  },
+  {
+   "id": "F-R18",
+   "famille": "recherche",
+   "source": "gate C C18 (banc V-MAT-05)",
+   "domaine": "maths",
+   "tours": [
+    "12 de moyenne : quelles prepas MPSI, MP2I ou PCSI a moins de 50 km de Valenciennes ont un taux d'acces d'au moins 50 % ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:6842",
+     "psup:6900",
+     "psup:6735",
+     "psup:6988",
+     "psup:39819",
+     "psup:43006"
+    ],
+    "mode": "exact",
+    "regle": "toutes les fiches attendues figurent dans ce que les outils ont rendu ; la réponse ne cite aucune formation absente des résultats d'outils",
+    "filtres_reference": "Parcoursup 2025 ; fili CPGE ; fil_lib_voe_acc dans MPSI, MP2I, PCSI ; taux_acces_ens >= 50 ; distance <= 50 km du centre de Valenciennes (INSEE 59606).",
+    "reference_geo": {
+     "commune": "Valenciennes",
+     "code_insee": "59606",
+     "rayon_km": 50
+    }
+   }
+  },
+  {
+   "id": "F-NINF-01",
+   "famille": "nom",
+   "source": "banc V-INF-01",
+   "domaine": "informatique",
+   "tours": [
+    "salut, je suis en terminale spé maths NSI a Clermont, j'ai 15 de moyenne. J'hésite entre le BUT info a Aubière et la licence maths-info de l'UCA, c'est quoi le plus dur a avoir et le mieux pour aller en master après ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:47147",
+     "psup:47455",
+     "psup:7596"
+    ],
+    "libelles": {
+     "psup:7596": "BUT - Informatique, I.U.T Clermont Auvergne - site d'Aubière (Aubière)",
+     "psup:47455": "Licence - Portail Mathématiques - Informatique-Mathématiques, Université Clermont Auvergne (Clermont-Ferrand)",
+     "psup:47147": "Double licence - Mathématiques / Informatique -, Université Clermont Auvergne (Clermont-Ferrand)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Presenter le taux d'acces comme la probabilite individuelle d'etre admis.",
+     "Affirmer que le BUT ferme l'acces au master, ou parler de DUT (remplace par le BUT depuis 2021).",
+     "Confondre le portail maths-info et la double licence maths/info."
+    ]
+   }
+  },
+  {
+   "id": "F-NINF-07",
+   "famille": "nom",
+   "source": "banc V-INF-07",
+   "domaine": "informatique",
+   "tours": [
+    "Hello, terminale a Nantes, spé maths + NSI, 17 de moyenne. J'hésite entre MP2I a Clemenceau, la licence info a Nantes et le BUT info. Je veux bosser dans l'IA plus tard, c'est quoi le mieux ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:32042",
+     "psup:32116",
+     "psup:39126",
+     "psup:5482"
+    ],
+    "libelles": {
+     "psup:32116": "CPGE - MP2I, Lycée général Clemenceau (Nantes)",
+     "psup:32042": "Licence - Informatique, Nantes Université (Nantes)",
+     "psup:39126": "Licence - Informatique - Parcours Info - Maths, Nantes Université (Nantes)",
+     "psup:5482": "BUT - Informatique, I.U.T. Nantes (Carquefou)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Confondre MP2I et MPSI.",
+     "Presenter la part d'admis avec mention Tres bien comme une condition d'admission.",
+     "Affirmer qu'une licence ne permet pas de travailler dans l'IA."
+    ]
+   }
+  },
+  {
+   "id": "F-NINF-13",
+   "famille": "nom",
+   "source": "banc V-INF-13",
+   "domaine": "informatique",
+   "tours": [
+    "je suis a Bobigny, je vise le BUT info de Villetaneuse ou Montreuil. mon grand frère l'a eu facile il y a 2 ans, c'est toujours pareil ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:11236",
+     "psup:11349"
+    ],
+    "libelles": {
+     "psup:11236": "BUT - Informatique, I.U.T de Villetaneuse - Université Sorbonne Paris Nord (Villetaneuse)",
+     "psup:11349": "BUT - Informatique, I.U.T. de Montreuil (Montreuil)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Presenter le taux 2025 comme celui de l'annee en cours.",
+     "Ignorer la tendance 2023-2025 alors qu'elle repond directement a la question."
+    ]
+   }
+  },
+  {
+   "id": "F-NINF-15",
+   "famille": "nom",
+   "source": "banc V-INF-15",
+   "domaine": "informatique",
+   "tours": [
+    "Terminale a Montpellier, 16 de moyenne, maths expertes. Double licence maths-info, licence info classique ou BUT ? je veux garder la porte ouverte pour une école d'ingé"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:31257",
+     "psup:31726",
+     "psup:4524"
+    ],
+    "libelles": {
+     "psup:31726": "Double licence - Mathématiques / Informatique - Licence -  Double licence Mathématiques - Informatique, Université de Montpellier (Montpellier)",
+     "psup:31257": "Licence - Informatique - Parcours Licence - Portail Informatique, Université de Montpellier (Montpellier)",
+     "psup:4524": "BUT - Informatique, I.U.T de Montpellier-Sète - site de Montpellier - campus Occitanie (Montpellier)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Inventer des taux d'integration en ecole d'ingenieurs par formation.",
+     "Affirmer que seule la prepa mene en ecole d'ingenieurs."
+    ]
+   }
+  },
+  {
+   "id": "F-NSAN-10",
+   "famille": "nom",
+   "source": "banc V-SAN-10",
+   "domaine": "sante",
+   "tours": [
+    "Bonjour, ma fille est en terminale a Grenoble et veut faire médecine. Le PASS de Grenoble prend beaucoup de monde apparemment, c'est un piège ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:30790",
+     "psup:30911",
+     "psup:31941"
+    ],
+    "libelles": {
+     "psup:30790": "Licence - Parcours d'Accès Spécifique Santé (PASS), Université Grenoble Alpes (Saint-Martin-d'Hères)",
+     "psup:30911": "Licence - Sciences pour la santé - Biotechnologies pour la santé -  Accès Santé, Université Grenoble Alpes (Saint-Martin-d'Hères)",
+     "psup:31941": "Licence - Portail Informatique, Mathématiques et Application (IMA), Université Grenoble Alpes (Saint-Martin-d'Hères)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Confondre l'acces au PASS et l'acces en medecine.",
+     "Parler de redoublement de la premiere annee comme en PACES."
+    ]
+   }
+  },
+  {
+   "id": "F-NMAT-01",
+   "famille": "nom",
+   "source": "banc V-MAT-01",
+   "domaine": "maths",
+   "tours": [
+    "je suis au lycée a Lyon, 17 de moyenne spé maths physique + maths expertes. MPSI ou MP2I au Parc ? j'aime bien l'info mais la physique aussi"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:31680",
+     "psup:39554",
+     "psup:8182",
+     "psup:8550"
+    ],
+    "libelles": {
+     "psup:8182": "CPGE - MPSI, Lycée du Parc (Lyon 6e  Arrondissement)",
+     "psup:31680": "CPGE - MP2I, Lycée du Parc (Lyon 6e  Arrondissement)",
+     "psup:8550": "CPGE - MPSI, Lycée La Martiniere Monplaisir (Lyon 8e  Arrondissement)",
+     "psup:39554": "CPGE - MP2I, Lycée La Martiniere Monplaisir (Lyon 8e  Arrondissement)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Affirmer que la MP2I ferme les ecoles generalistes.",
+     "Confondre MP2I et MPSI option info."
+    ]
+   }
+  },
+  {
+   "id": "F-NMAT-04",
+   "famille": "nom",
+   "source": "banc V-MAT-04",
+   "domaine": "maths",
+   "tours": [
+    "Terminale a Paris, bon dossier (16). Double licence maths-info a Paris Cité ou le portail maths-info, c'est quoi la différence et c'est lequel le plus dur a avoir ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:47242",
+     "psup:47258"
+    ],
+    "libelles": {
+     "psup:47242": "Double licence - Informatique / Mathématiques - Mathématiques et informatique fondamentales - Campus Grands Moulins, Université Paris Cité (Paris  6e  Arrondissement)",
+     "psup:47258": "Licence - Portail Mathématiques - Mathématiques et Informatique - Campus Saint-Germain-des-Prés, Université Paris Cité (Paris  6e  Arrondissement)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Affirmer que la double licence est beaucoup plus selective alors que les taux 2025 sont proches.",
+     "Confondre Universite Paris Cite et Sorbonne Universite."
+    ]
+   }
+  },
+  {
+   "id": "F-NINF-21",
+   "famille": "nom",
+   "source": "banc V-INF-21",
+   "domaine": "informatique",
+   "tours": [
+    "sur parcoursup la licence informatique maths appli (IMA) accès santé de Grenoble elle a 10 places et genre 400 voeux mais 85 % de taux d'accès ?? c'est faux non, 10 sur 400 ça fait 2 %"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:31941"
+    ],
+    "libelles": {
+     "psup:31941": "Licence - Portail Informatique, Mathématiques et Application (IMA), Université Grenoble Alpes (Saint-Martin-d'Hères)"
+    },
+    "regle": "chaque formation nommée est retrouvée par son identifiant (lue avec lire_fiche) avant qu'un chiffre la concernant soit cité",
+    "pieges": [
+     "Confirmer que le chiffre est faux ou calculer places / voeux.",
+     "Presenter le taux d'acces comme la probabilite individuelle d'etre admis."
+    ]
+   }
+  },
+  {
+   "id": "F-QINF-17",
+   "famille": "clarification",
+   "source": "banc V-INF-17",
+   "domaine": "informatique",
+   "tours": [
+    "Je suis en terminale je fais des maths et je veux faire de l'info après, je fais comment ?"
+   ],
+   "attendu": {
+    "comportement": "clarifier",
+    "orientation_initiale": [
+     "Donner d'abord la carte des voies : BTS SIO, BUT Informatique, licence Informatique ou maths-info, prepa MP2I/MPSI, ecoles d'ingenieurs post-bac.",
+     "Dire en une phrase ce qui les distingue (duree, selectivite, part de pratique) avant de poser 1 ou 2 questions."
+    ],
+    "clarification_attendue": [
+     "Quelles specialites (NSI ou non) et quel niveau en maths ?",
+     "Plutot etudes courtes et pro (BTS, BUT) ou longues (licence, prepa, ecole), et dans quelle ville ou region ?"
+    ],
+    "regle": "donne une première orientation utile, pose au plus 2 questions ciblées, ne cite aucun chiffre qui ne vient pas d'un outil"
+   }
+  },
+  {
+   "id": "F-QINF-18",
+   "famille": "clarification",
+   "source": "banc V-INF-18",
+   "domaine": "informatique",
+   "tours": [
+    "Bonjour, mon fils passe son temps sur l'ordinateur et dit qu'il veut travailler dans l'informatique. Quelles études après le bac ?"
+   ],
+   "attendu": {
+    "comportement": "clarifier",
+    "orientation_initiale": [
+     "Presenter les grandes familles de formations (BTS SIO ou CIEL, BUT Informatique, licence, prepa, ecoles) et le fait qu'elles existent pour tous les types de bac.",
+     "Signaler que passer du temps sur l'ordinateur ne suffit pas : programmer ou bricoler des projets est un bon test de motivation."
+    ],
+    "clarification_attendue": [
+     "Quel bac et quelles specialites prepare-t-il, avec quel niveau ?",
+     "Qu'est-ce qui l'attire (programmer, reseaux, cybersecurite, jeux video) ?"
+    ],
+    "regle": "donne une première orientation utile, pose au plus 2 questions ciblées, ne cite aucun chiffre qui ne vient pas d'un outil"
+   }
+  },
+  {
+   "id": "F-QSAN-18",
+   "famille": "clarification",
+   "source": "banc V-SAN-18",
+   "domaine": "sante",
+   "tours": [
+    "comment on devient médecin ?"
+   ],
+   "attendu": {
+    "comportement": "clarifier",
+    "orientation_initiale": [
+     "Expliquer le parcours : PASS ou LAS en premiere annee, admission en 2e annee de medecine sur dossier et epreuves, deux chances maximum, puis 9 a 12 ans d'etudes selon la specialite."
+    ],
+    "clarification_attendue": [
+     "En quelle classe es-tu, avec quelles specialites ?",
+     "Dans quelle academie ou ville voudrais-tu etudier ?"
+    ],
+    "regle": "donne une première orientation utile, pose au plus 2 questions ciblées, ne cite aucun chiffre qui ne vient pas d'un outil"
+   }
+  },
+  {
+   "id": "F-QMAT-11",
+   "famille": "clarification",
+   "source": "banc V-MAT-11",
+   "domaine": "maths",
+   "tours": [
+    "j'adore les maths mais je sais pas du tout quoi faire après le bac"
+   ],
+   "attendu": {
+    "comportement": "clarifier",
+    "orientation_initiale": [
+     "Donner les portes d'entree : prepa MPSI/MP2I, licence de maths ou maths-info, double licences, MIASHS, ecoles d'ingenieurs post-bac, et les metiers (ingenieur, data, actuariat, enseignement, recherche)."
+    ],
+    "clarification_attendue": [
+     "Qu'est-ce que tu aimes a cote des maths (info, physique, eco, enseigner) ?",
+     "Tu es plutot pret a un rythme intensif (prepa) ou tu preferes l'universite ?"
+    ],
+    "regle": "donne une première orientation utile, pose au plus 2 questions ciblées, ne cite aucun chiffre qui ne vient pas d'un outil"
+   }
+  },
+  {
+   "id": "F-QMAT-12",
+   "famille": "clarification",
+   "source": "banc V-MAT-12",
+   "domaine": "maths",
+   "tours": [
+    "Ma fille est très bonne en maths, quelles études lui conseiller ?"
+   ],
+   "attendu": {
+    "comportement": "clarifier",
+    "orientation_initiale": [
+     "Presenter prepa scientifique, licences de maths (dont parcours renforces et doubles licences), ecoles d'ingenieurs post-bac et MIASHS, avec leur rythme respectif."
+    ],
+    "clarification_attendue": [
+     "Quelles specialites suit-elle et quels metiers l'interessent deja ?",
+     "Envisage-t-elle de quitter votre ville ?"
+    ],
+    "regle": "donne une première orientation utile, pose au plus 2 questions ciblées, ne cite aucun chiffre qui ne vient pas d'un outil"
+   }
+  },
+  {
+   "id": "F-MINF-19",
+   "famille": "multi-tour",
+   "source": "banc V-INF-19",
+   "domaine": "informatique",
+   "tours": [
+    "je veux faire de l'info mais je sais pas trop quoi ni ou",
+    "je suis à Nantes, spé maths NSI, plutôt pas loin de chez moi, et j'aimerais bien l'alternance"
+   ],
+   "attendu": {
+    "fiches_tour_2": [
+     "psup:32042",
+     "psup:5469",
+     "psup:5482",
+     "psup:5605"
+    ],
+    "libelles": {
+     "psup:5482": "BUT - Informatique, I.U.T. Nantes (Carquefou)",
+     "psup:32042": "Licence - Informatique, Nantes Université (Nantes)",
+     "psup:5469": "BTS - Services - Services informatiques aux organisations, Lycée général et technologique La Colinière (Nantes)",
+     "psup:5605": "BTS - Services - Services informatiques aux organisations, Lycée général et technologique Carcouët (Nantes)"
+    },
+    "regle": "au message 2, le profil retient les infos des deux messages (ville, spécialités, contraintes) et les outils rendent les fiches attendues"
+   }
+  },
+  {
+   "id": "F-MMAT-13",
+   "famille": "multi-tour",
+   "source": "banc V-MAT-13",
+   "domaine": "maths",
+   "tours": [
+    "je veux faire des maths après le bac, prépa ou fac ?",
+    "je suis a Strasbourg, 14 de moyenne, maths expertes, et je veux pas partir loin"
+   ],
+   "attendu": {
+    "fiches_tour_2": [
+     "psup:31686",
+     "psup:39956",
+     "psup:7916",
+     "psup:8061"
+    ],
+    "libelles": {
+     "psup:7916": "CPGE - MPSI, Lycée Kléber (Strasbourg)",
+     "psup:31686": "CPGE - MP2I, Lycée Kléber (Strasbourg)",
+     "psup:39956": "Licence - Portail Mathématiques - Mathématiques et informatique, Université de Strasbourg (Strasbourg)",
+     "psup:8061": "Licence - Mathématiques - Parcours Mathématiques et physique approfondies - Magistère (MPA-Mag), Université de Strasbourg (Strasbourg)"
+    },
+    "regle": "au message 2, le profil retient les infos des deux messages (ville, spécialités, contraintes) et les outils rendent les fiches attendues"
+   }
+  },
+  {
+   "id": "F-HSAN-09",
+   "famille": "honnetete",
+   "source": "gate C C14, banc V-SAN-09",
+   "domaine": "sante",
+   "tours": [
+    "Je suis a Poitiers, je veux faire médecine mais j'adore les maths. Je fais PASS ou la LAS maths ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:28736",
+     "psup:28739"
+    ],
+    "libelles": {
+     "psup:28736": "Licence - Mathématiques -  Accès Santé, Université de Poitiers (Poitiers)",
+     "psup:28739": "Licence - Sciences de la vie -  Accès Santé, Université de Poitiers (Poitiers)"
+    },
+    "regle": "il n'y a pas de PASS à Poitiers en 2025 : le dire, et proposer les LAS de Poitiers (fiches attendues)",
+    "gate_c_mode": "vide"
+   }
+  },
+  {
+   "id": "F-HSAN-02",
+   "famille": "honnetete",
+   "source": "gate C C15, banc V-SAN-02",
+   "domaine": "sante",
+   "tours": [
+    "c'est quoi le taux d'accès du PASS à Lille ? j'ai vu 6% sur un site ça m'a fait peur"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:28998",
+     "psup:36433"
+    ],
+    "libelles": {
+     "psup:36433": "Licence - Parcours d'Accès Spécifique Santé (PASS), Université de Lille (Lille)",
+     "psup:28998": "Licence - Portail Sciences pour la santé, Université de Lille (Lille)"
+    },
+    "regle": "aucun taux de passage propre au PASS de Lille n'est publié : donner le chiffre NATIONAL en le disant national, et expliquer que le 6 % vu en ligne n'est pas un taux de réussite",
+    "gate_c_mode": "exact"
+   }
+  },
+  {
+   "id": "F-HSAN-21",
+   "famille": "honnetete",
+   "source": "banc V-SAN-21",
+   "domaine": "sante",
+   "tours": [
+    "le PASS de Limoges option physique génie civil : 26 places, plus de 1000 voeux et 77 % de taux d'accès. ça veut dire que j'ai 77 % de chances ?"
+   ],
+   "attendu": {
+    "fiches": [
+     "psup:31766"
+    ],
+    "libelles": {
+     "psup:31766": "Licence - Parcours d'Accès Spécifique Santé (PASS), Université de Limoges (Limoges)"
+    },
+    "regle": "le taux d'accès n'est pas une probabilité d'admission : expliquer la définition officielle (rang du dernier appelé), sans inventer de chances",
+    "gate_c_mode": null
+   }
+  }
+ ]
+}
