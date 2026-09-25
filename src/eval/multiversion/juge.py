@@ -7,7 +7,9 @@ Même juge, même rubrique et même `build_prompt` que D et E ; la liste des tit
 yeux » n'est pas passée (elle serait fausse pour une version qui n'a pas vu ces fiches). Fiches de référence :
 - vertical : les 8 fiches de `results/banc_e/exposition.json` en carte B, identiques pour toutes les versions d'une
   conversation, précédées de la phrase du protocole v0.1 (« l'assistant ne les a pas forcément eues ») ;
-- lot0 : aucune fiche.
+- lot0 : aucune fiche ;
+- gatef (étape 3) : les fiches attendues de la question (`attendu.fiches`, ou `fiches_tour_2`), en carte B de la base
+  concordante, avec la même phrase ; aucune pour la famille clarification.
 Aveugle : tous les runs du tag mélangés (graine dans seed.txt), identifiants opaques ; les marqueurs de provenance
 des liens (`utm_source=chatgpt.com`) sont retirés de la copie lue par le juge, sinon ils nomment la version.
 Un seul passage, sans rejugement (go de Matteo du 25/09).
@@ -31,7 +33,7 @@ PHRASE_JUGE = ("Les fiches ci-dessous sont des données officielles de référen
 # Rejugement du 25/09 (contrat de concordance §8) : consigne ajoutée mot pour mot, fiches de la base concordante.
 CONSIGNE_NOMMAGE = ("Un chiffre officiel correctement nommé n'est pas une erreur ; un chiffre d'un autre indicateur "
                     "présenté sous un nom qui ne lui correspond pas en est une.")
-TAILLE_LOT = {"vertical": 6, "lot0": 12}
+TAILLE_LOT = {"vertical": 6, "lot0": 12, "gatef": 6}
 _PROVENANCE = re.compile(r"[?&]utm_source=[^)\s\]]+")
 
 
@@ -58,6 +60,18 @@ def _cartes_vertical() -> dict[str, list[str]]:
     return {cid: [f.carte_b(i) for i in c["exposees"]] for cid, c in expo.items()}
 
 
+def _cartes_gatef() -> dict[str, list[str]]:
+    from src.base_c.outils import Base
+    from src.eval.format_d import Formats
+    from src.eval.grille_d import BASE
+    f = Formats(Base.ouvrir(BASE), [])
+    out = {}
+    for q in json.loads(BANCS["gatef"].read_text(encoding="utf-8"))["questions"]:
+        ids = q["attendu"].get("fiches") or q["attendu"].get("fiches_tour_2") or []
+        out[q["id"]] = [f.carte_b(i) for i in ids]
+    return out
+
+
 def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",), dossier_juge: str = "judge",
              consigne: bool = False) -> dict:
     """`bancs` : bancs jugés (décision du 25/09 : vertical seulement ; lot0 plus tard, sur les réponses stockées)."""
@@ -65,8 +79,9 @@ def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",), doss
     juge = dossier / dossier_juge
     if (juge / "label_mapping.json").exists():
         raise SystemExit(f"{juge}/label_mapping.json existe déjà : un seul passage, pas de nouvelle préparation")
-    cartes = _cartes_vertical()
-    items = {b: {i["id"]: i for i in json.loads(p.read_text(encoding="utf-8"))["items"]} for b, p in BANCS.items()}
+    from src.eval.multiversion.lanceur import charger_banc
+    cartes = {"vertical": _cartes_vertical(), "gatef": _cartes_gatef() if "gatef" in bancs else {}}
+    items = {b: {i["id"]: i for i in charger_banc(b)[0]} for b in BANCS}
     taches = {b: [] for b in BANCS}
     mapping, erreurs = {}, 0
     for f in sorted(dossier.glob("*__*.jsonl")):
@@ -80,8 +95,8 @@ def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",), doss
             oid = jd.opaque(graine, f"{version}|{banc}", rec["id"], rec["turn"])
             mapping[oid] = {"version": version, "banc": banc, "id": rec["id"], "turn": rec["turn"]}
             item = items[banc][rec["id"]]
-            taches[banc].append({"oid": oid, "prompt": prompt_juge(
-                rec, item, cartes[rec["id"]] if banc == "vertical" else None, consigne)})
+            fiches = cartes[banc].get(rec["id"]) if banc in cartes else None
+            taches[banc].append({"oid": oid, "prompt": prompt_juge(rec, item, fiches or None, consigne)})
     (juge / "lots").mkdir(parents=True, exist_ok=True)
     n_lots = 0
     for banc, ts in taches.items():
