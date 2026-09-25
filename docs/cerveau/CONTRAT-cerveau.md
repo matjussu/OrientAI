@@ -1,6 +1,6 @@
 # Contrat du cerveau : le pipeline v2 d'OrientAI
 
-Version v1.1, 24/09/2026, Jarvis (v1.1 : décisions de l'après-midi, feuille de route, méthode, où vit le plan). **Validé par Matteo le 24/09 à 17h12 (Telegram 10703) : les 7 choix de la section 11 suivent la recommandation.** Écrit AVANT tout code (Telegram 10693 : « go commence l'étape 2 »). Modèle retenu entre-temps au banc E : GLM 5.3 avec la carte courte + l'outil `lire_fiche` (PR #186, 7b6c4f9). Périmètre : Informatique, Santé, Maths (démo investisseurs). Rien de ce contrat ne touche la prod actuelle.
+Version v1.2, 25/09/2026, Jarvis (v1.2 : référence de mesure = ChatGPT avec recherche web, figée ; objectif recadré par Matteo ; chiffres de la base alignés sur la page publique ; étapes 0 et 1 faites ; ancrages par nom plutôt que par numéro de ligne. v1.1 : décisions de l'après-midi du 24/09, feuille de route, méthode, où vit le plan). **Validé par Matteo le 24/09 à 17h12 (Telegram 10703) : les 7 choix de la section 11 suivent la recommandation.** Écrit AVANT tout code (Telegram 10693 : « go commence l'étape 2 »). Modèle retenu entre-temps au banc E : GLM 5.3 avec la carte courte + l'outil `lire_fiche` (PR #186, 7b6c4f9). Périmètre : Informatique, Santé, Maths (démo investisseurs). Rien de ce contrat ne touche la prod actuelle.
 
 ## 0. En bref (ce que Matteo valide)
 
@@ -16,9 +16,9 @@ Version v1.1, 24/09/2026, Jarvis (v1.1 : décisions de l'après-midi, feuille de
 
 | Constat | Mesure | Trace |
 |---|---|---|
-| La recherche actuelle rate la bonne fiche | bonne fiche dans les 10 premières : 61,6 % (au service) | `results/jarvis_analyse_2026-09-05/REPRISE.md` l.104, recall@10 serving 0,616 (86 questions, borne basse) |
+| La recherche actuelle rate la bonne fiche | bonne fiche dans les 10 premières : 61,6 % (au service) | `results/jarvis_analyse_2026-09-05/REPRISE.md`, section lot 0 (recall@10 serving 0,616) (86 questions, borne basse) |
 | Le classement est décidé par des bonus fixes, pas par la question | écart de score 3,2 % entre rang 1 et rang 100 ; 0 des 5 premières fiches par sens ne survit au tri, en médiane | RAPPORT 05/09 §4.2 |
-| Le modèle ne voit que 5 fiches sur 10 à 12 | `V4_MAX_SOURCES = 5` | `src/rag/generator.py:36` |
+| Le modèle ne voit que 5 fiches sur 10 à 12 | `V4_MAX_SOURCES = 5` | `src/rag/generator.py`, constante `V4_MAX_SOURCES` |
 | Le prompt strict détruit la réponse | 90 mots en médiane, 33 % de refus, note 1,99/5 | banc lot 0 du 23/09, onglet État des lieux |
 | Avec les BONNES fiches, le modèle cite 81 % des chiffres attendus | étape D, exposition gelée (borne haute) | RAPPORT D |
 | Des requêtes structurées rendent exactement les bonnes fiches | gate C : 20/20, 69/69 chiffres | PR #183 |
@@ -49,9 +49,9 @@ Chaque outil a des paramètres typés et bornés. Une valeur hors liste renvoie 
 
 | Outil | Existe ? | Ce qu'il fait | Paramètres principaux |
 |---|---|---|---|
-| `chercher_formations` | oui, `src/base_c/outils.py:276` | formations post-bac (Parcoursup, apprentissage) qui passent tous les filtres | `types` (pass, las, licence, but, bts, cpge, cupge, ifsi, diplome_sante, ecole_ingenieur, titre_pro), `filieres`, `intitule_contient`, `apprentissage`, `statut`, `communes` / `departements` / `regions`, `pres_de` {commune, rayon_km ≤ 300}, `taux_acces_min` (≥) / `taux_acces_max` (<), `places_min`, `part_bac_techno_min`, `part_bac_pro_min`, `session` (2023 à 2025), `tri`, `limite` ≤ 50 |
-| `chercher_masters` | oui, `outils.py:301` | masters MonMaster 2025 (informatique et maths) | `mention_contient`, `secteurs`, `regions_academiques`, `departements`, `pres_de`, `alternance`, `capacite_min`, `tri`, `limite` |
-| `lire_fiche` | oui, `outils.py:320` | tout ce que la base sait d'une formation : chaque chiffre avec sa source, son année, sa portée (formation, université, national) et la raison d'un « non disponible » ; insertion ; liens d'alternance | `id` |
+| `chercher_formations` | oui, `src/base_c/outils.py`, fonction `chercher_formations` | formations post-bac (Parcoursup, apprentissage) qui passent tous les filtres | `types` (pass, las, licence, but, bts, cpge, cupge, ifsi, diplome_sante, ecole_ingenieur, titre_pro), `filieres`, `intitule_contient`, `apprentissage`, `statut`, `communes` / `departements` / `regions`, `pres_de` {commune, rayon_km ≤ 300}, `taux_acces_min` (≥) / `taux_acces_max` (<), `places_min`, `part_bac_techno_min`, `part_bac_pro_min`, `session` (2023 à 2025), `tri`, `limite` ≤ 50 |
+| `chercher_masters` | oui, `outils.py`, fonction `chercher_masters` | masters MonMaster 2025 (informatique et maths) | `mention_contient`, `secteurs`, `regions_academiques`, `departements`, `pres_de`, `alternance`, `capacite_min`, `tri`, `limite` |
+| `lire_fiche` | oui, `outils.py`, fonction `lire_fiche` | les chiffres de la fiche marqués « montré au modèle » (table `champ`, colonne `montre_au_modele`, depuis #189 : un seul chiffre par notion, celui de la page publique quand elle l'affiche), chacun avec sa source, son année, sa portée et la raison d'un « non disponible » ; insertion ; liens d'alternance ; formation absente de la session en cours signalée. Médiane 41 chiffres par fiche Parcoursup (#189) : à réduire à l'essentiel par défaut à l'étape 3 | `id` |
 | `trouver_commune` | oui, `outils.py:57` | résout un nom de commune (homonymes : plusieurs candidats, le modèle choisit ou demande) | `nom`, `departement` |
 | `lister_valeurs` | oui, `outils.py:67` | valeurs admises d'un champ (filières, régions…), avec leurs effectifs | `champ`, `types` |
 | `trouver_formation` | **à créer** | retrouve une formation **nommée** par l'élève (« le BUT info de Lens », « MP2I à Clemenceau », « l'IUT Lyon 1 ») : recherche par mots-clés normalisés sur intitulé + établissement + commune, sigles dépliés (IUT, UCA, UPS, INSA…), « Lyon1 » lu « Lyon 1 » ; rend au plus 10 candidats avec leur identifiant | `texte`, `commune` (facultatif), `types` (facultatif) |
@@ -118,8 +118,8 @@ Mesurées sur le banc vertical (57 conversations) et le banc tous domaines (67 t
 | Refus | < 10 % | prod 33 % |
 | Chiffres attendus cités justes | ≥ 85 % | 81 % en D avec les fiches données à la main |
 | Chiffres affichés adossés | 100 % (vérificateur) | prod 58 % (banc lot 0) |
-| Note moyenne du juge | la plus haute possible ; repère à battre : GPT-5.5 seul, 4,28 | prod 1,99 |
-| Latence p90 | < 15 s | prod 6,2 s (sans outils) ; spike agent 8,5 s médiane (Mistral) |
+| Note moyenne du juge | la plus haute possible ; repère : ChatGPT avec recherche web 4,67 (25 conversations, juge corrigé, 25/09) | prod servie 2,25 sur les mêmes 25 (25/09) |
+| Latence p90 | < 15 s | prod servie 9,3 s (banc vertical, 25/09 ; 6,8 s au banc lot 0 du 23/09, formule du rang corrigée) ; ChatGPT avec recherche 36,9 s ; spike agent 8,5 s médiane (Mistral) |
 
 Gate F (section 9) : couverture des fiches attendues ≥ 90 % sur les familles recherche, nom, multi-tour et honnêteté ; 0 formation citée hors des résultats d'outils ; 100 % des questions de clarification avec orientation d'abord et au plus 2 questions.
 
@@ -161,7 +161,9 @@ Mesures par question : fiches attendues retrouvées ; formations citées hors r�
 Décidé le 24/09 :
 - **Modèle** : GLM 5.3 (`zai-glm-5-3`, API Mistral, point d'accès Europe `api.eu.mistral.ai`), avec la carte courte + l'outil `lire_fiche` (format C). Banc E : 12,7 % de réponses avec erreur de fait contre 75,9 % pour Medium, juge qui voit les fiches (PR #186, 7b6c4f9, `results/banc_e/RAPPORT.md`). Borne haute : les fiches étaient fournies.
 - **Pas de framework d'agents** (Matteo 10708) : la boucle est écrite par nous (environ 150 lignes, estimation), pour garder chaque étape visible. **Pydantic** (déjà dans le dépôt, 2.12.5) décrit chaque outil et le profil une seule fois : description envoyée au modèle, validation de ce qu'il renvoie, traces. **Langfuse** à la mise en prod seulement (shim `src/observability` jamais branché). **DSPy** après un v2 stable.
-- **Référence de mesure** (Matteo 10707) : la cible est « ChatGPT seul » (GPT-5.5 sans fiches) ; la prod n'est jouée qu'une fois, comme photo « avant » et contrôle de non-régression. Le 4,28 de GPT-5.5 vient du banc du 05/09 (60 conversations, juge sans fiches) : il doit être rejoué sur nos bancs avec le juge actuel (coût OpenAI à chiffrer avant).
+- **Référence de mesure** (Matteo 10728-10736, remplace 10707) : le repère est **ChatGPT avec recherche web** (GPT-5.5 + outil web_search, sans nos fiches, comme un élève dans l'app), joué une fois sur un échantillon figé de 25 conversations du banc vertical (`results/multiversion/echantillon_vertical_25.json`, 34 tours) ; la prod servie (chemin `/ask/stream`) jouée une fois sur les deux bancs. Les deux sont figés (`results/multiversion/2026-09-25_reference/`, MANIFESTE) : chaque version du v2 est jouée avec le même lanceur, les mêmes bancs, le même juge ; si le juge change, on rejuge les réponses stockées sans régénérer.
+- **Objectif recadré** (Matteo, vocal 10734) : ChatGPT avec recherche est un repère, pas une cible à battre ; OrientAI vise une alternative aussi utile, souveraine, et **sans erreur de fait**. Résultat de référence après juge corrigé (25/09, 25 conversations) : ChatGPT 0 % d'erreur de fait [0 ; 10,2], note 4,67, 0 refus ; prod 29,4 % [16,8 ; 46,2], note 2,25, 13 refus sur 34.
+- **Chiffres de la base = page publique** (Matteo 10744-10755, PR #189) : pour chaque chiffre que la page Parcoursup ou MonMaster affiche, la base montre exactement ce chiffre et ce libellé ; l'open data reste la source du reste ; un seul chiffre par notion vu par le modèle ; pas de date à l'écran. Contrôle `src/eval/concordance.py` sur 100 % des formations, à rejouer après chaque reconstruction et avant la démo (nouveau relevé).
 
 Reste ouvert :
 - le texte du prompt de conseiller (étape 4, travaillé avec Matteo) ;
@@ -173,10 +175,10 @@ Reste ouvert :
 
 | Étape | Qui | Livrable | Gate avant la suivante |
 |---|---|---|---|
-| 0 | Claudette | ce contrat et le gate F versionnés dans le dépôt OrientIA (`docs/cerveau/`), REPRISE.md qui pointe dessus | PR docs mergée |
-| 1. Instrument | Claudette | un lanceur unique qui joue une version du pipeline (v2, prod, ChatGPT seul) sur le banc vertical (57 conversations) et le banc lot 0 (67 tours) ; traces au format de l'onglet « État des lieux » ; critère 1 (chiffres justes, `numbers.py`, extracteur corrigé pour les tableaux), juge à l'aveugle qui voit les fiches, coût, latence ; premier run : la prod (une fois) et ChatGPT seul | Jarvis vérifie, Matteo voit les runs dans l'explorateur (sélecteur de version) |
+| 0 (**fait 25/09**, #187) | Claudette | ce contrat et le gate F versionnés dans le dépôt OrientIA (`docs/cerveau/`), REPRISE.md qui pointe dessus | PR docs mergée |
+| 1. Instrument (**fait 25/09**, #188 ; données alignées sur la page publique, #189) | Claudette | un lanceur unique qui joue une version du pipeline (v2, prod, ChatGPT seul) sur le banc vertical (57 conversations) et le banc lot 0 (67 tours) ; traces au format de l'onglet « État des lieux » ; critère 1 (chiffres justes, `numbers.py`, extracteur corrigé pour les tableaux), juge à l'aveugle qui voit les fiches, coût, latence ; premier run : la prod (une fois) et ChatGPT seul | Jarvis vérifie, Matteo voit les runs dans l'explorateur (sélecteur de version) |
 | 2. Contrat | Jarvis | ce document et le gate F | **fait, validé le 24/09** |
-| 3. v2 minimal | Claudette | `src/v2/` : filtre de sécurité repris, boucle GLM 5.3 + outils base C (dont les 3 à créer : `trouver_formation`, `comparer`, `mettre_a_jour_profil`), vérificateur de chiffres, prompt de conseiller v0 simple | gate F (section 9) + bancs, dans l'explorateur |
+| 3. v2 minimal (**prochaine**) | Claudette | `src/v2/` : filtre de sécurité repris, boucle GLM 5.3 + outils base C (dont les 3 à créer : `trouver_formation`, `comparer`, `mettre_a_jour_profil`), vérificateur de chiffres, prompt de conseiller v0 simple | gate F (section 9) + bancs, dans l'explorateur |
 | 4. Réponse | Jarvis + Matteo, puis Claudette | prompt de conseiller travaillé, vérificateur réglé | bancs : planchers de la section 8 |
 | 5. Conversation | Claudette | profil sur plusieurs messages, règle de clarification (section 5) | familles clarification et multi-tour du gate F |
 | 6. Procédures | Jarvis (sources) + Claudette | petit corpus sourcé (calendrier Parcoursup, bourses, réforme santé), `chercher_connaissance` | questions de procédure des bancs |

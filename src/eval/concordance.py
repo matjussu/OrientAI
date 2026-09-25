@@ -30,6 +30,9 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parents[2]
 CACHE = RACINE / "data/raw/pages_publiques"
 MANIFESTE = RACINE / "results/concordance/manifeste_releve.json"
+# Base d'avant la concordance, renommée au merge de #189 (25/09) dans le dépôt principal (fichier ignoré par git,
+# absent des worktrees : d'où le chemin par le dépôt principal, comme avant ce correctif).
+AVANT_FIGE = RACINE.parent / "OrientIA/data/processed/base_etape_c.sqlite.avant-concordance-2026-09-25"
 
 # Doublons qui ne doivent jamais sortir vers le modèle (contrat §2 et §4), écrits ici indépendamment de la table.
 DOUBLONS = {
@@ -232,8 +235,12 @@ def compte_vus(base_chemin: Path, filtre: bool = True) -> dict:
     return out
 
 
-def temoins(base_chemin: Path) -> dict:
-    """Les deux leviers, joués dans des sous-processus : chacun doit faire rougir le contrôle."""
+def temoins(base_chemin: Path, sortie: Path) -> dict:
+    """Les deux leviers, joués dans des sous-processus : chacun doit faire rougir le contrôle.
+
+    Leurs sorties vont sous `<sortie>/temoins/`, jamais sous le dossier par défaut : un run lancé avec
+    `--sortie` ailleurs n'écrit rien dans `results/concordance` (défaut relevé le 25/09 en rejouant sur main).
+    """
     out = {}
     sabotee = base_chemin.with_name(base_chemin.stem + ".sabote-concordance_valeur.sqlite")
     env = {**os.environ, "ORIENTIA_SABOTAGE_C": "concordance_valeur"}
@@ -243,7 +250,7 @@ def temoins(base_chemin: Path) -> dict:
     for nom, base, env_ctrl in (("valeur", sabotee, {}),
                                 ("doublon", base_chemin, {"ORIENTIA_SABOTAGE_CONCORDANCE": "doublon"})):
         r = subprocess.run([sys.executable, "-m", "src.eval.concordance", "--base", str(base), "--sans-temoins",
-                            "--sortie", str(RACINE / "results/concordance/temoins" / nom)],
+                            "--sortie", str(sortie / "temoins" / nom)],
                            cwd=RACINE, env={**os.environ, **env_ctrl}, capture_output=True, text=True)
         out[nom] = {"code_sortie": r.returncode, "rougit": r.returncode == 1}
     return out
@@ -254,6 +261,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--base", type=Path, default=RACINE / "data/processed/base_etape_c.sqlite")
     ap.add_argument("--sortie", type=Path, default=RACINE / "results/concordance")
     ap.add_argument("--sans-temoins", action="store_true")
+    ap.add_argument("--avant", type=Path, default=AVANT_FIGE,
+                    help="base de référence « avant » (défaut : celle d'avant la concordance, figée le 25/09)")
     ap.add_argument("--pages-vides", action="store_true", help="établit la cause des pages vides (réseau, lecture seule)")
     a = ap.parse_args(argv)
     if a.pages_vides:
@@ -261,12 +270,14 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps({k: v for k, v in r.items() if k not in ("codes", "relecture")}, ensure_ascii=False))
         return 0 if r["etabli"] else 1
     r = controler(a.base)
-    avant = RACINE.parent / "OrientIA/data/processed/base_etape_c.sqlite"
+    # « Avant » = la base d'avant la concordance, figée sous son nom daté au merge de #189 (25/09). Lire la base
+    # courante de main donnait l'« après » dès que main était reconstruite (relevé le 25/09 en rejouant sur main).
+    avant = a.avant
     r["chiffres_vus_par_le_modele"] = {"apres": compte_vus(a.base),
                                        "avant": compte_vus(avant, filtre=False) if avant.exists() else None,
                                        "avant_source": str(avant)}
     if not a.sans_temoins:
-        r["temoins"] = temoins(a.base)
+        r["temoins"] = temoins(a.base, a.sortie)
         r["vert"] = r["vert"] and all(t["rougit"] for t in r["temoins"].values())
     a.sortie.mkdir(parents=True, exist_ok=True)
     (a.sortie / "ecarts.json").write_text(json.dumps(r, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
