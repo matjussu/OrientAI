@@ -65,7 +65,8 @@ class _Outil(BaseModel):
 
 
 class PresDe(_Outil):
-    commune: str = Field(max_length=80, description="nom de la commune (ou son code INSEE)")
+    commune: str = Field(max_length=80, description="nom de la commune (ou son code INSEE) ; inutile d'appeler "
+                                                    "trouver_commune avant")
     departement: str | None = Field(None, max_length=3, description="code du département, pour une commune homonyme")
     rayon_km: float = Field(gt=0, le=300)
 
@@ -76,10 +77,13 @@ class Tri(_Outil):
 
 
 class ChercherFormations(_Outil):
-    """Formations post-bac (Parcoursup et apprentissage) qui passent TOUS les filtres. Rend le nombre total, si la
-    liste est tronquée, et combien de formations sont écartées faute de valeur."""
+    """Formations post-bac (Parcoursup et apprentissage) qui passent TOUS les filtres. Plusieurs types et plusieurs
+    filières se combinent dans un seul appel. Rend le nombre total, si la liste est tronquée, et combien de formations
+    sont écartées faute de valeur."""
     types: list[TypeFormation] | None = Field(None, description="« licence » inclut les LAS")
-    filieres: list[str] | None = Field(None, description="valeurs exactes, voir lister_valeurs(champ='filiere')")
+    filieres: list[str] | None = Field(None, description="noms de filière, ex. « Informatique », « Services "
+                                       "informatiques aux organisations » ; un nom inconnu renvoie les noms proches, "
+                                       "inutile d'appeler lister_valeurs avant")
     intitule_contient: str | None = Field(None, max_length=80)
     apprentissage: bool | None = None
     statut: Literal["public", "prive"] | None = None
@@ -262,6 +266,8 @@ class Outils:
         schema = SCHEMAS[nom]
         try:
             args = json.loads(arguments) if isinstance(arguments, str) else (arguments or {})
+            if isinstance(args, str):   # arguments encodés deux fois (palier 0, F-R01, 7e appel)
+                args = json.loads(args)
             params = schema.model_validate(_objets_decodes(args, schema))
         except ValueError as e:
             texte = (_erreur_validation(e, schema) if isinstance(e, ValidationError)

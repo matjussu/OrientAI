@@ -399,3 +399,17 @@ def test_reponse_vide_relancee_une_fois():
     r = p.repondre("question", EtatConversation())
     assert r["reponse"] == "Voici une première orientation." and r["trace"]["relance_vide"]
     assert modele.recus[1]["messages"][-1]["content"].startswith("Rédige maintenant ta réponse")
+
+
+def test_gate_f_compte_les_questions_hors_parentheses():
+    from src.eval.multiversion.gate_f import _questions
+    rep = "Voici les voies.\n\n- **Tu habites où ?** (ça change tout : proche ou loin ?)\n- Et ta spécialité ?"
+    assert [q for _, q in _questions(rep)] == ["- **Tu habites où ?", "- Et ta spécialité ?"]
+    assert _questions(rep)[0][0] == rep.index("- **Tu")
+    assert _questions("Aucune question ici.") == []
+
+
+@base_requise
+def test_arguments_encodes_deux_fois(outils):
+    r = outils.executer("trouver_formation", json.dumps(json.dumps({"texte": "BUT info Lens"})))
+    assert r.erreur is None and r.ids[0] == "psup:7520"

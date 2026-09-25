@@ -36,9 +36,18 @@ MIN_ETAB = 12
 SEUIL_FICHES = 0.90
 
 
-def _questions(reponse: str) -> list[str]:
-    phrases = re.split(r"(?<=[.!?])\s+", reponse.replace("\n", " "))
-    return [p for p in phrases if p.strip().endswith("?")]
+def _questions(reponse: str) -> list[tuple[int, str]]:
+    """Questions posées à l'élève : chaque « ? » hors parenthèses clôt une question (une parenthèse qui commente la
+    question, « (ça change tout : proche ou loin ?) », n'en fait pas une seconde). Rend (position du début de la
+    phrase, phrase)."""
+    sans_parentheses = re.sub(r"\([^()]*\)", lambda m: " " * len(m.group(0)), reponse)
+    out, debut = [], 0
+    for m in re.finditer(r"[.!?\n]", sans_parentheses):
+        if m.group(0) == "?":
+            phrase = reponse[debut:m.end()].strip()
+            out.append((reponse.find(phrase, debut), phrase))
+        debut = m.end()
+    return out
 
 
 class Detecteur:
@@ -103,7 +112,7 @@ def mesurer(tag: str, fichier: str = "v2__gatef.jsonl") -> dict:
         if q["famille"] == "clarification":
             rep = tours[0]["answer"]
             qs = _questions(rep)
-            avant = rep.find(qs[0].strip()) if qs else len(rep)
+            avant = qs[0][0] if qs else len(rep)
             ok = len(qs) <= 2 and avant >= 150
             clarif.append(ok)
             ligne |= {"questions_posees": len(qs), "caracteres_avant_premiere_question": avant, "clarification_ok": ok}
