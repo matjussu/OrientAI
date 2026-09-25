@@ -39,7 +39,10 @@ INSERTION_RENDUE = (
 # Carte courte C : champs retenus, dans l'ordre, au plus 7 (règle écrite avant le run, protocole §4).
 COURTE_POSTBAC = ("taux_acces@2025", "places@2025", "cout.droits_inscription_eur", "cout.scolarite_annuel_eur",
                   "alternance", "passage_mmopk_1_ou_2_ans_national")
-COURTE_MASTER = ("capacite@2025", "candidats_pp@2025", "alternance")
+# Masters : chiffres de la fiche publique (concordance du 25/09) ; capacité de la campagne en cours, ou 2025 pour un
+# master sans fiche en cours (une seule des deux existe).
+COURTE_MASTER = ("capacite_accueil@2026", "capacite_accueil@2025", "candidatures_campagne_precedente@2025",
+                 "taux_acces@2025", "alternance")
 MAX_COURTE = 7
 
 _URL = re.compile(r"https?://\S+")
@@ -231,7 +234,20 @@ STRUCTURELS = (
     ("mention_non_renseignee", re.compile(r"mention non renseignée"), "part « mention non renseignée » : pas de champ dans C"),
     ("autres_voies", re.compile(r"autres voies"), "capacités MMOPK « autres voies » : pas de champ dans C"),
     ("precision_capacites", re.compile(r"précision :"), "précision textuelle des capacités MMOPK : pas stockée dans C"),
+    # Jamais reconnu par le texte : posé seulement si la valeur existe dans un champ de la base que le modèle ne voit
+    # pas (doublon d'un chiffre de la page publique, concordance du 25/09).
+    ("doublon_non_montre", re.compile(r"(?!)"), "doublon d'un chiffre de la page publique, gardé dans la base et retiré de "
+                                                "ce que voit le modèle (concordance du 25/09)"),
 )
+
+
+def _valeurs_cachees(base, id_: str) -> set[float]:
+    from src.base_c import montre_au_modele
+    esp = base.con.execute("SELECT espace FROM formation WHERE id = ?", (id_,)).fetchone()[0]
+    regles = dict(base.con.execute("SELECT champ, montre_au_modele FROM champ").fetchall())
+    return {float(v) for c, s, v in base.con.execute(
+        "SELECT champ, session, valeur_num FROM valeur WHERE id = ? AND valeur_num IS NOT NULL", (id_,))
+        if not montre_au_modele(regles.get(c, "0"), esp, s)}
 
 
 def couples(texte: str) -> list[tuple[float, str, str]]:
@@ -264,13 +280,14 @@ def controle_a_dans_b(formats: Formats, ids: list[str]) -> dict:
             b_par_valeur.setdefault(v, set()).add(u)
         # La section de A qui porte la clause, pour classer l'écart (« Diplôme visé : bac+3 »).
         sections = formats.texte_a(id_).split(" | ")
+        cachees = _valeurs_cachees(formats.base, id_)
         for section in sections:
             for v, u, clause in couples(section):
                 compares += 1
                 unites_b = b_par_valeur.get(v, set())
                 if (u and u in unites_b) or (not u and unites_b):
                     continue
-                motif = _motif(section) or _motif(clause)
+                motif = _motif(section) or _motif(clause) or ("doublon_non_montre" if v in cachees else None)
                 if motif:
                     structurels.setdefault(motif, []).append([id_, v])
                 else:

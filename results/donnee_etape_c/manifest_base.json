@@ -1,11 +1,11 @@
 {
-  "genere_le": "2026-09-23T15:29:19+02:00",
+  "genere_le": "2026-09-25T17:32:38+02:00",
   "commande": "python -m src.collect.base_etape_c",
   "contrat": "results/donnee_etape_c/CONTRACT.md v1.2",
   "sabotage": null,
   "entrees": {
     "corpus": {
-      "chemin": "/home/matteo_linux/projets/OrientIA-fix-insertion/data/processed/formations_etape_b2.json",
+      "chemin": "/home/matteo_linux/projets/OrientIA-concordance/data/processed/formations_etape_b2.json",
       "sha256": "2e6a93a5cda6d26119259248d0e7bbe7d103037608d471604aa359c66ce73c07",
       "fiches": 53808
     },
@@ -19,7 +19,7 @@
       "sha256": "9fe5c13fce6bfac5f4e189185dcd1c1ab8d2094ac7b2a2c88917073dcd621266"
     },
     "table_champs": {
-      "sha256": "b2dbb987f775e08f9c666d95affbc6d08528d4fd9239c32010e4fe1ff185b368"
+      "sha256": "d205f0bf681cd7da730e14bed001b748bc3dbf0d55a50b3a6cbefd5090ec85c5"
     },
     "bruts": {
       "parcoursup_2025": "5bb0e6604c7d87a01d7bbcae4aa00cab3677e59679cdda38add2af2aa0f87807",
@@ -27,6 +27,11 @@
       "monmaster_2025": "1c82acd573e8c765988795bfb2e56182af5b713d3da1d9e35bd2b9c6a282da72",
       "geo_api_communes": "f1721245c89e8a836b087a45e6bfb16eb222fae3d29ae8a2513657ecb560463c",
       "insee_cog_communes_2025": "3f8d2913fb0bdee1f72f54706854dc0cd626ed4089bd5761ec9292db0cb12e7e"
+    },
+    "pages_publiques": {
+      "manifeste": "results/concordance/manifeste_releve.json",
+      "sha256": "17a44f31da9569c0f5221168c35bb90fc1ea70eeb262b4416a740ab279e1c543",
+      "empreinte_cache": "05492e1eff778f0ce64a357eee3deb884b6fdfd5400227b07838c90bf25e50a3"
     }
   },
   "comptes_construction": {
@@ -47,15 +52,15 @@
     }
   ],
   "sortie": {
-    "chemin": "/home/matteo_linux/projets/OrientIA-fix-insertion/data/processed/base_etape_c.sqlite",
-    "sha256_fichier": "9667b95521c23a468799bc6265f3e02e09d6237d9c2598644bd211ef85135cd6",
-    "empreinte_canonique": "6dfa2e8d684d54f246b1f41676c7981196afb0469969864cd0fe1cc5f2e90680",
+    "chemin": "/home/matteo_linux/projets/OrientIA-concordance/data/processed/base_etape_c.sqlite",
+    "sha256_fichier": "f5beaf152a0c8aec0647bd4d557e4b78f2ca4aca1df7794d5953a942f55959b7",
+    "empreinte_canonique": "bfb26cdddfc6f4382ca87146aaba5d9d8180b1f8dd78805cc240b45193d0b192",
     "lignes": {
-      "source": 23,
-      "champ": 85,
+      "source": 25,
+      "champ": 102,
       "formation": 3945,
       "lieu": 3996,
-      "valeur": 172981,
+      "valeur": 213141,
       "insertion_ligne": 407,
       "alternance_lien": 503,
       "concept": 1,
@@ -63,9 +68,9 @@
     }
   },
   "exports": {
-    "json_octets": 13837412,
-    "json_sha256": "74fb88144390f8ff5520f4d6981cb16e98d7a2382e67a2e3f15f91af9c671e72",
-    "csv_octets": 2079816,
-    "csv_sha256": "1a55d8ce23e6fb4595ba0eaafb215c9f6bde6375f087c6d56e41b060b4797164"
+    "json_octets": 18827356,
+    "json_sha256": "f95b636ebd79914cbdd65d1272b32b81926168f8c5bba76dcb2cada31a58423b",
+    "csv_octets": 1890731,
+    "csv_sha256": "e6afeb246901790fea0a800d1b7a016aea7056c22ae59b51b37efec8800c94a5"
   }
 }

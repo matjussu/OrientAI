@@ -131,12 +131,15 @@ def _synthese(version: str, banc: str, recs: list[dict], verdicts: dict, detail_
     return tours, synth
 
 
-def exporter(tag: str) -> dict:
+def exporter(tag: str, dossier_juge: str = "judge") -> dict:
+    """`dossier_juge` : passage du juge lu (judge, ou judge_v2 pour le rejugement du 25/09) ; les exports et le rapport
+    d'un autre passage que le premier sont suffixés, pour ne rien écraser."""
     from src.eval.multiversion.mesures import detail_par_tour
     dossier = RESULTATS / tag
     (dossier / "export").mkdir(exist_ok=True)
     verdicts = {}
-    vj = dossier / "judge/verdicts.jsonl"
+    vj = dossier / dossier_juge / "verdicts.jsonl"
+    suffixe = "" if dossier_juge == "judge" else f"_{dossier_juge}"
     if vj.exists():
         for line in vj.read_text(encoding="utf-8").splitlines():
             if line.strip():
@@ -145,7 +148,7 @@ def exporter(tag: str) -> dict:
     budget = json.loads((dossier / "budget.json").read_text()) if (dossier / "budget.json").exists() else {}
     echantillon = RESULTATS / "echantillon_vertical_25.json"
     ids_ech = set(json.loads(echantillon.read_text())["ids"]) if echantillon.exists() else None
-    rapport = {"tag": tag, "budget": budget, "ic95": "Wilson (score), z = 1,96", "runs": {}}
+    rapport = {"tag": tag, "juge": dossier_juge, "budget": budget, "ic95": "Wilson (score), z = 1,96", "runs": {}}
     for f in sorted(dossier.glob("*__*.jsonl")):
         version, banc = f.stem.split("__")
         recs = [json.loads(x) for x in f.read_text(encoding="utf-8").splitlines() if x.strip()]
@@ -157,7 +160,8 @@ def exporter(tag: str) -> dict:
         meta = {"version": version, "banc": banc, "source": f"results/multiversion/{tag}/{f.name}",
                 "empreinte_fichier": hashlib.sha256(f.read_bytes()).hexdigest()[:12],
                 "runs": [r for r in budget.get("runs", []) if r.get("version") == version and r.get("banc") == banc]}
-        out = dossier / "export" / f"{version}__{banc}.json"
+        out = dossier / f"export{suffixe}" / f"{version}__{banc}.json"
+        out.parent.mkdir(exist_ok=True)
         out.write_text(json.dumps({"meta": meta, "synthese": synth, "tours": tours}, ensure_ascii=False,
                                   separators=(",", ":"), default=str), encoding="utf-8")
         rapport["runs"][f"{version}__{banc}"] = synth
@@ -166,6 +170,6 @@ def exporter(tag: str) -> dict:
             sous = [r for r in recs if r["id"] in ids_ech]
             _, synth_e = _synthese(version, banc, sous, verdicts, detail)
             rapport["runs"]["prod__vertical_echantillon25"] = synth_e
-    (dossier / "RAPPORT.json").write_text(json.dumps(rapport, ensure_ascii=False, indent=1, default=str) + "\n",
+    (dossier / f"RAPPORT{suffixe}.json").write_text(json.dumps(rapport, ensure_ascii=False, indent=1, default=str) + "\n",
                                           encoding="utf-8")
     return rapport

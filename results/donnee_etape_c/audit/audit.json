@@ -4,7 +4,7 @@
  "controles": {
   "base_contre_corpus": {
    "vert": true,
-   "compares": 166261,
+   "compares": 166396,
    "ecarts": 0,
    "exemples": [],
    "manquantes_dans_la_base": 0,
@@ -20,9 +20,9 @@
   },
   "valeurs_contre_bruts": {
    "vert": true,
-   "compares": 137145,
+   "compares": 137280,
    "par_espace": {
-    "psup": 128229,
+    "psup": 128364,
     "psup_app": 3156,
     "mm": 5760
    },
@@ -36,7 +36,7 @@
   },
   "sessions_absentes_contre_bruts": {
    "vert": true,
-   "compares": 137145,
+   "compares": 137280,
    "ecarts": 0,
    "tables": [
     "valeur"
@@ -53,7 +53,7 @@
   },
   "taux_entre_0_et_100": {
    "vert": true,
-   "compares": 103479,
+   "compares": 115198,
    "hors_bornes": 0,
    "exemples": [],
    "tables": [
@@ -62,7 +62,7 @@
   },
   "source_de_chaque_chiffre": {
    "vert": true,
-   "compares": 162828,
+   "compares": 198998,
    "sans_source": 0,
    "tables": [
     "source",
@@ -71,7 +71,7 @@
   },
   "url_de_chaque_source": {
    "vert": true,
-   "compares": 23,
+   "compares": 25,
    "sources_sans_url": [
     "reforme_sante_2027"
    ],
@@ -92,7 +92,7 @@
   },
   "aucun_taux_calcule_monmaster": {
    "vert": true,
-   "compares": 85,
+   "compares": 102,
    "champs": [],
    "tables": [
     "champ"
@@ -108,7 +108,7 @@
   },
   "completude": {
    "vert": true,
-   "compares": 155200,
+   "compares": 195360,
    "manquantes": 0,
    "exemples_manquantes": [],
    "en_trop": 0,
@@ -189,8 +189,8 @@
     },
     "places@2025": {
      "valeur": 96,
-     "source": "parcoursup_2025",
-     "url": "https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/exports/csv?delimiter=%3B"
+     "source": "page_publique_parcoursup",
+     "url": "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation"
     }
    },
    "tables": [
@@ -208,12 +208,12 @@
   },
   "export_aller_retour": {
    "vert": true,
-   "compares": 172981,
-   "valeurs_base": 172981,
+   "compares": 213141,
+   "valeurs_base": 213141,
    "ecarts": 0,
    "exemples": [],
    "meta_complete": true,
-   "octets": 13837412,
+   "octets": 18827356,
    "tables": [
     "valeur",
     "formation"
@@ -304,8 +304,8 @@
   "determinisme": {
    "vert": true,
    "compares": 1,
-   "empreinte_1": "6dfa2e8d684d54f246b1f41676c7981196afb0469969864cd0fe1cc5f2e90680",
-   "empreinte_2": "6dfa2e8d684d54f246b1f41676c7981196afb0469969864cd0fe1cc5f2e90680",
+   "empreinte_1": "bfb26cdddfc6f4382ca87146aaba5d9d8180b1f8dd78805cc240b45193d0b192",
+   "empreinte_2": "bfb26cdddfc6f4382ca87146aaba5d9d8180b1f8dd78805cc240b45193d0b192",
    "fichier_identique_octet_pour_octet": true
   }
  }

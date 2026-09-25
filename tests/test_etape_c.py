@@ -32,9 +32,12 @@ def _mini_base(tmp_path: Path) -> Path:
     con = sqlite3.connect(p)
     con.executescript(SCHEMA)
     con.execute("INSERT INTO source VALUES ('s', 'source test', 'https://exemple.test', 'LO', '2026-09-23', NULL, NULL)")
-    for champ, sessions in (("taux_acces", "psup=2025"), ("places", "psup=2025"), ("part_bac_pro", "psup=2025")):
-        con.execute("INSERT INTO champ VALUES (?, 'psup', '', ?, '', '%', 'nombre', 'formation', '', '', ?, '', '')",
-                    (champ, sessions, champ))
+    # Le filtre part_bac_pro_min porte sur l'open data (néo-bacheliers, bilan final), qui n'est pas montrée au modèle
+    # (concordance du 25/09) : le seuil s'applique, la valeur ne sort pas.
+    for champ, sessions, montre in (("taux_acces", "psup=2025", "psup=1"), ("places", "psup=2025", "psup=1"),
+                                    ("part_bac_pro_neobacheliers_bilan_final", "psup=2025", "psup=0")):
+        con.execute("INSERT INTO champ VALUES (?, 'psup', '', ?, '', '%', 'nombre', 'formation', '', '', ?, '', '', ?, '')",
+                    (champ, sessions, champ, montre))
     con.execute("INSERT INTO commune VALUES ('99001', 'Référence', 'REFERENCE', '99', 'Région', ?, ?)", CENTRE)
     # (id, type, filière, taux, places, part_bac_pro, décalage en latitude en degrés)
     fiches = [
@@ -50,7 +53,7 @@ def _mini_base(tmp_path: Path) -> Path:
                     (fid, fid.split(":")[1], f"Formation {fid}", type_, filiere))
         con.execute("INSERT INTO lieu (id, rang, commune, code_insee, code_departement, region, lat, lon, precision_geo, source_id) "
                     "VALUES (?, 1, 'X', '99001', '99', 'Région', ?, ?, 'formation', 's')", (fid, CENTRE[0] + dlat, CENTRE[1]))
-        for champ, v in (("taux_acces", taux), ("places", places), ("part_bac_pro", pbp)):
+        for champ, v in (("taux_acces", taux), ("places", places), ("part_bac_pro_neobacheliers_bilan_final", pbp)):
             if v is None:
                 con.execute("INSERT INTO valeur (id, champ, session, statut, raison, source_id, portee) VALUES "
                             "(?, ?, '2025', 'non_disponible', 'champ vide', 's', 'formation')", (fid, champ))

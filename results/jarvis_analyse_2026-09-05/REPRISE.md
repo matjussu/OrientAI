@@ -42,6 +42,22 @@ Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par
 - **La prod ne bouge pas** : elle sert le lot 1 de juillet (`/health` prompt `601adcee86b9`, corpus
   `2e4276e6155b`). Les corpus A, B-1 et B-2 sont a part, hors git (section 3).
 
+## Reprise au 25/09/2026, après-midi : concordance avec la page publique (Claudette, ordre 2026-09-25-1320)
+
+- **Base C concordante** : chaque chiffre que la page publique affiche (Parcoursup, MonMaster) est montré au modèle
+  avec la valeur et le libellé exact de la page ; les doublons open data (propositions envoyées et admis au bilan final,
+  parts de bac chez les néo-bacheliers, candidats de phase principale et complémentaire des masters...) sont renommés
+  sans ambiguïté et cachés au modèle (colonne `montre_au_modele` de la table `champ`, appliquée par `lire_fiche` et les
+  outils). Contrat et rapport : `results/concordance/`.
+- **Contrôle 100 %** `python -m src.eval.concordance` : vert, 25 747 chiffres, 0 écart inexpliqué, 0 doublon montré,
+  2 témoins qui rougissent. Relevé des pages : `python -m src.collect.releve_pages` (cache `data/raw/pages_publiques/`).
+- **Formations absentes de la session 2026** : 355 (135 Parcoursup, 138 apprentissage, 82 masters), marquées
+  `fiche_publique_annee_en_cours = absente`, jamais présentées comme actuelles.
+- **Rejugement de la référence** (addendum du RAPPORT multi-version) : ChatGPT + recherche passe de 23,5 % à 0 %
+  d'erreur de fait (ses 8 erreurs étaient des écarts de définition) ; la prod de 22,8 % à 31,6 % (elle cite des
+  chiffres de bilan final sous les noms de la page). L'écart devient mesurable.
+- **Après merge** : reconstruire la base de main (`python -m src.collect.base_etape_c`), le cache des pages y est déjà.
+
 ## Reprise au 25/09/2026 : étape 1, instrument multi-version et référence figée (Claudette, ordre 2026-09-25-1126)
 
 - **Instrument** : `python -m src.eval.multiversion run|juger|rapport`, versions branchables
@@ -390,6 +406,10 @@ l'explorateur, validation de Matteo avant merge.
 | Medium 3.5 n'appelle pas l'outil avec un prompt charge (meme force) : bloquant pour le cerveau si Medium reste le modele | `results/donnee_etape_d/sonde_outil/RESUME.md` |
 | ~~Extracteur du critere 1 aveugle aux tableaux~~ **corrigé le 25/09** dans `numbers.py` (unité de la colonne, sinon de la ligne ; sans unité, rien) et utilisé par le critère 1 de l'instrument ; `critere_d.py` inchangé pour que D et E restent rejouables. Sur E, C x GLM 5.3 passe de 0,805 à 0,836, témoin inchangé | `tests/eval_battery/test_numbers_tableaux.py` (levier ORIENTIA_NUMBERS_SANS_TABLEAUX=1), `tests/eval_multiversion/test_mesures.py` |
 | Prod : « [source S1] » affiché en clair à l'élève ; absences affirmées à tort (« aucune formation à Paris ») | `results/multiversion/2026-09-25_reference/RAPPORT.md` section 2 |
+| Places 2025 : 240 formations (228 IFSI) où la page et l'open data (`capa_fin`) diffèrent ; la page est montrée, cause non établie | `results/concordance/RAPPORT.md` section 4 |
+| MonMaster : 3 écarts de 1 à 2 entre « candidatures » de la page et `n_can_pp + n_can_pc` (inventaire de Jarvis), cause non établie ; sans effet sur ce qui est montré (la page) | `_orientai-ref/verticale-2026-09/concordance/masters/inventaire_masters.json` |
+| Contrôle « A dans B » du format D : le motif `doublon_non_montre` peut couvrir une coïncidence de valeur avec un champ caché | `src/eval/format_d.py` |
+| Places et vœux 2026 stockés, non montrés : décision de Matteo attendue | `results/concordance/CONTRAT.md` section 11 |
 | `openai` absent de `requirements.txt` / `requirements.lock` alors que l'éval l'importe (installé à la main dans le venv local le 25/09, 3.19.2) | à déclarer dans un manifeste d'éval, hors prod |
 | Latence prod p90 9,3-9,6 s le 25/09 contre 6,8 s le 23/09 (même mesure en processus) : non expliqué | RAPPORT multiversion section 3 |
 | Repère de latence de l'état des lieux du 24/09 calculé avec un p90 à rang trop bas (6,24 au lieu de 6,82) : corrigé par Jarvis dans build_etat_lieux.py ; le contrat §8 cite encore 6,2 s | PROTOCOLE multiversion, amendement p90 |

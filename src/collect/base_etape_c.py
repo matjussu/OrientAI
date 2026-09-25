@@ -60,6 +60,18 @@ SECTEURS_MASTERS = {
 }
 SUFFIXE_APPRENTISSAGE = " - en apprentissage"
 
+# ── Pages publiques (concordance, contrat results/concordance/CONTRAT.md) ───────────────────
+# Un champ dont le nom officiel commence par « page: » est lu dans le relevé des pages publiques, pas dans l'open data.
+PREFIXE_PAGE = "page:"
+CACHE_PAGES = RACINE / "data/raw/pages_publiques"
+MANIFESTE_PAGES = RACINE / "results/concordance/manifeste_releve.json"
+SOURCES_PAGES = {
+    "page_publique_parcoursup": ("Fiches publiques Parcoursup (dossierappel.parcoursup.fr), relevé OrientAI",
+                                 "https://dossierappel.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation"),
+    "page_publique_monmaster": ("Fiches publiques MonMaster (API publique de la fiche), relevé OrientAI",
+                                "https://monmaster.gouv.fr/api/candidat/mm1/formations"),
+}
+
 # ── Leviers de sabotage de l'audit (contrat §11.6) ─────────────────────────────────────────
 SABOTAGES = {
     "valeur": "deux taux d'accès 2025 modifiés (+1) : psup:7596 (témoin) et psup:11236 (gate C05)",
@@ -74,6 +86,7 @@ SABOTAGES = {
     "indicateur_inconnu": "un indicateur d'insertion sans colonne ajouté (doit être refusé à la construction)",
     "alternance": "un lien d'alternance supprimé",
     "table_orpheline": "une table que l'audit ne connaît pas ajoutée à la base",
+    "concordance_valeur": "un chiffre de page publique modifié (+1) : candidats ayant postulé de psup:7596",
 }
 
 # Noms officiels des enveloppes d'insertion du corpus (contrat B v1.2) : InserJeunes (lycée pro, BTS) et
@@ -229,9 +242,162 @@ class Constructeur:
         self.ref_communes = ReferentielCommunes(chemin_verifie("insee_cog_communes_2025"),
                                                 chemin_verifie("insee_cog_comer_2025"))
         self.centres = {c["code"]: c for c in self.communes_geo}
+        self._charger_pages()
         self.par_cle = {}
         for c in self.communes_geo:
             self.par_cle.setdefault((c.get("codeDepartement"), cle_nom(c["nom"])), c)
+
+    def _charger_pages(self) -> None:
+        """Relevé des pages publiques, vérifié fichier par fichier contre le manifeste versionné (comme les bruts
+        verrouillés : un sha divergent lève avant toute écriture)."""
+        from src.collect.pages_publiques import lire_mm, lire_psup, pourcentage_affiche, texte_page
+        self.lire_mm, self.pourcentage = lire_mm, pourcentage_affiche
+        m = json.loads(MANIFESTE_PAGES.read_text(encoding="utf-8"))
+        self.releve_pages = m["bilan"]
+        self.manifeste_pages = m["manifeste"]
+        self.pages_psup, self.pages_mm, self.presentes = {}, {}, {}
+        for nom, e in self.manifeste_pages.items():
+            if not e.get("sha256"):
+                continue
+            corps = (CACHE_PAGES / nom).read_bytes()
+            if hashlib.sha256(corps).hexdigest() != e["sha256"]:
+                raise ValueError(f"page publique {nom} : sha256 différent du manifeste {MANIFESTE_PAGES}")
+            if nom.startswith("psup/"):
+                h = corps.decode("utf-8", errors="replace")
+                self.pages_psup[nom[5:-5]] = (lire_psup(h), e["releve_le"])
+                self.presentes[nom[5:-5]] = bool(self._EN_TETE_SESSION.search(texte_page(h)))
+            else:
+                self.pages_mm[nom[3:-5]] = (json.loads(corps).get("content", []), e["releve_le"])
+
+    def _raison_page_absente(self, nom: str) -> str:
+        e = self.manifeste_pages.get(nom)
+        return ("page publique non relevée" if e is None
+                else f"page publique en échec au relevé (statut {e.get('statut')})")
+
+    # ── valeurs des pages publiques
+    PAGE_PSUP = {  # champ -> clé lue par pages_publiques.lire_psup
+        "places_annee_en_cours": "places_annee_en_cours", "voeux_confirmes_annee_en_cours": "voeux_confirmes_annee_en_cours",
+        "candidats_ont_postule": "candidats_ont_postule", "candidats_classes": "candidats_classes",
+        "candidats_ont_pu_recevoir_une_proposition": "candidats_ont_pu_recevoir_une_proposition",
+        "candidats_ont_choisi_d_integrer": "candidats_ont_choisi_d_integrer",
+        "repartition_admis_bac_general": "repartition_admis_bac_general",
+        "repartition_admis_bac_techno": "repartition_admis_bac_techno",
+        "repartition_admis_bac_pro": "repartition_admis_bac_pro", "repartition_admis_autres": "repartition_admis_autres",
+    }
+    # Une page qui répond sans aucun contenu de formation (coquille de 468 caractères au 25/09) : formation absente de
+    # la session en cours. Établi le 25/09 sur 10 pages : aucune dans la cartographie ESR 2026, 9 dans celle de 2025 ;
+    # témoin : 5 pages pleines sur 5 dans la cartographie 2026 (results/concordance/pages_vides.json).
+    _EN_TETE_SESSION = re.compile(r"\d+\s+places en 20\d\d")
+
+    def page_postbac(self, id_: str, espace: str, cod: str) -> None:
+        lu, releve_le = self.pages_psup.get(cod, (None, None))
+        raison_absente = None if lu is not None else self._raison_page_absente(f"psup/{cod}.html")
+        for nom, c in self.champs.items():
+            officiel = par_espace(c["nom_officiel"]).get(espace, "")
+            if not officiel.startswith(PREFIXE_PAGE):
+                continue
+            if nom == "fiche_publique_annee_en_cours":
+                if lu is None:
+                    self.l.valeur.append(_v(id_, nom, "2026", statut="non_disponible", raison=raison_absente,
+                                            source_id="page_publique_parcoursup", identifiant=f"g_ta_cod={cod}"))
+                else:
+                    self.l.valeur.append(_v(id_, nom, "2026", texte="présente" if self.presentes.get(cod) else "absente",
+                                            source_id="page_publique_parcoursup", millesime=f"relevé du {releve_le[:10]}",
+                                            identifiant=f"g_ta_cod={cod}"))
+                continue
+            for s in sessions_du_champ(c, espace):
+                cle = self.PAGE_PSUP[nom]
+                v = (lu or {}).get(cle)
+                base = dict(unite=c["unite"], source_id="page_publique_parcoursup",
+                            millesime=f"session {s}, page relevée le {releve_le[:10]}" if releve_le else f"session {s}",
+                            identifiant=f"g_ta_cod={cod};libelle={c['libelle_page']}")
+                if v is None:
+                    raison = raison_absente or "la page publique n'affiche pas ce chiffre pour cette formation"
+                    self.l.valeur.append(_v(id_, nom, s, statut="non_disponible", raison=raison, **base))
+                    continue
+                if v.get("annee") is not None and str(v["annee"]) != s:
+                    self.l.valeur.append(_v(id_, nom, s, statut="non_disponible",
+                                            raison=f"la page publique affiche l'année {v['annee']}, pas {s}", **base))
+                    continue
+                self.l.valeur.append(_v(id_, nom, s, num=v["valeur"], **base))
+        # Places 2025 : la valeur de la page quand elle l'affiche (contrat §2 et ajout A).
+        p = (lu or {}).get("places_offertes")
+        if espace == "psup" and p is not None and p.get("annee") == 2025:
+            for v in self.l.valeur:
+                if v["id"] == id_ and v["champ"] == "places" and v["session"] == "2025":
+                    v.update(valeur_num=p["valeur"], statut="disponible", raison=None, source_id="page_publique_parcoursup",
+                             millesime=f"session 2025, page relevée le {releve_le[:10]}",
+                             identifiant=f"g_ta_cod={cod};libelle=N places offertes par la formation en 2025")
+                    break
+        if self.sabotage == "concordance_valeur" and id_ == "psup:7596":
+            for v in self.l.valeur:
+                if v["id"] == id_ and v["champ"] == "candidats_ont_postule":
+                    v["valeur_num"] += 1
+
+    PAGE_MM_DEPUIS_OPEN_DATA = "master absent de MonMaster 2026 : campagne 2025 (open data), calculé avec la règle de la page"
+
+    def page_master(self, id_: str, m: dict) -> None:
+        cle = f"{m['eta_uai']}_{m['ifc'][:8]}"
+        contenu, releve_le = self.pages_mm.get(cle, (None, None))
+        lu = self.lire_mm(contenu, m["ifc"]) if contenu is not None else None
+        present = lu is not None
+        ident = f"ifc={m['ifc']}"
+        if contenu is None:
+            raison = self._raison_page_absente(f"mm/{cle}.json")
+            for nom, c in self.champs.items():
+                if par_espace(c["nom_officiel"]).get("mm", "").startswith(PREFIXE_PAGE):
+                    self.l.valeur.append(_v(id_, nom, "2026" if nom in ("capacite_accueil", "fiche_publique_annee_en_cours") else "2025",
+                                            statut="non_disponible", raison=raison, source_id="page_publique_monmaster",
+                                            identifiant=ident))
+            return
+        self.l.valeur.append(_v(id_, "fiche_publique_annee_en_cours", "2026", texte="présente" if present else "absente",
+                                source_id="page_publique_monmaster", millesime=f"relevé du {releve_le[:10]}",
+                                identifiant=f"{ident};uai={m['eta_uai']};inm={m['ifc'][:8]}"))
+        if present:
+            for nom in ("capacite_accueil", "candidatures_campagne_precedente", "rang_dernier_appele", "taux_acces",
+                        "taux_candidatures_classees", "taux_propositions_parmi_classes"):
+                c = self.champs[nom]
+                s = "2026" if nom == "capacite_accueil" else "2025"
+                base = dict(unite=c["unite"], source_id="page_publique_monmaster",
+                            millesime=f"{'campagne en cours' if s == '2026' else 'campagne précédente'}, relevé du {releve_le[:10]}",
+                            identifiant=f"{ident};libelle={c['libelle_page'] or c['libelle']}")
+                v = lu.get(nom)
+                if v is None:
+                    self.l.valeur.append(_v(id_, nom, s, statut="non_disponible",
+                                            raison="la fiche publique n'affiche pas ce chiffre pour ce master", **base))
+                else:
+                    self.l.valeur.append(_v(id_, nom, s, num=v["valeur"], **base))
+            # Une seule capacité par master : celle de la campagne en cours quand la fiche existe.
+            self.l.valeur.append(_v(id_, "capacite_accueil", "2025", statut="non_disponible", unite="places",
+                                    raison="la fiche publique affiche la capacité de la campagne en cours (2026)",
+                                    source_id="page_publique_monmaster", identifiant=ident))
+            return
+        self.l.valeur.append(_v(id_, "capacite_accueil", "2026", statut="non_disponible", unite="places",
+                                raison="master absent de MonMaster 2026 : capacité de la campagne 2025 (open data) en 2025",
+                                source_id="page_publique_monmaster", identifiant=ident))
+        # Sans fiche 2026 : l'open data 2025, avec la règle de la page (contrat §4), présentée comme telle.
+        n = (m.get("n_can_pp") or 0) + (m.get("n_can_pc") or 0)
+        rang = m.get("rang_dernier_appele_pc") if m.get("rang_dernier_appele_pc") is not None else m.get("rang_dernier_appele_pp")
+        calc = {"capacite_accueil": m.get("col"), "candidatures_campagne_precedente": n or None, "rang_dernier_appele": rang,
+                "taux_acces": self.pourcentage(rang / n) if rang is not None and n and m.get("alternance") != "1" else None}
+        calc["taux_candidatures_classees"] = calc["taux_propositions_parmi_classes"] = None
+        if m.get("alternance") == "1" and n:
+            calc["taux_candidatures_classees"] = self.pourcentage(m["n_clas_total"] / n) if m.get("n_clas_total") is not None else None
+            calc["taux_propositions_parmi_classes"] = (self.pourcentage(m["n_prop_total"] / m["n_clas_total"])
+                                                       if m.get("n_clas_total") and m.get("n_prop_total") is not None else None)
+        for nom, v in calc.items():
+            c = self.champs[nom]
+            base = dict(unite=c["unite"], source_id="monmaster_2025", millesime=f"session 2025 ; {self.PAGE_MM_DEPUIS_OPEN_DATA}",
+                        identifiant=ident)
+            if v is None:
+                hors_alt = nom.startswith(("taux_candidatures", "taux_propositions")) and m.get("alternance") != "1"
+                acces_alt = nom == "taux_acces" and m.get("alternance") == "1"
+                raison = ("taux propre aux masters en alternance" if hors_alt else
+                          "taux d'accès non affiché pour un master en alternance (règle de la page)" if acces_alt else
+                          "master absent de MonMaster 2026 et open data 2025 incomplète")
+                self.l.valeur.append(_v(id_, nom, "2025", statut="non_disponible", raison=raison, **base))
+            else:
+                self.l.valeur.append(_v(id_, nom, "2025", num=_num(v), **base))
 
     # ── périmètre
     def dans_perimetre(self, f: dict) -> bool:
@@ -302,6 +468,7 @@ class Constructeur:
         })
         self.lieu_postbac(f, id_, espace)
         self.admission(f, id_, espace, type_)
+        self.page_postbac(id_, espace, cod)
         self.enveloppe("cout", f.get("cout"), id_, espace, type_)
         if espace == "psup":
             self.alternance(f, id_)
@@ -350,12 +517,15 @@ class Constructeur:
     # Chiffres Parcoursup : 2025 lus dans les champs principaux, 2023-2024 dans l'historique.
     CHEMINS_2025 = {
         "taux_acces": "taux_acces_parcoursup_2025", "places": "nombre_places",
-        "voeux_totaux": "admission.volumes.voeux_totaux", "voeux_phase_principale": "admission.volumes.voeux_phase_principale",
+        "places_open_data": "nombre_places",
+        "voeux_toutes_phases_bilan_final": "admission.volumes.voeux_totaux",
+        "voeux_phase_principale": "admission.volumes.voeux_phase_principale",
         "classes_phase_principale": "admission.volumes.classes_phase_principale",
-        "admis_total": "admission.volumes.admis_total", "propositions": "propositions_totales",
+        "admis_bilan_final": "admission.volumes.admis_total", "propositions_envoyees_bilan_final": "propositions_totales",
         "part_admis_debut_pp": "pct_acceptes_debut_pp",
-        "part_bac_general": "profil_admis.bac_type_pct.general", "part_bac_techno": "profil_admis.bac_type_pct.techno",
-        "part_bac_pro": "profil_admis.bac_type_pct.pro",
+        "part_bac_general_neobacheliers_bilan_final": "profil_admis.bac_type_pct.general",
+        "part_bac_techno_neobacheliers_bilan_final": "profil_admis.bac_type_pct.techno",
+        "part_bac_pro_neobacheliers_bilan_final": "profil_admis.bac_type_pct.pro",
         "part_mention_tb": "profil_admis.mentions_pct.tb", "part_mention_b": "profil_admis.mentions_pct.b",
         "part_mention_ab": "profil_admis.mentions_pct.ab", "part_mention_sans_mention": "profil_admis.mentions_pct.sans",
         "part_mention_tbf": "profil_admis.mentions_pct.tbf", "part_boursiers": "profil_admis.boursiers_pct",
@@ -365,14 +535,15 @@ class Constructeur:
         "part_acces_pro": "profil_admis.acces_pct.pro",
     }
     CHEMINS_HISTORIQUE = {
-        "taux_acces": "taux_acces", "places": "places", "voeux_totaux": "voeux_totaux",
-        "voeux_phase_principale": "voeux_phase_principale", "part_bac_general": "pct_bg",
-        "part_bac_techno": "pct_bt", "part_bac_pro": "pct_bp", "part_mention_tb": "pct_tb",
+        "taux_acces": "taux_acces", "places": "places", "voeux_toutes_phases_bilan_final": "voeux_totaux",
+        "voeux_phase_principale": "voeux_phase_principale", "part_bac_general_neobacheliers_bilan_final": "pct_bg",
+        "part_bac_techno_neobacheliers_bilan_final": "pct_bt", "part_bac_pro_neobacheliers_bilan_final": "pct_bp",
+        "part_mention_tb": "pct_tb",
         "part_mention_b": "pct_b", "part_boursiers": "pct_bours", "part_femmes": "pct_f",
     }
     CHEMINS_APPRENTISSAGE = {
-        "places": "apprentissage.capacite", "voeux_totaux": "apprentissage.candidats",
-        "propositions": "apprentissage.propositions", "voeux_recherche_contrat": "apprentissage.voeux_recherche_contrat",
+        "places": "apprentissage.capacite", "voeux_toutes_phases_bilan_final": "apprentissage.candidats",
+        "propositions_envoyees_bilan_final": "apprentissage.propositions", "voeux_recherche_contrat": "apprentissage.voeux_recherche_contrat",
         "refus_apres_examen": "apprentissage.refus_apres_examen", "refus_faute_de_place": "apprentissage.refus_faute_de_place",
     }
 
@@ -384,6 +555,8 @@ class Constructeur:
             if c["parent"] or c["type_valeur"] in ("groupe", "booleen") or not champ_s_applique(c, espace, type_):
                 continue
             officiel = par_espace(c["nom_officiel"]).get(espace, "")
+            if officiel.startswith(PREFIXE_PAGE):
+                continue
             for s in sessions_du_champ(c, espace):
                 source_s = src if s == "2025" else f"parcoursup_{s}"
                 ident = f"cod_aff_form={cod};champ={officiel}"
@@ -569,6 +742,8 @@ class Constructeur:
                 if "mm" not in c["espaces"].split(",") or c["parent"] or c["type_valeur"] == "groupe":
                     continue
                 officiel = par_espace(c["nom_officiel"]).get("mm", "")
+                if officiel.startswith(PREFIXE_PAGE):
+                    continue
                 brut = m.get(officiel)
                 if isinstance(brut, str):
                     try:
@@ -582,6 +757,7 @@ class Constructeur:
                     continue
                 self.l.valeur.append(_v(id_, nom, "2025", num=brut, unite=c["unite"], source_id="monmaster_2025",
                                         millesime="session 2025", identifiant=f"{ident};champ={officiel}"))
+            self.page_master(id_, m)
             for groupe, raison in (("cout", "coût des masters non collecté (l'étape B-1 couvre le post-bac)"),
                                    ("insertion", "insertion des masters non collectée (l'étape B-1 couvre le post-bac)")):
                 self.l.valeur.append(_v(id_, groupe, SANS_SESSION, statut="non_disponible", raison=raison))
@@ -666,6 +842,13 @@ class Constructeur:
                 v = self.verrou[sid]
                 lignes.append({"source_id": sid, "libelle": v["producteur"], "url": v["url"], "licence": v["licence"],
                                "collecte": v["telecharge_le"], "sha256": v["sha256"], "lignes": v.get("lignes")})
+            elif sid in SOURCES_PAGES:
+                libelle, url = SOURCES_PAGES[sid]
+                dates = sorted(e["releve_le"] for n, e in self.manifeste_pages.items()
+                               if e.get("sha256") and n.startswith("psup/" if sid.endswith("parcoursup") else "mm/"))
+                lignes.append({"source_id": sid, "libelle": libelle, "url": url, "licence": "etalab-2.0 (mention du site)",
+                               "collecte": f"{dates[0]} / {dates[-1]}" if dates else None,
+                               "sha256": self.releve_pages.get("empreinte_cache"), "lignes": len(dates)})
             elif sid in SOURCES_LUES:
                 s = SOURCES_LUES[sid]
                 lignes.append({"source_id": sid, "libelle": s.libelle, "url": s.url, "licence": s.licence,
@@ -888,6 +1071,9 @@ def main(argv: list[str] | None = None) -> int:
         "table_champs": {"sha256": sha256_fichier(TABLE_CHAMPS)},
         "bruts": {k: c.verrou[k]["sha256"] for k in ("parcoursup_2025", "parcoursup_apprentissage_2025",
                                                      "monmaster_2025", "geo_api_communes", "insee_cog_communes_2025")},
+        "pages_publiques": {"manifeste": str(MANIFESTE_PAGES.relative_to(RACINE)),
+                            "sha256": sha256_fichier(MANIFESTE_PAGES),
+                            "empreinte_cache": c.releve_pages.get("empreinte_cache")},
     }
     meta = {"commande": "python -m src.collect.base_etape_c", "contrat": "results/donnee_etape_c/CONTRACT.md v1.2",
             "sabotage": sabotage, "entrees": entrees, "comptes_construction": dict(sorted(lignes.comptes.items())),
