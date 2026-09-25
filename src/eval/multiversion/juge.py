@@ -1,0 +1,122 @@
+"""Juge à l'aveugle d'un run multi-version (protocole section 5 et amendements).
+
+    python -m src.eval.multiversion juger preparer --tag <tag>    # lots anonymisés + label_mapping.json
+    python -m src.eval.multiversion juger collecter --tag <tag>   # verdicts -> judge/verdicts.jsonl
+
+Même juge, même rubrique et même `build_prompt` que D et E ; la liste des titres « que l'assistant avait sous les
+yeux » n'est pas passée (elle serait fausse pour une version qui n'a pas vu ces fiches). Fiches de référence :
+- vertical : les 8 fiches de `results/banc_e/exposition.json` en carte B, identiques pour toutes les versions d'une
+  conversation, précédées de la phrase du protocole v0.1 (« l'assistant ne les a pas forcément eues ») ;
+- lot0 : aucune fiche.
+Aveugle : tous les runs du tag mélangés (graine dans seed.txt), identifiants opaques ; les marqueurs de provenance
+des liens (`utm_source=chatgpt.com`) sont retirés de la copie lue par le juge, sinon ils nomment la version.
+Un seul passage, sans rejugement (go de Matteo du 25/09).
+"""
+from __future__ import annotations
+
+import json
+import random
+import re
+from pathlib import Path
+
+from src.eval import juge_d as jd
+from src.eval.battery.judge import RUBRIC, build_prompt, parse_verdict, valid_scores
+from src.eval.juge_e import texte_lot
+from src.eval.multiversion.lanceur import BANCS, RESULTATS
+from src.eval.multiversion.mesures import EXPOSITION
+
+PHRASE_JUGE = ("Les fiches ci-dessous sont des données officielles de référence pour cette question ; l'assistant ne "
+               "les a pas forcément eues. Un chiffre ou un fait qui les contredit est une erreur factuelle. Une "
+               "information absente des fiches n'est pas une erreur en soi : juge-la sur tes connaissances.")
+TAILLE_LOT = {"vertical": 6, "lot0": 12}
+_PROVENANCE = re.compile(r"[?&]utm_source=[^)\s\]]+")
+
+
+def neutraliser(texte: str) -> str:
+    return _PROVENANCE.sub("", texte or "")
+
+
+def prompt_juge(rec: dict, item: dict, cartes: list[str] | None) -> str:
+    p = build_prompt({"persona": item["persona"], "tags": item.get("tags", []), "question": rec["question"],
+                      "history": [{**m, "content": neutraliser(m["content"])} for m in rec["history"]],
+                      "answer": neutraliser(rec["answer"]), "sources": []})
+    if cartes is None:
+        return p
+    return p + f"\n\n{PHRASE_JUGE}\n\nCONTENU DES FICHES :\n" + "\n\n".join(cartes)
+
+
+def _cartes_vertical() -> dict[str, list[str]]:
+    from src.base_c.outils import Base
+    from src.eval.format_d import Formats
+    from src.eval.grille_d import BASE, CORPUS
+    expo = json.loads(EXPOSITION.read_text(encoding="utf-8"))["conversations"]
+    f = Formats(Base.ouvrir(BASE), json.loads(CORPUS.read_bytes()))
+    return {cid: [f.carte_b(i) for i in c["exposees"]] for cid, c in expo.items()}
+
+
+def preparer(tag: str, graine: str) -> dict:
+    dossier = RESULTATS / tag
+    juge = dossier / "judge"
+    if (juge / "label_mapping.json").exists():
+        raise SystemExit(f"{juge}/label_mapping.json existe déjà : un seul passage, pas de nouvelle préparation")
+    cartes = _cartes_vertical()
+    items = {b: {i["id"]: i for i in json.loads(p.read_text(encoding="utf-8"))["items"]} for b, p in BANCS.items()}
+    taches = {b: [] for b in BANCS}
+    mapping, erreurs = {}, 0
+    for f in sorted(dossier.glob("*__*.jsonl")):
+        version, banc = f.stem.split("__")
+        for rec in (json.loads(x) for x in f.read_text(encoding="utf-8").splitlines() if x.strip()):
+            if rec.get("error"):
+                erreurs += 1
+                continue
+            oid = jd.opaque(graine, f"{version}|{banc}", rec["id"], rec["turn"])
+            mapping[oid] = {"version": version, "banc": banc, "id": rec["id"], "turn": rec["turn"]}
+            item = items[banc][rec["id"]]
+            taches[banc].append({"oid": oid, "prompt": prompt_juge(
+                rec, item, cartes[rec["id"]] if banc == "vertical" else None)})
+    (juge / "lots").mkdir(parents=True, exist_ok=True)
+    n_lots = 0
+    for banc, ts in taches.items():
+        random.Random(f"{graine}|{banc}").shuffle(ts)
+        for k in range(0, len(ts), TAILLE_LOT[banc]):
+            lot = ts[k:k + TAILLE_LOT[banc]]
+            base = juge / "lots" / f"{banc}_{k // TAILLE_LOT[banc] + 1:03d}"
+            base.with_suffix(".json").write_text(json.dumps({"rubrique": RUBRIC, "taches": lot}, ensure_ascii=False,
+                                                            indent=1) + "\n", encoding="utf-8")
+            base.with_suffix(".txt").write_text(texte_lot(lot), encoding="utf-8")
+            n_lots += 1
+    (juge / "label_mapping.json").write_text(json.dumps(mapping, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+                                             encoding="utf-8")
+    (juge / "seed.txt").write_text(graine + "\n", encoding="utf-8")
+    return {"taches": len(mapping), "lots": n_lots, "tours_en_erreur_non_juges": erreurs,
+            "par_banc": {b: len(t) for b, t in taches.items()}}
+
+
+def collecter(tag: str) -> dict:
+    juge = RESULTATS / tag / "judge"
+    mapping = json.loads((juge / "label_mapping.json").read_text(encoding="utf-8"))
+    lignes, illisibles = [], []
+    for p in sorted((juge / "verdicts").glob("*.json")) if (juge / "verdicts").exists() else []:
+        v = parse_verdict(p.read_text(encoding="utf-8"))
+        if p.stem not in mapping or not valid_scores(v):
+            illisibles.append(p.name)
+            continue
+        lignes.append({**mapping[p.stem], "oid": p.stem, **v})
+    (juge / "verdicts.jsonl").write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in lignes),
+                                        encoding="utf-8")
+    return {"verdicts": len(lignes), "attendus": len(mapping), "manquants": len(mapping) - len(lignes),
+            "illisibles": illisibles}
+
+
+def lanceur_shell(tag: str) -> Path:
+    """Écrit le lanceur d'un lot (repris de results/banc_e/judge/traces_lanceur/juge_stdin_v2.sh, chemins du tag)."""
+    juge = (RESULTATS / tag / "judge").resolve()
+    script = juge / "juge_stdin.sh"
+    modele = Path(__file__).resolve().parents[3] / "results/banc_e/judge/traces_lanceur/juge_stdin_v2.sh"
+    texte = modele.read_text(encoding="utf-8")
+    texte = re.sub(r"^J=.*$", f"J={juge}", texte, flags=re.M)
+    texte = re.sub(r"^S=.*$", f"S={juge}/sorties_juges", texte, flags=re.M)
+    texte = texte.replace("(banc E, protocole v0.3.1", "(instrument multi-version, protocole v0.1")
+    script.write_text(texte, encoding="utf-8")
+    script.chmod(0o755)
+    return script

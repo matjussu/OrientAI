@@ -66,6 +66,66 @@ def _unit(token: str) -> str:
     return "eur"
 
 
+# Tableaux markdown : l'unite d'un nombre nu est dans l'en-tete de sa colonne ou dans le libelle de sa
+# ligne (`| Taux d'acces (%) |`, `| Candidats | 3 779 |`). Defaut mesure en D (RAPPORT D section 7,
+# biais_tableaux.json : C x GLM 5.2 perdait 7 pts de critere 1). Levier de falsification :
+# ORIENTIA_NUMBERS_SANS_TABLEAUX=1 coupe la correction (et rejoue les rapports d'avant le 25/09).
+_BARE = re.compile(r"^[~≈]?\s*(\d{1,3}(?:[  ]\d{3})+|\d+)(?:[.,](\d+))?\s*$")
+_SEPARATOR = re.compile(r"^\|?\s*:?-{2,}")
+
+
+def _unit_of_label(label: str) -> str | None:
+    t = label.lower()
+    if "%" in t or re.search(r"\b(taux|part|pourcentage)\b", t):
+        return "pct"
+    if "€" in t or re.search(r"\b(euros?|frais|co[uû]ts?|salaires?|prix)\b", t):
+        return "eur"
+    if re.search(r"\bplaces?\b", t):
+        return "places"
+    return None
+
+
+def _cells(line: str) -> list[str]:
+    return [c.strip() for c in line.strip().strip("|").split("|")]
+
+
+def table_numbers(answer: str, unit_of_label=_unit_of_label) -> list[tuple[float, str, str]]:
+    """Nombres NUS des cellules de tableau, avec l'unite de leur colonne, sinon de leur ligne.
+
+    Un nombre sans unite identifiable reste hors perimetre : compter les nombres de tableau sans unite
+    accepte des coincidences (un « 33 » de colonne places pour un attendu a 33 %). Les cellules qui
+    portent leur unite (« 34 % ») sont deja lues par la regle ordinaire et ne sont pas relues ici."""
+    import os
+    if os.environ.get("ORIENTIA_NUMBERS_SANS_TABLEAUX") == "1":
+        return []
+    out: list[tuple[float, str, str]] = []
+    header: list[str] | None = None
+    for line in (answer or "").splitlines():
+        if not line.strip().startswith("|"):
+            header = None
+            continue
+        if _SEPARATOR.match(line.strip()):
+            continue
+        cells = _cells(line)
+        if header is None:
+            header = cells
+            continue
+        for i, cell in enumerate(cells):
+            m = _BARE.match(cell)
+            if not m:
+                continue
+            unit = unit_of_label(header[i]) if i < len(header) else None
+            if unit is None and i > 0:
+                unit = unit_of_label(cells[0])
+            if unit is None:
+                continue
+            value = _to_float(m.group(1), m.group(2))
+            if unit == "pct" and value > 100:
+                continue
+            out.append((value, unit, line.strip()))
+    return out
+
+
 def extract_claims(answer: str) -> list[NumberClaim]:
     claims = []
     for line in (answer or "").splitlines():
@@ -75,6 +135,7 @@ def extract_claims(answer: str) -> list[NumberClaim]:
             if unit == "pct" and value > 100:
                 continue
             claims.append(NumberClaim(value, unit, line.strip()))
+    claims += [NumberClaim(v, u, line) for v, u, line in table_numbers(answer)]
     return claims
 
 
