@@ -1,0 +1,5611 @@
+{
+ "commande": "python -m src.eval.essentiel_fiche",
+ "banc_vertical": {
+  "chemin": "/home/matteo_linux/projets/_orientai-ref/verticale-2026-09/battery_verticale.json",
+  "sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f"
+ },
+ "banc_lot0": {
+  "chemin": "src/eval/battery/battery.json",
+  "attendus_chiffres": 0
+ },
+ "exposition": {
+  "chemin": "results/banc_e/exposition.json",
+  "base_sha256_a_l_epoque": "9667b95521c23a468799bc6265f3e02e09d6237d9c2598644bd211ef85135cd6"
+ },
+ "base": {
+  "chemin": "data/processed/base_etape_c.sqlite",
+  "sha256": "3c76e30a27ea88aceaaf3e6e70c99c949a7f07ad03400d282dea5f72ab954858"
+ },
+ "attendus": 341,
+ "hors_base_c": 18,
+ "rendables": 323,
+ "statuts": {
+  "egal": 269,
+  "ecart": 35,
+  "masque": 8,
+  "absent": 11
+ },
+ "absents_par_champ_banc": {
+  "insertion_pro.taux_emploi_12m": 4,
+  "insertion_pro.salaire_median_embauche": 6,
+  "admission.volumes.classes_phase_principale": 1
+ },
+ "masques_par_champ_banc": {
+  "n_candidats_pp -> candidats_pp_open_data@2025": 8
+ },
+ "ecarts_par_champ_banc": {
+  "profil_admis.bac_type_pct.techno": 9,
+  "profil_admis.bac_type_pct.pro": 10,
+  "admission.volumes.voeux_totaux": 3,
+  "propositions_totales": 3,
+  "nombre_places": 10
+ },
+ "classement_notions": [
+  {
+   "notion": "taux_acces",
+   "attendus": 128,
+   "cumul": 128,
+   "part_cumulee_des_rendables": 0.3963,
+   "part_cumulee_des_rendus": 0.4211
+  },
+  {
+   "notion": "places",
+   "attendus": 125,
+   "cumul": 253,
+   "part_cumulee_des_rendables": 0.7833,
+   "part_cumulee_des_rendus": 0.8322
+  },
+  {
+   "notion": "repartition_admis_bac_techno",
+   "attendus": 11,
+   "cumul": 264,
+   "part_cumulee_des_rendables": 0.8173,
+   "part_cumulee_des_rendus": 0.8684
+  },
+  {
+   "notion": "repartition_admis_bac_pro",
+   "attendus": 10,
+   "cumul": 274,
+   "part_cumulee_des_rendables": 0.8483,
+   "part_cumulee_des_rendus": 0.9013
+  },
+  {
+   "notion": "candidats_ont_postule",
+   "attendus": 10,
+   "cumul": 284,
+   "part_cumulee_des_rendables": 0.8793,
+   "part_cumulee_des_rendus": 0.9342
+  },
+  {
+   "notion": "capacite_accueil",
+   "attendus": 8,
+   "cumul": 292,
+   "part_cumulee_des_rendables": 0.904,
+   "part_cumulee_des_rendus": 0.9605
+  },
+  {
+   "notion": "part_neobacheliers",
+   "attendus": 4,
+   "cumul": 296,
+   "part_cumulee_des_rendables": 0.9164,
+   "part_cumulee_des_rendus": 0.9737
+  },
+  {
+   "notion": "candidats_ont_pu_recevoir_une_proposition",
+   "attendus": 3,
+   "cumul": 299,
+   "part_cumulee_des_rendables": 0.9257,
+   "part_cumulee_des_rendus": 0.9836
+  },
+  {
+   "notion": "part_mention_tb",
+   "attendus": 2,
+   "cumul": 301,
+   "part_cumulee_des_rendables": 0.9319,
+   "part_cumulee_des_rendus": 0.9901
+  },
+  {
+   "notion": "part_mention_sans_mention",
+   "attendus": 2,
+   "cumul": 303,
+   "part_cumulee_des_rendables": 0.9381,
+   "part_cumulee_des_rendus": 0.9967
+  },
+  {
+   "notion": "voeux_phase_principale",
+   "attendus": 1,
+   "cumul": 304,
+   "part_cumulee_des_rendables": 0.9412,
+   "part_cumulee_des_rendus": 1.0
+  }
+ ],
+ "essentiel_propose": {
+  "notions": [
+   "candidats_ont_postule",
+   "capacite_accueil",
+   "passage_mmopk_1_ou_2_ans_national",
+   "passage_pass_las_ensemble_national",
+   "places",
+   "repartition_admis_bac_general",
+   "repartition_admis_bac_pro",
+   "repartition_admis_bac_techno",
+   "sante.reforme_2027",
+   "taux_acces"
+  ],
+  "attendus_rendus_couverts": 292,
+  "attendus_rendus": 304,
+  "part_des_rendus": 0.9605,
+  "part_des_rendables": 0.904,
+  "valeurs_par_fiche_toute_la_base": {
+   "mm": {
+    "aujourd_hui": {
+     "mediane": 18.0,
+     "max": 18
+    },
+    "essentiel": {
+     "mediane": 3.0,
+     "max": 3
+    },
+    "fiches": 480
+   },
+   "psup": {
+    "aujourd_hui": {
+     "mediane": 43,
+     "max": 77
+    },
+    "essentiel": {
+     "mediane": 10,
+     "max": 13
+    },
+    "fiches": 2939
+   },
+   "psup_app": {
+    "aujourd_hui": {
+     "mediane": 11.0,
+     "max": 11
+    },
+    "essentiel": {
+     "mediane": 1.0,
+     "max": 1
+    },
+    "fiches": 526
+   }
+  }
+ },
+ "controle_table": {
+  "attendus_avec_un_champ_de_valeur_egale": 278,
+  "dont_egal_sur_la_notion_de_la_table": 269,
+  "notions_de_la_table_inconnues_de_la_base": [
+   "taux_obtention_3ans",
+   "taux_passage_l2",
+   "voeux_totaux"
+  ],
+  "temoin_hasard_egalite_sur_une_autre_fiche": 32
+ },
+ "valeurs_par_fiche_lire_fiche": {
+  "fiches": 129,
+  "mediane": 43,
+  "min": 18,
+  "max": 76
+ },
+ "lignes": [
+  {
+   "conversation": "V-INF-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 34.0,
+   "unite": "%",
+   "fiche": "psup:7596",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    34.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:7596",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    96.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 96.0,
+   "unite": "%",
+   "fiche": "psup:47455",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    96.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 200,
+   "unite": "places",
+   "fiche": "psup:47455",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    200.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:47147",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    60.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:47147",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    30.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:7520",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    51.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:7520",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    78.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 38.0,
+   "unite": "%",
+   "fiche": "psup:7520",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 63.0,
+   "unite": "%",
+   "fiche": "psup:7347",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    63.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 37,
+   "unite": "places",
+   "fiche": "psup:7347",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    37.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:7347",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    20.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_ab@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 78.0,
+   "unite": "%",
+   "fiche": "psup:7485",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    78.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 100,
+   "unite": "places",
+   "fiche": "psup:7485",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    100.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 4.0,
+   "unite": "%",
+   "fiche": "psup:7485",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    2.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "taux.passage_l2_1an_pct",
+   "source_banc": "mesri_parcours_bacheliers_licence",
+   "valeur": 8.4,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "taux.obtention_3ans_pct",
+   "source_banc": "mesri_parcours_bacheliers_licence",
+   "valeur": 4.7,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "taux.passage_l2_1an_pct",
+   "source_banc": "mesri_parcours_bacheliers_licence",
+   "valeur": 4.1,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-02",
+   "champ_banc": "taux.obtention_3ans_pct",
+   "source_banc": "mesri_parcours_bacheliers_licence",
+   "valeur": 1.6,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 38.0,
+   "unite": "%",
+   "fiche": "psup:17725",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    38.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:17725",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    30.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 39.0,
+   "unite": "%",
+   "fiche": "psup:17725",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    32.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 35.0,
+   "unite": "%",
+   "fiche": "psup:4774",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_acces_pro@2025",
+    "repartition_admis_bac_pro@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:4774",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:4774",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 87.0,
+   "unite": "%",
+   "fiche": "psup:4694",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    87.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:4694",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    33.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-03",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 40.0,
+   "unite": "%",
+   "fiche": "psup:4694",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 45.0,
+   "unite": "%",
+   "fiche": "psup:4188",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    45.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 294,
+   "unite": "places",
+   "fiche": "psup:4188",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    294.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:4098",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    32.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 148,
+   "unite": "places",
+   "fiche": "psup:4098",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    148.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 13.0,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 270,
+   "unite": "places",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-04",
+   "champ_banc": "profil_admis.mentions_pct.tb",
+   "source_banc": "parcoursup_2025",
+   "valeur": 65.0,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 83.0,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 240,
+   "unite": "places",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 69.0,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30,
+   "unite": "places",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 12.0,
+   "unite": "%",
+   "fiche": "psup:23855",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    12.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 58,
+   "unite": "places",
+   "fiche": "psup:23855",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    58.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 16.0,
+   "unite": "%",
+   "fiche": "psup:8275",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    16.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_femmes@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 125,
+   "unite": "places",
+   "fiche": "psup:8275",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    125.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "profil_admis.neobacheliers_pct",
+   "source_banc": "parcoursup_2025",
+   "valeur": 92.0,
+   "unite": "%",
+   "fiche": "psup:8275",
+   "statut": "egal",
+   "notion": "part_neobacheliers@2025",
+   "valeurs_base": [
+    92.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_neobacheliers@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:8343",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    51.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 315,
+   "unite": "places",
+   "fiche": "psup:8343",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    315.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "profil_admis.neobacheliers_pct",
+   "source_banc": "parcoursup_2025",
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:8343",
+   "statut": "egal",
+   "notion": "part_neobacheliers@2025",
+   "valeurs_base": [
+    62.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_neobacheliers@2025",
+    "taux_acces@2024"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 28.0,
+   "unite": "%",
+   "fiche": "psup:35359",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    28.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 60,
+   "unite": "places",
+   "fiche": "psup:35359",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    60.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:32116",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    14.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:32116",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    48.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "profil_admis.mentions_pct.tb",
+   "source_banc": "parcoursup_2025",
+   "valeur": 77.0,
+   "unite": "%",
+   "fiche": "psup:32116",
+   "statut": "egal",
+   "notion": "part_mention_tb@2025",
+   "valeurs_base": [
+    77.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_tb@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 57.0,
+   "unite": "%",
+   "fiche": "psup:32042",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    57.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 139,
+   "unite": "places",
+   "fiche": "psup:32042",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    139.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 68.0,
+   "unite": "%",
+   "fiche": "psup:39126",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    68.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:39126",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    24.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30.0,
+   "unite": "%",
+   "fiche": "psup:5482",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    30.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:5482",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    78.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 13,
+   "unite": "places",
+   "fiche": "mm:1603218DH2WG",
+   "statut": "egal",
+   "notion": "capacite_accueil@2026",
+   "valeurs_base": [
+    13.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2026"
+   ]
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 697,
+   "unite": "candidats",
+   "fiche": "mm:1603218DH2WG",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "insertion_pro.taux_emploi_12m",
+   "source_banc": "insersup_mesr",
+   "valeur": 79.6,
+   "unite": "%",
+   "fiche": "mm:1603218DH2WG",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "insertion_pro.salaire_median_embauche",
+   "source_banc": "insersup_mesr",
+   "valeur": 2370,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1603218DH2WG",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 125,
+   "unite": "places",
+   "fiche": "mm:1603218DIU47",
+   "statut": "egal",
+   "notion": "capacite_accueil@2026",
+   "valeurs_base": [
+    125.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2026"
+   ]
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 1655,
+   "unite": "candidats",
+   "fiche": "mm:1603218DIU47",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2024",
+   "valeur": 33,
+   "unite": "places",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-08",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2024",
+   "valeur": 912,
+   "unite": "candidats",
+   "fiche": null
+  },
+  {
+   "conversation": "V-INF-09",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 18.0,
+   "unite": "%",
+   "fiche": "psup:6888",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    18.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-09",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 136,
+   "unite": "places",
+   "fiche": "psup:6888",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    136.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-09",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:7520",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    51.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-09",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:7520",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    78.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-09",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 69.0,
+   "unite": "%",
+   "fiche": "psup:7192",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    69.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-09",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 84,
+   "unite": "places",
+   "fiche": "psup:7192",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    84.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 77.0,
+   "unite": "%",
+   "fiche": "psup:36041",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    77.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_neobacheliers@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 36,
+   "unite": "places",
+   "fiche": "psup:36041",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    36.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 24.0,
+   "unite": "%",
+   "fiche": "psup:4345",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    24.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_b@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:4345",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    96.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 17.0,
+   "unite": "%",
+   "fiche": "psup:4320",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    17.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 27,
+   "unite": "places",
+   "fiche": "psup:4320",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    27.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-10",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:4320",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    46.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 24.0,
+   "unite": "%",
+   "fiche": "psup:2701",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    24.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_boursiers@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 108,
+   "unite": "places",
+   "fiche": "psup:2701",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    108.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:2815",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    44.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 56,
+   "unite": "places",
+   "fiche": "psup:2815",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    56.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:39214",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    44.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 60,
+   "unite": "places",
+   "fiche": "psup:39214",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    60.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 37.0,
+   "unite": "%",
+   "fiche": "psup:39215",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    37.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-11",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:39215",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-12",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:35520",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    44.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_ab@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-12",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 22,
+   "unite": "places",
+   "fiche": "psup:35520",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    22.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-12",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 100.0,
+   "unite": "%",
+   "fiche": "psup:36110",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    100.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-12",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 45,
+   "unite": "places",
+   "fiche": "psup:36110",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    45.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-12",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 41.0,
+   "unite": "%",
+   "fiche": "psup:11801",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    41.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_acces_techno@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-12",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 26,
+   "unite": "places",
+   "fiche": "psup:11801",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    26.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "admission.historique.2023.taux_acces",
+   "source_banc": "parcoursup_2023",
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:11236",
+   "statut": "egal",
+   "notion": "taux_acces@2023",
+   "valeurs_base": [
+    19.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2023"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "admission.historique.2024.taux_acces",
+   "source_banc": "parcoursup_2024",
+   "valeur": 15.0,
+   "unite": "%",
+   "fiche": "psup:11236",
+   "statut": "egal",
+   "notion": "taux_acces@2024",
+   "valeurs_base": [
+    15.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_femmes@2024",
+    "taux_acces@2024"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 13.0,
+   "unite": "%",
+   "fiche": "psup:11236",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    13.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "admission.historique.2023.voeux_totaux",
+   "source_banc": "parcoursup_2023",
+   "valeur": 3779,
+   "unite": "voeux",
+   "fiche": "psup:11236",
+   "statut": "egal",
+   "notion": "voeux_phase_principale@2023",
+   "valeurs_base": [
+    3779.0
+   ],
+   "champs_de_valeur_egale": [
+    "voeux_phase_principale@2023"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "admission.volumes.voeux_totaux",
+   "source_banc": "parcoursup_2025",
+   "valeur": 6353,
+   "unite": "voeux",
+   "fiche": "psup:11236",
+   "statut": "egal",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    6353.0
+   ],
+   "champs_de_valeur_egale": [
+    "candidats_ont_postule@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 104,
+   "unite": "places",
+   "fiche": "psup:11236",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    104.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "admission.historique.2023.taux_acces",
+   "source_banc": "parcoursup_2023",
+   "valeur": 24.0,
+   "unite": "%",
+   "fiche": "psup:11349",
+   "statut": "egal",
+   "notion": "taux_acces@2023",
+   "valeurs_base": [
+    24.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2023"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:11349",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    14.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_b@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 88,
+   "unite": "places",
+   "fiche": "psup:11349",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    88.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 65,
+   "unite": "places",
+   "fiche": "mm:1602749UV67P",
+   "statut": "egal",
+   "notion": "capacite_accueil@2026",
+   "valeurs_base": [
+    65.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2026"
+   ]
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 564,
+   "unite": "candidats",
+   "fiche": "mm:1602749UV67P",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 19,
+   "unite": "places",
+   "fiche": "mm:1702989AKG3I",
+   "statut": "egal",
+   "notion": "capacite_accueil@2026",
+   "valeurs_base": [
+    19.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2026"
+   ]
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 355,
+   "unite": "candidats",
+   "fiche": "mm:1702989AKG3I",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 51,
+   "unite": "places",
+   "fiche": "mm:1601877WG3VE",
+   "statut": "egal",
+   "notion": "capacite_accueil@2026",
+   "valeurs_base": [
+    51.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2026"
+   ]
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 668,
+   "unite": "candidats",
+   "fiche": "mm:1601877WG3VE",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "insertion_pro.taux_emploi_12m",
+   "source_banc": "insersup_mesr",
+   "valeur": 52.3,
+   "unite": "%",
+   "fiche": "mm:1602749UV67P",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "insertion_pro.salaire_median_embauche",
+   "source_banc": "insersup_mesr",
+   "valeur": 2460,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1602749UV67P",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-14",
+   "champ_banc": "insertion_pro.salaire_median_embauche",
+   "source_banc": "insersup_mesr",
+   "valeur": 2450,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1601877WG3VE",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-15",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:31726",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    32.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_femmes@2023",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-15",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 32,
+   "unite": "places",
+   "fiche": "psup:31726",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    32.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-15",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:31257",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    33.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-15",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 95,
+   "unite": "places",
+   "fiche": "psup:31257",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    95.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-15",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 28.0,
+   "unite": "%",
+   "fiche": "psup:4524",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    28.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-15",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 120,
+   "unite": "places",
+   "fiche": "psup:4524",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    120.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 49.0,
+   "unite": "%",
+   "fiche": "psup:2495",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    49.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 52,
+   "unite": "places",
+   "fiche": "psup:2495",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    52.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 79.0,
+   "unite": "%",
+   "fiche": "psup:10310",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    79.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 57,
+   "unite": "places",
+   "fiche": "psup:10310",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    57.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 49.0,
+   "unite": "%",
+   "fiche": "psup:39586",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    49.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 50,
+   "unite": "places",
+   "fiche": "psup:39586",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    50.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 81.0,
+   "unite": "%",
+   "fiche": "psup:34323",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    81.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-16",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 15,
+   "unite": "places",
+   "fiche": "psup:34323",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    15.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30.0,
+   "unite": "%",
+   "fiche": "psup:5482",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    30.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:5482",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    78.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 57.0,
+   "unite": "%",
+   "fiche": "psup:32042",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    57.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 139,
+   "unite": "places",
+   "fiche": "psup:32042",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    139.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 43.0,
+   "unite": "%",
+   "fiche": "psup:5469",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    43.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:5469",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    33.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 29.0,
+   "unite": "%",
+   "fiche": "psup:5605",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    29.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_ab@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:5605",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    33.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:16148",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    21.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 12,
+   "unite": "places",
+   "fiche": "psup:16148",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    12.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:16148",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    42.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_ab@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:7963",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    51.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 15,
+   "unite": "places",
+   "fiche": "psup:7963",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    15.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 31.0,
+   "unite": "%",
+   "fiche": "psup:7963",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    33.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_acces_general@2025",
+    "part_boursiers@2024"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:7951",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    27.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 64,
+   "unite": "places",
+   "fiche": "psup:7951",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    64.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-20",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 38.0,
+   "unite": "%",
+   "fiche": "psup:7951",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    25.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_sans_mention@2025",
+    "repartition_admis_bac_techno@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-21",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 85.0,
+   "unite": "%",
+   "fiche": "psup:31941",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    85.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-21",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 10,
+   "unite": "places",
+   "fiche": "psup:31941",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    10.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-21",
+   "champ_banc": "admission.volumes.voeux_totaux",
+   "source_banc": "parcoursup_2025",
+   "valeur": 395,
+   "unite": "voeux",
+   "fiche": "psup:31941",
+   "statut": "ecart",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    382.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-21",
+   "champ_banc": "admission.volumes.voeux_phase_principale",
+   "source_banc": "parcoursup_2025",
+   "valeur": 382,
+   "unite": "voeux",
+   "fiche": "psup:31941",
+   "statut": "egal",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    382.0
+   ],
+   "champs_de_valeur_egale": [
+    "candidats_ont_postule@2025"
+   ]
+  },
+  {
+   "conversation": "V-INF-21",
+   "champ_banc": "admission.volumes.classes_phase_principale",
+   "source_banc": "parcoursup_2025",
+   "valeur": 358,
+   "unite": "candidats",
+   "fiche": "psup:31941",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "la page publique n'affiche pas ce chiffre pour cette formation"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-INF-21",
+   "champ_banc": "propositions_totales",
+   "source_banc": "parcoursup_2025",
+   "valeur": 110,
+   "unite": "propositions",
+   "fiche": "psup:31941",
+   "statut": "ecart",
+   "notion": "candidats_ont_pu_recevoir_une_proposition@2025",
+   "valeurs_base": [
+    323.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 39.0,
+   "unite": "%",
+   "fiche": "psup:32647",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    39.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:32647",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    160.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:27346",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    60.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:27346",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    160.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 98.0,
+   "unite": "%",
+   "fiche": "psup:26778",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    98.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2023",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 80,
+   "unite": "places",
+   "fiche": "psup:26778",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    80.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-02",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 6.0,
+   "unite": "%",
+   "fiche": "psup:36433",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    6.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-02",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 60,
+   "unite": "places",
+   "fiche": "psup:36433",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    60.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-02",
+   "champ_banc": "admission.volumes.voeux_totaux",
+   "source_banc": "parcoursup_2025",
+   "valeur": 7769,
+   "unite": "voeux",
+   "fiche": "psup:36433",
+   "statut": "egal",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    7769.0
+   ],
+   "champs_de_valeur_egale": [
+    "candidats_ont_postule@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-02",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 54.0,
+   "unite": "%",
+   "fiche": "psup:28998",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    54.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-02",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 305,
+   "unite": "places",
+   "fiche": "psup:28998",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    305.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30.0,
+   "unite": "%",
+   "fiche": "psup:23156",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    30.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_boursiers@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 117,
+   "unite": "places",
+   "fiche": "psup:23156",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    109.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:23156",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    14.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 68.0,
+   "unite": "%",
+   "fiche": "psup:23157",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    68.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 129,
+   "unite": "places",
+   "fiche": "psup:23157",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    129.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:23157",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    23.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_ab@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 65.0,
+   "unite": "%",
+   "fiche": "psup:38428",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    65.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_neobacheliers@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 20,
+   "unite": "places",
+   "fiche": "psup:38428",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    19.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 36.0,
+   "unite": "%",
+   "fiche": "psup:34537",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    36.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:34537",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    30.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 15.0,
+   "unite": "%",
+   "fiche": "psup:23251",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    15.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 209,
+   "unite": "places",
+   "fiche": "psup:23251",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    188.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "profil_admis.neobacheliers_pct",
+   "source_banc": "parcoursup_2025",
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:23251",
+   "statut": "egal",
+   "notion": "part_neobacheliers@2025",
+   "valeurs_base": [
+    60.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_neobacheliers@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:23250",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    27.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_b@2023",
+    "part_mention_b@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 145,
+   "unite": "places",
+   "fiche": "psup:23250",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    141.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "profil_admis.neobacheliers_pct",
+   "source_banc": "parcoursup_2025",
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:23250",
+   "statut": "egal",
+   "notion": "part_neobacheliers@2025",
+   "valeurs_base": [
+    62.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_neobacheliers@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 35.0,
+   "unite": "%",
+   "fiche": "psup:34634",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 52,
+   "unite": "places",
+   "fiche": "psup:34634",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    52.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 7.0,
+   "unite": "%",
+   "fiche": "psup:48327",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    7.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 72,
+   "unite": "places",
+   "fiche": "psup:48327",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    72.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:29843",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    21.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 36,
+   "unite": "places",
+   "fiche": "psup:29843",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    36.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 15.0,
+   "unite": "%",
+   "fiche": "psup:43211",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    15.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 9,
+   "unite": "places",
+   "fiche": "psup:43211",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    9.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 4.0,
+   "unite": "%",
+   "fiche": "psup:28053",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    4.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 38,
+   "unite": "places",
+   "fiche": "psup:28053",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    38.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-06",
+   "champ_banc": "admission.volumes.voeux_totaux",
+   "source_banc": "parcoursup_2025",
+   "valeur": 1967,
+   "unite": "voeux",
+   "fiche": "psup:28053",
+   "statut": "egal",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    1967.0
+   ],
+   "champs_de_valeur_egale": [
+    "candidats_ont_postule@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 6.0,
+   "unite": "%",
+   "fiche": "psup:26393",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    6.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2023",
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 45,
+   "unite": "places",
+   "fiche": "psup:26393",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    45.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 10.0,
+   "unite": "%",
+   "fiche": "psup:28055",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    10.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 40,
+   "unite": "places",
+   "fiche": "psup:28055",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    40.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:19420",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    14.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:19420",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    48.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:8225",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    21.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 25,
+   "unite": "places",
+   "fiche": "psup:8225",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    25.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-08",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:26280",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    14.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-08",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 120,
+   "unite": "places",
+   "fiche": "psup:26280",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    120.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-08",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 59.0,
+   "unite": "%",
+   "fiche": "psup:26071",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    59.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-08",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 220,
+   "unite": "places",
+   "fiche": "psup:26071",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    220.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-09",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 73.0,
+   "unite": "%",
+   "fiche": "psup:28736",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    73.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-09",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 40,
+   "unite": "places",
+   "fiche": "psup:28736",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    40.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-09",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 23.0,
+   "unite": "%",
+   "fiche": "psup:28739",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    23.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_tb@2023",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-09",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:28739",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    160.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 83.0,
+   "unite": "%",
+   "fiche": "psup:30790",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    83.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 850,
+   "unite": "places",
+   "fiche": "psup:30790",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    850.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-10",
+   "champ_banc": "admission.volumes.voeux_totaux",
+   "source_banc": "parcoursup_2025",
+   "valeur": 4954,
+   "unite": "voeux",
+   "fiche": "psup:30790",
+   "statut": "ecart",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    4672.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:30911",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    60.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 100,
+   "unite": "places",
+   "fiche": "psup:30911",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    100.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 85.0,
+   "unite": "%",
+   "fiche": "psup:31941",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    85.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 10,
+   "unite": "places",
+   "fiche": "psup:31941",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    10.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-11",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:43048",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    19.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-11",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 110,
+   "unite": "places",
+   "fiche": "psup:43048",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    110.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-11",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 67.0,
+   "unite": "%",
+   "fiche": "psup:43039",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    67.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_tb@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-11",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 10,
+   "unite": "places",
+   "fiche": "psup:43039",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    10.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-11",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:43064",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    33.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-11",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 46,
+   "unite": "places",
+   "fiche": "psup:43064",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    46.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-12",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 23.0,
+   "unite": "%",
+   "fiche": "psup:26636",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    23.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_boursiers@2023",
+    "part_mention_b@2023",
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-12",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 80,
+   "unite": "places",
+   "fiche": "psup:26636",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    80.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-12",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 69.0,
+   "unite": "%",
+   "fiche": "psup:26648",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    69.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-12",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:26648",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    160.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 47.0,
+   "unite": "%",
+   "fiche": "psup:23137",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    47.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 101,
+   "unite": "places",
+   "fiche": "psup:23137",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    100.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023"
+   ]
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:23137",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    13.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_b@2023",
+    "part_mention_sans_mention@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 54.0,
+   "unite": "%",
+   "fiche": "psup:23142",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    54.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 142,
+   "unite": "places",
+   "fiche": "psup:23142",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    140.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:23142",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    11.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 11.0,
+   "unite": "%",
+   "fiche": "psup:23939",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    11.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 124,
+   "unite": "places",
+   "fiche": "psup:23939",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    115.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-13",
+   "champ_banc": "profil_admis.bac_type_pct.pro",
+   "source_banc": "parcoursup_2025",
+   "valeur": 5.0,
+   "unite": "%",
+   "fiche": "psup:23939",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_pro@2025",
+   "valeurs_base": [
+    0.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-14",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 11.0,
+   "unite": "%",
+   "fiche": "psup:26037",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    11.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-14",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 18,
+   "unite": "places",
+   "fiche": "psup:26037",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    18.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-14",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:26258",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    25.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-14",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 44,
+   "unite": "places",
+   "fiche": "psup:26258",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    44.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-14",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 29.0,
+   "unite": "%",
+   "fiche": "psup:26094",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    29.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2023",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-14",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 34,
+   "unite": "places",
+   "fiche": "psup:26094",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    34.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-15",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 20.0,
+   "unite": "%",
+   "fiche": "psup:4526",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    20.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-15",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 28,
+   "unite": "places",
+   "fiche": "psup:4526",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    28.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-15",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:15945",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    25.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-15",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 28,
+   "unite": "places",
+   "fiche": "psup:15945",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    28.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-16",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 24.0,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-SAN-16",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 50,
+   "unite": "places",
+   "fiche": null
+  },
+  {
+   "conversation": "V-SAN-16",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 2.0,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-SAN-16",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:28999",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    27.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-16",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 20,
+   "unite": "places",
+   "fiche": "psup:28999",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    20.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-16",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 0.0,
+   "unite": "%",
+   "fiche": "psup:28999",
+   "statut": "egal",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    0.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_acces_pro@2025",
+    "part_acces_techno@2025",
+    "part_admis_debut_pp@2025",
+    "part_mention_tbf@2025",
+    "repartition_admis_autres@2025",
+    "repartition_admis_bac_pro@2025",
+    "repartition_admis_bac_techno@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 39.0,
+   "unite": "%",
+   "fiche": "psup:23084",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    39.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 157,
+   "unite": "places",
+   "fiche": "psup:23084",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    156.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:23084",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    18.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_b@2023"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 43.0,
+   "unite": "%",
+   "fiche": "psup:23086",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    43.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 51,
+   "unite": "places",
+   "fiche": "psup:23086",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    50.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:23086",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    25.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 52.0,
+   "unite": "%",
+   "fiche": "psup:23083",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    52.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 45,
+   "unite": "places",
+   "fiche": "psup:23083",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    45.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 45.0,
+   "unite": "%",
+   "fiche": "psup:23083",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    31.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_acces_general@2025",
+    "part_mention_sans_mention@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 64.0,
+   "unite": "%",
+   "fiche": "psup:23085",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    64.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 44,
+   "unite": "places",
+   "fiche": "psup:23085",
+   "statut": "ecart",
+   "notion": "places@2025",
+   "valeurs_base": [
+    49.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-19",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 47.0,
+   "unite": "%",
+   "fiche": "psup:23085",
+   "statut": "ecart",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    40.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-SAN-20",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 6.0,
+   "unite": "%",
+   "fiche": "psup:36255",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    6.0
+   ],
+   "champs_de_valeur_egale": [
+    "repartition_admis_bac_techno@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-20",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 37,
+   "unite": "places",
+   "fiche": "psup:36255",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    37.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-20",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 9.0,
+   "unite": "%",
+   "fiche": "psup:35410",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    9.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_boursiers@2025",
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-20",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 50,
+   "unite": "places",
+   "fiche": "psup:35410",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    50.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-20",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 5.0,
+   "unite": "%",
+   "fiche": "psup:26686",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    5.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2023",
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-20",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:26686",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    30.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacites_mmopk_medecine_passerelles",
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-21",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 77.0,
+   "unite": "%",
+   "fiche": "psup:31766",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    77.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-21",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 26,
+   "unite": "places",
+   "fiche": "psup:31766",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    26.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-21",
+   "champ_banc": "admission.volumes.voeux_totaux",
+   "source_banc": "parcoursup_2025",
+   "valeur": 1187,
+   "unite": "voeux",
+   "fiche": "psup:31766",
+   "statut": "egal",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    1187.0
+   ],
+   "champs_de_valeur_egale": [
+    "candidats_ont_postule@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-21",
+   "champ_banc": "admission.volumes.voeux_phase_principale",
+   "source_banc": "parcoursup_2025",
+   "valeur": 1187,
+   "unite": "voeux",
+   "fiche": "psup:31766",
+   "statut": "egal",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    1187.0
+   ],
+   "champs_de_valeur_egale": [
+    "candidats_ont_postule@2025"
+   ]
+  },
+  {
+   "conversation": "V-SAN-21",
+   "champ_banc": "propositions_totales",
+   "source_banc": "parcoursup_2025",
+   "valeur": 212,
+   "unite": "propositions",
+   "fiche": "psup:31766",
+   "statut": "ecart",
+   "notion": "candidats_ont_pu_recevoir_une_proposition@2025",
+   "valeurs_base": [
+    917.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 10.0,
+   "unite": "%",
+   "fiche": "psup:8182",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    10.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 142,
+   "unite": "places",
+   "fiche": "psup:8182",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    142.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 11.0,
+   "unite": "%",
+   "fiche": "psup:31680",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    11.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_b@2024",
+    "part_mention_b@2025",
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 47,
+   "unite": "places",
+   "fiche": "psup:31680",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    47.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:8550",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    25.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:8550",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    96.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 17.0,
+   "unite": "%",
+   "fiche": "psup:39554",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    17.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_femmes@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-01",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:39554",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    48.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-02",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:4671",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    21.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-02",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 144,
+   "unite": "places",
+   "fiche": "psup:4671",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    144.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-02",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:19164",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    62.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-02",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:19164",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    48.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-02",
+   "champ_banc": "profil_admis.mentions_pct.tb",
+   "source_banc": "parcoursup_2025",
+   "valeur": 31.0,
+   "unite": "%",
+   "fiche": "psup:19164",
+   "statut": "egal",
+   "notion": "part_mention_tb@2025",
+   "valeurs_base": [
+    31.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_tb@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 91.0,
+   "unite": "%",
+   "fiche": "psup:7089",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    91.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 65,
+   "unite": "places",
+   "fiche": "psup:7089",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    65.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-03",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 78.0,
+   "unite": "%",
+   "fiche": "psup:35489",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    78.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-03",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:35489",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 23.0,
+   "unite": "%",
+   "fiche": "psup:47242",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    23.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 57,
+   "unite": "places",
+   "fiche": "psup:47242",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    57.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-04",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:47258",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    21.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_admis_debut_pp@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-04",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 200,
+   "unite": "places",
+   "fiche": "psup:47258",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    200.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:32112",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    19.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:32112",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    24.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 43.0,
+   "unite": "%",
+   "fiche": "psup:39817",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    43.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_femmes@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:39817",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    24.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "profil_admis.mentions_pct.sans",
+   "source_banc": "parcoursup_2025",
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:39817",
+   "statut": "egal",
+   "notion": "part_mention_sans_mention@2025",
+   "valeurs_base": [
+    25.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_mention_sans_mention@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 10.0,
+   "unite": "%",
+   "fiche": "psup:6780",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    10.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:6780",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    96.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 81.0,
+   "unite": "%",
+   "fiche": "psup:6988",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    81.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:6988",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    48.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-05",
+   "champ_banc": "profil_admis.mentions_pct.sans",
+   "source_banc": "parcoursup_2025",
+   "valeur": 18.0,
+   "unite": "%",
+   "fiche": "psup:6988",
+   "statut": "egal",
+   "notion": "part_mention_sans_mention@2025",
+   "valeurs_base": [
+    18.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_boursiers@2023",
+    "part_mention_sans_mention@2025",
+    "part_mention_tb@2023"
+   ]
+  },
+  {
+   "conversation": "V-MAT-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 45.0,
+   "unite": "%",
+   "fiche": "psup:32743",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    45.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:32743",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-06",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 82.0,
+   "unite": "%",
+   "fiche": "psup:31687",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    82.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_meme_academie@2025",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-06",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 100,
+   "unite": "places",
+   "fiche": "psup:31687",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    100.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 7.0,
+   "unite": "%",
+   "fiche": "psup:4036",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    7.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 144,
+   "unite": "places",
+   "fiche": "psup:4036",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    144.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-07",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 29.0,
+   "unite": "%",
+   "fiche": "psup:31831",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    29.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-07",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 36,
+   "unite": "places",
+   "fiche": "psup:31831",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    36.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-08",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 79.0,
+   "unite": "%",
+   "fiche": "psup:4217",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    79.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-08",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:4217",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    35.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-08",
+   "champ_banc": "profil_admis.bac_type_pct.techno",
+   "source_banc": "parcoursup_2025",
+   "valeur": 100.0,
+   "unite": "%",
+   "fiche": "psup:4217",
+   "statut": "egal",
+   "notion": "repartition_admis_bac_techno@2025",
+   "valeurs_base": [
+    100.0
+   ],
+   "champs_de_valeur_egale": [
+    "part_acces_techno@2025",
+    "repartition_admis_bac_techno@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-08",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 15.0,
+   "unite": "%",
+   "fiche": null
+  },
+  {
+   "conversation": "V-MAT-08",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 40,
+   "unite": "places",
+   "fiche": null
+  },
+  {
+   "conversation": "V-MAT-09",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 70,
+   "unite": "places",
+   "fiche": "mm:1601962N73AH",
+   "statut": "egal",
+   "notion": "capacite_accueil@2026",
+   "valeurs_base": [
+    70.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2026"
+   ]
+  },
+  {
+   "conversation": "V-MAT-09",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 788,
+   "unite": "candidats",
+   "fiche": "mm:1601962N73AH",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-09",
+   "champ_banc": "insertion_pro.taux_emploi_12m",
+   "source_banc": "insersup_mesr",
+   "valeur": 69.2,
+   "unite": "%",
+   "fiche": "mm:1601962N73AH",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-09",
+   "champ_banc": "insertion_pro.salaire_median_embauche",
+   "source_banc": "insersup_mesr",
+   "valeur": 3150,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1601962N73AH",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-09",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 32,
+   "unite": "places",
+   "fiche": "mm:1603284ASFLI",
+   "statut": "egal",
+   "notion": "capacite_accueil@2026",
+   "valeurs_base": [
+    32.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2026"
+   ]
+  },
+  {
+   "conversation": "V-MAT-09",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 608,
+   "unite": "candidats",
+   "fiche": "mm:1603284ASFLI",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-09",
+   "champ_banc": "insertion_pro.salaire_median_embauche",
+   "source_banc": "insersup_mesr",
+   "valeur": 2570,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1603284ASFLI",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 70.0,
+   "unite": "%",
+   "fiche": "psup:36001",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    70.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:36001",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    24.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 52.0,
+   "unite": "%",
+   "fiche": "psup:11879",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    52.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:11879",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    48.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-10",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 100.0,
+   "unite": "%",
+   "fiche": "psup:26387",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    100.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2023",
+    "taux_acces@2024",
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-10",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 106,
+   "unite": "places",
+   "fiche": "psup:26387",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    106.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:7916",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    27.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 192,
+   "unite": "places",
+   "fiche": "psup:7916",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    192.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 17.0,
+   "unite": "%",
+   "fiche": "psup:31686",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    17.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:31686",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    48.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 64.0,
+   "unite": "%",
+   "fiche": "psup:39956",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    64.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 285,
+   "unite": "places",
+   "fiche": "psup:39956",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    285.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 42.0,
+   "unite": "%",
+   "fiche": "psup:8061",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    42.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-13",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:8061",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    33.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-14",
+   "champ_banc": "capacite",
+   "source_banc": "monmaster_2025",
+   "valeur": 54,
+   "unite": "places",
+   "fiche": "mm:1503297UWETR",
+   "statut": "egal",
+   "notion": "capacite_accueil@2025",
+   "valeurs_base": [
+    54.0
+   ],
+   "champs_de_valeur_egale": [
+    "capacite_accueil@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-14",
+   "champ_banc": "n_candidats_pp",
+   "source_banc": "monmaster_2025",
+   "valeur": 497,
+   "unite": "candidats",
+   "fiche": "mm:1503297UWETR",
+   "statut": "masque",
+   "notion": "candidats_pp_open_data@2025",
+   "valeurs_base": [],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-14",
+   "champ_banc": "insertion_pro.taux_emploi_12m",
+   "source_banc": "insersup_mesr",
+   "valeur": 74.7,
+   "unite": "%",
+   "fiche": "mm:1503297UWETR",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-14",
+   "champ_banc": "insertion_pro.salaire_median_embauche",
+   "source_banc": "insersup_mesr",
+   "valeur": 2440,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1503297UWETR",
+   "statut": "absent",
+   "notion": null,
+   "valeurs_base": [
+    "insertion des masters non collectée (l'étape B-1 couvre le post-bac)"
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-15",
+   "champ_banc": "taux_acces_parcoursup_2025",
+   "source_banc": "parcoursup_2025",
+   "valeur": 87.0,
+   "unite": "%",
+   "fiche": "psup:35631",
+   "statut": "egal",
+   "notion": "taux_acces@2025",
+   "valeurs_base": [
+    87.0
+   ],
+   "champs_de_valeur_egale": [
+    "taux_acces@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-15",
+   "champ_banc": "nombre_places",
+   "source_banc": "parcoursup_2025",
+   "valeur": 16,
+   "unite": "places",
+   "fiche": "psup:35631",
+   "statut": "egal",
+   "notion": "places@2025",
+   "valeurs_base": [
+    16.0
+   ],
+   "champs_de_valeur_egale": [
+    "places@2023",
+    "places@2024",
+    "places@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-15",
+   "champ_banc": "admission.volumes.voeux_totaux",
+   "source_banc": "parcoursup_2025",
+   "valeur": 436,
+   "unite": "voeux",
+   "fiche": "psup:35631",
+   "statut": "ecart",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    433.0
+   ],
+   "champs_de_valeur_egale": []
+  },
+  {
+   "conversation": "V-MAT-15",
+   "champ_banc": "admission.volumes.voeux_phase_principale",
+   "source_banc": "parcoursup_2025",
+   "valeur": 433,
+   "unite": "voeux",
+   "fiche": "psup:35631",
+   "statut": "egal",
+   "notion": "candidats_ont_postule@2025",
+   "valeurs_base": [
+    433.0
+   ],
+   "champs_de_valeur_egale": [
+    "candidats_ont_postule@2025"
+   ]
+  },
+  {
+   "conversation": "V-MAT-15",
+   "champ_banc": "propositions_totales",
+   "source_banc": "parcoursup_2025",
+   "valeur": 123,
+   "unite": "propositions",
+   "fiche": "psup:35631",
+   "statut": "ecart",
+   "notion": "candidats_ont_pu_recevoir_une_proposition@2025",
+   "valeurs_base": [
+    378.0
+   ],
+   "champs_de_valeur_egale": []
+  }
+ ]
+}

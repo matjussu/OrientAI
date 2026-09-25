@@ -8,6 +8,9 @@ feuille de route, section 13 du contrat).
   travail et pièges d'outillage (section 14).
 - `gate_f/requetes_gate_f.json` : les 30 questions-tests du gate F, écrites avant le code.
 - `gate_f/build_gate_f.py` : le script déterministe (sans appel d'API) qui produit le JSON.
+- `etape3/CONTRAT-etape3.md` : contrat de l'étape 3 (v2 minimal), écrit avant le code, avec
+  `etape3/prompt_conseiller_v0.txt`. La mesure de l'essentiel de la fiche est rejouable :
+  `python -m src.eval.essentiel_fiche` (sortie `results/cerveau_etape3/essentiel_fiche.json`).
 
 ## Source et empreintes
 
