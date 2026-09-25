@@ -23,8 +23,18 @@ def _moy(xs):
 
 
 def _p90(xs):
+    """Rang le plus proche : la plus petite valeur dont au moins 90 % des valeurs sont inférieures ou égales.
+    L'état des lieux du 24/09 prenait xs[int(0.9 * (n - 1))], qui rend le minimum sur 2 valeurs (défaut relevé
+    par Jarvis le 25/09 sur l'essai : p90 19,92 < médiane 27,19). Sur 67 valeurs, les deux diffèrent d'un rang."""
+    import math
     xs = sorted(x for x in xs if x is not None)
-    return xs[int(0.9 * (len(xs) - 1))] if xs else None
+    return xs[math.ceil(0.9 * len(xs)) - 1] if xs else None
+
+
+def _tokens_lisibles(usage: dict) -> dict:
+    """Les appels de recherche web sont comptés en « entree » pour le calcul du coût ; à l'export ils s'appellent
+    « appels », pour ne pas être lus comme des tokens."""
+    return {m: ({"appels": u.get("entree", 0)} if m == "openai-web-search" else u) for m, u in usage.items()}
 
 
 def _tour(x: dict, juge: dict | None, chiffres: list | None) -> dict:
@@ -58,7 +68,7 @@ def _tour(x: dict, juge: dict | None, chiffres: list | None) -> dict:
         "structured": tr.get("structured") is not None if x.get("version") == "prod" else None,
         "faithfulness": tr.get("faithfulness"),
         "reponse": ans, "mots": len(ans.split()),
-        "tokens": x.get("usage") or {}, "cout_usd": x.get("cout_usd"),
+        "tokens": _tokens_lisibles(x.get("usage") or {}), "cout_usd": x.get("cout_usd"),
         "juge": None if not juge else {k: juge.get(k) for k in (*CRITERES, "refus", "erreur_factuelle", "erreur_detail",
                                                                 "cause_echec", "commentaire")},
         "chiffres": chiffres,
@@ -105,7 +115,8 @@ def exporter(tag: str) -> dict:
             "latence_p90": _p90([t["latence"] for t in tours]),
             "mots_mediane": statistics.median(t["mots"] for t in tours) if tours else None,
             "cout_usd": round(sum(t["cout_usd"] or 0 for t in tours), 4),
-            "tokens": {m: {k: sum((t["tokens"].get(m) or {}).get(k, 0) for t in tours) for k in ("entree", "sortie", "non_mesures")}
+            "tokens": {m: {k: sum((t["tokens"].get(m) or {}).get(k, 0) for t in tours)
+                           for k in (("appels",) if m == "openai-web-search" else ("entree", "sortie", "non_mesures"))}
                        for m in sorted({m for t in tours for m in t["tokens"]})},
             "juge_n": len(juges), "juge_moyennes": {c: _moy([j[c] for j in juges]) for c in CRITERES},
             "juge_moyenne_4": _moy([_moy([j[c] for c in CRITERES]) for j in juges]),

@@ -26,7 +26,7 @@ BANCS = {
 # sha256 fixés au protocole (section 3) : un banc modifié n'est pas le même instrument.
 BANCS_SHA = {"vertical": "f467374be3d7", "lot0": "5b268bf34d91"}
 RESULTATS = REPO / "results/multiversion"
-PLAFONDS_USD = {"openai": 15.0, "mistral": 8.0}  # protocole v0.2 (25/09)
+PLAFONDS_USD = {"openai": 9.5, "mistral": 8.0}  # protocole v0.3, plafond OpenAI date du 25/09 12h04
 
 
 def fournisseur(modele: str) -> str:

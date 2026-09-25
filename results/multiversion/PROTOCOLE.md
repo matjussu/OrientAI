@@ -206,3 +206,41 @@ non calculables contre nos fiches (sources web), publié comme tel, jamais 0 %. 
 seulement** (`prod` + `chatgpt_web`, 158 tâches), lancé seulement après la relecture des runs par Jarvis (fin du
 §8.3). lot0 : pas de juge pour l'instant. Tout rejugement ou relance après coupure = nouveau go. Toutes les traces
 sont exportées au format état des lieux pour l'explorateur (onglet construit par Jarvis).
+
+**Amendement du 25/09 à 11h50 (p90)** : le repère de latence cité en §2 (« 6,2 s p90 du banc lot 0 ») vaut **6,8 s**
+(6,82). Cause : `build_etat_lieux.py` prenait `xs[int(0.9 * (n - 1))]`, qui rend un rang trop bas (le minimum sur
+2 valeurs, défaut relevé par Jarvis sur l'essai) ; recalculé par Jarvis sur les mêmes 67 tours avec le rang le plus
+proche (`ceil(0.9 * n) - 1`), la formule de `export._p90`. Seule cette valeur change. Le §2 n'est pas réécrit : cet
+amendement le remplace.
+
+## 12. Protocole v0.3 (25/09 à 12h05, GO de Jarvis sur la décision de Matteo, Telegram 10734 et 10736), écrit avant l'appel
+
+**Recadrage (Matteo)** : ChatGPT avec recherche est un **repère** (ce que donne un modèle frontière dans une app
+classique), pas une cible à battre. Le but d'OrientAI : aussi utile, souverain, et sans erreur de fait. Le critère
+qui compte : le **taux d'erreur factuelle**.
+
+**Échantillon de comparaison figé** (`results/multiversion/echantillon_vertical_25.json`) : 25 conversations du banc
+vertical, stratifiées par domaine au prorata du banc (informatique 21/57 x 25 = 9,21 ; santé 9,21 ; maths 6,58 :
+parties entières 9 / 9 / 6, le reste restant va à la plus grande partie décimale, maths : **9 / 9 / 7**). Tirage
+`random.Random("multiversion-echantillon-2026-09-25|<domaine>").sample(ids triés, quota)`, tous les tours de chaque
+conversation retenue. 34 tours (25 premiers tours, 9 suites). Liste figée pour toutes les versions futures :
+
+V-INF-01, V-INF-04, V-INF-05, V-INF-08, V-INF-10, V-INF-11, V-INF-13, V-INF-17, V-INF-18,
+V-MAT-03, V-MAT-05, V-MAT-06, V-MAT-08, V-MAT-10, V-MAT-11, V-MAT-13,
+V-SAN-02, V-SAN-04, V-SAN-06, V-SAN-07, V-SAN-08, V-SAN-11, V-SAN-13, V-SAN-14, V-SAN-17.
+
+**`chatgpt_web`** : joue seulement ces 34 tours ; ni lot0, ni le reste du vertical. L'essai V-INF-02 (hors
+échantillon) reste dans le tag d'essai, hors comparaison.
+
+**Plafond OpenAI : 8 USD tout compris** (0,40 déjà dépensés inclus), même arrêt automatique. Estimation (supposée, sur
+les 2 tours de l'essai : premier tour 0,266, suite 0,129) : 25 x 0,266 + 9 x 0,129 = **7,82 USD**, soit 8,22 avec le
+déjà-dépensé : **au-dessus du plafond**, signalé à Jarvis avant tout appel.
+
+**Juge** (go de Matteo, un passage) : `prod` sur tout le vertical (79 tours) + `chatgpt_web` sur les 34 tours de
+l'échantillon, mélangés à l'aveugle. Le rapport publie `prod` sur les 79 tours ET `prod` restreinte aux 25
+conversations, pour comparer à `chatgpt_web` sur la même base.
+
+**Rapport, dans cet ordre** : erreur factuelle (avec IC95), critère 1, juge 4 critères, coût, latence.
+
+**Plafond OpenAI, 25/09 à 12h04 (GO final de Jarvis, option a)** : **9,5 USD tout compris** (0,40 déjà dépensés
+inclus), dans l'enveloppe de 15 USD validée par Matteo (Telegram 10730). Remplace les 8 USD ci-dessus. Mistral : 8.
