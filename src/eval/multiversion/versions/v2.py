@@ -55,7 +55,9 @@ class V2:
     def _fil(self) -> tuple[ClientCompte, Pipeline]:
         if getattr(self._local, "pipeline", None) is None:
             from mistralai.client import Mistral
-            client = ClientCompte(Mistral(api_key=_cle_mistral(), server_url=SERVEUR, timeout_ms=180_000))
+            # 60 s : au palier 1, 96 appels, le plus long a pris 24 s ; un appel resté pendu jusqu'aux 180 s d'avant a
+            # fait un tour de 202 s (F-QMAT-12). La nouvelle tentative du pipeline prend le relais.
+            client = ClientCompte(Mistral(api_key=_cle_mistral(), server_url=SERVEUR, timeout_ms=60_000))
             self._local.client, self._local.pipeline = client, Pipeline(client, outils=self.outils)
         return self._local.client, self._local.pipeline
 

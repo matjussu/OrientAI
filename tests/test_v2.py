@@ -413,3 +413,63 @@ def test_gate_f_compte_les_questions_hors_parentheses():
 def test_arguments_encodes_deux_fois(outils):
     r = outils.executer("trouver_formation", json.dumps(json.dumps({"texte": "BUT info Lens"})))
     assert r.erreur is None and r.ids[0] == "psup:7520"
+
+
+# ── Amendement v2 (25/09, après le palier 1) ───────────────────────────────────────────────
+def _effectif_invente_attrape() -> bool:
+    valeurs = VALEURS + [{"valeur": 976.0, "unite": "effectif", "id": "psup:7596", "cle": "candidats_ont_postule@2025",
+                          "source_id": "s"}]
+    t = ("Le BUT a reçu 976 candidats et 1 200 vœux.\n\n| | BUT | Licence |\n|---|---|---|\n"
+         "| Candidats ayant postulé | 976 | 853 |")
+    v = vf.verifier(t, valeurs)
+    return sorted(c["valeur"] for c in v["non_adosses"]) == [853.0, 1200.0]
+
+
+def test_verificateur_attrape_un_effectif_invente():
+    assert _effectif_invente_attrape()
+
+
+def test_sabotage_effectif_invente_fait_rougir(monkeypatch):
+    monkeypatch.setenv("ORIENTIA_SABOTAGE_V2", "verificateur_laisse_passer")
+    assert not _effectif_invente_attrape()
+
+
+@base_requise
+def test_effectifs_de_l_essentiel_sont_verifiables(outils):
+    r = outils.executer("lire_fiche", {"id": "psup:7596"})
+    assert {"valeur": 976.0, "unite": "effectif", "id": "psup:7596", "cle": "candidats_ont_postule@2025",
+            "source_id": "page_publique_parcoursup"} in r.valeurs
+
+
+@base_requise
+@pytest.mark.parametrize("args, attendu", [
+    ({"texte": "licence informatique mathématiques appliquées accès santé", "commune": "Grenoble",
+      "types": ["las", "licence"]}, "psup:31941"),
+    ({"texte": "PASS", "commune": "Grenoble", "types": ["pass"]}, "psup:30790"),
+])
+def test_trouver_formation_commune_a_20_km(outils, args, attendu):
+    """Campus de périphérie (Saint-Martin-d'Hères pour « Grenoble ») : 0 candidat au palier 1."""
+    assert attendu in outils.executer("trouver_formation", args).ids
+
+
+@base_requise
+def test_lire_fiche_plusieurs_ids(outils):
+    r = outils.executer("lire_fiche", {"ids": ["psup:7596", "psup:47455", "mm:1603218DH2WG"]})
+    assert r.erreur is None and r.ids == ["psup:7596", "psup:47455", "mm:1603218DH2WG"]
+    assert r.meta["valeurs_rendues"] < r.meta["valeurs_fiche"]
+    assert outils.executer("lire_fiche", {"ids": [f"psup:{i}" for i in range(6)]}).erreur == "parametres_invalides"
+    assert outils.executer("lire_fiche", {}).erreur == "filtre_invalide"
+
+
+@base_requise
+def test_detecteur_gate_f_sans_mots_vides(outils):
+    from src.eval.multiversion.gate_f import Detecteur
+    d = Detecteur(outils)
+    assert d.cites_hors("Les LAS de l'Université Rennes 2.", ["psup:27611"]) == []
+    assert d.cites_hors("Les LAS de l'Université Rennes 2.", ["psup:7596"]) == ["universite rennes 2"]
+
+
+def test_trace_garde_le_texte_rendu_au_modele():
+    p, _, _ = _pipeline([_msg(appels=[("lire_fiche", {"id": "psup:7596"})]), _msg("Taux : 34 %.")])
+    r = p.repondre("q", EtatConversation())
+    assert r["trace"]["outils"][0]["texte"] == "[psup:7596] taux d'accès 34 %"

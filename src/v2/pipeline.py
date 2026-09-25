@@ -66,6 +66,8 @@ def phrase_etape(nom: str, args: dict, outils: Outils | None = None) -> str:
     if nom == "trouver_formation":
         return f"je retrouve « {a.get('texte', '')} »"
     if nom == "lire_fiche":
+        if a.get("ids"):
+            return f"je lis {len(a['ids'])} fiches"
         f = next((x for x in (outils.index if outils else []) if x["id"] == str(a.get("id", "")).strip("[] ")), None)
         return f"je lis la fiche {f['intitule']}, {f['etablissement']}" if f else f"je lis la fiche {a.get('id')}"
     if nom == "comparer":
@@ -157,6 +159,7 @@ class Pipeline:
                     etat.profil.citer(res.ids)
                 trace["outils"].append({"nom": nom, "arguments": args if args else brut, "execute": True,
                                         "ids_rendus": res.ids, "valeurs": res.valeurs, "meta": res.meta,
+                                        "texte": res.texte,
                                         "erreur": res.erreur, "secondes": round(time.time() - t0, 3)})
                 msgs.append({"role": "tool", "name": nom, "tool_call_id": tc.id, "content": res.texte})
 

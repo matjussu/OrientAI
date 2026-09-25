@@ -41,9 +41,14 @@ ESSENTIEL = frozenset({
 # Notions comparées par défaut par `comparer` : les chiffres de l'essentiel.
 COMPARER_DEFAUT = ("taux_acces", "places", "capacite_accueil", "repartition_admis_bac_general",
                    "repartition_admis_bac_techno", "repartition_admis_bac_pro", "candidats_ont_postule")
-UNITE_VERIF = {"%": "pct", "EUR": "eur", "places": "places"}
-INSERTION_UNITE = {"%": "pct", "euros": "eur"}   # unités de `format_d.INSERTION_RENDUE` vérifiables
+UNITE_VERIF = {"%": "pct", "EUR": "eur", "places": "places", "candidats": "effectif", "candidatures": "effectif",
+               "propositions": "effectif", "admis": "effectif", "vœux": "effectif", "étudiants": "effectif"}
+INSERTION_UNITE = {"%": "pct", "euros": "eur", "diplômés": "effectif"}   # unités de `format_d.INSERTION_RENDUE`
 AUTRES_MAX = 12
+# trouver_formation, filtre commune : dans la commune ou à moins de ce rayon de son centre. Mesure du palier 1 (25/09) :
+# les formations de l'Université Grenoble Alpes sont à Saint-Martin-d'Hères, l'élève et le modèle écrivent « Grenoble »
+# (F-NINF-21 et F-NSAN-10 : 0 candidat). Amendement v2 du contrat, section 3.
+RAYON_COMMUNE_KM = 20.0
 SABOTAGES = ("essentiel_tout",)
 
 TypeFormation = Literal["pass", "las", "licence", "but", "bts", "cpge", "cupge", "ifsi", "diplome_sante",
@@ -127,9 +132,11 @@ class ListerValeurs(_Outil):
 
 
 class LireFiche(_Outil):
-    """Chiffres d'une formation, chacun avec sa source, son année et la raison d'un « non disponible ». Par défaut
-    l'essentiel (taux d'accès, places, répartition des admis par bac, candidats, insertion) ; detail=true pour tout."""
-    id: str = Field(max_length=40, description="identifiant de la fiche, ex. psup:7596")
+    """Chiffres d'une ou plusieurs formations (jusqu'à 5 en un seul appel avec « ids »), chacun avec sa source, son
+    année et la raison d'un « non disponible ». Par défaut l'essentiel (taux d'accès, places, répartition des admis par
+    bac, candidats, insertion) ; detail=true pour tout."""
+    id: str | None = Field(None, max_length=40, description="identifiant d'une fiche, ex. psup:7596")
+    ids: list[str] | None = Field(None, min_length=1, max_length=5, description="jusqu'à 5 fiches lues ensemble")
     detail: bool = False
 
 
@@ -165,7 +172,7 @@ def catalogue() -> list[dict]:
 @dataclass
 class Resultat:
     texte: str
-    valeurs: list[dict] = field(default_factory=list)   # {valeur, unite (pct|eur|places), id, cle, source_id}
+    valeurs: list[dict] = field(default_factory=list)   # {valeur, unite (pct|eur|places|effectif), id, cle, source_id}
     ids: list[str] = field(default_factory=list)        # formations rendues
     meta: dict = field(default_factory=dict)
     erreur: str | None = None
@@ -244,7 +251,7 @@ class Outils:
     @staticmethod
     def _indexer(b: bc.Base) -> list[dict]:
         lieux: dict[str, list[dict]] = {}
-        for r in b.con.execute("SELECT id, commune, code_insee FROM lieu ORDER BY id, rang"):
+        for r in b.con.execute("SELECT id, commune, code_insee, lat, lon FROM lieu ORDER BY id, rang"):
             lieux.setdefault(r["id"], []).append(dict(r))
         out = []
         for f in b.con.execute("SELECT id, intitule, etablissement, filiere, specialite, type, type_libelle, espace "
@@ -255,6 +262,7 @@ class Outils:
             out.append({"id": f["id"], "intitule": f["intitule"], "etablissement": f["etablissement"],
                         "type": f["type"], "espace": f["espace"], "commune": (ls or [{}])[0].get("commune"),
                         "codes_insee": {x["code_insee"] for x in ls}, "mots": set(normaliser(botte).split()),
+                        "coords": [(x["lat"], x["lon"]) for x in ls if x["lat"] is not None],
                         "etab_norm": normaliser(f["etablissement"] or "")})
         return out
 
@@ -348,10 +356,27 @@ class Outils:
         return Resultat(texte=f"{p.champ} : " + " ; ".join(f"{x} ({n})" for x, n in v), meta={"nb": len(v)})
 
     def lire_fiche(self, p: LireFiche, etat=None) -> Resultat:
+        """Une fiche (`id`) ou plusieurs (`ids`, au plus 5, un seul appel compté : amendement v2, section 3 ; au palier 1,
+        8 questions sur 30 ont atteint le plafond de 6 en lisant les fiches une par une, F-R03 en demandait 14)."""
+        demandes = ([p.id] if p.id else []) + list(p.ids or [])
+        if not demandes:
+            raise bc.FiltreInvalide("donner « id » (une fiche) ou « ids » (jusqu'à 5 fiches)")
+        if len(demandes) > 5:
+            raise bc.FiltreInvalide("au plus 5 fiches par appel")
+        res = [self._lire_une(i.strip().strip("[]"), p.detail) for i in dict.fromkeys(demandes)]
+        if len(res) == 1:
+            return res[0]
+        return Resultat(texte="\n\n---\n\n".join(r.texte for r in res), valeurs=[v for r in res for v in r.valeurs],
+                        ids=[i for r in res for i in r.ids],
+                        meta={"detail": p.detail, "fiches": len(res),
+                              "valeurs_rendues": sum(r.meta["valeurs_rendues"] for r in res),
+                              "valeurs_fiche": sum(r.meta["valeurs_fiche"] for r in res)})
+
+    def _lire_une(self, id_: str, detail_demande: bool) -> Resultat:
         f = self.formats
-        fiche = bc.lire_fiche(self.base, p.id.strip().strip("[]"))
+        fiche = bc.lire_fiche(self.base, id_)
         tout = fiche["valeurs"]
-        detail = p.detail or sabotage() == "essentiel_tout"
+        detail = detail_demande or sabotage() == "essentiel_tout"
         gardees = tout if detail else {k: v for k, v in tout.items() if notion(k) in ESSENTIEL}
         sources: list[str] = []
         lignes = [f._entete(fiche)]
@@ -391,27 +416,36 @@ class Outils:
         ts = termes(p.texte)
         if not ts:
             raise bc.FiltreInvalide("texte sans mot utile : donner l'intitulé, l'établissement ou la ville")
-        codes = None
+        codes, centres = None, []
         if p.commune:
             cands = bc.trouver_commune(self.base, p.commune)
             if not cands and not re.fullmatch(r"\d[\dAB]\d{3}", p.commune.strip()):
                 self._commune(p.commune)  # lève l'erreur avec les communes proches
             codes = {c["code_insee"] for c in cands} or {p.commune.strip()}
+            for c in codes:
+                try:
+                    centres.append(bc._centre(self.base, c)[:2])
+                except bc.FiltreInvalide:
+                    pass
         types = set(bc._deplier_types(p.types)) if p.types else None
         cands = []
         for f in self.index:
             if types and f["type"] not in types:
                 continue
+            dist = 0.0
             if codes is not None and not (f["codes_insee"] & codes):
-                continue
+                d = [bc.haversine_km(la, lo, c[0], c[1]) for la, lo in f["coords"] for c in centres]
+                if not d or min(d) > RAYON_COMMUNE_KM:
+                    continue
+                dist = min(d)
             trouves = [t for t in ts if any(all(m in f["mots"] for m in lec) for lec in t)]
             if trouves:
-                cands.append((len(trouves) / len(ts), f, trouves))
-        cands.sort(key=lambda x: (-x[0], x[1]["id"]))
+                cands.append((len(trouves) / len(ts), f, trouves, dist))
+        cands.sort(key=lambda x: (-x[0], x[3], x[1]["id"]))
         garde = cands[:10]
         out = [{"id": f["id"], "intitule": f["intitule"], "etablissement": f["etablissement"], "commune": f["commune"],
-                "type": f["type"], "score": round(s, 2),
-                "termes_trouves": [" / ".join(" ".join(lec) for lec in t) for t in tr]} for s, f, tr in garde]
+                "type": f["type"], "score": round(s, 2), "distance_km": round(d, 1) if d else None,
+                "termes_trouves": [" / ".join(" ".join(lec) for lec in t) for t in tr]} for s, f, tr, d in garde]
         meta = {"requete_normalisee": normaliser(p.texte), "nb_candidats": len(cands), "tronque": len(cands) > 10}
         if not out:
             etabs = sorted({f["etablissement"] for f in self.index})
@@ -420,8 +454,9 @@ class Outils:
                             meta=meta)
         lignes = [f"{len(cands)} candidat(s)" + (", les 10 plus proches" if len(cands) > 10 else "")
                   + " (à lire avec lire_fiche) :"]
-        lignes += [f"- [{c['id']}] {c['intitule']} | {c['etablissement']} | {c['commune']} (score {c['score']})"
-                   for c in out]
+        lignes += [f"- [{c['id']}] {c['intitule']} | {c['etablissement']} | {c['commune']}"
+                   + (f" ({str(c['distance_km']).replace('.', ',')} km)" if c["distance_km"] else "")
+                   + f" (score {c['score']})" for c in out]
         return Resultat(texte="\n".join(lignes), ids=[c["id"] for c in out], meta=meta | {"candidats": out})
 
     def comparer(self, p: Comparer, etat=None) -> Resultat:
@@ -503,7 +538,7 @@ def _fr(v) -> str:
 
 
 def _valeurs_structurees(id_: str, valeurs: dict) -> list[dict]:
-    """Valeurs chiffrées vérifiables (pct, eur, places) d'un dictionnaire de valeurs rendu au modèle."""
+    """Valeurs chiffrées vérifiables (pct, eur, places, effectif) d'un dictionnaire de valeurs rendu au modèle."""
     out = []
     for cle, v in valeurs.items():
         u = UNITE_VERIF.get(v.get("unite"))

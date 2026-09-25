@@ -110,10 +110,10 @@ def adosses(records: list[dict], version: str) -> dict:
 
 def adosses_v2(records: list[dict]) -> dict:
     """v2 : chiffres affichés adossés aux valeurs que les outils ont rendues dans la conversation (gardées par la trace
-    de chaque appel), ou écrits par l'élève (choix C4). Recompté ici avec l'extraction et la tolérance de `numbers.py`,
-    sans passer par `src/v2/verificateur.py`. Les fiches ne sont pas des positions du corpus : pas de témoin de
+    de chaque appel), ou écrits par l'élève (choix C4). Recompté ici avec l'extraction typée du critère 1 (`chiffres` :
+    pct, eur, places, effectifs, tableaux compris ; tolérances de `critere_d`), sans passer par
+    `src/v2/verificateur.py`. Les « admis », « inscrits », « diplômés » ne sont lus que par le vérificateur. Les fiches ne sont pas des positions du corpus : pas de témoin de
     hasard par permutation de fiches, le taux est une garantie structurelle vérifiée a posteriori."""
-    from src.eval.battery.numbers import _TOLERANCE, extract_claims
     par_conv: dict[str, list[dict]] = {}
     for r in sorted(records, key=lambda r: (r["id"], r["turn"])):
         par_conv.setdefault(r["id"], []).append(r)
@@ -123,17 +123,16 @@ def adosses_v2(records: list[dict]) -> dict:
         for t in tours:
             for appel in (t.get("trace") or {}).get("outils", []):
                 valeurs += appel.get("valeurs") or []
-            eleve += [(c.value, c.unit) for c in extract_claims(t["question"])]
+            eleve += chiffres(t["question"])
             checks = []
-            for c in extract_claims(t["answer"]):
-                tol = _TOLERANCE[c.unit]
-                ok = any(v["unite"] == c.unit and abs(v["valeur"] - c.value) <= tol for v in valeurs)
-                el = not ok and any(u == c.unit and abs(x - c.value) <= tol for x, u in eleve)
-                checks.append({"value": c.value, "unit": c.unit, "line": c.line,
-                               "status": "adosse" if ok else ("eleve" if el else "non_retrouve")})
+            for valeur, unite in chiffres(t["answer"]):
+                tol = cd.TOLERANCE[unite]
+                ok = any(v["unite"] == unite and abs(v["valeur"] - valeur) <= tol for v in valeurs)
+                el = not ok and any(u == unite and abs(x - valeur) <= tol for x, u in eleve)
+                checks.append({"value": valeur, "unit": unite, "status": "adosse" if ok else ("eleve" if el else "non_retrouve")})
                 n += 1
                 if not ok and not el:
-                    fautes.append({"id": t["id"], "turn": t["turn"], "valeur": c.value, "unite": c.unit})
+                    fautes.append({"id": t["id"], "turn": t["turn"], "valeur": valeur, "unite": unite})
             par_tour[(t["id"], t["turn"])] = checks
     return {"statut": "mesuré (valeurs des outils tracées)", "chiffres_cites": n,
             "taux": (n - len(fautes)) / n if n else None, "non_adosses": fautes, "par_tour": par_tour}

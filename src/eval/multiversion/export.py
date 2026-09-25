@@ -75,7 +75,7 @@ def _tour(x: dict, juge: dict | None, chiffres: list | None) -> dict:
         # Cerveau v2 : les étages de la trace (CONTRAT-etape3 section 2), pour l'onglet de l'explorateur.
         "v2": None if x.get("version") != "v2" else {
             "filtre": tr.get("filtre"), "court_circuit": tr.get("court_circuit"), "etapes": tr.get("etapes"),
-            "outils": [{k: a.get(k) for k in ("nom", "arguments", "execute", "ids_rendus", "erreur", "secondes")}
+            "outils": [{k: a.get(k) for k in ("nom", "arguments", "execute", "ids_rendus", "erreur", "secondes", "texte")}
                        | {"nb_resultats": (a.get("meta") or {}).get("nb_resultats"),
                           "tronque": (a.get("meta") or {}).get("tronque"), "nb_valeurs": len(a.get("valeurs") or [])}
                        for a in tr.get("outils") or []],

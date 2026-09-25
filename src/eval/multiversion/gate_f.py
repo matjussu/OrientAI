@@ -14,7 +14,7 @@ Critères (tous requis pour le gate de l'étape 3) :
    chiffres de l'élève), avec la même tolérance que `numbers.py`, sans passer par `src/v2/verificateur.py`.
 
 Angles morts publiés : une formation citée par un sigle ou un surnom seul (« l'IUT », « Lyon 1 ») n'est pas vue par
-le critère 2 ; un établissement dont le nom normalisé fait moins de 12 caractères n'est pas cherché (trop de
+le critère 2 ; un établissement dont le nom normalisé (sans mots vides) fait moins de 12 caractères n'est pas cherché (trop de
 coïncidences).
 """
 from __future__ import annotations
@@ -27,13 +27,19 @@ from pathlib import Path
 from src.eval.battery.runner import read_jsonl
 from src.eval.multiversion.lanceur import RESULTATS, charger_banc
 from src.eval.multiversion.mesures import adosses_v2
-from src.v2.outils import Outils, normaliser
+from src.v2.outils import _VIDES, Outils, normaliser
 
 RACINE = Path(__file__).resolve().parents[3]
 GATE_F = RACINE / "docs/cerveau/gate_f/requetes_gate_f.json"
 FAMILLES_FICHES = ("recherche", "nom", "multi-tour", "honnetete")
 MIN_ETAB = 12
 SEUIL_FICHES = 0.90
+
+
+def cle_etab(texte: str) -> str:
+    """Nom normalisé sans mots vides : « Université Rennes 2 » et « Université de Rennes 2 » se rejoignent (faux
+    positif du palier 1, F-R08, relu le 25/09)."""
+    return " ".join(m for m in normaliser(texte).split() if m not in _VIDES)
 
 
 def _questions(reponse: str) -> list[tuple[int, str]]:
@@ -54,11 +60,11 @@ class Detecteur:
     """Établissements de la base C écrits dans une réponse, contre ceux des formations rendues."""
 
     def __init__(self, outils: Outils):
-        self.etab_de = {f["id"]: f["etab_norm"] for f in outils.index}
+        self.etab_de = {f["id"]: cle_etab(f["etablissement"] or "") for f in outils.index}
         self.etabs = sorted({e for e in self.etab_de.values() if len(e) >= MIN_ETAB}, key=len, reverse=True)
 
     def cites_hors(self, reponse: str, ids_rendus: list[str]) -> list[str]:
-        texte = f" {normaliser(reponse)} "
+        texte = f" {cle_etab(reponse)} "
         rendus = {self.etab_de.get(i) for i in ids_rendus}
         vus = []
         for e in self.etabs:

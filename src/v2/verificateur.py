@@ -1,7 +1,9 @@
 """Le vérificateur de chiffres (contrat du cerveau, section 6 ; CONTRAT-etape3, section 6). Déterministe.
 
 Portée : pourcentages, euros, places, extraits par `src/eval/battery/numbers.py` (unités, tolérances et lecture des
-tableaux du module, non modifié). Un chiffre est :
+tableaux du module, non modifié) ; et, depuis l'amendement v2 du contrat (25/09, relevé de Jarvis au palier 0 :
+« 976 candidats » affiché sans contrôle alors que `candidats_ont_postule` est dans l'essentiel), les effectifs :
+candidats, vœux, propositions, admis, inscrits, diplômés (tolérance 0,5 comme `critere_d`). Un chiffre est :
 - `adosse`  : égal, à la tolérance, à une valeur de même unité rendue par un outil pendant la conversation ;
 - `eleve`   : absent des résultats d'outils, mais écrit par l'élève dans la conversation (choix C4, Matteo 10783) ;
 - `non_adosse` : ni l'un ni l'autre.
@@ -15,7 +17,7 @@ from __future__ import annotations
 import os
 import re
 
-from src.eval.battery.numbers import _TOLERANCE, extract_claims
+from src.eval.battery.numbers import _TOLERANCE, NumberClaim, _to_float, extract_claims, table_numbers
 
 SABOTAGES = ("verificateur_laisse_passer", "garder_phrase")
 REECRITURE = ("Ces chiffres ne sont dans aucun résultat d'outil de cette conversation : {liste}. Retire-les, ou "
@@ -30,13 +32,33 @@ def _sabotage() -> str | None:
     return s if s in SABOTAGES else None
 
 
+TOLERANCE = {**_TOLERANCE, "effectif": 0.5}
+_EFFECTIF = re.compile(r"(?<![\d.,])(\d{1,3}(?:[  ]\d{3})+|\d+)(?:[.,](\d+))?[  ]?"
+                       r"(candidat(?:e?s)?|v(?:oe|œ)ux|propositions?|admise?s?|inscrite?s?|diplômée?s?)\b", re.IGNORECASE)
+_LIBELLE_EFFECTIF = re.compile(r"candidat|v(?:oe|œ)ux|proposition|admis|inscrit|diplômé", re.IGNORECASE)
+
+
+def _unite_effectif(libelle: str) -> str | None:
+    return "effectif" if _LIBELLE_EFFECTIF.search(libelle) else None
+
+
+def chiffres(texte: str) -> list[NumberClaim]:
+    """Chiffres contrôlés : ceux de `numbers.py` (pct, eur, places, tableaux compris), plus les effectifs."""
+    out = list(extract_claims(texte))
+    for ligne in (texte or "").splitlines():
+        out += [NumberClaim(_to_float(m.group(1), m.group(2)), "effectif", ligne.strip()) for m in _EFFECTIF.finditer(ligne)]
+    out += [NumberClaim(v, u, ligne) for v, u, ligne in table_numbers(texte, _unite_effectif) if u == "effectif"
+            and not any(c.unit == "effectif" and c.line == ligne and c.value == v for c in out)]
+    return out
+
+
 def _fmt(v: float, unite: str) -> str:
     n = str(int(v)) if float(v).is_integer() else f"{v}".replace(".", ",")
-    return n + {"pct": " %", "eur": " €", "places": " places"}[unite]
+    return n + {"pct": " %", "eur": " €", "places": " places", "effectif": ""}[unite]
 
 
 def chiffres_eleve(messages: list[str]) -> list[tuple[float, str]]:
-    return [(c.value, c.unit) for m in messages for c in extract_claims(m)]
+    return [(c.value, c.unit) for m in messages for c in chiffres(m)]
 
 
 def verifier(texte: str, valeurs: list[dict], eleve: list[tuple[float, str]] | None = None) -> dict:
@@ -44,8 +66,8 @@ def verifier(texte: str, valeurs: list[dict], eleve: list[tuple[float, str]] | N
     eleve = eleve or []
     out = {"adosses": [], "eleve": [], "non_adosses": []}
     laisse_passer = _sabotage() == "verificateur_laisse_passer"
-    for c in extract_claims(texte):
-        tol = _TOLERANCE[c.unit]
+    for c in chiffres(texte):
+        tol = TOLERANCE[c.unit]
         porteurs = [{"id": v["id"], "cle": v["cle"], "source_id": v["source_id"], "valeur": v["valeur"]}
                     for v in valeurs if v["unite"] == c.unit and abs(v["valeur"] - c.value) <= tol]
         rec = {"valeur": c.value, "unite": c.unit, "ligne": c.line}
