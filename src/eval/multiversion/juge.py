@@ -54,7 +54,8 @@ def _cartes_vertical() -> dict[str, list[str]]:
     return {cid: [f.carte_b(i) for i in c["exposees"]] for cid, c in expo.items()}
 
 
-def preparer(tag: str, graine: str) -> dict:
+def preparer(tag: str, graine: str, bancs: tuple[str, ...] = ("vertical",)) -> dict:
+    """`bancs` : bancs jugés (décision du 25/09 : vertical seulement ; lot0 plus tard, sur les réponses stockées)."""
     dossier = RESULTATS / tag
     juge = dossier / "judge"
     if (juge / "label_mapping.json").exists():
@@ -65,6 +66,8 @@ def preparer(tag: str, graine: str) -> dict:
     mapping, erreurs = {}, 0
     for f in sorted(dossier.glob("*__*.jsonl")):
         version, banc = f.stem.split("__")
+        if banc not in bancs:
+            continue
         for rec in (json.loads(x) for x in f.read_text(encoding="utf-8").splitlines() if x.strip()):
             if rec.get("error"):
                 erreurs += 1
