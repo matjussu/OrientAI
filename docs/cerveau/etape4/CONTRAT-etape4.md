@@ -4,6 +4,9 @@ Version v1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-eta
 à 15h34, Telegram 10802). Écrit AVANT toute ligne de code du v2 et tout appel payant (section 14.1 du contrat du
 cerveau). Statut : soumis à Jarvis (relecture et recompte), puis à Matteo (choix de la section 12 et prompt v1).
 
+v1.2 (26/09, 18h20, après le palier 1a et AVANT le passage 1b) : D3 devient `reasoning_effort="low"` (Matteo,
+Telegram 10818, relayé par Jarvis), règle de retenue réécrite, section 15.4 ; seuil de la sonde confirmé par Jarvis.
+
 v1.1 (26/09, 16h55, après le palier 0 et AVANT le palier 1a) : amendement de la section 15 (latence publiée avec la
 vitesse de l'API, timeout porté à 120 s, sonde avant les bancs), tranché par Jarvis ; D3 en attente de Matteo.
 
@@ -726,4 +729,36 @@ arrêt avant chaque juge.
 - **D3** : « none » refusé par l'API. Jarvis pose la question à Matteo (recommandation : tester « low » avec la même
   règle, sauf la condition « raisonnement < 20 % du défaut », remplacée par « rapport publié »). Rien n'est lancé
   avec `v2e4r` sans sa décision. Le palier 1a (v2e4, raisonnement par défaut) ne dépend pas de cette décision.
+
+### 15.4 Amendement v1.2 (26/09, 18h20, après le palier 1a, avant le passage 1b)
+
+**Palier 1a, lu avant cet amendement** (`results/multiversion/2026-09-26_v2e4/palier1a/`, code 14764de) :
+- gate F vert sur ses 4 critères : fiches 95/102, 0 formation citée hors des résultats, clarification 5/5, adossés
+  386/386 ;
+- 0 panne, 1,87 USD ;
+- latence médiane 14,7 s, p90 62,1 s, à 4,99 s par millier de jetons de sortie. Au gate F de l'étape 3 : 14,0 s et
+  31,6 s, à 5,67 ;
+- jetons de sortie +46 % par rapport à l'étape 3, raisonnement +57 %, raisonnement médian de l'appel final 3 878
+  caractères contre 2 099.
+
+**Seuil de la sonde (15.2 c)** : 11,3 s par millier sur la médiane par appel, confirmé par Jarvis (26/09, 16h47,
+recompte de la référence 5,64 avec son code).
+
+**D3 = `reasoning_effort="low"`** (Matteo, Telegram 10818, 18h16 : « Oui peut essayé avec low c'est une bonne idée »).
+« none » est refusé par l'API pour `zai-glm-5-3` (15.1). Le passage 1b joue la version `v2e4r`, identique à `v2e4`
+au paramètre près : même code, même prompt, même base.
+
+Règle de retenue de « low », qui remplace celle de la section 11 pour ce levier :
+1. l'API l'accepte. Le rapport du raisonnement (caractères, « low » sur défaut, tous appels et appel final) est
+   publié, sans seuil ;
+2. sur le gate F, les critères déterministes ne reculent pas face à 1a : au plus 2 fiches de moins, clarification
+   pas moins bonne, adossés 100 %, 0 formation citée hors des résultats ;
+3. juge sur les deux passages (1a et 1b, 64 verdicts) : l'erreur de fait de 1b ne dépasse pas celle de 1a de plus
+   d'une réponse sur 32. Le juge ne tourne que sur un go séparé de Matteo, pas encore donné.
+
+**Comparaison de latence 1a contre 1b** : brute ET normalisée par la vitesse de l'API au moment du passage (médiane
+par appel des secondes par millier de jetons de sortie), parce que les deux passages ne tournent pas à la même heure.
+
+Budget : plafond cumulé inchangé (5,5 USD pour le palier 1 ; dépensé 2,06 USD avant 1b). Il reste un passage du gate
+F au plus (1c) après celui-ci.
 
