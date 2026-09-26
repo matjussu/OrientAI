@@ -2,27 +2,26 @@
  "traces": "results/multiversion/2026-09-26_v2e4/v2e4__vertical.jsonl",
  "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
  "conversations_ecartees_panne": [
-  "V-INF-05",
-  "V-SAN-11"
+  "V-INF-05"
  ],
- "attendus_dans_la_base": 315,
+ "attendus_dans_la_base": 321,
  "classes": {
-  "cite_juste": 195,
-  "non_cite_fiche_jamais_rendue": 42,
+  "cite_juste": 198,
+  "non_cite_fiche_jamais_rendue": 43,
   "non_cite_base_ecart": 32,
-  "non_cite_fiche_rendue_non_lue": 22,
+  "non_cite_fiche_rendue_non_lue": 24,
   "non_cite_base_absent": 11,
   "non_cite_base_masque": 8,
   "non_cite_valeur_rendue_non_reprise": 3,
   "non_cite_fiche_lue_valeur_non_rendue": 2
  },
- "taux_critere1": 0.619,
- "plafond_si_tout_egal_cite": 0.8286,
- "attendus_egal": 261,
+ "taux_critere1": 0.6168,
+ "plafond_si_tout_egal_cite": 0.8318,
+ "attendus_egal": 267,
  "critere1_bis": {
-  "cites": 192,
-  "attendus": 261,
-  "taux": 0.7356
+  "cites": 195,
+  "attendus": 267,
+  "taux": 0.7303
  },
  "detail": [
   {
@@ -1964,6 +1963,66 @@
    "notion": "places@2025",
    "statut_base": "egal",
    "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 0,
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:43048",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 0,
+   "valeur": 110,
+   "unite": "places",
+   "fiche": "psup:43048",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 67.0,
+   "unite": "%",
+   "fiche": "psup:43039",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 10,
+   "unite": "places",
+   "fiche": "psup:43039",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:43064",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 46,
+   "unite": "places",
+   "fiche": "psup:43064",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
   },
   {
    "conversation": "V-SAN-12",

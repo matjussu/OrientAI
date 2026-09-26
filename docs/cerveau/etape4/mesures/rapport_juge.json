@@ -1,0 +1,319 @@
+{
+ "recouvrement": 20,
+ "hors_recouvrement": 59,
+ "v2e4": {
+  "vertical_79": {
+   "tours": 79,
+   "juges": 78,
+   "pannes": 1,
+   "erreurs": 3,
+   "part_sur_juges": 3.8,
+   "ic95_sur_juges": [
+    1.3,
+    10.7
+   ],
+   "prudent_erreurs_plus_pannes": 4,
+   "part_prudente": 5.1,
+   "ic95_prudent": [
+    2.0,
+    12.3
+   ],
+   "refus": 3,
+   "note": 4.13
+  },
+  "hors_recouvrement_59": {
+   "tours": 59,
+   "juges": 58,
+   "pannes": 1,
+   "erreurs": 1,
+   "part_sur_juges": 1.7,
+   "ic95_sur_juges": [
+    0.3,
+    9.1
+   ],
+   "prudent_erreurs_plus_pannes": 2,
+   "part_prudente": 3.4,
+   "ic95_prudent": [
+    0.9,
+    11.5
+   ],
+   "refus": 3,
+   "note": 4.06
+  },
+  "echantillon_34": {
+   "tours": 34,
+   "juges": 33,
+   "pannes": 1,
+   "erreurs": 1,
+   "part_sur_juges": 3.0,
+   "ic95_sur_juges": [
+    0.5,
+    15.3
+   ],
+   "prudent_erreurs_plus_pannes": 2,
+   "part_prudente": 5.9,
+   "ic95_prudent": [
+    1.6,
+    19.1
+   ],
+   "refus": 0,
+   "note": 4.17
+  },
+  "pannes": [
+   "V-INF-05.0"
+  ],
+  "pannes_hors_recouvrement": [
+   "V-INF-05.0"
+  ],
+  "sans_outil_de_donnees": {
+   "tours": 13,
+   "juges": 13,
+   "erreurs": 1,
+   "note": 3.9
+  },
+  "gatef_32": {
+   "tours": 32,
+   "juges": 32,
+   "pannes": 0,
+   "erreurs": 2,
+   "part_sur_juges": 6.2,
+   "ic95_sur_juges": [
+    1.7,
+    20.1
+   ],
+   "prudent_erreurs_plus_pannes": 2,
+   "part_prudente": 6.2,
+   "ic95_prudent": [
+    1.7,
+    20.1
+   ],
+   "refus": 0,
+   "note": 4.27
+  }
+ },
+ "v2": {
+  "vertical_79": {
+   "tours": 79,
+   "juges": 79,
+   "pannes": 0,
+   "erreurs": 15,
+   "part_sur_juges": 19.0,
+   "ic95_sur_juges": [
+    11.9,
+    29.0
+   ],
+   "prudent_erreurs_plus_pannes": 15,
+   "part_prudente": 19.0,
+   "ic95_prudent": [
+    11.9,
+    29.0
+   ],
+   "refus": 2,
+   "note": 4.27
+  },
+  "hors_recouvrement_59": {
+   "tours": 59,
+   "juges": 59,
+   "pannes": 0,
+   "erreurs": 13,
+   "part_sur_juges": 22.0,
+   "ic95_sur_juges": [
+    13.4,
+    34.1
+   ],
+   "prudent_erreurs_plus_pannes": 13,
+   "part_prudente": 22.0,
+   "ic95_prudent": [
+    13.4,
+    34.1
+   ],
+   "refus": 2,
+   "note": 4.21
+  },
+  "echantillon_34": {
+   "tours": 34,
+   "juges": 34,
+   "pannes": 0,
+   "erreurs": 5,
+   "part_sur_juges": 14.7,
+   "ic95_sur_juges": [
+    6.4,
+    30.1
+   ],
+   "prudent_erreurs_plus_pannes": 5,
+   "part_prudente": 14.7,
+   "ic95_prudent": [
+    6.4,
+    30.1
+   ],
+   "refus": 0,
+   "note": 4.29
+  },
+  "pannes": [],
+  "pannes_hors_recouvrement": [],
+  "sans_outil_de_donnees": {
+   "tours": 13,
+   "juges": 13,
+   "erreurs": 3,
+   "note": 3.94
+  },
+  "gatef_32": {
+   "tours": 32,
+   "juges": 32,
+   "pannes": 0,
+   "erreurs": 6,
+   "part_sur_juges": 18.8,
+   "ic95_sur_juges": [
+    8.9,
+    35.3
+   ],
+   "prudent_erreurs_plus_pannes": 6,
+   "part_prudente": 18.8,
+   "ic95_prudent": [
+    8.9,
+    35.3
+   ],
+   "refus": 0,
+   "note": 4.35
+  }
+ },
+ "prod": {
+  "vertical_79": {
+   "tours": 79,
+   "juges": 79,
+   "pannes": 0,
+   "erreurs": 25,
+   "part_sur_juges": 31.6,
+   "ic95_sur_juges": [
+    22.4,
+    42.5
+   ],
+   "prudent_erreurs_plus_pannes": 25,
+   "part_prudente": 31.6,
+   "ic95_prudent": [
+    22.4,
+    42.5
+   ],
+   "refus": 26,
+   "note": 2.26
+  },
+  "hors_recouvrement_59": {
+   "tours": 59,
+   "juges": 59,
+   "pannes": 0,
+   "erreurs": 20,
+   "part_sur_juges": 33.9,
+   "ic95_sur_juges": [
+    23.1,
+    46.6
+   ],
+   "prudent_erreurs_plus_pannes": 20,
+   "part_prudente": 33.9,
+   "ic95_prudent": [
+    23.1,
+    46.6
+   ],
+   "refus": 22,
+   "note": 2.23
+  },
+  "echantillon_34": {
+   "tours": 34,
+   "juges": 34,
+   "pannes": 0,
+   "erreurs": 10,
+   "part_sur_juges": 29.4,
+   "ic95_sur_juges": [
+    16.8,
+    46.2
+   ],
+   "prudent_erreurs_plus_pannes": 10,
+   "part_prudente": 29.4,
+   "ic95_prudent": [
+    16.8,
+    46.2
+   ],
+   "refus": 13,
+   "note": 2.25
+  },
+  "pannes": [],
+  "pannes_hors_recouvrement": []
+ },
+ "chatgpt_web": {
+  "echantillon_34": {
+   "tours": 34,
+   "juges": 34,
+   "pannes": 0,
+   "erreurs": 0,
+   "part_sur_juges": 0.0,
+   "ic95_sur_juges": [
+    0.0,
+    10.2
+   ],
+   "prudent_erreurs_plus_pannes": 0,
+   "part_prudente": 0.0,
+   "ic95_prudent": [
+    0.0,
+    10.2
+   ],
+   "refus": 0,
+   "note": 4.67
+  }
+ },
+ "garde_fous": {
+  "refus_le_5_sur_79": {
+   "valeur": 3,
+   "tenu": true
+  },
+  "note_ge_4_17": {
+   "valeur": 4.13,
+   "tenu": false
+  },
+  "note_sans_outil_ge_3_84": {
+   "valeur": 3.9,
+   "tenu": true
+  }
+ },
+ "critere_principal": {
+  "plancher": "< 10 %, au plus 5 sur 59 (version prudente)",
+  "sur_juges": "1/58",
+  "prudent": "2/59",
+  "tenu_version_prudente": true
+ },
+ "erreurs_v2e4": [
+  {
+   "banc": "vertical",
+   "id": "V-SAN-02",
+   "tour": 0,
+   "detail": "La réponse affirme qu'aucun PASS de Lille n'affiche 6 %. Or le PASS option sciences infirmières de l'Université de Lille a un taux d'accès de 6 % (session 2025).",
+   "hors_recouvrement": false
+  },
+  {
+   "banc": "vertical",
+   "id": "V-INF-15",
+   "tour": 0,
+   "detail": "La ligne 'Admis néo-bacheliers généraux' (97/94/57 %) reprend en fait la répartition de tous les admis par type de bac, pas une part calculée parmi les néo-bacheliers.",
+   "hors_recouvrement": false
+  },
+  {
+   "banc": "vertical",
+   "id": "V-INF-20",
+   "tour": 0,
+   "detail": "Le BUT Informatique n'a pas de parcours cybersécurité : c'est le BUT Réseaux et télécommunications qui a un parcours Cybersécurité.",
+   "hors_recouvrement": true
+  },
+  {
+   "banc": "gatef",
+   "id": "F-HSAN-02",
+   "tour": 0,
+   "detail": "L'assistant affirme que le chiffre de 6 % ne correspond a rien pour 2025, alors que le PASS option sciences infirmieres de l'Universite de Lille a bien un taux d'acces de 6 % en session 2025 (7769 candidats, 60 places). Il n'a lu que 10 des 13 options et en tire une conclusion fausse.",
+   "hors_recouvrement": null
+  },
+  {
+   "banc": "gatef",
+   "id": "F-HSAN-09",
+   "tour": 0,
+   "detail": "L'Université de Poitiers propose bien un PASS (faculté de médecine et pharmacie de Poitiers). Dire que le PASS le plus proche est à Tours, à 92 km, est faux, et ça fausse tout l'arbitrage PASS/LAS.",
+   "hors_recouvrement": null
+  }
+ ]
+}

@@ -2,9 +2,33 @@
 
 > **Plan de référence du cerveau v2 (depuis le 25/09/2026)** : `docs/cerveau/` - contrat v1.2
 > (`CONTRAT-cerveau.md`, feuille de route section 13, méthode section 14), gate F
-> (`gate_f/requetes_gate_f.json`, 30 questions-tests) et contrat de l'étape 3
-> (`etape3/CONTRAT-etape3.md` v2). Ce fichier reste le journal de reprise ; en cas d'écart, c'est
+> (`gate_f/requetes_gate_f.json`, 30 questions-tests), contrats de l'étape 3
+> (`etape3/CONTRAT-etape3.md` v2) et de l'étape 4 (`etape4/CONTRAT-etape4.md` v1.4). Ce fichier reste le journal de reprise ; en cas d'écart, c'est
 > `docs/cerveau/` qui fait foi pour le plan.
+
+## Reprise au 26/09/2026, soir (étape 4 du cerveau : la réponse, livrée et mesurée)
+
+1. Code : version `v2e4` (prompt v1 `145f0dd5a53c` validé par Matteo, vérificateur de libellé et d'absence,
+   correctifs d'outils et de boucle, timeout 120 s), branche `feat/cerveau-etape4`, code joué aux bancs `3b8b951`,
+   base `54f8aab3110f` (définition « Accès des terminales » corrigée, concordance verte). Contrat v1.4 mergé par
+   #193 pour sa v1, amendements 15.1 à 15.6 dans la PR de l'étape 4.
+2. Rapport : `results/multiversion/2026-09-26_v2e4/RAPPORT.md`.
+   - Erreur de fait, 59 tours hors recouvrement : 2/59 = 3,4 % en comptant la panne, 1/58 jugés (étape 3 : 22,0 %).
+     Plancher tenu.
+   - Échantillon de 25 conversations : 2/34, contre 0/34 pour ChatGPT + recherche.
+   - Gate F vert, clarification 5/5.
+   - Garde-fou de la note : 4,13, non tenu (seuil 4,17), à trancher par Matteo.
+   - Critère 1 bis : 73,0 % (plancher 85 %).
+   - Latence : p90 50,4 s au vertical, 72,2 s au lot 0 (le raisonnement augmente avec le prompt v1).
+   - `reasoning_effort` : « none » refusé par l'API, « low » sans effet (raisonnement ×1,24).
+3. Juge : un passage de 110 verdicts fait (go 10826) ; tout rejugement demande un nouveau go de Matteo.
+4. Budget du tag : 12,92 USD sur 15 (registre `results/multiversion/2026-09-26_v2e4/budget.json`), plus 0,02 USD
+   de sonde hors registre.
+5. Pièges nouveaux :
+   - un « ; » dans une définition de `data/reference/champs_etape_c.csv` décale les colonnes sans erreur (test
+     `test_table_des_champs_bien_formee`) ;
+   - la vitesse de l'API varie d'un facteur 3 à 4 dans la journée : lire la latence avec `vitesse_sortie` ;
+   - l'export et les adossés reconnaissent les variantes du v2 par `mesures.est_v2`.
 
 ## Reprise au 25/09/2026, soir (étape 3 du cerveau : v2 minimal livré et mesuré)
 
@@ -415,7 +439,7 @@ l'explorateur, validation de Matteo avant merge.
 | Le Mistral du pipeline ne remonte pas ses tokens | `results/battery/2026-09-23_lot0/manifest.json` l.22-24 : `local` (mistral-medium-2604) a `tokens_in`, `tokens_out`, `cost_usd` a null, alors que `mistral_large_norag` a les siens (l.42-43) |
 | 2 385 niveaux bac+N encore deduits par l'heuristique historique | `results/donnee_etape_a/RAPPORT.md` l.99 |
 | 252 questions du set de pertinence a labelliser (recall@10 actuel = borne basse) | `scripts/relevance_set/STATE.md` l.41 |
-| Test du juge qui appelle un vrai modele hors CI : lancer la suite avec `OFFLINE_JUDGE_TESTS=1` et sans cles, le rendre hors ligne par defaut | `results/donnee_etape_b/RAPPORT.md` l.171 |
+| Test du juge qui appelle un vrai modele hors CI : lancer la suite avec `OFFLINE_JUDGE_TESTS=1` et sans cles, le rendre hors ligne par defaut. Constat du 26/09 : `tests/test_judge_faithfulness.py` rend 2 echecs (pas toujours les memes) sur main comme sur la branche de l'etape 4 | `results/donnee_etape_b/RAPPORT.md` l.171 ; run du 26/09 (3 724 verts, 2 echecs) |
 | Pas de `.venv` dans `~/projets/OrientIA` : le recreer (`uv venv` + `requirements.lock`) | constat du 23/09 apres retrait du worktree B-2 |
 | Menage : `DEPLOY_LOT1_RUN_ME.sh` non suivi a jeter ; branche `jarvis/analyse-2026-09-05` a ne jamais merger, a supprimer | `git status`, `git branch -a` le 23/09 |
 | Texte MonMaster sans capacite d'accueil (5 chiffres du banc absents) ; 53 domaines hors verticale non revus | section 0 bis |
@@ -432,11 +456,17 @@ l'explorateur, validation de Matteo avant merge.
 | MonMaster : 3 écarts de 1 à 2 entre « candidatures » de la page et `n_can_pp + n_can_pc` (inventaire de Jarvis), cause non établie ; sans effet sur ce qui est montré (la page) | `_orientai-ref/verticale-2026-09/concordance/masters/inventaire_masters.json` |
 | Contrôle « A dans B » du format D : le motif `doublon_non_montre` peut couvrir une coïncidence de valeur avec un champ caché | `src/eval/format_d.py` |
 | ~~Places et vœux 2026 stockés, non montrés : décision attendue~~ **tranché le 25/09** : on garde ce que le modèle voit aujourd'hui, rien de 2026 ajouté, rien de retiré (places et vœux 2026 restent non montrés) | Matteo, Telegram 10783 ; `docs/cerveau/etape3/CONTRAT-etape3.md` section 5 |
-| v2 : latence p90 43,5 s au banc vertical (plancher 15 s) ; raisonnement de GLM et boucles à plusieurs appels ; `lire_fiche` à plusieurs ids rend jusqu'à 20 000 caractères (définitions répétées par fiche) | `results/multiversion/2026-09-25_v2/RAPPORT.md` section 5 |
-| v2 : 21 erreurs de fait au juge sans chiffre non adossé (connaissances hors outils 11, chiffre mal nommé 5, absence affirmée sans tout lire 4, contradiction avec la fiche 1) | même rapport, section 4 |
-| v2 : clarification 2/5 au gate F (3 ou 4 questions posées) : prompt, étape 4 | même rapport, section 3 |
+| v2 : latence p90 43,5 s à l'étape 3, **50,4 s au vertical et 72,2 s au lot 0 à l'étape 4** (plancher 15 s). Au gate F, le raisonnement augmente de 57 % avec le prompt v1 ; `reasoning_effort` « none » est refusé par l'API, « low » donne ×1,24. ~~Définitions répétées dans `lire_fiche`~~ corrigé (T4, levier de coût) | `results/multiversion/2026-09-26_v2e4/RAPPORT.md` section 5 |
+| v2 : mode de défaillance, un appel dont le raisonnement dépasse 120 s trois fois : 3 tours sur 79 au 1er passage, 1 après rejeu (V-INF-05 t0, deux fois sur deux), environ 6 minutes pour l'élève | même rapport, section 5 ; `bancs_passage1/` |
+| v2 : ~~21 erreurs de fait~~ **5 à l'étape 4** (K 1, L 1, A 3). Restent : absence sur le PASS de Lille (les 3 options cachées ne sont pas lues malgré le signal T2 ; le détecteur 6.2 ne voit pas « Aucune de ces 10 options ») ; absence dans la base dite comme réelle (F-HSAN-09) ; population d'un chiffre (néo-bacheliers contre tous les admis) invisible au vérificateur 6.1 ; contenu d'une formation affirmé malgré la règle c | même rapport, section 3 |
+| v2 : note du juge 4,13 à l'étape 4 (4,27 à l'étape 3), couverture 4,01 et expression 4,27 : renvois vers la source au lieu de répondre (dont des capacités santé que la base porte en détail), mécanique de recherche exposée. Garde-fou non tenu, à trancher par Matteo | même rapport, section 2 |
+| ~~v2 : clarification 2/5 au gate F~~ **corrigé à l'étape 4** : 5/5 (une question = une phrase, un « ? ») | gate F 1a et 1b |
+| v2 : critère 1 bis 73,0 % (plancher 85 %) ; 43 attendus dont la fiche ne sort d'aucun outil, 24 sortie mais non lue : stratégie de recherche du modèle | `docs/cerveau/etape4/mesures/critere1_etape4.json` |
+| v2 : détecteur d'absence à 75 % de précision sur le lot 0 (3 vraies sur 4) : absence gardée seulement tracée (D5 = b) | `docs/cerveau/etape4/mesures/etalonnage_absence.json` |
+| Contrôle des répartitions (`src/eval/controle_definitions.py`) : les familles sont regroupées par préfixe, un membre qui en porte un autre (`part_mention_sans_mention`, `repartition_admis_autres`) échappe au contrôle | code, docstring |
+| 20 des 32 tours du gate F sont des tours du vertical : régler sur le gate F revient à régler sur un quart du banc de mesure (critère principal lu hors recouvrement depuis l'étape 4) | `docs/cerveau/etape4/CONTRAT-etape4.md` section 3.1 |
 | v2 : réponse vide de GLM 5.3 sans appel d'outil (20 tours relancés sur 178) ; cause non établie | traces `relance_vide`, même rapport section 5 |
-| v2 : `trouver_formation` rend 10 candidats classés par identifiant à score égal (13 PASS à Lille : la fiche attendue n'est pas rendue) | gate F, F-HSAN-02 |
+| v2 : `trouver_formation` rend 10 candidats classés par identifiant à score égal (13 PASS à Lille) : **signalé depuis l'étape 4** (option montrée, `ex_aequo_caches`), mais le modèle ne va pas chercher les cachés | gate F, F-HSAN-02 ; RAPPORT de l'étape 4 section 3 |
 | Lanceur : une réponse vide jetait l'usage du tour (corrigé le 25/09) ; le registre du tag v2 porte une estimation majorante de 0,16 USD pour les 2 tours perdus | `budget.json` du tag, entrées « hors tours » |
 | ~~`openai` absent des manifestes~~ **déclaré le 25/09** dans `requirements-eval.txt` (hors image de prod) | #190 |
 | Latence prod p90 9,3-9,6 s le 25/09 contre 6,8 s le 23/09 (même mesure en processus) : non expliqué | RAPPORT multiversion section 3 |
