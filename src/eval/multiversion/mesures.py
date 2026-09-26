@@ -81,6 +81,31 @@ def critere1(banc: dict, reponses: dict[tuple[str, int], str], tableaux: bool = 
             "temoin_hasard": hits / total if total else None, "par_conversation": par_conv}
 
 
+def est_v2(version: str) -> bool:
+    """Le cerveau v2 et ses variantes (v2 à l'étape 3, v2e4 et v2e4r à l'étape 4) : même trace, mêmes mesures."""
+    return version == "v2" or version.startswith("v2e")
+
+
+def vitesse_sortie(records: list[dict], modele: str = "zai-glm-5-3") -> dict:
+    """Secondes par millier de jetons de sortie, médiane par appel au modèle (amendement v1.1 du CONTRAT-etape4 :
+    publiée à côté de la latence brute, parce que la vitesse de l'API a varié de 4,4 s à 11-21 s entre le 25 et le
+    26/09). Appels de la trace v2 appariés dans l'ordre aux appels comptés ; un tour dont les deux listes n'ont pas la
+    même longueur est écarté, et compté."""
+    import statistics
+    s_par_k, ecartes = [], 0
+    for r in records:
+        am = (r.get("trace") or {}).get("appels_modele") or []
+        comptes = [a for a in (r.get("appels") or []) if a.get("modele") == modele]
+        if not am:
+            continue
+        if len(am) != len(comptes):
+            ecartes += 1
+            continue
+        s_par_k += [a["secondes"] / (c["sortie"] / 1000) for a, c in zip(am, comptes) if c.get("sortie")]
+    return {"secondes_par_k_sortie_mediane": round(statistics.median(s_par_k), 2) if s_par_k else None,
+            "appels_mesures": len(s_par_k), "tours_ecartes": ecartes}
+
+
 def adosses(records: list[dict], version: str) -> dict:
     """Chiffres affichés adossés aux fiches que la version a exposées (numbers.py), avec le témoin de hasard.
 
@@ -88,7 +113,7 @@ def adosses(records: list[dict], version: str) -> dict:
     - version dont les sources ne sont pas nos fiches (chatgpt_web) : non calculable, jamais 0 %."""
     from src.eval.battery.corpus import Corpus
     from src.eval.battery.numbers import NumberChecker, NumberSummary, extract_claims
-    if version == "v2":
+    if est_v2(version):
         return adosses_v2(records)
     if version == "chatgpt_web":
         n = sum(len(extract_claims(r["answer"])) for r in records)

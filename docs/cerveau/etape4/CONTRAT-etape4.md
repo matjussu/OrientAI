@@ -4,6 +4,9 @@ Version v1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-eta
 à 15h34, Telegram 10802). Écrit AVANT toute ligne de code du v2 et tout appel payant (section 14.1 du contrat du
 cerveau). Statut : soumis à Jarvis (relecture et recompte), puis à Matteo (choix de la section 12 et prompt v1).
 
+v1.1 (26/09, 16h55, après le palier 0 et AVANT le palier 1a) : amendement de la section 15 (latence publiée avec la
+vitesse de l'API, timeout porté à 120 s, sonde avant les bancs), tranché par Jarvis ; D3 en attente de Matteo.
+
 v1 (26/09, 16h10, avant tout code et tout appel payant) : **choix tranchés par Matteo (Telegram 10808, « Validé »,
 relayé par Jarvis)**, section 12 bis ; prompt v1 validé tel quel (sha256 `145f0dd5a53c`, commit cf66bee).
 
@@ -679,3 +682,48 @@ arrêt avant chaque juge.
   de Matteo.
 - **Livraison** : REPRISE et backlog mis à jour dans le même lot, chaque item avec sa mesure. PR ouverte, sans merge
   sans le go de Matteo relayé par Jarvis.
+
+## 15. Amendement v1.1 (26/09, 16h55, après le palier 0, avant le palier 1a)
+
+Écrit après la lecture du palier 0 et avant tout autre run. Traces : `results/multiversion/2026-09-26_v2e4/palier0/`
+(code joué 2cd998a, base 54f8aab3110f, prompt v1 `145f0dd5a53c`). Dépense du palier 0 : 0,188 USD sur 0,50.
+
+### 15.1 Ce que le palier 0 a montré
+
+| | mesure |
+|---|---|
+| v2e4, F-R01, F-NINF-01, F-QINF-17 | fiches attendues 8 sur 8 ; 0 formation citée hors des résultats (contrôle positif : compte 1) ; chiffres adossés 27 sur 27 ; clarification de F-QINF-17 bonne (2 questions, un « ? » chacune) ; 0 réécriture |
+| panne au 1er passage | F-NINF-01 : `ReadTimeout` après 3 essais de 60 s (236 s) ; rejoué seul : bon, 100 s. 1er passage gardé (`palier0/v2e4__gatef_passage1.jsonl`) |
+| vitesse de l'API | médiane de 15,0 s par millier de jetons de sortie par appel (8 appels), contre 5,64 à l'étape 3 (même statistique, 267 appels du vertical ; `src.eval.multiversion.mesures.vitesse_sortie`). Les sorties font la même taille (362 à 3 000 jetons environ). Ralentissement côté fournisseur, supposé |
+| v2e4r (`reasoning_effort="none"`) | 3 pannes, toutes par erreur 400 : « reasoning_effort 'none' is not supported for this model; supported values: ['low', 'high', 'max'] » (26/09, 16h45). La condition 1 du levier (section 11) échoue telle qu'écrite |
+
+### 15.2 Amendements (tranchés par Jarvis, 26/09 16h44 : techniques et généraux)
+
+- **a) Latence publiée avec la vitesse de l'API.** Chaque run publie, à côté de la latence brute (médiane, p90 au rang
+  le plus proche), la médiane par appel des secondes par millier de jetons de sortie
+  (`vitesse_sortie`, champ `secondes_par_k_sortie_mediane`, dans le journal du lanceur et dans le rapport). Le
+  plancher p90 < 15 s se lit sur les deux. Référence de l'étape 3 pour cette statistique : 5,64.
+- **b) Timeout par appel : 60 s -> 120 s**, pour les runs et le pipeline (`src/v2/pipeline.TIMEOUT_MS`, repris par
+  la version du lanceur). Raison mesurée : F-NINF-01, 26/09 vers 16h40, 3 appels au-delà de 60 s alors que l'API
+  rendait 11 à 21 s par millier de jetons de sortie ; une panne n'est pas une mesure de qualité.
+- **c) Sonde avant les bancs** (palier 2) : 3 appels, avant de lancer le vertical et le lot 0. Si la médiane de
+  `secondes_par_k_sortie_mediane` dépasse **2 fois la référence de l'étape 3**, les bancs sont reportés, au lieu de
+  mesurer une latence faussée. Les passages du gate F peuvent tourner malgré le ralentissement : leurs critères sont
+  déterministes.
+
+  Seuil : Jarvis a écrit 8,9 s par millier, soit 2 fois 4,43, la pente de la loi par moindres carrés (section 8).
+  La statistique publiée en a) est une médiane par appel, dont la référence à l'étape 3 est 5,64 (elle compte aussi
+  la part fixe de chaque appel). Deux fois la même statistique donne **11,3**. Seuil retenu : 11,3 sur la médiane par
+  appel, en attendant la confirmation de Jarvis.
+- **d) Points d'arrêt** : un ping à Jarvis AVANT chaque palier payant (avec le sha du code), et après, avec les
+  mesures. Arrêt avant chaque juge.
+- **e) Mesures du v2 étendues aux variantes** : l'export et le recompte des chiffres adossés reconnaissaient la
+  version `v2` seulement ; ils reconnaissent maintenant `v2e4` et `v2e4r` (`mesures.est_v2`). Aucun changement pour
+  les versions `prod` et `chatgpt*`.
+
+### 15.3 En attente
+
+- **D3** : « none » refusé par l'API. Jarvis pose la question à Matteo (recommandation : tester « low » avec la même
+  règle, sauf la condition « raisonnement < 20 % du défaut », remplacée par « rapport publié »). Rien n'est lancé
+  avec `v2e4r` sans sa décision. Le palier 1a (v2e4, raisonnement par défaut) ne dépend pas de cette décision.
+

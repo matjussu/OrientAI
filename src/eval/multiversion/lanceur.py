@@ -10,6 +10,8 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import json
+import math
+import statistics
 import threading
 import time
 import traceback
@@ -18,6 +20,7 @@ from pathlib import Path
 
 from src.eval.battery.config import PRICES, REPO
 from src.eval.battery.runner import code_state, complete_conversations, read_jsonl
+from src.eval.multiversion.mesures import est_v2, vitesse_sortie
 
 BANCS = {
     "vertical": Path.home() / "projets/_orientai-ref/verticale-2026-09/battery_verticale.json",
@@ -237,6 +240,13 @@ def jouer(version, banc: str, tag: str, limite: list[str] | None = None, log=pri
              "banc": banc, "banc_sha256": sha, **code, "empreinte": empreinte, "tours_joues": joues,
              "erreurs": erreurs, "cout_usd": round(cout_run, 4), "secondes": round(time.time() - t0),
              "arret": arret, "restantes": len(file) if arret else 0, "fichier": sortie.name}
+    if est_v2(version.nom):
+        # Amendement v1.1 du CONTRAT-etape4 : latence brute du run et vitesse de l'API, publiées ensemble.
+        ok = [t for t in run_tours if not t.get("error")]
+        lat = sorted(t["latency_s"] for t in ok)
+        stats |= {"latence_mediane": statistics.median(lat) if lat else None,
+                  "latence_p90": lat[math.ceil(0.9 * len(lat)) - 1] if lat else None,   # rang le plus proche (export._p90)
+                  **vitesse_sortie(ok)}
     budget.journal(stats)
     log(json.dumps(stats, ensure_ascii=False))
     return stats

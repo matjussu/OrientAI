@@ -309,3 +309,15 @@ def test_definitions_de_repartition():
     fautes = repartitions_mal_definies(con, {c: ancienne for c in ("part_acces_general", "part_acces_techno",
                                                                    "part_acces_pro")})
     assert {f["champ"] for f in fautes} == {"part_acces_general", "part_acces_techno", "part_acces_pro"}
+
+
+# ── Amendement v1.1 : vitesse de l'API publiée avec la latence ─────────────────────────────
+def test_vitesse_sortie_mediane_par_appel_et_tours_ecartes():
+    from src.eval.multiversion.mesures import est_v2, vitesse_sortie
+    tour = {"trace": {"appels_modele": [{"secondes": 4.0}, {"secondes": 10.0}]},
+            "appels": [{"modele": "zai-glm-5-3", "sortie": 1000}, {"modele": "mistral-small-2603", "sortie": 30},
+                       {"modele": "zai-glm-5-3", "sortie": 2000}]}
+    boiteux = {"trace": {"appels_modele": [{"secondes": 1.0}]}, "appels": []}
+    v = vitesse_sortie([tour, boiteux])
+    assert v == {"secondes_par_k_sortie_mediane": 4.5, "appels_mesures": 2, "tours_ecartes": 1}
+    assert est_v2("v2") and est_v2("v2e4") and est_v2("v2e4r") and not est_v2("prod") and not est_v2("chatgpt_web")

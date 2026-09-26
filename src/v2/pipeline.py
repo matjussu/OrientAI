@@ -26,6 +26,11 @@ MODELE = "zai-glm-5-3"          # banc E, PR #186 ; identifiant exact, jamais l'
 MODELE_FILTRE = MISTRAL_SMALL   # « mistral-small-2603 », passé en paramètre au ScopeClassifier (non modifié)
 SERVEUR = "https://api.eu.mistral.ai"
 PLAFOND_OUTILS = 6              # choix Q5 du parent
+# Timeout par appel au modèle, pour le client qui sert ce pipeline (lanceur et, plus tard, route d'API). Amendement
+# v1.1 du CONTRAT-etape4 (Jarvis, 26/09) : 60 s -> 120 s. Mesure du 26/09, 16h40 : F-NINF-01 est tombé en panne après
+# 3 appels de plus de 60 s, l'API rendant alors 11 à 21 s par millier de jetons de sortie (4,4 à l'étape 3) ; rejoué,
+# le tour a pris 100 s. Une panne n'est pas une mesure de qualité.
+TIMEOUT_MS = 120_000
 MAX_APPELS_MODELE = 14          # garde-fou : 6 outils + réécriture laissent de la marge ; au-delà, panne tracée
 TEMPERATURE = 0.3               # celle des bancs D et E (src/eval/grille_d.py)
 FENETRE_HISTORIQUE = 6          # messages rejoués, comme la plateforme (src/eval/battery/config.py HISTORY_WINDOW)
