@@ -13,6 +13,10 @@ feuille de route, section 13 du contrat).
 - `etape3/CONTRAT-etape3.md` : contrat de l'étape 3 (v2 minimal), écrit avant le code, avec
   `etape3/prompt_conseiller_v0.txt`. La mesure de l'essentiel de la fiche est rejouable :
   `python -m src.eval.essentiel_fiche` (sortie `results/cerveau_etape3/essentiel_fiche.json`).
+- `etape4/CONTRAT-etape4.md` : contrat de l'étape 4 (la réponse), écrit avant le code, avec
+  `etape4/prompt_conseiller_v1.txt` et son diff avec le v0 (`etape4/prompt_v0_v1.diff`). Ses mesures sont rejouables
+  sans appel d'API : `python3 docs/cerveau/etape4/mesures/latence_etape3.py` et
+  `python3 docs/cerveau/etape4/mesures/critere1_etape3.py` (sorties JSON à côté des scripts).
 
 ## Source et empreintes
 
