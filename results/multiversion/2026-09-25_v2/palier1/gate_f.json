@@ -1,0 +1,411 @@
+{
+ "tag": "2026-09-25_v2",
+ "fichier": "v2__gatef.jsonl",
+ "gate_f_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+ "questions_jouees": 30,
+ "questions": 30,
+ "criteres": {
+  "1_fiches_attendues": {
+   "trouvees": 95,
+   "attendues": 102,
+   "part": 0.9313725490196079,
+   "vert": true
+  },
+  "2_cites_hors_resultats": {
+   "nombre": 1,
+   "vert": false,
+   "temoin_positif": {
+    "question": "F-R01",
+    "etablissement_ajoute": "institut national d enseignement superieur et de recherche en alimentation sante animale sciences agronomiques et de l environnement",
+    "compte": 1
+   }
+  },
+  "3_clarification": {
+   "ok": 3,
+   "questions": 5,
+   "vert": false
+  },
+  "4_adosses": {
+   "chiffres": 248,
+   "non_adosses": 0,
+   "vert": true,
+   "detail": []
+  }
+ },
+ "vert": false,
+ "lignes": [
+  {
+   "id": "F-R01",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 5,
+   "trouvees": 5,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 11,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-R02",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 2,
+   "trouvees": 2,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 8,
+   "non_adosses": 0,
+   "appels_outils": 9
+  },
+  {
+   "id": "F-R03",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 3,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 19,
+   "non_adosses": 0,
+   "appels_outils": 17
+  },
+  {
+   "id": "F-R04",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 11,
+   "trouvees": 11,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 11,
+   "non_adosses": 0,
+   "appels_outils": 5
+  },
+  {
+   "id": "F-R06",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 7,
+   "trouvees": 5,
+   "manquantes": [
+    "psup:11796",
+    "psup:11808"
+   ],
+   "cites_hors_resultats": [],
+   "chiffres": 12,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-R07",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 4,
+   "trouvees": 4,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 17,
+   "non_adosses": 0,
+   "appels_outils": 7
+  },
+  {
+   "id": "F-R08",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 16,
+   "trouvees": 16,
+   "manquantes": [],
+   "cites_hors_resultats": [
+    "universite rennes 2"
+   ],
+   "chiffres": 32,
+   "non_adosses": 0,
+   "appels_outils": 9
+  },
+  {
+   "id": "F-R09",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 4,
+   "trouvees": 4,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 8,
+   "non_adosses": 0,
+   "appels_outils": 2
+  },
+  {
+   "id": "F-R10",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 3,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 6,
+   "non_adosses": 0,
+   "appels_outils": 7
+  },
+  {
+   "id": "F-R12",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 3,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 6
+  },
+  {
+   "id": "F-R16",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 3,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 6,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-R18",
+   "famille": "recherche",
+   "joue": true,
+   "attendues": 6,
+   "trouvees": 6,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 14,
+   "non_adosses": 0,
+   "appels_outils": 2
+  },
+  {
+   "id": "F-NINF-01",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 3,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 10,
+   "non_adosses": 0,
+   "appels_outils": 6
+  },
+  {
+   "id": "F-NINF-07",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 4,
+   "trouvees": 4,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 5,
+   "non_adosses": 0,
+   "appels_outils": 7
+  },
+  {
+   "id": "F-NINF-13",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 2,
+   "trouvees": 2,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 10,
+   "non_adosses": 0,
+   "appels_outils": 5
+  },
+  {
+   "id": "F-NINF-15",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 3,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 13,
+   "non_adosses": 0,
+   "appels_outils": 5
+  },
+  {
+   "id": "F-NSAN-10",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 3,
+   "trouvees": 1,
+   "manquantes": [
+    "psup:30911",
+    "psup:31941"
+   ],
+   "cites_hors_resultats": [],
+   "chiffres": 10,
+   "non_adosses": 0,
+   "appels_outils": 7
+  },
+  {
+   "id": "F-NMAT-01",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 4,
+   "trouvees": 4,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 4,
+   "non_adosses": 0,
+   "appels_outils": 4
+  },
+  {
+   "id": "F-NMAT-04",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 2,
+   "trouvees": 2,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 8,
+   "non_adosses": 0,
+   "appels_outils": 4
+  },
+  {
+   "id": "F-NINF-21",
+   "famille": "nom",
+   "joue": true,
+   "attendues": 1,
+   "trouvees": 0,
+   "manquantes": [
+    "psup:31941"
+   ],
+   "cites_hors_resultats": [],
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 6
+  },
+  {
+   "id": "F-QINF-17",
+   "famille": "clarification",
+   "joue": true,
+   "cites_hors_resultats": [],
+   "questions_posees": 3,
+   "caracteres_avant_premiere_question": 1336,
+   "clarification_ok": false,
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-QINF-18",
+   "famille": "clarification",
+   "joue": true,
+   "cites_hors_resultats": [],
+   "questions_posees": 2,
+   "caracteres_avant_premiere_question": 1346,
+   "clarification_ok": true,
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-QSAN-18",
+   "famille": "clarification",
+   "joue": true,
+   "cites_hors_resultats": [],
+   "questions_posees": 2,
+   "caracteres_avant_premiere_question": 1744,
+   "clarification_ok": true,
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 0
+  },
+  {
+   "id": "F-QMAT-11",
+   "famille": "clarification",
+   "joue": true,
+   "cites_hors_resultats": [],
+   "questions_posees": 3,
+   "caracteres_avant_premiere_question": 1246,
+   "clarification_ok": false,
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-QMAT-12",
+   "famille": "clarification",
+   "joue": true,
+   "cites_hors_resultats": [],
+   "questions_posees": 2,
+   "caracteres_avant_premiere_question": 1611,
+   "clarification_ok": true,
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 1
+  },
+  {
+   "id": "F-MINF-19",
+   "famille": "multi-tour",
+   "joue": true,
+   "attendues": 4,
+   "trouvees": 4,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 0,
+   "non_adosses": 0,
+   "appels_outils": 7
+  },
+  {
+   "id": "F-MMAT-13",
+   "famille": "multi-tour",
+   "joue": true,
+   "attendues": 4,
+   "trouvees": 4,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 16,
+   "non_adosses": 0,
+   "appels_outils": 4
+  },
+  {
+   "id": "F-HSAN-09",
+   "famille": "honnetete",
+   "joue": true,
+   "attendues": 2,
+   "trouvees": 2,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 7,
+   "non_adosses": 0,
+   "appels_outils": 4
+  },
+  {
+   "id": "F-HSAN-02",
+   "famille": "honnetete",
+   "joue": true,
+   "attendues": 2,
+   "trouvees": 0,
+   "manquantes": [
+    "psup:28998",
+    "psup:36433"
+   ],
+   "cites_hors_resultats": [],
+   "chiffres": 8,
+   "non_adosses": 0,
+   "appels_outils": 2
+  },
+  {
+   "id": "F-HSAN-21",
+   "famille": "honnetete",
+   "joue": true,
+   "attendues": 1,
+   "trouvees": 1,
+   "manquantes": [],
+   "cites_hors_resultats": [],
+   "chiffres": 13,
+   "non_adosses": 0,
+   "appels_outils": 7
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "ecrit_le": "2026-09-25T18:47:03+00:00",
+ "raison": "gel des réponses jugées avant la préparation du juge judge_v2 (go de Matteo, Telegram 10790) : un seul passage, 111 verdicts attendus",
+ "code_v2": "52a0b14 (src_v2_sha 9a18c9bd356a)",
+ "fichiers": {
+  "v2__vertical.jsonl": {
+   "sha256": "f51f1c98a5b3ea87fe5807bb428dd5b7a2355f9f587b875802d629aac3f81315",
+   "tours": 79
+  },
+  "v2__gatef.jsonl": {
+   "sha256": "b7d0f60fa99f2ec12a60adc8fe3da7a32407a499d94ee41d2fff3e055fd0a6ee",
+   "tours": 32
+  }
+ }
+}

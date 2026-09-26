@@ -8,6 +8,10 @@ v1 (25/09, 19h55, avant tout code et tout appel payant) : relu par Jarvis (recom
 l'essentiel (section 4), « rien de 2026 » précisé et aucun filtre ajouté (section 5), prompt v0 et tests ajustés
 (sections 7 et 8), budget validé (section 9). v0 : version soumise (PR #191, 4244fb2).
 
+v2 (25/09, 20h27, après le palier 1 et AVANT tout nouveau run : palier 1 bis et bancs) : amendements A à G de la
+section 12, relus et acceptés par Jarvis (25/09, 20h18 et 20h25). Les résultats des paliers 0 et 1 sont gardés tels
+quels (`results/multiversion/2026-09-25_v2/palier0/`, `palier1/`).
+
 Contrat parent : `docs/cerveau/CONTRAT-cerveau.md` v1.2 (sha256 `07dee32b0949...`), sections 2, 3, 6, 10 et 13
 (étape 3). Ce document les précise ; en cas de contradiction, le parent gagne, sauf décision datée de Matteo citée ici.
 
@@ -356,3 +360,47 @@ Citation : « Ok alors pour 2026 on garde ce que l'on a le but n'est pas de rég
 - Que la table `CORRESPONDANCE` couvre les bancs futurs : elle est écrite pour les 20 champs du banc vertical.
 - Que le détecteur de formations citées (gate F, critère 2) voit tout : son contrôle positif est livré avec lui, ses
   angles morts (formation citée par un sigle ou un surnom) seront publiés avec le premier run.
+
+## 12. Amendement v2 (25/09/2026, 20h27, avant le palier 1 bis)
+
+Écrit après la lecture des paliers 0 et 1 du gate F et avant tout autre run. Ce qu'ils ont montré (règle 13 : traces
+`results/multiversion/2026-09-25_v2/palier0/` et `palier1/`, mesures `gate_f.json`) :
+
+| palier | tours | pannes | coût | gate F |
+|---|---|---|---|---|
+| 0 (3 questions) | 3 | 2 au 1er passage (objet envoyé en chaîne JSON, puis réponse vide), 0 au 2e | 0,02 à 0,05 USD par tour | sans objet |
+| 1 (30 questions) | 32 | 0 | 1,16 USD (0,036 par tour, max 0,068) | **rouge** : fiches 95/102 (93,1 %) vert ; hors résultats 1 (faux positif du détecteur, voir C) ; clarification 3/5 ; adossés 248/248 (pct, eur, places) |
+
+Latence au palier 1 : médiane 14,1 s, p90 23,9 s, un tour à 202 s (appel pendu jusqu'au timeout client de 180 s).
+Plafond de 6 atteint sur 8 questions sur 30, surtout en lisant les fiches une par une (F-R03 : 14 `lire_fiche`
+demandés). Causes des manques de fiches : F-NINF-21 et F-NSAN-10, filtre commune à l'égalité (formations de l'UGA à
+Saint-Martin-d'Hères, le modèle écrit « Grenoble ») ; F-HSAN-02, 13 PASS à Lille, les 10 premiers candidats rendus
+(classés par identifiant) n'incluent pas la fiche attendue, et l'autre attendue est une LAS que le modèle n'a pas
+cherchée ; F-R06, le modèle n'a cherché que les BTS SIO, pas les BTS CIEL.
+
+Amendements, tous des correctifs généraux (aucun cas écrit pour une question) :
+
+- **A. Vérificateur étendu aux effectifs** (section 6) : candidats, vœux, propositions, admis, inscrits, diplômés,
+  texte et tableaux, tolérance 0,5 (comme `critere_d`). Relevé de Jarvis au palier 0 : « 976 candidats » affiché sans
+  contrôle, alors que `candidats_ont_postule` est dans l'essentiel. Recompte a posteriori par l'extraction du
+  critère 1, indépendante du vérificateur. Test de sabotage : un effectif inventé doit rougir.
+- **A bis. Trace** : le texte exact rendu au modèle par chaque appel d'outil est gardé dans la trace et l'export.
+- **B. `trouver_formation`, commune** (section 3) : dans la commune ou à moins de 20 km de son centre ; la commune
+  exacte, puis la plus proche, en tête à score égal.
+- **C. Détecteur du gate F** (critère 2) : noms d'établissement comparés sans mots vides. Faux positif du palier 1 :
+  F-R08 écrit « Université Rennes 2 », la base « Université de Rennes 2 », formations bien rendues. Le rouge du palier 1
+  reste publié tel que mesuré.
+- **D. Timeout client** : 60 s au lieu de 180 (plus long appel mesuré : 24 s sur 96 au palier 1).
+- **E. Outils** (déjà dans ad74e97, avant le palier 1) : un paramètre objet ou liste envoyé en chaîne JSON est décodé ;
+  des arguments encodés deux fois aussi ; une réponse vide est relancée une fois ; descriptions « plusieurs types et
+  filières en un appel, nom de commune ou de filière accepté directement ».
+- **F. `lire_fiche` accepte `ids`** (jusqu'à 5 fiches, un seul appel compté), pour que le plafond de 6 ne soit plus
+  mangé fiche par fiche. Effet à mesurer au palier 1 bis (questions au plafond, p90).
+- **G. Statut du gate F** : rejoué après correctifs, il devient un **jeu de réglage**. Correctifs généraux uniquement ;
+  la mesure indépendante de l'étape 3 reste les bancs (vertical et lot 0), joués une fois sur le code figé après le
+  palier 1 bis. La clarification (F-QMAT-11 pose 3 questions ; F-QINF-17, 3 au compte déterministe, 2 à la lecture)
+  relève du prompt : rien n'y est changé à l'étape 3, le rouge est rapporté pour l'étape 4.
+
+Budget : inchangé (15 USD cumulés). Palier 1 bis = gate F rejoué une fois, plafond cumulé 4,5 USD (dépensé au registre
+avant lui : 1,48 USD, dont 0,16 d'estimation majorante de l'usage perdu au palier 0). Puis palier 2 (bancs), plafond
+cumulé 15 USD.

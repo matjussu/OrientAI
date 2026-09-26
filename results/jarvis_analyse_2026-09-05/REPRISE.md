@@ -1,9 +1,31 @@
 # Point de reprise OrientAI, ecrit le 05/09/2026 (Jarvis), mis a jour le 23/09/2026 (Claudette)
 
-> **Plan de référence du cerveau v2 (depuis le 25/09/2026)** : `docs/cerveau/` - contrat v1.1
-> (`CONTRAT-cerveau.md`, validé par Matteo le 24/09, feuille de route section 13, méthode section 14)
-> et gate F (`gate_f/requetes_gate_f.json`, 30 questions-tests). Ce fichier reste le journal de
-> reprise ; en cas d'écart, c'est `docs/cerveau/` qui fait foi pour le plan.
+> **Plan de référence du cerveau v2 (depuis le 25/09/2026)** : `docs/cerveau/` - contrat v1.2
+> (`CONTRAT-cerveau.md`, feuille de route section 13, méthode section 14), gate F
+> (`gate_f/requetes_gate_f.json`, 30 questions-tests) et contrat de l'étape 3
+> (`etape3/CONTRAT-etape3.md` v2). Ce fichier reste le journal de reprise ; en cas d'écart, c'est
+> `docs/cerveau/` qui fait foi pour le plan.
+
+## Reprise au 25/09/2026, soir (étape 3 du cerveau : v2 minimal livré et mesuré)
+
+1. Code : `src/v2/` (pipeline, outils, profil, vérificateur, prompt v0), version `v2` du lanceur,
+   banc `gatef`, mesures `src/eval/multiversion/gate_f.py`. Branche `feat/cerveau-v2-minimal`, PR à
+   merger sur go de Matteo relayé par Jarvis. Code joué aux bancs : `52a0b14`.
+2. Rapport : `results/multiversion/2026-09-25_v2/RAPPORT.md`. Gate F rouge par la clarification seule
+   (2/5) ; banc vertical contre la prod : erreur de fait 19,0 % contre 31,6 %, refus 2 contre 26, note
+   4,27 contre 2,26, critère 1 61,9 % contre 27,9 %, adossés 100 % contre 72,7 % ; latence p90 43,5 s.
+   Contre ChatGPT + recherche (34 tours) : 14,7 % contre 0 %, note 4,29 contre 4,67.
+3. Prochaine étape (section 13) : 4, la réponse (prompt travaillé, vérificateur réglé), gate = planchers
+   de la section 8. Pistes écrites dans le rapport, section 4 et 5 : nommer chaque chiffre par le
+   libellé de l'outil, dire qu'un résultat tronqué n'a pas tout lu, pas d'absence affirmée sans la
+   recherche qui la prouve, clarification à 2 questions, une définition par notion quand plusieurs
+   fiches sont lues (latence, coût).
+4. Budget du tag : 10,53 USD sur 15 (registre `results/multiversion/2026-09-25_v2/budget.json`). Juge :
+   un passage de 111 verdicts fait ; tout rejugement demande un nouveau go de Matteo.
+5. Pièges : GLM 5.3 envoie des paramètres objet en chaîne JSON (décodés par `src/v2/outils.py`) ;
+   la clé Mistral est lue seule du `.env` par la version v2 (`_cle_mistral`), aucun autre secret
+   chargé ; le juge tourne en `claude -p` par `judge_v2/juge_stdin.sh`, qui refuse une
+   `ANTHROPIC_API_KEY` dans l'environnement.
 
 A lire en premier par quiconque reprend le projet (Matteo, Ella, Claudette, Jarvis apres /clear).
 Ce fichier dit ce qui est etabli, ce qui est perime, ou vit chaque chose, et par quoi on commence.
@@ -409,8 +431,14 @@ l'explorateur, validation de Matteo avant merge.
 | Places 2025 : 240 formations (228 IFSI) où la page et l'open data (`capa_fin`) diffèrent ; la page est montrée, cause non établie | `results/concordance/RAPPORT.md` section 4 |
 | MonMaster : 3 écarts de 1 à 2 entre « candidatures » de la page et `n_can_pp + n_can_pc` (inventaire de Jarvis), cause non établie ; sans effet sur ce qui est montré (la page) | `_orientai-ref/verticale-2026-09/concordance/masters/inventaire_masters.json` |
 | Contrôle « A dans B » du format D : le motif `doublon_non_montre` peut couvrir une coïncidence de valeur avec un champ caché | `src/eval/format_d.py` |
-| Places et vœux 2026 stockés, non montrés : décision de Matteo attendue | `results/concordance/CONTRAT.md` section 11 |
-| `openai` absent de `requirements.txt` / `requirements.lock` alors que l'éval l'importe (installé à la main dans le venv local le 25/09, 3.19.2) | à déclarer dans un manifeste d'éval, hors prod |
+| ~~Places et vœux 2026 stockés, non montrés : décision attendue~~ **tranché le 25/09** : on garde ce que le modèle voit aujourd'hui, rien de 2026 ajouté, rien de retiré (places et vœux 2026 restent non montrés) | Matteo, Telegram 10783 ; `docs/cerveau/etape3/CONTRAT-etape3.md` section 5 |
+| v2 : latence p90 43,5 s au banc vertical (plancher 15 s) ; raisonnement de GLM et boucles à plusieurs appels ; `lire_fiche` à plusieurs ids rend jusqu'à 20 000 caractères (définitions répétées par fiche) | `results/multiversion/2026-09-25_v2/RAPPORT.md` section 5 |
+| v2 : 21 erreurs de fait au juge sans chiffre non adossé (connaissances hors outils 11, chiffre mal nommé 5, absence affirmée sans tout lire 4, contradiction avec la fiche 1) | même rapport, section 4 |
+| v2 : clarification 2/5 au gate F (3 ou 4 questions posées) : prompt, étape 4 | même rapport, section 3 |
+| v2 : réponse vide de GLM 5.3 sans appel d'outil (20 tours relancés sur 178) ; cause non établie | traces `relance_vide`, même rapport section 5 |
+| v2 : `trouver_formation` rend 10 candidats classés par identifiant à score égal (13 PASS à Lille : la fiche attendue n'est pas rendue) | gate F, F-HSAN-02 |
+| Lanceur : une réponse vide jetait l'usage du tour (corrigé le 25/09) ; le registre du tag v2 porte une estimation majorante de 0,16 USD pour les 2 tours perdus | `budget.json` du tag, entrées « hors tours » |
+| ~~`openai` absent des manifestes~~ **déclaré le 25/09** dans `requirements-eval.txt` (hors image de prod) | #190 |
 | Latence prod p90 9,3-9,6 s le 25/09 contre 6,8 s le 23/09 (même mesure en processus) : non expliqué | RAPPORT multiversion section 3 |
 | Repère de latence de l'état des lieux du 24/09 calculé avec un p90 à rang trop bas (6,24 au lieu de 6,82) : corrigé par Jarvis dans build_etat_lieux.py ; le contrat §8 cite encore 6,2 s | PROTOCOLE multiversion, amendement p90 |
 | GLM 5.2 via l'API Mistral : 78 erreurs 429 sur 158 tours (A et B) en generation 1, a regler avant une demo si GLM est retenu | `results/donnee_etape_d/RAPPORT.md` section 6 |

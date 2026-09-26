@@ -72,6 +72,19 @@ def _tour(x: dict, juge: dict | None, chiffres: list | None) -> dict:
         "juge": None if not juge else {k: juge.get(k) for k in (*CRITERES, "refus", "erreur_factuelle", "erreur_detail",
                                                                 "cause_echec", "commentaire")},
         "chiffres": chiffres,
+        # Cerveau v2 : les étages de la trace (CONTRAT-etape3 section 2), pour l'onglet de l'explorateur.
+        "v2": None if x.get("version") != "v2" else {
+            "filtre": tr.get("filtre"), "court_circuit": tr.get("court_circuit"), "etapes": tr.get("etapes"),
+            "outils": [{k: a.get(k) for k in ("nom", "arguments", "execute", "ids_rendus", "erreur", "secondes", "texte")}
+                       | {"nb_resultats": (a.get("meta") or {}).get("nb_resultats"),
+                          "tronque": (a.get("meta") or {}).get("tronque"), "nb_valeurs": len(a.get("valeurs") or [])}
+                       for a in tr.get("outils") or []],
+            "profil_avant": tr.get("profil_avant"), "profil_apres": tr.get("profil_apres"),
+            "brouillons": tr.get("brouillons"), "phrases_retirees": tr.get("phrases_retirees"),
+            "verifications": [{k: len(v.get(k) or []) for k in ("adosses", "eleve", "non_adosses")}
+                              | {"non_adosses_detail": v.get("non_adosses")} for v in tr.get("verifications") or []],
+            "plafond_atteint": tr.get("plafond_atteint"), "garantie_adosses": tr.get("garantie_adosses"),
+            "latence_s": tr.get("latence_s"), "appels_modele": len(tr.get("appels_modele") or [])},
     }
 
 
@@ -165,11 +178,11 @@ def exporter(tag: str, dossier_juge: str = "judge") -> dict:
         out.write_text(json.dumps({"meta": meta, "synthese": synth, "tours": tours}, ensure_ascii=False,
                                   separators=(",", ":"), default=str), encoding="utf-8")
         rapport["runs"][f"{version}__{banc}"] = synth
-        if version == "prod" and banc == "vertical" and ids_ech:
+        if version in ("prod", "v2") and banc == "vertical" and ids_ech:
             # Même base que chatgpt_web : les 25 conversations de l'échantillon figé (protocole v0.3).
             sous = [r for r in recs if r["id"] in ids_ech]
             _, synth_e = _synthese(version, banc, sous, verdicts, detail)
-            rapport["runs"]["prod__vertical_echantillon25"] = synth_e
+            rapport["runs"][f"{version}__vertical_echantillon25"] = synth_e
     (dossier / f"RAPPORT{suffixe}.json").write_text(json.dumps(rapport, ensure_ascii=False, indent=1, default=str) + "\n",
                                           encoding="utf-8")
     return rapport

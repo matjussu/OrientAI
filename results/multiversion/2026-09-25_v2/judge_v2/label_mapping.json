@@ -1,0 +1,668 @@
+{
+ "01b3d9ce24": {
+  "banc": "vertical",
+  "id": "V-INF-04",
+  "turn": 2,
+  "version": "v2"
+ },
+ "01b77293dc": {
+  "banc": "vertical",
+  "id": "V-MAT-06",
+  "turn": 0,
+  "version": "v2"
+ },
+ "024961baa9": {
+  "banc": "vertical",
+  "id": "V-MAT-05",
+  "turn": 0,
+  "version": "v2"
+ },
+ "04faf421ae": {
+  "banc": "vertical",
+  "id": "V-INF-09",
+  "turn": 1,
+  "version": "v2"
+ },
+ "0636109b08": {
+  "banc": "gatef",
+  "id": "F-R08",
+  "turn": 0,
+  "version": "v2"
+ },
+ "09a4a07896": {
+  "banc": "vertical",
+  "id": "V-SAN-03",
+  "turn": 0,
+  "version": "v2"
+ },
+ "0a10212b90": {
+  "banc": "gatef",
+  "id": "F-QINF-18",
+  "turn": 0,
+  "version": "v2"
+ },
+ "0a5bc26b4c": {
+  "banc": "vertical",
+  "id": "V-MAT-07",
+  "turn": 1,
+  "version": "v2"
+ },
+ "0bbd29a13d": {
+  "banc": "gatef",
+  "id": "F-NINF-07",
+  "turn": 0,
+  "version": "v2"
+ },
+ "0bfd28a745": {
+  "banc": "vertical",
+  "id": "V-INF-11",
+  "turn": 0,
+  "version": "v2"
+ },
+ "0c81c38e47": {
+  "banc": "vertical",
+  "id": "V-MAT-14",
+  "turn": 0,
+  "version": "v2"
+ },
+ "10ced0d6bb": {
+  "banc": "vertical",
+  "id": "V-SAN-16",
+  "turn": 0,
+  "version": "v2"
+ },
+ "10ee046b51": {
+  "banc": "gatef",
+  "id": "F-NSAN-10",
+  "turn": 0,
+  "version": "v2"
+ },
+ "152d70ec6b": {
+  "banc": "gatef",
+  "id": "F-QINF-17",
+  "turn": 0,
+  "version": "v2"
+ },
+ "1cbe623508": {
+  "banc": "vertical",
+  "id": "V-SAN-20",
+  "turn": 1,
+  "version": "v2"
+ },
+ "1e8953b0b0": {
+  "banc": "vertical",
+  "id": "V-MAT-15",
+  "turn": 0,
+  "version": "v2"
+ },
+ "26f41fc872": {
+  "banc": "gatef",
+  "id": "F-R06",
+  "turn": 0,
+  "version": "v2"
+ },
+ "285adef24f": {
+  "banc": "vertical",
+  "id": "V-MAT-13",
+  "turn": 0,
+  "version": "v2"
+ },
+ "2df9dfd618": {
+  "banc": "vertical",
+  "id": "V-INF-04",
+  "turn": 0,
+  "version": "v2"
+ },
+ "2ed81ae8ad": {
+  "banc": "gatef",
+  "id": "F-R10",
+  "turn": 0,
+  "version": "v2"
+ },
+ "30b9ba48d5": {
+  "banc": "vertical",
+  "id": "V-INF-09",
+  "turn": 0,
+  "version": "v2"
+ },
+ "39c5834adf": {
+  "banc": "vertical",
+  "id": "V-INF-18",
+  "turn": 0,
+  "version": "v2"
+ },
+ "3d85c13eb1": {
+  "banc": "vertical",
+  "id": "V-MAT-02",
+  "turn": 0,
+  "version": "v2"
+ },
+ "3e4aeb9060": {
+  "banc": "vertical",
+  "id": "V-SAN-08",
+  "turn": 1,
+  "version": "v2"
+ },
+ "3e78d97099": {
+  "banc": "gatef",
+  "id": "F-HSAN-21",
+  "turn": 0,
+  "version": "v2"
+ },
+ "428ac625c6": {
+  "banc": "vertical",
+  "id": "V-SAN-07",
+  "turn": 0,
+  "version": "v2"
+ },
+ "4700ceeca5": {
+  "banc": "gatef",
+  "id": "F-NINF-15",
+  "turn": 0,
+  "version": "v2"
+ },
+ "495cae5c1d": {
+  "banc": "vertical",
+  "id": "V-SAN-18",
+  "turn": 0,
+  "version": "v2"
+ },
+ "4f1686cab6": {
+  "banc": "gatef",
+  "id": "F-R01",
+  "turn": 0,
+  "version": "v2"
+ },
+ "4f4d79b7ba": {
+  "banc": "vertical",
+  "id": "V-INF-08",
+  "turn": 0,
+  "version": "v2"
+ },
+ "5021227b4b": {
+  "banc": "vertical",
+  "id": "V-MAT-03",
+  "turn": 0,
+  "version": "v2"
+ },
+ "517124a2bf": {
+  "banc": "vertical",
+  "id": "V-SAN-12",
+  "turn": 0,
+  "version": "v2"
+ },
+ "5298c96030": {
+  "banc": "vertical",
+  "id": "V-INF-17",
+  "turn": 0,
+  "version": "v2"
+ },
+ "5383684531": {
+  "banc": "vertical",
+  "id": "V-INF-02",
+  "turn": 1,
+  "version": "v2"
+ },
+ "54acb3609e": {
+  "banc": "vertical",
+  "id": "V-SAN-04",
+  "turn": 1,
+  "version": "v2"
+ },
+ "5567613f7a": {
+  "banc": "vertical",
+  "id": "V-MAT-13",
+  "turn": 1,
+  "version": "v2"
+ },
+ "5691239811": {
+  "banc": "vertical",
+  "id": "V-SAN-17",
+  "turn": 0,
+  "version": "v2"
+ },
+ "608531a66b": {
+  "banc": "vertical",
+  "id": "V-INF-20",
+  "turn": 1,
+  "version": "v2"
+ },
+ "618713d41b": {
+  "banc": "vertical",
+  "id": "V-INF-19",
+  "turn": 1,
+  "version": "v2"
+ },
+ "61db043a45": {
+  "banc": "vertical",
+  "id": "V-SAN-14",
+  "turn": 0,
+  "version": "v2"
+ },
+ "62771902db": {
+  "banc": "vertical",
+  "id": "V-SAN-11",
+  "turn": 1,
+  "version": "v2"
+ },
+ "63b2d1406f": {
+  "banc": "vertical",
+  "id": "V-MAT-14",
+  "turn": 1,
+  "version": "v2"
+ },
+ "6423427d0d": {
+  "banc": "vertical",
+  "id": "V-INF-15",
+  "turn": 0,
+  "version": "v2"
+ },
+ "65c9221fc0": {
+  "banc": "vertical",
+  "id": "V-SAN-01",
+  "turn": 1,
+  "version": "v2"
+ },
+ "6627101a09": {
+  "banc": "vertical",
+  "id": "V-INF-14",
+  "turn": 1,
+  "version": "v2"
+ },
+ "69292b0a47": {
+  "banc": "vertical",
+  "id": "V-INF-10",
+  "turn": 1,
+  "version": "v2"
+ },
+ "6d74d5ed77": {
+  "banc": "vertical",
+  "id": "V-SAN-19",
+  "turn": 0,
+  "version": "v2"
+ },
+ "734a5fe8ca": {
+  "banc": "vertical",
+  "id": "V-INF-05",
+  "turn": 1,
+  "version": "v2"
+ },
+ "736c4f0869": {
+  "banc": "vertical",
+  "id": "V-INF-06",
+  "turn": 0,
+  "version": "v2"
+ },
+ "7433f4790e": {
+  "banc": "gatef",
+  "id": "F-NINF-01",
+  "turn": 0,
+  "version": "v2"
+ },
+ "78160e2308": {
+  "banc": "gatef",
+  "id": "F-R02",
+  "turn": 0,
+  "version": "v2"
+ },
+ "7877a2cfdb": {
+  "banc": "gatef",
+  "id": "F-MINF-19",
+  "turn": 0,
+  "version": "v2"
+ },
+ "7a033e106b": {
+  "banc": "vertical",
+  "id": "V-SAN-10",
+  "turn": 0,
+  "version": "v2"
+ },
+ "7cecaad554": {
+  "banc": "vertical",
+  "id": "V-SAN-11",
+  "turn": 0,
+  "version": "v2"
+ },
+ "7f8400af7e": {
+  "banc": "vertical",
+  "id": "V-INF-02",
+  "turn": 0,
+  "version": "v2"
+ },
+ "80584b4d1d": {
+  "banc": "gatef",
+  "id": "F-MMAT-13",
+  "turn": 1,
+  "version": "v2"
+ },
+ "8565e06bff": {
+  "banc": "vertical",
+  "id": "V-INF-21",
+  "turn": 0,
+  "version": "v2"
+ },
+ "8fa718a436": {
+  "banc": "vertical",
+  "id": "V-INF-16",
+  "turn": 0,
+  "version": "v2"
+ },
+ "9078b1ac5e": {
+  "banc": "vertical",
+  "id": "V-MAT-08",
+  "turn": 0,
+  "version": "v2"
+ },
+ "91d818f7cc": {
+  "banc": "gatef",
+  "id": "F-MMAT-13",
+  "turn": 0,
+  "version": "v2"
+ },
+ "9237460728": {
+  "banc": "gatef",
+  "id": "F-QSAN-18",
+  "turn": 0,
+  "version": "v2"
+ },
+ "98a63ed45d": {
+  "banc": "vertical",
+  "id": "V-INF-07",
+  "turn": 0,
+  "version": "v2"
+ },
+ "a0dca12cb5": {
+  "banc": "vertical",
+  "id": "V-MAT-10",
+  "turn": 0,
+  "version": "v2"
+ },
+ "a3a5341aa0": {
+  "banc": "vertical",
+  "id": "V-INF-19",
+  "turn": 0,
+  "version": "v2"
+ },
+ "a4b7f88f41": {
+  "banc": "vertical",
+  "id": "V-SAN-04",
+  "turn": 0,
+  "version": "v2"
+ },
+ "a68dfefe26": {
+  "banc": "gatef",
+  "id": "F-R04",
+  "turn": 0,
+  "version": "v2"
+ },
+ "a9eb335cb5": {
+  "banc": "vertical",
+  "id": "V-INF-13",
+  "turn": 0,
+  "version": "v2"
+ },
+ "aa5d3d5f7e": {
+  "banc": "vertical",
+  "id": "V-INF-20",
+  "turn": 0,
+  "version": "v2"
+ },
+ "aae3acf53e": {
+  "banc": "gatef",
+  "id": "F-NMAT-01",
+  "turn": 0,
+  "version": "v2"
+ },
+ "b3d111f912": {
+  "banc": "gatef",
+  "id": "F-QMAT-11",
+  "turn": 0,
+  "version": "v2"
+ },
+ "b5023fbd4b": {
+  "banc": "vertical",
+  "id": "V-SAN-06",
+  "turn": 0,
+  "version": "v2"
+ },
+ "b5a6304382": {
+  "banc": "gatef",
+  "id": "F-R18",
+  "turn": 0,
+  "version": "v2"
+ },
+ "b664dc3c6f": {
+  "banc": "vertical",
+  "id": "V-SAN-21",
+  "turn": 0,
+  "version": "v2"
+ },
+ "b73aa47756": {
+  "banc": "gatef",
+  "id": "F-R16",
+  "turn": 0,
+  "version": "v2"
+ },
+ "b79275b848": {
+  "banc": "vertical",
+  "id": "V-INF-14",
+  "turn": 0,
+  "version": "v2"
+ },
+ "bb57fbdc53": {
+  "banc": "vertical",
+  "id": "V-SAN-09",
+  "turn": 0,
+  "version": "v2"
+ },
+ "bcd2b1f684": {
+  "banc": "gatef",
+  "id": "F-R03",
+  "turn": 0,
+  "version": "v2"
+ },
+ "c35795ce55": {
+  "banc": "gatef",
+  "id": "F-QMAT-12",
+  "turn": 0,
+  "version": "v2"
+ },
+ "c3b0c5c76c": {
+  "banc": "vertical",
+  "id": "V-SAN-15",
+  "turn": 0,
+  "version": "v2"
+ },
+ "c55f7e8e01": {
+  "banc": "vertical",
+  "id": "V-MAT-09",
+  "turn": 0,
+  "version": "v2"
+ },
+ "c59b9e0c56": {
+  "banc": "vertical",
+  "id": "V-SAN-02",
+  "turn": 0,
+  "version": "v2"
+ },
+ "c68d52ab34": {
+  "banc": "vertical",
+  "id": "V-SAN-01",
+  "turn": 0,
+  "version": "v2"
+ },
+ "c9245132a2": {
+  "banc": "vertical",
+  "id": "V-INF-12",
+  "turn": 0,
+  "version": "v2"
+ },
+ "c98b05ad79": {
+  "banc": "vertical",
+  "id": "V-INF-01",
+  "turn": 0,
+  "version": "v2"
+ },
+ "cad7b2f5d3": {
+  "banc": "gatef",
+  "id": "F-NINF-21",
+  "turn": 0,
+  "version": "v2"
+ },
+ "ce02451d2a": {
+  "banc": "vertical",
+  "id": "V-INF-10",
+  "turn": 0,
+  "version": "v2"
+ },
+ "d060bf98a4": {
+  "banc": "vertical",
+  "id": "V-MAT-12",
+  "turn": 0,
+  "version": "v2"
+ },
+ "d2afa36819": {
+  "banc": "vertical",
+  "id": "V-INF-05",
+  "turn": 0,
+  "version": "v2"
+ },
+ "d3f74ff416": {
+  "banc": "vertical",
+  "id": "V-MAT-07",
+  "turn": 0,
+  "version": "v2"
+ },
+ "d4097a8c6f": {
+  "banc": "vertical",
+  "id": "V-MAT-02",
+  "turn": 1,
+  "version": "v2"
+ },
+ "d45edd5b63": {
+  "banc": "vertical",
+  "id": "V-MAT-05",
+  "turn": 1,
+  "version": "v2"
+ },
+ "d4ffca5e66": {
+  "banc": "vertical",
+  "id": "V-MAT-01",
+  "turn": 0,
+  "version": "v2"
+ },
+ "d627d59566": {
+  "banc": "gatef",
+  "id": "F-NINF-13",
+  "turn": 0,
+  "version": "v2"
+ },
+ "d8edfc6043": {
+  "banc": "vertical",
+  "id": "V-SAN-05",
+  "turn": 0,
+  "version": "v2"
+ },
+ "d9859a648c": {
+  "banc": "vertical",
+  "id": "V-SAN-10",
+  "turn": 1,
+  "version": "v2"
+ },
+ "dce7935cbf": {
+  "banc": "vertical",
+  "id": "V-INF-04",
+  "turn": 1,
+  "version": "v2"
+ },
+ "df88a15459": {
+  "banc": "gatef",
+  "id": "F-MINF-19",
+  "turn": 1,
+  "version": "v2"
+ },
+ "e042eea9a3": {
+  "banc": "gatef",
+  "id": "F-R09",
+  "turn": 0,
+  "version": "v2"
+ },
+ "e178b359c7": {
+  "banc": "gatef",
+  "id": "F-HSAN-02",
+  "turn": 0,
+  "version": "v2"
+ },
+ "e2ff69b34a": {
+  "banc": "vertical",
+  "id": "V-INF-03",
+  "turn": 0,
+  "version": "v2"
+ },
+ "e5f6b91ff2": {
+  "banc": "vertical",
+  "id": "V-SAN-19",
+  "turn": 1,
+  "version": "v2"
+ },
+ "e7e0403f89": {
+  "banc": "vertical",
+  "id": "V-SAN-20",
+  "turn": 0,
+  "version": "v2"
+ },
+ "ea14079119": {
+  "banc": "vertical",
+  "id": "V-SAN-05",
+  "turn": 1,
+  "version": "v2"
+ },
+ "ee2f19adf9": {
+  "banc": "gatef",
+  "id": "F-R12",
+  "turn": 0,
+  "version": "v2"
+ },
+ "f2e6e0e783": {
+  "banc": "vertical",
+  "id": "V-SAN-08",
+  "turn": 0,
+  "version": "v2"
+ },
+ "f6f7c43d66": {
+  "banc": "gatef",
+  "id": "F-HSAN-09",
+  "turn": 0,
+  "version": "v2"
+ },
+ "f72bf77cb4": {
+  "banc": "vertical",
+  "id": "V-MAT-11",
+  "turn": 0,
+  "version": "v2"
+ },
+ "fa43036169": {
+  "banc": "gatef",
+  "id": "F-R07",
+  "turn": 0,
+  "version": "v2"
+ },
+ "faf9978473": {
+  "banc": "vertical",
+  "id": "V-SAN-13",
+  "turn": 0,
+  "version": "v2"
+ },
+ "fd30b926e1": {
+  "banc": "gatef",
+  "id": "F-NMAT-04",
+  "turn": 0,
+  "version": "v2"
+ },
+ "ffef913a4c": {
+  "banc": "vertical",
+  "id": "V-MAT-04",
+  "turn": 0,
+  "version": "v2"
+ }
+}
