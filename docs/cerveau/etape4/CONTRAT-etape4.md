@@ -1,8 +1,11 @@
 # Contrat de l'étape 4 : la réponse
 
-Version v0.1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-etape4-reponse` (go de Matteo le 26/09
+Version v1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-etape4-reponse` (go de Matteo le 26/09
 à 15h34, Telegram 10802). Écrit AVANT toute ligne de code du v2 et tout appel payant (section 14.1 du contrat du
 cerveau). Statut : soumis à Jarvis (relecture et recompte), puis à Matteo (choix de la section 12 et prompt v1).
+
+v1 (26/09, 16h10, avant tout code et tout appel payant) : **choix tranchés par Matteo (Telegram 10808, « Validé »,
+relayé par Jarvis)**, section 12 bis ; prompt v1 validé tel quel (sha256 `145f0dd5a53c`, commit cf66bee).
 
 v0.1 (26/09, après la relecture de Jarvis, avant tout code et tout appel payant) : recompte indépendant de Jarvis
 identique sur le recouvrement, le critère 1, la loi de latence, la boucle et les parts d'accès. Trois corrections :
@@ -626,6 +629,23 @@ figée sert.
 À faire valider aussi par Matteo : **le texte du prompt v1** (section 5). À faire vérifier par Jarvis avant le premier
 run : **les repères stables** du prompt (option c) et le dénominateur de D4, sur des sources officielles. C'est fait
 en v0.1 : repères 1 à 5 confirmés, 6 et 7 corrigés, dénominateur établi.
+
+## 12 bis. Décisions de Matteo, 26/09 à 16h10 (Telegram 10808, relayé par Jarvis)
+
+Citation : « Validé ». La recommandation est suivie partout.
+
+| # | décision | effet dans ce contrat |
+|---|---|---|
+| D1 | **c** : repères stables sur liste fermée, notions des outils seulement depuis les outils, le reste renvoyé | section 4 ; prompt v1 |
+| D2 | **b** : plancher de 85 % sur les 269 attendus montrés à l'identique, taux sur 323 publié | sections 9 et 11 |
+| D3 | **b** : `reasoning_effort="none"` testé, retenu sur les critères déterministes du gate F et sur le juge des deux passages (64 verdicts, sur go de Matteo au moment de le lancer) | sections 8 et 11 |
+| D4 | **a** : définition corrigée dans la base (texte seulement, empreinte déclarée, concordance rejouée), plus le contrôle général des répartitions | sections 3.4 et 7 |
+| D5 | **a**, sous condition : la phrase est retirée si la précision du détecteur mesurée sur le lot 0 est d'au moins 95 %, sinon elle est seulement tracée (b) | section 6.2 |
+| D6 | **a** : critère principal sur les 59 tours hors recouvrement, les 79 publiés à côté | section 11 |
+| prompt | **v1 validé tel quel** : sha256 `145f0dd5a53c7b91b3393d0c111a795345125aba1a1641dc2559f14943e02352` | section 5 |
+
+Rappel de Jarvis avec le go : un point d'arrêt à chaque palier (palier 0, chaque passage du gate F, bancs), et un
+arrêt avant chaque juge.
 
 ## 13. Ce que ce contrat n'établit pas
 
