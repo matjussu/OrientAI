@@ -4,6 +4,9 @@ Version v1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-eta
 à 15h34, Telegram 10802). Écrit AVANT toute ligne de code du v2 et tout appel payant (section 14.1 du contrat du
 cerveau). Statut : soumis à Jarvis (relecture et recompte), puis à Matteo (choix de la section 12 et prompt v1).
 
+v1.3 (26/09, 18h35, après le passage 1b et AVANT la sonde et les bancs) : « low » non retenu, pas de 1c, pas de juge
+sur « low », go bancs (Matteo, Telegram 10821), section 15.5.
+
 v1.2 (26/09, 18h20, après le palier 1a et AVANT le passage 1b) : D3 devient `reasoning_effort="low"` (Matteo,
 Telegram 10818, relayé par Jarvis), règle de retenue réécrite, section 15.4 ; seuil de la sonde confirmé par Jarvis.
 
@@ -761,4 +764,40 @@ par appel des secondes par millier de jetons de sortie), parce que les deux pass
 
 Budget : plafond cumulé inchangé (5,5 USD pour le palier 1 ; dépensé 2,06 USD avant 1b). Il reste un passage du gate
 F au plus (1c) après celui-ci.
+
+### 15.5 Amendement v1.3 (26/09, 18h35, après le passage 1b, avant la sonde et les bancs)
+
+**Passage 1b, lu avant cet amendement** (`results/multiversion/2026-09-26_v2e4/palier1b/`, code c679a05, version
+`v2e4r`, `reasoning_effort="low"`), recompté par Jarvis (26/09, 18h23) :
+- 32 tours, 0 panne, 2,08 USD ; cumul du tag 4,13 USD ;
+- gate F vert : fiches 96/102, 0 formation citée hors des résultats, clarification 5/5, adossés 389/389 ;
+- « low » accepté par l'API, mais le raisonnement AUGMENTE : 599 267 caractères contre 481 443 en 1a (×1,24) ;
+  jetons de sortie 182 053 contre 152 254 ;
+- raisonnement de l'appel final, deux définitions :
+  - appels qui finissent en « stop », réécritures comprises : médiane 4 475 (n = 39) contre 3 878,5 (n = 38) ;
+  - dernier appel au modèle de chaque tour : médiane 3 566,5 contre 3 656,5 (n = 32 dans les deux) ;
+- latence, 1a puis 1b :
+
+  | | 1a (défaut) | 1b (low) |
+  |---|---|---|
+  | brute, médiane / p90 | 14,7 / 62,1 s | 18,7 / 54,2 s |
+  | vitesse de l'API (médiane par appel) | 4,99 s/k | 4,36 s/k |
+  | normalisée (× 5,64 / vitesse), médiane / p90 | 16,6 / 70,1 s | 24,2 / 70,2 s |
+
+  La normalisation suppose que tout le tour dépend du modèle (environ 90 % à l'étape 3).
+
+**Décisions (Matteo, Telegram 10821, 18h32, « Oui go en mode normal du coup », relayé par Jarvis)** :
+- « low » n'est **pas retenu** : il n'apporte rien à la latence, sa seule raison d'être. **Pas de juge sur « low »** :
+  les 64 verdicts de la règle 15.4 (3) ne sont pas dépensés ;
+- **pas de passage 1c** : il ne tient plus dans le plafond cumulé du palier 1 (4,13 USD sur 5,5) ;
+- **bancs** avec `v2e4` (réglage par défaut), code figé à 3b8b951 (aucun changement de `src/` avant les bancs),
+  après la sonde de 15.2 c (seuil 11,3 s/k sur la médiane par appel ; au-delà, report des bancs) ; vertical (79 tours)
+  et lot 0 (67 tours), une fois ; plafond global 15 USD, arrêt automatique ;
+- **juge** : 111 verdicts (vertical 79 et gate F 1a 32), sur un go séparé de Matteo, pas encore donné ;
+- **plancher de latence** (p90 < 15 s) : déclaré non tenu à l'étape 4. Cause mesurée : le raisonnement, plus long
+  avec le prompt v1 qu'avec le v0 (+57 % au gate F). C'est une piste pour la suite, pas un réglage de cette étape.
+
+**Mesures publiées à la fin des bancs**, avant le juge : critère 1 bis (sur les 269 attendus montrés à l'identique) et
+critère 1 sur 323 ; chiffres adossés ; latence brute et vitesse de l'API ; refus au sens du filtre (court-circuits) ;
+coût. Au vertical : les 79 tours et les 59 hors recouvrement.
 
