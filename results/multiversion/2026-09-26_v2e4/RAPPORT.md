@@ -192,7 +192,7 @@ Taux : 3/79 au premier passage, 1/79 après rejeu. Premier passage gardé : `ban
 - **timeout** de 120 s ;
 - **latence et vitesse** publiées ensemble ;
 - **base** : définition « Accès des terminales » corrigée, plus le contrôle général des répartitions ;
-- **tests** : `tests/test_v2_etape4.py`, 25 tests, dont un sabotage par garantie.
+- **tests** : `tests/test_v2_etape4.py`, 24 tests, dont un sabotage par garantie.
 
 ## 7. Ce que cette mesure n'établit pas
 
