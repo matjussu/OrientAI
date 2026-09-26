@@ -438,7 +438,8 @@ def test_sabotage_effectif_invente_fait_rougir(monkeypatch):
 def test_effectifs_de_l_essentiel_sont_verifiables(outils):
     r = outils.executer("lire_fiche", {"id": "psup:7596"})
     assert {"valeur": 976.0, "unite": "effectif", "id": "psup:7596", "cle": "candidats_ont_postule@2025",
-            "source_id": "page_publique_parcoursup"} in r.valeurs
+            "source_id": "page_publique_parcoursup", "portee": "formation",
+            "libelle": "Candidats ayant postulé"} in r.valeurs
 
 
 @base_requise

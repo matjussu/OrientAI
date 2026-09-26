@@ -7,7 +7,10 @@ valide ce que le modèle renvoie. Une valeur hors liste lève une erreur qui nom
 Chaque exécution rend un `Resultat` : le texte que voit le modèle (format C du banc E, `src/eval/format_d.py`), et
 les valeurs chiffrées de ce texte, structurées (valeur, unité, fiche, clé, source), que le vérificateur consulte.
 
-Levier de falsification (règle 9) : ORIENTIA_SABOTAGE_V2=essentiel_tout fait rendre toute la fiche par défaut.
+Leviers de falsification (règle 9), ORIENTIA_SABOTAGE_V2 :
+- `essentiel_tout` : toute la fiche est rendue par défaut ;
+- `definitions_supprimees` : `lire_fiche` à plusieurs fiches ne donne plus aucune définition (au lieu d'une par notion) ;
+- `intitule_sous_chaine` : `intitule_contient` retrouve le motif n'importe où dans un mot (« ciel » dans « distanciel »).
 """
 from __future__ import annotations
 
@@ -49,7 +52,12 @@ AUTRES_MAX = 12
 # les formations de l'Université Grenoble Alpes sont à Saint-Martin-d'Hères, l'élève et le modèle écrivent « Grenoble »
 # (F-NINF-21 et F-NSAN-10 : 0 candidat). Amendement v2 du contrat, section 3.
 RAYON_COMMUNE_KM = 20.0
-SABOTAGES = ("essentiel_tout",)
+SABOTAGES = ("essentiel_tout", "definitions_supprimees", "intitule_sous_chaine")
+# Résultat vide (CONTRAT-etape4, section 7, T3). Mesure du 26/09 : 7 BUT en apprentissage dans toute la base, sur 131 BUT
+# (V-INF-09 : « aucun BUT en apprentissage [...] tous domaines confondus », faux en réalité).
+PERIMETRE_VIDE = ("0 dans la base ne veut pas dire 0 en réalité : la base couvre en détail l'informatique, le "
+                  "numérique, la santé et les maths, et l'apprentissage seulement en partie. Élargis ou reformule la "
+                  "recherche ; sinon dis « je n'en trouve pas dans ma base », jamais « il n'en existe pas ».")
 
 TypeFormation = Literal["pass", "las", "licence", "but", "bts", "cpge", "cupge", "ifsi", "diplome_sante",
                         "ecole_ingenieur", "titre_pro"]
@@ -233,6 +241,8 @@ class Outils:
         self.notions_base = {r[0] for r in b.con.execute("SELECT champ FROM champ")}
         self.libelles = {r[0]: r[1] for r in b.con.execute("SELECT champ, libelle FROM champ")}
         self.index = self._indexer(b)
+        self.par_id = {f["id"]: f for f in self.index}
+        self.filieres_admises = [x for x, _ in bc.lister_valeurs(b, "filiere")]
         b.fermer()
 
     # connexions
@@ -263,7 +273,8 @@ class Outils:
                         "type": f["type"], "espace": f["espace"], "commune": (ls or [{}])[0].get("commune"),
                         "codes_insee": {x["code_insee"] for x in ls}, "mots": set(normaliser(botte).split()),
                         "coords": [(x["lat"], x["lon"]) for x in ls if x["lat"] is not None],
-                        "etab_norm": normaliser(f["etablissement"] or "")})
+                        "etab_norm": normaliser(f["etablissement"] or ""), "specialite": f["specialite"],
+                        "intitule_norm": normaliser(f["intitule"] or "")})
         return out
 
     # exécution
@@ -317,24 +328,79 @@ class Outils:
                         for ch, ent in f._par_champ(it["valeurs"]).items()]
             lignes.append(f"- [{it['id']}] {it['intitule']} | {it['etablissement']} | {it['commune']}{dist}"
                           + (" : " + " ; ".join(chiffres) if chiffres else ""))
-            valeurs += _valeurs_structurees(it["id"], it["valeurs"])
+            valeurs += _valeurs_structurees(it["id"], it["valeurs"], self.libelles)
+        if res["nb_resultats"] == 0:
+            entete.append(PERIMETRE_VIDE)
         texte = "\n".join(entete + lignes + ([f._legende(sources)] if sources else []))
         meta = {k: res[k] for k in ("nb_resultats", "tronque", "limite", "ecartees_non_disponible")} | {"filtres": ap}
+        meta |= {k: res[k] for k in ("filieres_depliees", "compte_minimal") if res.get(k)}
         return Resultat(texte=texte, valeurs=valeurs, ids=ids, meta=meta)
 
     def _pres_de(self, p: PresDe | None) -> dict | None:
         return None if p is None else {"code_insee": self._commune(p.commune, p.departement), "rayon_km": p.rayon_km}
 
+    def _filieres(self, filieres: list[str] | None) -> tuple[list[str] | None, dict]:
+        """T1 (CONTRAT-etape4, section 7) : une filière inconnue qui est un sigle (« CIEL ») est dépliée vers les
+        filières de la base qui contiennent sa lecture. Mesure du 26/09 (V-INF-03) : « CIEL » était refusé, avec pour
+        valeurs proches FCIL et PCSI, alors que 5 BTS CIEL existent à Rennes et Bruz. Sinon, la filière passe telle
+        quelle et `src/base_c/outils.py` lève l'erreur avec les valeurs proches."""
+        if not filieres:
+            return filieres, {}
+        out, depliees = [], {}
+        for fil in filieres:
+            lectures = SIGLES.get(normaliser(fil), []) if fil not in self.filieres_admises else []
+            trouvees = [a for a in self.filieres_admises if any(_contient(normaliser(a), lec) for lec in lectures)]
+            if trouvees:
+                depliees[fil] = trouvees
+            out += trouvees or [fil]
+        return list(dict.fromkeys(out)), depliees
+
+    def _garde_intitule(self, id_: str, ts: list) -> bool:
+        """Chaque terme du motif (sigle déplié) commence un mot de l'intitulé (T1)."""
+        t = self.par_id[id_]["intitule_norm"]
+        return all(any(_contient(t, " ".join(lec)) for lec in terme) for terme in ts)
+
     def chercher_formations(self, p: ChercherFormations, etat=None) -> Resultat:
-        res = bc.chercher_formations(
-            self.base, types=p.types, filieres=p.filieres, intitule_contient=p.intitule_contient,
-            apprentissage=p.apprentissage, statut=p.statut,
-            communes=[self._commune(c) for c in p.communes] if p.communes else None, departements=p.departements,
-            regions=p.regions, pres_de=self._pres_de(p.pres_de), taux_acces_min=p.taux_acces_min,
-            taux_acces_max=p.taux_acces_max, places_min=p.places_min, part_bac_techno_min=p.part_bac_techno_min,
-            part_bac_pro_min=p.part_bac_pro_min, session=p.session, tri=p.tri.model_dump() if p.tri else None,
-            limite=p.limite)
+        filieres, depliees = self._filieres(p.filieres)
+        kw = dict(types=p.types, filieres=filieres, apprentissage=p.apprentissage, statut=p.statut,
+                  communes=[self._commune(c) for c in p.communes] if p.communes else None,
+                  departements=p.departements, regions=p.regions, pres_de=self._pres_de(p.pres_de),
+                  taux_acces_min=p.taux_acces_min, taux_acces_max=p.taux_acces_max, places_min=p.places_min,
+                  part_bac_techno_min=p.part_bac_techno_min, part_bac_pro_min=p.part_bac_pro_min, session=p.session,
+                  tri=p.tri.model_dump() if p.tri else None)
+        ts = termes(p.intitule_contient) if p.intitule_contient else []
+        if not ts or sabotage() == "intitule_sous_chaine":   # le sabotage rejoue l'étape 3 : sous-chaîne, sans sigle
+            res = bc.chercher_formations(self.base, intitule_contient=p.intitule_contient, limite=p.limite, **kw)
+        else:
+            res = self._chercher_par_intitule(p, ts, kw)
+        res["filieres_depliees"] = depliees
         return self._rendu_recherche(res)
+
+    def _chercher_par_intitule(self, p: ChercherFormations, ts: list, kw: dict) -> dict:
+        """`intitule_contient` lu par mots (T1) : la base filtre d'abord par sous-chaîne sur le mot le plus long de
+        chaque lecture du terme le plus distinctif (sur-ensemble), puis chaque terme doit commencer un mot de
+        l'intitulé. Au-delà de 50 formations avant ce second filtre, le compte rendu est un minimum, et il est dit."""
+        terme = min(ts, key=len)                                   # le terme qui a le moins de lectures
+        brut, total_max, tronque_base = [], 0, False
+        for lec in terme:
+            mot = max(lec, key=len)
+            r = bc.chercher_formations(self.base, intitule_contient=mot, limite=bc.LIMITE_MAX, **kw)
+            brut += [x for x in r["resultats"] if x["id"] not in {y["id"] for y in brut}]
+            tronque_base |= r["tronque"]
+            ecartees = r["ecartees_non_disponible"]
+            appliques, sources = r["filtres_appliques"], r["sources"]
+            total_max += r["nb_resultats"]
+        gardes = [x for x in brut if self._garde_intitule(x["id"], ts)]
+        if len(terme) > 1:   # plusieurs appels : on rétablit l'ordre de la base
+            if kw.get("pres_de"):
+                gardes.sort(key=lambda x: (x.get("distance_km") is None, x.get("distance_km") or 0, x["id"]))
+            elif not kw.get("tri"):
+                gardes.sort(key=lambda x: x["id"])
+        appliques = {**appliques, "intitule_contient": p.intitule_contient,
+                     "intitule_regle": "chaque mot du motif commence un mot de l'intitulé ; sigles dépliés"}
+        return {"filtres_appliques": appliques, "nb_resultats": len(gardes), "tronque": len(gardes) > p.limite
+                or tronque_base, "limite": p.limite, "ecartees_non_disponible": ecartees,
+                "resultats": gardes[:p.limite], "sources": sources, "compte_minimal": tronque_base}
 
     def chercher_masters(self, p: ChercherMasters, etat=None) -> Resultat:
         res = bc.chercher_masters(
@@ -363,16 +429,19 @@ class Outils:
             raise bc.FiltreInvalide("donner « id » (une fiche) ou « ids » (jusqu'à 5 fiches)")
         if len(demandes) > 5:
             raise bc.FiltreInvalide("au plus 5 fiches par appel")
-        res = [self._lire_une(i.strip().strip("[]"), p.detail) for i in dict.fromkeys(demandes)]
+        definies: set[str] = set()   # T4 : une définition par notion et par appel (CONTRAT-etape4, section 7)
+        res = [self._lire_une(i.strip().strip("[]"), p.detail, definies) for i in dict.fromkeys(demandes)]
         if len(res) == 1:
             return res[0]
-        return Resultat(texte="\n\n---\n\n".join(r.texte for r in res), valeurs=[v for r in res for v in r.valeurs],
+        tete = "Définitions données une fois par notion, avec la première fiche qui la porte."
+        return Resultat(texte=tete + "\n\n" + "\n\n---\n\n".join(r.texte for r in res),
+                        valeurs=[v for r in res for v in r.valeurs],
                         ids=[i for r in res for i in r.ids],
                         meta={"detail": p.detail, "fiches": len(res),
                               "valeurs_rendues": sum(r.meta["valeurs_rendues"] for r in res),
                               "valeurs_fiche": sum(r.meta["valeurs_fiche"] for r in res)})
 
-    def _lire_une(self, id_: str, detail_demande: bool) -> Resultat:
+    def _lire_une(self, id_: str, detail_demande: bool, definies: set[str] | None = None) -> Resultat:
         f = self.formats
         fiche = bc.lire_fiche(self.base, id_)
         tout = fiche["valeurs"]
@@ -380,9 +449,12 @@ class Outils:
         gardees = tout if detail else {k: v for k, v in tout.items() if notion(k) in ESSENTIEL}
         sources: list[str] = []
         lignes = [f._entete(fiche)]
+        definies = set() if definies is None else definies
         for champ, entrees in f._par_champ(gardees).items():
-            lignes.append(f._ligne_champ(champ, entrees, sources, avec_definition=True))
-        valeurs = _valeurs_structurees(fiche["formation"]["id"], gardees)
+            definir = champ not in definies and sabotage() != "definitions_supprimees"
+            lignes.append(f._ligne_champ(champ, entrees, sources, avec_definition=definir))
+            definies.add(champ)
+        valeurs = _valeurs_structurees(fiche["formation"]["id"], gardees, self.libelles)
         if detail or "insertion" in gardees:
             for lg in fiche["insertion"]:
                 chiffres = [f"{lib} {_fr(lg[col])} {u}" for col, lib, u in INSERTION_RENDUE if lg.get(col) is not None]
@@ -450,13 +522,21 @@ class Outils:
         if not out:
             etabs = sorted({f["etablissement"] for f in self.index})
             proches = difflib.get_close_matches(p.texte, etabs, n=5, cutoff=0.3)
-            return Resultat(texte=f"aucune formation ne correspond à {p.texte!r} ; établissements proches : {proches}",
-                            meta=meta)
+            return Resultat(texte=f"aucune formation ne correspond à {p.texte!r} ; établissements proches : {proches}. "
+                                  + PERIMETRE_VIDE, meta=meta)
         lignes = [f"{len(cands)} candidat(s)" + (", les 10 plus proches" if len(cands) > 10 else "")
                   + " (à lire avec lire_fiche) :"]
-        lignes += [f"- [{c['id']}] {c['intitule']} | {c['etablissement']} | {c['commune']}"
-                   + (f" ({str(c['distance_km']).replace('.', ',')} km)" if c["distance_km"] else "")
+        lignes += [f"- [{c['id']}] {c['intitule']}{_option(self.par_id[c['id']])} | {c['etablissement']} | "
+                   f"{c['commune']}" + (f" ({str(c['distance_km']).replace('.', ',')} km)" if c["distance_km"] else "")
                    + f" (score {c['score']})" for c in out]
+        # T2 (CONTRAT-etape4, section 7) : des ex æquo coupés par la limite sont dits. Mesure du 26/09 (V-SAN-02) :
+        # 13 PASS de Lille à score égal, 10 montrés, le PASS à 6 % (psup:36433) parmi les 3 non montrés.
+        if len(cands) > 10 and cands[9][0] == cands[10][0]:
+            egaux = sum(1 for c in cands if c[0] == cands[9][0])
+            caches = egaux - sum(1 for c in cands[:10] if c[0] == cands[9][0])
+            lignes.append(f"{egaux} candidats ont le même score que le 10e, dont {caches} non montrés : pour les voir "
+                          "tous, utilise chercher_formations avec des filtres (type, commune, intitulé).")
+            meta["ex_aequo_caches"] = caches
         return Resultat(texte="\n".join(lignes), ids=[c["id"] for c in out], meta=meta | {"candidats": out})
 
     def comparer(self, p: Comparer, etat=None) -> Resultat:
@@ -497,7 +577,7 @@ class Outils:
                     else:
                         morceaux.append(f"[{i}] {f._valeur_lisible(v)} ({v.get('millesime')}, "
                                         f"{f._renvoi(sources, v.get('source_id'))})")
-                        valeurs += _valeurs_structurees(i, {cle: v})
+                        valeurs += _valeurs_structurees(i, {cle: v}, self.libelles)
                 titre = (self.libelles.get(c) or c) + (f", session {session}" if session else "")
                 lignes.append(f"- {titre} : " + " ; ".join(morceaux))
         lignes.append(f._legende(sources))
@@ -533,16 +613,30 @@ def _objets_decodes(args: dict, schema: type[BaseModel]) -> dict:
     return out
 
 
+def _contient(texte_norm: str, lecture: str) -> bool:
+    """La lecture (une suite de mots normalisés) commence un mot du texte normalisé : « ciel » ne se trouve pas dans
+    « distanciel », « kine » se trouve dans « kinesitherapie »."""
+    return f" {lecture}" in f" {texte_norm}"
+
+
+def _option(f: dict) -> str:
+    """T2 : l'option ou la spécialité d'un candidat, quand l'intitulé ne la dit pas (13 PASS de Lille identiques)."""
+    spec = (f.get("specialite") or "").strip()
+    return f" ({spec})" if spec and normaliser(spec) not in f["intitule_norm"] else ""
+
+
 def _fr(v) -> str:
     return str(int(v)) if float(v).is_integer() else f"{v}".replace(".", ",")
 
 
-def _valeurs_structurees(id_: str, valeurs: dict) -> list[dict]:
-    """Valeurs chiffrées vérifiables (pct, eur, places, effectif) d'un dictionnaire de valeurs rendu au modèle."""
+def _valeurs_structurees(id_: str, valeurs: dict, libelles: dict | None = None) -> list[dict]:
+    """Valeurs chiffrées vérifiables (pct, eur, places, effectif) d'un dictionnaire de valeurs rendu au modèle, avec
+    la portée et le libellé de leur notion (vérificateur de libellé, CONTRAT-etape4, section 6.1)."""
     out = []
     for cle, v in valeurs.items():
         u = UNITE_VERIF.get(v.get("unite"))
         if u and v.get("statut") == "disponible" and isinstance(v.get("valeur"), (int, float)) \
                 and not isinstance(v.get("valeur"), bool):
-            out.append({"valeur": float(v["valeur"]), "unite": u, "id": id_, "cle": cle, "source_id": v.get("source_id")})
+            out.append({"valeur": float(v["valeur"]), "unite": u, "id": id_, "cle": cle, "source_id": v.get("source_id"),
+                        "portee": v.get("portee"), "libelle": (libelles or {}).get(notion(cle), "")})
     return out

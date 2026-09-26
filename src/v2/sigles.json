@@ -22,6 +22,7 @@
  "las": ["las", "acces sante"],
  "pass": ["pass", "parcours d acces specifique sante"],
  "sio": ["services informatiques aux organisations"],
+ "ciel": ["cybersecurite informatique et reseaux electronique"],
  "inge": ["ingenieur"],
  "ingenieurs": ["ingenieur"]
 }
