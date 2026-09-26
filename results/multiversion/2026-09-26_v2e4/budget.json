@@ -4,10 +4,10 @@
   "mistral": 0.5
  },
  "depense_usd": {
-  "mistral": 4.134115
+  "mistral": 12.501985
  },
  "max_conversation_usd": {
-  "mistral": 0.2175301
+  "mistral": 0.25772595
  },
  "non_mesures": 0,
  "runs": [
@@ -149,6 +149,68 @@
    "latence_p90": 54.23,
    "secondes_par_k_sortie_mediane": 4.36,
    "appels_mesures": 109,
+   "tours_ecartes": 0
+  },
+  {
+   "at": "2026-09-26T18:51:54+00:00",
+   "version": "v2e4",
+   "banc": "vertical",
+   "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+   "git_commit": "bf4f1855e7ddcc3b03058eaee21844c812b5ea26",
+   "git_dirty": false,
+   "empreinte": {
+    "modele": "zai-glm-5-3",
+    "modele_filtre": "mistral-small-2603",
+    "serveur": "https://api.eu.mistral.ai",
+    "prompt": "v1",
+    "prompt_sha": "29f35936e977",
+    "prompt_fichier_sha": "145f0dd5a53c",
+    "reasoning_effort": null,
+    "src_v2_sha": "164ccdfeb033",
+    "base_empreinte": "54f8aab3110f"
+   },
+   "tours_joues": 79,
+   "erreurs": 3,
+   "cout_usd": 4.6809,
+   "secondes": 1082,
+   "arret": null,
+   "restantes": 0,
+   "fichier": "v2e4__vertical.jsonl",
+   "latence_mediane": 20.05,
+   "latence_p90": 47.94,
+   "secondes_par_k_sortie_mediane": 4.74,
+   "appels_mesures": 245,
+   "tours_ecartes": 0
+  },
+  {
+   "at": "2026-09-26T19:05:31+00:00",
+   "version": "v2e4",
+   "banc": "lot0",
+   "banc_sha256": "5b268bf34d916e2d17fe2c784015a0acd184f537ec3f0d2dc2f95f5883c2a9dd",
+   "git_commit": "bf4f1855e7ddcc3b03058eaee21844c812b5ea26",
+   "git_dirty": false,
+   "empreinte": {
+    "modele": "zai-glm-5-3",
+    "modele_filtre": "mistral-small-2603",
+    "serveur": "https://api.eu.mistral.ai",
+    "prompt": "v1",
+    "prompt_sha": "29f35936e977",
+    "prompt_fichier_sha": "145f0dd5a53c",
+    "reasoning_effort": null,
+    "src_v2_sha": "164ccdfeb033",
+    "base_empreinte": "54f8aab3110f"
+   },
+   "tours_joues": 67,
+   "erreurs": 0,
+   "cout_usd": 3.687,
+   "secondes": 816,
+   "arret": null,
+   "restantes": 0,
+   "fichier": "v2e4__lot0.jsonl",
+   "latence_mediane": 33.8,
+   "latence_p90": 72.2,
+   "secondes_par_k_sortie_mediane": 4.97,
+   "appels_mesures": 171,
    "tours_ecartes": 0
   }
  ],
