@@ -4,6 +4,9 @@ Version v1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-eta
 à 15h34, Telegram 10802). Écrit AVANT toute ligne de code du v2 et tout appel payant (section 14.1 du contrat du
 cerveau). Statut : soumis à Jarvis (relecture et recompte), puis à Matteo (choix de la section 12 et prompt v1).
 
+v1.4 (26/09, 19h10, après les bancs et AVANT le rejeu des 2 conversations en panne) : rejeu décidé par Jarvis,
+pannes publiées comme mode de défaillance mesuré, section 15.6.
+
 v1.3 (26/09, 18h35, après le passage 1b et AVANT la sonde et les bancs) : « low » non retenu, pas de 1c, pas de juge
 sur « low », go bancs (Matteo, Telegram 10821), section 15.5.
 
@@ -800,4 +803,31 @@ F au plus (1c) après celui-ci.
 **Mesures publiées à la fin des bancs**, avant le juge : critère 1 bis (sur les 269 attendus montrés à l'identique) et
 critère 1 sur 323 ; chiffres adossés ; latence brute et vitesse de l'API ; refus au sens du filtre (court-circuits) ;
 coût. Au vertical : les 79 tours et les 59 hors recouvrement.
+
+### 15.6 Amendement v1.4 (26/09, 19h10, après les bancs, avant le rejeu)
+
+**Bancs, lus avant cet amendement** (code 3b8b951, `v2e4`, réglage par défaut), recomptés par Jarvis (26/09, 19h08) :
+- vertical : 79 tours, **3 en panne** (V-INF-05 t0 et t1, V-SAN-11 t0). Chaque fois, 3 appels au modèle aboutissent,
+  puis le 4e dépasse 120 s trois fois (380 à 400 s par tour ; V-SAN-11 avait déjà produit 9 685 jetons de sortie).
+  Vitesse de l'API 4,74 s/k : c'est le raisonnement qui s'emballe, pas l'API. Adossés 75/75 tours, critère 1 bis
+  192/261 = 73,6 % (étape 3, mêmes 55 conversations : 74,3 %), critère 1 195/315 = 61,9 %, 4,68 USD ;
+- lot 0 : 67 tours, 0 panne, adossés 66/66 tours, latence 33,8 / 72,2 s à 4,97 s/k (étape 3 : 22,4 / 49,5 s à
+  5,66), 3,69 USD ;
+- latence médiane du vertical, périmètre à préciser : 20,05 s sur les 76 tours sans panne (court-circuit du filtre
+  compris) ; 20,8 s sur les 75 tours sans panne ni court-circuit (recompte de Jarvis) ; 21,08 s sur les 79 tours.
+  p90 au rang : 47,9 s sans les pannes, 65,9 s avec.
+
+**Décision (Jarvis, 26/09, 19h08)** : les 2 conversations en panne sont **rejouées une fois**, avec le même code
+(3b8b951), pour environ 0,3 USD. Ce n'est pas du réglage (le code ne change pas), et c'est cohérent avec l'amendement
+b) : une panne n'est pas une mesure de qualité. Le premier passage est gardé
+(`results/multiversion/2026-09-26_v2e4/bancs_passage1/v2e4__vertical.jsonl`).
+
+**Mais les pannes restent un résultat.** Le rapport les publie comme un **mode de défaillance mesuré** :
+- taux : 3 tours sur 79 ;
+- cause : le raisonnement d'un appel qui dépasse 120 s ;
+- jetons produits avant la panne ;
+- ce que verrait un élève : environ 6 minutes d'attente, puis un message d'excuse.
+
+Le critère 1 et la latence se publient avec et sans ces tours. Le juge (111 verdicts : vertical 79 après rejeu, gate
+F 1a 32) attend le go de Matteo.
 
