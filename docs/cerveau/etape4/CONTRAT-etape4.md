@@ -1,8 +1,17 @@
 # Contrat de l'étape 4 : la réponse
 
-Version v0, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-etape4-reponse` (go de Matteo le 26/09
+Version v0.1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-etape4-reponse` (go de Matteo le 26/09
 à 15h34, Telegram 10802). Écrit AVANT toute ligne de code du v2 et tout appel payant (section 14.1 du contrat du
 cerveau). Statut : soumis à Jarvis (relecture et recompte), puis à Matteo (choix de la section 12 et prompt v1).
+
+v0.1 (26/09, après la relecture de Jarvis, avant tout code et tout appel payant) : recompte indépendant de Jarvis
+identique sur le recouvrement, le critère 1, la loi de latence, la boucle et les parts d'accès. Trois corrections :
+- dénominateur des parts « Accès des terminales » établi par Jarvis (section 3.4, choix D4) ;
+- repères 6 (infirmier) et 7 (accès aux études de santé) du prompt v1 corrigés sur sources officielles. Le repère 7
+  était faux pour les élèves qui entrent à la rentrée 2027 (section 4, option c) ;
+- motif de la section 3.6 corrigé : il ratait « réécris ». Le lot 0 passe de 0 à 1 réécriture visible sur 6.
+
+Nouveau sha256 du prompt v1 : `145f0dd5a53c...`. v0 : commit 34f6f42.
 
 Contrat parent : `docs/cerveau/CONTRAT-cerveau.md` v1.2 (sha256 `07dee32b0949...`), sections 6, 8 et 13 (étape 4).
 Contrat précédent : `docs/cerveau/etape3/CONTRAT-etape3.md` v2. Point de départ mesuré :
@@ -50,7 +59,8 @@ Les autres chiffres viennent de commandes courtes, relevées dans la section où
      trois séries font 100 % à elles trois. Le modèle a suivi cette définition (V-INF-02).
   5. **Défaut de boucle** : quand le 6e outil passe pile, le modèle est rappelé sans outils, sans en être prévenu. Cela
      touche 16 tours sur 78 au vertical. Une fois (V-INF-09), sa phrase d'intention est partie comme réponse.
-  6. **Réécriture visible** : 5 des 11 réécritures du vertical parlent de la correction à l'élève.
+  6. **Réécriture visible** : 5 des 11 réécritures du vertical parlent de la correction à l'élève (1 sur 6 au lot 0,
+     1 sur 2 au gate F).
   7. **Clarification** : les 3 questions en rouge posent 2 questions numérotées, écrites en 3 ou 4 phrases
      interrogatives.
 - **Prompt v1** : texte complet joint (`prompt_conseiller_v1.txt`), avec son diff (`prompt_v0_v1.diff`). Ce qui change
@@ -199,9 +209,25 @@ Mesure du 26/09, par `lire_fiche` sur les 2 939 fiches `psup:` :
 - exemple : psup:7520 donne 69 + 31 + 0.
 
 Ce n'est donc pas un taux par série (la part des candidats techno qui ont pu recevoir une proposition), mais une
-**répartition par série**. Le dénominateur est supposé : les candidats de terminale en position de recevoir une
-proposition. Il est à vérifier par Jarvis sur une page Parcoursup. Le juge l'a relevé (V-INF-02), et le modèle avait
-suivi la définition mot pour mot. Correction : choix D4.
+**répartition par série**. Le juge l'a relevé (V-INF-02), et le modèle avait suivi la définition mot pour mot.
+
+**Dénominateur, établi par Jarvis le 26/09 (v0.1)** :
+- Le libellé officiel de l'open data (catalogue `fr-esr-parcoursup`) est « Part des terminales générales qui étaient
+  en position de recevoir une proposition en phase principale ». Il est ambigu, et la base l'a lu comme un taux par
+  série.
+- La page publique ne montre pas ce chiffre dans son HTML statique : psup/7520 n'affiche que la « Répartition par
+  type de bac des admis ».
+- Test sur `parcoursup_2025.csv` (14 148 lignes), écart médian à `part_acces_gen` :
+  - répartition des propositions par série, `prop_tot_bg / (bg + bt + bp)` : 1,65 point ;
+  - répartition des admis : 5,1 points ;
+  - taux par série, `prop_tot_bg / nb_voe_pp_bg` : 31,4 points, donc réfuté.
+- Dénominateur retenu : les candidats de terminale en position de recevoir une proposition en phase principale
+  (libellé officiel, plus la somme de 100). L'écart résiduel de 1,65 point viendrait de ce que `prop_tot` est le
+  bilan final, et non la phase principale : c'est supposé.
+
+**Définition à poser** (choix D4) : « Parmi les candidats de terminale qui étaient en position de recevoir une
+proposition en phase principale, part de ceux de cette série. Les trois séries font 100 %. » Ne dit pas : « la
+chance d'un élève de cette série d'avoir une proposition ; la répartition des admis ».
 
 ### 3.5 Défaut de boucle : le modèle n'est pas prévenu qu'il n'a plus d'outils
 
@@ -217,12 +243,13 @@ vertical, 10 sur 66 au lot 0 et 6 sur 32 au gate F. Sur ces 32 tours, 3 réponse
 ### 3.6 Réécriture visible par l'élève
 
 Le message de réécriture (`src/v2/verificateur.py`, `REECRITURE`) se termine par « Réécris ta réponse complète. ». Le
-modèle en parle alors à l'élève. Un motif cherché dans les 300 premiers caractères (« réécrit », « réponse complète »,
-« sans ces chiffres », « corrigé ») donne :
+modèle en parle alors à l'élève. Un motif cherché dans les 300 premiers caractères des réponses réécrites
+(« réécrit » et « réécris », « réponse complète », « sans ces chiffres », « corrig ») donne :
 - au vertical, **5 réécritures sur 11**. Exemple : V-SAN-19 t1, « Bien vu, ce chiffre ne vient pas de ma base [...] je le
   retire. » ;
 - au gate F, 1 sur 2 ;
-- au lot 0, 0 sur 6.
+- au lot 0, 1 sur 6 : L14 t1, « je réécris tout ». La v0 annonçait 0 sur 6, parce que son motif ratait
+  « réécris » ; l'erreur a été relevée par Jarvis.
 
 ### 3.7 Clarification
 
@@ -265,11 +292,25 @@ données, contre 25 tours, 4 erreurs, 0 refus et 4,46 avec. Le 79e tour du verti
   - BTS 2 ans, BUT 3 ans, licence 3 ans, master 2 ans ;
   - CPGE 2 ans puis concours ;
   - école d'ingénieurs avec prépa intégrée 5 ans ;
-  - diplôme d'État d'infirmier 3 ans en IFSI ;
-  - accès à médecine, maïeutique, odontologie et pharmacie par un PASS ou une LAS.
+  - diplôme d'État d'infirmier 3 ans en IFSI, en lien avec l'université ;
+  - accès à médecine, maïeutique, odontologie et pharmacie : en train de changer (PASS ou LAS jusqu'à la rentrée 2026 ;
+    voie unique annoncée pour la rentrée 2027), modalités renvoyées vers Parcoursup et l'Onisep.
 
-  Chaque repère **doit être vérifié par Jarvis sur une source officielle** (Onisep, Parcoursup, Légifrance) avant le
-  premier run. Tant que ce n'est pas fait, ils sont « supposés ». Aucun repère n'a été écrit à partir d'une des 21
+  Vérification par Jarvis le 26/09 (v0.1) :
+
+  | repère | verdict | source, date |
+  |---|---|---|
+  | 1 à 5 : BTS, BUT, licence et master, CPGE, école d'ingénieurs | confirmés | pages du ministère (BTS 2 ans en STS de lycée ; BUT 180 ECTS en IUT ; CPGE 2 ans puis concours ; ingénieur 5 ans après le bac dont 2 de cycle préparatoire intégré ; LMD), lues le 26/09 ; Onisep inaccessible (403) |
+  | 6 : infirmier | précisé | arrêté du 20/02/2026 relatif au DE d'infirmier, applicable aux entrants de septembre 2026 : 6 semestres, 180 ECTS (art. 24), IFSI en partenariat avec une université (art. 3) |
+  | 7 : accès aux études de santé | **faux dans la v0**, réécrit | service-public, actualité A18890 du 29/04/2026 : « réforme majeure de la première année d'accès aux études de santé [...] applicable à la rentrée 2027 », voie unique via Parcoursup pour MMOPK ; annonce du 17/04/2026 ; aucun texte d'application trouvé sur Légifrance au 26/09 |
+
+  **Leçon (v0.1) : les repères « stables » ne le sont pas.** Le repère 7, écrit comme une évidence, était faux pour
+  les élèves qui entrent à la rentrée 2027, c'est-à-dire les terminales de 2026-2027. Chaque repère porte donc sa
+  source et sa date de vérification (tableau ci-dessus), et la liste se revérifie avant la démo. Le repère 7 dit
+  maintenant une réforme et sa date : c'est la seule exception à la règle « réformes et dates renvoyées ». Elle est
+  sourcée, et une affirmation d'accès sans elle serait fausse.
+
+  Aucun repère n'a été écrit à partir d'une des 21
   erreurs, ni pour répondre à une question d'un banc. Les faits que le juge a relevés (EDN, durée des études de
   sage-femme, admission en IFSI...) n'y sont pas : ils relèvent du corpus sourcé de l'étape 6.
 - **Seulement depuis les outils** : sélectivité, statut public ou privé, alternance, coût, région d'une ville. La base
@@ -310,8 +351,8 @@ Ce qui change, et pourquoi :
 | Clarification : une question = une phrase, un seul « ? », une seule chose ; exemples entre parenthèses | section 10 | clarification |
 | Forme : corriger sans parler de la correction | constat 3.6 | forme |
 
-Rien n'est retiré du v0. Le prompt passe de 3 118 à 6 103 octets. Coût en plus : environ 0,9 USD sur les 242 tours
-prévus (section 11). C'est une estimation : environ 750 jetons de plus par appel, 3,4 appels par tour, et le cache
+Rien n'est retiré du v0. Le prompt passe de 3 118 à 6 326 octets (v0.1). Coût en plus : environ 0,9 USD sur les 242 tours
+prévus (section 11). C'est une estimation : environ 800 jetons de plus par appel, 3,4 appels par tour, et le cache
 n'est pas compté.
 
 Le v1 est une **proposition à relire par Matteo**, qui la valide ou la corrige (ordre, phase A). Le texte validé sera
@@ -578,12 +619,13 @@ figée sert.
 | D1 | Connaissances générales (section 4) | a) tout interdit hors outils ; b) autorisé mais marqué « général » ; c) repères stables sur une liste fermée, notions des outils seulement depuis les outils, le reste renvoyé à la source officielle | **c** |
 | D2 | Plancher du critère 1 (section 9) | a) 85 % sur les 323 (plafond 83,3 %) ; b) 85 % sur les 269 attendus montrés à l'identique, et taux sur 323 publié ; c) abaisser le seuil | **b** |
 | D3 | Raisonnement de GLM (section 8) | a) tester `reasoning_effort="none"`, retenu sur les critères déterministes du gate F ; b) le même, plus le juge sur les deux passages du gate F (64 verdicts, sur l'abonnement) ; c) ne pas tester, et déclarer le plancher de latence non tenu à l'étape 4 | **b** : c'est le seul levier qui atteint le plancher, et il peut coûter en erreur de fait, l'objectif premier. Le juger sur le jeu de réglage évite de le découvrir une fois le banc mesuré |
-| D4 | Définition « Accès des terminales » (3.4) | a) corrigée dans la base (texte seulement, empreinte déclarée, concordance rejouée), plus le contrôle général des répartitions ; b) corrigée seulement dans ce que la v2 montre au modèle | **a** : l'explorateur et le juge lisent aussi cette définition. Le dénominateur est à vérifier par Jarvis sur une page Parcoursup |
+| D4 | Définition « Accès des terminales » (3.4) | a) corrigée dans la base (texte seulement, empreinte déclarée, concordance rejouée), plus le contrôle général des répartitions ; b) corrigée seulement dans ce que la v2 montre au modèle | **a** : l'explorateur et le juge lisent aussi cette définition. Dénominateur établi par Jarvis (section 3.4, v0.1), définition à poser écrite en 3.4 |
 | D5 | Absence encore affirmée au 2e brouillon (6.2) | a) la phrase est retirée et tracée, comme un chiffre non adossé ; b) seulement tracée | **a si la précision du détecteur, mesurée sur le lot 0 avant le code figé, est >= 95 %, sinon b**. Retirer une phrase juste abîmerait la réponse |
 | D6 | Où se lit le critère principal (3.1) | a) les 59 tours hors recouvrement, les 79 publiés à côté ; b) les 79, comme à l'étape 3 | **a** : le gate F sert au réglage et partage 20 tours avec le vertical |
 
 À faire valider aussi par Matteo : **le texte du prompt v1** (section 5). À faire vérifier par Jarvis avant le premier
-run : **les repères stables** du prompt (option c) et le dénominateur de D4, sur des sources officielles.
+run : **les repères stables** du prompt (option c) et le dénominateur de D4, sur des sources officielles. C'est fait
+en v0.1 : repères 1 à 5 confirmés, 6 et 7 corrigés, dénominateur établi.
 
 ## 13. Ce que ce contrat n'établit pas
 
