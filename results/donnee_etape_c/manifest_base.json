@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-09-25T18:40:07+02:00",
+  "genere_le": "2026-09-26T18:21:45+02:00",
   "commande": "python -m src.collect.base_etape_c",
   "contrat": "results/donnee_etape_c/CONTRACT.md v1.2",
   "sabotage": null,
@@ -19,7 +19,7 @@
       "sha256": "9fe5c13fce6bfac5f4e189185dcd1c1ab8d2094ac7b2a2c88917073dcd621266"
     },
     "table_champs": {
-      "sha256": "d205f0bf681cd7da730e14bed001b748bc3dbf0d55a50b3a6cbefd5090ec85c5"
+      "sha256": "e029fe122daf8edc2c02f2ff0426ff135b997fcf19c7c6e1af4adca0699e0bf9"
     },
     "bruts": {
       "parcoursup_2025": "5bb0e6604c7d87a01d7bbcae4aa00cab3677e59679cdda38add2af2aa0f87807",
@@ -53,8 +53,8 @@
   ],
   "sortie": {
     "chemin": "/home/matteo_linux/projets/OrientIA/data/processed/base_etape_c.sqlite",
-    "sha256_fichier": "3c76e30a27ea88aceaaf3e6e70c99c949a7f07ad03400d282dea5f72ab954858",
-    "empreinte_canonique": "bfb26cdddfc6f4382ca87146aaba5d9d8180b1f8dd78805cc240b45193d0b192",
+    "sha256_fichier": "2472b5f03105f447c8aefbf90683d560bfef986666b75d5994dcfff5e06fa2f8",
+    "empreinte_canonique": "54f8aab3110f8f8cae0450fbcac5369dc6e7e0e37b4b469394878fde941c83bf",
     "lignes": {
       "source": 25,
       "champ": 102,
@@ -68,8 +68,8 @@
     }
   },
   "exports": {
-    "json_octets": 18827356,
-    "json_sha256": "9179c82e452bc9ea8a35b13c3f81d56259996e0d794a5bc3129b864afad6200b",
+    "json_octets": 18827668,
+    "json_sha256": "062fdac23cf3d3ad1633fc49335fac591b4782f3dedd7ef7897281db10e143cb",
     "csv_octets": 1890731,
     "csv_sha256": "e6afeb246901790fea0a800d1b7a016aea7056c22ae59b51b37efec8800c94a5"
   }

@@ -1,0 +1,377 @@
+{
+ "tag": "2026-09-26_v2e4",
+ "juge": "judge",
+ "budget": {
+  "plafonds_usd": {
+   "openai": 9.5,
+   "mistral": 0.5
+  },
+  "depense_usd": {
+   "mistral": 12.501985
+  },
+  "max_conversation_usd": {
+   "mistral": 0.25772595
+  },
+  "non_mesures": 0,
+  "runs": [
+   {
+    "at": "2026-09-26T16:40:10+00:00",
+    "version": "v2e4",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "2cd998abae0af9d088ecb2c54be8a74dfee1a81d",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt": "v1",
+     "prompt_sha": "29f35936e977",
+     "prompt_fichier_sha": "145f0dd5a53c",
+     "reasoning_effort": null,
+     "src_v2_sha": "eed8c7c0f2c7",
+     "base_empreinte": "54f8aab3110f"
+    },
+    "tours_joues": 3,
+    "erreurs": 1,
+    "cout_usd": 0.1069,
+    "secondes": 256,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2e4__gatef.jsonl"
+   },
+   {
+    "at": "2026-09-26T16:42:40+00:00",
+    "version": "v2e4",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "2cd998abae0af9d088ecb2c54be8a74dfee1a81d",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt": "v1",
+     "prompt_sha": "29f35936e977",
+     "prompt_fichier_sha": "145f0dd5a53c",
+     "reasoning_effort": null,
+     "src_v2_sha": "eed8c7c0f2c7",
+     "base_empreinte": "54f8aab3110f"
+    },
+    "tours_joues": 1,
+    "erreurs": 0,
+    "cout_usd": 0.0799,
+    "secondes": 100,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2e4__gatef.jsonl"
+   },
+   {
+    "at": "2026-09-26T16:43:01+00:00",
+    "version": "v2e4r",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "2cd998abae0af9d088ecb2c54be8a74dfee1a81d",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt": "v1",
+     "prompt_sha": "29f35936e977",
+     "prompt_fichier_sha": "145f0dd5a53c",
+     "reasoning_effort": "none",
+     "src_v2_sha": "eed8c7c0f2c7",
+     "base_empreinte": "54f8aab3110f"
+    },
+    "tours_joues": 3,
+    "erreurs": 3,
+    "cout_usd": 0.001,
+    "secondes": 17,
+    "arret": "les 3 premières conversations sont en panne",
+    "restantes": 0,
+    "fichier": "v2e4r__gatef.jsonl"
+   },
+   {
+    "at": "2026-09-26T16:51:49+00:00",
+    "version": "v2e4",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "14764de0b0135f54e5fa02a60f0b4281786d9a70",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt": "v1",
+     "prompt_sha": "29f35936e977",
+     "prompt_fichier_sha": "145f0dd5a53c",
+     "reasoning_effort": null,
+     "src_v2_sha": "164ccdfeb033",
+     "base_empreinte": "54f8aab3110f"
+    },
+    "tours_joues": 32,
+    "erreurs": 0,
+    "cout_usd": 1.869,
+    "secondes": 283,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2e4__gatef.jsonl",
+    "latence_mediane": 14.695,
+    "latence_p90": 62.06,
+    "secondes_par_k_sortie_mediane": 4.99,
+    "appels_mesures": 106,
+    "tours_ecartes": 0
+   },
+   {
+    "at": "2026-09-26T18:21:49+00:00",
+    "version": "v2e4r",
+    "banc": "gatef",
+    "banc_sha256": "5c78dc6e90017b3802e253f273468ad9f7566888ea78ccdcf4b1d3d9368fe0b3",
+    "git_commit": "c679a05ca7457714fe6e1927209d442a3a279109",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt": "v1",
+     "prompt_sha": "29f35936e977",
+     "prompt_fichier_sha": "145f0dd5a53c",
+     "reasoning_effort": "low",
+     "src_v2_sha": "164ccdfeb033",
+     "base_empreinte": "54f8aab3110f"
+    },
+    "tours_joues": 32,
+    "erreurs": 0,
+    "cout_usd": 2.0773,
+    "secondes": 283,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2e4r__gatef.jsonl",
+    "latence_mediane": 18.744999999999997,
+    "latence_p90": 54.23,
+    "secondes_par_k_sortie_mediane": 4.36,
+    "appels_mesures": 109,
+    "tours_ecartes": 0
+   },
+   {
+    "at": "2026-09-26T18:51:54+00:00",
+    "version": "v2e4",
+    "banc": "vertical",
+    "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+    "git_commit": "bf4f1855e7ddcc3b03058eaee21844c812b5ea26",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt": "v1",
+     "prompt_sha": "29f35936e977",
+     "prompt_fichier_sha": "145f0dd5a53c",
+     "reasoning_effort": null,
+     "src_v2_sha": "164ccdfeb033",
+     "base_empreinte": "54f8aab3110f"
+    },
+    "tours_joues": 79,
+    "erreurs": 3,
+    "cout_usd": 4.6809,
+    "secondes": 1082,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2e4__vertical.jsonl",
+    "latence_mediane": 20.05,
+    "latence_p90": 47.94,
+    "secondes_par_k_sortie_mediane": 4.74,
+    "appels_mesures": 245,
+    "tours_ecartes": 0
+   },
+   {
+    "at": "2026-09-26T19:05:31+00:00",
+    "version": "v2e4",
+    "banc": "lot0",
+    "banc_sha256": "5b268bf34d916e2d17fe2c784015a0acd184f537ec3f0d2dc2f95f5883c2a9dd",
+    "git_commit": "bf4f1855e7ddcc3b03058eaee21844c812b5ea26",
+    "git_dirty": false,
+    "empreinte": {
+     "modele": "zai-glm-5-3",
+     "modele_filtre": "mistral-small-2603",
+     "serveur": "https://api.eu.mistral.ai",
+     "prompt": "v1",
+     "prompt_sha": "29f35936e977",
+     "prompt_fichier_sha": "145f0dd5a53c",
+     "reasoning_effort": null,
+     "src_v2_sha": "164ccdfeb033",
+     "base_empreinte": "54f8aab3110f"
+    },
+    "tours_joues": 67,
+    "erreurs": 0,
+    "cout_usd": 3.687,
+    "secondes": 816,
+    "arret": null,
+    "restantes": 0,
+    "fichier": "v2e4__lot0.jsonl",
+    "latence_mediane": 33.8,
+    "latence_p90": 72.2,
+    "secondes_par_k_sortie_mediane": 4.97,
+    "appels_mesures": 171,
+    "tours_ecartes": 0
+   }
+  ],
+  "estimations": []
+ },
+ "ic95": "Wilson (score), z = 1,96",
+ "runs": {
+  "v2e4__lot0": {
+   "n_tours": 67,
+   "n_conversations": 60,
+   "erreurs_exec": 0,
+   "court_circuits": [],
+   "sources_mediane": 0,
+   "structured_part": null,
+   "latence_mediane": 33.8,
+   "latence_p90": 72.2,
+   "secondes_par_k_sortie_mediane": 4.97,
+   "appels_mesures": 171,
+   "tours_ecartes": 0,
+   "mots_mediane": 306,
+   "cout_usd": 3.687,
+   "tokens": {
+    "mistral-small-2603": {
+     "entree": 143234,
+     "sortie": 2145,
+     "non_mesures": 0
+    },
+    "zai-glm-5-3": {
+     "entree": 1336622,
+     "sortie": 407479,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 0,
+   "juge_moyennes": {
+    "references": null,
+    "comprehension": null,
+    "expression": null,
+    "couverture": null
+   },
+   "juge_moyenne_4": null,
+   "refus": 0,
+   "erreurs_fait": 0,
+   "erreurs_fait_part": null,
+   "erreurs_fait_ic95_wilson": null,
+   "critere1": null,
+   "adosses": {
+    "statut": "mesuré (valeurs des outils tracées)",
+    "chiffres_cites": 306,
+    "taux": 1.0,
+    "non_adosses": []
+   }
+  },
+  "v2e4__vertical": {
+   "n_tours": 79,
+   "n_conversations": 57,
+   "erreurs_exec": 3,
+   "court_circuits": [],
+   "sources_mediane": 9,
+   "structured_part": null,
+   "latence_mediane": 21.08,
+   "latence_p90": 65.89,
+   "secondes_par_k_sortie_mediane": 4.74,
+   "appels_mesures": 245,
+   "tours_ecartes": 0,
+   "mots_mediane": 334,
+   "cout_usd": 4.6809,
+   "tokens": {
+    "mistral-small-2603": {
+     "entree": 174671,
+     "sortie": 2457,
+     "non_mesures": 0
+    },
+    "zai-glm-5-3": {
+     "entree": 2079597,
+     "sortie": 395865,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 0,
+   "juge_moyennes": {
+    "references": null,
+    "comprehension": null,
+    "expression": null,
+    "couverture": null
+   },
+   "juge_moyenne_4": null,
+   "refus": 0,
+   "erreurs_fait": 0,
+   "erreurs_fait_part": null,
+   "erreurs_fait_ic95_wilson": null,
+   "critere1": {
+    "taux": 0.6190476190476191,
+    "attendus": 315,
+    "hors_base_c": 14,
+    "conversations": 55,
+    "temoin_hasard": 0.061224489795918366,
+    "taux_sans_correction_tableaux": 0.5714285714285714
+   },
+   "adosses": {
+    "statut": "mesuré (valeurs des outils tracées)",
+    "chiffres_cites": 839,
+    "taux": 1.0,
+    "non_adosses": []
+   }
+  },
+  "v2e4__vertical_echantillon25": {
+   "n_tours": 34,
+   "n_conversations": 25,
+   "erreurs_exec": 3,
+   "court_circuits": [],
+   "sources_mediane": 8.5,
+   "structured_part": null,
+   "latence_mediane": 23.46,
+   "latence_p90": 114.32,
+   "secondes_par_k_sortie_mediane": 4.86,
+   "appels_mesures": 100,
+   "tours_ecartes": 0,
+   "mots_mediane": 337.0,
+   "cout_usd": 1.9742,
+   "tokens": {
+    "mistral-small-2603": {
+     "entree": 76056,
+     "sortie": 1037,
+     "non_mesures": 0
+    },
+    "zai-glm-5-3": {
+     "entree": 870526,
+     "sortie": 168951,
+     "non_mesures": 0
+    }
+   },
+   "juge_n": 0,
+   "juge_moyennes": {
+    "references": null,
+    "comprehension": null,
+    "expression": null,
+    "couverture": null
+   },
+   "juge_moyenne_4": null,
+   "refus": 0,
+   "erreurs_fait": 0,
+   "erreurs_fait_part": null,
+   "erreurs_fait_ic95_wilson": null,
+   "critere1": {
+    "taux": 0.7033898305084746,
+    "attendus": 118,
+    "hors_base_c": 7,
+    "conversations": 23,
+    "temoin_hasard": 0.06779661016949153,
+    "taux_sans_correction_tableaux": 0.6694915254237288
+   },
+   "adosses": {
+    "statut": "mesuré (valeurs des outils tracées)",
+    "chiffres_cites": 378,
+    "taux": 1.0,
+    "non_adosses": []
+   }
+  }
+ }
+}

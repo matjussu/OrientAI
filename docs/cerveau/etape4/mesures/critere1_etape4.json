@@ -1,0 +1,3238 @@
+{
+ "traces": "results/multiversion/2026-09-26_v2e4/v2e4__vertical.jsonl",
+ "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+ "conversations_ecartees_panne": [
+  "V-INF-05"
+ ],
+ "attendus_dans_la_base": 321,
+ "classes": {
+  "cite_juste": 198,
+  "non_cite_fiche_jamais_rendue": 43,
+  "non_cite_base_ecart": 32,
+  "non_cite_fiche_rendue_non_lue": 24,
+  "non_cite_base_absent": 11,
+  "non_cite_base_masque": 8,
+  "non_cite_valeur_rendue_non_reprise": 3,
+  "non_cite_fiche_lue_valeur_non_rendue": 2
+ },
+ "taux_critere1": 0.6168,
+ "plafond_si_tout_egal_cite": 0.8318,
+ "attendus_egal": 267,
+ "critere1_bis": {
+  "cites": 195,
+  "attendus": 267,
+  "taux": 0.7303
+ },
+ "detail": [
+  {
+   "conversation": "V-INF-01",
+   "tour": 0,
+   "valeur": 34.0,
+   "unite": "%",
+   "fiche": "psup:7596",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-01",
+   "tour": 0,
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:7596",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-01",
+   "tour": 0,
+   "valeur": 96.0,
+   "unite": "%",
+   "fiche": "psup:47455",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-01",
+   "tour": 0,
+   "valeur": 200,
+   "unite": "places",
+   "fiche": "psup:47455",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-01",
+   "tour": 0,
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:47147",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-01",
+   "tour": 0,
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:47147",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 0,
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:7520",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 0,
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:7520",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 0,
+   "valeur": 38.0,
+   "unite": "%",
+   "fiche": "psup:7520",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 0,
+   "valeur": 63.0,
+   "unite": "%",
+   "fiche": "psup:7347",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 0,
+   "valeur": 37,
+   "unite": "places",
+   "fiche": "psup:7347",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 0,
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:7347",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 1,
+   "valeur": 78.0,
+   "unite": "%",
+   "fiche": "psup:7485",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 1,
+   "valeur": 100,
+   "unite": "places",
+   "fiche": "psup:7485",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-02",
+   "tour": 1,
+   "valeur": 4.0,
+   "unite": "%",
+   "fiche": "psup:7485",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 38.0,
+   "unite": "%",
+   "fiche": "psup:17725",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:17725",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 39.0,
+   "unite": "%",
+   "fiche": "psup:17725",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 35.0,
+   "unite": "%",
+   "fiche": "psup:4774",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:4774",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:4774",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 87.0,
+   "unite": "%",
+   "fiche": "psup:4694",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:4694",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-03",
+   "tour": 0,
+   "valeur": 40.0,
+   "unite": "%",
+   "fiche": "psup:4694",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-04",
+   "tour": 0,
+   "valeur": 45.0,
+   "unite": "%",
+   "fiche": "psup:4188",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-04",
+   "tour": 0,
+   "valeur": 294,
+   "unite": "places",
+   "fiche": "psup:4188",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-04",
+   "tour": 0,
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:4098",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-04",
+   "tour": 0,
+   "valeur": 148,
+   "unite": "places",
+   "fiche": "psup:4098",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 16.0,
+   "unite": "%",
+   "fiche": "psup:8275",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 125,
+   "unite": "places",
+   "fiche": "psup:8275",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 92.0,
+   "unite": "%",
+   "fiche": "psup:8275",
+   "notion": "part_neobacheliers@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:8343",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 315,
+   "unite": "places",
+   "fiche": "psup:8343",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:8343",
+   "notion": "part_neobacheliers@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 28.0,
+   "unite": "%",
+   "fiche": "psup:35359",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-INF-06",
+   "tour": 0,
+   "valeur": 60,
+   "unite": "places",
+   "fiche": "psup:35359",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:32116",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:32116",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 77.0,
+   "unite": "%",
+   "fiche": "psup:32116",
+   "notion": "part_mention_tb@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_lue_valeur_non_rendue"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 57.0,
+   "unite": "%",
+   "fiche": "psup:32042",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 139,
+   "unite": "places",
+   "fiche": "psup:32042",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 68.0,
+   "unite": "%",
+   "fiche": "psup:39126",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:39126",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 30.0,
+   "unite": "%",
+   "fiche": "psup:5482",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-07",
+   "tour": 0,
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:5482",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-08",
+   "tour": 0,
+   "valeur": 13,
+   "unite": "places",
+   "fiche": "mm:1603218DH2WG",
+   "notion": "capacite_accueil@2026",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-08",
+   "tour": 0,
+   "valeur": 697,
+   "unite": "candidats",
+   "fiche": "mm:1603218DH2WG",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-INF-08",
+   "tour": 0,
+   "valeur": 79.6,
+   "unite": "%",
+   "fiche": "mm:1603218DH2WG",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-INF-08",
+   "tour": 0,
+   "valeur": 2370,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1603218DH2WG",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-INF-08",
+   "tour": 0,
+   "valeur": 125,
+   "unite": "places",
+   "fiche": "mm:1603218DIU47",
+   "notion": "capacite_accueil@2026",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-08",
+   "tour": 0,
+   "valeur": 1655,
+   "unite": "candidats",
+   "fiche": "mm:1603218DIU47",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-INF-09",
+   "tour": 0,
+   "valeur": 18.0,
+   "unite": "%",
+   "fiche": "psup:6888",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-09",
+   "tour": 0,
+   "valeur": 136,
+   "unite": "places",
+   "fiche": "psup:6888",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-09",
+   "tour": 0,
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:7520",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-09",
+   "tour": 0,
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:7520",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-09",
+   "tour": 0,
+   "valeur": 69.0,
+   "unite": "%",
+   "fiche": "psup:7192",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-09",
+   "tour": 0,
+   "valeur": 84,
+   "unite": "places",
+   "fiche": "psup:7192",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-10",
+   "tour": 0,
+   "valeur": 77.0,
+   "unite": "%",
+   "fiche": "psup:36041",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-10",
+   "tour": 0,
+   "valeur": 36,
+   "unite": "places",
+   "fiche": "psup:36041",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-10",
+   "tour": 0,
+   "valeur": 24.0,
+   "unite": "%",
+   "fiche": "psup:4345",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-10",
+   "tour": 0,
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:4345",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-10",
+   "tour": 1,
+   "valeur": 17.0,
+   "unite": "%",
+   "fiche": "psup:4320",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-10",
+   "tour": 1,
+   "valeur": 27,
+   "unite": "places",
+   "fiche": "psup:4320",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-10",
+   "tour": 1,
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:4320",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 24.0,
+   "unite": "%",
+   "fiche": "psup:2701",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 108,
+   "unite": "places",
+   "fiche": "psup:2701",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:2815",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 56,
+   "unite": "places",
+   "fiche": "psup:2815",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:39214",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 60,
+   "unite": "places",
+   "fiche": "psup:39214",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 37.0,
+   "unite": "%",
+   "fiche": "psup:39215",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-11",
+   "tour": 0,
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:39215",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-12",
+   "tour": 0,
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:35520",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-12",
+   "tour": 0,
+   "valeur": 22,
+   "unite": "places",
+   "fiche": "psup:35520",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-12",
+   "tour": 0,
+   "valeur": 100.0,
+   "unite": "%",
+   "fiche": "psup:36110",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-12",
+   "tour": 0,
+   "valeur": 45,
+   "unite": "places",
+   "fiche": "psup:36110",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-12",
+   "tour": 0,
+   "valeur": 41.0,
+   "unite": "%",
+   "fiche": "psup:11801",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-12",
+   "tour": 0,
+   "valeur": 26,
+   "unite": "places",
+   "fiche": "psup:11801",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:11236",
+   "notion": "taux_acces@2023",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 15.0,
+   "unite": "%",
+   "fiche": "psup:11236",
+   "notion": "taux_acces@2024",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 13.0,
+   "unite": "%",
+   "fiche": "psup:11236",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 3779,
+   "unite": "voeux",
+   "fiche": "psup:11236",
+   "notion": "voeux_phase_principale@2023",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_lue_valeur_non_rendue"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 6353,
+   "unite": "voeux",
+   "fiche": "psup:11236",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 104,
+   "unite": "places",
+   "fiche": "psup:11236",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 24.0,
+   "unite": "%",
+   "fiche": "psup:11349",
+   "notion": "taux_acces@2023",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:11349",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-13",
+   "tour": 0,
+   "valeur": 88,
+   "unite": "places",
+   "fiche": "psup:11349",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 0,
+   "valeur": 65,
+   "unite": "places",
+   "fiche": "mm:1602749UV67P",
+   "notion": "capacite_accueil@2026",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 0,
+   "valeur": 564,
+   "unite": "candidats",
+   "fiche": "mm:1602749UV67P",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 0,
+   "valeur": 19,
+   "unite": "places",
+   "fiche": "mm:1702989AKG3I",
+   "notion": "capacite_accueil@2026",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 0,
+   "valeur": 355,
+   "unite": "candidats",
+   "fiche": "mm:1702989AKG3I",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 0,
+   "valeur": 51,
+   "unite": "places",
+   "fiche": "mm:1601877WG3VE",
+   "notion": "capacite_accueil@2026",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 0,
+   "valeur": 668,
+   "unite": "candidats",
+   "fiche": "mm:1601877WG3VE",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 1,
+   "valeur": 52.3,
+   "unite": "%",
+   "fiche": "mm:1602749UV67P",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 1,
+   "valeur": 2460,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1602749UV67P",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-INF-14",
+   "tour": 1,
+   "valeur": 2450,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1601877WG3VE",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-INF-15",
+   "tour": 0,
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:31726",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-15",
+   "tour": 0,
+   "valeur": 32,
+   "unite": "places",
+   "fiche": "psup:31726",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-15",
+   "tour": 0,
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:31257",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-15",
+   "tour": 0,
+   "valeur": 95,
+   "unite": "places",
+   "fiche": "psup:31257",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-15",
+   "tour": 0,
+   "valeur": 28.0,
+   "unite": "%",
+   "fiche": "psup:4524",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-15",
+   "tour": 0,
+   "valeur": 120,
+   "unite": "places",
+   "fiche": "psup:4524",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 49.0,
+   "unite": "%",
+   "fiche": "psup:2495",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 52,
+   "unite": "places",
+   "fiche": "psup:2495",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 79.0,
+   "unite": "%",
+   "fiche": "psup:10310",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 57,
+   "unite": "places",
+   "fiche": "psup:10310",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 49.0,
+   "unite": "%",
+   "fiche": "psup:39586",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 50,
+   "unite": "places",
+   "fiche": "psup:39586",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 81.0,
+   "unite": "%",
+   "fiche": "psup:34323",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-16",
+   "tour": 0,
+   "valeur": 15,
+   "unite": "places",
+   "fiche": "psup:34323",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 30.0,
+   "unite": "%",
+   "fiche": "psup:5482",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 78,
+   "unite": "places",
+   "fiche": "psup:5482",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 57.0,
+   "unite": "%",
+   "fiche": "psup:32042",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 139,
+   "unite": "places",
+   "fiche": "psup:32042",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 43.0,
+   "unite": "%",
+   "fiche": "psup:5469",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:5469",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 29.0,
+   "unite": "%",
+   "fiche": "psup:5605",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-19",
+   "tour": 1,
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:5605",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:16148",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 12,
+   "unite": "places",
+   "fiche": "psup:16148",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 44.0,
+   "unite": "%",
+   "fiche": "psup:16148",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 51.0,
+   "unite": "%",
+   "fiche": "psup:7963",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 15,
+   "unite": "places",
+   "fiche": "psup:7963",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 31.0,
+   "unite": "%",
+   "fiche": "psup:7963",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:7951",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 64,
+   "unite": "places",
+   "fiche": "psup:7951",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-20",
+   "tour": 1,
+   "valeur": 38.0,
+   "unite": "%",
+   "fiche": "psup:7951",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-21",
+   "tour": 0,
+   "valeur": 85.0,
+   "unite": "%",
+   "fiche": "psup:31941",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-21",
+   "tour": 0,
+   "valeur": 10,
+   "unite": "places",
+   "fiche": "psup:31941",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-21",
+   "tour": 0,
+   "valeur": 395,
+   "unite": "voeux",
+   "fiche": "psup:31941",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-INF-21",
+   "tour": 0,
+   "valeur": 382,
+   "unite": "voeux",
+   "fiche": "psup:31941",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-INF-21",
+   "tour": 0,
+   "valeur": 358,
+   "unite": "candidats",
+   "fiche": "psup:31941",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-INF-21",
+   "tour": 0,
+   "valeur": 110,
+   "unite": "propositions",
+   "fiche": "psup:31941",
+   "notion": "candidats_ont_pu_recevoir_une_proposition@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-01",
+   "tour": 0,
+   "valeur": 39.0,
+   "unite": "%",
+   "fiche": "psup:32647",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-01",
+   "tour": 0,
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:32647",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-01",
+   "tour": 0,
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:27346",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-01",
+   "tour": 0,
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:27346",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-01",
+   "tour": 0,
+   "valeur": 98.0,
+   "unite": "%",
+   "fiche": "psup:26778",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-01",
+   "tour": 0,
+   "valeur": 80,
+   "unite": "places",
+   "fiche": "psup:26778",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-02",
+   "tour": 0,
+   "valeur": 6.0,
+   "unite": "%",
+   "fiche": "psup:36433",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-02",
+   "tour": 0,
+   "valeur": 60,
+   "unite": "places",
+   "fiche": "psup:36433",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-02",
+   "tour": 0,
+   "valeur": 7769,
+   "unite": "voeux",
+   "fiche": "psup:36433",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-02",
+   "tour": 0,
+   "valeur": 54.0,
+   "unite": "%",
+   "fiche": "psup:28998",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-02",
+   "tour": 0,
+   "valeur": 305,
+   "unite": "places",
+   "fiche": "psup:28998",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 30.0,
+   "unite": "%",
+   "fiche": "psup:23156",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 117,
+   "unite": "places",
+   "fiche": "psup:23156",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:23156",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 68.0,
+   "unite": "%",
+   "fiche": "psup:23157",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 129,
+   "unite": "places",
+   "fiche": "psup:23157",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_valeur_rendue_non_reprise"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:23157",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 65.0,
+   "unite": "%",
+   "fiche": "psup:38428",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 20,
+   "unite": "places",
+   "fiche": "psup:38428",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 36.0,
+   "unite": "%",
+   "fiche": "psup:34537",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-03",
+   "tour": 0,
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:34537",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 15.0,
+   "unite": "%",
+   "fiche": "psup:23251",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 209,
+   "unite": "places",
+   "fiche": "psup:23251",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:23251",
+   "notion": "part_neobacheliers@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:23250",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 145,
+   "unite": "places",
+   "fiche": "psup:23250",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:23250",
+   "notion": "part_neobacheliers@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 35.0,
+   "unite": "%",
+   "fiche": "psup:34634",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-04",
+   "tour": 0,
+   "valeur": 52,
+   "unite": "places",
+   "fiche": "psup:34634",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-05",
+   "tour": 0,
+   "valeur": 7.0,
+   "unite": "%",
+   "fiche": "psup:48327",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-05",
+   "tour": 0,
+   "valeur": 72,
+   "unite": "places",
+   "fiche": "psup:48327",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-05",
+   "tour": 0,
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:29843",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-05",
+   "tour": 0,
+   "valeur": 36,
+   "unite": "places",
+   "fiche": "psup:29843",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-05",
+   "tour": 0,
+   "valeur": 15.0,
+   "unite": "%",
+   "fiche": "psup:43211",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-05",
+   "tour": 0,
+   "valeur": 9,
+   "unite": "places",
+   "fiche": "psup:43211",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-06",
+   "tour": 0,
+   "valeur": 4.0,
+   "unite": "%",
+   "fiche": "psup:28053",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-06",
+   "tour": 0,
+   "valeur": 38,
+   "unite": "places",
+   "fiche": "psup:28053",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-06",
+   "tour": 0,
+   "valeur": 1967,
+   "unite": "voeux",
+   "fiche": "psup:28053",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-06",
+   "tour": 0,
+   "valeur": 6.0,
+   "unite": "%",
+   "fiche": "psup:26393",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-06",
+   "tour": 0,
+   "valeur": 45,
+   "unite": "places",
+   "fiche": "psup:26393",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-06",
+   "tour": 0,
+   "valeur": 10.0,
+   "unite": "%",
+   "fiche": "psup:28055",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-06",
+   "tour": 0,
+   "valeur": 40,
+   "unite": "places",
+   "fiche": "psup:28055",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-07",
+   "tour": 0,
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:19420",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-07",
+   "tour": 0,
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:19420",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-07",
+   "tour": 0,
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:8225",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-07",
+   "tour": 0,
+   "valeur": 25,
+   "unite": "places",
+   "fiche": "psup:8225",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-08",
+   "tour": 0,
+   "valeur": 14.0,
+   "unite": "%",
+   "fiche": "psup:26280",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-08",
+   "tour": 0,
+   "valeur": 120,
+   "unite": "places",
+   "fiche": "psup:26280",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-08",
+   "tour": 0,
+   "valeur": 59.0,
+   "unite": "%",
+   "fiche": "psup:26071",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-08",
+   "tour": 0,
+   "valeur": 220,
+   "unite": "places",
+   "fiche": "psup:26071",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-09",
+   "tour": 0,
+   "valeur": 73.0,
+   "unite": "%",
+   "fiche": "psup:28736",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-09",
+   "tour": 0,
+   "valeur": 40,
+   "unite": "places",
+   "fiche": "psup:28736",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-09",
+   "tour": 0,
+   "valeur": 23.0,
+   "unite": "%",
+   "fiche": "psup:28739",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-09",
+   "tour": 0,
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:28739",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-10",
+   "tour": 0,
+   "valeur": 83.0,
+   "unite": "%",
+   "fiche": "psup:30790",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-10",
+   "tour": 0,
+   "valeur": 850,
+   "unite": "places",
+   "fiche": "psup:30790",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-10",
+   "tour": 0,
+   "valeur": 4954,
+   "unite": "voeux",
+   "fiche": "psup:30790",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-10",
+   "tour": 0,
+   "valeur": 60.0,
+   "unite": "%",
+   "fiche": "psup:30911",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-10",
+   "tour": 0,
+   "valeur": 100,
+   "unite": "places",
+   "fiche": "psup:30911",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-10",
+   "tour": 0,
+   "valeur": 85.0,
+   "unite": "%",
+   "fiche": "psup:31941",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-10",
+   "tour": 0,
+   "valeur": 10,
+   "unite": "places",
+   "fiche": "psup:31941",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 0,
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:43048",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 0,
+   "valeur": 110,
+   "unite": "places",
+   "fiche": "psup:43048",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 67.0,
+   "unite": "%",
+   "fiche": "psup:43039",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 10,
+   "unite": "places",
+   "fiche": "psup:43039",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 33.0,
+   "unite": "%",
+   "fiche": "psup:43064",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-11",
+   "tour": 1,
+   "valeur": 46,
+   "unite": "places",
+   "fiche": "psup:43064",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-12",
+   "tour": 0,
+   "valeur": 23.0,
+   "unite": "%",
+   "fiche": "psup:26636",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-12",
+   "tour": 0,
+   "valeur": 80,
+   "unite": "places",
+   "fiche": "psup:26636",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-12",
+   "tour": 0,
+   "valeur": 69.0,
+   "unite": "%",
+   "fiche": "psup:26648",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-12",
+   "tour": 0,
+   "valeur": 160,
+   "unite": "places",
+   "fiche": "psup:26648",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 47.0,
+   "unite": "%",
+   "fiche": "psup:23137",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 101,
+   "unite": "places",
+   "fiche": "psup:23137",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:23137",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 54.0,
+   "unite": "%",
+   "fiche": "psup:23142",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_valeur_rendue_non_reprise"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 142,
+   "unite": "places",
+   "fiche": "psup:23142",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:23142",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 11.0,
+   "unite": "%",
+   "fiche": "psup:23939",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 124,
+   "unite": "places",
+   "fiche": "psup:23939",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-13",
+   "tour": 0,
+   "valeur": 5.0,
+   "unite": "%",
+   "fiche": "psup:23939",
+   "notion": "repartition_admis_bac_pro@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-14",
+   "tour": 0,
+   "valeur": 11.0,
+   "unite": "%",
+   "fiche": "psup:26037",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-14",
+   "tour": 0,
+   "valeur": 18,
+   "unite": "places",
+   "fiche": "psup:26037",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-14",
+   "tour": 0,
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:26258",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-14",
+   "tour": 0,
+   "valeur": 44,
+   "unite": "places",
+   "fiche": "psup:26258",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-14",
+   "tour": 0,
+   "valeur": 29.0,
+   "unite": "%",
+   "fiche": "psup:26094",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-14",
+   "tour": 0,
+   "valeur": 34,
+   "unite": "places",
+   "fiche": "psup:26094",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-15",
+   "tour": 0,
+   "valeur": 20.0,
+   "unite": "%",
+   "fiche": "psup:4526",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-15",
+   "tour": 0,
+   "valeur": 28,
+   "unite": "places",
+   "fiche": "psup:4526",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-15",
+   "tour": 0,
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:15945",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-15",
+   "tour": 0,
+   "valeur": 28,
+   "unite": "places",
+   "fiche": "psup:15945",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-16",
+   "tour": 0,
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:28999",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-16",
+   "tour": 0,
+   "valeur": 20,
+   "unite": "places",
+   "fiche": "psup:28999",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-SAN-16",
+   "tour": 0,
+   "valeur": 0.0,
+   "unite": "%",
+   "fiche": "psup:28999",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 39.0,
+   "unite": "%",
+   "fiche": "psup:23084",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 157,
+   "unite": "places",
+   "fiche": "psup:23084",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:23084",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 43.0,
+   "unite": "%",
+   "fiche": "psup:23086",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 51,
+   "unite": "places",
+   "fiche": "psup:23086",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 32.0,
+   "unite": "%",
+   "fiche": "psup:23086",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 52.0,
+   "unite": "%",
+   "fiche": "psup:23083",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 45,
+   "unite": "places",
+   "fiche": "psup:23083",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 45.0,
+   "unite": "%",
+   "fiche": "psup:23083",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 64.0,
+   "unite": "%",
+   "fiche": "psup:23085",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 44,
+   "unite": "places",
+   "fiche": "psup:23085",
+   "notion": "places@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-SAN-19",
+   "tour": 1,
+   "valeur": 47.0,
+   "unite": "%",
+   "fiche": "psup:23085",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "ecart",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-20",
+   "tour": 1,
+   "valeur": 6.0,
+   "unite": "%",
+   "fiche": "psup:36255",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-20",
+   "tour": 1,
+   "valeur": 37,
+   "unite": "places",
+   "fiche": "psup:36255",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-20",
+   "tour": 1,
+   "valeur": 9.0,
+   "unite": "%",
+   "fiche": "psup:35410",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-20",
+   "tour": 1,
+   "valeur": 50,
+   "unite": "places",
+   "fiche": "psup:35410",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-20",
+   "tour": 1,
+   "valeur": 5.0,
+   "unite": "%",
+   "fiche": "psup:26686",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-20",
+   "tour": 1,
+   "valeur": 30,
+   "unite": "places",
+   "fiche": "psup:26686",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-SAN-21",
+   "tour": 0,
+   "valeur": 77.0,
+   "unite": "%",
+   "fiche": "psup:31766",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-21",
+   "tour": 0,
+   "valeur": 26,
+   "unite": "places",
+   "fiche": "psup:31766",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-21",
+   "tour": 0,
+   "valeur": 1187,
+   "unite": "voeux",
+   "fiche": "psup:31766",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-21",
+   "tour": 0,
+   "valeur": 1187,
+   "unite": "voeux",
+   "fiche": "psup:31766",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-SAN-21",
+   "tour": 0,
+   "valeur": 212,
+   "unite": "propositions",
+   "fiche": "psup:31766",
+   "notion": "candidats_ont_pu_recevoir_une_proposition@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 10.0,
+   "unite": "%",
+   "fiche": "psup:8182",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 142,
+   "unite": "places",
+   "fiche": "psup:8182",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 11.0,
+   "unite": "%",
+   "fiche": "psup:31680",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 47,
+   "unite": "places",
+   "fiche": "psup:31680",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:8550",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:8550",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 17.0,
+   "unite": "%",
+   "fiche": "psup:39554",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-01",
+   "tour": 0,
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:39554",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-02",
+   "tour": 0,
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:4671",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-02",
+   "tour": 0,
+   "valeur": 144,
+   "unite": "places",
+   "fiche": "psup:4671",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-02",
+   "tour": 1,
+   "valeur": 62.0,
+   "unite": "%",
+   "fiche": "psup:19164",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-02",
+   "tour": 1,
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:19164",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-02",
+   "tour": 1,
+   "valeur": 31.0,
+   "unite": "%",
+   "fiche": "psup:19164",
+   "notion": "part_mention_tb@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-03",
+   "tour": 0,
+   "valeur": 91.0,
+   "unite": "%",
+   "fiche": "psup:7089",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-03",
+   "tour": 0,
+   "valeur": 65,
+   "unite": "places",
+   "fiche": "psup:7089",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-03",
+   "tour": 0,
+   "valeur": 78.0,
+   "unite": "%",
+   "fiche": "psup:35489",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-03",
+   "tour": 0,
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:35489",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-04",
+   "tour": 0,
+   "valeur": 23.0,
+   "unite": "%",
+   "fiche": "psup:47242",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-04",
+   "tour": 0,
+   "valeur": 57,
+   "unite": "places",
+   "fiche": "psup:47242",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-04",
+   "tour": 0,
+   "valeur": 21.0,
+   "unite": "%",
+   "fiche": "psup:47258",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-04",
+   "tour": 0,
+   "valeur": 200,
+   "unite": "places",
+   "fiche": "psup:47258",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 0,
+   "valeur": 19.0,
+   "unite": "%",
+   "fiche": "psup:32112",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 0,
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:32112",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 0,
+   "valeur": 43.0,
+   "unite": "%",
+   "fiche": "psup:39817",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 0,
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:39817",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 0,
+   "valeur": 25.0,
+   "unite": "%",
+   "fiche": "psup:39817",
+   "notion": "part_mention_sans_mention@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 1,
+   "valeur": 10.0,
+   "unite": "%",
+   "fiche": "psup:6780",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 1,
+   "valeur": 96,
+   "unite": "places",
+   "fiche": "psup:6780",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 1,
+   "valeur": 81.0,
+   "unite": "%",
+   "fiche": "psup:6988",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 1,
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:6988",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_valeur_rendue_non_reprise"
+  },
+  {
+   "conversation": "V-MAT-05",
+   "tour": 1,
+   "valeur": 18.0,
+   "unite": "%",
+   "fiche": "psup:6988",
+   "notion": "part_mention_sans_mention@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-06",
+   "tour": 0,
+   "valeur": 45.0,
+   "unite": "%",
+   "fiche": "psup:32743",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-06",
+   "tour": 0,
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:32743",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-06",
+   "tour": 0,
+   "valeur": 82.0,
+   "unite": "%",
+   "fiche": "psup:31687",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-06",
+   "tour": 0,
+   "valeur": 100,
+   "unite": "places",
+   "fiche": "psup:31687",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_rendue_non_lue"
+  },
+  {
+   "conversation": "V-MAT-07",
+   "tour": 0,
+   "valeur": 7.0,
+   "unite": "%",
+   "fiche": "psup:4036",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-07",
+   "tour": 0,
+   "valeur": 144,
+   "unite": "places",
+   "fiche": "psup:4036",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-07",
+   "tour": 1,
+   "valeur": 29.0,
+   "unite": "%",
+   "fiche": "psup:31831",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-07",
+   "tour": 1,
+   "valeur": 36,
+   "unite": "places",
+   "fiche": "psup:31831",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-08",
+   "tour": 0,
+   "valeur": 79.0,
+   "unite": "%",
+   "fiche": "psup:4217",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-08",
+   "tour": 0,
+   "valeur": 35,
+   "unite": "places",
+   "fiche": "psup:4217",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-08",
+   "tour": 0,
+   "valeur": 100.0,
+   "unite": "%",
+   "fiche": "psup:4217",
+   "notion": "repartition_admis_bac_techno@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-09",
+   "tour": 0,
+   "valeur": 70,
+   "unite": "places",
+   "fiche": "mm:1601962N73AH",
+   "notion": "capacite_accueil@2026",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-09",
+   "tour": 0,
+   "valeur": 788,
+   "unite": "candidats",
+   "fiche": "mm:1601962N73AH",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-MAT-09",
+   "tour": 0,
+   "valeur": 69.2,
+   "unite": "%",
+   "fiche": "mm:1601962N73AH",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-MAT-09",
+   "tour": 0,
+   "valeur": 3150,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1601962N73AH",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-MAT-09",
+   "tour": 0,
+   "valeur": 32,
+   "unite": "places",
+   "fiche": "mm:1603284ASFLI",
+   "notion": "capacite_accueil@2026",
+   "statut_base": "egal",
+   "classe": "non_cite_fiche_jamais_rendue"
+  },
+  {
+   "conversation": "V-MAT-09",
+   "tour": 0,
+   "valeur": 608,
+   "unite": "candidats",
+   "fiche": "mm:1603284ASFLI",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-MAT-09",
+   "tour": 0,
+   "valeur": 2570,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1603284ASFLI",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-MAT-10",
+   "tour": 0,
+   "valeur": 70.0,
+   "unite": "%",
+   "fiche": "psup:36001",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-10",
+   "tour": 0,
+   "valeur": 24,
+   "unite": "places",
+   "fiche": "psup:36001",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-10",
+   "tour": 0,
+   "valeur": 52.0,
+   "unite": "%",
+   "fiche": "psup:11879",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-10",
+   "tour": 0,
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:11879",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-10",
+   "tour": 0,
+   "valeur": 100.0,
+   "unite": "%",
+   "fiche": "psup:26387",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-10",
+   "tour": 0,
+   "valeur": 106,
+   "unite": "places",
+   "fiche": "psup:26387",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 27.0,
+   "unite": "%",
+   "fiche": "psup:7916",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 192,
+   "unite": "places",
+   "fiche": "psup:7916",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 17.0,
+   "unite": "%",
+   "fiche": "psup:31686",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 48,
+   "unite": "places",
+   "fiche": "psup:31686",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 64.0,
+   "unite": "%",
+   "fiche": "psup:39956",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 285,
+   "unite": "places",
+   "fiche": "psup:39956",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 42.0,
+   "unite": "%",
+   "fiche": "psup:8061",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-13",
+   "tour": 1,
+   "valeur": 33,
+   "unite": "places",
+   "fiche": "psup:8061",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-14",
+   "tour": 1,
+   "valeur": 54,
+   "unite": "places",
+   "fiche": "mm:1503297UWETR",
+   "notion": "capacite_accueil@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-14",
+   "tour": 1,
+   "valeur": 497,
+   "unite": "candidats",
+   "fiche": "mm:1503297UWETR",
+   "notion": "candidats_pp_open_data@2025",
+   "statut_base": "masque",
+   "classe": "non_cite_base_masque"
+  },
+  {
+   "conversation": "V-MAT-14",
+   "tour": 1,
+   "valeur": 74.7,
+   "unite": "%",
+   "fiche": "mm:1503297UWETR",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-MAT-14",
+   "tour": 1,
+   "valeur": 2440,
+   "unite": "euros nets par mois",
+   "fiche": "mm:1503297UWETR",
+   "notion": null,
+   "statut_base": "absent",
+   "classe": "non_cite_base_absent"
+  },
+  {
+   "conversation": "V-MAT-15",
+   "tour": 0,
+   "valeur": 87.0,
+   "unite": "%",
+   "fiche": "psup:35631",
+   "notion": "taux_acces@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-15",
+   "tour": 0,
+   "valeur": 16,
+   "unite": "places",
+   "fiche": "psup:35631",
+   "notion": "places@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-15",
+   "tour": 0,
+   "valeur": 436,
+   "unite": "voeux",
+   "fiche": "psup:35631",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  },
+  {
+   "conversation": "V-MAT-15",
+   "tour": 0,
+   "valeur": 433,
+   "unite": "voeux",
+   "fiche": "psup:35631",
+   "notion": "candidats_ont_postule@2025",
+   "statut_base": "egal",
+   "classe": "cite_juste"
+  },
+  {
+   "conversation": "V-MAT-15",
+   "tour": 0,
+   "valeur": 123,
+   "unite": "propositions",
+   "fiche": "psup:35631",
+   "notion": "candidats_ont_pu_recevoir_une_proposition@2025",
+   "statut_base": "ecart",
+   "classe": "non_cite_base_ecart"
+  }
+ ]
+}

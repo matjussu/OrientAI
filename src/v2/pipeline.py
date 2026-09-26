@@ -16,7 +16,8 @@ from typing import Callable
 
 from src.eval.grille_d import texte_reponse
 from src.rag.models import MISTRAL_SMALL
-from src.v2 import prompt as prompt_v0
+from src.v2 import prompt as prompts
+from src.v2 import verificateur as vf
 from src.v2.outils import Outils, catalogue
 from src.v2.profil import Profil
 from src.v2.verificateur import REPONSE_VIDE, chiffres_eleve, message_reecriture, retirer_phrases, verifier
@@ -25,6 +26,11 @@ MODELE = "zai-glm-5-3"          # banc E, PR #186 ; identifiant exact, jamais l'
 MODELE_FILTRE = MISTRAL_SMALL   # « mistral-small-2603 », passé en paramètre au ScopeClassifier (non modifié)
 SERVEUR = "https://api.eu.mistral.ai"
 PLAFOND_OUTILS = 6              # choix Q5 du parent
+# Timeout par appel au modèle, pour le client qui sert ce pipeline (lanceur et, plus tard, route d'API). Amendement
+# v1.1 du CONTRAT-etape4 (Jarvis, 26/09) : 60 s -> 120 s. Mesure du 26/09, 16h40 : F-NINF-01 est tombé en panne après
+# 3 appels de plus de 60 s, l'API rendant alors 11 à 21 s par millier de jetons de sortie (4,4 à l'étape 3) ; rejoué,
+# le tour a pris 100 s. Une panne n'est pas une mesure de qualité.
+TIMEOUT_MS = 120_000
 MAX_APPELS_MODELE = 14          # garde-fou : 6 outils + réécriture laissent de la marge ; au-delà, panne tracée
 TEMPERATURE = 0.3               # celle des bancs D et E (src/eval/grille_d.py)
 FENETRE_HISTORIQUE = 6          # messages rejoués, comme la plateforme (src/eval/battery/config.py HISTORY_WINDOW)
@@ -32,6 +38,21 @@ MESSAGE_PLAFOND = ("plafond de 6 recherches atteint pour ce message : cet appel 
                    "que tu as déjà, et dis-le à l'élève.")
 IDS_CITES = ("trouver_formation", "lire_fiche", "comparer")
 RELANCE_VIDE = "Rédige maintenant ta réponse à l'élève avec ce que tu as, sans appeler d'outil."
+# B1 (CONTRAT-etape4, section 7) : quand le 6e outil passe pile, l'appel suivant part sans outils ; sans cette consigne,
+# le modèle ne le savait pas (16 tours sur 78 au vertical de l'étape 3) et V-INF-09 a rendu sa phrase d'intention.
+MESSAGE_FIN = ("Tu as utilisé tes 6 recherches pour ce message : tu ne peux plus appeler d'outil. Rédige maintenant ta "
+               "réponse finale à l'élève avec ce que tu as, sans annoncer de recherche à venir.")
+# D5 (Matteo 10808) : une absence encore affirmée au 2e brouillon est retirée seulement si la précision du détecteur,
+# mesurée sur le lot 0, est d'au moins 95 %. Mesure du 26/09 : 3 vraies absences sur 4 déclenchements, 75 %
+# (docs/cerveau/etape4/mesures/etalonnage_absence.json) : elle est donc seulement tracée.
+RETIRER_ABSENCE = False
+SABOTAGES = ("fin_non_annoncee",)
+
+
+def _sabotage() -> str | None:
+    import os
+    s = os.environ.get("ORIENTIA_SABOTAGE_V2") or None
+    return s if s in SABOTAGES else None
 
 
 @dataclass
@@ -83,7 +104,8 @@ def phrase_etape(nom: str, args: dict, outils: Outils | None = None) -> str:
 
 class Pipeline:
     def __init__(self, client, outils: Outils | None = None, classifieur=None, modele: str = MODELE,
-                 sommeil: Callable[[float], None] = time.sleep):
+                 sommeil: Callable[[float], None] = time.sleep, prompt: str = "v1",
+                 reasoning_effort: str | None = None):
         from src.rag.scope_classifier import ScopeClassifier
         self.client = client
         self.outils = outils or Outils()
@@ -91,10 +113,15 @@ class Pipeline:
         self.modele = modele
         self.catalogue = catalogue()
         self.sommeil = sommeil
+        self.prompt = prompt
+        # D3 (Matteo 10808) : « none » testé au palier 0 puis sur le gate F ; None = paramètre non envoyé.
+        self.reasoning_effort = reasoning_effort
 
     # appel au modèle, avec nouvelles tentatives (429 mesuré sur GLM au banc D : attente plus longue)
     def _appel(self, messages: list[dict], outils: bool, trace: dict):
         kw = {"tools": self.catalogue, "tool_choice": "auto"} if outils else {}
+        if self.reasoning_effort:
+            kw["reasoning_effort"] = self.reasoning_effort
         essais = 0
         while True:
             essais += 1
@@ -123,6 +150,10 @@ class Pipeline:
             if len(trace["appels_modele"]) >= MAX_APPELS_MODELE:
                 raise PanneModele(f"plus de {MAX_APPELS_MODELE} appels au modèle pour un message")
             permis = compteur["outils"] < PLAFOND_OUTILS
+            if not permis and not compteur.get("fin_annoncee") and _sabotage() != "fin_non_annoncee":
+                msgs.append({"role": "user", "content": MESSAGE_FIN})
+                compteur["fin_annoncee"] = True
+                trace["fin_annoncee"] = True   # plafond_atteint garde son sens de l'étape 3 : un appel refusé
             r = self._appel(msgs, permis, trace)
             m = r.choices[0].message
             texte, pensee = texte_reponse(m)
@@ -163,6 +194,16 @@ class Pipeline:
                                         "erreur": res.erreur, "secondes": round(time.time() - t0, 3)})
                 msgs.append({"role": "tool", "name": nom, "tool_call_id": tc.id, "content": res.texte})
 
+    def _controler(self, texte: str, etat: EtatConversation, eleve, trace: dict) -> dict:
+        """Vérification d'un brouillon : chiffres (étape 3), libellés et absences (CONTRAT-etape4, 6.1 et 6.2)."""
+        v = verifier(texte, etat.valeurs, eleve)
+        v["mal_nommes"] = vf.mal_nommes(texte, v["adosses"], etat.valeurs)
+        motif = vf.motif_incomplet(trace["outils"])
+        v["absences"] = vf.absences(texte) if motif else []
+        v["motif_absence"] = motif
+        trace["verifications"].append(v)
+        return v
+
     def repondre(self, message: str, etat: EtatConversation,
                  on_etape: Callable[[str], None] | None = None) -> dict:
         t0 = time.time()
@@ -181,26 +222,29 @@ class Pipeline:
 
         # 2. cerveau
         t1 = time.time()
-        msgs = [{"role": "system", "content": prompt_v0.systeme(etat.profil.pour_le_modele())}, *historique,
+        msgs = [{"role": "system", "content": prompts.systeme(etat.profil.pour_le_modele(), self.prompt)}, *historique,
                 {"role": "user", "content": message}]
         compteur = {"outils": 0}
         brouillon = self._boucle(msgs, etat, trace, compteur, on_etape)
         trace["brouillons"].append(brouillon)
 
-        # 3. vérificateur : une réécriture, puis retrait des phrases
+        # 3. vérificateur : une réécriture (chiffres non adossés, mal nommés, absences), puis retrait des phrases
         eleve = chiffres_eleve(etat.messages_eleve)
-        v = verifier(brouillon, etat.valeurs, eleve)
-        trace["verifications"].append(v)
+        v = self._controler(brouillon, etat, eleve, trace)
         final = brouillon
-        if v["non_adosses"]:
+        if v["non_adosses"] or v["mal_nommes"] or v["absences"]:
             msgs += [{"role": "assistant", "content": brouillon},
-                     {"role": "user", "content": message_reecriture(v["non_adosses"])}]
+                     {"role": "user", "content": message_reecriture(v["non_adosses"], v["mal_nommes"], v["absences"],
+                                                                    v["motif_absence"])}]
             final = self._boucle(msgs, etat, trace, compteur, on_etape)
             trace["brouillons"].append(final)
-            v2 = verifier(final, etat.valeurs, eleve)
-            trace["verifications"].append(v2)
-            if v2["non_adosses"]:
-                final, retirees = retirer_phrases(final, etat.valeurs, eleve)
+            v2 = self._controler(final, etat, eleve, trace)
+            a_retirer = {ph for c in v2["mal_nommes"] for ph in vf.phrases_portant(c)}
+            if RETIRER_ABSENCE:
+                a_retirer |= set(v2["absences"])
+            trace["absences_gardees"] = [] if RETIRER_ABSENCE else v2["absences"]
+            if v2["non_adosses"] or a_retirer:
+                final, retirees = retirer_phrases(final, etat.valeurs, eleve, a_retirer)
                 trace["phrases_retirees"] = retirees
                 if not final.strip():
                     final = REPONSE_VIDE
@@ -210,16 +254,18 @@ class Pipeline:
     def _fin(self, message: str, reponse: str, etat: EtatConversation, trace: dict, t0: float,
              court_circuit: bool = False) -> dict:
         eleve = chiffres_eleve(etat.messages_eleve)
-        vf = verifier(reponse, etat.valeurs, eleve)
-        trace["verification_finale"] = vf
-        trace["garantie_adosses"] = not vf["non_adosses"]
+        vfin = verifier(reponse, etat.valeurs, eleve)
+        vfin["mal_nommes"] = vf.mal_nommes(reponse, vfin["adosses"], etat.valeurs)
+        vfin["absences"] = vf.absences(reponse) if vf.motif_incomplet(trace["outils"]) else []
+        trace["verification_finale"] = vfin
+        trace["garantie_adosses"] = not vfin["non_adosses"]
         trace["court_circuit"] = court_circuit
         trace["profil_apres"] = etat.profil.pour_le_modele()
         trace["ids_rendus_conversation"] = list(etat.ids_rendus)
         trace["latence_s"]["total"] = round(time.time() - t0, 2)
         etat.historique += [{"role": "user", "content": message}, {"role": "assistant", "content": reponse}]
         sources = {}
-        for c in vf["adosses"]:
+        for c in vfin["adosses"]:
             for p in c["porteurs"]:
                 sources.setdefault((p["id"], p["source_id"]), {"id": p["id"], "source_id": p["source_id"]})
         return {"reponse": reponse, "sources": list(sources.values()), "trace": trace}

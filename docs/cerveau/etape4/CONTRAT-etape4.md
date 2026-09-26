@@ -4,6 +4,18 @@ Version v1, 26/09/2026, Claudette. Ordre `2026-09-26-1535-claudette-orientai-eta
 à 15h34, Telegram 10802). Écrit AVANT toute ligne de code du v2 et tout appel payant (section 14.1 du contrat du
 cerveau). Statut : soumis à Jarvis (relecture et recompte), puis à Matteo (choix de la section 12 et prompt v1).
 
+v1.4 (26/09, 19h10, après les bancs et AVANT le rejeu des 2 conversations en panne) : rejeu décidé par Jarvis,
+pannes publiées comme mode de défaillance mesuré, section 15.6.
+
+v1.3 (26/09, 18h35, après le passage 1b et AVANT la sonde et les bancs) : « low » non retenu, pas de 1c, pas de juge
+sur « low », go bancs (Matteo, Telegram 10821), section 15.5.
+
+v1.2 (26/09, 18h20, après le palier 1a et AVANT le passage 1b) : D3 devient `reasoning_effort="low"` (Matteo,
+Telegram 10818, relayé par Jarvis), règle de retenue réécrite, section 15.4 ; seuil de la sonde confirmé par Jarvis.
+
+v1.1 (26/09, 16h55, après le palier 0 et AVANT le palier 1a) : amendement de la section 15 (latence publiée avec la
+vitesse de l'API, timeout porté à 120 s, sonde avant les bancs), tranché par Jarvis ; D3 en attente de Matteo.
+
 v1 (26/09, 16h10, avant tout code et tout appel payant) : **choix tranchés par Matteo (Telegram 10808, « Validé »,
 relayé par Jarvis)**, section 12 bis ; prompt v1 validé tel quel (sha256 `145f0dd5a53c`, commit cf66bee).
 
@@ -679,3 +691,143 @@ arrêt avant chaque juge.
   de Matteo.
 - **Livraison** : REPRISE et backlog mis à jour dans le même lot, chaque item avec sa mesure. PR ouverte, sans merge
   sans le go de Matteo relayé par Jarvis.
+
+## 15. Amendement v1.1 (26/09, 16h55, après le palier 0, avant le palier 1a)
+
+Écrit après la lecture du palier 0 et avant tout autre run. Traces : `results/multiversion/2026-09-26_v2e4/palier0/`
+(code joué 2cd998a, base 54f8aab3110f, prompt v1 `145f0dd5a53c`). Dépense du palier 0 : 0,188 USD sur 0,50.
+
+### 15.1 Ce que le palier 0 a montré
+
+| | mesure |
+|---|---|
+| v2e4, F-R01, F-NINF-01, F-QINF-17 | fiches attendues 8 sur 8 ; 0 formation citée hors des résultats (contrôle positif : compte 1) ; chiffres adossés 27 sur 27 ; clarification de F-QINF-17 bonne (2 questions, un « ? » chacune) ; 0 réécriture |
+| panne au 1er passage | F-NINF-01 : `ReadTimeout` après 3 essais de 60 s (236 s) ; rejoué seul : bon, 100 s. 1er passage gardé (`palier0/v2e4__gatef_passage1.jsonl`) |
+| vitesse de l'API | médiane de 15,0 s par millier de jetons de sortie par appel (8 appels), contre 5,64 à l'étape 3 (même statistique, 267 appels du vertical ; `src.eval.multiversion.mesures.vitesse_sortie`). Les sorties font la même taille (362 à 3 000 jetons environ). Ralentissement côté fournisseur, supposé |
+| v2e4r (`reasoning_effort="none"`) | 3 pannes, toutes par erreur 400 : « reasoning_effort 'none' is not supported for this model; supported values: ['low', 'high', 'max'] » (26/09, 16h45). La condition 1 du levier (section 11) échoue telle qu'écrite |
+
+### 15.2 Amendements (tranchés par Jarvis, 26/09 16h44 : techniques et généraux)
+
+- **a) Latence publiée avec la vitesse de l'API.** Chaque run publie, à côté de la latence brute (médiane, p90 au rang
+  le plus proche), la médiane par appel des secondes par millier de jetons de sortie
+  (`vitesse_sortie`, champ `secondes_par_k_sortie_mediane`, dans le journal du lanceur et dans le rapport). Le
+  plancher p90 < 15 s se lit sur les deux. Référence de l'étape 3 pour cette statistique : 5,64.
+- **b) Timeout par appel : 60 s -> 120 s**, pour les runs et le pipeline (`src/v2/pipeline.TIMEOUT_MS`, repris par
+  la version du lanceur). Raison mesurée : F-NINF-01, 26/09 vers 16h40, 3 appels au-delà de 60 s alors que l'API
+  rendait 11 à 21 s par millier de jetons de sortie ; une panne n'est pas une mesure de qualité.
+- **c) Sonde avant les bancs** (palier 2) : 3 appels, avant de lancer le vertical et le lot 0. Si la médiane de
+  `secondes_par_k_sortie_mediane` dépasse **2 fois la référence de l'étape 3**, les bancs sont reportés, au lieu de
+  mesurer une latence faussée. Les passages du gate F peuvent tourner malgré le ralentissement : leurs critères sont
+  déterministes.
+
+  Seuil : Jarvis a écrit 8,9 s par millier, soit 2 fois 4,43, la pente de la loi par moindres carrés (section 8).
+  La statistique publiée en a) est une médiane par appel, dont la référence à l'étape 3 est 5,64 (elle compte aussi
+  la part fixe de chaque appel). Deux fois la même statistique donne **11,3**. Seuil retenu : 11,3 sur la médiane par
+  appel, en attendant la confirmation de Jarvis.
+- **d) Points d'arrêt** : un ping à Jarvis AVANT chaque palier payant (avec le sha du code), et après, avec les
+  mesures. Arrêt avant chaque juge.
+- **e) Mesures du v2 étendues aux variantes** : l'export et le recompte des chiffres adossés reconnaissaient la
+  version `v2` seulement ; ils reconnaissent maintenant `v2e4` et `v2e4r` (`mesures.est_v2`). Aucun changement pour
+  les versions `prod` et `chatgpt*`.
+
+### 15.3 En attente
+
+- **D3** : « none » refusé par l'API. Jarvis pose la question à Matteo (recommandation : tester « low » avec la même
+  règle, sauf la condition « raisonnement < 20 % du défaut », remplacée par « rapport publié »). Rien n'est lancé
+  avec `v2e4r` sans sa décision. Le palier 1a (v2e4, raisonnement par défaut) ne dépend pas de cette décision.
+
+### 15.4 Amendement v1.2 (26/09, 18h20, après le palier 1a, avant le passage 1b)
+
+**Palier 1a, lu avant cet amendement** (`results/multiversion/2026-09-26_v2e4/palier1a/`, code 14764de) :
+- gate F vert sur ses 4 critères : fiches 95/102, 0 formation citée hors des résultats, clarification 5/5, adossés
+  386/386 ;
+- 0 panne, 1,87 USD ;
+- latence médiane 14,7 s, p90 62,1 s, à 4,99 s par millier de jetons de sortie. Au gate F de l'étape 3 : 14,0 s et
+  31,6 s, à 5,67 ;
+- jetons de sortie +46 % par rapport à l'étape 3, raisonnement +57 %, raisonnement médian de l'appel final 3 878
+  caractères contre 2 099.
+
+**Seuil de la sonde (15.2 c)** : 11,3 s par millier sur la médiane par appel, confirmé par Jarvis (26/09, 16h47,
+recompte de la référence 5,64 avec son code).
+
+**D3 = `reasoning_effort="low"`** (Matteo, Telegram 10818, 18h16 : « Oui peut essayé avec low c'est une bonne idée »).
+« none » est refusé par l'API pour `zai-glm-5-3` (15.1). Le passage 1b joue la version `v2e4r`, identique à `v2e4`
+au paramètre près : même code, même prompt, même base.
+
+Règle de retenue de « low », qui remplace celle de la section 11 pour ce levier :
+1. l'API l'accepte. Le rapport du raisonnement (caractères, « low » sur défaut, tous appels et appel final) est
+   publié, sans seuil ;
+2. sur le gate F, les critères déterministes ne reculent pas face à 1a : au plus 2 fiches de moins, clarification
+   pas moins bonne, adossés 100 %, 0 formation citée hors des résultats ;
+3. juge sur les deux passages (1a et 1b, 64 verdicts) : l'erreur de fait de 1b ne dépasse pas celle de 1a de plus
+   d'une réponse sur 32. Le juge ne tourne que sur un go séparé de Matteo, pas encore donné.
+
+**Comparaison de latence 1a contre 1b** : brute ET normalisée par la vitesse de l'API au moment du passage (médiane
+par appel des secondes par millier de jetons de sortie), parce que les deux passages ne tournent pas à la même heure.
+
+Budget : plafond cumulé inchangé (5,5 USD pour le palier 1 ; dépensé 2,06 USD avant 1b). Il reste un passage du gate
+F au plus (1c) après celui-ci.
+
+### 15.5 Amendement v1.3 (26/09, 18h35, après le passage 1b, avant la sonde et les bancs)
+
+**Passage 1b, lu avant cet amendement** (`results/multiversion/2026-09-26_v2e4/palier1b/`, code c679a05, version
+`v2e4r`, `reasoning_effort="low"`), recompté par Jarvis (26/09, 18h23) :
+- 32 tours, 0 panne, 2,08 USD ; cumul du tag 4,13 USD ;
+- gate F vert : fiches 96/102, 0 formation citée hors des résultats, clarification 5/5, adossés 389/389 ;
+- « low » accepté par l'API, mais le raisonnement AUGMENTE : 599 267 caractères contre 481 443 en 1a (×1,24) ;
+  jetons de sortie 182 053 contre 152 254 ;
+- raisonnement de l'appel final, deux définitions :
+  - appels qui finissent en « stop », réécritures comprises : médiane 4 475 (n = 39) contre 3 878,5 (n = 38) ;
+  - dernier appel au modèle de chaque tour : médiane 3 566,5 contre 3 656,5 (n = 32 dans les deux) ;
+- latence, 1a puis 1b :
+
+  | | 1a (défaut) | 1b (low) |
+  |---|---|---|
+  | brute, médiane / p90 | 14,7 / 62,1 s | 18,7 / 54,2 s |
+  | vitesse de l'API (médiane par appel) | 4,99 s/k | 4,36 s/k |
+  | normalisée (× 5,64 / vitesse), médiane / p90 | 16,6 / 70,1 s | 24,2 / 70,2 s |
+
+  La normalisation suppose que tout le tour dépend du modèle (environ 90 % à l'étape 3).
+
+**Décisions (Matteo, Telegram 10821, 18h32, « Oui go en mode normal du coup », relayé par Jarvis)** :
+- « low » n'est **pas retenu** : il n'apporte rien à la latence, sa seule raison d'être. **Pas de juge sur « low »** :
+  les 64 verdicts de la règle 15.4 (3) ne sont pas dépensés ;
+- **pas de passage 1c** : il ne tient plus dans le plafond cumulé du palier 1 (4,13 USD sur 5,5) ;
+- **bancs** avec `v2e4` (réglage par défaut), code figé à 3b8b951 (aucun changement de `src/` avant les bancs),
+  après la sonde de 15.2 c (seuil 11,3 s/k sur la médiane par appel ; au-delà, report des bancs) ; vertical (79 tours)
+  et lot 0 (67 tours), une fois ; plafond global 15 USD, arrêt automatique ;
+- **juge** : 111 verdicts (vertical 79 et gate F 1a 32), sur un go séparé de Matteo, pas encore donné ;
+- **plancher de latence** (p90 < 15 s) : déclaré non tenu à l'étape 4. Cause mesurée : le raisonnement, plus long
+  avec le prompt v1 qu'avec le v0 (+57 % au gate F). C'est une piste pour la suite, pas un réglage de cette étape.
+
+**Mesures publiées à la fin des bancs**, avant le juge : critère 1 bis (sur les 269 attendus montrés à l'identique) et
+critère 1 sur 323 ; chiffres adossés ; latence brute et vitesse de l'API ; refus au sens du filtre (court-circuits) ;
+coût. Au vertical : les 79 tours et les 59 hors recouvrement.
+
+### 15.6 Amendement v1.4 (26/09, 19h10, après les bancs, avant le rejeu)
+
+**Bancs, lus avant cet amendement** (code 3b8b951, `v2e4`, réglage par défaut), recomptés par Jarvis (26/09, 19h08) :
+- vertical : 79 tours, **3 en panne** (V-INF-05 t0 et t1, V-SAN-11 t0). Chaque fois, 3 appels au modèle aboutissent,
+  puis le 4e dépasse 120 s trois fois (380 à 400 s par tour ; V-SAN-11 avait déjà produit 9 685 jetons de sortie).
+  Vitesse de l'API 4,74 s/k : c'est le raisonnement qui s'emballe, pas l'API. Adossés 75/75 tours, critère 1 bis
+  192/261 = 73,6 % (étape 3, mêmes 55 conversations : 74,3 %), critère 1 195/315 = 61,9 %, 4,68 USD ;
+- lot 0 : 67 tours, 0 panne, adossés 66/66 tours, latence 33,8 / 72,2 s à 4,97 s/k (étape 3 : 22,4 / 49,5 s à
+  5,66), 3,69 USD ;
+- latence médiane du vertical, périmètre à préciser : 20,05 s sur les 76 tours sans panne (court-circuit du filtre
+  compris) ; 20,8 s sur les 75 tours sans panne ni court-circuit (recompte de Jarvis) ; 21,08 s sur les 79 tours.
+  p90 au rang : 47,9 s sans les pannes, 65,9 s avec.
+
+**Décision (Jarvis, 26/09, 19h08)** : les 2 conversations en panne sont **rejouées une fois**, avec le même code
+(3b8b951), pour environ 0,3 USD. Ce n'est pas du réglage (le code ne change pas), et c'est cohérent avec l'amendement
+b) : une panne n'est pas une mesure de qualité. Le premier passage est gardé
+(`results/multiversion/2026-09-26_v2e4/bancs_passage1/v2e4__vertical.jsonl`).
+
+**Mais les pannes restent un résultat.** Le rapport les publie comme un **mode de défaillance mesuré** :
+- taux : 3 tours sur 79 ;
+- cause : le raisonnement d'un appel qui dépasse 120 s ;
+- jetons produits avant la panne ;
+- ce que verrait un élève : environ 6 minutes d'attente, puis un message d'excuse.
+
+Le critère 1 et la latence se publient avec et sans ces tours. Le juge (111 verdicts : vertical 79 après rejeu, gate
+F 1a 32) attend le go de Matteo.
+

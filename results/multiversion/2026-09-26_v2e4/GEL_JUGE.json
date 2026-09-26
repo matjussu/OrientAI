@@ -1,0 +1,27 @@
+{
+ "ecrit_le": "2026-09-26T19:17:04+00:00",
+ "raison": "gel des réponses jugées avant la préparation du juge judge_v2 (go de Matteo, Telegram 10826) : un seul passage",
+ "code_v2": "3b8b951 (src_v2_sha 164ccdfeb033), version v2e4, prompt v1 145f0dd5a53c, base 54f8aab3110f",
+ "provenance": {
+  "v2e4__vertical.jsonl": "bancs du 26/09 18h35-18h52, puis rejeu des 2 conversations en panne (19h10-19h16, amendement v1.4) ; 1er passage dans bancs_passage1/",
+  "v2e4__gatef.jsonl": "copie octet pour octet de palier1a/v2e4__gatef.jsonl (passage 1a)"
+ },
+ "fichiers": {
+  "v2e4__vertical.jsonl": {
+   "sha256": "e6e5f2ebba6b462a64986c1a1e9247682f55488107549d8c0ada0e16efd0c0dc",
+   "tours": 79,
+   "tours_en_panne": [
+    "V-INF-05.0"
+   ],
+   "tours_juges": 78
+  },
+  "v2e4__gatef.jsonl": {
+   "sha256": "8bdd0eebe421cefeee8416bcecbfe7b091686e3c8c9d4397cdce374b0be96ea7",
+   "tours": 32,
+   "tours_en_panne": [],
+   "tours_juges": 32
+  }
+ },
+ "verdicts_attendus": 110,
+ "note": "V-INF-05 t0 est en panne aux deux passages (402 s puis 402 s) : non jugeable, publié comme mode de défaillance ; 110 verdicts au lieu de 111"
+}

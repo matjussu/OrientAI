@@ -17,9 +17,9 @@ import threading
 from pathlib import Path
 
 from src.eval.multiversion.comptage import ClientCompte
-from src.v2 import prompt as prompt_v0
+from src.v2 import prompt as prompts
 from src.v2.outils import Outils
-from src.v2.pipeline import MODELE, MODELE_FILTRE, SERVEUR, EtatConversation, Pipeline
+from src.v2.pipeline import MODELE, MODELE_FILTRE, SERVEUR, TIMEOUT_MS, EtatConversation, Pipeline
 
 RACINE = Path(__file__).resolve().parents[4]
 
@@ -43,6 +43,8 @@ def _cle(history: list[dict]) -> str:
 class V2:
     nom = "v2"
     fils = 3
+    PROMPT = "v0"            # étape 3 ; les versions de l'étape 4 (v2e4, v2e4r) jouent le prompt v1
+    RAISONNEMENT = None      # reasoning_effort envoyé à l'API (None : paramètre absent, comme à l'étape 3)
 
     def __init__(self):
         self.outils = Outils()
@@ -55,10 +57,11 @@ class V2:
     def _fil(self) -> tuple[ClientCompte, Pipeline]:
         if getattr(self._local, "pipeline", None) is None:
             from mistralai.client import Mistral
-            # 60 s : au palier 1, 96 appels, le plus long a pris 24 s ; un appel resté pendu jusqu'aux 180 s d'avant a
-            # fait un tour de 202 s (F-QMAT-12). La nouvelle tentative du pipeline prend le relais.
-            client = ClientCompte(Mistral(api_key=_cle_mistral(), server_url=SERVEUR, timeout_ms=60_000))
-            self._local.client, self._local.pipeline = client, Pipeline(client, outils=self.outils)
+            # Timeout : `src/v2/pipeline.TIMEOUT_MS` (120 s depuis l'amendement v1.1 de l'étape 4 ; 60 s à l'étape 3,
+            # 180 s avant). La nouvelle tentative du pipeline prend le relais.
+            client = ClientCompte(Mistral(api_key=_cle_mistral(), server_url=SERVEUR, timeout_ms=TIMEOUT_MS))
+            self._local.client, self._local.pipeline = client, Pipeline(
+                client, outils=self.outils, prompt=self.PROMPT, reasoning_effort=self.RAISONNEMENT)
         return self._local.client, self._local.pipeline
 
     def empreinte(self) -> dict:
@@ -67,7 +70,9 @@ class V2:
             if p.is_file() and p.suffix in (".py", ".json"):
                 paquet.update(p.name.encode() + p.read_bytes())
         manifeste = json.loads((RACINE / "data/processed/base_etape_c.manifest.json").read_text(encoding="utf-8"))
-        return {"modele": MODELE, "modele_filtre": MODELE_FILTRE, "serveur": SERVEUR, "prompt_sha": prompt_v0.SHA[:12],
+        return {"modele": MODELE, "modele_filtre": MODELE_FILTRE, "serveur": SERVEUR, "prompt": self.PROMPT,
+                "prompt_sha": prompts.SHAS[self.PROMPT][:12], "prompt_fichier_sha": prompts.SHAS_FICHIER[self.PROMPT][:12],
+                "reasoning_effort": self.RAISONNEMENT,
                 "src_v2_sha": paquet.hexdigest()[:12], "base_empreinte": manifeste["sortie"]["empreinte_canonique"][:12]}
 
     @staticmethod

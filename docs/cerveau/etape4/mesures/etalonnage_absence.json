@@ -1,0 +1,50 @@
+{
+ "banc": "lot0",
+ "declenchements": 4,
+ "lus": 4,
+ "vraies_absences": 3,
+ "precision": 0.75,
+ "seuil_D5": 0.95,
+ "lignes": [
+  {
+   "version": "v2",
+   "id": "E07",
+   "tour": 0,
+   "brouillon": 0,
+   "phrase": "La sociologie n'y figure pas : ma recherche sur les mentions contenant « sociologie » ne renvoie aucune formation, donc je n'ai ni taux d'insertion à 30 mois ni salaire médian à te donner pour ce domaine.",
+   "condition": "une recherche chercher_masters était vide (0 dans la base ne veut pas dire 0 en réalité)",
+   "vraie_absence": true,
+   "raison": "affirme qu'aucune formation ne correspond (recherche vide)"
+  },
+  {
+   "version": "v2",
+   "id": "E02",
+   "tour": 0,
+   "brouillon": 0,
+   "phrase": "**Près de Lyon : aucun master « IA » dans l'intitulé.** J'ai cherché à 100 km autour de Lyon (à vol d'oiseau) : rien avec « intelligence artificielle » ni « apprentissage » dans l'intitulé.",
+   "condition": "une recherche chercher_masters était vide (0 dans la base ne veut pas dire 0 en réalité)",
+   "vraie_absence": true,
+   "raison": "affirme qu'aucun master IA n'existe près de Lyon"
+  },
+  {
+   "version": "prod",
+   "id": "L18",
+   "tour": 0,
+   "brouillon": 0,
+   "phrase": "Aucune mention de prépa obligatoire dans ces sources.",
+   "condition": null,
+   "vraie_absence": false,
+   "raison": "« aucune mention de prépa obligatoire » : pas une absence de formation"
+  },
+  {
+   "version": "prod",
+   "id": "E15",
+   "tour": 0,
+   "brouillon": 0,
+   "phrase": "Aucune licence pro n’apparaît dans mes sources.",
+   "condition": null,
+   "vraie_absence": true,
+   "raison": "affirme qu'aucune licence pro n'apparaît"
+  }
+ ]
+}

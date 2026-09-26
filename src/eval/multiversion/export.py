@@ -12,7 +12,7 @@ import json
 import statistics
 
 from src.eval.multiversion.lanceur import BANCS, RESULTATS
-from src.eval.multiversion.mesures import adosses, critere1, lire_banc
+from src.eval.multiversion.mesures import adosses, critere1, est_v2, lire_banc, vitesse_sortie
 
 CRITERES = ("references", "comprehension", "expression", "couverture")
 
@@ -73,7 +73,7 @@ def _tour(x: dict, juge: dict | None, chiffres: list | None) -> dict:
                                                                 "cause_echec", "commentaire")},
         "chiffres": chiffres,
         # Cerveau v2 : les étages de la trace (CONTRAT-etape3 section 2), pour l'onglet de l'explorateur.
-        "v2": None if x.get("version") != "v2" else {
+        "v2": None if not est_v2(x.get("version") or "") else {
             "filtre": tr.get("filtre"), "court_circuit": tr.get("court_circuit"), "etapes": tr.get("etapes"),
             "outils": [{k: a.get(k) for k in ("nom", "arguments", "execute", "ids_rendus", "erreur", "secondes", "texte")}
                        | {"nb_resultats": (a.get("meta") or {}).get("nb_resultats"),
@@ -129,6 +129,8 @@ def _synthese(version: str, banc: str, recs: list[dict], verdicts: dict, detail_
         "structured_part": (sum(1 for t in tours if t["structured"]) / len(tours)) if version == "prod" and tours else None,
         "latence_mediane": statistics.median([t["latence"] for t in tours]) if tours else None,
         "latence_p90": _p90([t["latence"] for t in tours]),
+        # Amendement v1.1 du CONTRAT-etape4 : la vitesse de l'API, à lire avec la latence brute.
+        **(vitesse_sortie(ok) if est_v2(version) else {}),
         "mots_mediane": statistics.median(t["mots"] for t in tours) if tours else None,
         "cout_usd": round(sum(t["cout_usd"] or 0 for t in tours), 4),
         "tokens": {m: {k: sum((t["tokens"].get(m) or {}).get(k, 0) for t in tours)
@@ -178,7 +180,7 @@ def exporter(tag: str, dossier_juge: str = "judge") -> dict:
         out.write_text(json.dumps({"meta": meta, "synthese": synth, "tours": tours}, ensure_ascii=False,
                                   separators=(",", ":"), default=str), encoding="utf-8")
         rapport["runs"][f"{version}__{banc}"] = synth
-        if version in ("prod", "v2") and banc == "vertical" and ids_ech:
+        if (version == "prod" or est_v2(version)) and banc == "vertical" and ids_ech:
             # Même base que chatgpt_web : les 25 conversations de l'échantillon figé (protocole v0.3).
             sous = [r for r in recs if r["id"] in ids_ech]
             _, synth_e = _synthese(version, banc, sous, verdicts, detail)

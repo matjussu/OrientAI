@@ -1,5 +1,7 @@
 {
+ "traces": "results/multiversion/2026-09-25_v2/v2__vertical.jsonl",
  "banc_sha256": "f467374be3d708ffd9b3e2826b4e22cdf0c503e3ee13a3c7b0c72b5c6eb1cb5f",
+ "conversations_ecartees_panne": [],
  "attendus_dans_la_base": 323,
  "classes": {
   "cite_juste": 200,
@@ -14,6 +16,11 @@
  "taux_critere1": 0.6192,
  "plafond_si_tout_egal_cite": 0.8328,
  "attendus_egal": 269,
+ "critere1_bis": {
+  "cites": 198,
+  "attendus": 269,
+  "taux": 0.7361
+ },
  "detail": [
   {
    "conversation": "V-INF-01",
